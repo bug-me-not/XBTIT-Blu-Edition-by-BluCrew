@@ -1,0 +1,37 @@
+DISC INFO:
+
+Disc Title:     Network 1976 1080p Blu-ray AVC DTS-HD MA 1.0-CtrlHD
+Disc Size:      25,333,483,706 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:01:20 (h:m:s)
+Size:                   19,120,478,208 bytes
+Total Bitrate:          21.01 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17966 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1108 kbps       1.0 / 48 kHz / 1108 kbps / 24-bit (DTS Core: 1.0 / 48 kHz / 768 kbps / 24-bit)
+Dolby Digital Audio             English         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         56.396 kbps                     
+Presentation Graphics           French          50.095 kbps                     
+Presentation Graphics           Spanish         51.606 kbps  

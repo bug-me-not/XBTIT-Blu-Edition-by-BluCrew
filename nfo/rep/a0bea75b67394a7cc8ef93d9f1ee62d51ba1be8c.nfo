@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     DICK_TRACY_HDCLUB
+Disc Size:      31 764 552 880 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:45:05.465 (h:m:s.ms)
+Size:                   30 545 516 544 bytes
+Total Bitrate:          38,75 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        29990 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         4891 kbps       5.1 / 48 kHz / 4891 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Spanish         320 kbps        2.0 / 48 kHz / 320 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         46,618 kbps                    
+Presentation Graphics           French          38,052 kbps                    
+Presentation Graphics           French          0,220 kbps                      
+Presentation Graphics           Portuguese      35,465 kbps                    
+Presentation Graphics           Russian         42,835 kbps                    
+Presentation Graphics           Russian         0,076 kbps                      
+Presentation Graphics           Spanish         36,596 kbps                    
+Presentation Graphics           Spanish         0,091 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00035.M2TS      0:00:00.000     1:45:05.465     30 545 516 544  38 754

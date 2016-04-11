@@ -1,0 +1,297 @@
+<hack>
+  <title>Signature on Forum and Comments</title>
+  <author>Lupin/DT</author>
+  <version>DT FM</version>
+  <!-- database -->
+  <file>
+    <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data><![CDATA[ALTER TABLE `{$db_prefix}users` ADD `signature` text NOT NULL;]]></data>
+    </operation>
+  </file>
+  
+    <!-- admin.users.tools.php -->
+  <file>
+    <name>"$DEFAULT_ROOT/admin/admin.users.tools.php"</name>
+    <operation>
+      <search><![CDATA[if ($XBTT_USE)
+    $curu=get_result('SELECT]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[ u.signature,]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[else
+    $curu=get_result('SELECT]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[ u.signature,]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[$profile['custom_title']=unesc($curu['custom_title']);]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+	  $profile['signature']=unesc($curu['signature']);]]></data>
+    </operation>
+        <operation>
+      <search><![CDATA[$custom_title=unesc($_POST["custom_title"]);]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+	  $signature=unesc($_POST['signature']);]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[if ($custom_title != $curu['custom_title'])
+                $set[]='custom_title='.sqlesc(htmlspecialchars($custom_title));]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+	  if ($signature != $curu['signature'])
+                $set[]='signature='.sqlesc(htmlspecialchars($signature));]]></data>
+    </operation>
+  </file>
+  
+    <!-- admin.users.tools.tpl -->
+  <file>
+    <name>"$DEFAULT_STYLE_PATH/admin.users.tools.tpl"</name>
+    <operation>
+    <action>"add"</action>
+    <where>"after"</where>
+    <search><![CDATA[<tr>
+          <td align="left" class="header"><tag:language.CUSTOM_TITLE />:</td>
+          <td align="left" class="lista"><input type="text" size="40" name="custom_title" maxlength="50" value="<tag:profile.custom_title />"/></td>
+        </tr>]]>
+    </search>
+    <data><![CDATA[
+<tr>
+          <td align="left" class="header">Signature:</td>
+          <td align="left" class="lista"><input type="text" size="40" name="signature" maxlength="50" value="<tag:profile.signature />"/></td>
+        </tr>
+    ]]>
+    </data>
+    </operation>
+  </file>
+  
+  <!-- usercp.profile.php -->
+  <file>
+    <name>"$DEFAULT_ROOT/user/usercp.profile.php"</name>
+    <operation>
+      <search><![CDATA[           $avatar=str_replace(array('\t','%25','%00'), array('','',''), htmlspecialchars(AddSlashes($_POST["avatar"])));]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+           $signature=str_replace(array('\t','%25','%00'), array('','',''), htmlspecialchars(AddSlashes($_POST["signature"])));]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[$set[]="avatar='$avatar'";]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[               $set[]="signature='$signature'";      ]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[$profiletpl["email"]=unesc($CURUSER["email"]);]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[      $profiletpl["signature"]=unesc($CURUSER["signature"]);]]></data>
+    </operation>
+  </file>
+  <!-- usercp.profile.tpl -->
+  <file>
+    <name>"$DEFAULT_STYLE_PATH/usercp.profile.tpl"</name>
+    <operation>
+    <action>"add"</action>
+    <where>"after"</where>
+    <search><![CDATA[</tr>
+    <tr>
+      <td align="left" class="header"><tag:language.POSTS_PER_PAGE />:</td>
+      <td align="left" class="lista" colspan="2"><input type="text" size="3" name="postsperpage" maxlength="3" value="<tag:profile.postsperpage />"/></td>
+    </tr>]]>
+    </search>
+    <data><![CDATA[
+    <tr>
+      <td align="left" class="header"><tag:language.SIGNATURE />:</td>
+      <td align="left" class="lista" colspan="2"><textarea cols="38" rows="6" name="signature"><tag:profile.signature /></textarea></td>
+    </tr>
+    ]]>
+    </data>
+    </operation>
+  </file>
+
+  <!-- usercp.main.php -->
+  <file>
+    <name>"$DEFAULT_ROOT/user/usercp.main.php"</name>
+    <operation>
+      <search><![CDATA[$ucptpl["ratio"]=$ratio;]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[      $ucptpl["signature"]=format_comment($CURUSER["signature"]);]]></data>
+    </operation>
+  </file>
+
+  <!-- usercp.main.tpl -->
+  <file>
+    <name>"$DEFAULT_STYLE_PATH/usercp.main.tpl"</name>
+    <operation>
+      <search><![CDATA[<if:INTERNAL_FORUM>
+  <tr>
+    <td class="header" align="left"><tag:language.FORUM /> <tag:language.POSTS />:</td>
+    <td class="lista" colspan="2" align="left"><tag:posts /></td>
+  </tr>]]>
+      </search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+  <tr>
+    <td class="header" align="left"><tag:language.SIGNATURE />:</td>
+    <td class="lista" colspan="2" align="left"><tag:ucp.signature /></td>
+  </tr>
+      ]]></data>
+    </operation>
+  </file>
+
+  <!-- include/functions.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/include/functions.php"</name>
+  <operation>
+    <search><![CDATA[    if($id>1)
+    {
+        $res = do_sqlquery("SELECT ]]></search>
+    <action>"add"</action>
+    <data><![CDATA[u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+  <operation>
+    <search><![CDATA[    if($id==1)
+    {
+        $res = do_sqlquery("SELECT ]]></search>
+    <action>"add"</action>
+    <data><![CDATA[u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+  </file>
+  
+    <!-- details.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/details.php"</name>
+  <operation>
+    <search><![CDATA[$subres = get_result("SELECT ".$query2_select."]]></search>
+    <action>"add"</action>
+    <data><![CDATA[ u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+  <operation>
+    <search><![CDATA[$comments[$count]["reputation"] = $reput;
+}
+// DT end reputation system]]></search>
+    <action>"add"</action>
+    <data><![CDATA[
+	//signature
+  if ($subrow["signature"])
+    $comments[$count]["body"].= "<p style='vertical-align:bottom'><br />_______________________________________________<br />" . format_comment($subrow["signature"]) . "</p>";
+//signature  
+]]></data>
+    <where>"after"</where>
+</file>
+
+  <!-- torrent.details.tpl -->
+  <file>
+  <name>"$DEFAULT_STYLE_PATH/torrent.details.tpl"</name>
+  <operation>
+    <search><![CDATA[<tag:comments[].comment />]]></search>
+    <action>"add"</action>
+    <data><![CDATA[
+	<tag:comments[].body />]]></data>
+    <where>"after"</where>
+  </operation>
+</file>
+
+  <!-- forum/forum.post.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/forum/forum.viewtopic.php"</name>
+  <operation>
+    <search><![CDATA[if ($XBTT_USE)
+   $query = "SELECT ]]></search>
+    <action>"add"</action>
+    <data><![CDATA[u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+  <operation>
+    <search><![CDATA[else
+   $query = "SELECT ]]></search>
+    <action>"add"</action>
+    <data><![CDATA[u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+  <operation>
+    <search><![CDATA[get_date_time($arr['editedat'])."</font></p>\n";]]></search>
+    <action>"add"</action>
+    <data><![CDATA[
+  if ($arr["signature"])
+    $posts[$pn]["body"].= "<p style='vertical-align:bottom'><br />_______________________________________________<br />" . format_comment($arr["signature"]) . "</p>";
+]]></data>
+    <where>"after"</where>
+  </operation>
+  </file>
+
+  <!-- userdetails.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/userdetails.php"</name>
+  <operation>
+    <search><![CDATA[if ($id>1) {
+   $res=get_result("SELECT ]]></search>
+    <action>"add"</action>
+    <data><![CDATA[u.signature,]]></data>
+    <where>"after"</where>
+  </operation>
+
+  <operation>
+    <action>"add"</action>
+    <where>"after"</where>
+    <search><![CDATA[$userdetailtpl -> set("userdetail_ratio", ($ratio));]]></search>
+    <data><![CDATA[
+$userdetailtpl -> set("userdetail_signature", format_comment($row["signature"]));
+]]></data>
+  </operation>
+  </file>
+
+  <!-- userdetails.tpl -->
+  <file>
+  <name>"$DEFAULT_STYLE_PATH/userdetails.tpl"</name>
+  <operation>
+    <action>"add"</action>
+    <where>"after"</where>
+    <search><![CDATA[  <tr>
+
+    <td class="header"><b><tag:language.FORUM /></b>&nbsp;<b><tag:language.POSTS /></b></td>
+
+    <td class="lista" colspan="2"><tag:userdetail_forum_posts /></td>
+
+  </tr>
+]]></search>
+    <data><![CDATA[
+   <tr>
+
+    <td class="header"><tag:language.SIGNATURE /></td>
+
+    <td class="lista" colspan="2"><tag:userdetail_signature /></td>
+
+  </tr>
+]]></data>
+  </operation>
+  </file>
+
+  <!-- language (only english) -->
+  <file>
+  <name>"$DEFAULT_LANGUAGE_PATH/lang_main.php"</name>
+  <operation>
+    <action>"add"</action>
+    <where>"before"</where>
+    <search><![CDATA[?>]]></search>
+    <data><![CDATA[
+$language["SIGNATURE"]="Forum Signature";
+]]></data>
+  </operation>
+  </file>
+</hack>

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Floatbox v2.46 Instructions</title>
+<style type="text/css">
+body { background: #eee; }
+#content { margin: 1em 25px; font-family: Arial, Helvetica, sans-serif; font-size: .95em; }
+#content h3 { font-size: 1.2em; margin: 2em auto -1em auto; font-style: italic; color: #046; }
+#content h5 { font-size: 1.1em; margin: 1.8em auto -.6em 3em; color: #046; }
+#content .code { font-family: monospace; font-size: 1.05em; color: #060; }
+#content li { margin-top: .3em; }
+#content ul, #content ol { margin-top: .7em; }
+</style>
+</head>
+<body>
+<div id="content">
+<h3>Floatbox v2.46 - Instructions</h3>
+<p><a href="http://randomous.com/tools/floatbox/">randomous.com</a></p>
+<hr /><br />
+
+<h5>Basic quick-start</h5>
+<p>
+The three steps below are all you need to get floatboxed content on your pages.
+But to get the most out of floatbox and use its more advance features you really should read the rest of these instructions, the <a href="options.html">options reference</a> and check out the <a href="http://randomous.com/tools/floatbox/demo.php">demo pages</a>.
+<ol>
+<li>
+Extract everything that's in the zip file's "floatbox" folder to a "floatbox" folder at the root of your site.
+</li>
+<li>
+Include the following two lines in the &lt;head&gt; section of the pages you want floatbox to be active on:<br />
+<span class="code">&lt;link type="text/css" rel="stylesheet" href="/floatbox/floatbox.css" /&gt;</span><br />
+<span class="code">&lt;script type="text/javascript" src="/floatbox/floatbox.js"&gt;&lt;/script&gt;</span>
+</li>
+<li>
+Add a rel attribute to the &lt;a&gt; elements you want to show in floatbox.
+Use <span class="code">rel="gallery"</span> for a standalone image, <span class="code">rel="slideshow"</span> for a group of images to show as a slideshow and <span class="code">rel="iframe"</span> for displaying an html document.
+Append a unique string to the end of the rel attribute to group items into a collection.
+E.g., if you put <span class="code">rel="gallery1"</span> on multiple items, they will be shown in a floatbox with prev/next buttons to navigate through them.
+</li>
+</ol>
+</p>
+
+<h5>Installation &amp; updating</h5>
+<p>
+The basic install described above gives you a floatbox folder at the root of your site with all the floatbox files inside that.
+The files in this folder that are required for standard functionality are floatbox.js, floatbox.css and the immediate contents of the image folder.
+Framebox.js is for constraining the floatbox display to a particular frame or iframe.  See below for details.
+Floatbox_big.css is optional. Reference it instead of floatbox.css if you want larger graphics for the controls.
+If you don't want to use the larger controls, you can delete the images/big folder if you like.
+Likewise, images/xtras can go if you don't use any of its contents for customization.
+Floatbox_source.js in the docs folder is not used.  It is a fully commented version of the smaller floatbox.js.
+If you place the floatbox files in different folders than recommended here you will need to change the image paths in the css file, the "url404Image" path in floatbox.js and the include paths in your page headers.
+</p>
+<p>
+Upgrading to a new version of floatbox usually entails replacing the entire contents of the floatbox folder.
+The css and images can change between versions along with the javascript.  All the components need to be in sync.
+If you have customized the floatbox.css file, you should manually re-customize the new css file (or better yet, move those customizations to a seperate css file).
+You will need to edit the options section at the top of floatbox.js to set your preferences with each install or update.
+</p>
+
+<h5>Setting rel attributes</h5>
+<p>
+The basics of activating floatbox by setting rel attributes on &lt;a&gt; elements is given above in the quick-start section.
+The extra text on the end of a rel attribute that is used to group items into collections can be any string you like.
+The resulting rel attribute just needs to be indentical for all items you want grouped.
+Although you can use it, you may want to avoid the square brackets commonly used by other scripts because a rel attribute like "gallery[group]" won't pass xhtml validation.
+</p>
+<p>
+In addition to the native  rel types of "gallery", "slideshow" and "iframe", floatbox will also recognize "lytebox" or "lightbox" for images, "lyteshow" for a slideshow group, and "lyteframe" for iframe content.
+This provides compatability for existing pages that are already set up with those rel attributes.
+</p>
+<p>
+Sometimes instead of using the 'slideshow' rel attribute it can be beneficial to set the page up as one or more multi-item galleries and then set the 'doSlideshow' option to run it as a slideshow.
+See the "Auto-run a slideshow" example below for more on this.
+</p>
+<p>
+Here's some example rel attributes:
+<ul>
+<li>Single Image: <span class="code">&lt;a href="image1.jpg" <b>rel="gallery"</b>&gt;...&lt;/a&gt;</span></li>
+<li>Multiple Images: <span class="code">&lt;a href="image1.jpg" <b>rel="gallery.group"</b>&gt;...&lt;/a&gt; &lt;a href="image2.jpg" <b>rel="gallery.group"</b>&gt;...&lt;/a&gt;</span></li>
+<li>Slideshow: <span class="code">&lt;a href="image1.jpg" <b>rel="slideshow"</b>&gt;...&lt;/a&gt; &lt;a href="image2.jpg" rel="slideshow"&gt;...&lt;/a&gt;</span></li>
+<li>Single iFrame: <span class="code">&lt;a href="iframe1.html" <b>rel="iframe"</b>&gt;...&lt;/a&gt;</span></li>
+<li>Multiple iFrames: <span class="code">&lt;a href="iframe1.html" <b>rel="iframeFoo"</b>&gt;...&lt;/a&gt; &lt;a href="iframe2.html" <b>rel="iframeFoo"</b>&gt;...&lt;/a&gt;</span></li>
+</ul>
+</p>
+<h5>Captions</h5>
+<p>
+There are two ways to get floatbox to display caption text.
+One is to set the 'title' attribute on the &lt;a&gt; element and the other is to include a 'caption' entry in the rev attribute options.
+(Rev attribute options are explained below under "Set options directly on anchors".)
+Browsers use the title attribute as a tooltip when the user mouses over an anchor.
+If you want the tooltip and the floatbox caption to be the same, just set the title attribute.
+If you want them to be different, put the caption string into the rev attribute as an option (see below).
+When using the rev caption option, you need to surround the caption text with backquotes (`).
+</p>
+<p>
+Here's two examples:
+<ul>
+<li><span class="code">&lt;a href="image1.jpg" rel="gallery" <b>title="This both a tooltip and a caption"</b>&gt;...&lt;/a&gt;</span></li>
+<li><span class="code">&lt;a href="image1.jpg" rel="gallery" <b>title="This is a tooltip" rev="caption:`This is a caption`"</b>&gt;...&lt;/a&gt;</span></li>
+</ul>
+</p>
+<p>
+If you set the title or caption option to the string "href", the displayed caption will be the value of the anchor's href attribute.
+This can be useful when displaying iframed content or if you want to display the path/filename of the current image.
+</p>
+<p>
+The rev caption can include html styles and elements such as &lt;br /&gt; or even &lt;a&gt;nchors if you like.
+HTML entity characters (&amp; &quot; &lt; &gt;) in a caption will need to be encoded (&amp;amp; &amp;quot; &amp;lt; &amp;gt;).
+There's an example of an html styled caption on the <a href="http://randomous.com/tools/floatbox/ifdemo.php">iframed demo page</a>.
+</p>
+
+<h5>Configure options</h5>
+<p>
+There are 5 different ways to set configuration options for floatbox.
+The order of precedence for these options is given in the following list where the lower numbered items override options set by means of higher numbered methods.
+<ol>
+<li>querystring from the host page url (good for testing)</li>
+<li>options from the clicked link's rev attribute</li>
+<li>from cookies set by an external form or other code</li>
+<li>setFloatboxOptions() function defined on the host page</li>
+<li>those defined in the defaultOptions object at the top of floatbox.js</li>
+</ol>
+</p>
+<p>
+Your first stop in configuring floatbox will probably be to edit the options section at the top of floatbox.js to set the default global options the way you like them.
+Details of the other various option-setting methods follow.
+Note that option names and values are case-sensitive.
+</p>
+
+<h5>Set options directly on anchors</h5>
+<p>
+Probably the most useful of floatboxes options setting techniques is the ability to configure the behaviour of specific anchors.
+Nearly all the options described in the <a href="options.html">options reference page</a> can be set on an anchor's rev attribute.
+Setting options directly on an anchor makes those floatbox options active only when that particular link is clicked.
+Syntax is <span class="code">&lt;a href="" rel="gallery" <b>rev="option1:value1 option2:value2 etc."</b>&gt;</span>.
+You can see a more detailed example below where auto-running a slideshow is discussed.
+</p>
+
+<h5>Setting page-specific options</h5>
+<p>
+All options listed at the top of floatbox.js can be overridden for a specific page by including a function called "setFloatboxOptions()" in the head section of that page.
+For example, on the floatbox demo pages I ensure that preferences set in the options form are used and that animations are enabled by setting those options using a page-specific function.
+It looks like this:<br />
+<span class="code">
+&lt;script type="text/javascript"&gt;<br />
+&nbsp;&nbsp;function setFloatboxOptions() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.enableCookies = true;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.cookieScope = 'folder';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.resizeDuration = 5.5;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.imageFadeDuration = 4.5;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.overlayFadeDuration = 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fb.navType = 'both';<br />
+&nbsp;&nbsp;};<br />
+&lt;/script&gt;<br />
+</span>
+When running floatbox from iframed pages, the setFloatboxOptions() function needs to be in the head section of the top document.
+</p>
+
+<h5>Setting options from cookies</h5>
+<p>
+The ability to manage configuration options through cookies is useful for something like the options form on my demo pages.
+You can use cookie-based options to provide user control over the behaviour and appearance of floatbox.
+Briefly, the config options are available for reading and/or writing in a session cookie called "fbOptions" with an internal structure of "option1:value1 option2:value2 etc.".
+Dissect the "Set Options" form on the <a href="http://randomous.com/tools/floatbox/demo.php">demo pages</a> for an example of cookies in action.
+You will need to enable cookie support by setting "enableCookies" to true, either in the top of floatbox.js or in a page-specific setFloatboxOptions() function.
+If you are trying out different options in floatbox.js you might want to set enableCookies to false, otherwise your config changes won't take hold without restarting your browser (thereby clearing session cookies).
+</p>
+
+<h5>Options in a url querystring</h5>
+<p>
+The ability to set options through the url querystring is useful primarily for testing purposes.
+You can for example add something like this to your address bar's url:<br />
+<span class="code">http://.....?theme=yellow&amp;resizeDuration=5&amp;outerBorder=10</span>
+</p>
+
+<h5>Example: Auto-run a slideshow from a link</h5>
+<p>
+If an anchor has "doSlideshow:true" set on its rev attribute then, when clicked, the corresponding grouped images will be shown as a slideshow even though their rel attributes may specify a "gallery".
+This allows for setting up a gallery with a dedicated link to viewing that gallery as a slideshow.
+When you do this, you would normally want to include the option "showThis:false" so that the activating link itself is not included in the invoked slideshow.
+</p>
+<p>
+You could also put the 'doSlideshow' option in the page's setFloatboxOptions() function described above.
+I think this would be useful only if you have a gallery page already setup and you want to change it to always display as a slideshow without editing all the rel attributes.
+</p>
+<p>
+For an example of doSlideshow in action, look at the galleries on the randomous.com site.
+They all have a slideshow option at the top of their pages.
+The anchor element that enables the slideshow looks like this:<br />
+<span class="code">&lt;a href="" rel="gallery.group" rev="doSlideshow:true showThis:false endTask:exit autoResize:true navType:none"&gt;Slideshow&lt;/a&gt;</span><br />
+The images that will be included in the slideshow are those that have the same rel attribute (gallery.group) on their associated &lt;a&gt; elements.
+</p>
+
+<h5>Notes on iFrame content</h5>
+<p>
+&lt;a&gt; elements that have "iframe" (or "lyteframe") on their rel attributes, and whose href attributes point to displayable html content, will be loaded in floatbox as iframe content.
+You can group multiple iframes together using the usual rel postfix syntax such as "iframe.group" or "iframe7".
+There are three iframe-specific rev options that should be assigned to each iframe anchor: "width", "height" and "srcolling".
+Width and height are the numeric size of the iframe window in pixels.  Scrolling is either "no", for no scrollbars, or "auto" for displaying scrollbars in the iframe if they are required.
+If no value for scrolling is given, auto is assumed.
+</p>
+<p>
+Here's an example of a complete iframe anchor tag:
+<span class="code">&lt;a href="iframe1.html" rel="iframe" rev="width:400 height:530 scrolling:no"&gt;...&lt;/a&gt;</span><br />
+For compatability with pre-existing lytebox pages you can also use the css-like syntax if you wish:
+<span class="code">&lt;a href="iframe1.html" rel="iframe" rev="width: 400px; height: 530px; scrolling: no;"&gt;...&lt;/a&gt;</span><br />
+One or both of width and height can be specified as "max" which will set that dimension to match the current window size.
+</p>
+<p>
+Iframes can be used to display any multimedia content as well as "normal" html content.
+For multi-media, setup a small html page with only your multi-media object in it.
+You will want to make sure your document body has no margin or padding: <span class="code">&lt;body style="margin: 0; padding 0;"&gt;</span>
+Then set the iframe width and height to the exact dimensions of your multi-media object and add "scrolling:no" to your rev tag.
+There's a sample on the demo pages.
+</p>
+
+<h5>Image map areas</h5>
+<p>
+Floatbox can work with <a href="http://www.w3schools.com/js/js_image_maps.asp">image map areas</a> the same way it does for standard &lt;a&gt; elements.
+To do this, set up the rel, rev and title attributes as described above, but for image maps these attributes go on the map's &lt;area&gt; elements.
+There's an example on the <a href="http://randomous.com/tools/floatbox/demo.php">demo page</a>.  View the source for details on its setup.
+</p>
+<p>
+Note that attaching floatbox to image map areas results in html that will not validate.
+This is because the rel, rev and title attributes are not allowed attributes of &lt;area&gt; elements in the html spec.
+It is still safe to do as all browsers ignore unknown attributes, but it is an unfortunate and unavoidable downside of providing image map support in floatbox.
+</p>
+
+<h5>Custom background image</h5>
+<p>
+You can use a graphic as an overlay background image by providing a background-image style for the overlay element.
+In a css file, it would look something like this:<br />
+<span class="code">
+#fbOverlay {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;background-image: url(bkgrnd.gif);<br />
+}<br />
+</span>
+You can place the background directive in an external css file together with the appropriate include in the head section of your page,
+or you can put it directly inside a <span class="code">&lt;style type="text/css"&gt;&lt;/style&gt;</span> section in the page head.
+Of course, background-image can also be added to floatbox.css if you want it universally applied, but this will prove to be a pain when you upgrade to a new version.
+</p>
+<p>
+If you use a custom background image you may want to set overlayOpacity to 100, or maybe play with lower values to fade the background image.
+For an example of a custom background and the use of autoStart and loadPageOnClose, check out the APOD slideshow on the <a href="http://randomous.com/tools/floatbox/demo.php">demo page</a>.
+</p>
+
+<h5>Running in iFramed pages</h5>
+<p>
+You can run floatbox from iframed pages if you like, and those iframes can be nested as deep as you want.
+Floatbox.js needs to be included in the root (top) page and on every page in a nested chain down to and including the last child page that has floatbox content on it.
+That is, each page of a nested iframe heirarchy needs floatbox.js.
+The css file has to be included in the root page, but does not need to be on the child pages.
+(See the <a href="http://randomous.com/tools/floatbox/ifdemo.php">iframed demo page</a> for an example of a floatbox-enabled page with iframes nested two deep.)
+</p>
+<p>
+Note that browsers restrict <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting</a>.
+Floatbox (and any other lightbox-type script) will not be able to function from within an iframe if the host page and child page do not have identical host name portions of their URLs.
+(You can use framebox.js in these circumstances. See below.)
+</p>
+
+<h5>Constraining floatbox to a particular iFrame</h5>
+<p>
+Floatbox normally occupies the entire browser window when displaying content by attaching itself to the top document.
+You can, if you like, have floatbox appear only inside a particular iframe and constrain itself to the dimensions of that iframe (or to a frameset child document).
+To do this, include the file framebox.js, instead of floatbox.js, in the head section of the iframe content document and also include floatbox.css.<br />
+<span class="code">&lt;link type="text/css" rel="stylesheet" href="/floatbox/floatbox.css" /&gt;</span><br />
+<span class="code">&lt;script type="text/javascript" src="/floatbox/framebox.js"&gt;&lt;/script&gt;</span><br />
+Framebox.js attaches itself to the current window's document, rather than the top document.
+The main code difference between the two js files is that references to "top." in floatbox.js are replaced with "self." in framebox.js.
+</p>
+
+<h5>Enjoy</h5>
+
+<br /><hr />
+</div>
+</body>
+</html>

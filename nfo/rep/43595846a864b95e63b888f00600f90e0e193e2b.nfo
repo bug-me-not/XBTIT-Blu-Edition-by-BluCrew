@@ -1,0 +1,42 @@
+Disc Title:     Stranger Than Fiction 2006 MULTI 1080p BluRay MPEG2 TrueHD HDSpace
+Disc Size:      42 462 178 392 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00011.MPLS
+Length:                 1:52:55.769 (h:m:s.ms)
+Size:                   34 226 829 312 bytes
+Total Bitrate:          40,41 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            29218 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         2093 kbps       5.1 / 48 kHz / 2093 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby TrueHD Audio              French          2191 kbps       5.1 / 48 kHz / 2191 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         60,823 kbps                     
+Presentation Graphics           English         43,154 kbps                     
+Presentation Graphics           French          47,963 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00011.M2TS      0:00:00.000     1:52:55.769     34 226 829 312  40 411

@@ -1,0 +1,30 @@
+DISC INFO:
+
+Disc Title:     The.Usual.Suspects.1995.Blu-ray.1080p.AVC.DTS-HD.MA.5.1-CMCT
+Disc Size:      37,135,548,920 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:46:05 (h:m:s)
+Size:                   34,420,672,512 bytes
+Total Bitrate:          43.26 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        36198 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3738 kbps       5.1 / 48 kHz / 3738 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Chinese         192 kbps        2.0 / 48 kHz / 192 kbps
+Dolby Digital Audio             English         96 kbps         2.0 / 48 kHz / 96 kbps

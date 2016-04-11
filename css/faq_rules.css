@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+  font-family: helvetica;
+  background: #1E1E1E;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #1E1E1E;
+}
+
+a {
+  text-decoration: none
+}
+
+#faq-links {
+  padding: 10px 20px;
+  text-align:center;
+}
+
+#faq-links div {
+  color: #49494b;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 18px 0
+}
+
+.faq-group {
+  padding: 0 20px 40px 20px;
+  position: relative
+}
+
+.faq-group div {
+  font-weight: 700;
+  text-align: center;
+  color: #00aeff;
+}
+
+.faq-group hr {
+  border: 0;
+  border-top: 1px solid #606060;
+  clear: both;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.faq-group:after {
+  top: 33%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #393939;
+  border-width: 15px;
+  margin-left: -15px
+}
+
+.faq-accordion>li {
+  border-top: 1px solid rgba(198, 198, 198, 0.4);
+  color: #666;
+  padding: 1.125em 0
+}
+
+.faq-accordion li a {
+  color: #666;
+  padding: 1.125em;
+}
+
+.faq-accordion > li:last-child {
+  border-bottom: 1px solid rgba(198, 198, 198, 0.4);
+}
+
+.faq-accordion > li > a:before {
+  content: 'Q.';
+  padding-right: 0.313em;
+  color: red;
+}
+
+.faq-accordion > li > a:after {
+  color: #00aeff;
+  content: '+';
+  float: right;
+  font-weight: 300;
+  margin-right: 1.25em;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  overflow-y: hidden;
+}
+
+.faq-accordion > li > a.expanded:after {
+  color: #00aeff;
+  content: '\2212';
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.faq-accordion > li > a.expanded {
+  font-weight: 700;
+  opacity: 1 !important
+}
+
+.faq-content {
+  background-color: #1E1E1E;
+  margin: 20px 0 -20px;
+}
+
+.faq-content p:before {
+  content: 'A.';
+  color: green;
+  float: left;
+  font-weight: 700;
+  margin-right: .5em
+}
+
+.faq-content p {
+  margin: 0 1.2em;
+  padding: 1.250em 0
+}
+
+.faq-hide {
+  display: none
+}
+
+.faq-selected {
+  color: #00aeff!important;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slide-left {
+  -webkit-animation-name: slide-left;
+  -moz-animation-name: slide-left;
+  animation-name: slide-left;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+  50% {
+    -webkit-transform: translateX(-8%);
+  }
+  65% {
+    -webkit-transform: translateX(4%);
+  }
+  80% {
+    -webkit-transform: translateX(-4%);
+  }
+  95% {
+    -webkit-transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-moz-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+  50% {
+    -webkit-transform: translateX(-8%);
+    -moz-transform: translateX(-8%);
+    transform: translateX(-8%);
+  }
+  65% {
+    -webkit-transform: translateX(4%);
+    -moz-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+  80% {
+    -webkit-transform: translateX(-4%);
+    -moz-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  95% {
+    -webkit-transform: translateX(2%);
+    -moz-transform: translateX(2%);
+    transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+  50% {
+    -webkit-transform: translateX(-8%);
+    -moz-transform: translateX(-8%);
+    transform: translateX(-8%);
+  }
+  65% {
+    -webkit-transform: translateX(4%);
+    -moz-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+  80% {
+    -webkit-transform: translateX(-4%);
+    -moz-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  95% {
+    -webkit-transform: translateX(2%);
+    -moz-transform: translateX(2%);
+    transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}

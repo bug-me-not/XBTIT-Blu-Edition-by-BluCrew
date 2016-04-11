@@ -1,0 +1,169 @@
+General
+
+Complete name :private/rtorrent/data/L.A.Confidential.1997.MULTi.1080p.BluRay.x264.TrueHD.AC3-DIY-FoRM-GR.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 14.3 GiB
+Duration : 2h 17mn
+Overall bit rate mode : Variable
+Overall bit rate : 14.8 Mbps
+Encoded date : UTC 2014-09-13 19:02:25
+Writing application : mkvmerge v6.9.1 ('Blue Panther') 64bit built on Apr 18 2014 16:44:49
+Writing library : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 5 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 17mn
+Nominal bit rate : 11.1 Mbps
+Width : 1 920 pixels
+Height : 800 pixels
+Display aspect ratio : 2.40:1
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.302
+Writing library : x264 core 120 r2164 da19765
+Encoding settings : cabac=1 / ref=5 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=64 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=6 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=10 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=240 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=240 / rc=2pass / mbtree=1 / bitrate=11125 / ratetol=1.0 / qcomp=0.65 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / vbv_maxrate=38000 / vbv_bufsize=30000 / nal_hrd=none / ip_ratio=1.40 / aq=2:1.10
+Language : English
+Default : Yes
+Forced : No
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 17mn
+Bit rate mode : Constant
+Bit rate : 640 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Delay relative to video : 16ms
+Stream size : 631 MiB (4%)
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : TrueHD
+Codec ID : A_TRUEHD
+Duration : 2h 17mn
+Bit rate mode : Variable
+Maximum bit rate : 2 871 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Compression mode : Lossless
+Title : VO TrueHD
+Language : English
+Default : No
+Forced : No
+
+Audio #3
+ID : 4
+Format : DTS
+Format/Info : Digital Theater Systems
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 2h 17mn
+Bit rate mode : Constant
+Bit rate : 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 1.45 GiB (10%)
+Title : VO DTS
+Language : English
+Default : No
+Forced : No
+
+Text #1
+ID : 5
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : FR forcés
+Language : French
+Default : Yes
+Forced : Yes
+
+Text #2
+ID : 6
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : FR complets
+Language : French
+Default : No
+Forced : No
+
+Text #3
+ID : 7
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Language : French
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:01. Come to L.A.
+00:02:47.376 : en:02. Meet Bud White
+00:04:55.170 : en:03. Meet the Big V
+00:06:25.885 : en:04. Meet Ed Exley
+00:08:40.186 : en:05. Mystery Woman
+00:11:36.279 : en:06. Premiere Pot Bust!
+00:13:09.038 : en:07. Bloody Christmas
+00:17:16.202 : en:08. Will You Testify?
+00:22:40.359 : en:09. A Muscle Job
+00:24:29.635 : en:10. Hit the Road to Dreamland
+00:26:38.722 : en:11. Stens' Last Day
+00:30:04.052 : en:12. Nite Owl Massacre
+00:37:28.663 : en:13. Whatever You Desire
+00:41:07.924 : en:14. Lake Look-Alike
+00:46:01.717 : en:15. Maroon Merc.
+00:49:45.524 : en:16. Interrogation
+00:56:10.117 : en:17. Justice for Inez
+01:00:03.058 : en:18. Shotgun Ed
+01:02:14.230 : en:19. Wheel of Fortune
+01:05:49.863 : en:20. Lynn's Bedroom
+01:07:47.730 : en:21. Showbiz
+01:12:32.265 : en:22. Jack's Discovery
+01:15:33.612 : en:23. A Real Detective
+01:18:18.193 : en:24. Mrs. Lefferts
+01:23:11.236 : en:25. Rollo Tomasi
+01:26:56.169 : en:26. Muscle for Hire
+01:29:11.930 : en:27. Fleur de Lis Again
+01:30:43.897 : en:28. Johnny and "Lana"
+01:31:54.092 : en:29. "I See Bud"
+01:36:39.377 : en:30. Jack's Valediction
+01:40:52.213 : en:31. Hush-Hush
+01:45:53.472 : en:32. Working Together
+01:51:33.395 : en:33. Good Cop/Bad Cop
+01:54:40.999 : en:34. Tying Up Loose Ends
+01:57:42.305 : en:35. Victory Motel
+02:00:29.848 : en:36. Shootout
+02:03:38.578 : en:37. The Politician
+02:07:00.530 : en:38. The Truth
+02:10:02.253 : en:39. Goodbye
+02:13:03.517 : en:40. End Credits
+

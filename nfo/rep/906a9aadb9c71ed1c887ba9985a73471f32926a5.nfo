@@ -1,0 +1,62 @@
+DISC INFO:
+    
+Disc Size:      46,684,602,465 bytes
+Protection:     AACS
+BD-Java:        Yes
+D-BOX Motion:   Yes
+BDInfo:         0.5.3
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:43:35 (h:m:s)
+Size:                   30,854,768,640 bytes
+Total Bitrate:          39,71 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        26604 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+MPEG-4 AVC Video        2003 kbps           480p / 23,976 fps / 16:9 / High Profile 3.2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         4033 kbps       5.1 / 48 kHz / 4033 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Ukrainian       448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         60,605 kbps                    
+Presentation Graphics           English         0,643 kbps                      
+Presentation Graphics           English         78,135 kbps                    
+Presentation Graphics           English         288,709 kbps                    
+Presentation Graphics           Danish          33,475 kbps                    
+Presentation Graphics           Danish          68,137 kbps                    
+Presentation Graphics           Dutch           32,000 kbps                    
+Presentation Graphics           Dutch           62,055 kbps                    
+Presentation Graphics           Estonian        33,039 kbps                    
+Presentation Graphics           Finnish         31,572 kbps                    
+Presentation Graphics           Finnish         62,185 kbps                    
+Presentation Graphics           French          34,330 kbps                    
+Presentation Graphics           French          62,776 kbps                    
+Presentation Graphics           Italian         32,678 kbps                    
+Presentation Graphics           Italian         65,331 kbps                    
+Presentation Graphics           Latvian         32,040 kbps                    
+Presentation Graphics           Lithuanian      34,560 kbps                    
+Presentation Graphics           Norwegian       32,362 kbps                    
+Presentation Graphics           Norwegian       63,256 kbps                    
+Presentation Graphics           Russian         36,184 kbps                    
+Presentation Graphics           Russian         73,693 kbps                    
+Presentation Graphics           Swedish         31,497 kbps                    
+Presentation Graphics           Swedish         61,021 kbps                    
+Presentation Graphics           Ukrainian       37,029 kbps     

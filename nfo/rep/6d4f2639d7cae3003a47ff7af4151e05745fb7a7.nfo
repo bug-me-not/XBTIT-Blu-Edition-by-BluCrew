@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     50 First Dates 2004 BD50/MPEG2 1080p LPCM
+Disc Size:      20 336 159 590 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00038.MPLS
+Length:                 1:39:03.938 (h:m:s.ms)
+Size:                   18 776 408 064 bytes
+Total Bitrate:          25,27 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            17043 kbps              1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -8dB
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -5dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         64,014 kbps                      
+Presentation Graphics           English         48,349 kbps                      
+Presentation Graphics           French          50,164 kbps                      
+Presentation Graphics           Dutch           51,750 kbps                      
+Presentation Graphics           Arabic          31,019 kbps                      
+Presentation Graphics           Greek           59,318 kbps                      
+Presentation Graphics           Hebrew          47,159 kbps                      
+Presentation Graphics           Hindi           52,147 kbps                      
+Presentation Graphics           Turkish         61,704 kbps                      
+Presentation Graphics           English         109,963 kbps                      
+Presentation Graphics           French          89,227 kbps

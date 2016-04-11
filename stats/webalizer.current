@@ -1,0 +1,1473 @@
+# Webalizer V2.23-05 Incremental Data - 04/09/2016 23:59:59
+2016 4 9 23 59 59
+56913 35066 31 575 18 23 100437913 30276 116 0 0 0
+10 1727 2382 1 9
+3012 2254 6401727 2 1839 8 0 0
+667 581 1754875 3 380 4 0 0
+4879 2183 14377407 7 1336 21 0 0
+2887 2232 7462157 9 1644 16 0 0
+818 817 639607 1 809 2 0 0
+7600 4049 11593208 5 3392 10 0 0
+16594 10970 25035555 8 9923 21 0 0
+12151 6893 18097517 7 6155 20 0 0
+8305 5087 15075860 10 4798 17 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+2968 1876 4020396 1653 0 0
+3532 2013 3965606 1895 0 0
+2710 1944 2818734 1811 0 0
+3483 1740 9059820 1309 0 0
+1793 1423 2299932 1312 0 0
+652 564 2271418 337 0 0
+0 0 0 0 0 0
+3 3 1704 3 0 0
+1 1 4144 1 0 0
+6 5 11213 5 0 0
+95 93 838131 8 0 0
+1266 1031 1717816 959 0 0
+616 604 404337 604 0 0
+914 858 1648712 838 0 0
+2812 1929 5206610 1630 0 0
+3756 2515 7063413 2107 0 0
+5149 3203 14409605 2585 0 0
+2000 1271 2360135 1124 0 0
+2690 1338 3830484 1197 0 0
+3638 1795 4790383 1537 0 0
+4489 2823 10667419 2437 0 0
+5727 3521 11535448 2819 0 0
+3618 1941 3971996 1863 0 0
+4995 2575 7540457 2242 0 0
+0
+0
+0
+35066
+0
+0
+0
+0
+0
+0
+0
+0
+96
+0
+21556
+0
+0
+0
+0
+0
+0
+173
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+22
+0
+0
+0
+0
+0
+# -urls- 
+/images/default_fanart.png
+1 76 0 2806839 0 0 0 0
+/imdb/images/1791682.jpg
+1 2 0 35086 0 0 0 0
+/chat/img/mod.png
+1 4 0 73020 0 0 0 0
+/style/DC_Blues/images/main-t.png
+1 1 0 1296 0 0 0 0
+/chat/css/Cobalt.css
+0 220 0 76360 0 0 0 0
+/torrentimg/aa6e16d4de5bcca7a9c5d2441688cb375ea63289.jpg
+1 3 0 8299639 0 0 0 0
+/css/bootstrap/bootstrap.css.map
+0 6 0 152578 0 0 0 0
+/chat/css/MyBB.css
+0 217 0 72549 0 0 0 0
+/style/BluRG_Tron/main.css
+0 2 0 15868 0 0 0 0
+/imdb/images/3195644.jpg
+1 2 0 31068 0 0 0 0
+/images/bbcode/bbcode_italic.gif
+1 1 0 1134 0 0 0 0
+/jscript/jquery.lightbox.js
+0 10 0 29019 0 0 0 0
+/style/Splatter/images/pm.png
+1 1 0 2209 0 0 0 0
+/images/smilies/wink.gif
+1 40 0 14905 0 0 0 0
+/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js
+0 2 0 3429 0 0 0 0
+/style/Splatter/images/delete.png
+1 17 0 58165 0 0 0 0
+/imdb/images/0026138.jpg
+1 5 0 140771 0 0 0 0
+/images/3x.gif
+1 19 0 80463 0 0 0 0
+/images/smilies/hbd.gif
+1 1 0 2674 0 0 0 0
+/style/BluRG_Tron/images/block-top.png
+1 1 0 541 0 0 0 0
+/style/xbtit_default/images/categories/1080p.png
+1 21 0 81166 0 0 0 0
+/imdb/images/0295700.jpg
+1 2 0 37790 0 0 0 0
+/chat/css/print.css
+0 221 0 69917 0 0 0 0
+/chat/css/Oxygen.css
+0 221 0 75895 0 0 0 0
+/style/xbtit_default/images/main-l.png
+1 1 0 434 0 0 0 0
+/style/xbtit_default/js/bootstrap.min.js
+0 7 0 21427 0 0 0 0
+/style/xbtit_default/images/grunge.png
+1 1 0 40834 0 0 0 0
+/style/xbtit_default/images/main-b.png
+1 1 0 1296 0 0 0 0
+/imdb/images/0087469.jpg
+1 2 0 47367 0 0 0 0
+/style/Splatter/images/main-corners.png
+1 62 0 16339 0 0 0 0
+/style/DC_Blues/images/main-l.png
+1 1 0 434 0 0 0 0
+/css/faq_rules.css
+0 4 0 4366 0 0 0 0
+/style/xbtit_default/images/categories/HDTV 1080p.png
+1 1 0 10648 0 0 0 0
+/font-awesome-4.5-2.0/css/font-awesome.css
+0 1 0 6994 0 0 0 0
+/images/gold.gif
+1 85 0 689183 0 0 0 0
+/images/ajax-loader.gif
+1 89 0 59652 0 0 0 0
+/images/mod/ok.png
+1 30 0 34113 0 0 0 0
+/style/BluRG_Tron/images/categories/BD RemuX.png
+1 1 0 11370 0 0 0 0
+/chat/img/emoticons/wink.gif
+1 24 0 23606 0 0 0 0
+/style/xbtit_default/images/error.gif
+1 1 0 1749 0 0 0 0
+/jscript/faq_rules.js
+0 4 0 3515 0 0 0 0
+/assets/plugins/bootstrap-multiselect-master/js/prettify.js
+0 2 0 6655 0 0 0 0
+/style/xbtit_default/images/main-shadow.png
+1 1 0 1364 0 0 0 0
+/assets/plugins/iCheck-master/skins/flat/red.png
+1 3 0 2249 0 0 0 0
+/style/BluRG_Tron/images/open.png
+1 1 0 1444 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Inter. 720p.png
+1 1 0 11678 0 0 0 0
+/images/watch.png
+1 12 0 4182 0 0 0 0
+/chat/img/emoticons/ras.gif
+1 29 0 41954 0 0 0 0
+/images/100coin.png
+1 10 0 47180 0 0 0 0
+/chat/img/emoticons/yawn.gif
+1 24 0 45474 0 0 0 0
+/style/BluRG_Light_v3/main.css
+0 2 0 12388 0 0 0 0
+/assets/plugins/iCheck-master/js/icheck.js
+0 181 0 69866 0 0 0 0
+/style/DC_Blues/images/navigation-active.png
+1 1 0 585 0 0 0 0
+/images/smilies/laugh.gif
+1 40 0 16012 0 0 0 0
+/imdb/imgs/showtimes/80.gif
+1 21 0 442683 0 0 0 0
+/assets/plugins/bootstrap-switch/css/bootstrap-switch.css
+0 4 0 3599 0 0 0 0
+/style/BluRG_Tron/images/bkg.jpg
+1 2 0 354480 0 0 0 0
+/chat/img/emoticons/shifty.gif
+1 25 0 28134 0 0 0 0
+/imdb/images/0230600.jpg
+1 10 0 119640 0 0 0 0
+/imdb/images/2358925.jpg
+1 2 0 54606 0 0 0 0
+/images/smilies/cry.gif
+1 40 0 20720 0 0 0 0
+/imdb/images/0311113.jpg
+1 11 0 155393 0 0 0 0
+/images/smilies/smile1.gif
+1 42 0 16040 0 0 0 0
+/style/xbtit_default/images/fm-logo.png
+1 1 0 164422 0 0 0 0
+/style/Splatter/images/categories/HEVC x265.png
+1 12 0 90292 0 0 0 0
+/images/smilies/ohmy.gif
+1 40 0 14824 0 0 0 0
+/chat/css/global.css
+0 221 0 83993 0 0 0 0
+/img/bg_tile.jpg
+1 10 0 17382 0 0 0 0
+/style/Splatter/images/categories/Inter. BD-50.png
+1 120 0 243301 0 0 0 0
+/imdb/images/0320691.jpg
+1 1 0 15572 0 0 0 0
+/ajax-poller-cast-vote-php.php
+0 155 0 102344 3 1 0 0
+/announcements.php
+0 3 0 8528 0 0 0 0
+/assets/plugins/morris/morris.min.js
+0 4 0 11072 0 0 0 0
+/chat/img/settings.png
+1 215 0 71940 0 0 0 0
+/style/BluRG_Tron/images/main-delimiter.gif
+1 1 0 471 0 0 0 0
+/imdb/images/0120903.jpg
+1 9 0 117738 0 0 0 0
+/style/BluRG_Tron/images/categories/BD-25.png
+1 1 0 10746 0 0 0 0
+/assets/plugins/knob/jquery.knob.js
+0 4 0 7079 0 0 0 0
+/style/Splatter/images/box1-bg.png
+1 28 0 11173 0 0 0 0
+/style/Splatter/images/categories/BD 3D.png
+1 67 0 288459 0 0 0 0
+/assets/plugins/bootstrap-daterangepicker-master/js/moment.min.js
+0 2 0 11587 0 0 0 0
+/imdb/images/2379713.jpg
+1 2 0 4387 0 0 0 0
+/images/refresh.gif
+1 8 0 3023 0 0 0 0
+/style/Splatter/images/categories/BD RemuX.png
+1 65 0 224678 0 0 0 0
+/style/xbtit_default/images/categories/Inter. 720p.png
+1 8 0 47461 0 0 0 0
+/images/load.gif
+1 2 0 7760 0 0 0 0
+/images/slider/nav_active.gif
+1 77 0 40863 0 0 0 0
+/images/flag/ae.png
+1 1 0 5517 0 0 0 0
+/images/private2.png
+1 1 0 1141 0 0 0 0
+/chat/img/emoticons/blush.gif
+1 27 0 21349 0 0 0 0
+/jscript/countdown.js
+0 8 0 15310 0 0 0 0
+/style/DC_Blues/images/open.png
+1 1 0 1438 0 0 0 0
+/images/flag/rs.png
+1 1 0 4011 0 0 0 0
+/avatar/avatar_327fe6b1f079_128.png
+1 2 0 11143 0 0 0 0
+/chat/js/chat.js
+0 221 0 567252 0 0 0 0
+/style/xbtit_default/images/main-overlay.png
+1 1 0 3500 0 0 0 0
+/access_code/2c37a4.png
+1 1 0 5260 0 0 0 0
+/style/xbtit_default/images/open.png
+1 1 0 1436 0 0 0 0
+/assets/plugins/bootstrap-daterangepicker-master/css/daterangepicker-bs3.css
+0 4 0 2414 0 0 0 0
+/img/click_here.png
+1 10 0 29882 0 0 0 0
+/style/Splatter/images/categories/Intern 1080p.png
+1 14 0 129407 0 0 0 0
+/imdb/images/1798684.jpg
+1 2 0 37852 0 0 0 0
+/images/mod/bad.png
+1 1 0 3974 0 0 0 0
+/img/bg_center.jpg
+1 10 0 291500 0 0 0 0
+/games.php
+0 2 0 680 0 1 0 0
+/chat/css/prosilver.css
+0 225 0 90149 0 0 0 0
+/images/500coin.png
+1 8 0 28360 0 0 0 0
+/imdb/imgs/showtimes/30.gif
+1 17 0 383433 0 0 0 0
+/font-awesome-4.5-2.0/fonts/fontawesome-webfont.woff2
+0 28 0 472689 0 0 0 0
+/chat/img/emoticons/laugh.gif
+1 27 0 29675 0 0 0 0
+/images/bbcode/bbcode_bold.gif
+1 1 0 1168 0 0 0 0
+/css/torrent_activity_legend.css
+0 10 0 14650 0 0 0 0
+/chat/css/Lithium.css
+0 218 0 71933 0 0 0 0
+/jscript/sliderman.1.3.7.js
+0 79 0 196852 0 0 0 0
+/images/download_release.png
+1 79 0 208196 0 0 0 0
+/images/flag/ni.png
+1 9 0 7698 0 0 0 0
+/style/Splatter/images/chr.gif
+1 9 0 16804 0 0 0 0
+/access_code/2bc60b.png
+1 1 0 5219 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BD 3D.png
+1 2 0 26652 0 0 0 0
+/style/Splatter/images/error.gif
+1 9 0 14180 0 0 0 0
+/chat/img/emoticons/ninja.gif
+1 27 0 20250 0 0 0 0
+/images/plus-min.gif
+1 3 0 2267 0 0 0 0
+/style/xbtit_default/images/categories/Inter. MP.png
+1 9 0 47602 0 0 0 0
+/style/Splatter/images/categories/720p.png
+1 60 0 220551 0 0 0 0
+/style/Splatter/images/categories/HDTV BD-50.png
+1 12 0 93399 0 0 0 0
+/images/flag/gb.png
+1 1 0 8212 0 0 0 0
+/images/minus.png
+1 12 0 2568 0 0 0 0
+/assets/plugins/fuelux/js/fuelux.min.js
+0 2 0 22061 0 0 0 0
+/images/close.jpg
+1 2 0 2584 0 0 0 0
+/images/20coin.png
+1 8 0 28393 0 0 0 0
+/style/DC_Blues/images/main-r.png
+1 1 0 431 0 0 0 0
+/imdb/images/0190332.jpg
+1 11 0 200048 0 0 0 0
+/ajaxstarrater/images/starrating.gif
+1 3 0 4476 0 0 0 0
+/torrentimg/nocover.jpg
+1 13 0 62925 0 0 0 0
+/images/plus.png
+1 12 0 2596 0 0 0 0
+/style/Splatter/images/unlocked.png
+1 2 0 6708 0 0 0 0
+/style/DC_Blues/images/categories/1080p.png
+1 1 0 11219 0 0 0 0
+/style/Splatter/images/shadow2.png
+1 63 0 72521 0 0 0 0
+/imdb/images/0439815.jpg
+1 2 0 24591 0 0 0 0
+/style/xbtit_default/images/categories/1080p 3D.png
+1 8 0 54461 0 0 0 0
+/chat/img/emoticons/grin.gif
+1 28 0 27362 0 0 0 0
+/font-awesome-4.5-2.0/fonts/fontawesome-webfont.woff
+0 55 0 1937197 0 0 0 0
+/imdb/images/1661199.jpg
+1 2 0 30330 0 0 0 0
+/style/Splatter/main.css
+0 262 0 274796 0 0 0 0
+/style/Splatter/images/categories/Inter. 720p.png
+1 12 0 94172 0 0 0 0
+/images/flag/gr.png
+1 1 0 7917 0 0 0 0
+/images/comm.png
+1 9 0 125676 0 0 0 0
+/jscript/imdb.js
+0 7 0 61325 0 0 0 0
+/chat/img/emoticons/blink.gif
+1 28 0 37970 0 0 0 0
+/imdb/images/0075148.jpg
+1 10 0 131528 0 0 0 0
+/torrentbar.php
+0 8 0 78737 0 0 0 0
+/thanks.php
+0 21 0 15416 0 0 0 0
+/style/Splatter/images/small_shadow.png
+1 24 0 38267 0 0 0 0
+/assets/plugins/fuelux/css/fuelux.min.css
+0 4 0 6897 0 0 0 0
+/style/DC_Blues/images/dc_logo.png
+1 1 0 253185 0 0 0 0
+/chat/js/custom.js
+0 218 0 61431 0 0 0 0
+/imdb/images/0094291.jpg
+1 9 0 111417 0 0 0 0
+/style/xbtit_default/images/edit.png
+1 28 0 16586 0 0 0 0
+/assets/plugins/iCheck-master/skins/flat/red@2x.png
+1 1 0 3634 0 0 0 0
+/style/Splatter/images/navigation-active.png
+1 59 0 17358 0 0 0 0
+/access_code/fda198.png
+1 1 0 4859 0 0 0 0
+/style/Splatter/images/f_edit.png
+1 1 0 6635 0 0 0 0
+/imdb/images/2771372.jpg
+1 2 0 35219 0 0 0 0
+/imdb/images/2616810.jpg
+1 2 0 25370 0 0 0 0
+/assets/js/demo.js
+0 4 0 3670 0 0 0 0
+/css/jquery.lightbox.css
+0 10 0 7545 0 0 0 0
+/chat/img/emoticons/w00t.gif
+1 27 0 35399 0 0 0 0
+/css/bootstrap/bootstrap.css
+0 10 0 63735 0 0 0 0
+/style/Splatter/images/categories/Inter. RemuX.png
+1 39 0 87567 0 0 0 0
+/chat/
+0 27983 0 26548547 29 53 0 0
+/imdb/images/1197624.jpg
+1 9 0 139529 0 0 0 0
+/imdb/images/2510894.jpg
+1 2 0 44535 0 0 0 0
+/assets/plugins/iCheck-master/skins/square/_all.css
+0 288 0 87492 0 0 0 0
+/style/DC_Blues/images/main-b.png
+1 1 0 1296 0 0 0 0
+/css/login.css
+0 1 0 2146 0 0 0 0
+/imdb/images/0432021.jpg
+1 2 0 36682 0 0 0 0
+/style/xbtit_default/images/categories/FLAC OST.png
+1 8 0 40233 0 0 0 0
+/assets/plugins/Nestable-master/js/jquery.nestable.js
+0 2 0 4646 0 0 0 0
+/style/Splatter/images/chg.gif
+1 1 0 2347 0 0 0 0
+/style/xbtit_default/images/categories/Intern 1080p.png
+1 4 0 35327 0 0 0 0
+/jscript/script.js
+0 12 0 13818 0 0 0 0
+/style/Splatter/images/title4-bg.png
+1 59 0 27753 0 0 0 0
+/assets/plugins/alertify/css/alertify.core.css
+0 4 0 1969 0 0 0 0
+/images/smilies/sleep.gif
+1 40 0 14923 0 0 0 0
+/images/flag/dk.png
+1 1 0 6390 0 0 0 0
+/images/smilies/noexpression.gif
+1 40 0 15157 0 0 0 0
+/access_code/97e3e9.png
+1 1 0 5304 0 0 0 0
+/images/200coin.png
+1 10 0 49195 0 0 0 0
+/images/smilies/grin.gif
+1 41 0 13111 0 0 0 0
+/images/smilies/thumbsup.gif
+1 34 0 16751 0 0 0 0
+/style/DC_Blues/images/main-m.png
+1 1 0 433 0 0 0 0
+/assets/plugins/iCheck-master/skins/all.css
+0 381 0 91400 0 0 0 0
+/imdb/images/0241527.jpg
+1 2 0 53720 0 0 0 0
+/imdb/images/0108399.jpg
+1 6 0 139581 0 0 0 0
+/assets/plugins/daterangepicker/daterangepicker-bs3.css
+0 4 0 2529 0 0 0 0
+/jscript/ajax.js
+0 438 0 154126 0 0 0 0
+/chat/img/help.png
+1 216 0 78643 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Inter. RemuX.png
+1 1 0 11651 0 0 0 0
+/style/xbtit_default/images/categories/Inter. BD-50.png
+1 25 0 81961 0 0 0 0
+/favicon.ico
+0 33 0 510218 0 0 0 0
+/imdb/images/3346224.jpg
+1 2 0 35750 0 0 0 0
+/modules/video_player/src/video-js.css
+0 2 0 14299 0 0 0 0
+/imdb/images/0117571.jpg
+1 1 0 16846 0 0 0 0
+/css/hover.css
+0 439 0 362281 0 0 0 0
+/images/flag/us.png
+1 24 0 54802 0 0 0 0
+/images/icons/iso.png
+1 1 0 1404 0 0 0 0
+/assets/plugins/iCheck-master/skins/minimal/_all.css
+0 289 0 86196 0 0 0 0
+/style/BluRG_Light_v3/images/chr.gif
+1 1 0 510 0 0 0 0
+/chat/img/emoticons/hmm.gif
+1 27 0 26774 0 0 0 0
+/chat/img/emoticons/zorro.gif
+1 25 0 24409 0 0 0 0
+/style/xbtit_default/css/modern.css
+0 8 0 10181 0 0 0 0
+/images/vote_button.gif
+1 81 0 23051 0 0 0 0
+/images/flag/unknown.gif
+1 1 0 13962 0 0 0 0
+/style/BluRG_Light_v3/images/btlogo.png
+1 2 0 227318 0 0 0 0
+/style/xbtit_default/images/shadow2.png
+1 1 0 3224 0 0 0 0
+/style/xbtit_default/images/small_shadow.png
+1 1 0 2174 0 0 0 0
+/imdb/images/1051904.jpg
+1 2 0 55134 0 0 0 0
+/imdb/images/2820852.jpg
+1 2 0 43237 0 0 0 0
+/images/default_avatar.gif
+1 1 0 12441 0 0 0 0
+/images/bronze.gif
+1 20 0 494781 0 0 0 0
+/jscript/announcement.js
+0 4 0 4068 0 0 0 0
+/style/xbtit_default/images/categories/720p.png
+1 9 0 45750 0 0 0 0
+/imdb/images/0765010.jpg
+1 10 0 93464 0 0 0 0
+/style/xbtit_default/images/categories/HEVC x265.png
+1 8 0 45521 0 0 0 0
+/assets/plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css
+0 4 0 2708 0 0 0 0
+/img/login_form_bg.jpg
+1 10 0 163750 0 0 0 0
+/fanart/imdb/tt0266543/banners/finding-nemo-5243e82b3d2e3.jpg
+1 3 0 166785 0 0 0 0
+/images/poll_left.gif
+1 429 0 111928 0 0 0 0
+/access_code/d5782c.png
+1 1 0 5496 0 0 0 0
+/images/youtube.gif
+1 48 0 12638 0 0 0 0
+/style/Splatter/images/navigation-bg.png
+1 61 0 170516 0 0 0 0
+/style/DC_Blues/images/navigation-bg.png
+1 1 0 3156 0 0 0 0
+/style/xbtit_default/images/f_quote.png
+1 4 0 13645 0 0 0 0
+/imdb/images/2025526.jpg
+1 10 0 146112 0 0 0 0
+/style/Splatter/images/main-fill.png
+1 60 0 15461 0 0 0 0
+/images/donate.gif
+1 186 0 244607 0 0 0 0
+/imdb/imgs/showtimes/85.gif
+1 20 0 471744 0 0 0 0
+/images/casino.png
+1 1 0 19089 0 0 0 0
+/style/DC_Blues/images/title4-bg.png
+1 1 0 1232 0 0 0 0
+/chat/img/emoticons/innocent.gif
+1 24 0 19470 0 0 0 0
+/ajaxstarrater/js/rating.js
+0 8 0 6507 0 0 0 0
+/font-awesome-4.5-2.0/css/font-awesome.min.css
+0 436 0 298131 0 0 0 0
+/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css
+0 4 0 3522 0 0 0 0
+/images/fls_locked.png
+1 9 0 23116 0 0 0 0
+/style/Splatter/images/categories/Inter. 4K.png
+1 40 0 92493 0 0 0 0
+/access_code/bde913.png
+1 1 0 5239 0 0 0 0
+/chat/img/emoticons/wave.gif
+1 26 0 32510 0 0 0 0
+/chat/js/config.js
+0 218 0 119995 0 0 0 0
+/style/DC_Blues/main.css
+0 1 0 7074 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BD25Reencode.png
+1 1 0 11468 0 0 0 0
+/style/Splatter/images/main-m.png
+1 69 0 18022 0 0 0 0
+/images/recomend.jpg
+1 19 0 83777 0 0 0 0
+/assets/bootstrap/css/bootstrap.css.map
+0 63 0 1223812 0 0 0 0
+/css/global.css
+0 495 0 474241 0 0 0 0
+/assets/plugins/iCheck-master/skins/flat/_all.css
+0 288 0 85470 0 0 0 0
+/style/BluRG_Tron/images/categories/BD 3D.png
+1 1 0 13326 0 0 0 0
+/style/Splatter/images/categories/1080p 3D.png
+1 12 0 108170 0 0 0 0
+/style/Splatter/images/categories/FLAC OST.png
+1 12 0 79715 0 0 0 0
+/style/DC_Blues/images/main-corners.png
+1 1 0 439 0 0 0 0
+/assets/plugins/iCheck-master/skins/polaris/polaris.css
+0 289 0 72265 0 0 0 0
+/images/thumbs-up.gif
+1 8 0 8242 0 0 0 0
+/imdb/images/0290334.jpg
+1 10 0 164616 0 0 0 0
+/style/Splatter/images/categories/BD-50.png
+1 66 0 225952 0 0 0 0
+/style/Splatter/images/f_delete.png
+1 1 0 6635 0 0 0 0
+/style/Splatter/images/categories/XXX 3D.png
+1 11 0 88985 0 0 0 0
+/style/Splatter/images/main-l.png
+1 63 0 16658 0 0 0 0
+/style/Splatter/images/categories/Inter. BD-25.png
+1 65 0 219490 0 0 0 0
+/style/BluRG_Tron/images/categories/Inter. BD-50.png
+1 1 0 11225 0 0 0 0
+/assets/font-awesome/css/font-awesome.css
+0 188 0 133034 0 0 0 0
+/style/DC_Blues/images/categories/BD-25.png
+1 1 0 10746 0 0 0 0
+/style/DC_Blues/images/categories/BD 3D.png
+1 1 0 13326 0 0 0 0
+/imdb/images/0087800.jpg
+1 1 0 24528 0 0 0 0
+/imdb/images/0770828.jpg
+1 2 0 26301 0 0 0 0
+/chat/css/subblack2.css
+0 223 0 78440 0 0 0 0
+/images/repusr.gif
+1 12 0 6781 0 0 0 0
+/style/DC_Blues/images/shadow2.png
+1 1 0 3224 0 0 0 0
+/imdb/images/2726560.jpg
+1 2 0 34874 0 0 0 0
+/style/BluRG_Light_v3/images/categories/1080p.png
+1 2 0 22438 0 0 0 0
+/images/flag/sa.png
+1 1 0 5850 0 0 0 0
+/images/bbcode/bbcode_url.gif
+1 1 0 1138 0 0 0 0
+/assets/plugins/sparkline/jquery.sparkline.min.js
+0 4 0 14073 0 0 0 0
+/style/Splatter/images/categories/BD25Reencode.png
+1 22 0 173347 0 0 0 0
+/style/Splatter/images/edit.png
+1 12 0 48060 0 0 0 0
+/images/donor.gif
+1 427 0 337813 0 0 0 0
+/imdb/images/1798709.jpg
+1 2 0 28504 0 0 0 0
+/jscript/btit_functions.js
+0 1 0 1480 0 0 0 0
+/jscript/preview.js
+0 4 0 5432 0 0 0 0
+/access_code/886b80.png
+1 1 0 5557 0 0 0 0
+/imdb/images/0095016.jpg
+1 2 0 46105 0 0 0 0
+/style/xbtit_default/images/main-m.png
+1 1 0 433 0 0 0 0
+/imdb/images/2306299.jpg
+1 9 0 161614 0 0 0 0
+/style/BluRG_Tron/images/categories/1080p.png
+1 1 0 11219 0 0 0 0
+/style/BluRG_Tron/images/categories/BD-50.png
+1 1 0 10865 0 0 0 0
+/images/flag/tr.png
+1 1 0 5831 0 0 0 0
+/chat/css/Mercury.css
+0 222 0 82600 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BD RemuX.png
+1 2 0 22740 0 0 0 0
+/style/Splatter/images/splatter_logo.png
+1 59 0 1807519 0 0 0 0
+/jscript/animatedcollapse.js
+0 434 0 217562 0 0 0 0
+/style/BluRG_Tron/images/logo.png
+1 1 0 112303 0 0 0 0
+/images/thumbs-up-hover.gif
+1 3 0 2837 0 0 0 0
+/images/1000coin.png
+1 8 0 28837 0 0 0 0
+/jscript/TorrentName.js
+0 435 0 109980 0 0 0 0
+/jscript/overlib.js
+0 433 0 423461 0 0 0 0
+/images/booted.gif
+1 9 0 2757 0 0 0 0
+/torrentimg/1453ca785d5f346abfd98e1acc4abacada118d7d.jpg
+1 1 0 214658 0 0 0 0
+/imdb/imgs/showtimes/45.gif
+1 19 0 442307 0 0 0 0
+/assets/plugins/slider/css/slider.css
+0 4 0 2120 0 0 0 0
+/style/BluRG_Light_v3/images/sitenav.png
+1 2 0 1154 0 0 0 0
+/images/10coin.png
+1 8 0 27163 0 0 0 0
+/ann.php
+0 594 0 275746 3 24 0 0
+/assets/bootstrap/js/bootstrap.min.js
+0 96 0 63973 0 0 0 0
+/images/download.gif
+1 18 0 14149 0 0 0 0
+/addons/serverload/loadbargreen.gif
+1 423 0 85752 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Inter. MP.png
+1 1 0 11665 0 0 0 0
+/images/downloaded.gif
+1 17 0 12032 0 0 0 0
+/style/BluRG_Light_v3/images/bg.jpg
+1 2 0 1468 0 0 0 0
+/css/countdown.css
+0 8 0 3862 0 0 0 0
+/imdb/images/1104001.jpg
+1 2 0 15831 0 0 0 0
+/imdb/images/1964418.jpg
+1 2 0 44804 0 0 0 0
+/images/warned/warn_1.png
+1 1 0 3644 0 0 0 0
+/style/Splatter/images/main-b.png
+1 60 0 30073 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Intern 1080p.png
+1 1 0 11713 0 0 0 0
+/style/BluRG_Light_v3/images/categories/720p.png
+1 1 0 11202 0 0 0 0
+/access_code/f0ecc2.png
+1 1 0 5698 0 0 0 0
+/assets/plugins/morris/morris.css
+0 4 0 1282 0 0 0 0
+/chat/css/plum_images/plum2.png
+1 1 0 9532 0 0 0 0
+/images/poll_right.gif
+1 427 0 109487 0 0 0 0
+/style/BluRG_Light_v3/images/categories/HEVC x265.png
+1 1 0 11192 0 0 0 0
+/imdb/images/0000142.jpg
+1 3 0 223868 0 0 0 0
+/chat/img/emoticons/whistle.gif
+1 26 0 38510 0 0 0 0
+/images/lock.gif
+1 5 0 13272 0 0 0 0
+/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css
+0 4 0 1388 0 0 0 0
+/style/Splatter/images/main-shadow.png
+1 62 0 64909 0 0 0 0
+/style/xbtit_default/images/categories/BluRG-FANRES.png
+1 8 0 47978 0 0 0 0
+/assets/plugins/bootstrap-multiselect-master/css/prettify.css
+0 4 0 1423 0 0 0 0
+/style/xbtit_default/images/categories/BD RemuX.png
+1 21 0 82222 0 0 0 0
+/style/DC_Blues/images/close.png
+1 1 0 1394 0 0 0 0
+/images/flag/ch.png
+1 1 0 5990 0 0 0 0
+/style/Splatter/images/close.png
+1 173 0 52938 0 0 0 0
+/style/DC_Blues/images/categories/Inter. BD-25.png
+1 1 0 11097 0 0 0 0
+/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+0 4 0 57761 0 0 0 0
+/imdb/images/0325710.jpg
+1 10 0 189344 0 0 0 0
+/style/xbtit_default/images/close.png
+1 1 0 1398 0 0 0 0
+/images/friendship.gif
+1 1 0 619 0 0 0 0
+/css/jquery-ui.min.css
+0 12 0 78833 0 0 0 0
+/images/warned/warn_0.png
+1 240 0 134347 0 0 0 0
+/style/Splatter/images/chb.gif
+1 2 0 4633 0 0 0 0
+/assets/plugins/datepicker/datepicker3.css
+0 4 0 4033 0 0 0 0
+/images/50coin.png
+1 9 0 38044 0 0 0 0
+/assets/plugins/jQuery/jQuery-2.1.4.min.js
+0 4 0 30589 0 0 0 0
+/modules/video_player/src/video.js
+0 2 0 43353 0 0 0 0
+/avatar/Skull-Bandit-PV320-300x300.png
+1 1 0 43014 0 0 0 0
+/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js
+0 4 0 51609 0 0 0 0
+/assets/plugins/bootstrap-multiselect-master/css/bootstrap-multiselect.css
+0 4 0 1382 0 0 0 0
+/style/xbtit_default/images/main-r.png
+1 1 0 431 0 0 0 0
+/imdb/images/3235888.jpg
+1 2 0 18686 0 0 0 0
+/style/Splatter/images/categories/BD-25.png
+1 67 0 234316 0 0 0 0
+/style/xbtit_default/images/categories/BD-50.png
+1 21 0 78690 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BD-50.png
+1 2 0 21731 0 0 0 0
+/imdb/images/0120660.jpg
+1 9 0 168201 0 0 0 0
+/assets/plugins/slimScroll/jquery.slimscroll.min.js
+0 4 0 3114 0 0 0 0
+/images/myspace.gif
+1 11 0 6585 0 0 0 0
+/style/BluRG_Tron/images/close.png
+1 1 0 1398 0 0 0 0
+/assets/js/app.min.js
+0 4 0 3959 0 0 0 0
+/imdb/images/2503944.jpg
+1 2 0 41551 0 0 0 0
+/imdb/images/0117951.jpg
+1 10 0 167416 0 0 0 0
+/chat/img/emoticons/confused.gif
+1 24 0 18655 0 0 0 0
+/style/BluRG_Light_v3/images/error.gif
+1 1 0 1749 0 0 0 0
+/style/xbtit_default/images/delete.png
+1 29 0 19193 0 0 0 0
+/images/req.gif
+1 20 0 8396 0 0 0 0
+/style/xbtit_default/main.css
+0 1 0 7849 0 0 0 0
+/images/loading.gif
+1 8 0 73300 0 0 0 0
+/images/slider/left.gif
+1 82 0 52135 0 0 0 0
+/imdb/images/2091478.jpg
+1 2 0 36960 0 0 0 0
+/chat/img/emoticons/blum.gif
+1 26 0 32366 0 0 0 0
+/style/xbtit_default/font-awesome/css/font-awesome.min.css
+0 11 0 12803 0 0 0 0
+/assets/css/AdminLTE.min.css
+0 4 0 15579 0 0 0 0
+/images/slider/right.gif
+1 81 0 50499 0 0 0 0
+/style/Splatter/images/categories/1080p.png
+1 68 0 255466 0 0 0 0
+/css/SideNav.css
+0 455 0 140149 0 0 0 0
+/style/xbtit_default/images/pm.png
+1 12 0 4266 0 0 0 0
+/chat/img/emoticons/popcorn2.gif
+1 29 0 280473 0 0 0 0
+/imdb/images/3638012.jpg
+1 2 0 44060 0 0 0 0
+/imdb/images/2918436.jpg
+1 2 0 26374 0 0 0 0
+/images/smilies/confused.gif
+1 40 0 12944 0 0 0 0
+/images/flag/no.png
+1 1 0 5914 0 0 0 0
+/style/xbtit_default/images/categories/BD25Reencode.png
+1 9 0 46815 0 0 0 0
+/addons/serverload/loadbarbg.gif
+1 422 0 85306 0 0 0 0
+/style/xbtit_default/images/main-t.png
+1 1 0 1297 0 0 0 0
+/chat/css/beige.css
+0 218 0 71700 0 0 0 0
+/assets/css/modern.css
+0 3 0 8765 0 0 0 0
+/assets/bootstrap/css/bootstrap.css
+0 339 0 976363 0 0 0 0
+/images/bbcode/bbcode_image.gif
+1 1 0 1101 0 0 0 0
+/images/bbcode/bbcode_underline.gif
+1 1 0 1169 0 0 0 0
+/suggest.php
+0 1 0 1034 0 0 0 0
+/images/silver.gif
+1 21 0 543664 0 0 0 0
+/chat/css/subSilver.css
+0 218 0 72108 0 0 0 0
+/access_code/40ba48.png
+1 1 0 5740 0 0 0 0
+/img/recover_form_bg.jpg
+1 10 0 291323 0 0 0 0
+/style/xbtit_default/font-awesome/fonts/fontawesome-webfont.woff
+0 1 0 65826 0 0 0 0
+/images/smilies/cool2.gif
+1 40 0 13015 0 0 0 0
+/getimdb.php
+0 18 0 19301 0 0 0 0
+/style/DC_Blues/images/categories/BD RemuX.png
+1 1 0 11370 0 0 0 0
+/images/user_images/admin.png
+1 7 0 4682 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BD-25.png
+1 2 0 21492 0 0 0 0
+/chat/img/loading-sprite.png
+1 216 0 169755 0 0 0 0
+/style/xbtit_default/css/bootstrap.css
+0 11 0 45484 0 0 0 0
+/style/Splatter/images/unlockednew.png
+1 2 0 5757 0 0 0 0
+/style/xbtit_default/images/main-corners.png
+1 1 0 440 0 0 0 0
+/chat/img/emoticons/unsure.gif
+1 29 0 28886 0 0 0 0
+/images/flag/nl.png
+1 1 0 6401 0 0 0 0
+/images/warned/warn_max.png
+1 1 0 3578 0 0 0 0
+/images/smilies/angel.gif
+1 41 0 16247 0 0 0 0
+/chat/img/playback.png
+1 5 0 6592 0 0 0 0
+/style/xbtit_default/images/categories/BD-25.png
+1 21 0 77858 0 0 0 0
+/chat/img/emoticons/smile2.gif
+1 26 0 35534 0 0 0 0
+/torrentimg/bad128c836741e78dd143411d96f2e7b96f00eb5.jpg
+1 69 0 2457523 0 0 0 0
+/admin/admin.get_support_info.php
+0 41 0 69513 0 4 0 0
+/chat/img/emoticons/hmmm.gif
+1 26 0 62463 0 0 0 0
+/access_code/080b17.png
+1 1 0 5585 0 0 0 0
+/style/Splatter/images/overlay.png
+1 62 0 22139 0 0 0 0
+/imdb/images/1524575.jpg
+1 2 0 30872 0 0 0 0
+/assets/plugins/iCheck-master/skins/line/_all.css
+0 288 0 97972 0 0 0 0
+/images/smilies/cool1.gif
+1 40 0 12853 0 0 0 0
+/chat/css/Uranium.css
+0 222 0 101750 0 0 0 0
+/images/smilies/yay.gif
+1 1 0 3358 0 0 0 0
+/images/lottery.png
+1 1 0 18223 0 0 0 0
+/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css
+0 4 0 1699 0 0 0 0
+/images/get.png
+1 8 0 14482 0 0 0 0
+/assets/plugins/maskedinput/js/jquery.maskedinput.min.js
+0 2 0 2283 0 0 0 0
+/style/xbtit_default/images/row-bg.png
+1 1 0 7393 0 0 0 0
+/images/donor_big.gif
+1 28 0 53554 0 0 0 0
+/images/whos_online.gif
+1 427 0 164166 0 0 0 0
+/clear_ann.php
+0 2 0 957 0 0 0 0
+/chat/js/lang/en.js
+0 220 0 88850 0 0 0 0
+/jscript/jquery-ui.min.js
+0 12 0 643535 0 0 0 0
+/assets/plugins/fastclick/fastclick.min.js
+0 4 0 3883 0 0 0 0
+/chat/css/black.css
+0 221 0 75063 0 0 0 0
+/imdb/images/0433035.jpg
+1 11 0 185544 0 0 0 0
+/style/DC_Blues/images/box1-bg.png
+1 1 0 470 0 0 0 0
+/
+0 1303 0 11891268 80 9 0 0
+/chat/img/emoticons/smile1.gif
+1 25 0 33563 0 0 0 0
+/images/seedbox.gif
+1 92 0 21382 0 0 0 0
+/chat/img/admin.png
+1 28 0 138405 0 0 0 0
+/style/xbtit_default/images/overlay.png
+1 1 0 1560 0 0 0 0
+/chat/img/clock.png
+1 27 0 31350 0 0 0 0
+/style/Splatter/images/row-bg.png
+1 64 0 77194 0 0 0 0
+/style/Splatter/images/top.gif
+1 1 0 480 0 0 0 0
+/style/xbtit_default/images/default_avatar.gif
+1 1 0 10858 0 0 0 0
+/chat/img/delete.png
+1 16 0 9553 0 0 0 0
+/chat/css/plum_images/plum.png
+1 1 0 18961 0 0 0 0
+/chat/img/emoticons/rolleyes.gif
+1 27 0 26924 0 0 0 0
+/style/xbtit_default/images/categories/XXX 3D.png
+1 8 0 51169 0 0 0 0
+/imdb/images/0120188.jpg
+1 10 0 185024 0 0 0 0
+/images/speed_up.png
+1 6 0 5167 0 0 0 0
+/chat/img/users.png
+1 215 0 74964 0 0 0 0
+/style/xbtit_default/images/medium-tint.png
+1 1 0 1299 0 0 0 0
+/images/flag/cl.png
+1 1 0 6110 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Inter. BD-25.png
+1 2 0 22194 0 0 0 0
+/imdb/images/0089885.jpg
+1 12 0 241486 0 0 0 0
+/chat/css/vBulletin.css
+0 222 0 80611 0 0 0 0
+/assets/plugins/slider/js/bootstrap-slider.js
+0 2 0 3357 0 0 0 0
+/chat/css/Sulfur.css
+0 217 0 71606 0 0 0 0
+/style/Splatter/images/categories/Movie Packs.png
+1 14 0 126159 0 0 0 0
+/avatar/cTwVO11.gif
+1 1 0 883990 0 0 0 0
+/images/unwatch.png
+1 12 0 4272 0 0 0 0
+/images/online.gif
+1 1 0 8926 0 0 0 0
+/images/warn.gif
+1 1 0 1443 0 0 0 0
+/images/smilies/smile2.gif
+1 40 0 15049 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Inter. BD-50.png
+1 2 0 22451 0 0 0 0
+/style/xbtit_default/images/categories/BD 3D.png
+1 21 0 95916 0 0 0 0
+/images/smilies/tongue.gif
+1 43 0 17103 0 0 0 0
+/style/xbtit_default/images/title4-bg.png
+1 1 0 1232 0 0 0 0
+/assets/plugins/datepicker/bootstrap-datepicker.js
+0 4 0 13113 0 0 0 0
+/chat/css/fonts.css
+0 219 0 65514 0 0 0 0
+/style/BluRG_Light_v3/images/categories/FLAC OST.png
+1 1 0 9870 0 0 0 0
+/style/BluRG_Light_v3/images/categories/1080p 3D.png
+1 1 0 13427 0 0 0 0
+/jscript/jquery-1.11.3.min.js
+0 443 0 1386263 0 0 0 0
+/imdb/imgs/showtimes/75.gif
+1 19 0 442307 0 0 0 0
+/access_code/d960f6.png
+1 1 0 5514 0 0 0 0
+/chat/img/emoticons/book.gif
+1 29 0 92444 0 0 0 0
+/imdb/imgs/showtimes/65.gif
+1 18 0 383621 0 0 0 0
+/chat/css/grey.css
+0 218 0 71495 0 0 0 0
+/login_new.php
+0 14 0 16040 0 0 0 0
+/style/xbtit_default/images/categories/Movie Packs.png
+1 4 0 34441 0 0 0 0
+/style/BluRG_Light_v3/images/categories/BluRG-FANRES.png
+1 1 0 11807 0 0 0 0
+/imdb/imgs/showtimes/55.gif
+1 17 0 383433 0 0 0 0
+/style/Splatter/images/f_quote.png
+1 2 0 13268 0 0 0 0
+/style/Splatter/images/main-t.png
+1 60 0 30073 0 0 0 0
+/assets/css/custom.css
+0 301 0 136931 0 0 0 0
+/imdb/imgs/showtimes/40.gif
+1 21 0 471934 0 0 0 0
+/style/Splatter/images/locked.png
+1 1 0 3395 0 0 0 0
+/ajaxstarrater/js/behavior.js
+0 10 0 15544 0 0 0 0
+/style/DC_Blues/images/small_shadow.png
+1 1 0 2174 0 0 0 0
+/images/thumbs-down.gif
+1 8 0 8208 0 0 0 0
+/style/xbtit_default/images/main-fill.png
+1 1 0 439 0 0 0 0
+/fanart/imdb/tt0765010/banners/brothers-51eae924890b7.jpg
+1 81 0 2646742 0 0 0 0
+/imdb/images/1446714.jpg
+1 1 0 14116 0 0 0 0
+/jscript/xbtit.js
+0 434 0 115790 0 0 0 0
+/assets/plugins/bootstrap-daterangepicker-master/js/daterangepicker.js
+0 2 0 8665 0 0 0 0
+/images/greengo.gif
+1 1 0 1237 0 0 0 0
+/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js
+0 4 0 9938 0 0 0 0
+/chat/css/Plum.css
+0 219 0 77465 0 0 0 0
+/images/slider/nav.gif
+1 79 0 34420 0 0 0 0
+/images/2x.gif
+1 19 0 73110 0 0 0 0
+/chat/img/emoticons/tongue.gif
+1 25 0 24640 0 0 0 0
+/style/Splatter/images/main-overlay.png
+1 60 0 43519 0 0 0 0
+/images/flag/pt.png
+1 1 0 5659 0 0 0 0
+/images/tick.png
+1 9 0 14752 0 0 0 0
+/images/poll_middle.gif
+1 426 0 88392 0 0 0 0
+/assets/plugins/daterangepicker/daterangepicker.js
+0 4 0 10425 0 0 0 0
+/style/xbtit_default/images/categories/HDTV BD-50.png
+1 4 0 31133 0 0 0 0
+/style/Splatter/images/categories/Internal-900p.png
+1 1 0 11735 0 0 0 0
+/style/DC_Blues/images/categories/BD-50.png
+1 1 0 10865 0 0 0 0
+/images/speed_down.png
+1 6 0 5178 0 0 0 0
+/images/arany.png
+1 6 0 7304 0 0 0 0
+/robots.txt
+0 5 0 2206 0 0 0 0
+/style/Splatter/images/main-r.png
+1 63 0 16618 0 0 0 0
+/imdb/images/0266543.jpg
+1 13 0 187844 0 0 0 0
+/imdb/imgs/showtimes/60.gif
+1 19 0 442307 0 0 0 0
+/assets/plugins/bootstrap-multiselect-master/js/bootstrap-multiselect.js
+0 2 0 8516 0 0 0 0
+/images/cross.png
+1 9 0 13660 0 0 0 0
+/assets/plugins/iCheck-master/skins/futurico/futurico.css
+0 289 0 72104 0 0 0 0
+/jscript/anon.js
+0 182 0 51687 0 0 0 0
+/jscript/suggest.js
+0 19 0 30219 0 0 0 0
+/access_code/d6a633.png
+1 1 0 5379 0 0 0 0
+/chat/img/autoscroll.png
+1 219 0 163027 0 0 0 0
+/images/flag/sk.png
+1 1 0 6069 0 0 0 0
+/imdb/images/2402101.jpg
+1 2 0 22218 0 0 0 0
+/images/info.png
+1 1 0 771 0 0 0 0
+/style/Splatter/images/categories/BluRG-FANRES.png
+1 14 0 107198 0 0 0 0
+/imdb/images/0796366.jpg
+1 1 0 12100 0 0 0 0
+/style/BluRG_Light_v3/images/chb.gif
+1 1 0 511 0 0 0 0
+/images/reptor.gif
+1 9 0 20664 0 0 0 0
+/assets/plugins/iCheck/flat/blue.css
+0 4 0 1481 0 0 0 0
+/style/Splatter/images/categories/Inter. MP.png
+1 22 0 176295 0 0 0 0
+/style/BluRG_Light_v3/images/categories/Internal-900p.png
+1 1 0 11735 0 0 0 0
+/imdb/images/0462538.jpg
+1 11 0 172745 0 0 0 0
+/style/DC_Blues/images/categories/Inter. BD-50.png
+1 1 0 11225 0 0 0 0
+/images/slider/loading.gif
+1 76 0 81167 0 0 0 0
+/chat/img/audio.png
+1 216 0 143823 0 0 0 0
+/avatar/wallpapers.white.lion.rampant.flag.scotland.free.hd.1920x1080.jpg
+1 3 0 61633 0 0 0 0
+/imdb/images/1588173.jpg
+1 2 0 45330 0 0 0 0
+/jscript/ajax-poller.js
+0 436 0 187598 0 0 0 0
+/css/bootstrap/custom.css
+0 7 0 7015 0 0 0 0
+/images/4x.gif
+1 18 0 52248 0 0 0 0
+/css/newlogin.css
+0 12 0 26124 0 0 0 0
+/style/xbtit_default/images/box2-bg.png
+1 1 0 469 0 0 0 0
+/style/DC_Blues/images/main-fill.png
+1 1 0 439 0 0 0 0
+/style/xbtit_default/images/navigation-bg.png
+1 1 0 3156 0 0 0 0
+/access_code/753641.png
+1 1 0 5209 0 0 0 0
+/assets/plugins/alertify/css/alertify.default.css
+0 4 0 1757 0 0 0 0
+/images/smilies/sad.gif
+1 40 0 14831 0 0 0 0
+/assets/plugins/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js
+0 2 0 9193 0 0 0 0
+/style/xbtit_default/js/jquery.js
+0 7 0 68352 0 0 0 0
+/images/smilies/angry.gif
+1 40 0 16813 0 0 0 0
+/images/flag/ug.png
+1 1 0 5931 0 0 0 0
+/imdb/images/0471042.jpg
+1 9 0 138290 0 0 0 0
+/imdb/imgs/showtimes/90.gif
+1 19 0 430246 0 0 0 0
+/chat/css/Core.css
+0 217 0 72411 0 0 0 0
+/assets/css/skins/_all-skins.min.css
+0 4 0 4370 0 0 0 0
+/chat/img/pixel.gif
+1 218 0 46278 0 0 0 0
+/assets/font-awesome/fonts/fontawesome-webfont.woff
+0 21 0 1095267 0 0 0 0
+/style/xbtit_default/images/categories/Inter. BD-25.png
+1 21 0 80311 0 0 0 0
+/imdb/images/0114369.jpg
+1 13 0 282330 0 0 0 0
+/images/flag/ag.png
+1 1 0 6119 0 0 0 0
+/imdb/imgs/showtimes/70.gif
+1 20 0 471744 0 0 0 0
+/style/BluRG_Tron/images/categories/Inter. BD-25.png
+1 1 0 11097 0 0 0 0
+/ajaxstarrater/css/rating.css
+0 9 0 5584 0 0 0 0
+/images/bonus.png
+1 220 0 62084 0 0 0 0
+/assets/js/pages/dashboard.js
+0 4 0 3083 0 0 0 0
+/css/pulseglow.css
+0 437 0 133639 0 0 0 0
+/jscript/jquery-migrate-1.2.1.min.js
+0 441 0 224710 0 0 0 0
+/assets/plugins/alertify/js/alertify.min.js
+0 2 0 3101 0 0 0 0
+/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.min.js
+0 2 0 5509 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+70.192.76.47
+0 92 28 141438 1 1459709772 0 0
+/ann.php
+70.192.72.103
+0 33 33 44482 1 1460206474 0 0
+/chat/
+71.2.41.11
+0 9687 5417 18538072 20 1460234108 0 0
+/
+86.147.190.9
+0 33 32 150288 1 1460063056 0 0
+/chat/
+167.206.59.228
+0 1 1 7558 0 0 0 0
+-
+199.21.99.214
+0 1 1 406 0 0 0 0
+-
+96.115.70.157
+0 2 2 35040 0 0 0 0
+-
+213.205.194.31
+0 41 41 343326 1 1459766442 0 0
+/ann.php
+50.166.125.44
+0 5262 3780 10998856 15 1460246399 0 0
+/chat/
+63.143.128.122
+0 718 528 477814 1 1460066363 0 0
+/chat/
+41.13.228.226
+0 54 52 494805 1 1459766690 0 0
+/login_new.php
+70.192.145.82
+0 40 38 315824 1 1459698932 0 0
+/ann.php
+50.153.125.147
+0 30 21 296155 2 1460236155 0 0
+/
+173.72.57.107
+0 2052 1061 2945624 3 1460160061 0 0
+/chat/
+50.153.126.14
+0 1192 869 3348778 2 1459958951 0 0
+/ann.php
+96.82.153.190
+0 26483 15646 34383624 21 1460153178 0 0
+/chat/
+66.249.64.125
+0 1 1 450 0 0 0 0
+-
+66.249.73.189
+0 1 1 450 0 0 0 0
+-
+98.221.132.25
+0 3810 1676 11062059 8 1459784181 0 0
+/ann.php
+169.0.112.90
+0 1660 1522 3738191 4 1460243352 0 0
+/
+169.0.117.129
+0 4185 3116 5657077 19 1459974997 0 0
+/chat/
+70.254.224.177
+0 230 226 1810363 2 1459738219 0 0
+/ann.php
+70.215.81.198
+0 254 96 292931 4 1460171024 0 0
+/chat/
+109.152.237.159
+0 465 452 2648873 2 1459979352 0 0
+/chat/
+70.192.139.75
+0 96 27 93171 1 1460218530 0 0
+/
+66.249.66.23
+0 1 1 450 0 0 0 0
+-
+66.249.66.20
+0 1 1 450 0 0 0 0
+-
+70.192.73.205
+0 85 61 548511 1 1460124458 0 0
+/chat/
+70.192.146.126
+0 163 161 882102 3 1460068995 0 0
+/chat/
+37.48.70.149
+0 3 1 2998 1 1460244332 0 0
+/login_new.php
+92.99.109.6
+0 237 174 1177747 1 1459747716 0 0
+/ann.php
+# End Of Table - sites (monthly)
+# -sites- (daily)
+70.192.72.103
+0 33 33 44482 1 1460206474 0 0
+/chat/
+71.2.41.11
+0 3422 1726 6824342 3 1460234108 0 0
+/
+96.115.70.157
+0 1 1 17520 0 0 0 0
+-
+50.166.125.44
+0 3582 2224 5761695 5 1460246399 0 0
+/chat/
+50.153.125.147
+0 30 21 296155 2 1460236155 0 0
+/
+173.72.57.107
+0 20 20 11340 1 1460160061 0 0
+/chat/
+169.0.112.90
+0 1081 1011 1967073 2 1460243352 0 0
+/
+70.215.81.198
+0 37 23 57084 1 1460171024 0 0
+/chat/
+70.192.139.75
+0 96 27 93171 1 1460218530 0 0
+/
+37.48.70.149
+0 3 1 2998 1 1460244332 0 0
+/login_new.php
+# End Of Table - sites (daily)
+# -referrers- 
+http://dev.blu-torrents.net/announcements.php
+1 8
+http://dev.blu-torrents.net/style/BluRG_Light_v3/main.css
+1 5
+http://dev.blu-torrents.net/chat/
+1 34788
+http://dev.blu-torrents.net/index.php
+1 14157
+http://www.google.com/url
+0 9
+http://dev.blu-torrents.net/chat/css/beige.css
+1 9
+http://dev.blu-torrents.net/style/Splatter/main.css
+1 114
+- (Direct Request)
+0 263
+http://dev.blu-torrents.net/chat/css/global.css
+1 34
+http://dev.blu-torrents.net/css/newlogin.css
+1 30
+http://dev.blu-torrents.net/assets/plugins/iCheck-master/skins/all.css
+1 96
+http://dev.blu-torrents.net/css/global.css
+1 1
+http://dev.blu-torrents.net/
+1 7186
+http://dev.blu-torrents.net/font-awesome-4.5-2.0/css/font-awesome.min.css
+1 7
+http://dev.blu-torrents.net/style/xbtit_default/css/modern.css
+1 1
+http://dev.blu-torrents.net/chat/css/prosilver.css
+1 12
+http://dev.blu-torrents.net/login_new.php
+1 191
+http://dev.blu-torrents.net/chat/css/Plum.css
+1 2
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.105
+0 165
+Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Sa
+0 67
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.2357.130 Safari/537.36
+0 146
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.52 Safari/537.36 OPR/
+0 103
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/8.0.7 Safari/600.7.12
+0 19
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+0 3736
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 4
+Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+0 498
+Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:24.7) Gecko/20140907 Firefox/24.7 PaleMoon/24.7.2
+0 53
+Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safa
+0 959
+Mozilla/5.0 (X11; FreeBSD amd64; rv:42.0) Gecko/20100101 Firefox/42.0
+0 139
+Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/47.0.2526.107 Mobile/1
+0 41
+Agent
+0 3
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+0 44008
+Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0
+0 21
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17
+0 5668
+Safari/11601.5.17.1 CFNetwork/760.4.2 Darwin/15.4.0 (x86_64)
+0 2
+Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.2357.125 Safari/537.36 OPR/30.0.1835.88
+0 17
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 1
+Mozilla/5.0 (Windows NT 6.2; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0
+0 230
+Safari/10600.8.9 CFNetwork/720.5.7 Darwin/14.5.0 (x86_64)
+0 2
+Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.21 (KHTML, like Gecko) konqueror/4.14.2 Safari/537.21
+0 41
+Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0
+0 990
+# End Of Table - agents
+# -search strings- 
+http://dev.blu-torrents.net/index.php
+1
+http://dev.blu-torrents.net/index.phppage=requests
+8
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

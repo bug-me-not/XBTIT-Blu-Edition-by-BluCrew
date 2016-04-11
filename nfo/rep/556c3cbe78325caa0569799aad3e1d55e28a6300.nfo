@@ -1,0 +1,72 @@
+DISC INFO:
+
+Disc Title:     The Happening 2008 MULTI 1080p BluRay AVC DTS HD HDSpace
+Disc Size:      43 216 785 098 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00013.MPLS
+Length:                 1:30:23.084 (h:m:s.ms)
+Size:                   27 234 441 216 bytes
+Total Bitrate:          40,18 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29831 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+MPEG-4 AVC Video        1223 kbps           480p / 23,976 fps / 16:9 / High Profile 3.2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD High-Res Audio           English         3018 kbps       5.1 / 48 kHz / 3018 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Czech           448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Hungarian       448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+DTS Express                     English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         33,171 kbps                     
+Presentation Graphics           French          27,961 kbps                     
+Presentation Graphics           Spanish         33,292 kbps                     
+Presentation Graphics           Spanish         1,008 kbps                      
+Presentation Graphics           Czech           28,762 kbps                     
+Presentation Graphics           Hungarian       30,647 kbps                     
+Presentation Graphics           Polish          28,640 kbps                     
+Presentation Graphics           Dutch           26,461 kbps                     
+Presentation Graphics           Arabic          18,170 kbps                     
+Presentation Graphics           Greek           34,122 kbps                     
+Presentation Graphics           Hebrew          21,067 kbps                     
+Presentation Graphics           Turkish         34,134 kbps                     
+Presentation Graphics           Icelandic       31,891 kbps                     
+Presentation Graphics           Portuguese      32,337 kbps                     
+Presentation Graphics           Croatian        29,159 kbps                     
+Presentation Graphics           Slovenian       28,832 kbps                     
+Presentation Graphics           Bulgarian       31,252 kbps                     
+Presentation Graphics           Romanian        29,781 kbps                     
+Presentation Graphics           Serbian         29,798 kbps                     
+Presentation Graphics           Estonian        29,080 kbps                     
+Presentation Graphics           Latvian         30,252 kbps                     
+Presentation Graphics           Lithuanian      31,328 kbps                     
+Presentation Graphics           French          2,724 kbps                      
+Presentation Graphics           Dutch           2,674 kbps                      
+Presentation Graphics           Spanish         2,678 kbps                      
+Presentation Graphics           French          24,917 kbps                     
+Presentation Graphics           Dutch           23,787 kbps                     
+Presentation Graphics           Spanish         27,749 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00013.M2TS      0:00:00.000     1:30:23.084     27 234 441 216  40 176

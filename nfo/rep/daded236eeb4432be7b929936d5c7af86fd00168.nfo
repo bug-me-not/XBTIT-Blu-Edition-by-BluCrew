@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     Coma 1978 mULTi 1080p blu-ray DTS.HDMA 1.0 Rutracker
+Disc Size:      19 376 363 445 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 1:52:58.813 (h:m:s.ms)
+Size:                   18 668 519 424 bytes
+Total Bitrate:          22,03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18972 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1093 kbps       1.0 / 48 kHz / 1093 kbps / 24-bit (DTS Core: 1.0 / 48 kHz / 768 kbps / 24-bit)
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             German          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         34,700 kbps                     
+Presentation Graphics           French          27,434 kbps                     
+Presentation Graphics           German          39,189 kbps                     
+Presentation Graphics           Spanish         29,715 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:52:58.813     18 668 519 424  22 032

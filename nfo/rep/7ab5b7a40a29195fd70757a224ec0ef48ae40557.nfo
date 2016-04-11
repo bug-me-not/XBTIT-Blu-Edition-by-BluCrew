@@ -1,0 +1,46 @@
+Disc Title:     The Bounty Hunter F13
+Disc Size:      36 889 794 830 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:50:38.632 (h:m:s.ms)
+Size:                   30 080 600 064 bytes
+Total Bitrate:          36,25 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        25920 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3667 kbps       5.1 / 48 kHz / 3667 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             French          2962 kbps       5.1 / 48 kHz / 2962 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         38,661 kbps                     
+* Presentation Graphics         English         38,665 kbps                     
+Presentation Graphics           English         29,457 kbps                     
+Presentation Graphics           French          28,727 kbps                     
+Presentation Graphics           Thai            36,872 kbps                     
+Presentation Graphics           Arabic          20,097 kbps                     
+Presentation Graphics           Dutch           32,159 kbps                     
+Presentation Graphics           Hindi           35,846 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00011.M2TS      0:00:00.000     1:50:38.632     30 080 600 064  36 249

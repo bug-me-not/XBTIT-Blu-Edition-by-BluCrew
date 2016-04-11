@@ -1,0 +1,730 @@
+
+Général
+Nom complet                              : M:BDMVPLAYLIST0100.mpls
+Format                                   : Blu-ray Playlist
+Taille du fichier                        : 1,26 Kio
+Durée                                    : 2h 9mn
+Type de débit global                     : Variable
+Débit global moyen                       : 1 bps
+
+Vidéo
+ID                                       : 4113 (0x1011)
+ID de menu                               : 1 (0x1)
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 2 images
+Identifiant du codec                     : 27
+Durée                                    : 1mn 58s
+Type de débit                            : Variable
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+format_identifier                        : HDMV
+Source                                   : 00057.m2ts
+
+Audio #1
+ID                                       : 4352 (0x1100)
+ID de menu                               : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Type de muxing                           : Stream extension
+Identifiant du codec                     : 134
+Durée                                    : 1mn 58s
+Type de débit                            : Variable
+Débit                                    : Inconnu / 1 509 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Langue                                   : Anglais
+Source                                   : 00057.m2ts
+
+Audio #2
+ID                                       : 4353 (0x1101)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Français
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #3
+ID                                       : 4354 (0x1102)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Français
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #4
+ID                                       : 4355 (0x1103)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Allemand
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #5
+ID                                       : 4356 (0x1104)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Italien
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #6
+ID                                       : 4357 (0x1105)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Espagnol
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #7
+ID                                       : 4358 (0x1106)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Espagnol
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #8
+ID                                       : 4359 (0x1107)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 1 canal
+Position des cannaux                     : Front: C
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Portugais
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+acmod                                    : 1
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #9
+ID                                       : 4360 (0x1108)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Tchèque
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 4.51
+compr_Average/String                     : 4.51 dB
+compr_Minimum                            : -5.49
+compr_Minimum/String                     : -5.49 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #10
+ID                                       : 4361 (0x1109)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Polonais
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1219
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #11
+ID                                       : 4362 (0x110A)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 9,02 Mio
+Langue                                   : Russe
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+acmod                                    : 7
+lfeon                                    : 1
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 1203
+compr_Average                            : 4.83
+compr_Average/String                     : 4.83 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 639
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Audio #12
+ID                                       : 4363 (0x110B)
+ID de menu                               : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : 129
+Durée                                    : 1mn 58s
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Mode de compression                      : Avec perte
+Taille du flux                           : 2,71 Mio
+Langue                                   : Japonais
+bsid                                     : 6
+dialnorm                                 : -27
+dialnorm/String                          : -27 dB
+compr                                    : -0.28
+compr/String                             : -0.28 dB
+dsurmod                                  : 2
+dsurmod/String                           : Dolby Surround encoded
+acmod                                    : 2
+lfeon                                    : 0
+dialnorm_Average                         : -27
+dialnorm_Average/String                  : -27 dB
+dialnorm_Minimum                         : -27
+dialnorm_Minimum/String                  : -27 dB
+dialnorm_Maximum                         : -27
+dialnorm_Maximum/String                  : -27 dB
+dialnorm_Count                           : 655
+compr_Average                            : 5.34
+compr_Average/String                     : 5.34 dB
+compr_Minimum                            : -0.28
+compr_Minimum/String                     : -0.28 dB
+compr_Maximum                            : 6.02
+compr_Maximum/String                     : 6.02 dB
+compr_Count                              : 655
+format_identifier                        : AC-3
+Source                                   : 00057.m2ts
+
+Texte #1
+ID                                       : 4608 (0x1200)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Japonais
+Source                                   : 00057.m2ts
+
+Texte #2
+ID                                       : 4609 (0x1201)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Anglais
+Source                                   : 00057.m2ts
+
+Texte #3
+ID                                       : 4610 (0x1202)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Français
+Source                                   : 00057.m2ts
+
+Texte #4
+ID                                       : 4611 (0x1203)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Allemand
+Source                                   : 00057.m2ts
+
+Texte #5
+ID                                       : 4612 (0x1204)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Italien
+Source                                   : 00057.m2ts
+
+Texte #6
+ID                                       : 4613 (0x1205)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Espagnol
+Source                                   : 00057.m2ts
+
+Texte #7
+ID                                       : 4614 (0x1206)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Néerlandais
+Source                                   : 00057.m2ts
+
+Texte #8
+ID                                       : 4615 (0x1207)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Chinois
+Source                                   : 00057.m2ts
+
+Texte #9
+ID                                       : 4616 (0x1208)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Espagnol
+Source                                   : 00057.m2ts
+
+Texte #10
+ID                                       : 4617 (0x1209)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Portugais
+Source                                   : 00057.m2ts
+
+Texte #11
+ID                                       : 4618 (0x120A)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Tchèque
+Source                                   : 00057.m2ts
+
+Texte #12
+ID                                       : 4619 (0x120B)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Danois
+Source                                   : 00057.m2ts
+
+Texte #13
+ID                                       : 4620 (0x120C)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Finnois
+Source                                   : 00057.m2ts
+
+Texte #14
+ID                                       : 4621 (0x120D)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Norvégien
+Source                                   : 00057.m2ts
+
+Texte #15
+ID                                       : 4622 (0x120E)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Polonais
+Source                                   : 00057.m2ts
+
+Texte #16
+ID                                       : 4623 (0x120F)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Durée                                    : 2h 9mn
+Langue                                   : Russe
+Source                                   : 00057.m2ts
+
+Texte #17
+ID                                       : 4624 (0x1210)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Langue                                   : Suédois
+Source                                   : 00057.m2ts
+
+Texte #18
+ID                                       : 4625 (0x1211)
+ID de menu                               : 1 (0x1)
+Format                                   : PGS
+Identifiant du codec                     : 144
+Langue                                   : Japonais
+Source                                   : 00057.m2ts
+
+Menu
+00:00:00.000                             : Chapter 1
+00:03:48.561                             : Chapter 2
+00:05:22.363                             : Chapter 3
+00:12:46.307                             : Chapter 4
+00:17:19.246                             : Chapter 5
+00:19:35.132                             : Chapter 6
+00:23:45.424                             : Chapter 7
+00:26:13.697                             : Chapter 8
+00:30:11.476                             : Chapter 9
+00:31:23.506                             : Chapter 10
+00:35:30.753                             : Chapter 11
+00:38:39.775                             : Chapter 12
+00:42:08.067                             : Chapter 13
+00:44:09.271                             : Chapter 14
+00:46:35.667                             : Chapter 15
+00:47:39.147                             : Chapter 16
+00:51:51.691                             : Chapter 17
+00:54:09.120                             : Chapter 18
+01:01:46.077                             : Chapter 19
+01:04:40.418                             : Chapter 20
+01:11:01.966                             : Chapter 21
+01:14:17.911                             : Chapter 22
+01:17:41.114                             : Chapter 23
+01:20:55.016                             : Chapter 24
+01:26:19.757                             : Chapter 25
+01:30:13.032                             : Chapter 26
+01:34:01.010                             : Chapter 27
+01:36:18.898                             : Chapter 28
+01:37:12.117                             : Chapter 29
+01:40:27.354                             : Chapter 30
+01:43:40.464                             : Chapter 31
+01:47:27.858                             : Chapter 32
+01:48:43.808                             : Chapter 33
+01:53:37.352                             : Chapter 34
+01:56:02.956                             : Chapter 35
+01:59:26.159                             : Chapter 36
+02:00:54.580                             : Chapter 37
+02:03:34.407                             : Chapter 38
+02:09:20.043                             : Chapter 39

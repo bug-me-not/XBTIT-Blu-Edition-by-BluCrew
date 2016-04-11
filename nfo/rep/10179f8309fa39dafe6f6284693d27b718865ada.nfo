@@ -1,0 +1,221 @@
+Goodfellas (Les Affranchis) Bluray Remux 1080p Multi HDMA AC3-MAN OF STYLE
+
+
+
+=====================================================================================================================
+
+by
+
+MAN OF STYLE
+
+
+=====================================================================================================================
+
+
+
+
+
+
+
+
+General
+Complete name                            : Goodfellas (Les Affranchis) Bluray Remux 1080p Multi HDMA AC3-MAN OF STYLE.mkv
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 32.7 GiB
+Duration                                 : 2h 25mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 32.2 Mbps
+Movie name                               : Goodfellas (Les Affranchis) Bluray Remux 1080p Multi HDMA AC3-MAN OF STYLE
+Encoded date                             : UTC 2015-05-19 08:04:07
+
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 25mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 25mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 200 MiB (1%)
+Title                                    : French
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 25mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : English
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 25mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 200 MiB (1%)
+Title                                    : German
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 25mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 200 MiB (1%)
+Title                                    : Italian
+Language                                 : Italian
+Default                                  : No
+Forced                                   : No
+
+Audio #5
+ID                                       : 6
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 25mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 200 MiB (1%)
+Title                                    : Spanish
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : English
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : French
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : German
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : Italian
+Language                                 : Italian
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : Spanish
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+=======================================================================================================
+
+THX TO SEED.

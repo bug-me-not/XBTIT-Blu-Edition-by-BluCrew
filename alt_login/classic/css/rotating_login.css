@@ -1,0 +1,93 @@
+/* main body classes */
+	
+a:link,a:active,a:visited {
+	 color: #fff;
+	 text-decoration:none;
+	 }
+	 
+a:hover { 
+	text-decoration:none;
+	color: #ff0000;
+	 }
+		
+body {
+    font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+    font-size: 11pt;
+	  color:#ffffff;    
+   	background-image:url('../backgrounds/rotating/rotate.php');
+    background-position:center top;
+    background-color: 000;
+    height:auto;
+    width:auto;
+}
+
+#logo {
+    background: url('../login/logo.png')no-repeat;
+    background-position:center top;
+		border-top: 0px solid #e8eff5;
+		border-left: 0px solid #b2b2b2;
+		border-right: 0px solid #b2b2b2;
+	  border-bottom: 0px solid #b2b2b2;
+    height:auto;
+    width:auto;
+    margin-top:1%;    
+}
+
+#imput {
+  font-size: 12pt;		
+  margin-top:5%;
+}
+
+#buttons {
+  font-size: 12pt;		
+  margin-top:5%;
+}
+
+#agreestyle {
+  margin-top:1%;
+}
+
+#agree1 {
+  font-size: 15pt;
+  color:orange;  
+}
+
+#agree2 {
+  font-size: 12pt;
+  color:red;  
+}
+
+#agree3 {
+  font-size: 12pt;
+  color:purple;  
+}
+
+#agree4 {
+  font-size: 12pt;
+  color:blue;  
+}
+
+#agree5 {
+  font-size: 12pt;
+  color:yellow;  
+}
+
+#sitename {
+    font-size: 12pt;	
+    color:orange;	
+}
+
+#date {
+    font-size: 12pt;	
+    color:blue;	
+}
+
+#number {
+    font-size: 12pt;	
+    color:aqua;	
+}
+
+#copyright {
+    font-size: 10pt;	
+    color:white;
+}

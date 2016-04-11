@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "htt//www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Floatbox v2.46 Options</title>
+<style type="text/css">
+body { background: #eee; }
+#content { margin: 1em 25px; font-family: Arial, Helvetica, sans-serif; font-size: .95em; }
+#content h3 { font-size: 1.2em; margin: 2em auto -1em auto; font-style: italic; color: #046; }
+#content h5 { font-size: 1.1em; margin: 1.8em auto -.6em 3em; color: #046; }
+#content .code { font-family: monospace; font-size: 1.05em; color: #060; }
+#content li { margin-top: .3em; }
+#content ul, #content ol { margin-top: .7em; }
+</style>
+</head>
+<body>
+<div id="content">
+<h3>Floatbox v2.46 - Options</h3>
+<p><a href="http://randomous.com/tools/floatbox/">randomous.com</a></p>
+<hr /><br />
+
+<p>
+Floatbox provides versatility in how it can be configured and used through numerous configuration options and a variety of ways and locations to set those options.
+This page gives information about the configuration options.
+See the <a href="instructions.html">instructions page</a> for information on how these options can be configured in the javascript code, in page-specific config functions, on particular &lt;a&gt; elements, via user-preference session cookies, or in a url's query string.
+</p>
+
+<h5>General Options</h5>
+
+<p><b>theme</b> - 'auto'|'black'|'white'|'blue'|'yellow'|'red'|'custom'<br />
+Color theme. 'Auto' will use the black theme for images and white for iframe content.
+Custom is for defining your own styles in the css without overwriting existing themes.</p>
+
+<p><b>padding</b> - pixels<br />
+Width of the area between the image or iframe content and the outer floatbox edges.</p>
+
+<p><b>panelPadding</b> - pixels<br />
+Gap above and below the lower panel content (caption and controls), provides the spacing between panel content, image/iframe, and lower border.</p>
+
+<p><b>outerBorder</b> - pixels<br />
+Width of the outside border around the edge of floatbox.</p>
+
+<p><b>innerBorder</b> - pixels<br />
+Width of the inside border around the edge of the image or iframe content.</p>
+
+<p><b>autoResize</b> - true|false<br />
+If set to true, large images will be proportionately scaled down to fit the current browser window dimensions before being displayed.
+Applies only to images. Iframed content is not resized, but you can use <span class="code">"width=max"</span> and/or <span class="code">"height=max"</span> with iframes.</p>
+
+<p><b>overlayOpacity</b> - 0-100<br />
+Opacity of the full-screen page overly. 0 is fully transparent, 100 is fully opaque.</p>
+
+<p><b>upperOpacity</b> - 0-100<br />
+Sets the opacity of the controls that appear in the transparent overlay on top of image content.
+These controls are the prev/next navigation buttons if upper navType is set,
+and the resize button in the top left corner if showResize is set.</p>
+
+<p><b>showResize</b> - true|false<br />
+If showResize is set to true, images that have been autoSized to fit the screen and images that are displayed larger than the current screen size will have a small resize button displayed in the top left corner.</p>
+
+<p><b>showCaption</b> - true|false<br />
+Controls display of the caption shown in the lower left of floatbox.
+This just turns it on or off.  See the "caption" option down below for details on how to set the caption content.</p>
+
+<p><b>showItemNumber</b> - true|false<br />
+Controls display of the "image/page x of y" text that appears below the caption.
+Note that the text displayed is configured in the imageCount and iframeCount language localization options.</p>
+
+<p><b>showClose</b> - true|false<br />
+Enables/disables display of the close button in the bottom right corner.</p>
+
+<p><b>hideFlash</b> - true|false<br />
+If true, flash objects on the host page will be hidden before floatbox loads.
+This is generally a good idea as in some browsers flash object will appear on top of the floatbox display if not hidden.</p>
+
+<p><b>hideJava</b> - true|false<br />
+Just like hideFlash but for Java applets.</p>
+
+<p><b>preloadAll</b> - true|false<br />
+If true, floatbox will aggressively preload all images that are referenced by floatboxed anchors.
+This makes floatbox quite responsive as images are available and can be displayed as soon as the site visitor clicks on or navigates to one.
+If you wish to lighten your server load, you can set preloadAll to false.
+In this event, the first image found will be preloaded and the next image in a group will be loaded right after the display of the current image, but the others will not be fetched.
+The site visitor may then have to wait for the loading of clicked item.
+The preloadAll option only has an effect when set directly in the options section of floatbox.js.</p>
+
+<p><b>disableScroll</b> - true|false<br />
+If set to true, this option sets floatbox to use fixed positioning when it can.
+Fixed positioning causes floatbox to stay centered on the screen as the scroll bar moves the underlying host page.
+Note that fixed positioning will not take effect if the current content is larger than the available screen area
+and will not take effect if the browser can't handle it (ie6, ie7 and opera with no doctype).
+It is recommended that this option alway be set to false.
+It is never a good idea to disable a visitor's browser functionality and there is no user on the planet who will be tugging on his scroll bars and saying "damn I wish this thing wouldn't scroll when I do that".
+Note that iframe content that fully fits the screen is always displayed with fixed positioning for Firefox 2.x browsers.
+This is because without fixed positioning, Firefox 2 will fail to display a cursor in form fields.  They fixed this in version 3.</p>
+
+<p><b>enableCookies</b> - true|false<br />
+If true, session cookies can be used to set and remember option preferences.
+You'll want to set this to false if you are setting up floatbox and testing option changes, otherwise the old options will get stuck in the cookies and you won't see the effect of your changes without a browser restart.
+Set this to true if you have a cookie-based way for users to select display preferences on your pages.</p>
+
+<p><b>cookieScope</b> - 'site'|'folder'<br />
+Determines if options set via session cookies will apply across your entire site or only to the folder (and its subfolders) containing the floatboxed page.
+Note that if you have a framed or iframed page heirarcy that pulls content in from different folders, you will need the 'site' option to have the cookies take effect in each frame.</p>
+
+<p><b>url404Image</b><br />
+This is the path to the image that will be shown if the href'd image can't be found.
+If you install floatbox somewhere other than the default install location you will need to change this setting to the new path.
+Use an absolute path so that it will work regardless of where on your site your floatbox enabled content page resides.</p>
+
+<h5>Navigation Options</h5>
+
+<p><b>navType</b> - 'upper'|'lower'|'both'|'none'<br />
+Sets the type of navigation controls to display.
+'upper' is the "Prev/Next" image overlay.'
+'lower' gives "&lt;&lt;prev||next&gt;&gt;" on the lower panel.
+Upper navigation is not available for iframe content, just for images.</p>
+
+<p><b>upperNavWidth</b> - 0-50<br />
+Sets the width in percentage of each of the left and right transparent upper nav panels that provide navigation through mouse clicks on the displayed image.
+If set to 50, each panel will be half the image width and so will meet without a gap in the middle.
+40 leaves a 20% gap between panels, etc.</p>
+
+<p><b>upperNavPos</b> - 0-100<br />
+When the mouse is active over an image with navType 'upper' set, small prev/next graphics are displayed.
+This setting is the percentage height from the image top that these graphics will appear.
+0 puts them right at the top, and 100 pushes them off the bottom of the image.</p>
+
+<p><b>showUpperNav</b> - 'always'|'once'|'never'<br />
+Controls display of the upper navigation prev and next graphics.
+If set to 'once', these graphics will be displayed only for the first image shown, after which they are turned off.
+When the upper nav graphics are turned off upper nav still works, it is just not displayed.
+The idea is that once people are told what the mouse does over the image, they don't need to keep seeing the prev/next graphics continuously.
+When the upper nav graphics are turned off, the lower nav controls will highlight as the mouse moves over active image areas.</p>
+
+<p><b>showHints</b> - 'always'|'once'|'never'<br />
+Controls display or mouseover tooltip messages for the nav and control buttons.
+These tooltips are intended to be used to inform users about keyboard navigation shortcuts.
+If set to 'once', each tooltip will deactivate after it has been displayed for sufficient time to be read.
+They will also be deactivated if the user navigates with the associated keyboard shortcut.</p>
+
+<p><b>enableWrap</b> - true|false<br />
+Enables gallery wrapping so that selecting 'next' on the last item wraps to the first, and selecting 'prev' on the first item wraps to the last.
+Because gallery viewing can start anywhere in a series of images, it is probably a good idea to leave this set to true in most circumstances.
+But if you are displaying something like a series of instructions that always starts with item #1 you may want to turn wrapping off.
+The enableWrap option affects only mouse and keyboard navigation.
+Even when enableWrap is set to false, a slideshow will wrap if started with an item other than #1 or if the slideshow endTask is set to 'loop'.</p>
+
+<p><b>enableKeyboardNav</b> - true|false<br />
+Enables or disables the keyboard handler for prev, next, pause/play, resize and close actions.
+If you disable keyboard nav you should also set showHints to 'never' or change the default text displayed in the hints.</p>
+
+<p><b>outsideClickCloses</b> - true|false<br />
+If set to true, floatbox will exit when the user clicks on the page overlay outside of the floatbox display.</p>
+
+<h5>Animation Options</h5>
+
+<p><b>resizeOrder</b> - 'both'|'width'|'height'|'random'<br />
+Determines the order in which the floatbox dimensions will be resized during animated resizing.
+If set to 'both' then top, left, width and height will be adjusted simultaneously.
+If set to 'width', the left placement and width will happen first, and top and height will be done when that completes.
+Setting to 'height' makes top and height go first. 'Random' mixes up the other 3 options.</p>
+
+<p><b>resizeDuration</b> - 0-10<br />
+Controls the speed at which animated resizing occurs.
+0 = no resize animation, 1 is fast, 10 is slooow.
+These are unit-less numbers, and don't equate to a fixed time period.
+Larger size changes will take longer than smaller size changes.</p>
+
+<p><b>imageFadeDuration</b> - 0-10<br />
+Controls the speed of the opacity fade-in for images as they come into the display.
+0 = no image fade-in, 1 is fast, 10 is slooow. These too are unit-less numbers.</p>
+
+<p><b>overlayFadeDuration</b> - 0-10<br />
+Controls the speed of the opacity fade-in and fade-out for the translucent overlay which covers the host page.
+0 = no overlay fading in or out, 1 is fast, 10 is slooow.  Unit-less.</p>
+
+<h5>Slideshow Options</h5>
+
+<p><b>slideInterval</b> - seconds<br />
+This is the number of seconds to display each image in a slideshow before moving on to the next one.</p>
+
+<p><b>endTask</b> - 'stop'|'exit'|'loop'<br />
+Describes what to do when all images in a slideshow have been seen.
+Note that if a slideshow was started on other than the 1st image, it will wrap around until all images have been seen before acting on the endTask directive.</p>
+
+<p><b>showPlayPause</b> - true|false<br />
+Turns display of the slideshow play &amp; pause controls on or off.</p>
+
+<p><b>startPaused</b> - true|false<br />
+If true, a slideshow will start in a paused state.  If false, the slideshow will auto-play on start.</p>
+
+<p><b>pauseOnPrev</b> - true|false<br />
+If set to true, the slideshow will pause when a 'prev' contol is clicked or when the corresponding keyboard action (left arrow) is fired.</p>
+
+<p><b>pauseOnNext</b> - true|false<br />
+If set to true, the slideshow will pause when a 'next' contol is clicked or when the corresponding keyboard action (right arrow) is fired.</p>
+
+<h5>String Localization</h5>
+<p>The following set of options provide string localization for the control tooltips and image/item count display.
+Set these ones at the top of the floatbox.js file.</p>
+
+<p><b>strHintClose</b> - close button tooltip</p>
+
+<p><b>strHintPrev</b> - prev buttons (upper and lower) tooltip</p>
+
+<p><b>strHintNext</b> - next buttons tooltip</p>
+
+<p><b>strHintPlay</b> - play button tooltip</p>
+
+<p><b>strHintPause</b> - pause button tooltip</p>
+
+<p><b>strHintResize</b> - resize button tooltip</p>
+
+<p><b>strImageCount</b><br />
+This provides the text below the caption for images.
+'%1' and '%2' in the string will be replaced by item number and item count.</p>
+
+<p><b>strIframeCount</b><br />
+The text below the caption for iframes.
+'%1' and '%2' will be replaced by item number and item count.</p>
+
+<h5>Other</h5>
+<p>Options in this section are not available to be set in the floatbox.js code because they don't make sense as global or default settings.
+These options are intended to be set from the rev attribute of a floatbox enabled &lt;a&gt; element, or from the page-specific setFloatboxOptions() function in the head section of the host page.</p>
+
+<p><b>doSlideshow</b> - true|false<br />
+If set to true, images in a gallery collection will be launched as a slideshow even if their rel attributes describe them as belonging to a gallery collection.</p>
+
+<p><b>autoStart</b> - true|false<br />
+If you place <span class="code">"autoStart:true"</span> in the rev attribute of a floatbox enabled &lt;a&gt; element the associated image or iframe will be automatically started on host page load without the user clicking on any content.</p>
+
+<p><b>showThis</b> - true|false<br />
+An element with <span class="code">"showThis:false"</span> in its rev attribute will not be added to a gallery, slideshow or iframe collection.
+However, other options set in the rev tag will take effect.
+The showThis option is there primarily to enable a clickable link to display a gallery as a slideshow.
+Such a link would have at least the following in its rev tag: <span class="code">rev="showThis:false doSlideshow:true"</span>.</p>
+
+<p><b>caption</b><br />
+To display a caption in floatbox, you can use the title attribute of an &lt;a&gt; element or set a 'caption' option in its rev attribute.
+Setting it as a rev option allows you to have a different or no tooltip for the anchor mouse-overs, and is the recommended approach.
+In the rev option, the text of the caption option must be surrounded by backquote characters (`) so as not to break parsing of the option string.<br />
+Example: <span class="code">rev="caption:`This is my kool kaption`"</span></p>
+
+<p><b>loadPageOnClose</b> - 'self'|'back'|url<br />
+This controls browser behaviour when floatbox closes.
+If set to the string 'self', the host page will be refreshed on exit.
+If set to 'back', the previous page in the browser's history list will be loaded.
+The 'back' option can be used in conjunction with <span class="code">autoStart:true</span> to present a floatbox display that returns to its origin when complete.
+If loadPageOnClose is set to a string other than 'self' or 'back', that string is assumed to be a valid url and the browser will be instructed to load that page.
+If you set loadPageOnClose to a url inside a rev tag option string, you must surround the url with backquotes (`) so as not to break parsing of the option string.</p>
+
+<p><b>modal</b> - true|false<br />
+The modal option provides the ability to present locked down iframe or slideshow content without the usual ability to navigate or close floatbox.
+Modal is shorthand for <span class="code">navType:'none', showClose:false, showPlayPause:false, enableKeyboardNav:false, outsideClickCloses:false, showHints:'never'</span>.
+Modal iframe content should call "parent.fb.end()", to exit.
+Modal slideshows should their endTask set to 'exit', or could perhaps be set to 'loop' for a continous kiosk type display.</p>
+
+<p><b>width, height</b> - pixels<br />
+Width and height set in the rev tags of iframe items control the size of that iframe content.
+These are pixel values - percentages are not supported.
+A typical rev tag holding dimension info might look like this: <span class="code">rev="width:360 height:240"</span>.
+For compatability, you can also use the css-like syntax of <span class="code">rev="width:360px; height:240px;"</span> or the querystring-like syntax of <span class="code">rev="width=360&amp;height=240"</span>.
+One or both of width and height can be set to 'max' to fit the user's browser's current window width and/or height.
+Note that the width and height options can apply to images, but they're intended for iframe content.
+You are better off autoSizing images as that will maintain the correct proportions.</p>
+
+<p><b>scrolling</b> - 'auto'|'no'<br />
+The scrolling option applies only to iframe content and controls the display of the scroll bars in the iframe.
+If no scrolling value is present, the default of 'auto' is used, which presents scrollbars if they are required and leaves them off if they are not.
+Setting <span class="code">"scrolling:no"</span> in the rev tag will disable scrollbars for that iframe content, whether that content fits its window or not.</p>
+
+<br /><hr />
+</div>
+</body>
+</html>

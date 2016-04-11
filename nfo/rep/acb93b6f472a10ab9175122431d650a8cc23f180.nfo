@@ -1,0 +1,58 @@
+DISC INFO:
+
+Disc Title:     BILLY_ELLIOT_G51
+Disc Size:      40 016 002 448 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:50:49.643 (h:m:s.ms)
+Size:                   32 974 786 560 bytes
+Total Bitrate:          39,67 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              29940 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4290 kbps       5.1 / 48 kHz / 4290 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         25,209 kbps                     
+Presentation Graphics           French          19,776 kbps                     
+Presentation Graphics           Italian         19,728 kbps                     
+Presentation Graphics           German          21,598 kbps                     
+Presentation Graphics           Spanish         21,480 kbps                     
+Presentation Graphics           Dutch           18,705 kbps                     
+Presentation Graphics           Portuguese      20,319 kbps                     
+Presentation Graphics           Chinese         17,798 kbps                     
+Presentation Graphics           French          0,130 kbps                      
+Presentation Graphics           Italian         0,220 kbps                      
+Presentation Graphics           German          0,135 kbps                      
+Presentation Graphics           Spanish         0,234 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+50201.M2TS      0:00:00.000     1:50:49.643     32 974 786 560  39 671
+
+
+ 
+
+

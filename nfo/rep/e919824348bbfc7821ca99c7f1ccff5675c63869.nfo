@@ -1,0 +1,144 @@
+DISC INFO:
+
+Disc Size:      42 292 625 426 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00802.MPLS
+Length:                 1:44:00.233 (h:m:s.ms)
+Size:                   28 722 388 992 bytes
+Total Bitrate:          36,82 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        23836 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3799 kbps       5.1 / 48 kHz / 3799 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* DTS Audio                     Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* Dolby Digital Audio           English         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Ukrainian       448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         0,152 kbps                      
+Presentation Graphics           English         48,949 kbps                    
+Presentation Graphics           Arabic          18,473 kbps                    
+Presentation Graphics           Chinese         31,682 kbps                    
+Presentation Graphics           Danish          35,658 kbps                    
+Presentation Graphics           Dutch           30,332 kbps                    
+Presentation Graphics           Estonian        36,339 kbps                    
+Presentation Graphics           Finnish         29,754 kbps                    
+Presentation Graphics           French          28,686 kbps                    
+Presentation Graphics           German          34,785 kbps                    
+Presentation Graphics           Italian         35,246 kbps                    
+* Presentation Graphics         Japanese        25,154 kbps                    
+* Presentation Graphics         Japanese        0,238 kbps                      
+Presentation Graphics           Latvian         30,393 kbps                    
+Presentation Graphics           Lithuanian      35,954 kbps                    
+Presentation Graphics           Norwegian       32,138 kbps                    
+Presentation Graphics           Polish          30,742 kbps                    
+Presentation Graphics           Russian         36,641 kbps                    
+Presentation Graphics           Spanish         39,556 kbps                    
+Presentation Graphics           Swedish         34,016 kbps                    
+Presentation Graphics           Turkish         38,743 kbps                    
+Presentation Graphics           Ukrainian       38,519 kbps                    
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00600.M2TS      0:00:00.000     0:02:28.773     686 450 688     36 912          
+00608.M2TS      0:02:28.773     0:04:23.221     1 218 674 688   37 039          
+00602.M2TS      0:06:51.994     0:55:05.343     15 245 666 304  36 899          
+00758.M2TS      1:01:57.338     0:15:09.241     4 169 048 064   36 682          
+00606.M2TS      1:17:06.580     0:20:48.872     5 765 885 952   36 935          
+00611.M2TS      1:37:55.452     0:06:04.781     1 636 663 296   35 894
+
+Name:                   00800.MPLS
+Length:                 1:37:32.846 (h:m:s.ms)
+Size:                   26 940 985 344 bytes
+Total Bitrate:          36,82 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        23864 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3793 kbps       5.1 / 48 kHz / 3793 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* DTS Audio                     Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Ukrainian       448 kbps        5.1 / 48 kHz / 448 kbps
+* Dolby Digital Audio           English         224 kbps        2.0 / 48 kHz / 224 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         0,162 kbps                      
+Presentation Graphics           English         48,322 kbps                    
+Presentation Graphics           Arabic          17,652 kbps                    
+Presentation Graphics           Chinese         30,443 kbps                    
+Presentation Graphics           Danish          34,719 kbps                    
+Presentation Graphics           Dutch           29,563 kbps                    
+Presentation Graphics           Estonian        35,451 kbps                    
+Presentation Graphics           Finnish         28,718 kbps                    
+Presentation Graphics           French          27,687 kbps                    
+Presentation Graphics           German          33,000 kbps                    
+Presentation Graphics           Italian         34,258 kbps                    
+* Presentation Graphics         Japanese        24,687 kbps                    
+* Presentation Graphics         Japanese        0,263 kbps                      
+Presentation Graphics           Latvian         29,318 kbps                    
+Presentation Graphics           Lithuanian      34,692 kbps                    
+Presentation Graphics           Norwegian       31,375 kbps                    
+Presentation Graphics           Polish          30,046 kbps                    
+Presentation Graphics           Russian         35,890 kbps                    
+Presentation Graphics           Spanish         38,783 kbps                    
+Presentation Graphics           Swedish         32,885 kbps                    
+Presentation Graphics           Turkish         37,619 kbps                    
+Presentation Graphics           Ukrainian       38,000 kbps                    
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00600.M2TS      0:00:00.000     0:02:28.773     686 450 688     36 912          
+00601.M2TS      0:02:28.773     0:03:18.948     919 701 504     36 982          
+00602.M2TS      0:05:47.722     0:55:05.343     15 245 666 304  36 899          
+00603.M2TS      1:00:53.066     0:00:36.870     174 286 848     37 816          
+00604.M2TS      1:01:29.936     0:07:35.663     2 064 150 528   36 240          
+00605.M2TS      1:09:05.599     0:00:44.461     199 907 328     35 970          
+00606.M2TS      1:09:50.060     0:20:48.872     5 765 885 952   36 935          
+00607.M2TS      1:30:38.933     0:06:53.913     1 884 936 192   36 432

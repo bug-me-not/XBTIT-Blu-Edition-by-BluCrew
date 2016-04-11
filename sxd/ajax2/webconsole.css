@@ -1,0 +1,18 @@
+.console {
+    margin: 0px;
+    font-family: courier;
+    color: gray;
+    background-color: black;
+}
+#result {
+    overflow: auto;
+    padding: 5px;
+    height: 400px;
+}
+#result pre {
+    display: inline;
+}
+#command {
+    width: 100%;
+    border: 1px solid white;
+}

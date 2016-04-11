@@ -1,0 +1,38 @@
+DISC INFO:
+
+Disc Title:     Whats Your Number 2011 MULTI 1080p BluRay AVC DTS HDMA HDSpace
+Disc Size:      40 305 490 926 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00801.MPLS
+Length:                 1:57:14.110 (h:m:s.ms)
+Size:                   32 136 579 072 bytes
+Total Bitrate:          36,55 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29894 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3754 kbps       5.1 / 48 kHz / 3754 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+* Dolby Digital Audio           English         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         50,356 kbps                     
+Presentation Graphics           Spanish         39,566 kbps                     
+Presentation Graphics           French          5,103 kbps

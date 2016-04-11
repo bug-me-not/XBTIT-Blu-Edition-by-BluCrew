@@ -1,0 +1,134 @@
+Général:
+
+Le BluRay Z1 QC scène ne comprend pas de sous titres français complets. Les fansub existant me paraissent "légers" et je n'ai pas le temps de traduire.
+
+Nom complet : American.Ultra.2015.MULTi.1080p.BluRay.REMUX.AVC.DTS.HDMA.7.1-HDO.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 23,1 Gio
+Durée : 1h 35mn
+Type de débit global : Variable
+Débit global moyen : 34,6 Mb/s
+Date d'encodage : UTC 2015-11-26 07:31:17
+Application utilisée : mkvmerge v8.5.2 ('Crosses') 64bit
+Bibliothèque utilisée : libebml v1.3.3 + libmatroska v1.4.4
+DURATION : 01:18:24.191000000
+NUMBER_OF_FRAMES : 12
+NUMBER_OF_BYTES : 386
+_STATISTICS_WRITING_APP : mkvmerge v8.5.2 ('Crosses') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-11-26 07:31:17
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Vidéo
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 1h 35mn
+Type de débit : Variable
+Débit maximum : 31,5 Mb/s
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Type d'images/s : Constant
+Images par seconde : 23,976 Im/s
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : Progressif
+Default : Oui
+Forced : Non
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_AC3
+Durée : 1h 35mn
+Type de débit : Constant
+Débit : 640 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Mode de compression : Avec perte
+Taille du flux : 438 Mio (2%)
+Titre : Dolby Digital Audio French VFQ 640 kbps 5.1 / 48 kHz / 640 kbps
+Langue : Français
+Default : Oui
+Forced : Non
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 35mn
+Type de débit : Variable
+Débit : Inconnu / 1 509 Kbps
+Canaux : 8 canaux / 6 canaux
+Position des cannaux : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Titre : DTS-HD Master Audio English 4417 kbps 7.1 / 48 kHz / 4417 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #1
+ID : 4
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : Sous titres forcés Français (SRT)
+Langue : Français
+Default : Oui
+Forced : Non
+
+Texte #2
+ID : 5
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Presentation Graphics French 0,339 kbps
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #3
+ID : 6
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Presentation Graphics English 34,428 kbps
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Menu
+00:00:00.000 : en:
+00:03:47.727 : en:
+00:09:28.985 : en:
+00:22:15.917 : en:
+00:23:56.935 : en:
+00:26:45.979 : en:
+00:33:28.631 : en:
+00:37:54.230 : en:
+00:42:31.048 : en:
+00:48:55.849 : en:
+00:55:13.393 : en:
+01:00:11.274 : en:
+01:06:12.301 : en:
+01:10:14.668 : en:
+01:18:38.922 : en:
+01:25:14.692 : en:

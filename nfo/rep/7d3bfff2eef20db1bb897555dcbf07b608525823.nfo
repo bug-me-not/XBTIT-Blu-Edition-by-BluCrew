@@ -1,0 +1,954 @@
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+
+********************
+PLAYLIST: 00001.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00001.MPLS                                                      AVC     2:15:30 24 729 464 832  40 113 627 379  24,33   18,98   DTS-HD Master 5.1 1906Kbps (48kHz/16-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:15:30.122 (h:m:s.ms)
+Size:                   24 729 464 832 bytes
+Total Bitrate:          24,33 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18975 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          1906 kbps       5.1 / 48 kHz / 1906 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Multiple languages1899 kbps       5.1 / 48 kHz / 1899 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,961 kbps                      
+Presentation Graphics           French          9,850 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:15:30.122     24 729 464 832  24 334          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:08:26.047     17 035 kbps     27 102 kbps     00:05:00.842    24 144 kbps     00:04:29.352    22 766 kbps     00:06:55.790    88 803 bytes    378 314 bytes   00:06:01.194    
+2               0:08:26.047     0:09:07.922     20 481 kbps     31 287 kbps     00:16:08.801    27 638 kbps     00:16:04.797    25 376 kbps     00:15:43.150    106 780 bytes   370 205 bytes   00:09:04.252    
+3               0:17:33.969     0:06:25.927     19 993 kbps     29 266 kbps     00:19:00.430    24 050 kbps     00:20:43.659    23 172 kbps     00:20:41.073    104 237 bytes   350 259 bytes   00:22:51.745    
+4               0:23:59.896     0:06:49.033     19 483 kbps     27 488 kbps     00:24:03.817    24 451 kbps     00:27:38.490    23 265 kbps     00:30:37.669    101 575 bytes   358 850 bytes   00:28:36.798    
+5               0:30:48.930     0:07:49.427     20 157 kbps     33 578 kbps     00:38:15.376    25 931 kbps     00:32:27.779    23 627 kbps     00:38:06.367    105 088 bytes   403 942 bytes   00:35:03.851    
+6               0:38:38.357     0:08:01.272     18 696 kbps     28 997 kbps     00:45:07.037    24 835 kbps     00:39:11.182    23 768 kbps     00:39:09.430    97 472 bytes    479 981 bytes   00:39:12.016    
+7               0:46:39.630     0:04:13.711     19 950 kbps     31 888 kbps     00:47:20.295    25 931 kbps     00:47:10.953    23 888 kbps     00:47:12.579    104 012 bytes   333 710 bytes   00:49:38.600    
+8               0:50:53.341     0:08:17.997     19 649 kbps     27 401 kbps     00:57:45.003    24 548 kbps     00:57:44.919    23 108 kbps     00:57:06.381    102 443 bytes   308 890 bytes   00:51:15.113    
+9               0:59:11.339     0:07:00.420     20 022 kbps     28 954 kbps     01:02:11.018    25 816 kbps     01:01:18.466    24 837 kbps     01:01:13.419    104 387 bytes   343 595 bytes   01:01:44.367    
+10              1:06:11.759     0:08:03.232     19 274 kbps     26 302 kbps     01:09:38.924    23 708 kbps     01:09:43.637    22 715 kbps     01:09:43.637    100 486 bytes   363 198 bytes   01:11:03.676    
+11              1:14:14.992     0:05:02.635     19 782 kbps     29 747 kbps     01:17:42.199    24 926 kbps     01:16:34.756    24 716 kbps     01:16:35.507    103 136 bytes   309 548 bytes   01:19:17.627    
+12              1:19:17.627     0:09:22.728     19 046 kbps     28 288 kbps     01:25:28.873    25 497 kbps     01:25:26.663    25 041 kbps     01:25:25.787    99 299 bytes    361 745 bytes   01:26:06.911    
+13              1:28:40.356     0:06:07.075     18 278 kbps     25 810 kbps     01:34:36.962    23 625 kbps     01:34:32.875    23 070 kbps     01:34:29.497    95 291 bytes    356 235 bytes   01:33:25.141    
+14              1:34:47.431     0:12:01.637     18 000 kbps     27 212 kbps     01:34:47.682    23 238 kbps     01:38:56.513    22 102 kbps     01:38:56.055    93 844 bytes    399 888 bytes   01:40:29.481    
+15              1:46:49.069     0:10:25.041     18 979 kbps     25 717 kbps     01:56:01.537    22 551 kbps     01:56:00.745    21 629 kbps     01:55:59.869    98 949 bytes    333 296 bytes   01:47:22.477    
+16              1:57:14.110     0:06:54.038     18 858 kbps     26 445 kbps     02:02:50.071    22 652 kbps     02:01:09.178    22 031 kbps     02:03:19.350    98 315 bytes    375 274 bytes   02:00:51.953    
+17              2:04:08.149     0:06:27.053     23 382 kbps     37 041 kbps     02:07:45.949    32 312 kbps     02:07:43.197    30 702 kbps     02:07:43.280    121 904 bytes   511 314 bytes   02:09:28.218    
+18              2:10:35.202     0:04:54.919     8 754 kbps      18 234 kbps     02:13:00.055    16 410 kbps     02:12:59.262    15 610 kbps     02:12:56.093    45 650 bytes    332 629 bytes   02:13:00.931    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     8130,039                18 976                  19 283 996 896  104 919 061     
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       fra (French)            8130,039                1 906                   1 937 407 536   11 788 486      
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       mul (Multiple languages)8130,039                1 899                   1 929 882 320   11 754 273      
+00000.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            8130,039                1                       977 122         5 571           
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            8130,039                10                      10 009 716      59 501          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00001.MPLS
+Size: 24 729 464 832 bytes
+Length: 2:15:30.122
+Total Bitrate: 24,33 Mbps
+Video: MPEG-4 AVC Video / 18975 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 1906 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Audio: Multiple languages / DTS-HD Master Audio / 5.1 / 48 kHz / 1899 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Subtitle: French / 0,961 kbps
+Subtitle: French / 9,850 kbps
+
+
+********************
+PLAYLIST: 00014.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00014.MPLS                                                      MPEG-2  1:54:57 0               40 113 627 379  0,00    0,00    DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00014.MPLS
+Length:                 1:54:57.680 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            0 kbps              576i / 25 fps / 4:3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Chinese         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00014.M2TS      0:00:00.000     1:54:57.680     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:02:32.080     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+2               0:02:32.080     0:03:08.520     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+3               0:05:40.600     0:04:15.079     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:09:55.679     0:12:02.040     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:21:57.720     0:08:03.480     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:30:01.200     0:09:45.480     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:39:46.680     0:10:57.119     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:50:43.800     0:12:01.880     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               1:02:45.680     0:05:10.079     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:07:55.760     0:06:53.239     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:14:49.000     0:04:42.680     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:19:31.680     0:03:44.319     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+13              1:23:16.000     0:08:55.960     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+14              1:32:11.960     0:04:16.640     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+15              1:36:28.600     0:03:48.599     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+16              1:40:17.200     0:10:14.000     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+17              1:50:31.200     0:04:26.480     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00014.M2TS      4113 (0x1011)   0x02            MPEG-2                                  0                       0                       0               0               
+00014.M2TS      4352 (0x1100)   0x81            AC3             zho (Chinese)           0                       0                       0               0               
+00014.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00014.MPLS
+Size: 0 bytes
+Length: 1:54:57.680
+Total Bitrate: 0,00 Mbps
+Video: MPEG-2 Video / 0 kbps / 576i / 25 fps / 4:3
+Audio: Chinese / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Subtitle: French / 0,000 kbps
+
+
+********************
+PLAYLIST: 00009.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00009.MPLS                                                      AVC     0:31:20 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00009.MPLS
+Length:                 0:31:20.120 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080i / 25 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       English         768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00009.M2TS      0:00:00.000     0:31:20.120     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:31:20.120     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00009.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00009.M2TS      4352 (0x1100)   0x82            DTS             eng (English)           0                       0                       0               0               
+00009.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00009.MPLS
+Size: 0 bytes
+Length: 0:31:20.120
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080i / 25 fps / 16:9 / High Profile 4.1
+Audio: English / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+Subtitle: French / 0,000 kbps
+
+
+********************
+PLAYLIST: 00012.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00012.MPLS                                                      MPEG-2  0:52:31 0               40 113 627 379  0,00    0,00    DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00012.MPLS
+Length:                 0:52:31.200 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            0 kbps              576i / 25 fps / 4:3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             French          192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00012.M2TS      0:00:00.000     0:52:31.200     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:52:31.200     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00012.M2TS      4113 (0x1011)   0x02            MPEG-2                                  0                       0                       0               0               
+00012.M2TS      4352 (0x1100)   0x81            AC3             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00012.MPLS
+Size: 0 bytes
+Length: 0:52:31.200
+Total Bitrate: 0,00 Mbps
+Video: MPEG-2 Video / 0 kbps / 576i / 25 fps / 4:3
+Audio: French / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00010.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00010.MPLS                                                      AVC     0:06:45 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00010.MPLS
+Length:                 0:06:45.279 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       French          768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00010.M2TS      0:00:00.000     0:06:45.279     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:06:45.279     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00010.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00010.M2TS      4352 (0x1100)   0x82            DTS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00010.MPLS
+Size: 0 bytes
+Length: 0:06:45.279
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: French / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+
+
+********************
+PLAYLIST: 00013.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00013.MPLS                                                      MPEG-2  0:21:13 0               40 113 627 379  0,00    0,00    DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00013.MPLS
+Length:                 0:21:13.200 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            0 kbps              576i / 25 fps / 4:3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Chinese         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00013.M2TS      0:00:00.000     0:21:13.200     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:21:13.200     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00013.M2TS      4113 (0x1011)   0x02            MPEG-2                                  0                       0                       0               0               
+00013.M2TS      4352 (0x1100)   0x81            AC3             zho (Chinese)           0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00013.MPLS
+Size: 0 bytes
+Length: 0:21:13.200
+Total Bitrate: 0,00 Mbps
+Video: MPEG-2 Video / 0 kbps / 576i / 25 fps / 4:3
+Audio: Chinese / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00004.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00004.MPLS                                                      AVC     0:01:51 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00004.MPLS
+Length:                 0:01:51.611 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       Chinese         768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00003.M2TS      0:00:00.000     0:01:51.611     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:51.611     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00003.M2TS      4352 (0x1100)   0x82            DTS             zho (Chinese)           0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00004.MPLS
+Size: 0 bytes
+Length: 0:01:51.611
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: Chinese / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+
+
+********************
+PLAYLIST: 00006.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00006.MPLS                                                      AVC     0:01:29 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00006.MPLS
+Length:                 0:01:29.506 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       Multiple languages768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00005.M2TS      0:00:00.000     0:01:29.506     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:29.506     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00005.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00005.M2TS      4352 (0x1100)   0x82            DTS             mul (Multiple languages)0                       0                       0               0               
+00005.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00006.MPLS
+Size: 0 bytes
+Length: 0:01:29.506
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: Multiple languages / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+Subtitle: French / 0,000 kbps
+
+
+********************
+PLAYLIST: 00005.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00005.MPLS                                                      AVC     0:01:44 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00005.MPLS
+Length:                 0:01:44.395 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       Chinese         768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00004.M2TS      0:00:00.000     0:01:44.395     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:44.395     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00004.M2TS      4352 (0x1100)   0x82            DTS             zho (Chinese)           0                       0                       0               0               
+00004.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00005.MPLS
+Size: 0 bytes
+Length: 0:01:44.395
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: Chinese / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+Subtitle: French / 0,000 kbps
+
+
+********************
+PLAYLIST: 00007.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00007.MPLS                                                      AVC     0:01:18 0               40 113 627 379  0,00    0,00    DTS 2.0 768Kbps (48kHz/16-bit)            
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00007.MPLS
+Length:                 0:01:18.912 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       Chinese         768 kbps        2.0 / 48 kHz / 768 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00006.M2TS      0:00:00.000     0:01:18.912     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:18.912     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00006.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+00006.M2TS      4352 (0x1100)   0x82            DTS             zho (Chinese)           0                       0                       0               0               
+00006.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00007.MPLS
+Size: 0 bytes
+Length: 0:01:18.912
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: Chinese / DTS Audio / 2.0 / 48 kHz / 768 kbps / 16-bit
+Subtitle: French / 0,000 kbps
+
+
+********************
+PLAYLIST: 00002.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00002.MPLS                                                      AVC     0:00:58 0               40 113 627 379  0,00    0,00                                              
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     CITY_OF_LIFE_AND_DEATH
+Disc Size:      40 113 627 379 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 0:00:58.433 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        0 kbps              1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     0:00:58.433     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:58.433     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00001.M2TS      4113 (0x1011)   0x1B            AVC                                     0                       0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: CITY_OF_LIFE_AND_DEATH
+Disc Size: 40 113 627 379 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00002.MPLS
+Size: 0 bytes
+Length: 0:00:58.433
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 0 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+

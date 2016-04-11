@@ -1,0 +1,41 @@
+Disc Title:     Thats What I Am 2011 MULTI 1080p BluRay AVC LPCM fantome13
+
+
+Disc Size:      45 145 864 785 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:41:20.407 (h:m:s.ms)
+Size:                   32 389 564 416 bytes
+Total Bitrate:          42,61 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        26587 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+LPCM Audio                      German          4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+LPCM Audio                      French          4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         48,551 kbps                     
+Presentation Graphics           French          0,254 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:41:20.407     32 389 564 416  42 615

@@ -1,0 +1,37 @@
+DISC INFO:
+
+Disc Title:     ip_man_2_us
+Disc Size:      44,206,777,296 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:48:07.416 (h:m:s.ms)
+Size:                   36,252,942,336 bytes
+Total Bitrate:          44.71 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        34999 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         2105 kbps       5.1 / 48 kHz / 2105 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+DTS-HD Master Audio             Chinese         2128 kbps       5.1 / 48 kHz / 2128 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Chinese         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+DTS-HD Master Audio             Chinese         2147 kbps       5.1 / 48 kHz / 2147 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Chinese         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         16.803 kbps 

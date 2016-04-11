@@ -1,0 +1,86 @@
+General
+Unique ID : 184776909493925048481272298755814579700 (0x8B02BD0165A846C98137C16C9AFFDDF4)
+Complete name : F:ReleasesouthpawMuxedMain-Muxed.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 13.9 GiB
+Duration : 2h 3mn
+Overall bit rate mode : Variable
+Overall bit rate : 16.0 Mbps
+Movie name : SouthPaw 2015 1080p By The HD Worlshop
+Encoded date : UTC 2015-10-08 22:30:41
+Writing application : mkvmerge v8.2.0 ('World of Adventure') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 02:03:48.214000000
+NUMBER_OF_FRAMES : 696395
+NUMBER_OF_BYTES : 3300576396
+_STATISTICS_WRITING_APP : mkvmerge v8.2.0 ('World of Adventure') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-08 22:30:41
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video #0
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 5 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 3mn
+Bit rate mode : Variable
+Maximum bit rate : 40.0 Mbps
+Width : 1 920 pixels
+Height : 796 pixels
+Display aspect ratio : 2.40:1
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Title : SouthPaw 2015 1080p By The HD Worlshop
+Language : English
+Default : Yes
+Forced : No
+
+Audio #0
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 3mn
+Bit rate mode : Constant
+Bit rate : 448 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 397 MiB (3%)
+Title : VFI - Dolby Digital 5.1 @ 448 Kbps
+Language : French
+Default : Yes
+Forced : No
+
+Audio #1
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 2h 3mn
+Bit rate mode : Variable
+Bit rate : Unknown / 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless / Lossy
+Title : VO - DTS-HD MA 5.1 @ 1509 Kbps
+Language : English
+Default : No
+Forced : No

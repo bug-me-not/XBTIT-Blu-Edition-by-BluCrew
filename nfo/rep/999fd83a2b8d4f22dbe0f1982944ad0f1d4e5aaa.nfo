@@ -1,0 +1,149 @@
+     ___        _____        ___                   ___          ___     
+     /__/\      /  /::\      /__/|      ___        /__/\        /  /\    
+     \  \:\    /  /:/\:\    |  |:|     /  /\       \  \:\      /  /:/_   
+      \__\:\  /  /:/  \:\   |  |:|    /  /:/        \  \:\    /  /:/ /\  
+  ___ /  /::\/__/:/ \__\:|__|  |:|   /__/::\    _____\__\:\  /  /:/_/::\ 
+ /__/\  /:/\:\  \:\ /  /:/__/\_|:|___\__\/\:\__/__/::::::::\/__/:/__\/\:\
+ \  \:\/:/__\/\  \:\  /:/\  \:\/:::::/  \  \:\/\  \:\~~\~~\/\  \:\ /~~/:/
+  \  \::/      \  \:\/:/  \  \::/~~~~    \__\::/\  \:\  ~~~  \  \:\  /:/ 
+   \  \:\       \  \::/    \  \:\        /__/:/  \  \:\       \  \:\/:/  
+    \  \:\       \__\/      \  \:\       \__\/    \  \:\       \  \::/   
+     \__\/                   \__\/                 \__\/        \__\/    
+
+
+
+
+Complete name                    : A Clockwork Orange 1971 MULTI 1080p BluRay REMUX VC-1-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 20.9 GiB
+Duration                         : 2h 16mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 21.9 Mbps
+Encoded date                     : UTC 2014-09-15 02:19:05
+Writing application              : mkvmerge v7.2.0 ('On Every Street') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : VC-1
+Format profile                   : AP@L3
+Codec ID                         : WVC1
+Codec ID/Hint                    : Microsoft
+Duration                         : 2h 16mn
+Bit rate                         : 18.9 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Compression mode                 : Lossy
+Bits/(Pixel*Frame)               : 0.381
+Stream size                      : 18.1 GiB (86%)
+Title                            : A Clockwork Orange
+
+Audio #1
+ID                               : 2
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 16mn
+Bit rate mode                    : Constant
+Bit rate                         : 640 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 625 MiB (3%)
+Title                            : French (International) : Dolby Digital 5.1
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 2h 16mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 723 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #3
+ID                               : 4
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 16mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 188 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 5
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #2
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Chapter 1
+00:02:17.053                     : en:Chapter 2
+00:04:28.017                     : en:Chapter 3
+00:07:32.368                     : en:Chapter 4
+00:08:58.454                     : en:Chapter 5
+00:13:21.717                     : en:Chapter 6
+00:16:46.755                     : en:Chapter 7
+00:20:02.451                     : en:Chapter 8
+00:25:47.796                     : en:Chapter 9
+00:28:05.308                     : en:Chapter 10
+00:29:04.200                     : en:Chapter 11
+00:33:19.247                     : en:Chapter 12
+00:36:30.605                     : en:Chapter 13
+00:43:32.192                     : en:Chapter 14
+00:47:21.088                     : en:Chapter 15
+00:52:57.048                     : en:Chapter 16
+00:55:30.452                     : en:Chapter 17
+01:01:19.759                     : en:Chapter 18
+01:07:20.786                     : en:Chapter 19
+01:11:13.852                     : en:Chapter 20
+01:15:33.946                     : en:Chapter 21
+01:19:16.376                     : en:Chapter 22
+01:23:59.242                     : en:Chapter 23
+01:26:18.882                     : en:Chapter 24
+01:28:09.200                     : en:Chapter 25
+01:31:53.591                     : en:Chapter 26
+01:35:55.374                     : en:Chapter 27
+01:39:30.923                     : en:Chapter 28
+01:42:23.178                     : en:Chapter 29
+01:49:35.860                     : en:Chapter 30
+02:01:09.262                     : en:Chapter 31
+02:04:03.185                     : en:Chapter 32
+02:07:37.566                     : en:Chapter 33
+02:12:34.029                     : en:Chapter 34
+02:13:56.278                     : en:Chapter 35

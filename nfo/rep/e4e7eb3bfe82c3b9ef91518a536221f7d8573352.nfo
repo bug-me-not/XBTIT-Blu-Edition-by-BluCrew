@@ -1,0 +1,49 @@
+
+DISC INFO:
+
+Disc Title:     Logans Run 1976 MULTI 1080p BluRay VC1 TrueHD HDSpace
+Disc Size:      22 744 720 062 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00013.MPLS
+Length:                 1:58:31.604 (h:m:s.ms)
+Size:                   21 944 942 592 bytes
+Total Bitrate:          24,69 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              18739 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         1698 kbps       5.1 / 48 kHz / 1698 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             German          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         22,914 kbps                     
+Presentation Graphics           French          18,644 kbps                     
+Presentation Graphics           Spanish         22,623 kbps                     
+Presentation Graphics           Japanese        15,195 kbps                     
+Presentation Graphics           Japanese        43,355 kbps                     
+Presentation Graphics           German          27,243 kbps                     
+Presentation Graphics           Spanish         22,343 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00017.M2TS      0:00:00.000     1:58:31.604     21 944 942 592  24 686

@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     Gentleman's.Agreement.1947.1080p.Blu-ray.AVC.DTS-HD.MA.2.0-PCH
+Disc Size:      24 798 850 394 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:58:24.889 (h:m:s.ms)
+Size:                   23 009 046 528 bytes
+Total Bitrate:          25,91 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        21683 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1960 kbps       2.0 / 48 kHz / 1960 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         63,456 kbps                     
+Presentation Graphics           Spanish         50,117 kbps                     
+Presentation Graphics           French          0,063 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     1:58:24.889     23 009 046 528  25 908
+
+  

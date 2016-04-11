@@ -1,0 +1,72 @@
+DISC INFO:
+
+Disc Title:     EPICA_IN_CONCERT_D1
+Disc Size:      20 820 917 731 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 1:34:24.825 (h:m:s.ms)
+Size:                   20 167 458 816 bytes
+Total Bitrate:          28,48 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-2 Video            24998 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00002.M2TS      0:00:00.000     1:34:24.825     20 167 458 816  28 481
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+DISC INFO:
+
+Disc Title:     EPICA_IN_CONCERT_D2
+Disc Size:      24 799 696 999 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:24:40.916 (h:m:s.ms)
+Size:                   15 406 989 312 bytes
+Total Bitrate:          24,26 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-2 Video            20952 kbps          1080p / 24 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00001.M2TS      0:00:00.000     1:24:40.916     15 406 989 312  24 259

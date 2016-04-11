@@ -1,0 +1,134 @@
+Time Out 2011 MULTI BluRay REMUX DTS-HD MA AVC-HR.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 25.0 GiB
+Duration : 1h 49mn
+Overall bit rate mode : Variable
+Overall bit rate : 32.8 Mbps
+Movie name : @HR@
+Encoded date : UTC 2015-09-05 12:50:12
+Writing application : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 01:48:21.495000000
+NUMBER_OF_FRAMES : 2164
+NUMBER_OF_BYTES : 5638897
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-09-05 12:50:12
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 1h 49mn
+Bit rate mode : Variable
+Maximum bit rate : 30.2 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Default : Yes
+Forced : No
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 1h 49mn
+Bit rate mode : Constant
+Bit rate : 768 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossy
+Stream size : 600 MiB (2%)
+Title : DTS Audio French 768 kbps 5.1 / 48 kHz / 768 kbps / 24-bit
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 1h 49mn
+Bit rate mode : Variable
+Bit rate : Unknown / 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless / Lossy
+Title : DTS-HD Master Audio English 3815 kbps 5.1 / 48 kHz / 3815 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Language : English
+Default : No
+Forced : No
+
+Text #1
+ID : 4
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : Picture based subtitle format used on BDs/HD-DVDs
+Title : FRANCAIS COMPLETS PGS
+Language : French
+Default : No
+Forced : No
+
+Text #2
+ID : 5
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : Picture based subtitle format used on BDs/HD-DVDs
+Title : ENGLISH FULL PGS
+Language : English
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:Chapter 1
+00:05:54.270 : en:Chapter 2
+00:10:50.733 : en:Chapter 3
+00:18:58.095 : en:Chapter 4
+00:22:16.376 : en:Chapter 5
+00:25:30.445 : en:Chapter 6
+00:29:51.915 : en:Chapter 7
+00:34:41.746 : en:Chapter 8
+00:38:24.885 : en:Chapter 9
+00:41:23.898 : en:Chapter 10
+00:44:44.723 : en:Chapter 11
+00:48:08.302 : en:Chapter 12
+00:51:32.547 : en:Chapter 13
+00:53:56.149 : en:Chapter 14
+00:56:16.873 : en:Chapter 15
+01:00:25.371 : en:Chapter 16
+01:05:41.145 : en:Chapter 17
+01:08:57.800 : en:Chapter 18
+01:11:19.483 : en:Chapter 19
+01:14:05.107 : en:Chapter 20
+01:16:48.979 : en:Chapter 21
+01:20:20.982 : en:Chapter 22
+01:22:44.292 : en:Chapter 23
+01:27:17.106 : en:Chapter 24
+01:29:22.398 : en:Chapter 25
+01:33:26.017 : en:Chapter 26
+01:37:16.956 : en:Chapter 27
+01:42:56.461 : en:Chapter 28

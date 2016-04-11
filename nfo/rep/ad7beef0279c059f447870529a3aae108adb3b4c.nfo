@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     The Good Shepherd 2006 1080p blu-ray VC1 DTS-HD MA 5.1
+Disc Size:      27 268 807 304 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:47:21.573 (h:m:s.ms)
+Size:                   25 296 371 712 bytes
+Total Bitrate:          20,15 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              14962 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD High-Res Audio           French          2046 kbps       5.1 / 48 kHz / 2046 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         1816 kbps       5.1 / 48 kHz / 1816 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          1,584 kbps                      
+Presentation Graphics           French          24,787 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:47:21.573     25 296 371 712  20 153
+
+
+ 
+

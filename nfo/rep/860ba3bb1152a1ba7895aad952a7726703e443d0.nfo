@@ -1,0 +1,50 @@
+DISC INFO:
+
+Disc Title:     Bad Milo
+Disc Size:      27 618 520 041 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:24:09.044 (h:m:s.ms)
+Size:                   24 225 337 344 bytes
+Total Bitrate:          38,38 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22928 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2164 kbps       5.1 / 48 kHz / 2164 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             Italian         2156 kbps       5.1 / 48 kHz / 2156 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Spanish         2808 kbps       5.1 / 48 kHz / 2808 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          2161 kbps       5.1 / 48 kHz / 2161 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             German          2168 kbps       5.1 / 48 kHz / 2168 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         36,185 kbps                     
+Presentation Graphics           English         29,502 kbps                     
+Presentation Graphics           Arabic          19,850 kbps                     
+Presentation Graphics           Danish          29,368 kbps                     
+Presentation Graphics           Dutch           29,982 kbps                     
+Presentation Graphics           Finnish         29,602 kbps                     
+Presentation Graphics           French          29,634 kbps                     
+Presentation Graphics           German          38,962 kbps                     
+Presentation Graphics           Hindi           29,885 kbps                     
+Presentation Graphics           Italian         34,832 kbps                     
+Presentation Graphics           Norwegian       33,064 kbps                     
+Presentation Graphics           Spanish         35,169 kbps                     
+Presentation Graphics           Swedish         32,838 kbps                     
+Presentation Graphics           Turkish         34,664 kbps

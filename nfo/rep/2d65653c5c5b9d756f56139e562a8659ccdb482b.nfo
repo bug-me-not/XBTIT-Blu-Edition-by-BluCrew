@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Down by Law 1986 MULTI 1080p BluRay AVC LPCM HDSpace
+Disc Size:      47 449 016 915 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:46:53.448 (h:m:s.ms)
+Size:                   22 519 922 688 bytes
+Total Bitrate:          28,09 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23994 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+LPCM Audio                      English         1152 kbps       1.0 / 48 kHz / 1152 kbps / 24-bit
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps
+Dolby Digital Audio             English         192 kbps        1.0 / 48 kHz / 192 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         39,491 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00274.M2TS      0:00:00.000     1:46:53.448     22 519 922 688  28 091
+

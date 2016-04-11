@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Snipers F13
+Disc Size:      24 810 248 823 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:26:48.661 (h:m:s.ms)
+Size:                   18 661 767 168 bytes
+Total Bitrate:          28,66 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        21966 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          2491 kbps       5.1 / 48 kHz / 2491 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Chinese         2461 kbps       5.1 / 48 kHz / 2461 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,104 kbps                      
+Presentation Graphics           French          20,457 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     1:26:48.661     18 661 767 168  28 663

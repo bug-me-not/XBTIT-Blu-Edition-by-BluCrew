@@ -1,0 +1,38 @@
+DISC INFO:
+
+Disc Title:     Greenberg 2010 BluRay 1080p VC1 DTS-HD MA5.1-CHDBits
+Disc Size:      31,954,595,593 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:47:18.432 (h:m:s.ms)
+Size:                   28,993,591,296 bytes
+Total Bitrate:          36.03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              29158 kbps          1080p / 23.976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3278 kbps       5.1 / 48 kHz / 3278 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         47.053 kbps                     
+Presentation Graphics           Spanish         39.232 kbps                     
+Presentation Graphics           French          39.513 kbps                     
+Presentation Graphics           Spanish         0.179 kbps                      
+Presentation Graphics           French          0.137 kbps

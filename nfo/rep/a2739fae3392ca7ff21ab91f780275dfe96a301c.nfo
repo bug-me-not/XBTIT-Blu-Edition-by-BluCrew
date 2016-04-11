@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     Risky Buisness F13
+Disc Size:      37 117 636 400 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 1:39:08.984 (h:m:s.ms)
+Size:                   25 141 671 936 bytes
+Total Bitrate:          33,81 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              26290 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+VC-1 Video              1970 kbps           480p / 23,976 fps / 4:3 / Advanced Profile 2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby TrueHD Audio              English         1276 kbps       5.1 / 48 kHz / 1276 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Dolby Digital Audio             French          192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Spanish         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+DTS Express                     English         192 kbps        2.0 / 48 kHz / 192 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         31,264 kbps                     
+Presentation Graphics           French          21,743 kbps                     
+Presentation Graphics           Spanish         22,819 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     1:39:08.984     25 141 671 936  33 810

@@ -1,0 +1,134 @@
+Général
+Identifiant unique                       : 184977407150790426170070961658548827424 (0x8B295A4D9B45A05AAA5526E6C721B520)
+Nom complet                              : H:\BD REMUX POUR UPLOAD\UPLOAD PREPA\RYAN INITIATIVE REMUX\The Ryan Initiative 2014 MULTi VFF+VO 1080p DTS-HDMA Bluray REMUX-SAW.mkv
+Format                                   : Matroska
+Version du format                        : Version 4 / Version 2
+Taille du fichier                        : 25,9 Gio
+Durée                                    : 1h 45mn
+Type de débit global                     : Variable
+Débit global moyen                       : 35,1 Mb/s
+Nom du film                              : The Ryan Initiative 2014 MULTi VFF+VO 1080p DTS-HDMA Bluray REMUX-SAW 
+Date d'encodage                          : UTC 2014-06-05 13:42:25
+Application utilisée                     : mkvmerge v6.9.1 ('Blue Panther') 32bit built on Apr 18 2014 18:15:44
+Bibliothèque utilisée                    : libebml v1.3.0 + libmatroska v1.4.1
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 4 images
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 1h 45mn
+Type de débit                            : Variable
+Débit maximum                            : 32,0 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 45mn
+Type de débit                            : Variable
+Débit                                    : Inconnu / 1 509 Kbps
+Canaux                                   : 8 canaux / 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 1h 45mn
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 483 Mio (2%)
+Titre                                    : Audio French (VFF) AC3 5.1 channels 16 bits @ 640 Kbps cbr
+Langue                                   : Frantais VFF
+Default                                  : Oui
+Forced                                   : Oui
+
+Texte #1
+ID                                       : 4
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Frantais forcés
+Langue                                   : Frantais
+Default                                  : Oui
+Forced                                   : Oui
+
+Texte #2
+ID                                       : 5
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Frantais
+Langue                                   : Frantais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #3
+ID                                       : 6
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Anglais forcés
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #4
+ID                                       : 7
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Anglais
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:Chapter 01
+00:05:45.470                             : en:Chapter 02
+00:12:02.472                             : en:Chapter 03
+00:18:11.007                             : en:Chapter 04
+00:23:38.792                             : en:Chapter 05
+00:31:19.795                             : en:Chapter 06
+00:40:26.299                             : en:Chapter 07
+00:48:47.466                             : en:Chapter 08
+00:57:28.070                             : en:Chapter 09
+01:06:19.642                             : en:Chapter 10
+01:13:07.466                             : en:Chapter 11
+01:21:53.867                             : en:Chapter 12
+01:27:07.097                             : en:Chapter 13
+01:35:21.507                             : en:Chapter 14
+01:38:55.054                             : en:Chapter 15

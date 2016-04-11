@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Papillon
+Disc Size:      48 506 322 412 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00015.MPLS
+Length:                 2:30:34.916 (h:m:s.ms)
+Size:                   33 194 194 944 bytes
+Total Bitrate:          29,39 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23780 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          1959 kbps       5.1 / 48 kHz / 1959 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         1860 kbps       5.1 / 48 kHz / 1860 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,496 kbps                      
+Presentation Graphics           French          13,311 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00015.M2TS      0:00:00.000     2:30:34.916     33 194 194 944  29 392

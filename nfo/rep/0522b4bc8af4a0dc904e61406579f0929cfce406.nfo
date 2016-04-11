@@ -1,0 +1,75 @@
+DISC INFO:
+
+Disc Title:     Enough said 2013 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      40 776 252 973 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:32:59.615 (h:m:s.ms)
+Size:                   31 548 930 048 bytes
+Total Bitrate:          45,23 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        33101 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3034 kbps       5.1 / 48 kHz / 3034 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Czech           448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Thai            448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Turkish         448 kbps        5.1 / 48 kHz / 448 kbps
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Hungarian       448 kbps        5.1 / 48 kHz / 448 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         47,139 kbps                     
+Presentation Graphics           Spanish         41,076 kbps                     
+Presentation Graphics           French          35,946 kbps                     
+Presentation Graphics           Danish          39,680 kbps                     
+Presentation Graphics           Dutch           34,946 kbps                     
+Presentation Graphics           Finnish         37,755 kbps                     
+Presentation Graphics           German          41,330 kbps                     
+Presentation Graphics           Bulgarian       37,739 kbps                     
+Presentation Graphics           Norwegian       38,859 kbps                     
+Presentation Graphics           Portuguese      36,776 kbps                     
+Presentation Graphics           Russian         38,946 kbps                     
+Presentation Graphics           Swedish         37,619 kbps                     
+Presentation Graphics           Chinese         29,438 kbps                     
+Presentation Graphics           Estonian        39,497 kbps                     
+Presentation Graphics           Hindi           34,632 kbps                     
+Presentation Graphics           Indonesian      42,450 kbps                     
+Presentation Graphics           Korean          29,584 kbps                     
+Presentation Graphics           Latvian         40,703 kbps                     
+Presentation Graphics           Lithuanian      41,316 kbps                     
+Presentation Graphics           Malay           46,509 kbps                     
+Presentation Graphics           Chinese         33,459 kbps                     
+Presentation Graphics           Thai            31,273 kbps                     
+Presentation Graphics           Turkish         44,655 kbps                     
+Presentation Graphics           Ukrainian       42,077 kbps                     
+Presentation Graphics           Vietnamese      44,027 kbps                     
+Presentation Graphics           Czech           36,409 kbps                     
+Presentation Graphics           Hungarian       36,343 kbps                     
+Presentation Graphics           Greek           40,858 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00474.M2TS      0:00:00.000     1:32:59.615     31 548 930 048  45 235

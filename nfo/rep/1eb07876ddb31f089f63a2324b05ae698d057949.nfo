@@ -1,0 +1,80 @@
+Général
+Identifiant unique                       : 146766144980507526153490634495458908065 (0x6E6A219FC30EAEF768AF09FDD2E597A1)
+Nom complet                              : D:\DownLoad\La.Haine.1995.FRENCH.1080p.BluRay.Remux.VC1.DTSHDMA-GR.mkv
+Format                                   : Matroska
+Version du format                        : Version 4 / Version 2
+Taille du fichier                        : 12,9 Gio
+Durée                                    : 1h 37mn
+Type de débit global                     : Variable
+Débit global moyen                       : 18,9 Mb/s
+Date d'encodage                          : UTC 2014-08-21 21:59:37
+Application utilisée                     : mkvmerge v6.9.1 ('Blue Panther') 64bit built on Apr 18 2014 16:44:49
+Bibliothèque utilisée                    : libebml v1.3.0 + libmatroska v1.4.1
+
+Vidéo
+ID                                       : 1
+Format                                   : VC-1
+Profil du format                         : Advanced@L3
+Identifiant du codec                     : V_MS/VFW/FOURCC / WVC1
+Identifiant du codec/Suggestion          : Microsoft
+Durée                                    : 1h 37mn
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Mode de compression                      : Avec perte
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Audio
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 37mn
+Type de débit                            : Variable
+Débit                                    : Inconnu / 1 509 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Sans perte / Lossy
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Texte
+ID                                       : 3
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : Picture based subtitle format used on BDs/HD-DVDs
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:Chapter 1
+00:05:24.699                             : en:Chapter 2
+00:19:45.851                             : en:Chapter 3
+00:25:31.738                             : en:Chapter 4
+00:28:50.353                             : en:Chapter 5
+00:44:15.861                             : en:Chapter 6
+00:50:06.837                             : en:Chapter 7
+01:06:07.797                             : en:Chapter 8
+01:09:34.128                             : en:Chapter 9
+01:12:19.418                             : en:Chapter 10
+01:24:51.836                             : en:Chapter 11
+01:29:39.832                             : en:Chapter 12
+01:34:28.204                             : en:Chapter 13
+01:36:15.060                             : en:Chapter 14
+

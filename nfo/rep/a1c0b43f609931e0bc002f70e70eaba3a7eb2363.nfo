@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Da.hong.deng.long.gao.gao.gua.1991.BluRay.1080p.AVC.LPCM2.0-TTG
+                Raise The Red Lantern
+Disc Size:      31 254 783 448 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:04:40.166 (h:m:s.ms)
+Size:                   27 928 442 880 bytes
+Total Bitrate:          29,87 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        25000 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+LPCM Audio                      Chinese         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      French          1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          20,978 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:04:40.166     27 928 442 880  29 869

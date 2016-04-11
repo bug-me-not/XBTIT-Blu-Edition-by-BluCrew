@@ -1,0 +1,52 @@
+DISC INFO:
+
+Disc Title:     Friends with Benefits F13
+Disc Size:      36 731 378 286 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:49:25.517 (h:m:s.ms)
+Size:                   28 961 329 152 bytes
+Total Bitrate:          35,29 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24929 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2172 kbps       5.1 / 48 kHz / 2172 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             French          2174 kbps       5.1 / 48 kHz / 2174 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Italian         2168 kbps       5.1 / 48 kHz / 2168 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         58,881 kbps                     
+Presentation Graphics           English         51,544 kbps                     
+Presentation Graphics           Arabic          26,541 kbps                     
+Presentation Graphics           Dutch           37,146 kbps                     
+Presentation Graphics           French          41,404 kbps                     
+Presentation Graphics           Hindi           45,298 kbps                     
+Presentation Graphics           Italian         51,971 kbps                     
+Presentation Graphics           English         86,735 kbps                     
+Presentation Graphics           Dutch           77,590 kbps                     
+Presentation Graphics           French          72,484 kbps                     
+Presentation Graphics           Italian         72,792 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:49:25.517     28 961 329 152  35 289

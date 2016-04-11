@@ -1,0 +1,54 @@
+--Basic Translation Agreement for xbtit 2.x
+--by Ziggear
+
+【功能】
+Tracker - Tracker/站点
+torrent - 种子
+seed - 做种者
+peer - 上传者
+leecher - 下载者
+uploader - 贡献者
+ratio - 比率
+
+【界面】
+block - 功能模块
+news - 公告
+extra - 种子排行
+poll - 调查
+Admin Panel - 管理面板
+User Control Panel - 个人中心
+
+【用户】
+account - 帐号
+user - 用户
+user name - 用户名
+image code - 验证码
+guest - 游客
+visitor - 访客
+
+【论坛】
+forum - 论坛/版面
+topic - 主题
+locked - 锁定的主题
+sticky - 置顶主题
+post - 帖/帖子/回复
+pm - 站内信
+pm box - 收件箱
+Staff - 站务组
+style - 主题
+
+【操作】
+login - 登录
+update - 更新
+refresh - 刷新
+confirm - 确认
+insert - 输入
+enter - 键入
+...error - 出错
+Error:... - 错误
+must - 必须
+can't - 无法
+unable - 无法
+bad... - 非法
+invalid - 无效
+check - 检查

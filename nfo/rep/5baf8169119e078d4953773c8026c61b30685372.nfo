@@ -1,0 +1,125 @@
+
+Format                                   : Matroska
+Version du format                        : Version 4 / Version 2
+Taille du fichier                        : 21,9 Gio
+Durée                                    : 1h 47mn
+Type de débit global                     : Variable
+Débit global moyen                       : 29,1 Mb/s
+Nom du film                              : Sunshine.2007.MULTI.1080p.BluRay.REMUX.AVC-DReamHD
+Date d'encodage                          : UTC 2015-06-30 21:39:17
+Application utilisée                     : mkvmerge v7.3.0 ('Nouages') 32bit built on Oct 22 2014 18:44:01
+Bibliothèque utilisée                    : libebml v1.3.0 + libmatroska v1.4.1
+_STATISTICS_WRITING_APP                  : mkvmerge v7.3.0 ('Nouages') 32bit built on Oct 22 2014 18:44:01
+_STATISTICS_WRITING_DATE_UTC             : 2015-06-30 21:39:17
+_STATISTICS_TAGS                         : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+DURATION                                 : 01:46:37.766000000
+NUMBER_OF_FRAMES                         : 2198
+NUMBER_OF_BYTES                          : 9997096
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 3 images
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 1h 47mn
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 1h 47mn
+Type de débit                            : Constant
+Débit                                    : 448 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 344 Mio (2%)
+Titre                                    : VFI  AC-3  448 Kbps
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 47mn
+Type de débit                            : Variable
+Débit                                    : Inconnu / 1 509 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Titre                                    : VOA  DTS-HD  1 509 Kbps
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #1
+ID                                       : 4
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : Forcé
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #2
+ID                                       : 5
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : SDH
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en01)00:00:00:000
+00:04:07.330                             : en02)00:04:07:330
+00:08:10.573                             : en03)00:08:10:573
+00:12:41.260                             : en04)00:12:41:260
+00:21:23.407                             : en05)00:21:23:407
+00:24:57.245                             : en06)00:24:57:245
+00:35:15.238                             : en07)00:35:15:238
+00:39:15.311                             : en08)00:39:15:311
+00:47:03.779                             : en09)00:47:03:779
+00:52:57.340                             : en10)00:52:57:340
+00:56:25.298                             : en11)00:56:25:298
+01:04:05.549                             : en12)01:04:05:549
+01:05:40.853                             : en13)01:05:40:853
+01:11:22.945                             : en14)01:11:22:945
+01:17:05.662                             : en15)01:17:05:662
+01:24:36.988                             : en16)01:24:36:988
+01:30:36.597                             : en17)01:30:36:597
+01:34:21.363                             : en18)01:34:21:363
+01:39:32.466                             : en19)01:39:32:466
+01:40:52.421                             : en20)01:40:52:421
+01:47:26.439                             : en21)01:47:26:439

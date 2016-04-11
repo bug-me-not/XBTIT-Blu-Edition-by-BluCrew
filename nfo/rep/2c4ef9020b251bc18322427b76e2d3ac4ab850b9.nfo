@@ -1,0 +1,142 @@
+
+Duration                    : 1h 53mn
+
+Overall bit rate mode       : Variable
+
+Overall bit rate            : 31.5 Mbps
+
+Movie name                  : The.Holy.Mountain.1973.1080p.Bluray.AVC.Remux
+
+Encoded date                : UTC 2015-10-15 13:10:54
+
+Writing application         : mkvmerge v8.2.0 ('World of Adventure') 32bit
+
+Writing library             : libebml v1.3.1 + libmatroska v1.4.2
+
+DURATION                    : 01:44:10.844000000
+
+NUMBER_OF_FRAMES            : 382
+
+NUMBER_OF_BYTES             : 14408
+
+_STATISTICS_WRITING_APP     : mkvmerge v8.2.0 ('World of Adventure') 32bit
+
+_STATISTICS_WRITING_DATE_UT : 2015-10-15 13:10:54
+
+_STATISTICS_TAGS            : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+
+
+Video
+
+ID                          : 1
+
+Format                      : AVC
+
+Format/Info                 : Advanced Video Codec
+
+Format profile              : High@L4.1
+
+Format settings, CABAC      : Yes
+
+Format settings, ReFrames   : 4 frames
+
+Codec ID                    : V_MPEG4/ISO/AVC
+
+Duration                    : 1h 53mn
+
+Bit rate mode               : Variable
+
+Maximum bit rate            : 36.0 Mbps
+
+Width                       : 1 920 pixels
+
+Height                      : 1 080 pixels
+
+Display aspect ratio        : 16:9
+
+Frame rate mode             : Constant
+
+Frame rate                  : 23.976 fps
+
+Standard                    : NTSC
+
+Color space                 : YUV
+
+Chroma subsampling          : 4:2:0
+
+Bit depth                   : 8 bits
+
+Scan type                   : Progressive
+
+Default                     : Yes
+
+Forced                      : No
+
+Color range                 : Limited
+
+Color primaries             : BT.709
+
+Transfer characteristics    : BT.709
+
+Matrix coefficients         : BT.709
+
+
+
+Audio
+
+ID                          : 2
+
+Format                      : DTS
+
+Format/Info                 : Digital Theater Systems
+
+Format profile              : MA / Core
+
+Mode                        : 16
+
+Format settings, Endianness : Big
+
+Codec ID                    : A_DTS
+
+Duration                    : 1h 53mn
+
+Bit rate mode               : Variable
+
+Bit rate                    : Unknown / 1 509 Kbps
+
+Channel(s)                  : 6 channels
+
+Channel positions           : Front: L C R, Side: L R, LFE
+
+Sampling rate               : 48.0 KHz
+
+Bit depth                   : 24 bits
+
+Compression mode            : Lossless / Lossy
+
+Language                    : English
+
+Default                     : Yes
+
+Forced                      : No
+
+
+
+Text
+
+ID                          : 3
+
+Format                      : UTF-8
+
+Codec ID                    : S_TEXT/UTF8
+
+Codec ID/Info               : UTF-8 Plain Text
+
+Language                    : French
+
+Default                     : Yes
+
+Forced                      : No
+
+

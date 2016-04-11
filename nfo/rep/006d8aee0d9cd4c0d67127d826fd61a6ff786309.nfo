@@ -1,0 +1,73 @@
+General
+Complete name                            : scarface.mkv
+Format                                   : Matroska
+Format version                           : Version 2
+File size                                : 14.7 GiB
+Duration                                 : 2h 50mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 12.4 Mbps
+Encoded date                             : UTC 2014-10-07 05:31:41
+Writing application                      : mkvmerge v5.8.0 ('No Sleep / Pillow') built on Sep  2 2012 15:37:04
+Writing library                          : libebml v1.2.3 + libmatroska v1.3.0
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L5.0
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 9 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 50mn
+Width                                    : 1 920 pixels
+Height                                   : 816 pixels
+Display aspect ratio                     : 2.35:1
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Writing library                          : x264 core 142 r2453 ea0ca51
+Encoding settings                        : cabac=1 / ref=9 / deblock=1:-3:-3 / analyse=0x3:0x133 / me=tesa / subme=10 / psy=1 / psy_rd=1.00:0.15 / mixed_ref=1 / me_range=32 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-3 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=16 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=60 / rc=crf / mbtree=1 / crf=21.5 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=7 / ip_ratio=1.40 / aq=2:1.00
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 50mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 8 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Text #1
+ID                                       : 3
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 4
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No

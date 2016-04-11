@@ -1,0 +1,155 @@
+General
+Complete name                            : Seven Years in Tibet 1997 MULTi 1080p BluRay REMUX AVC-GLaDOS
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 34.8 GiB
+Duration                                 : 2h 16mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 36.6 Mbps
+Encoded date                             : UTC 2015-10-02 12:35:34
+Writing application                      : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=1, N=10
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 16mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Title                                    : Seven Years in Tibet
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 16mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 187 MiB (1%)
+Title                                    : French (Canada) : Dolby Digital 2.0
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 16mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 623 MiB (2%)
+Title                                    : French (France) : Dolby Digital 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 16mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : English : DTS-HD Master Audio 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : PCM
+Format settings, Endianness              : Big
+Codec ID                                 : A_PCM/INT/BIG
+Duration                                 : 2h 16mn
+Bit rate mode                            : Constant
+Channel(s)                               : 6 channels
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Title                                    : English : LPCM 5.1
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : English : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Start
+00:08:18.414                             : en:Austria 1939
+00:17:13.490                             : en:Nanga Parbat
+00:30:13.895                             : en:Avalanche
+00:34:56.594                             : en:Under Arrest
+00:40:01.273                             : en:October 1940
+00:53:52.145                             : en:September 1942
+00:58:26.794                             : en:Northern India
+01:09:41.010                             : en:Tibet
+01:16:54.318                             : en:The Bazaar
+01:24:45.205                             : en:The Forbidden City
+01:32:52.608                             : en:A Gift
+01:40:29.565                             : en:Skating Lessons
+01:48:12.652                             : en:May 1945
+01:58:05.286                             : en:The Dalai Lama
+02:05:30.481                             : en:Mao's Proclamation
+
+--------------------------------------------------------------------------------
+
+SOURCES :                  
+                                   
+Seven Years in Tibet 1997 1080p USA BluRay AVC LPCM 5.1
+
+SiBORG
+
+--------------------------------------------------------------------------------

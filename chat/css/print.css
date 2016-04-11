@@ -1,0 +1,153 @@
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license Modified MIT License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Print layout
+ */
+
+@media print {
+
+	#content {
+		position:static;
+	}
+	#content #copyright {
+		display:none;
+	}
+	#content #headlineContainer {
+		display:none;
+	}
+	#content #logoutChannelContainer {
+		display:none;
+	}
+	#content #statusIconContainer {
+		display:none;
+	}
+	#content #chatList {
+		position:static;
+		overflow:visible;
+	}
+	#content #inputFieldContainer {
+		display:none;
+	}
+	#content #submitButtonContainer {
+		display:none;
+	}
+	#content #onlineListContainer {
+		display:none;
+	}
+	#content #helpContainer {
+		display:none;
+	}
+	#content #settingsContainer {
+		display:none;
+	}
+	#content #bbCodeContainer {
+		display:none;
+	}
+	#content #colorCodesContainer {
+		display:none;
+	}
+	#content #emoticonsContainer {
+		display:none;
+	}
+	#content #optionsContainer {
+		display:none;
+	}
+	#content #chatList div {
+		padding-bottom:5px;
+	}
+	#content #chatList img {
+		vertical-align:middle;
+		margin-bottom:2px;
+	}
+	#content #chatList cite {
+		margin-right:5px;
+	}
+	#content #chatList .delete {
+	    display:none;
+	}
+
+	#content #chatList {
+		border:none;
+	}
+
+	#content {
+		font-family:'times new roman', times, serif;
+		font-size:1.0em;
+		text-align:justify;
+	}
+	#content #chatList code {
+		font-size:0.8em;
+	}
+
+	#content {
+		color:#000;
+	}
+	#content .guest {
+		color:gray;
+	}
+	#content .user {
+		color:#663300;
+	}
+	#content .superleech {
+		color:#8A4B08;
+	}
+	#content .leech {
+		color:#8A4B08;
+	}
+	#content .recruit {
+		color:#1947A3;
+	}
+	#content .bluuser {
+		color:#002E8A;
+	}
+	#content .bluwarrior {
+		color:#001A4C;
+	}
+	#content .blumaster {
+		color:#00143D;
+	}
+	#content .bluaddict {
+		color:#00143d;
+	}
+	#content .blujunkie {
+		color:#00143d;
+	}
+	#content .blugod {
+		color:#000F2E;
+	}
+	#content .uploader {
+		color:#00CC29;
+	}
+	#content .vip {
+		color:#FFD700;
+	}
+	#content .trustee {
+		color:#6C0A6C;
+	}
+	#content .blurg {
+		color:#00aeff;
+	}
+	#content .moderator {
+		color:#28EEBC;
+	}
+	#content .admin {
+		color:#FF4000;
+	}
+	#content .chatBot {
+		color:#FF66CC;
+	}
+	#content #chatList .chatBotErrorMessage {
+		color:red;
+	}
+	#content #chatList a {
+		color:#1E90FF;
+	}
+
+}

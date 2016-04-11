@@ -1,0 +1,43 @@
+DISC INFO:
+
+Disc Title:     Essential killing F13
+Disc Size:      20 772 501 823 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 1:24:56.041 (h:m:s.ms)
+Size:                   19 190 802 432 bytes
+Total Bitrate:          30,13 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24410 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1796 kbps       5.1 / 48 kHz / 1796 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2110 kbps       5.1 / 48 kHz / 2110 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -1dB)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          5,079 kbps                      
+Presentation Graphics           French          1,090 kbps                      
+Presentation Graphics           French          10,109 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00007.M2TS      0:00:00.000     0:00:21.000     53 784 576      20 489          
+00004.M2TS      0:00:21.000     1:24:34.041     19 136 993 280  30 172          
+00000.M2TS      1:24:55.041     0:00:01.000     24 576          197

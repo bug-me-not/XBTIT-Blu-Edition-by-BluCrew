@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     SAW_7_3D_RELIEF
+Disc Size:      38 291 342 207 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         Blu-ray 3D
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:30:26.921 (h:m:s.ms)
+Size:                   24 922 595 328 bytes
+Total Bitrate:          36,74 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18500 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+MPEG-4 MVC Video        9415 kbps                           
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          2475 kbps       5.1 / 48 kHz / 2475 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         3034 kbps       7.1 / 48 kHz / 3034 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS Audio                       English         256 kbps        2.0 / 48 kHz / 256 kbps / 16-bit
+DTS Audio                       English         256 kbps        2.0 / 48 kHz / 256 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,034 kbps                      
+Presentation Graphics           French          23,063 kbps                     
+Presentation Graphics           French          50,953 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.SSIF      0:00:00.000     1:30:26.921     24 922 595 328  36 739

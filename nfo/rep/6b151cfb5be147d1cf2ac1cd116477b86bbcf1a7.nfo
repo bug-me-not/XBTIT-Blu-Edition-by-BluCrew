@@ -1,0 +1,67 @@
+DISC INFO:
+
+Disc Title:     Hereafter 2010 1080p Blu-ray AVC DTS-HD MA 5.1
+Disc Size:      41 316 590 830 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:09:02.609 (h:m:s.ms)
+Size:                   28 013 058 048 bytes
+Total Bitrate:          28,94 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18953 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3309 kbps       5.1 / 48 kHz / 3309 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Czech           640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Hungarian       640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Polish          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+* Dolby Digital Audio           Japanese        640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+* Presentation Graphics         Japanese        22,894 kbps                     
+Presentation Graphics           English         23,825 kbps                     
+Presentation Graphics           French          13,576 kbps                     
+Presentation Graphics           German          27,693 kbps                     
+Presentation Graphics           Dutch           17,854 kbps                     
+Presentation Graphics           Czech           16,440 kbps                     
+Presentation Graphics           Danish          19,041 kbps                     
+Presentation Graphics           Finnish         15,947 kbps                     
+Presentation Graphics           Greek           22,301 kbps                     
+Presentation Graphics           Hebrew          19,236 kbps                     
+Presentation Graphics           Hungarian       18,145 kbps                     
+Presentation Graphics           Norwegian       18,435 kbps                     
+Presentation Graphics           Polish          14,415 kbps                     
+Presentation Graphics           Romanian        16,268 kbps                     
+Presentation Graphics           Swedish         17,879 kbps                     
+* Presentation Graphics         Japanese        5,210 kbps                      
+Presentation Graphics           English         4,153 kbps                      
+Presentation Graphics           French          0,120 kbps                      
+Presentation Graphics           German          4,613 kbps                      
+Presentation Graphics           Czech           3,478 kbps                      
+Presentation Graphics           Hungarian       3,099 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     2:09:02.609     28 013 058 048  28 944

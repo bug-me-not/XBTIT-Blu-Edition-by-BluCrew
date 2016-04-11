@@ -1,0 +1,169 @@
+General
+ 
+Complete name : /private/rtorrent/data/Cowboys et Envahisseurs.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 29.4 GiB
+Duration : 2h 15mn
+Overall bit rate mode : Variable
+Overall bit rate : 31.1 Mbps
+Movie name : Cowboys and Aliens
+Encoded date : UTC 2014-11-29 11:11:36
+Writing application : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+Writing library : libebml v1.3.0 + libmatroska v1.4.1
+Attachements : cover.jpg
+DURATION : 01:33:21.930000000
+NUMBER_OF_FRAMES : 6
+NUMBER_OF_BYTES : 71960
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 15mn
+Bit rate mode : Variable
+Maximum bit rate : 36.0 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Title : Cowboys and Aliens
+Language : English
+Default : No
+Forced : No
+DURATION : 02:15:30.164000000
+NUMBER_OF_FRAMES : 194929
+NUMBER_OF_BYTES : 26954138507
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 2h 15mn
+Bit rate mode : Variable
+Bit rate : Unknown / 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless / Lossy
+Title : English 5.1 (DTS-HD Master Audio)
+Language : English
+Default : No
+Forced : No
+DURATION : 02:15:30.165000000
+NUMBER_OF_FRAMES : 762203
+NUMBER_OF_BYTES : 3933760540
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Audio #2
+ID : 3
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 15mn
+Bit rate mode : Constant
+Bit rate : 640 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 620 MiB (2%)
+Title : Fran?ais 5.1 (Dolby Digital)
+Language : French
+Default : No
+Forced : No
+DURATION : 02:15:30.176000000
+NUMBER_OF_FRAMES : 254068
+NUMBER_OF_BYTES : 650414080
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Text #1
+ID : 4
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : Fran?ais forc?
+Language : French
+Default : No
+Forced : Yes
+DURATION : 02:07:11.374000000
+NUMBER_OF_FRAMES : 1984
+NUMBER_OF_BYTES : 19197727
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Text #2
+ID : 5
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : English
+Language : English
+Default : No
+Forced : No
+
+Text #3
+ID : 6
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : Fran?ais
+Language : French
+Default : No
+Forced : No
+DURATION : 02:11:44.730000000
+NUMBER_OF_FRAMES : 1856
+NUMBER_OF_BYTES : 16207777
+_STATISTICS_WRITING_APP : mkvmerge v7.3.0 ('Nouages') 64bit built on Oct 22 2014 18:53:34
+_STATISTICS_WRITING_DATE_UTC : 2014-11-29 11:11:36
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Menu
+00:00:00.000 : en:Chapter 01
+00:08:03.357 : en:Chapter 02
+00:18:00.788 : en:Chapter 03
+00:25:42.874 : en:Chapter 04
+00:31:37.979 : en:Chapter 05
+00:41:50.591 : en:Chapter 06
+00:49:52.239 : en:Chapter 07
+00:57:27.068 : en:Chapter 08
+01:02:51.267 : en:Chapter 09
+01:06:26.691 : en:Chapter 10
+01:13:03.629 : en:Chapter 11
+01:17:39.696 : en:Chapter 12
+01:23:24.457 : en:Chapter 13
+01:29:07.175 : en:Chapter 14
+01:41:02.931 : en:Chapter 15
+01:45:52.763 : en:Chapter 16
+01:49:48.540 : en:Chapter 17
+01:55:57.784 : en:Chapter 18
+02:02:34.722 : en:Chapter 19
+02:11:20.289 : en:Chapter 20

@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     The Water Horse F13
+Disc Size:      46 689 417 355 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:51:48.702 (h:m:s.ms)
+Size:                   28 929 742 848 bytes
+Total Bitrate:          34,50 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22908 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         1712 kbps       5.1 / 48 kHz / 1712 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 448 kbps / DN -4dB)
+Dolby TrueHD Audio              French          1650 kbps       5.1 / 48 kHz / 1650 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 448 kbps / DN -3dB)
+Dolby TrueHD Audio              Spanish         1659 kbps       5.1 / 48 kHz / 1659 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 448 kbps / DN -3dB)
+Dolby Digital Audio             Catalan         640 kbps        5.1 / 48 kHz / 640 kbps / DN -3dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         22,433 kbps                     
+Presentation Graphics           French          18,855 kbps                     
+Presentation Graphics           Spanish         23,137 kbps                     
+Presentation Graphics           Arabic          11,076 kbps                     
+Presentation Graphics           Dutch           22,317 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00011.M2TS      0:00:00.000     1:51:48.702     28 929 742 848  34 498

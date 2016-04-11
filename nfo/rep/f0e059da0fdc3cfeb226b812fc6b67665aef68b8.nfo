@@ -1,0 +1,96 @@
+General
+
+/private/rtorrent/data/Millenium Trilogie Bluray Remux 1080p -VFQ+VFI+VO- (HDILLUZION)/Millenium 1 Bluray Remux 1080p -Multi- (HDILLUZION).mkv
+
+Format : Matroska
+Format version : Version 2
+File size : 17.4 GiB
+Duration : 2h 33mn
+Overall bit rate mode : Variable
+Overall bit rate : 16.3 Mbps
+Encoded date : UTC 2013-08-19 22:18:06
+Writing application : mkvmerge v5.8.0 ('No Sleep / Pillow') built on Sep 2 2012 15:37:04
+Writing library : libebml v1.2.3 + libmatroska v1.3.0
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 33mn
+Bit rate mode : Variable
+Bit rate : 15.0 Mbps
+Maximum bit rate : 35.0 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Standard : NTSC
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.302
+Stream size : 16.1 GiB (92%)
+Title : The Girl With The Dragon Tattoo
+Default : Yes
+Forced : No
+Color primaries : BT.709
+Transfer characteristics : BT.709
+Matrix coefficients : BT.709
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 33mn
+Bit rate mode : Constant
+Bit rate : 448 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Delay relative to video : 10s 0ms
+Stream size : 490 MiB (3%)
+Title : French : Dolby Digital 5.1
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 33mn
+Bit rate mode : Constant
+Bit rate : 448 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 490 MiB (3%)
+Title : Swedish : Dolby Digital 5.1
+Default : No
+Forced : No
+
+Text
+ID : 4
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : English : Subtitles
+Default : No
+Forced : No
+

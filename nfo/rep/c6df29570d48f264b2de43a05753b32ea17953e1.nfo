@@ -1,0 +1,70 @@
+DISC INFO:
+
+Disc Title:     LIFE
+Disc Size:      36 441 476 210 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:48:30.253 (h:m:s.ms)
+Size:                   35 837 380 608 bytes
+Total Bitrate:          44,04 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        31991 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4029 kbps       5.1 / 48 kHz / 4029 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Portuguese      768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Japanese        24,483 kbps                     
+Presentation Graphics           English         58,034 kbps                     
+Presentation Graphics           French          43,626 kbps                     
+Presentation Graphics           Italian         47,620 kbps                     
+Presentation Graphics           German          45,793 kbps                     
+Presentation Graphics           Spanish         45,886 kbps                     
+Presentation Graphics           Portuguese      34,600 kbps                     
+Presentation Graphics           Spanish         36,303 kbps                     
+Presentation Graphics           Czech           38,704 kbps                     
+Presentation Graphics           Danish          40,524 kbps                     
+Presentation Graphics           Dutch           41,235 kbps                     
+Presentation Graphics           Finnish         35,431 kbps                     
+Presentation Graphics           Greek           41,637 kbps                     
+Presentation Graphics           Korean          28,995 kbps                     
+Presentation Graphics           Norwegian       39,702 kbps                     
+Presentation Graphics           Polish          39,686 kbps                     
+Presentation Graphics           Portuguese      42,358 kbps                     
+Presentation Graphics           Swedish         41,908 kbps                     
+Presentation Graphics           Thai            39,913 kbps                     
+Presentation Graphics           Turkish         46,906 kbps                     
+Presentation Graphics           Chinese         38,130 kbps                     
+Presentation Graphics           French          0,215 kbps                      
+Presentation Graphics           Italian         0,265 kbps                      
+Presentation Graphics           German          0,227 kbps                      
+Presentation Graphics           Spanish         0,307 kbps                      
+Presentation Graphics           Spanish         0,176 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+50201.M2TS      0:00:00.000     1:48:30.253     35 837 380 608  44 038
+ 

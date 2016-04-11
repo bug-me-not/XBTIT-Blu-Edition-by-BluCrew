@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     The.Thin.Red.Line.Criterion.Collection.1998.BluRay.AVC.DTS-HD.MA5.1-i6henl
+Disc Size:      55,455,170,940 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:50:47.070 (h:m:s.ms)
+Size:                   42,898,980,864 bytes
+Total Bitrate:          33.49 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22997 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4314 kbps       5.1 / 48 kHz / 4314 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+DTS-HD Master Audio             Chinese         3839 kbps       5.1 / 48 kHz / 3839 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit) 央视国配
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         24.819 kbps                     
+Presentation Graphics           Chinese         13.302 kbps     简体中文(位于黑边)                
+Presentation Graphics           Chinese         22.171 kbps     简英双语(位于黑边)                
+Presentation Graphics           Chinese         13.807 kbps     繁体中文(位于黑边)                
+Presentation Graphics           Chinese         22.675 kbps     繁英双语(位于黑边)                
+Presentation Graphics           Chinese         14.164 kbps     简体中文(位于画面)                
+Presentation Graphics           Chinese         22.838 kbps     简英双语(位于画面)                
+Presentation Graphics           Chinese         14.678 kbps     繁体中文(位于画面)                
+Presentation Graphics           Chinese         23.351 kbps     繁英双语(位于画面)                

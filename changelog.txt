@@ -1,0 +1,497 @@
+xbtit v.2.1
+-----------
+fixed all known bugs and security problems
+
+xbtit v.2
+---------
+There is really a lot of changes, all files are different, it's not possible to upgrade a modified Btit 1.4.x without doing standard database upgrade (using upgrade.php) and then applying hacks again on your new installed clean xbtit. Please note that you'll have an easy way to install hacks, but all existing hacks need to be packaging (at the moment not one is done). 
+Now let's go with major changes list (new features only):
+
+- real template system, 99% of the html code is out for the php files using bTemplate (http://www.massassi.com/bTemplate/)
+- rewritten (a little optimized) announce.php (for internal tracker)
+- support for xbtt (http://xbtt.sourceforge.net/tracker/) backend by Olaf Van der Spek
+- support for external mail server using phpmailer (http://sourceforge.net/projects/phpmailer)
+- rewritten internal forum from scratch with subforum support
+- support for smf forum (http://www.simplemachines.org/) instead of internal (big thanks to petr1fied)
+- "one click hack installer", an easy way to install hacks into your tracker (a working example is provided)
+- modules support
+- new online procedure
+- new AJAX shoutbox (big thanks to miskotes)
+- Xss/SQL injection protection with log insertion (thank you cobracrk)
+- new AJAX polls system (thank you to Ripper)
+- new design (4 styles provided by TreepTopClimber)
+- Rss reader (only class, with example in admincp for btiteam.org latest news)
+- basic cache system
+- new language system (array is used instead of constant)
+- smf_import script to import standard internal forum and users to smf (thank you again to petr1fied)
+
+Don't remember other "major" changes, you should know that xBtit asked a lot of work and test, thank you to all
+- developers
+- testers
+- forum admins
+- users
+
+
+===============================================================================================
+
+
+
+Btit Tracker v.1.4.7
+--------------------
+FIXES:
+------
+- fixed wrong formatted peers and banned IP(announce.php)
+- XSS fix (upload.php)
+- PM send to guest or "myself" (usercp.php)
+
+LIST OF CHANGED FILES:
+----------------------
+- include/functions.php
+- language/english.php
+- language/polish.php
+- announce.php
+- upload.php
+- usercp.php
+
+
+
+Btit Tracker v.1.4.6
+--------------------
+FIXES:
+------
+- cosmetic changes (blocks/lasttorrents_block.php, blocks/toptorrents_block.php, edit.php)
+- Guest can shout (using external html code) (blocks/shoutbox_block.php)
+- Added latest crk_protection.php (thanks to cobracrk) (include/crk_protection.php)
+- fixed peers issue (details.php) (http://sourceforge.net/tracker/index.php?func=detail&aid=1828098&group_id=146822&atid=766508)
+- default language in recover (recover.php)
+- Possible SQL injection (torrents.php)
+
+LIST OF CHANGED FILES:
+----------------------
+- blocks/lasttorrents_block.php
+- blocks/shoutbox_block.php
+- blocks/toptorrents_block.php
+- include/crk_protection.php
+- include/functions.php
+- details.php
+- edit.php
+- recover.php
+- torrents.php
+
+Btit Tracker v.1.4.5
+--------------------
+FIXES:
+------
+- extend error messages on signup and XSS fix(account.php)
+- guest can view torrent's details using full url and guest edit/delete guest's torrents (details.php) (https://sourceforge.net/tracker/index.php?func=detail&aid=1748243&group_id=146822&atid=766508)
+- XSS fix (moresmiles.php)
+- XSS fix (recover.php)
+- external progress % (torrents.php)
+- XSS fix (usercp.php) (https://sourceforge.net/tracker/index.php?func=detail&aid=1753797&group_id=146822&atid=766508)
+- guest can shout (blocks/shoutbox_block.php) (https://sourceforge.net/tracker/index.php?func=detail&aid=1764809&group_id=146822&atid=766508)
+- SQL Injection fix (include/functions.php)
+
+LIST OF CHANGED FILES:
+----------------------
+account.php
+details.php
+moresmiles.php
+recover.php
+torrents.php
+usercp.php
+blocks/shoutbox_block.php
+include/functions.php
+
+Btit Tracker v.1.4.4
+--------------------
+FIXES:
+------
+- all externals torrents should update correctly now (functions.php).
+- secured user's data change (email, etc.) in usercp.php 
+- upload/download bug (announce.php) (https://sourceforge.net/tracker/index.php?func=detail&aid=1729127&group_id=146822&atid=766508)
+- syntax error (details.php)
+- category fix (edit.php) (http://www.btiteam.org/smf/index.php?topic=8009.0)
+- syntax error (login.php)
+- correct error when image code is enabled (recover.php)(http://sourceforge.net/tracker/index.php?func=detail&aid=1733872&group_id=146822&atid=766508)
+- correct problem with extras smilies (shoutbox_block.php)
+- disabled the check "allow tracker to retrieve informations from torrent", so it'll always do it and fix category dropdown menu. (upload.php)
+- pm outbox problem (usercp.php)(http://sourceforge.net/tracker/index.php?func=detail&aid=1723482&group_id=146822&atid=766508)
+- syntax errors (userdetails.php) (http://sourceforge.net/tracker/index.php?func=detail&aid=1739546&group_id=146822&atid=766508)
+
+LIST OF CHANGED FILES:
+----------------------
+announce.php
+edit.php
+login.php
+recover.php
+shoutbox_block.php
+torrents.php
+upload.php
+usercp.php
+userdetails.php
+include/functions.php
+
+Btit Tracker v.1.4.3
+--------------------
+FIXES:
+------
+- customized groups assignement (account.php) (https://sourceforge.net/tracker/index.php?func=detail&aid=1723234&group_id=146822&atid=766508)
+- editing torrent with apostrophes names (https://sourceforge.net/tracker/index.php?func=detail&aid=1720513&group_id=146822&atid=766508)
+- changed all max() functions with intval() function which is more secure.
+
+LIST OF CHANGED FILES:
+----------------------
+account_change.php
+account.php
+comment.php
+edit.php
+forum.php
+news.php
+torrents.php
+recover.php
+admincp.php
+announce.php
+details.php
+peers.php
+torrent_history.php
+usercp.php
+userdetails.php
+include/functions.php
+
+
+Btit Tracker v.1.4.2
+--------------------
+FIXES:
+------
+- functions.php, alway turn off register global and simulate if not set.
+- sanitized forum.php.
+- download.php, fixed PID with multitracker's torrents.
+
+LIST OF CHANGED FILES:
+----------------------
+download.php
+forum.php
+include/functions.php
+
+
+
+Btit Tracker v.1.4.1
+--------------------
+if you update from previous version, DON'T upload install folder and 
+run the query upgrade/v14_to_v141.sql for upgrading your database.
+
+NEW:
+----
+- Installation script (thanks JBoy).
+
+FIXES:
+------
+- Admincp access by all authorized users and classes.
+- Mysql stats (admincp) use tracker style.
+- Delete comments from torrent's details.
+- possible XSS injections in forum, usercp, users.
+- problem in announce if php not compiled with bcmath support.
+- Image code in recover
+- changed password cookie.
+- All problems found on 1.4 by users.
+- Email verification when user change own email (usercp), hack by Petr1fied.
+
+NEW LANGUAGES CONSTANTS (ALREADY DONE IN INCLUDED ENGLISH.PHP):
+---------------------------------------------------------------
+define("REVERIFY_MSG", "If you attempt to change your email address you will be sent a verification link to the email address you wish to change it to.<br /><br /><font color=red><strong>The email address on your record will not update until you verify the new address by clicking the link.</strong></font>");
+define("EMAIL_VERIFY", "email account update at $SITENAME");
+define("EMAIL_VERIFY_BLOCK", "Verification email sent");
+define("EMAIL_VERIFY_MSG", "Hello,\n\nThis email has been sent because you have requested a change to the email address currently held on your record, please click the link below to complete the change.\n\nBest regards from the staff.");
+define("EMAIL_VERIFY_SENT1","<br /><center>A verification email has been sent to:<br /><br /><strong><font color=red>");
+define("EMAIL_VERIFY_SENT2", "</font></strong><br /><br />You will need to click on the link contained within the email in order<br />to update your email address. The email should arrive within 10 minutes<br />(usually instantly) although some email providers may mark it as SPAM<br />so be sure to check your SPAM folder if you can't find it.<br /><br />");
+define("REVERIFY_CONGRATS1", "<center><br />Congratulations, your email has been verified and successfully changed<br /><br /><strong>From: <font color=red>");
+define("REVERIFY_CONGRATS2", "</strong></font><br /><strong>To: <font color=red>");
+define("REVERIFY_CONGRATS3", "</strong></font><br /><br />");
+define("REVERIFY_FAILURE", "<center><br /><strong><font color=red><u>Sorry but this url is not valid</u></strong></font><br /><br />A new random number is generated each time you attempt to change your email so<br />if you're seeing this message then you've most likely tried to change your email<br />more than once and you are using an old url.<br /><br /><strong>Please wait until you're absolutely sure you haven't received the new<br />verification email before attempting to change your email again.</strong><br /><br />");
+define("NOT_MAIL_IN_URL", "This is not the email address that was in this url");
+define("ERR_AVATAR_EXT","Sorry only gif,jpg,bmp or png allowed");
+
+
+LIST OF CHANGED FILES (Probably all):
+------------------------------------
+account.php
+admincp.php
+announce.php
+comment.php
+forum.php
+index.php
+install.me			*** NEW ***
+login.php
+readme.txt
+recover.php
+scrape.php
+usercp.php
+userdetails.php
+upload.php
+language/english.php
+include/common.php
+include/mysql_stats.php
+include/searchdiff.php
+include/functions.php
+install/*			*** NEW ***
+sql/database.sql
+upgrade/v14_to_v141.sql         *** NEW ***
+
+
+Thanks to all developers.
+
+
+
+Btit Tracker v.1.4 (BIG thanks to gAnDo, miskotes, cobracrk)
+------------------------------------------------------------
+NEW:
+- User's name clickable with prefix/suffix in shoutbox.
+- Private mail's preview.
+- Comment's preview.
+- Timezone selection (Petr1fied).
+- New flag images.
+- Added link for do sanity on request in admincp (main page).
+- Username can be edited by mod/admin using the edit option in users' list.
+- Dbutils hack in admincp.
+- Mysql stats (courtesy of CoLdFuSiOn from Tbdev.net) in admincp.
+- Other smalls things which don't remember. :)
+
+CHANGES:
+- Announce and scrape completly rewrited (should be more faster and resourceless)
+- Fixed all known security holes
+- More countries
+- Invalid characters in username not allowed (caused some problems in tracker administration)
+- Changed default <? to <?php
+- Fixed al known problems/bugs in forum, torrents, etc.
+- Pressing enter key in shoutbox now send the message.
+- Removed the upload language (atm the "add new" and "edit" too).
+- Moved edit/delete from torrents browse to torrent's details.
+- Torrent history/ratio should be more accurate.
+
+
+
+LIST OF CHANGED FILES (Probably all):
+------------------------------------
+account.php
+admincp.php
+allshout.php
+blocks\mainusertoolbar_block.php
+blocks\seedwanted_block.php
+blocks\shoutbox_block.php
+blocks\toptorrents_block.php
+blocks\user_block.php
+changelog.txt
+details.php
+edit.php
+images\flag\*.*
+include\dbutil.php                + NEW
+include\functions.php
+include\masspm.php
+include\mysql_stats.php           + NEW
+include\offset.php                + NEW
+include\prune_torrents.php
+include\prune_users.php
+include\searchdiff.php
+include\sitelog.php
+recover.php
+sql\database.sql
+torrents.php
+usercp.php
+userdetails.php
+
+*************************************************************************
+
+Btit Tracker v.1.3.2
+--------------------
+CHANGES:
+- fixed all security holes founded all over the script
+- fixed a lot of cosmetics things (thanks gAnDo)
+- minor bug fixes
+
+LIST OF CHANGED FILES:
+----------------------
+account.php
+account_change.php
+admincp.php
+allshout.php
+announce.php
+changelog.txt
+comment.php
+delete.php
+details.php
+download.php
+extra-stats.php
+forum.php
+login.php
+moresmiles.php
+news.php
+peers.php
+recover.php
+rss_torrents.php                + NEW
+searchusers.php
+torrent_history.php
+torrents.php
+upload.php
+usercp.php
+userdetails.php
+include\functions.php
+include\prune_users.php
+include\masspm.php
+blocks\seedwanted_block.php
+blocks\lasttorrents_block.php
+blocks\toptorrents_block.php
+blocks\paypal_block.php         + NEW
+
+*************************************************************************
+
+Btit Tracker v.1.3.1
+--------------------
+CHANGES:
+- security fixes in account.php and account_change.php
+
+LIST OF CHANGED FILES:
+----------------------
+account.php
+account_change.php
+
+*************************************************************************
+
+Btit Tracker v.1.3
+------------------
+CHANGES:
+- All peers are now stored in unique table (peers) instead of lot xinfohash tables (maybe some hacks will not work anymore)
+- IP in users table is now registred as string, no more as long (should avoid some problem with high IP)
+- Better BBCode editor
+- Image Code (secure signup with image code) is now optional (default is true=use image code), can be changed in admincp
+- Fixed minor bugs
+- getscrape.php has been changed a lot (use fsockopen instead of fopen, should be more efficient),
+  and now get multiscrape from tracker which support this feature (5 torrents each time)
+
+NEW:
+- Live stats (default disabled), can be enable from Admincp the live stats record, can give high server load
+- Private flag (default enabled) inserted "on fly" on new uploaded torrents, can be disabled from admincp
+- Basic Log site activity (users/torrents), default is disabled, can be enabled from admincp (based on liroy hack)
+- Basic History (users/torrents), default is disabled, can be enabled from admincp
+- Added "searchdiff" hack in admincp (baterist's hack)
+- Added GZIP support (not for compact mode in announce), default is OFF, can be enabled in admincp
+- Added Basic debug informations (optional in footer), default is ON, can be disabled in admincp
+- support for multi-scrape (scrape result for more than 1 torrent at a time)
+- added announce urls as array, default is at least one which is $BASEURL/announce.php
+  now you can add more than one announce url as "internal announce".
+
+LIST OF CHANGED FILES:
+----------------------
+account.php
+admincp.php
+announce.php
+changelog.txt
+delete.php
+details.php
+edit.php
+forum.php
+login.php
+new_upload.php      - REMOVED
+peers.php
+readme.txt
+scrape.php
+torrent_history.php     + NEW
+torrents.php
+tracker.php         - REMOVED
+upload.php
+usercp.php
+userdetails.php
+blocks\lastmember_block.php
+blocks\lasttorrents_block.php
+blocks\seedwanted_block.php
+blocks\toptorrents_block.php
+include\functions.php
+include\getscrape.php
+include\sanity.php
+include\searchdiff.php  + NEW
+include\sitelog.php     + NEW
+sql\database.sql
+upgrade\12_to_13.sql    + NEW
+
+*************************************************************************
+
+Btit Tracker v.1.2
+---------------
+FIXES:
+- All known and found security hole
+CHANGES:
+- shoutbox: compact shoutbox (by brainphreak)
+- peers: better client recognition
+- torrents: sorting by different fields ascending/descending
+- users: sorting by different fields ascending/descending
+- torrents: modified Torrent.ext.int.display.v1-nwfr by hoha (show (EXT) if external near the torrent name)
+NEW:
+- block: seedwanted
+- userdetails: active torrents by petr1fied
+- torrent's details: files in torrents
+- torrent's details: basic comments moderation (delete)
+- account: valid email check on signup - by vibes
+- admincp: masspm by vibes
+- admincp: prune dead torrents/inactive users
+- usercp: delete PM with checkboxes - by gAnDo
+- sanity: *.png files (created by image code) are delete each sanity call
+- admincp: New option, use popup or not (default is true)
+
+List of changed/new files:
+.\account.php
+.\account_change.php
+.\admincp.php
+.\announce.php
+.\changelog.txt
+.\comment.php
+.\details.php
+.\download.php
+.\edit.php
+.\extra-stats.php
+.\forum.php
+.\index.php
+.\news.php
+.\peers.php
+.\recover.php
+.\searchusers.php
+.\torrents.php
+.\upload.php
+.\usercp.php
+.\userdetails.php
+.\blocks\forum_block.php
+.\blocks\lastmember_block.php
+.\blocks\lasttorrents_block.php
+.\blocks\mainmenu_block.php
+.\blocks\maintrackertoolbar_block.php
+.\blocks\news_block.php
+.\blocks\online_block.php
+.\blocks\seedwanted_block.php   (NEW)
+.\blocks\shoutbox_block.php
+.\blocks\toptorrents_block.php
+.\blocks\trackerinfo_block.php
+.\include\blocks.php
+.\include\config.php
+.\include\functions.php
+.\include\getscrape.php
+.\include\masspm.php        (NEW)
+.\include\prune_torrents.php        (NEW)
+.\include\prune_users.php       (NEW)
+.\include\sanity.php
+
+*************************************************************************
+
+Btit Tracker v.1.1
+---------------
+- account.php:
+    + fixed: fatal error if gd library non set
+- usercp.php:
+    + fixed: hack sql injection code on avatar url
+- functions.php:
+    + fixed: makesize function with negative parameters
+- upload.php:
+    + fixed: malicious code in torrent filename/info.
+
+*************************************************************************
+
+Btit Tracker v.1
+-------------
+- Release.

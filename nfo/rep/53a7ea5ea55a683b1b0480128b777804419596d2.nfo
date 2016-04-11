@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     Notorious.2009.Unrated.Directors.Cut.1080p.EUR.Blu-ray.AVC.DTS-HD.MA.5.1
+Disc Size:      43 964 778 254 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00373.MPLS
+Length:                 2:08:58.271 (h:m:s.ms)
+Size:                   27 607 001 088 bytes
+Total Bitrate:          28,54 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        20152 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+* MPEG-4 AVC Video      397 kbps            480p / 23,976 fps / 16:9 / High Profile 3.2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3893 kbps       5.1 / 48 kHz / 3893 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+* Dolby Digital Audio           English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+* Dolby Digital Audio           English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+* DTS Express                   English         96 kbps         1.0 / 48 kHz / 96 kbps / 24-bit
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         40,967 kbps                     
+Presentation Graphics           French          32,020 kbps                     
+Presentation Graphics           German          46,543 kbps                     
+* Presentation Graphics         French          37,921 kbps                     
+* Presentation Graphics         French          32,290 kbps                     
+* Presentation Graphics         German          48,408 kbps                     
+* Presentation Graphics         German          42,765 kbps                     
+* Presentation Graphics         French          9,646 kbps                      
+* Presentation Graphics         German          10,500 kbps

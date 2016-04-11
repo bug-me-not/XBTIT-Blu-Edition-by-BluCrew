@@ -1,0 +1,69 @@
+DISC INFO:
+
+Disc Title:     Animal House 1978 MULTI 1080p Bluray VC1 DTS HDMA fantome13
+ 
+Disc Size:      36 523 122 407 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00344.MPLS
+Length:                 1:48:46.520 (h:m:s.ms)
+Size:                   30 723 422 208 bytes
+Total Bitrate:          37,66 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              28971 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+* VC-1 Video            671 kbps            480p / 23,976 fps / 16:9 / Advanced Profile 2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3409 kbps       5.1 / 48 kHz / 3409 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Spanish         384 kbps        2.0 / 48 kHz / 384 kbps / 24-bit
+DTS Audio                       French          384 kbps        2.0 / 48 kHz / 384 kbps / 24-bit
+DTS Audio                       German          384 kbps        2.0 / 48 kHz / 384 kbps / 24-bit
+DTS Audio                       Italian         384 kbps        2.0 / 48 kHz / 384 kbps / 24-bit
+DTS Audio                       Spanish         384 kbps        2.0 / 48 kHz / 384 kbps / 24-bit
+* DTS Express                   English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         32,249 kbps                     
+Presentation Graphics           Spanish         29,739 kbps                     
+Presentation Graphics           French          26,944 kbps                     
+Presentation Graphics           French          25,276 kbps                     
+Presentation Graphics           German          27,490 kbps                     
+Presentation Graphics           Italian         26,321 kbps                     
+Presentation Graphics           Spanish         28,319 kbps                     
+Presentation Graphics           Dutch           23,582 kbps                     
+Presentation Graphics           Danish          25,155 kbps                     
+Presentation Graphics           Norwegian       26,231 kbps                     
+Presentation Graphics           Finnish         24,623 kbps                     
+Presentation Graphics           Swedish         22,444 kbps                     
+Presentation Graphics           English         15,824 kbps                     
+Presentation Graphics           French          14,613 kbps                     
+Presentation Graphics           German          16,879 kbps                     
+Presentation Graphics           Italian         14,880 kbps                     
+Presentation Graphics           Spanish         15,473 kbps                     
+Presentation Graphics           Spanish         1,085 kbps                      
+Presentation Graphics           French          1,042 kbps                      
+Presentation Graphics           German          0,924 kbps                      
+Presentation Graphics           Italian         0,965 kbps                      
+Presentation Graphics           Spanish         0,447 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+50201.M2TS      0:00:00.000     1:48:46.520     30 723 422 208  37 660

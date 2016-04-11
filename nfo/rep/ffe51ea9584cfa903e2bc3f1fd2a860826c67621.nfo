@@ -1,0 +1,51 @@
+DISC INFO:
+
+Disc Title:     2 Guns 2013 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      39 070 712 472 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00003.MPLS
+Length:                 1:49:19.553 (h:m:s.ms)
+Size:                   32 111 616 000 bytes
+Total Bitrate:          39,16 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        27842 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2677 kbps       5.1 / 48 kHz / 2677 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             French          2677 kbps       5.1 / 48 kHz / 2677 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+DTS-HD Master Audio             Spanish         2225 kbps       5.1 / 48 kHz / 2225 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         35,562 kbps                     
+Presentation Graphics           English         29,115 kbps                     
+Presentation Graphics           Arabic          19,702 kbps                     
+Presentation Graphics           Dutch           29,395 kbps                     
+Presentation Graphics           French          26,208 kbps                     
+Presentation Graphics           Spanish         28,138 kbps                     
+Presentation Graphics           English         65,809 kbps                     
+Presentation Graphics           Dutch           47,712 kbps                     
+Presentation Graphics           French          44,726 kbps                     
+Presentation Graphics           Spanish         55,144 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:49:19.553     32 111 616 000  39 163

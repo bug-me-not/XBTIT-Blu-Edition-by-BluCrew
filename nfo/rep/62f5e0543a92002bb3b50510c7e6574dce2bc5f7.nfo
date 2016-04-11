@@ -1,0 +1,24 @@
+DISC INFO:
+Disc Title:     CHRIS ISAAK
+Disc Size:      35 785 405 702 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+PLAYLIST REPORT:
+Name:                   00003.MPLS
+Length:                 0:54:57 (h:m:s)
+Size:                   16 091 983 872 bytes
+Total Bitrate:          39,04 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        30000 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         4730 kbps       5.1 / 48 kHz / 4730 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+LPCM Audio                      English         2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00004.M2TS      0:00:00.000     0:54:57.193     16 091 983 872  39 044

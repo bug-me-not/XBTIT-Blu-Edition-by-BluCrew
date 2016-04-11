@@ -1,0 +1,66 @@
+DISC INFO:
+
+Disc Title:     American Gigolo F13
+Disc Size:      37 203 771 338 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:56:35.989 (h:m:s.ms)
+Size:                   36 551 639 040 bytes
+Total Bitrate:          41,80 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        34977 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2723 kbps       5.1 / 48 kHz / 2723 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             German          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Italian         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Chinese         24,138 kbps                     
+Presentation Graphics           Danish          27,415 kbps                     
+Presentation Graphics           German          30,762 kbps                     
+Presentation Graphics           English         31,184 kbps                     
+Presentation Graphics           Spanish         27,351 kbps                     
+Presentation Graphics           Spanish         30,548 kbps                     
+Presentation Graphics           French          25,462 kbps                     
+Presentation Graphics           Croatian        26,719 kbps                     
+Presentation Graphics           Italian         27,148 kbps                     
+Presentation Graphics           Japanese        18,669 kbps                     
+Presentation Graphics           Korean          22,839 kbps                     
+Presentation Graphics           Chinese         24,123 kbps                     
+Presentation Graphics           Dutch           27,521 kbps                     
+Presentation Graphics           Norwegian       26,430 kbps                     
+Presentation Graphics           Portuguese      22,829 kbps                     
+Presentation Graphics           Romanian        27,230 kbps                     
+Presentation Graphics           Slovenian       27,080 kbps                     
+Presentation Graphics           Serbian         27,103 kbps                     
+Presentation Graphics           Finnish         28,410 kbps                     
+Presentation Graphics           Swedish         27,463 kbps                     
+Presentation Graphics           Thai            24,994 kbps                     
+Presentation Graphics           Turkish         26,970 kbps                     
+Presentation Graphics           English         33,285 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     1:56:35.989     36 551 639 040  41 797

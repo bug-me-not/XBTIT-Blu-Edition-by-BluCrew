@@ -1,0 +1,64 @@
+DISC INFO:
+
+Disc Title:     Mama 2013 MULTI 1080p BluRay AVC DTS HDMA HDSpace
+Disc Size:      39 809 915 730 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00802.MPLS
+Length:                 1:40:06.291 (h:m:s.ms)
+Size:                   32 133 550 080 bytes
+Total Bitrate:          42,80 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        31972 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3693 kbps       5.1 / 48 kHz / 3693 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Hindi           768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         21,324 kbps                     
+Presentation Graphics           French          14,848 kbps                     
+Presentation Graphics           Italian         15,129 kbps                     
+Presentation Graphics           German          17,076 kbps                     
+Presentation Graphics           Spanish         15,444 kbps                     
+Presentation Graphics           Hindi           12,193 kbps                     
+Presentation Graphics           Dutch           13,848 kbps                     
+Presentation Graphics           Portuguese      16,131 kbps                     
+Presentation Graphics           Danish          15,443 kbps                     
+Presentation Graphics           Finnish         13,440 kbps                     
+Presentation Graphics           Icelandic       17,605 kbps                     
+Presentation Graphics           Norwegian       13,937 kbps                     
+Presentation Graphics           Swedish         15,448 kbps                     
+Presentation Graphics           Arabic          7,862 kbps                      
+Presentation Graphics           English         42,252 kbps                     
+Presentation Graphics           French          38,443 kbps                     
+Presentation Graphics           Italian         39,443 kbps                     
+Presentation Graphics           German          39,745 kbps                     
+Presentation Graphics           Spanish         40,925 kbps                     
+                  
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00023.M2TS      0:00:00.000     1:40:06.291     32 133 550 080  42 800

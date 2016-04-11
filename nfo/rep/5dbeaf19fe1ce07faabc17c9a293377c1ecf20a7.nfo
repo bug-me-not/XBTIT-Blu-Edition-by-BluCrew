@@ -1,0 +1,157 @@
+File: Platoon 1986 Blu-ray 1080p x265 DTS-HD MA 5.1-Pr0FoT0.mkv
+Size: 11.01 GB
+Format: Matroska
+Stream count: 15
+Duration: 03:08:04
+Bit rate: 8384 kb/s
+Source: Platoon 1986 Blu-ray 1080p AVC DTS-HD MA 5.1 tater44-BluRG (Thanks!)
+Container: MKV
+Meta info:
+    creation_time: 2015-09-07 00:31:22
+
+Stream 0
+Type: video
+Codec: x265
+Duration: 03:08:04
+Width: 1920
+Height: 1088
+Profile: High@4.1
+Display aspect ratio: 30:17
+Frame rate: 23.98 fps
+Default: YES
+Forced: YES
+Bit Rate: 8384 kb/s
+
+Stream 1
+Type: audio
+Codec: dca
+Codec profile: DTS-HD MA
+Duration: 03:08:04
+Bit rate: 1536 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+Default: YES
+
+Stream 2
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 448 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 4
+
+Stream 3
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 448 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 4
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 5
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 448 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 6
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 7
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 8
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 9
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 10
+Type: audio
+Codec: dca
+Codec profile: DTS
+Duration: 03:08:04
+Bit rate: 768 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 6
+
+Stream 11
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 224 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 2
+
+Stream 12
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 224 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 2
+
+Stream 13
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 224 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 2
+
+Stream 14
+Type: audio
+Codec: ac3
+Duration: 03:08:04
+Bit rate: 224 kb/s
+Sample rate: 48000 Hz
+Sample format: s16
+Channel: 2

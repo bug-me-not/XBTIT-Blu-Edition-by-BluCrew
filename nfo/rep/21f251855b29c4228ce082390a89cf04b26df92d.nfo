@@ -1,0 +1,66 @@
+DISC INFO:
+
+Disc Title:     Zookeeper
+Disc Size:      39 834 557 581 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:41:53.107 (h:m:s.ms)
+Size:                   28 305 051 648 bytes
+Total Bitrate:          37,04 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        25899 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         2204 kbps       5.1 / 48 kHz / 2204 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Arabic          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Czech           640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Hebrew          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Hungarian       640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Polish          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Slovak          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Turkish         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Ukrainian       640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         38,261 kbps                    
+* Presentation Graphics         English         38,278 kbps                    
+Presentation Graphics           Arabic          19,580 kbps                    
+Presentation Graphics           Bulgarian       32,895 kbps                    
+Presentation Graphics           Chinese         32,810 kbps                    
+Presentation Graphics           Chinese         29,854 kbps                    
+Presentation Graphics           Croatian        31,756 kbps                    
+Presentation Graphics           Czech           33,501 kbps                    
+Presentation Graphics           Estonian        33,123 kbps                    
+Presentation Graphics           Greek           36,536 kbps                    
+Presentation Graphics           Hebrew          29,546 kbps                    
+Presentation Graphics           Hindi           36,641 kbps                    
+Presentation Graphics           Hungarian       32,485 kbps                    
+Presentation Graphics           Icelandic       37,105 kbps                    
+Presentation Graphics           Korean          26,727 kbps                    
+Presentation Graphics           Lithuanian      36,906 kbps                    
+Presentation Graphics           Polish          31,569 kbps                    
+Presentation Graphics           Portuguese      35,889 kbps                    
+Presentation Graphics           Romanian        37,720 kbps                    
+Presentation Graphics           Russian         36,883 kbps                    
+Presentation Graphics           Serbian         33,470 kbps                    
+Presentation Graphics           Slovak          33,590 kbps                    
+Presentation Graphics           Slovenian       32,951 kbps                    
+Presentation Graphics           Turkish         37,323 kbps

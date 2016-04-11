@@ -1,0 +1,162 @@
+Disc Title:
+Disc Size: 38 035 360 716 bytes
+Protection: AACS
+BD-Java: No
+BDInfo: 0.5.3
+Notes:
+BDINFO HOME:
+Cinema Squid
+http://www.cinemasquid.com/blu-ray/tools/bdinfo
+INCLUDES FORUMS REPORT FOR:
+AVS Forum Blu-ray Audio and Video Specifications Thread
+http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+********************
+PLAYLIST: 00004.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00004.MPLS                                                      VC-1    1:50:05 30 904 627 200  38 035 360 716  37,43   30,03   DTS-HD Master 5.1 3020Kbps (48kHz/24-bit) DTS-HD Master 2.0 2291Kbps (48kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:
+Disc Size:      38 035 360 716 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.3
+PLAYLIST REPORT:
+Name:                   00004.MPLS
+Length:                 1:50:05 (h:m:s)
+Size:                   30 904 627 200 bytes
+Total Bitrate:          37,43 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+VC-1 Video              30025 kbps          1080i / 29,970 fps / 16:9 / Advanced Profile 3
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         3020 kbps       5.1 / 48 kHz / 3020 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         2291 kbps       2.0 / 48 kHz / 2291 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00004.M2TS      0:00:00.000     1:39:20.621     27 917 752 320  37 470
+00005.M2TS      1:39:20.621     0:10:44.610     2 986 874 880   37 069
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:03:49.362     23 223 kbps     57 619 kbps     00:00:02.936    34 865 kbps     00:02:58.978    32 880 kbps     00:03:19.499    96 844 bytes    481 820 bytes   00:00:03.403
+2               0:03:49.362     0:02:03.223     31 082 kbps     42 725 kbps     00:05:51.451    33 979 kbps     00:05:47.580    33 471 kbps     00:04:58.398    129 639 bytes   287 505 bytes   00:03:59.539
+3               0:05:52.585     0:04:07.380     30 344 kbps     38 222 kbps     00:06:29.622    33 945 kbps     00:08:21.000    33 193 kbps     00:09:47.520    126 561 bytes   309 128 bytes   00:07:31.851
+4               0:09:59.966     0:04:35.008     31 300 kbps     39 924 kbps     00:11:22.848    36 286 kbps     00:11:22.815    34 725 kbps     00:13:03.816    130 546 bytes   332 500 bytes   00:11:23.849
+5               0:14:34.974     0:06:17.410     29 541 kbps     39 558 kbps     00:20:44.142    36 560 kbps     00:20:43.041    33 735 kbps     00:20:38.036    123 210 bytes   329 149 bytes   00:15:12.611
+6               0:20:52.384     0:06:26.919     28 024 kbps     36 433 kbps     00:21:26.184    34 119 kbps     00:24:46.051    33 735 kbps     00:24:43.448    116 884 bytes   310 528 bytes   00:21:31.390
+7               0:27:19.304     0:04:48.655     30 922 kbps     38 739 kbps     00:29:29.200    35 112 kbps     00:30:18.783    34 586 kbps     00:30:18.583    128 970 bytes   341 017 bytes   00:29:28.433
+8               0:32:07.959     0:03:02.015     33 177 kbps     44 931 kbps     00:35:04.769    37 772 kbps     00:35:04.302    35 999 kbps     00:33:14.025    138 375 bytes   388 030 bytes   00:33:14.392
+9               0:35:09.974     0:04:34.140     30 646 kbps     36 001 kbps     00:35:10.508    33 435 kbps     00:35:28.326    33 020 kbps     00:35:24.589    127 835 bytes   311 987 bytes   00:35:49.313
+10              0:39:44.115     0:03:42.422     31 210 kbps     41 040 kbps     00:42:54.838    35 474 kbps     00:39:46.283    34 051 kbps     00:39:44.115    130 172 bytes   383 919 bytes   00:42:54.605
+11              0:43:26.537     0:05:28.194     31 995 kbps     39 788 kbps     00:47:47.197    36 517 kbps     00:47:47.197    36 109 kbps     00:47:41.024    133 447 bytes   345 407 bytes   00:46:37.361
+12              0:48:54.731     0:07:30.383     31 957 kbps     40 781 kbps     00:56:13.570    35 883 kbps     00:50:26.823    35 434 kbps     00:56:05.295    133 286 bytes   371 563 bytes   00:56:06.262
+13              0:56:25.115     0:04:32.939     31 424 kbps     40 781 kbps     00:57:17.367    35 744 kbps     00:58:19.095    34 540 kbps     00:58:19.062    131 066 bytes   340 438 bytes   01:00:29.926
+14              1:00:58.054     0:01:58.952     20 985 kbps     51 182 kbps     01:01:18.474    37 137 kbps     01:02:00.116    33 952 kbps     01:01:57.080    87 572 bytes    557 689 bytes   01:01:14.070
+15              1:02:57.006     0:02:55.842     32 390 kbps     41 533 kbps     01:05:28.958    37 455 kbps     01:03:02.645    36 172 kbps     01:05:28.224    135 095 bytes   352 865 bytes   01:03:03.079
+16              1:05:52.848     0:04:55.495     31 463 kbps     42 716 kbps     01:07:41.157    38 132 kbps     01:05:56.686    35 439 kbps     01:07:31.881    131 225 bytes   373 896 bytes   01:05:58.220
+17              1:10:48.344     0:03:53.666     30 006 kbps     37 657 kbps     01:11:08.130    34 462 kbps     01:10:48.344    33 701 kbps     01:11:01.123    125 148 bytes   259 108 bytes   01:13:32.374
+18              1:14:42.010     0:03:51.164     31 735 kbps     37 740 kbps     01:16:56.945    35 948 kbps     01:17:02.551    35 227 kbps     01:17:01.950    132 361 bytes   361 183 bytes   01:16:57.145
+19              1:18:33.175     0:03:28.575     30 627 kbps     42 878 kbps     01:20:02.798    35 920 kbps     01:20:01.163    34 548 kbps     01:20:00.495    127 738 bytes   305 318 bytes   01:19:47.516
+20              1:22:01.750     0:04:50.723     31 405 kbps     36 750 kbps     01:22:58.039    34 054 kbps     01:22:17.632    33 138 kbps     01:23:17.225    130 985 bytes   281 424 bytes   01:24:06.775
+21              1:26:52.473     0:04:57.430     29 862 kbps     34 723 kbps     01:26:55.343    32 435 kbps     01:26:55.243    31 873 kbps     01:28:55.330    124 551 bytes   267 242 bytes   01:31:47.101
+22              1:31:49.904     0:05:26.192     28 062 kbps     33 433 kbps     01:32:04.252    32 025 kbps     01:34:39.140    31 519 kbps     01:34:34.935    117 044 bytes   313 597 bytes   01:36:02.623
+23              1:37:16.096     0:02:04.524     20 621 kbps     41 901 kbps     01:37:59.039    33 730 kbps     01:39:15.616    31 944 kbps     01:37:55.870    86 032 bytes    464 636 bytes   01:39:12.179
+24              1:39:20.621     0:03:33.713     29 564 kbps     35 279 kbps     01:40:16.243    33 517 kbps     01:40:16.243    32 239 kbps     01:41:50.370    123 308 bytes   276 834 bytes   01:40:40.067
+25              1:42:54.334     0:03:33.446     29 755 kbps     36 403 kbps     01:44:21.788    32 915 kbps     01:44:18.685    32 102 kbps     01:45:59.753    124 104 bytes   283 000 bytes   01:45:07.200
+26              1:46:27.781     0:03:37.450     30 604 kbps     36 904 kbps     01:47:43.557    34 807 kbps     01:46:56.410    33 859 kbps     01:47:43.557    128 233 bytes   334 994 bytes   01:47:43.623
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00004.M2TS      4113 (0x1011)   0xEA            VC-1                                    5960,555                30 030                  22 374 636 120  121 708 343
+00004.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           5960,555                2 341                   1 744 394 956   10 408 602
+00004.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           5960,555                3 003                   2 237 419 956   13 088 301
+00005.M2TS      4113 (0x1011)   0xEA            VC-1                                    644,544                 29 984                  2 415 738 981   13 140 562
+00005.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           644,544                 1 823                   146 872 976     902 470
+00005.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           644,544                 3 178                   256 078 520     1 492 011
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title:
+Disc Size: 38 035 360 716 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00004.MPLS
+Size: 30 904 627 200 bytes
+Length: 1:50:05
+Total Bitrate: 37,43 Mbps
+Video: VC-1 Video / 30025 kbps / 1080i / 29,970 fps / 16:9 / Advanced Profile 3
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3020 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 2291 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 00001.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00001.MPLS                                                      VC-1    0:23:48 6 617 315 328   38 035 360 716  37,07   30,04   DTS-HD Master 5.1 3125Kbps (48kHz/24-bit) DTS-HD Master 2.0 1822Kbps (48kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:
+Disc Size:      38 035 360 716 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.3
+PLAYLIST REPORT:
+Name:                   00001.MPLS
+Length:                 0:23:48 (h:m:s)
+Size:                   6 617 315 328 bytes
+Total Bitrate:          37,07 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+VC-1 Video              30038 kbps          1080i / 29,970 fps / 16:9 / Advanced Profile 3
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         3125 kbps       5.1 / 48 kHz / 3125 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         1822 kbps       2.0 / 48 kHz / 1822 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00006.M2TS      0:00:00.000     0:23:48.093     6 617 315 328   37 069
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:03:31.844     27 774 kbps     37 409 kbps     00:00:31.331    32 569 kbps     00:03:08.821    31 860 kbps     00:00:01.401    115 823 bytes   306 157 bytes   00:00:31.631
+2               0:03:31.844     0:03:49.429     27 180 kbps     35 831 kbps     00:04:53.526    33 083 kbps     00:06:50.777    31 846 kbps     00:06:47.774    113 361 bytes   373 067 bytes   00:05:45.745
+3               0:07:21.274     0:01:59.619     32 330 kbps     38 568 kbps     00:08:06.586    35 796 kbps     00:08:32.712    35 025 kbps     00:08:27.840    134 842 bytes   357 975 bytes   00:08:05.318
+4               0:09:20.893     0:02:05.792     31 752 kbps     42 026 kbps     00:10:35.134    36 020 kbps     00:09:51.958    35 089 kbps     00:10:45.177    132 431 bytes   340 644 bytes   00:11:09.235
+5               0:11:26.686     0:02:44.697     31 613 kbps     43 015 kbps     00:13:47.092    36 056 kbps     00:13:43.489    34 637 kbps     00:13:43.622    131 853 bytes   328 472 bytes   00:13:47.326
+6               0:14:11.383     0:03:36.549     29 229 kbps     38 145 kbps     00:16:40.733    34 913 kbps     00:14:31.637    34 288 kbps     00:16:57.383    121 927 bytes   364 999 bytes   00:14:31.670
+7               0:17:47.933     0:05:59.092     31 690 kbps     40 680 kbps     00:20:24.623    36 887 kbps     00:20:23.222    35 393 kbps     00:20:23.055    132 174 bytes   349 624 bytes   00:20:11.343
+8               0:23:47.025     0:00:01.067     140 kbps        149 kbps        00:23:47.025    0 kbps          00:00:00.000    0 kbps          00:00:00.000    9 328 bytes     9 244 bytes     00:23:47.058
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00006.M2TS      4113 (0x1011)   0xEA            VC-1                                    1428,027                30 039                  5 362 110 404   29 167 615
+00006.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           1428,027                1 822                   325 163 592     1 995 257
+00006.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           1428,027                3 125                   557 891 656     3 254 459
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title:
+Disc Size: 38 035 360 716 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00001.MPLS
+Size: 6 617 315 328 bytes
+Length: 0:23:48
+Total Bitrate: 37,07 Mbps
+Video: VC-1 Video / 30038 kbps / 1080i / 29,970 fps / 16:9 / Advanced Profile 3
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3125 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 1822 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)

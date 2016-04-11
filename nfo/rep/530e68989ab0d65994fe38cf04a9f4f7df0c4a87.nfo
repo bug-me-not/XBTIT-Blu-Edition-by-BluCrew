@@ -1,0 +1,156 @@
+Général
+Nom complet : The.Transporter.Refueled.2015.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-HDO.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 22,5 Gio
+Durée : 1h 35mn
+Type de débit global : Variable
+Débit global moyen : 33,6 Mb/s
+Date d'encodage : UTC 2015-12-02 18:01:46
+Application utilisée : mkvmerge v8.6.1 ('Flying') 64bit
+Bibliothèque utilisée : libebml v1.3.3 + libmatroska v1.4.4
+
+Vidéo
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 1h 35mn
+Type de débit : Variable
+Débit : 27,2 Mb/s
+Débit maximum : 35,0 Mb/s
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Type d'images/s : Constant
+Images par seconde : 23,976 (24000/1001) Im/s
+Norme : NTSC
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : Progressif
+Bits/(Pixel*Image) : 0.547
+Taille du flux : 18,2 Gio (81%)
+Default : Oui
+Forced : Non
+Gamme de couleurs : Limited
+Coordonnées de chromaticité : BT.709
+Caractéristiques du transfert : BT.709
+Coefficients de la matrice : BT.709
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 35mn
+Type de débit : Variable / Constant
+Débit : 4 142 Kbps / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Images par seconde : 93,750 Im/s (512 spf)
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Taille du flux : 2,78 Gio (12%)
+Titre : DTS HD MA 5.1 @ 4143 Kbps
+Langue : Français
+Default : Oui
+Forced : Non
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 35mn
+Type de débit : Variable / Constant
+Débit : 2 265 Kbps / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Images par seconde : 93,750 Im/s (512 spf)
+Profondeur des couleurs : 16 bits
+Mode de compression : Sans perte / Lossy
+Taille du flux : 1,52 Gio (7%)
+Titre : DTS HD MA 5.1 @ 2266 Kbps
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #1
+ID : 4
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Durée : 1h 28mn
+Débit : 0 bps
+Count of elements : 9
+Taille du flux : 178 Octets (0%)
+Titre : Français Forcés (SRT)
+Langue : Français
+Default : Oui
+Forced : Non
+
+Texte #2
+ID : 5
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Durée : 1h 30mn
+Débit : 62 bps
+Count of elements : 1286
+Taille du flux : 41,6 Kio (0%)
+Titre : français complets (SRT)
+Default : Non
+Forced : Non
+
+Texte #3
+ID : 6
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Durée : 1h 28mn
+Débit : 70 bps
+Count of elements : 18
+Taille du flux : 45,7 Kio (0%)
+Titre : Français forcés (PGS)
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #4
+ID : 7
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Durée : 1h 31mn
+Débit : 13,9 Kbps
+Count of elements : 1729
+Taille du flux : 9,13 Mio (0%)
+Titre : Français complets (PGS)
+Langue : Français
+Default : Non
+Forced : Non
+
+Menu
+00:00:00.000 : en:(01)00:00:00:000
+00:13:30.851 : en:(02)00:13:30:851
+00:27:09.044 : en:(03)00:27:09:044
+00:38:27.972 : en:(04)00:38:27:972
+00:57:48.173 : en:(05)00:57:48:173
+01:07:40.139 : en:(06)01:07:40:139
+01:19:34.144 : en:(07)01:19:34:144
+01:30:12.490 : en:(08)01:30:12:490
+01:35:57.460 : en:(09)01:35:57:460

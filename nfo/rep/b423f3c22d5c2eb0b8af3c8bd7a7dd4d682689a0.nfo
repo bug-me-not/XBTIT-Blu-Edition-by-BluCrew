@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     Jeff, Who Lives at Home F13
+Disc Size:      23 630 256 118 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:23:01.977 (h:m:s.ms)
+Size:                   22 766 180 352 bytes
+Total Bitrate:          36,56 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        28093 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3702 kbps       5.1 / 48 kHz / 3702 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         34,983 kbps                     
+Presentation Graphics           English         38,025 kbps                     
+Presentation Graphics           French          33,651 kbps                     
+Presentation Graphics           Spanish         29,178 kbps                     
+Presentation Graphics           Portuguese      33,607 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00357.M2TS      0:00:00.000     1:23:01.977     22 766 180 352  36 558
+
+

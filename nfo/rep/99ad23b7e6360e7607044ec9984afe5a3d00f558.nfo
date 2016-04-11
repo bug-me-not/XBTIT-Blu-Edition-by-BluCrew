@@ -1,0 +1,66 @@
+DISC INFO:
+
+Disc Title:     Duplicity.2009.MULTi.COMPLETE.BLURAY-HDi
+Disc Size:      28 053 164 041 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:05:02.495 (h:m:s.ms)
+Size:                   27 369 234 432 bytes
+Total Bitrate:          29,18 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              17838 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3831 kbps       5.1 / 48 kHz / 3831 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Czech           768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Hungarian       768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Polish          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Thai            768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         49,120 kbps                     
+Presentation Graphics           French          34,228 kbps                     
+Presentation Graphics           German          50,073 kbps                     
+Presentation Graphics           Bulgarian       44,293 kbps                     
+Presentation Graphics           Croatian        40,665 kbps                     
+Presentation Graphics           Czech           40,025 kbps                     
+Presentation Graphics           Greek           46,522 kbps                     
+Presentation Graphics           Hebrew          28,566 kbps                     
+Presentation Graphics           Hungarian       43,473 kbps                     
+Presentation Graphics           Icelandic       38,161 kbps                     
+Presentation Graphics           Polish          44,645 kbps                     
+Presentation Graphics           Romanian        35,958 kbps                     
+Presentation Graphics           Thai            26,521 kbps                     
+Presentation Graphics           Turkish         40,476 kbps                     
+Presentation Graphics           French          63,102 kbps                     
+Presentation Graphics           German          74,707 kbps                     
+Presentation Graphics           French          0,360 kbps                      
+Presentation Graphics           German          0,572 kbps                      
+Presentation Graphics           Czech           0,427 kbps                      
+Presentation Graphics           Hungarian       0,342 kbps                      
+Presentation Graphics           Thai            0,070 kbps                      
+Presentation Graphics           Dutch           44,129 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00009.M2TS      0:00:00.000     2:05:02.495     27 369 234 432  29 184

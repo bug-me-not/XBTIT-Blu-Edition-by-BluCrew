@@ -1,0 +1,122 @@
+Disc Title:     Le_placard_2000_BDRemux_HDCLUB
+Disc Size:      21 825 054 616 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:24:47 2 015 815 488   21 825 054 616  3,17    24,80   DTS-HD Master 5.1 2363Kbps (48kHz/16-bit) DTS-HD Master 5.1 2382Kbps (48kHz/16-bit)
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     Le_placard_2000_BDRemux_HDCLUB
+Disc Size:      21 825 054 616 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:24:47.978 (h:m:s.ms)
+Size:                   2 015 815 488 bytes
+Total Bitrate:          3,17 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24799 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             Russian         2363 kbps       5.1 / 48 kHz / 2363 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Russian         2382 kbps       5.1 / 48 kHz / 2382 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2399 kbps       5.1 / 48 kHz / 2399 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         18,971 kbps                     
+Presentation Graphics           English         23,859 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:24:47.978     2 015 815 488   34 151          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:06:39.125     25 432 kbps     36 589 kbps     00:04:38.583    35 889 kbps     00:04:36.041    34 663 kbps     00:04:32.583    132 433 bytes   393 341 bytes   00:03:00.208    
+2               0:06:39.125     0:05:32.707     4 688 kbps      26 246 kbps     00:07:05.916    24 687 kbps     00:07:01.999    24 427 kbps     00:06:56.999    111 272 bytes   246 531 bytes   00:07:11.499    
+3               0:12:11.832     0:07:00.957     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:19:12.790     0:04:17.460     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:23:30.250     0:07:22.415     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:30:52.665     0:09:14.335     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:40:07.000     0:08:56.833     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:49:03.833     0:06:39.708     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               0:55:43.541     0:10:09.125     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:05:52.666     0:08:24.083     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:14:16.750     0:07:35.666     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:21:52.416     0:02:55.562     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     472,167                 24 801                  1 463 790 099   7 961 983       
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       rus (Russian)           472,167                 2 363                   139 465 556     831 751         
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       rus (Russian)           472,167                 2 382                   140 610 140     838 338         
+00000.M2TS      4354 (0x1102)   0x86            DTS-HD MA       fra (French)            472,167                 2 399                   141 586 096     842 487         
+00000.M2TS      4608 (0x1200)   0x90            PGS             rus (Russian)           472,167                 19                      1 119 764       6 467           
+00000.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           472,167                 24                      1 408 327       8 091           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: Le_placard_2000_BDRemux_HDCLUB
+Disc Size: 21 825 054 616 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 2 015 815 488 bytes
+Length: 1:24:47.978
+Total Bitrate: 3,17 Mbps
+Video: MPEG-4 AVC Video / 24799 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: Russian / DTS-HD Master Audio / 5.1 / 48 kHz / 2363 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Audio: Russian / DTS-HD Master Audio / 5.1 / 48 kHz / 2382 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 2399 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Subtitle: Russian / 18,971 kbps
+Subtitle: English / 23,859 kbps
+

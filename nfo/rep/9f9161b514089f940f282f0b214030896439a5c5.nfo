@@ -1,0 +1,35 @@
+Disc Title:     Parker
+Disc Size:      37á076á639á912 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:58:50.000 (h:m:s.ms)
+Size:                   33á264á482á304 bytes
+Total Bitrate:          37,32 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        27052 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             French          3615 kbps       5.1 / 48 kHz / 3615 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             English         2869 kbps       5.1 / 48 kHz / 2869 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             English         1561 kbps       2.0 / 48 kHz / 1561 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           French          0,202 kbps                      
+Presentation Graphics           French          23,644 kbps                    
+Presentation Graphics           French          52,433 kbps  

@@ -1,0 +1,57 @@
+DISC INFO:
+
+Disc Title:     The.Muppets.2011.COMPLETE.BLURAY-NoSence
+
+Disc Size:      36 205 797 741 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00051.MPLS
+Length:                 1:42:44.283 (h:m:s.ms)
+Size:                   25 548 908 544 bytes
+Total Bitrate:          33,16 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24096 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4862 kbps       7.1 / 48 kHz / 4862 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Czech           640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Turkish         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Greek           640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         41,812 kbps                     
+Presentation Graphics           English         47,363 kbps                     
+Presentation Graphics           Czech           41,732 kbps                     
+Presentation Graphics           Turkish         41,894 kbps                     
+Presentation Graphics           Greek           43,436 kbps                     
+Presentation Graphics           Arabic          21,831 kbps                     
+Presentation Graphics           Swedish         32,488 kbps                     
+Presentation Graphics           Norwegian       36,254 kbps                     
+Presentation Graphics           Danish          35,872 kbps                     
+Presentation Graphics           Finnish         40,338 kbps                     
+Presentation Graphics           Icelandic       36,734 kbps                     
+Presentation Graphics           Czech           1,519 kbps                      
+Presentation Graphics           Turkish         1,374 kbps                      
+Presentation Graphics           Greek           1,459 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00050.M2TS      0:00:00.000     0:00:34.325     140 998 656     32 861          
+00052.M2TS      0:00:34.325     0:03:09.647     792 858 624     33 446          
+00051.M2TS      0:03:43.973     1:39:00.309     24 615 051 264  33 150

@@ -1,0 +1,160 @@
+      ___        _____        ___                   ___          ___     
+     /__/\      /  /::\      /__/|      ___        /__/\        /  /\    
+     \  \:\    /  /:/\:\    |  |:|     /  /\       \  \:\      /  /:/_   
+      \__\:\  /  /:/  \:\   |  |:|    /  /:/        \  \:\    /  /:/ /\  
+  ___ /  /::\/__/:/ \__\:|__|  |:|   /__/::\    _____\__\:\  /  /:/_/::\ 
+ /__/\  /:/\:\  \:\ /  /:/__/\_|:|___\__\/\:\__/__/::::::::\/__/:/__\/\:\
+ \  \:\/:/__\/\  \:\  /:/\  \:\/:::::/  \  \:\/\  \:\~~\~~\/\  \:\ /~~/:/
+  \  \::/      \  \:\/:/  \  \::/~~~~    \__\::/\  \:\  ~~~  \  \:\  /:/ 
+   \  \:\       \  \::/    \  \:\        /__/:/  \  \:\       \  \:\/:/  
+    \  \:\       \__\/      \  \:\       \__\/    \  \:\       \  \::/   
+     \__\/                   \__\/                 \__\/        \__\/    
+
+
+
+
+Complete name                    : Interview with the Vampire 1994 MULTI 1080p BluRay REMUX VC-1-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 21.4 GiB
+Duration                         : 2h 2mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 25.0 Mbps
+Encoded date                     : UTC 2014-09-15 21:57:38
+Writing application              : mkvmerge v7.2.0 ('On Every Street') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : VC-1
+Format profile                   : AP@L3
+Codec ID                         : WVC1
+Codec ID/Hint                    : Microsoft
+Duration                         : 2h 2mn
+Bit rate                         : 21.9 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Compression mode                 : Lossy
+Bits/(Pixel*Frame)               : 0.440
+Stream size                      : 18.7 GiB (88%)
+Title                            : Interview with the Vampire
+
+Audio #1
+ID                               : 2
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 2mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 168 MiB (1%)
+Title                            : French (Canada) : Dolby Digital 2.0
+
+Audio #2
+ID                               : 3
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 2mn
+Bit rate mode                    : Constant
+Bit rate                         : 640 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 561 MiB (3%)
+Title                            : French (France) : Dolby Digital 5.1
+
+Audio #3
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 2h 2mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 561 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #4
+ID                               : 5
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 2mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 168 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #2
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Chapter 1
+00:03:01.472                     : en:Chapter 2
+00:05:51.100                     : en:Chapter 3
+00:09:30.486                     : en:Chapter 4
+00:11:23.891                     : en:Chapter 5
+00:16:17.226                     : en:Chapter 6
+00:24:22.002                     : en:Chapter 7
+00:30:51.766                     : en:Chapter 8
+00:36:15.339                     : en:Chapter 9
+00:40:51.323                     : en:Chapter 10
+00:50:17.389                     : en:Chapter 11
+00:56:40.772                     : en:Chapter 12
+01:08:55.381                     : en:Chapter 13
+01:10:29.099                     : en:Chapter 14
+01:11:31.704                     : en:Chapter 15
+01:14:11.280                     : en:Chapter 16
+01:19:44.571                     : en:Chapter 17
+01:23:56.614                     : en:Chapter 18
+01:24:32.484                     : en:Chapter 19
+01:25:51.896                     : en:Chapter 20
+01:30:09.278                     : en:Chapter 21
+01:34:13.689                     : en:Chapter 22
+01:36:23.944                     : en:Chapter 23
+01:40:33.694                     : en:Chapter 24
+01:43:35.000                     : en:Chapter 25
+01:46:00.395                     : en:Chapter 26
+01:47:05.836                     : en:Chapter 27
+01:52:49.137                     : en:Chapter 28
+01:54:47.088                     : en:Chapter 29

@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     Tinker Tailor Tinker Tailor Soldier Spy F13
+Disc Size:      42 072 326 084 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:07:22.635 (h:m:s.ms)
+Size:                   35 460 956 160 bytes
+Total Bitrate:          37,12 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        27000 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          3141 kbps       5.1 / 48 kHz / 3141 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             English         3256 kbps       5.1 / 48 kHz / 3256 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          1,046 kbps                      
+Presentation Graphics           French          19,236 kbps                     
+Presentation Graphics           French          29,990 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:07:22.635     35 460 956 160  37 119
+
+

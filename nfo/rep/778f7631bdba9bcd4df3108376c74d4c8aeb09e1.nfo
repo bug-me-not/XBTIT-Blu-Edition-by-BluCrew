@@ -1,0 +1,136 @@
+Disc Title:     LES MISERABLES_2012
+Disc Size:      47 936 003 479 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00800.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00800.MPLS                                                      AVC     2:37:54 1 623 403 392   47 936 003 479  1,37    26,54   DTS-HD Master 7.1 5120Kbps (48kHz/24-bit) DTS 5.1 768Kbps (48kHz/24-bit)
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     LES MISERABLES_2012
+Disc Size:      47 936 003 479 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:37:54.465 (h:m:s.ms)
+Size:                   1 623 403 392 bytes
+Total Bitrate:          1,37 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        26536 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         5120 kbps       7.1 / 48 kHz / 5120 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       English         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         25,895 kbps                     
+Presentation Graphics           Spanish         22,530 kbps                     
+Presentation Graphics           French          24,546 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00023.M2TS      0:00:00.000     2:37:54.465     1 623 403 392   34 760          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:07:22.817     22 389 kbps     46 520 kbps     00:00:35.285    35 232 kbps     00:00:01.376    34 959 kbps     00:00:42.542    138 346 bytes   568 543 bytes   00:00:36.036    
+2               0:07:22.817     0:07:09.178     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+3               0:14:31.996     0:07:50.970     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:22:22.966     0:09:29.652     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:31:52.619     0:08:21.042     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:40:13.661     0:05:00.633     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:45:14.294     0:07:29.198     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:52:43.493     0:07:57.351     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               1:00:40.845     0:06:00.276     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:06:41.122     0:09:09.966     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:15:51.088     0:04:30.561     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:20:21.650     0:06:42.693     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+13              1:27:04.344     0:08:30.384     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+14              1:35:34.729     0:06:35.561     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+15              1:42:10.290     0:10:10.568     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+16              1:52:20.859     0:10:40.222     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+17              2:03:01.082     0:07:08.261     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+18              2:10:09.343     0:11:08.834     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+19              2:21:18.178     0:08:23.169     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+20              2:29:41.347     0:08:13.117     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00023.M2TS      4113 (0x1011)   0x1B            AVC                                     373,540                 26 542                  1 239 300 861   6 740 537       
+00023.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           373,540                 5 121                   239 112 139     1 355 765       
+00023.M2TS      4353 (0x1101)   0x82            DTS             eng (English)           373,540                 767                     35 820 711      209 887         
+00023.M2TS      4354 (0x1102)   0x81            AC3             eng (English)           373,540                 192                     8 963 095       58 353          
+00023.M2TS      4355 (0x1103)   0x81            AC3             eng (English)           373,540                 192                     8 963 095       58 353          
+00023.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           373,540                 26                      1 209 375       7 005           
+00023.M2TS      4609 (0x1201)   0x90            PGS             spa (Spanish)           373,540                 23                      1 052 211       6 107           
+00023.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            373,540                 25                      1 146 357       6 701           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: LES MISERABLES_2012
+Disc Size: 47 936 003 479 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00800.MPLS
+Size: 1 623 403 392 bytes
+Length: 2:37:54.465
+Total Bitrate: 1,37 Mbps
+Video: MPEG-4 AVC Video / 26536 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 7.1 / 48 kHz / 5120 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / DTS Audio / 5.1 / 48 kHz / 768 kbps / 24-bit
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Subtitle: English / 25,895 kbps
+Subtitle: Spanish / 22,530 kbps
+Subtitle: French / 24,546 kbps
+

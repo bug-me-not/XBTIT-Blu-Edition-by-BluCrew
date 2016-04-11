@@ -1,0 +1,1759 @@
+﻿   Die Hard Ultimate collection (1988-2013) MULTi-VF2 BluRay Remux 1080p DTS AVC~Tonyk/
+
+
+             Die Hard (1988) MULTi BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 26.2 GiB
+Duration                                 : 2h 12mn
+Overall bit rate                         : 28.4 Mbps
+Encoded date                             : UTC 2015-11-05 09:34:32
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=3, N=24
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 12mn
+Bit rate                                 : 25.5 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.512
+Stream size                              : 23.5 GiB (90%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 12mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.39 GiB (5%)
+Title                                    : DTS - 5.1 - VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 12mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 423 MiB (2%)
+Title                                    : AC3-5.1-VFI
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 12mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 423 MiB (2%)
+Title                                    : AC3-5.1-
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Korean
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #8
+ID                                       : 12
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : forced (srt)
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #9
+ID                                       : 13
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : full (srt)
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Landing in L.a.
+00:02:21.391                             : en:Festival Night
+00:03:57.779                             : en:Mcclane Residence
+00:05:11.937                             : en:Argyle
+00:06:09.828                             : en:The Limo
+00:07:50.929                             : en:Nakatomi Plaza
+00:11:58.134                             : en:Takagi & Ellis
+00:13:17.922                             : en:Reunited
+00:14:03.092                             : en:Uninvited Guests
+00:14:18.357                             : en:Seperation Anxiety
+00:16:58.309                             : en:Hostile Takeover
+00:21:00.467                             : en:Disconnected Parties
+00:22:41.986                             : en:Party Crashers
+00:24:53.242                             : en:Meet Hans Gruber
+00:26:50.317                             : en:Industrialization and Men's Fashions
+00:28:50.228                             : en:Fill in the Blanks
+00:33:24.461                             : en:The Vault
+00:34:08.630                             : en:False Alarm
+00:35:26.416                             : en:I Promise I Won't Hurt You
+00:38:18.671                             : en:Ho Ho Ho
+00:42:33.593                             : en:Blood Lust
+00:43:24.143                             : en:Mayday
+00:45:18.424                             : en:Twinkie Patrol
+00:47:59.418                             : en:The Shaft
+00:52:39.031                             : en:Not a Creature Stirring
+00:56:49.156                             : en:Welcome to the Party, Pal
+00:57:55.222                             : en:Dick Thornburg
+00:58:38.723                             : en:Mr. Mystery Guest
+01:00:49.479                             : en:Kflw News
+01:01:38.862                             : en:Missing Detonators
+01:04:18.396                             : en:L.a.'s Finest
+01:07:44.102                             : en:Going In
+01:12:58.290                             : en:Lapd Rv
+01:15:19.056                             : en:Chair Bomb
+01:19:14.750                             : en:Contract Negotiations
+01:26:10.790                             : en:Issuing Demands
+01:28:49.783                             : en:Hostage Terrorist, Terrorist Hostage
+01:29:27.237                             : en:Johnson & Johnson
+01:30:06.943                             : en:Cat and Mouse
+01:35:43.446                             : en:Shoot the Glass
+01:38:57.973                             : en:Powell's Confession
+01:41:26.747                             : en:Merry Christmas From the Fbi
+01:45:24.610                             : en:Mcclaine's Confession
+01:47:45.000                             : en:Nightly News
+01:48:10.943                             : en:Vendetta
+01:49:49.958                             : en:Meeting Mrs. Mcclane
+01:51:09.413                             : en:Choppers Up the Ass
+01:54:16.016                             : en:The Roof
+01:58:22.762                             : en:Escape Plan Foiled
+01:59:44.260                             : en:Showdown
+02:02:00.605                             : en:Happy Trails, Hans
+02:03:48.838                             : en:Partner's Meet
+02:05:13.130                             : en:Powell's Comeback
+02:06:28.122                             : en:Let It Snow
+02:07:19.048                             : en:End Credits
+
+-------------------------------------------------------------------------------------------
+
+         Die Hard (1990) MULTi BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 26.6 GiB
+Duration                                 : 2h 3mn
+Overall bit rate                         : 30.9 Mbps
+Encoded date                             : UTC 2015-11-05 09:55:59
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 3 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 3mn
+Bit rate                                 : 27.9 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.560
+Stream size                              : 24.0 GiB (90%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.30 GiB (5%)
+Title                                    : DTS - 5.1 - VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 395 MiB (1%)
+Title                                    : AC3-5.1-VFI
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 395 MiB (1%)
+Title                                    : AC3-5.1-
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Korean
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 11
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : forced (srt)
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #8
+ID                                       : 12
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : full (srt)
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Main Title: Merry Christmas!
+00:06:14.582                             : en:The Church of Choice
+00:08:14.535                             : en:At The Airport
+00:12:15.693                             : en:Baggage Mishandling
+00:16:21.438                             : en:Cabin Fever
+00:18:32.694                             : en:The Colonel's Headquarters
+00:19:32.129                             : en:A Chat with Lorenzo
+00:23:22.734                             : en:Esperanza Enroute
+00:25:09.925                             : en:Powell on the Line
+00:27:03.246                             : en:Traffic Control
+00:29:48.077                             : en:McClane Raises a Question
+00:36:46.245                             : en:McClane Gets Evicted
+00:39:14.769                             : en:Another Plan
+00:40:02.775                             : en:Marvin
+00:43:37.156                             : en:Shootout at the Skywalk
+00:48:58.477                             : en:Closer Than 50 Yards
+00:49:57.035                             : en:Paying The Penalty
+00:52:30.730                             : en:Learning a Lesson
+00:58:29.672                             : en:Aftermath
+01:01:43.950                             : en:Thornberg Tunes In
+01:02:39.922                             : en:The Anti-Terrorist Team
+01:04:47.383                             : en:The Outer Marker
+01:06:38.411                             : en:Thornberg Gets A Scoop
+01:08:12.254                             : en:The Right Frequency
+01:09:54.440                             : en:A New Position
+01:10:59.755                             : en:The Falcon Is Landing
+01:16:23.245                             : en:Emergency Exit
+01:21:56.369                             : en:The Old Plans
+01:23:27.210                             : en:The Old Church
+01:25:40.885                             : en:The Raid
+01:30:53.990                             : en:On Thin Ice
+01:33:17.633                             : en:The Enemy Within
+01:34:23.157                             : en:Thornberg Goes Live
+01:41:09.688                             : en:The Getaway
+01:42:31.854                             : en:Crash Positions
+01:44:53.161                             : en:Hitching A Ride
+01:46:36.431                             : en:Wing Walkers
+01:49:13.255                             : en:Landing Lights
+01:53:34.432                             : en:Holly!
+01:56:08.711                             : en:End Titles (Let It Snow)
+02:03:22.812                             : en:The Anti-Terrorist Team
+
+-------------------------------------------------------------------------------------------
+
+   Die Hard With a Vengeance (1995) MULTi-VF2 BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 27.8 GiB
+Duration                                 : 2h 8mn
+Overall bit rate                         : 30.9 Mbps
+Movie name                               : Die Hard 3 PopHD
+Encoded date                             : UTC 2015-11-05 10:09:47
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 3 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 8mn
+Bit rate                                 : 27.9 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.561
+Stream size                              : 25.0 GiB (90%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Delay relative to video                  : 2ms
+Stream size                              : 1.35 GiB (5%)
+Title                                    : DTS - 5.1 - VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 412 MiB (1%)
+Title                                    : AC3 - 5.1 - VFF
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 224 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 206 MiB (1%)
+Title                                    : AC3 - Stereo - VFQ
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 224 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 206 MiB (1%)
+Title                                    : AC3 - Stereo - Espagnol
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : full
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : full
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : full
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : full
+Language                                 : Korean
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : forced
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : forced
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #7
+ID                                       : 12
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full (srt)
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Main Titles
+00:00:53.845                             : en:Ruining a Perfectly Good Hangover
+00:01:53.988                             : en:Hey Zeus
+00:03:50.980                             : en:Textbook Megalomania
+00:07:58.144                             : en:The Riddle
+00:09:09.465                             : en:90 Blocks in 30 Minutes
+00:13:38.150                             : en:Catching a Train
+00:16:53.595                             : en:"Duck"
+00:22:55.373                             : en:Making the Connection
+00:27:32.525                             : en:The City Engineers
+00:32:39.499                             : en:Gold Diggers
+00:37:31.582                             : en:The Bomb
+00:40:18.249                             : en:Simon Peter
+00:43:39.033                             : en:A Taxi Ride
+00:48:48.300                             : en:The Gruber Family
+00:52:04.329                             : en:The Federal Reserve
+00:52:38.738                             : en:Hippee-Kay-Ay
+00:56:09.824                             : en:End
+00:58:38.931                             : en:Opening the Fridge; Drive-By Shooting
+01:02:57.148                             : en:Shipmates
+01:04:43.629                             : en:School's Out
+01:07:44.810                             : en:"I'm a Soldier, Not Monster"
+01:11:36.375                             : en:Some Cop Trick
+01:17:05.120                             : en:Answer in the Asprin
+01:20:17.646                             : en:Something Personal to Finish
+01:21:17.497                             : en:"Let 'em Cook." ; End Titles
+01:24:42.660                             : en:The Bomb
+01:27:43.299                             : en:Simon Peter
+01:28:20.670                             : en:A Taxi Ride
+01:31:47.710                             : en:The Gruber Family
+01:32:35.508                             : en:Opening the Vault
+01:34:18.861                             : en:The Federal Reserve
+01:39:24.416                             : en:Following the Trucks
+01:40:45.247                             : en:Escape From the School
+01:43:52.934                             : en:It's All About the Gold
+01:47:53.550                             : en:Hippee-Kay-Ay
+01:53:03.526                             : en:End
+01:55:59.452                             : en:An Elephant Joke
+01:59:27.201                             : en:It's Christmas
+02:00:27.303                             : en:A Round on the Vault Floor
+02:08:30.702                             : en:02:08:30.702
+
+-------------------------------------------------------------------------------------------
+
+   Live Free or Die Hard (2007) MULTi BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 26.4 GiB
+Duration                                 : 2h 8mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 29.3 Mbps
+Encoded date                             : UTC 2015-11-05 10:37:54
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=1, N=10
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 8mn
+Bit rate mode                            : Variable
+Bit rate                                 : 26.4 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.530
+Stream size                              : 23.7 GiB (90%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.36 GiB (5%)
+Title                                    : DTS-5.1-VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 412 MiB (2%)
+Title                                    : AC3-5.1-
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 8mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 412 MiB (2%)
+Title                                    : AC3-5.1-VFI
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Korean
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #8
+ID                                       : 12
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #9
+ID                                       : 13
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : forced (srt)
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #10
+ID                                       : 14
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : full (srt)
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Encrypted
+00:03:53.149                             : en:The Tunnel
+00:06:18.544                             : en:Problem in Tower Seven
+00:07:49.135                             : en:A Favor for the Feds
+00:11:31.524                             : en:Back From the Dead
+00:15:16.081                             : en:Breach (Main Titles)
+00:17:57.493                             : en:The Hacker
+00:20:47.496                             : en:Under Fire
+00:25:55.887                             : en:Escape
+00:27:30.106                             : en:A Problem in New Jersey
+00:30:02.884                             : en:Gabriels Gambit
+00:31:27.719                             : en:Another Day in Paradise
+00:33:47.066                             : en:Downloads
+00:38:16.294                             : en:Accessories to Armageddon
+00:41:04.253                             : en:The Video Package
+00:45:42.865                             : en:Stage Two
+00:52:16.133                             : en:The Tunnel
+00:55:26.573                             : en:The Eastern Hub
+00:58:02.312                             : en:Woodlawn
+01:00:47.060                             : en:The Sales Over
+01:02:29.871                             : en:Getting the Shaft
+01:08:15.508                             : en:The Power Grid
+01:12:31.263                             : en:"Emergency!"
+01:17:01.199                             : en:Aerial Assault
+01:18:28.161                             : en:A Little Fresh Air
+01:21:30.051                             : en:Fire Sale
+01:25:52.063                             : en:For Being a Hero
+01:32:45.101                             : en:Blackout
+01:36:50.012                             : en:Fear of Flying
+01:39:47.523                             : en:The Warlock
+01:45:02.254                             : en:Problem in Tower Seven
+01:46:22.459                             : en:The Killer Acrobat
+01:51:21.174                             : en:The Substitute Driver
+01:56:38.700                             : en:Engage and Destroy
+01:58:12.543                             : en:One Minute
+02:01:44.213                             : en:Yippee Ki Yay...
+
+-------------------------------------------------------------------------------------------
+
+  A Good Day to Die Hard (2013) Theatrical MULTi-VF2 BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 18.0 GiB
+Duration                                 : 1h 37mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 26.4 Mbps
+Movie name                               : A Good Day to Die Hard
+Encoded date                             : UTC 2015-11-05 07:34:17
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 37mn
+Bit rate mode                            : Variable
+Bit rate                                 : 22.4 Mbps
+Maximum bit rate                         : 34.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.450
+Stream size                              : 15.2 GiB (85%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : ES
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.03 GiB (6%)
+Title                                    : DTS-ES - Surround - 5.1 - VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 536 MiB (3%)
+Title                                    : DTS - Surround - 5.1 - VFF
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 536 MiB (3%)
+Title                                    : DTS - Surround - 5.1 - Espagnol
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 313 MiB (2%)
+Title                                    : AC3-5.1-VFQ
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Danish
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 12
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Dutch
+Default                                  : No
+Forced                                   : No
+
+Text #8
+ID                                       : 13
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Finnish
+Default                                  : No
+Forced                                   : No
+
+Text #9
+ID                                       : 14
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Norwegian
+Default                                  : No
+Forced                                   : No
+
+Text #10
+ID                                       : 15
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No
+
+Text #11
+ID                                       : 16
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No
+
+Text #12
+ID                                       : 17
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Swedish
+Default                                  : No
+Forced                                   : No
+
+Text #13
+ID                                       : 18
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Estonian
+Default                                  : No
+Forced                                   : No
+
+Text #14
+ID                                       : 19
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Latvian
+Default                                  : No
+Forced                                   : No
+
+Text #15
+ID                                       : 20
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Lithuanian
+Default                                  : No
+Forced                                   : No
+
+Text #16
+ID                                       : 21
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Ukrainian
+Default                                  : No
+Forced                                   : No
+
+Text #17
+ID                                       : 22
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Ukrainian
+Default                                  : No
+Forced                                   : No
+
+Text #18
+ID                                       : 23
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #19
+ID                                       : 24
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #20
+ID                                       : 25
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Forced
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #21
+ID                                       : 26
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #22
+ID                                       : 27
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #23
+ID                                       : 28
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full SDH
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 1
+00:02:46.040                             : en:Chapter 2
+00:05:02.176                             : en:Chapter 3
+00:09:48.796                             : en:Chapter 4
+00:12:26.495                             : en:Chapter 5
+00:15:39.229                             : en:Chapter 6
+00:18:16.678                             : en:Chapter 7
+00:21:40.507                             : en:Chapter 8
+00:26:55.780                             : en:Chapter 9
+00:30:55.061                             : en:Chapter 10
+00:34:32.111                             : en:Chapter 11
+00:38:19.880                             : en:Chapter 12
+00:40:26.549                             : en:Chapter 13
+00:44:10.648                             : en:Chapter 14
+00:48:21.189                             : en:Chapter 15
+00:51:11.902                             : en:Chapter 16
+00:54:40.318                             : en:Chapter 17
+00:59:21.432                             : en:Chapter 18
+01:01:20.677                             : en:Chapter 19
+01:06:17.598                             : en:Chapter 20
+01:09:40.634                             : en:Chapter 21
+01:14:14.950                             : en:Chapter 22
+01:15:40.244                             : en:Chapter 23
+01:19:28.054                             : en:Chapter 24
+01:21:37.893                             : en:Chapter 25
+01:23:25.458                             : en:Chapter 26
+01:27:57.772                             : en:Chapter 27
+01:31:53.966                             : en:Chapter 28
+
+-------------------------------------------------------------------------------------------
+
+  A Good Day to Die Hard (2013) Extended MULTi-VF2 BluRay Remux 1080p DTS AVC~Tonyk.mkv
+
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 18.7 GiB
+Duration                                 : 1h 41mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 26.5 Mbps
+Movie name                               : A Good Day to Die Hard
+Encoded date                             : UTC 2015-11-05 09:08:18
+Writing application                      : mkvmerge v8.4.0 ('A better way to fly') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 41mn
+Bit rate mode                            : Variable
+Bit rate                                 : 22.5 Mbps
+Maximum bit rate                         : 34.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.452
+Stream size                              : 15.9 GiB (85%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : ES
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.03 GiB (6%)
+Title                                    : DTS-ES - Surround - 5.1 - VO
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 536 MiB (3%)
+Title                                    : DTS - Surround - 5.1 - VFF
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 536 MiB (3%)
+Title                                    : DTS - Surround - 5.1 - Espagnol
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 37mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 313 MiB (2%)
+Title                                    : AC3-5.1-VFQ
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 10
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 11
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Danish
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 12
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Dutch
+Default                                  : No
+Forced                                   : No
+
+Text #8
+ID                                       : 13
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Finnish
+Default                                  : No
+Forced                                   : No
+
+Text #9
+ID                                       : 14
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Norwegian
+Default                                  : No
+Forced                                   : No
+
+Text #10
+ID                                       : 15
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No
+
+Text #11
+ID                                       : 16
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No
+
+Text #12
+ID                                       : 17
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Swedish
+Default                                  : No
+Forced                                   : No
+
+Text #13
+ID                                       : 18
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Estonian
+Default                                  : No
+Forced                                   : No
+
+Text #14
+ID                                       : 19
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Latvian
+Default                                  : No
+Forced                                   : No
+
+Text #15
+ID                                       : 20
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Lithuanian
+Default                                  : No
+Forced                                   : No
+
+Text #16
+ID                                       : 21
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Ukrainian
+Default                                  : No
+Forced                                   : No
+
+Text #17
+ID                                       : 22
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Ukrainian
+Default                                  : No
+Forced                                   : No
+
+Text #18
+ID                                       : 23
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #19
+ID                                       : 24
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #20
+ID                                       : 25
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Forced
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Text #21
+ID                                       : 26
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #22
+ID                                       : 27
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #23
+ID                                       : 28
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Title                                    : Full SDH
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 1
+00:02:46.040                             : en:Chapter 2
+00:05:02.176                             : en:Chapter 3
+00:09:48.796                             : en:Chapter 4
+00:12:26.495                             : en:Chapter 5
+00:15:39.229                             : en:Chapter 6
+00:18:16.678                             : en:Chapter 7
+00:21:40.507                             : en:Chapter 8
+00:26:55.780                             : en:Chapter 9
+00:30:55.061                             : en:Chapter 10
+00:34:32.111                             : en:Chapter 11
+00:38:19.880                             : en:Chapter 12
+00:40:26.549                             : en:Chapter 13
+00:44:10.648                             : en:Chapter 14
+00:48:21.189                             : en:Chapter 15
+00:51:11.902                             : en:Chapter 16
+00:54:40.318                             : en:Chapter 17
+00:59:21.432                             : en:Chapter 18
+01:01:20.677                             : en:Chapter 19
+01:06:17.598                             : en:Chapter 20
+01:09:40.634                             : en:Chapter 21
+01:14:14.950                             : en:Chapter 22
+01:15:40.244                             : en:Chapter 23
+01:19:28.054                             : en:Chapter 24
+01:21:37.893                             : en:Chapter 25
+01:23:25.458                             : en:Chapter 26
+01:27:57.772                             : en:Chapter 27
+01:31:53.966                             : en:Chapter 28
+
+
+*****************************RemuX by********************************* 
+
+
+
+                                                               _
+                                                              _( (~\
+       _ _                        /                          ( \> > \
+   -/~/ / ~\                     :;                \       _  > /(~\/
+  || | | /\ ;\                   |l      _____     |;     ( \/    > >
+  _\\)\)\)/ ;;;                  `8o __-~     ~\   d|      \      //
+ ///(())(__/~;;\                  "88p;.  -. _\_;.oP        (_._/ /
+(((__   __ \\   \                  `>,% (\  (\./)8"         ;:'  i
+)))--`.'-- (( ;,8 \               ,;%%%:  ./V^^^V'          ;.   ;.
+((\   |   /)) .,88  `: ..,,;;;;,-::::::'_::\   ||\         ;[8:   ;
+ )|  ~-~  |(|(888; ..``'::::8888oooooo.  :\`^^^/,,~--._    |88::  |
+ |\ -===- /|  \8;; ``:.      oo.8888888888:`((( o.ooo8888Oo;:;:'  |
+ |_~-___-~_|   `-\.   `        `o`88888888b` )) 888b88888P""'     ;
+ ; ~~~~;~~         "`--_`.       b`888888888;(.,"888b888"  ..::;-'
+   ;      ;              ~"-....  b`8888888:::::.`8888. .:;;;''
+      ;    ;                 `:::. `:::OOO:::::::.`OO' ;;;''
+ :       ;                     `.      "``::::::''    .'
+    ;                           `.   \_              /
+  ;       ;                       +:   ~~--  `:'  -';
+                                   `:         : .::/
+      ;                            ;;+_  :::. :..;;;
+                                   ;;;;;;,;;;;;;;;,;
+
+
+ _____   _____   __   _  __    __  _   _        ___  
+|_   _| /  _  \ |  \ | | \ \  / / | | / /      /   | 
+  | |   | | | | |   \| |  \ \/ /  | |/ /      / /| | 
+  | |   | | | | | |\   |   \  /   | |\ \     / / | | 
+  | |   | |_| | | | \  |   / /    | | \ \   / /  | | 
+  |_|   \_____/ |_|  \_|  /_/     |_|  \_\ /_/   |_|  

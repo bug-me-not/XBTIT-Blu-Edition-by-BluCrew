@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Magic Mike 2012 MULTI 1080p blu-ray AVC DTS HDMA fantome13
+Disc Size:      36 009 834 379 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:50:29.414 (h:m:s.ms)
+Size:                   28 316 190 720 bytes
+Total Bitrate:          34,17 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        27614 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2202 kbps       5.1 / 48 kHz / 2202 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2321 kbps       5.1 / 48 kHz / 2321 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,000 kbps                      
+Presentation Graphics           French          31,734 kbps                     
+Presentation Graphics           French          39,831 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     1:50:29.414     28 316 190 720  34 170

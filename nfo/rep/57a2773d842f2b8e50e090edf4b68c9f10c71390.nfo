@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     Haute.Tension.2003.1080p.Bluray.US.AVC.Remux.HDCLUB
+Disc Size:      18?580?674?792 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:30:44.565 (h:m:s.ms)
+Size:                   18?580?598?784 bytes
+Total Bitrate:          27,30 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        19037 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Russian         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+DTS-HD Master Audio             Russian         1921 kbps       5.1 / 48 kHz / 1921 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 16-bit)
+DTS-HD Master Audio             English         2371 kbps       5.1 / 48 kHz / 2371 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -4dB)
+DTS Audio                       French          1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         8,038 kbps                      
+Presentation Graphics           Russian         8,085 kbps                      
+Presentation Graphics           English         10,471 kbps                     
+Presentation Graphics           English         13,951 kbps                     
+Presentation Graphics           Spanish         9,379 kbps                      
+Presentation Graphics           English         10,412 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:30:44.565     18?580?598?784  27?302       

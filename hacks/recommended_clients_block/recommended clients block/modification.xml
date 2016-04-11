@@ -1,0 +1,102 @@
+<hack>
+  <title>recommended clients</title>
+  <author>DiemThuy - Cooly</author>
+  <version>1.0</version>
+  <file>
+    <name>"database"</name>
+     <operation>
+      <action>"sql"</action>
+          <data><![CDATA[CREATE TABLE `{$db_prefix}bt_clients` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `name` varchar(50) NOT NULL default '',
+  `link` text NOT NULL,
+  `sort` tinyint(10) NOT NULL default '0',
+  `image` varchar(150) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;]]></data>
+    </operation>
+</file>
+  
+  <file>
+    <name>"$DEFAULT_ROOT/admin/admin.index.php"</name>
+    <operation>
+      <search><![CDATA[case 'users':
+      include("$ADMIN_PATH/admin.users.tools.php");
+      $tpl->set("main_content",set_block($block_title,"center",$admintpl->fetch(load_template("admin.users.tools.tpl"))));
+      break;]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[case 'clients':
+          include("$ADMIN_PATH/admin.clients.php");
+          $tpl->set("main_content",set_block($language["ACP_CLIENTS"],"center",$admintpl->fetch(load_template("admin.clients.tpl"))));
+          break;]]></data>
+   </operation
+   </file>
+   
+     <file>
+    <name>"$DEFAULT_ROOT/admin/admin.menu.php"</name>
+    <operation>
+      <search><![CDATA[2=>array(
+                    "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=logview" ,
+                    "description"=>$language["ACP_SITE_LOG"]) ,]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[21=>array(
+                    "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=clients" ,
+                    "description"=>$language["ACP_CLIENTS"]) ,]]></data>
+   </operation
+   </file>
+  
+
+
+   <file>
+    <name>"$DEFAULT_LANGUAGE_PATH/lang_blocks.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <where>"before"</where>
+      <data><![CDATA[$language["CLIENT"]="Recommended Clients";]]></data>
+    </operation>
+  </file>
+  
+    <file>
+    <name>"$DEFAULT_LANGUAGE_PATH/lang_admin.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <where>"before"</where>
+      <data><![CDATA[$language['ACP_CLIENTS']='Client Settings';]]></data>
+    </operation>
+  </file>
+  
+      <file>
+  <name>"$CURRENT_FOLDER/tocopy/admin.clients.php"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/admin"</where>
+      <data>"admin.clients.php"</data>
+    </operation>
+  </file>
+  
+
+      <file>
+  <name>"$CURRENT_FOLDER/tocopy/clients_block.php"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/blocks"</where>
+      <data>"client_block.php"</data>
+    </operation>
+  </file>
+  
+        <file>
+  <name>"$CURRENT_FOLDER/tocopy/admin.clients.tpl"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/style/xbtit_default/"</where>
+      <data>"admin.clients.tpl"</data>
+    </operation>
+  </file>
+
+  
+
+</hack>

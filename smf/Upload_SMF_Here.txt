@@ -1,0 +1,2 @@
+If you intend to use Simple Machine Forum (http://www.simplemachines.org)
+as your forum solution, please upload it to this folder.

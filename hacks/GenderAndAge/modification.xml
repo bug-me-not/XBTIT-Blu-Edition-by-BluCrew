@@ -1,0 +1,303 @@
+﻿<hack>
+  <title>Gender and Age</title>
+  <author>Confe</author>
+  <version>1.01</version>
+     <file>
+    <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data><![CDATA[ALTER TABLE `{$db_prefix}users` 
+	  ADD `age` INT( 9 ) NOT NULL DEFAULT '0',
+      ADD `gender` INT( 9 ) NOT NULL DEFAULT '2';]]></data>
+    </operation>
+  </file>
+  <!-- usercp.profile.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/user/usercp.profile.php"</name>
+  <operation>
+      <search><![CDATA[$avatar=htmlspecialchars(AddSlashes($_POST["avatar"]));]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[$gender=intval(0+$_POST["gender"]);]]></data>
+    </operation>
+	<operation>
+      <search><![CDATA[$set[]="torrentsperpage=".intval(0+$_POST["torrentsperpage"]);]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[			   $set[]="age=".intval(0+$_POST["age"]);
+	           $set[]="gender=".intval(0+$_POST["gen"]);]]></data>
+    </operation>
+		<operation>
+      <search><![CDATA[$profiletpl["avatar_field"]=unesc($CURUSER["avatar"]);
+      $profiletpl["email"]=unesc($CURUSER["email"]);]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[ 
+	  $uid=$CURUSER["uid"];
+		
+		 $r=mysql_query("SELECT * from {$TABLE_PREFIX}users WHERE id = $uid"); 
+		 $x=mysql_result($r,0,"gender"); 
+		 $profiletpl["age"]=mysql_result($r,0,"age");
+		 
+		 if($x==0) {
+			$profiletpl["gender"].="<input name=\"gen\" type=\"radio\" value=\"0\" checked=\"checked\" />
+			  ".$language["MALE"]."   
+			  <input name=\"gen\" type=\"radio\" value=\"1\" />
+			".$language["FEMALE"]."  </label>";
+			} else {
+			$profiletpl["gender"].="<input name=\"gen\" type=\"radio\" value=\"0\" />
+			  ".$language["MALE"]."   </label>
+			  <input name=\"gen\" type=\"radio\" value=\"1\" checked=\"checked\"/>
+			".$language["FEMALE"]." </label>";
+         $profiletpl["gender"].=($option);
+		 }]]></data>
+    </operation>
+	</file>
+	
+		  <!-- usercp.main.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/user/usercp.main.php"</name>
+  <operation>
+      <search><![CDATA[$uid = intval($CURUSER["uid"]);
+    $res=do_sqlquery("SELECT]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[ u.age, u.gender, ]]></data>
+    </operation>
+	  <operation>
+      <search><![CDATA[$usercptpl->set("CAN_EDIT",$CURUSER["edit_users"]=="yes" || $CURUSER["admin_access"]=="yes",true);
+]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[	  if($row["gender"]==2) {
+$usercptpl->set("gender", ($row["gender"]==2 ? $language["UNKNOW"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/unknow.png\" alt=\"\" />");
+}else{
+	  if($row["gender"]==0) {
+$usercptpl->set("gender", ($row["gender"]==0 ? $language["MALE"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/male.png\" alt=\"\" />");
+}else{
+$usercptpl->set("gender", ($row["gender"]==1 ? $language["FEMALE"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/female.png\" alt=\"\" />");
+}
+}
+if($row["age"]==0) {
+$usercptpl->set("age", ($row["age"]==0 ? $language["UNKNOW"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/unknow.png\" alt=\"\" />");
+}else{
+$usercptpl->set("age", ($row["age"]));
+}
+]]></data>
+    </operation>
+	</file>
+	
+	  <!-- userdetails.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/userdetails.php"</name>
+  <operation>
+      <search><![CDATA[if ($id>1) {
+   $res=do_sqlquery("SELECT]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[ u.age, u.gender, ]]></data>
+    </operation>
+	  <operation>
+      <search><![CDATA[$userdetailtpl -> set("userdetail_country", ($row["flag"]==0 ? "":unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/flag/".(!$row["flagpic"] || $row["flagpic"]==""?"unknown.gif":$row["flagpic"])."\" alt=\"".($row["flag"]==0 ? "unknown":unesc($row['name']))."\" />");]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[	  if($row["gender"]==2) {
+$userdetailtpl->set("gender", ($row["gender"]==2 ? $language["UNKNOW"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/unknow.png\" alt=\"\" />");
+}else{
+	  if($row["gender"]==0) {
+$userdetailtpl -> set("gender", ($row["gender"]==0 ? $language["MALE"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/male.png\" alt=\"\" />");
+}else{
+$userdetailtpl -> set("gender", ($row["gender"]==1 ? $language["FEMALE"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/female.png\" alt=\"\" />");
+}
+}
+if($row["age"]==0) {
+$userdetailtpl -> set("age", ($row["age"]==0 ? $language["UNKNOW"] :unesc($row['name']))."&nbsp;&nbsp;<img src=\"images/unknow.png\" alt=\"\" />");
+}else{
+$userdetailtpl -> set("age", ($row["age"]));
+}]]></data>
+    </operation>
+	</file>
+	
+		  <!-- account.php -->
+  <file>
+  <name>"$DEFAULT_ROOT/account.php"</name>
+  <operation>
+      <search><![CDATA[if ($action=="signup")
+     {
+          $dati["username"]="";
+          $dati["email"]="";
+          $dati["language"]=$idlangue;
+
+     }]]></search>
+	    <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+	  			$uid=$CURUSER["uid"]; 
+	 		 $r=mysql_query("SELECT * from {$TABLE_PREFIX}users WHERE id = $uid"); 
+		 $x=mysql_result($r,0,"gender"); 
+		 $profiletpl["age"]=mysql_result($r,0,"age");
+		 
+   		  $gender= "<input name=\"gen\" type=\"radio\" value=\"0\" checked=\"checked\" />
+			  ".$language["MALE"]."  </label>
+			  <input name=\"gen\" type=\"radio\" value=\"1\" />
+			".$language["FEMALE"]." ";
+			
+			$tpl_account->set("account_gender",$gender);
+]]></data>
+    </operation>
+	  <operation>
+      <search><![CDATA[$pid=md5(uniqid(rand(),true));
+do_sqlquery("INSERT INTO {$TABLE_PREFIX}users (username, password, random, id_level, email, style, language, flag, joined, lastconnect, pid, time_offset) VALUES ('$utente', '" . md5($pwd) . "', $random, $idlevel, '$email', $idstyle, $idlangue, $idflag, NOW(), NOW(),'$pid', '".$timezone."')",true);
+]]></search>
+	    <action>"replace"</action>
+        <data><![CDATA[$pid=md5(uniqid(rand(),true));
+$age=intval($_POST['age']);
+$gen=intval($_POST['gen']);
+do_sqlquery("INSERT INTO {$TABLE_PREFIX}users (username, password, random, id_level, email, style, language, flag, joined, lastconnect, pid, time_offset,age,gender) VALUES ('$utente', '" . md5($pwd) . "', $random, $idlevel, '$email', $idstyle, $idlangue, $idflag, NOW(), NOW(),'$pid', '".$timezone."', $age, $gen)",true);
+]]></data>
+    </operation>
+	</file>
+	  <file>
+  <name>"$DEFAULT_LANGUAGE_PATH/lang_account.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <data><![CDATA[$language["AGE"]="Age";
+$language["GENDER"]="Gender";
+$language["MALE"]="Male";
+$language["FEMALE"]="Female";
+$language["UNKNOW"]="Unknow";]]></data>
+      <where>"before"</where>
+    </operation>
+  </file>
+  	  <file>
+  <name>"$DEFAULT_LANGUAGE_PATH/lang_usercp.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <data><![CDATA[$language["AGE"]="Age";
+$language["GENDER"]="Gender";
+$language["MALE"]="Male";
+$language["FEMALE"]="Female";
+$language["UNKNOW"]="Unknow";]]></data>
+      <where>"before"</where>
+    </operation>
+  </file>
+    	  <file>
+  <name>"$DEFAULT_LANGUAGE_PATH/lang_userdetails.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <data><![CDATA[$language["AGE"]="Age";
+$language["GENDER"]="Gender";
+$language["MALE"]="Male";
+$language["FEMALE"]="Female";
+$language["UNKNOW"]="Unknow";]]></data>
+      <where>"before"</where>
+    </operation>
+  </file>
+    <file>
+    <name>"$DEFAULT_STYLE_PATH/account.tpl"</name>
+    <operation>
+      <search><![CDATA[    <tr>
+       <td align="left" class="header"><tag:language.USER_EMAIL_AGAIN />:</td>
+       <td align="left" class="lista"><input type="text" size="30" name="email_again" id="email_again" autocomplete="off" value="<tag:dati.email />"/></td>
+    </tr>]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[<tr>
+      <td align=left class="header"><tag:language.GENDER /></td>
+      <td align="left" class="lista" colspan="2"><tag:account_gender /></td>
+    </tr>
+	 <tr>
+      <td class="header"><tag:language.AGE /></td>
+      <td align="left" class="lista"><input type="text" size="3" name="age" maxlength="3" /></td>
+    </tr>]]></data>
+    </operation>
+   </file>
+       <file>
+    <name>"$DEFAULT_STYLE_PATH/usercp.main.tpl"</name>
+    <operation>
+      <search><![CDATA[  <tr>
+    <td class="header" align="left"><tag:language.PEER_COUNTRY />:</td>
+    <td class="lista" colspan="2" align="left"><tag:ucp.country /></td>
+  </tr>]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[<tr>
+      <td align=left class="header"><tag:language.GENDER /></td>
+      <td align="left" class="lista" colspan="2"><tag:gender /></td>
+    </tr>
+	 <tr>
+      <td class="header"><tag:language.AGE /></td>
+      <td class="lista" colspan="2"><tag:age /></td>
+    </tr>]]></data>
+    </operation>
+   </file>
+          <file>
+    <name>"$DEFAULT_STYLE_PATH/usercp.profile.tpl"</name>
+    <operation>
+      <search><![CDATA[<tr>
+      <td align="left" class="header"><tag:language.USER_EMAIL />:</td>
+      <td align="left" class="lista"><input type="text" size="30" name="email" maxlength="50" value="<tag:profile.email />"/></td>
+    </tr>]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[<tr>
+      <td align=left class="header"><tag:language.GENDER /></td>
+      <td align="left" class="lista" colspan="2"><tag:profile.gender /></td>
+    </tr>
+	 <tr>
+      <td class="header"><tag:language.AGE /></td>
+      <td align="left" class="lista"><input type="text" size="3" name="age" maxlength="10" value="<tag:profile.age />"/></td>
+    </tr>]]></data>
+    </operation>
+   </file>
+             <file>
+    <name>"$DEFAULT_STYLE_PATH/userdetails.tpl"</name>
+    <operation>
+      <search><![CDATA[  <tr>
+
+    <td class="header"><tag:language.PEER_COUNTRY /></td>
+
+    <td class="lista" colspan="2"><tag:userdetail_country /></td>
+
+  </tr>]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[<tr>
+      <td align=left class="header"><tag:language.GENDER /></td>
+      <td class="lista" colspan="2"><tag:gender /></td>
+    </tr>
+	 <tr>
+      <td class="header"><tag:language.AGE /></td>
+      <td class="lista" colspan="2"><tag:age /></td>
+    </tr>]]></data>
+    </operation>
+   </file>
+     <file>
+  <name>"$CURRENT_FOLDER/images/male.png"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images"</where>
+      <data>"male.png"</data>
+    </operation>
+  </file>
+       <file>
+  <name>"$CURRENT_FOLDER/images/female.png"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images"</where>
+      <data>"female.png"</data>
+    </operation>
+  </file>
+       <file>
+  <name>"$CURRENT_FOLDER/images/unknow.png"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images"</where>
+      <data>"unknow.png"</data>
+    </operation>
+  </file>
+
+

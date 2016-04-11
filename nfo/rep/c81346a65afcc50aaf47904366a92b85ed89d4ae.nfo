@@ -1,0 +1,104 @@
+Général
+Format                           : Matroska
+Version du format                : Version 2
+Taille du fichier                : 13,2 Gio
+Durée                            : 1h 44mn
+Débit global moyen               : 18,0 Mb/s
+Nom du film                      : BD_PULSIONS.Title3.BlurayRip
+Date d'encodage                  : UTC 2013-04-09 19:54:11
+Application utilisée             : mkvmerge v5.8.0 ('No Sleep / Pillow') built on Sep  2 2012 15:37:04
+Bibliothèque utilisée            : libebml v1.2.3 + libmatroska v1.3.0
+
+Vidéo
+ID                               : 3
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Profil du format                 : High@L5.1
+Paramètres du format, CABAC      : Oui
+Paramètres du format, RefFrames  : 2 images
+Type de muxing                   : Header stripping
+Identifiant du codec             : V_MPEG4/ISO/AVC
+Durée                            : 1h 44mn
+Débit                            : 15,2 Mb/s
+Largeur                          : 1 920 pixels
+Hauteur                          : 820 pixels
+Format à l'écran                 : 2,35:1
+Images par seconde               : 23,976 Im/s
+Espace de couleurs               : YUV
+Sous-échantillonnage de la chrom : 4:2:0
+Profondeur des couleurs          : 8 bits
+Type d'image                     : Progressif
+Bits/(Pixel*Image)               : 0.404
+Taille du flux                   : 11,2 Gio (85%)
+Bibliothèque utilisée            : x264 core
+Coordonnées de chromaticité      : BT.709-5, BT.1361, IEC 61966-2-4, SMPTE RP177
+Caractéristiques du transfert    : BT.709-5, BT.1361
+Coefficients de la matrice       : BT.709-5, BT.1361, IEC 61966-2-4 709, SMPTE RP177
+
+Audio #1
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Profil du format                 : MA / Core
+Type de muxing                   : Header stripping
+Identifiant du codec             : A_DTS
+Durée                            : 1h 44mn
+Type de débit                    : Variable
+Débit                            : 1 561 Kbps / 1 510 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Profondeur des couleurs          : 24 bits
+Mode de compression              : Sans perte / Lossy
+Langue                           : Anglais
+
+Audio #2
+ID                               : 5
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Profil du format                 : MA / Core
+Type de muxing                   : Header stripping
+Identifiant du codec             : A_DTS
+Durée                            : 1h 44mn
+Type de débit                    : Variable
+Débit                            : 866 Kbps / 755 Kbps
+Canaux                           : 1 canal
+Position des cannaux             : Front: C
+Echantillonnage                  : 48,0 KHz
+Profondeur des couleurs          : 16 bits
+Mode de compression              : Sans perte / Lossy
+Langue                           : Français
+
+Texte #1
+ID                               : 1
+Format                           : VobSub
+Type de muxing                   : zlib
+Identifiant du codec             : S_VOBSUB
+Identifiant du codec/Info        : The same subtitle format used on DVDs
+Langue                           : Français
+
+Texte #2
+ID                               : 2
+Format                           : VobSub
+Type de muxing                   : zlib
+Identifiant du codec             : S_VOBSUB
+Identifiant du codec/Info        : The same subtitle format used on DVDs
+Langue                           : Français
+
+Menu
+00:00:00.000                     : en:(01)00:00:00:000
+00:01:40.141                     : en:(02)00:01:40:141
+00:04:27.934                     : en:(03)00:04:27:934
+00:08:09.489                     : en:(04)00:08:09:489
+00:12:16.527                     : en:(05)00:12:16:527
+00:24:46.318                     : en:(06)00:24:46:318
+00:36:30.021                     : en:(07)00:36:30:021
+00:38:52.705                     : en:(08)00:38:52:705
+00:47:29.721                     : en:(09)00:47:29:721
+00:51:16.907                     : en:(10)00:51:16:907
+00:59:52.171                     : en:(11)00:59:52:171
+01:08:30.689                     : en:(12)01:08:30:689
+01:16:54.443                     : en:(13)01:16:54:443
+01:28:09.993                     : en:(14)01:28:09:993
+01:33:30.605                     : en:(15)01:33:30:605
+01:42:21.385                     : en:(16)01:42:21:385

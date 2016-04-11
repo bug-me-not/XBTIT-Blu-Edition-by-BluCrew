@@ -1,0 +1,35 @@
+<?php
+$language["NOT_SHA"]="SHA1 Toiminto ei ole käytettävissä. Tarvitset PHP 4.3.0 tai uudemman.";
+$language["NOT_AUTHORIZED_UPLOAD"]="Sinulla ei ole oikeutta julkaista torrentteja!";
+$language["FILE_UPLOAD_ERROR_1"]="Ei voi lukea julkaistua tiedostoa";
+$language["FILE_UPLOAD_ERROR_3"]="Tiedostolla ei ole kokoa";
+$language["FACOLTATIVE"]="optional";
+$language["FILE_UPLOAD_ERROR_2"]="Tiedoston lisäysvirhe";
+$language["ERR_PARSER"]="Torrentissasi vaikuttaisi olevan virhe. Parser ei hyväksynyt sitä.";
+$language["WRITE_CATEGORY"]="Sinun pitää asettaa kategoria...";
+$language["DOWNLOAD"]="Lataus";
+$language["MSG_UP_SUCCESS"]="Julkaiseminen onnistui! Torrent lisätty.";
+$language["MSG_DOWNLOAD_PID"]="PID-järjestelmä aktiivinen, lataa torrenttisi omalla PIDilläsi";
+$language["EMPTY_DESCRIPTION"]="Sinun pitää lisätä kuvaus!";
+$language["EMPTY_ANNOUNCE"]="Announce-osoite on tyhjä";
+$language["FILE_UPLOAD_ERROR_1"]="Ei voitu lukea lisättyä tiedostoa";
+$language["FILE_UPLOAD_ERROR_2"]="Tiedoston lisäysvirhe";
+$language["FILE_UPLOAD_ERROR_3"]="Tiedostolla ei ole kokoa";
+$language["NO_SHA_NO_UP"]="Tiedoston lisääminen ei ole käytettävissä - ei SHA1 toimintoa.";
+$language["NOT_SHA"]="SHA1 Toiminto ei ole käytettävissä. Tarvitset PHP 4.3.0 tai uudemman.";
+$language["ERR_PARSER"]="Vaikuttaa siltä että torrentissa oli virhe. Parser ei hyväksynyt sitä.";
+$language["WRITE_CATEGORY"]="Sinun pitää asettaa kategoria...";
+$language["ERR_HASH"]="Info hashin TäYTYY olla tarkalleen 40 hex tavua.";
+$language["ERR_EXTERNAL_NOT_ALLOWED"]="Ulkoset torrentit ei ole sallittuja";
+$language["ERR_MOVING_TORR"]="VIRHE torrentin siirrossa...";
+$language["ERR_ALREADY_EXIST"]="Tämä torrentti on jo tietokannassa.";
+$language["MSG_DOWNLOAD_PID"]="PID-järjestelmä aktiivinen, lataa torrent omalla PIDilläsi samaan kansioon missä jaettava tiedosto sijaitsee";
+$language["MSG_UP_SUCCESS"]="Julkaiseminen onnistunut! Torrentti lisätty.";
+$language["FILE_UPLOAD_TO_BIG"]="Tiedoston koko on liian iso lähetettäväksi!! Max.koko";
+$language["IMAGE_WAS"]="Kuvan koko";
+$language["MOVE_IMAGE_TO"]="Kuvaa ei voitu siirtää";
+$language["CHECK_FOLDERS_PERM"]="Tarkista kansion asetukset ja yritä uudelleen.";
+$language["ILEGAL_UPLOAD"]="LUVATON LäHETYS!! Tämä EI OLE KUVA<br>mene takaisin ja yritä uudelleen";
+$language["IMAGE"]="Kuva";
+$language["SCREEN"]="Screenshotit";
+?>

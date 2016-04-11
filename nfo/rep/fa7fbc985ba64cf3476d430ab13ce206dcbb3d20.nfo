@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     DESTINATIONFINALE3
+Disc Size:      32 144 289 258 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:32:50.690 (h:m:s.ms)
+Size:                   26 925 133 824 bytes
+Total Bitrate:          38,67 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        30001 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3937 kbps       5.1 / 48 kHz / 3937 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit / DN -4dB)
+DTS-HD Master Audio             French          2235 kbps       5.1 / 48 kHz / 2235 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -4dB)
+Dolby Digital Audio             English         256 kbps        2.0 / 48 kHz / 256 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          52,138 kbps                     
+Presentation Graphics           French          22,356 kbps                     
+Presentation Graphics           French          0,428 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:32:50.690     26 925 133 824  38 667

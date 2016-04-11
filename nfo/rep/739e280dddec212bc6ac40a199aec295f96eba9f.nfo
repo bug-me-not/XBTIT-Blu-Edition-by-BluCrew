@@ -1,0 +1,30 @@
+Disc Title:     OLD ENOUGH 5_???_BD
+Disc Size:      21 956 568 904 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00004.MPLS
+Length:                 2:11:57 (h:m:s)
+Size:                   17 872 312 320 bytes
+Total Bitrate:          18,06 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            17002 kbps          1080i / 29,970 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00004.M2TS      0:00:00.000     2:11:57.175     17 872 312 320  18 059     

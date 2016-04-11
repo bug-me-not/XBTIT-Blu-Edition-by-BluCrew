@@ -1,0 +1,34 @@
+DISC INFO:	
+
+Disc Title:     BLACK_SABBATH_DELUXE
+Disc Size:      43 449 014 531 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:46:46.600 (h:m:s.ms)
+Size:                   32 333 489 664 bytes
+Total Bitrate:          40,38 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        30341 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+DTS-HD Master Audio             English         5004 kbps       5.1 / 48 kHz / 5004 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00000.M2TS      0:00:00.000     1:46:46.600     32 333 489 664  40 375

@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     The Apartment F13
+Disc Size:      40 017 128 177 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:05:12.463 (h:m:s.ms)
+Size:                   36 033 761 280 bytes
+Total Bitrate:          38,37 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        33000 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2633 kbps       5.1 / 48 kHz / 2633 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit / DN -4dB)
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         46,864 kbps                     
+Presentation Graphics           Spanish         45,436 kbps                     
+Presentation Graphics           French          42,651 kbps                     
+* Presentation Graphics         Japanese        20,034 kbps                     
+Presentation Graphics           Spanish         0,232 kbps                      
+Presentation Graphics           French          0,161 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:05:12.463     36 033 761 280  38 372

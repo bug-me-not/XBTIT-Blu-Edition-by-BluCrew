@@ -1,0 +1,70 @@
+DISC INFO:
+
+Disc Title:     MEET_SPARTANS_F4
+Disc Size:      23 461 302 176 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00012.MPLS
+Length:                 1:26:25.722 (h:m:s.ms)
+Size:                   18 705 457 152 bytes
+Total Bitrate:          28,86 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18472 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS-HD High-Res Audio           English         3018 kbps       5.1 / 48 kHz / 3018 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Czech           448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Polish          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         21,697 kbps                     
+Presentation Graphics           French          19,437 kbps                     
+Presentation Graphics           French          0,290 kbps                      
+Presentation Graphics           Dutch           20,665 kbps                     
+Presentation Graphics           Italian         23,265 kbps                     
+Presentation Graphics           Italian         0,454 kbps                      
+Presentation Graphics           Spanish         22,668 kbps                     
+Presentation Graphics           Spanish         0,334 kbps                      
+Presentation Graphics           Russian         21,692 kbps                     
+Presentation Graphics           Russian         0,251 kbps                      
+Presentation Graphics           Czech           20,772 kbps                     
+Presentation Graphics           Czech           0,246 kbps                      
+Presentation Graphics           Polish          21,133 kbps                     
+Presentation Graphics           Polish          0,129 kbps                      
+Presentation Graphics           Icelandic       20,630 kbps                     
+Presentation Graphics           Portuguese      21,918 kbps                     
+Presentation Graphics           Turkish         21,642 kbps                     
+Presentation Graphics           Bulgarian       21,240 kbps                     
+Presentation Graphics           Estonian        20,188 kbps                     
+Presentation Graphics           Latvian         19,275 kbps                     
+Presentation Graphics           Lithuanian      20,326 kbps                     
+Presentation Graphics           French          57,348 kbps                     
+Presentation Graphics           Dutch           54,830 kbps                     
+Presentation Graphics           Italian         68,310 kbps                     
+Presentation Graphics           Spanish         64,779 kbps                     
+Presentation Graphics           Russian         67,435 kbps                     
+Presentation Graphics           English         63,388 kbps                     
+Presentation Graphics           French          63,878 kbps                     
+Presentation Graphics           Dutch           63,267 kbps                     
+Presentation Graphics           Italian         63,725 kbps                     
+Presentation Graphics           Spanish         63,911 kbps                     
+Presentation Graphics           Russian         62,947 kbps 

@@ -1,0 +1,68 @@
+DISC INFO:
+
+Disc Title:     Cobra 1986 1080p Blu-ray VC1 DTS-HD MA 5.1
+Disc Size:      19 464 348 225 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 1:27:03.885 (h:m:s.ms)
+Size:                   18 512 498 688 bytes
+Total Bitrate:          28,35 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              19941 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4230 kbps       5.1 / 48 kHz / 4230 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Italian         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Spanish         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Portuguese      192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Czech           192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Polish          192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         19,109 kbps                     
+Presentation Graphics           French          14,494 kbps                     
+Presentation Graphics           Italian         17,068 kbps                     
+Presentation Graphics           Spanish         16,450 kbps                     
+Presentation Graphics           Dutch           14,925 kbps                     
+Presentation Graphics           Chinese         14,321 kbps                     
+Presentation Graphics           Spanish         16,300 kbps                     
+Presentation Graphics           Portuguese      16,252 kbps                     
+Presentation Graphics           Chinese         14,281 kbps                     
+Presentation Graphics           Czech           14,984 kbps                     
+Presentation Graphics           Danish          14,637 kbps                     
+Presentation Graphics           Finnish         16,471 kbps                     
+Presentation Graphics           Greek           15,465 kbps                     
+Presentation Graphics           Norwegian       14,075 kbps                     
+Presentation Graphics           Polish          13,578 kbps                     
+Presentation Graphics           Russian         15,850 kbps                     
+Presentation Graphics           Swedish         15,453 kbps                     
+Presentation Graphics           Thai            16,625 kbps                     
+Presentation Graphics           Chinese         37,091 kbps                     
+* Presentation Graphics         Japanese        10,362 kbps                     
+* Presentation Graphics         Japanese        30,416 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00020.M2TS      0:00:00.000     1:27:03.885     18 512 498 688  28 351

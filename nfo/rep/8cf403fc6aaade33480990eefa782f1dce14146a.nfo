@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     BEYONCE_LIFE_IS_BUT_A_DREAM
+Disc Size:      22 924 509 456 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00006.MPLS
+Length:                 1:29:58.434 (h:m:s.ms)
+Size:                   22 760 404 992 bytes
+Total Bitrate:          33,73 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        21991 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+LPCM Audio                      English         6912 kbps       5.1 / 48 kHz / 6912 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           French          28,116 kbps                    
+Presentation Graphics           Dutch           27,479 kbps                    
+Presentation Graphics           German          32,269 kbps                    
+Presentation Graphics           Portuguese      28,900 kbps                    
+Presentation Graphics           Spanish         27,476 kbps                    
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00008.M2TS      0:00:00.000     1:29:58.434     22 760 404 992  33 729

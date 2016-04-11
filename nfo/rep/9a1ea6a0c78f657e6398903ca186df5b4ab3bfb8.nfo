@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Le Vieux Qui Ne Voulait Pas Fêter Son Anniversaire 2013 1080p blu-ray AVc DTS HD MA fantome13
+Disc Size:      24 988 844 717 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 1:54:07.006 (h:m:s.ms)
+Size:                   22 318 102 080 bytes
+Total Bitrate:          26,08 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        16994 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             Swedish         3891 kbps       5.1 / 48 kHz / 3891 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          3520 kbps       5.1 / 48 kHz / 3520 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           26,629 kbps                     
+Presentation Graphics           French          24,741 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:54:07.006     22 318 102 080  26 076

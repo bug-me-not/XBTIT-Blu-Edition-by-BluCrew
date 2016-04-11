@@ -1,0 +1,158 @@
+Disc Title:     THE_6TH_DAY
+Disc Size:      37 850 907 162 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         D-BOX Motion Code
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan was cancelled.
+
+********************
+PLAYLIST: 00001.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00001.MPLS                                                      AVC     2:03:34 0               37 850 907 162  0,00    21,50   Dolby TrueHD 5.1 1007Kbps (48kHz/16-bit)  
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     THE_6TH_DAY
+Disc Size:      37 850 907 162 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         D-BOX Motion Code
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:03:34.407 (h:m:s.ms)
+Size:                   0 bytes
+Total Bitrate:          0,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        21502 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         1007 kbps       5.1 / 48 kHz / 1007 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Dolby TrueHD Audio              French          1093 kbps       5.1 / 48 kHz / 1093 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby TrueHD Audio              Portuguese      1046 kbps       5.1 / 48 kHz / 1046 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Dolby Digital Audio             Thai            640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         0,000 kbps                      
+Presentation Graphics           English         0,733 kbps                      
+Presentation Graphics           French          0,000 kbps                      
+Presentation Graphics           Spanish         0,000 kbps                      
+Presentation Graphics           Arabic          0,000 kbps                      
+Presentation Graphics           Chinese         0,000 kbps                      
+Presentation Graphics           Chinese         0,000 kbps                      
+Presentation Graphics           Korean          0,000 kbps                      
+Presentation Graphics           Portuguese      0,000 kbps                      
+Presentation Graphics           Thai            0,000 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00011.M2TS      0:00:00.000     2:03:34.407     0               0               
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:08:25.755     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+2               0:08:25.755     0:06:34.352     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+3               0:15:00.107     0:03:35.548     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:18:35.656     0:04:37.068     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:23:12.724     0:08:10.490     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:31:23.214     0:07:21.190     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:38:44.405     0:06:28.679     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:45:13.085     0:09:06.754     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               0:54:19.839     0:04:03.034     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              0:58:22.874     0:11:46.414     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:10:09.288     0:05:35.585     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:15:44.873     0:08:25.880     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+13              1:24:10.754     0:09:30.736     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+14              1:33:41.490     0:07:51.888     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+15              1:41:33.378     0:07:47.300     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+16              1:49:20.679     0:14:13.727     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00011.M2TS      4113 (0x1011)   0x1B            AVC                                     28,654                  0                       0               0               
+00011.M2TS      4352 (0x1100)   0x83            TrueHD          eng (English)           28,654                  0                       0               0               
+00011.M2TS      4353 (0x1101)   0x83            TrueHD          fra (French)            28,654                  0                       0               0               
+00011.M2TS      4354 (0x1102)   0x81            AC3             spa (Spanish)           28,654                  0                       0               0               
+00011.M2TS      4355 (0x1103)   0x83            TrueHD          por (Portuguese)        28,654                  0                       0               0               
+00011.M2TS      4356 (0x1104)   0x81            AC3             tha (Thai)              28,654                  0                       0               0               
+00011.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           28,654                  0                       0               0               
+00011.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           28,654                  0                       0               0               
+00011.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            28,654                  0                       0               0               
+00011.M2TS      4611 (0x1203)   0x90            PGS             spa (Spanish)           28,654                  0                       0               0               
+00011.M2TS      4612 (0x1204)   0x90            PGS             ara (Arabic)            28,654                  0                       0               0               
+00011.M2TS      4613 (0x1205)   0x90            PGS             zho (Chinese)           28,654                  0                       0               0               
+00011.M2TS      4614 (0x1206)   0x90            PGS             zho (Chinese)           28,654                  0                       0               0               
+00011.M2TS      4615 (0x1207)   0x90            PGS             kor (Korean)            28,654                  0                       0               0               
+00011.M2TS      4616 (0x1208)   0x90            PGS             por (Portuguese)        28,654                  0                       0               0               
+00011.M2TS      4617 (0x1209)   0x90            PGS             tha (Thai)              28,654                  0                       0               0               
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: THE_6TH_DAY
+Disc Size: 37 850 907 162 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00001.MPLS
+Size: 0 bytes
+Length: 2:03:34.407
+Total Bitrate: 0,00 Mbps
+Video: MPEG-4 AVC Video / 21502 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby TrueHD Audio / 5.1 / 48 kHz / 1007 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Audio: French / Dolby TrueHD Audio / 5.1 / 48 kHz / 1093 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Audio: Spanish / Dolby Digital Audio / 5.1 / 48 kHz / 640 kbps
+Audio: Portuguese / Dolby TrueHD Audio / 5.1 / 48 kHz / 1046 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Audio: Thai / Dolby Digital Audio / 5.1 / 48 kHz / 640 kbps
+Subtitle: English / 0,000 kbps
+Subtitle: English / 0,733 kbps
+Subtitle: French / 0,000 kbps
+Subtitle: Spanish / 0,000 kbps
+Subtitle: Arabic / 0,000 kbps
+Subtitle: Chinese / 0,000 kbps
+Subtitle: Chinese / 0,000 kbps
+Subtitle: Korean / 0,000 kbps
+Subtitle: Portuguese / 0,000 kbps
+Subtitle: Thai / 0,000 kbps
+

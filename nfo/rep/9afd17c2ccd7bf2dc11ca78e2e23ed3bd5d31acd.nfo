@@ -1,0 +1,35 @@
+DISC INFO:
+
+Disc Title:     U.D.O.Steelhammer.Live from Moscow.2014.BD1080i
+Disc Size:      24 789 201 632 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:43:13.160 (h:m:s.ms)
+Size:                   18 251 925 504 bytes
+Total Bitrate:          23,58 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        17834 kbps          1080i / 25 fps / 16:9 / High Profile 4.0
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS Audio                       English         1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00000.M2TS      0:00:00.000     1:43:13.160     18 251 925 504  23 577

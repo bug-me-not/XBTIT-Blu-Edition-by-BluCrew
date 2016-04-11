@@ -1,0 +1,35 @@
+Disc Title:     HOCUS_POCUS_1993-Legion
+Disc Size:      28,396,535,302 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 1:36:08.053 (h:m:s.ms)
+Size:                   26,892,226,560 bytes
+Total Bitrate:          37.30 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29506 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4754 kbps       5.1 / 48 kHz / 4754 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Spanish         320 kbps        2.0 / 48 kHz / 320 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         36.354 kbps                     
+Presentation Graphics           French          23.781 kbps                     
+Presentation Graphics           Spanish         26.914 kbps                     
+Presentation Graphics           Portuguese      29.358 kbps 

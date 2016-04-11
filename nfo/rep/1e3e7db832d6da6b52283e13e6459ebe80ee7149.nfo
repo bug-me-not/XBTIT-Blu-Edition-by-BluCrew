@@ -1,0 +1,225 @@
+Disc Title:     Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size:      49 018 936 606 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.6
+Notes:
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+********************
+PLAYLIST: 01002.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01002.MPLS                                                      AVC     2:15:00 35 184 150 528  49 018 936 606  34,75   26,00   DTS-HD Master 5.1 3170Kbps (48kHz/24-bit) LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size:      49 018 936 606 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.6
+PLAYLIST REPORT:
+Name:                   01002.MPLS
+Length:                 2:15:00 (h:m:s)
+Size:                   35 184 150 528 bytes
+Total Bitrate:          34,75 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        26000 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         3170 kbps       5.1 / 48 kHz / 3170 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+DTS-HD Master Audio             English         1805 kbps       2.0 / 48 kHz / 1805 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00002.M2TS      0:00:00.000     2:15:00.792     35 184 150 528  34 746
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:01:36.095     31 482 kbps     54 987 kbps     00:00:01.468    40 083 kbps     00:00:01.401    36 209 kbps     00:00:01.401    131 261 bytes   368 450 bytes   00:00:01.501
+2               0:01:36.095     0:07:08.861     19 502 kbps     46 427 kbps     00:07:28.681    38 017 kbps     00:07:28.681    32 975 kbps     00:08:20.533    81 340 bytes    283 950 bytes   00:07:28.714
+3               0:08:44.957     0:07:46.299     26 768 kbps     50 149 kbps     00:14:09.014    35 390 kbps     00:14:07.079    33 401 kbps     00:11:14.840    111 645 bytes   323 081 bytes   00:15:06.872
+4               0:16:31.256     0:05:27.527     26 685 kbps     42 879 kbps     00:20:09.241    34 912 kbps     00:19:08.947    34 288 kbps     00:21:47.773    111 297 bytes   378 280 bytes   00:19:26.231
+5               0:21:58.784     0:06:09.502     26 472 kbps     50 704 kbps     00:26:45.203    35 386 kbps     00:26:44.302    32 191 kbps     00:22:07.426    110 412 bytes   304 152 bytes   00:26:45.236
+6               0:28:08.286     0:07:53.606     21 445 kbps     48 700 kbps     00:32:03.054    40 129 kbps     00:29:35.373    33 760 kbps     00:35:50.481    89 445 bytes    387 712 bytes   00:28:59.137
+7               0:36:01.893     0:08:27.273     29 034 kbps     41 323 kbps     00:40:15.479    35 296 kbps     00:37:56.774    34 670 kbps     00:37:56.774    121 096 bytes   283 000 bytes   00:39:26.564
+8               0:44:29.166     0:06:43.536     21 643 kbps     46 721 kbps     00:47:09.593    34 589 kbps     00:47:05.589    31 359 kbps     00:47:05.155    90 268 bytes    367 395 bytes   00:47:53.503
+9               0:51:12.702     0:06:00.693     28 202 kbps     45 157 kbps     00:51:15.939    36 246 kbps     00:57:06.990    34 711 kbps     00:56:39.295    117 627 bytes   327 177 bytes   00:55:29.759
+10              0:57:13.396     0:06:10.103     22 943 kbps     46 045 kbps     01:00:43.906    35 172 kbps     01:00:42.038    34 007 kbps     01:00:43.206    95 690 bytes    287 403 bytes   01:01:22.779
+11              1:03:23.499     0:09:48.688     24 757 kbps     50 069 kbps     01:10:59.822    37 954 kbps     01:12:04.987    34 260 kbps     01:11:00.089    103 259 bytes   381 687 bytes   01:08:40.549
+12              1:13:12.187     0:07:58.544     26 387 kbps     46 588 kbps     01:14:54.923    38 405 kbps     01:13:54.663    33 160 kbps     01:18:39.748    110 054 bytes   372 589 bytes   01:15:07.269
+13              1:21:10.732     0:08:06.586     25 972 kbps     48 228 kbps     01:25:10.939    40 811 kbps     01:25:10.839    36 003 kbps     01:25:10.839    108 326 bytes   342 512 bytes   01:26:36.558
+14              1:29:17.318     0:07:06.292     23 057 kbps     51 488 kbps     01:30:44.572    36 211 kbps     01:30:43.271    32 404 kbps     01:31:30.251    96 168 bytes    391 168 bytes   01:30:59.387
+15              1:36:23.611     0:05:45.144     23 388 kbps     47 827 kbps     01:39:14.348    37 825 kbps     01:37:00.281    33 283 kbps     01:36:56.844    97 548 bytes    349 856 bytes   01:40:55.549
+16              1:42:08.755     0:08:50.363     28 664 kbps     50 911 kbps     01:49:58.491    37 727 kbps     01:49:57.657    34 609 kbps     01:48:52.726    119 555 bytes   348 968 bytes   01:46:49.169
+17              1:50:59.119     0:02:54.807     27 923 kbps     43 624 kbps     01:51:17.103    34 052 kbps     01:51:16.436    32 026 kbps     01:52:57.871    116 464 bytes   326 796 bytes   01:53:46.519
+18              1:53:53.927     0:07:04.891     28 062 kbps     50 284 kbps     02:00:23.316    36 463 kbps     01:59:30.930    35 255 kbps     01:59:30.930    117 043 bytes   316 741 bytes   01:56:09.028
+19              2:00:58.818     0:07:10.963     31 973 kbps     39 075 kbps     02:01:09.729    34 807 kbps     02:03:57.062    34 353 kbps     02:06:27.246    133 354 bytes   271 859 bytes   02:04:26.025
+20              2:08:09.782     0:06:51.010     30 215 kbps     43 685 kbps     02:10:03.028    36 332 kbps     02:08:44.349    34 806 kbps     02:08:44.349    126 034 bytes   296 264 bytes   02:12:50.896
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     8100,726                26 000                  26 327 549 983  143 227 189
+00002.M2TS      4352 (0x1100)   0x80            LPCM            eng (English)           8100,726                1 542                   1 561 827 308   9 720 922
+00002.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           8100,726                1 805                   1 827 735 780   11 236 300
+00002.M2TS      4354 (0x1102)   0x86            DTS-HD MA       eng (English)           8100,726                3 170                   3 209 690 412   18 706 371
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size: 49 018 936 606 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01002.MPLS
+Size: 35 184 150 528 bytes
+Length: 2:15:00
+Total Bitrate: 34,75 Mbps
+Video: MPEG-4 AVC Video / 26000 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3170 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 1805 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01003.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01003.MPLS                                                      AVC     0:42:17 11 360 550 912  49 018 936 606  35,81   27,00   DTS-HD Master 5.1 3184Kbps (48kHz/24-bit) LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size:      49 018 936 606 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.6
+PLAYLIST REPORT:
+Name:                   01003.MPLS
+Length:                 0:42:17 (h:m:s)
+Size:                   11 360 550 912 bytes
+Total Bitrate:          35,81 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        27000 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         3184 kbps       5.1 / 48 kHz / 3184 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+DTS-HD Master Audio             English         1812 kbps       2.0 / 48 kHz / 1812 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00003.M2TS      0:00:00.000     0:42:17.768     11 360 550 912  35 813
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:05:06.839     28 618 kbps     60 339 kbps     00:00:01.568    39 633 kbps     00:00:01.468    35 951 kbps     00:00:01.468    119 350 bytes   372 216 bytes   00:00:01.668
+2               0:05:06.839     0:03:45.692     28 849 kbps     40 371 kbps     00:05:22.555    34 561 kbps     00:08:11.858    33 552 kbps     00:08:11.858    120 324 bytes   315 586 bytes   00:08:34.847
+3               0:08:52.532     0:06:58.518     28 986 kbps     52 499 kbps     00:09:08.915    37 449 kbps     00:09:08.915    34 334 kbps     00:11:00.026    120 894 bytes   317 958 bytes   00:09:08.948
+4               0:15:51.050     0:05:19.152     27 175 kbps     44 016 kbps     00:19:19.424    38 029 kbps     00:16:05.331    33 968 kbps     00:19:43.282    113 341 bytes   300 898 bytes   00:16:37.663
+5               0:21:10.202     0:07:52.572     23 886 kbps     48 253 kbps     00:21:32.491    36 819 kbps     00:21:30.322    33 218 kbps     00:24:42.380    99 624 bytes    436 685 bytes   00:25:21.419
+6               0:29:02.774     0:05:18.584     21 927 kbps     56 560 kbps     00:30:09.407    35 462 kbps     00:33:23.935    33 547 kbps     00:33:35.213    91 452 bytes    340 038 bytes   00:30:10.275
+7               0:34:21.359     0:04:08.982     30 082 kbps     41 405 kbps     00:34:40.445    34 795 kbps     00:36:48.906    34 417 kbps     00:36:45.002    125 467 bytes   335 001 bytes   00:35:28.025
+8               0:38:30.341     0:03:37.650     30 600 kbps     38 566 kbps     00:40:24.054    34 384 kbps     00:40:23.053    33 876 kbps     00:38:30.341    127 627 bytes   274 946 bytes   00:40:24.088
+9               0:42:07.992     0:00:09.776     107 kbps        107 kbps        00:42:16.734    107 kbps        00:42:12.730    0 kbps          00:00:00.000    448 bytes       1 464 bytes     00:42:08.025
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     2537,635                27 002                  8 565 048 477   46 593 867
+00003.M2TS      4352 (0x1100)   0x80            LPCM            eng (English)           2537,635                1 542                   489 283 020     3 045 330
+00003.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           2537,635                1 812                   574 658 592     3 531 965
+00003.M2TS      4354 (0x1102)   0x86            DTS-HD MA       eng (English)           2537,635                3 185                   1 010 185 252   5 885 572
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size: 49 018 936 606 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01003.MPLS
+Size: 11 360 550 912 bytes
+Length: 0:42:17
+Total Bitrate: 35,81 Mbps
+Video: MPEG-4 AVC Video / 27000 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3184 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 1812 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01004.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01004.MPLS                                                      AVC     0:08:09 2 158 829 568   49 018 936 606  35,30   27,00   DTS-HD Master 5.1 2722Kbps (48kHz/24-bit) LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size:      49 018 936 606 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.6
+PLAYLIST REPORT:
+Name:                   01004.MPLS
+Length:                 0:08:09 (h:m:s)
+Size:                   2 158 829 568 bytes
+Total Bitrate:          35,30 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        26999 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         2722 kbps       5.1 / 48 kHz / 2722 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+LPCM Audio                      English         1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+DTS-HD Master Audio             English         1788 kbps       2.0 / 48 kHz / 1788 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00004.M2TS      0:00:00.000     0:08:09.255     2 158 829 568   35 300
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:08:09.255     26 999 kbps     54 557 kbps     00:02:25.145    40 191 kbps     00:00:06.473    34 981 kbps     00:07:46.098    112 606 bytes   423 288 bytes   00:03:22.969
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     489,189                 27 002                  1 651 148 429   8 982 292
+00004.M2TS      4352 (0x1100)   0x80            LPCM            eng (English)           489,189                 1 543                   94 322 580      587 070
+00004.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           489,189                 1 789                   109 365 360     671 777
+00004.M2TS      4354 (0x1102)   0x86            DTS-HD MA       eng (English)           489,189                 2 723                   166 483 360     980 959
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Metallica.Quebec.Magnetic.2009.COMPLETE.MBLURAY-COPYRiOT
+Disc Size: 49 018 936 606 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01004.MPLS
+Size: 2 158 829 568 bytes
+Length: 0:08:09
+Total Bitrate: 35,30 Mbps
+Video: MPEG-4 AVC Video / 26999 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 2722 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 1788 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)

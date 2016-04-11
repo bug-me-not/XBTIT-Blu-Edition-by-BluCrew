@@ -1,0 +1,43 @@
+DISC INFO:
+
+Disc Title:     Copycat
+Disc Size:      22 233 451 780 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:03:05.836 (h:m:s.ms)
+Size:                   21 872 744 448 bytes
+Total Bitrate:          23,69 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        15530 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.0
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4131 kbps       5.1 / 48 kHz / 4131 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         33,241 kbps                     
+Presentation Graphics           French          22,323 kbps                     
+Presentation Graphics           German          36,329 kbps                     
+Presentation Graphics           Spanish         28,356 kbps                     
+Presentation Graphics           Dutch           25,750 kbps                     
+Presentation Graphics           Spanish         25,074 kbps                     
+Presentation Graphics           Portuguese      29,671 kbps

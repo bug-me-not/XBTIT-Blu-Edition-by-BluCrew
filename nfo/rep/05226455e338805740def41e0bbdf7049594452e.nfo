@@ -1,0 +1,112 @@
+
+SLEEPY HOLLOW Bluray Remux 1080p Multi DTS HDMA-MAN OF STYLE
+
+
+
+
+
+===================================================================================================================
+
+by
+
+MAN OF STYLE
+
+
+==================================================================================================================
+
+
+
+
+
+
+General
+Complete name                            : SLEEPY HOLLOW Bluray Remux 1080p Multi DTS HDMA-MAN OF STYLE.mkv
+Format                                   : Matroska
+Format version                           : Version 2
+File size                                : 18.6 GiB
+Duration                                 : 1h 45mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 25.3 Mbps
+Movie name                               : SLEEPY HOLLOW Bluray Remux 1080p Multi DTS HDMA-MAN OF STYLE
+Encoded date                             : UTC 2015-10-22 15:46:58
+
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 45mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 33.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 24.000 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Default                                  : Yes
+Forced                                   : No
+Color primaries                          : BT.709
+Transfer characteristics                 : BT.709
+Matrix coefficients                      : BT.709
+Color range                              : Limited
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 45mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 768 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 45mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text
+ID                                       : 4
+Format                                   : VobSub
+Codec ID                                 : S_VOBSUB
+Codec ID/Info                            : The same subtitle format used on DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+=============================================================================================================================
+
+THX TO SEED...

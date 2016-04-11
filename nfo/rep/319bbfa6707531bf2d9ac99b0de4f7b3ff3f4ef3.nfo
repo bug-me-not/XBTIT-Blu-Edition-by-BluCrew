@@ -1,0 +1,112 @@
+Général
+Format                                   : Matroska
+Version du format                        : Version 2
+Taille du fichier                        : 14,8 Gio
+Durée                                    : 1h 46mn
+Débit global moyen                       : 19,8 Mb/s
+Nom du film                              : In.Bruges.2008.1080p.BluRay.DTS.x264-CtrlHD
+Date d'encodage                          : UTC 2013-03-11 20:45:06
+Application utilisée                     : mkvmerge v3.4.0 ('Rapunzel') built on May 15 2010 09:38:20
+Bibliothèque utilisée                    : libebml v0.8.0 + libmatroska v0.9.0
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 5 images
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 1h 46mn
+Débit                                    : 17,3 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 814 pixels
+Format à l'écran                         : 2,35:1
+Type d'images/s                          : Constant
+Images par seconde                       : 24,000 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Bits/(Pixel*Image)                       : 0.461
+Taille du flux                           : 12,9 Gio (87%)
+Bibliothèque utilisée                    : x264 core 122 r2184 5c85e0a
+Default                                  : Non
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 46mn
+Type de débit                            : Constant
+Débit                                    : 1 509 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Avec perte
+Délai par rapport Vidéo                  : 11ms
+Taille du flux                           : 1,13 Gio (8%)
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 1h 46mn
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Délai par rapport Vidéo                  : 7s 800ms
+Taille du flux                           : 490 Mio (3%)
+Titre                                    : Fr AC3 640
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #1
+ID                                       : 4
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : FR Complet
+Langue                                   : Français
+Default                                  : Non
+Forced                                   : Non
+
+Texte #2
+ID                                       : 5
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : FR Forced
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:00:00:00.000
+00:08:29.125                             : en:00:08:29.125
+00:18:17.750                             : en:00:18:17.750
+00:27:38.708                             : en:00:27:38.708
+00:36:55.792                             : en:00:36:55.792
+00:46:59.958                             : en:00:46:59.958
+00:58:13.417                             : en:00:58:13.417
+01:07:48.667                             : en:01:07:48.667
+01:16:28.583                             : en:01:16:28.583
+01:24:42.625                             : en:01:24:42.625
+01:32:42.208                             : en:01:32:42.208
+01:39:59.375                             : en:01:39:59.375

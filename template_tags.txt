@@ -1,0 +1,236 @@
+/////////////////////////////////////////////////////////////////////////////////////
+// xbtit - Bittorrent tracker/frontend
+//
+// Copyright (C) 2004 - 2013  Btiteam
+//
+//    This file is part of xbtit.
+//
+// Redistribution and use in source and binary forms, with or without modification,
+// are permitted provided that the following conditions are met:
+//
+//   1. Redistributions of source code must retain the above copyright notice,
+//      this list of conditions and the following disclaimer.
+//   2. Redistributions in binary form must reproduce the above copyright notice,
+//      this list of conditions and the following disclaimer in the documentation
+//      and/or other materials provided with the distribution.
+//   3. The name of the author may not be used to endorse or promote products
+//      derived from this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+// WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+// MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+// IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+// TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+// PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+// LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+
+TAGS:
+=====
+
+MAIN.TPL
+--------
+main_charset
+main_title
+main_jscript
+main_logo
+main_css
+main_left
+main_content
+main_right
+main_slideIt
+
+BLOCK.TPL
+---------
+block_title
+block_align
+block_content
+
+TORRENTS.TPL
+------------
+language.TORRENT_SEARCH
+language.CATEGORY_FULL
+language.TORRENT_STATUS
+language.ALL
+language.ACTIVE_ONLY
+language.DEAD_ONLY
+language.SEARCH
+torrent_script
+torrent_search
+torrent_categories_combo
+torrent_selected_all
+torrent_selected_active
+torrent_selected_dead
+torrent_pagertop
+torrent_pagerbottom
+torrent_header_category
+torrent_header_filename
+torrent_header_comments
+torrent_header_rating
+torrent_header_waiting
+torrent_header_download
+torrent_header_added
+torrent_header_size
+torrent_header_uploader
+torrent_header_seeds
+torrent_header_leechers
+torrent_header_complete
+torrent_header_downloaded
+torrent_header_speed
+torrent_header_average
+torrents[].category
+torrents[].filename
+torrents[].comments
+torrents[].rating
+torrents[].waiting
+torrents[].download
+torrents[].added
+torrents[].size
+torrents[].uploader
+torrents[].classe_seeds
+torrents[].seeds
+torrents[].classe_leechers
+torrents[].leechers
+torrents[].complete
+torrents[].downloaded
+torrents[].speed
+torrents[].average
+if statements: WT, uploader, XBTT
+
+ACCOUNT.TPL
+-----------
+language.USER_NAME
+language.USER_PWD
+language.USER_PWD_AGAIN
+language.USER_EMAIL
+language.USER_LANGUE
+language.USER_STYLE
+language.COUNTRY
+language.TIMEZONE
+language.USER_LEVEL
+language.IMAGE_CODE
+account_action
+account_form_actionlink
+account_uid
+account_returnto
+account_IDlanguage
+account_IDstyle
+account_IDcountry
+account_username
+dati.username
+dati.email
+account_combo_language
+account_combo_style
+account_combo_country
+account_combo_timezone
+account_captcha
+account_from_delete_confirm
+if statements: DEL, DISPLAY_FULL, CAPTCHA
+
+
+
+USERS.TPL
+---------
+language.FIND_USER
+language.USER_LEVEL
+language.ALL
+language.SEARCH
+language.USER_NAM
+language.USER_LEVEL
+language.USER_JOINED
+language.USER_LASTACCESS
+language.USER_COUNTRY
+language.RATIO
+language.USERS_PM
+language.EDIT
+language.DELETE
+language.NO_USERS_FOUND
+language.UNKNOWN
+users_search
+users_search_level
+users_search_select
+users_pagertop
+users_sort_username
+users_sort_userlevel
+users_sort_joined
+users_sort_lastaccess
+users_sort_country
+users_sort_ratio
+users_pm
+users_edit
+users_delete
+users[].username
+users[].userlevel
+users[].joined
+users[].lastconnect
+users[].flag
+users[].ratio
+users[].pm
+users[].edit
+users[].delete
+if statements: no_users
+
+
+VIEWNEWS.PHP
+---------------
+language.POSTED_BY
+language.POSTED_DATE
+language.TITLE
+language.ADD
+language.NO_NEWS
+add_edit_news
+delete_news
+viewnews[].user_posted
+viewnews[].posted_date
+viewnews[].news_title
+viewnews[].news
+IF statements: news_exists can_edit_news
+LOOP statements: viewnews
+
+NEWS.TPL
+--------
+language.NEWS_INSERT
+language.NEWS_TITLE
+language.NEWS_DESCRIPTION
+language.FRM_CONFIRM
+language.FRM_CANCEL
+language.ADD
+language.EDIT
+language.DELETE_CONFIRM
+language.DELETE
+language.POSTED_BY
+language.POSTED_DATE
+language.TITLE
+language.NO_NEWS
+news.action
+news.hidden_action
+news.hidden_id
+news.news_title
+news.bbcode
+news_model[].add
+news_model[].edit
+news_model[].delete
+news_model[].username
+news_model[].date
+news_model[].title
+news_model[].news
+news_add
+if statements: ADD_EDIT, VIEW, EDIT_DEL, EDIT_NEWS, DELETE_NEWS, NO_NEWS
+
+RECOVER.TPL
+-----------
+language.RECOVER
+language.REGISTERED_EMAIL_DESC
+language.IMAGE_CODE
+language.FRM_CONFIRM
+language.ERR_NO_EMAIL
+language.ERR_INV_EMAIL
+language.ERR_NO_CAPTCHA
+recover.action
+recover_captcha
+if statements: CAPTCHA

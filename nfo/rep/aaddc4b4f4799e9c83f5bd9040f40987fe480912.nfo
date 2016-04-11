@@ -1,0 +1,44 @@
+DISC INFO:
+Disc Title:     THE_SHINING_US_CUT_BD_BLUEBIRD
+Disc Size:      30 085 587 720 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:23:46 (h:m:s)
+Size:                   21 906 180 096 bytes
+Total Bitrate:          20,32 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              14677 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2177 kbps       5.1 / 48 kHz / 2177 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -4dB)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Russian         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Russian         384 kbps        5.1 / 48 kHz / 384 kbps
+Dolby Digital Audio             Russian         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         23,905 kbps                     
+Presentation Graphics           French          19,359 kbps                     
+Presentation Graphics           Russian         18,821 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:23:46.117     21 906 180 096  20 316

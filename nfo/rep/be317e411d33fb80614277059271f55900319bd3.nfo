@@ -1,0 +1,64 @@
+DISC INFO:
+
+Disc Title:     UPB1_73395
+Disc Size:      24 655 871 416 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00003.MPLS
+Length:                 1:28:55.329 (h:m:s.ms)
+Size:                   23 115 998 016 bytes
+Total Bitrate:          34,66 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24939 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2482 kbps       5.1 / 48 kHz / 2482 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Portuguese      768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Hungarian       768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Polish          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         48,791 kbps                     
+Presentation Graphics           French          39,393 kbps                     
+Presentation Graphics           German          46,432 kbps                     
+Presentation Graphics           Portuguese      42,395 kbps                     
+Presentation Graphics           Danish          38,076 kbps                     
+Presentation Graphics           Dutch           37,727 kbps                     
+Presentation Graphics           Finnish         39,984 kbps                     
+Presentation Graphics           Hindi           37,154 kbps                     
+Presentation Graphics           Icelandic       44,099 kbps                     
+Presentation Graphics           Hungarian       39,881 kbps                     
+Presentation Graphics           Indonesian      48,524 kbps                     
+Presentation Graphics           Spanish         43,243 kbps                     
+Presentation Graphics           Norwegian       33,126 kbps                     
+Presentation Graphics           Polish          36,602 kbps                     
+Presentation Graphics           Swedish         32,646 kbps                     
+Presentation Graphics           French          0,290 kbps                      
+Presentation Graphics           German          0,300 kbps                      
+Presentation Graphics           Portuguese      0,336 kbps                      
+Presentation Graphics           Hungarian       0,387 kbps                      
+Presentation Graphics           Spanish         0,248 kbps                      
+Presentation Graphics           Polish          0,297 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00031.M2TS      0:00:00.000     1:28:55.329     23 115 998 016  34 661 

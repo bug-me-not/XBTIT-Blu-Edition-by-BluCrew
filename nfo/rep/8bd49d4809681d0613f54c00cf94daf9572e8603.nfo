@@ -1,0 +1,79 @@
+﻿   ________       ____  ______
+  / ____/ /______/ / / / / __ \
+ / /   / __/ ___/ / /_/ / / / /
+/ /___/ /_/ /  / / __  / /_/ /
+\____/\__/_/  /_/_/ /_/_____/ 
+
+
+Mulholland.Drive.2001.1080p.JPN.BluRay.x264-CtrlHD
+
+
+.PLOT
+After a car wreck on the winding Mulholland Drive renders a woman 
+amnesic, she and a perky Hollywood-hopeful search for clues and answers 
+across Los Angeles in a twisting venture beyond dreams and reality. 
+
+
+.GENERAL iNFORMATiON
+RUNTiME.......: 2h:26m:34s
+SiZE..........: 18GB
+ViDEO.CODEC...: x264, 2pass, L4.1
+FRAMERATE.....: 23.976fps
+BiTRATE.......: 16075Kbps
+RESOLUTiON....: 1920x1040 (OAR)
+AUDiO1........: English DTS 5.1 @ 1510Kbps (UK audio)
+AUDiO2........: -
+SUBTiTLES.....: Ara,Chs,Cht,Cro,Cze,Dan,Dut,Eng,Est,Fin,Fre,Ger,Gre
+..............: Hun,Ita,Per,Pol,Por-Br,Por-Pt,Rus,Slv,Spa,Swe,Tur,Vie
+SUBS.FORMAT...: UTF-8 embedded srt and RAR pack
+CHAPTERS......: Numbered like UK BD (JPN had music chapters named like the CD)
+SOURCE........: Mulholland Dr. 2001 1080p JPN Blu-ray AVC DTS-HD MA 5.1-CtrlHD (Pony Canyon)
+iMDB.RATiNG...: 8.0/10 (149,298 votes)
+iMDB.LiNK.....: http://www.imdb.com/title/tt0166924/
+
+
+.POST iNFORMATiON
+ENCODER.......: 9mm
+RELEASE.DATE..: 2012-11-01
+
+
+.NOTES
+1- UK source had 1sec of blank intro (24 black frames) before the StudioCanal
+logo starts. All movies have usually such blanks, but JPN trimmed it!
+I took 24 frames from the end and moved them at the start of the movie,
+then trimmed the full movie down to 210857 frames to match the frame number
+like on the UK BD. I finally used the UK audio to mux (it's virtually the same).
+
+2- UK BD was processed to clean the film's dirt/spots. Apparently, JPN decided
+to transfer without any dirt processing (same like the HD-DVD?), which is
+OK since it preserves the original detail. Overall, the movie had a spot
+or two every frame in a while, barely noticeable, but there were many frames
+with a LOT of dirt, even on consecutive ones!
+Note that the UK still missed a few spots. And given the processing on the
+whole film, there was some significant loss in detail in some frames.
+I manually looked for really bad dirty frames and replaced them with the
+ones from the UK BD, while adding some grain to emulate JPN's grain flow.
+Of course, it's tedious and it's not my job to do that, but I tried my best.
+I don't have time to manually browse 210857 frames for spots, so not all
+the dirty frames were fixed (if I did so, half the movie would look like
+the UK transfer).
+
+3- JPN had about 16 dirty pixels on the right side! They're noticeable
+in 1080p, but in 720p they're not (due to resizing). I corrected them
+slightly with overlay, but since they're variable in different scenes,
+the correction isn't perfect.
+
+So, for those who prefer a clean movie experience I suggest you keep the
+UK source/encode. Otherwise, for grain fans who wouldn't be bothered by
+occasional film dirt, JPN (fixed) encode is recommended.
+
+Remove the ads/tables of image hosts by installing
+this GreaseMonkey script: Show Just Image 3
+http://userscripts.org/scripts/show/109890
+
+
+.LOG
+x264 [info]: frame I:1115  Avg QP:18.01  size:215424
+x264 [info]: frame P:37586 Avg QP:19.16  size:133150
+x264 [info]: frame B:172156 Avg QP:20.64  size: 72167
+x264 [info]: consecutive B-frames:  0.9%  0.8%  2.1%  8.5% 18.1% 38.1% 18.5% 13.0%

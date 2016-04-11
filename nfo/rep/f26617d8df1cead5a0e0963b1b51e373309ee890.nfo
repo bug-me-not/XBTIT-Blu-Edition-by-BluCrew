@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     The Bone Collector 1999
+Disc Size:      37,818,317,016 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00011.MPLS
+Length:                 1:57:57.070 (h:m:s.ms)
+Size:                   34,343,712,768 bytes
+Total Bitrate:          38.82 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        26918 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Dolby TrueHD Audio              English         1429 kbps       5.1 / 48 kHz / 1429 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps)
+Dolby TrueHD Audio              Japanese        1577 kbps       5.1 / 48 kHz / 1577 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -1dB)
+Dolby TrueHD Audio              Portuguese      1559 kbps       5.1 / 48 kHz / 1559 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -2dB)
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -2dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -1dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Presentation Graphics           English         26.514 kbps
+Presentation Graphics           Japanese        20.132 kbps
+Presentation Graphics           Spanish         26.204 kbps
+Presentation Graphics           Portuguese      24.896 kbps
+Presentation Graphics           Chinese         27.198 kbps
+Presentation Graphics           Korean          20.142 kbps
+Presentation Graphics           Thai            23.109 kbps
+Presentation Graphics           Japanese        1.576 kbps
+Presentation Graphics           Japanese        36.397 kbps
+Presentation Graphics           Portuguese      50.407 kbps

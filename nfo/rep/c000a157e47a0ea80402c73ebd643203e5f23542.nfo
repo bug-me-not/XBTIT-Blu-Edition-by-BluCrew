@@ -1,0 +1,122 @@
+Disc Title:     DEUX_HOMMES_DANS_MANHATTAN_1959_REMUX_HDCLUB
+Disc Size:      23 120 347 912 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:24:08 3 162 269 568   23 120 347 912  5,01    30,95   DTS-HD Master 2.0 916Kbps (48kHz/16-bit)  
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     DEUX_HOMMES_DANS_MANHATTAN_1959_REMUX_HDCLUB
+Disc Size:      23 120 347 912 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:24:08.999 (h:m:s.ms)
+Size:                   3 162 269 568 bytes
+Total Bitrate:          5,01 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        30955 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             Russian         916 kbps        2.0 / 48 kHz / 916 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+DTS-HD Master Audio             French          861 kbps        2.0 / 48 kHz / 861 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         28,131 kbps                     
+Presentation Graphics           French          2,697 kbps                      
+Presentation Graphics           French          21,543 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:24:08.999     3 162 269 568   34 596          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:09:08.000     30 536 kbps     47 297 kbps     00:09:00.208    39 984 kbps     00:09:00.208    37 460 kbps     00:04:08.833    159 017 bytes   575 402 bytes   00:02:22.708    
+2               0:09:08.000     0:06:48.164     14 460 kbps     47 844 kbps     00:09:59.958    40 317 kbps     00:09:57.833    37 770 kbps     00:09:59.583    167 821 bytes   570 891 bytes   00:10:04.833    
+3               0:15:56.165     0:07:01.335     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:22:57.500     0:08:19.000     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:31:16.500     0:06:03.291     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:37:19.791     0:07:32.083     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:44:51.875     0:08:15.875     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:53:07.750     0:05:34.750     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               0:58:42.500     0:08:50.332     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:07:32.833     0:08:24.708     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:15:57.541     0:05:42.375     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:21:39.916     0:02:29.083     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     731,208                 30 956                  2 829 447 312   15 387 648      
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       rus (Russian)           731,208                 916                     83 698 048      527 215         
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            731,208                 861                     78 717 888      500 956         
+00000.M2TS      4608 (0x1200)   0x90            PGS             rus (Russian)           731,208                 28                      2 571 315       14 408          
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            731,208                 3                       246 548         1 439           
+00000.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            731,208                 22                      1 969 182       11 362          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: DEUX_HOMMES_DANS_MANHATTAN_1959_REMUX_HDCLUB
+Disc Size: 23 120 347 912 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 3 162 269 568 bytes
+Length: 1:24:08.999
+Total Bitrate: 5,01 Mbps
+Video: MPEG-4 AVC Video / 30955 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: Russian / DTS-HD Master Audio / 2.0 / 48 kHz / 916 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Audio: French / DTS-HD Master Audio / 2.0 / 48 kHz / 861 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Subtitle: Russian / 28,131 kbps
+Subtitle: French / 2,697 kbps
+Subtitle: French / 21,543 kbps
+

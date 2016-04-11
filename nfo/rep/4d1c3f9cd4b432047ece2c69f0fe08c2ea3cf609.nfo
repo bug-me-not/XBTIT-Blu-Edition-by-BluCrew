@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     THENEGOTIATOR
+Disc Size:      36,914,591,744 bytes
+Protection:     AACS(v14)
+BD-Java:        No
+BDInfo:         0.5.8.1 (compatible layout created by DVDFab 9.2.0.1)
+
+PLAYLIST REPORT:
+
+Name:                   00065.MPLS  
+Length:                 2:19:34.532 (h:m:s.ms)
+Size:                   35,240,097,792 bytes
+Total Bitrate:          33.66 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              26025 kbps          1080p / 23.976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         2182 kbps       5.1 / 48 kHz / 2182 kbps / 16-bit (AC3 Core: 5.1 / 48 kHz / 640 kbps)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Italian         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         41.51 kbps                      
+Presentation Graphics           French          32.507 kbps                     
+Presentation Graphics           Italian         34.72 kbps                      
+Presentation Graphics           Italian         37.191 kbps                     
+Presentation Graphics           Spanish         31.935 kbps                     
+Presentation Graphics           Dutch           32.39 kbps                      
+Presentation Graphics           Spanish         33.689 kbps                     
+Presentation Graphics           Danish          31.71 kbps                      
+Presentation Graphics           Finnish         30.425 kbps                     
+Presentation Graphics           Norwegian       27.762 kbps                     
+Presentation Graphics           Swedish         28.223 kbps

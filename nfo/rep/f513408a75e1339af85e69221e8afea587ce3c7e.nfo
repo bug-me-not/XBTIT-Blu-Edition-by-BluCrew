@@ -1,0 +1,60 @@
+DISC INFO:
+
+Disc Title:     Fallen 1998  1080p Blu-ray AVC DTS-HD MA 5.1-HDChina
+Disc Size:      37 650 200 658 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:04:11.360 (h:m:s.ms)
+Size:                   37 057 554 432 bytes
+Total Bitrate:          39,79 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29941 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4055 kbps       5.1 / 48 kHz / 4055 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+* Dolby Digital Audio           Japanese        640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+* Presentation Graphics         Japanese        18,923 kbps                     
+Presentation Graphics           English         31,607 kbps                     
+Presentation Graphics           French          19,289 kbps                     
+Presentation Graphics           German          32,720 kbps                     
+Presentation Graphics           Spanish         25,991 kbps                     
+Presentation Graphics           Dutch           25,382 kbps                     
+Presentation Graphics           Spanish         26,495 kbps                     
+Presentation Graphics           Portuguese      26,370 kbps                     
+Presentation Graphics           Danish          24,868 kbps                     
+Presentation Graphics           Finnish         22,295 kbps                     
+Presentation Graphics           Norwegian       23,112 kbps                     
+Presentation Graphics           Swedish         21,382 kbps                     
+* Presentation Graphics         Japanese        44,213 kbps                     
+* Presentation Graphics         Japanese        0,726 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00063.M2TS      0:00:00.000     2:04:11.360     37 057 554 432  39 786

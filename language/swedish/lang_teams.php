@@ -1,0 +1,53 @@
+<?php
+
+$language['TEAM_HEADER']='<b><u>Här kan du lägga till, redigera och ta bort grupper</u>!</b><br><br>';
+$language['TEAM_ADD']='<b>Lägg till ny grupp</b>';
+$language['TEAM_EDIT']='<b>Redigera grupp</b>';
+$language['TEAM_CURR']='<b>Nuvarande grupp</b>';
+$language['TEAM_ONE']='<br>(<b>1</b> Ägare för varje grupp)';
+$language['TEAM_NAME']='Gruppnamn:';
+$language['TEAM_LOGO']='Grupplogo URL:';
+$language['TEAM_OWNER']='Ägarnamn:';
+$language['TEAM_DESC']='Beskrivning:';
+$language['TEAM_ID_H']='ID';
+$language['TEAM_NAME_H']='Gruppnamn';
+$language['TEAM_LOGO_H']='Grupplogo';
+$language['TEAM_OWNER_H']='Ägarnamn';
+$language['TEAM_DESC_H']='Beskrivning';
+$language['TEAM_EDIT_H']='Redigera/Ta bort';
+$language['TEAM_HEAD_H']='Gruppinställningar';
+$language['TEAM_HEAD_U']='Gruppanvändare';
+$language["TEAMS_TS"] = "Gruppinställningar";
+$language["TEAMS_TU"] = "Gruppanvändare";
+$language["TEAMS_ACC_DEN"] = "Du har tyvärr inte åtkomst till denna sida!";
+$language["TEAMS_DELETED"] = "har tagit bort grupp ID";
+$language["TEAMS_SUC_DEL"] = "Gruppen är framgångsrikt raderad!";
+$language["TEAMS_DEL_CON1"] = "Är du säker på att du vill radera gruppen?";
+$language["TEAMS_NO_OWNER"] = "Det går ej att hitta ägaren i databasen!";
+$language["TEAMS_UPD_TEAM"] = "Uppdaterad grupp";
+$language["TEAMS_HAS_EDIT"] = "har redigerat gruppen";
+$language["TEAMS_T_EXISTS"] = "Gruppen finns redan!";
+$language["TEAMS_O_EXISTS"] = "Ägare finns redan!";
+$language["TEAMS_NOT_IMG"] = "Inte en bild.";
+$language["TEAMS_T_ADDED"] = "<br /><h2>Gruppen har framgångsrikt lagts till!</h2>";
+$language["TEAMS_ADD_TEAM"] = "Lägg till grupp";
+$language["TEAMS_ALL_TEAMS"] = "Se samtliga grupper";
+$language["TEAMS_SEL_TEAM"] = "Se utvalda grupper";
+$language['TU']='Gruppuppladdningar';
+$language['OWNER_TEAM']='Gruppägare';
+$language['TEAMPIC_EDIT']='<b>Redigera grupplogo</b>';
+$language['TEAMPIC_IMAGE']='<b>Logo url</b>';
+$language["TEAMS_MENU"] = "Grupper";
+$language["TEAMS_FILENAME"] = "Filnamn";
+$language["TEAMS_SEEDS"] = "Seeders";
+$language["TEAMS_LEECHERS"] = "Leechers";
+$language["TEAMS_LAST_5"]="Senaste 5 uppladdningar";
+$language["TEAMS_NOTHING_2C"]="det finns inget att se här";
+$language['TEAM_HEAD_TOR']='Uppladdningar';
+$language['TEAM_HEAD_PUB']='Våra grupper';
+$language['TEAM_INFO']='Gruppinfo';
+$language["TEAMS_DISP_MODE"]="Grupp Display Mode";
+$language["TEAMS_PRIV"]="Privat";
+$language["TEAMS_PUB"]="Offentlig";
+
+?>

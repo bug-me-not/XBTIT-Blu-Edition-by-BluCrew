@@ -1,0 +1,172 @@
+General
+Complete name                            : Blow 2001 MULTi 1080p BluRay REMUX VC-1-GLaDOS
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 21.5 GiB
+Duration                                 : 2h 3mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 25.0 Mbps
+Encoded date                             : UTC 2015-08-15 14:11:23
+Writing application                      : mkvmerge v8.2.0 ('World of Adventure') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : VC-1
+Format profile                           : Advanced@L3
+Codec ID                                 : V_MS/VFW/FOURCC / WVC1
+Codec ID/Hint                            : Microsoft
+Duration                                 : 2h 3mn
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Compression mode                         : Lossy
+Title                                    : Blow
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 565 MiB (3%)
+Title                                    : French (Canada) : Dolby Digital 5.1
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 448 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 396 MiB (2%)
+Title                                    : French (France) : Dolby Digital 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : TrueHD
+Codec ID                                 : A_TRUEHD
+Duration                                 : 2h 3mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 2 673 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossless
+Title                                    : English : Dolby TrueHD 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 3mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 170 MiB (1%)
+Title                                    : English Commentary : Dolby Digital 2.0
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles Forced
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 7
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : English : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 1
+00:03:03.516                             : en:Chapter 2
+00:07:00.002                             : en:Chapter 3
+00:13:09.121                             : en:Chapter 4
+00:18:51.630                             : en:Chapter 5
+00:25:08.131                             : en:Chapter 6
+00:27:45.497                             : en:Chapter 7
+00:32:00.835                             : en:Chapter 8
+00:36:56.047                             : en:Chapter 9
+00:44:00.804                             : en:Chapter 10
+00:50:19.349                             : en:Chapter 11
+00:55:34.998                             : en:Chapter 12
+01:03:57.625                             : en:Chapter 13
+01:09:02.847                             : en:Chapter 14
+01:11:42.089                             : en:Chapter 15
+01:17:08.290                             : en:Chapter 16
+01:20:55.183                             : en:Chapter 17
+01:26:08.788                             : en:Chapter 18
+01:28:58.958                             : en:Chapter 19
+01:32:59.532                             : en:Chapter 20
+01:38:02.793                             : en:Chapter 21
+01:42:31.854                             : en:Chapter 22
+01:49:22.722                             : en:Chapter 23
+01:53:48.822                             : en:Chapter 24
+01:57:59.072                             : en:Chapter 25
+
+-------------------------------------------------------------
+
+SOURCES :                   
+                                             
+Blow 2001 1080p CAN BluRay VC-1 Dolby TrueHD 5.1
+
+DVD PAL
+
+-------------------------------------------------------------

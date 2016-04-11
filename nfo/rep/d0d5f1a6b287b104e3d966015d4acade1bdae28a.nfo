@@ -1,0 +1,51 @@
+DISC INFO:
+
+Disc Title:     HANNIBAL_G51
+Disc Size:      45 541 513 568 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:11:23.500 (h:m:s.ms)
+Size:                   39 508 555 776 bytes
+Total Bitrate:          40,09 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              30873 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4789 kbps       5.1 / 48 kHz / 4789 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         36,686 kbps                     
+Presentation Graphics           French          31,716 kbps                     
+Presentation Graphics           Spanish         32,767 kbps                     
+Presentation Graphics           Dutch           33,111 kbps                     
+Presentation Graphics           Danish          32,065 kbps                     
+Presentation Graphics           Finnish         28,657 kbps                     
+Presentation Graphics           Greek           35,996 kbps                     
+Presentation Graphics           Korean          22,178 kbps                     
+Presentation Graphics           Norwegian       31,312 kbps                     
+Presentation Graphics           Portuguese      33,814 kbps                     
+Presentation Graphics           Swedish         32,383 kbps                     
+Presentation Graphics           Chinese         25,980 kbps                     
+Presentation Graphics           English         59,837 kbps                     
+Presentation Graphics           French          53,966 kbps                     
+Presentation Graphics           Spanish         55,084 kbps                     
+Presentation Graphics           French          0,686 kbps                      
+Presentation Graphics           Spanish         0,721 kbps

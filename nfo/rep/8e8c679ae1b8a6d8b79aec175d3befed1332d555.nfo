@@ -1,0 +1,42 @@
+Disc Title:     Soul Surfer 2011 1080p Blu-ray AVC DTS-HD MA 5.1-CHDBits
+Disc Size:      37,887,201,900 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:46:27.381 (h:m:s.ms)
+Size:                   29,862,211,584 bytes
+Total Bitrate:          37.40 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24870 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3105 kbps       5.1 / 48 kHz / 3105 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+* Dolby Digital Audio           English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             French          2320 kbps       5.1 / 48 kHz / 2320 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Portuguese      3147 kbps       5.1 / 48 kHz / 3147 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         33.797 kbps                     
+* Presentation Graphics         English         33.807 kbps                     
+Presentation Graphics           English         37.603 kbps                     
+* Presentation Graphics         English         37.610 kbps                     
+Presentation Graphics           French          34.664 kbps                     
+Presentation Graphics           Portuguese      35.658 kbps                     
+Presentation Graphics           Spanish         30.166 kbps

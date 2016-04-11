@@ -1,0 +1,58 @@
+DISC INFO:
+
+Disc Title:     PROMETHEUS_3D_HDCHINA
+Disc Size:      43,876,696,818 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         Blu-ray 3D
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00003.MPLS
+Length:                 2:03:46.419 (h:m:s.ms)
+Size:                   43,328,987,136 bytes
+Total Bitrate:          46.68 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        22960 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+MPEG-4 MVC Video        13534 kbps                          
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         4984 kbps       7.1 / 48 kHz / 4984 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Chinese         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         71.988 kbps                    
+Presentation Graphics           Chinese         53.627 kbps     Simplified                
+Presentation Graphics           Chinese         40.133 kbps     HongKong Traditional                
+Presentation Graphics           Chinese         42.327 kbps     Taiwan Traditional                
+Presentation Graphics           French          36.541 kbps                    
+Presentation Graphics           Spanish         59.994 kbps                    
+Presentation Graphics           Portuguese      59.470 kbps                    
+Presentation Graphics           Dutch           38.444 kbps                    
+Presentation Graphics           Greek           39.877 kbps                    
+Presentation Graphics           Romanian        41.524 kbps                    
+Presentation Graphics           Bulgarian       42.231 kbps                    
+Presentation Graphics           Danish          56.605 kbps                    
+Presentation Graphics           Finnish         52.686 kbps                    
+Presentation Graphics           Norwegian       50.740 kbps                    
+Presentation Graphics           Swedish         53.087 kbps                    
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00003.SSIF      0:00:00.000     2:03:46.419     43,328,987,136  46,676

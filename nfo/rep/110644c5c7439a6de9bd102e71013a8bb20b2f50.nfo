@@ -1,0 +1,49 @@
+Disc Title:     21 Jump Street 2012 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      43 530 849 020 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:49:37.571 (h:m:s.ms)
+Size:                   30 847 703 040 bytes
+Total Bitrate:          37,52 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24855 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3731 kbps       5.1 / 48 kHz / 3731 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          2967 kbps       5.1 / 48 kHz / 2967 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+DTS-HD Master Audio             Italian         2998 kbps       5.1 / 48 kHz / 2998 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Arabic          21,534 kbps                     
+Presentation Graphics           English         52,690 kbps                     
+Presentation Graphics           Dutch           36,297 kbps                     
+Presentation Graphics           French          34,964 kbps                     
+Presentation Graphics           Italian         46,515 kbps                     
+Presentation Graphics           Dutch           67,017 kbps                     
+Presentation Graphics           French          65,286 kbps                     
+Presentation Graphics           Italian         65,412 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:49:37.571     30 847 703 040  37 519
+
+
+ 

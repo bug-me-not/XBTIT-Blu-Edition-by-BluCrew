@@ -1,0 +1,139 @@
+General
+Complete name                            : Trainspotting 1996 MULTi 1080p BluRay REMUX AVC-GLaDOS
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 25.2 GiB
+Duration                                 : 1h 33mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 38.4 Mbps
+Encoded date                             : UTC 2015-10-15 22:00:19
+Writing application                      : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 33mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Title                                    : Trainspotting
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 33mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 516 MiB (2%)
+Title                                    : French (International) : Digital Theater System 5.1
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : TrueHD
+Codec ID                                 : A_TRUEHD
+Duration                                 : 1h 33mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 2 475 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossless
+Title                                    : English : Dolby TrueHD 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 33mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 129 MiB (0%)
+Title                                    : English Commentary : Dolby Digital 2.0
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : English : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Choose Life
+00:06:13.998                             : en:The Sick Boy Method
+00:11:31.816                             : en:The Worst Toilet in Scotland
+00:16:22.272                             : eno You See the Beast
+00:20:14.296                             : en:Begbie's Story
+00:23:42.170                             : en:It's Me or Iggy Pop
+00:28:28.957                             : en:He Scores!
+00:34:05.501                             : en:The Morning After
+00:38:48.409                             : en:Back on Heroin
+00:42:13.906                             : en:No Theory to Explain a Moment Like This
+00:49:58.120                             : en:A Visit to the Mother Superior
+00:56:38.812                             : en:Cold Turkey
+01:01:13.753                             : en:Aids Junky Scum
+01:08:31.398                             : en:A New Start
+01:13:27.194                             : en:It's A Pity No-One Told Begbie
+01:18:02.678                             : en:A Funeral
+01:25:54.607                             : en:Two Keys of Skagg
+01:30:41.602                             : en:Chapter 17
+
+--------------------------------------------------------------------------------
+
+SOURCES :                  
+       
+BLUEBiRD
+                                 
+Trainspotting 1996 1080p FRA BluRay AVC DTS-HD MA 5.1
+
+--------------------------------------------------------------------------------

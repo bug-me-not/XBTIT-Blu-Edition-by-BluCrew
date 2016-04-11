@@ -1,0 +1,69 @@
+DISC INFO:
+
+Disc Title:     MILLERS_CROSSING
+Disc Size:      39 552 796 624 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:54:51 (h:m:s)
+Size:                   36 911 278 080 bytes
+Total Bitrate:          42,85 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        29433 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3647 kbps       5.1 / 48 kHz / 3647 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* DTS Audio                     Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             English         448 kbps        4.0 / 48 kHz / 448 kbps
+Dolby Digital Audio             Thai            224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             Turkish         224 kbps        2.0 / 48 kHz / 224 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         36,338 kbps                    
+Presentation Graphics           Chinese         34,941 kbps                    
+Presentation Graphics           Chinese         31,287 kbps                    
+Presentation Graphics           Danish          31,369 kbps                    
+Presentation Graphics           Dutch           31,690 kbps                    
+Presentation Graphics           Finnish         36,173 kbps                    
+Presentation Graphics           French          34,535 kbps                    
+Presentation Graphics           German          37,760 kbps                    
+Presentation Graphics           Greek           37,549 kbps                    
+Presentation Graphics           Hebrew          24,642 kbps                    
+Presentation Graphics           Italian         32,959 kbps                    
+* Presentation Graphics         Japanese        23,101 kbps                    
+* Presentation Graphics         Japanese        0,140 kbps                      
+Presentation Graphics           Korean          22,070 kbps                    
+Presentation Graphics           Norwegian       34,408 kbps                    
+Presentation Graphics           Polish          34,409 kbps                    
+Presentation Graphics           Portuguese      33,591 kbps                    
+Presentation Graphics           Portuguese      34,440 kbps                    
+Presentation Graphics           Russian         38,586 kbps                    
+Presentation Graphics           Spanish         31,185 kbps                    
+Presentation Graphics           Spanish         32,174 kbps                    
+Presentation Graphics           Swedish         26,742 kbps                    
+Presentation Graphics           Thai            27,848 kbps                    
+Presentation Graphics           Turkish         32,063 kbps                    
+Presentation Graphics           Ukrainian       37,188 kbps

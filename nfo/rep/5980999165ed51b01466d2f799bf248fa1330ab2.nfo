@@ -1,0 +1,217 @@
+Général
+Nom complet                              : Inception Bluray Remux 1080p -VFQ+VFF+VO- (HDILLUZION).mkv
+Format                                   : Matroska
+Version du format                        : Version 2
+Taille du fichier                        : 30,0 Gio
+Durée                                    : 2h 28mn
+Type de débit global                     : Variable
+Débit global moyen                       : 29,0 Mb/s
+Date d'encodage                          : UTC 2013-06-15 05:05:36
+Application utilisée                     : mkvmerge v5.8.0 ('No Sleep / Pillow') 
+Bibliothèque utilisée                    : libebml v1.2.3 + libmatroska v1.3.0
+
+Vidéo
+ID                                       : 1
+Format                                   : VC-1
+Profil du format                         : AP@L3
+Identifiant du codec                     : WVC1
+Identifiant du codec/Suggestion          : Microsoft
+Durée                                    : 2h 28mn
+Débit                                    : 25,6 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Images par seconde                       : 23,976 Im/s
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type d'image                             : Progressif
+Mode de compression                      : Avec perte
+Bits/(Pixel*Image)                       : 0.515
+Taille du flux                           : 26,5 Gio (88%)
+Titre                                    : Inception
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 28mn
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 678 Mio (2%)
+Titre                                    : French : Dolby Digital 5.1
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 28mn
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 678 Mio (2%)
+Titre                                    : TrueFrench : Dolby Digital 5.1
+Default                                  : Non
+Forced                                   : Non
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Identifiant du codec                     : A_DTS
+Durée                                    : 2h 28mn
+Type de débit                            : Variable
+Débit                                    : 1 561 Kbps / 1 510 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Titre                                    : English : DTS-HD Master Audio 5.1
+Default                                  : Non
+Forced                                   : Non
+
+Texte #1
+ID                                       : 5
+Format                                   : VobSub
+Type de muxing                           : zlib
+Identifiant du codec                     : S_VOBSUB
+Identifiant du codec/Info                : The same subtitle format used on DVDs
+Titre                                    : French : Subtitles
+Default                                  : Non
+Forced                                   : Non
+
+Texte #2
+ID                                       : 6
+Format                                   : VobSub
+Type de muxing                           : zlib
+Identifiant du codec                     : S_VOBSUB
+Identifiant du codec/Info                : The same subtitle format used on DVDs
+Titre                                    : English : Subtitles
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:01)00:00:00:000
+00:11:41.742                             : en:02)00:11:41:742
+00:21:37.337                             : en:03)00:21:37:337
+00:31:20.336                             : en:04)00:31:20:336
+00:41:22.229                             : en:05)00:41:22:229
+00:51:13.737                             : en:06)00:51:13:737
+01:01:21.552                             : en:07)01:01:21:552
+01:10:29.683                             : en:08)01:10:29:683
+01:22:15.597                             : en:09)01:22:15:597
+01:31:52.590                             : en:10)01:31:52:590
+01:40:38.532                             : en:11)01:40:38:532
+01:51:22.175                             : en:12)01:51:22:175
+02:00:54.413                             : en:13)02:00:54:413
+02:10:09.051                             : en:14)02:10:09:051
+02:20:55.446                             : en:15)02:20:55:446
+02:28:07.711                             : en:16)02:28:07:711
+
+Général
+Nom complet                              : Inception (Making of) Bluray Remux 1080p -VOSTFR- (HDILLUZION).mkv
+Format                                   : Matroska
+Version du format                        : Version 2
+Taille du fichier                        : 5,29 Gio
+Durée                                    : 50mn 22s
+Type de débit global                     : Variable
+Débit global moyen                       : 15,0 Mb/s
+Date d'encodage                          : UTC 2013-07-17 18:45:54
+Application utilisée                     : mkvmerge v5.8.0 ('No Sleep / Pillow')
+Bibliothèque utilisée                    : libebml v1.2.3 + libmatroska v1.3.0
+
+Vidéo
+ID                                       : 1
+Format                                   : VC-1
+Profil du format                         : AP@L3
+Identifiant du codec                     : WVC1
+Identifiant du codec/Suggestion          : Microsoft
+Durée                                    : 50mn 22s
+Débit                                    : 11,0 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Images par seconde                       : 23,976 Im/s
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type d'image                             : Progressif
+Mode de compression                      : Avec perte
+Bits/(Pixel*Image)                       : 0.222
+Taille du flux                           : 3,89 Gio (73%)
+Titre                                    : Inception Bonus
+Default                                  : Oui
+Forced                                   : Non
+
+Audio
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Identifiant du codec                     : A_DTS
+Durée                                    : 50mn 22s
+Type de débit                            : Variable
+Débit                                    : 3 688 Kbps / 1 510 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Titre                                    : English : DTS-HD Master Audio 5.1
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #1
+ID                                       : 3
+Format                                   : VobSub
+Type de muxing                           : zlib
+Identifiant du codec                     : S_VOBSUB
+Identifiant du codec/Info                : The same subtitle format used on DVDs
+Titre                                    : French : Subtitles
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #2
+ID                                       : 4
+Format                                   : VobSub
+Type de muxing                           : zlib
+Identifiant du codec                     : S_VOBSUB
+Identifiant du codec/Info                : The same subtitle format used on DVDs
+Titre                                    : English : Subtitles
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:01)00:00:00:000
+00:03:23.077                             : en:02)00:03:23:077
+00:06:55.748                             : en:03)00:06:55:748
+00:10:04.854                             : en:04)00:10:04:854
+00:12:35.212                             : en:05)00:12:35:212
+00:15:40.022                             : en:06)00:15:40:022
+00:18:34.154                             : en:07)00:18:34:154
+00:20:51.166                             : en:08)00:20:51:166
+00:25:53.009                             : en:09)00:25:53:009
+00:28:56.067                             : en:10)00:28:56:067
+00:30:32.121                             : en:11)00:30:32:121
+00:34:16.304                             : en:12)00:34:16:304
+00:36:23.472                             : en:13)00:36:23:472
+00:40:29.385                             : en:14)00:40:29:385
+00:43:20.639                             : en:15)00:43:20:639
+00:44:12.775                             : en:16)00:44:12:775

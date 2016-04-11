@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     The Right Kind Of Wrong 2013 1080p blu-ray VC1 DTS HDMA fantome13
+Disc Size:      23 492 328 490 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:36:49.804 (h:m:s.ms)
+Size:                   21 702 230 016 bytes
+Total Bitrate:          29,88 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              23491 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2272 kbps       5.1 / 48 kHz / 2272 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2274 kbps       5.1 / 48 kHz / 2274 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          44,403 kbps                     
+Presentation Graphics           Dutch           33,422 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:36:48.803     21 702 199 296  29 889          
+00006.M2TS      1:36:48.803     0:00:01.000     30 720          246

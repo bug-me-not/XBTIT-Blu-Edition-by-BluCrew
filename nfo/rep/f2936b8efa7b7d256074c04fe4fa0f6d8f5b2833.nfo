@@ -1,0 +1,82 @@
+General
+Bagdad.Cafe.1987.1080p.Bluray.DC.AVC.Remux.HDCLUB/BDMV/STREAM/00000.m2ts
+Format                                   : BDAV
+Format/Info                              : Blu-ray Video
+File size                                : 20.8 GiB
+Duration                                 : 1h 48mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 27.4 Mbps
+Maximum Overall bit rate                 : 35.5 Mbps
+
+Video
+ID                                       : 4113 (0x1011)
+Menu ID                                  : 1 (0x1)
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Codec ID                                 : 27
+Duration                                 : 1h 48mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+
+Audio #1
+ID                                       : 4352 (0x1100)
+Menu ID                                  : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : 129
+Duration                                 : 1h 48mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 149 MiB (1%)
+Language                                 : Russian
+
+Audio #2
+ID                                       : 4353 (0x1101)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Muxing mode                              : Stream extension
+Codec ID                                 : 134
+Duration                                 : 1h 48mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 768 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Language                                 : English
+
+Text #1
+ID                                       : 4608 (0x1200)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Language                                 : French
+
+Text #2
+ID                                       : 4609 (0x1201)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Language                                 : French

@@ -1,0 +1,39 @@
+DISC INFO:
+
+Disc Title:     Detachment 2011 MULTI 1080p BluRay AVC DTS HDMA HDSpace
+Disc Size:      21 069 635 632 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:37:35.182 (h:m:s.ms)
+Size:                   19 885 730 880 bytes
+Total Bitrate:          27,17 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22022 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3221 kbps       5.1 / 48 kHz / 3221 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          32,514 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:37:35.182     19 885 730 880  27 170

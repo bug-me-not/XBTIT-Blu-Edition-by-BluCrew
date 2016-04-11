@@ -1,0 +1,136 @@
+Complete name : Deception.2008.MULTi.REMUX.AVC.BluRay.THD.DTS-KLI.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 26.3 GiB
+Duration : 1h 47mn
+Overall bit rate mode : Variable
+Overall bit rate : 35.1 Mbps
+Movie name : Deception 2008 MULTi REMUX AVC BluRay THD DTS By KLI
+Encoded date : UTC 2015-10-11 20:48:06
+Writing application : mkvmerge v7.8.0 ('River Man') 64bit built on Mar 28 2015 07:20:28
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Format settings, GOP : M=3, N=12
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 1h 47mn
+Bit rate mode : Constant
+Nominal bit rate : 30.0 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 24.000 fps
+Standard : NTSC
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.603
+Title : Deception 2008 MULTi REMUX AVC BluRay THD DTS By KLI
+Language : English
+Default : No
+Forced : No
+Color primaries : BT.709
+Transfer characteristics : BT.709
+Matrix coefficients : BT.709
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 1h 47mn
+Bit rate mode : Constant
+Bit rate : 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossy
+Stream size : 1.13 GiB (4%)
+Title : DTS
+Language : English
+Default : No
+Forced : No
+
+Audio #2
+ID : 4
+Format : TrueHD
+Codec ID : A_TRUEHD
+Duration : 1h 47mn
+Bit rate mode : Variable
+Maximum bit rate : 5 247 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless
+Title : THD @3696 kbps
+Language : English
+Default : No
+Forced : No
+
+Audio #3
+ID : 5
+Format : DTS
+Format/Info : Digital Theater Systems
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 1h 47mn
+Bit rate mode : Constant
+Bit rate : 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossy
+Stream size : 1.13 GiB (4%)
+Title : DTS VFF
+Language : French
+Default : Yes
+Forced : No
+
+Text #1
+ID : 3
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : Full
+Language : French
+Default : No
+Forced : No
+
+Text #2
+ID : 6
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : PGS Full
+Language : French
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:Chapter 01
+00:08:52.791 : en:Chapter 02
+00:17:51.250 : en:Chapter 03
+00:25:19.625 : en:Chapter 04
+00:35:38.875 : en:Chapter 05
+00:44:09.791 : en:Chapter 06
+00:53:25.708 : en:Chapter 07
+01:02:25.291 : en:Chapter 08
+01:11:04.416 : en:Chapter 09
+01:19:03.083 : en:Chapter 10
+01:25:40.583 : en:Chapter 11
+01:38:38.500 : en:Chapter 12

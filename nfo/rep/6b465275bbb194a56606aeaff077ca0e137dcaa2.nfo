@@ -1,0 +1,127 @@
+General
+
+Complete name                            : /private/rtorrent/data/Memento 10th Anniversary Edition 2000 MULTI 1080p BluRay REMUX AVC-HDILLUZION.mkv
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 31.2 GiB
+Duration                                 : 1h 53mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 39.4 Mbps
+Encoded date                             : UTC 2014-06-25 16:31:24
+Writing application                      : mkvmerge v7.0.0 ('Where We Going') 64bit built on Jun  9 2014 15:16:27
+Writing library                          : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 53mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 37.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Title                                    : Memento
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 53mn
+Bit rate mode                            : Constant
+Bit rate                                 : 384 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Delay relative to video                  : 1s 750ms
+Stream size                              : 312 MiB (1%)
+Title                                    : French : Dolby Digital 5.1
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 53mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : English : DTS-HD Master Audio 5.1
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles Forced
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 6
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : English : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Taking a Picture
+00:06:25.802                             : en:Waiting for a Phone Call
+00:11:06.457                             : en:Loading a Gun
+00:16:13.097                             : en:Washing His Hands
+00:22:17.836                             : en:Talking on the Phone
+00:28:30.583                             : en:Metting a New Friend
+00:39:26.822                             : en:Taking a Test
+00:48:56.767                             : en:Chasing Someone
+01:02:41.674                             : en:Lighting a Fire
+01:09:57.318                             : en:Asking for Advice
+01:17:18.133                             : en:Writing a Letter
+01:21:44.274                             : en:Trying to Hear Someone
+01:26:33.354                             : en:Taking Medicine
+01:33:58.966                             : en:Calling the Police
+01:40:48.667                             : en:Looking at Pictures
+01:49:18.552                             : en:Getting Married
+
+

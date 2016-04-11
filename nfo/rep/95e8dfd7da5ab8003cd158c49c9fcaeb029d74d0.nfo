@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     SHERIF_JACKSON
+Disc Size:      22 646 546 901 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:31:16.800 (h:m:s.ms)
+Size:                   18 680 807 424 bytes
+Total Bitrate:          27,29 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        21847 kbps          1080i / 25 fps / 16:9 / Main Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          1944 kbps       5.1 / 48 kHz / 1944 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         1785 kbps       5.1 / 48 kHz / 1785 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          27,089 kbps                     
+Presentation Graphics           French          0,022 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     1:31:16.800     18 680 807 424  27 287

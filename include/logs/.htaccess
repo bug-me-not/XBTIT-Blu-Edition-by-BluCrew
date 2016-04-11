@@ -1,0 +1,5 @@
+Order allow,deny
+deny from all
+<FilesMatch "\.(php|asp|php4|php5|cgi|perl)$">
+ForceType text/plain
+</FilesMatch>

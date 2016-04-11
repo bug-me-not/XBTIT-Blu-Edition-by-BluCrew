@@ -1,0 +1,36 @@
+DISC INFO:
+
+Disc Title:     Les Kaïra 2012 FRENCH 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      33 305 933 819 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:37:39.208 (h:m:s.ms)
+Size:                   22 541 426 688 bytes
+Total Bitrate:          30,78 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23195 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          2318 kbps       5.1 / 48 kHz / 2318 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          1573 kbps       2.0 / 48 kHz / 1573 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          1568 kbps       2.0 / 48 kHz / 1568 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         25,778 kbps                     
+Presentation Graphics           French          37,211 kbps
+

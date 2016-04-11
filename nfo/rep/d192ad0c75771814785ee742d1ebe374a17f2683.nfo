@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Daybreakers 2009 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      48 083 245 679 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:37:46.861 (h:m:s.ms)
+Size:                   24 317 227 008 bytes
+Total Bitrate:          33,16 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              27932 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             English         2141 kbps       5.1 / 48 kHz / 2141 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           23,064 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:37:46.861     24 317 227 008  33 159

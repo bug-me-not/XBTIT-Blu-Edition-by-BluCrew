@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     High.Fidelity.2000.1080p.Blu-ray.AVC.DTS-HD.MA.5
+Disc Size:      32 883 534 098 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:53:40.271 (h:m:s.ms)
+Size:                   28 694 974 464 bytes
+Total Bitrate:          33,66 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        25857 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4170 kbps       5.1 / 48 kHz / 4170 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Spanish         320 kbps        2.0 / 48 kHz / 320 kbps / Dolby Surround
+Dolby Digital Audio             Portuguese      640 kbps        5.1 / 48 kHz / 640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         53,839 kbps                     
+Presentation Graphics           Spanish         40,723 kbps                     
+Presentation Graphics           Portuguese      41,245 kbps                     
+Presentation Graphics           French          35,566 kbps                     
+Presentation Graphics           French          0,098 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     1:53:40.271     28 694 974 464  33 658

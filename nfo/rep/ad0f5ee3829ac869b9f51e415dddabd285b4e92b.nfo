@@ -1,0 +1,48 @@
+DISC INFO:
+
+Disc Title:     Benny.&.Joon.1993.Blu-ray.1080p.AVC.DTS-HD.MA.2.0-HDCLUB
+Disc Size:      32 728 213 905 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:38:34.450 (h:m:s.ms)
+Size:                   30 455 752 704 bytes
+Total Bitrate:          41,20 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        35999 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2083 kbps       2.0 / 48 kHz / 2083 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit / DN -4dB)
+Dolby Digital Audio             Spanish         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             French          256 kbps        2.0 / 48 kHz / 256 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             German          192 kbps        2.0 / 48 kHz / 192 kbps / DN -1dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         28,217 kbps                     
+Presentation Graphics           Spanish         21,551 kbps                     
+Presentation Graphics           French          22,874 kbps                     
+Presentation Graphics           German          24,388 kbps                     
+Presentation Graphics           Spanish         0,481 kbps                      
+Presentation Graphics           French          0,410 kbps                      
+Presentation Graphics           German          0,430 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:38:34.450     30 455 752 704  41 195

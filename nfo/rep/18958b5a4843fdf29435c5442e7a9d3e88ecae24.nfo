@@ -1,0 +1,134 @@
+Complete name                    : The Prestige 2006 MULTI 1080p BluRay REMUX AVC-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 31.8 GiB
+Duration                         : 2h 10mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 34.9 Mbps
+Encoded date                     : UTC 2014-09-06 21:08:25
+Writing application              : mkvmerge v7.1.0 ('Good Love') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Format profile                   : High@L4.1
+Format settings, CABAC           : Yes
+Format settings, ReFrames        : 2 frames
+Codec ID                         : V_MPEG4/ISO/AVC
+Duration                         : 2h 10mn
+Bit rate mode                    : Variable
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Color space                      : YUV
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Title                            : The Prestige
+
+Audio #1
+ID                               : 2
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 10mn
+Bit rate mode                    : Constant
+Bit rate                         : 640 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 597 MiB (2%)
+Title                            : French (Canada) : Dolby Digital 5.1
+
+Audio #2
+ID                               : 3
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 10mn
+Bit rate mode                    : Constant
+Bit rate                         : 640 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 597 MiB (2%)
+Title                            : French (France) : Dolby Digital 5.1
+
+Audio #3
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 2h 10mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 561 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #4
+ID                               : 5
+Format                           : PCM
+Codec ID                         : A_PCM/INT/LIT
+Duration                         : 2h 10mn
+Bit rate mode                    : Constant
+Bit rate                         : 6 912 Kbps
+Channel(s)                       : 6 channels
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Title                            : English : LPCM 5.1
+
+Text #1
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #2
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Introduction
+00:03:13.026                     : en:Something Went Wrong...
+00:07:41.961                     : en:A Search for Answers
+00:11:30.023                     : en:The Start of a Great Career
+00:16:05.131                     : en:Total Devotion to His Art
+00:23:10.055                     : en:A Strong Knot
+00:27:16.301                     : en:More in Love with Magic
+00:34:01.039                     : en:A Effective Form of Misdirection
+00:38:47.825                     : en:The Great Danton
+00:44:29.333                     : en:Hapiness That Should Have Been Mine
+00:49:29.300                     : en:Man's Reach Exceeds His Grasp
+00:53:29.706                     : en:A Complex Illusion
+00:59:45.916                     : en:The New Transported Man
+01:04:02.338                     : en:The Mistress of My Enemy
+01:08:49.625                     : en:Complete Power
+01:12:58.874                     : en:The Keyword Is the Method
+01:17:48.330                     : en:Secrets Are My Life
+01:23:17.826                     : en:Exact Science Is Not an Exact Science
+01:35:50.411                     : en:An Old Friend
+01:40:20.514                     : en:Considerable Risk
+01:45:11.972                     : en:The Prestige
+01:49:04.371                     : en:A Better Magician
+01:55:07.734                     : en:Are You Watching Closely?
+02:05:01.828                     : en:End Credits

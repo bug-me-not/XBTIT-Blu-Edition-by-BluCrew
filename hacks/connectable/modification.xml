@@ -1,0 +1,59 @@
+<hack>
+  <title>Connectable</title>
+  <author>Petr1fied</author>
+  <version>1.0</version>
+
+  <file>
+    <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data><![CDATA[ALTER TABLE `{$db_prefix}users` ADD `connectable` ENUM( 'yes', 'no', 'unknown' ) NOT NULL DEFAULT 'unknown';]]></data>
+    </operation>
+  </file>
+
+  <file>
+    <name>"$DEFAULT_ROOT/blocks/mainusertoolbar_block.php"</name>
+    <operation>
+      <search><![CDATA[$resuser=do_sqlquery("SELECT $udownloaded as downloaded,$uuploaded as uploaded FROM $utables WHERE u.id=".$CURUSER["uid"]);]]></search>
+      <action>"replace"</action>
+      <data><![CDATA[$resuser=do_sqlquery("SELECT $udownloaded as downloaded,$uuploaded as uploaded, u.connectable FROM $utables WHERE u.id=".$CURUSER["uid"]);]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[print("</td><td class=\"yellow\" align=\"center\">(SR ".($rowuser['downloaded']>0?number_format($rowuser['uploaded']/$rowuser['downloaded'],2):"---").")</td>\n");]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+
+if($rowuser["connectable"]=="yes")
+    $conn="green";
+elseif($rowuser["connectable"]=="no")
+    $conn="red";
+else
+    $conn="orange";
+
+print("<td align='center'>Connectable: <font color='$conn'>".ucfirst($rowuser["connectable"])."</font></td>\n");
+
+]]></data>
+    </operation>
+  </file>
+
+  <file>
+    <name>"$DEFAULT_ROOT/announce.php"</name>
+    <operation>
+      <search><![CDATA[    $GLOBALS["trackerid"] = mysql_insert_id();]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+
+    if ($GLOBALS["NAT"])
+    {
+        $res=mysql_query("SELECT `id` FROM `{$TABLE_PREFIX}users` WHERE ".($PRIVATE_ANNOUNCE?"`pid`='$upid'":"`cip`='$ip'"));
+        $row=mysql_fetch_assoc($res);
+
+        @mysql_query("UPDATE `{$TABLE_PREFIX}users` SET `connectable`='".(($nat=="Y")?"no":"yes")."' WHERE `id`=".$row["id"]);
+    }
+
+]]></data>
+    </operation>
+  </file>
+</hack>

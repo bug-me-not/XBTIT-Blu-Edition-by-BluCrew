@@ -1,0 +1,149 @@
+<hack>
+  <title>Favorite Uploader Hack</title>
+  <author>Btiteam (WwW.nAtUrAlBd.CoM)</author>
+  <version>1.0</version>
+  
+    <file>
+     <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data><![CDATA[CREATE TABLE `{$db_prefix}fav_uploader` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL default '0',
+  `fav_up_id` int(10) unsigned NOT NULL default '0',
+  `fav_up_name` varchar(250) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  KEY `user_id` (`user_id`)
+)]]></data>
+    </operation>
+</file>
+
+  <file>
+    <name>"$DEFAULT_LANGUAGE_PATH/lang_main.php"</name>
+    <operation>
+      <search><![CDATA[?>]]></search>
+      <action>"add"</action>
+      <where>"before"</where>
+      <data><![CDATA[$language["FAV_UP"]="Favorite Uploader";
+$language["FAV_UP_UP"]="Favorite Uploader Uploaded Torrent";
+]]></data>
+    </operation>
+  </file>
+
+  <file>
+    <name>"$DEFAULT_ROOT/index.php"</name>
+    <operation>
+      <search><![CDATA[case 'userdetails':
+        require("$THIS_BASEPATH/userdetails.php");
+        $tpl->set("main_content",set_block($language["USER_DETAILS"],"center",$userdetailtpl->fetch(load_template("userdetails.tpl"))));
+        $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Users->Details");
+        break;]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+
+//friendlist
+    case 'fav_up':
+        require("$THIS_BASEPATH/fav_up.php");
+        $tpl->set("main_content",set_block($language["FAV_UP"],"center",$fav_uptpl->fetch(load_template("fav_up.tpl"))));
+        $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
+        break;
+
+    case 'fav_up_up':
+        require("$THIS_BASEPATH/fav_up_up.php");
+        $tpl->set("main_content",set_block($language["FAV_UP_UP"],"center",$fav_up_uptpl->fetch(load_template("fav_up_up.tpl"))));
+        $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
+        break;
+//end friendlist
+]]></data>
+    </operation>
+  </file>
+
+<file>
+    <name>"$DEFAULT_ROOT/details.php"</name>
+    <operation>
+      <search><![CDATA[    $uploader="<a href=\"index.php?page=userdetails&amp;id=".$row['uploader']."\">".$row["username"]."</a>]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[&nbsp;&nbsp;&nbsp;<a href=\"index.php?page=fav_up&do=add&fav_up_id=".$row['uploader']."\">".image_or_link("images/favorite.upl.list.png")."</a>]]></data>
+    </operation>
+  </file>
+  
+  <file>
+    <name>"$DEFAULT_ROOT/blocks/mainusertoolbar_block.php"</name>
+    <operation>
+      <search><![CDATA[print("<td style=\"text-align:center;\" align=\"center\"><a href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">".$language["USER_CP"]."</a></td>\n");]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[
+//Favourite Uploader
+print("<td style=\"text-align:center;\" align=\"center\"><a href=\"index.php?page=fav_up&amp;uid=".$CURUSER["uid"]."\">".$language["FAV_UP"]."</a></td>\n");
+//end Favourite Uploader]]></data>
+    </operation>
+  </file>
+    <file>
+    <name>"$CURRENT_FOLDER/toCopy/fav_up.php"</name>
+    <operation>
+      <action>"copy"</action> 
+      <where>"$DEFAULT_ROOT"</where>
+      <data>"fav_up.php"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/fav_up_up.php"</name>
+    <operation>
+      <action>"copy"</action> 
+      <where>"$DEFAULT_ROOT"</where>
+      <data>"fav_up_up.php"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/lang_fav_up_up.php"</name>
+    <operation>
+      <action>"copy"</action> 
+      <where>"$DEFAULT_LANGUAGE_PATH"</where>
+      <data>"lang_fav_up_up.php"</data>
+    </operation>
+  </file>
+
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/fav_up.tpl"</name>
+    <operation>
+      <action>"copy"</action> 
+      <where>"$DEFAULT_STYLE_PATH"</where> 
+      <data>"fav_up.tpl"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/fav_up_up.tpl"</name>
+    <operation>
+      <action>"copy"</action> 
+      <where>"$DEFAULT_STYLE_PATH"</where> 
+      <data>"fav_up_up.tpl"</data>
+    </operation>
+  </file>
+   <file>
+    <name>"$CURRENT_FOLDER/toCopy/favorite.upl.list.png"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images/"</where>
+      <data>"favorite.upl.list.png"</data>
+    </operation>
+  </file>
+    <file>
+    <name>"$CURRENT_FOLDER/toCopy/foffline.gif"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images/"</where>
+      <data>"foffline.gif"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/fonline.gif"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/images/"</where>
+      <data>"fonline.gif"</data>
+    </operation>
+  </file>
+</hack>

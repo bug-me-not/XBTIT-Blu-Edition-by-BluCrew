@@ -1,0 +1,76 @@
+DISC INFO:
+
+Disc Title:     35990120_FEWGOODMEN
+Disc Size:      44 309 922 509 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00141.MPLS
+Length:                 2:18:01.273 (h:m:s.ms)
+Size:                   39 542 894 592 bytes
+Total Bitrate:          38,20 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            22140 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -1dB
+LPCM Audio                      German          4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             Hungarian       640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Polish          192 kbps        2.0 / 48 kHz / 192 kbps / DN -1dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         75,136 kbps                     
+Presentation Graphics           English         53,507 kbps                     
+Presentation Graphics           English         75,101 kbps                     
+Presentation Graphics           English         33,703 kbps                     
+Presentation Graphics           French          36,133 kbps                     
+Presentation Graphics           German          65,616 kbps                     
+Presentation Graphics           Spanish         43,313 kbps                     
+Presentation Graphics           Dutch           59,255 kbps                     
+Presentation Graphics           Arabic          34,182 kbps                     
+Presentation Graphics           Bulgarian       62,919 kbps                     
+Presentation Graphics           Chinese         74,677 kbps                     
+Presentation Graphics           Croatian        55,906 kbps                     
+Presentation Graphics           Danish          56,401 kbps                     
+Presentation Graphics           Finnish         59,713 kbps                     
+Presentation Graphics           Greek, Ancient (to 1453)58,729 kbps                     
+Presentation Graphics           Hebrew          41,952 kbps                     
+Presentation Graphics           Hindi           50,149 kbps                     
+Presentation Graphics           Hungarian       56,814 kbps                     
+Presentation Graphics           Icelandic       57,017 kbps                     
+Presentation Graphics           Korean          51,437 kbps                     
+Presentation Graphics           Norwegian       54,831 kbps                     
+Presentation Graphics           Portuguese      59,078 kbps                     
+Presentation Graphics           Romanian        57,074 kbps                     
+Presentation Graphics           Slovenian       61,187 kbps                     
+Presentation Graphics           Swedish         45,935 kbps                     
+Presentation Graphics           Thai            51,673 kbps                     
+Presentation Graphics           Turkish         56,104 kbps                     
+Presentation Graphics           English         42,569 kbps                     
+Presentation Graphics           Dutch           38,762 kbps                     
+Presentation Graphics           French          41,246 kbps                     
+Presentation Graphics           German          42,530 kbps                     
+Presentation Graphics           Korean          33,815 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00141.M2TS      0:00:00.000     2:18:01.273     39 542 894 592  38 200 

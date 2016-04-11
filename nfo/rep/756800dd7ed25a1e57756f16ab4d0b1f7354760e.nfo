@@ -1,0 +1,117 @@
+﻿Général
+ID                               : 0
+Nom complet                      : Le Cinquieme Element 1996 Bluray 1080p AVCHD LPCM 5.1
+Format                           : BDAV
+Format/Info                      : Blu-ray Video
+Taille du fichier                : 35,1 Gio
+Durée                            : 2h 5mn
+Débit global moyen               : 39,9 Mb/s
+Débit global maximum             : 48,0 Mb/s
+
+Vidéo
+ID                               : 4113 (0x1011)
+ID de menu                       : 1 (0x1)
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Profil du format                 : High@L4.1
+Paramètres du format, CABAC      : Oui
+Paramètres du format, RefFrames  : 2 images
+Durée                            : 2h 5mn
+Type de débit                    : Variable
+Largeur                          : 1 920 pixels
+Hauteur                          : 1 080 pixels
+Format à l'écran                 : 16/9
+Images par seconde               : 23,976 Im/s
+Espace de couleurs               : YUV
+Sous-échantillonnage de la chrom : 4:2:0
+Profondeur des couleurs          : 8 bits
+Type d'image                     : Progressif
+
+Audio #1
+ID                               : 4352 (0x1100)
+ID de menu                       : 1 (0x1)
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Profil du format                 : TrueHD / Core
+Extension du mode                : CM (complete main)
+Type de muxing                   : Stream extension
+Durée                            : 2h 5mn
+Type de débit                    : Variable / Constant
+Débit                            : Variable / 640 Kbps
+Débit maximum                    : 4 851 Kbps / 640 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Profondeur des couleurs          : 16 bits
+
+Audio #2
+ID                               : 4353 (0x1101)
+ID de menu                       : 1 (0x1)
+Format                           : PCM
+Paramètres du format, Endianness : Big
+Paramètres du format, Signe      : Signed
+Type de muxing                   : Blu-ray
+Durée                            : 2h 5mn
+Type de débit                    : Constant
+Débit                            : 4 608 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Profondeur des couleurs          : 16 bits
+Taille du flux                   : 4,05 Gio (12%)
+
+Audio #3
+ID                               : 4354 (0x1102)
+ID de menu                       : 1 (0x1)
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Extension du mode                : CM (complete main)
+Durée                            : 2h 5mn
+Type de débit                    : Constant
+Débit                            : 640 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Profondeur des couleurs          : 16 bits
+Taille du flux                   : 576 Mio (2%)
+
+Texte #1
+ID                               : 4608 (0x1200)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #2
+ID                               : 4609 (0x1201)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #3
+ID                               : 4610 (0x1202)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #4
+ID                               : 4611 (0x1203)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #5
+ID                               : 4612 (0x1204)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #6
+ID                               : 4613 (0x1205)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #7
+ID                               : 4614 (0x1206)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+
+Texte #8
+ID                               : 4615 (0x1207)
+ID de menu                       : 1 (0x1)
+Format                           : PGS
+

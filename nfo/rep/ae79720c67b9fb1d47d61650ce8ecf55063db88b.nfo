@@ -1,0 +1,52 @@
+DISC INFO:
+
+Disc Title:     A Beautiful Mind F13
+Disc Size:      45 030 536 754 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:15:30.997 (h:m:s.ms)
+Size:                   44 432 891 904 bytes
+Total Bitrate:          43,72 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        34415 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4093 kbps       5.1 / 48 kHz / 4093 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Italian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Danish          27,316 kbps                     
+Presentation Graphics           German          32,815 kbps                     
+Presentation Graphics           English         29,146 kbps                     
+Presentation Graphics           Spanish         29,100 kbps                     
+Presentation Graphics           French          27,470 kbps                     
+Presentation Graphics           Italian         28,627 kbps                     
+Presentation Graphics           Dutch           23,257 kbps                     
+Presentation Graphics           Norwegian       27,697 kbps                     
+Presentation Graphics           Finnish         26,926 kbps                     
+Presentation Graphics           Swedish         25,866 kbps                     
+Presentation Graphics           English         31,737 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     2:15:30.997     44 432 891 904  43 717

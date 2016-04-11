@@ -1,0 +1,172 @@
+General
+Complete name : Un.Prophète.2009.BluRay.Remux.1080p.AVC.DTS-HD.MA.5.1-HiFi.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 35.4 GiB
+Duration : 2h 35mn
+Overall bit rate mode : Variable
+Overall bit rate : 32.7 Mbps
+Movie name : Un.Prophète.2009.BluRay.Remux.1080p.AVC.DTS-HD.MA.5.1-HiFi
+Encoded date : UTC 2013-04-29 22:34:51
+Writing application : mkvmerge v6.2.0 ('Promised Land') built on Apr 28 2013 12:22:01
+Writing library : libebml v1.3.0 + libmatroska v1.4.0
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 35mn
+Bit rate mode : Variable
+Maximum bit rate : 35.5 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Title : MPEG-4 AVC Video / 28493 kbps / 1080p / 23.976 fps / 16:9 / High Profile 4.1
+Default : Yes
+Forced : No
+Color primaries : BT.709
+Transfer characteristics : BT.709
+Matrix coefficients : BT.709
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 2h 35mn
+Bit rate mode : Variable
+Bit rate : Unknown / 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless / Lossy
+Title : DTS-HD Master Audio / French / 3906 kbps / 5.1 / 48 kHz / 24-bit
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 35mn
+Bit rate mode : Constant
+Bit rate : 192 Kbps
+Channel(s) : 2 channels
+Channel positions : Front: L R
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 213 MiB (1%)
+Title : Commentary by Director Jacques Audiard, Actor Tahar Rahim and Co-Writer Thomas Bidegain
+Language : French
+Default : No
+Forced : No
+
+Text #1
+ID : 4
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Language : English
+Default : Yes
+Forced : No
+
+Text #2
+ID : 5
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : SDH
+Language : English
+Default : No
+Forced : No
+
+Text #3
+ID : 6
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Language : French
+Default : No
+Forced : No
+
+Text #4
+ID : 7
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Language : German
+Default : No
+Forced : No
+
+Text #5
+ID : 8
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Language : Turkish
+Default : No
+Forced : No
+
+Text #6
+ID : 9
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : Commentary by Director Jacques Audiard, Actor Tahar Rahim and Co-Writer Thomas Bidegain
+Language : English
+Default : No
+Forced : No
+
+Text #7
+ID : 10
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : Commentary by Director Jacques Audiard, Actor Tahar Rahim and Co-Writer Thomas Bidegain
+Language : German
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : Arrival
+00:11:04.289 : César
+00:23:00.004 : Reyeb's Murder
+00:29:41.697 : Ghost
+00:37:46.181 : Ryad
+00:49:14.410 : Jordi
+01:01:46.703 : Day Release
+01:08:47.248 : Economics
+01:21:10.949 : The Egyptian
+01:32:47.562 : Dream
+01:40:46.707 : Marseille
+01:48:02.685 : Money
+02:00:15.625 : Christmas
+02:11:16.702 : The Hit
+02:19:48.171 : The Hole
+02:25:53.161 : Leaving

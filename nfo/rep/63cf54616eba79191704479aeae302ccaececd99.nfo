@@ -1,0 +1,160 @@
+General
+Unique ID                                : 114267605368227058906215411998047223239 (0x55F723E9BB41B12A3FBA5C1F831E3DC7)
+Complete name                            : Ich.seh,Ich.seh.2014.1080p.Blu-ray.REMUX.AVC.DTS-HD.MA.5.1-KRENG.mkv
+Format                                   : Matroska
+Format version                           : Version 2
+File size                                : 17.0 GiB
+Duration                                 : 1h 35mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 25.4 Mbps
+Encoded date                             : UTC 2015-10-14 13:34:52
+Writing application                      : MakeMKV v1.9.7 win(x64-release)
+Writing library                          : libmakemkv v1.9.7 (1.3.0/1.4.1) win(x64-release)
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Format settings, GOP                     : M=3, N=24
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 35mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 35.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 25.000 fps
+Standard                                 : PAL
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : MBAFF
+Scan order                               : Top Field First
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+Color range                              : Limited
+Color primaries                          : BT.709
+Transfer characteristics                 : BT.709
+Matrix coefficients                      : BT.709
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 35mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : Surround 5.1
+Language                                 : German
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 35mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 1.01 GiB (6%)
+Title                                    : Surround 5.1
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 35mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 768 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : Stereo
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 35mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 526 MiB (3%)
+Title                                    : Stereo
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 6
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : German
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 8
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 01
+00:08:10.040                             : en:Chapter 02
+00:16:12.680                             : en:Chapter 03
+00:25:37.720                             : en:Chapter 04
+00:32:38.200                             : en:Chapter 05
+00:38:57.720                             : en:Chapter 06
+00:49:18.800                             : en:Chapter 07
+00:56:27.280                             : en:Chapter 08
+01:00:50.240                             : en:Chapter 09
+01:12:25.000                             : en:Chapter 10
+01:18:18.240                             : en:Chapter 11
+01:26:20.120                             : en:Chapter 12
+

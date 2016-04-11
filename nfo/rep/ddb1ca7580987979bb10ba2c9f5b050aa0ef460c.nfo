@@ -1,0 +1,36 @@
+DISC INFO:
+
+Disc Title:     The ward  2010 1080p BR FRA AVC DTS HD MA - WiHD
+Disc Size:      30 938 364 114 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:28:44.569 (h:m:s.ms)
+Size:                   23 739 125 760 bytes
+Total Bitrate:          35,67 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        28189 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          1999 kbps       5.1 / 48 kHz / 1999 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         2150 kbps       5.1 / 48 kHz / 2150 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         1106 kbps       2.0 / 48 kHz / 1106 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,049 kbps                      
+Presentation Graphics           French          13,264 kbps                     
+Presentation Graphics           French          47,239 kbps

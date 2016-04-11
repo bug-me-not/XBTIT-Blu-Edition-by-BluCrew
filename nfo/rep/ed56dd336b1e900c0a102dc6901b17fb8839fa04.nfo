@@ -1,0 +1,149 @@
+     /__/\      /  /::\      /__/|      ___        /__/\        /  /\    
+     \  \:\    /  /:/\:\    |  |:|     /  /\       \  \:\      /  /:/_   
+      \__\:\  /  /:/  \:\   |  |:|    /  /:/        \  \:\    /  /:/ /\  
+  ___ /  /::\/__/:/ \__\:|__|  |:|   /__/::\    _____\__\:\  /  /:/_/::\ 
+ /__/\  /:/\:\  \:\ /  /:/__/\_|:|___\__\/\:\__/__/::::::::\/__/:/__\/\:\
+ \  \:\/:/__\/\  \:\  /:/\  \:\/:::::/  \  \:\/\  \:\~~\~~\/\  \:\ /~~/:/
+  \  \::/      \  \:\/:/  \  \::/~~~~    \__\::/\  \:\  ~~~  \  \:\  /:/ 
+   \  \:\       \  \::/    \  \:\        /__/:/  \  \:\       \  \:\/:/  
+    \  \:\       \__\/      \  \:\       \__\/    \  \:\       \  \::/   
+     \__\/                   \__\/                 \__\/        \__\/    
+
+
+
+
+Complete name                    : Marathon Man 1976 MULTI 1080p BluRay REMUX AVC-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 34.8 GiB
+Duration                         : 2h 5mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 39.8 Mbps
+Encoded date                     : UTC 2014-09-15 10:57:04
+Writing application              : mkvmerge v7.2.0 ('On Every Street') 64bit built
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Format profile                   : High@L4.1
+Format settings, CABAC           : Yes
+Format settings, ReFrames        : 4 frames
+Codec ID                         : V_MPEG4/ISO/AVC
+Duration                         : 2h 5mn
+Bit rate mode                    : Variable
+Bit rate                         : 37.2 Mbps
+Maximum bit rate                 : 38.0 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Color space                      : YUV
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Bits/(Pixel*Frame)               : 0.748
+Stream size                      : 32.6 GiB (93%)
+Title                            : Marathon Man
+
+Audio #1
+ID                               : 2
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 5mn
+Bit rate mode                    : Constant
+Bit rate                         : 224 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 201 MiB (1%)
+Title                            : French (International) : Dolby Digital 2.0
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 2h 5mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 576 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Text #1
+ID                               : 4
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #2
+ID                               : 5
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:00:00:00.000
+00:01:12.823                     : en:00:01:12.823
+00:03:24.955                     : en:00:03:24.955
+00:06:26.428                     : en:00:06:26.428
+00:08:38.810                     : en:00:08:38.810
+00:10:44.477                     : en:00:10:44.477
+00:12:10.188                     : en:00:12:10.188
+00:14:27.867                     : en:00:14:27.867
+00:17:26.796                     : en:00:17:26.796
+00:18:23.561                     : en:00:18:23.561
+00:20:27.810                     : en:00:20:27.810
+00:23:08.137                     : en:00:23:08.137
+00:24:39.353                     : en:00:24:39.353
+00:26:30.380                     : en:00:26:30.380
+00:28:43.889                     : en:00:28:43.889
+00:31:42.901                     : en:00:31:42.901
+00:33:24.044                     : en:00:33:24.044
+00:35:09.107                     : en:00:35:09.107
+00:37:36.129                     : en:00:37:36.129
+00:40:37.560                     : en:00:40:37.560
+00:41:23.481                     : en:00:41:23.481
+00:42:52.987                     : en:00:42:52.987
+00:44:01.180                     : en:00:44:01.180
+00:45:02.158                     : en:00:45:02.158
+00:46:52.143                     : en:00:46:52.143
+00:52:27.936                     : en:00:52:27.936
+00:55:53.100                     : en:00:55:53.100
+00:59:19.639                     : en:00:59:19.639
+01:00:52.357                     : en:01:00:52.357
+01:01:48.914                     : en:01:01:48.914
+01:07:05.271                     : en:01:07:05.271
+01:08:57.800                     : en:01:08:57.800
+01:11:40.838                     : en:01:11:40.838
+01:16:02.850                     : en:01:16:02.850
+01:20:18.188                     : en:01:20:18.188
+01:23:40.557                     : en:01:23:40.557
+01:24:51.586                     : en:01:24:51.586
+01:29:33.326                     : en:01:29:33.326
+01:31:16.221                     : en:01:31:16.221
+01:33:53.795                     : en:01:33:53.795
+01:34:57.066                     : en:01:34:57.066
+01:39:06.315                     : en:01:39:06.315
+01:42:43.157                     : en:01:42:43.157
+01:45:12.848                     : en:01:45:12.848
+01:48:30.462                     : en:01:48:30.462
+01:51:27.472                     : en:01:51:27.472
+01:53:30.303                     : en:01:53:30.303
+01:54:42.000                     : en:01:54:42.000
+01:56:37.532                     : en:01:56:37.532
+02:02:34.556                     : en:02:02:34.556

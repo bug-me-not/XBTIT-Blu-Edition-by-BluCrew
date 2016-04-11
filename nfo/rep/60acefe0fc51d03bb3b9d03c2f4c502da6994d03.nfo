@@ -1,0 +1,62 @@
+Disc Title:     Kalifornia 1993 Blu-Ray 1080p DTS-HD MA 5 1
+Disc Size:      41.224.860.739 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:58:15.129 (h:m:s.ms)
+Size:                   40.528.920.576 bytes
+Total Bitrate:          45,70 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        31106 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3565 kbps       5.1 / 48 kHz / 3565 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             Spanish         3101 kbps       5.1 / 48 kHz / 3101 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* DTS Audio                     Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Hungarian       224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             Thai            224 kbps        2.0 / 48 kHz / 224 kbps / Dolby Surround
+Dolby Digital Audio             Turkish         224 kbps        2.0 / 48 kHz / 224 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         38,386 kbps                     
+Presentation Graphics           Croatian        24,942 kbps                     
+Presentation Graphics           Danish          29,118 kbps                     
+Presentation Graphics           Dutch           26,310 kbps                     
+Presentation Graphics           French          31,226 kbps                     
+Presentation Graphics           French          29,885 kbps                     
+Presentation Graphics           German          30,610 kbps                     
+Presentation Graphics           Greek           26,440 kbps                     
+Presentation Graphics           Hungarian       26,897 kbps                     
+Presentation Graphics           Italian         29,554 kbps                     
+* Presentation Graphics         Japanese        22,168 kbps                     
+* Presentation Graphics         Japanese        0,207 kbps                      
+Presentation Graphics           Norwegian       28,655 kbps                     
+Presentation Graphics           Portuguese      30,385 kbps                     
+Presentation Graphics           Portuguese      29,998 kbps                     
+Presentation Graphics           Romanian        28,429 kbps                     
+Presentation Graphics           Slovenian       23,917 kbps                     
+Presentation Graphics           Spanish         28,515 kbps                     
+Presentation Graphics           Spanish         28,806 kbps                     
+Presentation Graphics           Swedish         29,775 kbps                     
+Presentation Graphics           Thai            23,814 kbps

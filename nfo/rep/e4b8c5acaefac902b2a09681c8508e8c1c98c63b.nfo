@@ -1,0 +1,597 @@
+     ___        _____        ___                   ___          ___     
+     /__/\      /  /::\      /__/|      ___        /__/\        /  /\    
+     \  \:\    /  /:/\:\    |  |:|     /  /\       \  \:\      /  /:/_   
+      \__\:\  /  /:/  \:\   |  |:|    /  /:/        \  \:\    /  /:/ /\  
+  ___ /  /::\/__/:/ \__\:|__|  |:|   /__/::\    _____\__\:\  /  /:/_/::\ 
+ /__/\  /:/\:\  \:\ /  /:/__/\_|:|___\__\/\:\__/__/::::::::\/__/:/__\/\:\
+ \  \:\/:/__\/\  \:\  /:/\  \:\/:::::/  \  \:\/\  \:\~~\~~\/\  \:\ /~~/:/
+  \  \::/      \  \:\/:/  \  \::/~~~~    \__\::/\  \:\  ~~~  \  \:\  /:/ 
+   \  \:\       \  \::/    \  \:\        /__/:/  \  \:\       \  \:\/:/  
+    \  \:\       \__\/      \  \:\       \__\/    \  \:\       \  \::/   
+     \__\/                   \__\/                 \__\/        \__\/    
+
+
+
+
+Complete name                    : The Bourne Identity 2002 MULTI 1080p BluRay REMUX VC-1-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 29.0 GiB
+Duration                         : 1h 58mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 35.1 Mbps
+Encoded date                     : UTC 2014-09-04 21:04:04
+Writing application              : mkvmerge v7.1.0 ('Good Love') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : VC-1
+Format profile                   : AP@L3
+Codec ID                         : WVC1
+Codec ID/Hint                    : Microsoft
+Duration                         : 1h 58mn
+Bit rate                         : 31.6 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Compression mode                 : Lossy
+Bits/(Pixel*Frame)               : 0.636
+Stream size                      : 26.1 GiB (90%)
+Title                            : The Bourne Identity
+
+Audio #1
+ID                               : 2
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 1h 58mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 638 MiB (2%)
+Title                            : French (International) : Digital Theater System 5.1
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 1h 58mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 783 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #3
+ID                               : 4
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 1h 58mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 162 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 5
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles Forced
+
+Text #2
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #3
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:To Switzerland
+00:06:28.137                     : en:Marie Helena Kreutz
+00:08:34.805                     : en:'dead'man
+00:11:38.489                     : en:My Name Is Jason Bourne
+00:13:38.317                     : en:The Wombosi Problem
+00:19:43.265                     : en:The Right Thing
+00:25:40.997                     : en:Eamon
+00:29:15.420                     : en:It's Not Coming Back
+00:36:36.277                     : en:Mr Kane's Hotel Bill
+00:43:56.717                     : en:The Killer Outside
+00:48:27.696                     : en:The American Embassy
+00:51:52.192                     : en:Bourne's Game
+01:02:01.426                     : en:Home
+01:10:01.614                     : en:A Malfunctioning Weapon
+01:18:44.886                     : en:Forced Retirement
+01:23:59.993                     : en:Find Jason Bourne
+01:31:40.119                     : en:Assassin
+01:38:39.246                     : en:Paris Pursuit
+01:45:13.265                     : en:The Wombosi Connection
+01:51:33.853                     : en:End Titles
+
+---------------------------------------------------------------------------------------------------------
+
+Complete name                    : The Bourne Supremacy 2004 MULTI 1080p BluRay REMUX VC-1-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 25.8 GiB
+Duration                         : 1h 48mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 34.0 Mbps
+Encoded date                     : UTC 2014-09-04 18:42:27
+Writing application              : mkvmerge v7.1.0 ('Good Love') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : VC-1
+Format profile                   : AP@L3
+Codec ID                         : WVC1
+Codec ID/Hint                    : Microsoft
+Duration                         : 1h 48mn
+Bit rate                         : 29.9 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Compression mode                 : Lossy
+Bits/(Pixel*Frame)               : 0.600
+Stream size                      : 22.6 GiB (88%)
+Title                            : The Bourne Supremacy
+
+Audio #1
+ID                               : 2
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 1h 48mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 586 MiB (2%)
+Title                            : French (Canada) : Digital Theater System 5.1
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 1h 48mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 586 MiB (2%)
+Title                            : French (France) : Digital Theater System 5.1
+
+Audio #3
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 1h 48mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 783 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #4
+ID                               : 5
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 1h 48mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 149 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles Forced
+
+Text #2
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #3
+ID                               : 8
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Chapter 01
+00:04:31.771                     : en:Chapter 02
+00:09:45.793                     : en:Chapter 03
+00:15:24.340                     : en:Chapter 04
+00:22:02.738                     : en:Chapter 05
+00:23:35.622                     : en:Chapter 06
+00:29:14.043                     : en:Chapter 07
+00:35:14.320                     : en:Chapter 08
+00:38:06.242                     : en:Chapter 09
+00:44:58.737                     : en:Chapter 10
+00:48:01.295                     : en:Chapter 11
+00:52:52.419                     : en:Chapter 12
+00:55:27.032                     : en:Chapter 13
+01:01:02.533                     : en:Chapter 14
+01:02:40.298                     : en:Chapter 15
+01:06:52.550                     : en:Chapter 16
+01:13:54.138                     : en:Chapter 17
+01:18:13.855                     : en:Chapter 18
+01:24:53.046                     : en:Chapter 19
+01:27:43.383                     : en:Chapter 20
+01:33:06.872                     : en:Chapter 21
+01:34:51.560                     : en:Chapter 22
+01:40:15.342                     : en:Chapter 23
+01:42:00.948                     : en:Chapter 24
+01:48:25.874                     : en:Chapter 25
+
+---------------------------------------------------------------------------------------------------------
+
+Complete name                    : The Bourne Ultimatum 2007 MULTI 1080p BluRay REMUX VC-1-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 26.0 GiB
+Duration                         : 1h 55mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 32.3 Mbps
+Encoded date                     : UTC 2014-09-05 01:03:07
+Writing application              : mkvmerge v7.1.0 ('Good Love') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : VC-1
+Format profile                   : AP@L3
+Codec ID                         : WVC1
+Codec ID/Hint                    : Microsoft
+Duration                         : 1h 55mn
+Bit rate                         : 28.1 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Compression mode                 : Lossy
+Bits/(Pixel*Frame)               : 0.566
+Stream size                      : 22.7 GiB (87%)
+Title                            : The Bourne Ultimatum
+
+Audio #1
+ID                               : 2
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 1h 55mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 622 MiB (2%)
+Title                            : French (Canada) : Digital Theater System 5.1
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 1h 55mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 622 MiB (2%)
+Title                            : French (France) : Digital Theater System 5.1
+
+Audio #3
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 1h 55mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 783 Kbps / 1 510 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 5.1
+
+Audio #4
+ID                               : 5
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 1h 55mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 158 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles Forced
+
+Text #2
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #3
+ID                               : 8
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles Forced
+
+Text #4
+ID                               : 9
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Chapter 01
+00:04:02.200                     : en:Chapter 02
+00:09:46.043                     : en:Chapter 03
+00:13:57.211                     : en:Chapter 04
+00:21:01.843                     : en:Chapter 05
+00:27:51.670                     : en:Chapter 06
+00:31:46.863                     : en:Chapter 07
+00:38:44.280                     : en:Chapter 08
+00:43:51.503                     : en:Chapter 09
+00:50:02.749                     : en:Chapter 10
+00:58:12.614                     : en:Chapter 11
+01:05:35.765                     : en:Chapter 12
+01:10:35.898                     : en:Chapter 13
+01:15:49.586                     : en:Chapter 14
+01:20:36.957                     : en:Chapter 15
+01:25:08.269                     : en:Chapter 16
+01:31:34.739                     : en:Chapter 17
+01:35:58.252                     : en:Chapter 18
+01:42:11.708                     : en:Chapter 19
+01:46:07.319                     : en:Chapter 20
+
+---------------------------------------------------------------------------------------------------------
+
+Complete name                    : The Bourne Legacy 2012 MULTI 1080p BluRay REMUX AVC-HDKING
+Format                           : Matroska
+Format version                   : Version 4 / Version 2
+File size                        : 30.5 GiB
+Duration                         : 2h 15mn
+Overall bit rate mode            : Variable
+Overall bit rate                 : 32.4 Mbps
+Encoded date                     : UTC 2014-09-05 10:34:01
+Writing application              : mkvmerge v7.1.0 ('Good Love') 64bit
+Writing library                  : libebml v1.3.0 + libmatroska v1.4.1
+
+Video
+ID                               : 1
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Format profile                   : High@L4.1
+Format settings, CABAC           : Yes
+Format settings, ReFrames        : 4 frames
+Format settings, GOP             : M=3, N=12
+Codec ID                         : V_MPEG4/ISO/AVC
+Duration                         : 2h 15mn
+Bit rate mode                    : Variable
+Bit rate                         : 28.4 Mbps
+Maximum bit rate                 : 31.0 Mbps
+Width                            : 1 920 pixels
+Height                           : 1 080 pixels
+Display aspect ratio             : 16:9
+Frame rate                       : 23.976 fps
+Color space                      : YUV
+Chroma subsampling               : 4:2:0
+Bit depth                        : 8 bits
+Scan type                        : Progressive
+Bits/(Pixel*Frame)               : 0.572
+Stream size                      : 26.8 GiB (88%)
+Title                            : The Bourne Legacy
+
+Audio #1
+ID                               : 2
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 2h 15mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 729 MiB (2%)
+Title                            : French (Canada) : Digital Theater System 5.1
+
+Audio #2
+ID                               : 3
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Codec ID                         : A_DTS
+Duration                         : 2h 15mn
+Bit rate mode                    : Constant
+Bit rate                         : 755 Kbps
+Channel(s)                       : 6 channels
+Channel positions                : Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossy
+Stream size                      : 729 MiB (2%)
+Title                            : French (France) : Digital Theater System 5.1
+
+Audio #3
+ID                               : 4
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Format profile                   : MA / Core
+Codec ID                         : A_DTS
+Duration                         : 2h 15mn
+Bit rate mode                    : Variable
+Bit rate                         : 1 597 Kbps / 1 510 Kbps
+Channel(s)                       : 8 channels / 6 channels
+Channel positions                : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 24 bits
+Compression mode                 : Lossless / Lossy
+Title                            : English : DTS-HD Master Audio 7.1
+
+Audio #4
+ID                               : 5
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Format profile                   : Dolby Digital
+Mode extension                   : CM (complete main)
+Codec ID                         : A_AC3
+Duration                         : 2h 15mn
+Bit rate mode                    : Constant
+Bit rate                         : 192 Kbps
+Channel(s)                       : 2 channels
+Channel positions                : Front: L R
+Sampling rate                    : 48.0 KHz
+Bit depth                        : 16 bits
+Compression mode                 : Lossy
+Stream size                      : 185 MiB (1%)
+Title                            : English Commentary : Dolby Digital 2.0
+
+Text #1
+ID                               : 6
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles Forced
+
+Text #2
+ID                               : 7
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : French : Subtitles
+
+Text #3
+ID                               : 8
+Format                           : PGS
+Muxing mode                      : zlib
+Codec ID                         : S_HDMV/PGS
+Codec ID/Info                    : The same subtitle format used on BDs/HD-DVDs
+Title                            : English : Subtitles
+
+Menu
+00:00:00.000                     : en:Chapter 1
+00:08:43.689                     : en:Chapter 2
+00:14:26.615                     : en:Chapter 3
+00:19:57.487                     : en:Chapter 4
+00:27:53.296                     : en:Chapter 5
+00:34:18.264                     : en:Chapter 6
+00:42:52.403                     : en:Chapter 7
+00:47:57.374                     : en:Chapter 8
+00:53:56.066                     : en:Chapter 9
+01:00:29.167                     : en:Chapter 10
+01:07:36.635                     : en:Chapter 11
+01:14:36.972                     : en:Chapter 12
+01:22:39.204                     : en:Chapter 13
+01:28:37.687                     : en:Chapter 14
+01:36:39.043                     : en:Chapter 15
+01:41:05.684                     : en:Chapter 16
+01:45:07.968                     : en:Chapter 17
+01:52:15.520                     : en:Chapter 18
+02:00:07.283                     : en:Chapter 19
+02:05:06.415                     : en:Chapter 20
+
+
+

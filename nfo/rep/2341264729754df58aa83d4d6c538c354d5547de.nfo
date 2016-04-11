@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     Internal affairs
+Disc Size:      21 787 116 095 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 1:54:45.420 (h:m:s.ms)
+Size:                   21 700 079 616 bytes
+Total Bitrate:          25,21 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        19431 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.0
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3897 kbps       5.1 / 48 kHz / 3897 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         27,816 kbps                     
+Presentation Graphics           French          19,925 kbps                     
+Presentation Graphics           Spanish         22,588 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00098.M2TS      0:00:00.000     1:54:45.420     21 700 079 616  25 213

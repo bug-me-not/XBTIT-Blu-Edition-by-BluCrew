@@ -1,0 +1,102 @@
+General
+Unique ID : 196609465828357468202376376270035984647 (0x93E99B1303984B123F410D9E6BC9A107)
+Complete name : /home/leralouf/rutorrent/downloads/Lost/Lost.S06.COMPLETE.1080p.BDrip.x264-LeRalouf/Lost.S06E01E02.LA.X.1080p.BDrip.x264-LeRalouf.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 8.10 GiB
+Duration : 1h 24mn
+Overall bit rate : 13.8 Mbps
+Encoded date : UTC 2015-12-30 12:45:38
+Writing application : mkvmerge v8.6.1 ('Flying') 64bit
+Writing library : libebml v1.3.3 + libmatroska v1.4.4
+DURATION : 01:23:18.410000000
+NUMBER_OF_FRAMES : 723
+NUMBER_OF_BYTES : 25015
+_STATISTICS_WRITING_APP : mkvmerge v8.6.1 ('Flying') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-12-30 12:45:38
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 1h 24mn
+Bit rate : 12.0 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.242
+Stream size : 7.06 GiB (87%)
+Writing library : x264 core 142 r2389 956c8d8
+Encoding settings : cabac=1 / ref=4 / deblock=1:-2:-2 / analyse=0x3:0x133 / me=umh / subme=11 / psy=1 / psy_rd=1,00:0,00 / mixed_ref=1 / me_range=32 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=12 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=5 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=60 / rc=crf / mbtree=1 / crf=21,0 / qcomp=0,60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1,40 / aq=1:1,00
+Language : English
+Default : Yes
+Forced : No
+Color primaries : BT.709
+Transfer characteristics : BT.709
+Matrix coefficients : BT.709
+DURATION : 01:24:07.001000000
+NUMBER_OF_FRAMES : 121007
+NUMBER_OF_BYTES : 7748450350
+_STATISTICS_WRITING_APP : mkvmerge v8.6.1 ('Flying') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-12-30 12:45:38
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Audio
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 1h 24mn
+Bit rate mode : Constant
+Bit rate : 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossy
+Stream size : 908 MiB (11%)
+Language : English
+Default : Yes
+Forced : No
+DURATION : 01:24:07.008000000
+NUMBER_OF_FRAMES : 473157
+NUMBER_OF_BYTES : 951993172
+_STATISTICS_WRITING_APP : mkvmerge v8.6.1 ('Flying') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-12-30 12:45:38
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Text
+ID : 3
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Language : English
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : :Chapter 1
+00:07:14.183 : :Chapter 2
+00:17:41.644 : :Chapter 3
+00:22:45.781 : :Chapter 4
+00:27:34.527 : :Chapter 5
+00:36:23.097 : :Chapter 6
+00:44:02.139 : :Chapter 7
+00:51:02.100 : :Chapter 8
+01:00:14.527 : :Chapter 9
+01:07:38.804 : :Chapter 10
+01:15:39.576 : :Chapter 11
+01:23:28.878 : :Chapter 12

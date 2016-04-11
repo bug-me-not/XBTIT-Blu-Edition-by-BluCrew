@@ -1,0 +1,32 @@
+DISC INFO:
+
+Disc Title:     Teachers.XXX.BD50.-.Untouched.-.NoName
+Disc Size:      43 988 258 535 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 3:06:31.805 (h:m:s.ms)
+Size:                   37 259 065 344 bytes
+Total Bitrate:          26,63 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24993 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     3:06:31.805     37 259 065 344  26 633

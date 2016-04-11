@@ -1,0 +1,56 @@
+Disc Title:     Priest 2011 3D 1080p BluRay AVC DTS-HD MA 5.1 vice
+Disc Size:      47,833,074,348 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         Blu-ray 3D
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00040.MPLS
+Length:                 1:27:27.242 (h:m:s.ms)
+Size:                   31,117,910,016 bytes
+Total Bitrate:          47.44 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23968 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+MPEG-4 AVC Video        1301 kbps           480p / 23.976 fps / 16:9 / High Profile 3.2
+MPEG-4 MVC Video        13286 kbps                          
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2362 kbps       5.1 / 48 kHz / 2362 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+DTS-HD Master Audio             French          2376 kbps       5.1 / 48 kHz / 2376 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+DTS Express                     English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+* Presentation Graphics         English         18.101 kbps                     
+* Presentation Graphics         English         21.577 kbps                     
+* Presentation Graphics         Arabic          9.131 kbps                      
+* Presentation Graphics         Dutch           15.492 kbps                     
+* Presentation Graphics         French          16.272 kbps                     
+* Presentation Graphics         Hindi           15.767 kbps                     
+* Presentation Graphics         English         66.488 kbps                     
+* Presentation Graphics         French          52.389 kbps                     
+* Presentation Graphics         Dutch           55.230 kbps                     
+Presentation Graphics           English         44.968 kbps                     
+Presentation Graphics           French          30.170 kbps                     
+Presentation Graphics           Dutch           41.881 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00116.SSIF      0:00:00.000     1:27:27.242     31,117,910,016  47,443    

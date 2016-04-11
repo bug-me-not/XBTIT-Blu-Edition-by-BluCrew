@@ -1,0 +1,123 @@
+<hack>
+  <title>Torrent's Categories Subscription</title>
+  <author>Lupin</author>
+  <version>1.0</version>
+  <!-- upload.php -->
+  <file>
+    <name>"$DEFAULT_ROOT/upload.php"</name>
+    <operation>
+      <search><![CDATA[{
+              if ($DHT_PRIVATE)
+                   {
+                   $alltorrent=bencode($array);
+                   $fd = fopen($TORRENTSDIR . "/" . $hash . ".btf", "rb+");
+                   fwrite($fd,$alltorrent);
+                   fclose($fd);
+                   }
+                // with pid system active or private flag (dht disabled), tell the user to download the new torrent
+                write_log("Uploaded new torrent $filename ($hash)","add");
+               
+            $status=1;
+         }]]></search>
+      <action>"add"</action>
+      <data><![CDATA[
+         // send email to subscriptors
+         $subscriptors=get_result("SELECT email, subscription FROM {$TABLE_PREFIX}users WHERE subscription IS NOT NULL",true);
+         if (count($subscriptors)>0)
+          {
+           $bcc=array();
+           $ne=0;
+           include(load_language("lang_usercp.php"));
+           for ($i=0;$i<count($subscriptors);$i++)
+            {
+                if (in_array($categoria, explode(",",$subscriptors[$i]["subscription"])))
+                  {
+                   $bcc[]=$subscriptors[$i]["email"];
+                   $ne++;
+                   if ($ne>49)
+                      send_mail($SITEEMAIL,$language["SUB_SUBJECT"],sprintf($language["SUB_EMAIL"],$filename, "$BASEURL/index.php?page=torrent-details&id=$hash","$BASEURL/download.php?id=$hash&f=" . urlencode($filename) . ".torrent"),false,array(),$bcc);
+                }
+            }
+
+            send_mail($SITEEMAIL,$language["SUB_SUBJECT"],sprintf($language["SUB_EMAIL"],$filename, "$BASEURL/index.php?page=torrent-details&id=$hash","$BASEURL/download.php?id=$hash&f=" . urlencode($filename) . ".torrent"),false,array(),$bcc);
+         }
+]]></data>
+      <where>"after"</where>
+    </operation>
+  </file>
+  <!-- lang_usercp.php  -->
+  <file>
+    <name>"$DEFAULT_LANGUAGE_PATH/lang_usercp.php"</name>
+    <operation>
+      <action>"add"</action>
+      <where>"before"</where>
+      <search><![CDATA[?>]]></search>
+      <data><![CDATA[
+$language["SUBSCRIBE"]="Torrent's Subscription";
+$language["SUB_OK"]="You successfull subscribe torrent's upload for <a href=\"index.php?page=usercp&amp;do=subscribe&amp;action=change&amp;uid=".$CURUSER["uid"]."\">categories selected</a>";
+$language["SUB_SUBJECT"]="Torrent's Subscription On $SITENAME";
+$language["SUB_EMAIL"]="Hello,\nA new torrent \"%s\" has been uploaded in a category you subscript\n\nDetails: %s\nDownload: %s\n\nHappy Download\n$SITENAME";
+      ]]></data>
+    </operation>
+  </file>
+  <!-- usercp.menu.php  -->
+  <file>
+    <name>"$DEFAULT_ROOT/user/usercp.menu.php"</name>
+    <operation>
+      <action>"replace"</action>
+      <search><![CDATA[
+                "description"=>$language["CHANGE_PID"]), 
+                             )),]]></search>
+      <data><![CDATA[
+                "description"=>$language["CHANGE_PID"]), 
+                      3=>array(
+                "url"=>"index.php?page=usercp&amp;do=subscribe&amp;action=change&amp;uid=".$uid."" ,
+                "description"=>$language["SUBSCRIBE"])
+                             ))
+      ]]></data>
+    </operation>
+  </file>
+  <!-- usercp.index.php  -->
+  <file>
+    <name>"$DEFAULT_ROOT/user/usercp.index.php"</name>
+    <operation>
+      <action>"add"</action>
+      <where>"before"</where>
+      <search><![CDATA[case 'pm':
+    include("$USER_PATH/usercp.pmbox.php");
+    $tpl->set("main_content",set_block($language["MNU_UCP_PM"],"center",$usercptpl->fetch(load_template("usercp.pmbox.tpl"))));
+    break;
+]]></search>
+      <data><![CDATA[
+    case 'subscribe':
+    include("$USER_PATH/usercp.subscribe.php");
+    $tpl->set("main_content",set_block($language["SUBSCRIBE"],"center",$usercptpl->fetch(load_template("usercp.subscribe.tpl"))));
+    break;
+
+]]></data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/usercp.subscribe.php"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_ROOT/user"</where>
+      <data>"usercp.subscribe.php"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"$CURRENT_FOLDER/toCopy/usercp.subscribe.tpl"</name>
+    <operation>
+      <action>"copy"</action>
+      <where>"$DEFAULT_STYLE_PATH"</where>
+      <data>"usercp.subscribe.tpl"</data>
+    </operation>
+  </file>
+  <file>
+    <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data>ALTER TABLE {$db_prefix}users ADD subscription TEXT NULL;</data>
+    </operation>
+  </file>
+</hack>

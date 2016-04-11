@@ -1,0 +1,75 @@
+DISC INFO:
+
+Disc Size:      47 077 987 530 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.3
+
+PLAYLIST REPORT:
+
+Name:                   00850.MPLS
+Length:                 2:08:06 (h:m:s)
+Size:                   40 696 209 408 bytes
+Total Bitrate:          42,36 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        28620 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3651 kbps       5.1 / 48 kHz / 3651 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+* DTS Audio                     Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Czech           448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             Thai            224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             Turkish         224 kbps        2.0 / 48 kHz / 224 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         26,563 kbps                    
+Presentation Graphics           Chinese         26,982 kbps                    
+Presentation Graphics           Chinese         21,783 kbps                    
+Presentation Graphics           Croatian        22,949 kbps                    
+Presentation Graphics           Czech           22,863 kbps                    
+Presentation Graphics           Danish          25,941 kbps                    
+Presentation Graphics           Dutch           23,411 kbps                    
+Presentation Graphics           Dutch           46,402 kbps                    
+Presentation Graphics           Finnish         26,640 kbps                    
+Presentation Graphics           French          24,865 kbps                    
+Presentation Graphics           French          44,520 kbps                    
+Presentation Graphics           German          27,222 kbps                    
+Presentation Graphics           German          53,420 kbps                    
+Presentation Graphics           Greek           28,124 kbps                    
+Presentation Graphics           Hebrew          17,593 kbps                    
+Presentation Graphics           Italian         24,882 kbps                    
+Presentation Graphics           Italian         46,482 kbps                    
+* Presentation Graphics         Japanese        15,867 kbps                    
+* Presentation Graphics         Japanese        29,557 kbps                    
+Presentation Graphics           Norwegian       25,603 kbps                    
+Presentation Graphics           Polish          26,596 kbps                    
+Presentation Graphics           Portuguese      26,310 kbps                    
+Presentation Graphics           Portuguese      24,089 kbps                    
+Presentation Graphics           Russian         25,716 kbps                    
+Presentation Graphics           Slovenian       22,675 kbps                    
+Presentation Graphics           Spanish         22,307 kbps                    
+Presentation Graphics           Spanish         26,088 kbps                    
+Presentation Graphics           Spanish         48,505 kbps                    
+Presentation Graphics           Swedish         26,111 kbps                    
+Presentation Graphics           Thai            21,769 kbps                    
+Presentation Graphics           Turkish         25,664 kbps

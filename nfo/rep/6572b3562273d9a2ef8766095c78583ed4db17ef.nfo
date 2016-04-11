@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     FRIDAY_NIGHT_LIGHTS
+Disc Size:      45 147 768 810 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:57:39.427 (h:m:s.ms)
+Size:                   38 835 234 816 bytes
+Total Bitrate:          44,01 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        35855 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3986 kbps       5.1 / 48 kHz / 3986 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         49,775 kbps                     
+Presentation Graphics           Spanish         43,739 kbps                     
+Presentation Graphics           French          46,140 kbps                     
+Presentation Graphics           Spanish         0,303 kbps                      
+Presentation Graphics           French          1,504 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00010.M2TS      0:00:00.000     1:57:39.427     38 835 234 816  44 010

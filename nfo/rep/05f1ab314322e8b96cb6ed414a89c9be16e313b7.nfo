@@ -1,0 +1,49 @@
+DISC INFO:
+
+Disc Title:     Captain Phillips 2013 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      44 782 929 461 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:14:04.036 (h:m:s.ms)
+Size:                   35 758 356 480 bytes
+Total Bitrate:          35,56 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24917 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2779 kbps       5.1 / 48 kHz / 2779 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+DTS-HD Master Audio             German          2746 kbps       5.1 / 48 kHz / 2746 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          2339 kbps       5.1 / 48 kHz / 2339 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         28,537 kbps                     
+Presentation Graphics           Arabic          15,799 kbps                     
+Presentation Graphics           Dutch           25,173 kbps                     
+Presentation Graphics           French          21,993 kbps                     
+Presentation Graphics           German          29,088 kbps                     
+Presentation Graphics           Turkish         28,329 kbps                     
+Presentation Graphics           Dutch           43,189 kbps                     
+Presentation Graphics           French          40,502 kbps                     
+Presentation Graphics           German          43,163 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     2:14:04.036     35 758 356 480  35 563

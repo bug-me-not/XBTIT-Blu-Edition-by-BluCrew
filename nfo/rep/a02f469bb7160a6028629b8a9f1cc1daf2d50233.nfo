@@ -1,0 +1,123 @@
+Pulp Fiction Bluray Remux 1080p VO VFF DTS HDMA-MAN OF STYLE
+
+
+
+
+=================================================================================================
+
+by
+
+MAN OF STYLE
+
+
+=================================================================================================
+
+
+
+
+
+
+
+General
+Complete name                            : Pulp Fiction Bluray Remux 1080p VO VFF DTS HDMA-MAN OF STYLE.mkv
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 33.6 GiB
+Duration                                 : 2h 34mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 31.1 Mbps
+Movie name                               : Pulp Fiction Bluray Remux 1080p VO VFF DTS HDMA-MAN OF STYLE
+Encoded date                             : UTC 2015-04-20 08:20:21
+
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 34mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 34mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : French
+Language                                 : French
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 34mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : English
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : French
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Title                                    : French
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+===================================================================================================================
+
+THX TO SEED.
+
+(Tu sais ce qu'ils mettent en Hollande dans les frites, de la mayonnaise. Les SALAUDS!!!)

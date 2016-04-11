@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     CROSS_OF_IRON_BLUEBIRD
+Disc Size:      42 607 924 050 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00012.MPLS
+Length:                 2:13:16.029 (h:m:s.ms)
+Size:                   42 170 400 768 bytes
+Total Bitrate:          42,19 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        33912 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1348 kbps       2.0 / 48 kHz / 1348 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             Spanish         1615 kbps       2.0 / 48 kHz / 1615 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             French          1339 kbps       2.0 / 48 kHz / 1339 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             Russian         1470 kbps       2.0 / 48 kHz / 1470 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Languages        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         26,777 kbps                     
+Presentation Graphics           Spanish         19,084 kbps                     
+Presentation Graphics           French          20,648 kbps                     
+Presentation Graphics           Dutch           19,490 kbps                     
+Presentation Graphics           Russian         22,291 kbps                     
+Presentation Graphics           French          0,174 kbps

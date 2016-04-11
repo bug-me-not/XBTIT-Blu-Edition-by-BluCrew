@@ -1,0 +1,135 @@
+Disc Title:     Pierrot Le Fou [HDCLUB]
+Disc Size:      29 019 934 892 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:50:19 2 449 368 000   29 019 934 892  2,96    23,80   DD AC3 2.0 192Kbps                        DD AC3 1.0 192Kbps
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     Pierrot Le Fou [HDCLUB]
+Disc Size:      29 019 934 892 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:50:19.445 (h:m:s.ms)
+Size:                   2 449 368 000 bytes
+Total Bitrate:          2,96 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23796 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Russian         192 kbps        2.0 / 48 kHz / 192 kbps
+Dolby Digital Audio             Russian         192 kbps        1.0 / 48 kHz / 192 kbps
+Dolby Digital Audio             French          640 kbps        1.0 / 48 kHz / 640 kbps
+LPCM Audio                      French          1152 kbps       1.0 / 48 kHz / 1152 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         29,839 kbps                     
+Presentation Graphics           English         46,338 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:50:19.445     2 449 368 000   28 628          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:05:36.001     24 300 kbps     37 414 kbps     00:00:01.835    36 625 kbps     00:00:03.503    36 268 kbps     00:00:01.835    126 674 bytes   377 121 bytes   00:02:01.371    
+2               0:05:36.001     0:04:45.576     22 808 kbps     34 106 kbps     00:10:08.524    32 683 kbps     00:10:05.771    29 672 kbps     00:05:37.920    118 908 bytes   260 447 bytes   00:07:50.761    
+3               0:10:21.578     0:04:44.117     5 666 kbps      29 852 kbps     00:10:24.915    29 155 kbps     00:10:23.914    28 110 kbps     00:10:21.579    133 532 bytes   227 129 bytes   00:10:22.580    
+4               0:15:05.696     0:04:08.373     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:19:14.069     0:03:14.528     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:22:28.597     0:04:16.046     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:26:44.643     0:05:15.357     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:32:00.001     0:02:25.561     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               0:34:25.563     0:06:21.172     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              0:40:46.735     0:03:50.438     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              0:44:37.174     0:06:57.751     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              0:51:34.925     0:04:52.958     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+13              0:56:27.884     0:02:30.149     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+14              0:58:58.034     0:05:38.755     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+15              1:04:36.789     0:04:21.094     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+16              1:08:57.883     0:06:57.626     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+17              1:15:55.509     0:03:41.845     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+18              1:19:37.354     0:05:42.384     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+19              1:25:19.738     0:04:51.500     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+20              1:30:11.238     0:07:19.272     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+21              1:37:30.511     0:05:54.728     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+22              1:43:25.240     0:06:54.204     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     684,434                 23 798                  2 036 012 690   11 074 834      
+00000.M2TS      4352 (0x1100)   0x81            AC3             rus (Russian)           684,434                 192                     16 426 752      106 945         
+00000.M2TS      4353 (0x1101)   0x81            AC3             rus (Russian)           684,434                 192                     16 426 752      106 945         
+00000.M2TS      4354 (0x1102)   0x81            AC3             fre (French)            684,434                 640                     54 755 840      320 835         
+00000.M2TS      4355 (0x1103)   0x80            LPCM            fre (French)            684,434                 2 310                   197 664 828     1 095 096       
+00000.M2TS      4608 (0x1200)   0x90            PGS             rus (Russian)           684,434                 30                      2 552 992       14 738          
+00000.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           684,434                 46                      3 964 653       22 518          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: Pierrot Le Fou [HDCLUB]
+Disc Size: 29 019 934 892 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 2 449 368 000 bytes
+Length: 1:50:19.445
+Total Bitrate: 2,96 Mbps
+Video: MPEG-4 AVC Video / 23796 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: Russian / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps
+Audio: Russian / Dolby Digital Audio / 1.0 / 48 kHz / 192 kbps
+Audio: French / Dolby Digital Audio / 1.0 / 48 kHz / 640 kbps
+Audio: French / LPCM Audio / 1.0 / 48 kHz / 1152 kbps / 24-bit
+Subtitle: Russian / 29,839 kbps
+Subtitle: English / 46,338 kbps
+

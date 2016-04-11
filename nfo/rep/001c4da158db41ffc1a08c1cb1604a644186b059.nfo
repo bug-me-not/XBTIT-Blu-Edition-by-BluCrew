@@ -1,0 +1,38 @@
+DISC INFO:
+
+Disc Title:     Days Of Thunder 1990 1080p Blu Ray AVC True-HD 5.1 Cave
+Disc Size:      33,832,332,934 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:47:17.806 (h:m:s.ms)
+Size:                   32,036,462,016 bytes
+Total Bitrate:          39.81 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        31583 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby TrueHD Audio              English         3374 kbps       5.1 / 48 kHz / 3374 kbps / 24-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         39.154 kbps                     
+Presentation Graphics           English         40.507 kbps                     
+Presentation Graphics           French          27.913 kbps                     
+Presentation Graphics           Spanish         25.271 kbps                     
+Presentation Graphics           Portuguese      27.926 kbps

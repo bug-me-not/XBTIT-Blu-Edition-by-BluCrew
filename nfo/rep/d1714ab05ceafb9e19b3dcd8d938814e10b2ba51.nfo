@@ -1,0 +1,47 @@
+DISC INFO:
+
+Disc Title:     Restless 2011 MULTI 1080p BluRay AVC DTS HDMA HDSpace
+Disc Size:      42 700 957 835 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:31:03.458 (h:m:s.ms)
+Size:                   24 691 249 152 bytes
+Total Bitrate:          36,15 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        26898 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2140 kbps       5.1 / 48 kHz / 2140 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+DTS-HD Master Audio             French          2273 kbps       5.1 / 48 kHz / 2273 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Italian         2133 kbps       5.1 / 48 kHz / 2133 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         31,250 kbps                     
+Presentation Graphics           English         29,264 kbps                     
+Presentation Graphics           Arabic          17,635 kbps                     
+Presentation Graphics           Dutch           24,301 kbps                     
+Presentation Graphics           French          26,503 kbps                     
+Presentation Graphics           Hindi           26,515 kbps                     
+Presentation Graphics           Italian         30,893 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:31:03.458     24 691 249 152  36 155

@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     THEATRE_BIZARRE
+Disc Size:      38 782 702 834 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:53:45.818 (h:m:s.ms)
+Size:                   28 235 739 264 bytes
+Total Bitrate:          33,09 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22968 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          4053 kbps       5.1 / 48 kHz / 4053 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         2172 kbps       5.1 / 48 kHz / 2172 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             English         1691 kbps       2.0 / 48 kHz / 1691 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          16,338 kbps                     
+Presentation Graphics           French          58,456 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:53:45.818     28 235 739 264  33 093

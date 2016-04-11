@@ -1,0 +1,79 @@
+DISC INFO:
+
+Disc Size:      48,288,352,513 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.4
+
+PLAYLIST REPORT:
+
+Name:                   00003.MPLS
+Length:                 1:44:04 (h:m:s)
+Size:                   26,630,615,040 bytes
+Total Bitrate:          34.12 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        20751 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+* MPEG-4 AVC Video      974 kbps            480p / 23.976 fps / 16:9 / High Profile 3.2
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         2980 kbps       5.1 / 48 kHz / 2980 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Czech           640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Hindi           640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Hungarian       640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Polish          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Tamil           448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Telugu          448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Thai            640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Turkish         448 kbps        5.1 / 48 kHz / 448 kbps
+* Dolby Digital Audio           Ukrainian       448 kbps        5.1 / 48 kHz / 448 kbps
+* Dolby Digital Audio           English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+* Dolby Digital Audio           English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+* DTS Express                   English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Presentation Graphics           English         26.030 kbps
+* Presentation Graphics         English         26.040 kbps
+Presentation Graphics           English         60.502 kbps
+* Presentation Graphics         English         49.693 kbps
+* Presentation Graphics         English         41.681 kbps
+Presentation Graphics           Arabic          13.620 kbps
+Presentation Graphics           Bulgarian       24.467 kbps
+Presentation Graphics           Chinese         21.231 kbps
+Presentation Graphics           Chinese         21.628 kbps
+Presentation Graphics           Croatian        23.776 kbps
+Presentation Graphics           Czech           22.288 kbps
+Presentation Graphics           Estonian        25.409 kbps
+Presentation Graphics           Greek           26.383 kbps
+Presentation Graphics           Hebrew          20.189 kbps
+Presentation Graphics           Hindi           24.368 kbps
+Presentation Graphics           Hungarian       21.640 kbps
+Presentation Graphics           Icelandic       25.760 kbps
+Presentation Graphics           Indonesian      28.963 kbps
+Presentation Graphics           Korean          16.554 kbps
+Presentation Graphics           Lithuanian      27.094 kbps
+Presentation Graphics           Polish          22.842 kbps
+Presentation Graphics           Romanian        27.380 kbps
+Presentation Graphics           Russian         0.110 kbps
+Presentation Graphics           Serbian         23.756 kbps
+Presentation Graphics           Slovak          24.969 kbps
+Presentation Graphics           Slovenian       20.717 kbps
+Presentation Graphics           Tamil           0.003 kbps
+Presentation Graphics           Telugu          0.003 kbps
+Presentation Graphics           Thai            24.667 kbps
+Presentation Graphics           Turkish         25.560 kbps
+Presentation Graphics           Ukrainian       23.059 kbps
+* Presentation Graphics         Ukrainian       1.055 kbps

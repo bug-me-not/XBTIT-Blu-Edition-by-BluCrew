@@ -1,0 +1,222 @@
+
+General
+Unique ID                                : 191432761393649408122768388505977413759 (0x90049BD7123C815834D4D15491EEE07F)
+Complete name                            : The.Gallows.2015.1080p.Blu-Ray.REMUX.AVC.TrueHD.7.1-KRENG.mkv
+Format                                   : Matroska
+Format version                           : Version 2
+File size                                : 19.0 GiB
+Duration                                 : 1h 20mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 33.7 Mbps
+Movie name                               : The Gallows
+Encoded date                             : UTC 2015-10-06 19:42:43
+Writing application                      : MakeMKV v1.9.7 win(x64-release)
+Writing library                          : libmakemkv v1.9.7 (1.3.0/1.4.1) win(x64-release)
+Attachements                             : cover.jpg
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=1, N=10
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 20mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : TrueHD
+Codec ID                                 : A_TRUEHD
+Duration                                 : 1h 20mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 7 737 Kbps
+Channel(s)                               : 8 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossless
+Title                                    : Surround 7.1
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 20mn
+Bit rate mode                            : Constant
+Bit rate                                 : 384 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 222 MiB (1%)
+Title                                    : Surround 5.1
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 20mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 370 MiB (2%)
+Title                                    : Surround 5.1
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 20mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 370 MiB (2%)
+Title                                    : Surround 5.1
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Audio #5
+ID                                       : 6
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 20mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 370 MiB (2%)
+Title                                    : Surround 5.1
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Audio #6
+ID                                       : 7
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 1h 20mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 370 MiB (2%)
+Title                                    : Surround 5.1
+Language                                 : Portuguese
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 8
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 10
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : French
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 12
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 14
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Portuguese
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 16
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 18
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Language                                 : Portuguese
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 01
+00:10:21.996                             : en:Chapter 02
+00:19:19.867                             : en:Chapter 03
+00:30:34.833                             : en:Chapter 04
+00:41:13.471                             : en:Chapter 05
+00:52:14.881                             : en:Chapter 06
+01:00:59.072                             : en:Chapter 07
+01:09:27.580                             : en:Chapter 08
+01:15:47.543                             : en:Chapter 09
+

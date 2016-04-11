@@ -1,0 +1,104 @@
+DISC INFO:
+
+Disc Title:     OFFICIER ET GENTLEMAN
+Disc Size:      42 122 324 216 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:04:14.321 (h:m:s.ms)
+Size:                   41 462 974 464 bytes
+Total Bitrate:          44,50 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        36979 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3525 kbps       5.1 / 48 kHz / 3525 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             German          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Spanish         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             French          224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Italian         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Danish          31,526 kbps                     
+Presentation Graphics           German          35,711 kbps                     
+Presentation Graphics           English         31,327 kbps                     
+Presentation Graphics           Spanish         29,209 kbps                     
+Presentation Graphics           Spanish         33,758 kbps                     
+Presentation Graphics           French          30,245 kbps                     
+Presentation Graphics           Italian         28,655 kbps                     
+Presentation Graphics           Japanese        19,209 kbps                     
+Presentation Graphics           Dutch           27,238 kbps                     
+Presentation Graphics           Norwegian       29,892 kbps                     
+Presentation Graphics           Portuguese      30,331 kbps                     
+Presentation Graphics           Finnish         30,845 kbps                     
+Presentation Graphics           Swedish         29,469 kbps                     
+Presentation Graphics           English         33,298 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     2:04:14.321     41 462 974 464  44 498          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:09:01.791     37 127 kbps     59 227 kbps     00:00:13.555    41 962 kbps     00:00:09.551    39 820 kbps     00:00:04.546    193 551 bytes   637 505 bytes   00:00:14.305    
+2               0:09:01.791     0:06:49.992     37 234 kbps     40 210 kbps     00:10:52.818    38 164 kbps     00:10:48.814    37 954 kbps     00:10:43.809    194 120 bytes   313 151 bytes   00:11:26.644    
+3               0:15:51.784     0:05:23.781     36 773 kbps     39 159 kbps     00:19:45.309    37 999 kbps     00:19:41.305    37 859 kbps     00:19:36.425    191 717 bytes   384 810 bytes   00:19:46.268    
+4               0:21:15.565     0:08:26.714     36 996 kbps     39 231 kbps     00:23:30.700    38 121 kbps     00:26:36.970    37 938 kbps     00:27:03.330    192 879 bytes   383 013 bytes   00:26:43.893    
+5               0:29:42.280     0:08:47.360     36 796 kbps     38 745 kbps     00:34:18.431    37 872 kbps     00:33:57.785    37 774 kbps     00:30:14.771    191 839 bytes   295 842 bytes   00:38:29.640    
+6               0:38:29.640     0:11:30.356     37 014 kbps     39 857 kbps     00:40:08.030    38 000 kbps     00:49:09.154    37 868 kbps     00:48:02.170    192 972 bytes   343 083 bytes   00:38:35.438    
+7               0:49:59.997     0:06:12.288     37 247 kbps     38 811 kbps     00:54:25.929    37 886 kbps     00:54:04.908    37 786 kbps     00:54:29.015    194 189 bytes   256 627 bytes   00:50:16.096    
+8               0:56:12.285     0:09:12.093     37 151 kbps     42 798 kbps     01:05:22.960    38 027 kbps     00:58:42.936    37 885 kbps     00:58:40.892    193 691 bytes   345 236 bytes   00:58:48.942    
+9               1:05:24.378     0:11:38.739     36 469 kbps     39 937 kbps     01:16:50.063    38 250 kbps     01:05:29.717    37 978 kbps     01:16:43.974    190 134 bytes   446 968 bytes   01:16:52.983    
+10              1:17:03.118     0:11:12.171     36 964 kbps     39 475 kbps     01:26:08.663    38 120 kbps     01:26:04.659    37 923 kbps     01:25:59.696    192 713 bytes   322 869 bytes   01:18:58.483    
+11              1:28:15.290     0:02:36.990     37 722 kbps     39 891 kbps     01:30:02.397    38 236 kbps     01:29:58.476    37 935 kbps     01:29:53.262    196 666 bytes   393 497 bytes   01:30:30.967    
+12              1:30:52.280     0:17:39.475     36 843 kbps     40 173 kbps     01:42:41.989    38 195 kbps     01:42:32.855    37 997 kbps     01:42:27.891    192 081 bytes   385 192 bytes   01:42:53.250    
+13              1:48:31.755     0:06:23.758     36 409 kbps     44 154 kbps     01:52:35.623    39 091 kbps     01:52:31.619    38 378 kbps     01:52:26.614    189 819 bytes   399 091 bytes   01:48:50.815    
+14              1:54:55.513     0:04:46.202     37 728 kbps     39 000 kbps     01:57:11.357    38 022 kbps     01:59:02.718    37 876 kbps     01:58:57.880    196 698 bytes   360 079 bytes   01:54:57.515    
+15              1:59:41.716     0:04:32.605     37 538 kbps     56 792 kbps     02:04:10.151    41 609 kbps     02:04:06.147    39 626 kbps     02:04:01.142    195 738 bytes   611 618 bytes   02:04:10.776    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00800.M2TS      4113 (0x1011)   0x1B            AVC                                     7454,155                36 980                  34 457 106 597  187 370 546     
+00800.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           7454,155                3 525                   3 284 595 016   19 006 924      
+00800.M2TS      4353 (0x1101)   0x81            AC3             deu (German)            7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4354 (0x1102)   0x81            AC3             spa (Spanish)           7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4355 (0x1103)   0x81            AC3             spa (Spanish)           7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4356 (0x1104)   0x81            AC3             fra (French)            7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4357 (0x1105)   0x81            AC3             ita (Italian)           7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4358 (0x1106)   0x81            AC3             por (Portuguese)        7454,155                224                     208 721 408     1 164 740       
+00800.M2TS      4608 (0x1200)   0x90            PGS             dan (Danish)            7454,155                32                      29 376 055      169 461         
+00800.M2TS      4609 (0x1201)   0x90            PGS             deu (German)            7454,155                36                      33 275 407      190 577         
+00800.M2TS      4610 (0x1202)   0x90            PGS             eng (English)           7454,155                31                      29 190 604      166 748         
+00800.M2TS      4611 (0x1203)   0x90            PGS             spa (Spanish)           7454,155                29                      27 216 709      155 895         
+00800.M2TS      4612 (0x1204)   0x90            PGS             spa (Spanish)           7454,155                34                      31 455 444      181 058         
+00800.M2TS      4613 (0x1205)   0x90            PGS             fra (French)            7454,155                30                      28 182 014      162 991         
+00800.M2TS      4614 (0x1206)   0x90            PGS             ita (Italian)           7454,155                29                      26 700 722      153 110         
+00800.M2TS      4615 (0x1207)   0x90            PGS             jpn (Japanese)          7454,155                19                      17 899 039      104 607         
+00800.M2TS      4616 (0x1208)   0x90            PGS             nld (Dutch)             7454,155                27                      25 379 941      147 749         
+00800.M2TS      4617 (0x1209)   0x90            PGS             nor (Norwegian)         7454,155                30                      27 852 648      161 179         
+00800.M2TS      4618 (0x120A)   0x90            PGS             por (Portuguese)        7454,155                30                      28 261 873      162 031         
+00800.M2TS      4619 (0x120B)   0x90            PGS             fin (Finnish)           7454,155                31                      28 740 715      166 026         
+00800.M2TS      4620 (0x120C)   0x90            PGS             swe (Swedish)           7454,155                29                      27 459 086      159 047         
+00800.M2TS      4621 (0x120D)   0x90            PGS             eng (English)   

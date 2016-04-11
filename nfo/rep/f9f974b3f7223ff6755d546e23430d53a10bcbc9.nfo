@@ -1,0 +1,172 @@
+General
+ 
+Complete name :  /private/rtorrent/data/Watchmen.2009.MULTI.VFF.1080P.BLURAY.REMUX.AVC.AC3.5.1.ONLY.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 34.9 GiB
+Duration : 2h 42mn
+Overall bit rate mode : Variable
+Overall bit rate : 30.8 Mbps
+Movie name : Watchmen
+Encoded date : UTC 2015-06-03 13:15:17
+Writing application : mkvmerge v7.9.0 ('Birds') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 02:41:41.191000000
+NUMBER_OF_FRAMES : 1568
+NUMBER_OF_BYTES : 57449
+_STATISTICS_WRITING_APP : mkvmerge v7.9.0 ('Birds') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-06-03 13:15:17
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 4 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 42mn
+Bit rate mode : Variable
+Maximum bit rate : 35.3 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Language : English
+Default : No
+Forced : No
+Color primaries : BT.709
+Transfer characteristics : BT.709
+Matrix coefficients : BT.709
+DURATION : 02:42:05.758000000
+NUMBER_OF_FRAMES : 233185
+NUMBER_OF_BYTES : 32279889191
+_STATISTICS_WRITING_APP : mkvmerge v7.9.0 ('Birds') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-06-03 13:15:17
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 42mn
+Bit rate mode : Constant
+Bit rate : 640 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 742 MiB (2%)
+Title : French AC3 5.1
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : TrueHD
+Codec ID : A_TRUEHD
+Duration : 2h 42mn
+Bit rate mode : Variable
+Maximum bit rate : 5 742 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless
+Title : English TrueHD 5.1
+Language : English
+Default : No
+Forced : No
+DURATION : 02:42:05.759000000
+NUMBER_OF_FRAMES : 11670910
+NUMBER_OF_BYTES : 4270685982
+_STATISTICS_WRITING_APP : mkvmerge v7.9.0 ('Birds') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-06-03 13:15:17
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Text #1
+ID : 4
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : French Forced
+Language : French
+Default : Yes
+Forced : Yes
+
+Text #2
+ID : 5
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : French
+Language : French
+Default : No
+Forced : No
+
+Text #3
+ID : 6
+Format : PGS
+Muxing mode : zlib
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : English
+Language : English
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:Chapter 01
+00:05:41.632 : en:Chapter 02
+00:11:16.133 : en:Chapter 03
+00:15:11.994 : en:Chapter 04
+00:17:36.013 : en:Chapter 05
+00:21:43.927 : en:Chapter 06
+00:24:33.847 : en:Chapter 07
+00:29:32.312 : en:Chapter 08
+00:33:59.203 : en:Chapter 09
+00:38:30.725 : en:Chapter 10
+00:41:58.599 : en:Chapter 11
+00:43:36.280 : en:Chapter 12
+00:46:59.358 : en:Chapter 13
+00:51:14.196 : en:Chapter 14
+00:53:22.532 : en:Chapter 15
+00:56:02.901 : en:Chapter 16
+00:59:17.220 : en:Chapter 17
+01:04:14.141 : en:Chapter 18
+01:06:04.085 : en:Chapter 19
+01:09:26.453 : en:Chapter 20
+01:11:05.052 : en:Chapter 21
+01:13:51.718 : en:Chapter 22
+01:15:31.401 : en:Chapter 23
+01:19:15.959 : en:Chapter 24
+01:23:47.856 : en:Chapter 25
+01:27:01.758 : en:Chapter 26
+01:32:05.144 : en:Chapter 27
+01:37:48.946 : en:Chapter 28
+01:41:09.813 : en:Chapter 29
+01:46:16.161 : en:Chapter 30
+01:49:19.427 : en:Chapter 31
+01:52:35.081 : en:Chapter 32
+01:56:57.760 : en:Chapter 33
+01:57:58.237 : en:Chapter 34
+02:02:40.227 : en:Chapter 35
+02:09:31.513 : en:Chapter 36
+02:12:14.259 : en:Chapter 37
+02:16:39.649 : en:Chapter 38
+02:20:02.477 : en:Chapter 39
+02:23:28.558 : en:Chapter 40
+02:26:38.873 : en:Chapter 41
+02:30:43.784 : en:Chapter 42
+02:35:22.563 : en:Chapter 43

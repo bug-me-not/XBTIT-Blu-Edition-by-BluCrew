@@ -1,0 +1,113 @@
+
+    Général
+    Nom complet : Philadelphia 1993 MULTI 1080p BluRay DTSMA AC3 x264-Ganesh.mkv
+    Format : Matroska
+    Version du format : Version 4 / Version 2
+    Taille du fichier : 18,1 Gio
+    Durée : 2h 5mn
+    Type de débit global : Variable
+    Débit global moyen : 20,6 Mb/s
+    Date d'encodage : UTC 2013-06-04 10:30:14
+    Application utilisée : mkvmerge v6.2.0 ('Promised Land') built on Apr 28 2013 09:19:26
+    Bibliothèque utilisée : libebml v1.3.0 + libmatroska v1.4.0
+
+    Vidéo
+    ID : 1
+    Format : AVC
+    Format/Info : Advanced Video Codec
+    Profil du format : High@L4.1
+    Paramètres du format, CABAC : Oui
+    Paramètres du format, RefFrames : 5 images
+    Identifiant du codec : V_MPEG4/ISO/AVC
+    Durée : 2h 5mn
+    Largeur : 1 920 pixels
+    Hauteur : 1 036 pixels
+    Format à l'écran : 1,85:1
+    Type d'images/s : Constant
+    Images par seconde : 23,976 Im/s
+    Espace de couleurs : YUV
+    Sous-échantillonnage de la chrominance : 4:2:0
+    Profondeur des couleurs : 8 bits
+    Type de balayage : Progressif
+    Bibliothèque utilisée : x264 core 128 r2M 198a7ea
+    Paramètres d'encodage : cabac=1 / ref=5 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=10 / psy=1 / fade_compensate=0.00 / psy_rd=0.95:0.10 / mixed_ref=1 / me_range=64 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=6,6 / fast_pskip=0 / chroma_qp_offset=-3 / threads=12 / lookahead_threads=2 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=6 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=1 / weightb=1 / open_gop=1 / weightp=2 / keyint=250 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=230 / rc=crf / mbtree=1 / crf=18.5 / qcomp=0.75 / qpmin=0 / qpmax=69 / qpstep=4 / vbv_maxrate=50000 / vbv_bufsize=50000 / crf_max=0.0 / nal_hrd=none / ip_ratio=1.40 / aq=2:0.75
+    Langue : Anglais
+    Default : Oui
+    Forced : Non
+
+    Audio #1
+    ID : 2
+    Format : AC-3
+    Format/Info : Audio Coding 3
+    Profil du format : Dolby Digital
+    Extension du mode : CM (complete main)
+    Paramètres du format, Endianness : Big
+    Identifiant du codec : A_AC3
+    Durée : 2h 5mn
+    Type de débit : Constant
+    Débit : 192 Kbps
+    Canaux : 2 canaux
+    Position des cannaux : Front: L R
+    Echantillonnage : 48,0 KHz
+    Profondeur des couleurs : 16 bits
+    Mode de compression : Avec perte
+    Taille du flux : 172 Mio (1%)
+    Langue : Français
+    Default : Oui
+    Forced : Non
+
+    Audio #2
+    ID : 3
+    Format : DTS
+    Format/Info : Digital Theater Systems
+    Profil du format : MA / Core
+    Paramètres du format, Mode : 16
+    Paramètres du format, Endianness : Big
+    Identifiant du codec : A_DTS
+    Durée : 2h 5mn
+    Type de débit : Variable
+    Débit : Inconnu / 1 509 Kbps
+    Canaux : 5 canaux
+    Position des cannaux : Front: L C R, Side: L R
+    Echantillonnage : 48,0 KHz
+    Profondeur des couleurs : 16 bits
+    Mode de compression : Sans perte / Lossy
+    Langue : Anglais
+    Default : Non
+    Forced : Non
+
+    Texte #1
+    ID : 4
+    Format : UTF-8
+    Identifiant du codec : S_TEXT/UTF8
+    Identifiant du codec/Info : UTF-8 Plain Text
+    Langue : Français
+    Default : Oui
+    Forced : Oui
+
+    Texte #2
+    ID : 5
+    Format : UTF-8
+    Identifiant du codec : S_TEXT/UTF8
+    Identifiant du codec/Info : UTF-8 Plain Text
+    Langue : Français
+    Default : Non
+    Forced : Non
+
+    Menu
+    00:00:00.000 : en:00:00:00.000
+    00:05:43.093 : en:00:05:43.093
+    00:13:44.282 : en:00:13:44.282
+    00:24:51.990 : en:00:24:51.990
+    00:32:44.171 : en:00:32:44.171
+    00:39:51.848 : en:00:39:51.848
+    00:46:07.348 : en:00:46:07.348
+    00:55:23.570 : en:00:55:23.570
+    01:01:08.582 : en:01:01:08.582
+    01:07:21.955 : en:01:07:21.955
+    01:16:02.141 : en:01:16:02.141
+    01:26:40.529 : en:01:26:40.529
+    01:36:54.684 : en:01:36:54.684
+    01:44:13.372 : en:01:44:13.372
+    01:47:54.593 : en:01:47:54.593
+    01:55:41.560 : en:01:55:41.560

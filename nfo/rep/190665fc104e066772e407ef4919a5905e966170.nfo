@@ -1,0 +1,133 @@
+Disc Title:     Toots Thielemans - 2013 - Live At Le Chapiteau (Toots 90)
+Disc Size:      17 118 912 803 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+Notes:
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+********************
+PLAYLIST: 00002.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00002.MPLS                                                      AVC     1:06:10 16 782 938 112  17 118 912 803  33,82   30,00   LPCM 2.0 2304Kbps (48kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Toots Thielemans - 2013 - Live At Le Chapiteau (Toots 90)
+Disc Size:      17 118 912 803 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00002.MPLS
+Length:                 1:06:10.041 (h:m:s.ms)
+Size:                   16 782 938 112 bytes
+Total Bitrate:          33,82 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        29999 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00003.M2TS      0:00:00.000     1:05:46.041     16 688 941 056  33 834
+00005.M2TS      1:05:46.041     0:00:24.000     93 997 056      31 332
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:06:16.000     30 038 kbps     35 512 kbps     00:01:49.624    31 999 kbps     00:01:07.041    31 502 kbps     00:01:07.541    156 432 bytes   517 405 bytes   00:00:19.000
+2               0:06:16.000     0:05:02.291     29 978 kbps     34 366 kbps     00:06:26.958    31 565 kbps     00:10:58.500    30 851 kbps     00:10:53.458    156 136 bytes   545 811 bytes   00:06:28.000
+3               0:11:18.291     0:07:41.875     30 006 kbps     34 500 kbps     00:13:54.291    31 289 kbps     00:18:27.416    30 916 kbps     00:18:25.500    156 279 bytes   510 664 bytes   00:18:42.166
+4               0:19:00.166     0:04:18.416     29 984 kbps     35 879 kbps     00:23:07.541    31 398 kbps     00:19:39.333    30 981 kbps     00:19:38.416    156 167 bytes   501 354 bytes   00:20:08.791
+5               0:23:18.583     0:05:38.041     29 984 kbps     34 144 kbps     00:24:09.416    31 324 kbps     00:25:15.750    30 825 kbps     00:26:21.541    156 168 bytes   486 521 bytes   00:27:40.500
+6               0:28:56.625     0:05:06.791     30 012 kbps     34 435 kbps     00:29:08.583    31 405 kbps     00:29:08.583    31 303 kbps     00:29:08.583    156 310 bytes   560 310 bytes   00:32:36.125
+7               0:34:03.416     0:05:31.375     30 004 kbps     34 145 kbps     00:38:52.958    31 477 kbps     00:34:47.458    30 829 kbps     00:38:07.000    156 271 bytes   518 843 bytes   00:34:04.416
+8               0:39:34.791     0:04:14.041     30 015 kbps     34 325 kbps     00:43:00.666    31 397 kbps     00:41:34.291    30 759 kbps     00:40:54.041    156 331 bytes   470 520 bytes   00:40:17.791
+9               0:43:48.833     0:04:46.500     29 982 kbps     33 841 kbps     00:46:14.583    31 099 kbps     00:44:01.666    30 772 kbps     00:44:51.166    156 154 bytes   488 871 bytes   00:46:14.625
+10              0:48:35.333     0:03:47.208     29 985 kbps     37 326 kbps     00:52:14.500    31 865 kbps     00:52:10.666    30 952 kbps     00:52:05.541    156 172 bytes   531 498 bytes   00:48:54.916
+11              0:52:22.541     0:02:44.916     30 035 kbps     35 621 kbps     00:53:32.208    31 930 kbps     00:53:31.041    31 234 kbps     00:54:34.625    156 430 bytes   539 725 bytes   00:53:32.250
+12              0:55:07.458     0:05:47.249     30 000 kbps     35 646 kbps     00:55:53.333    32 211 kbps     00:59:08.583    31 181 kbps     00:58:53.375    156 248 bytes   529 032 bytes   00:57:49.791
+13              1:00:54.708     0:04:51.333     29 973 kbps     35 414 kbps     01:02:05.791    31 521 kbps     01:02:02.541    30 974 kbps     01:01:56.791    156 107 bytes   487 989 bytes   01:01:03.708
+14              1:05:46.041     0:00:24.000     29 896 kbps     30 000 kbps     01:05:46.041    30 000 kbps     01:05:52.458    30 000 kbps     01:05:47.708    155 977 bytes   156 249 bytes   01:05:46.125
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     3945,875                30 001                  14 797 332 611  80 475 706
+00003.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      3945,875                2 310                   1 139 616 352   6 313 664
+00005.M2TS      4113 (0x1011)   0x1B            AVC                                     23,875                  30 104                  89 842 936      488 752
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Toots Thielemans - 2013 - Live At Le Chapiteau (Toots 90)
+Disc Size: 17 118 912 803 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00002.MPLS
+Size: 16 782 938 112 bytes
+Length: 1:06:10.041
+Total Bitrate: 33,82 Mbps
+Video: MPEG-4 AVC Video / 29999 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 2304 kbps / 24-bit
+********************
+PLAYLIST: 00000.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     0:00:24 97 757 184      17 118 912 803  31,33   29,95
+Код:
+DISC INFO:
+Disc Title:     Toots Thielemans - 2013 - Live At Le Chapiteau (Toots 90)
+Disc Size:      17 118 912 803 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00000.MPLS
+Length:                 0:00:24.958 (h:m:s.ms)
+Size:                   97 757 184 bytes
+Total Bitrate:          31,33 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        29950 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00000.M2TS      0:00:00.000     0:00:24.958     97 757 184      31 335
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:00:24.958     29 950 kbps     32 431 kbps     00:00:14.958    30 506 kbps     00:00:10.000    30 252 kbps     00:00:05.958    155 992 bytes   472 801 bytes   00:00:16.000
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     24,875                  30 051                  93 438 922      508 302
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Toots Thielemans - 2013 - Live At Le Chapiteau (Toots 90)
+Disc Size: 17 118 912 803 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 97 757 184 bytes
+Length: 0:00:24.958
+Total Bitrate: 31,33 Mbps
+Video: MPEG-4 AVC Video / 29950 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1

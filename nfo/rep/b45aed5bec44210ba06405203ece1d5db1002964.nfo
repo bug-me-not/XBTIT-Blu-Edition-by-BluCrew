@@ -1,0 +1,61 @@
+DISC INFO:
+
+Disc Title:     Young Adult F13
+Disc Size:      39 019 942 794 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:33:39.280 (h:m:s.ms)
+Size:                   26 606 383 104 bytes
+Total Bitrate:          37,88 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        28140 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3322 kbps       5.1 / 48 kHz / 3322 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Italian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Danish          38,667 kbps                     
+Presentation Graphics           German          43,579 kbps                     
+Presentation Graphics           English         45,301 kbps                     
+Presentation Graphics           Spanish         44,614 kbps                     
+Presentation Graphics           French          36,532 kbps                     
+Presentation Graphics           Italian         43,778 kbps                     
+Presentation Graphics           Dutch           39,932 kbps                     
+Presentation Graphics           Norwegian       36,291 kbps                     
+Presentation Graphics           Finnish         42,032 kbps                     
+Presentation Graphics           Swedish         41,346 kbps                     
+Presentation Graphics           English         50,143 kbps                     
+Presentation Graphics           German          67,348 kbps                     
+Presentation Graphics           English         75,270 kbps                     
+Presentation Graphics           Spanish         68,173 kbps                     
+Presentation Graphics           French          67,781 kbps                     
+Presentation Graphics           Italian         68,519 kbps                     
+Presentation Graphics           Spanish         0,156 kbps                      
+Presentation Graphics           French          0,092 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00004.M2TS      0:00:00.000     1:33:39.280     26 606 383 104  37 879

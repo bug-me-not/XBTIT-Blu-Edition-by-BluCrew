@@ -1,0 +1,166 @@
+*******************************************************************************
+   The Next Three Days 2010 1080p Blu-Ray ReMuX AVC DTS-HD MA 7.1-Zen@BluRG
+*******************************************************************************
+
+-------------------------------------------------------------------------------
+                              General Information
+-------------------------------------------------------------------------------
+Type.................: Movie
+Video Format.........: MPEG4
+IMDb Rating..........: 7.4
+Movie Information....: http://www.imdb.com/title/tt1458175
+
+-------------------------------------------------------------------------------
+                               Post Information
+-------------------------------------------------------------------------------
+Posted by............: Zen@BluRG
+Posted on............: 14/11/2014
+
+-------------------------------------------------------------------------------
+                                 Release Notes
+-------------------------------------------------------------------------------
+
+__________ __       __________  ________ 
+\______   \  |  __ _\______   \/  _____/ 
+ |    |  _/  | |  |  \       _/   \  ___ 
+ |    |   \  |_|  |  /    |   \    \_\  \
+ |______  /____/____/|____|_  /\______  /
+        \/                  \/        \/ 
+
+General
+Unique ID                                : 
+193291219409565275834421465609174147454 (0x916A88E50905E08DACEE52284686617E)
+Complete name                            : D:\The Next Three Days 2010 1080p 
+Blu-Ray ReMuX AVC DTS-HD MA 7.1-Zen@BluRG
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 30.5 GiB
+Duration                                 : 2h 13mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 32.8 Mbps
+Movie name                               : The Next Three Days 2010 1080p 
+Blu-Ray ReMuX AVC DTS-HD MA 7.1-Zen@BluRG
+Encoded date                             : UTC 2014-11-13 23:33:52
+Writing application                      : mkvmerge v7.2.0 ('On Every 
+Street') 64bit built on Sep 13 2014 15:52:10
+Writing library                          : libebml v1.3.0 + libmatroska 
+v1.4.1
+DURATION                                 : 02:03:52.383000000
+NUMBER_OF_FRAMES                         : 1960
+NUMBER_OF_BYTES                          : 6556736
+_STATISTICS_WRITING_APP                  : mkvmerge v7.2.0 ('On Every 
+Street') 64bit built on Sep 13 2014 15:52:10
+_STATISTICS_WRITING_DATE_UTC             : 2014-11-13 23:33:52
+_STATISTICS_TAGS                         : BPS DURATION NUMBER_OF_FRAMES 
+NUMBER_OF_BYTES
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 13mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 37.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 13mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 8 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L 
+R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossless / Lossy
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 13mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 183 MiB (1%)
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on 
+BDs/HD-DVDs
+Language                                 : Chinese
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 5
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on 
+BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Don't Like Her
+00:13:55.626                             : en:Making Sense Of It
+00:24:29.760                             : en:An Insider
+00:34:52.674                             : en:What You're Looking For
+00:40:13.536                             : en:Want It Too Bad
+00:44:47.768                             : en:Unlocking Doors
+00:54:21.049                             : en:No Notice
+00:58:14.991                             : en:Wrong
+01:04:08.136                             : en:Not Your Life
+01:07:43.559                             : en:Taking Over
+01:19:33.519                             : en:Packing Up
+01:29:01.044                             : en:Tell Him
+01:34:13.231                             : en:Hold On
+01:46:21.083                             : en:What Now
+01:51:58.545                             : en:Getting Away
+01:59:19.444                             : en:A Fresh Look
+
+
+
+
+-------------------------------------------------------------------------------
+Generated with Cool NFO Creator - http://fly.to/coolbeans
+-------------------------------------------------------------------------------

@@ -1,0 +1,47 @@
+DISC INFO:
+
+Disc Title:     Catch Me If You Can 2002 MULTI 1080p BluRay AVC DTS HDMA HDSpace
+Disc Size:      45 292 465 755 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:20:43.101 (h:m:s.ms)
+Size:                   40 314 593 280 bytes
+Total Bitrate:          38,20 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        30024 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         4020 kbps       5.1 / 48 kHz / 4020 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         38,734 kbps                     
+Presentation Graphics           English         41,555 kbps                     
+Presentation Graphics           French          30,336 kbps                     
+Presentation Graphics           Spanish         36,155 kbps                     
+Presentation Graphics           Portuguese      37,430 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     2:20:43.101     40 314 593 280  38 199
+
+

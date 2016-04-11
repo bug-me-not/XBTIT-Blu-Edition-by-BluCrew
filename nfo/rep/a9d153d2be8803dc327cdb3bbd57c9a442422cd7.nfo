@@ -1,0 +1,101 @@
+Général
+Nom complet : 21.Grammes.2003.MULTi.1080p.BluRay.Remux.AVC.DTSHDMA.DTS-GR.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 17,0 Gio
+Durée : 2h 4mn
+Type de débit global : Variable
+Débit global moyen : 19,5 Mb/s
+Date d'encodage : UTC 2013-02-18 15:58:12
+Application utilisée : mkvmerge v6.0.0 ('Coming Up For Air') built on Jan 20 2013 09:52:00
+Bibliothèque utilisée : libebml v1.3.0 + libmatroska v1.4.0
+
+Vidéo
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 2h 4mn
+Type de débit : Variable
+Débit maximum : 30,0 Mb/s
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Type d'images/s : Constant
+Images par seconde : 23,976 Im/s
+Norme : NTSC
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : Progressif
+Langue : Anglais
+Default : Oui
+Forced : Non
+Coordonnées de chromaticité : BT.709
+Caractéristiques du transfert : BT.709
+Coefficients de la matrice : BT.709
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 2h 4mn
+Type de débit : Constant
+Débit : 755 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Avec perte
+Taille du flux : 672 Mio (4%)
+Titre : VFF DTS
+Langue : Français
+Default : Oui
+Forced : Non
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 2h 4mn
+Type de débit : Variable
+Débit : Inconnu / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Titre : VO DTS HD MA
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #1
+ID : 4
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : FR forcés
+Langue : Français
+Default : Oui
+Forced : Oui
+
+Texte #2
+ID : 5
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : FR complets
+Langue : Français
+Default : Non
+Forced : Non

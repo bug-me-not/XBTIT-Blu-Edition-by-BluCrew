@@ -1,0 +1,84 @@
+<hack>
+  <title>Active Users on Forum</title>
+  <author>Yupy</author>
+  <version>1.0</version>
+  <!-- database -->
+  <file>
+    <name>"database"</name>
+    <operation>
+      <action>"sql"</action>
+      <data><![CDATA[ALTER TABLE `{$db_prefix}users` ADD `on_forum` int(11) NOT NULL default '0';]]></data>
+    </operation>
+  </file>
+  <!-- forum/forum.main.php -->
+  <file>
+    <name>"$DEFAULT_ROOT/forum/forum.main.php"</name>
+    <operation>
+      <search><![CDATA[if (!defined("IN_BTIT_FORUM"))
+      die("non direct access!");]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[//Users on Forum by Yupy...
+  $fnow = time();
+  do_sqlquery("UPDATE {$TABLE_PREFIX}users SET on_forum = ".$fnow." WHERE id = ".$CURUSER["uid"]."") or sqlerr(__FILE__, __LINE__);]]></data>
+    </operation>
+    <operation>
+      <search><![CDATA[$forumtpl->set("NO_FORUMS",false,true);
+    $forumtpl->set("forums",$forums);
+
+}]]></search>
+      <action>"add"</action>
+      <where>"after"</where>
+      <data><![CDATA[//Online Users On Forum By Yupy...
+    $curtime=time();
+    $curtime-=60*15;
+
+    if (!isset($regusers)) $regusers = 0;
+    if (!isset($gueststr)) $gueststr = '';
+    $users="";
+    $dt = sqlesc(time() - 180);
+    $res = do_sqlquery("SELECT username, id FROM {$TABLE_PREFIX}users WHERE on_forum >= ".$dt." ORDER BY username ASC") or sqlerr(__FILE__, __LINE__);
+
+    if ($res)
+    {
+        while ($ruser=mysql_fetch_row($res))
+            {
+            $users.=(($regusers>0?", ":"")."\n<a href=\"?page=userdetails&amp;id=".$ruser['1']."\">".StripSlashes($ruser[2].$ruser[0].$ruser[3])."</a>");
+            $regusers++;
+            }
+    }
+     
+    if ($guest_num>0)
+       $gueststr.=$guest_num+$regusers." (".$guest_num." guest".($guest_num>1?"s":"")."\n";
+    elseif ($guest_num+$regusers==0)
+        $users.="No active Users on Forum !"; // No need this... who the fuck can see it =]
+    else
+        $gueststr.=$guest_num+$regusers." ";
+    $forumtpl->set("active_users", $users);
+	//Online Users On Forum By Yupy...]]></data>
+    </operation>
+  </file>
+  <!-- forum.main.tpl -->
+  <file>
+    <name>"$DEFAULT_STYLE_PATH/forum.main.tpl"</name>
+    <operation>
+    <action>"add"</action>
+    <where>"after"</where>
+    <search><![CDATA[<div align="center">
+<a href="index.php?page=forum&amp;action=search"><b><tag:language.SEARCH /></b></a> | <a href="index.php?page=forum&amp;action=viewunread"><b><tag:language.VIEW_UNREAD /></b></a> | <a href="index.php?page=forum&amp;action=catchup"><b><tag:language.CATCHUP /></b></a>
+</div>
+<br />]]>
+    </search>
+    <data><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="80%" align="center"><br />
+<tr>
+    <td class="header" align="center">Active Users on Forum</td>
+</tr>
+<tr>
+    <td class="lista" style="text-align:center;"><tag:active_users /></td>
+</tr>
+</table>]]>
+    </data>
+    </operation>
+  </file>
+
+</hack>

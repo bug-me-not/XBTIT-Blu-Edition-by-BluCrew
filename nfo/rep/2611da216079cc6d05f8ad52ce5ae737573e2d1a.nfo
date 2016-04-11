@@ -1,0 +1,43 @@
+DISC INFO:
+
+Disc Title:     A Star is Born F13
+Disc Size:      38 256 667 193 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:56:17.608 (h:m:s.ms)
+Size:                   38 102 986 752 bytes
+Total Bitrate:          28,82 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              22939 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3820 kbps       5.1 / 48 kHz / 3820 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         36,612 kbps                     
+Presentation Graphics           French          24,212 kbps                     
+Presentation Graphics           Spanish         32,010 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00064.M2TS      0:00:00.000     0:00:22.021     5 462 016       1 984           
+00020.M2TS      0:00:22.021     2:55:55.586     38 097 524 736  28 874

@@ -1,0 +1,518 @@
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:35:44 16á883á871á744  18á686á571á599  23,51   17,30   DTS-HD Master 5.1 1941Kbps (48kHz/16-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:35:44.447 (h:m:s.ms)
+Size:                   16á883á871á744 bytes
+Total Bitrate:          23,51 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17297 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1941 kbps       5.1 / 48 kHz / 1941 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2229 kbps       5.1 / 48 kHz / 2229 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         28,436 kbps                     
+Presentation Graphics           French          42,191 kbps                     
+Presentation Graphics           French          0,604 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:35:44.447     16á883á871á744  23á513          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:05:15.565     17á842 kbps     35á767 kbps     00:04:19.842    28á045 kbps     00:02:21.266    25á197 kbps     00:04:12.877    93á009 bytes    390á993 bytes   00:00:36.035    
+2               0:05:15.565     0:06:12.747     16á729 kbps     39á245 kbps     00:07:01.921    27á634 kbps     00:08:11.365    26á166 kbps     00:08:11.157    87á218 bytes    329á287 bytes   00:06:52.412    
+3               0:11:28.312     0:06:19.003     18á935 kbps     32á153 kbps     00:15:59.458    24á997 kbps     00:15:58.499    24á187 kbps     00:13:40.819    98á720 bytes    289á763 bytes   00:17:05.858    
+4               0:17:47.316     0:07:07.593     15á471 kbps     29á009 kbps     00:21:51.518    25á879 kbps     00:22:14.875    24á720 kbps     00:22:14.624    80á659 bytes    316á570 bytes   00:19:37.718    
+5               0:24:54.910     0:05:46.846     19á471 kbps     33á718 kbps     00:27:43.578    29á710 kbps     00:26:58.533    28á708 kbps     00:26:53.486    101á513 bytes   361á294 bytes   00:26:13.238    
+6               0:30:41.756     0:05:37.754     15á470 kbps     41á408 kbps     00:30:43.299    32á500 kbps     00:30:42.131    24á418 kbps     00:30:41.756    80á655 bytes    282á765 bytes   00:33:22.041    
+7               0:36:19.510     0:04:53.167     17á022 kbps     27á088 kbps     00:37:36.879    24á688 kbps     00:37:36.879    24á137 kbps     00:37:35.503    88á747 bytes    282á082 bytes   00:39:00.087    
+8               0:41:12.678     0:07:12.056     19á744 kbps     32á518 kbps     00:46:05.846    26á214 kbps     00:47:00.108    25á224 kbps     00:46:53.602    102á935 bytes   313á857 bytes   00:47:36.937    
+9               0:48:24.735     0:06:41.109     17á148 kbps     32á115 kbps     00:51:28.877    25á840 kbps     00:51:28.627    24á021 kbps     00:50:33.530    89á403 bytes    318á641 bytes   00:50:06.670    
+10              0:55:05.844     0:04:54.002     18á684 kbps     39á108 kbps     00:55:55.560    29á371 kbps     00:55:54.934    25á273 kbps     00:55:54.142    97á409 bytes    322á185 bytes   00:59:58.845    
+11              0:59:59.846     0:07:17.228     19á409 kbps     34á790 kbps     01:04:01.796    27á202 kbps     01:00:58.237    24á427 kbps     01:00:34.047    101á188 bytes   326á421 bytes   01:04:02.046    
+12              1:07:17.074     0:07:32.827     20á261 kbps     36á746 kbps     01:09:56.192    30á146 kbps     01:12:58.082    28á906 kbps     01:12:54.787    105á633 bytes   315á003 bytes   01:09:54.982    
+13              1:14:49.902     0:03:22.410     17á869 kbps     33á682 kbps     01:16:14.319    22á841 kbps     01:17:12.252    20á923 kbps     01:16:05.519    93á159 bytes    283á767 bytes   01:16:49.563    
+14              1:18:12.312     0:05:38.671     16á576 kbps     29á034 kbps     01:23:44.019    22á311 kbps     01:18:40.048    21á954 kbps     01:18:41.174    86á422 bytes    294á356 bytes   01:23:46.980    
+15              1:23:50.984     0:06:44.946     19á195 kbps     31á517 kbps     01:26:03.199    28á281 kbps     01:29:50.051    28á071 kbps     01:29:47.173    100á075 bytes   374á924 bytes   01:27:07.138    
+16              1:30:35.930     0:05:08.516     3á790 kbps      16á332 kbps     01:34:47.807    15á701 kbps     01:34:45.554    14á973 kbps     01:34:41.801    19á761 bytes    296á240 bytes   01:34:49.183    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     5744,364                17á297                  12á420á337á667  67á582á237      
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           5744,364                1á941                   1á393á987á508   8á468á351       
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            5744,364                2á229                   1á600á319á988   9á604á222       
+00000.M2TS      4354 (0x1102)   0x81            AC3             eng (English)           5744,364                192                     137á867á520     897á575         
+00000.M2TS      4355 (0x1103)   0x81            AC3             eng (English)           5744,364                192                     137á865á984     897á565         
+00000.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           5744,364                28                      20á418á590      118á281         
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            5744,364                42                      30á295á665      173á686         
+00000.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            5744,364                1                       433á787         2á446           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 16á883á871á744 bytes
+Length: 1:35:44.447
+Total Bitrate: 23,51 Mbps
+Video: MPEG-4 AVC Video / 17297 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 1941 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 2229 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Subtitle: English / 28,436 kbps
+Subtitle: French / 42,191 kbps
+Subtitle: French / 0,604 kbps
+
+
+********************
+PLAYLIST: 00010.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00010.MPLS                                                      AVC     0:04:28 535á400á448     18á686á571á599  15,95   14,98   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00010.MPLS
+Length:                 0:04:28.601 (h:m:s.ms)
+Size:                   535á400á448 bytes
+Total Bitrate:          15,95 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        14982 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00006.M2TS      0:00:00.000     0:01:08.485     136á642á560     15á962          
+00007.M2TS      0:01:08.485     0:01:57.408     233á871á360     15á936          
+00008.M2TS      0:03:05.894     0:01:22.707     164á886á528     15á949          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:08.485     14á997 kbps     29á028 kbps     00:00:26.317    24á736 kbps     00:00:24.691    22á548 kbps     00:00:25.442    78á141 bytes    341á294 bytes   00:00:30.572    
+2               0:01:08.485     0:01:57.408     14á972 kbps     29á310 kbps     00:02:45.748    25á042 kbps     00:01:54.864    22á605 kbps     00:01:52.946    78á058 bytes    380á074 bytes   00:02:09.337    
+3               0:03:05.894     0:01:22.707     14á984 kbps     29á575 kbps     00:04:22.720    27á913 kbps     00:04:21.803    19á407 kbps     00:04:16.756    78á159 bytes    441á255 bytes   00:04:26.557    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00006.M2TS      4113 (0x1011)   0x1B            AVC                                     68,402                  15á015                  128á383á241     698á662         
+00006.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           68,402                  192                     1á644á288       10á705          
+00007.M2TS      4113 (0x1011)   0x1B            AVC                                     117,284                 14á988                  219á734á063     1á195á757       
+00007.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           117,284                 192                     2á818á560       18á350          
+00008.M2TS      4113 (0x1011)   0x1B            AVC                                     82,624                  14á999                  154á913á691     843á060         
+00008.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           82,624                  192                     1á985á280       12á925          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00010.MPLS
+Size: 535á400á448 bytes
+Length: 0:04:28.601
+Total Bitrate: 15,95 Mbps
+Video: MPEG-4 AVC Video / 14982 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00007.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00007.MPLS                                                      AVC     0:03:32 580á847á616     18á686á571á599  21,90   20,00   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00007.MPLS
+Length:                 0:03:32.212 (h:m:s.ms)
+Size:                   580á847á616 bytes
+Total Bitrate:          21,90 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        19995 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00016.M2TS      0:00:00.000     0:03:32.212     580á847á616     21á897          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:03:32.212     19á995 kbps     39á867 kbps     00:01:02.312    34á551 kbps     00:00:58.099    34á025 kbps     00:00:57.932    104á246 bytes   333á436 bytes   00:01:07.442    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00016.M2TS      4113 (0x1011)   0x1B            AVC                                     212,129                 20á003                  530á403á998     2á885á488       
+00016.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           212,129                 192                     5á093á376       33á160          
+00016.M2TS      4353 (0x1101)   0x81            AC3             eng (English)           212,129                 192                     5á093á376       33á160          
+00016.M2TS      4354 (0x1102)   0x81            AC3             eng (English)           212,129                 192                     5á093á376       33á160          
+00016.M2TS      4355 (0x1103)   0x81            AC3             eng (English)           212,129                 192                     5á093á376       33á160          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00007.MPLS
+Size: 580á847á616 bytes
+Length: 0:03:32.212
+Total Bitrate: 21,90 Mbps
+Video: MPEG-4 AVC Video / 19995 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00003.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00003.MPLS                                                      AVC     0:02:01 289á978á368     18á686á571á599  19,08   17,99   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00003.MPLS
+Length:                 0:02:01.583 (h:m:s.ms)
+Size:                   289á978á368 bytes
+Total Bitrate:          19,08 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17986 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00019.M2TS      0:00:00.000     0:02:01.583     289á978á368     19á080          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:02:01.583     17á986 kbps     30á370 kbps     00:01:49.708    27á112 kbps     00:00:59.708    25á748 kbps     00:01:46.166    93á677 bytes    406á906 bytes   00:01:56.208    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00019.M2TS      4113 (0x1011)   0x1B            AVC                                     121,458                 18á004                  273á348á385     1á487á195       
+00019.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           121,458                 192                     2á921á472       19á020          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00003.MPLS
+Size: 289á978á368 bytes
+Length: 0:02:01.583
+Total Bitrate: 19,08 Mbps
+Video: MPEG-4 AVC Video / 17986 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00005.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00005.MPLS                                                      AVC     0:01:35 264á050á688     18á686á571á599  22,02   20,81   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00005.MPLS
+Length:                 0:01:35.916 (h:m:s.ms)
+Size:                   264á050á688 bytes
+Total Bitrate:          22,02 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        20806 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00005.M2TS      0:00:00.000     0:01:35.916     264á050á688     22á023          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:35.916     20á806 kbps     43á811 kbps     00:00:42.874    38á399 kbps     00:00:41.833    34á281 kbps     00:00:41.791    108á364 bytes   481á778 bytes   00:00:42.375    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00005.M2TS      4113 (0x1011)   0x1B            AVC                                     95,833                  20á824                  249á452á957     1á357á034       
+00005.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           95,833                  192                     2á302á464       14á990          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00005.MPLS
+Size: 264á050á688 bytes
+Length: 0:01:35.916
+Total Bitrate: 22,02 Mbps
+Video: MPEG-4 AVC Video / 20806 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB
+
+
+********************
+PLAYLIST: 00008.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00008.MPLS                                                      AVC     0:00:25 6á703á104       18á686á571á599  2,14    1,97                                              
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     NARCOPOLIS
+Disc Size:      18á686á571á599 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00008.MPLS
+Length:                 0:00:25.108 (h:m:s.ms)
+Size:                   6á703á104 bytes
+Total Bitrate:          2,14 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        1975 kbps           1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00012.M2TS      0:00:00.000     0:00:07.549     2á297á856       2á435           
+00013.M2TS      0:00:07.549     0:00:07.549     2á586á624       2á741           
+00014.M2TS      0:00:15.098     0:00:10.009     1á818á624       1á453           
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:25.108     1á975 kbps      6á772 kbps      00:00:08.049    3á126 kbps      00:00:05.922    2á816 kbps      00:00:05.964    10á295 bytes    167á677 bytes   00:00:10.552    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00012.M2TS      4113 (0x1011)   0x1B            AVC                                     7,382                   2á317                   2á138á035       11á711          
+00013.M2TS      4113 (0x1011)   0x1B            AVC                                     7,382                   2á618                   2á416á319       13á212          
+00014.M2TS      4113 (0x1011)   0x1B            AVC                                     9,885                   1á330                   1á643á339       9á105           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: NARCOPOLIS
+Disc Size: 18á686á571á599 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00008.MPLS
+Size: 6á703á104 bytes
+Length: 0:00:25.108
+Total Bitrate: 2,14 Mbps
+Video: MPEG-4 AVC Video / 1975 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1

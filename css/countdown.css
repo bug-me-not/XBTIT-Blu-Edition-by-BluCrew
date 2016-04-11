@@ -1,0 +1,67 @@
+.countitround * {
+    padding:0;
+    margin:0;
+}
+
+.countitround .countitround_days,
+.countitround .countitround_hours,
+.countitround .countitround_minutes,
+.countitround .countitround_seconds {
+    position: relative;
+    width:188px;
+    height:188px;
+    float:left;
+    margin:5px;
+}
+
+.countitround .canvas_days,
+.countitround .canvas_hours, 
+.countitround .canvas_minutes, 
+.countitround .canvas_seconds { 
+    position: relative;
+    z-index: 2;
+}
+
+.countitround .canvas_background {
+    position: absolute;
+    z-index: 1;
+}
+
+.countitround .countitround_days_text,
+.countitround .countitround_hours_text,
+.countitround .countitround_minutes_text,
+.countitround .countitround_seconds_text {
+    width:188px;
+    height:188px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    line-height: 188px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#000;
+    font-weight: normal;
+    font-weight: bold;
+}
+   
+
+
+.countitround .countitround_days_count,
+.countitround .countitround_hours_count,
+.countitround .countitround_minutes_count,
+.countitround .countitround_seconds_count {
+    width:188px;
+    height:188px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    line-height: 188px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#000;
+    font-weight: normal;
+    font-weight: bold;
+}
+   

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>XMLHTTP test</title>
+  </head>
+  <body>
+
+    <button id="mybutton">Make a request</button>
+
+    <script type="text/javascript" src="st-xmlhttp.js"></script>
+    <script type="text/javascript">
+      document.getElementById('mybutton').onclick = function() {
+        makeHttpRequest('test.html', alert);
+      }
+    </script>
+
+    </body>
+</html>

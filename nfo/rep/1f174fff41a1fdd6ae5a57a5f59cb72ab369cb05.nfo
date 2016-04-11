@@ -1,0 +1,50 @@
+DISC INFO:
+
+Disc Title:     After Earth 2013 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      34 935 824 111 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:40:02.997 (h:m:s.ms)
+Size:                   26 826 498 048 bytes
+Total Bitrate:          35,75 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24956 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2270 kbps       5.1 / 48 kHz / 2270 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+DTS-HD Master Audio             French          2275 kbps       5.1 / 48 kHz / 2275 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Hindi           448 kbps        5.1 / 48 kHz / 448 kbps
+DTS-HD Master Audio             Italian         2278 kbps       5.1 / 48 kHz / 2278 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         14,210 kbps                     
+Presentation Graphics           English         12,014 kbps                     
+Presentation Graphics           Arabic          8,024 kbps                      
+Presentation Graphics           Dutch           13,123 kbps                     
+Presentation Graphics           French          12,767 kbps                     
+Presentation Graphics           Hindi           12,005 kbps                     
+Presentation Graphics           Italian         14,237 kbps                     
+Presentation Graphics           Polish          12,184 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     1:40:02.997     26 826 498 048  35 751

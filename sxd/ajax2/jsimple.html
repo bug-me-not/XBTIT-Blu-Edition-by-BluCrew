@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>simple jQuery</title>
+</head>
+<body>
+
+
+    <div id="mydiv">load here...</div>
+    <button id="goload">Go</button>
+
+    <script type="text/javascript" src="jquery-1.2.3.min.js"></script>
+
+    <script type="text/javascript">
+    $("#goload").click(function(){
+        $("#mydiv").load("exec.php?command=sh /home/pub/sxd/backup.sh");
+    });
+    </script>
+
+
+
+</body>
+</html>

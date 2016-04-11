@@ -1,0 +1,1 @@
+&scoreVar=_root.universe.world.sc&blah=1

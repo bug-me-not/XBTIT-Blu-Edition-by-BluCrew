@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     DESTINATIONFINALE
+Disc Size:      23 592 244 500 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00011.MPLS
+Length:                 1:38:02.001 (h:m:s.ms)
+Size:                   21 090 607 104 bytes
+Total Bitrate:          28,68 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              21298 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2294 kbps       5.1 / 48 kHz / 2294 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -4dB)
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+DTS-HD Master Audio             French          2159 kbps       5.1 / 48 kHz / 2159 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit / DN -4dB)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          20,523 kbps                     
+Presentation Graphics           French          0,410 kbps                      
+Presentation Graphics           French          45,489 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00009.M2TS      0:00:00.000     1:38:02.001     21 090 607 104  28 685

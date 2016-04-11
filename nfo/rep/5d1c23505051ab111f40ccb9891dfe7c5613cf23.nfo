@@ -1,0 +1,63 @@
+General
+
+Complete name : /private/rtorrent/data/Dolphins.(2000).2160p.AMZN.WEBRip.DD2.0.x264-TrollUHD.mkv
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 10.2 GiB
+Duration : 39mn 50s
+Overall bit rate : 36.7 Mbps
+Encoded date : UTC 2015-11-05 03:12:30
+Writing application : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 00:39:50.464000000
+NUMBER_OF_FRAMES : 74702
+NUMBER_OF_BYTES : 191237120
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-11-05 03:12:30
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L5.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 5 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 39mn 50s
+Bit rate : 35.3 Mbps
+Width : 3 840 pixels
+Height : 2 160 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 24.000 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.177
+Stream size : 9.82 GiB (96%)
+Writing library : x264 core 146 r2538 121396c
+Encoding settings : cabac=1 / ref=5 / deblock=1:-2:-2 / analyse=0x3:0x133 / me=umh / subme=10 / psy=1 / psy_rd=1.00:0.15 / mixed_ref=1 / me_range=48 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-3 / threads=12 / lookahead_threads=2 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=8 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=240 / keyint_min=24 / scenecut=40 / intra_refresh=0 / rc_lookahead=60 / rc=crf / mbtree=1 / crf=18.0 / qcomp=0.70 / qpmin=0 / qpmax=69 / qpstep=4 / vbv_maxrate=300000 / vbv_bufsize=300000 / crf_max=0.0 / nal_hrd=none / filler=0 / ip_ratio=1.30 / aq=1:0.90
+Language : English
+Default : Yes
+Forced : No
+
+Audio
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 39mn 50s
+Bit rate mode : Constant
+Bit rate : 640 Kbps
+Channel(s) : 2 channels
+Channel positions : Front: L R
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 182 MiB (2%)
+Default : Yes
+Forced : No

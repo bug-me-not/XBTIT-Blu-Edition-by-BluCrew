@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     UPSIDE DOWN 1080p Blu-ray Avc DTS HD.MA 5.1 fantome13
+
+Disc Size:      41 274 611 177 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:48:05.500 (h:m:s.ms)
+Size:                   34 882 145 088 bytes
+Total Bitrate:          43,03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        34999 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1851 kbps       5.1 / 48 kHz / 1851 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          3810 kbps       5.1 / 48 kHz / 3810 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           23,444 kbps                     
+Presentation Graphics           French          23,261 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:48:05.500     34 882 145 088  43 028

@@ -1,0 +1,53 @@
+DISC INFO:
+
+Disc Title:     The.Green.Berets.1968.MULTi.COMPLETE.BLURAY-HDNORDiC 
+Disc Size:      31 909 402 901 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 2:21:57.842 (h:m:s.ms)
+Size:                   31 290 071 040 bytes
+Total Bitrate:          29,39 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              24884 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             German          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby TrueHD Audio              English         413 kbps        1.0 / 48 kHz / 413 kbps / 16-bit (AC3 Embedded: 1.0 / 48 kHz / 192 kbps / DN -4dB)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         25,882 kbps                     
+Presentation Graphics           French          21,045 kbps                     
+Presentation Graphics           German          25,451 kbps                     
+Presentation Graphics           Spanish         21,254 kbps                     
+Presentation Graphics           Spanish         21,865 kbps                     
+Presentation Graphics           Danish          22,503 kbps                     
+Presentation Graphics           Finnish         20,981 kbps                     
+Presentation Graphics           Greek           21,567 kbps                     
+Presentation Graphics           Norwegian       18,806 kbps                     
+Presentation Graphics           Portuguese      22,794 kbps                     
+Presentation Graphics           Swedish         22,019 kbps                     
+Presentation Graphics           Japanese        15,751 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     2:21:57.842     31 290 071 040  29 388

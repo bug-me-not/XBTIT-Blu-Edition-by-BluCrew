@@ -1,0 +1,106 @@
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 20.9 GiB
+Duration : 2h 6mn
+Overall bit rate mode : Variable
+Overall bit rate : 23.6 Mbps
+Movie name : Au.Pays.du.Sang.et.du.Miel.2011.Multi.Truefrench.1080p.Bluray.Remux.AVC-BDHD
+Encoded date : UTC 2015-12-03 10:03:32
+Writing application : mkvmerge v7.4.0 ('Circles') 64bit built on Dec 12 2014 15:30:07
+Writing library : libebml v1.3.0 + libmatroska v1.4.1
+DURATION : 02:04:33.550000000
+NUMBER_OF_FRAMES : 1456
+NUMBER_OF_BYTES : 12722343
+_STATISTICS_WRITING_APP : mkvmerge v7.4.0 ('Circles') 64bit built on Dec 12 2014 15:30:07
+_STATISTICS_WRITING_DATE_UTC : 2015-12-03 10:03:32
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 2 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 6mn
+Bit rate mode : Variable
+Bit rate : 20.0 Mbps
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.403
+Stream size : 17.7 GiB (85%)
+Default : Yes
+Forced : No
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Codec ID : A_DTS
+Duration : 2h 6mn
+Bit rate mode : Variable
+Bit rate : 1 561 Kbps / 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossless / Lossy
+Title : DTS-HD Master Audio French 2093 kbps 5.1 / 48 kHz / 2093 kbps / 16-bit VFF
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Codec ID : A_DTS
+Duration : 2h 6mn
+Bit rate mode : Variable
+Bit rate : 1 561 Kbps / 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossless / Lossy
+Title : DTS-HD Master Audio English 1643 kbps 5.1 / 48 kHz / 1643 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Language : English
+Default : No
+Forced : No
+
+Text
+ID : 4
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : PGS French Complets
+Language : French
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:00:00:00.000
+00:06:41.735 : en:00:06:41.735
+00:16:42.668 : en:00:16:42.668
+00:22:38.983 : en:00:22:38.983
+00:29:34.231 : en:00:29:34.231
+00:37:21.781 : en:00:37:21.781
+00:45:24.555 : en:00:45:24.555
+00:50:48.671 : en:00:50:48.671
+00:58:57.826 : en:00:58:57.826
+01:06:31.446 : en:01:06:31.446
+01:14:20.956 : en:01:14:20.956
+01:24:15.509 : en:01:24:15.509
+01:33:01.576 : en:01:33:01.576
+01:39:52.361 : en:01:39:52.361
+01:49:44.161 : en:01:49:44.161
+02:00:22.590 : en:02:00:22.590

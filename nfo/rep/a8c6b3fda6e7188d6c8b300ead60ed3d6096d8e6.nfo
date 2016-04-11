@@ -1,0 +1,186 @@
+Nom complet : Blade Runner The Final Cut 1982 MULTI 1080p BluRay REMUX VC-1-HDILLUZION
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 21,5 Gio
+Durée : 1h 57mn
+Type de débit global : Variable
+Débit global moyen : 26,1 Mb/s
+Date d'encodage : UTC 2014-07-08 23:46:17
+Application utilisée : mkvmerge v7.0.0 ('Where We Going') 64bit built on Jun 9 2014 15:16:27
+Bibliothèque utilisée : libebml v1.3.0 + libmatroska v1.4.1
+
+Vidéo
+ID : 1
+Format : VC-1
+Profil du format : AP@L3
+Identifiant du codec : WVC1
+Identifiant du codec/Suggestion : Microsoft
+Durée : 1h 57mn
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Images par seconde : 23,976 Im/s
+Sous-échantillonnage de la chrom : 4:2:0
+Profondeur des couleurs : 8 bits
+Type d'image : Progressif
+Mode de compression : Avec perte
+Titre : Blade Runner
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Identifiant du codec : A_AC3
+Durée : 1h 57mn
+Type de débit : Constant
+Débit : 640 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 16 bits
+Mode de compression : Avec perte
+Taille du flux : 538 Mio (2%)
+Titre : French : Dolby Digital 5.1
+
+Audio #2
+ID : 3
+Format : TrueHD
+Identifiant du codec : A_TRUEHD
+Durée : 1h 57mn
+Type de débit : Variable
+Débit maximum : 5 247 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Mode de compression : Sans perte
+Titre : English : Dolby TrueHD 5.1
+
+Audio #3
+ID : 4
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Identifiant du codec : A_DTS
+Durée : 1h 57mn
+Type de débit : Variable
+Débit : 1 561 Kbps / 1 510 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Titre : English : DTS-HD Master Audio 5.1
+
+Audio #4
+ID : 5
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Identifiant du codec : A_AC3
+Durée : 1h 57mn
+Type de débit : Constant
+Débit : 192 Kbps
+Canaux : 2 canaux
+Position des cannaux : Front: L R
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 16 bits
+Mode de compression : Avec perte
+Taille du flux : 162 Mio (1%)
+Titre : English Commentary #1 : Dolby Digital 2.0
+
+Audio #5
+ID : 6
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Identifiant du codec : A_AC3
+Durée : 1h 57mn
+Type de débit : Constant
+Débit : 192 Kbps
+Canaux : 2 canaux
+Position des cannaux : Front: L R
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 16 bits
+Mode de compression : Avec perte
+Taille du flux : 162 Mio (1%)
+Titre : English Commentary #2 : Dolby Digital 2.0
+
+Audio #6
+ID : 7
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Identifiant du codec : A_AC3
+Durée : 1h 57mn
+Type de débit : Constant
+Débit : 192 Kbps
+Canaux : 2 canaux
+Position des cannaux : Front: L R
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 16 bits
+Mode de compression : Avec perte
+Taille du flux : 162 Mio (1%)
+Titre : English Commentary #3 : Dolby Digital 2.0
+
+Texte #1
+ID : 8
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : The same subtitle format used on BDs/HD-DVDs
+Titre : French : Subtitles Forced
+
+Texte #2
+ID : 9
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : The same subtitle format used on BDs/HD-DVDs
+Titre : French : Subtitles
+
+Texte #3
+ID : 10
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : The same subtitle format used on BDs/HD-DVDs
+Titre : English : Subtitles
+
+Menu
+00:00:00.000 : en:Chapter 1
+00:02:58.178 : en:Chapter 2
+00:04:31.980 : en:Chapter 3
+00:07:26.112 : en:Chapter 4
+00:11:18.260 : en:Chapter 5
+00:12:58.569 : en:Chapter 6
+00:16:58.183 : en:Chapter 7
+00:22:38.815 : en:Chapter 8
+00:25:04.878 : en:Chapter 9
+00:27:58.343 : en:Chapter 10
+00:30:21.486 : en:Chapter 11
+00:36:19.177 : en:Chapter 12
+00:41:30.321 : en:Chapter 13
+00:42:23.999 : en:Chapter 14
+00:45:56.336 : en:Chapter 15
+00:48:44.463 : en:Chapter 16
+00:55:18.898 : en:Chapter 17
+00:57:27.277 : en:Chapter 18
+00:59:44.998 : en:Chapter 19
+01:01:49.414 : en:Chapter 20
+01:03:18.002 : en:Chapter 21
+01:07:44.393 : en:Chapter 22
+01:12:39.521 : en:Chapter 23
+01:16:13.527 : en:Chapter 24
+01:20:12.474 : en:Chapter 25
+01:22:34.532 : en:Chapter 26
+01:27:07.513 : en:Chapter 27
+01:28:45.236 : en:Chapter 28
+01:34:02.219 : en:Chapter 29
+01:36:54.308 : en:Chapter 30
+01:41:12.316 : en:Chapter 31
+01:42:37.276 : en:Chapter 32
+01:44:31.807 : en:Chapter 33
+01:45:56.266 : en:Chapter 34
+01:49:04.496 : en:Chapter 35
+01:52:21.735 : en:Chapter 36

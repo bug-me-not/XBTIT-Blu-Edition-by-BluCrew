@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     Source code 2011 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      30 602 031 177 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:33:20.011 (h:m:s.ms)
+Size:                   20 187 027 456 bytes
+Total Bitrate:          28,84 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        19649 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          3627 kbps       5.1 / 48 kHz / 3627 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         3464 kbps       5.1 / 48 kHz / 3464 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       English         256 kbps        2.0 / 48 kHz / 256 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          26,540 kbps                     
+Presentation Graphics           French          0,138 kbps                      
+Presentation Graphics           French          57,929 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00087.M2TS      0:00:00.000     1:33:20.011     20 187 027 456  28 839

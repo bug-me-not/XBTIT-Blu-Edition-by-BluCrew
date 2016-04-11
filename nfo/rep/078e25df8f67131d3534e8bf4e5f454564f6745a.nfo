@@ -1,0 +1,62 @@
+DISC INFO:
+
+Disc Title:     LEGEND
+Disc Size:      46.532.619.750 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00500.MPLS
+Length:                 1:33:43.659 (h:m:s.ms)
+Size:                   24.636.383.232 bytes
+Total Bitrate:          35,05 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        23237 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3727 kbps       5.1 / 48 kHz / 3727 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Thai            224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             Turkish         224 kbps        2.0 / 48 kHz / 224 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         21,037 kbps                    
+Presentation Graphics           Spanish         17,839 kbps                    
+Presentation Graphics           French          18,550 kbps                    
+Presentation Graphics           Spanish         18,418 kbps                    
+Presentation Graphics           Danish          17,246 kbps                    
+Presentation Graphics           Dutch           16,857 kbps                    
+Presentation Graphics           Finnish         17,052 kbps                    
+Presentation Graphics           German          18,109 kbps                    
+Presentation Graphics           Italian         17,061 kbps                    
+Presentation Graphics           Japanese        13,064 kbps                    
+Presentation Graphics           Japanese        0,368 kbps                      
+Presentation Graphics           Norwegian       16,164 kbps                    
+Presentation Graphics           Portuguese      18,174 kbps                    
+Presentation Graphics           Russian         18,177 kbps                    
+Presentation Graphics           Swedish         16,242 kbps                    
+Presentation Graphics           Chinese         15,086 kbps                    
+Presentation Graphics           Korean          12,337 kbps                    
+Presentation Graphics           Chinese         13,908 kbps                    
+Presentation Graphics           Polish          16,541 kbps                    
+Presentation Graphics           Portuguese      18,441 kbps                    
+Presentation Graphics           Thai            13,501 kbps                    
+Presentation Graphics           Turkish         18,224 kbps                 

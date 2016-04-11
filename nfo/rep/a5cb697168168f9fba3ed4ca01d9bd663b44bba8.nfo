@@ -1,0 +1,316 @@
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      MPEG-2  1:58:31 22.018.418.688  22.306.654.211  24,77   19,56   DTS-HD Master 5.1 2764Kbps (48kHz/24-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     SILENCE_OF_LAMBS_F1
+Disc Size:      22.306.654.211 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:58:31.604 (h:m:s.ms)
+Size:                   22.018.418.688 bytes
+Total Bitrate:          24,77 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            19557 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2764 kbps       5.1 / 48 kHz / 2764 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         32,666 kbps                     
+Presentation Graphics           French          32,449 kbps                     
+Presentation Graphics           Swedish         28,245 kbps                     
+Presentation Graphics           Danish          32,150 kbps                     
+Presentation Graphics           Finnish         32,205 kbps                     
+Presentation Graphics           Norwegian       30,095 kbps                     
+Presentation Graphics           Dutch           29,661 kbps                     
+Presentation Graphics           French          0,711 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:58:31.604     22.018.418.688  24.769          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:05:16.274     22.947 kbps     44.231 kbps     00:02:07.377    40.552 kbps     00:02:04.582    38.239 kbps     00:02:02.831    119.619 bytes   627.085 bytes   00:01:18.995    
+2               0:05:16.274     0:02:58.136     17.489 kbps     22.388 kbps     00:07:58.436    19.781 kbps     00:05:35.043    19.635 kbps     00:05:30.038    91.180 bytes    555.791 bytes   00:07:59.270    
+3               0:08:14.410     0:03:34.172     18.077 kbps     22.851 kbps     00:09:28.484    20.108 kbps     00:09:32.446    19.955 kbps     00:09:27.567    94.244 bytes    537.591 bytes   00:08:18.414    
+4               0:11:48.582     0:09:50.756     19.068 kbps     42.853 kbps     00:20:46.620    37.042 kbps     00:20:45.869    36.353 kbps     00:20:45.911    99.413 bytes    700.463 bytes   00:20:39.780    
+5               0:21:39.339     0:05:19.485     19.447 kbps     36.456 kbps     00:25:04.419    29.966 kbps     00:25:00.415    25.544 kbps     00:25:16.223    101.389 bytes   500.151 bytes   00:25:05.212    
+6               0:26:58.825     0:04:39.654     17.593 kbps     23.697 kbps     00:29:14.335    21.659 kbps     00:29:10.331    21.422 kbps     00:29:05.326    91.722 bytes    571.590 bytes   00:31:27.969    
+7               0:31:38.479     0:03:21.367     20.291 kbps     33.164 kbps     00:34:14.552    28.672 kbps     00:34:12.050    27.462 kbps     00:34:14.010    105.788 bytes   554.574 bytes   00:34:59.847    
+8               0:34:59.847     0:03:39.469     20.903 kbps     31.452 kbps     00:36:38.112    25.633 kbps     00:38:34.312    24.035 kbps     00:38:29.307    108.980 bytes   615.880 bytes   00:38:39.025    
+9               0:38:39.317     0:02:35.071     18.141 kbps     23.881 kbps     00:40:21.168    20.936 kbps     00:40:37.810    20.156 kbps     00:40:32.805    94.578 bytes    457.020 bytes   00:39:30.701    
+10              0:41:14.388     0:05:26.576     18.001 kbps     32.742 kbps     00:42:56.949    25.688 kbps     00:46:08.182    25.284 kbps     00:46:08.182    93.851 bytes    440.849 bytes   00:41:47.838    
+11              0:46:40.964     0:03:03.016     20.491 kbps     30.447 kbps     00:47:33.475    27.578 kbps     00:49:38.975    26.354 kbps     00:49:17.913    106.832 bytes   674.606 bytes   00:49:43.980    
+12              0:49:43.980     0:01:51.736     22.469 kbps     29.370 kbps     00:49:43.980    25.794 kbps     00:50:28.316    25.359 kbps     00:50:23.311    117.143 bytes   615.462 bytes   00:49:46.441    
+13              0:51:35.717     0:06:09.619     19.972 kbps     34.767 kbps     00:54:38.817    33.580 kbps     00:54:38.817    32.088 kbps     00:54:13.416    104.124 bytes   558.227 bytes   00:54:46.116    
+14              0:57:45.336     0:01:44.896     20.335 kbps     29.962 kbps     00:58:13.364    26.787 kbps     00:58:05.690    25.488 kbps     00:58:06.357    106.018 bytes   559.073 bytes   00:59:19.722    
+15              0:59:30.233     0:01:39.641     18.389 kbps     24.816 kbps     00:59:51.296    21.846 kbps     01:00:49.896    21.266 kbps     01:00:49.896    95.872 bytes    559.735 bytes   01:00:31.169    
+16              1:01:09.874     0:04:47.245     20.191 kbps     38.475 kbps     01:01:16.172    37.626 kbps     01:01:16.172    36.375 kbps     01:01:11.167    105.268 bytes   583.062 bytes   01:05:57.119    
+17              1:05:57.119     0:08:17.079     18.916 kbps     28.468 kbps     01:14:13.198    24.006 kbps     01:14:09.194    23.843 kbps     01:14:04.189    98.621 bytes    594.649 bytes   01:06:00.122    
+18              1:14:14.199     0:04:09.958     20.762 kbps     31.846 kbps     01:16:48.478    27.054 kbps     01:16:48.437    25.487 kbps     01:16:43.140    108.244 bytes   684.063 bytes   01:14:35.137    
+19              1:18:24.157     0:02:47.458     19.025 kbps     29.146 kbps     01:20:22.526    22.407 kbps     01:20:19.481    21.167 kbps     01:20:20.774    99.189 bytes    616.930 bytes   01:19:04.614    
+20              1:21:11.616     0:03:56.819     19.495 kbps     27.283 kbps     01:24:39.991    23.783 kbps     01:21:34.639    23.263 kbps     01:21:32.220    101.639 bytes   610.346 bytes   01:24:37.322    
+21              1:25:08.436     0:02:07.585     19.132 kbps     28.636 kbps     01:25:37.715    23.254 kbps     01:25:37.298    21.498 kbps     01:25:36.047    99.747 bytes    670.446 bytes   01:26:20.175    
+22              1:27:16.022     0:06:00.651     19.947 kbps     28.184 kbps     01:27:51.599    25.180 kbps     01:27:18.274    23.542 kbps     01:27:45.885    103.996 bytes   751.896 bytes   01:27:51.641    
+23              1:33:16.674     0:03:24.370     20.392 kbps     31.061 kbps     01:35:29.557    26.343 kbps     01:35:52.329    23.527 kbps     01:35:21.048    106.315 bytes   662.616 bytes   01:36:26.155    
+24              1:36:41.045     0:00:53.678     17.550 kbps     22.303 kbps     01:36:42.421    19.058 kbps     01:37:29.718    18.535 kbps     01:37:24.713    91.498 bytes    557.506 bytes   01:37:30.261    
+25              1:37:34.723     0:02:22.392     18.548 kbps     26.316 kbps     01:38:07.923    21.345 kbps     01:38:07.798    20.091 kbps     01:39:11.570    96.699 bytes    699.568 bytes   01:38:01.917    
+26              1:39:57.116     0:03:20.366     18.391 kbps     26.937 kbps     01:41:35.172    21.426 kbps     01:42:20.759    20.103 kbps     01:42:17.923    95.882 bytes    743.668 bytes   01:41:23.368    
+27              1:43:17.482     0:07:44.881     20.062 kbps     37.738 kbps     01:45:26.695    34.835 kbps     01:45:25.569    33.846 kbps     01:45:24.443    104.595 bytes   704.819 bytes   01:49:53.253    
+28              1:51:02.364     0:07:29.240     19.751 kbps     32.568 kbps     01:58:03.951    31.098 kbps     01:58:02.533    29.461 kbps     01:57:58.905    102.980 bytes   393.092 bytes   01:58:05.703    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x02            MPEG-2                                  7111,438                19.557                  17.385.127.185  94.583.573      
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           7111,438                2.764                   2.456.699.628   14.464.219      
+00000.M2TS      4353 (0x1101)   0x82            DTS             fra (French)            7111,438                768                     682.714.112     4.000.278       
+00000.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           7111,438                33                      29.038.574      166.148         
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            7111,438                32                      28.845.512      165.122         
+00000.M2TS      4610 (0x1202)   0x90            PGS             swe (Swedish)           7111,438                28                      25.108.499      144.968         
+00000.M2TS      4611 (0x1203)   0x90            PGS             dan (Danish)            7111,438                32                      28.579.483      163.813         
+00000.M2TS      4612 (0x1204)   0x90            PGS             fin (Finnish)           7111,438                32                      28.628.839      163.934         
+00000.M2TS      4613 (0x1205)   0x90            PGS             nor (Norwegian)         7111,438                30                      26.753.279      153.916         
+00000.M2TS      4614 (0x1206)   0x90            PGS             nld (Dutch)             7111,438                30                      26.367.206      151.846         
+00000.M2TS      4615 (0x1207)   0x90            PGS             fra (French)            7111,438                1                       632.397         3.628           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: SILENCE_OF_LAMBS_F1
+Disc Size: 22.306.654.211 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 22.018.418.688 bytes
+Length: 1:58:31.604
+Total Bitrate: 24,77 Mbps
+Video: MPEG-2 Video / 19557 kbps / 1080p / 23,976 fps / 16:9
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 2764 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: French / DTS Audio / 5.1 / 48 kHz / 768 kbps / 16-bit
+Subtitle: English / 32,666 kbps
+Subtitle: French / 32,449 kbps
+Subtitle: Swedish / 28,245 kbps
+Subtitle: Danish / 32,150 kbps
+Subtitle: Finnish / 32,205 kbps
+Subtitle: Norwegian / 30,095 kbps
+Subtitle: Dutch / 29,661 kbps
+Subtitle: French / 0,711 kbps
+
+
+********************
+PLAYLIST: 00002.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00002.MPLS                                                      MPEG-2  0:01:48 257.163.264     22.306.654.211  18,91   17,50   DD AC3 2.0 224Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     SILENCE_OF_LAMBS_F1
+Disc Size:      22.306.654.211 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 0:01:48.775 (h:m:s.ms)
+Size:                   257.163.264 bytes
+Total Bitrate:          18,91 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            17496 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          45,198 kbps                     
+Presentation Graphics           Swedish         42,399 kbps                     
+Presentation Graphics           Danish          44,448 kbps                     
+Presentation Graphics           Finnish         43,434 kbps                     
+Presentation Graphics           Norwegian       41,421 kbps                     
+Presentation Graphics           Dutch           42,551 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     0:01:48.775     257.163.264     18.913          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:48.775     17.496 kbps     39.792 kbps     00:00:39.664    25.451 kbps     00:01:08.151    23.317 kbps     00:00:39.581    91.218 bytes    602.974 bytes   00:00:48.715    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00001.M2TS      4113 (0x1011)   0x02            MPEG-2                                  108,609                 17.523                  237.896.636     1.294.433       
+00001.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           108,609                 224                     3.046.400       17.000          
+00001.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            108,609                 45                      614.554         3.477           
+00001.M2TS      4609 (0x1201)   0x90            PGS             swe (Swedish)           108,609                 42                      576.496         3.273           
+00001.M2TS      4610 (0x1202)   0x90            PGS             dan (Danish)            108,609                 45                      604.359         3.422           
+00001.M2TS      4611 (0x1203)   0x90            PGS             fin (Finnish)           108,609                 44                      590.569         3.349           
+00001.M2TS      4612 (0x1204)   0x90            PGS             nor (Norwegian)         108,609                 41                      563.200         3.197           
+00001.M2TS      4613 (0x1205)   0x90            PGS             nld (Dutch)             108,609                 43                      578.565         3.285           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: SILENCE_OF_LAMBS_F1
+Disc Size: 22.306.654.211 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00002.MPLS
+Size: 257.163.264 bytes
+Length: 0:01:48.775
+Total Bitrate: 18,91 Mbps
+Video: MPEG-2 Video / 17496 kbps / 1080p / 23,976 fps / 16:9
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 224 kbps / DN -4dB
+Subtitle: French / 45,198 kbps
+Subtitle: Swedish / 42,399 kbps
+Subtitle: Danish / 44,448 kbps
+Subtitle: Finnish / 43,434 kbps
+Subtitle: Norwegian / 41,421 kbps
+Subtitle: Dutch / 42,551 kbps
+
+
+********************
+PLAYLIST: 00009.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00009.MPLS                                                      MPEG-2  0:01:30 4.895.808       22.306.654.211  0,43    0,15                                              
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     SILENCE_OF_LAMBS_F1
+Disc Size:      22.306.654.211 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00009.MPLS
+Length:                 0:01:30.131 (h:m:s.ms)
+Size:                   4.895.808 bytes
+Total Bitrate:          0,43 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            155 kbps            1080p / 23,976 fps / 16:9
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00012.M2TS      0:00:00.000     0:00:10.010     609.408         244             
+00012.M2TS      0:00:10.010     0:00:10.009     461.760         185             
+00012.M2TS      0:00:20.020     0:00:10.010     448.128         179             
+00012.M2TS      0:00:30.030     0:00:10.009     460.416         184             
+00012.M2TS      0:00:40.040     0:00:10.009     426.816         171             
+00012.M2TS      0:00:50.050     0:00:10.010     460.992         185             
+00012.M2TS      0:01:00.060     0:00:10.010     483.456         194             
+00012.M2TS      0:01:10.070     0:00:10.009     490.560         196             
+00012.M2TS      0:01:20.080     0:00:10.010     748.032         300             
+00012.M2TS      0:01:30.090     0:00:00.041     306.240         58.735          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:10.010     605 kbps        246 kbps        00:00:09.968    246 kbps        00:00:09.968    246 kbps        00:00:09.968    378.771 bytes   449.129 bytes   00:00:09.968    
+2               0:00:10.010     0:00:10.009     236 kbps        236 kbps        00:00:19.978    236 kbps        00:00:19.978    236 kbps        00:00:19.978    295.183 bytes   295.183 bytes   00:00:29.988    
+3               0:00:20.020     0:00:10.010     245 kbps        245 kbps        00:00:29.988    245 kbps        00:00:29.988    245 kbps        00:00:29.988    307.148 bytes   307.148 bytes   00:00:39.998    
+4               0:00:30.030     0:00:10.009     219 kbps        219 kbps        00:00:39.998    219 kbps        00:00:39.998    219 kbps        00:00:39.998    274.583 bytes   274.583 bytes   00:00:50.008    
+5               0:00:40.040     0:00:10.009     246 kbps        246 kbps        00:00:50.008    246 kbps        00:00:50.008    246 kbps        00:00:50.008    307.725 bytes   307.725 bytes   00:01:00.018    
+6               0:00:50.050     0:00:10.010     263 kbps        263 kbps        00:01:00.018    263 kbps        00:01:00.018    263 kbps        00:01:00.018    329.041 bytes   329.041 bytes   00:01:10.028    
+7               0:01:00.060     0:00:10.010     269 kbps        269 kbps        00:01:10.028    269 kbps        00:01:10.028    269 kbps        00:01:10.028    335.996 bytes   335.996 bytes   00:01:20.038    
+8               0:01:10.070     0:00:10.009     231 kbps        231 kbps        00:01:20.038    231 kbps        00:01:20.038    231 kbps        00:01:20.038    288.745 bytes   288.745 bytes   00:01:30.048    
+9               0:01:20.080     0:00:10.051     11.127 kbps     497 kbps        00:01:09.986    497 kbps        00:01:09.986    497 kbps        00:01:09.986    303.931 bytes   335.996 bytes   00:01:20.038    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00012.M2TS      4113 (0x1011)   0x02            MPEG-2                                  80,080                  318                     3.184.707       17.316          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: SILENCE_OF_LAMBS_F1
+Disc Size: 22.306.654.211 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00009.MPLS
+Size: 4.895.808 bytes
+Length: 0:01:30.131
+Total Bitrate: 0,43 Mbps
+Video: MPEG-2 Video / 155 kbps / 1080p / 23,976 fps / 16:9

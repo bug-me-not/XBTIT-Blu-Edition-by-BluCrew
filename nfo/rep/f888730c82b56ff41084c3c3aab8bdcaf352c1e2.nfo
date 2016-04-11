@@ -1,0 +1,70 @@
+DISC INFO:
+
+Disc Title:     PARENTHOOD_G51
+Disc Size:      38 973 739 922 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00801.MPLS
+Length:                 2:03:36.742 (h:m:s.ms)
+Size:                   37 943 961 600 bytes
+Total Bitrate:          40,93 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              29543 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3644 kbps       5.1 / 48 kHz / 3644 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Portuguese      768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Japanese        22,742 kbps                     
+Presentation Graphics           English         44,603 kbps                     
+Presentation Graphics           French          32,799 kbps                     
+Presentation Graphics           Italian         35,466 kbps                     
+Presentation Graphics           German          36,851 kbps                     
+Presentation Graphics           Spanish         40,118 kbps                     
+Presentation Graphics           Portuguese      32,087 kbps                     
+Presentation Graphics           Spanish         38,248 kbps                     
+Presentation Graphics           Danish          38,257 kbps                     
+Presentation Graphics           Dutch           26,802 kbps                     
+Presentation Graphics           Finnish         34,889 kbps                     
+Presentation Graphics           Greek           25,107 kbps                     
+Presentation Graphics           Korean          22,179 kbps                     
+Presentation Graphics           Norwegian       33,331 kbps                     
+Presentation Graphics           Polish          38,293 kbps                     
+Presentation Graphics           Portuguese      38,002 kbps                     
+Presentation Graphics           Russian         37,655 kbps                     
+Presentation Graphics           Swedish         35,002 kbps                     
+Presentation Graphics           Thai            28,019 kbps                     
+Presentation Graphics           Turkish         39,482 kbps                     
+Presentation Graphics           Chinese         29,394 kbps                     
+Presentation Graphics           French          0,078 kbps                      
+Presentation Graphics           Italian         0,213 kbps                      
+Presentation Graphics           German          0,055 kbps                      
+Presentation Graphics           Spanish         0,162 kbps                      
+Presentation Graphics           Portuguese      0,413 kbps                      
+Presentation Graphics           Spanish         0,165 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+50201.M2TS      0:00:00.000     2:03:36.742     37 943 961 600  40 928

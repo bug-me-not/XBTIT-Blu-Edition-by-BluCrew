@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Conviction 2010 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      34 356 278 572 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:47:02.457 (h:m:s.ms)
+Size:                   29 830 361 088 bytes
+Total Bitrate:          37,16 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        30843 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3504 kbps       5.1 / 48 kHz / 3504 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         43,017 kbps                     
+Presentation Graphics           French          30,186 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     1:47:02.457     29 830 361 088  37 158

@@ -1,0 +1,222 @@
+General
+Complete name                            : Face Off 1997 MULTi 1080p BluRay REMUX AVC-GLaDOS
+Format                                   : Matroska
+Format version                           : Version 4 / Version 2
+File size                                : 34.6 GiB
+Duration                                 : 2h 19mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 35.6 Mbps
+Encoded date                             : UTC 2015-10-25 06:02:51
+Writing application                      : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library                          : libebml v1.3.1 + libmatroska v1.4.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 2 frames
+Format settings, GOP                     : M=1, N=10
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2h 19mn
+Bit rate mode                            : Variable
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Title                                    : Face Off
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Bit rate                                 : 640 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 637 MiB (2%)
+Title                                    : French (Canada) : Dolby Digital 5.1
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.47 GiB (4%)
+Title                                    : French (France) : Digital Theater System 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #3
+ID                                       : 4
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : ES
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 7 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: C, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.47 GiB (4%)
+Title                                    : English : DTS-ES 6.1
+Default                                  : No
+Forced                                   : No
+
+Audio #4
+ID                                       : 5
+Format                                   : PCM
+Codec ID                                 : A_PCM/INT/LIT
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Channel(s)                               : 6 channels
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Title                                    : English : LPCM 5.1
+Default                                  : No
+Forced                                   : No
+
+Audio #5
+ID                                       : 6
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 191 MiB (1%)
+Title                                    : English Commentary #1 : Dolby Digital 2.0
+Default                                  : No
+Forced                                   : No
+
+Audio #6
+ID                                       : 7
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : A_AC3
+Duration                                 : 2h 19mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Compression mode                         : Lossy
+Stream size                              : 191 MiB (1%)
+Title                                    : English Commentary #2 : Dolby Digital 2.0
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 8
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : French : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 9
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Title                                    : English : Subtitles
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:The Merry-Go-Round
+00:03:02.724                             : en:Six Years Later: Sinclaire Is Hot
+00:06:33.226                             : en:Castor and Pollux
+00:09:36.659                             : en:Southern California International Airport: A Game of Chicken
+00:13:28.849                             : en:Ready for the Big Ride
+00:18:18.680                             : en:The Archer Home, "I got him Eve."
+00:20:09.958                             : en:A Visit From Special Ops: Sinclaire Revealed
+00:23:49.886                             : en:The Walsh Institute
+00:26:33.508                             : en:Failed Interrogations
+00:28:21.866                             : en:Black Bag Operation
+00:32:32.909                             : en:Suicide Mission
+00:33:41.978                             : en:Archer Becomes Castor "I want you to take this face and burn it."
+00:38:56.083                             : en:Erewhon Prison
+00:45:31.729                             : en:The Real Castor Wakes
+00:48:28.655                             : en:The Location of the Bomb
+00:51:04.311                             : en:An Unexpected Visitor, "It's like looking in a mirror... only not."
+00:54:20.548                             : en:"Papa's Got a Brand New Bag"
+00:58:17.952                             : en:Pollux Gets Released
+01:00:04.225                             : en:This Ridiculous Chin
+01:01:04.535                             : en:Disarming Sinclaire
+01:04:28.489                             : en:Date Night
+01:06:41.247                             : en:"I need a light!"
+01:08:13.464                             : en:Escape From Erewhon
+01:14:11.113                             : en:Michael Archer's Birthday
+01:15:37.366                             : en:Refuge at Dietrich's, "No more drugs for that man."
+01:24:20.638                             : en:Acting Like a Father
+01:27:04.219                             : en:Sasha and Adam
+01:31:28.649                             : en:Shootout in Dietrich's Loft
+01:37:08.113                             : en:The Face in the Mirror
+01:40:46.457                             : en:Lazarro's Heart Attack
+01:42:28.892                             : en:Eve Learns the Truth
+01:47:13.885                             : en:The Blood Test
+01:50:51.936                             : en:Lies, Distrust, Mixed Messages
+01:52:28.783                             : en:Lazarro's Funeral/A Candle for the Dead
+01:56:12.674                             : en:The Eternal Battle Between Good and Evil
+02:01:10.554                             : en:"I'm your father!"
+02:03:04.293                             : en:The Final Confrontation
+02:10:15.265                             : en:The True Sean Archer
+02:12:09.212                             : en:Homecoming
+02:14:17.466                             : en:End Credits
+
+--------------------------------------------------------------------------------
+
+SOURCES :                  
+                                           
+Face Off 1997 1080p USA BluRay AVC DTS-ES 6.1
+
+Face Off 1997 1080p FRA BluRay AVC LPCM 5.1
+
+--------------------------------------------------------------------------------
+
+Ajouter un commentaire

@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Lockout 2012 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      40 989 412 454 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:35:11.083 (h:m:s.ms)
+Size:                   28 473 827 328 bytes
+Total Bitrate:          39,89 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        28936 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          4301 kbps       5.1 / 48 kHz / 4301 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         4387 kbps       5.1 / 48 kHz / 4387 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          39,968 kbps                     
+Presentation Graphics           French          26,218 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:35:11.083     28 473 827 328  39 886

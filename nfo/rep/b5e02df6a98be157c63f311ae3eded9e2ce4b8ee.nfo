@@ -1,0 +1,121 @@
+Général
+Identifiant unique : 247806275474196911112149617743708250962 (0xBA6DC0ACA3EE84FD0DCDE18B9CF36352)
+Nom complet : L:\MKV--temp\Renaissances 1080p MULTiLANGUES (VFQ)\Self.less.2015.MULTi.1080p.BluRay.x264-ShowFr.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 10,6 Gio
+Durée : 1h 56mn
+Débit global moyen : 13,0 Mb/s
+Nom du film : RARBG.COM - Self.less.2015.720p.BluRay.x264.DTS-RARBG
+Date d'encodage : UTC 2015-10-28 18:02:39
+Application utilisée : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Bibliothèque utilisée : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 01:48:56.954000000
+NUMBER_OF_FRAMES : 1110
+NUMBER_OF_BYTES : 34664
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-28 18:02:39
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Vidéo
+ID : 2
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 1h 56mn
+Débit : 10,8 Mb/s
+Débit nominal : 11,5 Mb/s
+Largeur : 1 920 pixels
+Hauteur : 816 pixels
+Format à l'écran : 2,35:1
+Type d'images/s : Constant
+Images par seconde : 23,976 Im/s
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : Progressif
+Bits/(Pixel*Image) : 0.288
+Taille du flux : 8,82 Gio (83%)
+Titre : Self.less.2015.1080p.BluRay.x264.DTS-RARBG
+Bibliothèque utilisée : x264 core 144 r96 40bb568
+Paramètres d'encodage : cabac=1 / ref=4 / deblock=1:-2:-2 / analyse=0x3:0x113 / me=umh / subme=7 / psy=1 / psy_rd=1.00:0.15 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-3 / threads=12 / lookahead_threads=3 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=50 / rc=abr / mbtree=1 / bitrate=11500 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / vbv_maxrate=31250 / vbv_bufsize=31250 / nal_hrd=none / filler=0 / ip_ratio=1.40 / aq=1:1.00
+Langue : Anglais
+Default : Oui
+Forced : Non
+
+Audio #1
+ID : 1
+Format : AC-3
+Format/Info : Audio Coding 3
+Extension du mode : CM (complete main)
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_AC3
+Durée : 1h 56mn
+Type de débit : Constant
+Débit : 448 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Mode de compression : Avec perte
+Délai par rapport Vidéo : 16ms
+Taille du flux : 375 Mio (3%)
+Langue : Français
+Default : Oui
+Forced : Non
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 56mn
+Type de débit : Constant
+Débit : 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Avec perte
+Taille du flux : 1,23 Gio (12%)
+Titre : Self.less.2015.1080p.BluRay.x264.DTS-RARBG
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte
+ID : 4
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Langue : Anglais
+Default : Oui
+Forced : Non
+DURATION : 01:56:54.785000000
+NUMBER_OF_FRAMES : 657636
+NUMBER_OF_BYTES : 1323163632
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-28 18:02:39
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Menu
+00:00:00.000 : en:Chapter 01
+00:05:04.512 : en:Chapter 02
+00:12:01.429 : en:Chapter 03
+00:16:34.952 : en:Chapter 04
+00:26:06.106 : en:Chapter 05
+00:34:01.372 : en:Chapter 06
+00:39:54.767 : en:Chapter 07
+00:51:01.308 : en:Chapter 08
+00:57:39.539 : en:Chapter 09
+01:06:32.279 : en:Chapter 10
+01:12:23.464 : en:Chapter 11
+01:18:22.030 : en:Chapter 12
+01:27:18.691 : en:Chapter 13
+01:34:21.489 : en:Chapter 14
+01:42:48.537 : en:Chapter 15
+01:50:56.191 : en:Chapter 16

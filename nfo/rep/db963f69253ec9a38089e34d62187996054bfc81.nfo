@@ -1,0 +1,40 @@
+Disc Title:     CUT_BANK
+Disc Size:      21 082 614 299 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:33:28.436 (h:m:s.ms)
+Size:                   16 294 047 744 bytes
+Total Bitrate:          23,24 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18000 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3270 kbps       5.1 / 48 kHz / 3270 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          384 kbps        5.1 / 48 kHz / 384 kbps
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         26,255 kbps                     
+Presentation Graphics           English         30,430 kbps                     
+Presentation Graphics           French          0,138 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00012.M2TS      0:00:00.000     1:33:28.436     16 294 047 744  23 242

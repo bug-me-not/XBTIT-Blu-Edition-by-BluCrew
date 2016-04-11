@@ -1,0 +1,49 @@
+DISC INFO:
+
+Disc Title:     21 2008
+Disc Size:      46,505,878,965 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:02:41.354 (h:m:s.ms)
+Size:                   36,132,544,512 bytes
+Total Bitrate:          39.27 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        25764 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Dolby TrueHD Audio              English         1591 kbps       5.1 / 48 kHz / 1591 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -4dB)
+Dolby TrueHD Audio              French          1563 kbps       5.1 / 48 kHz / 1563 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -3dB)
+Dolby Digital Audio             Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -3dB
+Dolby TrueHD Audio              Portuguese      1574 kbps       5.1 / 48 kHz / 1574 kbps / 16-bit (AC3 Embedded: 5.1 / 48 kHz / 640 kbps / DN -6dB)
+Dolby Digital Audio             Thai            640 kbps        5.1 / 48 kHz / 640 kbps / DN -3dB
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Presentation Graphics           English         38.589 kbps
+Presentation Graphics           English         34.751 kbps
+Presentation Graphics           French          28.727 kbps
+Presentation Graphics           Spanish         34.183 kbps
+Presentation Graphics           Portuguese      32.003 kbps
+Presentation Graphics           Chinese         31.481 kbps
+Presentation Graphics           Chinese         27.026 kbps
+Presentation Graphics           Indonesian      41.385 kbps
+Presentation Graphics           Korean          19.486 kbps
+Presentation Graphics           Thai            26.378 kbps
+Presentation Graphics           Spanish         71.670 kbps
+Presentation Graphics           Portuguese      75.010 kbps
+Presentation Graphics           Korean          51.635 kbps

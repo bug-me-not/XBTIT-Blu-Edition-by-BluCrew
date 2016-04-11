@@ -1,0 +1,51 @@
+DISC INFO:
+
+Disc Title:     OZ_THE_GREAT_AND_POWERFUL
+Disc Size:      45 713 016 300 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         Blu-ray 3D
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:10:29.988 (h:m:s.ms)
+Size:                   44 300 494 848 bytes
+Total Bitrate:          45,26 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22996 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+MPEG-4 MVC Video        9996 kbps                           
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         5515 kbps       7.1 / 48 kHz / 5515 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD High-Res Audio           French          2046 kbps       5.1 / 48 kHz / 2046 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Spanish         1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         28,930 kbps                     
+Presentation Graphics           English         36,405 kbps                     
+Presentation Graphics           French          27,209 kbps                     
+Presentation Graphics           Spanish         28,205 kbps                     
+Presentation Graphics           Portuguese      29,452 kbps                     
+Presentation Graphics           Dutch           26,007 kbps                     
+Presentation Graphics           Arabic          14,725 kbps                     
+Presentation Graphics           Spanish         0,025 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00902.SSIF      0:00:00.000     0:00:38.121     206 174 208     43 267          
+00904.SSIF      0:00:38.121     0:00:17.559     100 755 456     45 904          
+00906.SSIF      0:00:55.680     2:09:34.308     43 993 565 184  45 271

@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     The switch 2010 MULTI 1080p BluRay VC1 DTS HDMA fantome13
+Disc Size:      21 070 425 200 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:41:25.079 (h:m:s.ms)
+Size:                   21 049 141 248 bytes
+Total Bitrate:          27,67 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+VC-1 Video              21839 kbps          1080p / 23,976 fps / 16:9 / Advanced Profile 3
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1924 kbps       5.1 / 48 kHz / 1924 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2134 kbps       5.1 / 48 kHz / 2134 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           42,631 kbps                     
+Presentation Graphics           French          40,412 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:41:24.078     21 049 110 528  27 678          
+00001.M2TS      1:41:24.078     0:00:01.000     30 720          246

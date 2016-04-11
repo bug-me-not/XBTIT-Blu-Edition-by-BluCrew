@@ -1,0 +1,117 @@
+[b]Turks.and.Caicos.2014.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-RARBG[/b]
+
+[b]Info:[/b]
+
+[mediainfo]
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Format settings, GOP                     : M=3, N=24
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1h 39mn
+Bit rate mode                            : Constant
+Nominal bit rate                         : 22.5 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 fps
+Standard                                 : NTSC
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.453
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+Color primaries                          : BT.709
+Transfer characteristics                 : BT.709
+Matrix coefficients                      : BT.709
+Color range                              : Limited
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 39mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossless / Lossy
+Title                                    : Surround 5.1
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : A_DTS
+Duration                                 : 1h 39mn
+Bit rate mode                            : Constant
+Bit rate                                 : 1 509 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 1.05 GiB (6%)
+Title                                    : Surround 5.1
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #2
+ID                                       : 6
+Format                                   : PGS
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : The same subtitle format used on BDs/HD-DVDs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 01
+00:07:40.543                             : en:Chapter 02
+00:15:35.976                             : en:Chapter 03
+00:27:16.593                             : en:Chapter 04
+00:40:49.655                             : en:Chapter 05
+00:45:04.159                             : en:Chapter 06
+00:53:49.559                             : en:Chapter 07
+01:01:06.954                             : en:Chapter 08
+01:13:43.919                             : en:Chapter 09
+01:28:57.790                             : en:Chapter 10
+01:34:13.356                             : en:Chapter 11
+01:38:29.486                             : en:Chapter 12
+
+
+
+[/mediainfo]
+
+[b]Notes:
+Greetz to all! :)[/b]

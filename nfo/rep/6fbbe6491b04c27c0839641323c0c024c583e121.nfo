@@ -1,0 +1,726 @@
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+Notes:
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+********************
+PLAYLIST: 00003.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00003.MPLS                                                      AVC     1:53:35 24 968 558 592  49 986 217 828  29,31   16,18   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6871Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00003.MPLS
+Length:                 1:53:35.909 (h:m:s.ms)
+Size:                   24 968 558 592 bytes
+Total Bitrate:          29,31 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16182 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6871 kbps       5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00003.M2TS      0:00:00.000     1:53:35.909     24 968 558 592  29 306
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     1:53:35.909     16 182 kbps     36 647 kbps     01:30:32.794    32 000 kbps     01:31:19.407    27 793 kbps     01:31:18.806    67 495 bytes    443 076 bytes   01:31:21.843
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     6815,809                16 183                  13 787 281 000  75 050 660
+00003.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      6815,809                4 614                   3 931 422 334   21 810 942
+00003.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      6815,809                6 872                   5 854 418 276   32 880 070
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00003.MPLS
+Size: 24 968 558 592 bytes
+Length: 1:53:35.909
+Total Bitrate: 29,31 Mbps
+Video: MPEG-4 AVC Video / 16182 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01004.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01004.MPLS                                                      AVC     1:53:35 24 968 558 592  49 986 217 828  29,31   16,18   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6871Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01004.MPLS
+Length:                 1:53:35.909 (h:m:s.ms)
+Size:                   24 968 558 592 bytes
+Total Bitrate:          29,31 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16182 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6871 kbps       5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00003.M2TS      0:00:00.000     1:53:35.909     24 968 558 592  29 306
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:05:01.968     15 713 kbps     26 322 kbps     00:01:32.425    22 592 kbps     00:01:28.955    20 831 kbps     00:02:47.267    65 530 bytes    297 232 bytes   00:04:28.835
+2               0:05:01.968     0:03:00.647     16 186 kbps     27 023 kbps     00:05:14.280    22 505 kbps     00:05:40.440    21 070 kbps     00:05:14.247    67 510 bytes    328 891 bytes   00:05:14.314
+3               0:08:02.615     0:04:24.063     16 784 kbps     26 848 kbps     00:09:00.273    24 064 kbps     00:11:36.796    23 599 kbps     00:11:31.123    70 003 bytes    325 796 bytes   00:11:33.159
+4               0:12:26.679     0:03:44.624     17 059 kbps     27 979 kbps     00:14:35.574    24 458 kbps     00:14:35.574    22 159 kbps     00:14:35.407    71 150 bytes    347 221 bytes   00:15:07.640
+5               0:16:11.303     0:05:32.732     15 593 kbps     25 016 kbps     00:17:31.283    22 483 kbps     00:17:30.416    21 848 kbps     00:18:33.946    65 038 bytes    340 537 bytes   00:17:33.285
+6               0:21:44.036     0:05:36.936     16 568 kbps     25 629 kbps     00:22:53.405    22 765 kbps     00:22:49.534    21 229 kbps     00:25:07.606    69 107 bytes    341 012 bytes   00:22:54.406
+7               0:27:20.972     0:05:52.852     17 227 kbps     28 451 kbps     00:30:27.358    23 753 kbps     00:27:35.487    23 139 kbps     00:27:33.084    71 853 bytes    339 853 bytes   00:27:34.119
+8               0:33:13.825     0:08:34.213     16 722 kbps     27 454 kbps     00:36:19.310    24 060 kbps     00:36:48.272    22 109 kbps     00:35:01.032    69 745 bytes    354 848 bytes   00:38:01.712
+9               0:41:48.038     0:07:26.245     15 333 kbps     25 622 kbps     00:46:00.090    22 702 kbps     00:46:50.641    21 818 kbps     00:46:45.636    63 953 bytes    341 000 bytes   00:43:47.057
+10              0:49:14.284     0:08:05.685     16 104 kbps     29 930 kbps     00:54:53.156    24 493 kbps     00:55:53.783    23 136 kbps     00:54:50.687    67 168 bytes    343 190 bytes   00:55:58.755
+11              0:57:19.969     0:06:38.164     16 199 kbps     29 294 kbps     01:03:30.840    25 992 kbps     01:03:28.905    23 046 kbps     00:59:47.951    67 563 bytes    319 431 bytes   00:59:05.241
+12              1:03:58.134     0:09:33.205     17 420 kbps     29 922 kbps     01:12:58.640    26 922 kbps     01:07:44.026    24 184 kbps     01:07:39.188    72 657 bytes    382 171 bytes   01:07:46.762
+13              1:13:31.340     0:07:51.003     16 069 kbps     25 997 kbps     01:16:22.344    23 915 kbps     01:15:05.400    23 125 kbps     01:15:05.234    67 021 bytes    340 682 bytes   01:19:31.800
+14              1:21:22.344     0:10:19.685     16 410 kbps     36 647 kbps     01:30:32.794    32 000 kbps     01:31:19.407    27 793 kbps     01:31:18.806    68 444 bytes    443 076 bytes   01:31:21.843
+15              1:31:42.029     0:08:25.137     16 659 kbps     29 045 kbps     01:32:05.152    25 415 kbps     01:32:43.758    21 897 kbps     01:32:40.021    69 482 bytes    353 131 bytes   01:32:07.121
+16              1:40:07.167     0:13:27.673     14 443 kbps     28 752 kbps     01:43:09.416    26 753 kbps     01:43:09.116    24 165 kbps     01:48:50.524    60 240 bytes    358 212 bytes   01:48:53.527
+17              1:53:34.841     0:00:01.067     32 kbps         34 kbps         01:53:34.841    0 kbps          00:00:00.000    0 kbps          00:00:00.000    141 bytes       756 bytes       01:53:35.108
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     6815,809                16 183                  13 787 281 000  75 050 660
+00003.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      6815,809                4 614                   3 931 422 334   21 810 942
+00003.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      6815,809                6 872                   5 854 418 276   32 880 070
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01004.MPLS
+Size: 24 968 558 592 bytes
+Length: 1:53:35.909
+Total Bitrate: 29,31 Mbps
+Video: MPEG-4 AVC Video / 16182 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01005.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01005.MPLS                                                      AVC     1:53:35 24 968 558 592  49 986 217 828  29,31   16,18   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6871Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01005.MPLS
+Length:                 1:53:35.909 (h:m:s.ms)
+Size:                   24 968 558 592 bytes
+Total Bitrate:          29,31 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16182 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6871 kbps       5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00003.M2TS      0:00:00.000     1:53:35.909     24 968 558 592  29 306
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:05:01.968     15 713 kbps     26 322 kbps     00:01:32.425    22 592 kbps     00:01:28.955    20 831 kbps     00:02:47.267    65 530 bytes    297 232 bytes   00:04:28.835
+2               0:05:01.968     0:03:00.647     16 186 kbps     27 023 kbps     00:05:14.280    22 505 kbps     00:05:40.440    21 070 kbps     00:05:14.247    67 510 bytes    328 891 bytes   00:05:14.314
+3               0:08:02.615     0:04:24.063     16 784 kbps     26 848 kbps     00:09:00.273    24 064 kbps     00:11:36.796    23 599 kbps     00:11:31.123    70 003 bytes    325 796 bytes   00:11:33.159
+4               0:12:26.679     0:03:44.624     17 059 kbps     27 979 kbps     00:14:35.574    24 458 kbps     00:14:35.574    22 159 kbps     00:14:35.407    71 150 bytes    347 221 bytes   00:15:07.640
+5               0:16:11.303     0:05:32.732     15 593 kbps     25 016 kbps     00:17:31.283    22 483 kbps     00:17:30.416    21 848 kbps     00:18:33.946    65 038 bytes    340 537 bytes   00:17:33.285
+6               0:21:44.036     0:05:36.936     16 568 kbps     25 629 kbps     00:22:53.405    22 765 kbps     00:22:49.534    21 229 kbps     00:25:07.606    69 107 bytes    341 012 bytes   00:22:54.406
+7               0:27:20.972     0:05:52.852     17 227 kbps     28 451 kbps     00:30:27.358    23 753 kbps     00:27:35.487    23 139 kbps     00:27:33.084    71 853 bytes    339 853 bytes   00:27:34.119
+8               0:33:13.825     0:08:34.213     16 722 kbps     27 454 kbps     00:36:19.310    24 060 kbps     00:36:48.272    22 109 kbps     00:35:01.032    69 745 bytes    354 848 bytes   00:38:01.712
+9               0:41:48.038     0:05:08.975     15 377 kbps     25 622 kbps     00:46:00.090    22 702 kbps     00:46:50.641    21 818 kbps     00:46:45.636    64 135 bytes    341 000 bytes   00:43:47.057
+10              0:46:57.014     0:02:17.270     15 235 kbps     23 192 kbps     00:46:58.482    21 112 kbps     00:47:21.905    20 653 kbps     00:46:57.548    63 544 bytes    307 071 bytes   00:46:58.515
+11              0:49:14.284     0:08:05.685     16 104 kbps     29 930 kbps     00:54:53.156    24 493 kbps     00:55:53.783    23 136 kbps     00:54:50.687    67 168 bytes    343 190 bytes   00:55:58.755
+12              0:57:19.969     0:06:38.164     16 199 kbps     29 294 kbps     01:03:30.840    25 992 kbps     01:03:28.905    23 046 kbps     00:59:47.951    67 563 bytes    319 431 bytes   00:59:05.241
+13              1:03:58.134     0:09:33.205     17 420 kbps     29 922 kbps     01:12:58.640    26 922 kbps     01:07:44.026    24 184 kbps     01:07:39.188    72 657 bytes    382 171 bytes   01:07:46.762
+14              1:13:31.340     0:07:51.003     16 069 kbps     25 997 kbps     01:16:22.344    23 915 kbps     01:15:05.400    23 125 kbps     01:15:05.234    67 021 bytes    340 682 bytes   01:19:31.800
+15              1:21:22.344     0:10:19.685     16 410 kbps     36 647 kbps     01:30:32.794    32 000 kbps     01:31:19.407    27 793 kbps     01:31:18.806    68 444 bytes    443 076 bytes   01:31:21.843
+16              1:31:42.029     0:08:25.137     16 659 kbps     29 045 kbps     01:32:05.152    25 415 kbps     01:32:43.758    21 897 kbps     01:32:40.021    69 482 bytes    353 131 bytes   01:32:07.121
+17              1:40:07.167     0:13:27.673     14 443 kbps     28 752 kbps     01:43:09.416    26 753 kbps     01:43:09.116    24 165 kbps     01:48:50.524    60 240 bytes    358 212 bytes   01:48:53.527
+18              1:53:34.841     0:00:01.067     32 kbps         34 kbps         01:53:34.841    0 kbps          00:00:00.000    0 kbps          00:00:00.000    141 bytes       756 bytes       01:53:35.108
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     6815,809                16 183                  13 787 281 000  75 050 660
+00003.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      6815,809                4 614                   3 931 422 334   21 810 942
+00003.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      6815,809                6 872                   5 854 418 276   32 880 070
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01005.MPLS
+Size: 24 968 558 592 bytes
+Length: 1:53:35.909
+Total Bitrate: 29,31 Mbps
+Video: MPEG-4 AVC Video / 16182 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6871 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 00002.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00002.MPLS                                                      AVC     1:16:04 16 668 499 968  49 986 217 828  29,22   16,76   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6202Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00002.MPLS
+Length:                 1:16:04.359 (h:m:s.ms)
+Size:                   16 668 499 968 bytes
+Total Bitrate:          29,22 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16765 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6202 kbps       5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00002.M2TS      0:00:00.000     1:16:04.359     16 668 499 968  29 215
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     1:16:04.359     16 765 kbps     29 634 kbps     00:57:26.876    26 513 kbps     01:03:53.830    26 175 kbps     01:03:47.890    69 923 bytes    354 579 bytes   00:50:27.924
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     4564,226                16 765                  9 564 959 726   52 063 642
+00002.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      4564,226                4 615                   2 632 722 664   14 605 951
+00002.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      4564,226                6 202                   3 538 534 400   19 942 671
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00002.MPLS
+Size: 16 668 499 968 bytes
+Length: 1:16:04.359
+Total Bitrate: 29,22 Mbps
+Video: MPEG-4 AVC Video / 16765 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01002.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01002.MPLS                                                      AVC     1:16:04 16 668 499 968  49 986 217 828  29,22   16,76   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6202Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01002.MPLS
+Length:                 1:16:04.359 (h:m:s.ms)
+Size:                   16 668 499 968 bytes
+Total Bitrate:          29,22 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16765 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6202 kbps       5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00002.M2TS      0:00:00.000     1:16:04.359     16 668 499 968  29 215
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:07:10.296     17 125 kbps     27 791 kbps     00:04:52.725    25 396 kbps     00:04:46.819    25 205 kbps     00:04:44.117    71 422 bytes    305 710 bytes   00:00:17.751
+2               0:07:10.296     0:04:19.726     17 103 kbps     24 392 kbps     00:09:51.624    21 389 kbps     00:09:41.414    20 211 kbps     00:10:18.951    71 332 bytes    323 383 bytes   00:11:18.077
+3               0:11:30.022     0:08:37.817     17 498 kbps     25 461 kbps     00:17:32.885    23 422 kbps     00:17:53.305    22 408 kbps     00:17:48.300    72 982 bytes    326 675 bytes   00:19:20.559
+4               0:20:07.839     0:07:34.086     17 125 kbps     27 823 kbps     00:25:09.040    24 514 kbps     00:25:07.038    23 526 kbps     00:25:07.806    71 427 bytes    339 399 bytes   00:23:18.997
+5               0:27:41.926     0:11:12.138     16 104 kbps     25 445 kbps     00:33:29.841    22 817 kbps     00:33:26.904    22 073 kbps     00:33:21.632    67 169 bytes    344 826 bytes   00:37:59.043
+6               0:38:54.065     0:08:24.503     18 608 kbps     28 181 kbps     00:40:41.205    25 961 kbps     00:41:39.396    24 030 kbps     00:41:37.428    77 611 bytes    354 168 bytes   00:40:42.206
+7               0:47:18.569     0:14:36.475     16 537 kbps     29 634 kbps     00:57:26.876    25 918 kbps     00:56:05.628    24 978 kbps     00:50:25.889    68 974 bytes    354 579 bytes   00:50:27.924
+8               1:01:55.044     0:07:23.910     18 770 kbps     28 000 kbps     01:06:50.773    26 513 kbps     01:03:53.830    26 175 kbps     01:03:47.890    78 286 bytes    352 191 bytes   01:03:57.800
+9               1:09:18.954     0:06:44.370     11 951 kbps     25 861 kbps     01:12:00.482    23 009 kbps     01:11:58.547    22 461 kbps     01:12:00.416    49 844 bytes    331 814 bytes   01:11:02.358
+10              1:16:03.325     0:00:01.034     32 kbps         0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    142 bytes       756 bytes       01:16:03.358
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     4564,226                16 765                  9 564 959 726   52 063 642
+00002.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      4564,226                4 615                   2 632 722 664   14 605 951
+00002.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      4564,226                6 202                   3 538 534 400   19 942 671
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01002.MPLS
+Size: 16 668 499 968 bytes
+Length: 1:16:04.359
+Total Bitrate: 29,22 Mbps
+Video: MPEG-4 AVC Video / 16765 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 01003.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01003.MPLS                                                      AVC     1:16:04 16 668 499 968  49 986 217 828  29,22   16,76   LPCM 2.0 4608Kbps (96kHz/24-bit)          DTS-HD Master 5.1 6202Kbps (96kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01003.MPLS
+Length:                 1:16:04.359 (h:m:s.ms)
+Size:                   16 668 499 968 bytes
+Total Bitrate:          29,22 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        16765 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+DTS-HD Master Audio             Undetermined    6202 kbps       5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00002.M2TS      0:00:00.000     1:16:04.359     16 668 499 968  29 215
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:07:10.296     17 125 kbps     27 791 kbps     00:04:52.725    25 396 kbps     00:04:46.819    25 205 kbps     00:04:44.117    71 422 bytes    305 710 bytes   00:00:17.751
+2               0:07:10.296     0:04:19.726     17 103 kbps     24 392 kbps     00:09:51.624    21 389 kbps     00:09:41.414    20 211 kbps     00:10:18.951    71 332 bytes    323 383 bytes   00:11:18.077
+3               0:11:30.022     0:08:37.817     17 498 kbps     25 461 kbps     00:17:32.885    23 422 kbps     00:17:53.305    22 408 kbps     00:17:48.300    72 982 bytes    326 675 bytes   00:19:20.559
+4               0:20:07.839     0:07:34.086     17 125 kbps     27 823 kbps     00:25:09.040    24 514 kbps     00:25:07.038    23 526 kbps     00:25:07.806    71 427 bytes    339 399 bytes   00:23:18.997
+5               0:27:41.926     0:09:16.555     16 039 kbps     25 445 kbps     00:33:29.841    22 817 kbps     00:33:26.904    22 073 kbps     00:33:21.632    66 896 bytes    342 760 bytes   00:33:30.241
+6               0:36:58.482     0:01:55.582     16 420 kbps     24 129 kbps     00:37:29.580    22 400 kbps     00:38:35.846    20 731 kbps     00:38:30.908    68 483 bytes    344 826 bytes   00:37:59.043
+7               0:38:54.065     0:08:24.503     18 608 kbps     28 181 kbps     00:40:41.205    25 961 kbps     00:41:39.396    24 030 kbps     00:41:37.428    77 611 bytes    354 168 bytes   00:40:42.206
+8               0:47:18.569     0:10:12.745     16 524 kbps     29 634 kbps     00:57:26.876    25 918 kbps     00:56:05.628    24 978 kbps     00:50:25.889    68 918 bytes    354 579 bytes   00:50:27.924
+9               0:57:31.314     0:04:23.730     16 568 kbps     26 584 kbps     01:01:32.922    23 894 kbps     01:01:31.954    22 847 kbps     00:57:39.122    69 104 bytes    344 595 bytes   01:00:48.077
+10              1:01:55.044     0:07:23.910     18 770 kbps     28 000 kbps     01:06:50.773    26 513 kbps     01:03:53.830    26 175 kbps     01:03:47.890    78 286 bytes    352 191 bytes   01:03:57.800
+11              1:09:18.954     0:06:44.370     11 951 kbps     25 861 kbps     01:12:00.482    23 009 kbps     01:11:58.547    22 461 kbps     01:12:00.416    49 844 bytes    331 814 bytes   01:11:02.358
+12              1:16:03.325     0:00:01.034     32 kbps         0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    142 bytes       756 bytes       01:16:03.358
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     4564,226                16 765                  9 564 959 726   52 063 642
+00002.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      4564,226                4 615                   2 632 722 664   14 605 951
+00002.M2TS      4353 (0x1101)   0x86            DTS-HD MA       und (Undetermined)      4564,226                6 202                   3 538 534 400   19 942 671
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01003.MPLS
+Size: 16 668 499 968 bytes
+Length: 1:16:04.359
+Total Bitrate: 29,22 Mbps
+Video: MPEG-4 AVC Video / 16765 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 96 kHz / 4608 kbps / 24-bit
+Audio: Undetermined / DTS-HD Master Audio / 5.1 / 96 kHz / 6202 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+********************
+PLAYLIST: 00004.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00004.MPLS                                                      AVC     1:03:22 7 915 407 360   49 986 217 828  16,65   13,51   LPCM 2.0 2304Kbps (48kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00004.MPLS
+Length:                 1:03:22.932 (h:m:s.ms)
+Size:                   7 915 407 360 bytes
+Total Bitrate:          16,65 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        13511 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00004.M2TS      0:00:00.000     1:03:22.932     7 915 407 360   16 651
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     1:03:22.932     13 511 kbps     44 334 kbps     00:00:39.873    32 257 kbps     00:41:46.637    29 756 kbps     00:17:52.104    56 353 bytes    654 459 bytes   00:25:24.523
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     3802,799                13 511                  6 422 673 547   34 972 252
+00004.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      3802,799                2 311                   1 098 303 328   6 084 797
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00004.MPLS
+Size: 7 915 407 360 bytes
+Length: 1:03:22.932
+Total Bitrate: 16,65 Mbps
+Video: MPEG-4 AVC Video / 13511 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 2304 kbps / 24-bit
+********************
+PLAYLIST: 01006.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01006.MPLS                                                      AVC     1:03:22 7 915 407 360   49 986 217 828  16,65   13,51   LPCM 2.0 2304Kbps (48kHz/24-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01006.MPLS
+Length:                 1:03:22.932 (h:m:s.ms)
+Size:                   7 915 407 360 bytes
+Total Bitrate:          16,65 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        13511 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00004.M2TS      0:00:00.000     1:03:22.932     7 915 407 360   16 651
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:20:35.968     12 094 kbps     44 334 kbps     00:00:39.873    31 984 kbps     00:13:14.126    29 756 kbps     00:17:52.104    50 439 bytes    578 173 bytes   00:19:00.139
+2               0:20:35.968     0:19:23.195     13 460 kbps     38 545 kbps     00:32:05.356    31 558 kbps     00:32:21.639    29 745 kbps     00:32:21.639    56 140 bytes    654 459 bytes   00:25:24.523
+3               0:39:59.163     0:23:22.734     14 812 kbps     40 888 kbps     00:42:03.053    32 257 kbps     00:41:46.637    29 754 kbps     00:45:12.309    61 779 bytes    401 221 bytes   00:42:03.521
+4               1:03:21.898     0:00:01.034     32 kbps         0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    142 bytes       755 bytes       01:03:22.799
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     3802,799                13 511                  6 422 673 547   34 972 252
+00004.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      3802,799                2 311                   1 098 303 328   6 084 797
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01006.MPLS
+Size: 7 915 407 360 bytes
+Length: 1:03:22.932
+Total Bitrate: 16,65 Mbps
+Video: MPEG-4 AVC Video / 13511 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 2304 kbps / 24-bit
+********************
+PLAYLIST: 00001.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00001.MPLS                                                      AVC     0:02:04 388 540 416     49 986 217 828  25,04   8,00    LPCM 2.0 1536Kbps (48kHz/16-bit)          LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00001.MPLS
+Length:                 0:02:04.157 (h:m:s.ms)
+Size:                   388 540 416 bytes
+Total Bitrate:          25,04 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        8002 kbps           1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00001.M2TS      0:00:00.000     0:02:04.157     388 540 416     25 035
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:02:04.157     8 002 kbps      16 494 kbps     00:00:01.901    11 014 kbps     00:00:01.901    9 717 kbps      00:00:01.901    33 384 bytes    551 786 bytes   00:00:01.935
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00001.M2TS      4113 (0x1011)   0x1B            AVC                                     124,024                 8 011                   124 189 247     677 183
+00001.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4353 (0x1101)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4354 (0x1102)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4355 (0x1103)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4356 (0x1104)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4357 (0x1105)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4358 (0x1106)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4359 (0x1107)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+00001.M2TS      4360 (0x1108)   0x80            LPCM            und (Undetermined)      124,024                 1 544                   23 938 048      148 992
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00001.MPLS
+Size: 388 540 416 bytes
+Length: 0:02:04.157
+Total Bitrate: 25,04 Mbps
+Video: MPEG-4 AVC Video / 8002 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+********************
+PLAYLIST: 00000.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     0:00:36 29 583 360      49 986 217 828  6,42    4,30    LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   00000.MPLS
+Length:                 0:00:36.836 (h:m:s.ms)
+Size:                   29 583 360 bytes
+Total Bitrate:          6,42 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        4297 kbps           1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00000.M2TS      0:00:00.000     0:00:36.836     29 583 360      6 425
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:00:36.836     4 297 kbps      23 271 kbps     00:00:01.001    10 398 kbps     00:00:04.971    10 062 kbps     00:00:00.967    17 940 bytes    240 125 bytes   00:00:03.003
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     36,770                  4 305                   19 787 617      108 189
+00000.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      36,770                  1 545                   7 102 752       44 208
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00000.MPLS
+Size: 29 583 360 bytes
+Length: 0:00:36.836
+Total Bitrate: 6,42 Mbps
+Video: MPEG-4 AVC Video / 4297 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit
+********************
+PLAYLIST: 01000.MPLS
+********************
+<--- BEGIN FORUMS PASTE --->
+
+Код:
+Total   Video
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+01000.MPLS                                                      AVC     0:00:36 29 583 360      49 986 217 828  6,42    4,30    LPCM 2.0 1536Kbps (48kHz/16-bit)
+Код:
+DISC INFO:
+Disc Title:     Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size:      49 986 217 828 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+PLAYLIST REPORT:
+Name:                   01000.MPLS
+Length:                 0:00:36.836 (h:m:s.ms)
+Size:                   29 583 360 bytes
+Total Bitrate:          6,42 Mbps
+VIDEO:
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        4297 kbps           1080i / 29,970 fps / 16:9 / High Profile 4.1
+AUDIO:
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+LPCM Audio                      Undetermined    1536 kbps       2.0 / 48 kHz / 1536 kbps / 16-bit
+FILES:
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00000.M2TS      0:00:00.000     0:00:36.836     29 583 360      6 425
+CHAPTERS:
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------
+1               0:00:00.000     0:00:36.836     4 297 kbps      23 271 kbps     00:00:01.001    10 398 kbps     00:00:04.971    10 062 kbps     00:00:00.967    17 940 bytes    240 125 bytes   00:00:03.003
+STREAM DIAGNOSTICS:
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     36,770                  4 305                   19 787 617      108 189
+00000.M2TS      4352 (0x1100)   0x80            LPCM            und (Undetermined)      36,770                  1 545                   7 102 752       44 208
+
+<---- END FORUMS PASTE ---->
+QUICK SUMMARY:
+Disc Title: Celebrating Jon Lord - Live at The Royal Albert Hall (2014) Blu-ray
+Disc Size: 49 986 217 828 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 01000.MPLS
+Size: 29 583 360 bytes
+Length: 0:00:36.836
+Total Bitrate: 6,42 Mbps
+Video: MPEG-4 AVC Video / 4297 kbps / 1080i / 29,970 fps / 16:9 / High Profile 4.1
+Audio: Undetermined / LPCM Audio / 2.0 / 48 kHz / 1536 kbps / 16-bit

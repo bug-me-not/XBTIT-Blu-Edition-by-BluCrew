@@ -1,0 +1,86 @@
+Général
+Nom complet                      : G:\HD 1080P SCENE\Collateral.2004.MULTi.1080p.BluRay.x264-NOWiNHD\ninhd-collateral-1080p.mkv
+Format                           : Matroska
+Taille du fichier                : 8,73 Gio
+Durée                            : 1h 59mn
+Débit global moyen               : 10,4 Mb/s
+Date d'encodage                  : UTC 2010-03-23 12:35:59
+Application utilisée             : mkvmerge v2.9.8 ('C'est le bon') built on Aug 13 2009 12:49:06
+Bibliothèque utilisée            : libebml v0.7.7 + libmatroska v0.8.1
+
+Vidéo
+ID                               : 1
+Format                           : AVC
+Format/Info                      : Advanced Video Codec
+Profil du format                 : High@L4.1
+Paramètres du format, CABAC      : Oui
+Paramètres du format, RefFrames  : 5 images
+Type de muxing                   : Container profile=Unknown@4.1
+Identifiant du codec             : V_MPEG4/ISO/AVC
+Durée                            : 1h 59mn
+Débit                            : 8 061 Kbps
+Débit nominal                    : 8 289 Kbps
+Largeur                          : 1 920 pixels
+Hauteur                          : 808 pixels
+Format à l'écran                 : 2,35:1
+Images par seconde               : 23,976 Im/s
+Résolution                       : 8 bits
+Colorimétrie                     : 4:2:0
+Type d'image                     : Progressif
+Bits/(Pixel*Image)               : 0.217
+Taille du flux                   : 6,75 Gio (77%)
+Bibliothèque utilisée            : x264 core 88 r1471 1144615
+Langue                           : Anglais
+
+Audio #1
+ID                               : 2
+Format                           : DTS
+Format/Info                      : Digital Theater Systems
+Identifiant du codec             : A_DTS
+Durée                            : 1h 59mn
+Type de débit                    : Constant
+Débit                            : 1 510 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Résolution                       : 24 bits
+Taille du flux                   : 1,26 Gio (14%)
+Titre                            : DTS 1509 Kbps
+Langue                           : Anglais
+
+Audio #2
+ID                               : 3
+Format                           : AC-3
+Format/Info                      : Audio Coding 3
+Identifiant du codec             : A_AC3
+Durée                            : 1h 59mn
+Type de débit                    : Constant
+Débit                            : 640 Kbps
+Canaux                           : 6 canaux
+Position des cannaux             : Front: L C R, Side: L R, LFE
+Echantillonnage                  : 48,0 KHz
+Taille du flux                   : 549 Mio (6%)
+Titre                            : AC3 640 Kbps
+Langue                           : Frantais
+
+Texte #1
+ID                               : 4
+Format                           : UTF-8
+Identifiant du codec             : S_TEXT/UTF8
+Identifiant du codec/Info        : UTF-8 Plain Text
+Titre                            : Forced
+Langue                           : Frantais
+
+Texte #2
+ID                               : 5
+Format                           : UTF-8
+Identifiant du codec             : S_TEXT/UTF8
+Identifiant du codec/Info        : UTF-8 Plain Text
+Langue                           : Frantais
+
+Texte #3
+ID                               : 6
+Format                           : UTF-8
+Identifiant du codec             : S_TEXT/UTF8
+Identifiant du codec/Info        : UTF-8 Plain Text
+Langue                           : Anglais

@@ -1,0 +1,149 @@
+Général
+Identifiant unique                       : 253816537626979940718995380287963075335 (0xBEF3497A1EA5DD5E83A38444516F1307)
+Nom complet                              : Match point - Woody Allen - 2005 - AVC 1080p - VF AC-3 2.0 - VO DTS-HD MA 2.0.mkv
+Format                                   : Matroska
+Version du format                        : Version 4 / Version 2
+Taille du fichier                        : 21,2 Gio
+Durée                                    : 2h 4mn
+Type de débit global                     : Variable
+Débit global moyen                       : 24,5 Mb/s
+Nom du film                              : Match point - Woody Allen - 2005
+Date d'encodage                          : UTC 2013-05-31 22:59:31
+Application utilisée                     : mkvmerge v6.2.0 ('Promised Land') built on Apr 28 2013 12:22:01
+Bibliothèque utilisée                    : libebml v1.3.0 + libmatroska v1.4.0
+Attachment                               : Affiche Cinéart / Affiche TFM / Jaquette blu-ray TF1 (arrière) / Jaquette DVD Cinéart (slim) / Jaquette DVD Cinéart / Jaquette DVD TF1 (2) / Jaquette DVD TF1 / Sticker DVD TF1 / Yes
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 4 images
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 2h 4mn
+Type de débit                            : Variable
+Débit maximum                            : 27,0 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Norme                                    : NTSC
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Titre                                    : AVC 1920*1080 (BD original)
+Default                                  : Oui
+Forced                                   : Non
+Coordonnées de chromaticité              : BT.709
+Caractéristiques du transfert            : BT.709
+Coefficients de la matrice               : BT.709
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : MA / Core
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 2h 4mn
+Type de débit                            : Variable
+Débit                                    : Inconnu / 1 509 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Sans perte / Lossy
+Titre                                    : Anglais DTS-HD MA 2.0 (BD original)
+Langue                                   : Anglais
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #2
+ID                                       : 7
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 4mn
+Type de débit                            : Constant
+Débit                                    : 448 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Délai par rapport Vidéo                  : 24ms
+Taille du flux                           : 397 Mio (2%)
+Titre                                    : Français AC3 2.0 @ 448 Kbps (source DVD)
+Langue                                   : Français
+Default                                  : Non
+Forced                                   : Non
+
+Texte #1
+ID                                       : 3
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Français (.srt)
+Langue                                   : Français
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #2
+ID                                       : 4
+Format                                   : VobSub
+Type de muxing                           : zlib
+Identifiant du codec                     : S_VOBSUB
+Identifiant du codec/Info                : The same subtitle format used on DVDs
+Titre                                    : Français (.sub)
+Langue                                   : Français
+Default                                  : Non
+Forced                                   : Non
+
+Texte #3
+ID                                       : 5
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Anglais (.srt)
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #4
+ID                                       : 6
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : Anglais (.pgs)
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:Welcome to London
+00:05:44.479                             : en:It's A Date
+00:10:11.621                             : en:An Aggreessive Game
+00:16:56.359                             : en:Your Place or Mine?
+00:26:28.305                             : en:Luck vs. Hard Work
+00:33:18.882                             : en:Which Do You Prefer?
+00:40:12.837                             : en:Confidence
+00:47:06.751                             : en:Second Guesses
+00:50:42.133                             : en:Moving Up in the World
+00:58:18.505                             : en:Bad Timing
+01:03:07.711                             : en:Blind Chance
+01:10:10.300                             : en:A New Interest
+01:16:35.601                             : en:Getting Bored
+01:20:20.951                             : en:Bad Luck
+01:26:17.474                             : en:Feeling Guilty
+01:35:38.326                             : en:"On Holiday"
+01:41:15.288                             : en:Liar!
+01:47:35.584                             : en:The Plan
+01:54:23.700                             : en:The Tragedy of Life
+02:01:30.043                             : en:Unlucky

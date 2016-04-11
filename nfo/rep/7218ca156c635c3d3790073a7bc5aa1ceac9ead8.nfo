@@ -1,0 +1,55 @@
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:49:07.332 (h:m:s.ms)
+Size:                   31.096.891.392 bytes
+Total Bitrate:          38,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        25999 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         3974 kbps       5.1 / 48 kHz / 3974 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Hungarian       768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Polish          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Russian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         18,479 kbps                    
+Presentation Graphics           Arabic          9,651 kbps                    
+Presentation Graphics           Bulgarian       14,605 kbps                    
+Presentation Graphics           Czech           15,130 kbps                    
+Presentation Graphics           Danish          13,911 kbps                    
+Presentation Graphics           Dutch           16,584 kbps                    
+Presentation Graphics           Estonian        15,211 kbps                    
+Presentation Graphics           Finnish         13,157 kbps                    
+Presentation Graphics           French          16,966 kbps                    
+Presentation Graphics           German          18,191 kbps                    
+Presentation Graphics           Greek           17,303 kbps                    
+Presentation Graphics           Hindi           18,277 kbps                    
+Presentation Graphics           Hungarian       15,103 kbps                    
+Presentation Graphics           Icelandic       14,120 kbps                    
+Presentation Graphics           Italian         14,560 kbps                    
+Presentation Graphics           Latvian         15,299 kbps                    
+Presentation Graphics           Lithuanian      14,899 kbps                    
+Presentation Graphics           Norwegian       13,483 kbps                    
+Presentation Graphics           Polish          13,855 kbps                    
+Presentation Graphics           Portuguese      16,640 kbps                    
+Presentation Graphics           Romany          15,808 kbps                    
+Presentation Graphics           Russian         17,417 kbps                    
+Presentation Graphics           Spanish         15,717 kbps                    
+Presentation Graphics           Swedish         13,899 kbps                    
+Presentation Graphics           Turkish         16,771 kbps

@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     Cet.obscur.objet.du.desir.1977.BD-Remux.1080p.AVC.DTS-HD.2.0-HDCLUB
+Disc Size:      21?795?503?908 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:43:41.013 (h:m:s.ms)
+Size:                   21?795?422?208 bytes
+Total Bitrate:          28,03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23994 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             Russian         890 kbps        2.0 / 48 kHz / 890 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Dolby Digital Audio             Ukrainian       192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             French          448 kbps        2.0 / 48 kHz / 448 kbps / DN -4dB
+DTS-HD Master Audio             French          872 kbps        2.0 / 48 kHz / 872 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         29,117 kbps                     
+Presentation Graphics           Ukrainian       1,593 kbps                      
+Presentation Graphics           English         29,348 kbps                     
+Presentation Graphics           Italian         33,059 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:43:41.013     21?795?422?208  28?028

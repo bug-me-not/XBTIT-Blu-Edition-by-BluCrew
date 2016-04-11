@@ -1,0 +1,60 @@
+DISC INFO:
+
+Disc Title:     Strangers.on.a.Train 1951.1080p.Blu-ray.AVC.DTS-HD.MA.1.0-ESiR
+Disc Size:      37 823 165 620 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 1:40:48.876 (h:m:s.ms)
+Size:                   26 330 155 008 bytes
+Total Bitrate:          34,82 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29915 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1054 kbps       1.0 / 48 kHz / 1054 kbps / 24-bit (DTS Core: 1.0 / 48 kHz / 768 kbps / 24-bit)
+Dolby Digital Audio             French          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             German          192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Italian         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             Portuguese      192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+* Dolby Digital Audio           Japanese        192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+Dolby Digital Audio             English         192 kbps        1.0 / 48 kHz / 192 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+* Presentation Graphics         Japanese        19,197 kbps                     
+Presentation Graphics           English         33,319 kbps                     
+Presentation Graphics           French          25,700 kbps                     
+Presentation Graphics           German          31,238 kbps                     
+Presentation Graphics           Italian         32,806 kbps                     
+Presentation Graphics           Spanish         26,972 kbps                     
+Presentation Graphics           Spanish         31,136 kbps                     
+Presentation Graphics           Portuguese      29,261 kbps                     
+* Presentation Graphics         Japanese        44,747 kbps                     
+* Presentation Graphics         Japanese        0,945 kbps                      
+Presentation Graphics           German          1,122 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00063.M2TS      0:00:00.000     1:40:48.876     26 330 155 008  34 823
+
+

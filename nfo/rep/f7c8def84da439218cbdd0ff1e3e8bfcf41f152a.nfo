@@ -1,0 +1,38 @@
+[code]
+
+DISC INFO:
+
+Disc Title:     Never Back Down 2008 1080p USA Blu-ray AVC DTS 5.1~Tonyk
+Disc Size:      47,418,374,144 bytes
+Protection:     AACS(v7)
+BD-Java:        Yes
+BDInfo:         0.5.8.1 
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS  
+Length:                 1:53:25.965 (h:m:s.ms)
+Size:                   25,364,748,288 bytes
+Total Bitrate:          29.81 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24952 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       English         1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+DTS Audio                       French          1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         41.89 kbps                      
+Presentation Graphics           French          32.938 kbps                     
+[/code]

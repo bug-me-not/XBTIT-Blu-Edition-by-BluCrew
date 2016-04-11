@@ -1,0 +1,46 @@
+DISC INFO:
+
+Disc Title:     Les.rivieres.pourpres.II.2004.BD-Remux.1080p.AVC.DTS-HD.6.1-HDCLUB
+Disc Size:      30?204?042?216 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:39:13.045 (h:m:s.ms)
+Size:                   30?203?953?152 bytes
+Total Bitrate:          40,59 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29982 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Russian         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+DTS-HD Master Audio             Russian         2434 kbps       6.1 / 48 kHz / 2434 kbps / 16-bit (DTS Core: 6.1-ES / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Russian         2440 kbps       6.1 / 48 kHz / 2440 kbps / 16-bit (DTS Core: 6.1-ES / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             Ukrainian       192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB
+DTS-HD Master Audio             French          2490 kbps       6.1 / 48 kHz / 2490 kbps / 16-bit (DTS Core: 6.1-ES / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         16,663 kbps                     
+Presentation Graphics           French          27,701 kbps                     
+Presentation Graphics           English         15,651 kbps                     
+Presentation Graphics           German          26,182 kbps                     
+Presentation Graphics           German          31,663 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:39:13.045     30?203?953?152  40?590     

@@ -1,0 +1,45 @@
+DISC INFO:
+
+Disc Title:     Crimson Tide 1995 MULTI 1080p BluRay AVC LPCM HDSpace
+Disc Size:      31 225 111 832 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:55:46.439 (h:m:s.ms)
+Size:                   27 434 502 144 bytes
+Total Bitrate:          31,60 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24002 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps / DN -2dB
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         39,266 kbps                     
+Presentation Graphics           French          38,366 kbps                     
+Presentation Graphics           Spanish         31,564 kbps                     
+Presentation Graphics           French          1,130 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     0:50:39.536     11 987 091 456  31 550          
+00001.M2TS      0:50:39.536     0:37:19.237     9 078 779 904   32 435          
+00002.M2TS      1:27:58.773     0:27:47.666     6 368 630 784   30 551

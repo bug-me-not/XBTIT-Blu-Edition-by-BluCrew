@@ -1,0 +1,3 @@
+<?php
+$SES = array ();
+?>

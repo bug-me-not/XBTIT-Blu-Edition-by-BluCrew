@@ -1,0 +1,206 @@
+Nom complet : ENEMY 2013 1080P VFF Multi DTS-HD MA 5.1 BluRay x264-STEAL.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 9,46 Gio
+Durée : 1h 30mn
+Type de débit global : Variable
+Débit global moyen : 15,0 Mb/s
+Date d'encodage : UTC 2015-01-28 23:27:51
+Application utilisée : mkvmerge v6.9.1 ('Blue Panther') 64bit built on Apr 18 2014 18:23:38
+Bibliothèque utilisée : libebml v1.3.0 + libmatroska v1.4.1
+
+Vidéo
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 1h 30mn
+Débit nominal : 9 500 Kbps
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Type d'images/s : Constant
+Images par seconde : 24,000 Im/s
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : Progressif
+Bits/(Pixel*Image) : 0.191
+Titre : ENEMY 2013 High Profil@4.1 Resolution 1920p/ 1080p Frame rate 24.000 fps Release °V°Eyes
+Bibliothèque utilisée : x264 core 142 r2431 ac76440
+Paramètres d'encodage : cabac=1 / ref=4 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / psy_rd=0.96:0.02 / mixed_ref=1 / me_range=128 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=36 / lookahead_threads=6 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=8 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=1 / weightb=1 / open_gop=1 / weightp=2 / keyint=240 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=240 / rc=2pass / mbtree=1 / bitrate=9500 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / vbv_maxrate=50000 / vbv_bufsize=50000 / nal_hrd=none / filler=0 / ip_ratio=1.40 / aq=2:1.00
+Langue : Anglais
+Default : Oui
+Forced : Non
+Gamme de couleurs : Limited
+Coordonnées de chromaticité : BT.709
+Caractéristiques du transfert : BT.709
+Coefficients de la matrice : BT.709
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 30mn
+Type de débit : Variable
+Débit : Inconnu / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 16 bits
+Mode de compression : Sans perte / Lossy
+Titre : VFF DTS-HD MA 5.1_2161 kbps Core 1509 kbps 16-bit 48khz
+Langue : Français
+Default : Oui
+Forced : Non
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 1h 30mn
+Type de débit : Variable
+Débit : Inconnu / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Titre : V.O DTS-HD MA 5.1_3292 kbps Core 1509 kbps 24-bit 48khz.dtsma
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #1
+ID : 4
+Format : ASS
+Identifiant du codec : S_TEXT/ASS
+Identifiant du codec/Info : Advanced Sub Station Alpha
+Mode de compression : Sans perte
+Titre : Sous-titres français forcés.ssa
+Langue : Français
+Default : Oui
+Forced : Non
+
+Texte #2
+ID : 5
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : Sous-titres français forcés.srt
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #3
+ID : 6
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Sous-titres français forcés.sup
+Default : Non
+Forced : Non
+
+Texte #4
+ID : 7
+Format : ASS
+Identifiant du codec : S_TEXT/ASS
+Identifiant du codec/Info : Advanced Sub Station Alpha
+Mode de compression : Sans perte
+Titre : Sous-titres français complets.ssa
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #5
+ID : 8
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : Sous-titres français complets.srt
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #6
+ID : 9
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Sous-titres français complets.sup
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #7
+ID : 10
+Format : ASS
+Identifiant du codec : S_TEXT/ASS
+Identifiant du codec/Info : Advanced Sub Station Alpha
+Mode de compression : Sans perte
+Titre : Forced Subtitles English.ssa
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #8
+ID : 11
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : Forced Subtitles English.srt
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #9
+ID : 12
+Format : ASS
+Identifiant du codec : S_TEXT/ASS
+Identifiant du codec/Info : Advanced Sub Station Alpha
+Mode de compression : Sans perte
+Titre : full Subtitles English.ssa
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Texte #10
+ID : 13
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : full Subtitles English.srt
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Menu
+00:00:00.000 : fr:E...01.
+00:04:53.250 : fr:N...02.
+00:10:43.250 : fr:E...03.
+00:17:43.750 : fr:M...04.
+00:22:34.083 : fr:Y...05.
+00:28:03.917 : fr:E...06.
+00:32:50.167 : fr:N...07.
+00:37:22.875 : fr:E...08.
+00:41:59.583 : fr:M...09.
+00:46:49.000 : fr:Y...10.
+00:55:12.333 : fr:E...11.
+01:00:43.625 : fr:N...12.
+01:05:42.208 : fr:E...13.
+01:13:18.417 : fr:M...14.
+01:19:15.958 : fr:Y...15.
+01:26:33.000 : fr:....16. GÉNÉRIQUE DE FIN...

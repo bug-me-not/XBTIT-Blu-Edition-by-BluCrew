@@ -1,0 +1,954 @@
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:35:07 28á642á093á056  36á134á007á481  40,14   29,96   DTS-HD Master 5.1 3913Kbps (48kHz/24-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:35:07.952 (h:m:s.ms)
+Size:                   28á642á093á056 bytes
+Total Bitrate:          40,14 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29960 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3913 kbps       5.1 / 48 kHz / 3913 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          3975 kbps       5.1 / 48 kHz / 3975 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         29,561 kbps                     
+Presentation Graphics           English         31,897 kbps                     
+Presentation Graphics           Spanish         26,589 kbps                     
+Presentation Graphics           French          0,036 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00016.M2TS      0:00:00.000     0:00:05.004     2á672á640       4á272           
+00000.M2TS      0:00:05.004     1:35:02.947     28á639á420á416  40á175          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:06:00.568     28á584 kbps     37á879 kbps     00:00:13.513    35á081 kbps     00:04:20.718    34á970 kbps     00:04:20.718    149á006 bytes   504á566 bytes   00:02:21.724    
+2               0:06:00.568     0:07:06.509     32á823 kbps     37á318 kbps     00:12:12.440    35á206 kbps     00:12:08.561    34á950 kbps     00:09:25.022    171á123 bytes   466á808 bytes   00:09:00.206    
+3               0:13:07.077     0:04:23.972     29á314 kbps     36á447 kbps     00:16:11.679    35á021 kbps     00:16:12.429    34á808 kbps     00:16:08.926    152á831 bytes   508á071 bytes   00:16:07.967    
+4               0:17:31.050     0:06:44.862     25á975 kbps     35á431 kbps     00:21:08.892    33á938 kbps     00:21:06.348    33á752 kbps     00:21:06.431    135á419 bytes   337á397 bytes   00:21:09.476    
+5               0:24:15.912     0:06:02.111     27á805 kbps     36á446 kbps     00:27:33.360    35á099 kbps     00:27:29.356    33á981 kbps     00:27:24.851    144á963 bytes   412á787 bytes   00:27:34.361    
+6               0:30:18.024     0:06:16.417     31á589 kbps     37á244 kbps     00:35:29.877    35á133 kbps     00:35:27.834    34á436 kbps     00:33:33.928    164á688 bytes   470á469 bytes   00:35:31.838    
+7               0:36:34.442     0:04:30.728     32á732 kbps     36á700 kbps     00:37:51.727    35á069 kbps     00:39:58.395    34á885 kbps     00:39:51.430    170á648 bytes   460á482 bytes   00:40:57.746    
+8               0:41:05.171     0:08:03.691     31á797 kbps     36á780 kbps     00:48:50.260    35á183 kbps     00:49:01.438    34á953 kbps     00:46:10.267    165á774 bytes   484á679 bytes   00:45:11.750    
+9               0:49:08.862     0:06:37.980     33á318 kbps     36á579 kbps     00:50:44.833    35á123 kbps     00:50:32.529    34á940 kbps     00:50:27.566    173á707 bytes   447á251 bytes   00:50:30.610    
+10              0:55:46.843     0:03:59.405     29á173 kbps     32á887 kbps     00:58:15.200    31á662 kbps     00:57:36.661    31á153 kbps     00:57:33.658    152á094 bytes   393á833 bytes   00:59:46.249    
+11              0:59:46.249     0:06:25.510     32á642 kbps     39á228 kbps     01:03:30.973    35á073 kbps     01:00:30.084    34á901 kbps     01:02:51.601    170á181 bytes   478á942 bytes   01:00:44.932    
+12              1:06:11.759     0:06:49.700     33á285 kbps     37á301 kbps     01:09:47.183    35á232 kbps     01:09:43.095    34á943 kbps     01:09:38.215    173á532 bytes   394á249 bytes   01:08:49.125    
+13              1:13:01.460     0:05:57.648     31á256 kbps     37á785 kbps     01:17:24.306    35á423 kbps     01:17:20.260    34á810 kbps     01:17:30.562    162á953 bytes   339á578 bytes   01:15:05.417    
+14              1:18:59.109     0:06:49.534     31á375 kbps     37á470 kbps     01:22:44.876    35á242 kbps     01:22:40.914    35á008 kbps     01:22:35.867    163á575 bytes   395á832 bytes   01:23:19.452    
+15              1:25:48.643     0:05:21.821     30á627 kbps     36á253 kbps     01:29:22.648    35á016 kbps     01:29:32.950    34á891 kbps     01:29:28.780    159á677 bytes   367á598 bytes   01:26:33.313    
+16              1:31:10.465     0:03:57.487     8á000 kbps      10á262 kbps     01:35:06.283    8á986 kbps      01:31:31.277    8á516 kbps      01:31:31.277    41á715 bytes    182á473 bytes   01:31:11.257    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00016.M2TS      4113 (0x1011)   0x1B            AVC                                     4,838                   423                     256á081         1á462           
+00016.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           4,838                   1á616                   977á600         6á110           
+00016.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            4,838                   1á616                   977á600         6á110           
+00016.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           4,838                   0                       70              7               
+00016.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           4,838                   0                       70              7               
+00016.M2TS      4610 (0x1202)   0x90            PGS             spa (Spanish)           4,838                   0                       70              7               
+00016.M2TS      4611 (0x1203)   0x90            PGS             fra (French)            4,838                   0                       70              7               
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     5702,780                29á987                  21á375á917á047  116á252á957     
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           5702,780                3á915                   2á790á608á196   16á055á819      
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            5702,780                3á978                   2á835á418á392   16á298á614      
+00000.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           5702,780                30                      21á091á608      122á493         
+00000.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           5702,780                32                      22á758á230      132á283         
+00000.M2TS      4610 (0x1202)   0x90            PGS             spa (Spanish)           5702,780                27                      18á971á368      110á258         
+00000.M2TS      4611 (0x1203)   0x90            PGS             fra (French)            5702,780                0                       25á766          154             
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00000.MPLS
+Size: 28á642á093á056 bytes
+Length: 1:35:07.952
+Total Bitrate: 40,14 Mbps
+Video: MPEG-4 AVC Video / 29960 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3913 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 3975 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Subtitle: English / 29,561 kbps
+Subtitle: English / 31,897 kbps
+Subtitle: Spanish / 26,589 kbps
+Subtitle: French / 0,036 kbps
+
+
+********************
+PLAYLIST: 00001.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00001.MPLS                                                      AVC     1:35:02 28á639á420á416  36á134á007á481  40,17   29,99   DTS-HD Master 5.1 3915Kbps (48kHz/24-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:35:02.947 (h:m:s.ms)
+Size:                   28á639á420á416 bytes
+Total Bitrate:          40,17 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29986 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3915 kbps       5.1 / 48 kHz / 3915 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          3977 kbps       5.1 / 48 kHz / 3977 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         29,587 kbps                     
+Presentation Graphics           English         31,925 kbps                     
+Presentation Graphics           Spanish         26,613 kbps                     
+Presentation Graphics           French          0,036 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:35:02.947     28á639á420á416  40á175          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:05:55.563     28á980 kbps     37á879 kbps     00:00:08.508    35á081 kbps     00:04:15.713    34á970 kbps     00:04:15.713    151á073 bytes   504á566 bytes   00:02:16.719    
+2               0:05:55.563     0:07:06.509     32á823 kbps     37á318 kbps     00:12:07.435    35á206 kbps     00:12:03.556    34á950 kbps     00:09:20.017    171á123 bytes   466á808 bytes   00:08:55.201    
+3               0:13:02.072     0:04:23.972     29á314 kbps     36á447 kbps     00:16:06.674    35á021 kbps     00:16:07.424    34á808 kbps     00:16:03.921    152á831 bytes   508á071 bytes   00:16:02.962    
+4               0:17:26.045     0:06:44.862     25á975 kbps     35á431 kbps     00:21:03.887    33á938 kbps     00:21:01.343    33á752 kbps     00:21:01.426    135á419 bytes   337á397 bytes   00:21:04.471    
+5               0:24:10.907     0:06:02.111     27á805 kbps     36á446 kbps     00:27:28.355    35á099 kbps     00:27:24.351    33á981 kbps     00:27:19.846    144á963 bytes   412á787 bytes   00:27:29.356    
+6               0:30:13.019     0:06:16.417     31á589 kbps     37á244 kbps     00:35:24.872    35á133 kbps     00:35:22.829    34á436 kbps     00:33:28.923    164á688 bytes   470á469 bytes   00:35:26.833    
+7               0:36:29.437     0:04:30.728     32á732 kbps     36á700 kbps     00:37:46.722    35á069 kbps     00:39:53.390    34á885 kbps     00:39:46.425    170á648 bytes   460á482 bytes   00:40:52.741    
+8               0:41:00.166     0:08:03.691     31á797 kbps     36á780 kbps     00:48:45.255    35á183 kbps     00:48:56.433    34á953 kbps     00:46:05.262    165á774 bytes   484á679 bytes   00:45:06.745    
+9               0:49:03.857     0:06:37.980     33á318 kbps     36á579 kbps     00:50:39.828    35á123 kbps     00:50:27.524    34á940 kbps     00:50:22.561    173á707 bytes   447á251 bytes   00:50:25.605    
+10              0:55:41.838     0:03:59.405     29á173 kbps     32á887 kbps     00:58:10.195    31á662 kbps     00:57:31.656    31á153 kbps     00:57:28.653    152á094 bytes   393á833 bytes   00:59:41.244    
+11              0:59:41.244     0:06:25.510     32á642 kbps     39á228 kbps     01:03:25.968    35á073 kbps     01:00:25.079    34á901 kbps     01:02:46.596    170á181 bytes   478á942 bytes   01:00:39.927    
+12              1:06:06.754     0:06:49.700     33á285 kbps     37á301 kbps     01:09:42.178    35á232 kbps     01:09:38.090    34á943 kbps     01:09:33.210    173á532 bytes   394á249 bytes   01:08:44.120    
+13              1:12:56.455     0:05:57.648     31á256 kbps     37á785 kbps     01:17:19.301    35á423 kbps     01:17:15.255    34á810 kbps     01:17:25.557    162á953 bytes   339á578 bytes   01:15:00.412    
+14              1:18:54.104     0:06:49.534     31á375 kbps     37á470 kbps     01:22:39.871    35á242 kbps     01:22:35.909    35á008 kbps     01:22:30.862    163á575 bytes   395á832 bytes   01:23:14.447    
+15              1:25:43.638     0:05:21.821     30á627 kbps     36á253 kbps     01:29:17.643    35á016 kbps     01:29:27.945    34á891 kbps     01:29:23.775    159á677 bytes   367á598 bytes   01:26:28.308    
+16              1:31:05.460     0:03:57.487     8á000 kbps      10á262 kbps     01:35:01.278    8á986 kbps      01:31:26.272    8á516 kbps      01:31:26.272    41á715 bytes    182á473 bytes   01:31:06.252    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     5702,780                29á987                  21á375á917á047  116á252á957     
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           5702,780                3á915                   2á790á608á196   16á055á819      
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            5702,780                3á978                   2á835á418á392   16á298á614      
+00000.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           5702,780                30                      21á091á608      122á493         
+00000.M2TS      4609 (0x1201)   0x90            PGS             eng (English)           5702,780                32                      22á758á230      132á283         
+00000.M2TS      4610 (0x1202)   0x90            PGS             spa (Spanish)           5702,780                27                      18á971á368      110á258         
+00000.M2TS      4611 (0x1203)   0x90            PGS             fra (French)            5702,780                0                       25á766          154             
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00001.MPLS
+Size: 28á639á420á416 bytes
+Length: 1:35:02.947
+Total Bitrate: 40,17 Mbps
+Video: MPEG-4 AVC Video / 29986 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3915 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 3977 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Subtitle: English / 29,587 kbps
+Subtitle: English / 31,925 kbps
+Subtitle: Spanish / 26,613 kbps
+Subtitle: French / 0,036 kbps
+
+
+********************
+PLAYLIST: 00301.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00301.MPLS                                                      AVC     0:25:57 6á157á178á880   36á134á007á481  31,62   30,00   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00301.MPLS
+Length:                 0:25:57.973 (h:m:s.ms)
+Size:                   6á157á178á880 bytes
+Total Bitrate:          31,62 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        29999 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00017.M2TS      0:00:00.000     0:25:57.973     6á157á178á880   31á616          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:25:57.973     29á999 kbps     53á460 kbps     00:21:32.416    40á655 kbps     00:01:12.030    37á840 kbps     00:21:32.374    156á402 bytes   980á863 bytes   00:19:26.039    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00017.M2TS      4113 (0x1011)   0x1B            AVC                                     1557,806                30á002                  5á842á226á314   31á772á993      
+00017.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           1557,806                192                     37á390á848      243á430         
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00301.MPLS
+Size: 6á157á178á880 bytes
+Length: 0:25:57.973
+Total Bitrate: 31,62 Mbps
+Video: MPEG-4 AVC Video / 29999 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00300.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00300.MPLS                                                      AVC     0:07:24 1á039á091á712   36á134á007á481  18,72   17,64   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00300.MPLS
+Length:                 0:07:24.110 (h:m:s.ms)
+Size:                   1á039á091á712 bytes
+Total Bitrate:          18,72 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17643 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00001.M2TS      0:00:00.000     0:00:05.004     823á296         1á316           
+00002.M2TS      0:00:05.004     0:01:15.950     181á168á128     19á083          
+00003.M2TS      0:01:20.955     0:00:05.004     841á728         1á345           
+00004.M2TS      0:01:25.960     0:01:22.707     197á369á856     19á091          
+00005.M2TS      0:02:48.668     0:01:57.408     281á284á608     19á166          
+00006.M2TS      0:04:46.077     0:01:02.020     148á389á888     19á141          
+00007.M2TS      0:05:48.097     0:01:36.012     229á214á208     19á099          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:05.004     1á197 kbps      1á603 kbps      00:00:00.709    1á077 kbps      00:00:00.000    0 kbps          00:00:00.000    6á190 bytes     79á474 bytes    00:00:02.252    
+2               0:00:05.004     0:01:15.950     17á996 kbps     47á530 kbps     00:01:15.742    30á333 kbps     00:00:06.423    24á491 kbps     00:00:58.892    93á822 bytes    786á723 bytes   00:01:16.201    
+3               0:01:20.955     0:00:05.004     1á094 kbps      1á633 kbps      00:01:23.166    1á094 kbps      00:01:20.955    0 kbps          00:00:00.000    5á706 bytes     81á262 bytes    00:01:23.208    
+4               0:01:25.960     0:01:22.707     17á995 kbps     49á853 kbps     00:02:22.392    28á875 kbps     00:02:29.357    24á021 kbps     00:02:22.392    93á820 bytes    559á467 bytes   00:02:23.601    
+5               0:02:48.668     0:01:57.408     18á069 kbps     51á503 kbps     00:03:51.773    33á446 kbps     00:03:10.189    27á761 kbps     00:03:10.106    94á203 bytes    711á655 bytes   00:02:56.217    
+6               0:04:46.077     0:01:02.020     18á043 kbps     32á527 kbps     00:04:57.213    22á840 kbps     00:05:11.894    22á121 kbps     00:05:06.556    94á070 bytes    595á847 bytes   00:04:49.080    
+7               0:05:48.097     0:01:36.012     18á003 kbps     63á307 kbps     00:06:14.082    33á036 kbps     00:06:02.945    27á208 kbps     00:06:49.283    93á898 bytes    745á817 bytes   00:06:03.696    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00001.M2TS      4113 (0x1011)   0x1B            AVC                                     4,880                   1á224                   746á526         4á117           
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     75,784                  18á028                  170á775á668     929á154         
+00002.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           75,784                  192                     1á822á464       11á865          
+00003.M2TS      4113 (0x1011)   0x1B            AVC                                     4,880                   1á245                   759á284         4á201           
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     82,624                  18á014                  186á045á390     1á012á255       
+00004.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           82,624                  192                     1á985á280       12á925          
+00005.M2TS      4113 (0x1011)   0x1B            AVC                                     117,284                 18á088                  265á180á267     1á442á739       
+00005.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           117,284                 192                     2á817á024       18á340          
+00006.M2TS      4113 (0x1011)   0x1B            AVC                                     61,937                  18á068                  139á882á552     761á080         
+00006.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           61,937                  192                     1á487á616       9á685           
+00007.M2TS      4113 (0x1011)   0x1B            AVC                                     95,929                  18á019                  216á062á706     1á175á584       
+00007.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           95,929                  192                     2á304á768       15á005          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00300.MPLS
+Size: 1á039á091á712 bytes
+Length: 0:07:24.110
+Total Bitrate: 18,72 Mbps
+Video: MPEG-4 AVC Video / 17643 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00306.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00306.MPLS                                                      AVC     0:01:57 281á284á608     36á134á007á481  19,17   18,07   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00306.MPLS
+Length:                 0:01:57.408 (h:m:s.ms)
+Size:                   281á284á608 bytes
+Total Bitrate:          19,17 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18069 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00005.M2TS      0:00:00.000     0:01:57.408     281á284á608     19á166          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:57.408     18á069 kbps     51á503 kbps     00:01:03.104    33á446 kbps     00:00:21.521    27á761 kbps     00:00:21.438    94á203 bytes    711á655 bytes   00:00:07.549    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00005.M2TS      4113 (0x1011)   0x1B            AVC                                     117,284                 18á088                  265á180á267     1á442á739       
+00005.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           117,284                 192                     2á817á024       18á340          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00306.MPLS
+Size: 281á284á608 bytes
+Length: 0:01:57.408
+Total Bitrate: 19,17 Mbps
+Video: MPEG-4 AVC Video / 18069 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00308.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00308.MPLS                                                      AVC     0:01:36 229á214á208     36á134á007á481  19,10   18,00   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00308.MPLS
+Length:                 0:01:36.012 (h:m:s.ms)
+Size:                   229á214á208 bytes
+Total Bitrate:          19,10 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18003 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00007.M2TS      0:00:00.000     0:01:36.012     229á214á208     19á099          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:36.012     18á003 kbps     63á307 kbps     00:00:25.984    33á036 kbps     00:00:14.848    27á208 kbps     00:01:01.186    93á859 bytes    745á817 bytes   00:00:15.598    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00007.M2TS      4113 (0x1011)   0x1B            AVC                                     95,929                  18á019                  216á062á706     1á175á584       
+00007.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           95,929                  192                     2á304á768       15á005          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00308.MPLS
+Size: 229á214á208 bytes
+Length: 0:01:36.012
+Total Bitrate: 19,10 Mbps
+Video: MPEG-4 AVC Video / 18003 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps
+
+
+********************
+PLAYLIST: 00305.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00305.MPLS                                                      AVC     0:01:22 197á369á856     36á134á007á481  19,09   18,00   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00305.MPLS
+Length:                 0:01:22.707 (h:m:s.ms)
+Size:                   197á369á856 bytes
+Total Bitrate:          19,09 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17995 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00004.M2TS      0:00:00.000     0:01:22.707     197á369á856     19á091          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:22.707     17á995 kbps     49á853 kbps     00:00:56.431    28á875 kbps     00:01:03.396    24á021 kbps     00:00:56.431    93á820 bytes    559á467 bytes   00:00:57.640    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00004.M2TS      4113 (0x1011)   0x1B            AVC                                     82,624                  18á014                  186á045á390     1á012á255       
+00004.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           82,624                  192                     1á985á280       12á925          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00305.MPLS
+Size: 197á369á856 bytes
+Length: 0:01:22.707
+Total Bitrate: 19,09 Mbps
+Video: MPEG-4 AVC Video / 17995 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps
+
+
+********************
+PLAYLIST: 00303.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00303.MPLS                                                      AVC     0:01:15 181á168á128     36á134á007á481  19,08   17,99   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00303.MPLS
+Length:                 0:01:15.950 (h:m:s.ms)
+Size:                   181á168á128 bytes
+Total Bitrate:          19,08 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17988 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     0:01:15.950     181á168á128     19á083          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:15.950     17á988 kbps     47á530 kbps     00:01:10.737    30á333 kbps     00:00:01.418    24á491 kbps     00:00:53.887    93á781 bytes    786á723 bytes   00:01:11.196    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00002.M2TS      4113 (0x1011)   0x1B            AVC                                     75,784                  18á028                  170á775á668     929á154         
+00002.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           75,784                  192                     1á822á464       11á865          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00303.MPLS
+Size: 181á168á128 bytes
+Length: 0:01:15.950
+Total Bitrate: 19,08 Mbps
+Video: MPEG-4 AVC Video / 17988 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00307.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00307.MPLS                                                      AVC     0:01:02 148á389á888     36á134á007á481  19,14   18,04   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00307.MPLS
+Length:                 0:01:02.020 (h:m:s.ms)
+Size:                   148á389á888 bytes
+Total Bitrate:          19,14 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18043 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00006.M2TS      0:00:00.000     0:01:02.020     148á389á888     19á141          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:01:02.020     18á043 kbps     32á527 kbps     00:00:11.136    22á840 kbps     00:00:25.817    22á121 kbps     00:00:20.478    94á070 bytes    595á847 bytes   00:00:03.003    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00006.M2TS      4113 (0x1011)   0x1B            AVC                                     61,937                  18á068                  139á882á552     761á080         
+00006.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           61,937                  192                     1á487á616       9á685           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00307.MPLS
+Size: 148á389á888 bytes
+Length: 0:01:02.020
+Total Bitrate: 19,14 Mbps
+Video: MPEG-4 AVC Video / 18043 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00101.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00101.MPLS                                                      AVC     0:00:59 196á042á752     36á134á007á481  26,28   24,88   DD AC3 2.0 192Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00101.MPLS
+Length:                 0:00:59.684 (h:m:s.ms)
+Size:                   196á042á752 bytes
+Total Bitrate:          26,28 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24881 kbps          1080p / 23,976 fps / 16:9 / Main Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00009.M2TS      0:00:00.000     0:00:59.684     196á042á752     26á277          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:59.684     24á881 kbps     46á681 kbps     00:00:58.641    31á296 kbps     00:00:00.500    27á964 kbps     00:00:00.500    129á720 bytes   614á751 bytes   00:00:02.252    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00009.M2TS      4113 (0x1011)   0x1B            AVC                                     59,601                  24á916                  185á629á228     1á009á686       
+00009.M2TS      4352 (0x1100)   0x81            AC3             eng (English)           59,601                  192                     1á431á552       9á320           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00101.MPLS
+Size: 196á042á752 bytes
+Length: 0:00:59.684
+Total Bitrate: 26,28 Mbps
+Video: MPEG-4 AVC Video / 24881 kbps / 1080p / 23,976 fps / 16:9 / Main Profile 4.1
+Audio: English / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+
+********************
+PLAYLIST: 00204.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00204.MPLS                                                      AVC     0:00:30 565á248         36á134á007á481  0,15    0,08                                              
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     American Heist
+Disc Size:      36á134á007á481 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00204.MPLS
+Length:                 0:00:30.030 (h:m:s.ms)
+Size:                   565á248 bytes
+Total Bitrate:          0,15 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        83 kbps             1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00014.M2TS      0:00:00.000     0:00:30.030     565á248         151             
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:00:30.030     83 kbps         94 kbps         00:00:08.008    84 kbps         00:00:12.262    84 kbps         00:00:15.515    430 bytes       2á428 bytes     00:00:00.750    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00014.M2TS      4113 (0x1011)   0x1B            AVC                                     29,905                  83                      309á752         1á920           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: American Heist
+Disc Size: 36á134á007á481 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00204.MPLS
+Size: 565á248 bytes
+Length: 0:00:30.030
+Total Bitrate: 0,15 Mbps
+Video: MPEG-4 AVC Video / 83 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1

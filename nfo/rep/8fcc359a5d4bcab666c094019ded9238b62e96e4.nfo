@@ -1,0 +1,50 @@
+DISC INFO:
+
+Disc Title:     RV (2006)
+Disc Size:      23,311,406,084 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:38:47.922 (h:m:s.ms)
+Size:                   22,025,410,560 bytes
+Total Bitrate:          29.72 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            17218 kbps          1080p / 23.976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -2dB
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps
+LPCM Audio                      French          4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         60.404 kbps                     
+Presentation Graphics           English         45.566 kbps                     
+Presentation Graphics           French          57.017 kbps                     
+Presentation Graphics           Dutch           47.523 kbps                     
+Presentation Graphics           Arabic          30.527 kbps                     
+Presentation Graphics           Czech           51.982 kbps                     
+Presentation Graphics           Danish          46.623 kbps                     
+Presentation Graphics           Finnish         55.085 kbps                     
+Presentation Graphics           Greek, Ancient (to 1453)59.046 kbps                     
+Presentation Graphics           Hebrew          41.070 kbps                     
+Presentation Graphics           Hindi           50.482 kbps                     
+Presentation Graphics           Hungarian       49.515 kbps                     
+Presentation Graphics           Norwegian       55.611 kbps                     
+Presentation Graphics           Polish          57.459 kbps                     
+Presentation Graphics           Swedish         45.110 kbps                     
+Presentation Graphics           Turkish         57.271 kbps

@@ -1,0 +1,58 @@
+DISC INFO:
+
+Disc Title:     CONSPIRACY_THEORY_HDCLUB
+Disc Size:      38 440 975 993 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:15:17.442 (h:m:s.ms)
+Size:                   38 010 961 920 bytes
+Total Bitrate:          37,46 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        25941 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         4284 kbps       5.1 / 48 kHz / 4284 kbps / 24-bit (DTS Core: 5.1 /
+
+48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             German          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Italian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Spanish         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Portuguese      192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Czech           192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Hungarian       448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Polish          448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+* Dolby Digital Audio           Japanese        640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+* Presentation Graphics         Japanese        19,138 kbps                    
+Presentation Graphics           English         29,911 kbps                    
+Presentation Graphics           French          22,477 kbps                    
+Presentation Graphics           German          26,854 kbps                    
+Presentation Graphics           Italian         26,190 kbps                    
+Presentation Graphics           Korean          19,962 kbps                    
+Presentation Graphics           Spanish         24,404 kbps                    
+Presentation Graphics           Portuguese      24,464 kbps                    
+Presentation Graphics           Czech           21,801 kbps                    
+Presentation Graphics           Hungarian       21,441 kbps                    
+Presentation Graphics           Polish          17,430 kbps                    
+Presentation Graphics           Russian         22,959 kbps                    
+* Presentation Graphics         Japanese        0,618 kbps

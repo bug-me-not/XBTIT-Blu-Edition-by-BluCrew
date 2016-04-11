@@ -1,0 +1,153 @@
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @author Philip Nicolcev
+ * @copyright (c) Sebastian Tschan
+ * @license Modified MIT License
+ * @link https://blueimp.net/ajax/
+ */
+
+@import url('global.css');
+@import url('fonts.css');
+@import url('print.css');
+
+@media screen,projection,handheld {
+
+	/* Buttons */
+	#content #bbCodeContainer input, #content #logoutButton, #content #submitButton, #loginForm #loginButton {
+		background-color:#d9ce72;
+		color:#333333;
+		border: 1px solid #c8b360;
+		background-image: linear-gradient(to bottom, #d9ce72, #e1d995);
+	}
+	#content select, #loginForm select, #loginForm input, #content textarea {
+		color:#333333;
+		border: 1px solid #c8b360;
+	}
+
+	/* Status Icon */
+	#content #statusIconContainer {
+		background-image: url('../img/loading-sprite.png');
+	}
+	#content .statusContainerOff {
+		background-position: 0px 0px;
+	}
+	#content .statusContainerOn {
+		background-position: 0px -22px;
+	}
+	#content .statusContainerAlert {
+		background-position: 0px -44px;
+	}
+
+	/* Other Theme Elements */
+	#loginContent {
+		background-color:#F7F5DC;
+		color:#000;
+	}
+	#loginContent h1 {
+		color:#000;
+	}
+	#loginContent a {
+		color:#000;
+	}
+	#loginContent input, #loginContent select {
+		background-color:#FFF;
+		color:#000;
+	}
+	#loginContent #errorContainer {
+		color:red;
+	}
+	#content {
+		background-color:#eee9be;
+		color:#000;
+	}
+	#content h1 {
+		color:#000;
+	}
+	#content a {
+		color:#000;
+	}
+	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #colorCodesContainer, #content textarea {
+		border-color:gray;
+		background-color:#FFF;
+	}
+	#content #colorCodesContainer a {
+		border-color:black;
+	}
+	#content #optionsContainer input {
+	    background-color:transparent;
+	}
+	#content .rowEven {
+		background-color:#FFFFF0;
+	}
+	#content .rowOdd {
+		background-color:#F7F5DC;
+	}
+	#content .guest {
+		color:gray;
+	}
+	#content .user {
+		color:#663300;
+	}
+	#content .superleech {
+		color:#8A4B08;
+	}
+	#content .leech {
+		color:#8A4B08;
+	}
+	#content .recruit {
+		color:#1947A3;
+	}
+	#content .bluuser {
+		color:#002E8A;
+	}
+	#content .bluwarrior {
+		color:#001A4C;
+	}
+	#content .blumaster {
+		color:#00143D;
+	}
+	#content .bluaddict {
+		color:#00143d;
+	}
+	#content .blujunkie {
+		color:#00143d;
+	}
+	#content .blugod {
+		color:#000F2E;
+	}
+	#content .uploader {
+		color:#00CC29;
+	}
+	#content .vip {
+		color:#FFD700;
+	}
+	#content .trustee {
+		color:#6C0A6C;
+	}
+	#content .blurg {
+		color:#00aeff;
+	}
+	#content .moderator {
+		color:#28EEBC;
+	}
+	#content .admin {
+		color:#FF4000;
+	}
+	#content .chatBot {
+		color:#FF66CC;
+	}
+	#content #chatList .chatBotErrorMessage {
+		color:red;
+	}
+	#content #chatList a {
+		color:#1E90FF;
+	}
+	#content #chatList .deleteSelected {
+		border-color:red;
+	}
+	#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
+		background-color:#FFFFF0;
+		color:#000;
+	}
+}

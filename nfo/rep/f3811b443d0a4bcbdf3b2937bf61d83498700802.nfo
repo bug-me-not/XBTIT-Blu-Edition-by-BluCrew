@@ -1,0 +1,42 @@
+DISC INFO:
+
+Disc Title:     We Need to Talk About Kevin 2011 1080p Blu-ray AVC DTS-HD MA 5.1-HDChina
+Disc Size:      23 454 715 300 bytes
+Protection:     AACS
+BD-Java:        Yes
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00010.MPLS
+Length:                 1:51:58.458 (h:m:s.ms)
+Size:                   20 621 850 624 bytes
+Total Bitrate:          24,56 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        20325 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1938 kbps       5.1 / 48 kHz / 1938 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           14,388 kbps                     
+Presentation Graphics           French          15,507 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00010.M2TS      0:00:00.000     1:51:58.458     20 621 850 624  24 555 

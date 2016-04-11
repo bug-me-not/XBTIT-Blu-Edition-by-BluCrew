@@ -1,0 +1,44 @@
+﻿[code]
+
+DISC INFO:
+
+Disc Title:     Ghost Rider Spirit of Vengeance 2011 1080p U.S Blu-ray AVC DTS 5.1~Tonyk
+Disc Size:      49,575,557,120 bytes
+Protection:     AACS(v30), Cinavia
+BD-Java:        Yes
+BDInfo:         0.5.8.1 
+
+PLAYLIST REPORT:
+
+Name:                   00801.MPLS  
+Length:                 1:35:31.767 (h:m:s.ms)
+Size:                   25,705,451,520 bytes
+Total Bitrate:          35.88 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22994 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2516 kbps       5.1 / 48 kHz / 2516 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps
+Dolby Digital Audio             Catalan         448 kbps        5.1 / 48 kHz / 448 kbps
+DTS-HD Master Audio             French          2556 kbps       5.1 / 48 kHz / 2556 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             Spanish         2558 kbps       5.1 / 48 kHz / 2558 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         17.132 kbps                     
+Presentation Graphics           English         15.307 kbps                     
+Presentation Graphics           French          13.312 kbps                     
+Presentation Graphics           Spanish         15.79 kbps                      
+Presentation Graphics           Catalan         1.375 kbps                      
+Presentation Graphics           French          1.736 kbps                      
+[/code]

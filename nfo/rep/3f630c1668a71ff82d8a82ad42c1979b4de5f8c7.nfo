@@ -1,0 +1,50 @@
+DISC INFO:
+
+Disc Title:     STEALTH
+Disc Size:      23 870 911 370 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:00:44.237 (h:m:s.ms)
+Size:                   21 828 169 728 bytes
+Total Bitrate:          24,11 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            16739 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -8dB
+LPCM Audio                      English         4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             French          448 kbps        5.1 / 48 kHz / 448 kbps / DN -1dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         46,624 kbps                     
+Presentation Graphics           English         19,725 kbps                     
+Presentation Graphics           French          37,663 kbps                     
+Presentation Graphics           Dutch           35,123 kbps                     
+Presentation Graphics           Arabic          23,216 kbps                     
+Presentation Graphics           Czech           39,545 kbps                     
+Presentation Graphics           Danish          42,615 kbps                     
+Presentation Graphics           Finnish         36,600 kbps                     
+Presentation Graphics           Greek           45,579 kbps                     
+Presentation Graphics           Hebrew          35,806 kbps                     
+Presentation Graphics           Hindi           38,679 kbps                     
+Presentation Graphics           Hungarian       39,734 kbps                     
+Presentation Graphics           Korean          27,464 kbps                     
+Presentation Graphics           Norwegian       35,282 kbps                     
+Presentation Graphics           Polish          43,240 kbps                     
+Presentation Graphics           Swedish         38,437 kbps                     
+Presentation Graphics           Turkish         51,729 kbps

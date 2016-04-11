@@ -1,0 +1,44 @@
+DISC INFO:
+
+Disc Title:     QUIZ_SHOW_BLUEBIRD
+Disc Size:      35 376 717 939 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00100.MPLS
+Length:                 2:12:43.205 (h:m:s.ms)
+Size:                   34 798 252 032 bytes
+Total Bitrate:          34,96 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        28000 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         3883 kbps       5.1 / 48 kHz / 3883 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps
+Dolby Digital Audio             Russian         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             Russian         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         64,522 kbps                     
+Presentation Graphics           French          43,326 kbps                     
+Presentation Graphics           Russian         51,990 kbps                     
+Presentation Graphics           Russian         0,576 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00045.M2TS      0:00:00.000     2:12:43.205     34 798 252 032  34 959 

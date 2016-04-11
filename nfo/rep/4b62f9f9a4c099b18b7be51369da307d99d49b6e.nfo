@@ -1,0 +1,33 @@
+DISC INFO:
+
+Disc Title:     ERBRD5222
+Disc Size:      44 943 552 013 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 2:10:31.523 (h:m:s.ms)
+Size:                   38 997 694 464 bytes
+Total Bitrate:          39,84 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+MPEG-4 AVC Video        29997 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+LPCM Audio                      English         2304 kbps       2.0 / 48 kHz / 2304 kbps / 24-bit
+DTS-HD Master Audio             English         5530 kbps       5.1 / 48 kHz / 5530 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate  
+----            -------         ------          ----            -------------  
+00002.M2TS      0:00:00.000     2:10:31.523     38 997 694 464  39 837

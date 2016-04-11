@@ -1,0 +1,30 @@
+<?php
+global $STYLEURL;
+$maxfilesize = "1,048,576 bytes";
+$language['SUB_NAME']='Nome do Filme:';
+$language['SUB_HASH']='Torrent Infohash:';
+$language['SUB_IMDB']='Link IMDB:';
+$language['SUB_LANG']='Linguagem:';
+$language['SUB_IMG']='Imagem:';
+$language['SUB_FR']='Framerate:';
+$language['SUB_CD']='Cd Numero:';
+$language['SUB_AUTH']='Autor:';
+$language['SUB_FILE']='Arquivo:';
+$language['SUB_FILE_T']='(Tamanho máximo do Arquivo: '.$maxfilesize.'.)';
+$language['SUB_ADD_H']='Add Legenda';
+$language['SUB_T_H']='Legendas';
+$language['SUB_T_S']='Buscar Legendas';
+$language['SUB_T_E']='Editar Legenda';
+$language['SUBS_EMPTY']='<h3>Nada Achado!</h3>';
+$language['SUBS_EMPTY_STD']='Nada Achado!';
+$language['SUB_IMGT']='Imagem';
+$language['SUB_IMDBT']='IMDB Link';
+$language['SUB_LANGT']='Linguagem';
+$language['SUB_INFOT']='Info';
+$language['SUB_DLT']='Download';
+$language['SUB_UPLOAD']='Uploader:';
+$language['SUB_DOWNLOAD']='Downloaded:';
+$language['SUB']='Enviar';
+$language['SUBSEARCH']='Buscar';
+$language['SUBCANCEL']='<a href=index.php?page=subtitles><button type=button class=btn>Cancelar</button></a>';
+?>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>XMLHTTP example</title>
+  </head>
+  <body>
+
+    <button id="mybutton">Make a request</button>
+
+    <script type="text/javascript">
+
+    var http_request = false;
+
+    function makeRequest(url) {
+
+       if (window.XMLHttpRequest) { // Mozilla, Safari, IE7...
+           http_request = new XMLHttpRequest();
+       } else if (window.ActiveXObject) { // IE6 and older
+           http_request = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+       http_request.onreadystatechange = alertContents;
+       http_request.open('GET', url, true);
+       http_request.send(null);
+
+    }
+
+    function alertContents() {
+
+       if (http_request.readyState == 4) {
+           if (http_request.status == 200) {
+               alert(http_request.responseText);
+           } else {
+               alert('There was a problem with the request.');
+           }
+       }
+
+    }
+    document.getElementById('mybutton').onclick = function() {
+       makeRequest('test.html');
+    }
+
+    </script>
+  </body>
+</html>

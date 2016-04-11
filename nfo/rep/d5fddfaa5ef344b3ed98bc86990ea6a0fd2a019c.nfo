@@ -1,0 +1,32 @@
+DISC INFO:
+
+Disc Title:     CDROM
+Disc Size:      24 975 750 736 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 2:38:54.658 (h:m:s.ms)
+Size:                   21 807 071 232 bytes
+Total Bitrate:          18,30 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        17000 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         448 kbps        5.0 / 48 kHz / 448 kbps / DN -4dB
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00002.M2TS      0:00:00.000     2:38:54.658     21 807 071 232  18 297

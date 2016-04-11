@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>WebConsole with YUI</title>
+    <link rel="stylesheet" type="text/css" href="webconsole.css" />
+  </head>
+  <body>
+
+    <form action="exec.php" method="get" id="console-form">
+      <div
+        class="console"
+        id="result">
+        Welcome to the WebConsole!
+        <br />
+        :-&gt;
+      </div>
+      <input
+        class="console"
+        name="command"
+        id="command"
+        type="text" />
+    </form>
+
+
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/yahoo/yahoo-min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/event/event-min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/connection/connection-min.js"></script>
+
+    <script type="text/javascript">
+
+    var WebConsole = {};
+
+    WebConsole.printResult = function(result_string)
+    {
+      var result_div = document.getElementById('result');
+      var result_array = result_string.split('\n');
+
+      var new_command = document.getElementById('command').value;
+      result_div.appendChild(document.createTextNode(new_command));
+      result_div.appendChild(document.createElement('br'));
+
+      var result_wrap, line_index, line;
+
+      for (line_index in result_array) {
+        result_wrap = document.createElement('pre');
+        line = document.createTextNode(result_array[line_index]);
+        result_wrap.appendChild(line);
+        result_div.appendChild(result_wrap);
+        result_div.appendChild(document.createElement('br'));
+
+      }
+      result_div.appendChild(document.createTextNode(':-> '));
+
+      result_div.scrollTop = result_div.scrollHeight;
+      document.getElementById('command').value = '';
+    };
+
+    WebConsole.keyEvent = function(event)
+    {
+
+      var the_url, the_shell_command;
+      switch(event.keyCode){
+        case 13:
+          the_shell_command = document.getElementById('command').value;
+          if (the_shell_command) {
+            this.commands_history[this.commands_history.length] = the_shell_command;
+            this.history_pointer = this.commands_history.length;
+
+            // YUI's AJAX
+            YAHOO.util.Connect.setForm(document.forms[0]);
+            YAHOO.util.Connect.asyncRequest(
+                'GET',
+                'exec.php',
+                {
+                  success: function(xhr){
+                    WebConsole.printResult(xhr.responseText)
+                  }
+                }
+            );
+
+          }
+          break;
+        case 38: // this is the arrow up
+          if (this.history_pointer > 0) {
+            this.history_pointer--;
+            document.getElementById('command').value = this.commands_history[this.history_pointer];
+          }
+          break;
+        case 40: // this is the arrow down
+          if (this.history_pointer < this.commands_history.length - 1 ) {
+            this.history_pointer++;
+            document.getElementById('command').value = this.commands_history[this.history_pointer];
+          }
+          break;
+        default:
+          break;
+      }
+    };
+
+    WebConsole.commands_history = [];
+    WebConsole.history_pointer = 0;
+
+
+    document.getElementById('console-form').onsubmit = function(){
+        return false;
+    };
+    document.getElementById('command').onkeyup = function(e){
+        if (!e && window.event) {
+            e = window.event;
+        }
+        WebConsole.keyEvent(e);
+    };
+
+    </script>
+  </body>
+</html>

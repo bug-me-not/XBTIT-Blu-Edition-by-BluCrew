@@ -1,0 +1,37 @@
+Disc Title:     TAMMY_HDACCESS
+Disc Size:      27,978,694,007 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00200.MPLS
+Length:                 1:40:35.279 (h:m:s.ms)
+Size:                   23,162,400,768 bytes
+Total Bitrate:          30.70 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        24692 kbps          1080p / 23.976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2184 kbps       5.1 / 48 kHz / 2184 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+* Dolby Digital Audio           French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+* Dolby Digital Audio           Spanish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         44.846 kbps                     
+Presentation Graphics           French          35.368 kbps                     
+Presentation Graphics           Spanish         39.443 kbps                        
+* Presentation Graphics         Spanish         0.391 kbps

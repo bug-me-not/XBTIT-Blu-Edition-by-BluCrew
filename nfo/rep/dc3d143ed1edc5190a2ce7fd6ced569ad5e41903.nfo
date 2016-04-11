@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Polytechnique
+Disc Size:      29 006 512 929 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00005.MPLS
+Length:                 1:16:54.750 (h:m:s.ms)
+Size:                   26 552 674 368 bytes
+Total Bitrate:          46,03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        36974 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             German          3353 kbps       5.1 / 48 kHz / 3353 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          3227 kbps       5.1 / 48 kHz / 3227 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           German          0,476 kbps                      
+Presentation Graphics           German          12,562 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00005.M2TS      0:00:00.000     1:16:54.750     26 552 674 368  46 031

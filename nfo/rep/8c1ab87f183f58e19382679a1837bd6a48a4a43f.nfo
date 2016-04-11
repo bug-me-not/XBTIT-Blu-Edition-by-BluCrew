@@ -1,0 +1,142 @@
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 32.1 GiB
+Duration : 2h 11mn
+Overall bit rate mode : Variable
+Overall bit rate : 35.0 Mbps
+Movie name : U.S.Marshals.1998.Multi.Truefrench.1080p.Bluray.Remux.AVC-BDHD
+Encoded date : UTC 2015-11-08 17:35:17
+Writing application : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 02:10:19.896000000
+NUMBER_OF_FRAMES : 2956
+NUMBER_OF_BYTES : 27995010
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-11-08 17:35:17
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 2 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 11mn
+Bit rate mode : Variable
+Width : 1 920 pixels
+Height : 1 080 pixels
+Display aspect ratio : 16:9
+Frame rate mode : Constant
+Frame rate : 23.976 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Default : Yes
+Forced : No
+
+Audio #1
+ID : 2
+Format : AC-3
+Format/Info : Audio Coding 3
+Mode extension : CM (complete main)
+Format settings, Endianness : Big
+Codec ID : A_AC3
+Duration : 2h 11mn
+Bit rate mode : Constant
+Bit rate : 640 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossy
+Stream size : 600 MiB (2%)
+Title : Dolby Digital Audio French 640 kbps 5.1 / 48 kHz / 640 kbps / DN -4dB VFF
+Language : French
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Mode : 16
+Format settings, Endianness : Big
+Codec ID : A_DTS
+Duration : 2h 11mn
+Bit rate mode : Variable
+Bit rate : Unknown / 1 509 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 24 bits
+Compression mode : Lossless / Lossy
+Title : DTS-HD Master Audio English 4390 kbps 5.1 / 48 kHz / 4390 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Language : English
+Default : No
+Forced : No
+
+Text #1
+ID : 4
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : PGS French Complets
+Language : French
+Default : No
+Forced : No
+
+Text #2
+ID : 5
+Format : PGS
+Codec ID : S_HDMV/PGS
+Codec ID/Info : The same subtitle format used on BDs/HD-DVDs
+Title : PGS English Complets
+Language : English
+Default : No
+Forced : No
+
+Menu
+00:00:00.000 : en:00:00:00.000
+00:01:35.095 : en:00:01:35.095
+00:03:37.426 : en:00:03:37.426
+00:07:00.837 : en:00:07:00.837
+00:09:51.591 : en:00:09:51.591
+00:11:35.570 : en:00:11:35.570
+00:13:20.091 : en:00:13:20.091
+00:15:37.770 : en:00:15:37.770
+00:18:45.499 : en:00:18:45.499
+00:21:42.801 : en:00:21:42.801
+00:23:38.667 : en:00:23:38.667
+00:27:23.559 : en:00:27:23.559
+00:31:07.866 : en:00:31:07.866
+00:35:55.528 : en:00:35:55.528
+00:40:11.200 : en:00:40:11.200
+00:42:45.021 : en:00:42:45.021
+00:45:10.666 : en:00:45:10.666
+00:49:35.347 : en:00:49:35.347
+00:52:05.664 : en:00:52:05.664
+00:55:05.969 : en:00:55:05.969
+00:58:24.418 : en:00:58:24.418
+01:02:18.693 : en:01:02:18.693
+01:05:19.165 : en:01:05:19.165
+01:10:31.352 : en:01:10:31.352
+01:13:35.620 : en:01:13:35.620
+01:16:48.521 : en:01:16:48.521
+01:22:58.932 : en:01:22:58.932
+01:25:53.940 : en:01:25:53.940
+01:29:53.263 : en:01:29:53.263
+01:32:18.241 : en:01:32:18.241
+01:34:52.645 : en:01:34:52.645
+01:38:04.003 : en:01:38:04.003
+01:40:35.780 : en:01:40:35.780
+01:42:40.446 : en:01:42:40.446
+01:44:20.754 : en:01:44:20.754
+01:49:26.143 : en:01:49:26.143
+01:54:40.499 : en:01:54:40.499
+01:57:28.166 : en:01:57:28.166
+02:01:14.517 : en:02:01:14.517
+02:03:48.296 : en:02:03:48.296

@@ -1,0 +1,121 @@
+Miasto.44.2014.MULTi.1080p.BluRay.DTS-HD.MA.x264-PHOENiX
+
+Format : Matroska
+Format version : Version 4 / Version 2
+File size : 16.3 GiB
+Duration : 2h 1mn
+Overall bit rate mode : Variable
+Overall bit rate : 19.3 Mbps
+Encoded date : UTC 2015-10-20 12:32:49
+Writing application : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Writing library : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 01:58:26.000000000
+NUMBER_OF_FRAMES : 1073
+NUMBER_OF_BYTES : 29106
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-20 12:32:49
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Video
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Format profile : High@L4.1
+Format settings, CABAC : Yes
+Format settings, ReFrames : 5 frames
+Codec ID : V_MPEG4/ISO/AVC
+Duration : 2h 1mn
+Bit rate : 15.8 Mbps
+Nominal bit rate : 14.6 Mbps
+Width : 1 920 pixels
+Height : 804 pixels
+Display aspect ratio : 2.40:1
+Frame rate : 25.000 fps
+Color space : YUV
+Chroma subsampling : 4:2:0
+Bit depth : 8 bits
+Scan type : Progressive
+Bits/(Pixel*Frame) : 0.408
+Stream size : 13.3 GiB (82%)
+Writing library : x264 core 148 r2597 e86f3a1
+Encoding settings : cabac=1 / ref=5 / deblock=1:-3:-3 / analyse=0x3:0x133 / me=umh / subme=11 / psy=1 / psy_rd=0.99:0.05 / mixed_ref=1 / me_range=64 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=6,6 / fast_pskip=0 / chroma_qp_offset=-3 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=8 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=1 / weightp=2 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=250 / rc=2pass / mbtree=1 / bitrate=14600 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / vbv_maxrate=50000 / vbv_bufsize=50000 / nal_hrd=none / filler=0 / ip_ratio=1.40 / aq=2:1.00
+Language : English
+Default : Yes
+Forced : No
+DURATION : 02:01:06.000000000
+NUMBER_OF_FRAMES : 181650
+NUMBER_OF_BYTES : 13258858923
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-20 12:32:49
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Color primaries : BT.709-5, BT.1361, IEC 61966-2-4, SMPTE RP177
+Transfer characteristics : BT.709-5, BT.1361
+Matrix coefficients : BT.709-5, BT.1361, IEC 61966-2-4 709, SMPTE RP177
+
+Audio #1
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Codec ID : A_DTS
+Duration : 2h 1mn
+Bit rate mode : Variable
+Bit rate : 1 576 Kbps / 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossless / Lossy
+Language : Polish
+Default : Yes
+Forced : No
+
+Audio #2
+ID : 3
+Format : DTS
+Format/Info : Digital Theater Systems
+Format profile : MA / Core
+Codec ID : A_DTS
+Duration : 2h 1mn
+Bit rate mode : Variable
+Bit rate : 1 576 Kbps / 1 510 Kbps
+Channel(s) : 6 channels
+Channel positions : Front: L C R, Side: L R, LFE
+Sampling rate : 48.0 KHz
+Bit depth : 16 bits
+Compression mode : Lossless / Lossy
+Language : French
+Default : No
+Forced : No
+
+Text
+ID : 4
+Format : UTF-8
+Codec ID : S_TEXT/UTF8
+Codec ID/Info : UTF-8 Plain Text
+Title : French
+Default : Yes
+Forced : No
+
+Menu
+00:00:00.000 : en:00:00:00.000
+00:08:18.720 : en:00:08:18.720
+00:17:17.480 : en:00:17:17.480
+00:26:54.680 : en:00:26:54.680
+00:35:16.520 : en:00:35:16.520
+00:44:34.000 : en:00:44:34.000
+00:54:48.960 : en:00:54:48.960
+01:03:14.000 : en:01:03:14.000
+01:13:34.000 : en:01:13:34.000
+01:31:22.000 : en:01:31:22.000
+01:42:16.600 : en:01:42:16.600
+01:54:22.960 : en:01:54:22.960
+
+
+x264 [info]: frame I:968 Avg QP:16.06 size:220421
+x264 [info]: frame P:29632 Avg QP:18.98 size:102535
+x264 [info]: frame B:117960 Avg QP:20.70 size: 64971
+x264 [info]: consecutive B-frames: 1.8% 2.0% 9.0% 8.2% 10.2% 48.9% 9.2% 3.6% 7.2%
+encoded 148560 frames, 2.45 fps, 14093.39 kb/s
+
+Source: BR Z2

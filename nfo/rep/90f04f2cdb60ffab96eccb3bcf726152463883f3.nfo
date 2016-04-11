@@ -1,0 +1,58 @@
+DISC INFO:
+
+Disc Title:     Borat F13
+Disc Size:      21 793 642 623 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00010.MPLS
+Length:                 1:23:48.064 (h:m:s.ms)
+Size:                   18 226 501 632 bytes
+Total Bitrate:          29,00 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        19894 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS-HD Master Audio             English         3336 kbps       5.1 / 48 kHz / 3336 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Russian         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         41,560 kbps                     
+Presentation Graphics           French          36,365 kbps                     
+Presentation Graphics           Danish          37,423 kbps                     
+Presentation Graphics           Finnish         32,109 kbps                     
+Presentation Graphics           German          49,793 kbps                     
+Presentation Graphics           Italian         44,551 kbps                     
+Presentation Graphics           Dutch           38,233 kbps                     
+Presentation Graphics           Norwegian       36,606 kbps                     
+Presentation Graphics           Russian         40,578 kbps                     
+Presentation Graphics           Spanish         41,203 kbps                     
+Presentation Graphics           Swedish         32,961 kbps                     
+Presentation Graphics           Estonian        39,122 kbps                     
+Presentation Graphics           Latvian         33,629 kbps                     
+Presentation Graphics           Lithuanian      39,519 kbps                     
+Presentation Graphics           Turkish         41,077 kbps                     
+Presentation Graphics           Ukrainian       42,071 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00228.M2TS      0:00:00.000     1:23:48.064     18 226 501 632  29 000

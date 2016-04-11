@@ -1,0 +1,24 @@
+<script>
+var numSecs = 5; // adjust for desired time
+var howLong = numSecs * 1000; // # of mSecs
+function closeWin() {
+setTimeout("self.close()", howLong);
+}
+</script>
+<script language="JavaScript">
+<!--
+function refreshParent() {
+  window.opener.location.href = window.opener.location.href;
+
+  if (window.opener.progressWindow)
+		
+ {
+    window.opener.progressWindow.close()
+  }
+  window.close();
+}
+//-->
+</script>
+<body bgcolor=black text=white onunload="refreshParent()" onload="closeWin()">
+<center>Processing...<br><br><img src=images/process.gif></center>
+</body>

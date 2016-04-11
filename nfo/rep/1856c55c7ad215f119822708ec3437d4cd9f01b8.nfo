@@ -1,0 +1,193 @@
+Disc Title:     Le.dernier.Tango.a.Paris.Uncut.Version.1972.Blu-ray.Custom.1080p.AVC.DTS-HD.5.1-HDCLUB
+Disc Size:      43 442 611 765 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan was cancelled.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     2:09:36 2 302 588 992   43 442 611 765  2,37    30,63   DTS-HD Master 2.0 2114Kbps (48kHz/24-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     Le.dernier.Tango.a.Paris.Uncut.Version.1972.Blu-ray.Custom.1080p.AVC.DTS-HD.5.1-HDCLUB
+Disc Size:      43 442 611 765 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 2:09:36.810 (h:m:s.ms)
+Size:                   2 302 588 992 bytes
+Total Bitrate:          2,37 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        30630 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2114 kbps       2.0 / 48 kHz / 2114 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Russian         192 kbps        2.0 / 48 kHz / 192 kbps
+Dolby Digital Audio             French          256 kbps        2.0 / 48 kHz / 256 kbps / DN -4dB
+Dolby Digital Audio             German          256 kbps        2.0 / 48 kHz / 256 kbps / DN -4dB
+DTS-HD Master Audio             Russian         2130 kbps       2.0 / 48 kHz / 2130 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         8,803 kbps                      
+Presentation Graphics           French          0,000 kbps                      
+Presentation Graphics           Russian         11,599 kbps                     
+Presentation Graphics           Danish          8,820 kbps                      
+Presentation Graphics           Finnish         10,623 kbps                     
+Presentation Graphics           German          9,626 kbps                      
+Presentation Graphics           Japanese        5,285 kbps                      
+Presentation Graphics           Dutch           8,402 kbps                      
+Presentation Graphics           Norwegian       8,861 kbps                      
+Presentation Graphics           Spanish         9,256 kbps                      
+Presentation Graphics           Swedish         9,978 kbps                      
+Presentation Graphics           Indonesian      9,224 kbps                      
+Presentation Graphics           Korean          6,015 kbps                      
+Presentation Graphics           Polish          10,208 kbps                     
+Presentation Graphics           Chinese         6,717 kbps                      
+Presentation Graphics           Thai            11,007 kbps                     
+Presentation Graphics           English         7,848 kbps                      
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     2:09:36.810     2 302 588 992   37 930          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:02:58.511     21 788 kbps     37 719 kbps     00:02:52.672    36 425 kbps     00:02:52.463    28 658 kbps     00:01:09.778    113 565 bytes   271 840 bytes   00:02:53.172    
+2               0:02:58.511     0:03:27.040     36 200 kbps     39 859 kbps     00:04:47.161    38 084 kbps     00:04:43.324    37 895 kbps     00:03:38.551    188 728 bytes   345 182 bytes   00:05:28.286    
+3               0:06:25.551     0:01:43.853     33 616 kbps     38 619 kbps     00:07:04.549    37 898 kbps     00:07:56.809    37 837 kbps     00:07:43.504    181 906 bytes   326 330 bytes   00:06:53.329    
+4               0:08:09.405     0:05:41.174     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:13:50.579     0:04:01.741     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:17:52.321     0:01:33.551     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:19:25.873     0:04:03.910     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               0:23:29.783     0:02:13.299     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               0:25:43.083     0:01:42.352     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              0:27:25.435     0:07:10.763     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              0:34:36.199     0:03:07.729     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              0:37:43.928     0:07:11.055     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+13              0:44:54.983     0:06:08.826     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+14              0:51:03.810     0:01:39.432     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+15              0:52:43.243     0:06:08.701     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+16              0:58:51.945     0:03:08.313     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+17              1:02:00.258     0:06:35.436     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+18              1:08:35.694     0:05:53.227     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+19              1:14:28.922     0:07:51.929     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+20              1:22:20.852     0:01:53.655     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+21              1:24:14.507     0:04:06.079     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+22              1:28:20.586     0:02:56.092     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+23              1:31:16.679     0:03:19.741     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+24              1:34:36.420     0:01:35.595     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+25              1:36:12.016     0:09:08.256     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+26              1:45:20.272     0:02:31.192     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+27              1:47:51.465     0:03:55.360     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+28              1:51:46.825     0:06:35.812     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+29              1:58:22.637     0:04:10.541     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+30              2:02:33.179     0:03:00.847     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+31              2:05:34.026     0:03:47.518     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+32              2:09:21.545     0:00:15.265     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     485,527                 30 637                  1 859 412 784   10 112 241      
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       eng (English)           485,527                 2 114                   128 303 415     772 710         
+00000.M2TS      4353 (0x1101)   0x81            AC3             rus (Russian)           485,527                 192                     11 654 167      75 873          
+00000.M2TS      4354 (0x1102)   0x81            AC3             fra (French)            485,527                 256                     15 532 935      91 013          
+00000.M2TS      4355 (0x1103)   0x81            AC3             deu (German)            485,527                 256                     15 532 935      91 013          
+00000.M2TS      4356 (0x1104)   0x86            DTS-HD MA       rus (Russian)           485,527                 2 131                   129 310 979     778 167         
+00000.M2TS      4608 (0x1200)   0x90            PGS             eng (English)           485,527                 9                       534 428         3 096           
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            485,527                 0                       0               0               
+00000.M2TS      4610 (0x1202)   0x90            PGS             rus (Russian)           485,527                 12                      704 138         4 147           
+00000.M2TS      4611 (0x1203)   0x90            PGS             dan (Danish)            485,527                 9                       535 455         3 119           
+00000.M2TS      4612 (0x1204)   0x90            PGS             fin (Finnish)           485,527                 11                      644 915         3 717           
+00000.M2TS      4613 (0x1205)   0x90            PGS             deu (German)            485,527                 10                      584 341         3 394           
+00000.M2TS      4614 (0x1206)   0x90            PGS             jpn (Japanese)          485,527                 5                       320 860         1 916           
+00000.M2TS      4615 (0x1207)   0x90            PGS             nld (Dutch)             485,527                 8                       510 038         2 927           
+00000.M2TS      4616 (0x1208)   0x90            PGS             nor (Norwegian)         485,527                 9                       537 901         3 121           
+00000.M2TS      4617 (0x1209)   0x90            PGS             spa (Spanish)           485,527                 9                       561 906         3 265           
+00000.M2TS      4618 (0x120A)   0x90            PGS             swe (Swedish)           485,527                 10                      605 759         3 470           
+00000.M2TS      4619 (0x120B)   0x90            PGS             ind (Indonesian)        485,527                 9                       559 965         3 265           
+00000.M2TS      4620 (0x120C)   0x90            PGS             kor (Korean)            485,527                 6                       365 146         2 185           
+00000.M2TS      4621 (0x120D)   0x90            PGS             pol (Polish)            485,527                 10                      619 676         3 571           
+00000.M2TS      4622 (0x120E)   0x90            PGS             zho (Chinese)           485,527                 7                       407 782         2 408           
+00000.M2TS      4623 (0x120F)   0x90            PGS             tha (Thai)              485,527                 11                      668 180         3 843           
+00000.M2TS      4624 (0x1210)   0x90            PGS             eng (English)           485,527                 8                       476 403         2 747           
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: Le.dernier.Tango.a.Paris.Uncut.Version.1972.Blu-ray.Custom.1080p.AVC.DTS-HD.5.1-HDCLUB
+Disc Size: 43 442 611 765 bytes
+Protection: AACS
+BD-Java: Yes
+Playlist: 00000.MPLS
+Size: 2 302 588 992 bytes
+Length: 2:09:36.810
+Total Bitrate: 2,37 Mbps
+Video: MPEG-4 AVC Video / 30630 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 2114 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+Audio: Russian / Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps
+Audio: French / Dolby Digital Audio / 2.0 / 48 kHz / 256 kbps / DN -4dB
+Audio: German / Dolby Digital Audio / 2.0 / 48 kHz / 256 kbps / DN -4dB
+Audio: Russian / DTS-HD Master Audio / 2.0 / 48 kHz / 2130 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+Subtitle: English / 8,803 kbps
+Subtitle: French / 0,000 kbps
+Subtitle: Russian / 11,599 kbps
+Subtitle: Danish / 8,820 kbps
+Subtitle: Finnish / 10,623 kbps
+Subtitle: German / 9,626 kbps
+Subtitle: Japanese / 5,285 kbps
+Subtitle: Dutch / 8,402 kbps
+Subtitle: Norwegian / 8,861 kbps
+Subtitle: Spanish / 9,256 kbps
+Subtitle: Swedish / 9,978 kbps
+Subtitle: Indonesian / 9,224 kbps
+Subtitle: Korean / 6,015 kbps
+Subtitle: Polish / 10,208 kbps
+Subtitle: Chinese / 6,717 kbps
+Subtitle: Thai / 11,007 kbps
+Subtitle: English / 7,848 kbps
+

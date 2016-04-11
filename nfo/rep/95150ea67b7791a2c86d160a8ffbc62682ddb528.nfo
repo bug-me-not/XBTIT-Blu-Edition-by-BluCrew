@@ -1,0 +1,58 @@
+DISC INFO:
+
+Disc Size:      47 634 242 422 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.3
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 1:49:20 (h:m:s)
+Size:                   34 466 580 480 bytes
+Total Bitrate:          42,03 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        31523 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         3838 kbps       5.1 / 48 kHz / 3838 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Czech           640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Hungarian       640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Polish          640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Russian         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             Turkish         640 kbps        5.1 / 48 kHz / 640 kbps / DN -4dB
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+Presentation Graphics           English         42,557 kbps
+Presentation Graphics           English         80,535 kbps
+Presentation Graphics           Arabic          19,651 kbps
+Presentation Graphics           Bulgarian       40,661 kbps
+Presentation Graphics           Croatian        36,249 kbps
+Presentation Graphics           Czech           39,051 kbps
+Presentation Graphics           Estonian        39,001 kbps
+Presentation Graphics           Greek           33,297 kbps
+Presentation Graphics           Hebrew          27,152 kbps
+Presentation Graphics           Hungarian       38,809 kbps
+Presentation Graphics           Icelandic       45,482 kbps
+Presentation Graphics           Latvian         39,209 kbps
+Presentation Graphics           Lithuanian      39,933 kbps
+Presentation Graphics           Polish          37,995 kbps
+Presentation Graphics           Portuguese      42,229 kbps
+Presentation Graphics           Romanian        38,895 kbps
+Presentation Graphics           Russian         40,320 kbps
+Presentation Graphics           Serbian         39,945 kbps
+Presentation Graphics           Slovak          40,031 kbps
+Presentation Graphics           Slovenian       29,930 kbps
+Presentation Graphics           Turkish         41,229 kbps
+Presentation Graphics           Ukrainian       41,331 kbps

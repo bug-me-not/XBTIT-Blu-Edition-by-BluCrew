@@ -1,0 +1,127 @@
+Disc Title:     ACTOFVALOR
+Disc Size:      42 917 484 801 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:50:22 2 581 454 976   42 917 484 801  3,12    27,22   DTS-HD Master 5.1 3745Kbps (48kHz/24-bit) DTS-HD Master 2.0 1991Kbps (48kHz/24-bit)
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     ACTOFVALOR
+Disc Size:      42 917 484 801 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:50:22.657 (h:m:s.ms)
+Size:                   2 581 454 976 bytes
+Total Bitrate:          3,12 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        27225 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          3745 kbps       5.1 / 48 kHz / 3745 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             English         3752 kbps       5.1 / 48 kHz / 3752 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS-HD Master Audio             French          1991 kbps       2.0 / 48 kHz / 1991 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          2,553 kbps                      
+Presentation Graphics           French          27,849 kbps                     
+Presentation Graphics           French          31,192 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:50:22.657     2 581 454 976   39 170          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:08:14.660     27 421 kbps     51 061 kbps     00:00:09.509    35 300 kbps     00:01:26.169    33 144 kbps     00:07:03.631    142 947 bytes   536 374 bytes   00:00:10.093    
+2               0:08:14.660     0:09:22.979     1 407 kbps      41 586 kbps     00:08:45.274    29 477 kbps     00:08:42.230    26 034 kbps     00:08:21.751    126 742 bytes   317 302 bytes   00:08:45.316    
+3               0:17:37.639     0:11:54.213     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+4               0:29:31.853     0:13:30.226     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:43:02.079     0:05:29.162     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:48:31.241     0:09:08.965     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:57:40.206     0:10:30.296     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               1:08:10.503     0:07:52.638     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               1:16:03.141     0:09:44.208     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:25:47.350     0:10:01.309     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:35:48.659     0:05:13.980     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:41:02.639     0:09:20.017     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     527,193                 27 231                  1 794 484 624   9 760 000       
+00000.M2TS      4352 (0x1100)   0x86            DTS-HD MA       fra (French)            527,193                 3 746                   246 849 443     1 423 703       
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       eng (English)           527,193                 3 752                   247 272 783     1 426 138       
+00000.M2TS      4354 (0x1102)   0x86            DTS-HD MA       fra (French)            527,193                 1 991                   131 234 703     795 955         
+00000.M2TS      4608 (0x1200)   0x90            PGS             fra (French)            527,193                 3                       168 241         984             
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            527,193                 28                      1 835 365       10 558          
+00000.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            527,193                 31                      2 055 710       11 965          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: ACTOFVALOR
+Disc Size: 42 917 484 801 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 2 581 454 976 bytes
+Length: 1:50:22.657
+Total Bitrate: 3,12 Mbps
+Video: MPEG-4 AVC Video / 27225 kbps / 1080p / 23,976 fps / 16:9 / High Profile 4.1
+Audio: French / DTS-HD Master Audio / 5.1 / 48 kHz / 3745 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: English / DTS-HD Master Audio / 5.1 / 48 kHz / 3752 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Audio: French / DTS-HD Master Audio / 2.0 / 48 kHz / 1991 kbps / 24-bit (DTS Core: 2.0 / 48 kHz / 1509 kbps / 24-bit)
+Subtitle: French / 2,553 kbps
+Subtitle: French / 27,849 kbps
+Subtitle: French / 31,192 kbps
+

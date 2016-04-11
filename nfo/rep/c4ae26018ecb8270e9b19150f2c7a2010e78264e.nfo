@@ -1,0 +1,283 @@
+General
+ID                                       : 0 (0x0)
+Complete name                            : /media/215d1/isaluc/private/rtorrent/data/Oblivion.2013.MULTi.1080p.EUR.BluRay.AVC.DTS-HDMA.7.1/BDMV/STREAM/00023.m2ts
+Format                                   : BDAV
+Format/Info                              : Blu-ray Video
+File size                                : 35.8 GiB
+Duration                                 : 2h 4mn
+Overall bit rate mode                    : Variable
+Overall bit rate                         : 41.0 Mbps
+Maximum Overall bit rate                 : 48.0 Mbps
+
+Video
+ID                                       : 4113 (0x1011)
+Menu ID                                  : 1 (0x1)
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings, CABAC                   : Yes
+Format settings, ReFrames                : 4 frames
+Codec ID                                 : 27
+Duration                                 : 2h 4mn
+Bit rate mode                            : Variable
+Maximum bit rate                         : 31.0 Mbps
+Width                                    : 1 920 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 16:9
+Frame rate                               : 23.976 fps
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+
+Audio #1
+ID                                       : 4352 (0x1100)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : MA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Muxing mode                              : Stream extension
+Codec ID                                 : 134
+Duration                                 : 2h 4mn
+Bit rate mode                            : Variable
+Bit rate                                 : Unknown / 1 509 Kbps
+Channel(s)                               : 8 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossless / Lossy
+
+Audio #2
+ID                                       : 4353 (0x1101)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : HRA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Muxing mode                              : Stream extension
+Codec ID                                 : 133
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 2 046 Kbps / 1 509 Kbps
+Channel(s)                               : 8 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.78 GiB (5%)
+
+Audio #3
+ID                                       : 4354 (0x1102)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Format profile                           : HRA / Core
+Mode                                     : 16
+Format settings, Endianness              : Big
+Muxing mode                              : Stream extension
+Codec ID                                 : 133
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 2 046 Kbps / 1 509 Kbps
+Channel(s)                               : 8 channels / 6 channels
+Channel positions                        : Front: L C R, Side: L R, Back: L R, LFE / Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 1.78 GiB (5%)
+
+Audio #4
+ID                                       : 4355 (0x1103)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : 130
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 685 MiB (2%)
+
+Audio #5
+ID                                       : 4356 (0x1104)
+Menu ID                                  : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Format profile                           : Dolby Digital
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : 129
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 171 MiB (0%)
+
+Audio #6
+ID                                       : 4357 (0x1105)
+Menu ID                                  : 1 (0x1)
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Mode                                     : 16
+Format settings, Endianness              : Big
+Codec ID                                 : 130
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 768 Kbps
+Channel(s)                               : 6 channels
+Channel positions                        : Front: L C R, Side: L R, LFE
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 24 bits
+Compression mode                         : Lossy
+Stream size                              : 685 MiB (2%)
+
+Audio #7
+ID                                       : 4358 (0x1106)
+Menu ID                                  : 1 (0x1)
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Mode extension                           : CM (complete main)
+Format settings, Endianness              : Big
+Codec ID                                 : 129
+Duration                                 : 2h 4mn
+Bit rate mode                            : Constant
+Bit rate                                 : 192 Kbps
+Channel(s)                               : 2 channels
+Channel positions                        : Front: L R
+Sampling rate                            : 48.0 KHz
+Bit depth                                : 16 bits
+Compression mode                         : Lossy
+Stream size                              : 171 MiB (0%)
+
+Text #1
+ID                                       : 4608 (0x1200)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #2
+ID                                       : 4609 (0x1201)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #3
+ID                                       : 4610 (0x1202)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #4
+ID                                       : 4611 (0x1203)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #5
+ID                                       : 4612 (0x1204)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #6
+ID                                       : 4613 (0x1205)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #7
+ID                                       : 4614 (0x1206)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #8
+ID                                       : 4615 (0x1207)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #9
+ID                                       : 4616 (0x1208)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #10
+ID                                       : 4617 (0x1209)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #11
+ID                                       : 4618 (0x120A)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #12
+ID                                       : 4619 (0x120B)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #13
+ID                                       : 4620 (0x120C)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Delay relative to video                  : 5s 797ms
+
+Text #14
+ID                                       : 4621 (0x120D)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Delay relative to video                  : 5s 797ms
+
+Text #15
+ID                                       : 4622 (0x120E)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Delay relative to video                  : 5s 797ms
+
+Text #16
+ID                                       : 4623 (0x120F)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+Delay relative to video                  : 5s 797ms
+
+Text #17
+ID                                       : 4624 (0x1210)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #18
+ID                                       : 4625 (0x1211)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+Text #19
+ID                                       : 4626 (0x1212)
+Menu ID                                  : 1 (0x1)
+Format                                   : PGS
+Codec ID                                 : 144
+
+

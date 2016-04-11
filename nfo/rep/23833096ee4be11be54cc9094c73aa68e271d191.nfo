@@ -1,0 +1,48 @@
+
+DISC INFO:
+
+Disc Title:     Green Zone 2010 1080p Blu-ray VC-1 DTS-HD MA 5.1 - Angryunibrow
+Disc Size:      43,406,500,325 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:54:46.421 (h:m:s.ms)
+Size:                   35,017,617,408 bytes
+Total Bitrate:          40.68 Mbps
+
+
+VIDEO:
+
+Codec                   Bitrate             Description    
+-----                   -------             -----------    
+VC-1 Video              28962 kbps          1080p / 23.976 fps / 16:9 / Advanced Profile 3
+VC-1 Video              920 kbps            480p / 23.976 fps / 16:9 / Advanced Profile 2
+VC-1 Video              2004 kbps           480p / 23.976 fps / 16:9 / Advanced Profile 2
+
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+DTS-HD Master Audio             English         4104 kbps       5.1 / 48 kHz / 4104 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+DTS Express                     English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+DTS Express                     English         192 kbps        2.0 / 48 kHz / 192 kbps / 24-bit
+
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description    
+-----                           --------        -------         -----------    
+Presentation Graphics           English         40.572 kbps                    
+Presentation Graphics           Spanish         34.462 kbps                    
+Presentation Graphics           French          36.132 kbps                    
+Presentation Graphics           Spanish         2.131 kbps                      
+Presentation Graphics           French          2.184 kbps 

@@ -1,0 +1,66 @@
+DISC INFO:
+
+Disc Title:     The Change Up 2011 MULTI 1080p BluRay AVC DTS HDMA fantome13
+Disc Size:      27 881 231 762 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 1:52:25.113 (h:m:s.ms)
+Size:                   24 299 698 176 bytes
+Total Bitrate:          28,82 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        18192 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS Audio                       Japanese        768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS-HD Master Audio             English         3610 kbps       5.1 / 48 kHz / 3610 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+DTS Audio                       French          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / DN -4dB / Dolby Surround
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Japanese        29,684 kbps                     
+Presentation Graphics           English         58,436 kbps                     
+Presentation Graphics           French          36,960 kbps                     
+Presentation Graphics           Italian         41,866 kbps                     
+Presentation Graphics           German          62,722 kbps                     
+Presentation Graphics           Spanish         52,307 kbps                     
+Presentation Graphics           Dutch           44,717 kbps                     
+Presentation Graphics           Chinese         39,142 kbps                     
+Presentation Graphics           Danish          44,711 kbps                     
+Presentation Graphics           Finnish         42,373 kbps                     
+Presentation Graphics           Icelandic       50,808 kbps                     
+Presentation Graphics           Korean          29,101 kbps                     
+Presentation Graphics           Norwegian       45,500 kbps                     
+Presentation Graphics           Portuguese      50,215 kbps                     
+Presentation Graphics           Swedish         45,235 kbps                     
+Presentation Graphics           Chinese         37,126 kbps                     
+Presentation Graphics           Japanese        32,589 kbps                     
+Presentation Graphics           English         74,648 kbps                     
+Presentation Graphics           French          59,604 kbps                     
+Presentation Graphics           Italian         55,216 kbps                     
+Presentation Graphics           German          70,853 kbps                     
+Presentation Graphics           Spanish         63,694 kbps                     
+                  
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+50201.M2TS      0:00:00.000     1:52:25.113     24 299 698 176  28 821

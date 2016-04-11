@@ -1,0 +1,10 @@
+Pour un peu d'aide, rendez-vous sur http://epartage.free.fr/phpBB3/viewtopic.php?f=4&t=4
+
+Je remercie au créateur de xbtit de me permettre de traduire son tracker.
+
+Shad.
+
+27/08/2011
+Corrections par RBert pour la version 2.2.2 rev 680.
+
+Ajout des réglages de sécurité

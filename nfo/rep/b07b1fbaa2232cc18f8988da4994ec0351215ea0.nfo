@@ -1,0 +1,40 @@
+Disc Title:     TEARS_OF_THE_SUN
+Disc Size:      23.766.540.306 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00026.MPLS
+Length:                 2:00:55.248 (h:m:s.ms)
+Size:                   21.754.337.280 bytes
+Total Bitrate:          23,99 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-2 Video            16153 kbps          1080p / 23,976 fps / 16:9
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             English         448 kbps        5.1 / 48 kHz / 448 kbps / DN -4dB
+LPCM Audio                      French          4608 kbps       5.1 / 48 kHz / 4608 kbps / 16-bit
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+Dolby Digital Audio             English         192 kbps        2.0 / 48 kHz / 192 kbps / Dolby Surround
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 640 kbps / DN -1dB
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         33,398 kbps                     
+Presentation Graphics           French          26,227 kbps                     
+Presentation Graphics           Arabic          18,326 kbps                     
+Presentation Graphics           French          123,518 kbps                    
+Presentation Graphics           French          74,497 kbps                     
+Presentation Graphics           French          33,515 kbps                     
+Presentation Graphics           English         123,622 kbps

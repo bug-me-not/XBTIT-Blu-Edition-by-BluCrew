@@ -1,0 +1,121 @@
+Général
+Nom complet                              : The King of New York 1990 MULTI 1080p Bluray x264-SPINE
+Format                                   : Matroska
+Version du format                        : Version 2
+Taille du fichier                        : 8,74 Gio
+Durée                                    : 1h 43mn
+Débit global moyen                       : 12,1 Mb/s
+Date d'encodage                          : UTC 2015-08-21 12:28:41
+Application utilisée                     : mkvmerge v8.2.0 ('World of Adventure') 32bit
+Bibliothèque utilisée                    : libebml v1.3.1 + libmatroska v1.4.2
+DURATION                                 : 01:42:45.034000000
+NUMBER_OF_FRAMES                         : 733
+NUMBER_OF_BYTES                          : 20330
+_STATISTICS_WRITING_APP                  : mkvmerge v8.2.0 ('World of Adventure') 32bit
+_STATISTICS_WRITING_DATE_UTC             : 2015-08-21 12:28:41
+_STATISTICS_TAGS                         : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 4 images
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 1h 43mn
+Débit                                    : 9 113 Kbps
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Bits/(Pixel*Image)                       : 0.183
+Taille du flux                           : 6,39 Gio (73%)
+Bibliothèque utilisée                    : x264 core 148 r2579 73ae2d1
+Paramètres d'encodage                    : cabac=1 / ref=4 / deblock=1:0:0 / analyse=0x3:0x133 / me=umh / subme=10 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=24 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=12 / lookahead_threads=2 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=8 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=240 / keyint_min=23 / scenecut=40 / intra_refresh=0 / rc_lookahead=60 / rc=2pass / mbtree=1 / bitrate=9113 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / vbv_maxrate=62500 / vbv_bufsize=78125 / nal_hrd=none / filler=0 / ip_ratio=1.40 / aq=1:1.00
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 43mn
+Type de débit                            : Constant
+Débit                                    : 1 509 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 1,09 Gio (12%)
+Langue                                   : Frantais
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : DTS
+Format/Info                              : Digital Theater Systems
+Profil du format                         : ES
+Paramètres du format, Mode               : 16
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_DTS
+Durée                                    : 1h 43mn
+Type de débit                            : Constant
+Débit                                    : 1 509 Kbps
+Canaux                                   : 7 canaux / 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, Back: C, LFE / Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 24 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 1,09 Gio (12%)
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #1
+ID                                       : 4
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : French forced
+Langue                                   : Frantais
+Default                                  : Oui
+Forced                                   : Non
+
+Texte #2
+ID                                       : 5
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : French
+Langue                                   : Frantais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:00:00:00.000
+00:08:23.211                             : en:00:08:23.211
+00:12:03.514                             : en:00:12:03.514
+00:23:32.119                             : en:00:23:32.119
+00:30:42.007                             : en:00:30:42.007
+00:37:01.678                             : en:00:37:01.678
+00:41:13.221                             : en:00:41:13.221
+00:48:10.387                             : en:00:48:10.387
+00:51:28.252                             : en:00:51:28.252
+00:53:23.867                             : en:00:53:23.867
+01:02:15.982                             : en:01:02:15.982
+01:13:40.499                             : en:01:13:40.499
+01:20:31.201                             : en:01:20:31.201
+01:25:33.920                             : en:01:25:33.920
+01:30:10.572                             : en:01:30:10.572
+01:39:51.444                             : en:01:39:51.444

@@ -1,0 +1,77 @@
+DISC INFO:
+
+Disc Title:     Kagemusha 1980 1080p Blu-ray EUR AVC DTS-HD MA5.1-HDRoad
+Disc Size:      44 125 971 313 bytes
+Protection:     BD+
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00800.MPLS
+Length:                 2:39:15.587 (h:m:s.ms)
+Size:                   24 509 688 384 bytes
+Total Bitrate:          20,52 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        14032 kbps          1080p / 23,976 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             Japanese        1948 kbps       5.1 / 48 kHz / 1948 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             Spanish         448 kbps        5.1 / 48 kHz / 448 kbps
+DTS Audio                       Spanish         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       French          1509 kbps       5.1 / 48 kHz / 1509 kbps / 24-bit
+Dolby Digital Audio             Portuguese      448 kbps        5.1 / 48 kHz / 448 kbps
+DTS Audio                       German          768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+DTS Audio                       Italian         768 kbps        5.1 / 48 kHz / 768 kbps / 24-bit
+Dolby Digital Audio             Thai            224 kbps        2.0 / 48 kHz / 224 kbps
+Dolby Digital Audio             English         224 kbps        2.0 / 48 kHz / 224 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         6,839 kbps                      
+Presentation Graphics           English         6,491 kbps                      
+Presentation Graphics           Spanish         7,077 kbps                      
+Presentation Graphics           Spanish         7,339 kbps                      
+Presentation Graphics           French          7,269 kbps                      
+Presentation Graphics           Dutch           7,107 kbps                      
+Presentation Graphics           Portuguese      6,372 kbps                      
+Presentation Graphics           Portuguese      6,960 kbps                      
+Presentation Graphics           German          7,953 kbps                      
+Presentation Graphics           Finnish         7,236 kbps                      
+Presentation Graphics           Swedish         6,769 kbps                      
+Presentation Graphics           Italian         6,976 kbps                      
+Presentation Graphics           Norwegian       6,975 kbps                      
+Presentation Graphics           Russian         6,846 kbps                      
+Presentation Graphics           Chinese         6,371 kbps                      
+Presentation Graphics           Chinese         6,120 kbps                      
+Presentation Graphics           Chinese         6,363 kbps                      
+Presentation Graphics           Croatian        6,264 kbps                      
+Presentation Graphics           Danish          6,896 kbps                      
+Presentation Graphics           Greek           6,691 kbps                      
+Presentation Graphics           Icelandic       6,978 kbps                      
+Presentation Graphics           Indonesian      7,767 kbps                      
+Presentation Graphics           Hebrew          4,612 kbps                      
+Presentation Graphics           Polish          6,478 kbps                      
+Presentation Graphics           Romanian        6,910 kbps                      
+Presentation Graphics           Korean          5,335 kbps                      
+Presentation Graphics           Thai            8,387 kbps                      
+Presentation Graphics           Turkish         6,770 kbps                      
+Presentation Graphics           English         33,683 kbps                     
+Presentation Graphics           French          30,672 kbps                     
+Presentation Graphics           German          31,115 kbps                     
+Presentation Graphics           Italian         32,098 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00800.M2TS      0:00:00.000     2:39:15.587     24 509 688 384  20 520

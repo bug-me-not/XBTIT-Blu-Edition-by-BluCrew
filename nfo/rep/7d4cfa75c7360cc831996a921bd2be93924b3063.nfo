@@ -1,0 +1,41 @@
+DISC INFO:
+
+Disc Title:     Braqueurs (Setup) 2011 BluRay 1080i AVC DTS-HD MA 5.1-WiHD
+Disc Size:      22 082 802 819 bytes
+Protection:     AACS
+BD-Java:        No
+Extras:         50Hz Content
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00011.MPLS
+Length:                 1:20:58.480 (h:m:s.ms)
+Size:                   21 109 587 648 bytes
+Total Bitrate:          34,76 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        25717 kbps          1080i / 25 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             French          3851 kbps       5.1 / 48 kHz / 3851 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+DTS-HD Master Audio             English         3352 kbps       5.1 / 48 kHz / 3352 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 768 kbps / 24-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           French          0,020 kbps                      
+Presentation Graphics           French          32,920 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00012.M2TS      0:00:00.000     1:20:58.480     21 109 587 648  34 759

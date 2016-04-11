@@ -1,0 +1,110 @@
+*******************************************************************************
+                               LAWRENCE D'ARABIE
+*******************************************************************************
+
+-------------------------------------------------------------------------------
+                              General Information
+-------------------------------------------------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------
+                               Post Information
+-------------------------------------------------------------------------------
+Posted by............: SWEETSIXTEEN
+
+-------------------------------------------------------------------------------
+                                 Release Notes
+-------------------------------------------------------------------------------
+Disc Title:     Lawrence of Arabia
+Disc Size:      47á459á602á750 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+
+********************
+PLAYLIST: 00001.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                 
+                               Total   Video                                     
+        
+Title                                                           Codec   Length  
+Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                 
+         Secondary Audio Track
+-----                                                           ------  ------- 
+--------------  --------------  ------- ------- ------------------               
+         ---------------------
+00001.MPLS                                                      AVC     3:47:00 
+46á522á472á448  47á459á602á750  27,32   22,22   DTS-HD Master 5.1 2153Kbps 
+(48kHz/16-bit) 
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     Lawrence of Arabia
+Disc Size:      47á459á602á750 bytes
+Protection:     AACS
+BD-Java:        Yes
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00001.MPLS
+Length:                 3:47:00.607 (h:m:s.ms)
+Size:                   46á522á472á448 bytes
+Total Bitrate:          27,32 Mbps
+
+(*) Indicates included stream hidden by this playlist.
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        22215 kbps          1080p / 23,976 fps / 16:9 / High 
+Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         2153 kbps       5.1 / 48 kHz / 
+2153 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+Dolby Digital Audio             French          640 kbps        5.1 / 48 kHz / 
+640 kbps
+Dolby Digital Audio             Japanese        640 kbps        5.1 / 48 kHz / 
+640 kbps
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           English         15,866 kbps                     
+Presentation Graphics           English         20,513 kbps                     
+* Presentation Graphics         English         20,521 kbps                     
+Presentation Graphics           Arabic          11,535 kbps                     
+Presentation Graphics           Dutch           18,899 kbps                     
+Presentation Graphics           French          20,525 kbps                     
+Presentation Graphics           Japanese        17,066 kbps                     
+Presentation Graphics           Japanese        0,041 kbps       
+
+-------------------------------------------------------------------------------
+                                 Install Notes
+-------------------------------------------------------------------------------
+MONTE AVEC  DVD FAB 9 9.7.7.1

@@ -1,0 +1,40 @@
+DISC INFO:
+
+Disc Title:     Closed Circuit 2013 MULTI 1080p Bluray AVC DTS HDMA fantome13
+Disc Size:      23 236 234 781 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00005.MPLS
+Length:                 1:35:48.000 (h:m:s.ms)
+Size:                   21 275 049 984 bytes
+Total Bitrate:          29,61 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        23919 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+DTS-HD Master Audio             English         1732 kbps       5.1 / 48 kHz / 1732 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+DTS-HD Master Audio             French          2118 kbps       5.1 / 48 kHz / 2118 kbps / 16-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Dutch           30,812 kbps                     
+Presentation Graphics           French          29,527 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00007.M2TS      0:00:00.000     1:35:48.000     21 275 049 984  29 610

@@ -1,0 +1,131 @@
+Disc Title:     JOHNNY_GOT_HIS_GUN_1971_REMUX_HDCLUB
+Disc Size:      30 618 200 736 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+Notes:          
+
+BDINFO HOME:
+  Cinema Squid
+    http://www.cinemasquid.com/blu-ray/tools/bdinfo
+
+INCLUDES FORUMS REPORT FOR:
+  AVS Forum Blu-ray Audio and Video Specifications Thread
+    http://www.avsforum.com/avs-vb/showthread.php?t=1155731
+
+WARNING: Report is incomplete because: Scan is still running.
+
+********************
+PLAYLIST: 00000.MPLS
+********************
+
+<--- BEGIN FORUMS PASTE --->
+[code]
+                                                                                                                Total   Video                                             
+Title                                                           Codec   Length  Movie Size      Disc Size       Bitrate Bitrate Main Audio Track                          Secondary Audio Track
+-----                                                           ------  ------- --------------  --------------  ------- ------- ------------------                        ---------------------
+00000.MPLS                                                      AVC     1:51:40 7 900 458 432   30 618 200 736  9,43    31,44   DD AC3 2.0 128Kbps                        
+[/code]
+
+[code]
+
+DISC INFO:
+
+Disc Title:     JOHNNY_GOT_HIS_GUN_1971_REMUX_HDCLUB
+Disc Size:      30 618 200 736 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.8
+
+PLAYLIST REPORT:
+
+Name:                   00000.MPLS
+Length:                 1:51:40.287 (h:m:s.ms)
+Size:                   7 900 458 432 bytes
+Total Bitrate:          9,43 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description     
+-----                   -------             -----------     
+MPEG-4 AVC Video        31439 kbps          1080p / 24 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Dolby Digital Audio             Russian         128 kbps        2.0 / 48 kHz / 128 kbps
+DTS-HD Master Audio             French          836 kbps        2.0 / 48 kHz / 836 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+DTS-HD Master Audio             English         913 kbps        2.0 / 48 kHz / 913 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+DTS-HD Master Audio             French          865 kbps        2.0 / 48 kHz / 865 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+
+SUBTITLES:
+
+Codec                           Language        Bitrate         Description     
+-----                           --------        -------         -----------     
+Presentation Graphics           Russian         14,110 kbps                     
+Presentation Graphics           French          23,281 kbps                     
+Presentation Graphics           French          25,935 kbps                     
+Presentation Graphics           English         20,174 kbps                     
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate   
+----            -------         ------          ----            -------------   
+00000.M2TS      0:00:00.000     1:51:40.287     7 900 458 432   36 284          
+
+CHAPTERS:
+
+Number          Time In         Length          Avg Video Rate  Max 1-Sec Rate  Max 1-Sec Time  Max 5-Sec Rate  Max 5-Sec Time  Max 10Sec Rate  Max 10Sec Time  Avg Frame Size  Max Frame Size  Max Frame Time  
+------          -------         ------          --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  --------------  
+1               0:00:00.000     0:09:43.833     26 744 kbps     51 971 kbps     00:08:35.749    40 687 kbps     00:04:39.041    37 804 kbps     00:03:48.041    139 281 bytes   706 751 bytes   00:08:47.833    
+2               0:09:43.833     0:11:34.832     33 620 kbps     45 880 kbps     00:16:23.291    40 375 kbps     00:16:23.166    37 785 kbps     00:16:23.041    175 105 bytes   715 412 bytes   00:10:12.999    
+3               0:21:18.666     0:08:47.875     29 913 kbps     41 312 kbps     00:24:45.624    38 415 kbps     00:24:41.666    37 681 kbps     00:24:39.624    177 546 bytes   662 415 bytes   00:22:40.666    
+4               0:30:06.541     0:10:18.166     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+5               0:40:24.708     0:10:58.666     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+6               0:51:23.375     0:06:22.791     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+7               0:57:46.166     0:10:34.333     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+8               1:08:20.500     0:07:14.125     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+9               1:15:34.625     0:11:22.416     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+10              1:26:57.041     0:09:06.000     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+11              1:36:03.041     0:08:01.833     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+12              1:44:04.875     0:07:35.412     0 kbps          0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 kbps          00:00:00.000    0 bytes         0 bytes         00:00:00.000    
+
+STREAM DIAGNOSTICS:
+
+File            PID             Type            Codec           Language                Seconds                 Bitrate                 Bytes           Packets         
+----            ---             ----            -----           --------                --------------          --------------          -------------   -----           
+00000.M2TS      4113 (0x1011)   0x1B            AVC                                     1741,875                31 440                  6 845 576 730   37 228 614      
+00000.M2TS      4352 (0x1100)   0x81            AC3             rus (Russian)           1741,875                128                     27 870 208      163 302         
+00000.M2TS      4353 (0x1101)   0x86            DTS-HD MA       fra (French)            1741,875                836                     181 938 316     1 162 077       
+00000.M2TS      4354 (0x1102)   0x86            DTS-HD MA       eng (English)           1741,875                913                     198 767 484     1 259 438       
+00000.M2TS      4355 (0x1103)   0x86            DTS-HD MA       fra (French)            1741,875                865                     188 346 016     1 191 386       
+00000.M2TS      4608 (0x1200)   0x90            PGS             rus (Russian)           1741,875                14                      3 072 252       18 198          
+00000.M2TS      4609 (0x1201)   0x90            PGS             fra (French)            1741,875                23                      5 069 241       29 364          
+00000.M2TS      4610 (0x1202)   0x90            PGS             fra (French)            1741,875                26                      5 647 099       33 062          
+00000.M2TS      4611 (0x1203)   0x90            PGS             eng (English)           1741,875                20                      4 392 718       26 191          
+
+[/code]
+<---- END FORUMS PASTE ---->
+
+QUICK SUMMARY:
+
+Disc Title: JOHNNY_GOT_HIS_GUN_1971_REMUX_HDCLUB
+Disc Size: 30 618 200 736 bytes
+Protection: AACS
+BD-Java: No
+Playlist: 00000.MPLS
+Size: 7 900 458 432 bytes
+Length: 1:51:40.287
+Total Bitrate: 9,43 Mbps
+Video: MPEG-4 AVC Video / 31439 kbps / 1080p / 24 fps / 16:9 / High Profile 4.1
+Audio: Russian / Dolby Digital Audio / 2.0 / 48 kHz / 128 kbps
+Audio: French / DTS-HD Master Audio / 2.0 / 48 kHz / 836 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Audio: English / DTS-HD Master Audio / 2.0 / 48 kHz / 913 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Audio: French / DTS-HD Master Audio / 2.0 / 48 kHz / 865 kbps / 16-bit (DTS Core: 2.0 / 48 kHz / 768 kbps / 16-bit)
+Subtitle: Russian / 14,110 kbps
+Subtitle: French / 23,281 kbps
+Subtitle: French / 25,935 kbps
+Subtitle: English / 20,174 kbps
+

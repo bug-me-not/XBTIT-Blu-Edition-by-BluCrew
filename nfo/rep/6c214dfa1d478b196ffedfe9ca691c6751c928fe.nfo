@@ -1,0 +1,34 @@
+DISC INFO:
+
+Disc Title:     EVB333879
+Disc Size:      31 990 666 104 bytes
+Protection:     AACS
+BD-Java:        No
+BDInfo:         0.5.6
+
+PLAYLIST REPORT:
+
+Name:                   00002.MPLS
+Length:                 1:39:00 (h:m:s)
+Size:                   26 487 963 648 bytes
+Total Bitrate:          35,67 Mbps
+
+VIDEO:
+
+Codec                   Bitrate             Description
+-----                   -------             -----------
+MPEG-4 AVC Video        20002 kbps          1080i / 29,970 fps / 16:9 / High Profile 4.1
+
+AUDIO:
+
+Codec                           Language        Bitrate         Description
+-----                           --------        -------         -----------
+DTS-HD Master Audio             English         8512 kbps       5.1 / 96 kHz / 8512 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Dolby Digital Audio             English         640 kbps        5.1 / 48 kHz / 640 kbps
+LPCM Audio                      English         4608 kbps       2.0 / 96 kHz / 4608 kbps / 24-bit
+
+FILES:
+
+Name            Time In         Length          Size            Total Bitrate
+----            -------         ------          ----            -------------
+00005.M2TS      0:00:00.000     1:39:00.968     26 487 963 648  35 668

@@ -1,0 +1,262 @@
+Général
+Identifiant unique                       : 170799921131766835985864725464833714075 (0x807EDE4654B7B5108D4A67A77949E79B)
+Nom complet                              : The.Wild.Bunch.[La Horde sauvage].1969.Bluray.Remux.1080p.x264.Multi.AC3-Cenynou.mkv
+Format                                   : Matroska
+Version du format                        : Version 4 / Version 2
+Taille du fichier                        : 15,5 Gio
+Durée                                    : 2h 24mn
+Type de débit global                     : Variable
+Débit global moyen                       : 15,3 Mb/s
+Date d'encodage                          : UTC 2013-12-22 17:23:27
+Application utilisée                     : mkvmerge v6.6.0 ('The Edge Of The In Between') built on Dec  1 2013 17:55:00
+Bibliothèque utilisée                    : libebml v1.3.0 + libmatroska v1.4.1
+Attachment                               : Yes
+
+Vidéo
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Profil du format                         : High@L4.1
+Paramètres du format, CABAC              : Oui
+Paramètres du format, RefFrames          : 4 images
+Paramètres du format, GOP                : M=4, N=24
+Identifiant du codec                     : V_MPEG4/ISO/AVC
+Durée                                    : 2h 24mn
+Type de débit                            : Variable
+Débit                                    : 14,0 Mb/s
+Débit maximum                            : 30,0 Mb/s
+Largeur                                  : 1 920 pixels
+Hauteur                                  : 1 080 pixels
+Format à l'écran                         : 16/9
+Type d'images/s                          : Constant
+Images par seconde                       : 23,976 Im/s
+Espace de couleurs                       : YUV
+Sous-échantillonnage de la chrominance   : 4:2:0
+Profondeur des couleurs                  : 8 bits
+Type de balayage                         : Progressif
+Bits/(Pixel*Image)                       : 0.282
+Taille du flux                           : 13,8 Gio (89%)
+Titre                                    : x264
+Bibliothèque utilisée                    : x264 core 135 r2345 f0c1c53
+Paramètres d'encodage                    : cabac=1 / ref=4 / deblock=1:0:0 / analyse=0x3:0x133 / me=umh / subme=9 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=12 / lookahead_threads=1 / sliced_threads=0 / slices=4 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=1 / constrained_intra=0 / bframes=3 / b_pyramid=0 / b_adapt=1 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=1 / keyint=24 / keyint_min=1 / scenecut=40 / intra_refresh=0 / rc_lookahead=24 / rc=2pass / mbtree=1 / bitrate=14020 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / cplxblur=20.0 / qblur=0.5 / vbv_maxrate=30000 / vbv_bufsize=30000 / nal_hrd=vbr / ip_ratio=1.10 / aq=1:1.00
+Langue                                   : Anglais
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 24mn
+Type de débit                            : Constant
+Débit                                    : 640 Kbps
+Canaux                                   : 6 canaux
+Position des cannaux                     : Front: L C R, Side: L R, LFE
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 663 Mio (4%)
+Titre                                    : AC3 English
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Profil du format                         : Dolby Digital
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 24mn
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 2 canaux
+Position des cannaux                     : Front: L R
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 199 Mio (1%)
+Titre                                    : AC3 French
+Langue                                   : Frantais
+Default                                  : Oui
+Forced                                   : Non
+
+Audio #3
+ID                                       : 4
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 24mn
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 1 canal
+Position des cannaux                     : Front: C
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 199 Mio (1%)
+Titre                                    : AC3 Italian
+Langue                                   : Italien
+Default                                  : Non
+Forced                                   : Non
+
+Audio #4
+ID                                       : 5
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 24mn
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 1 canal
+Position des cannaux                     : Front: C
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 199 Mio (1%)
+Titre                                    : AC3 German
+Langue                                   : Allemand
+Default                                  : Non
+Forced                                   : Non
+
+Audio #5
+ID                                       : 6
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Extension du mode                        : CM (complete main)
+Paramètres du format, Endianness         : Big
+Identifiant du codec                     : A_AC3
+Durée                                    : 2h 24mn
+Type de débit                            : Constant
+Débit                                    : 192 Kbps
+Canaux                                   : 1 canal
+Position des cannaux                     : Front: C
+Echantillonnage                          : 48,0 KHz
+Profondeur des couleurs                  : 16 bits
+Mode de compression                      : Avec perte
+Taille du flux                           : 199 Mio (1%)
+Titre                                    : AC3 Spanish
+Langue                                   : Espagnol
+Default                                  : Non
+Forced                                   : Non
+
+Texte #1
+ID                                       : 7
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : English
+Langue                                   : Anglais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #2
+ID                                       : 8
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : French
+Langue                                   : Frantais
+Default                                  : Non
+Forced                                   : Non
+
+Texte #3
+ID                                       : 9
+Format                                   : PGS
+Type de muxing                           : zlib
+Identifiant du codec                     : S_HDMV/PGS
+Identifiant du codec/Info                : The same subtitle format used on BDs/HD-DVDs
+Titre                                    : Spanish
+Langue                                   : Espagnol
+Default                                  : Non
+Forced                                   : Non
+
+Texte #4
+ID                                       : 10
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Italian
+Langue                                   : Italien
+Default                                  : Non
+Forced                                   : Non
+
+Texte #5
+ID                                       : 11
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : German
+Langue                                   : Allemand
+Default                                  : Non
+Forced                                   : Non
+
+Texte #6
+ID                                       : 12
+Format                                   : UTF-8
+Identifiant du codec                     : S_TEXT/UTF8
+Identifiant du codec/Info                : UTF-8 Plain Text
+Titre                                    : Portuguese
+Langue                                   : Portugais
+Default                                  : Non
+Forced                                   : Non
+
+Menu
+00:00:00.000                             : en:00:00:00.000
+00:06:32.767                             : en:00:06:32.767
+00:10:08.566                             : en:00:10:08.566
+00:14:28.325                             : en:00:14:28.325
+00:15:25.132                             : en:00:15:25.132
+00:18:15.260                             : en:00:18:15.260
+00:20:13.837                             : en:00:20:13.837
+00:22:41.234                             : en:00:22:41.234
+00:23:34.579                             : en:00:23:34.579
+00:31:02.610                             : en:00:31:02.610
+00:34:16.012                             : en:00:34:16.012
+00:36:34.442                             : en:00:36:34.442
+00:41:44.335                             : en:00:41:44.335
+00:42:52.152                             : en:00:42:52.152
+00:48:12.097                             : en:00:48:12.097
+00:50:17.848                             : en:00:50:17.848
+00:52:52.294                             : en:00:52:52.294
+00:59:42.579                             : en:00:59:42.579
+01:03:45.488                             : en:01:03:45.488
+01:09:22.575                             : en:01:09:22.575
+01:11:56.645                             : en:01:11:56.645
+01:17:12.169                             : en:01:17:12.169
+01:21:45.775                             : en:01:21:45.775
+01:24:24.267                             : en:01:24:24.267
+01:27:23.029                             : en:01:27:23.029
+01:28:27.760                             : en:01:28:27.760
+01:32:02.600                             : en:01:32:02.600
+01:35:19.922                             : en:01:35:19.922
+01:36:50.095                             : en:01:36:50.095
+01:41:18.572                             : en:01:41:18.572
+01:46:22.000                             : en:01:46:22.000
+01:49:07.374                             : en:01:49:07.374
+01:49:56.506                             : en:01:49:56.506
+01:52:20.650                             : en:01:52:20.650
+01:55:32.967                             : en:01:55:32.967
+02:00:10.995                             : en:02:00:10.995
+02:04:09.108                             : en:02:04:09.108
+02:08:16.271                             : en:02:08:16.271
+02:10:41.750                             : en:02:10:41.750
+02:12:24.394                             : en:02:12:24.394
+02:13:35.590                             : en:02:13:35.590
+02:14:53.877                             : en:02:14:53.877
+02:17:04.049                             : en:02:17:04.049
+02:19:13.511                             : en:02:19:13.511
+02:21:17.635                             : en:02:21:17.635
+02:22:35.088                             : en:02:22:35.088
+02:24:49.555                             : en:02:24:49.555

@@ -1,0 +1,118 @@
+Général
+Nom complet : Human.2015.FRENCH.1080i.BluRay.AVC.DTS-HD MA 5.1-HDO.mkv
+Format : Matroska
+Version du format : Version 4 / Version 2
+Taille du fichier : 31,3 Gio
+Durée : 2h 13mn
+Type de débit global : Variable
+Débit global moyen : 33,5 Mb/s
+Date d'encodage : UTC 2015-10-16 12:08:12
+Application utilisée : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+Bibliothèque utilisée : libebml v1.3.1 + libmatroska v1.4.2
+DURATION : 02:13:43.960000000
+NUMBER_OF_FRAMES : 200599
+NUMBER_OF_BYTES : 30058934112
+_STATISTICS_WRITING_APP : mkvmerge v8.3.0 ('Over the Horizon') 64bit
+_STATISTICS_WRITING_DATE_UTC : 2015-10-16 12:08:12
+_STATISTICS_TAGS : BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+
+Vidéo
+ID : 1
+Format : AVC
+Format/Info : Advanced Video Codec
+Profil du format : High@L4.1
+Paramètres du format, CABAC : Oui
+Paramètres du format, RefFrames : 4 images
+Paramètres du format, GOP : M=3, N=24
+Identifiant du codec : V_MPEG4/ISO/AVC
+Durée : 2h 13mn
+Type de débit : Variable
+Débit maximum : 35,0 Mb/s
+Largeur : 1 920 pixels
+Hauteur : 1 080 pixels
+Format à l'écran : 16/9
+Type d'images/s : Constant
+Images par seconde : 25,000 Im/s
+Norme : PAL
+Espace de couleurs : YUV
+Sous-échantillonnage de la chrominance : 4:2:0
+Profondeur des couleurs : 8 bits
+Type de balayage : MBAFF
+Ordre de balayage : Ligne du haut d'abord
+Default : Oui
+Forced : Non
+Gamme de couleurs : Limited
+Coordonnées de chromaticité : BT.709
+Caractéristiques du transfert : BT.709
+Coefficients de la matrice : BT.709
+
+Audio
+ID : 2
+Format : DTS
+Format/Info : Digital Theater Systems
+Profil du format : MA / Core
+Paramètres du format, Mode : 16
+Paramètres du format, Endianness : Big
+Identifiant du codec : A_DTS
+Durée : 2h 13mn
+Type de débit : Variable
+Débit : Inconnu / 1 509 Kbps
+Canaux : 6 canaux
+Position des cannaux : Front: L C R, Side: L R, LFE
+Echantillonnage : 48,0 KHz
+Profondeur des couleurs : 24 bits
+Mode de compression : Sans perte / Lossy
+Titre : DTS-HD Master Audio French 3543 kbps 5.1 / 48 kHz / 3543 kbps / 24-bit (DTS Core: 5.1 / 48 kHz / 1509 kbps / 24-bit)
+Langue : Français
+Default : Oui
+Forced : Non
+
+Texte #1
+ID : 3
+Format : UTF-8
+Identifiant du codec : S_TEXT/UTF8
+Identifiant du codec/Info : UTF-8 Plain Text
+Titre : Sous titres français complets SRT
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #2
+ID : 4
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Presentation Graphics French 25.759 kbps
+Langue : Français
+Default : Non
+Forced : Non
+
+Texte #3
+ID : 5
+Format : PGS
+Type de muxing : zlib
+Identifiant du codec : S_HDMV/PGS
+Identifiant du codec/Info : Picture based subtitle format used on BDs/HD-DVDs
+Titre : Presentation Graphics English 24.850 kbps
+Langue : Anglais
+Default : Non
+Forced : Non
+
+Menu
+00:00:00.000 : en:(01)00:00:00:000
+00:06:55.120 : en:(02)00:06:55:120
+00:13:12.520 : en:(03)00:13:12:520
+00:26:54.960 : en:(04)00:26:54:960
+00:33:35.920 : en:(05)00:33:35:920
+00:42:48.160 : en:(06)00:42:48:160
+00:54:42.880 : en:(07)00:54:42:880
+01:06:52.400 : en:(08)01:06:52:400
+01:16:54.680 : en:(09)01:16:54:680
+01:28:03.160 : en:(10)01:28:03:160
+01:37:04.920 : en:(11)01:37:04:920
+01:44:44.520 : en:(12)01:44:44:520
+01:51:31.880 : en:(13)01:51:31:880
+01:56:13.880 : en:(14)01:56:13:880
+02:07:39.200 : en:(15)02:07:39:200
+02:13:43.960 : en:(16)02:13:43:960
