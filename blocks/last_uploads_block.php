@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Latest Uploads</h4>
+</div>
 <?php
 
 global $TABLE_PREFIX, $btit_settings, $res_seo, $CURUSER, $THIS_BASEPATH;
@@ -82,3 +86,6 @@ else
 }
 
 ?>
+<div class="panel-footer">
+</div>
+</div>

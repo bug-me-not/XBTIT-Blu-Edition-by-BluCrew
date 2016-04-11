@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Todays Birthdays</h4>
+</div>
 <?php
 
 global $btit_settings, $TABLE_PREFIX, $language, $res_seo;
@@ -23,3 +27,6 @@ else
 }
 
 ?>
+<div class="panel-footer">
+</div>
+</div>

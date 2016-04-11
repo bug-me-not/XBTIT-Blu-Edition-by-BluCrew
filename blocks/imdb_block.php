@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">IMDB Search</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -91,4 +95,7 @@ return false;
         <input name="submit" type="submit" value="go" />
         </form>
 </div>
-</center>        
+</center>      
+<div class="panel-footer">
+</div>
+</div>  

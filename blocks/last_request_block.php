@@ -32,75 +32,45 @@
 block_begin("Latest Requests");
 
 global $btit_settings ;
+require_once load_language("lang_requests.php");
+require_once dirname(__FILE__)."/../include/offset.php";
+$number = 5;//$btit_settings["req_number"];
 
-$number = $btit_settings["req_number"];
+$res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat`.`name` as `catname`, `req`.`reqname` , UNIX_TIMESTAMP(`req`.`dateadded`) as `dateadded` , `req`.`requester` , (SELECT count(distinct `reqbou`.`addedby`) FROM `{$TABLE_PREFIX}requests_bounty` `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`)as `total_voters` , `u`.`username` , `ul`.`suffixcolor` , `ul`.`prefixcolor` FROM `{$TABLE_PREFIX}requests` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `req`.`requester`=`u`.`id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`id`=`u`.`id_level` LEFT JOIN `{$TABLE_PREFIX}categories` `cat` ON `cat`.`id`=`req`.`category` ORDER BY `dateadded` DESC, `req`.`id` DESC LIMIT {$number}");
 
-$res = do_sqlquery("SELECT users.id_level,users.downloaded, users.uploaded, users.username, requests.filled, requests.filledby, requests.id, requests.userid, requests.request, requests.added, requests.hits, categories.image as catimg, categories.name as cat FROM {$TABLE_PREFIX}requests requests inner join {$TABLE_PREFIX}categories categories on requests.cat = categories.id inner join {$TABLE_PREFIX}users users on requests.userid = users.id ORDER BY requests.id DESC, requests.id DESC LIMIT $number") or sqlerr();
-$num = sql_num_rows($res);
-
-print("<table border=0 width=100% align=center cellspacing=1 cellpadding=0>\n");
-print("<tr><td class=header align=center>Torrent File</td><td class=header align=center>Cat.</td><td class=header align=center>Added</td><td class=header align=center>By</td><td class=header align=center>Filled</td><td class=header align=center>Votes</td>\n");
-
-for ($i = 0; $i < $num; ++$i)
+if(count($res)>0)
 {
- $arr = $res->fetch_assoc();
+  $content = '';
 
-$rep=do_sqlquery("SELECT * FROM {$TABLE_PREFIX}users_level WHERE id =".$arr['id_level']);
-$rept=$rep->fetch_array();
+  $content .= "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_REC_REQ']}</h4></div>";
+  $content .= "<table class='table table-bordered'>";
+  $content .= "<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_VOTERS']}</td></tr>";
 
-$name=stripslashes($rept['prefixcolor']) . $arr['username'] . stripslashes($rept['suffixcolor']);
+foreach($res as $data)
+{
+  $catlink = "index.php?page=torrents&category={$data['catid']}";
+  $catimg = image_or_link(($data['catimg']==""?"":"{$STYLEPATH}/images/categories/".$data['catimg']),"",$data['catname']);
 
-$privacylevel = $arr["privacy"];
+  $requser = $data['prefixcolor'].$data['username'].$data['suffixcolor'];
+  $reqdate = date("d/m/Y H:i:s",$data['dateadded']-$offset);
 
-if ($arr["downloaded"] > 0)
-   {
-     $ratio = number_format($arr["uploaded"] / $arr["downloaded"], 2);
-     //$ratio = "<font color=" . get_ratio_color($ratio) . "><b>$ratio</b></font>";
-   }
-   else if ($arr["uploaded"] > 0)
-       $ratio = "Inf.";
-   else
-       $ratio = "---";
+  $content .= "<tr>
+  <td><a href='{$catlink}'>{$catimg}</a></td>
+  <td>{$data['reqname']}</td>
+  <td>{$requser}</td>
+  <td>{$reqdate}</td>
+  <td>{$data['total_voters']}</td>
+  </tr>";
+}
 
-$res3 = do_sqlquery("SELECT username from {$TABLE_PREFIX}users where id=" . $arr['filledby']);
-$arr3 = $res3->fetch_assoc();
-if ($arr3['username'])
-$filledby = $arr3['username'];
+$content .="<table></div></div><div class='panel-footer'>
+</div>";
+echo $content;
+}
 else
-$filledby = " ";
-
-if (!$CURUSER || $CURUSER["delete_torrents"]=="no"){
-if (!$CURUSER || $CURUSER["view_users"]=="yes"){
-			$addedby = "<td class=lista align=center><center><a href=index.php?page=userdetails&id=".$arr['userid']." title=\"Request By : ".$arr['username']." (".$ratio.")\"><b>$name</b></a></td>";
-		}else{
-			$addedby = "<td class=lista align=center><center><a href=index.php?page=userdetails&id=".$arr['userid']." title=\"Request By : ".$arr['username']." (".$ratio.")\"><b>$name</b></a></td>";
-		}
-}else{
-			$addedby = "<td class=lista align=center><center><a href=index.php?page=userdetails&id=".$arr['userid']." title=\"Request By : ".$arr['username']." (".$ratio.")\"><b>$name</b></a></td>";
+{
+  echo "<div class='nothing'>{$language['TRAV_NOWTFOUND']}</div>";
 }
-
-$filled = $arr['filled'];
-if ($filled){
-$filled = "<a href=$filled><font color=green title=\"Filled By: ".$arr3['username']."\"><b>Yes</b></font></a>";
-}
-else{
-$filled = "<a href=index.php?page=reqdetails&id=$arr[id] title=\"Request Details :".$arr['request']."\"><font color=red><b>No</b></font></a>";
-}
-
-$reqname = $arr['request'];
-
-//Name of Request too Big Hack Start
-   if (strlen($arr['request'])>45)
-  {
-  $extension = "...";
-  $arr['request'] = substr($arr['request'], 0, 45)."$extension";
-  }
-//Name of Request too Big Hack Stop
-  print("<tr><td class=lista align=center width=240><center><a href=index.php?page=reqdetails&id=".$arr['id']." title=\"Request Name :".$reqname."\"><b>".$arr['request']."</b></a></td>");
- print("<td class=lista align=left ><center>".image_or_link(($arr['catimg']==''?'':'style/xbtit_default/images/categories/'.$arr['catimg']),' title=\'Catagory : '.$arr['cat'].'\'',$arr['cat'])."</td>");
-print("<td class=lista align=center><center><font title=\"Added : ".$arr['added']."\">".$arr["added"]."</font></td>$addedby<td class=lista align=center><center>$filled</td><td class=lista align=center><center><a href=index.php?page=votesview&requestid=".$arr['id']." title=\"Votes : ".$arr['hits']."\"><b>".$arr['hits']."</b></a></td></tr>\n");
-}
-print("</table>\n");
 
 block_end();
 ?>

@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Calendar</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -94,3 +98,6 @@ document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days"
      print("</td></tr></table>\n");
 } // end if user can view
 ?>
+<div class="panel-footer">
+</div>
+</div>

@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Blu Chat</h4>
+<h4 class="text-center">AJAX Chat</h4>
 </div>
 <?php
 

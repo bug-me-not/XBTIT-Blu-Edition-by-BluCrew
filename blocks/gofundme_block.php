@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">GoFundMe</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit v1.1 by BluCrew
