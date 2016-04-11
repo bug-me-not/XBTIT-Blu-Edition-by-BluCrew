@@ -69,9 +69,4 @@ if ($CURUSER["admin_access"]=="yes") {
         print("<li><a href='#'>BluCrew Panel</a></li>\n");
         print("</ul></li>");
     }
-
-    /*print("</ul></li>\n");
-		print("</ul></li>\n");*/
-}
-
 ?>
