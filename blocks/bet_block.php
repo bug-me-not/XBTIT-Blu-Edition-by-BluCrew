@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Sport Bets</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -56,3 +60,6 @@ foreach($bet as $fetch)
 print("</table>");
 
 ?>
+<div class="panel-footer">
+</div>
+</div>

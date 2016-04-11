@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Blu Chat</h4>
+</div>
 <?php
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -180,3 +184,6 @@ else
 }
 
 ?>
+<div class="panel-footer">
+</div>
+</div>
