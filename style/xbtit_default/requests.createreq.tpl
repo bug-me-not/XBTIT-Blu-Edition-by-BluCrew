@@ -119,7 +119,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 	</div>
 	<tr>
 		<td colspan='2'>
-			<center><input type='submit' class='fancy' value='<tag:language.TRAV_AR />'></center>
+			<center><input type='submit' class='btn btn-primary' value='<tag:language.TRAV_AR />'></center>
 		</td>
 	</tr>
     </form>
