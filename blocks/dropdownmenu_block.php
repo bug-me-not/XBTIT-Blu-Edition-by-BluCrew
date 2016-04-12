@@ -28,7 +28,7 @@ print("<li><a href='index.php?page=upload'>".$language["MNU_UPLOAD"]."</a></li>\
 //REQUESTS
 if ($CURUSER["view_torrents"]=="yes" && $CURUSER["id_level"] > 2)
 {
-print("<li><a href='index.php?page=requests'>".$language["VR"]."</a></li>\n");
+print("<li><a href='index.php?page=requests'>Requests</a></li>\n");
 }
 
 //EXPECTED
@@ -47,9 +47,9 @@ print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp [{$seedcoun
 if ($CURUSER["view_forum"]=="yes")
     {
         if ($GLOBALS["FORUMLINK"]=="" || $GLOBALS["FORUMLINK"]=="internal" || substr($GLOBALS["FORUMLINK"],0,3)=="smf" || $GLOBALS["FORUMLINK"]=="ipb")
-            print("<li><a href='index.php?page=forum'>".$language["MNU_FORUM"]."</a></li>\n");
+            print("<li><a href='smf/index.php'>Forums</a></li>\n");
         else
-            print("<li><a href='".$GLOBALS["FORUMLINK"]."'>".$language["MNU_FORUM"]."</a></li>\n");
+            print("<li><a href='".$GLOBALS["FORUMLINK"]."'>Fourms</a></li>\n");
     }
 
 //GAMES
