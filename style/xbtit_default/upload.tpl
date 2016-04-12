@@ -242,9 +242,9 @@ $w(window).resize(function () {
    <tr>
       <td class="header"><tag:language.TORRENT_FILE /></td>
       <if:upcheck_enabled>
-      <td class="lista" align="left"><input type="file" id="torrent" name="torrent" onchange='CopyName()' onchange="showTorrents();"/><div align=center id="txtHint"></div></td>
+      <td class="lista" align="left"><input type="file" class="btn btn-primary btn-anchor" id="torrent" name="torrent"  onchange='CopyName()' onchange="showTorrents();"/><div align=center id="txtHint"></div></td>
       <else:upcheck_enabled>
-      <td class="lista" align="left"><input type="file" id="torrent" name="torrent" onchange='CopyName()' /></td>
+      <td class="lista" align="left"><input type="file" class="btn btn-primary btn-anchor" id="torrent" name="torrent" onchange='CopyName()' /></td>
    </if:upcheck_enabled>
 </tr>
 
@@ -256,7 +256,7 @@ $w(window).resize(function () {
    <if:arc_both>
    <tr>
       <td class="header"><tag:language.ARC_UPLOAD_TYPE /></td>
-      <td class="lista" align="left"><tag:language.ARC_NEW />&nbsp;<input type="radio" name="arc_upload_type" value="1" checked="checked" />&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.ARC_ARC />&nbsp;<input type="radio" name="arc_upload_type" value="2" /></td>
+      <td class="lista" align="left"><tag:language.ARC_NEW />&nbsp;<input type="radio" class="btn btn-primary btn-anchor" name="arc_upload_type" value="1" checked="checked" />&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.ARC_ARC />&nbsp;<input type="radio" name="arc_upload_type" value="2" /></td>
       </div></div>
    </tr>
    <else:arc_both>
@@ -274,7 +274,7 @@ $w(window).resize(function () {
 <if:nfo_enabled>
 <tr>
    <td class="header"><tag:language.NFO_NFO /></td>
-   <td class="lista" align="left"><input type="file" name="nfo" /></td>
+   <td class="lista" align="left"><input type="file" class="btn btn-primary btn-anchor" name="nfo" /></td>
 </tr>
 </if:nfo_enabled>
 
@@ -499,8 +499,8 @@ $w(window).resize(function () {
 </table>
 <table>
    <tr>
-      <input type="submit" class="btn btn-primary" value="<tag:language.FRM_SEND />" />&nbsp;&nbsp;&nbsp;
-      <input type="reset" class="btn btn-danger" value="<tag:language.FRM_RESET />" />&nbsp;&nbsp;&nbsp;<a border="0" href="#dialog" name="modal"><button class="btn btn-success"><tag:language.UP_PREV /></button></a>
+      <center><input type="submit" class="btn btn-primary" value="<tag:language.FRM_SEND />" />&nbsp;&nbsp;&nbsp;
+      <input type="reset" class="btn btn-danger" value="<tag:language.FRM_RESET />" />&nbsp;&nbsp;&nbsp;<a border="0" href="#dialog" name="modal"><button class="btn btn-success"><tag:language.UP_PREV /></button></a></center>
    </tr>
    </table>
 </form>
