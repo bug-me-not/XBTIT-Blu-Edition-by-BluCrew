@@ -123,16 +123,7 @@ $q(function() {
 <form action="<tag:torrent_script />" method="get" name="torrent_search">
   <input type="hidden" name="page" value="torrents" />
   <table border="0" class="lista" align="center">
-    <tr>  
-      <td class="block"><tag:language.TORRENT_SEARCH /></td>
-      <td class="block"><tag:language.CATEGORY_FULL /></td>
-      <if:ash_enabled_1>
-      <td class="block"><tag:language.TORRENT_OPTIONS /></td>
-      </if:ash_enabled_1>
-      <td class="block"><tag:language.TORRENT_STATUS /></td>
-      <td class="block">&nbsp;</td>
-    </tr>
-      <td align=center style="width: 340px;"><input type="text" name="search" id="searchinput" ondblclick="suggest(event.keyCode, this.value, 'torrent');" onkeyup="suggest(event.keyCode, this.value, 'torrent');" onkeypress="return noenter(event.keyCode);" autocomplete="off" style="width: 320px;" maxlength="50" value="<tag:torrent_search />" />
+      <td align=center style="width: 340px;"><input type="text" class="form-control input-sm" name="search" id="searchinput" ondblclick="suggest(event.keyCode, this.value, 'torrent');" onkeyup="suggest(event.keyCode, this.value, 'torrent');" onkeypress="return noenter(event.keyCode);" autocomplete="off" style="width: 320px;" maxlength="50" value="<tag:torrent_search />" />
     <div id="suggcontainer" style="display: none; padding-left:0px;" align="left">
 	<div id="suggestions" style="cursor: default; position: absolute; background-color: #373737; border: 1px solid #7f9db9; border-top: 0px;"></div>
     </div>
@@ -202,7 +193,7 @@ $q(function() {
         </if:arc_enabled>
         </select>
       </td>
-      <td><input type="submit" class="btn" value="<tag:language.SEARCH />" /></td>
+      <td><input type="submit" class="btn btn-primary btn-anchor" value="<tag:language.SEARCH />" /></td>
      </tr>
   </table>
 </form>
@@ -216,8 +207,8 @@ $q(function() {
 <div class="panel-heading">
 <h4 class="text-center">Torrents</h4>
 </div>
-  <div style="text-indent: 0%;">Torrent Activity Colors Legend</div>
-<button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="left" data-content="You are seeding!" data-original-title="" title="">
+  <div style="text-indent: 42.5%;">Torrent Activity Colors Legend</div>
+<center><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="left" data-content="You are seeding!" data-original-title="" title="">
 Seeding
 </button>
 <button type="button" class="btn btn-danger" data-container="body" data-toggle="popover" data-placement="top" data-content="You are leeching!" data-original-title="" title="">
@@ -225,7 +216,7 @@ Leeching
 </button>
 <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="You have snatched this!" data-original-title="" title="">
 Snatched
-</button>
+</button></center>
 
        <table class="table table-striped">
         <tr>
