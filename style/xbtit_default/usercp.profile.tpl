@@ -1,5 +1,5 @@
 <form name="utente" method="post" action="<tag:profile.frm_action />">
-  <table width="100%" border="0" class="lista">
+  <table class="table table-bordered">
     <tr>
       <td align="left" class="header"><tag:language.USER_NAME />:</td>
       <td align="left" class="lista"><tag:profile.username /></td>

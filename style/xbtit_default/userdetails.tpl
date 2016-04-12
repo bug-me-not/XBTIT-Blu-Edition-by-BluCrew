@@ -473,14 +473,13 @@
 <div class="panel-heading">
 <h4 class="text-center">My Uploads</h4>
 </div>
-<table class="table table-striped">
+<table class="table table-bordered">
 <tr><td class="block" align="center" colspan="<tag:userdetailarr.colspan2 />" style="text-align:center;"><b><tag:language.UPLOADED /> <tag:language.TORRENTS /></b></td></tr>
-</table>
+
 
 <!--panel content goes here-->
 
 <div class="panel-body">
-<table class="table table-striped">
  
   <tr><td align="center" colspan="12"><tag:userdetailarr.pagertop /></td></tr>
 
@@ -554,7 +553,7 @@
 <h4 class="text-center">Active</h4>
 </div>
 <div class="panel-body">
-<table class="table table-striped">
+<table class="table table-bordered">
 
   <tr>
   <td class="block" align="center" colspan="<tag:userdetailarr.colspan3 />" style="text-align:center;"><b><tag:language.ACTIVE_TORRENT /></b></td></tr>
@@ -660,7 +659,7 @@
 </div>
 
 <div class="panel-body">
-<table class="table table-striped">
+<table class="table table-bordered">
 
   <tr>
   <td class="block" align="center" colspan="<tag:userdetailarr.colspan />" style="text-align:center;"><b><tag:language.HISTORY /></b></td></tr>
