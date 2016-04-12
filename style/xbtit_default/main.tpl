@@ -78,7 +78,7 @@ Christmas Snowstorm End-->
 <body>
 
 <!-- Top Navigation Start-->
-<nav class="navbar  navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
@@ -88,16 +88,17 @@ Christmas Snowstorm End-->
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="index.php"><h3><font color=##00aeff>Blu-Torrents</font></h3></a>
+         <a class="navbar-brand" href="index.php"><i class="fa fa-film fa-2x" aria-hidden="true" color=#00aeff>&nbsp;BluRG.XYZ</i></a>
          </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-right">
     <tag:main_dropdown />
     </ul>
     </div></nav>
 
-<!-- SideNav -->
+
+<!-- SideNav 
 <div id='snav' class='en'>
   <ul>
     <li>
@@ -185,7 +186,7 @@ Christmas Snowstorm End-->
       </a>
     </li>
   </ul>
-</div>
+</div> -->
 
    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
    <if:IS_DISPLAYED_2>
@@ -197,26 +198,23 @@ Christmas Snowstorm End-->
     </br>
 
     <!-- MainUser Info Bar Start -->
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-12">
-    <tag:main_header />
-    </div>
-    </div>
-    </div>
-
+    <table border='0' align='center' cellpadding='0' cellspacing='0' width='95%'>
+    <tr>
+    <td><tag:main_header /></td>
+    </tr>
+    </table>
 
 <!--Main Page Content -->
 
     <table border='0' align='center' cellpadding='0' cellspacing='0' width='auto'>
       <tr>
-        <td valign='top' width='35' rowspan='2'></td>
+        <td valign='top' width='5' rowspan='2'></td>
         <if:HAS_LEFT_COL>
-          <td valign='top' width='250'><tag:main_left /></td>
-        <td valign='top' width='10' rowspan='2'></td>
+          <td valign='top' width='225'><tag:main_left /></td>
+        <td valign='top' width='30' rowspan='2'></td>
         </if:HAS_LEFT_COL>
         
-        <td valign='top'>
+      <td valign='top'>
       <table align='center' width='auto' cellpadding='0' cellspacing='0' border='0'>
         <tr>
           <td valign='top'><tag:main_content /></td>
@@ -224,21 +222,19 @@ Christmas Snowstorm End-->
       </table></td>
       
         <if:HAS_RIGHT_COL>
-        <td valign='top' width='10' rowspan='2'></td>
-          <td valign='top' width='250'><tag:main_right /></td>
+        <td valign='top' width='30' rowspan='2'></td>
+          <td valign='top' width='225'><tag:main_right /></td>
         </if:HAS_RIGHT_COL>
-        <td valign='top' width='35' rowspan='2'></td>
+        <td valign='top' width='5' rowspan='2'></td>
       </tr>
     </table>
 
 <!-- Bottom Blocks -->
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-12">
-    <tag:main_footer /> 
-    </div>
-    </div>
-    </div>
+    <table border='0' align='center' cellpadding='0' cellspacing='0' width='95%'>
+    <tr>
+    <td><tag:main_footer /></td>
+    </tr>
+    </table>
 
 <!-- Footer -->
         <footer>
