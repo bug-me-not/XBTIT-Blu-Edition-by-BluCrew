@@ -58,9 +58,13 @@
 		}
 	</script>
 </div>
-
-<div class='header' align='center'>Request Guidelines</div>
-<div class='lista'><center><span style="color:red">Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</br>Please Be Sure To Enter A Proper Description In Detail As To What It Is You Are Requesting</br>Please Be Sure To Enter A Proper Title For Your Request (Title)(Year)(Resolution)(Format)</br>It Cost 500 BON To Make A Request In Which It Is Added As A Bounty</span></center></div>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Request Guidelines</h4>
+</div>
+Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</br>Please Be Sure To Enter A Proper Description In Detail As To What It Is You Are Requesting</br>Please Be Sure To Enter A Proper Title For Your Request (Title)(Year)(Resolution)(Format)</br>It Cost 500 BON To Make A Request In Which It Is Added As A Bounty
+<div class="panel-footer">
+</div>
 </br>
 <div class='header' align='center'>
 	<h2><tag:header /></h2>
