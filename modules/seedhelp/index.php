@@ -14,11 +14,14 @@ $seedhelp = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.
 ?>
 
 <br />
-<font size="3"><center>Below is a list of torrents that you have uploaded or previously downloaded that could use another seeder</center></font>
-<br /><br />
-
-<table width="75%" align="center">
-	<tr><td class=header align=center width="75%" colspan='7'><center>Seed Help List</center></td></tr>
+<div class="panel panel-danger">
+<div class="panel-heading">
+<div align="center">
+<h2>Below is a list of torrents that you have uploaded or previously downloaded that could use another seeder</h2>
+</div>
+</div>
+</div>
+<table class="table table-bordered">
 	<?php
 	if ($seedhelp && sql_num_rows($seedhelp)>0) 
 	{
