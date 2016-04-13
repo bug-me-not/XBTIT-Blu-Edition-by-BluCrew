@@ -207,7 +207,7 @@ $q(function() {
 <div class="panel-heading">
 <h4 class="text-center">Torrents</h4>
 </div>
-  <div style="text-indent: 42.5%;">Torrent Activity Colors Legend</div>
+  <center><h4>Torrent Activity Colors Legend</h4></center>
 <center><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="left" data-content="You are seeding!" data-original-title="" title="">
 Seeding
 </button>
