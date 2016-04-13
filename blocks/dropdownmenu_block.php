@@ -63,7 +63,7 @@ if ($CURUSER["admin_access"]=="yes") {
         require_once(load_language("lang_admin.php"));
         print("<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>STAFF<b class='caret'></b></a>\n");
         print("<ul class='dropdown-menu'>\n");
-        print("<li><a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>".$language["MNU_ADMINCP"]."</a></li>\n");
+        print("<li><a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Staff Panel</a></li>\n");
         print("<li><a href='index.php?page=moder&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Moderation Panel</a></li>\n");
         print("<li class='divider'></li>");
         print("<li><a href='#'>BluCrew Panel</a></li>\n");
