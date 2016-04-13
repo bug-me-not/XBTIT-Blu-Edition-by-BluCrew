@@ -443,8 +443,8 @@ $clock(document).ready(function(){
    <if:imdb_enabled>
    <if:imdb>
    <tr>
-   <td align="right" class="header" valign="top">IMDB</td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:frameit /></td>
+   <td align="right" class="header" valign="top">BluMovieDB</td>
+   <td class="lista" align="center" style="text-align:left;" valign="top">COMING SOON!</td>
    </tr>
    <tag:extra1 />
    </if:imdb>
