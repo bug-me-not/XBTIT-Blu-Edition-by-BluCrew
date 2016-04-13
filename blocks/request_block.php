@@ -1,68 +1,92 @@
 <?php
+/////////////////////////////////////////////////////////////////////////////////////
+// xbtit - Bittorrent tracker/frontend
+//
+// Copyright (C) 2004 - 2014  Btiteam
+//
+//    This file is part of xbtit DT FM.
+//
+// Redistribution and use in source and binary forms, with or without modification,
+// are permitted provided that the following conditions are met:
+//
+//   1. Redistributions of source code must retain the above copyright notice,
+//      this list of conditions and the following disclaimer.
+//   2. Redistributions in binary form must reproduce the above copyright notice,
+//      this list of conditions and the following disclaimer in the documentation
+//      and/or other materials provided with the distribution.
+//   3. The name of the author may not be used to endorse or promote products
+//      derived from this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+// WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+// MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+// IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+// TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+// PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+// LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+////////////////////////////////////////////////////////////////////////////////////
+block_begin("Top Bountied Requests");
 
-    global $btit_settings, $language, $res_seo;
+global $btit_settings ;
+require_once load_language("lang_requests.php");
+require_once dirname(__FILE__)."/../include/offset.php";
+$number = 5;//$btit_settings["req_number"];
 
-    $number = (int)$btit_settings["req_number"];
+$res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat`.`name` as `catname`, `req`.`id`,`req`.`reqname` , UNIX_TIMESTAMP(`req`.`dateadded`) as `dateadded` , `req`.`requester` , (SELECT sum(`reqbou`.`seedbonus`) FROM `{$TABLE_PREFIX}requests_bounty` `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`)as `bounty` , `req`.`uploadedby`,`req`.`infohash`, `u`.`username` , `ul`.`suffixcolor` , `ul`.`prefixcolor` FROM `{$TABLE_PREFIX}requests` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `req`.`requester`=`u`.`id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`id`=`u`.`id_level` LEFT JOIN `{$TABLE_PREFIX}categories` `cat` ON `cat`.`id`=`req`.`category` ORDER BY `bounty` DESC, `req`.`id` DESC LIMIT {$number}");
 
-    $res = get_result("SELECT `u`.`downloaded`, `u`.`uploaded`, `u`.`username`, `ul`.`prefixcolor`, `ul`.`suffixcolor`, `u2`.`username` `f_username`, `r`.`filled`, `r`.`filledby`, `r`.`id`, `r`.`userid`, `r`.`request`, `r`.`added`, `r`.`hits`, `c`.`image` `catimg`, `c`.`name` `cat` FROM `{$TABLE_PREFIX}requests` `r` inner join `{$TABLE_PREFIX}categories` `c` on `r`.`cat` = `c`.`id` inner join `{$TABLE_PREFIX}users` `u` on `r`.`userid` = `u`.`id` INNER JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` LEFT JOIN `{$TABLE_PREFIX}users` `u2` ON `r`.`filledby`=`u2`.`id` ORDER BY `r`.`hits` DESC, `r`.`id` DESC LIMIT $number",true,$btit_settings["cache_duration"]);
+if(count($res)>0)
+{
+  $content = '';
 
-    print("<table border=0 width=100% align=center cellspacing=1 cellpadding=0>\n");
-    print("<tr><td class=header align=center>".$language["TRAV_NAME"]."</td><td class=header align=center>".$language["TRAV_CAT"]."</td><td class=header align=center>".$language['DATE']."</td><td class=header align=center>".$language['BY']."</td><td class=header align=center>".$language["TRAV_FILLED"]."</td><td class=header align=center>".$language["TRAV_VOTES"]."</td>\n");
+  $content .= "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_BOU_REQ']}</h4></div>";
+  $content .= "<table class='table table-bordered'>";
+  $content .= "<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_BON']}</td><td>{$language['TRAV_FILL']}</td></tr>";
 
-    foreach($res as $arr)
+  foreach($res as $data)
+  {
+    $catlink = "index.php?page=torrents&category={$data['catid']}";
+    $catimg = image_or_link(($data['catimg']==""?"":"{$STYLEPATH}/images/categories/".$data['catimg']),"",$data['catname']);
+
+    if (strlen($data['reqname'])>45)
     {
-        $privacylevel = $arr["privacy"];
-
-        if ($arr["downloaded"] > 0)
-        {
-            $ratio = number_format($arr["uploaded"] / $arr["downloaded"], 2);
-        }
-        else
-            $ratio = "&#8734;";
-
-        if (is_null($arr["f_username"]))
-            $filledby ="";
-        else
-            $filledby = $arr["f_username"];
-
-        if (!$CURUSER || $CURUSER["delete_torrents"]=="no")
-        {
-            if (!$CURUSER || $CURUSER["view_users"]=="yes")
-            {
-                $addedby = "<td class=lista align=center><center><a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["userid"]."_".strtr($arr["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["userid"])."' title='".$language["TRAV_REQBY2"].": ".$arr["username"]." (".$ratio.")'><b>".unesc($arr["prefixcolor"].$arr["username"].$arr["suffixcolor"])."</b></a></td>";
-            }
-            else
-            {
-                $addedby = "<td class=lista align=center><center><a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["userid"]."_".strtr($arr["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["userid"])."' title='".$language["TRAV_REQBY2"].": ".$arr["username"]." (".$ratio.")'><b>".unesc($arr["prefixcolor"].$arr["username"].$arr["suffixcolor"])."</b></a></td>";
-		    }
-        }
-        else
-        {
-            $addedby = "<td class=lista align=center><center><a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["userid"]."_".strtr($arr["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["userid"])."' title='".$language["TRAV_REQBY2"].": ".$arr["username"]." (".$ratio.")'><b>".unesc($arr["prefixcolor"].$arr["username"].$arr["suffixcolor"])."</b></a></td>";
-        }
-
-        $filled = $arr[filled];
-        if ($filled)
-        {
-            $filled = "<a href=$filled title=\"".$language["TRAV_FILLEDBY"].": ".$filledby."\"><span style='color:green'><b>".$language["YES"]."</b></span></a>";
-        }
-        else
-        {
-            $filled = "<a href=index.php?page=reqdetails&id=$arr[id] title=\"".$language["TRAV_REQDET"].":".$arr[request]."\"><span style='color:red'><b>".$language["NO"]."</b></span></a>";
-        }
-
-        $reqname = $arr[request];
-
-        //Name of Request too Big Hack Start
-        if (strlen($arr[request])>45)
-        {
-            $extension = "...";
-            $arr[request] = substr($arr[request], 0, 45)."$extension";
-        }
-        //Name of Request too Big Hack Stop
-        print("<tr><td class=lista align=left width=270><a href=index.php?page=reqdetails&id=$arr[id] title=\"".$language["TRAV_REQNAME"].": ".$reqname."\"><b>$arr[request]</b></a></td>");
-        print("<td class=lista align=center><center>".image_or_link(($arr['catimg']==''?'':'style/xbtit_default/images/categories/'.$arr[catimg]),' title=\'".$language["TRAV_CATEG"]." : '.$arr[cat].'\'',$arr['cat'])."</td><td class=lista width=20% align=center><center><font title=\"".$language["TRAV_ADDED"].": ".$arr[added]."\">".$arr["added"]."</font></td>$addedby<td class=lista align=center><center>$filled</td><td class=lista align=center><center><a href=index.php?page=votesview&requestid=$arr[id] title=\"".$language["TRAV_VOTES"].": ".$arr[hits]."\"><b>$arr[hits]</b></a></td></tr>\n");
+      $extension = "...";
+      $data['reqname'] = substr($data['reqname'], 0, 40)."$extension";
     }
-    print("</table>\n");
 
+    $reqname = ($CURUSER['view_users']=="yes")?"<a href='index.php?page=requests&action=viewreq&id={$data['id']}' title=\"{$language['TRAV_REQ_BY']}: {$data['username']}\">{$data['reqname']}</a>":"User";
+
+    $requser = "<a href='index.php?page=userdetails&id={$data['requester']}'>".$data['prefixcolor'].$data['username'].$data['suffixcolor']."</a>";
+    $reqdate = date("d/m/Y H:i:s",$data['dateadded']-$offset);
+
+    $reqlink = ($CURUSER['view_torrents']=='yes')?"<a href='index.php?page=torrent-details&id={$data['infohash']}'>{$language['PAR_LINK']}</a>":$language['NOT_AVAILABLE'];
+    $reqfill = ($data['uploadedby']>1)? "<font color=green>{$language['YES']}</font><br />{$reqlink}":"<font color=red>{$language['NO']}</font>";
+
+    $content .= "<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>".number_format($data['bounty'])."</td><td>{$reqfill}</td></tr>";
+  }
+
+  $content .="</table></div>";
+
+  if($CURUSER['view_torrents'] == 'no')
+  {
+    echo $language["TRAV_NOADD1"]." is ".$language['TRAV_NOTALLOWED'];
+  }
+  elseif($btit_settings['req_onoff'] != 'true')
+  {
+    echo $language["TRAV_REQ_OFF"];
+  }
+  else
+  {
+    echo $content; 
+  }
+}
+else
+{
+  echo "<div class='nothing'>{$language['TRAV_NOWTFOUND']}</div>";
+}
+
+block_end();
 ?>

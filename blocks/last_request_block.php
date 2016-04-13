@@ -1,4 +1,3 @@
-
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -32,12 +31,12 @@
 ////////////////////////////////////////////////////////////////////////////////////
 block_begin("Latest Requests");
 
-global $btit_settings ;
+global $btit_settings;
 require_once load_language("lang_requests.php");
 require_once dirname(__FILE__)."/../include/offset.php";
 $number = 5;//$btit_settings["req_number"];
 
-$res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat`.`name` as `catname`, `req`.`reqname` , UNIX_TIMESTAMP(`req`.`dateadded`) as `dateadded` , `req`.`requester` , (SELECT count(distinct `reqbou`.`addedby`) FROM `{$TABLE_PREFIX}requests_bounty` `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`)as `total_voters` , `u`.`username` , `ul`.`suffixcolor` , `ul`.`prefixcolor` FROM `{$TABLE_PREFIX}requests` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `req`.`requester`=`u`.`id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`id`=`u`.`id_level` LEFT JOIN `{$TABLE_PREFIX}categories` `cat` ON `cat`.`id`=`req`.`category` ORDER BY `dateadded` DESC, `req`.`id` DESC LIMIT {$number}");
+$res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat`.`name` as `catname`, `req`.`id`,`req`.`reqname` , UNIX_TIMESTAMP(`req`.`dateadded`) as `dateadded` , `req`.`requester` , (SELECT count(distinct `reqbou`.`addedby`) FROM `{$TABLE_PREFIX}requests_bounty` `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`)as `total_voters` , `req`.`uploadedby`,`req`.`infohash`, `u`.`username` , `ul`.`suffixcolor` , `ul`.`prefixcolor` FROM `{$TABLE_PREFIX}requests` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `req`.`requester`=`u`.`id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`id`=`u`.`id_level` LEFT JOIN `{$TABLE_PREFIX}categories` `cat` ON `cat`.`id`=`req`.`category` ORDER BY `dateadded` DESC, `req`.`id` DESC LIMIT {$number}");
 
 if(count($res)>0)
 {
@@ -45,28 +44,45 @@ if(count($res)>0)
 
   $content .= "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_REC_REQ']}</h4></div>";
   $content .= "<table class='table table-bordered'>";
-  $content .= "<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_VOTERS']}</td></tr>";
+  $content .= "<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_VOTERS']}</td><td>{$language['TRAV_FILL']}</td></tr>";
 
-foreach($res as $data)
-{
-  $catlink = "index.php?page=torrents&category={$data['catid']}";
-  $catimg = image_or_link(($data['catimg']==""?"":"{$STYLEPATH}/images/categories/".$data['catimg']),"",$data['catname']);
+  foreach($res as $data)
+  {
+    $catlink = "index.php?page=torrents&category={$data['catid']}";
+    $catimg = image_or_link(($data['catimg']==""?"":"{$STYLEPATH}/images/categories/".$data['catimg']),"",$data['catname']);
 
-  $requser = $data['prefixcolor'].$data['username'].$data['suffixcolor'];
-  $reqdate = date("d/m/Y H:i:s",$data['dateadded']-$offset);
+    if (strlen($data['reqname'])>45)
+    {
+      $extension = "...";
+      $data['reqname'] = substr($data['reqname'], 0, 40)."$extension";
+    }
 
-  $content .= "<tr>
-  <td><a href='{$catlink}'>{$catimg}</a></td>
-  <td>{$data['reqname']}</td>
-  <td>{$requser}</td>
-  <td>{$reqdate}</td>
-  <td>{$data['total_voters']}</td>
-  </tr>";
-}
+    $reqname = ($CURUSER['view_users']=="yes")?"<a href='index.php?page=requests&action=viewreq&id={$data['id']}' title=\"{$language['TRAV_REQ_BY']}: {$data['username']}\">{$data['reqname']}</a>":"User";
 
-$content .="<table></div></div><div class='panel-footer'>
-</div>";
-echo $content;
+    $requser = "<a href='index.php?page=userdetails&id={$data['requester']}'>".$data['prefixcolor'].$data['username'].$data['suffixcolor']."</a>";
+    $reqdate = date("d/m/Y H:i:s",$data['dateadded']-$offset);
+
+    $reqlink = ($CURUSER['view_torrents']=='yes')?"<a href='index.php?page=torrent-details&id={$data['infohash']}'>{$language['PAR_LINK']}</a>":$language['NOT_AVAILABLE'];
+    $reqfill = ($data['uploadedby']>1)? "<font color=green>{$language['YES']}</font>\n{$reqlink}":"<font color=red>{$language['NO']}</font>";
+
+    $content .= "<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>{$data['total_voters']}</td><td>{$reqfill}</td></tr>";
+  }
+
+  $content .="</table></div>";
+
+
+  if($CURUSER['view_torrents'] == 'no')
+  {
+    echo $language["TRAV_NOADD1"]." is ".$language['TRAV_NOTALLOWED'];
+  }
+  elseif($btit_settings['req_onoff'] != 'true')
+  {
+    echo $language["TRAV_REQ_OFF"];
+  }
+  else
+  {
+    echo $content; 
+  }
 }
 else
 {

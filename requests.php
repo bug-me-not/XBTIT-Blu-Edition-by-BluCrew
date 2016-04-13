@@ -178,26 +178,34 @@ else
 						die();
 					}
 
-					$reqtitle = sqlesc($reqtitle);
+					$req1title = sqlesc($reqtitle);
 					$cat = sqlesc($cat);
 					$imdb = sqlesc($imdb);
 					$tvdb = sqlesc($tvdb);
 					$desc = ($desc=="")?sqlesc(""):sqlesc($desc);
 
-					quickQuery("INSERT INTO {$TABLE_PREFIX}requests (`reqname`,`category`,`requester`,`dateadded`,`description`,`views`,`imdb`,`tvdb`) VALUES ($reqtitle,$cat,{$CURUSER['uid']},NOW(),$desc,1,$imdb,$tvdb)") or sqlerr();
-
-					$last_id = sql_insert_id();
-					quickQuery("INSERT INTO {$TABLE_PREFIX}requests_bounty (`addedby`,`seedbonus`,`req_id`) VALUES ({$CURUSER['uid']},{$btit_settings['req_bon']},{$last_id});") or sqlerr(); 
-
-					if($btit_setting['req_shout']=='true')
+					$test = do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}requests` WHERE `category`={$cat} AND `reqname`LIKE {$req1title}");
+					if(sql_num_rows($test)==0)
 					{
-						$url=("[color=RED]".sql_esc($language["TRAV_NEWREQUEST"]).":[/color] [url=".$BASEURL."/index.php?page=viewrequests]".sql_esc($requesttitle)."[/url] [color=RED]".sql_esc($language["TRAV_ADDEDBY"]).":[/color] [url=$BASEURL/index.php?page=userdetails&id=" .$CURUSER['uid']."]".$CURUSER["username"]."[/url]");
-						system_shout($url);
+						quickQuery("INSERT INTO {$TABLE_PREFIX}requests (`reqname`,`category`,`requester`,`dateadded`,`description`,`views`,`imdb`,`tvdb`) VALUES ($req1title,$cat,{$CURUSER['uid']},NOW(),$desc,1,$imdb,$tvdb)") or sqlerr();
+
+						$last_id = sql_insert_id();
+						quickQuery("INSERT INTO {$TABLE_PREFIX}requests_bounty (`addedby`,`seedbonus`,`req_id`) VALUES ({$CURUSER['uid']},{$btit_settings['req_bon']},{$last_id});") or sqlerr(); 
+
+						if($btit_settings['req_shout']==true)
+						{
+							$url=("[color=RED]".sql_esc($language["TRAV_NEWREQUEST"]).":[/color] [url=".$BASEURL."/index.php?page=viewrequests]".sql_esc($reqtitle)."[/url] [color=RED]".sql_esc($language["TRAV_ADDEDBY"]).":[/color] [url=$BASEURL/index.php?page=userdetails&id=" .$CURUSER['uid']."]".$CURUSER['prefixcolor'].$CURUSER["username"].$CURUSER['suffixcolor']."[/url]");
+							system_shout($url,false,true);
+						}
+
+						write_log("$reqtitle ".$language['TRAV_WATTRS']);
+						redirect("index.php?page=requests");
 					}
-
-					write_log("$reqtitle ".$language['TRAV_WATTRS']);
-
-					redirect("index.php?page=requests");
+					else
+					{
+						stderr($language['ERROR'],$language['TRAV_EXIST']);
+						die();
+					}
 				}
 			}
 			else
@@ -651,7 +659,7 @@ else
 			$requeststpl->set("order_desc",(($act=='search' && $_GET['order']=='desc')?"selected='yes'":""));
 			//Form handling
 
-			$search = "ORDER BY `req`.`reqname` ASC";
+			$search = "ORDER BY `req`.`id` DESC";
 			if($act=="search")
 			{
 				$stitle = sql_esc($_GET['title']);
@@ -778,10 +786,6 @@ else
 	else
 	{
 		stderr($language["TRAV_NOAUTH"], $language["TRAV_NOADD1"]." is ".$language['TRAV_NOTALLOWED']);
-		die();
-	}
-}
-?>e["TRAV_NOAUTH"], $language["TRAV_NOADD1"]." is ".$language['TRAV_NOTALLOWED']);
 		die();
 	}
 }

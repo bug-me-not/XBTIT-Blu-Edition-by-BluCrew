@@ -16,7 +16,10 @@ $language['TRAV_REQDELETED'] = "The request has successfuly been deleted.";
 $language['TRAV_NOREQDEL'] = "The system not been able to remove this request. \n\n Please Contact staff via the helpdesk.";
 $language['TRAV_NOREQEDIT'] = "The system not been able to edit this request. \n\n Please Contact staff via the helpdesk.";
 $language['TRAV_REQ_NAME'] = "Request Name";
+$language['TRAV_REC_REQ'] = "Most Recent Requests";
+$language['TRAV_BOU_REQ'] = "Top Bountied Requests";
 $language['TRAV_REQ_BY'] = "Request By";
+$language['TRAV_DATE_REQ'] = "Date Requested";
 $language['TRAV_JOB_BY'] = "Job By";
 $language['TRAV_VIEWS'] = "Views";
 $language['TRAV_ADD_BOUNTY'] = "Add Bounty";
@@ -84,5 +87,7 @@ $language['RE']='Edit Request';
 $language['RF']='Request Filled';
 $language["TRAV_NEWREQUEST"] = "New Request";
 $language["TRAV_ADDEDBY"] = "Added By";
+$language['TRAV_FILL'] = "Filled";
+$language['TRAV_EXIST'] = "This request already exists in our system.";
 
 ?>
