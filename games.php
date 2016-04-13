@@ -32,17 +32,5 @@ $out.= "<table border='0' cellspacing='5' cellpadding='10' align='center' width=
 
 $tpl->set("main_content",$out);
 ob_end_clean();
-
-/*<td align='center'><a class='altlink' href='index.php?page=arcadex' >Flash Arcade <br/><img src='images/arcadex.png' alt='Arcade' title='Flash Arcade' /></a>
-<td align='center'><a class='altlink' href='index.php?page=bet' >Sports Betting <br/><img src='images/sportsbet.png' alt='SportsBet' title='Sports Betting' /></a></td>
-<tr>
-<td align='center'><a class='altlink' href='index.php?page=slots' >Slots <br/><img src='images/slot.png' alt='Slots' title='Slots' /></a></td>
-<td align='center'><a class='altlink' href='index.php?page=blackjack' >BlackJack <br/><img src='images/blackjack.png' alt='Blackjack' title='BlackJack' /></a></td>
-</tr>
-<tr>
-<td align='center'><a class='altlink' href='index.php?page=hangman' >Hangman <br/><img src='images/hangman.png' alt='Hangman' title='Hangman' /></a></td>
-<td align='center'><a class='altlink' href='index.php?page=mustafa' >Mustafa <br/><img src='images/mustafa.png' alt='Mustafa' title='Mustafa' /></a></td>
-<td align='center'><a class='altlink' href='index.php?page=snake' >Snake <br/><img src='images/snake.png' alt='Snake' title='Snake' /></a></td> </tr>;
-*/
 ?>
 
