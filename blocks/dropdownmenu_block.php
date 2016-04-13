@@ -12,7 +12,7 @@ global $CURUSER, $btit_settings, $language;
 
 //TORRENTS
 if ($CURUSER["view_torrents"]=="yes"){
-print("<li><a href='torrents&search=&category=0&uploader=0&options=0&active=0&gold=0'>".$language["MNU_TORRENT"]."</a>\n");
+print("<li><a href='index.php?page=torrents&search=&category=0&uploader=0&options=0&active=0&gold=0'>".$language["MNU_TORRENT"]."</a>\n");
 }
 
 //BLUFLIX 2.0
