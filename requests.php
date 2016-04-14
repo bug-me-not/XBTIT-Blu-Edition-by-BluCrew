@@ -110,7 +110,7 @@ else
 		}
 		elseif($act == 'createreq')
 		{
-			if($CURUSER['add_request']=="yes")
+			if($CURUSER['id_level']>=$btit_settings['req_level'])
 			{
 				$createreqtpl = new bTemplate();
 				$createreqtpl->set("language",$language);
@@ -148,6 +148,12 @@ else
 					if($btit_settings['req_bon']>$CURUSER['seedbonus'])
 					{
 						stderr($language['ERROR'],$language['TRAV_REACHEDMAX']);
+						die();
+					}
+
+					if($CURUSER['id_level']<$btit_settings['req_level'])
+					{
+						stderr($language['ERROR'],$language['TRAV_NOTALLOWED']);
 						die();
 					}
 
@@ -277,6 +283,12 @@ else
 					}
 					else
 					{
+						if($CURUSER['id_level']<$btit_settings['req_level'])
+						{
+							stderr($language['ERROR'],$language['TRAV_NOTALLOWED']);
+							die();
+						}
+
 						$reqtitle = $_POST['reqtitle'];
 						$cat = 0+$_POST['category'];
 						$imdb = 0+$_POST['imdb'];
@@ -395,7 +407,7 @@ else
 						if($del_1 && $del_2 && $del_3)
 						{
 							write_log("{$CURUSER['username']} ".$language['TRAV_REQDELLOG']."{$name}");
-							information_msg($language['SUCCESS'],$language['TRAV_REQDELETED']);
+							information_msg($language['SUCCESS'],$language['TRAV_REQDELETED'],"delete");
 							die();
 						}
 						else
@@ -446,8 +458,8 @@ else
 							send_pm(0,$reqres['requester'],sqlesc($language['RF']),sqlesc($message));
 
 							//BON allocation
-							$bounty = intval($reqres['seedbonus'])*0.9;
-							$tax = intval($reqres['seedbonus'])*0.1;
+							$bounty = intval($reqres['seedbonus'])*(1-((int)$btit_settings['req_tax']/100));
+							$tax = intval($reqres['seedbonus'])*((int)$btit_settings['req_tax']/100);
 							
 							if($CURUSER['uid']==$hashres['uploader'])
 							{
@@ -468,8 +480,7 @@ else
 							}
 
 							//Tax to BON Pool allocation
-							quickQuery("UPDATE {$TABLE_PREFIX}users SET seedbonus=seedbonus+{$tax} WHERE id=23027");
-							$test2 = send_pm(0,23027,sqlesc("Tax for BON"),sqlesc("The following amount needs to be added to the BON Pool: {$tax}"));
+							quickQuery("INSERT INTO `{$TABLE_PREFIX}pool` (`uid`,`date`,`amount`,`poolid`) VALUES (2,NOW(),{$tax},(SELECT `id` FROM `{$TABLE_PREFIX}pool_settings` WHERE `complete`=false LIMIT 1))",true);
 
 							redirect("index.php?page=requests&action=viewreq&id={$reqid}");
 						}
@@ -532,7 +543,7 @@ else
 
 								if($reset)
 								{
-									write_log("{$CURUSER['username']} ".$language['TRAV_REQRESLOG']."{$reqname}");
+									write_log("{$CURUSER['username']} ".$language['TRAV_REQRESLOG']."{$reqname}","modify");
 									redirect("index.php?page=requests");
 									die();
 								}

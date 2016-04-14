@@ -549,7 +549,7 @@ $language["ACP_RULES_GROUP"]="Rules groups";
 $language["ACP_RULES"]="Rules";
 
 
-
+//Sticky
 $language["ACP_STICKY_TORRENTS"]="Sticky settings";
 $language["STICKY_SETTINGS"]="Sticky settings";
 $language["COLOR"]="Color";
@@ -571,6 +571,8 @@ $language["TRAV_RRS"] = "Request reward system";
 $language["TRAV_RIUOS"] = "Reward in upload or seedbonus";
 $language["TRAV_AIB"] = "Amount in bytes";
 $language["TRAV_SBP"] = "Seedbonus points";
+$language['TRAV_MBON'] = "Initial Seedbonus";
+$language['TRAV_TAX'] = "Percentage Tax on Bounty";
 $language["TRAV_ADD_REQ"] = "Add request";
 // Torrent Request
 
