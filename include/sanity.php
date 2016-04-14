@@ -433,7 +433,7 @@ function do_sanity($ts = 0)
                 {
                     $res = do_sqlquery("SELECT `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`").", count(*) `count` FROM `{$TABLE_PREFIX}peers` `p` LEFT JOIN `{$TABLE_PREFIX}files` `f` ON `p`.`infohash`=`f`.`info_hash` WHERE `f`.`archive`=1 AND `p`.`status` = 'seeder' ".
                         (($btit_settings["sb_speed_enable"] == "true")?"AND IF(`p`.`announce_interval`=0, `p`.`upload_difference`, (`p`.`upload_difference`/`p`.`announce_interval`))>=".$min_up_rate:"")." GROUP BY `p`.".(($PRIVATE_ANNOUNCE)?
-                        "`pid`":"`ip`")." ORDER BY `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`")." ASC");
+                            "`pid`":"`ip`")." ORDER BY `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`")." ASC");
                     if(@sql_num_rows($res) > 0)
                     {
                         while($arr = $res->fetch_assoc())
@@ -519,7 +519,7 @@ function do_sanity($ts = 0)
                     {
                         $res = do_sqlquery("SELECT `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`")." FROM `{$TABLE_PREFIX}peers` `p` LEFT JOIN `{$TABLE_PREFIX}files` `f` ON `p`.`infohash`=`f`.`info_hash` WHERE `f`.`archive`=1 AND `p`.`status` = 'seeder' ".
                             (($btit_settings["sb_speed_enable"] == "true")?"AND IF(`p`.`announce_interval`=0, `p`.`upload_difference`, (`p`.`upload_difference`/`p`.`announce_interval`))>=".$min_up_rate:"")." GROUP BY `p`.".(($PRIVATE_ANNOUNCE)?
-                            "`pid`":"`ip`")." ORDER BY `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`")." ASC");
+                                "`pid`":"`ip`")." ORDER BY `p`.".(($PRIVATE_ANNOUNCE)?"`pid`":"`ip`")." ASC");
                         if(@sql_num_rows($res) > 0)
                         {
                             $userlist = "";
@@ -687,8 +687,8 @@ function do_sanity($ts = 0)
                                 {
                                     $forum_post = sqlesc($row["username"]." ".$language["HNR_FORUM_MSG_1"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n".
-                                        "[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".NewDateFormat($row["seeding_time"])."[/b]"."\n\n".
-                                        $language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $row["date"])."[/b]");
+                                    "[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".NewDateFormat($row["seeding_time"])."[/b]"."\n\n".
+                                    $language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $row["date"])."[/b]");
                                 }
                                 elseif($fied["method"] == "ratio_only")
                                 {
@@ -701,19 +701,19 @@ function do_sanity($ts = 0)
                                 {
                                     $forum_post = sqlesc($row["username"]." ".$language["HNR_FORUM_MSG_6"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_7"]." [b]".$min_ratio.
-                                        "[/b] ".$language["HNR_FORUM_MSG_8"]." ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].
-                                        ":"."\n"."[b]".NewDateFormat($row["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($row["uploaded"])."[/color][/b]"."\n".
-                                        "[b][color=red]".$language["DOWNLOADED"].": ".makesize($row["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($row["downloaded"] > 0)?number_format($row["uploaded"] / $row["downloaded"],
+                                    "[/b] ".$language["HNR_FORUM_MSG_8"]." ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].
+                                    ":"."\n"."[b]".NewDateFormat($row["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($row["uploaded"])."[/color][/b]"."\n".
+                                    "[b][color=red]".$language["DOWNLOADED"].": ".makesize($row["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($row["downloaded"] > 0)?number_format($row["uploaded"] / $row["downloaded"],
                                         3):"&#8734;")."[/b]"."\n\n".$language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $row["date"])."[/b]");
                                 }
                                 elseif($fied["method"] == "seed_and_ratio")
                                 {
                                     $forum_post = sqlesc($row["username"]." ".$language["HNR_FORUM_MSG_1"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_9"]." [b]".$min_ratio.
-                                        "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".
-                                        NewDateFormat($row["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($row["uploaded"])."[/color][/b]"."\n"."[b][color=red]".$language["DOWNLOADED"].
-                                        ": ".makesize($row["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($row["downloaded"] > 0)?number_format($row["uploaded"] / $row["downloaded"], 3):"&#8734;")."[/b]"."\n\n".$language["HNR_FORUM_MSG_12"].
-                                        ":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $row["date"])."[/b]");
+                                    "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$row["info_hash"]."]".$row["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".
+                                    NewDateFormat($row["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($row["uploaded"])."[/color][/b]"."\n"."[b][color=red]".$language["DOWNLOADED"].
+                                    ": ".makesize($row["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($row["downloaded"] > 0)?number_format($row["uploaded"] / $row["downloaded"], 3):"&#8734;")."[/b]"."\n\n".$language["HNR_FORUM_MSG_12"].
+                                    ":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $row["date"])."[/b]");
                                 }
                                 if($fied["forum_post"] > 0)
                                 {
@@ -778,7 +778,7 @@ function do_sanity($ts = 0)
                                     $mycount = count($fp);
                                     quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$row["uid"].", ".sqlesc($language["HNR_WARN_DEC"]."\n"."[quote=".$language["SYSTEM_USER"]."]".(($mycount >=
                                         1)?$fp[0]."\n":"").(($mycount >= 2)?$fp[1]."\n":"").(($mycount >= 3)?$fp[2]."\n":"").(($mycount >= 4)?$fp[3]."\n":"").(($mycount >= 5)?$fp[4]."\n":"").(($mycount >= 6)?$fp[5]."\n":"").(($mycount >= 7)?
-                                        $fp[6]."\n":"").(($mycount >= 8)?$fp[7]."\n":"").(($mycount >= 9)?$fp[8]."\n":"").(($mycount >= 10)?$fp[9]."\n":"").(($mycount >= 11)?$fp[10]."\n":"").(($mycount >= 12)?$fp[11]."\n":"").(($mycount >=
+                                    $fp[6]."\n":"").(($mycount >= 8)?$fp[7]."\n":"").(($mycount >= 9)?$fp[8]."\n":"").(($mycount >= 10)?$fp[9]."\n":"").(($mycount >= 11)?$fp[10]."\n":"").(($mycount >= 12)?$fp[11]."\n":"").(($mycount >=
                                         13)?$fp[12]."\n":"")."[/quote]").", 'pm', UNIX_TIMESTAMP(), 'dec', 0)");
                                     quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=`warn_lev`-1, `warn_last`=".(($row["warn_lev"] == 1)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$row["uid"]);
                                     $stage4=$btit_settings["warn_max"];
@@ -884,8 +884,8 @@ function do_sanity($ts = 0)
                                 {
                                     $forum_post = sqlesc($rowa["username"]." ".$language["HNR_FORUM_MSG_10"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n".
-                                        "[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".NewDateFormat($rowa["seeding_time"])."[/b]".
-                                        "\n\n".$language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $rowa["date"])."[/b]");
+                                    "[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n"."[b]".NewDateFormat($rowa["seeding_time"])."[/b]".
+                                    "\n\n".$language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $rowa["date"])."[/b]");
                                 }
                                 elseif($fied["method"] == "ratio_only")
                                 {
@@ -898,18 +898,18 @@ function do_sanity($ts = 0)
                                 {
                                     $forum_post = sqlesc($rowa["username"]." ".$language["HNR_FORUM_MSG_13"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_7"]." [b]".$min_ratio.
-                                        "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n".
-                                        "[b]".NewDateFormat($rowa["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($rowa["uploaded"])."[/color][/b]"."\n".
-                                        "[b][color=red]".$language["DOWNLOADED"].": ".makesize($rowa["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($rowa["downloaded"] > 0)?number_format($rowa["uploaded"] / $rowa["downloaded"],
+                                    "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n".
+                                    "[b]".NewDateFormat($rowa["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($rowa["uploaded"])."[/color][/b]"."\n".
+                                    "[b][color=red]".$language["DOWNLOADED"].": ".makesize($rowa["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($rowa["downloaded"] > 0)?number_format($rowa["uploaded"] / $rowa["downloaded"],
                                         3):"&#8734;")."[/b]"."\n\n".$language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $rowa["date"])."[/b]");
                                 }
                                 elseif($fied["method"] == "seed_and_ratio")
                                 {
                                     $forum_post = sqlesc($rowa["username"]." ".$language["HNR_FORUM_MSG_10"]." [b]".(($fied["min_seed_hours"] >= 24)?($fied["min_seed_hours"] / 24)." ".((($fied["min_seed_hours"] / 24) == 1)?$language["HNR_FORUM_DAY"]:
                                         $language["HNR_FORUM_DAYS"]):$fied["min_seed_hours"]." ".(($fied["min_seed_hours"] == 1)?$language["HNR_FORUM_HOUR"]:$language["HNR_FORUM_HOURS"]))."[/b] ".$language["HNR_FORUM_MSG_9"]." [b]".$min_ratio.
-                                        "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n".
-                                        "[b]".NewDateFormat($rowa["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($rowa["uploaded"])."[/color][/b]"."\n".
-                                        "[b][color=red]".$language["DOWNLOADED"].": ".makesize($rowa["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($rowa["downloaded"] > 0)?number_format($rowa["uploaded"] / $rowa["downloaded"],
+                                    "[/b] ".$language["HNR_FORUM_MSG_2"].":"."\n"."[url=".$BASEURL."/index.php?page=torrent-details&id=".$rowa["info_hash"]."]".$rowa["filename"]."[/url]"."\n\n".$language["HNR_FORUM_MSG_3"].":"."\n".
+                                    "[b]".NewDateFormat($rowa["seeding_time"])."[/b]"."\n\n".$language["HNR_FORUM_MSG_5"].":"."\n"."[b][color=green]".$language["UPLOADED"].": ".makesize($rowa["uploaded"])."[/color][/b]"."\n".
+                                    "[b][color=red]".$language["DOWNLOADED"].": ".makesize($rowa["downloaded"])."[/color][/b]"."\n"."[b]".$language["RATIO"].": ".(($rowa["downloaded"] > 0)?number_format($rowa["uploaded"] / $rowa["downloaded"],
                                         3):"&#8734;")."[/b]"."\n\n".$language["HNR_FORUM_MSG_12"].":"."\n"."[b]".date("l jS F Y \a\\t g:i a", $rowa["date"])."[/b]");
                                 }
                                 if($fied["forum_post"] > 0)
@@ -975,7 +975,7 @@ function do_sanity($ts = 0)
                                     $mycount = count($fp);
                                     quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$rowa["uid"].", ".sqlesc($language["HNR_WARN_INC"]."\n"."[quote=".$language["SYSTEM_USER"]."]".(($mycount >=
                                         1)?$fp[0]."\n":"").(($mycount >= 2)?$fp[1]."\n":"").(($mycount >= 3)?$fp[2]."\n":"").(($mycount >= 4)?$fp[3]."\n":"").(($mycount >= 5)?$fp[4]."\n":"").(($mycount >= 6)?$fp[5]."\n":"").(($mycount >= 7)?
-                                        $fp[6]."\n":"").(($mycount >= 8)?$fp[7]."\n":"").(($mycount >= 9)?$fp[8]."\n":"").(($mycount >= 10)?$fp[9]."\n":"").(($mycount >= 11)?$fp[10]."\n":"").(($mycount >= 12)?$fp[11]."\n":"").(($mycount >=
+                                    $fp[6]."\n":"").(($mycount >= 8)?$fp[7]."\n":"").(($mycount >= 9)?$fp[8]."\n":"").(($mycount >= 10)?$fp[9]."\n":"").(($mycount >= 11)?$fp[10]."\n":"").(($mycount >= 12)?$fp[11]."\n":"").(($mycount >=
                                         13)?$fp[12]."\n":"")."[/quote]").", 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
                                     quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=`warn_lev`+1, `warn_last`=UNIX_TIMESTAMP() WHERE `id`=".$rowa["uid"]);
                                     $stage4=$btit_settings["warn_max"];
@@ -1159,13 +1159,14 @@ function do_sanity($ts = 0)
     {
         // DT request hack start
         $reqprune = $btit_settings["req_prune"];
-        $request = do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}requests` WHERE `filledby` > '0' AND `fulfilled` < DATE_SUB(NOW(), INTERVAL $reqprune DAY)");
-        if(@sql_num_rows($request) > 0)
+        $request = do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}requests` WHERE `jobtakenby` > '0' AND `uploadedby`=0 AND `jobtakenwhen` < DATE_SUB(NOW(), INTERVAL {$reqprune} DAY)");
+        while($reqrow = $request->fetch_assoc())
         {
-            $reqrow = $request->fetch_assoc();
             $reqid = $reqrow["id"];
-            quickQuery("DELETE FROM `{$TABLE_PREFIX}requests` WHERE `filledby` > 0 AND `id` = ".$reqid);
-            quickQuery("DELETE FROM `{$TABLE_PREFIX}addedrequests` WHERE `requestid` = ".$reqid);
+            quickQuery("UPDATE {$TABLE_PREFIX}requests SET `jobtakenby`='0',`jobtakenwhen`='0000-00-00 00:00:00' WHERE `id`=".$reqid);
+            /*quickQuery("DELETE FROM `{$TABLE_PREFIX}requests` WHERE `jobtakenby` > 0 AND `id` = ".$reqid);
+            quickQuery("DELETE FROM `{$TABLE_PREFIX}requests_bounty` WHERE `req_id` = ".$reqid);
+            quickQuery("DELETE FROM `{$TABLE_PREFIX}requests_comments` WHERE `req_id` = ".$reqid);*/
         }
         // DT request hack end
     }
@@ -1184,69 +1185,140 @@ function do_sanity($ts = 0)
       $query = do_sqlquery("select ip FROM {$TABLE_PREFIX}seedboxip");
       while ($row=$query->fetch_row())
       {
-         $seedip[] = $row[0];
-         $host = gethostbyaddr($row[0]);
-         $peers = sql_num_rows(do_sqlquery("SELECT ip FROM {$TABLE_PREFIX}peers WHERE ip='".$row[0]."'"));
-         quickQuery("UPDATE {$TABLE_PREFIX}seedboxip SET host='{$host}', peers={$peers} WHERE ip='".$row[0]."'");
-      }
+       $seedip[] = $row[0];
+       $host = gethostbyaddr($row[0]);
+       $peers = sql_num_rows(do_sqlquery("SELECT ip FROM {$TABLE_PREFIX}peers WHERE ip='".$row[0]."'"));
+       quickQuery("UPDATE {$TABLE_PREFIX}seedboxip SET host='{$host}', peers={$peers} WHERE ip='".$row[0]."'");
+   }
 
-      $sid=do_sqlquery("select * FROM {$TABLE_PREFIX}peers WHERE `ip` IN ('".implode("','",$seedip)."')");
-      while($sow=$sid->fetch_array())
-      {
-         do_sqlquery("UPDATE {$TABLE_PREFIX}files SET `seedbox`='1' WHERE `info_hash`='".$sow['infohash']."'");
-      }
+   $sid=do_sqlquery("select * FROM {$TABLE_PREFIX}peers WHERE `ip` IN ('".implode("','",$seedip)."')");
+   while($sow=$sid->fetch_array())
+   {
+       do_sqlquery("UPDATE {$TABLE_PREFIX}files SET `seedbox`='1' WHERE `info_hash`='".$sow['infohash']."'");
+   }
 
    } //Auto Seedbox End
-    if($btit_settings["fmhack_low_ratio_ban_system"] == "enabled")
+   if($btit_settings["fmhack_low_ratio_ban_system"] == "enabled")
+   {
+    $resset = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}low_ratio_ban_settings WHERE id ='1'");
+    if(@sql_num_rows($resset) > 0)
     {
-        $resset = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}low_ratio_ban_settings WHERE id ='1'");
-        if(@sql_num_rows($resset) > 0)
+        $art = $resset->fetch_assoc();
+        $resban = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}low_ratio_ban ");
+        if(@sql_num_rows($resban) > 0)
         {
-            $art = $resset->fetch_assoc();
-            $resban = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}low_ratio_ban ");
-            if(@sql_num_rows($resban) > 0)
+            while($ban = $resban->fetch_assoc())
             {
-                while($ban = $resban->fetch_assoc())
+                if($art["wb_sys"] == "true")
                 {
-                    if($art["wb_sys"] == "true")
-                    {
-                        $min_dl = ($ban["wb_down"] * 1024 * 1024 * 1024);
+                    $min_dl = ($ban["wb_down"] * 1024 * 1024 * 1024);
                         // find bad users 1
-                        if($XBTT_USE)
-                            $demotelist = do_sqlquery("SELECT `u`.`id`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?", `u`.`user_notes`":"").
-                                " FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".$min_dl.
-                                " AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 0 ORDER BY `l`.`language_url` ASC");
-                        else
-                            $demotelist = do_sqlquery("SELECT `u`.`id`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?", `u`.`user_notes`":"").
-                                " FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_one"].
-                                " AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 0 ORDER BY `l`.`language_url` ASC");
-                        if(@sql_num_rows($demotelist) > 0)
+                    if($XBTT_USE)
+                        $demotelist = do_sqlquery("SELECT `u`.`id`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?", `u`.`user_notes`":"").
+                            " FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".$min_dl.
+                            " AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 0 ORDER BY `l`.`language_url` ASC");
+                    else
+                        $demotelist = do_sqlquery("SELECT `u`.`id`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?", `u`.`user_notes`":"").
+                            " FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_one"].
+                            " AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 0 ORDER BY `l`.`language_url` ASC");
+                    if(@sql_num_rows($demotelist) > 0)
+                    {
+                        $templang = "language/english";
+                        $language = $lang_english;
+                        while($demote = $demotelist->fetch_assoc())
                         {
-                            $templang = "language/english";
-                            $language = $lang_english;
-                            while($demote = $demotelist->fetch_assoc())
-                            {
                                 // warn bad users 1
-                                quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 1 , rat_warn_time = NOW() WHERE id=".$demote["id"]);
-                                if($demote["language_url"] != $templang)
-                                {
-                                    $lang_split = explode("/", strtolower(str_replace("-", "_", $demote["language_url"])));
-                                    $language = ${"lang_".$lang_split[1]};
-                                    $templang = $demote["language_url"];
-                                }
+                            quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 1 , rat_warn_time = NOW() WHERE id=".$demote["id"]);
+                            if($demote["language_url"] != $templang)
+                            {
+                                $lang_split = explode("/", strtolower(str_replace("-", "_", $demote["language_url"])));
+                                $language = ${"lang_".$lang_split[1]};
+                                $templang = $demote["language_url"];
+                            }
                                 // send pm bad users 1
-                                $sub = sqlesc($language["RAT_SUBJ"]);
-                                $msg = sqlesc($art["wb_text_one"]);
-                                send_pm(0, $demote[id], $sub, $msg);
+                            $sub = sqlesc($language["RAT_SUBJ"]);
+                            $msg = sqlesc($art["wb_text_one"]);
+                            send_pm(0, $demote[id], $sub, $msg);
                                 // add warn symbol 1
-                                if($ban["wb_warn"] == "true" && $demote["warn_lev"] < $btit_settings["warn_max"])
+                            if($ban["wb_warn"] == "true" && $demote["warn_lev"] < $btit_settings["warn_max"])
+                            {
+                                $stage4=$btit_settings["warn_max"];
+                                $stage3=round($btit_settings["warn_max"]*0.75);
+                                $stage2=round($btit_settings["warn_max"]*0.5);
+                                $stage1=round($btit_settings["warn_max"]*0.25);
+                                $stage0=0;
+                                $warn_lev = ($demote["warn_lev"] + 1);
+                                if($warn_lev >= $stage4)
+                                    $wl = "[img]".$BASEURL."/images/warned/warn_max.png[/img] (".$warn_lev."/".$stage4.")";
+                                elseif($warn_lev >= $stage3)
+                                    $wl = "[img]".$BASEURL."/images/warned/warn_3.png[/img] (".$warn_lev."/".$stage4.")";
+                                elseif($warn_lev >= $stage2)
+                                    $wl = "[img]".$BASEURL."/images/warned/warn_2.png[/img] (".$warn_lev."/".$stage4.")";
+                                elseif($warn_lev >= $stage1)
+                                    $wl = "[img]".$BASEURL."/images/warned/warn_1.png[/img] (".$warn_lev."/".$stage4.")";
+                                else
+                                    $wl = "[img]".$BASEURL."/images/warned/warn_0.png[/img] (".$warn_lev."/".$stage4.")";
+                                quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demote["id"].", '".sql_esc($language["RAT_SUBJ"]).
+                                    "', 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
+                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demote["id"]);
+                                send_pm(0, $demote['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".(($btit_settings["warn_auto_down_enable"] ==
+                                    "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"]."\n"));
+                            }
+                            if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
+                            {
+                                if(isset($demote["user_notes"]) && !empty($demote["user_notes"]))
+                                    $usernotes = unserialize(unesc($demote["user_notes"]));
+                                else
+                                    $usernotes = array();
+                                $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
+                                $new_notes = serialize($usernotes);
+                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demote["id"]);
+                            }
+                        }
+                    }
+                        // time date stuff
+                    $time_AA = (86400 * $ban['wb_days_one']);
+                    $time_BB = strtotime(now);
+                    $time_CC = ($time_BB - $time_AA);
+                        // find bad users 2
+                    if($XBTT_USE)
+                        $demotelistt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
+                            ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
+                    $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1 ORDER BY `l`.`language_url` ASC");
+                    else
+                        $demotelistt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
+                            ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl.
+                    " AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1 ORDER BY `l`.`language_url` ASC");
+                    if(@sql_num_rows($demotelistt) > 0)
+                    {
+                        $templang = "language/english";
+                        $language = $lang_english;
+                        while($demotee = $demotelistt->fetch_assoc())
+                        {
+                            $time_DD = strtotime($demotee["rat_warn_time"]);
+                            if($time_DD <= $time_CC)
+                            {
+                                    // warn bad users 2
+                                quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 2 , rat_warn_time = NOW() WHERE id=".$demotee["id"]);
+                                if($demotee["language_url"] != $templang)
+                                {
+                                    $lang_split = explode("/", strtolower(str_replace("-", "_", $demotee["language_url"])));
+                                    $language = ${"lang_".$lang_split[1]};
+                                    $templang = $demotee["language_url"];
+                                }
+                                    // send pm bad users 2
+                                $sub = sqlesc($language["RAT_SUBJ_2"]);
+                                $msg = sqlesc($art["wb_text_two"]);
+                                send_pm(0, $demotee[id], $sub, $msg);
+                                    // add warn symbol 2
+                                if($ban["wb_warn"] == "true" && $demotee["warn_lev"] < $btit_settings["warn_max"])
                                 {
                                     $stage4=$btit_settings["warn_max"];
                                     $stage3=round($btit_settings["warn_max"]*0.75);
                                     $stage2=round($btit_settings["warn_max"]*0.5);
                                     $stage1=round($btit_settings["warn_max"]*0.25);
                                     $stage0=0;
-                                    $warn_lev = ($demote["warn_lev"] + 1);
+                                    $warn_lev = ($demotee["warn_lev"] + 1);
                                     if($warn_lev >= $stage4)
                                         $wl = "[img]".$BASEURL."/images/warned/warn_max.png[/img] (".$warn_lev."/".$stage4.")";
                                     elseif($warn_lev >= $stage3)
@@ -1257,285 +1329,214 @@ function do_sanity($ts = 0)
                                         $wl = "[img]".$BASEURL."/images/warned/warn_1.png[/img] (".$warn_lev."/".$stage4.")";
                                     else
                                         $wl = "[img]".$BASEURL."/images/warned/warn_0.png[/img] (".$warn_lev."/".$stage4.")";
-                                    quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demote["id"].", '".sql_esc($language["RAT_SUBJ"]).
+                                    quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demotee["id"].", '".sql_esc($language["RAT_SUBJ_2"]).
                                         "', 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
-                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demote["id"]);
-                                    send_pm(0, $demote['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".(($btit_settings["warn_auto_down_enable"] ==
-                                        "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"]."\n"));
-                                }
-                                if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
-                                {
-                                    if(isset($demote["user_notes"]) && !empty($demote["user_notes"]))
-                                        $usernotes = unserialize(unesc($demote["user_notes"]));
-                                    else
-                                        $usernotes = array();
-                                    $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
-                                    $new_notes = serialize($usernotes);
-                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demote["id"]);
+                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demotee["id"]);
+                                    send_pm(0, $demotee['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".
+                                        (($btit_settings["warn_auto_down_enable"] == "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"].
+                                        "\n"));
                                 }
                             }
-                        }
-                        // time date stuff
-                        $time_AA = (86400 * $ban['wb_days_one']);
-                        $time_BB = strtotime(now);
-                        $time_CC = ($time_BB - $time_AA);
-                        // find bad users 2
-                        if($XBTT_USE)
-                            $demotelistt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
-                                ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
-                                $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1 ORDER BY `l`.`language_url` ASC");
-                        else
-                            $demotelistt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
-                                ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl.
-                                " AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1 ORDER BY `l`.`language_url` ASC");
-                        if(@sql_num_rows($demotelistt) > 0)
-                        {
-                            $templang = "language/english";
-                            $language = $lang_english;
-                            while($demotee = $demotelistt->fetch_assoc())
+                            if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
                             {
-                                $time_DD = strtotime($demotee["rat_warn_time"]);
-                                if($time_DD <= $time_CC)
-                                {
-                                    // warn bad users 2
-                                    quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 2 , rat_warn_time = NOW() WHERE id=".$demotee["id"]);
-                                    if($demotee["language_url"] != $templang)
-                                    {
-                                        $lang_split = explode("/", strtolower(str_replace("-", "_", $demotee["language_url"])));
-                                        $language = ${"lang_".$lang_split[1]};
-                                        $templang = $demotee["language_url"];
-                                    }
-                                    // send pm bad users 2
-                                    $sub = sqlesc($language["RAT_SUBJ_2"]);
-                                    $msg = sqlesc($art["wb_text_two"]);
-                                    send_pm(0, $demotee[id], $sub, $msg);
-                                    // add warn symbol 2
-                                    if($ban["wb_warn"] == "true" && $demotee["warn_lev"] < $btit_settings["warn_max"])
-                                    {
-                                        $stage4=$btit_settings["warn_max"];
-                                        $stage3=round($btit_settings["warn_max"]*0.75);
-                                        $stage2=round($btit_settings["warn_max"]*0.5);
-                                        $stage1=round($btit_settings["warn_max"]*0.25);
-                                        $stage0=0;
-                                        $warn_lev = ($demotee["warn_lev"] + 1);
-                                        if($warn_lev >= $stage4)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_max.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage3)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_3.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage2)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_2.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage1)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_1.png[/img] (".$warn_lev."/".$stage4.")";
-                                        else
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_0.png[/img] (".$warn_lev."/".$stage4.")";
-                                        quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demotee["id"].", '".sql_esc($language["RAT_SUBJ_2"]).
-                                            "', 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
-                                        quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demotee["id"]);
-                                        send_pm(0, $demotee['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".
-                                            (($btit_settings["warn_auto_down_enable"] == "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"].
-                                            "\n"));
-                                    }
-                                }
-                                if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
-                                {
-                                    if(isset($demotee["user_notes"]) && !empty($demotee["user_notes"]))
-                                        $usernotes = unserialize(unesc($demotee["user_notes"]));
-                                    else
-                                        $usernotes = array();
-                                    $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
-                                    $new_notes = serialize($usernotes);
-                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demotee["id"]);
-                                }
+                                if(isset($demotee["user_notes"]) && !empty($demotee["user_notes"]))
+                                    $usernotes = unserialize(unesc($demotee["user_notes"]));
+                                else
+                                    $usernotes = array();
+                                $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
+                                $new_notes = serialize($usernotes);
+                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demotee["id"]);
                             }
                         }
+                    }
                         // unwarn user who did improve
-                        if($XBTT_USE)
-                            $unwarnone = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
-                                " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1");
-                        else
-                            $unwarnone = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"].
-                                " AND `u`.`rat_warn_level` = 1");
-                        if(@sql_num_rows($unwarnone) > 0)
+                    if($XBTT_USE)
+                        $unwarnone = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
+                            " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 1");
+                    else
+                        $unwarnone = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_one"]." AND `u`.`id_level`=".$ban["wb_rank"].
+                            " AND `u`.`rat_warn_level` = 1");
+                    if(@sql_num_rows($unwarnone) > 0)
+                    {
+                        $iid = "";
+                        while($unwarna = $unwarnone->fetch_assoc())
                         {
-                            $iid = "";
-                            while($unwarna = $unwarnone->fetch_assoc())
-                            {
-                                $iid .= $unwarna["id"].",";
-                            }
-                            $iid = trim($iid, ",");
-                            if($iid != "")
-                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$iid.")");
+                            $iid .= $unwarna["id"].",";
                         }
+                        $iid = trim($iid, ",");
+                        if($iid != "")
+                            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$iid.")");
+                    }
                         // time date stuff
-                        $time_EE = (86400 * $ban['wb_days_two']);
-                        $time_FF = ($time_BB - $time_EE);
+                    $time_EE = (86400 * $ban['wb_days_two']);
+                    $time_FF = ($time_BB - $time_EE);
                         // find bad users 3
-                        if($XBTT_USE)
-                            $demotelisttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
-                                ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
-                                $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2 ORDER BY `l`.`language_url` ASC");
-                        else
-                            $demotelisttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
-                                ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl.
-                                " AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2 ORDER BY `l`.`language_url` ASC");
-                        if(@sql_num_rows($demotelisttt) > 0)
+                    if($XBTT_USE)
+                        $demotelisttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
+                            ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
+                    $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2 ORDER BY `l`.`language_url` ASC");
+                    else
+                        $demotelisttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url`, `u`.`warn_lev`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
+                            ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".$min_dl.
+                    " AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2 ORDER BY `l`.`language_url` ASC");
+                    if(@sql_num_rows($demotelisttt) > 0)
+                    {
+                        $templang = "language/english";
+                        $language = $lang_english;
+                        while($demoteee = $demotelisttt->fetch_assoc())
                         {
-                            $templang = "language/english";
-                            $language = $lang_english;
-                            while($demoteee = $demotelisttt->fetch_assoc())
+                            $time_GG = strtotime($demoteee["rat_warn_time"]);
+                            if($time_GG <= $time_FF)
                             {
-                                $time_GG = strtotime($demoteee["rat_warn_time"]);
-                                if($time_GG <= $time_FF)
-                                {
                                     // warn bad users 3
-                                    quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 3 , rat_warn_time = NOW() WHERE id=".$demoteee["id"]);
-                                    if($demoteee["language_url"] != $templang)
-                                    {
-                                        $lang_split = explode("/", strtolower(str_replace("-", "_", $demoteee["language_url"])));
-                                        $language = ${"lang_".$lang_split[1]};
-                                        $templang = $demoteee["language_url"];
-                                    }
+                                quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 3 , rat_warn_time = NOW() WHERE id=".$demoteee["id"]);
+                                if($demoteee["language_url"] != $templang)
+                                {
+                                    $lang_split = explode("/", strtolower(str_replace("-", "_", $demoteee["language_url"])));
+                                    $language = ${"lang_".$lang_split[1]};
+                                    $templang = $demoteee["language_url"];
+                                }
                                     // send pm bad users 3
-                                    $sub = sqlesc($language["RAT_SUBJ_3"]);
-                                    $msg = sqlesc($art["wb_text_fin"]);
-                                    send_pm(0, $demoteee[id], $sub, $msg);
+                                $sub = sqlesc($language["RAT_SUBJ_3"]);
+                                $msg = sqlesc($art["wb_text_fin"]);
+                                send_pm(0, $demoteee[id], $sub, $msg);
                                     // add warn symbol 3
-                                    if($ban["wb_warn"] == "true" && $demoteee["warn_lev"] < $btit_settings["warn_max"])
-                                    {
-                                        $stage4=$btit_settings["warn_max"];
-                                        $stage3=round($btit_settings["warn_max"]*0.75);
-                                        $stage2=round($btit_settings["warn_max"]*0.5);
-                                        $stage1=round($btit_settings["warn_max"]*0.25);
-                                        $stage0=0;
-                                        $warn_lev = ($demoteee["warn_lev"] + 1);
-                                        if($warn_lev >= $stage4)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_max.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage3)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_3.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage2)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_2.png[/img] (".$warn_lev."/".$stage4.")";
-                                        elseif($warn_lev >= $stage1)
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_1.png[/img] (".$warn_lev."/".$stage4.")";
-                                        else
-                                            $wl = "[img]".$BASEURL."/images/warned/warn_0.png[/img] (".$warn_lev."/".$stage4.")";
-                                        quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demoteee["id"].", '".sql_esc($language["RAT_SUBJ_2"]).
-                                            "', 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
-                                        quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demoteee["id"]);
-                                        send_pm(0, $demoteee['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".
-                                            (($btit_settings["warn_auto_down_enable"] == "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"].
-                                            "\n"));
-                                    }
-                                }
-                                if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
+                                if($ban["wb_warn"] == "true" && $demoteee["warn_lev"] < $btit_settings["warn_max"])
                                 {
-                                    if(isset($demoteee["user_notes"]) && !empty($demoteee["user_notes"]))
-                                        $usernotes = unserialize(unesc($demoteee["user_notes"]));
+                                    $stage4=$btit_settings["warn_max"];
+                                    $stage3=round($btit_settings["warn_max"]*0.75);
+                                    $stage2=round($btit_settings["warn_max"]*0.5);
+                                    $stage1=round($btit_settings["warn_max"]*0.25);
+                                    $stage0=0;
+                                    $warn_lev = ($demoteee["warn_lev"] + 1);
+                                    if($warn_lev >= $stage4)
+                                        $wl = "[img]".$BASEURL."/images/warned/warn_max.png[/img] (".$warn_lev."/".$stage4.")";
+                                    elseif($warn_lev >= $stage3)
+                                        $wl = "[img]".$BASEURL."/images/warned/warn_3.png[/img] (".$warn_lev."/".$stage4.")";
+                                    elseif($warn_lev >= $stage2)
+                                        $wl = "[img]".$BASEURL."/images/warned/warn_2.png[/img] (".$warn_lev."/".$stage4.")";
+                                    elseif($warn_lev >= $stage1)
+                                        $wl = "[img]".$BASEURL."/images/warned/warn_1.png[/img] (".$warn_lev."/".$stage4.")";
                                     else
-                                        $usernotes = array();
-                                    $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
-                                    $new_notes = serialize($usernotes);
-                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demoteee["id"]);
+                                        $wl = "[img]".$BASEURL."/images/warned/warn_0.png[/img] (".$warn_lev."/".$stage4.")";
+                                    quickQuery("INSERT INTO `{$TABLE_PREFIX}warn_logs` (`uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES (".$demoteee["id"].", '".sql_esc($language["RAT_SUBJ_2"]).
+                                        "', 'pm', UNIX_TIMESTAMP(), 'inc', 0)");
+                                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `warn_lev`=".$warn_lev.", `warn_last`=".(($warn_lev == 0)?"0":"UNIX_TIMESTAMP()")." WHERE `id`=".$demoteee["id"]);
+                                    send_pm(0, $demoteee['id'], sqlesc($language['WS_YHRAW']), sqlesc($language['WS_TRFW'].":\n\n"."[quote=".$language["SYSTEM_USER"]."]".trim(unesc($msg), ",")."[/quote]"."\n\n".$language["WS_YOUR_CUR_LEV"]."\n\n".$wl."\n\n".
+                                        (($btit_settings["warn_auto_down_enable"] == "yes" && $warn_lev > 0)?$language["WS_DEC_IN_DAYS_1"]." ".$btit_settings["warn_auto_decrease"]." ".$language["WS_DEC_IN_DAYS_2"]."\n\n":"").$language["WS_AUTO_MSG"].
+                                        "\n"));
                                 }
                             }
+                            if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")
+                            {
+                                if(isset($demoteee["user_notes"]) && !empty($demoteee["user_notes"]))
+                                    $usernotes = unserialize(unesc($demoteee["user_notes"]));
+                                else
+                                    $usernotes = array();
+                                $usernotes[] = base64_encode($language["UN_WLEV_INC"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
+                                $new_notes = serialize($usernotes);
+                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$demoteee["id"]);
+                            }
                         }
+                    }
                         // unwarn user who did improve 2
-                        if($XBTT_USE)
-                            $unwarntwo = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
-                                " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2");
-                        else
-                            $unwarntwo = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"].
-                                " AND `u`.`rat_warn_level` = 2");
-                        if(@sql_num_rows($unwarntwo) > 0)
+                    if($XBTT_USE)
+                        $unwarntwo = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
+                            " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 2");
+                    else
+                        $unwarntwo = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_two"]." AND `u`.`id_level`=".$ban["wb_rank"].
+                            " AND `u`.`rat_warn_level` = 2");
+                    if(@sql_num_rows($unwarntwo) > 0)
+                    {
+                        $jid = "";
+                        while($unwarnb = $unwarntwo->fetch_assoc())
                         {
-                            $jid = "";
-                            while($unwarnb = $unwarntwo->fetch_assoc())
-                            {
-                                $jid .= $unwarnb["id"].",";
-                            }
-                            $jid = trim($jid, ",");
-                            if($jid != "")
-                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$jid.")");
+                            $jid .= $unwarnb["id"].",";
                         }
+                        $jid = trim($jid, ",");
+                        if($jid != "")
+                            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$jid.")");
+                    }
                         // time date stuff
-                        $time_HH = (86400 * $ban['wb_days_fin']);
-                        $time_II = ($time_BB - $time_HH);
+                    $time_HH = (86400 * $ban['wb_days_fin']);
+                    $time_II = ($time_BB - $time_HH);
                         // find bad users 4
-                        if($XBTT_USE)
-                            $demotelistttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
-                                $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_fin"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3 ORDER BY `l`.`language_url` ASC");
-                        else
-                            $demotelistttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".
-                                $min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_fin"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3 ORDER BY `l`.`language_url` ASC");
-                        if(@sql_num_rows($demotelistttt) > 0)
+                    if($XBTT_USE)
+                        $demotelistttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `x`.`downloaded`  > ".
+                            $min_dl." AND (`x`.`uploaded`/`x`.`downloaded`) <= ".$ban["wb_fin"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3 ORDER BY `l`.`language_url` ASC");
+                    else
+                        $demotelistttt = do_sqlquery("SELECT `u`.`id`, `u`.`rat_warn_time`, `l`.`language_url` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` WHERE `u`.`downloaded`  > ".
+                            $min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) <= ".$ban["wb_fin"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3 ORDER BY `l`.`language_url` ASC");
+                    if(@sql_num_rows($demotelistttt) > 0)
+                    {
+                        while($demoteeee = $demotelistttt->fetch_assoc())
                         {
-                            while($demoteeee = $demotelistttt->fetch_assoc())
+                            $time_JJ = strtotime($demoteeee["rat_warn_time"]);
+                            if($time_JJ <= $time_II)
                             {
-                                $time_JJ = strtotime($demoteeee["rat_warn_time"]);
-                                if($time_JJ <= $time_II)
-                                {
                                     // ban bad users 4
-                                    quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 4 ,rat_warn_time = NOW(),bandt='yes' WHERE id=".$demoteeee["id"]);
-                                }
+                                quickQuery("UPDATE {$TABLE_PREFIX}users SET rat_warn_level = 4 ,rat_warn_time = NOW(),bandt='yes' WHERE id=".$demoteeee["id"]);
                             }
                         }
+                    }
                         // unwarn user who did improve last
-                        if($XBTT_USE)
-                            $unwarnthree = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
-                                " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3");
-                        else
-                            $unwarnthree = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"].
-                                " AND `u`.`rat_warn_level` = 3");
-                        if(@sql_num_rows($unwarnthree) > 0)
+                    if($XBTT_USE)
+                        $unwarnthree = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `xbt_users` `x` ON `u`.`id`=`x`.`uid` WHERE `x`.`downloaded`  > ".$min_dl.
+                            " AND (`x`.`uploaded`/`x`.`downloaded`) >".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"]." AND `u`.`rat_warn_level` = 3");
+                    else
+                        $unwarnthree = do_sqlquery("SELECT `u`.`id` FROM `{$TABLE_PREFIX}users` `u` WHERE `u`.`downloaded`  > ".$min_dl." AND (`u`.`uploaded`/`u`.`downloaded`) > ".$ban["wb_three"]." AND `u`.`id_level`=".$ban["wb_rank"].
+                            " AND `u`.`rat_warn_level` = 3");
+                    if(@sql_num_rows($unwarnthree) > 0)
+                    {
+                        $lid = "";
+                        while($unwarnc = $unwarnthree->fetch_assoc())
                         {
-                            $lid = "";
-                            while($unwarnc = $unwarnthree->fetch_assoc())
-                            {
-                                $lid .= $unwarnc["id"].",";
-                            }
-                            $lid = trim($lid, ",");
-                            if($lid != "")
-                                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$lid.")");
+                            $lid .= $unwarnc["id"].",";
                         }
+                        $lid = trim($lid, ",");
+                        if($lid != "")
+                            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `rat_warn_level`=0 WHERE `id` IN (".$lid.")");
                     }
                 }
             }
         }
     }
+}
     // warn-ban system with acp by DT
     //file host Hack Start
-         $r = do_sqlquery("SELECT id, filename, added FROM {$TABLE_PREFIX}file_hosting WHERE added < '" . date('Y-m-d', strtotime('-' . $btit_settings["fhost_delete_days"] . ' weeks')) . "'");
-         while ($del = $r->fetch_array())
-            {
+$r = do_sqlquery("SELECT id, filename, added FROM {$TABLE_PREFIX}file_hosting WHERE added < '" . date('Y-m-d', strtotime('-' . $btit_settings["fhost_delete_days"] . ' weeks')) . "'");
+while ($del = $r->fetch_array())
+{
   $MANNE="$CURRENTPATH/../$FILE_HOSTINGPATH";
-              unlink("$MANNE/$del[filename]");
-              quickQuery("DELETE FROM {$TABLE_PREFIX}file_hosting WHERE id=$del[id]");
-            }
+  unlink("$MANNE/$del[filename]");
+  quickQuery("DELETE FROM {$TABLE_PREFIX}file_hosting WHERE id=$del[id]");
+}
 //file host Hack End
     // SANITY FOR TORRENTS
-    $results = do_sqlquery("SELECT info_hash, seeds, leechers, finished, dlbytes, filename FROM {$TABLE_PREFIX}files WHERE external='no'");
-    $i = 0;
-    while($row = $results->fetch_row())
-    {
-        list($hash, $seeders, $leechers, $finished, $bytes, $filename) = $row;
-        $timeout = time() - (intval($GLOBALS["report_interval"] * 2));
+$results = do_sqlquery("SELECT info_hash, seeds, leechers, finished, dlbytes, filename FROM {$TABLE_PREFIX}files WHERE external='no'");
+$i = 0;
+while($row = $results->fetch_row())
+{
+    list($hash, $seeders, $leechers, $finished, $bytes, $filename) = $row;
+    $timeout = time() - (intval($GLOBALS["report_interval"] * 2));
         // for testing purpose -- begin
-        $resupd = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}peers where lastupdate < ".$timeout." AND infohash='$hash'");
-        if(sql_num_rows($resupd) > 0)
+    $resupd = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}peers where lastupdate < ".$timeout." AND infohash='$hash'");
+    if(sql_num_rows($resupd) > 0)
+    {
+        while($resupdate = $resupd->fetch_array())
         {
-            while($resupdate = $resupd->fetch_array())
-            {
-                $uploaded = max(0, $resupdate["uploaded"]);
-                $downloaded = max(0, $resupdate["downloaded"]);
-                $pid = $resupdate["pid"];
-                $ip = $resupdate["ip"];
+            $uploaded = max(0, $resupdate["uploaded"]);
+            $downloaded = max(0, $resupdate["downloaded"]);
+            $pid = $resupdate["pid"];
+            $ip = $resupdate["ip"];
                 // update user->peer stats only if not livestat
-                if(!$LIVESTATS)
-                {
-                    if($PRIVATE_ANNOUNCE)
-                        quickQuery("UPDATE {$TABLE_PREFIX}users SET uploaded=uploaded+$uploaded, downloaded=downloaded+$downloaded WHERE pid='$pid' AND id>1 LIMIT 1");
+            if(!$LIVESTATS)
+            {
+                if($PRIVATE_ANNOUNCE)
+                    quickQuery("UPDATE {$TABLE_PREFIX}users SET uploaded=uploaded+$uploaded, downloaded=downloaded+$downloaded WHERE pid='$pid' AND id>1 LIMIT 1");
                     else // ip
 
-                        quickQuery("UPDATE {$TABLE_PREFIX}users SET uploaded=uploaded+$uploaded, downloaded=downloaded+$downloaded WHERE cip='$ip' AND id>1 LIMIT 1");
+                    quickQuery("UPDATE {$TABLE_PREFIX}users SET uploaded=uploaded+$uploaded, downloaded=downloaded+$downloaded WHERE cip='$ip' AND id>1 LIMIT 1");
                 }
                 // update dead peer to non active in history table
                 if($LOG_HISTORY)
@@ -1696,7 +1697,7 @@ function do_sanity($ts = 0)
         {
             $query = do_sqlquery("SELECT `u`.`id`, `u`.`warn_last`, `u`.`warn_lev`, `l`.`language_url`".(($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_warn"] == "enabled")?
                 ", `u`.`user_notes`":"")." FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language` = `l`.`id`  WHERE `u`.`warn_lev`>0 AND UNIX_TIMESTAMP() >= ((".$btit_settings["warn_auto_decrease"].
-                "*86400)+`u`.`warn_last`) AND `u`.`warn_lev`<=".$btit_settings["warn_max"]." ".(($btit_settings["fmhack_booted"] == "enabled")?"AND `u`.`booted`='no'":"")." ORDER BY `l`.`language_url` ASC");
+            "*86400)+`u`.`warn_last`) AND `u`.`warn_lev`<=".$btit_settings["warn_max"]." ".(($btit_settings["fmhack_booted"] == "enabled")?"AND `u`.`booted`='no'":"")." ORDER BY `l`.`language_url` ASC");
             $templang = "language/english";
             $language = $lang_english;
             if(@sql_num_rows($query) > 0)
@@ -1763,7 +1764,7 @@ function do_sanity($ts = 0)
                     }
                     quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `booted`='yes', `whybooted`='".sql_esc($language['BOOT_GIVE_REA']."<br /><br />".$language["WS_WHY_BOOTED"]."<br /><br />".$language['BOOT_GIVE_WHO'].
                         " ".$language["SYSTEM_USER"]."<br /><br />".$language['BOOT_GIVE_EXP'].": ".date("j M Y \a\\t g:i a", (time() + ($btit_settings["warn_booted_days"] * 86400))))."', `whobooted`='".sql_esc($language["SYSTEM_USER"])."', `addbooted`='".date("Y-m-d H:i:s", (time
-                        () + ($btit_settings["warn_booted_days"] * 86400)))."' WHERE `id`=".$conf["id"]);
+                            () + ($btit_settings["warn_booted_days"] * 86400)))."' WHERE `id`=".$conf["id"]);
                     send_pm(0, $conf["id"], sqlesc($language['BOOT_GIVE']), sqlesc($language['BOOT_GIVE_REA']."\n\n".$language["WS_WHY_BOOTED"]."\n\n".$language['BOOT_GIVE_WHO']." ".$language["SYSTEM_USER"]."\n\n".$language['BOOT_GIVE_EXP'].
                         ": ".date("j M Y \a\\t g:i a", (time() + ($btit_settings["warn_booted_days"] * 86400)))));
                     if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_booted"] == "enabled" && $btit_settings["un_warn"] == "enabled")
@@ -1983,110 +1984,110 @@ function do_sanity($ts = 0)
         {
             foreach($res as $row)
             {
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}files` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}timestamps` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}comments` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}ratings` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}peers` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
-               quickQuery("DELETE FROM `{$TABLE_PREFIX}history` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
-               if ($XBTT_USE)
-                  quickQuery("UPDATE `xbt_files` SET `flags`=1 WHERE `info_hash`='".sql_esc($row["bin_hash"])."'");
-            }
-        }
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}files` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}timestamps` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}comments` WHERE `info_hash`='".sql_esc($row["info_hash"])."'");
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}ratings` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}peers` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
+             quickQuery("DELETE FROM `{$TABLE_PREFIX}history` WHERE `infohash`='".sql_esc($row["info_hash"])."'");
+             if ($XBTT_USE)
+              quickQuery("UPDATE `xbt_files` SET `flags`=1 WHERE `info_hash`='".sql_esc($row["bin_hash"])."'");
+      }
+  }
         // Autoprune users
         // First warning
-        $res=get_result("SELECT `id`, `username`, `email` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`=0 AND `prune_level`=0 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`)<(UNIX_TIMESTAMP()-(".$btit_settings["advprune_firstwarn_max"]."*86400))");
-        if(count($res)>0)
-        {
-            foreach($res as $row)
-            {
-                $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_firstwarn_msg"]);
-                send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ"],$email_content);
-                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `prune_last_warn`=UNIX_TIMESTAMP(), `prune_level`=1 WHERE `id`=".$row["id"]);
-            }
-        }
-        // Second warning
-        $res=get_result("SELECT `id`, `username`, `email` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`<(UNIX_TIMESTAMP()-((".$btit_settings["advprune_secondwarn_max"]."-".$btit_settings["advprune_firstwarn_max"].")*86400)) AND `prune_level`=1 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-(".$btit_settings["advprune_secondwarn_max"]."*86400))");
-        if(count($res)>0)
-        {
-            foreach($res as $row)
-            {
-                $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_secondwarn_msg"]);
-                send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ"],$email_content);
-                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `prune_last_warn`=UNIX_TIMESTAMP(), `prune_level`=2 WHERE `id`=".$row["id"]);
-            }
-        }
-        // Time to prune
-        $res=get_result("SELECT `id`, `username`, `email`, `smf_fid`, `ipb_fid` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`<(UNIX_TIMESTAMP()-(".$btit_settings["advprune_del_after"]."*86400)) AND `prune_level`=2 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-((".$btit_settings["advprune_del_after"]."+".$btit_settings["advprune_secondwarn_max"].")*86400))");
-        if(count($res)>0)
-        {
-            foreach($res as $row)
-            {
-                $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_final_msg"]);
-                send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ2"],$email_content);
-                quickQuery("DELETE FROM `{$TABLE_PREFIX}users` WHERE `id`=".$row["id"]." LIMIT 1");
-                if(substr($FORUMLINK, 0, 3) == 'smf')
-                    quickQuery("DELETE FROM `{$db_prefix}members` WHERE ".(($FORUMLINK == "smf")?"`ID_MEMBER`":"`id_member`")."=".$row["smf_fid"]." LIMIT 1");
-                elseif($FORUMLINK == 'ipb')
-                    quickQuery("DELETE FROM `{$ipb_prefix}members` WHERE `member_id`=".$row["ipb_fid"]." LIMIT 1");
-                if($XBTT_USE)
-                    quickQuery("DELETE FROM `xbt_users` WHERE `uid`=".$row["id"]." LIMIT 1");
-            }
-        }
-        // Prune unvalidated users
-        $res=get_result("SELECT `id`, `smf_fid`, `ipb_fid` FROM `{$TABLE_PREFIX}users` WHERE `id_level`=2 AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-(".$btit_settings["advprune_validate_max"]."*86400))");
-        if(count($res)>0)
-        {
-            foreach($res as $row)
-            {
-                quickQuery("DELETE FROM `{$TABLE_PREFIX}users` WHERE `id`=".$row["id"]." LIMIT 1");
-                if(substr($FORUMLINK, 0, 3) == 'smf')
-                    quickQuery("DELETE FROM `{$db_prefix}members` WHERE ".(($FORUMLINK == "smf")?"`ID_MEMBER`":"`id_member`")."=".$row["smf_fid"]." LIMIT 1");
-                elseif($FORUMLINK == 'ipb')
-                    quickQuery("DELETE FROM `{$ipb_prefix}members` WHERE `member_id`=".$row["ipb_fid"]." LIMIT 1");
-                if($XBTT_USE)
-                    quickQuery("DELETE FROM `xbt_users` WHERE `uid`=".$row["id"]." LIMIT 1");
-            }
-        }
-    }
-    if($btit_settings["fmhack_download_requires_introduction"]=="enabled")
+  $res=get_result("SELECT `id`, `username`, `email` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`=0 AND `prune_level`=0 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`)<(UNIX_TIMESTAMP()-(".$btit_settings["advprune_firstwarn_max"]."*86400))");
+  if(count($res)>0)
+  {
+    foreach($res as $row)
     {
-        quickQuery("UPDATE `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` SET `u`.`made_intro`=1 WHERE `u`.`made_intro`=0 AND `ul`.`down_req_intro`='no'");
-        if(substr($FORUMLINK, 0, 3) == "smf" || $FORUMLINK=="ipb")
+        $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_firstwarn_msg"]);
+        send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ"],$email_content);
+        quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `prune_last_warn`=UNIX_TIMESTAMP(), `prune_level`=1 WHERE `id`=".$row["id"]);
+    }
+}
+        // Second warning
+$res=get_result("SELECT `id`, `username`, `email` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`<(UNIX_TIMESTAMP()-((".$btit_settings["advprune_secondwarn_max"]."-".$btit_settings["advprune_firstwarn_max"].")*86400)) AND `prune_level`=1 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-(".$btit_settings["advprune_secondwarn_max"]."*86400))");
+if(count($res)>0)
+{
+    foreach($res as $row)
+    {
+        $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_secondwarn_msg"]);
+        send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ"],$email_content);
+        quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `prune_last_warn`=UNIX_TIMESTAMP(), `prune_level`=2 WHERE `id`=".$row["id"]);
+    }
+}
+        // Time to prune
+$res=get_result("SELECT `id`, `username`, `email`, `smf_fid`, `ipb_fid` FROM `{$TABLE_PREFIX}users` WHERE `prune_last_warn`<(UNIX_TIMESTAMP()-(".$btit_settings["advprune_del_after"]."*86400)) AND `prune_level`=2 AND `id_level` NOT IN (".$btit_settings["advprune_exempt_ranks"].") AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-((".$btit_settings["advprune_del_after"]."+".$btit_settings["advprune_secondwarn_max"].")*86400))");
+if(count($res)>0)
+{
+    foreach($res as $row)
+    {
+        $email_content=str_replace(array("{member}", "{sitename}", "{siteurl}", "{warn1days}", "{warn2days}", "{warn3days}", "{warnoverall}"), array($row["username"], $SITENAME, $BASEURL, $btit_settings["advprune_firstwarn_max"], $btit_settings["advprune_secondwarn_max"], $btit_settings["advprune_del_after"], ($btit_settings["advprune_secondwarn_max"]+$btit_settings["advprune_del_after"])), $btit_settings["advprune_final_msg"]);
+        send_mail($row["email"],"[".$SITENAME."] ".$language["PRUNE_WARN_SUBJ2"],$email_content);
+        quickQuery("DELETE FROM `{$TABLE_PREFIX}users` WHERE `id`=".$row["id"]." LIMIT 1");
+        if(substr($FORUMLINK, 0, 3) == 'smf')
+            quickQuery("DELETE FROM `{$db_prefix}members` WHERE ".(($FORUMLINK == "smf")?"`ID_MEMBER`":"`id_member`")."=".$row["smf_fid"]." LIMIT 1");
+        elseif($FORUMLINK == 'ipb')
+            quickQuery("DELETE FROM `{$ipb_prefix}members` WHERE `member_id`=".$row["ipb_fid"]." LIMIT 1");
+        if($XBTT_USE)
+            quickQuery("DELETE FROM `xbt_users` WHERE `uid`=".$row["id"]." LIMIT 1");
+    }
+}
+        // Prune unvalidated users
+$res=get_result("SELECT `id`, `smf_fid`, `ipb_fid` FROM `{$TABLE_PREFIX}users` WHERE `id_level`=2 AND UNIX_TIMESTAMP(`lastconnect`) < (UNIX_TIMESTAMP()-(".$btit_settings["advprune_validate_max"]."*86400))");
+if(count($res)>0)
+{
+    foreach($res as $row)
+    {
+        quickQuery("DELETE FROM `{$TABLE_PREFIX}users` WHERE `id`=".$row["id"]." LIMIT 1");
+        if(substr($FORUMLINK, 0, 3) == 'smf')
+            quickQuery("DELETE FROM `{$db_prefix}members` WHERE ".(($FORUMLINK == "smf")?"`ID_MEMBER`":"`id_member`")."=".$row["smf_fid"]." LIMIT 1");
+        elseif($FORUMLINK == 'ipb')
+            quickQuery("DELETE FROM `{$ipb_prefix}members` WHERE `member_id`=".$row["ipb_fid"]." LIMIT 1");
+        if($XBTT_USE)
+            quickQuery("DELETE FROM `xbt_users` WHERE `uid`=".$row["id"]." LIMIT 1");
+    }
+}
+}
+if($btit_settings["fmhack_download_requires_introduction"]=="enabled")
+{
+    quickQuery("UPDATE `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` SET `u`.`made_intro`=1 WHERE `u`.`made_intro`=0 AND `ul`.`down_req_intro`='no'");
+    if(substr($FORUMLINK, 0, 3) == "smf" || $FORUMLINK=="ipb")
+    {
+        if(substr($FORUMLINK, 0, 3) == "smf")
         {
-            if(substr($FORUMLINK, 0, 3) == "smf")
+            if($btit_settings["ibd_forumid"]>0 && $btit_settings["ibd_topicid"]>0)
+                $res=get_result("SELECT `u`.`id`, COUNT(*) FROM `{$db_prefix}messages` `m` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`smf_fid`=`m`.`id_member` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `m`.`id_board`=".$btit_settings["ibd_forumid"]." AND `m`.`id_topic`=".$btit_settings["ibd_topicid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `m`.`id_member`");
+            else
+                $res=get_result("SELECT `u`.`id`, COUNT(*) FROM `{$db_prefix}topics` `t` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`smf_fid`=`t`.`id_member_started` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `t`.`id_board`=".$btit_settings["ibd_forumid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `t`.`id_member_started`");
+        }
+        elseif($FORUMLINK=="ipb")
+        {
+            if($btit_settings["ibd_forumid"]>0 && $btit_settings["ibd_topicid"]>0)
+                die("SELECT `u`.`id`, COUNT(*) FROM `{$ipb_prefix}posts` `p` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`ipb_fid`=`p`.`author_id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `p`.`topic_id`=".$btit_settings["ibd_topicid"]." AND `u`.`made_intro` =0 AND `ul`.`down_req_intro`='yes' GROUP BY `p`.`author_id`");
+            else
+                die("SELECT `u`.`id`, COUNT(*) FROM `{$ipb_prefix}topics` `t` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`ipb_fid` = `t`.`starter_id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `t`.`forum_id` =".$btit_settings["ibd_forumid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `t`.`starter_id`");
+        }
+        if(count($res)>0)
+        {
+            $updateList="";
+            foreach($res as $row)
             {
-                if($btit_settings["ibd_forumid"]>0 && $btit_settings["ibd_topicid"]>0)
-                    $res=get_result("SELECT `u`.`id`, COUNT(*) FROM `{$db_prefix}messages` `m` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`smf_fid`=`m`.`id_member` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `m`.`id_board`=".$btit_settings["ibd_forumid"]." AND `m`.`id_topic`=".$btit_settings["ibd_topicid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `m`.`id_member`");
-                else
-                    $res=get_result("SELECT `u`.`id`, COUNT(*) FROM `{$db_prefix}topics` `t` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`smf_fid`=`t`.`id_member_started` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `t`.`id_board`=".$btit_settings["ibd_forumid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `t`.`id_member_started`");
+                $updateList.=$row["id"].",";
             }
-            elseif($FORUMLINK=="ipb")
+            if($updateList!="")
             {
-                if($btit_settings["ibd_forumid"]>0 && $btit_settings["ibd_topicid"]>0)
-                    die("SELECT `u`.`id`, COUNT(*) FROM `{$ipb_prefix}posts` `p` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`ipb_fid`=`p`.`author_id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `p`.`topic_id`=".$btit_settings["ibd_topicid"]." AND `u`.`made_intro` =0 AND `ul`.`down_req_intro`='yes' GROUP BY `p`.`author_id`");
-                else
-                    die("SELECT `u`.`id`, COUNT(*) FROM `{$ipb_prefix}topics` `t` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`ipb_fid` = `t`.`starter_id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `t`.`forum_id` =".$btit_settings["ibd_forumid"]." AND `u`.`made_intro`=0 AND `ul`.`down_req_intro`='yes' GROUP BY `t`.`starter_id`");
-            }
-            if(count($res)>0)
-            {
-                $updateList="";
-                foreach($res as $row)
-                {
-                    $updateList.=$row["id"].",";
-                }
-                if($updateList!="")
-                {
-                    $updateList=trim($updateList, ",");
-                    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `made_intro`=1 WHERE `id` IN(".$updateList.")");
-                }
+                $updateList=trim($updateList, ",");
+                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `made_intro`=1 WHERE `id` IN(".$updateList.")");
             }
         }
     }
+}
 
     // OK We're finished, let's reset max_execution_time and memory_limit back to the php.ini defaults
-    @ini_restore("max_execution_time");
-    @ini_restore("memory_limit");
+@ini_restore("max_execution_time");
+@ini_restore("memory_limit");
 }
 
 ?>
