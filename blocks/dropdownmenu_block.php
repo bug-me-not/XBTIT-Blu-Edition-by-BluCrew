@@ -68,5 +68,6 @@ if ($CURUSER["admin_access"]=="yes") {
         print("<li class='divider'></li>");
         print("<li><a href='BluCrewPanel/index.html'>BluCrew Panel</a></li>\n");
         print("</ul></li>");
+        
     }
 ?>

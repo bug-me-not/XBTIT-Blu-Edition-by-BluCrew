@@ -159,9 +159,11 @@ print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='inde
 //Snatched torrents
 
 print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$xx."</td>\n");
-print("<td class=\"green\" align=\"center\"><a class=\"mainmenu\"> &uArr;&nbsp;".makesize($CURUSER['uploaded']));
-print("</td><td class=\"red\" align=\"center\"><a class=\"mainmenu\"> &dArr;&nbsp;".makesize($CURUSER['downloaded']));
-print("</td><td class=\"yellow\" align=\"center\"><a class=\"mainmenu\">&#8645;&nbsp;".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---")."</td>\n");
+print("<td class= align=\"center\"><a class=\"mainmenu\"> <i class='fa fa-arrow-up' aria-hidden='true'></i>
+&nbsp;".makesize($CURUSER['uploaded']));
+print("</td><td class= align=\"center\"><a class=\"mainmenu\"> <i class='fa fa-arrow-down' aria-hidden='true'></i>
+&nbsp;".makesize($CURUSER['downloaded']));
+print("</td><td class= align=\"center\"><a class=\"mainmenu\"><i class'fa fa-refresh' aria-hidden='true'></i>&nbsp;".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---")."</td>\n");
 
 if ($CURUSER["announce"]=="yes")
 print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href=\"index.php?page=announcement&amp;uid=".$CURUSER["uid"]."\"><img src=\"images/ann.png\"></a></td>\n");
