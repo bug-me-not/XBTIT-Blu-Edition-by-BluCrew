@@ -176,7 +176,7 @@ $q(function() {
 </if:imageup_enabled>
 
 <if:internal_clock>
-<div align="center" class="clock-wrapper">
+<div align="center" class="panel">
 <script type="text/javascript" src="jscript/countdown.js"></script>
 <link href="css/countdown.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
@@ -410,13 +410,6 @@ $clock(document).ready(function(){
    <tag:torrent.description /></td>
    </tr>
 
-   <if:media_enabled>
-   <tr>
-   <td align="right" class="header" valign="top"><tag:language.MPLAYER /></td>
-   <td class="lista" align="center"><tag:torrent.mplayer /></td>
-   </tr>
-   </if:media_enabled>
-
    <YOUTUBE>
    <tr>
    <td align="right" class="header"><tag:language.YT /><img src="images/youtube.gif"></td>
@@ -440,16 +433,20 @@ $clock(document).ready(function(){
    </if:LEVEL_SC>
    </if:st_comm_enabled>
 
-   <if:imdb_enabled>
-   <if:imdb>
    <tr>
    <td align="right" class="header" valign="top">BluMovieDB</td>
    <td class="lista" align="center" style="text-align:left;" valign="top">COMING SOON!</td>
    </tr>
-   <tag:extra1 />
-   </if:imdb>
-   </if:imdb_enabled>
 
+   <tr>
+   <td align="right" class="header">Stream This</td>
+   <td class="lista" style="text-align:left;" valign="top"><tag:streaming /></td>
+   </tr>
+      
+   <tr>
+   <td align="right" class="header">Artwork<br >(High Res)</td>
+   <td class="lista" style="text-align:left;" valign="top"><tag:covers /></td>
+   </tr>
 
    <tr>
    <td align="right" class="header"><tag:language.CATEGORY_FULL /></td>
@@ -686,7 +683,7 @@ $clock(document).ready(function(){
    </tr>
    <tr>
    <td class="header" align="left" valign="top">
-   <table width="140">
+   <table class="table table-bordered">
    <tr>
    <td>
    <tag:comments[].user />
