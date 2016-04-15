@@ -1317,4 +1317,48 @@ if($btit_settings["fmhack_ads_system"]=="enabled" && in_array($CURUSER["id_level
    }
    unset($clocktime); unset($clocknow); unset($clockup); unset($clockdone);
    //Internal clock hack
+
+   // cover/artwork section by medishack
+   $artq = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers WHERE imdb=".$row['imdb']."");
+   $artc = sql_num_rows($artq);
+   
+   $coverquery = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers");
+   $covernum = sql_num_rows($coverquery);
+
+if ($artc == 0)
+{
+   $artwork = "No Covers/Artwork currently available for this torrent <a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
+}else{
+$artwork = ""; 
+   while ($artr = $artq->fetch_array()) 
+   {
+   $loc = "covers/".$artr['filename'];
+   $name = $artr['name']." - ".$artr['type'] ." ". $artr['scan'];
+   $desc = $artr['name'] . " - Width = " .$artr['width']. "px Height = " . $artr['height'] ."px";
+   $artwork .= "<a href='covers/download.php?img={$artr['filename']}&name={$name}'><img src='coverthumb.php?file={$loc}&maxw=400&maxh=150' alt='{$desc}' title='{$desc}' border='0' /></a>&nbsp; &nbsp;";   
+   }
+   
+   $artwork .= "<br /><br /><a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
+}  
+$torrenttpl->set("covers",$artwork);
+// cover/artwork section by medishack
+
+// add streaming
+$streaming = "";
+if ($CURUSER['can_stream'] == 'yes'){
+   // only allow vip to see the stream link
+$query = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}stream WHERE imdb = {$row["imdb"]}");
+$rows = $query->fetch_array();
+if ($rows > 0)
+   $streaming .= "<a href=\"index.php?page=modules&module=video_player&id={$row["imdb"]}\"><img src=\"images/stream_now.png\" /></a>";
+else
+   $streaming .= "This title is currently not available try later";
+}
+
+if ($CURUSER['can_stream'] == 'no'){
+   $streaming .= "Your user group is not enabled for streaming you need to be VIP <a href='index.php?page=modules&module=video_player&id=1'>Click Here to Watch the Promo</a>";
+}
+
+$torrenttpl->set("streaming",$streaming);
+// add streaming
    ?>
