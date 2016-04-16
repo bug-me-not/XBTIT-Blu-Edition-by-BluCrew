@@ -147,7 +147,7 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
    {
       print("<tr><td align=\"center\"><button class='btn btn-xs btn-danger' type='button'>".$language["HNR_ABBREVIATION"].": ".$hnr[0]["count"]."</div></button></td>\n");
    }
-
+/*
              if($btit_settings["userinfo_style"]!="disabled")
              {
                  print("<tr><td align=\"center\">");
@@ -161,21 +161,8 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
                 }
                 print("</select>");
                 print("</td>\n</tr>\n");
-             }
-             if($btit_settings["userinfo_language"]!="disabled")
-             {
-                 print("<tr><td align=\"center\">");
-                 print($language["USER_LANGUE"].":<br />\n<select name=\"langue\" size=\"1\" onchange=\"location=document.jump.langue.options[document.jump.langue.selectedIndex].value\">");
-                 foreach($langue as $a)
-                 {
-                     print("<option ");
-                     if ($a["id"]==$CURUSER["language"])
-                         print("selected=\"selected\"");
-                     print(" value=\"account_change.php?langue=".$a["id"]."&amp;returnto=".urlencode($_SERVER['REQUEST_URI'])."\">".$a["language"]."</option>");
-                 }
-                 print("</select>");
-                 print("</td>\n</tr>\n");
-             }
+             }*/
+             
              print("\n<tr><td align=\"center\"><button class='btn btn-xs btn-default' type='button'><a class= \"user\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></button></td></tr>\n");
              print("\n<tr><td align=\"center\"><button class='btn btn-xs btn-default' type='button'><a class=\"user\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></button></td></tr>\n");
              if ($CURUSER["admin_access"]=="yes")
