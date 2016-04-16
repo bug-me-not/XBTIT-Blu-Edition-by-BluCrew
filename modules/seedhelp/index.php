@@ -54,6 +54,7 @@ $seedhelp = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.
 	?>
 </table>
 <br /><br />
+<center><h4>Created by Spidi----Modified by BluCrew</h4></center>
 
 <?php
 $module_out=ob_get_contents();
