@@ -58,6 +58,14 @@ if ($CURUSER["id_level"]>=3 && $btit_settings['fmhack_games']=='enabled')
   print("<li><a href='index.php?page=games'>Games</a></li>\n");
 }
 
+//THEMES
+ print("<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>Color<b class='caret'></b></a>\n");
+        print("<ul class='dropdown-menu'>\n");
+        print("<li><a href='#' data-theme='Dark' class='theme-link'>Dark (Default)</a></li>\n");
+        print("<li><a href='#' data-theme='Light' class='theme-link'>Light</a></li>\n");
+        print("<li><a href='#' data-theme='Light V2' class='theme-link'>Light V2</a></li>\n");
+        print("</ul></li>");
+
 //STAFF
 if ($CURUSER["admin_access"]=="yes") {
         require_once(load_language("lang_admin.php"));
@@ -71,3 +79,4 @@ if ($CURUSER["admin_access"]=="yes") {
         
     }
 ?>
+

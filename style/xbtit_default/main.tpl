@@ -14,7 +14,6 @@
 <!-- #CSS Links -->
 <!-- Basic Styles -->
       <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -56,6 +55,22 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+ <script>
+var themes = {
+    "Dark": "assets/bootstrap/css/bootstrap.css",
+    "Light" : "assets/bootstrap/css/bootstrap1.css",
+    "Light V2" : "assets/bootstrap/css/bootstrap2.css"
+
+}
+$(function(){
+   var themesheet = $('<link href="'+themes['Dark']+'" rel="stylesheet" />');
+    themesheet.appendTo('head');
+    $('.theme-link').click(function(){
+       var themeurl = themes[$(this).attr('data-theme')]; 
+        themesheet.attr('href',themeurl);
+    });
+});
+</script>
 <!-- JavaScript -->
 
 <if:IS_DISPLAYED_1>
