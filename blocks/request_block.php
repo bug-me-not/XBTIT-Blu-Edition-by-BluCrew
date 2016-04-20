@@ -34,7 +34,7 @@ block_begin("Top Bountied Requests");
 global $btit_settings ;
 require_once load_language("lang_requests.php");
 require_once dirname(__FILE__)."/../include/offset.php";
-$number = 5;//$btit_settings["req_number"];
+$number = $btit_settings["req_limit"];
 
 $res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat`.`name` as `catname`, `req`.`id`,`req`.`reqname` , UNIX_TIMESTAMP(`req`.`dateadded`) as `dateadded` , `req`.`requester` , (SELECT sum(`reqbou`.`seedbonus`) FROM `{$TABLE_PREFIX}requests_bounty` `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`)as `bounty` , `req`.`uploadedby`,`req`.`infohash`, `u`.`username` , `ul`.`suffixcolor` , `ul`.`prefixcolor` FROM `{$TABLE_PREFIX}requests` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `req`.`requester`=`u`.`id` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`id`=`u`.`id_level` LEFT JOIN `{$TABLE_PREFIX}categories` `cat` ON `cat`.`id`=`req`.`category` ORDER BY `bounty` DESC, `req`.`id` DESC LIMIT {$number}");
 
