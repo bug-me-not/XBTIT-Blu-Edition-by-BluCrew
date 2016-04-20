@@ -994,7 +994,7 @@ if($count > 0)
                $find = array(",");
                $rep = array("&nbsp;|&nbsp;");
                $list=str_replace($find, $rep, $data["genre"], $list);
-               $torrents[$i]["imdb_genre"] = .$list;
+               $torrents[$i]["imdb_genre"] = "".$list;
             }
             else
             $torrents[$i]["imdb_genre"]="";
