@@ -1,7 +1,3 @@
-<div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">Hit & Runs</h4>
-</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -73,6 +69,3 @@ global $btit_settings, $TABLE_PREFIX, $XBTT_USE, $language, $res_seo;
 
 
 ?>
-<div class="panel-footer">
-</div>
-</div>

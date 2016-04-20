@@ -2,7 +2,6 @@
 <div class="panel-heading">
 <h4 class="text-center">Latest Uploads</h4>
 </div>
-<ul>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 //  xbtit - Bittorrent tracker/frontend
@@ -80,7 +79,7 @@ else
       if($btit_settings["nav"]==true)
       {
          ?>
-         #SliderNameNavigation { margin: 10px 0 0 0; padding-top: 15px; height: 15px; text-align: center; -moz-border-radius: 6px 6px; background: #FFF; }
+         #SliderNameNavigation { margin: 0px 0 0 0; padding-top: 15px; height: 30px; text-align: center; -moz-border-radius: 6px 6px; background: #FFF; }
          #SliderNameNavigation a:link, #SliderNameNavigation a:active, #SliderNameNavigation a:visited, #SliderNameNavigation a:hover{
             margin: 0 2px;
             background: url(images/slider/nav.gif) no-repeat center center;
@@ -201,7 +200,4 @@ else
 }
 }
 ?>
-</ul>
-<div class="panel-footer">
-</div>
 </div>

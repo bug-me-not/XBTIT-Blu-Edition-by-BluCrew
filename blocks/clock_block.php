@@ -1,7 +1,3 @@
-<div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">Clock</h4>
-</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -40,6 +36,3 @@ block_begin("Clock",1,"center");
 clock_display($clocktype);
 block_end();
 ?>
-<div class="panel-footer">
-</div>
-</div>

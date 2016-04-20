@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Todays Birthdays</h4>
+<h4 class="text-center">Birthdays</h4>
 </div>
 <?php
 
