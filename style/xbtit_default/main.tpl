@@ -113,7 +113,7 @@ Christmas Snowstorm End-->
     </div></nav>
 
 
-<!-- SideNav 
+<!-- SideNav  -->
 <div id='snav' class='en'>
   <ul>
     <li>
@@ -123,7 +123,7 @@ Christmas Snowstorm End-->
       </a>
     </li>
      <li>
-      <a href='index.php?page=modules&amp;module=cover'>
+      <a href='index.php?page=modules&amp;module=covers'>
         <i class="fa fa-photo"></i>
         <span>Artwork Section</span>
       </a>
@@ -201,7 +201,7 @@ Christmas Snowstorm End-->
       </a>
     </li>
   </ul>
-</div> -->
+</div>
 
    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
    <if:IS_DISPLAYED_2>
