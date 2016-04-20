@@ -87,7 +87,7 @@
           <input type='hidden' name='req_id' value='<tag:req_id />'>
           <input type='hidden' name='uid' value='<tag:uid />'>
           <input type='hidden' name='auth' value='<tag:uid_auth />'>
-          <input type='submit' value='<tag:language.TRAV_TJ />'>
+          <input type='submit' class='btn btn-primary btn-sm' value='<tag:language.TRAV_TJ />'>
         </form>
         <else:can_upload1>
         <tag:language.TRAV_JOB_NO />
@@ -148,7 +148,7 @@
   <tr>
     <td align="center" colspan="3" class="header">
     <tag:lock />
-    <button id="insert_comment" class="button">Post a Comment</button>
+    <button id="insert_comment" class="btn btn-info">Post a Comment</button>
     </td>
   </tr>
   <div style="height:17px" ><div id="flash" align="center" ></div></div>
