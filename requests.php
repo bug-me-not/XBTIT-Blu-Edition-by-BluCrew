@@ -44,6 +44,9 @@ else
 
 					$reqdetailstpl = new bTemplate();
 
+					$reqdetailstpl->set("comment_id",$id);
+                    $reqdetailstpl->set("comment_comment",textbbcode("comment","comment",htmlspecialchars(unesc($comment))));
+
 					$reqdetailstpl->set("language",$language);
 					$reqdetailstpl->set("req_head","REQUESTS -> DETAILS");
 					$reqdetailstpl->set("can_edit",(($CURUSER['admin_access']=='yes'||$CURUSER['uid']==$res['requester'])?true:false),true);

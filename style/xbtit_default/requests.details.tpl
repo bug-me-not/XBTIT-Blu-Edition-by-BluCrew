@@ -136,14 +136,99 @@
 <br>
 <br>
 </div>
+
+
 <div class="panel panel-default">
    <div class="panel-heading">
       <h4>Comments</h4>
    </div>
    <div class="panel-body">
       <table class="table table-striped">
-  <center><h2>Comments comming soon </h2></center>
+  <table width="100%" class="lista">
+  <tr>
+    <td align="center" colspan="3" class="header">
+    <tag:lock />
+    <button id="insert_comment" class="button">Post a Comment</button>
+    </td>
+  </tr>
+  <div style="height:17px" ><div id="flash" align="center" ></div></div>
+
+      <table id="load_new_comment" width="100%" class="lista">
+        <if:NO_COMMENTS>
+      <tr>
+        <td id="nc" colspan="3" class="lista" align="center"><tag:language.NO_COMMENTS /></td>
+      </tr>
+        <else:NO_COMMENTS>
+  <!-- Comment Box -->
+  <div id="message" style="display: none; background: rgba(100, 100, 100, 0.5); border:solid 1px #DEDEDE; border-radius: 10px; padding:4px; position: fixed; top: 40%; left: 40%;"></div>
+  <tr>
+    <td align="center" colspan="3">
+     <div align="center" id="commentbox" style="display: none">
+      <form enctype="multipart/form-data" name="comment" method="post" action="">
+      <table class="lista" border="0" cellpadding="10">
+        <tr>
+        <td align="left" class="header"><tag:language.COMMENT_1 />:</td>
+        <td class="lista" align="left"><tag:comment_comment /></td>
+        </tr>
+        <tr>
+        <td class="header" colspan="2" align="center">
+        <input type="submit" class="btn btn-primary" name="confirm" id="submit_btn" value="<tag:language.FRM_CONFIRM />" />
+        </td>
+        </tr>
+      </table>
+      </form>
+  </div>
+    </td>
+  </tr>
+</table>
+  <!-- End Comment Box -->
 </table>
 </div>
 </div>
+
+<!-- Comments Script -->
+<script>
+    jQuery(document).ready(function($) {
+    $("button#insert_comment").click(function() {  
+      $('div#commentbox').slideToggle("slow");
+      $('textarea').focus();
+    });
+    var info_hash = "<tag:torrent.info_hash />";
+    var usern = "<tag:current_username />";
+   
+    $("#submit_btn").click(function() {
+      var content = $("textarea").val();
+      var c_length = $("textarea").val().length;
+      if(c_length < 2)
+        {
+        $("#message").fadeIn(400).html('<div style="float: left;left: 14px;position: absolute;border: 5px solid #eeeeee;padding: 1px;"></div><p style=\'background:#EEEEEE; border-radius: 0px 5px 5px 5px; color:red; font-size: 22px; padding: 6px; margin: 10px; background-clip: padding-box;\'><img src="images/Badge-cancel.png" align="center">ERROR! Please Insert Some TEXT. <br />(At least 2 characters)</p>').delay (2000).fadeOut(1000);
+        }
+      else
+        {
+        var dataString = 'comment='+ content + '&id='+info_hash + '&user='+usern;
+        $("#flash").fadeIn(400).html('<img src="images/loading-a.gif" align="center">&nbsp;<span>Loading Comment...</span>');
+           $.ajax({  
+              type: "POST",  
+              url: "ajax-comment.php", 
+              data: dataString,
+              success: function(html) {  
+              $("#load_new_comment > tbody > tr:first").before(html);
+              $("textarea").val('');
+              $("div#commentbox").slideToggle(2000);
+              $("#flash").fadeOut(1000);
+              $("#message").fadeIn(400).html('<div style="float: left;left: 14px;position: absolute;border: 5px solid #eeeeee; padding: 1px;"></div><p style="background:#EAF1DF; border-radius: 0px 5px 5px 5px; color: green; font-size: 22px; padding: 6px; margin: 10px; background-clip: padding-box;"><img src="images/Badge-tick.png" align="center">Comment Successfully Posted.<br />Thanks For Your Comment.</p>').delay (2000).fadeOut(1000);
+              $("td.new").animate({
+                  opacity: 1
+                }, 1500, function() {
+                  $(this).animate({background: "#b1b8e0"}, 2500, function(){$(this).removeClass("new")});
+                  });
+              $("#nc").remove();
+                }  
+              });  
+        }
+        return false;
+      });
+      
+    });  
+</script>
 
