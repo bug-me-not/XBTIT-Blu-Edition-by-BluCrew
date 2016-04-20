@@ -239,10 +239,21 @@ $clock(document).ready(function(){
       }
    });});
    </script>
+
    <div class="internal-clock-text" style="font-size: 22px; text-align: center; text-decoration: underline;">This is an internal release so please wait until 24hr countdown timer is complete to share elsewhere</div>
    <div class="internal-clock" style="padding-left: 25%; padding-top:20px; padding-bottom:200px;"></div></div>
    </if:internal_clock>
    <div align="center">
+
+   <ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home" data-toggle="tab">Main</a></li>
+  <li><a href="#details" data-toggle="tab">Details</a></li>
+  <li><a href="#screens" data-toggle="tab">ScreenShots</a></li>
+  <li><a href="#extra" data-toggle="tab">Extra</a></li>
+  <li><a href="#comment" data-toggle="tab">Comments</a></li>
+  </ul>
+   <div id='content' class="tab-content">
+   <div class="tab-pane fade in active" id="home">
    
    <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:20px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
 
@@ -391,6 +402,7 @@ $clock(document).ready(function(){
    </if:IMAGEIS>
    </if:imageup_enabled2>
    -->
+
    <tr>
    <td align="right" class="header" valign="top"><tag:language.DESCRIPTION /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top">
@@ -606,8 +618,9 @@ $clock(document).ready(function(){
    </tr>
    </if:EXTERNAL>
    </table>
-    
+   </div>
 
+   <div class="tab-pane fade" id="comment">
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -752,3 +765,7 @@ $clock(document).ready(function(){
    <div align="center">
    <tag:torrent_footer />
    </div>
+   </div>
+   </div> 
+
+
