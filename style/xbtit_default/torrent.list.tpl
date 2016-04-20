@@ -255,8 +255,13 @@ Snatched
          <p>
          <b>Size:</b>  &nbsp; <tag:torrents[].size />
          </p>
+         <p>
          <b>Language:</b>  &nbsp; <tag:torrents[].language />
-		 <p>
+         </p>
+         <p>
+         <b>Genre:</b> &nbsp; <tag:torrents[].imdb_genre />
+         </p>
+		     <p>
          <b>Added:</b> &nbsp; <tag:torrents[].alt_added />
          </p>
          <p>
