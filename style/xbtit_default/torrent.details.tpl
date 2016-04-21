@@ -245,17 +245,17 @@ $clock(document).ready(function(){
    </if:internal_clock>
    <div align="center">
 
-   <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#home" data-toggle="tab">Main</a></li>
-  <li><a href="#details" data-toggle="tab">Details</a></li>
-  <li><a href="#screens" data-toggle="tab">ScreenShots</a></li>
-  <li><a href="#extra" data-toggle="tab">Extra</a></li>
-  <li><a href="#comment" data-toggle="tab">Comments</a></li>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#main" aria-controls="main" role="tab" data-toggle="tab">Main</a></li>
+    <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
+    <li role="presentation"><a href="#extra" aria-controls="extra" role="tab" data-toggle="tab">Extra</a></li>
+    <li role="presentation"><a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">Comments</a></li>
   </ul>
-   <div id='content' class="tab-content">
-   <div class="tab-pane fade in active" id="home">
-   
-   <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:20px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
+
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="main">
+  <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:20px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
 
    <tag:TheTVDBExtra />
 
@@ -318,7 +318,9 @@ $clock(document).ready(function(){
    <td align='left' class='lista' colspan='2'><tag:mult /></td>
    </tr>
    </if:mult_enabled>
+   </div>
 
+   <div role="tabpanel" class="tab-pane fade" id="details">
    <if:auto_topic_enabled>
    <if:FORUM_LNK>
    <tr>
@@ -418,10 +420,12 @@ $clock(document).ready(function(){
    </if:nfo_exists>
    </if:view_nfo>
    </if:nfo_enabled>
-
    <tag:torrent.description /></td>
    </tr>
+   </div>
 
+
+   <div role="tabpanel" class="tab-pane fade" id="extra">
    <YOUTUBE>
    <tr>
    <td align="right" class="header"><tag:language.YT /><img src="images/youtube.gif"></td>
@@ -620,7 +624,8 @@ $clock(document).ready(function(){
    </table>
    </div>
 
-   <div class="tab-pane fade" id="comment">
+
+   <div role="tabpanel" class="tab-pane fade" id="comment">
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -767,5 +772,7 @@ $clock(document).ready(function(){
    </div>
    </div>
    </div> 
+   </div>
+   </div>
 
 
