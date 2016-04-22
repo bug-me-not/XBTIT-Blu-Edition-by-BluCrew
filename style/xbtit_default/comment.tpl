@@ -6,7 +6,7 @@
 <div align="center">
   <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=comment&id=<tag:comment_id /><if:vedsc_enabled><tag:cid /><tag:edit /></if:vedsc_enabled>">
   <input type="hidden" name="info_hash" value="<tag:comment_id />" />
-    <table class="lista" border="0" cellpadding="10">
+    <table class="table table-bordered">
       <tr>
         <td align="left" class="header"><tag:language.USER_NAME /></td>
         <td class="lista" align="left" ><input name="user" TYPE="text" size="20" value="<tag:comment_username />" maxlength="100" disabled; readonly /></td>
@@ -24,9 +24,9 @@
      </if:capcha_enabled>
       <tr>
         <td class="header" colspan="2" align="center">
-        <input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CONFIRM />" />
+        <input type="submit" class="btn btn-primary" name="confirm" value="<tag:language.FRM_CONFIRM />" />
         &nbsp;&nbsp;&nbsp;
-        <input type="submit" class="btn" name="confirm" value="<tag:language.FRM_PREVIEW />" />
+        <input type="submit" class="btn btn-success" name="confirm" value="<tag:language.FRM_PREVIEW />" />
         </td>
       </tr>
     </table>
