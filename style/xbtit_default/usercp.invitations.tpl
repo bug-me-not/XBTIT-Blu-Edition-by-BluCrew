@@ -1,11 +1,20 @@
 <if:read_invitations>
-  <table width="100%" align="center">
-	<tr>
-	  <td align="center" class="lista"><div style="text-align:center; padding:10px;"><tag:language.WELCOME_UCP_INVITE /><br /><tag:sendnew_inv /></div></td>
-	</tr>
+<table width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<div style="text-align:center; padding:10px;"><h2><tag:language.WELCOME_UCP_INVITE /></h2></div>
+</div>
+</div>
+</div>
+
+<tr>
+<td align="center" class="lista"><div style="text-align:center; padding:10px;"><tag:sendnew_inv /></div></td>
+</tr>
+
     <tr>
       <td>
-	  	<table class="lista" width="100%">
+	  	 <table class="table table-bordered">
 	  	  <tr>
 	  		<td align="center" class="block" colspan="4"><tag:language.SENT_INVITATIONS />&nbsp;(<tag:sent_inv />)</td>
 	  	  </tr>
@@ -34,7 +43,7 @@
 	</tr>
 	<tr>
 	  <td>
-		<table class="lista" width="100%">
+		<table class="table table-bordered">
 		  <tr>
 			<td align="center" class="block" colspan="6"><tag:language.MEMBERS_INVITED_BY />&nbsp;(<tag:number_confirmed />)</td>
 		  </tr>
@@ -66,7 +75,7 @@
 		  </tr>
        	<if:confirm_btn>
 	  	  <tr>
-	  	 	<td align="center" class="lista" colspan="6"><div style="text-align:center;"><input type="submit" value="<tag:language.FRM_CONFIRM />" style='height: 20px'></div></td>
+	  	 	<td align="center" class="lista" colspan="6"><div style="text-align:center;"><input type="submit" class="btn btn-primary" value="<tag:language.FRM_CONFIRM />" style=''></div></td>
 	  	  </tr>
        	</if:confirm_btn>
        	  </form>
@@ -82,13 +91,17 @@
 </if:read_invitations>
 
 <if:new_invitation>
-  <table class="lista" width="100%">
+ <div class="panel panel-primary">
+  <div class="panel-heading">
+  <div align="center">
+ <div style="text-align:center; padding:10px;"><h2><tag:language.INVITE_SOMEONE_TO />&nbsp;<tag:invnum /></h2></div>
+	</div>
+    </div>
+    </div>
+  <table class="table table-bordered">
   <form method="post" action="<tag:frm2_target />">
   <input type="hidden" name="hash" value="<tag:inv_hash />">
   <input type="hidden" name="invitername" value="<tag:invitername />">
-	<tr>
-	  <td class="header" colspan="2" style="text-align:center; padding=5px;"><tag:language.INVITE_SOMEONE_TO />&nbsp;<tag:invnum /></td>
-	</tr>
 	<tr>
 	  <td align="left" class="header"><tag:language.EMAIL /></td><td class="lista"><input type="text" size="40" name="email"></td>
 	</tr>
@@ -96,7 +109,7 @@
 	  <td align="left" class="header"><tag:language.MESSAGE /></td><td class="lista"><textarea name="body" rows="6" cols="80"></textarea></td>
 	</tr>
 	<tr>
-	  <td align="center" class="lista" colspan="2"><input type="submit" value="<tag:language.FRM_CONFIRM />" style='height: 20px'></td>
+	  <td align="center" class="lista" colspan="2"><input type="submit" class="btn btn-primary" value="<tag:language.FRM_CONFIRM />" style=''></td>
 	</tr>
   </form>
   </table>

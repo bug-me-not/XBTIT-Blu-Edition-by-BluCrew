@@ -153,8 +153,8 @@
       <td align="center" class="header" colspan="3">
     <table align="center" width="100%" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center"><input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
-        <td align="center"><input type="button" class="btn" name="confirm" onclick="javascript:window.open('<tag:profile.frm_cancel />','_self');" value="<tag:language.FRM_CANCEL />" /></td>
+        <td align="center"><input type="submit" class="btn btn-primary" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
+        <td align="center"><input type="button" class="btn btn-warning" name="confirm" onclick="javascript:window.open('<tag:profile.frm_cancel />','_self');" value="<tag:language.FRM_CANCEL />" /></td>
       </tr>
     </table>
       </td>

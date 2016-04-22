@@ -1,8 +1,11 @@
-<table class="header" width="100%" align="center">
-<td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FPENDING /></td>
-</table>
-<br>
-<table class="header" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:language.FL_FPENDING />
+</div>
+</div>
+</div>
+<table class="table table-bordered">
 
   <tr>
     <td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FAVATAR /></td>
@@ -33,11 +36,14 @@
 
 </table>
 <br><br>
-<table class="header" width="100%" align="center">
-<td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FFRIEND /></td>
-</table>
-<br>
-<table class="header" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:language.FL_FFRIEND />
+</div>
+</div>
+</div>
+<table class="table table-bordered">
 
   <tr>
     <td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FAVATAR /></td>
@@ -70,11 +76,14 @@
 
 </table>
 <br><br>
-<table class="header" width="100%" align="center">
-<td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FCONF /></td>
-</table>
-<br>
-<table class="header" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:language.FL_FCONF />
+</div>
+</div>
+</div>
+<table class="table table-bordered">
 
   <tr>
     <td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FAVATAR /></td>
@@ -105,11 +114,14 @@
 </table>
 
 <br><br>
-<table class="header" width="100%" align="center">
-<td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FREJ /></td>
-</table>
-<br>
-<table class="header" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:language.FL_FREJ />
+</div>
+</div>
+</div>
+<table class="table table-bordered">
 
   <tr>
     <td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FAVATAR /></td>

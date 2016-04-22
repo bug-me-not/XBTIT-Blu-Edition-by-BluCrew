@@ -30,7 +30,7 @@ function popusers(url)
  -->
 </script>
 <if:MSG_LIST>
-<table class="lista" width="100%" align="center">
+<table class="table table-bordered">
 <if:pagert>
    <tr>
       <td colspan='2' align='center'><tag:pagertop /></td>
@@ -67,7 +67,7 @@ function popusers(url)
     <tr>
       <td class="lista" align="right" colspan="5">
       <if:DROP><select name="todo"><option value="1"><tag:language.DELETE /></option><option value="2"><tag:language.MAR /></option></select></if:DROP>
-      <input type="submit" class="btn" name="action" value="<tag:language.DELETE_READED />" />
+      <input type="submit" class="btn btn-danger" name="action" value="<tag:language.DELETE_READED />" />
       &nbsp;&nbsp;&nbsp;<tag:language.MSG_DEL_ALL_PM />
       </td>
     </tr>
@@ -77,11 +77,11 @@ function popusers(url)
 </if:MSG_LIST>
 <if:MSG_EDIT>
 <form method="post" name="edit" action="<tag:pmedit.frm_action />">
-  <table width="100%" class="lista" align="center" cellpadding="2">
+  <table class="table table-bordered">
 <if:PREVIEW>
     <tr>
       <td colspan="2">
-        <table border="0" cellspacing="2" cellpadding="0" width="90%" class="lista">
+        <table class="table table-bordered">
           <tr>
             <td class="block" align="center"><b><tag:language.FRM_PREVIEW /></b></td>
           </tr>
@@ -111,11 +111,11 @@ function popusers(url)
     </tr>
     <tr>
       <td colspan="2" class="lista">
-    <table align="center" width="60%" cellspacing="0" cellpadding="0">
+    <table align="center" width="100%" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center"><input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
-        <td align="center"><input type="submit" class="btn" name="confirm" value="<tag:language.FRM_PREVIEW />" /></td>
-        <td align="center"><input type="button" class="btn" name="confirm" onclick="javascript:window.open('<tag:pmedit.frm_cancel />','_self');" value="<tag:language.FRM_CANCEL />" /></td>
+        <td align="center"><input type="submit" class="btn btn-success" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
+        <td align="center"><input type="submit" class="btn btn-primary" name="confirm" value="<tag:language.FRM_PREVIEW />" /></td>
+        <td align="center"><input type="button" class="btn btn-warning" name="confirm" onclick="javascript:window.open('<tag:pmedit.frm_cancel />','_self');" value="<tag:language.FRM_CANCEL />" /></td>
       </tr>
     </table>
       </td>
@@ -125,7 +125,7 @@ function popusers(url)
 </if:MSG_EDIT>
 
 <if:MSG_READ>
-  <table class="lista" width="100%" align="center" cellpadding="2">
+  <table class="table table-bordered">
     <tr>
       <td width="30%" rowspan="2" class="lista"><a href="<tag:pmread.sender_link />"><tag:pmread.sender_name /></a><br /><tag:pmread.added /><br />(<tag:pmread.elapsed /> ago)</td>
       <td class="header"><tag:language.SUBJECT />: <tag:pmread.comment /></td>

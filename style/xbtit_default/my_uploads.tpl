@@ -1,5 +1,5 @@
 <tag:pagertop />
-<table width="100%" class="lista">
+<table class="table table-bordered">
 
   <tr>
 

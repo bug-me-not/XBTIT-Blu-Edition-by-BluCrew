@@ -1,8 +1,12 @@
-<table class="header" width="100%" align="center">
-<td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FFF />&nbsp;:&nbsp;<tag:un /></td>
-</table>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:language.FL_FFF />&nbsp;:&nbsp;<tag:un />
+</div>
+</div>
+</div>
 <br>
-<table class="header" width="100%" align="center">
+<table class="table table-bordered">
 
   <tr>
     <td class="header" style="text-align:center;font-weight:bold;"><tag:language.FL_FAVATAR /></td>

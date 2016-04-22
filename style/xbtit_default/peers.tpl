@@ -1,26 +1,23 @@
 <if:speedstats_enabled>
-
-<!-- ################################################################################################
-     # Speed stats in peers with filename -->
-
-<table width="100%" class="lista" border="0">
-       <tr>
-         <td align="center" class="header"><tag:peers.filename />&nbsp;&nbsp;&nbsp;&nbsp;<tag:peers.size /></td>
-       </tr>
-</table>
-
-<!-- # End
-     ############################################################################################ -->
-
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div align="center">
+<tag:peers.filename />&nbsp;&nbsp;&nbsp;&nbsp;<tag:peers.size />
+</div>
+</div>
+</div>
 </if:speedstats_enabled>
 
 <if:NOPEERS>
-<table width="100%" class="lista" border="0">
-       <tr>
-         <td align="center" class="lista"><tag:language.NO_PEERS /></td>
-       </tr>
-</table>
+<div class="panel panel-danger">
+<div class="panel-heading">
+<div align="center">
+<tag:language.NO_PEERS />
+</div>
+</div>
+</div>
 <else:NOPEERS>
+
 <script type="text/javascript">
 function windowunder(link)
 {
@@ -28,7 +25,8 @@ function windowunder(link)
   window.close();
 }
 </script>
-<table width="100%" class="lista" border="0">
+
+<table class="table table-bordered">
        <tr>
          <td align="center" class="header" colspan="2"><tag:language.USER_NAME /></td>
          <if:peers_flag_1>
@@ -42,8 +40,7 @@ function windowunder(link)
          <td align="center" class="header"><tag:language.PEER_IP /></td>
          </if:warn_edit_allowed_1>
          <td align="center" class="header"><span style="color:red;">&#9660;</span></td>
-<!-- ################################################################################################
-     # Speed stats in peers with filename -->
+
          <if:speedstats_enabled2>
          <td align="center" class="header"><tag:language.SPEED /> <span style="color:red">&#9660</span></td>
          </if:speedstats_enabled2>
@@ -51,8 +48,7 @@ function windowunder(link)
          <if:speedstats_enabled3>
          <td align="center" class="header"><tag:language.SPEED /> <span style="color:green">&#9650</span></td>
          </if:speedstats_enabled3>
-<!-- # End
-     ############################################################################################ -->
+
          <td align="center" class="header"><tag:language.RATIO /></td>
 
          <if:ttimes_enabled_1>
@@ -82,8 +78,7 @@ function windowunder(link)
          <td align="center" class="lista"><tag:peers[].IPA /></td>
          </if:warn_edit_allowed_2>
          <td align="center" class="lista"><tag:peers[].DOWNLOADED /></td>
-         <!-- ################################################################################################
-         # Speed stats in peers with filename -->
+       
          <if:speedstats_enabled4>
          <td align="center" class="lista"><tag:peers[].DLSPEED /></td>
          </if:speedstats_enabled4>
@@ -91,8 +86,7 @@ function windowunder(link)
          <if:speedstats_enabled5>
          <td align="center" class="lista"><tag:peers[].UPSPEED /></td>
          </if:speedstats_enabled5>
-         <!-- # End
-         ############################################################################################ -->
+
          <td align="center" class="lista"><tag:peers[].RATIO /></td>
 
          <if:ttimes_enabled_2>
@@ -113,7 +107,7 @@ function windowunder(link)
 <if:ban_clients_enabled>
 <if:ADMIN_ACCESS>
     <br />
-    <table align='center' width='100%'>
+    <table class="table table-bordered">
       <tr>
         <td class='block' align='center' colspan='6'><tag:language.BAN_CLIENTS /></td>
       </tr>
@@ -141,7 +135,7 @@ function windowunder(link)
 
 <if:banned_clients>
     <br />
-    <table align='center' width='100%'>
+    <table class="table table-bordered">
       <tr>
         <td class='block' align='center' colspan='6'><tag:language.REMOVE_BANNED_CLIENTS /></td>
       </tr>

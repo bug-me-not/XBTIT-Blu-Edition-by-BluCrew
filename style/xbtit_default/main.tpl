@@ -103,7 +103,7 @@ Christmas Snowstorm End-->
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="index.php"><i class="fa fa-film fa-2x" aria-hidden="true" color=#00aeff>&nbsp;BluRG.XYZ</i></a>
+         <a class="navbar-brand" href="index.php"><i class="fa fa-film fa-2x" aria-hidden="true" color=#00aeff>&nbsp;BluRG</i></a>
          </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
