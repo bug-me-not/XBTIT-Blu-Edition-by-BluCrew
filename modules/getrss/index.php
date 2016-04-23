@@ -2,9 +2,9 @@
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
 //
-// Copyright (C) 2004 - 2014  Btiteam
+// Copyright (C) 2004 - 2012  Btiteam
 //
-//    This file is part of xbtit DT FM.
+//    This file is part of xbtit.
 //
 //    Torrent RSS by DiemThuy ( jul 2012 ) TBDEV conversion with some improvements 
 //
@@ -39,21 +39,44 @@ if (!defined("IN_BTIT"))
 require_once("include/functions.php");
 require_once("include/config.php");
     dbconn();
-    
-    $res = mysql_query("SELECT id, name , image FROM {$TABLE_PREFIX}categories ORDER BY name");
-    while($cat = mysql_fetch_assoc($res))
-    
-if($cat["image"]=="")
-{
-$catoptions .=""; 
-}
-else
-{    
+$i=-1;
+?>
 
-        $catoptions .= "<a href=\"index.php?page=torrents&amp;category=$cat[id]\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><input type=\"checkbox\" name=\"cat[]\" value=\"$cat[id]\" " .(strpos($CURUSER['notifs'], "[cat$cat[id]]") !== false ? " checked" : "") ."/>";
-		}
+ 
+<?php 
+
+$risultato = do_sqlquery("select * from {$TABLE_PREFIX}categories where (sub!='0') ORDER BY sort_index ASC");
+
+while ($cat = $risultato->fetch_array()){
+
+
+$id = $cat["id"];
+$name = $cat["name"];
+$res = do_sqlquery("select count(*) as allincat FROM {$TABLE_PREFIX}files where seeds!=0 AND category=".$id);
+                if ($res)
+                {
+                $row=$res->fetch_array();
+                $tot=$row['allincat'];
+} else {
+$tot=0;
+
+}
+$i++;
+if ($i% 10==0)
+{
+$catoptions .= "<tr></tr>";
+}
+$catoptions .= "<td>";
+//$catoptions .= "<a href=\"index.php?page=torrents&amp;category=$id\" title=\"$name\" alt=\"$name\">" . image_or_link( ($cat["image"] == "" ? "" : "$STYLEPATH/images/categories/" . $cat["image"]), "", $cat["name"]) ."</a><center>$tot</center></td><td>&nbsp;</td>";
+$catoptions .= "<a href=\"index.php?page=torrents&amp;category=$cat[id]\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><center>Seeds: $tot<br><input type=\"checkbox\" name=\"cat[]\" value=\"$cat[id]\" " .(strpos($CURUSER['notifs'], "[cat$cat[id]]") !== false ? " checked" : "") ."/></center>";
         
-        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+}
+
+?>
+
+<?php
+
+ if ($_SERVER['REQUEST_METHOD'] == "POST") {
          
         if (empty($_POST['cat']))
 stderr("Error", "You need to chose at least one category !!");
@@ -68,7 +91,7 @@ stderr("Error", "You need to chose a feed type !!");
             $query[] = "cat[]=$cat";
             
             $row =get_result("SELECT pid FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER['uid'],true,$btit_settings['cache_duration']);
-			 $pid=$row[0]["pid"];
+             $pid=$row[0]["pid"];
       
             $query[] = "pid=$pid";
         $queries = implode("&", $query);
@@ -76,33 +99,44 @@ stderr("Error", "You need to chose a feed type !!");
             $link .= "?$queries";
             
         if ($_POST['feed'] == "dl")
-		{           
-		information_msg("RSS Link","Use the following url in your RSS reader:<br><b>$link</b><br>");
+        {           
+        information_msg("RSS Link","Use the following url in your RSS reader:<br><b>$link</b><br>");
         stdfoot();
         exit();
         }else
         header("Refresh: 0; url=".$link."");        
 }
-?>  
+
+?>
+
+ <div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Categories To Retrieve</h4>
+</div>
+</div>
+
+
+<center><table class="table table-bordered">
+
 
 <form method="POST" action="index.php?page=modules&module=getrss">
-    <table class="header" width="93%" align="center">
-        <tr>
-            <td class="header" width="16%">Categories to retrieve:</td>
-            <td class="lista" width="50%"><?php echo $catoptions?></td>
-        </tr>
-       <tr><td width="16%"><br></td></tr>
-        <tr>
-            <td class="header">Feed type:</td>
-            <td><input type="radio" name="feed" value="web" />Web link
-                <input type="radio" name="feed" value="dl" />Download link<br></td>
-
-        </tr>
     
-          <tr>
-     <td style="text-align:center"><br><button type="submit">Get RSS<br></button></td></tr></table>
+            <?php echo $catoptions?>
+     
+     
+     </table></center><br>   
+     <center>
+      <table class="table table-bordered">
+     <tr>
+            <td align="center" width="50%" class="header">Feed Type:&nbsp;
+            <input type="radio" name="feed" value="web" />Web Link
+             &nbsp;&nbsp;&nbsp;<input type="radio" name="feed" value="dl" />Download link</td>
+             <td align="left" width="50%"><button  type="submit" class="btn btn=primary">Get RSS</button></td>
+        </tr>
+        </table>
+        </center>
 </form>
-    
+   
 <?php    
 $module_out=ob_get_contents();
 ob_end_clean();
