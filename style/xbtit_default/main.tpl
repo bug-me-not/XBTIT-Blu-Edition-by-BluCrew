@@ -117,9 +117,15 @@ Christmas Snowstorm End-->
 <div id='snav' class='en'>
   <ul>
     <li>
-      <a href='#'>
+      <a href='index.php'>
         <i class="fa fa-home"></i>
         <span>Home</span>
+      </a>
+    </li>
+        <li>
+      <a href='index.php?page=modules&module=getrss'>
+        <i class="fa fa-rss"></i>
+        <span>RSS</span>
       </a>
     </li>
      <li>
