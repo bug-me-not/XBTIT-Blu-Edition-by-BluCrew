@@ -120,13 +120,6 @@ function popusers(url)
     <td class="lista" colspan="2"><tag:about_me /></td>
   </tr>
 </if:about_me_enabled>
-
-<if:rss_feed_enabled>
-  <tr>
-    <td class="header"><tag:language.ADVRSS_YOUR_FEED /></td>
-    <td class="lista" colspan="2"><textarea cols="75"><tag:custom_rss_feed /></textarea></td>
-  </tr>
-</if:rss_feed_enabled>
 </table>
 </div>
 </div>

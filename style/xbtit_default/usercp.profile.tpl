@@ -125,24 +125,6 @@
     </tr>
     </if:about_me_enabled>
 
-  <if:advanced_rss_enabled>
-    <tr>
-      <td align="left" class="header"><tag:language.ADVRSS_CATLIST />:</td>
-     <td align="left" class="lista"><tag:rss_output /></td>
-   </tr>
-    <tr>
-      <td align="left" class="header"><tag:language.ADVRSS_LIMIT />:</td>
-     <td align="left" class="lista"><input type="text" size="2" name="rss_limit" maxlength="2" value="<tag:rss_limit />"/></td>
-   </tr>
-  </if:advanced_rss_enabled>
-
-  <if:default_cats_enabled>
-  <tr>
-    <td align="left" class="header"><tag:language.DEF_CATS /></td>
-    <td align="left" class="lista" colspan="2"><tag:catlist /></td>
-  </tr>
-  </if:default_cats_enabled>
-
     <!-- Password confirmation required to update user record -->
     <tr>
         <td align="left" class="header"><tag:language.USER_PWD />: </td>
