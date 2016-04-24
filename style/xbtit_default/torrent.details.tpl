@@ -249,6 +249,7 @@ $clock(document).ready(function(){
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#main" aria-controls="main" role="tab" data-toggle="tab">Main</a></li>
     <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
+    <li role="presentation"><a href="#trailer" aria-controls="trailer" role="tab" data-toggle="tab">Trailer</a></li>
     <li role="presentation"><a href="#extra" aria-controls="extra" role="tab" data-toggle="tab">Extra</a></li>
     <li role="presentation"><a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">Comments</a></li>
   </ul>
@@ -760,6 +761,7 @@ $clock(document).ready(function(){
    <br />
    <div align="center">
    <tag:torrent_footer />
+   <div role="tabpanel" class="tab-pane fade" id="trailer">
    </div>
    </div>
    </div> 
