@@ -1021,13 +1021,6 @@ if(isset($_FILES["torrent"]))
                         }
                      }
 
-                     // YT Start
-                     if (isset($_POST["youtube_video"]))
-                     $youtube_video = sql_esc($_POST["youtube_video"]);
-                     else
-                     $youtube_video = "";
-                     // YT End
-
                      // <-- Image Upload
                      //      if ($announce!=$BASEURL."/announce.php")
                      $query1_insert_key = "";
@@ -1726,9 +1719,4 @@ if(isset($_FILES["torrent"]))
                                  $tplfile = "upload_finish";
                                  break;
                               }
-
-                              //YT Start
-                              $uploadtpl->set("youtube_video",$youtube_video);
-                              //YT End
-
                               ?>

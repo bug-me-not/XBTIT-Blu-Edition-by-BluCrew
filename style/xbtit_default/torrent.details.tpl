@@ -424,15 +424,6 @@ $clock(document).ready(function(){
    </tr>
    </div>
 
-
-   <div role="tabpanel" class="tab-pane fade" id="extra">
-   <YOUTUBE>
-   <tr>
-   <td align="right" class="header"><tag:language.YT /><img src="images/youtube.gif"></td>
-   <td class="lista" align="left"><iframe width="560" height="315" src="https://www.youtube.com/embed/<tag:torrent.youtube_video />" frameborder="0" allowfullscreen></iframe></td>
-   </tr>
-   </YOUTUBE>
-
    <if:torlang>
    <tr>
    <td align="right" class="header"><tag:language.LANGUAGE /></td>

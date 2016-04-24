@@ -400,13 +400,6 @@ $w(window).resize(function () {
 </if:imdb_enabled>
 
 
-<tr><td class="header" ><img src="images/youtube.gif"></td><td class="lista" align="left"> Only add the YouTube number (example AE96cK4_qBE) !!</td></tr>
-<tr>
-   <td class="header" ><img src="images/youtube.gif"> Link</td>
-   <td class="lista" align="left"><input type="text" name="youtube_video" size="50" maxlength="200" /></td>
-</tr>
-
-
 <if:imageup_enabled>
 <if:imageon>
 <tr>

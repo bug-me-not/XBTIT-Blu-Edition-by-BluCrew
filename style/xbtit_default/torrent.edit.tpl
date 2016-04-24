@@ -81,18 +81,6 @@
         <td class="lista"><tag:torrent.description /></td>
       </tr>
 
-      <if:media_enabled>
-      <tr>
-        <td align="right" class="header"><tag:language.MPLAYER /></td>
-        <td class="lista" align="left"><input type="text" name="mplayer" value="<tag:torrent.mplayer />" size="50" maxlength="500" /></td>
-      </tr>
-      </if:media_enabled>
-
-      <tr><td class="header" align="right"  ><img src="images/youtube.gif"></td><td class="lista" align="left"> Only add the YouTube number (example AE96cK4_qBE) !!</td></tr>
-    <tr>
-      <td class="header" align="right" ><img src="images/youtube.gif"> Link</td>
-    <td class="lista" align="left"><input type="text" name="yt" value="<tag:torrent.youtube_video />" size="50" maxlength="200" /></td>
-
       <tr>
         <td align="right" class="header"><tag:language.ANONYMOUS /></td>
         <td class="lista"><input type="radio" name="anonymous" value="true" <if:anon>checked</if:anon>><tag:language.YES />&nbsp;&nbsp;<input type="radio" name="anonymous" value="false" <if:anon1>checked</if:anon1>><tag:language.NO /></td>

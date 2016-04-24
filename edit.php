@@ -859,8 +859,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                         $query2_update .= ", `mplayer`='".sql_esc(htmlspecialchars($_POST["mplayer"]))."'";
                         if($btit_settings["fmhack_bump_torrents"] == "enabled" && $CURUSER["bump_torrents"]=="yes" && $bump_torr=="yes")
                         $query2_update .= ", `bumpdate`= UNIX_TIMESTAMP()";
-
-                        $query2_update .=", `youtube_video`='".sql_esc(htmlspecialchars($_POST['yt']))."'";
                         quickQuery("UPDATE {$TABLE_PREFIX}files SET filename='$fname', comment='".AddSlashes($_POST["comment"])."', category=".intval($_POST["category"]).$query2_update.",release_group={$release_group} WHERE info_hash='".$torhash."'", true);
                         if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["set_multi"] == "yes")
                         {
@@ -1033,7 +1031,7 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                      $query1_select .= "`f`.`mplayer`,";
                      if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled")
                      $query1_select .= "`f`.`tvdb_id`,`f`.`tvdb_extra`,";
-                     $query = "SELECT ".$query1_select." `f`.`info_hash`, `f`.`filename`, `f`.`url`, UNIX_TIMESTAMP(`f`.`data`) `data`,`f`.`youtube_video`, `f`.`size`,`f`.`release_group` ,`f`.`comment`, `f`.`category` `cat_name`, $tseeds, $tleechs, $tcompletes, `f`.`speed`, `f`.`uploader` FROM $ttables WHERE `f`.`info_hash` ='".
+                     $query = "SELECT ".$query1_select." `f`.`info_hash`, `f`.`filename`, `f`.`url`, UNIX_TIMESTAMP(`f`.`data`) `data`,`f`.`size`,`f`.`release_group` ,`f`.`comment`, `f`.`category` `cat_name`, $tseeds, $tleechs, $tcompletes, `f`.`speed`, `f`.`uploader` FROM $ttables WHERE `f`.`info_hash` ='".
                      AddSlashes($_GET["info_hash"])."'";
                      $res = do_sqlquery($query, true);
                      $results = $res->fetch_assoc();
@@ -1302,9 +1300,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                         if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
                         $torrent["imdb"] = $results["imdb"];
                         $torrent["description"] = textbbcode("edit", "comment", unesc($results["comment"]));
-                        if($btit_settings["fmhack_torrent_details_media_player"] == "enabled"){
-                           $torrent["mplayer"] = $results["mplayer"];}
-                           $torrent["youtube_video"]=$results["youtube_video"];
                            if ($btit_settings["imgsw"]==false )
                            $torrent["size"] = makesize($results["size"]);
                            include (dirname(__file__)."/include/offset.php");

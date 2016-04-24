@@ -200,7 +200,7 @@ if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled")
 $query1_select.="`f`.`tvdb_id`, `f`.`tvdb_extra`,";
 if($btit_settings["fmhack_magnet_links"] == "enabled")
 $query1_select.="`f`.`magnet`,";
-$res = get_result("SELECT ".$query1_select." `f`.`info_hash`, `f`.`filename`, `f`.`url`, UNIX_TIMESTAMP(`f`.`data`) `data`, `f`.`size`, `f`.`youtube_video`,`f`.`comment`, `f`.`uploader`,`f`.`category`, `c`.`name` `cat_name`, $tseeds, $tleechs, $tcompletes, `f`.`speed`, `f`.`external`, `f`.`announce_url`, UNIX_TIMESTAMP(`f`.`lastupdate`) `lastupdate`, UNIX_TIMESTAMP(`f`.`lastsuccess`) `lastsuccess`, `f`.`anonymous`, `u`.`username` FROM $ttables LEFT JOIN `{$TABLE_PREFIX}categories` `c` ON `c`.`id`=`f`.`category` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`f`.`uploader` ".$query1_join." WHERE ".((isset($id) && !empty($id))?"`f`.`info_hash`='".sql_esc($id)."'":((isset($torrent_id) && !empty($torrent_id))?"`f`.`id`='".$torrent_id."'":"")),true, $btit_settings['cache_duration']);
+$res = get_result("SELECT ".$query1_select." `f`.`info_hash`, `f`.`filename`, `f`.`url`, UNIX_TIMESTAMP(`f`.`data`) `data`, `f`.`size`, `f`.`comment`, `f`.`uploader`,`f`.`category`, `c`.`name` `cat_name`, $tseeds, $tleechs, $tcompletes, `f`.`speed`, `f`.`external`, `f`.`announce_url`, UNIX_TIMESTAMP(`f`.`lastupdate`) `lastupdate`, UNIX_TIMESTAMP(`f`.`lastsuccess`) `lastsuccess`, `f`.`anonymous`, `u`.`username` FROM $ttables LEFT JOIN `{$TABLE_PREFIX}categories` `c` ON `c`.`id`=`f`.`category` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`f`.`uploader` ".$query1_join." WHERE ".((isset($id) && !empty($id))?"`f`.`info_hash`='".sql_esc($id)."'":((isset($torrent_id) && !empty($torrent_id))?"`f`.`id`='".$torrent_id."'":"")),true, $btit_settings['cache_duration']);
 
 if (count($res)<1)
 stderr($language["ERROR"],"Bad ID!",$GLOBALS["usepopup"]);
@@ -1271,7 +1271,7 @@ if($btit_settings["fmhack_ads_system"]=="enabled" && in_array($CURUSER["id_level
    $torrenttpl->set("avatar_signature_sync_enabled", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
    $torrenttpl->set("avatar_signature_sync_enabled_1", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
    $torrenttpl->set("addthis_enabled",(($btit_settings["fmhack_addthis"]=="enabled")?true:false),true);
-   $torrenttpl->set("YOUTUBE",($row["youtube_video"]!=""?true:false),true);
+  
 
    //Gift BON to Uploader Hack
    $tellen = 0;
@@ -1361,4 +1361,5 @@ if ($CURUSER['can_stream'] == 'no'){
 
 $torrenttpl->set("streaming",$streaming);
 // add streaming
+
    ?>
