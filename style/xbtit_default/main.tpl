@@ -109,11 +109,15 @@ Christmas Snowstorm End-->
     <ul class="nav navbar-nav navbar-left">
     <tag:main_dropdown />
     </ul>
-<form role="search" class="navbar-form navbar-right">
-            <div class="form-group">
-                <input type="text" placeholder="Search" class="form-control">
-            </div>
-        </form>
+ <form action="index.php" method="get" name="torrent_search" class="navbar-form navbar-right">
+  <input type="hidden" name="page" value="torrents" />
+
+      <td><input
+      onfocus="if (this.value == 'Torrents') this.value='';"
+   onblur="if(this.value == '') this.value='Torrents';"
+      type="text" name="search" class="search" size="30" maxlength="50" value="Torrents" /></td>
+</form>
+
     </div></nav>
 
 
