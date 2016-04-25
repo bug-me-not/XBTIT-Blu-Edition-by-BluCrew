@@ -1219,8 +1219,9 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  margin: 40px 0 20px;
+  margin: 5px 0 30px;
   border-bottom: 1px solid #404040;
+  border-top: 1px solid #404040;
 }
 ul,
 ol {
