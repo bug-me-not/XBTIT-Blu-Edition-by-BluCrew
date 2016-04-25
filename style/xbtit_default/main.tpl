@@ -103,13 +103,17 @@ Christmas Snowstorm End-->
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="index.php"><i class="fa fa-film fa-2x" aria-hidden="true" color=#00aeff>&nbsp;BluRG</i></a>
          </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-left">
     <tag:main_dropdown />
     </ul>
+<form role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control">
+            </div>
+        </form>
     </div></nav>
 
 
@@ -224,6 +228,11 @@ Christmas Snowstorm End-->
     <td><tag:main_header /></td>
     </tr>
     </table>
+
+    <!-- Site Alerts -->
+    <center><div class="page-header">
+    <h1>Site Alerts:<small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
+    </h1></div></center>
 
 <!--Main Page Content -->
 
