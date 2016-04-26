@@ -44,9 +44,6 @@ else
 
 					$reqdetailstpl = new bTemplate();
 
-					$reqdetailstpl->set("comment_id",$id);
-                    $reqdetailstpl->set("comment_comment",textbbcode("comment","comment",htmlspecialchars(unesc($comment))));
-
 					$reqdetailstpl->set("language",$language);
 					$reqdetailstpl->set("req_head","REQUESTS -> DETAILS");
 					$reqdetailstpl->set("can_edit",(($CURUSER['admin_access']=='yes'||$CURUSER['uid']==$res['requester'])?true:false),true);
@@ -95,6 +92,15 @@ else
 						$reqdetailstpl->set("can_upload2",(($CURUSER['can_upload']=='yes'&&$res['jobtakenby']==$CURUSER['uid'])?true:false),true);
 					}
 					$reqdetailstpl->set("req_descr",format_comment(unesc($res['description'])));
+
+					//Comments Section
+
+					
+					$reqdetailstpl->set("has_comments",false,true);
+					$reqdetailstpl->set("comment_id",$id);
+                    $reqdetailstpl->set("comment_comment",textbbcode("comment","comment",htmlspecialchars(unesc($comment))));
+
+					//Comments Section
 
 					$requeststpl->set("view_requests",false,true);
 					$requeststpl->set("requests_content",$reqdetailstpl->fetch(load_template("requests.details.tpl")));
