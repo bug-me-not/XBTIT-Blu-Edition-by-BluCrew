@@ -218,22 +218,17 @@ Christmas Snowstorm End-->
     </li>
   </ul>
 </div>
-
-   <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-   <if:IS_DISPLAYED_2>
-   <div id='main_body_wrap'>
  
     <!--Spacer-->
     </br>
     </br>
     </br>
 
-    <!-- MainUser Info Bar Start -->
-    <table border='0' align='center' cellpadding='0' cellspacing='0' width='95%'>
-    <tr>
-    <td><tag:main_header /></td>
-    </tr>
-    </table>
+    <!-- MainUser Info Bar / Tracker Settings -->
+    <div class="container-fluid">
+    <tag:main_header />
+    </div>
+    
 
     <!-- Site Alerts -->
     <center><div class="page-header">
