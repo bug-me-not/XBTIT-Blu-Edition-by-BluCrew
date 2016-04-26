@@ -47,7 +47,7 @@ print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp [{$seedcoun
 if ($CURUSER["view_forum"]=="yes")
     {
         if ($GLOBALS["FORUMLINK"]=="" || $GLOBALS["FORUMLINK"]=="internal" || substr($GLOBALS["FORUMLINK"],0,3)=="smf" || $GLOBALS["FORUMLINK"]=="ipb")
-            print("<li><a href='smf/index.php'>Forums</a></li>\n");
+            print("<li><a href='index.php?page=forum'>Forums</a></li>\n");
         else
             print("<li><a href='".$GLOBALS["FORUMLINK"]."'>Fourms</a></li>\n");
     }
@@ -73,6 +73,7 @@ if ($CURUSER["admin_access"]=="yes") {
         print("<ul class='dropdown-menu'>\n");
         print("<li><a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Staff Panel</a></li>\n");
         print("<li><a href='index.php?page=moder&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Moderation Panel</a></li>\n");
+        print("<li><a href='#'>Staff Checks</a></li>\n");
         print("<li class='divider'></li>");
         print("<li><a href='BluCrewPanel/index.html'>BluCrew Panel</a></li>\n");
         print("</ul></li>");
