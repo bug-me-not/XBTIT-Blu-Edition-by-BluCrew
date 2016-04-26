@@ -114,9 +114,9 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
                 {
                  $mail=$resmail[0];
                  if ($mail['ur']>0)
-                    print("<tr><td align=\"center\"><button class='btn btn-xs btn-danger' type='button'><a class= \"user\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]."</a>  (<font color=\"#FFFFFF\"><b>".$mail['ur']."</b></font>)</button></td></tr>\n");
+                    print("<tr><td align=\"center\"><a class= \"btn btn-xs btn-danger\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]." (<font color=\"#FFFFFF\"><b>".$mail['ur']."</b></font>)</a></td></tr>\n");
                  else
-                     print("<tr><td align=\"center\"><button class='btn btn-xs btn-danger' type='button'><a class=\"user\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]."</a></button></td></tr>\n");
+                     print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-danger\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]."</a></td></tr>\n");
                 }
              else
                  print("<tr><td align=\"center\">".$language["NO_MAIL"]."</td></tr>");
@@ -128,10 +128,10 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
       $resinvs=do_sqlquery("SELECT invitations FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER["uid"]);
       $arrinvs=$resinvs->fetch_row();
       $invs=$arrinvs[0];
-      print("<tr><td align=\"center\"><button class='btn btn-xs btn-info' type='button'><a class=\"user\" href=\"index.php?page=usercp&do=invite&action=read&uid=".$CURUSER["uid"]."\">Invites".($invs>0?"(".$invs.")":"")."</tr></a></button></td>\n");
+      print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-info\" href=\"index.php?page=usercp&do=invite&action=read&uid=".$CURUSER["uid"]."\">Invites".($invs>0?"(".$invs.")":"")."</tr></a></td>\n");
    }
    
-    print("<tr><td align=\"center\"><button class='btn btn-xs btn-warning' type='button'><a class=\"user\" href=index.php?page=modules&module=seedbonus><img src=\"images/bonus.png\"> ".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></button></td>\n");
+    print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus><img src=\"images/bonus.png\"> ".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
 
    if($btit_settings["fmhack_freeleech_slots"] == "enabled")
    {
@@ -163,10 +163,10 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
                 print("</td>\n</tr>\n");
              }*/
              
-             print("\n<tr><td align=\"center\"><button class='btn btn-xs btn-default' type='button'><a class= \"user\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></button></td></tr>\n");
-             print("\n<tr><td align=\"center\"><button class='btn btn-xs btn-default' type='button'><a class=\"user\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></button></td></tr>\n");
+             print("\n<tr><td align=\"center\"><a class= \"btn btn-xs btn-default\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></td></tr>\n");
+             print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></td></tr>\n");
              if ($CURUSER["admin_access"]=="yes")
-                print("\n<tr><td align=\"center\"><button class='btn btn-xs btn-default' type='button'><a class=\"user\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."\">".$language["MNU_ADMINCP"]."</a></button></td></tr>\n");
+                print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."\">".$language["MNU_ADMINCP"]."</a></td></tr>\n");
 
 // gift
 $xmasdayst= mktime(0,0,0,11,30,date("Y"));
