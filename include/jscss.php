@@ -30,28 +30,28 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////
 $poller = sql_num_rows(do_sqlquery("SELECT COUNT(*) FROM {$TABLE_PREFIX}blocks WHERE content='poller' AND status=1 LIMIT 1"));
-$morescript='<!--[if lt IE 7.]>
+$morescript='
+<!--[if lt IE 7.]>
 <script defer type="text/javascript" src="jscript/pngfix.js"></script>
 <![endif]-->
 <script type="text/javascript" src="jscript/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="jscript/jquery-migrate-1.2.1.min.js"></script>
 <!-- these next 3 scripts are for the new animated collapse -->
 <script type="text/javascript" src="jscript/animatedcollapse.js"></script>
-<!-- // -->
-<script type="text/javascript" src="jscript/xbtit.js"></script>
-<script type="text/javascript" src="jscript/TorrentName.js"></script>';
-
-($pageID=="torrent-details")?$morescript.="<script type='text/javascript' src='ajaxstarrater/js/behavior.js'></script>\n<script type='text/javascript' src='ajaxstarrater/js/rating.js'></script>":$morescript.="";
-($pageID=='users' || $pageID=='torrents')?$morescript.="\n<script type='text/javascript' src='jscript/suggest.js'></script>":$morescript.="";
-($btit_settings["fmhack_shoutcast_stats_and_DJ_application"]=="enabled" && htmlentities($_GET["page"])=='')?$morescript.="\n<script src='radiostats/ajaxradio.js' language='JavaScript' type='text/javascript'></script>":$morescript.="";
-($poller==1)?$morescript.="\n<script type='text/javascript' src='jscript/ajax.js'></script>\n<script type='text/javascript' src='jscript/ajax-poller.js'></script>":$morescript.="";
-($pageID=='faq')?$morescript.="\n<script src='jscript/faq.js' type='text/javascript'></script>":$morescript.='';
+<!-- // -->'.
+($pageID=="torrent-details"?'<script type="text/javascript" src="ajaxstarrater/js/behavior.js"></script>
+<script type="text/javascript" src="ajaxstarrater/js/rating.js"></script>':'')
+.'<script type="text/javascript" src="jscript/xbtit.js"></script>
+<script type="text/javascript" src="jscript/TorrentName.js"></script>'.
+(($pageID=='users' || $pageID=='torrents')?'<script type="text/javascript" src="jscript/suggest.js"></script>':'')
+.($btit_settings["fmhack_shoutcast_stats_and_DJ_application"]=="enabled" && htmlentities($_GET["page"])==''?'<script src="radiostats/ajaxradio.js" language="JavaScript" type="text/javascript"></script>':'').''
+.($poller==1?'<script type="text/javascript" src="jscript/ajax.js"></script>
+<script type="text/javascript" src="jscript/ajax-poller.js"></script>':'');
+($pageID=='faq')?$morescript.='<script src="jscript/faq_rules.js" type="text/javascript"></script>':$morescript.='';
 unset($poller);
 
-$morecss='<link rel="stylesheet" href="css/global.css" type="text/css" />';
-($pageID=="torrent-details")?$morecss.="\n<link rel='stylesheet' href='ajaxstarrater/css/rating.css' type='text/css' />":$morecss.="";
-($pageID=='faq')?$morecss.="\n<link rel='stylesheet' href='css/faq.css'   type='text/css' />":$morecss.="";
-($pageID=='rules')?$morecss.="\n<link rel='stylesheet' href='css/rules.css' type='text/css' />":$morecss.="";
+$morecss='<link rel="stylesheet" href="css/global.css" type="text/css" /> '.($pageID=="torrent-details"?'<link rel="stylesheet" href="ajaxstarrater/css/rating.css" type="text/css" />':'');
+($pageID=='faq')?$morecss.='<link href="css/faq_rules.css"  rel="stylesheet" type="text/css" />':$morecss.="";
 
 /*head
 ************
