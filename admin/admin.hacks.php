@@ -180,6 +180,10 @@ if(isset($_POST) && !empty($_POST))
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='request'");
         if($k=="fmhack_lottery" && $v!=$btit_settings["fmhack_lottery"])
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='lottery'");
+        if($k=="fmhack_LED_ticker" && $v!=$btit_settings["fmhack_LED_ticker"])
+            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='led'");
+        if($k=="fmhack_shoutcast_stats_and_DJ_application" && $v!=$btit_settings["fmhack_shoutcast_stats_and_DJ_application"])
+            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='radio'");
         if($k=="fmhack_sport_betting" && $v!=$btit_settings["fmhack_sport_betting"])
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='bet'");
         if($k=="fmhack_uploader_medals" && $v!=$btit_settings["fmhack_uploader_medals"])
