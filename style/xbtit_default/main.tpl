@@ -238,7 +238,7 @@ Christmas Snowstorm End-->
 
     <!-- Site Alerts -->
     <center><div class="page-header">
-    <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
+    <h1>Site Alerts:<small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
     </h1></div></center>
 
 <!--Main Page Content -->
@@ -284,8 +284,7 @@ Christmas Snowstorm End-->
    </div>
    <div class="panel-body">
       <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
-      <p class="text-success">Copyright &copy; 2016 Styled By HDVinnie</p>
-      <p class="text-danger"><tag:xbtit_debug /></p>
+          <p><tag:xbtit_debug /></p>
    </div>
 </div>
                 </div>
