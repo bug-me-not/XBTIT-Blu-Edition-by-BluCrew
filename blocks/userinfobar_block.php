@@ -133,12 +133,12 @@ $usys= "&nbsp;<img src='images/user_images/" . $sy . "' alt='" . $btit_settings[
 // user image
 
 
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$language["WELCOME_BACK"]."<a href='index.php?page=userdetails&id=".$CURUSER["uid"]."'> " . user_with_color($CURUSER["username"],$CURUSER["prefixcolor"],$CURUSER["suffixcolor"]) . get_user_icons($CURUSER) . warn($CURUSER). $rra .$upr.$udo.$udob.$ubir.$umal.$ufem.$uban.$uwar.$upar.$ubot.$utrmu.$utrmo.$uvimu.$uvimo.$ufrie.$ujunk.$ustaf.$usys." </a></td>");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$language["WELCOME_BACK"]."<a href='index.php?page=userdetails&id=".$CURUSER["uid"]."'> " . user_with_color($CURUSER["username"],$CURUSER["prefixcolor"],$CURUSER["suffixcolor"]) . get_user_icons($CURUSER) . warn($CURUSER). $rra .$upr.$udo.$udob.$ubir.$umal.$ufem.$uban.$uwar.$upar.$ubot.$utrmu.$utrmo.$uvimu.$uvimo.$ufrie.$ujunk.$ustaf.$usys." </a></td></h4>");
 
 //My Uploads
 $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$CURUSER['uid']} AND anonymous='false' GROUP BY info_hash");
 $up_count = sql_num_rows($res_up);
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=my_uploads&id=".$CURUSER["uid"]."'>My Uploads: {$up_count}</a></td>");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=my_uploads&id=".$CURUSER["uid"]."'>My Uploads: {$up_count}</a></td></h4>");
 //My Uploads End
 
 // Seeding/Leeching hack
@@ -148,22 +148,22 @@ $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE 
 //$num = $res->fetch_array(); $num1 = $res1->fetch_array();
 $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
 
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Seed: ".$seeder."</a></td>");
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Leech: ".$leecher."</a></td>");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Seed: ".$seeder."</a></td></h4>");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Leech: ".$leecher."</a></td></h4>");
 // END Seeding/Leeching hack
 
 //Snatched torrents
 $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$CURUSER['uid']} GROUP BY infohash");
 $comp_count = sql_num_rows($res_com);
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td>");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td></h4>");
 //Snatched torrents
 
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$xx."</td>\n");
+print("<h4><td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$xx."</td>\n");
 print("<td class= align=\"center\"><a class=\"mainmenu\"> <i class='fa fa-arrow-up' aria-hidden='true'></i>
 &nbsp;".makesize($CURUSER['uploaded']));
 print("</td><td class= align=\"center\"><a class=\"mainmenu\"> <i class='fa fa-arrow-down' aria-hidden='true'></i>
 &nbsp;".makesize($CURUSER['downloaded']));
-print("</td><td class= align=\"center\"><a class=\"mainmenu\"><i class'fa fa-refresh' aria-hidden='true'></i>&nbsp;".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---")."</td>\n");
+print("</td><td class= align=\"center\"><a class=\"mainmenu\"><i class'fa fa-refresh' aria-hidden='true'></i>&nbsp;".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---")."</td></h4>\n");
 
 if ($CURUSER["announce"]=="yes")
 print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\"><a href=\"index.php?page=announcement&amp;uid=".$CURUSER["uid"]."\"><img src=\"images/ann.png\"></a></td>\n");
@@ -213,7 +213,7 @@ if (isset($CURUSER) && $CURUSER && $CURUSER["uid"]>1)
          $post=date("l F jS Y \a\\t g:i a",$row["timestamp"]);
          $img='';
       }
-      print("</tr><tr><td class=\"mainuser\" align=\"center\" colspan=\"10\" style=\"text-align:center; padding-top:12px; padding-left:20px; float:none; font-style:italic; font-family: Verdana, Arial, Helvetica, sans-serif;\"><font color='$freec'>".$col."".$till."".ucfirst($post)."</font>".(($img!="")?"&nbsp;&nbsp;&nbsp;".$img:"")."</td>\n");
+      print("</tr><tr><h4><td class=\"mainuser\" align=\"center\" colspan=\"10\" style=\"text-align:center; padding-top:12px; padding-left:20px; float:none; font-style:italic; font-family: Verdana, Arial, Helvetica, sans-serif;\"><font color='$freec'>".$col."".$till."".ucfirst($post)."</font>".(($img!="")?"&nbsp;&nbsp;&nbsp;".$img:"")."</td></h4>\n");
    }
 
    // torrent search here
