@@ -56,17 +56,20 @@
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
  <script>
+
+ var Bs = jQuery.noConflict();
+
 var themes = {
     "Dark": "assets/bootstrap/css/bootstrap.css",
     "Light" : "assets/bootstrap/css/bootstrap1.css",
     "Light V2" : "assets/bootstrap/css/bootstrap2.css"
 
 }
-$(function(){
-   var themesheet = $('<link href="'+themes['Dark']+'" rel="stylesheet" />');
+Bs(function(){
+   var themesheet = Bs('<link href="'+themes['Dark']+'" rel="stylesheet" />');
     themesheet.appendTo('head');
-    $('.theme-link').click(function(){
-       var themeurl = themes[$(this).attr('data-theme')]; 
+    Bs('.theme-link').click(function(){
+       var themeurl = themes[Bs(this).attr('data-theme')]; 
         themesheet.attr('href',themeurl);
     });
 });

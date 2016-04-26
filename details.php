@@ -1362,4 +1362,10 @@ if ($CURUSER['can_stream'] == 'no'){
 $torrenttpl->set("streaming",$streaming);
 // add streaming
 
+require_once(dirname(__FILE__)."/include/class.traileraddict.php");
+
+$trailer = new trailerAddict($row['imdb']);
+
+$torrenttpl->set("trailer",($trailer->getTrailer()[0]));
+
    ?>
