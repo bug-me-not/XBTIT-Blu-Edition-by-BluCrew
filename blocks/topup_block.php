@@ -54,7 +54,7 @@ else
     if($num>0)
     {
         ?>
-        <table width=100% border=0 cellspacing=1 cellpadding=1>
+        <table class="table table-bordered">
         <tr>
         <td class='header'><?php echo $language["UM_MED"]; ?></td>
         <td class='header'><?php echo $language["UM_NICK"]; ?></td>
