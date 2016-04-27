@@ -230,7 +230,7 @@ Christmas Snowstorm End-->
 
     <!-- Site Alerts -->
     <center><div class="page-header">
-    <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
+    <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
     </h1></div></center>
     
 <!--Main Page Content -->
