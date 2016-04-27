@@ -324,26 +324,30 @@ print("<center><a href=index.php?page=modules&amp;module=helpdesk&action=problem
 }
 ?>
 <!-- ENGLISH -->
+<div class='panel panel-default'><div class='panel-heading'></div><div class='panel-body' align='center'>
 <br><center><h1><span style='color=purple'><?php echo $SITENAME . " " . $language["HELPDESK"]; ?></h1></span></center>
 <center><span style='color:red' size=2><?php echo $language["HD_WELCOME_MSG"];?></span><br/></center>
 
 <br/>
 <form method="post" action="index.php?page=modules&amp;module=helpdesk">
-<table border="0" align="center" cellpadding="5" cellspacing="0">
+<table width=auto border=0 align=center cellpadding=0 cellspacing=0>
   <tr>
     <td align="right">&nbsp;<b><?php echo $language["TITLE"];?>:</b></td>
     <td align="left"><input type="text" size="60" maxlength="50" name="title"></td>
   </tr>
-
+</br>
   <tr>
-    <td colspan="2"><textarea name="msg_problem" cols="60" rows="10"></textarea>
-    [<?php echo $language["HD_BB"];?>]
+    <td colspan="2"><textarea name="msg_problem" cols="75" rows="10"></textarea>
+    </br>
+    <center>[<?php echo $language["HD_BB"];?>]</center>
   </tr>
   <tr>
-    <td align="center" colspan="2"><input type="submit" value="<?php echo $language['HD_HELPME'];?>" class="btn"></td>
+    <td align="center" colspan="2"><input type="submit" value="<?php echo $language['HD_HELPME'];?>" class="btn btn-primary"></td>
   </tr>
 </table>
 </form>
+</div>
+</div>
 <?php
 
 //Adding Report site bug code to Helpdesk - Gaart
@@ -355,7 +359,7 @@ print "<center><h1><font color=purple>Report Site Bug <a href=\"index.php?page=m
 //Adding Report site bug code to Helpdesk 
 
 //Adding Uploaders Application to Helpdesk - Vinnie
-print "<left><h1><font color=purple>Apply for Uploader Rank <a href=\"index.php?page=uploadrequest\">HERE</a></h1></font></left>";
+print "<center><h1><font color=purple>Apply for Uploader Rank <a href=\"index.php?page=uploadrequest\">HERE</a></h1></font></center>";
 //Adding Report site bug code to Helpdesk 
 
 }
