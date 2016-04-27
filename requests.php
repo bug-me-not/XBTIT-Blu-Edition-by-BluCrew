@@ -94,7 +94,7 @@ else
 					$reqdetailstpl->set("req_descr",format_comment(unesc($res['description'])));
 
 					//Comments Section
-					$comm_que = get_result("SELECT `req`.`addedby`,`req`.`addedwhen`,`req`.`comment`,`u`.`username`,`ul`.`prefixcolor`,`ul`.`suffixcolor`,`u`.`avatar` FROM `{$TABLE_PREFIX}requests_comments` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`req`.`addedby` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `req`.`req_id`={$res['id']}",true,$btit_settings['cache_duration']);
+					$comm_que = get_result("SELECT `req`.`id`,`req`.`addedby`,`req`.`addedwhen`,`req`.`comment`,`u`.`username`,`ul`.`prefixcolor`,`ul`.`suffixcolor`,`u`.`avatar` FROM `{$TABLE_PREFIX}requests_comments` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`req`.`addedby` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `req`.`req_id`={$res['id']}",true,$btit_settings['cache_duration']);
 
 					if(count($comm_que)>0)
 					{
@@ -102,6 +102,7 @@ else
 						$cc = 0;
 						foreach($comm_que as $res)
 						{
+							$comments[$cc]['com_id'] = $res['id'];
 							$comments[$cc]['uid'] = $res['addedby'];
 							$comments[$cc]['username'] = $res['prefixcolor'].$res['username'].$res['suffixcolor'];
 

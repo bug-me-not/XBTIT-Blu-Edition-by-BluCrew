@@ -159,6 +159,9 @@
     <if:has_comments>
     <loop:comments>
     <tr>
+      <td colspan='5'>
+        <tag:com_id />
+      </td>
       <td>
         <a href='index.php?page=userdetails&amp;id=<tag:comments.uid />'><tag:comments.username /></a>
         <br>
@@ -182,6 +185,7 @@
     <div align='center' id='commentbox' style="display: none">
       <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=requests&amp;action=addcomment">
         <table class='lista' border="0" cellpadding="10">
+          <input type='hidden' name='com_id' value='<tag:com_id />'>
           <input type='hidden' name='req_id' value='<tag:req_id />'>
           <input type='hidden' name='uid' value='<tag:uid />'>
           <input type='hidden' name='auth' value='<tag:uid_auth />'>
