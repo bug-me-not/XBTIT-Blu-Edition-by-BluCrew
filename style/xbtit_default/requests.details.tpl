@@ -157,43 +157,49 @@
       </td>
     </tr>
     <if:has_comments>
+    <loop:comments>
     <tr>
       <td>
-        Data
+        <a href='index.php?page=userdetails&amp;id=<tag:comments.uid />'><tag:comments.username /></a>
+        <br>
+        <tag:comments.avatar />
+        <br>
+        <tag:comments.date />
       </td>
       <td>
-        Test
+        <tag:comments.text />
       </td>
     </tr>
-    <else:has_comments>
-    <tr>
-      <td id="nc" colspan="3" class="lista" align="center"><tag:language.NO_COMMENTS /></td>
-    </tr>
-  </if:has_comments>
-  <!-- Comment Box -->
+  </loop:comments>
+  <else:has_comments>
   <tr>
-    <td align='center' colspan="5">
-      <div align='center' id='commentbox' style="display: none">
-        <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=requests&amp;action=addcomment">
-          <table class='lista' border="0" cellpadding="10">
-            <input type='hidden' name='req_id' value='<tag:req_id />'>
-            <input type='hidden' name='uid' value='<tag:uid />'>
-            <input type='hidden' name='auth' value='<tag:uid_auth />'>
-            <tr>
-              <td align="left" class="header"><tag:language.COMMENT_1 />:</td>
-              <td class="lista" align="left"><tag:comment_comment /></td>
-            </tr>
-            <tr>
-              <td class="header" colspan="2" align="center">
-                <input type="submit" class="btn btn-primary" name="confirm" id="submit_btn" value="<tag:language.FRM_CONFIRM />" />
-              </td>
-            </tr>
-          </table>
-        </form>
-      </div>
-    </td>
+    <td id="nc" colspan="5" class="lista" align="center"><tag:language.NO_COMMENTS /></td>
   </tr>
-  <!-- Comment Box -->
+</if:has_comments>
+<!-- Comment Box -->
+<tr>
+  <td align='center' colspan="5">
+    <div align='center' id='commentbox' style="display: none">
+      <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=requests&amp;action=addcomment">
+        <table class='lista' border="0" cellpadding="10">
+          <input type='hidden' name='req_id' value='<tag:req_id />'>
+          <input type='hidden' name='uid' value='<tag:uid />'>
+          <input type='hidden' name='auth' value='<tag:uid_auth />'>
+          <tr>
+            <td align="left" class="header"><tag:language.COMMENT_1 />:</td>
+            <td class="lista" align="left"><tag:comment_comment /></td>
+          </tr>
+          <tr>
+            <td class="header" colspan="2" align="center">
+              <input type="submit" class="btn btn-primary" name="confirm" id="submit_btn" value="<tag:language.FRM_CONFIRM />" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </td>
+</tr>
+<!-- Comment Box -->
 </table>
 </div>
 </div>

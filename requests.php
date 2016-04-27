@@ -94,11 +94,33 @@ else
 					$reqdetailstpl->set("req_descr",format_comment(unesc($res['description'])));
 
 					//Comments Section
+					$comm_que = get_result("SELECT `req`.`addedby`,`req`.`addedwhen`,`req`.`comment`,`u`.`username`,`ul`.`prefixcolor`,`ul`.`suffixcolor`,`u`.`avatar` FROM `{$TABLE_PREFIX}requests_comments` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`req`.`addedby` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `req`.`req_id`={$res['id']}",true,$btit_settings['cache_duration']);
 
+					if(count($comm_que)>0)
+					{
+						$comments = array();
+						$cc = 0;
+						foreach($comm_que as $res)
+						{
+							$comments[$cc]['uid'] = $res['addedby'];
+							$comments[$cc]['username'] = $res['prefixcolor'].$res['username'].$res['suffixcolor'];
+
+							$av_link = ($res["avatar"] && $res["avatar"] != "") ? htmlspecialchars($res["avatar"]): "{$STYLEURL}/images/default_avatar.gif";
+							$comments[$cc]['avatar'] = image_or_link($av_link,"",$comments[$cc]['username']);
+
+							$comemnts[$cc]['date'] = date("d/m/Y H:i:s",$res['addedwhen']-$offset);
+							$comments[$cc]['text'] = format_comment($res['comment']);
+						}
+
+						$reqdetailstpl->set("comments",$comments);
+						$reqdetailstpl->set("has_comments",true,true);
+					}
+					else
+					{
+						$reqdetailstpl->set("has_comments",false,true);
+					}
 					
-					$reqdetailstpl->set("has_comments",false,true);
-					$reqdetailstpl->set("comment_id",$id);
-                    $reqdetailstpl->set("comment_comment",textbbcode("comment","comment",htmlspecialchars(unesc($comment))));
+					$reqdetailstpl->set("comment_comment",textbbcode("comment","comment",""));
 
 					//Comments Section
 
