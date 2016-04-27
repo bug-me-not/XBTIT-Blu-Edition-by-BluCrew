@@ -132,7 +132,7 @@ print("<td style=\"text-align:left;\" align=\"left\"><a href='index.php?page=use
 //My Uploads
 $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$CURUSER['uid']} AND anonymous='false' GROUP BY info_hash");
 $up_count = sql_num_rows($res_up);
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=my_uploads&id=".$CURUSER["uid"]."'>My Uploads: {$up_count}</a></td>");
+print("&nbsp;<td style=\"text-align:left;\" align=\"left\"><a class=\"mainmenu\"><a href='index.php?page=my_uploads&id=".$CURUSER["uid"]."'>My Uploads: {$up_count}</a></td>&nbsp;&nbsp;&nbsp;");
 //END My Uploads End
 
 // Seeding/Leeching hack
@@ -142,34 +142,27 @@ $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE 
 //$num = $res->fetch_array(); $num1 = $res1->fetch_array();
 $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
 
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Seed: ".$seeder."</a></td>");
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Leech: ".$leecher."</a></td>");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Seed: ".$seeder."</a></td>&nbsp;&nbsp;&nbsp;");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Leech: ".$leecher."</a></td>&nbsp;&nbsp;&nbsp;");
 // END Seeding/Leeching hack
 
 //Snatched torrents
 $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$CURUSER['uid']} GROUP BY infohash");
 $comp_count = sql_num_rows($res_com);
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td>");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td>&nbsp;&nbsp;&nbsp;");
 //END Snatched torrents
-print "</br>";
+print "<br />";
 //Stats
 print("<spam style=\"text-align:right; color: #00C900\" align=\"center\">&uarr;&nbsp;".makesize($CURUSER['uploaded']));
 print("</span><span style=\"text-align:center; color: #bd362f;\" align=\"left\">&nbsp;&darr;&nbsp;".makesize($CURUSER['downloaded']));
 print("</span><span style=\"text-align:left; color: #636311;\" align=\"left\">&nbsp;(SR ".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---").")</span> \n");
 //END Stats    
 
-
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$rep." \n");
-
-print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\">".$col."<font color='$freec'>$till".ucfirst($post)."</font> $pic</td>\n");
-
 print "</tr>";
 
 if (isset($CURUSER) && $CURUSER && $CURUSER["uid"]>1)
 {
    print("<form name=\"jump1\" action=\"index.php\" method=\"post\">\n");
-
-   print("<table cellpadding=\"2\" cellspacing=\"1\" width=\"100%\" border=\"0\" align=\"center\"><tr>\n");
 
    $style=style_list();
    $langue=language_list();
@@ -182,8 +175,8 @@ if (isset($CURUSER) && $CURUSER && $CURUSER["uid"]>1)
    $block[3]["id"]="no";
    $block[3]["block"]="no blocks";
 
-   // torrent search here
-   print('</tr></table></form>');
+
+   print('</form>');
 }
 ?>
 </div></div></div>

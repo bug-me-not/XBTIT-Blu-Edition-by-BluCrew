@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html<tag:main_rtl /> xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -234,7 +232,7 @@ Christmas Snowstorm End-->
     <center><div class="page-header">
     <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
     </h1></div></center>
-
+    
 <!--Main Page Content -->
 
     <table border='0' align='center' cellpadding='0' cellspacing='0' width='auto'>

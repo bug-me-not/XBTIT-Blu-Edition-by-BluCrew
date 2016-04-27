@@ -81,12 +81,12 @@ else
           <h4><i class="fa fa-fw fa-files-o"></i><?php echo $language["BLOCK_INFO"]; ?> </h4>
        </div>
        <div class="panel-body" align="center">
-<b><?php echo $language["MEMBERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $users; ?>&nbsp;||&nbsp;
-<b><?php echo $language["TORRENTS"]; ?>:</b>&nbsp;&nbsp;<?php echo $torrents; ?>&nbsp;||&nbsp;
-<b><?php echo $language["SEEDERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $seeds; ?>&nbsp;||&nbsp;
-<b><?php echo $language["LEECHERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $leechers; ?>&nbsp;||&nbsp;
+<b><?php echo $language["MEMBERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $users; ?>&nbsp;&nbsp;&nbsp;
+<b><?php echo $language["TORRENTS"]; ?>:</b>&nbsp;&nbsp;<?php echo $torrents; ?>&nbsp;&nbsp;&nbsp;
+<b><?php echo $language["SEEDERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $seeds; ?>&nbsp;&nbsp;&nbsp;
+<b><?php echo $language["LEECHERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $leechers; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["PEERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $peers; ?><br />
-<b><?php echo $language["SEEDERS"]."/".$language["LEECHERS"]; ?>:&nbsp;&nbsp;</b><?php echo $percent."%"; ?>&nbsp;||&nbsp;
+<b><?php echo $language["SEEDERS"]."/".$language["LEECHERS"]; ?>:&nbsp;&nbsp;</b><?php echo $percent."%"; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["TRAFFIC"]; ?>:</b>&nbsp;&nbsp;<?php echo $traffic; ?>
 </br>
         </div>
