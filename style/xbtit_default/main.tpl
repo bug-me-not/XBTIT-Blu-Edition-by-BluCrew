@@ -228,10 +228,10 @@ Christmas Snowstorm End-->
     </div>
     
 
-    <!-- Site Alerts -->
+    <!-- Site Alerts
     <center><div class="page-header">
     <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
-    </h1></div></center>
+    </h1></div></center> -->
     
 <!--Main Page Content -->
 
