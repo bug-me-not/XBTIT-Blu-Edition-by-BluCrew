@@ -494,7 +494,7 @@ $clock(document).ready(function(){
                 <div class="row">
                     <div class="col-md-12">
                         <h1>
-                            <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank">{{movie.Title}}</a> <small> {{movie.imdbRating}}</small>
+                            <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank"><p class="text-success">{{movie.Title}}</p></a> <small>Rating: {{movie.imdbRating}}</small>
                         </h1>
                         Runtime: {{movie.Runtime}}<br />
                         Genre: {{movie.Genre}}<br />
@@ -511,7 +511,7 @@ $clock(document).ready(function(){
                 </div>
             </div>
             <div class="alert alert-danger" role="alert" ng-show="error">
-                <strong>Ooops!</strong> Couldnt find a movie with that name.
+                <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
             </div>
         </div>
     </div>
