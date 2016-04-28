@@ -1,7 +1,7 @@
-<table class="lista" width="100%">
+<table class="table table-bordered">
   <loop:admin_menu>
   <tr>
-    <td class="header">
+    <td class="head">
         <tag:admin_menu[].title />
     </td>
   </tr>
