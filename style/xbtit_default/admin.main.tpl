@@ -1,5 +1,7 @@
-
-<center><h2><b><tag:language.ADMINCP_NOTES /></b></h2></center>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h1 class="panel-title"><center><b><tag:language.ADMINCP_NOTES /></b></center></h1>
+</div>
 <table border="0" class="lista" align="center" width="100%">
 <tr>
   <td valign="top" width="100%">
@@ -16,3 +18,4 @@
   </td>
   </tr>
 </table>
+</div>
