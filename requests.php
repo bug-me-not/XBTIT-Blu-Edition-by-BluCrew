@@ -109,7 +109,6 @@ else
 							$av_link = ($res["avatar"] && $res["avatar"] != "") ? htmlspecialchars($res["avatar"]): "{$STYLEURL}/images/default_avatar.gif";
 							$comments[$cc]['avatar'] = ("<img onload=\"resize_avatar(this);\" src=\"{$av_link}\" alt=\"{$res['username']}'s Avatar\"/>");
 
-							$comments[$cc]['addedwhen'] = " ".date("d/m/Y",$res['addedwhen']-$offset)."<br>".date("H:i:s",$res['addedwhen']-$offset)." ";
 							$comments[$cc]['text'] = format_comment($res['comment']);
 						}
 

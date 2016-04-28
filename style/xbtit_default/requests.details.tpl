@@ -157,8 +157,6 @@
         <a href='index.php?page=userdetails&amp;id=<tag:comments[].uid />'><tag:comments[].username /></a>
         <br>
         <tag:comments[].avatar />
-        <br>
-        <tag:comments[].addedwhen />
       </td>
       <td>
         <tag:comments[].text />
