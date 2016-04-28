@@ -7,8 +7,6 @@
 <tag:vex12 />
 <tag:vex14 />
 
-<tag:pagtop />
-
 <tag:vex15 />
 <tag:vex17 />
 <tag:vex16 />
@@ -30,3 +28,5 @@
 <tag:vex36 />
 <tag:vex38 />
 <tag:vex40 />
+
+<tag:pagtop />

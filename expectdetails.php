@@ -48,7 +48,7 @@ $s = $num["expect"];
 $expectdetailstpl = new bTemplate();
 $expectdetailstpl ->set("language",$language);
 
-$expectdetailstpl->set("exd2","<center><table width=550 border=0 cellspacing=0 cellpadding=3>\n");
+$expectdetailstpl->set("exd2","<center><table class='table table-bordered'>\n");
 
 $url = "index.php?page=expectedit&id=$id";
  if (isset($_GET["returnto"])) {
@@ -57,7 +57,7 @@ $url = "index.php?page=expectedit&id=$id";
          $keepget .= $addthis;
  }
  $editlink = "a href=\"$url\"";
-$expectdetailstpl->set("exd4","<table class=lista align=center width=550 cellspacing=2 cellpadding=0>\n");
+$expectdetailstpl->set("exd4","<table class='table table-bordered'>\n");
 $expectdetailstpl->set("exd6","<br><tr><td align=left class=header><B>" . $language["NAME"] . ": </B></td><td class=lista width=70% align=left>$num[expect]");
 if ($CURUSER["uid"] == $num["userid"] || $CURUSER["edit_torrents"]== "yes")
 {
@@ -99,7 +99,7 @@ if ($num["uploaded"]=="yes"){
 $expectdetailstpl->set("exd19","<tr><td align=left class=header><b>" . $language["UPLOADED"] . ":</b></td><td class=lista align=left><a href=" . $num["torrenturl"] . ">" . $language["TORR_CLICK"] . "</a></td></tr>");
 }
 
-$expectdetailstpl->set("exd20","<tr><td class=lista align=center width=100% colspan='2'><form method=get action=index.php><input type=hidden name=page value=viewexpected /><center><input type=submit value=\"".$language["BACK"] ."\"></center></form></td></tr>");
+$expectdetailstpl->set("exd20","<tr><td class=lista align=center width=100% colspan='2'><form method=get action=index.php><input type=hidden name=page value=viewexpected /><center><input type=submit class='btn btn-danger' value=\"".$language["BACK"] ."\"></center></form></td></tr>");
 $expectdetailstpl->set("exd22","</table>");
 
 // comments...

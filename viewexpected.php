@@ -51,8 +51,10 @@ else
 {
    if (!$CURUSER || $CURUSER["view_torrents"]=="yes")
    {
-      $viewexpectedtpl->set("vex2","<div align=right><a href=index.php?page=expected>" . $language["ADD_EXPECTED"] . "</a> | <a href=index.php?page=viewexpected&expectorid=$CURUSER[uid]>" . $language["VIEW_MY_EXPECTED"] . "</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-      $viewexpectedtpl->set("vex4","</div>");
+      $viewexpectedtpl->set("vex2","<div class='panel panel-primary'>
+         <div class='panel-heading'><h3 class='panel-title'>Options</h3></div>
+         <div class='panel-body'><center><a href=index.php?page=expected>" . $language["ADD_EXPECTED"] . "</a> | <a href=index.php?page=viewexpected&expectorid=$CURUSER[uid]>" . $language["VIEW_MY_EXPECTED"] . "</a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+      $viewexpectedtpl->set("vex4","</div></div>");
    }
 
    $categ = sql_esc($_GET["category"]);
@@ -84,9 +86,9 @@ else
    $res = do_sqlquery("SELECT expected.hitsmin ,expected.hits ,expected.expect_offer,users.username, expected.id, expected.userid, expected.expect, expected.added, expected.date, expected.uploaded, expected.torrenturl,categories.image as catimg, categories.id as catid, categories.name as cat FROM {$TABLE_PREFIX}expected expected INNER JOIN {$TABLE_PREFIX}categories categories on expected.cat = categories.id inner join {$TABLE_PREFIX}users users on expected.userid = users.id  $categq $searchq $sort $limit") or sqlerr();
    $num = sql_num_rows($res);
 
-   $viewexpectedtpl->set("vex6","<br><br><CENTER><form method=get action=index.php><input type=hidden name=page value=viewexpected />");
+   $viewexpectedtpl->set("vex6","<br><br><CENTER><form method=get action=index.php><input type=hidden name=page value=viewexpected/>");
    $viewexpectedtpl->set("vex7","&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text size=30 name=search>");
-   $viewexpectedtpl->set("vex8","<input type=submit align=center value=".$language["SEARCH"]." style='height: 22px'>\n");
+   $viewexpectedtpl->set("vex8","<input type=submit align=center class='btn btn-primary btn-sm' value=".$language["SEARCH"].">\n");
    $viewexpectedtpl->set("vex10","</form></CENTER><br>");
    $viewexpectedtpl->set("pagtop","<center>$pagertop</center>");
    $viewexpectedtpl->set("vex12","<Table border=0 width=99% align=center cellspacing=0 cellpadding=0><TR><TD width=49.5% align=left>");
@@ -96,14 +98,14 @@ else
    $viewexpectedtpl->set("vex16","");
    $viewexpectedtpl->set("vex18",categories()); 
    $viewexpectedtpl->set("vex19","");
-   $viewexpectedtpl->set("vex20","<input type=submit align=center value=" . $language["FIND_EXPECT"] . ">\n");
+   $viewexpectedtpl->set("vex20","<input type=submit align=center class='btn btn-primary btn-sm' value=" . $language["FIND_EXPECT"] . ">\n");
    $viewexpectedtpl->set("vex22","</form></td></tr></table>");
    $viewexpectedtpl->set("vex24","<form method=post action=index.php?page=takedelexpect>");
-   $viewexpectedtpl->set("vex26","<table width=99% align=center cellspacing=1 class=lista>\n");
-   $viewexpectedtpl->set("vex28","<tr><td class=header align=center>" . $language["UPLOADED"] . "</td><td class=header align=center>" . $language["TYPE"] . "</td><td class=header align=center>" . $language["NAME"] . "</td><td class=header align=center>" . $language["CATEGORY"] . "</td><td class=header align=center>" . $language["ADDED"] . "</td><td class=header align=center>" . $language["UPLOADER"] . "</td><td class=header align=center>" . $language["EXPECVOTE"] . "</td>\n");
+   $viewexpectedtpl->set("vex26","<table class='table table-bordered'>");
+   $viewexpectedtpl->set("vex28","<tr><td class=head align=center>" . $language["UPLOADED"] . "</td><td class=head align=center>" . $language["TYPE"] . "</td><td class=head align=center>" . $language["NAME"] . "</td><td class=head align=center>" . $language["CATEGORY"] . "</td><td class=head align=center>" . $language["ADDED"] . "</td><td class=head align=center>" . $language["UPLOADER"] . "</td><td class=head align=center>" . $language["EXPECVOTE"] . "</td>\n");
 
    if (!$CURUSER || $CURUSER["delete_torrents"]=="yes")
-   $viewexpectedtpl->set("vex30","<td class=header align=center>" . $language["FRM_DELETE"] . "</td></tr>\n");
+   $viewexpectedtpl->set("vex30","<td class=head align=center>" . $language["FRM_DELETE"] . "</td></tr>\n");
 
    for ($i = 0; $i < $num; ++$i)
    {
@@ -154,7 +156,7 @@ else
    $viewexpectedtpl->set("vex36","</table>\n");
 
    if (!$CURUSER || $CURUSER["delete_torrents"]=="yes")
-   $viewexpectedtpl->set("vex38","<table width=99%><td align=right><input type=submit value=" . $language["GO"] . "></td></table>");
+   $viewexpectedtpl->set("vex38","<table width=99%><td align=right><input type=submit class='btn btn-danger' value= Delete></td></table>");
    $viewexpectedtpl->set("vex40","</form>");
 }
 ?>

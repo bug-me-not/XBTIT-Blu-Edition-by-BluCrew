@@ -48,9 +48,9 @@ $res2 = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}expected $where") or sqlerr();
 $num2 = sql_num_rows($res2);
 
 
-$expectedtpl->set("ex4","<table border=0 width=100% cellspacing=0 cellpadding=3>");
-$expectedtpl->set("ex6","<tr><td class=colhead align=center><center>" . $language["SEARCH"]  ." ". $language["TORRENT"] . "</center></td></tr>");
-$expectedtpl->set("ex8","<tr><td align=center><form method=get action=index.php><input type=hidden name=page value=torrents />");
+$expectedtpl->set("ex4","<div class='panel panel-primary'>");
+$expectedtpl->set("ex6","<div class='panel-heading'><h3 class='panel-title'><center>" . $language["SEARCH"]  ." ". $language["TORRENT"] . "</center></h3></div>");
+$expectedtpl->set("ex8","<div class='panel-body'><form method=get action=index.php><input type=hidden name=page value=torrents />");
 $expectedtpl->set("ex10","<input type=text name=search size=40 value=$searchstr >");
 $expectedtpl->set("ex12","in");
 $expectedtpl->set("ex14","");
@@ -64,9 +64,9 @@ $deadchkbox .= " /> " . $language["INC_DEAD"] . "\n";
 $expectedtpl->set("ex18",categories());
 $expectedtpl->set("ex20","");
 $expectedtpl->set("ex22","$deadchkbox");
-$expectedtpl->set("ex24","<input type=submit value=". $language["SEARCH"] ."  />");
+$expectedtpl->set("ex24","<input type=submit class='btn btn-primary btn-sm' value=". $language["SEARCH"] ."  />");
 $expectedtpl->set("ex26","</form>");
-$expectedtpl->set("ex28","</td></tr></table><BR><HR><BR>");
+$expectedtpl->set("ex28","</table></div></div><BR><HR><BR>");
 
 $expectedtpl->set("ex30","<br>\n");
 
