@@ -4,21 +4,18 @@
 <!-- BluMovieDB Some Needed angular module JS -->
 <script>
 var app = angular.module('app', []);
+var imdb = "<tag:torrent.imdb />";
 app.controller("ListCtrl", function ($scope, $http) {
      // Search submit
-    $scope.submit = function () {
+    angular.element(document).ready(function () {
         $scope.loading = true;
         $scope.error = false;
-        $http.get('https://www.omdbapi.com/?i=tt' + $scope.search + '&y=&plot=full&r=json')
+        $http.get('https://www.omdbapi.com/?i=tt' + imdb + '&y=&plot=full&r=json')
                .success(function (data, status, headers, config) {
                    $scope.movie = data;
                    $scope.results = true;
                    $scope.error = false;
                    $scope.loading = false;
-
-                   if ($scope.movie.Poster === "N/A") {
-                       $scope.movie.Poster = "http://placehold.it/350x450/FFF/EEE";
-                   }
 
                    if ($scope.movie.Response === "False") {
                        $scope.results = false;
@@ -32,7 +29,7 @@ app.controller("ListCtrl", function ($scope, $http) {
                    $scope.loading = false;
                    $scope.error = true;
                });
-    };
+    });
 });
 </script>
 
@@ -485,44 +482,17 @@ $clock(document).ready(function(){
    <body ng-app="app">
    <div ng-controller="ListCtrl">
         <div class="container">         
-            <div class="search">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form ng-submit="submit()" class="form-horizontal">
-                            <div class="input-group">
-                                <input autofocus required ng-model="search" type="text" class="form-control input-lg" placeholder="Search for a movie!">
-
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default btn-lg" type="submit">Go!</button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
             <div class="alert alert-info" ng-show="loading">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <div>Loading...</div>
                     </div>
                 </div>
             </div>
 
-            <div class="well" ng-show="results">
+            <div ng-show="results">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank">
-                            <img class="img-responsive" ng-src="{{movie.Poster}}" alt="{{movie.Title}}" />
-                        </a>
-                    </div>
-
-                    <div class="col-md-8">
-                        <button type="button" class="close" ng-click="results = !results">
-                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                        </button>
-
+                    <div class="col-md-12">
                         <h1>
                             <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank">{{movie.Title}}</a> <small> {{movie.imdbRating}}</small>
                         </h1>
