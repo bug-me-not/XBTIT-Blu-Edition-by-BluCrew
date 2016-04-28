@@ -63,7 +63,6 @@ if ($CURUSER["id_level"]>=3 && $btit_settings['fmhack_games']=='enabled')
         print("<ul class='dropdown-menu'>\n");
         print("<li><a href='#' data-theme='Dark' class='theme-link'>Dark (Default)</a></li>\n");
         print("<li><a href='#' data-theme='Light' class='theme-link'>Light</a></li>\n");
-        print("<li><a href='#' data-theme='Light V2' class='theme-link'>Light V2</a></li>\n");
         print("</ul></li>");
 
 //STAFF

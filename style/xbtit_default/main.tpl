@@ -59,7 +59,6 @@
 var themes = {
     "Dark": "assets/bootstrap/css/bootstrap.css",
     "Light" : "assets/bootstrap/css/bootstrap1.css",
-    "Light V2" : "assets/bootstrap/css/bootstrap2.css"
 
 }
 Bs(function(){
