@@ -513,7 +513,7 @@ $clock(document).ready(function(){
             <div class="well" ng-show="results">
                 <div class="row">
                     <div class="col-md-4">
-                        <a ng-href="http://www.imdb.com/title/{{movie.imdbID}}/" target="_blank">
+                        <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank">
                             <img class="img-responsive" ng-src="{{movie.Poster}}" alt="{{movie.Title}}" />
                         </a>
                     </div>
