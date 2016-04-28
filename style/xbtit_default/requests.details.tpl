@@ -20,13 +20,6 @@
 
         return true;
       }
-      //Comments Script
-      jQuery(document).ready(function($) {
-        $("button#insert_comment").click(function() {
-          $('div#commentbox').slideToggle("slow");
-          $('textarea').focus();
-        });
-      });
     </script>
   </div>
   <div id='reqtitle' align='center'><h2><tag:req_head /></h2></div>
@@ -150,27 +143,25 @@
   <h4>Comments</h4>
 </div>
 <div class='panel-body'>
-  <table class='tabled tabled-striped'>
-    <tr>
-      <td style="padding-left: 45%;" colspan="5">
-        <button id='insert_comment' class='btn btn-info'>Post a Comment</button>
-      </td>
-    </tr>
+  <table class='table table-bordered'>
     <if:has_comments>
     <loop:comments>
     <tr>
-      <td colspan='5'>
-        <tag:com_id />
+      <td colspan='5' style='text-align:right;'>
+      Edit &nbsp; Delete &nbsp;
+        #<tag:comments[].com_id />
+      </td>
+    </tr>
+    <tr>
+      <td style='width: 150px;'>
+        <a href='index.php?page=userdetails&amp;id=<tag:comments[].uid />'><tag:comments[].username /></a>
+        <br>
+        <tag:comments[].avatar />
+        <br>
+        <tag:comments[].addedwhen />
       </td>
       <td>
-        <a href='index.php?page=userdetails&amp;id=<tag:comments.uid />'><tag:comments.username /></a>
-        <br>
-        <tag:comments.avatar />
-        <br>
-        <tag:comments.date />
-      </td>
-      <td>
-        <tag:comments.text />
+        <tag:comments[].text />
       </td>
     </tr>
   </loop:comments>
@@ -181,26 +172,28 @@
 </if:has_comments>
 <!-- Comment Box -->
 <tr>
+  <td colspan='5'>
+    <div style='margin:15px 0px 15px 0px;'></div>
+  </td>
+</tr>
+<tr>
   <td align='center' colspan="5">
-    <div align='center' id='commentbox' style="display: none">
-      <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=requests&amp;action=addcomment">
-        <table class='lista' border="0" cellpadding="10">
-          <input type='hidden' name='com_id' value='<tag:com_id />'>
-          <input type='hidden' name='req_id' value='<tag:req_id />'>
-          <input type='hidden' name='uid' value='<tag:uid />'>
-          <input type='hidden' name='auth' value='<tag:uid_auth />'>
-          <tr>
-            <td align="left" class="header"><tag:language.COMMENT_1 />:</td>
-            <td class="lista" align="left"><tag:comment_comment /></td>
-          </tr>
-          <tr>
-            <td class="header" colspan="2" align="center">
-              <input type="submit" class="btn btn-primary" name="confirm" id="submit_btn" value="<tag:language.FRM_CONFIRM />" />
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
+    <form enctype="multipart/form-data" name="comment" method="post" action="index.php?page=requests&amp;action=addcomment">
+      <table class='lista' border="0" cellpadding="10">
+        <input type='hidden' name='req_id' value='<tag:req_id />'>
+        <input type='hidden' name='uid' value='<tag:uid />'>
+        <input type='hidden' name='auth' value='<tag:uid_auth />'>
+        <tr>
+          <td align="left" class="header"><tag:language.COMMENT_1 />:</td>
+          <td class="lista" align="left"><tag:comment_comment /></td>
+        </tr>
+        <tr>
+          <td class="header" colspan="2" align="center">
+            <input type="submit" class="btn btn-primary" name="confirm" id="submit_btn" value="<tag:language.FRM_CONFIRM />" />
+          </td>
+        </tr>
+      </table>
+    </form>
   </td>
 </tr>
 <!-- Comment Box -->

@@ -94,9 +94,9 @@ else
 					$reqdetailstpl->set("req_descr",format_comment(unesc($res['description'])));
 
 					//Comments Section
-					$comm_que = get_result("SELECT `req`.`id`,`req`.`addedby`,`req`.`addedwhen`,`req`.`comment`,`u`.`username`,`ul`.`prefixcolor`,`ul`.`suffixcolor`,`u`.`avatar` FROM `{$TABLE_PREFIX}requests_comments` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`req`.`addedby` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `req`.`req_id`={$res['id']}",true,$btit_settings['cache_duration']);
+					$comm_que = get_result("SELECT `req`.`id`,`req`.`addedby`,UNIX_TIMESTAMP(`req`.`addedwhen`) as `addedwhen`,`req`.`comment`,`u`.`username`,`ul`.`prefixcolor`,`ul`.`suffixcolor`,`u`.`avatar` FROM `{$TABLE_PREFIX}requests_comments` `req` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id`=`req`.`addedby` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` WHERE `req`.`req_id`={$res['id']}",true,$btit_settings['cache_duration']);
 
-					if(count($comm_que)>0)
+					if(count($comm_que)>0 && $CURUSER['view_comments']=='yes')
 					{
 						$comments = array();
 						$cc = 0;
@@ -107,9 +107,9 @@ else
 							$comments[$cc]['username'] = $res['prefixcolor'].$res['username'].$res['suffixcolor'];
 
 							$av_link = ($res["avatar"] && $res["avatar"] != "") ? htmlspecialchars($res["avatar"]): "{$STYLEURL}/images/default_avatar.gif";
-							$comments[$cc]['avatar'] = image_or_link($av_link,"",$comments[$cc]['username']);
+							$comments[$cc]['avatar'] = ("<img onload=\"resize_avatar(this);\" src=\"{$av_link}\" alt=\"{$res['username']}'s Avatar\"/>");
 
-							$comemnts[$cc]['date'] = date("d/m/Y H:i:s",$res['addedwhen']-$offset);
+							$comments[$cc]['addedwhen'] = " ".date("d/m/Y",$res['addedwhen']-$offset)."<br>".date("H:i:s",$res['addedwhen']-$offset)." ";
 							$comments[$cc]['text'] = format_comment($res['comment']);
 						}
 
