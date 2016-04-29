@@ -60,13 +60,13 @@ else
       }
    }
    ?>
-   <table class="lista"  width="100%">
-      <tr><td align="center"><i class="fa fa-server fa-3x"></i><td></tr></center>
-         <tr><td class="header" style="text-align:center;" align="center"><b>Seedbox Torrents</td></tr>
-            <tr><td class="lista" style="text-align:center;" align="center"><b><font color="red"><?php echo $num; ?></font></b></td></tr>
-            <tr><td class="header" style="text-align:center;" align="center"><b>Seedbox Current UP Speed</td></tr>
-               <tr><td style="text-align:center;" align="right"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td></tr>
-            </tr></table>
+   <table class="lista" width="100%">
+      <tr><td align="center"><i class="fa fa-server fa-3x"></i></tr>
+         <tr><td align="center"><b>Seedbox Torrents</td></tr>
+            <tr><td align="center"><b><font color="red"><?php echo $num; ?></font></b></td></tr>
+            <tr><td align="center"><b>Seedbox Current UP Speed</td></tr>
+               <tr><td align="center"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td></tr>
+            </table>
             <table align = "center" cellpadding="1" cellspacing="1" width="100%">
                <tr>
                <style>
