@@ -110,13 +110,10 @@ while($row=$res->fetch_assoc())
  }
 }
 ?>
-       <div class="row">
-       <div class="col-md-6">
-       <div class="panel panel-default">
-       <div class="panel-heading">
-          <h4><i class="fa fa-fw fa-files-o"></i><?php echo $language["BLOCK_INFO"]; ?> </h4>
-       </div>
-       <div class="panel-body" align="center">
+<div class="col-md-6 col-lg-6">
+<div class="panel panel-default">
+<div class="panel-heading"><h4><i class="fa fa-fw fa-files-o"></i><?php echo $language["BLOCK_INFO"]; ?> </h4></div>
+<div class="panel-body" align="center">
 <b><?php echo $language["MEMBERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $users; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["MEMBERSNEWTODAY"]; ?>:</b>&nbsp;&nbsp;<?php echo $newuserstoday; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["MEMBERSNEWMONTH"]; ?>:</b>&nbsp;&nbsp;<?php echo $newusersmonth; ?>&nbsp;&nbsp;&nbsp;
@@ -127,8 +124,8 @@ while($row=$res->fetch_assoc())
 <b><?php echo $language["SEEDERS"]."/".$language["LEECHERS"]; ?>:&nbsp;&nbsp;<?php echo $percent."%"; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["TRAFFIC"]; ?>:</b>&nbsp;&nbsp;<?php echo $traffic; ?>
 </br>
-        </div>
-    </div>
+</div>
+</div>
 </div>
 
 <?php

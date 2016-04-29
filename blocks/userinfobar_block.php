@@ -1,4 +1,9 @@
-<div class='col-md-6'><div class='panel panel-default'><div class='panel-heading'><h4><i class='fa fa-fw fa-user'></i>Welcome Back</h4></div><div class='panel-body' align='center'>
+<div class="col-md-6 col-lg-6">
+<div class="clearfix visible-sm-block"></div>
+<div class="clearfix visible-md-block"></div>
+<div class='panel panel-default'>
+<div class='panel-heading'><h4><i class='fa fa-fw fa-user'></i>Welcome Back</h4></div>
+<div class='panel-body' align='center'>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -179,4 +184,7 @@ if (isset($CURUSER) && $CURUSER && $CURUSER["uid"]>1)
    print('</form>');
 }
 ?>
-</div></div></div>
+</div>
+</div>
+</div>
+
