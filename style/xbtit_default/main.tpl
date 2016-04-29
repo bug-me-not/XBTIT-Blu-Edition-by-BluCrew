@@ -235,18 +235,16 @@ Christmas Snowstorm End-->
         <td valign='top' width='5' rowspan='2'></td>
         <if:HAS_LEFT_COL>
           <td valign='top' width='225'><tag:main_left /></td>
-        <td valign='top' width='30' rowspan='2'></td>
         </if:HAS_LEFT_COL>
         
       <td valign='top'>
-      <table align='center' width='auto' cellpadding='0' cellspacing='0' border='0'>
+      <table align='center' width='100%' cellpadding='0' cellspacing='0' border='0'>
         <tr>
           <td valign='top'><tag:main_content /></td>
         </tr>
       </table></td>
       
         <if:HAS_RIGHT_COL>
-        <td valign='top' width='30' rowspan='2'></td>
           <td valign='top' width='225'><tag:main_right /></td>
         </if:HAS_RIGHT_COL>
         <td valign='top' width='5' rowspan='2'></td>
