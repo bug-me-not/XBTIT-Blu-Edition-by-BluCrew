@@ -480,52 +480,40 @@ $clock(document).ready(function(){
    <td align="right" class="header" valign="top">BluMovieDB</td>
    <td class="lista" align="center" style="text-align:left;" valign="top">
    <body ng-app="app">
-   <div ng-controller="ListCtrl">
-        <div class="container">         
-            <div class="alert alert-info" ng-show="loading">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div>Loading...</div>
-                    </div>
-                </div>
-            </div>
+   <div ng-controller="ListCtrl">        
+   <div class="alert alert-info" ng-show="loading">
+   <div class="row">
+   <div class="col-md-10">
+   <div>Loading...</div>
+   </div>
+   </div>
+   </div>
 
-            <div ng-show="results">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>
-                            <a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank"><p class="text-success">{{movie.Title}}</p></a> <small>Rating: {{movie.imdbRating}}</small>
-                        </h1>
-                        Runtime: {{movie.Runtime}}<br />
-                        Genre: {{movie.Genre}}<br />
-                        Released: {{movie.Released}}
+   <div ng-show="results">
+   <div class="row">
+   <div class="col-md-12">
+   <h1><a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank"><p class="text-success">{{movie.Title}}</p></a> <small>Rating: {{movie.imdbRating}}</small></h1>
 
-                        <p class="lead">
-                            <b>Director:</b> {{movie.Director}}<br />
-                            <b>Actors:</b> {{movie.Actors}}<br>
-                        </p>
+   Runtime: {{movie.Runtime}}<br />
+   Genre: {{movie.Genre}}<br />
+   Released: {{movie.Released}}
 
-                        <p>Plot: {{movie.Plot}}</p><br>
-                        <p>Awards: {{movie.Awards}}</p>
-                </div>
-                </div>
-            </div>
-            <div class="alert alert-danger" role="alert" ng-show="error">
-                <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
-            </div>
-        </div>
-    </div>
-    <!-- Video / Generic Modal -->
-<div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-body">
-      <!-- content dynamically inserted -->
-    </div>
-  </div>
-</div>
-</div>
-</body>
+   <p class="lead">
+   <b>Director:</b> {{movie.Director}}<br />
+   <b>Actors:</b> {{movie.Actors}}<br>
+   </p>
+
+   <p>Plot: {{movie.Plot}}</p><br>
+   <p>Awards: {{movie.Awards}}</p>
+   </div>
+   </div>
+   </div>
+   <div class="alert alert-danger" role="alert" ng-show="error">
+   <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
+   </div>
+   </div>
+   </div>
+   </body>
    </td>
    </tr>
 
