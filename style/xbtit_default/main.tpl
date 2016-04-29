@@ -54,12 +54,10 @@
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
  <script>
-
  var Bs = jQuery.noConflict();
 var themes = {
     "Dark": "assets/bootstrap/css/bootstrap.css",
     "Light" : "assets/bootstrap/css/bootstrap1.css",
-
 }
 Bs(function(){
    var themesheet = Bs('<link href="'+themes['Dark']+'" rel="stylesheet" />');
@@ -92,32 +90,28 @@ Christmas Snowstorm End-->
 <body>
 
 <!-- Top Navigation Start-->
+<div class="container">
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         </button>
-         </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-left">
-    <tag:main_dropdown />
-    </ul>
- <form action="index.php" method="get" name="torrent_search" class="navbar-form navbar-right">
-  <input type="hidden" name="page" value="torrents" />
-
-      <td><input
-      onfocus="if (this.value == 'Torrents') this.value='';"
-   onblur="if(this.value == '') this.value='Torrents';"
-      type="text" name="search" class="search" size="30" maxlength="50" value="Torrents" /></td>
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-left">
+<tag:main_dropdown />
+</ul>
+<form action="index.php" method="get" name="torrent_search" class="navbar-form navbar-right">
+<input type="hidden" name="page" value="torrents" />
+<input onfocus="if (this.value == 'Torrents') this.value='';"onblur="if(this.value == '') this.value='Torrents';" type="text" name="search" class="search" size="30" maxlength="50" value="Torrents" />
 </form>
-
-    </div></nav>
+</nav>
+</div>
 
 
 <!-- SideNav  -->
@@ -216,25 +210,27 @@ Christmas Snowstorm End-->
   </ul>
 </div>
  
-    <!--Spacer-->
-    </br>
-    </br>
-    </br>
+<!--Spacer-->
+</br>
+</br>
+</br>
 
-    <!-- MainUser Info Bar / Tracker Settings -->
-    <div class="container-fluid">
-    <tag:main_header />
-    </div>
-    
 
-    <!-- Site Alerts
-    <center><div class="page-header">
-    <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
-    </h1></div></center> -->
+<!-- MainUser Info Bar / Tracker Settings -->
+<div class="container-fluid">
+<div class="row">
+<tag:main_header />
+</div>
+</div>
+
+<!-- Site Alerts
+<center><div class="page-header">
+<h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
+</h1></div></center> -->
     
 <!--Main Page Content -->
 
-    <table border='0' align='center' cellpadding='0' cellspacing='0' width='auto'>
+    <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
       <tr>
         <td valign='top' width='5' rowspan='2'></td>
         <if:HAS_LEFT_COL>
@@ -258,33 +254,34 @@ Christmas Snowstorm End-->
     </table>
 
 <!-- Bottom Blocks -->
-    <table border='0' align='center' cellpadding='0' cellspacing='0' width='95%'>
-    <tr>
-    <td><tag:main_footer /></td>
-    </tr>
-    </table>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<tag:main_footer />
+</div>
+</div>
+</div>
 
 <!-- Footer -->
-        <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-            <div class="panel panel-primary">
-   <div class="panel-heading">
-      <h3 class="panel-title"></h3>
-   </div>
-   <div class="panel-body">
-      <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
-      <p class="text-success">Copyright &copy; 2016 Styled By HDVinnie</p>
-      <p class="text-danger"><tag:xbtit_debug /></p>
-   </div>
+<footer>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title"></h3>
 </div>
-                </div>
-            </div>
-            </div>
-        </footer>
+<div class="panel-body">
+<p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
+<p class="text-success">Copyright &copy; 2016 Styled By HDVinnie</p>
+<p class="text-danger"><tag:xbtit_debug /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
 
-    </div>
-    <!-- /.container -->
-      </body>
-      </html>
+</body>
+</html>
