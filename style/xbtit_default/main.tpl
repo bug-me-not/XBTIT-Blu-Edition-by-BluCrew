@@ -223,11 +223,21 @@ Christmas Snowstorm End-->
 </div>
 </div>
 
+<!-- BANNER START -->
+<center><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i><font size="40px" color="#00aeff">BluRG.xyz</font><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i>
+<p class="text-danger">Your #1 HD Tracker</p></center>
+<!-- BANNER END -->
+
+
 <!-- Site Alerts
 <center><div class="page-header">
 <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
 </h1></div></center> -->
-    
+
+<!--Spacer-->
+</br>
+</br>
+
 <!--Main Page Content -->
 
     <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
