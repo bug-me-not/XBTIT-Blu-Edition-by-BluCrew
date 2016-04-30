@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Betting</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -36,7 +40,7 @@
 global $TABLE_PREFIX, $language;
 
 echo "<TABLE width=100% border=0 cellspacing=1 cellpadding=1 class=forumline>
-<tr><td align=center><a href=index.php?page=bet><img src=images/bet.PNG border=0></a></td></tr>";
+<tr><td align=center><a href=index.php?page=bet><img src=images/bet.png border=0></a></td></tr>";
 
 $bet = get_result("SELECT `undertext`, `endtime` FROM `{$TABLE_PREFIX}betgames` WHERE `active`=1 ORDER BY `endtime` ASC LIMIT 5", true, $btit_settings["cache_duration"]);
 
@@ -56,3 +60,6 @@ foreach($bet as $fetch)
 print("</table>");
 
 ?>
+<div class="panel-footer">
+</div>
+</div>
