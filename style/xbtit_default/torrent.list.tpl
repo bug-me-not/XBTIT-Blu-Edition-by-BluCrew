@@ -221,7 +221,7 @@ Leeching
 Snatched
 </button></center>
 
-       <table class="table table-striped">
+       <table class="table table-bordered">
         <tr>
           <td align="center" width="45" class="header">Category</td>
           <td align="center" class="header">Sort By: &nbsp;<tag:torrent_header_added />|<tag:torrent_header_seeds />|<tag:torrent_header_leechers />|<tag:torrent_header_complete />|<a href="/index.php?page=torrents&amp;active=0&amp;gold=0&amp;order=4&amp;by=2">Size</a></td>

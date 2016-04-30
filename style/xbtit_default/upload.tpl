@@ -469,7 +469,7 @@ $w(window).resize(function () {
 
 <tr>
    <td class="header"><tag:language.TORRENT_ANONYMOUS /></td>
-   <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" /></td>
+   <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" checked="checked" /></td>
 </tr>
 
 

@@ -1318,7 +1318,7 @@ if($count > 0)
                else
                {
                   $day_added = " Torrents Added on ".date("D M d Y", $data["added"]); // You can change this to something else
-                  $cleandate = "<tr><td align='center' class='header' colspan='15'><b>$day_added</b></td></tr>\n"; // This also...
+                  $cleandate = "<tr><td align='center' class='head' colspan='15'><b>$day_added</b></td></tr>\n"; // This also...
                   $torrents[$i]["dt"] = $cleandate;
                }
                /** Prevent that "torrents added..." wont appear again with the same date **/
