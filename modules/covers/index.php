@@ -25,7 +25,8 @@ $page = "";
 
 // list options
 $spacer = "&nbsp;&nbsp;&nbsp;";
-print "<div align=\"center\">
+print "<table class=\"table table-bordered\">";
+print "<div align=\"center\">Sort By:
 <a href=\"index.php?page=modules&module=covers&list=all\">[ALL]</a>$spacer
 <a href=\"index.php?page=modules&module=covers&list=num\">[#]</a>$spacer
 <a href=\"index.php?page=modules&module=covers&list=a\">[A]</a>$spacer
@@ -54,7 +55,7 @@ print "<div align=\"center\">
 <a href=\"index.php?page=modules&module=covers&list=x\">[X]</a>$spacer
 <a href=\"index.php?page=modules&module=covers&list=y\">[Y]</a>$spacer
 <a href=\"index.php?page=modules&module=covers&list=z\">[Z]</a>
-</div>
+</div></table>
 <br/><br />";
 
 // only allow mod and above to upload
@@ -169,7 +170,7 @@ while($cover = $covres->fetch_assoc()) {
 print "<option value=\"".$cover['id']."\">".$cover['name']." [Region: ".$cover['region']."] - [".$cover['type']." ".$cover['scan']."] - [".$cover['width']." x ".$cover['height']."] @ ".makesize($cover['size'])."</option>";
  }
 print "</select>
-<input type=\"submit\" value=\"Display\">
+<input type=\"submit\" class='btn btn-sm btn-primary' value=\"Display\">
 </form>
 <br/><br /></div>
 ";
