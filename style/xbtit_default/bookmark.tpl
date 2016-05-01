@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<table class="table table-bordered">
 
   <if:pagertop_visible>
     <tr>
