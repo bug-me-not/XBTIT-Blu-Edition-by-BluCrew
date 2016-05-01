@@ -106,6 +106,5 @@ if ($img) {
     header("Content-type: image/jpeg");
     imagejpeg($img);
  
-}
- 
+} 
 ?>
