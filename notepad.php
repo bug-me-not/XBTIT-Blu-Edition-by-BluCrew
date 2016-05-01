@@ -63,9 +63,9 @@ $curuserid = $arrresusrid["userid"];
 if ($CURUSER['uid']==$curuserid)
 {
 block_begin("".$curusername."'s Personal Notepad");
-$notepadtpl->set("rp0","<table border=\"0\" cellspacing=\"2\" cellpadding=\"0\" class=\"lista\" align=\"center\" width=\"100%\">");
+$notepadtpl->set("rp0","<table class='table table-bordered'>");
 
-$notepadtpl->set("rp3","<tr><td class=\"header\" align=\"center\">".$language["NOTE_ID"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_NOTE"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_DATETIME"]."</td></tr>");
+$notepadtpl->set("rp3","<tr><td class=\"head\" align=\"center\">".$language["NOTE_ID"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_NOTE"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_DATETIME"]."</td></tr>");
 $resview = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}notes WHERE id=".$_GET['id']." AND userid='".$CURUSER['uid']."'") or sqlerr();
 $arrview = $resview->fetch_assoc();
 $noteview = $arrview['note'];
@@ -100,7 +100,7 @@ if ($CURUSER['uid']==$curuserid)
 {
 block_begin("".$curusername."'s Personal Notepad");
 $notepadtpl->set("rp18","<form name=editnote method=post action=index.php?page=notepad&action=takeedit&id=".$_GET['id'].">\n");
-$notepadtpl->set("rp19","<table border=\"0\" cellspacing=\"2\" cellpadding=\"0\" class=\"lista\" align=\"center\" width=\"100%\">");
+$notepadtpl->set("rp19","<table class='table table-bordered'>");
 $resedit = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}notes WHERE id=".$_GET[id]." AND userid=".$CURUSER['uid']."") or sqlerr();
 $arredit = $resedit->fetch_array();
 $editnote = $arredit['note'];
@@ -112,7 +112,7 @@ $notepadtpl->set("rp22","<tr><td class=\"header\" align=\"center\"><b>".$languag
 $notepadtpl->set("rp23","<td align=left class=lista>".textbbcode("editnote","editnote",htmlspecialchars(unesc($editnote)))."</td></tr>");
 
 $notepadtpl->set("rp25","<input type=\"hidden\" name=\"edit\" value=\"note\">\n");
-$notepadtpl->set("rp26","<tr><td class=\"header\" align=\"center\"></td><td align=center class=lista><input type=submit value=\"Submit\"></td></tr>");
+$notepadtpl->set("rp26","<tr><td class=\"header\" align=\"center\"></td><td align=center class=lista><input type=submit class='btn btn-sm btn-primary' value=\"Submit\"></td></tr>");
 
 $notepadtpl->set("rp30","<tr><td colspan=\"2\" class=\"header\" align=\"center\" width=\"100%\"><a href=\"index.php?page=notepad&action=add\">".$language["NOTE_ADD_NEW"]."</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"index.php?page=notepad\">".$language["NOTE_VIEW_MORE"]."</a></td></tr>");
 $notepadtpl->set("rp31","</table></form>");
@@ -138,13 +138,13 @@ block_end();
          {
 block_begin("".$curusername."'s Personal Notepad");
 $notepadtpl->set("rp40","<form name=takenote method=post action=index.php?page=notepad&action=takenote>");
-$notepadtpl->set("rp41","<table class=\"lista\" align=\"center\" width=\"100%\">");
+$notepadtpl->set("rp41","<table class='table table-bordered'>");
 
 $notepadtpl->set("rp44","<tr><td class=\"header\" align=\"center\"><b>".$language["NOTE_NOTE"].":</b></td>");
 $notepadtpl->set("rp45","<td align=left class=lista>".textbbcode("takenote","takenote")."</td></tr>");
 
 $notepadtpl->set("rp47","<input type=\"hidden\" name=\"add\" value=\"note\">");
-$notepadtpl->set("rp48","<tr><td class=\"header\" align=\"center\"></td><td align=center class=lista><input type=submit value=\"Submit\"></td></tr>");
+$notepadtpl->set("rp48","<tr><td class=\"header\" align=\"center\"></td><td align=center class=lista><input type=submit class='btn btn-sm btn-primary' value=\"Submit\"></td></tr>");
 
 
 $notepadtpl->set("rp52","<tr><td colspan=\"2\" class=\"header\" align=\"center\" width=\"100%\"><a href=\"index.php?page=notepad\">".$language["NOTE_VIEW_MORE"]."</a></td></tr>");
@@ -203,7 +203,7 @@ else
  if (sql_num_rows($res) == 0)
 {
 block_begin("".$curusername."'s Personal Notepad (".$arrnotes." notes)");
-$notepadtpl->set("rp58","<table border=\"0\" cellspacing=\"2\" cellpadding=\"0\" class=\"lista\" align=\"center\" width=\"100%\">");
+$notepadtpl->set("rp58","<table class='table table-bordered'>");
 $notepadtpl->set("rp59","<tr><td class=\"lista\" align=\"center\"><center>You don't have any personal notes. Maybe you could add some...</td></tr>");
 $notepadtpl->set("rp60","<tr><td colspan=\"6\" class=\"header\" align=\"center\"><a href=\"index.php?page=notepad&action=add\">Add new personal note</a></td></tr>");
 $notepadtpl->set("rp61","</table>");
@@ -233,8 +233,8 @@ $notepadtpl->set("rp62","<script type=\"text/javascript\">
             ");
 block_begin("".$curusername."'s Personal Notepad (".$arrnotes." notes)");
 $notepadtpl->set("rp63","<form method=post name=deleteall action=index.php?page=notepad&action=takedelete>");
-$notepadtpl->set("rp64","<table border=\"0\" cellspacing=\"1\" cellpadding=\"0\" class=\"lista\" align=\"center\" width=\"100%\">");
-$notepadtpl->set("rp65","<tr><td class=\"header\" align=\"center\">".$language["NOTE_ID"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_NOTE"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_DATETIME"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_VIEW"]."</td><td class=\"header\" align=\"center\">".$language["NOTE_EDIT"]."</td><td class=\"header\" align=\"center\"><input type=\"checkbox\" name=\"all\" onclick=\"SetAllCheckBoxes('deleteall','delnote[]',this.checked)\" /></td></tr>");
+$notepadtpl->set("rp64","<table class='table table-bordered'>");
+$notepadtpl->set("rp65","<tr><td class=\"head\" align=\"center\">".$language["NOTE_ID"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_NOTE"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_DATETIME"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_VIEW"]."</td><td class=\"head\" align=\"center\">".$language["NOTE_EDIT"]."</td><td class=\"head\" align=\"center\"><input type=\"checkbox\" name=\"all\" onclick=\"SetAllCheckBoxes('deleteall','delnote[]',this.checked)\" /></td></tr>");
 
   while ($arr = $res->fetch_assoc())
    {
@@ -251,7 +251,7 @@ $notepadtpl->set("rp65","<tr><td class=\"header\" align=\"center\">".$language["
 $tora[$i]["rp66"]=("<tr><td class=\"lista\" align=\"center\" width=\"3%\"><center>$number</td><td class=\"lista\" align=\"center\" width=\"38%\"><center>$note</td><td class=\"lista\" align=\"center\" width=\"23%\"><center>$added</td><td class=\"lista\" align=\"center\" width=\"12%\"><a href=index.php?page=notepad&action=read&id=".$number."><center>".$language["NOTE_VIEW"]."</a></td><td class=\"lista\" align=\"center\" width=\"12%\"><a href=index.php?page=notepad&action=edit&id=".$number."><center>".$language["NOTE_EDIT"]."</a></td><td class=\"lista\" align=\"center\" width=\"12%\"><center><input type=\"checkbox\" name=\"delnote[]\" value=\"".$number."\" /></td></tr>");
 $i++;
    }
-$tora[$i]["rp67"]=("<tr><td colspan=\"5\" class=\"header\" align=\"center\"><a href=\"index.php?page=notepad&action=add\">".$language["NOTE_ADD_NEW"]."</a></td><td colspan=\"1\" class=\"header\" align=\"center\"><input type=submit value=".$language["DELETE"]."></td></tr>");
+$tora[$i]["rp67"]=("<tr><td colspan=\"5\" class=\"header\" align=\"center\"><a href=\"index.php?page=notepad&action=add\">".$language["NOTE_ADD_NEW"]."</a></td><td colspan=\"1\" class=\"header\" align=\"center\"><input type=submit class='btn btn-sm btn-danger' value=".$language["DELETE"]."></td></tr>");
 
 
 $notepadtpl->set("rp68","</form>");
