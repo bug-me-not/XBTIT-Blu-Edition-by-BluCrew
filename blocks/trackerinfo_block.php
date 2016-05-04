@@ -81,7 +81,7 @@ $traffic=makesize($dled+$upld);
 //Advanced Addon Start//
 
    //users
-$res=do_sqlquery("select 1,count(*) as tot FROM btnet_users where id>1 union select 2,count(*) as tot from btnet_users where DATE_FORMAT(lastconnect ,'%m/%d/%Y') = DATE_FORMAT(curdate(),'%m/%d/%Y') union select 3,count(*) as tot from btnet_users where DATE_FORMAT(lastconnect ,'%m/%Y') = DATE_FORMAT(curdate(),'%m/%Y') union select 4,count(*) as tot from btnet_users where DATE_FORMAT(joined ,'%m/%d/%Y') = DATE_FORMAT(curdate(),'%m/%d/%Y') union select 5,count(*) as tot from btnet_users where DATE_FORMAT(joined ,'%m/%Y') = DATE_FORMAT(curdate(),'%m/%Y')");
+$res=do_sqlquery("select 1,count(*) as tot FROM {$TABLE_PREFIX}users where id>1 union select 2,count(*) as tot from {$TABLE_PREFIX}users where DATE_FORMAT(lastconnect ,'%m/%d/%Y') = DATE_FORMAT(curdate(),'%m/%d/%Y') union select 3,count(*) as tot from {$TABLE_PREFIX}users where DATE_FORMAT(lastconnect ,'%m/%Y') = DATE_FORMAT(curdate(),'%m/%Y') union select 4,count(*) as tot from {$TABLE_PREFIX}users where DATE_FORMAT(joined ,'%m/%d/%Y') = DATE_FORMAT(curdate(),'%m/%d/%Y') union select 5,count(*) as tot from {$TABLE_PREFIX}users where DATE_FORMAT(joined ,'%m/%Y') = DATE_FORMAT(curdate(),'%m/%Y')");
 
 $users=0;
 $userstoday=0;

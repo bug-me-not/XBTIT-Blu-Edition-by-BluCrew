@@ -20,7 +20,7 @@ $movie->photodir='./imdb/images/';
 $movie->photoroot='./imdb/images/';
 $watched = '';
 if ($CURUSER['uid'] == 3){
-	$views = do_sqlquery("SELECT SUM(views) AS total FROM btnet_stream WHERE imdb='{$movieid}'");
+	$views = do_sqlquery("SELECT SUM(views) AS total FROM {$TABLE_PREFIX}stream WHERE imdb='{$movieid}'");
 	$views = $views->fetch_array();
 	$watched = "Watched ".$views['total']." Times";
 }
@@ -36,7 +36,7 @@ print $movieblock;
 }
 
 function showporn($pornid){
-$showporn = do_sqlquery("SELECT * FROM btnet_stream_porn WHERE pornid='{$pornid}' LIMIT 1");
+$showporn = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}stream_porn WHERE pornid='{$pornid}' LIMIT 1");
 $showporn = $showporn->fetch_array();
 $pornphotoloc = "images/porn/{$pornid}.jpg";
 $movieblock = '<div style="display: inline-block; margin: 1em">

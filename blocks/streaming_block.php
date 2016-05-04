@@ -44,7 +44,7 @@ print("<tr><td class=\"header\" align=\"left\"><a href=\"index.php\"><span style
 
 
 // To Encode
-$restostrm=get_result("SELECT filename FROM btnet_files WHERE imdb NOT IN (SELECT imdb FROM btnet_stream) AND btnet_files.imdb > 1 GROUP BY btnet_files.imdb ORDER  BY btnet_files.filename ASC");
+$restostrm=get_result("SELECT f.filename FROM {$TABLE_PREFIX}files f WHERE imdb NOT IN (SELECT imdb FROM {$TABLE_PREFIX}stream) AND f.imdb > 1 GROUP BY f.imdb ORDER  BY f.filename ASC");
 $tostrmc=count($restostrm);
 print("<tr><td class=\"header\" align=\"left\"><a href=\"index.php\"><span style=\"float:left; padding-left:3px;\"></span><span style=\"float:left; padding-right:5px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To Encode</span></a> <span style=\"float:right; padding-right:5px;\"><font color=\"green\"><b>[ $tostrmc ]</font></span> </td></tr>\n");
 
