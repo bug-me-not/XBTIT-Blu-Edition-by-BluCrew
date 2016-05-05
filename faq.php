@@ -10,7 +10,6 @@ if (!defined("IN_BTIT"))
 
 ob_start();
 $text = "<div id='holder'>
-<div class='container'>
 <div class='panel panel-primary'>
 <div class='panel-heading'>
 <h4 class='text-center'>Blu FAQ</h4>
