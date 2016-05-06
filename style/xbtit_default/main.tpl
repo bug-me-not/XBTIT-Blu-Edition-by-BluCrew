@@ -9,6 +9,7 @@
    <tag:ggwebmaster />
    </if:seo_enabled>
 <meta http-equiv='content-type' content='text/html; charset=<tag:main_charset />' />
+
 <!-- #CSS Links -->
 <!-- Basic Styles -->
       <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
@@ -32,28 +33,18 @@
 <link rel="stylesheet" href="font-awesome-4.5-2.0/css/font-awesome.min.css" type='text/css'>
 <!-- jasny-bootstrap -->
 <link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
-<!-- bootstrap-switch -->
-<link href="assets/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet">
-<!-- bootstrap-multiselect -->
-<link href="assets/plugins/bootstrap-multiselect-master/css/bootstrap-multiselect.css" rel="stylesheet">
-<link href="assets/plugins/bootstrap-multiselect-master/css/prettify.css" rel="stylesheet">
 <!-- alertify Dialogs -->
 <link rel="stylesheet" href="assets/plugins/alertify/css/alertify.core.css" />
 <link rel="stylesheet" href="assets/plugins/alertify/css/alertify.default.css" id="toggleCSS" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="assets/plugins/fuelux/css/fuelux.min.css" />
-<!-- Data Slider -->
-<link rel="stylesheet" href="assets/plugins/slider/css/slider.css">
-<!-- bootstrap-datetimepicker -->
-<link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker-master/css/daterangepicker-bs3.css">
 <tag:more_css />
 <!-- Custom CSS -->
 
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
- <script>
+<script>
  var Bs = jQuery.noConflict();
 var themes = {
     "Dark": "assets/bootstrap/css/bootstrap.css",
