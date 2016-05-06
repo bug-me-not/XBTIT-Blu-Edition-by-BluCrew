@@ -40,11 +40,10 @@ $res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat
 
 if(count($res)>0)
 {
-  $content = '';
 
-  $content .= "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_REC_REQ']}</h4></div>";
-  $content .= "<table class='table table-bordered'>";
-  $content .= "<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_VOTERS']}</td><td>{$language['TRAV_FILL']}</td></tr>";
+  print("<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_REC_REQ']}</h4></div>\n");
+  print("<table class='table table-bordered'>\n");
+  print("<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_VOTERS']}</td><td>{$language['TRAV_FILL']}</td></tr>\n");
 
   foreach($res as $data)
   {
@@ -65,10 +64,10 @@ if(count($res)>0)
     $reqlink = ($CURUSER['view_torrents']=='yes')?"<a href='index.php?page=torrent-details&id={$data['infohash']}'>{$language['PAR_LINK']}</a>":$language['NOT_AVAILABLE'];
     $reqfill = ($data['uploadedby']>1)? "<font color=green>{$language['YES']}</font>\n{$reqlink}":"<font color=red>{$language['NO']}</font>";
 
-    $content .= "<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>{$data['total_voters']}</td><td>{$reqfill}</td></tr>";
+    print("<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>{$data['total_voters']}</td><td>{$reqfill}</td></tr>\n");
   }
 
-  $content .="</table></div>";
+  print("</table></div>\n");
 
 
   if($CURUSER['view_torrents'] == 'no')
@@ -86,7 +85,7 @@ if(count($res)>0)
 }
 else
 {
-  echo "<div class='nothing'>{$language['TRAV_NOWTFOUND']}</div>";
+  print("<div class='nothing'>{$language['TRAV_NOWTFOUND']}</div>\n");
 }
 
 block_end();
