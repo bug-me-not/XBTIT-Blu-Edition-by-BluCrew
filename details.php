@@ -430,7 +430,8 @@ if($btit_settings["fmhack_ask_for_reseed"]=="enabled")
    $reseed="";
    if($row["seeds"]<=$btit_settings["reseed_minSeeds"] && $row["finished"]>=$btit_settings["reseed_minFinished"] && $row["leechers"]>=$btit_settings["reseed_minLeechers"] && $pa>=($btit_settings["reseed_minTorrentAgeInDays"]*86400) && $px>=($btit_settings["reseed_minDaysSinceLast"]*86400))
    {
-      $reseed=("<a href='index.php?page=reseed&amp;q=".$row["info_hash"]."'><img src='images/reseed.gif' border='0' /></a>");
+      $reseed=("<a href='index.php?page=reseed&amp;q=".$row["info_hash"]."'><button class='btn btn-labeled btn-info' type='button'>
+      <span class='btn-label'><i class='fa fa-refresh fa-spin'></i></span>Reseed Request</button></a>");
    }
    $torrenttpl->set("reseed_possible",(($reseed=="")?FALSE:TRUE),TRUE);
    $torrenttpl->set("reseed",$reseed);

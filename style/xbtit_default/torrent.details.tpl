@@ -309,7 +309,7 @@ $clock(document).ready(function(){
    <if:fls_enabled>
    <tr>
    <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
-   <td class="lista" style="text-align:left;" valign="middle"><if:hash_found><img src="images/fls_unlocked.png" border="0" alt="<tag:language.FLS_UNLOCKED />" title="<tag:language.FLS_UNLOCKED />" /><else:hash_found><if:have_slots1><a href="index.php?page=fls&id=<tag:torrent.info_hash />"></if:have_slots1><img src="images/fls_locked.png" border="0" alt="<tag:language.FLS_LOCKED />" title="<tag:language.FLS_LOCKED />" /><if:have_slots2></a></if:have_slots2></if:hash_found></td>
+   <td class="lista" style="text-align:left;" valign="middle"><if:hash_found><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-unlock'></i></span>FL Slot Active</button><else:hash_found><if:have_slots1><a href="index.php?page=fls&id=<tag:torrent.info_hash />"></if:have_slots1><button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-lock'></i></span>FL Slot Inactive</button><if:have_slots2></a></if:have_slots2></if:hash_found></td>
    </tr>
    </if:fls_enabled>
    <if:tmod1_enabled>
@@ -332,9 +332,11 @@ $clock(document).ready(function(){
    <tr>
    <td align="right" class="header"><tag:language.TORRENT /></td>
    <if:dlratiocheck>
-   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled1><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled1><a href="index.php?page=downloadcheck&amp;id=<tag:torrent.info_hash />"><img src='images/get.png' class='hvr-pulse-shrink'></a></if:magnet_enabled1></td>
+   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled1><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled1><a href="index.php?page=downloadcheck&amp;id=<tag:torrent.info_hash />"><button class='btn btn-labeled btn-primary' type='button'>
+      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button></a></if:magnet_enabled1></td>
    <else:dlratiocheck>
-   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled2><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled2><a href="download.php?id=<tag:torrent.info_hash />&amp;f=<tag:down_filename />.torrent"><img src='images/get.png' class='hvr-pulse-shrink'></a></if:magnet_enabled2></td>
+   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled2><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled2><a href="download.php?id=<tag:torrent.info_hash />&amp;f=<tag:down_filename />.torrent"><button class='btn btn-labeled btn-primary' type='button'>
+      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button></a></if:magnet_enabled2></td>
    </if:dlratiocheck>
    </tr>
    </if:download_locked>
