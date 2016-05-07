@@ -681,6 +681,57 @@ else
 				die();
 			}
 		}
+		elseif($act == 'addcomment')
+		{
+			if(isset($_POST['req_id']) && is_numeric($_POST['req_id']) && $_POST['req_id']>0)
+			{
+				if(isset($_POST['comment']) && $_POST['comment']!='')
+				{
+					if(isset($_POST['uid']) && is_numeric($_POST['uid']) && $_POST['uid']>0)
+					{
+						if($CURUSER['uid']==$_POST['uid'] && sha1($CURUSER['random']==$_POST['auth']))
+						{
+							$comment = sqlesc($_POST['comment']);
+							$uid = $CURUSER['uid'];
+							$reqid = intval($_POST['req_id']);
+
+							$com = quickQuery("INSERT INTO `{$TABLE_PREFIX}requests_comments` (`req_id`,`addedby`,`addedwhen`,`comment`) 
+								VALUES ({$reqid},{$uid},NOW(),{$comment});");
+
+							if($com)
+							{
+								redirect("index.php?page=requests&action=viewreq&id={$reqid}");
+							}
+							else
+							{
+								stderr($language['ERROR'],$language['TRAV_COMMENT']);
+								die();
+							}
+						}
+						else
+						{
+							stderr($language['ERROR'],$language['TRAV_NOTAUTH']);
+							die();
+						}
+					}
+					else
+					{
+						stderr($language['ERROR'],$language['TRAV_NOUSERID']);
+						die();
+					}
+				}
+				else
+				{
+					stderr($language['ERROR'],$language['TRAV_COMMENT']);
+					die();
+				}
+			}
+			else
+			{
+				stderr($language["ERROR"],$language['TRAV_NODELID']);
+				die();
+			}
+		}
 		else
 		{
 			$requeststpl->set("view_requests",true,true);

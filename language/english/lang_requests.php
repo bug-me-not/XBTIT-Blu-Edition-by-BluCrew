@@ -89,5 +89,6 @@ $language["TRAV_NEWREQUEST"] = "New Request";
 $language["TRAV_ADDEDBY"] = "Added By";
 $language['TRAV_FILL'] = "Filled";
 $language['TRAV_EXIST'] = "This request already exists in our system.";
+$language['TRAV_COMMENT'] = "Your comment seems to have been disected by gremlins, please re-submit.";
 
 ?>
