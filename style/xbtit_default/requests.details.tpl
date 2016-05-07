@@ -147,7 +147,7 @@
     <if:has_comments>
     <loop:comments>
     <tr>
-      <td class='head' colspan='5' style='text-align:right;padding-right:5px'>
+      <td class='head' colspan='5' style='text-align:right;padding-right:10px'>
       Edit &nbsp; Delete &nbsp;
         #<tag:comments[].com_id />
       </td>
