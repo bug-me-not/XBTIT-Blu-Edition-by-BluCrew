@@ -87,7 +87,7 @@ $config['sessionName'] = 'blu_ajax_chat';
 // Prefix added to every session key:
 $config['sessionKeyPrefix'] = 'bluajaxChat';
 // The lifetime of the language, style and setting cookies in days:
-$config['sessionCookieLifeTime'] = 15;
+$config['sessionCookieLifeTime'] = 30;
 // The path of the cookies, '/' allows to read the cookies from all directories:
 $config['sessionCookiePath'] = '/';
 // The domain of the cookies, defaults to the hostname of the server if set to null:

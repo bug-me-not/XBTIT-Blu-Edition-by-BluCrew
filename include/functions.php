@@ -391,7 +391,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          $my_cookie_name = ((isset($btit_settings["secsui_cookie_name"]) && !empty($btit_settings["secsui_cookie_name"]))?$btit_settings["secsui_cookie_name"]:"BluRG login");
          $my_cookie_path = ((isset($btit_settings["secsui_cookie_path"]) && !empty($btit_settings["secsui_cookie_path"]))?$btit_settings["secsui_cookie_path"]:"/");
          $my_cookie_domain = ((isset($btit_settings["secsui_cookie_domain"]) && !empty($btit_settings["secsui_cookie_domain"]))?$btit_settings["secsui_cookie_domain"]:false);
-         $expires = ($expires==0)?(time()+3600*24*15):time();
+         $expires = ($expires==0)?(time()+3600*24*30):time();
          if($btit_settings["secsui_cookie_type"] == 1)
          {
             setcookie('uid', $row["id"], $expires, '/');
