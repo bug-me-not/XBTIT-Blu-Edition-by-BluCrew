@@ -249,7 +249,7 @@ switch($action)
                 quickQuery("UPDATE {$TABLE_PREFIX}users SET $updateset WHERE id='".$uid."'", true);
                 if($idlangue!=$CURUSER["language"] || $idstyle!=$CURUSER["style"])
                 {
-                    session_name("Blu-torrents");
+                    session_name("BluRG");
                     session_start();
                     unset($_SESSION["CURUSER"], $_SESSION["CURUSER_EXPIRE"]);
                 }
