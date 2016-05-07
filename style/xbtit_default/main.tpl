@@ -271,11 +271,13 @@ Christmas Snowstorm End-->
 <h3 class="panel-title"></h3>
 </div>
 <div class="panel-body">
+<center>
 <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
 <p class="text-success">Copyright &copy; 2016 Styled By HDVinnie</p>
 <p class="text-danger"><tag:xbtit_debug /></p>
-<a class="btn btn-lg btn-success" href="#"><i class="fa fa-fort-awesome fa-2x pull-left" aria-hidden="true"></i> Font Awesome Version 4.6.1</a>&nbsp;&nbsp;
-<a class="btn btn-lg btn-primary" href="#"><i class="fa fa-css3 fa-2x pull-left" aria-hidden="true"></i> Bootstrap Version 3.3.6</a>
+<a class="btn btn-lg btn-success" href="https://fortawesome.github.io/Font-Awesome/"><i class="fa fa-fort-awesome fa-2x pull-left" aria-hidden="true"></i> Font Awesome Version 4.6.1</a>&nbsp;&nbsp;
+<a class="btn btn-lg btn-primary" href="https://getbootstrap.com"><i class="fa fa-css3 fa-2x pull-left" aria-hidden="true"></i> Bootstrap Version 3.3.6</a>
+</center>
 </div>
 </div>
 </div>
