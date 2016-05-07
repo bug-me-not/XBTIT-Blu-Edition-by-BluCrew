@@ -251,9 +251,9 @@ else
 {
    while ($dts = $dt->fetch_array())
    {
-    $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
-    $i++;
- }
+     $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
+     $i++;
+  }
 }
 $torrenttpl->set("upl",$upl);
 // show all uploads per user end
@@ -431,7 +431,7 @@ if($btit_settings["fmhack_ask_for_reseed"]=="enabled")
    if($row["seeds"]<=$btit_settings["reseed_minSeeds"] && $row["finished"]>=$btit_settings["reseed_minFinished"] && $row["leechers"]>=$btit_settings["reseed_minLeechers"] && $pa>=($btit_settings["reseed_minTorrentAgeInDays"]*86400) && $px>=($btit_settings["reseed_minDaysSinceLast"]*86400))
    {
       $reseed=("<a href='index.php?page=reseed&amp;q=".$row["info_hash"]."'><button class='btn btn-labeled btn-info' type='button'>
-      <span class='btn-label'><i class='fa fa-refresh fa-spin'></i></span>Reseed Request</button></a>");
+         <span class='btn-label'><i class='fa fa-refresh fa-spin'></i></span>Reseed Request</button></a>");
    }
    $torrenttpl->set("reseed_possible",(($reseed=="")?FALSE:TRUE),TRUE);
    $torrenttpl->set("reseed",$reseed);
@@ -756,7 +756,7 @@ if($btit_settings["fmhack_torrent_moderation"]=="enabled")
    $moder=$res_m;
    if(!isset($language["SYSTEM_USER"]))
       $language["SYSTEM_USER"]="System";
-   $row["moderation"].="<a title=\"".$moder["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $moder["username"]!=$language["SYSTEM_USER"] && $moder["moder"]!="um")?(($moder["moder"]=="ok")?" (".$language["TMOD_APPROVED_BY"]." ".$moder["username"].")":" (".$language["TMOD_REJECTED_BY"]." ".$moder["username"].")"):"")."\" href=\"index.php?page=edit&info_hash=".$row["info_hash"]."\"><img alt=\"".$moder["moder"]."\" src=\"images/mod/".$moder["moder"].".png\"  border=\"0\" /></a>";
+   $row["moderation"].="<a title=\"".$moder["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $moder["username"]!=$language["SYSTEM_USER"] && $moder["moder"]!="um")?(($moder["moder"]=="ok")?" (".$language["TMOD_APPROVED_BY"]." ".$moder["username"].")":" (".$language["TMOD_REJECTED_BY"]." ".$moder["username"].")"):"")."\" href=\"index.php?page=edit&info_hash=".$row["info_hash"]."\">".(($moder["moder"]=="ok")?"<button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-thumbs-up'></i></span>Approved</button>":"<button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-thumbs-down'></i></span>Denied</button>")."</a>";
       // moder
 }
 
@@ -1135,18 +1135,18 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
       while ($srow = $sres->fetch_assoc())
       {
 // Begin Anonymous Comments for Anonymous Uploader Part 1
-       if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
-          $srow["user"] = "Anonymous";
-       }
+        if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
+           $srow["user"] = "Anonymous";
+        }
 // End Anonymous Comments for Anonymous Uploader Part 1
-       $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
-       $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
-       $i++;
-    }
-    $torrenttpl->set('subs',$sub);
-    unset($sub);
- }
- else
+        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
+        $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
+        $i++;
+     }
+     $torrenttpl->set('subs',$sub);
+     unset($sub);
+  }
+  else
    $torrenttpl->set("HAVE_SUBTITLE",false,true);
 
 $sres->free();
