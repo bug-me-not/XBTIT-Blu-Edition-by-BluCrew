@@ -293,8 +293,6 @@ $clock(document).ready(function(){
   <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="main">
 
-   <h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD>
-
    <tag:TheTVDBExtra />
 
    <table class="table table-bordered">
@@ -303,6 +301,11 @@ $clock(document).ready(function(){
    <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:tvdb_banner />" /></td>
    </tr>
    </if:has_cover_banner>
+
+   <tr>
+   <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD></td>
+   </tr>
+
    <if:fls_enabled>
    <tr>
    <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
