@@ -12,11 +12,11 @@ $channels = array();
 
 // Sample channel list:
 //$channels[0] = 'Public';
-$channels[1] = 'Blu-torrents';
+$channels[1] = 'BluRG';
 $channels[2] = 'Announcements';
 $channels[3] = 'Announce';
 $channels[4] = 'VIP';
-$channels[5] = 'BluRG';
+$channels[5] = 'RG Team';
 $channels[6] = 'Staff';
 
 ?>
