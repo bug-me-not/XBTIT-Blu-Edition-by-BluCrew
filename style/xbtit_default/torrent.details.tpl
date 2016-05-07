@@ -274,9 +274,10 @@ $clock(document).ready(function(){
       }
    });});
    </script>
-
+   
+   <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:0px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
    <div class="internal-clock-text" style="font-size: 22px; text-align: center; text-decoration: underline;">This is an internal release so please wait until 24hr countdown timer is complete to share elsewhere</div>
-   <div class="internal-clock" style="padding-left: 25%; padding-top:20px; padding-bottom:200px;"></div></div>
+   <div class="internal-clock" style="padding-left: 35%; padding-top:20px; padding-bottom:200px;"></div></div>
    </if:internal_clock>
    <div align="center">
 
@@ -291,7 +292,6 @@ $clock(document).ready(function(){
 
   <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="main">
-  <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:20px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
 
    <h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD>
 
