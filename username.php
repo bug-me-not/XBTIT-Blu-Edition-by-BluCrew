@@ -3,7 +3,7 @@
 require_once ("include/functions.php");
 require_once ("include/config.php");
 dbconn();
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 
 global $CURUSER, $TABLE_PREFIX, $db_prefix, $THIS_BASEPATH, $language, $btit_settings;

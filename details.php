@@ -49,7 +49,7 @@ if($btit_settings["fmhack_archive_torrents"]=="enabled")
 
 if($btit_settings["fmhack_torrent_view_count"]=="enabled")
 {
-   session_name("Blu-torrents");
+   session_name("BluRG");
    session_start();
 
    if(!isset($_SESSION["torrent_count"][$id]))

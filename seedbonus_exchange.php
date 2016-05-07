@@ -2,7 +2,7 @@
 require_once ("include/functions.php");
 require_once ("include/config.php");
 dbconn();
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 global $CURUSER, $FORUMLINK, $db_prefix, $btit_settings, $XBTT_USE, $ipb_prefix, $THIS_BASEPATH, $TABLE_PREFIX, $CACHE_DURATION, $smilies, $privatesmilies, $BASEURL;
 if(!isset($THIS_BASEPATH) || empty($THIS_BASEPATH))

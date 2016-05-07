@@ -47,7 +47,7 @@ else
     $langue=0;
 
 dbconn();
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 
 // guest don't need to change language!

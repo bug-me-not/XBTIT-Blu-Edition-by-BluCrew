@@ -3,7 +3,7 @@ if(!defined("IN_BTIT"))
     die("non direct access!");
 
 
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 
 $info_hash = (isset($_GET["id"]) && !empty($_GET["id"]))?strtolower(preg_replace("/[^A-Fa-f0-9]/", "", $_GET["id"])):false;

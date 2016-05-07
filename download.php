@@ -59,7 +59,7 @@ if($btit_settings["fmhack_advanced_RSS_feed"]=="enabled" && $CURUSER["uid"]==1)
 
 if($btit_settings["fmhack_download_ratio_checker"]=="enabled" && $CURUSER["bypass_dlcheck"]==0 && $completedb4===false)
 {
-    session_name("Blu-torrents");
+    session_name("BluRG");
     session_start();
     (isset($_GET["key"])? $key=$_GET["key"] : $key=(int)0);
 

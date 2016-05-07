@@ -33,10 +33,10 @@
 if (!defined("IN_BTIT"))
   die("non direct access!");
 
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 $_SESSION=array();
-setcookie("Blu-torrents", "", time()-3600, "/");
+setcookie("BluRG", "", time()-3600, "/");
 session_destroy();
 
 require_once(load_language("lang_login.php"));

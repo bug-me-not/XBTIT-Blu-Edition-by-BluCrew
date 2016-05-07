@@ -54,7 +54,7 @@ include($THIS_BASEPATH.'/index.begin.php');
 {
    stderr($language["SORRY"],$btit_settings["offline_msg"]);
 }*/
-session_name("Blu-torrents");
+session_name("BluRG");
 session_start();
 dbconn(true);
 
