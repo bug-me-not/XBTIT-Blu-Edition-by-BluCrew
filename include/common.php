@@ -774,7 +774,7 @@ function test_my_cookie()
    }
    elseif($btit_settings["secsui_cookie_type"]==2)
    {
-      $cookie_name=((isset($btit_settings["secsui_cookie_name"]) && !empty($btit_settings["secsui_cookie_name"]))?$btit_settings["secsui_cookie_name"]:"xbtitFMLoginCookie");
+      $cookie_name=((isset($btit_settings["secsui_cookie_name"]) && !empty($btit_settings["secsui_cookie_name"]))?$btit_settings["secsui_cookie_name"]:"BluRG Login");
       $cookie_array=unserialize($_COOKIE[$cookie_name]);
       $cookie_id=(isset($cookie_array["id"])?(int)0+$cookie_array["id"]:1);
       $cookie_hash=(isset($cookie_array["hash"])?$cookie_array["hash"]:"");
@@ -801,7 +801,7 @@ function test_my_cookie()
 
       if($btit_settings["secsui_cookie_type"]==1)
       {
-         $user_hash=md5($row["random"].$row["password"].$row["random"]);
+         $user_hash=sha1($row["random"].$row["password"].$row["random"]);
       }
       elseif($btit_settings["secsui_cookie_type"]==2  || $btit_settings["secsui_cookie_type"]==3)
       {
