@@ -143,7 +143,7 @@ function addData($name,$text,$uid)
     if(!isset($language["SYSTEM_USER"]))
         $language["SYSTEM_USER"]="System";
 
-    session_name("Blu-torrents");
+    session_name("BluRG");
     session_start();
     $now = time();
     $conn = getDBConnection();

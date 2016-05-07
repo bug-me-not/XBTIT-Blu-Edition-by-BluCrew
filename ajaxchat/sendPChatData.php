@@ -98,7 +98,7 @@ if ($name != '' && $text != '' && $uid !='' && $toid !='') {
     include("../include/settings.php"); # getting table prefix
     global $language, $dbhost, $dbuser, $dbpass, $database, $TABLE_PREFIX;
     include("../include/config.php");
-    session_name("Blu-torrents");
+    session_name("BluRG");
     session_start();
      
     if(!isset($language["SYSTEM_USER"]))

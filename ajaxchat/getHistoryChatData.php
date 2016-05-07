@@ -162,7 +162,7 @@ if (isset($_POST["confirm"]) && $_POST["confirm"]==$language["FRM_CANCEL"]) {
       while($row=mysql_fetch_assoc($res))
           $array[$row["key"]]=$row["value"];
 
-      session_name("Blu-torrents");
+      session_name("BluRG");
       session_start();
       $key="";
 
