@@ -39,7 +39,7 @@ if(!defined("IN_ACP"))
 
 if(!isset($CURUSER) || !is_array($CURUSER))
 {
-    session_name("Blu-torrents");
+    session_name("BluRG");
     session_start();
     $CURUSER = $_SESSION["CURUSER"];
 }
