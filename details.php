@@ -510,9 +510,9 @@ if($btit_settings["fmhack_uploader_rights"]=="enabled" && $uploader_allowed=="ye
 
 if ($uploader_allowed=="yes" || $CURUSER["edit_torrents"]=="yes") {
    if ($GLOBALS["usepopup"])
-      $torrent_mod.="<a href=\"javascript: windowunder('index.php?page=edit&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode((($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$torrent_id.".html":"index.php?page=torrent-details&id=".$row["info_hash"]))."')\"><button class='btn btn-primary btn-circle' type='button'><i class='fa fa-pencil-square-o'></i></button></a>&nbsp;&nbsp;";
+      $torrent_mod.="<a href=\"javascript: windowunder('index.php?page=edit&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode((($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$torrent_id.".html":"index.php?page=torrent-details&id=".$row["info_hash"]))."')\"><button class='btn btn-primary' type='button'><i class='fa fa-pencil'></i></button></a>&nbsp;&nbsp;";
    else
-      $torrent_mod.="<a href=\"index.php?page=edit&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode((($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$torrent_id.".html":"index.php?page=torrent-details&id=".$row["info_hash"]))."\"><button class='btn btn-primary btn-circle' type='button'><i class='fa fa-pencil-square-o'></i></button></a>&nbsp;&nbsp;";
+      $torrent_mod.="<a href=\"index.php?page=edit&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode((($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$torrent_id.".html":"index.php?page=torrent-details&id=".$row["info_hash"]))."\"><button class='btn btn-primary' type='button'><i class='fa fa-pencil'></i></button></a>&nbsp;&nbsp;";
 
 }
 
@@ -536,9 +536,9 @@ if($btit_settings["fmhack_uploader_rights"]=="enabled" && $uploader_allowed=="ye
 
 if ($uploader_allowed=="yes" || $CURUSER["delete_torrents"]=="yes") {
    if ($GLOBALS["usepopup"])
-      $torrent_mod.="<a href=\"javascript: windowunder('index.php?page=delete&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode("index.php?page=torrents")."')\"><button class='btn btn-danger btn-circle' type='button'><i class='fa fa-times'></i></button></a>&nbsp;&nbsp;";
+      $torrent_mod.="<a href=\"javascript: windowunder('index.php?page=delete&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode("index.php?page=torrents")."')\"><button class='btn btn-danger' type='button'><i class='fa fa-trash-o'></i></button></a>&nbsp;&nbsp;";
    else
-      $torrent_mod.="<a href=\"index.php?page=delete&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode("index.php?page=torrents")."\"><button class='btn btn-danger btn-circle' type='button'><i class='fa fa-times'></i></button></a>";
+      $torrent_mod.="<a href=\"index.php?page=delete&amp;info_hash=".$row["info_hash"]."&amp;returnto=".urlencode("index.php?page=torrents")."\"><button class='btn btn-danger' type='button'><i class='fa fa-trash-o'></i></button></a>";
 }
 
 if($btit_settings["fmhack_uploader_rights"]=="enabled" && $torrent_mod=="<br />&nbsp;&nbsp;")
