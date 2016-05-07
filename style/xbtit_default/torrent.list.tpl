@@ -240,7 +240,7 @@ Snatched
           </if:usacotl2>
           <td align="center" width="3" class="header">Cover/Poster</td>
           <if:show_recommended_1>
-          <td align="center" width="3" class="header">Rec.</td>
+          <td align="center" width="3" class="header">Recommend</td>
           </if:show_recommended_1>
         </tr>
         <loop:torrents>

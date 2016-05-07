@@ -19,13 +19,13 @@ else
 
 $id = (int)$_GET["id"];
   
-echo "<br><center><b><font color = red >Accepted Invite List</font></b></center>";
+echo "<br><center><b><p class='text-primary'>Accepted Invite List</p></b></center>";
 
 ?>
-  <table class=lista width="570" align="center">
+  <table class="table table-bordered">
   <tr>
-    <td class=header align=center width="320"><center>Username</center></td>
-    <td class=header align=center width="150"><center>Joinded</center></td>
+    <td class=header align=center width="auto"><center>Username</center></td>
+    <td class=header align=center width="auto"><center>Joinded</center></td>
    </tr>
    
 <?php

@@ -1401,7 +1401,7 @@ if($count > 0)
                      if(!is_null($data["recommended"]))
                      $torrents[$i]["recommended"] = "<span style='color:red;'>".$language["RTORR_ALR"]."</span>";
                      else
-                     $torrents[$i]["recommended"] = "<a href='index.php?page=torrents&action=add&info_hash=".$data["hash"]."'>".image_or_link("images/recomend.jpg", "", $language["RTORR_REC"])."</a>";
+                     $torrents[$i]["recommended"] = "<a href='index.php?page=torrents&action=add&info_hash=".$data["hash"]."'><button class='btn btn-xs btn-danger' type='button'>Recommend</button></a>";
                   }
 
                   // show stream available

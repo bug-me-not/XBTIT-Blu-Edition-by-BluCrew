@@ -293,6 +293,8 @@ $clock(document).ready(function(){
   <div role="tabpanel" class="tab-pane fade in active" id="main">
   <div style="line-height: 15px;height:45px;width:100%;background: repeating-linear-gradient( 45deg,#D13A3A,#D13A3A 10px,#DF4B4B 10px,#DF4B4B 20px),url(./pic/navy_blue.png);border:solid 1px #B22929;border-radius:3px;-webkit-box-shadow: 0px 0px 6px #B22929;margin-bottom:-0px;margin-top:20px;font-family:Verdana;font-size:large;text-align:center;color:white"><br>Please remember to say <b>thanks</b> and <b>seed</b> for as long as you can.</div>
 
+   <h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD>
+
    <tag:TheTVDBExtra />
 
    <table class="table table-bordered">
@@ -301,11 +303,6 @@ $clock(document).ready(function(){
    <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:tvdb_banner />" /></td>
    </tr>
    </if:has_cover_banner>
-   <tr>
-   <td align="right" class="header"><tag:language.FILE />
-   </td>
-   <td class="lista" style="text-align:left;"><h3><tag:torrent.filename2 /></h3><if:MOD><tag:mod_task /></if:MOD></td>
-   </tr>
    <if:fls_enabled>
    <tr>
    <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>

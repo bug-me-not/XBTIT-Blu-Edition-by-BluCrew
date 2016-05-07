@@ -31,7 +31,7 @@ function convert() {
 </script>
 <if:edit_user>
 <form name="users" method="post" action="<tag:profile.frm_action />">
-	<table width="100%" border="0" class="lista">
+	<table class="table table-bordered">
 		<tr>
 			<td class="header" align="left" ><tag:language.USER_NAME />:</td>
 			<td class="lista" align="left" ><input type="text" size="40" name="username" maxlength="100" value="<tag:profile.username />"/><if:simple_donor_enabled>&nbsp;Donor&nbsp;<input type="checkbox" name="donor" <tag:profile.donor /> /></if:simple_donor_enabled></td>
@@ -191,7 +191,7 @@ function convert() {
 	</table>
 </form>
 <else:edit_user>
-<table class="lista" width="100%">
+ <table class="table table-bordered">
 	<tr>
 		<td class="header"><tag:language.USER_NAME /></td>
 		<td class="lista"><tag:profile.username /></td>
@@ -222,8 +222,8 @@ function convert() {
 	</tr>
 	<tr>
 		<td align="center" class="header" colspan="3">
-		  <input type="submit" class="btn" name="confirm" onclick="<tag:profile.confirm_delete />" value="<tag:language.FRM_CONFIRM />" />
-      &nbsp;&nbsp;<input type="submit" class="btn" onclick="<tag:profile.return />" name="confirm" value="<tag:language.FRM_CANCEL />" />
+		  <input type="submit" class="btn btn-primary" name="confirm" onclick="<tag:profile.confirm_delete />" value="<tag:language.FRM_CONFIRM />" />
+      &nbsp;&nbsp;<input type="submit" class="btn btn-danger" onclick="<tag:profile.return />" name="confirm" value="<tag:language.FRM_CANCEL />" />
 		</td>
 	</tr>
 </table>
