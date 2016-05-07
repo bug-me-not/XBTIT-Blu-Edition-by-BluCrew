@@ -782,7 +782,7 @@ function test_my_cookie()
    }
    elseif($btit_settings["secsui_cookie_type"]==3)
    {
-      session_name("Blu-torrents");
+      session_name("BluRG");
       session_start();
       $cookie_array=unserialize($_SESSION["login_cookie"]);
       $cookie_id=(isset($cookie_array["id"])?(int)0+$cookie_array["id"]:1);

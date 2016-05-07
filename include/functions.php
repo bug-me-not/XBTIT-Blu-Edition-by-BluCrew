@@ -281,7 +281,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
       {
          global $TABLE_PREFIX, $CURUSER, $btit_settings;
 
-         session_name("Blu-torrents");
+         session_name("BluRG");
          session_start();
 
          $overOneMinute=(((isset($_SESSION["ONLINE_EXPIRE"]) && time() > $_SESSION["ONLINE_EXPIRE"]) || !isset($_SESSION["ONLINE_EXPIRE"]))?true:false);
@@ -395,7 +395,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          if($btit_settings["secsui_cookie_type"] == 1)
          {
             setcookie('uid', $row["id"], $expires, '/');
-            setcookie('pass', md5($row["random"].$row["password"].$row["random"]), $expires, '/');
+            setcookie('pass', sha1($row["random"].$row["password"].$row["random"]), $expires, '/');
          }
          elseif($btit_settings["secsui_cookie_type"] == 2 || $btit_settings["secsui_cookie_type"] == 3)
          {
@@ -493,7 +493,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
             }
             else
             {
-               session_name("Blu-torrents");
+               session_name("BluRG");
                session_start();
                $_SESSION["login_cookie"] = $final_cookie;
             }
@@ -511,11 +511,11 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          setcookie("pass", "", (time() - 3600), "/");
          setcookie("$my_cookie_name", "", (time() - 3600), "$my_cookie_path", "$my_cookie_domain");
          setcookie("$my_cookie_name", "", (time() - 3600), "/");
-         session_name("Blu-torrents");
+         session_name("BluRG");
          session_start();
          $_SESSION = array();
          unset($_SESSION["login_cookie"]);
-         setcookie("Blu-torrents", "", time() - 3600, "/");
+         setcookie("BluRG", "", time() - 3600, "/");
          session_destroy();
       }
       function hash_pad($hash)
@@ -563,7 +563,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $CURUSER, $TABLE_PREFIX, $err_msg_install, $btit_settings, $update_interval, $THIS_BASEPATH, $STYLEPATH, $STYLEURL, $STYLETYPE, $BASEURL, $USERLANG;
 
          unset($GLOBALS['CURUSER']);
-         session_name("Blu-torrents");
+         session_name("BluRG");
          session_start();
 $ip = getip(); //$_SERVER["REMOTE_ADDR"];
 $nip = ip2long($ip);

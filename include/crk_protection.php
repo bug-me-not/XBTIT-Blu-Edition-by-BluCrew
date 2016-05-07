@@ -65,7 +65,7 @@ $ban2=array('delete from','insert into','<script', '<object', '.write', '.locati
 global $CURUSER;
 if(!isset($CURUSER) || !isset($CURUSER['admin_access']))
 {
-    session_name("Blu-torrents");
+    session_name("BluRG");
     session_start();
     if(isset($_SESSION["CURUSER"]))
         $CURUSER=$_SESSION["CURUSER"];
