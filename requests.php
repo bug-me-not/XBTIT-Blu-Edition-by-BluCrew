@@ -110,6 +110,7 @@ else
 							$comments[$cc]['avatar'] = ("<img onload=\"resize_avatar(this);\" src=\"{$av_link}\" alt=\"{$res['username']}'s Avatar\"/>");
 
 							$comments[$cc]['text'] = format_comment($res['comment']);
+							$cc++;
 						}
 
 						$reqdetailstpl->set("comments",$comments);
