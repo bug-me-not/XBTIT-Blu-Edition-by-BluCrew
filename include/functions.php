@@ -572,9 +572,7 @@ if(count($res) > 0)
 {
    header('HTTP/1.0 403 Forbidden');
 
-   ?>
-   <html><body><h1>403 Forbidden</h1>Unauthorized IP address.</body></html>
-   <?php
+   print("<html><body><h1>403 Forbidden</h1>Unauthorized IP address.</body></html>");
    die();
 }
 if(!$authcode)
@@ -734,7 +732,7 @@ if($id > 1)
    $row = $res->fetch_assoc();
    if($btit_settings["secsui_cookie_type"] == 1)
    {
-      if(md5($row["random"].$row["password"].$row["random"]) != $_COOKIE["pass"])
+      if(sha1($row["random"].$row["password"].$row["random"]) != $_COOKIE["pass"])
          $id = 1;
    }
    elseif($btit_settings["secsui_cookie_type"] == 2 || $btit_settings["secsui_cookie_type"] == 3)
@@ -842,10 +840,7 @@ if($btit_settings["fmhack_low_ratio_ban_system"] == "enabled")
    if($row["bandt"] == "yes")
    {
       header('HTTP/1.0 403 Forbidden');
-
-      ?>
-      <html><body><h1>403 Forbidden</h1>You are Banned from this site!</body></html>
-      <?php
+      print("<html><body><h1>403 Forbidden</h1>You are Banned from this site!</body></html>");
       die();
    }
 }
@@ -854,10 +849,7 @@ if($btit_settings["fmhack_ban_button"] == "enabled")
    if($row["ban"] == "yes")
    {
       header('HTTP/1.0 403 Forbidden');
-
-      ?>
-      <html><body><h1>403 Forbidden</h1>You are Banned from this site!</body></html>
-      <?php
+      print("<html><body><h1>403 Forbidden</h1>You are Banned from this site!</body></html>");
       die();
    }
 }

@@ -73,7 +73,7 @@ $config['langNames'] = array(
 // Available styles:
 $config['styleAvailable'] = array('beige','black','grey','Oxygen','Lithium','Sulfur','Cobalt','Mercury','Uranium','Plum','prosilver','subblack2','subSilver','Core','MyBB','vBulletin');
 // Default style:
-$config['styleDefault'] = 'prosilver';
+$config['styleDefault'] = 'Cobalt';
 
 // The encoding used for the XHTML content:
 $config['contentEncoding'] = 'UTF-8';
@@ -87,7 +87,7 @@ $config['sessionName'] = 'blu_ajax_chat';
 // Prefix added to every session key:
 $config['sessionKeyPrefix'] = 'bluajaxChat';
 // The lifetime of the language, style and setting cookies in days:
-$config['sessionCookieLifeTime'] = 30;
+$config['sessionCookieLifeTime'] = 15;
 // The path of the cookies, '/' allows to read the cookies from all directories:
 $config['sessionCookiePath'] = '/';
 // The domain of the cookies, defaults to the hostname of the server if set to null:
@@ -96,7 +96,7 @@ $config['sessionCookieDomain'] = null;
 $config['sessionCookieSecure'] = null;
 
 // Default channelName used together with the defaultChannelID if no channel with this ID exists:
-$config['defaultChannelName'] = 'Blu-torrents';
+$config['defaultChannelName'] = 'BluRG';
 // ChannelID used when no channel is given:
 $config['defaultChannelID'] = 1;
 // Defines an array of channelIDs (e.g. array(0, 1)) to limit the number of available channels, will be ignored if set to null:
