@@ -120,7 +120,7 @@ else
             // torrent exists in database
             $category="<a href=index.php?page=torrents&category=".$res["catid"].">".image_or_link(($res["image"]==""?"":$STYLEPATH."/images/categories/" . $res["image"]),"",$res["cname"])."</td>";
             $filename="<a href=index.php?page=details&id=".$res["info_hash"]."&returnto=bookmark.php>".$res["filename"]."</a>";
-$download="<a href=".(($btit_settings["fmhack_download_ratio_checker"]=="enabled")?"index.php?page=downloadcheck&":"download.php?")."id=".$res["info_hash"]."&f=" . rawurlencode(html_entity_decode($res["filename"])) . ".torrent>".image_or_link("images/download.gif","","torrent")."</a>";
+$download="<a href=".(($btit_settings["fmhack_download_ratio_checker"]=="enabled")?"index.php?page=downloadcheck&":"download.php?")."id=".$res["info_hash"]."&f=" . rawurlencode(html_entity_decode($res["filename"])) . ".torrent><button class='btn btn-primary btn-circle' type='button'><i class='fa fa-download'></i></button></a>";
             $size=makesize($res["size"]);
             $seeds="<a href='index.php?page=peers&id=".$res["info_hash"]."&returnto=index.php?page=bookmark' title='".$language["PEERS_DETAILS"]."'><span style='color:green;'>".$res["seeds"]."</span></a></td>";
             $leechers="<a href='index.php?page=peers&id=".$res["info_hash"]."&returnto=index.php?page=bookmark' title='".$language["PEERS_DETAILS"]."'><span style='color:red;'>".$res["leechers"]."</span></a></td>";
@@ -132,37 +132,6 @@ $download="<a href=".(($btit_settings["fmhack_download_ratio_checker"]=="enabled
             else
                 $speed = round($res["speed"] / 1024, 2) . " KB/sec";
 
-            // progress
-            if ($res["external"]=="yes")
-                $prgsf=$language["NA"];
-            else
-            {
-                $id = $res["info_hash"];
-
-                $subres = do_sqlquery("SELECT SUM(IFNULL(`bytes`,0)) `to_go`, COUNT(*) `numpeers` FROM `{$TABLE_PREFIX}peers` WHERE `infohash`='".$id."'", true);
-                $subrow = $subres->fetch_assoc();
-                $tmp=0+$subrow["numpeers"];
-                if ($tmp>0)
-                {
-                    $tsize=(0+$res["size"])*$tmp;
-                    $tbyte=0+$subrow["to_go"];
-                    $prgs=(($tsize-$tbyte)/$tsize) * 100;
-                    $prgsf=floor($prgs);
-                }
-                else
-                    $prgsf=0;
-
-                if ($prgsf <= 100)
-                    $prgpic="images/progbar-green.gif";
-                if ($prgsf == 0)
-                    $bckgpic="images/progbar-black.gif";
-                else
-                    $bckgpic="images/progbar-red.gif";
-
-                $progressbar="<table border=0 width=44 cellspacing=0 cellpadding=0><tr><td align=right border=0 width=2><img src=\"images/bar_left.gif\">";
-                $progressbar.="<td align=left border=0 background=\"$bckgpic\" width=40><img height=9 width=".(number_format($prgsf,0)/2.5)." src=\"$prgpic\"></td><td align=right border=0 width=2><img src=\"images/bar_right.gif\"></td></tr></table>";
-                $prgsf.="%";
-            }
             $wish[$i]["id"]=$res["id"];
             $wish[$i]["category"]=$category;
             $wish[$i]["file"]=$filename;
@@ -173,8 +142,7 @@ $download="<a href=".(($btit_settings["fmhack_download_ratio_checker"]=="enabled
             $wish[$i]["completed"]=$completes;
             $wish[$i]["speed"]=$speed;
             $wish[$i]["added"]=get_date_time($res["added"]);
-            $wish[$i]["average"]=$prgsf."<br />".$progressbar;
-            $wish[$i]["delete"]="<a href=\"index.php?page=bookmark&do=del&amp;id=".$wish[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["DELETE_CONFIRM"])."')\">".image_or_link("$STYLEPATH/images/delete.png","",$language["DELETE"])."</a>";
+            $wish[$i]["delete"]="<a href=\"index.php?page=bookmark&do=del&amp;id=".$wish[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["DELETE_CONFIRM"])."')\"><button class='btn btn-danger btn-circle' type='button'><i class='fa fa-times'></i></button></a>";
             $i++;
         }
     }

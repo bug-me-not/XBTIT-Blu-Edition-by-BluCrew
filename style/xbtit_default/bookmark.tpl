@@ -16,7 +16,6 @@
     <td class="header" align="center"><b><tag:language.SHORT_C /></b></td>
     <td class="header" align="center"><b><tag:language.SPEED /></b></td>
     <td class="header" align="center"><b><tag:language.TB_BOOKMARKED /></b></td>
-    <td class="header" align="center"><b><tag:language.AVERAGE /></b></td>
     <td class="header" align="center"><b><tag:language.DELETE /></b></td>
   </tr>
 
@@ -35,7 +34,6 @@
       <td class="lista" style="text-align:center;"><tag:wish[].completed /></td>
       <td class="lista" style="text-align:center;"><tag:wish[].speed /></td>
       <td class="lista" style="text-align:center;"><tag:wish[].added /></td>
-      <td class="lista" style="text-align:center;"><tag:wish[].average /></td>
       <td class="lista" style="text-align:center;"><tag:wish[].delete /></td>
     </tr>
     </loop:wish>
