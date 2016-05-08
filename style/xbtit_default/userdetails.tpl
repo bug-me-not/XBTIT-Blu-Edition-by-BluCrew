@@ -35,13 +35,6 @@
     </tr>
     </if:user_img_enabled>
 
-    <if:birthdays_enabled>
-    <tr>
-      <td class="header"><tag:language.USER_AGE /></td>
-      <td class="lista"><tag:userdetailarr.age_colspan_1 /></td>
-   </tr>
-   </if:birthdays_enabled>
-
   <if:warn_enabled>
   <tr>
       <td class="header"><tag:language.WS_WL /></td>
