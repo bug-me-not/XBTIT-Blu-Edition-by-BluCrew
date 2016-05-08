@@ -429,7 +429,8 @@ $userdetailtpl->set("whois_enabled", (($btit_settings["fmhack_show_members_whois
 // Report users & Torrents by DiemThuy -->
 $userdetailtpl->set("ruat", (($btit_settings["fmhack_report_users_and_torrents"] == "enabled" && $id!=$CURUSER["uid"])?true:false), true);
 if($btit_settings["fmhack_report_users_and_torrents"] == "enabled")
-    $userdetailarr["rep"] = "<a href=index.php?page=report&user=".$id."><img src='images/repusr.gif'></a>";
+    $userdetailarr["rep"] = "<a href=index.php?page=report&user=".$id."><button class='btn btn-labeled btn-danger' type='button'>
+      <span class='btn-label'><i class='fa fa-flag'></i></span>Report User</button></a>";
 // <-- Report users & Torrents by DiemThuy
 $userdetailtpl->set("timed_ranks_enabled", (($btit_settings["fmhack_timed_ranks"] == "enabled")?true:false), true);
 if($btit_settings["fmhack_timed_ranks"] == "enabled" && $CURUSER["edit_users"] == "yes")
