@@ -351,8 +351,8 @@
             <td class="lista" style="text-align:center;"><a href="<tag:user_notes[].addedby_link />"><tag:user_notes[].username /></a></td>
             <td class="lista" width="125px" style="text-align:center;"><tag:user_notes[].date /></td>
             <if:note_admin_2>
-            <td class="lista" style="text-align:center;"><a href='index.php?page=admin&amp;user=<tag:userdetailarr.cuid />&amp;code=<tag:userdetailarr.crand />&amp;do=notemod&amp;action=edit&amp;noteid=<tag:user_notes[].noteid />&amp;eduser=<tag:userdetailarr.un_id />&amp;returnto=<tag:userdetailarr.un_returnto />'><img src='<tag:userdetailarr.csurl />/images/edit.png'></a></td>
-            <td class="lista" style="text-align:center;"><a onclick="return confirm('<tag:language.DELETE_CONFIRM />')" href='index.php?page=admin&amp;user=<tag:userdetailarr.cuid />&amp;code=<tag:userdetailarr.crand />&amp;do=notemod&amp;action=delete&amp;noteid=<tag:user_notes[].noteid />&amp;eduser=<tag:userdetailarr.un_id />&amp;returnto=<tag:userdetailarr.un_returnto />'><img src='<tag:userdetailarr.csurl />/images/delete.png'></a></td>
+            <td class="lista" style="text-align:center;"><a href='index.php?page=admin&amp;user=<tag:userdetailarr.cuid />&amp;code=<tag:userdetailarr.crand />&amp;do=notemod&amp;action=edit&amp;noteid=<tag:user_notes[].noteid />&amp;eduser=<tag:userdetailarr.un_id />&amp;returnto=<tag:userdetailarr.un_returnto />'><button class="btn btn-primary btn-circle" type="button"><i class="fa fa-pencil-square-o"></i></button></a></td>
+            <td class="lista" style="text-align:center;"><a onclick="return confirm('<tag:language.DELETE_CONFIRM />')" href='index.php?page=admin&amp;user=<tag:userdetailarr.cuid />&amp;code=<tag:userdetailarr.crand />&amp;do=notemod&amp;action=delete&amp;noteid=<tag:user_notes[].noteid />&amp;eduser=<tag:userdetailarr.un_id />&amp;returnto=<tag:userdetailarr.un_returnto />'><button class="btn btn-danger btn-circle" type="button"><i class="fa fa-times"></i></button></a></td>
             </if:note_admin_2>
           </tr>
         </loop:user_notes>
