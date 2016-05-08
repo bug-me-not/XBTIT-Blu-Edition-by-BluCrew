@@ -325,7 +325,7 @@
   <tr>
     <td class="header"><tag:language.UN_NOTES /></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />>
-      <tag:userdetailarr.note_pager /> <br>
+      <div><tag:userdetailarr.note_pager /></div> <br>
   <table border="1" class="lista" width:"100%">
         <tr>
           <td class="head" align="center"><b><tag:language.UN_NOTE /></b></td>

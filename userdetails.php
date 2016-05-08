@@ -338,6 +338,7 @@ if($btit_settings["fmhack_birthdays"] == "enabled")
 }
 $userdetailtpl->set("show_notes", (($btit_settings["fmhack_user_notes"] == "enabled" && isset($row["user_notes"]) && !empty($row["user_notes"]) && $CURUSER["edit_users"] == "yes")?true:false), true);
 $userdetailtpl->set("notes_pager_needed", false, true);
+
 if($btit_settings["fmhack_user_notes"] == "enabled" && $CURUSER["edit_users"] == "yes")
 {
     if(isset($row["user_notes"]) && !empty($row["user_notes"]))
@@ -408,9 +409,9 @@ if($btit_settings["fmhack_user_notes"] == "enabled" && $CURUSER["edit_users"] ==
         while($pages >= $i)
         {
             if($notepage != $i)
-                $note_pager .= "&nbsp;<span class='pager'><a href='index.php?page=userdetails&id=".$id."&notepage=".$i."'>$i</a></span>";
+                $note_pager .= "&nbsp;<a href='index.php?page=userdetails&id=".$id."&notepage=".$i."'>$i</a>";
             else
-                $note_pager .= "&nbsp;<span class='pagercurrent'><b>$i</b></span>";
+                $note_pager .= "&nbsp;<b>$i</b>";
             $i++;
         }
     }
@@ -424,6 +425,7 @@ if($btit_settings["fmhack_user_notes"] == "enabled" && $CURUSER["edit_users"] ==
     $userdetailtpl->set("notes_pager_needed", ((isset($note_pager) && !empty($note_pager))?true:false), true);
     unset($i);
 }
+
 $userdetailtpl->set("ban_button_enabled", (($btit_settings["fmhack_ban_button"] == "enabled")?true:false), true);
 $userdetailtpl->set("whois_enabled", (($btit_settings["fmhack_show_members_whois_record_on_userdetails"] == "enabled" && ($CURUSER["edit_users"] == "yes" || $CURUSER["admin_access"] == "yes"))?true:false), true);
 // Report users & Torrents by DiemThuy -->
