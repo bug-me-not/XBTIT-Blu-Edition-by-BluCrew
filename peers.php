@@ -30,7 +30,6 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////
 
-
 if (!defined("IN_BTIT"))
 die("non direct access!");
 
@@ -287,12 +286,12 @@ else
             if ($GLOBALS["usepopup"])
             {
                $peers[$i]["USERNAME"]="<a href=\"javascript: windowunder('".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$rowuser["id"]."_".strtr($rowuser["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$rowuser["id"])."')\">".(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($rowuser["prefixcolor"].$rowuser["username"].$rowuser["suffixcolor"]):unesc($rowuser["username"])).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($rowuser):"")."</a>";
-               $peers[$i]["PM"]="<a href=\"javascript: windowunder('index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rowuser["username"]))."')\">".image_or_link("$STYLEPATH/images/pm.png","","PM")."</a>";
+               $peers[$i]["PM"]="<a href=\"javascript: windowunder('index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rowuser["username"]))."')\"><button class='btn btn-xs btn-primary' type='button'>PM</button></a>";
             }
             else
             {
                $peers[$i]["USERNAME"]="<a href=\"".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$rowuser["id"]."_".strtr($rowuser["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$rowuser["id"])."\">".(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($rowuser["prefixcolor"].$rowuser["username"].$rowuser["suffixcolor"]):unesc($rowuser["username"])).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($rowuser):"")."</a>";
-               $peers[$i]["PM"]="<a href=\"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rowuser["username"]))."\">".image_or_link("$STYLEPATH/images/pm.png","","PM")."</a>";
+               $peers[$i]["PM"]="<a href=\"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rowuser["username"]))."\"><button class='btn btn-xs btn-primary' type='button'>PM</button></a>";
             }
          }
          else
