@@ -7,16 +7,16 @@
   </if:pagertop_visible>
 
   <tr>
-    <td class="header" align="center"><b><tag:language.CATEGORY_FULL /></b></td>
-    <td class="header" align="center"><b><tag:language.FILE /></b></td>
-    <td class="header" align="center"><b><tag:language.TB_DOWN /></b></td>
-    <td class="header" align="center"><b><tag:language.SIZE /></b></td>
-    <td class="header" align="center"><b><tag:language.SHORT_S /></b></td>
-    <td class="header" align="center"><b><tag:language.SHORT_L /></b></td>
-    <td class="header" align="center"><b><tag:language.SHORT_C /></b></td>
-    <td class="header" align="center"><b><tag:language.SPEED /></b></td>
-    <td class="header" align="center"><b><tag:language.TB_BOOKMARKED /></b></td>
-    <td class="header" align="center"><b><tag:language.DELETE /></b></td>
+    <td class="head" align="center"><b><tag:language.CATEGORY_FULL /></b></td>
+    <td class="head" align="center"><b><tag:language.FILE /></b></td>
+    <td class="head" align="center"><b><tag:language.TB_DOWN /></b></td>
+    <td class="head" align="center"><b><tag:language.SIZE /></b></td>
+    <td class="head" align="center"><b><tag:language.SHORT_S /></b></td>
+    <td class="head" align="center"><b><tag:language.SHORT_L /></b></td>
+    <td class="head" align="center"><b><tag:language.SHORT_C /></b></td>
+    <td class="head" align="center"><b><tag:language.SPEED /></b></td>
+    <td class="head" align="center"><b><tag:language.TB_BOOKMARKED /></b></td>
+    <td class="head" align="center"><b><tag:language.DELETE /></b></td>
   </tr>
 
 
