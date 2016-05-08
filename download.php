@@ -149,10 +149,10 @@ if($btit_settings["fmhack_archive_torrents"]=="enabled" && $completedb4===false)
 }
 
 if (!is_file($filepath) || !is_readable($filepath))
-   {
-       require_once(load_language("lang_main.php"));
-       die($language["CANT_FIND_TORRENT"]);
-    }
+{
+ require_once(load_language("lang_main.php"));
+ die($language["CANT_FIND_TORRENT"]);
+}
 
 // This just seems to mess up the filename adding %20's etc. Reverted until I can find a better way of doing whatever it's supposed to do.
 //$f=rawurlencode(html_entity_decode($_GET["f"]));
@@ -176,11 +176,11 @@ if($btit_settings["fmhack_download_prefix_or_suffix"]=="enabled")
 $row =get_result("SELECT pid FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER['uid'],true,$btit_settings['cache_duration']);
 $pid=$row[0]["pid"];
 if (!$pid)
-   {
-   $pid=md5(uniqid(rand(),true));
-   quickQuery("UPDATE {$TABLE_PREFIX}users SET pid='".$pid."' WHERE id='".$CURUSER['uid']."'");
-   if ($XBTT_USE)
-      quickQuery("UPDATE xbt_users SET torrent_pass='".$pid."' WHERE uid='".$CURUSER['uid']."'");
+{
+ $pid=md5(uniqid(rand(),true));
+ quickQuery("UPDATE {$TABLE_PREFIX}users SET pid='".$pid."' WHERE id='".$CURUSER['uid']."'");
+ if ($XBTT_USE)
+  quickQuery("UPDATE xbt_users SET torrent_pass='".$pid."' WHERE uid='".$CURUSER['uid']."'");
 }
 
 $result=get_result("SELECT * FROM {$TABLE_PREFIX}files WHERE info_hash='".$infohash."'",true,$btit_settings['cache_duration']);
@@ -216,16 +216,16 @@ if($btit_settings["fmhack_teams"]=="enabled")
 }
 
 if ($row["external"]=="yes" || !$PRIVATE_ANNOUNCE)
-   {
+{
     $fd = fopen($filepath, "rb");
     $alltorrent = fread($fd, filesize($filepath));
     fclose($fd);
     header("Content-Type: application/x-bittorrent");
     header('Content-Disposition: attachment; filename="'.$f.'"');
     print($alltorrent);
-   }
+}
 else
-    {
+{
     $fd = fopen($filepath, "rb");
     $alltorrent = fread($fd, filesize($filepath));
     $array = BDecode($alltorrent);
@@ -237,32 +237,49 @@ else
 */
     fclose($fd);
 
-    if ($XBTT_USE)
-       $array["announce"] = $XBTT_URL."/$pid/announce";
-    else
-       $array["announce"] = $BASEURL."/announce.php?pid=$pid";
-
-    if (isset($array["announce-list"]) && is_array($array["announce-list"]))
-       {
-       for ($i=0;$i<count($array["announce-list"]);$i++)
-           {
-           for ($j=0;$j<count($array["announce-list"][$i]);$j++)
-               {
-               if (in_array($array["announce-list"][$i][$j],$TRACKER_ANNOUNCEURLS))
-                  {
-                  if (strpos($array["announce-list"][$i][$j],"announce.php")===false)
-                     $array["announce-list"][$i][$j] = trim(str_replace("/announce", "/$pid/announce", $array["announce-list"][$i][$j]));
-                  else
-                     $array["announce-list"][$i][$j] = trim(str_replace("/announce.php", "/announce.php?pid=$pid", $array["announce-list"][$i][$j]));
-                }
-             }
-         }
-     }
-
-    $alltorrent=BEncode($array);
-
-    header("Content-Type: application/x-bittorrent");
-    header('Content-Disposition: attachment; filename="'.$f.'"');
-    print($alltorrent);
+    $BASEURLn = '';   
+    if(substr($BASEURL,0,5) == "https")
+    {
+        if($CURUSER["force_ssl"] == "yes")
+        {
+            $BASEURLn = $BASEURL;
+        }
+        else
+        {
+            $BASEURLn = str_replace("https","http",$BASEURL);
+        }
     }
+    else
+    {
+        $BASEURLn = $BASEURL;   
+    }
+
+    if ($XBTT_USE)
+     $array["announce"] = $XBTT_URL."/$pid/announce";
+ else
+     $array["announce"] = $BASEURLn."/announce.php?pid=$pid";
+
+ if (isset($array["announce-list"]) && is_array($array["announce-list"]))
+ {
+     for ($i=0;$i<count($array["announce-list"]);$i++)
+     {
+         for ($j=0;$j<count($array["announce-list"][$i]);$j++)
+         {
+             if (in_array($array["announce-list"][$i][$j],$TRACKER_ANNOUNCEURLS))
+             {
+              if (strpos($array["announce-list"][$i][$j],"announce.php")===false)
+               $array["announce-list"][$i][$j] = trim(str_replace("/announce", "/$pid/announce", $array["announce-list"][$i][$j]));
+           else
+               $array["announce-list"][$i][$j] = trim(str_replace("/announce.php", "/announce.php?pid=$pid", $array["announce-list"][$i][$j]));
+       }
+   }
+}
+}
+
+$alltorrent=BEncode($array);
+
+header("Content-Type: application/x-bittorrent");
+header('Content-Disposition: attachment; filename="'.$f.'"');
+print($alltorrent);
+}
 ?>
