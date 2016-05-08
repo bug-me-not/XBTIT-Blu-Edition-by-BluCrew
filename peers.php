@@ -315,10 +315,13 @@ else
         $peers[$i]["PORT"]="<b><font color='".(($row["natuser"]=="Y")?"red":"green")."'>".$row["port"]."</font></b>";
     else
         $peers[$i]["PORT"]=$row["port"];
+      
       $stat=floor((($tsize - $row["bytes"]) / $tsize) *100);
-      $progress="<table width=\"100\" cellspacing=\"0\" cellpadding=\"0\"><tr><td class=\"progress\" align=\"left\">";
-      $progress.="<img height=\"10\" width=\"".number_format($stat,0)."\" src=\"$STYLEURL/images/progress.jpg\" alt=\"\" /></td></tr></table>";
-      $peers[$i]["PROGRESS"]=$stat."%<br />" . $progress;
+      //$progress="<table width=\"100\" cellspacing=\"0\" cellpadding=\"0\"><tr><td class=\"progress\" align=\"left\">";
+      //$progress.="<img height=\"10\" width=\"".number_format($stat,0)."\" src=\"$STYLEURL/images/progress.jpg\" alt=\"\" /></td></tr></table>";
+      //$peers[$i]["PROGRESS"]=$stat."%<br />" . $progress;
+      $progress = "<div class='progress'>\n<div class='progress-bar progress-bar-success progress-bar-striped' role='progressbar' aria-valuenow='".$stat."' aria-valuemin='0' aria-valuemax='100' style='width: ".$stat."%'>\n".$stat."%\n</div>\n</div>";
+      $peers[$i]["PROGRESS"]=$progress;
 
       $peers[$i]["STATUS"]=$row["status"];
       $peers[$i]["IPA"]=long2ip($row["ipa"]);
