@@ -55,10 +55,10 @@ else
         $total_invisible=$u_hidden[0]["hidden"];
         if($CURUSER["see_hidden"]!="yes" && $total_invisible>0)
         {
-            $query1_exclude.=" WHERE (`invisible`='no' OR `user_id`=".$CURUSER["uid"].")";
+            $query1_exclude.=" WHERE (`ol`.`invisible`='no' OR `ol`.`user_id`=".$CURUSER["uid"].")";
         }
      }
-     $u_online=get_result("SELECT * FROM {$TABLE_PREFIX}online ol".$query1_exclude,true,$btit_settings['cache_duration']);
+     $u_online=get_result("SELECT `ol`.*,`ul`.`logical_rank_order` FROM `{$TABLE_PREFIX}online` `ol` LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `ul`.`level`=`ol`.`user_group`".$query1_exclude." ORDER BY `ul`.`logical_rank_order` ASC",true,$btit_settings['cache_duration']);
 
      $total_online=count($u_online);
      $uo=array();
@@ -107,22 +107,21 @@ else
                         }
                     }
                 }
-                $uo[]="<a class=\"online\" href=\"".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$users_online["user_id"]."_".strtr($users_online["user_name"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$users_online["user_id"])."\" title=\"".unesc(ucfirst($users_online["location"]))."\">".
-                       unesc($users_online["prefixcolor"].$users_online["user_name"].$users_online["suffixcolor"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($users_online):"").(($btit_settings["fmhack_booted"]=="enabled")?booted($users_online):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($users_online):"")."</a>".$my_img_list.(($btit_settings["fmhack_hide_online_status"]=="enabled" && $users_online["invisible"]=="yes")?"*":"");
+                $uo[]="<a class=\"online\" href=\""."index.php?page=userdetails&id=".$users_online["user_id"]."\" title=\"".unesc(ucfirst($users_online["location"]))."\">".unesc($users_online["prefixcolor"].$users_online["user_name"].$users_online["suffixcolor"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($users_online):"").(($btit_settings["fmhack_booted"]=="enabled")?booted($users_online):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($users_online):"")."</a>".$my_img_list.(($btit_settings["fmhack_hide_online_status"]=="enabled" && $users_online["invisible"]=="yes")?"*":"");
             }
      }
 
      print("<tr><td colspan=\"2\" class=\"blocklist\">".$language["ACTIVATED"].": ".implode(", ",$uo)."</td>\n</tr>\n");
 
 {
-echo"<table><tr><td align=\"center\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Total Users Online Now: <font color ='red'>".$total_online."</font>)</b></td>";
+print("<table><tr><td align=\"center\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Total Users Online Now: <font color ='red'>".$total_online."</font>)</b></td>");
 }
 
      block_end();
-     print("</table>\n");
 } // end if user can view
 
 ?>
+</table>
 <div class="panel-footer">
 </div>
 </div>
