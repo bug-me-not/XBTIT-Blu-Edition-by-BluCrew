@@ -341,7 +341,7 @@
     <td class="header"><tag:language.UN_NOTES /></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />>
       <if:notes_pager_needed><div align='center'><tag:userdetailarr.note_pager /></div></if:notes_pager_needed>
-      <table class="table table-striped">
+<table border="1" class="lista" width:"100%">
         <tr>
           <td class="head" align="center"><b><tag:language.UN_NOTE /></b></td>
           <td class="head" align="center"><b><tag:language.UN_ADDED_BY /></b></td>
