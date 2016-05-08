@@ -1,4 +1,4 @@
-<table class="lista" border="0" width="100%" cellspacing="1" cellpadding="4">
+<table class="table table-bordered">
   <tr>
     <td class="head" align="center" width="2%">&nbsp;</td>
     <td class="head" align="center"><tag:language.FORUM /></td>
@@ -13,7 +13,7 @@
   <else:NO_FORUMS>
   <loop:forums>
   <tr>
-  <tag:forums[].header />
+    <tag:forums[].header />
     <td class="list"><tag:forums[].status /></td>
     <td class="list" valign="middle" style="padding-left:10px;overflow:auto;"><tag:forums[].name /><tag:forums[].description /><tag:forums[].subforums /></td>
     <td class="list" style="text-align:center;" align="center"><tag:forums[].topics /></td>

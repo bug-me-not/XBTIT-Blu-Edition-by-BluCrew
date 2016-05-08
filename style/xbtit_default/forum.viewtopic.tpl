@@ -17,7 +17,7 @@
   <tr>
     <td align="center" valign="middle">
     <loop:posts>
-      <table class="lista" width="100%">
+      <table class="table table-bordered">
         <!-- Message header (with delete/quote/edit) if authorized) -->
         <tr>
           <td align="left" class="header" colspan="2">

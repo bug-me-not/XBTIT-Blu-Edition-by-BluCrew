@@ -1,6 +1,6 @@
 <if:HAS_SUBFORUMS>
 <br />
-<table class="lista" border="0" width="100%" cellspacing="1" cellpadding="4">
+<table class="table table-bordered">
   <tr>
     <td class="header" align="center" colspan="7"><tag:sub_forum_name /></td>
   </tr>
@@ -35,7 +35,7 @@
     </if:can_create>
   </tr>
 </table>
-<table class="lista" border="0" width="100%" cellspacing="1" cellpadding="4">
+<table class="table table-bordered">
   <tr>
     <td class="header" align="center" colspan="7"><tag:forum_name /></td>
   </tr>
