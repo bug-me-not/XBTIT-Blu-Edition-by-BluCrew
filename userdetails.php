@@ -408,9 +408,9 @@ if($btit_settings["fmhack_user_notes"] == "enabled" && $CURUSER["edit_users"] ==
         while($pages >= $i)
         {
             if($notepage != $i)
-                $note_pager .= "\n&nbsp;<span class='pager'><a href='index.php?page=userdetails&id=".$id."&notepage=".$i."'>$i</a></span>";
+                $note_pager .= "&nbsp;<span class='pager'><a href='index.php?page=userdetails&id=".$id."&notepage=".$i."'>$i</a></span>";
             else
-                $note_pager .= "\n&nbsp;<span class='pagercurrent'><b>$i</b></span>";
+                $note_pager .= "&nbsp;<span class='pagercurrent'><b>$i</b></span>";
             $i++;
         }
     }
@@ -1093,7 +1093,9 @@ if($resuploaded && $numtorrent > 0)
         {
             if($btit_settings["fmhack_torrent_moderation"] == "enabled")
             {
-                $uptortpl[$i]["moder"] = getmoderdetails(getmoderstatusbyhash($rest['info_hash']), $rest['info_hash']);
+                $moder = getmoderstatusbyhash($rest['info_hash']);
+
+                $uptortpl[$i]["moder"] = "<a title=\"".$moder["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $moder["username"]!=$language["SYSTEM_USER"] && $moder["moder"]!="um")?(($moder["moder"]=="ok")?" (".$language["TMOD_APPROVED_BY"]." ".$moder["username"].")":" (".$language["TMOD_REJECTED_BY"]." ".$moder["username"].")"):"")."\" href=\"index.php?page=edit&info_hash=".$rest["info_hash"]."\">".(($moder["moder"]=="ok")?"<button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-thumbs-up'></i></span>Approved</button>":"<button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-thumbs-down'></i></span>Denied</button>")."</a>";
             }
             $uptortpl[$i]["filename"] = "<a href=\"javascript:popdetails('".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated"] == "true")?strtr($rest["filename"], $res_seo["str"], $res_seo["strto"])."-".$rest["seoid"].".html":"index.php?page=torrent-details&id=".$rest["info_hash"])."')\" title=\"".$language["VIEW_DETAILS"].": ".$rest["filename"].(($btit_settings["fmhack_torrent_moderation"] == "enabled" && $btit_settings["mod_app_sa"] == "yes" && $CURUSER["admin_access"] == "yes" && $rest["approved_by"] != $language["SYSTEM_USER"])?" (".$language["TMOD_APPROVED_BY"]." ".$rest["approved_by"].")":"")."\">".$filename."</a>".(($btit_settings["fmhack_teams"] == "enabled" && $team != "")?"&nbsp;".$team."&nbsp;":"");
             $uptortpl[$i]["added"] = date("d/m/Y", $rest["added"] - $offset);
@@ -1112,7 +1114,9 @@ if($resuploaded && $numtorrent > 0)
         {
             if($btit_settings["fmhack_torrent_moderation"] == "enabled")
             {
-                $uptortpl[$i]["moder"] = getmoderdetails(getmoderstatusbyhash($rest['info_hash']), $rest['info_hash']);
+                $moder = getmoderstatusbyhash($rest['info_hash']);
+
+                $uptortpl[$i]["moder"] = "<a title=\"".$moder["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $moder["username"]!=$language["SYSTEM_USER"] && $moder["moder"]!="um")?(($moder["moder"]=="ok")?" (".$language["TMOD_APPROVED_BY"]." ".$moder["username"].")":" (".$language["TMOD_REJECTED_BY"]." ".$moder["username"].")"):"")."\" href=\"index.php?page=edit&info_hash=".$rest["info_hash"]."\">".(($moder["moder"]=="ok")?"<button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-thumbs-up'></i></span>Approved</button>":"<button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-thumbs-down'></i></span>Denied</button>")."</a>";
             }
             $uptortpl[$i]["filename"] = "<a href=\"".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated"] == "true")?strtr($rest["filename"], $res_seo["str"], $res_seo["strto"])."-".$rest["seoid"].".html":"index.php?page=torrent-details&id=".$rest["info_hash"])."\" title=\"".$language["VIEW_DETAILS"].": ".$rest["filename"].(($btit_settings["fmhack_torrent_moderation"] == "enabled" && $btit_settings["mod_app_sa"] == "yes" && $CURUSER["admin_access"] == "yes" && $rest["approved_by"] != $language["SYSTEM_USER"])?" (".$language["TMOD_APPROVED_BY"]." ".$rest["approved_by"].")":"")."\">".$filename."</a>".(($btit_settings["fmhack_teams"] == "enabled" && $team != "")?"&nbsp;".$team."&nbsp;":"");
             $uptortpl[$i]["added"] = date("d/m/Y", $rest["added"] - $offset);
