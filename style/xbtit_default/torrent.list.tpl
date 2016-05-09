@@ -220,9 +220,9 @@ Leeching
 <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="You have snatched this!" data-original-title="" title="">
 Snatched
 </button></center>
-
+</br>
        <table class="table table-bordered">
-        <tr>
+        <tr class="active">
           <td align="center" width="45" class="header">Category</td>
           <td align="center" class="header">Sort By: &nbsp;<tag:torrent_header_added />|<tag:torrent_header_seeds />|<tag:torrent_header_leechers />|<tag:torrent_header_complete />|<a href="/index.php?page=torrents&amp;active=0&amp;gold=0&amp;order=4&amp;by=2">Size</a></td>
           <if:usacotl1>
