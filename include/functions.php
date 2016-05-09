@@ -147,7 +147,7 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $STYLEPATH, $STYLEURL;
          if(@file_exists($STYLEPATH.'/'.$css_name))
             return $STYLEURL.'/'.$css_name;
-         return 'style/Splatter/'.$css_name;
+         return 'style/xbtit_default/'.$css_name;
       }
       function load_template($tpl_name)
       {

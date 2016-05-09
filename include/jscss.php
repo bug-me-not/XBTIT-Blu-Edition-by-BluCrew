@@ -48,7 +48,7 @@ $morescript='<!--[if lt IE 7.]>
 ($pageID=='faq')?$morescript.="\n<script src='jscript/faq.js' type='text/javascript'></script>":$morescript.='';
 unset($poller);
 
-$morecss='<link rel="stylesheet" href="css/global.css" type="text/css" />';
+$morecss="";
 ($pageID=="torrent-details")?$morecss.="\n<link rel='stylesheet' href='ajaxstarrater/css/rating.css' type='text/css' />":$morecss.="";
 ($pageID=='faq')?$morecss.="\n<link rel='stylesheet' href='css/faq.css'   type='text/css' />":$morecss.="";
 ($pageID=='rules')?$morecss.="\n<link rel='stylesheet' href='css/rules.css' type='text/css' />":$morecss.="";
@@ -65,6 +65,11 @@ Christmas Snowstorm End-->
 <script type="text/javascript" src="jscript/newyear.js"></script>
 Christmas Header End -->
 ************
+
+<!-- Christmas Snowstorm 
+<script src="jscript/snowstorm.js" type="text/javascript"></script>
+<script>snowStorm.excludeMobile = false;</script>
+Christmas Snowstorm End-->
 
 body
 ************

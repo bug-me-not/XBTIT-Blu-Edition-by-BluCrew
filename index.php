@@ -106,7 +106,7 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
     }
 }
 
-$style_css=load_css("main.css");
+$style_css=load_css("bootstrap.css");
 
 $idlang=intval($_GET["language"]);
 
