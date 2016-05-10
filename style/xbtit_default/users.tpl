@@ -1,24 +1,24 @@
 <div align="center">
   <form action="index.php" name="ricerca" method="get">
   <input type="hidden" name="page" value="users" />
-    <table border="0" class="lista">
+    <table class="table table-bordered">
       <tr>
         <td class="block"><tag:language.FIND_USER /></td>
         <td class="block"><tag:language.USER_LEVEL /></td>
         <td class="block">&nbsp;</td>
       </tr>
       <tr>
-        <td align="center" style="width: 212px;"><input type="text" id="searchinput" name="searchtext" style="width: 210px;" maxlength="50" ondblclick="suggest_users(event.keyCode, this.value, 'user');" onkeyup="suggest_users(event.keyCode, this.value, 'user');" onkeypress="return noenter(event.keyCode);" autocomplete="off" value="<tag:users_search />" />
+        <td align="center" style="width: 500px;"><input type="text" id="searchinput" name="searchtext" style="width: 210px;" maxlength="50" ondblclick="suggest_users(event.keyCode, this.value, 'user');" onkeyup="suggest_users(event.keyCode, this.value, 'user');" onkeypress="return noenter(event.keyCode);" autocomplete="off" class="form-control" value="<tag:users_search />" />
 		<div id="suggcontainer" style="display: none; padding-left:0px;" align="left">
 		    <div id="suggestions" style="cursor: default; position: absolute; background-color: #373737; border: 1px solid #7f9db9; border-top: 0px;"></div>
 		</div>
 	   <if:pun_enabled> <tag:language.PREUS_PUN /> <input type="checkbox" name="previous_usernames"<if:pun_checked> checked="checked"</if:pun_checked> /></if:pun_enabled></td>
-        <td><select name="level">
+        <td><select name="level" class="form-control">
             <option value="0" <tag:users_search_level />><tag:language.ALL /></option>
             <tag:users_search_select />
             </select>
         </td>
-        <td><input type="submit" class="btn" value="<tag:language.SEARCH />" /></td>
+        <td><input type="submit" class="btn btn-primary" value="<tag:language.SEARCH />" /></td>
       </tr>
     </table>
 
@@ -31,7 +31,7 @@ animatedcollapse.ontoggle=function($, divobj, state){ }
 animatedcollapse.init()
 </script>
 <div id="slideadvanced">
-    <table border="0" class="lista">
+    <table class="table table-bordered">
       <tr>
         <td class="block"><tag:language.EMAIL /></td>
         <td class="block"><tag:language.LAST_IP /></td>
@@ -48,7 +48,7 @@ animatedcollapse.init()
 </if:extra_staff>
   </form>
   <tag:users_pagertop />
-    <table class="lista" width="95%">
+    <table class="table table-bordered">
       <tr>
         <td class="header" align="center"><tag:users_sort_username /></td>
         <td class="header" align="center"><tag:users_sort_userlevel /></td>
