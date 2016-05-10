@@ -231,11 +231,9 @@ $w(window).resize(function () {
    </div>
    <div class="panel-body">
    <if:auto_announce_enabled>
-   <tag:language.AUTO_ANNOUNCE />
-   <tag:language.AUTO_ANNOUNCE2 />
+   <center><p class= "text-warning"><tag:language.AUTO_ANNOUNCE />
+   <tag:language.AUTO_ANNOUNCE2 /></center></p>
    </if:auto_announce_enabled>
-   </div>
-</div>
 
 <table class="table table-bordered">
    <tr>
@@ -491,5 +489,7 @@ $w(window).resize(function () {
 
    <!-- Mask to cover the whole screen -->
    <div id="mask"></div>
+</div>
+   </div>
 </div>
 
