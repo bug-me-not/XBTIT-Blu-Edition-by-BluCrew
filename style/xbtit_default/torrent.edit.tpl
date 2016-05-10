@@ -231,17 +231,17 @@
 
     <table>
       <td align="right">
-            <input type="submit" class="btn" value="<tag:language.FRM_CONFIRM />" name="action" />
+            <input type="submit" class="btn btn-primary" value="<tag:language.FRM_CONFIRM />" name="action" />
       </td>
 
       <if:tmod4_enabled>
       <td align="left">
-            <input type="submit" class="btn" value="<tag:language.FRM_CONFIRM_VALIDATE />" name="action" />
+            <input type="submit" class="btn btn-warning" value="<tag:language.FRM_CONFIRM_VALIDATE />" name="action" />
       </td>
       </if:tmod4_enabled>
 
       <td align="left">
-            <input type="submit" class="btn" value="<tag:language.FRM_CANCEL />" name="action" />
+            <input type="submit" class=" btn btn-danger" value="<tag:language.FRM_CANCEL />" name="action" />
       </td>
     </table>
   </form>

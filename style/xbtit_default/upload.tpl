@@ -414,15 +414,6 @@ $w(window).resize(function () {
    <td class="lista" ><tag:textbbcode /></td>
 </tr>
 
-
-<if:media_enabled>
-<tr>
-   <td class="header" valign="top"><tag:language.MPLAYER /></td>
-   <td class="lista" align="left"><input type="text" name="mplayer" size="50" maxlength="500" /></td>
-</tr>
-</if:media_enabled>
-
-
 <if:imageup_enabled2>
 <if:screenon>
 <tr>
@@ -475,15 +466,12 @@ $w(window).resize(function () {
 <if:nar_enabled>
 <tr>
    <td class="header"><tag:language.TNR_REQUESTED /></td>
-   <td class="lista"><select name="req">
-      <option value="false" selected="selected"><tag:language.NO /></option>
-      <option value="true"><tag:language.YES /></option></select></td>
+   <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="true" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="false" /></td>
    </tr>
+
    <tr>
       <td class="header"><tag:language.TNR_NUKED /></td>
-      <td class="lista"><select name="nuk">
-         <option value="false" selected="selected"><tag:language.NO /></option>
-         <option value="true"><tag:language.YES /></option></select>
+      <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="true" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="false" />
          <input type="text" name="nuk_rea" size="43" maxlength="100"></td>
       </tr>
    </if:nar_enabled>

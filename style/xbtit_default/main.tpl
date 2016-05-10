@@ -60,7 +60,7 @@
 <script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <script type="text/javascript">
   jQuery(function($) {
-  $('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
+  $('input[name="my-checkbox"]').bootstrapSwitch();
   })
 </script>
 
