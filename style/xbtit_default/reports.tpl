@@ -1,6 +1,6 @@
 <tag:pager_top />
 <form method="post" action="index.php?page=takedelreport">
-	<table width="95%" class="lista" align="center">
+	<table class="table table-bordered">
 		<tr>
 			<td align="center" class="header"><tag:language.REP_BY /></td>
 			<td align="center" class="header"><tag:language.REP_REPORTING /></td>
@@ -25,7 +25,7 @@
 				</if:MOD_DEL>
 			</tr>
 		</loop:report>
-		<tr><td align="center" class="lista" colspan="<tag:cols />"><center><input type="submit" value="confirm" /></center></td></tr>
+		<tr><td align="center" class="lista" colspan="<tag:cols />"><center><input type="submit" value="confirm" class="btn btn-primary" /></center></td></tr>
 	</table>
 </form>
 <tag:pager_bottom />
