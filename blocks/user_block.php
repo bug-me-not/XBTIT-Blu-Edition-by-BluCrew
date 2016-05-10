@@ -147,7 +147,7 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
    {
       print("<tr><td align=\"center\"><button class='btn btn-xs btn-danger' type='button'>".$language["HNR_ABBREVIATION"].": ".$hnr[0]["count"]."</div></button></td>\n");
    }
-/*
+
              if($btit_settings["userinfo_style"]!="disabled")
              {
                  print("<tr><td align=\"center\">");
@@ -161,7 +161,7 @@ if($btit_settings["fmhack_warning_system"]=="enabled")
                 }
                 print("</select>");
                 print("</td>\n</tr>\n");
-             }*/
+             }
              
              print("\n<tr><td align=\"center\"><a class= \"btn btn-xs btn-default\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></td></tr>\n");
              print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></td></tr>\n");
