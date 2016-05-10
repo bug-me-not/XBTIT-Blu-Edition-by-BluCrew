@@ -909,7 +909,7 @@ if($count > 0)
                else
                $req = "";
                if($data["nuked"] != "false")
-               $nuk = "&nbsp;<img title='".$data["nuke_reason"]."' src='images/nuked.gif' />";
+               $nuk = "&nbsp;<span class='label label-warning'>Nuked</span>";
                else
                $nuk = "";
             }
