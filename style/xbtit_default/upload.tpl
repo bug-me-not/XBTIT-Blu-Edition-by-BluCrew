@@ -451,19 +451,19 @@ $w(window).resize(function () {
 
 <tr>
    <td class="header"><tag:language.TORRENT_ANONYMOUS /></td>
-   <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" checked="checked" /></td>
+   <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" checked="checked" /></td>
 </tr>
 
 
 <if:nar_enabled>
 <tr>
    <td class="header"><tag:language.TNR_REQUESTED /></td>
-   <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="true" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="false" /></td>
+   <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="false" checked="checked" /></td>
    </tr>
 
    <tr>
       <td class="header"><tag:language.TNR_NUKED /></td>
-      <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="true" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="false" />
+      <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="false" checked="checked" />
          <input type="text" name="nuk_rea" size="43" maxlength="100" class="form-control"></td>
       </tr>
    </if:nar_enabled>
