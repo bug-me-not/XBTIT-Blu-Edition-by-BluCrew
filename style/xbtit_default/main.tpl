@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html<tag:main_rtl /> xmlns='http://www.w3.org/1999/xhtml'>
 <head>
- <title><tag:main_title /></title>
- <if:seo_enabled>
- <tag:cano />
- <tag:meta />
- <tag:analytic />
- <tag:ggwebmaster />
+<title><tag:main_title /></title>
+<if:seo_enabled>
+<tag:cano />
+<tag:meta />
+<tag:analytic />
+<tag:ggwebmaster />
 </if:seo_enabled>
 <meta http-equiv='content-type' content='text/html; charset=<tag:main_charset />' />
 
@@ -25,18 +25,22 @@
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="font-awesome-4.5-2.0/css/font-awesome.min.css" type='text/css'>
-  <!-- Custom CSS -->
-  <link rel='stylesheet' href='css/global.css' type='text/css' />
-  <link rel='stylesheet' href='css/hover.css' type='text/css' />
-  <link rel='stylesheet' href='css/pulseglow.css' type='text/css' />
-  <link rel='stylesheet' href='css/SideNav.css' type='text/css'/>
-  <tag:more_css /> 
+<!-- Bootstrap Switch -->
+<link href="assets/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet">
+<!-- Bootstrap Icheck -->
+<link href="assets/plugins/iCheck-master/skins/all.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel='stylesheet' href='css/global.css' type='text/css' />
+<link rel='stylesheet' href='css/hover.css' type='text/css' />
+<link rel='stylesheet' href='css/pulseglow.css' type='text/css' />
+<link rel='stylesheet' href='css/SideNav.css' type='text/css'/>
+<tag:more_css /> 
 <!-- #CSS Links -->
 
-  <!-- JavaScript -->
-  <tag:main_jscript />
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script>
+<!-- JavaScript -->
+<tag:main_jscript />
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script>
     var Bs = jQuery.noConflict();
     var themes = {
       "Dark": "assets/bootstrap/css/bootstrap.css",
@@ -50,8 +54,30 @@
         themesheet.attr('href',themeurl);
       });
     });
-  </script>
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+</script>
+
+<!-- Bootstrap Switch JS -->
+<script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script type="text/javascript">
+  jQuery(function($) {
+  $('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
+  })
+</script>
+
+<!-- Bootstrap iCheck JS -->
+<script src="assets/plugins/iCheck-master/js/icheck.js"></script>
+<script type="text/javascript">
+   jQuery(function($) {
+   $(document).ready(function(){
+   $('input').iCheck({
+   checkboxClass: 'icheckbox_flat-red',
+   radioClass: 'iradio_flat-red'
+   });
+   });
+   })
+</script>
+  
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
