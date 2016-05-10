@@ -250,7 +250,7 @@ $w(window).resize(function () {
 
 <tr>
    <td class="header" ><tag:language.FILE_NAME /></td>
-   <td class="lista" align="left"><input type="text" id="filename" name="filename" size="50" maxlength="200"/></td>
+   <td class="lista" align="left"><input type="text" id="filename" name="filename" size="50" maxlength="200" class="form-control"/></td>
    <if:arc_enabled>
    <if:arc_both>
    <tr>
@@ -280,13 +280,13 @@ $w(window).resize(function () {
 
 <tr>
    <td class="header" ><tag:language.CATEGORY_FULL /></td>
-   <td class="lista" align="left"><tag:upload_categories_combo /></td>
+   <td class="lista" align="left"><select class="form-control"<tag:upload_categories_combo /></td></select>
 </tr>
 
 
 <tr>
    <td class="header" ><tag:language.RG /></td>
-   <td class="lista" align="left"><select name="release_group">
+   <td class="lista" align="left"><select class="form-control" name="release_group">
       <option value="0">---</option>
       <option value="1"><tag:language.BluRG /></option>
       <option value="2"><tag:language.SiMPLE /></option>
@@ -300,7 +300,7 @@ $w(window).resize(function () {
 <if:torlang>
 <tr>
    <td class="header" ><tag:language.LANGUAGE /></td>
-   <td class="lista" align="left"><select name="language">
+   <td class="lista" align="left"><select class="form-control" name="language">
       <option value="0">---</option>
       <option value="1"><tag:language.LANG_ENG /></option>
       <option value="2"><tag:language.LANG_FRE /></option>
@@ -353,7 +353,7 @@ $w(window).resize(function () {
 <if:mult_enabled>
 <tr>
    <td align='left' class='header'><tag:language.UPM_UPL_MULT /></td>
-   <td align='left' class='lista' colspan='2'><select name='multiplier'><tag:multie3 /></select></td>
+   <td align='left' class='lista' colspan='2'><select class="form-control" name='multiplier'><tag:multie3 /></select></td>
 </tr>
 </if:mult_enabled>
 
@@ -377,7 +377,7 @@ $w(window).resize(function () {
 <if:LEVEL_SC>
 <tr>
    <td class="header"><tag:language.STAFF_COMMENT /></td>
-   <td class="lista" align="left"><textarea name="staff_comment" rows="3" cols="45"></textarea></td>
+   <td class="lista" align="left"><textarea name="staff_comment" rows="3" cols="45" class="form-control"></textarea></td>
 </tr>
 </if:LEVEL_SC>
 </if:st_comm_enabled>
@@ -386,7 +386,7 @@ $w(window).resize(function () {
 <if:tvdb_enabled>
 <tr>
    <td class="header" ><tag:language.TVDB_UL_TITLE /></td>
-   <td class="lista" align="left"><tag:language.TVDB_UL_1 /> <input type="number" name="tvdb_number" value="0" size="10" maxlength="10" /> <tag:language.TVDB_UL_2 /></td>
+   <td class="lista" align="left"><tag:language.TVDB_UL_1 /> <input type="number" name="tvdb_number" value="0" size="10" maxlength="10" class="form-control" /> <tag:language.TVDB_UL_2 /></td>
 </tr>
 </if:tvdb_enabled>
 
@@ -403,7 +403,7 @@ $w(window).resize(function () {
 <if:imageon>
 <tr>
    <td class="header" ><tag:language.IMAGE />:</td>
-   <td class="lista" align="left"><input type="file" name="userfile" size="2000" /></td>
+   <td class="lista" align="left"><input type="file" name="userfile" size="2000" class="btn btn-primary btn-anchor" /></td>
 </tr>
 </if:imageon>
 </if:imageup_enabled>
@@ -472,7 +472,7 @@ $w(window).resize(function () {
    <tr>
       <td class="header"><tag:language.TNR_NUKED /></td>
       <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="true" checked="checked" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="false" />
-         <input type="text" name="nuk_rea" size="43" maxlength="100"></td>
+         <input type="text" name="nuk_rea" size="43" maxlength="100" class="form-control"></td>
       </tr>
    </if:nar_enabled>
 </br>  

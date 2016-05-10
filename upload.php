@@ -502,11 +502,6 @@ if(isset($_FILES["torrent"]))
          stdfoot();
          exit();
       }
-      if($btit_settings["fmhack_torrent_details_media_player"] == "enabled")
-      {
-         if(isset($_POST["mplayer"]))
-         $mplayer = sql_esc(htmlspecialchars($_POST["mplayer"]));
-      }
       if($btit_settings["fmhack_language_in_torrent_list_and_details"] == "enabled")
       {
          $torlang = (int)0 + $_POST["language"];
