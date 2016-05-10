@@ -33,15 +33,10 @@
 if (!defined('IN_BTIT'))
 	  die('non direct access!');
 
-	  if($btit_settings['fmhack_games']=='disabled')
-	  {
-	     stderr("Closed",'The Games section is closed.');
-	     die();
-	  }
 	  
 global $CURUSER, $TABLE_PREFIX, $SITENAME;
 
-if ($CURUSER || $CURUSER["id_level"] >= '3') {
+if ($CURUSER && $CURUSER["id_level"] >= '3') {
 
 	// load language file
 	require(load_language("lang_lottery.php"));

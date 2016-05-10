@@ -282,7 +282,6 @@ switch ($pageID) {
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Users->Details");
    break;
    
-   
    case 'fav_up':
    require("$THIS_BASEPATH/fav_up.php");
    $tpl->set("main_content",set_block($language["FAV_UP"],"center",$fav_uptpl->fetch(load_template("fav_up.tpl"))));
@@ -294,7 +293,6 @@ switch ($pageID) {
    $tpl->set("main_content",set_block($language["FAV_UP_UP"],"center",$fav_up_uptpl->fetch(load_template("fav_up_up.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
    break;
-
 
       // Report users & Torrents by DiemThuy -->
    case 'report':
@@ -383,33 +381,6 @@ switch ($pageID) {
    break;
    /*End mod by losmi rules - mod*/
 
-   case 'dj':
-   require(load_language("lang_shoutcast.php"));
-   require("$THIS_BASEPATH/dj.php");
-   $tpl->set("main_content",set_block($language["djhead"],"center",$djtpl->fetch(load_template("dj.tpl"))));
-   $tpl->set("main_title","Index->".$language["djhead"]."");
-   break;
-
-   case 'dj_faq':
-   require(load_language("lang_shoutcast.php"));
-   require("$THIS_BASEPATH/dj_faq.php");
-   $tpl->set("main_content",set_block($language["faq"],"center",$djfaqtpl->fetch(load_template("djfaq.tpl"))));
-   $tpl->set("main_title","Index->".$language["faq"]."");
-   break;
-
-   case 'listeners':
-   require(load_language("lang_shoutcast.php"));
-   require("$THIS_BASEPATH/whos_listening.php");
-   $tpl->set("main_content",set_block($language["list"],"center",$listennowtpl->fetch(load_template("listen.tpl"))));
-   $tpl->set("main_title","Index->".$language["list"]."");
-   break;
-
-   /*Games section*/
-   case 'games':
-   require("$THIS_BASEPATH/games.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games");
-   break;
-
    case 'lottery':
    require("$THIS_BASEPATH/lottery.php");
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games->Lottery");
@@ -431,27 +402,6 @@ switch ($pageID) {
    require("$THIS_BASEPATH/lottery.purchase.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.purchase.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
-   break;
-
-      // Arcade hack
-   case 'arcadex':
-   require("$THIS_BASEPATH/arcadex.php");
-   $tpl->set("main_content",set_block($language["ARCADE"],"center",$arcadetpl->fetch(load_template("arcadex.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->arcade");
-   break;
-
-   case 'flash':
-   require("$THIS_BASEPATH/flash.php");
-   $tpl->set("main_content",set_block($language["FLASH"],"center",$flashtpl->fetch(load_template("flash.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->arcade");
-   break;
-      // end Arcade hack
-
-   case 'blackjack':
-   require("$THIS_BASEPATH/blackjack.php");
-   require(load_language("lang_blackjack.php"));
-   $tpl->set("main_content",set_block($language["BLACKJACK"],"center",$blackjacktpl->fetch(load_template("blackjack.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["BLACKJACK"]);
    break;
 
       // betting mod start
@@ -559,33 +509,6 @@ switch ($pageID) {
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
    break;
       // betting mod end
-
-   case 'slots':
-   require("$THIS_BASEPATH/slotsgo.php");
-   $tpl->set("main_content",set_block("Slots","center",$slotstpl->fetch(load_template("slots.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->xbtit->Slots");
-   break;
-
-   case 'slotsgo':
-   require("$THIS_BASEPATH/slots.php");
-   $tpl->set("main_content",set_block("Slots","center",$slotstpl->fetch(load_template("slots.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->xbtit->Slots");
-   break;
-
-   case 'hangman':
-   require("$THIS_BASEPATH/hangman.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games->Hangman");
-   break;
-
-   case 'mustafa':
-   require("$THIS_BASEPATH/mustafa.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games->Mustafa");
-   break;
-
-   case 'snake':
-   require("$THIS_BASEPATH/snake.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games->Snake");
-   break;
    /*End Games section*/
 
       //ban button
@@ -716,18 +639,6 @@ switch ($pageID) {
    require_once(load_language("lang_teams.php"));
    include("$THIS_BASEPATH/team-stats.php");
    $tpl->set("main_content",set_block($language["TEAM_INFO"],"center",$teamstatstpl->fetch(load_template("teamstats.tpl"))));
-   break;
-
-   case 'sbg_login':
-   require("$THIS_BASEPATH/sbg_login.php");
-   $tpl->set("main_content",set_block($language["LOGIN"],"center",$sbg_logintpl->fetch(load_template("sbg_login.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Login");
-   break;
-
-   case 'rbg_login':
-   require("$THIS_BASEPATH/rbg_login.php");
-   $tpl->set("main_content",set_block($language["LOGIN"],"center",$sbg_logintpl->fetch(load_template("rbg_login.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Login");
    break;
 
    case 'private':
@@ -911,12 +822,6 @@ switch ($pageID) {
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
    break;
         // New Tables Layout End
-   
-		 // BluMovieDB
-   case 'BluMovieDB':
-   require("$THIS_BASEPATH/BluMovieDB.php");
-   break;
-       // BluMovieDB End
 
    case 'index':
    case '':

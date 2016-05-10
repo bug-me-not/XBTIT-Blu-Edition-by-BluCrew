@@ -52,12 +52,6 @@ if ($CURUSER["view_forum"]=="yes")
             print("<li><a href='".$GLOBALS["FORUMLINK"]."'>Fourms</a></li>\n");
     }
 
-//GAMES
-if ($CURUSER["id_level"]>=3 && $btit_settings['fmhack_games']=='enabled')
-{
-  print("<li><a href='index.php?page=games'>Games</a></li>\n");
-}
-
 //THEMES
  print("<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>Color<b class='caret'></b></a>\n");
         print("<ul class='dropdown-menu'>\n");
