@@ -40,7 +40,7 @@ print("<li><a href='index.php?page=viewexpected'>Upcoming</a></li>\n");
 //SEEDHELP
 $seedque = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.`username`,`h`.`seed`, `f`.`seeds`, `f`.`leechers`, `h`.`uploaded` FROM {$TABLE_PREFIX}files `f` LEFT JOIN {$TABLE_PREFIX}users `u` ON `u`.`id`=`f`.`uploader` LEFT JOIN {$TABLE_PREFIX}history `h` ON `h`.`infohash`=`f`.`info_hash` WHERE (`f`.`uploader`={$CURUSER['uid']} OR `h`.`uid`={$CURUSER['uid']}) AND `f`.`seeds`=0 AND `f`.`leechers`>=1 AND `h`.`completed`='yes' AND `h`.`active`='no' GROUP BY `f`.`info_hash`");
 $seedcount = sql_num_rows($seedque);
-print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp [{$seedcount}]</a></li>\n");
+print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp &nbsp;<span class='badge'>{$seedcount}</span></a></li>\n");
                
 
 //FORUMS
