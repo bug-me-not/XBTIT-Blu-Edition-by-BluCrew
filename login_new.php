@@ -7,6 +7,22 @@ require_once (load_language("lang_recover.php"));
 require_once ("btemplate/bTemplate.php");
 
 global $btit_settings, $USE_IMAGECODE, $CURUSER;
+
+$sp = $_SERVER['SERVER_PORT']; $ss = $_SERVER['HTTPS']; if ( $sp =='443' || $ss == 'on' || $ss == '1') $p = 's';
+$domain = 'http'.$p.'://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+$domain = str_replace('/login_new.php', '', $domain);
+
+/*if($btit_settings["fmhack_force_ssl"]=="enabled" && $CURUSER["force_ssl"]=="yes")
+{
+$BASEURL=str_replace("http","https",$BASEURL);
+}*/
+
+if ($BASEURL != $domain) {
+ $currentFile = $_SERVER['REQUEST_URI']; preg_match("/[^\/]+$/",$currentFile,$matches);
+ $filename = "/" . $matches[0];
+ header ("Location: " . $BASEURL . $filename . "");
+}
+
 (isset($_POST["cr"]) && $_POST["cr"] == 1)?$cr = (int)1:$cr = 0;
 (isset($_POST["bo"]) && $_POST["bo"] >1) ? ($bo=(int)$_POST["bo"]):($bo=0);
 
