@@ -11,8 +11,8 @@
 <meta http-equiv='content-type' content='text/html; charset=<tag:main_charset />' />
 
 <!-- #CSS Links -->
-<!-- Main Bootstrap Style -->
-<link rel="stylesheet" type="text/css" href="<tag:main_css />">
+<!-- Main Bootstrap Style
+<link rel="stylesheet" type="text/css" href="<tag:main_css />">  -->
 <!-- jasny-bootstrap -->
 <link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
 <!-- alertify Dialogs -->
@@ -41,7 +41,6 @@
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-<!-- Temp Disable
 <script>
     var Bs = jQuery.noConflict();
     var themes = {
@@ -56,7 +55,7 @@
         themesheet.attr('href',themeurl);
       });
     });
-</script> -->
+</script>
 
 <!-- Bootstrap Switch JS -->
 <script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
