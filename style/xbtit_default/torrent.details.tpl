@@ -301,6 +301,8 @@ $clock(document).ready(function(){
    <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:tvdb_banner />" /></td>
    </tr>
    </if:has_cover_banner>
+   
+   <br>
 
    <tr>
    <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD></td>
@@ -456,11 +458,6 @@ $clock(document).ready(function(){
    </tr>
    </if:LEVEL_SC>
    </if:st_comm_enabled>
-      
-   <tr>
-   <td align="right" class="header">Artwork<br >(High Res)</td>
-   <td class="lista" style="text-align:left;" valign="top"><tag:covers /></td>
-   </tr>
 
    <tr>
    <td align="right" class="header"><tag:language.CATEGORY_FULL /></td>
@@ -671,11 +668,21 @@ $clock(document).ready(function(){
    <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
    </div>
    </div>
+   <br>
+   <tag:covers />
+   <br>
+   <br>
+   <p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
    </body>
    </div> <!-- Tab End -->
 
    <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
    <p><h1>COMING SOON!</h1></p>
+   <br>
+   <br>
+   <br>
+   <p class="text-warning">Powered By TMDB API</p>
+
    </div> <!-- Tab End -->
 
    <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
