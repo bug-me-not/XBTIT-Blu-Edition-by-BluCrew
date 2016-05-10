@@ -449,20 +449,6 @@ $w(window).resize(function () {
 </if:LEVEL_OK>
 </if:sticky_enabled>
 
-
-<if:seedbox_enabled>
-<if:LEVEL_SB>
-<tr>
-   <td class="header"><tag:language.SB_SEEDBOX /></td>
-   <td class="lista" align="left">
-      <input type="checkbox" name="seedbox">
-
-   </td>
-</tr>
-</if:LEVEL_SB>
-</if:seedbox_enabled>
-
-
 <tr>
    <td class="header"><tag:language.TORRENT_ANONYMOUS /></td>
    <td class="lista">&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" />&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" checked="checked" /></td>

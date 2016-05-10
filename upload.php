@@ -471,15 +471,6 @@ if(isset($_FILES["torrent"]))
          /*End mod by losmi - sticky mod
          End Operation #1*/
       }
-      if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-      {
-         // seedbox start
-         if(isset($_POST["seedbox"]) && $_POST["seedbox"] == 'on')
-         $seedbox = 1;
-         else
-         $seedbox = 0;
-         // seedbox end
-      }
       //mod gold
       $gold = 0;
       //setting gold post var
@@ -1021,11 +1012,6 @@ if(isset($_FILES["torrent"]))
                      $query1_insert_key = "";
                      $query1_insert_value = "";
                      $xbt_insert = "";
-                     if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-                     {
-                        $query1_insert_key .= ", `seedbox`";
-                        $query1_insert_value .= ", '".$seedbox."'";
-                     }
                      if($btit_settings["fmhack_teams"] == "enabled")
                      {
                         $query1_insert_key .= ", `team`";
@@ -1457,38 +1443,6 @@ if(isset($_FILES["torrent"]))
                               /*
                               Mod by losmi -sticky torrent
                               */
-                           }
-                           $uploadtpl->set("seedbox_enabled", (($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")?true:false), true);
-                           if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-                           {
-                              // seedbox start
-                              if(is_integer($btit_settings["seedbox"]) || substr($btit_settings["seedbox"], 0, 4)!="lro-")
-                              stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-
-                              $lroPerms=explode("-", $btit_settings["seedbox"]);
-                              if($btit_settings["fmhack_logical_rank_ordering"]=="enabled")
-                              {
-                                 if($lroPerms[1]==1 && $lroPerms[2]>0)
-                                 $seedboxOverOrEqual=(($CURUSER["logical_rank_order"]>=$lroPerms[2])?true:false);
-                                 else
-                                 stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-                              }
-                              elseif($btit_settings["fmhack_logical_rank_ordering"]=="disabled")
-                              {
-                                 if($lroPerms[1]==0 && $lroPerms[2]>0)
-                                 $seedboxOverOrEqual=(($CURUSER["id_level"]>=$lroPerms[2])?true:false);
-                                 else
-                                 stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-                              }
-                              if($CURUSER["uid"] > 1 && $seedboxOverOrEqual && $CURUSER['can_upload'] == 'yes')
-                              {
-                                 $uploadtpl->set("LEVEL_SB", true, false);
-                              }
-                              else
-                              {
-                                 $uploadtpl->set("LEVEL_SB", false, true);
-                              }
-                              // seedbox end
                            }
                            $uploadtpl->set("language", $language);
                            $uploadtpl->set("upload_script", "index.php");
