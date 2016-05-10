@@ -3,8 +3,8 @@
 <h4 class="text-center">News</h4>
 </div>
 <div class="jumbotron">
-   <h1>Dev Blog</h1>
+   <h3>Dev Blog</h3>
    <p>Be sure to check out our dev blog to view latest site announments and news.</p>
-   <p><a class="btn btn-primary btn-md">Read More</a></p>
+   <p><a href="index.php?page=viewnews" class="btn btn-primary btn-sm">Read More</a></p>
 </div>
 </div>
