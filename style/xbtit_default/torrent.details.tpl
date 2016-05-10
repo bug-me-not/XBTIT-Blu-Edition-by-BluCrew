@@ -282,16 +282,16 @@ $clock(document).ready(function(){
    <div align="center">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#main" aria-controls="main" role="tab" data-toggle="tab">Main</a></li>
-    <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
-    <li role="presentation"><a href="#trailer" aria-controls="trailer" role="tab" data-toggle="tab">Trailer</a></li>
-    <li role="presentation"><a href="#extra" aria-controls="extra" role="tab" data-toggle="tab">Extra</a></li>
-    <li role="presentation"><a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">Comments</a></li>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
+    <li class""><a href="#details" data-toggle="tab">Details</a></li>
+    <li class""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
+    <li class""><a href="#trailer" data-toggle="tab">Trailer</a></li>
+    <li class""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
 
-  <div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="main">
+  <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
+  <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
 
    <tag:TheTVDBExtra />
 
@@ -356,9 +356,7 @@ $clock(document).ready(function(){
    <td align='left' class='lista' colspan='2'><tag:mult /></td>
    </tr>
    </if:mult_enabled>
-   </div>
 
-   <div role="tabpanel" class="tab-pane fade" id="details">
    <if:auto_topic_enabled>
    <if:FORUM_LNK>
    <tr>
@@ -443,25 +441,6 @@ $clock(document).ready(function(){
    </if:imageup_enabled2>
    -->
 
-   <tr>
-   <td align="right" class="header" valign="top"><tag:language.DESCRIPTION /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top">
-
-   <if:nfo_enabled>
-   <if:view_nfo>
-   <if:nfo_exists>
-   <div align=right><a href='#nfo' onclick='javascript:ShowHide("slidenfo","");'><tag:language.NFO_SHOW_HIDE /></a></div>
-   <div align='center' style='display:none' id='slidenfo'>
-   <img src='nfo/nfogen.php?nfo=rep/<tag:torrent.info_hash />.nfo&colour=1'>
-   </div>
-   </div>
-   </if:nfo_exists>
-   </if:view_nfo>
-   </if:nfo_enabled>
-   <tag:torrent.description /></td>
-   </tr>
-   </div>
-
    <if:torlang>
    <tr>
    <td align="right" class="header"><tag:language.LANGUAGE /></td>
@@ -477,47 +456,6 @@ $clock(document).ready(function(){
    </tr>
    </if:LEVEL_SC>
    </if:st_comm_enabled>
-
-   <tr>
-   <td align="right" class="header" valign="top">BluMovieDB</td>
-   <td class="lista" align="center" style="text-align:left;" valign="top">
-   <body ng-app="app">
-   <div ng-controller="ListCtrl">        
-   <div class="alert alert-info" ng-show="loading">
-   <div class="row">
-   <div class="col-md-10">
-   <div>Loading...</div>
-   </div>
-   </div>
-   </div>
-
-   <div ng-show="results">
-   <div class="row">
-   <div class="col-md-12">
-   <h1><a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank"><p class="text-success">{{movie.Title}}</p></a> <small>Rating: {{movie.imdbRating}}</small></h1>
-
-   Runtime: {{movie.Runtime}}<br />
-   Genre: {{movie.Genre}}<br />
-   Released: {{movie.Released}}
-
-   <p class="lead">
-   <b>Director:</b> {{movie.Director}}<br />
-   <b>Actors:</b> {{movie.Actors}}<br>
-   </p>
-
-   <p>Plot: {{movie.Plot}}</p><br>
-   <p>Awards: {{movie.Awards}}</p>
-   </div>
-   </div>
-   </div>
-   <div class="alert alert-danger" role="alert" ng-show="error">
-   <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
-   </div>
-   </div>
-   </div>
-   </body>
-   </td>
-   </tr>
       
    <tr>
    <td align="right" class="header">Artwork<br >(High Res)</td>
@@ -682,10 +620,65 @@ $clock(document).ready(function(){
    </tr>
    </if:EXTERNAL>
    </table>
+   </div> <!-- Tab End -->
+
+   <div role="tabpanel" class="tab-pane fade" id="details"><!-- Tab Start -->
+   <if:nfo_enabled>
+   <if:view_nfo>
+   <if:nfo_exists>
+   <div align=right><a href='#nfo' onclick='javascript:ShowHide("slidenfo","");'><tag:language.NFO_SHOW_HIDE /></a></div>
+   <div align='center' style='display:none' id='slidenfo'>
+   <img src='nfo/nfogen.php?nfo=rep/<tag:torrent.info_hash />.nfo&colour=1'>
+   </div>
+   </div>
+   </if:nfo_exists>
+   </if:view_nfo>
+   </if:nfo_enabled>
+   <tag:torrent.description />
+   </div> <!-- Tab End -->
+
+   <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"><!-- Tab Start -->
+   <body ng-app="app">
+   <div ng-controller="ListCtrl">        
+   <div class="alert alert-info" ng-show="loading">
+   <div class="row">
+   <div class="col-md-10">
+   <div>Loading...</div>
+   </div>
+   </div>
    </div>
 
+   <div ng-show="results">
+   <div class="row">
+   <div class="col-md-12">
+   <h1><a ng-href="https://www.imdb.com/title/{{movie.imdbID}}/" target="_blank"><p class="text-success">{{movie.Title}}</p></a> <small>Rating: {{movie.imdbRating}}</small></h1>
 
-   <div role="tabpanel" class="tab-pane fade" id="comment">
+   Runtime: {{movie.Runtime}}<br />
+   Genre: {{movie.Genre}}<br />
+   Released: {{movie.Released}}
+
+   <p class="lead">
+   <b>Director:</b> {{movie.Director}}<br />
+   <b>Actors:</b> {{movie.Actors}}<br>
+   </p>
+
+   <p>Plot: {{movie.Plot}}</p><br>
+   <p>Awards: {{movie.Awards}}</p>
+   </div>
+   </div>
+   </div>
+   <div class="alert alert-danger" role="alert" ng-show="error">
+   <strong>Ooops!</strong> Couldnt find any info relating to that IMDB/TVDB number.
+   </div>
+   </div>
+   </body>
+   </div> <!-- Tab End -->
+
+   <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
+   <p><h1>COMING SOON!</h1></p>
+   </div> <!-- Tab End -->
+
+   <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -824,16 +817,13 @@ $clock(document).ready(function(){
    <if:VIEW_COMMENTS_2>
    </table>
    </if:VIEW_COMMENTS_2>
-   </div>
    <br />
    <br />
    <div align="center">
    <tag:torrent_footer />
-   <div role="tabpanel" class="tab-pane fade" id="trailer">
    </div>
-   </div>
-   </div> 
-   </div>
-   </div>
+   </div> <!-- Tab End -->
+   </div> <!-- Main Tab Content End -->
+
 
 
