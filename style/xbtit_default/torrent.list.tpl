@@ -132,12 +132,12 @@ $q(function() {
     </div>
   </td>
       <td>
-        <tag:torrent_categories_combo />
+        <select class="form-control"<tag:torrent_categories_combo /></select>
       </td>
 
       <if:ash_enabled_2>
       <td>
-        <select name="options" size="1">
+        <select name="options" size="1" class="form-control">
         <option value="0" <tag:torrent_selected_file />><tag:language.FIL /></option>
         <option value="1" <tag:torrent_selected_filedes />><tag:language.FILDES /></option>
         <option value="2" <tag:torrent_selected_des />><tag:language.DES /></option>
@@ -169,7 +169,7 @@ $q(function() {
       </if:ash_enabled_2>
 
       <td>
-        <select name="active" size="1">
+        <select name="active" size="1" class="form-control">
         <if:arc_enabled>
           <if:new_allowed1>
             <option value="0" <tag:torrent_selected_all />><tag:language.ALL /> (<tag:language.ARC_NEW />)</option>

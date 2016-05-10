@@ -2367,7 +2367,6 @@ output {
   color: #555;
 }
 .form-control {
-  display: block;
   width: auto;
   height: 31px;
   padding: 0px 0px;

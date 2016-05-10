@@ -280,7 +280,7 @@ $w(window).resize(function () {
 
 <tr>
    <td class="header" ><tag:language.CATEGORY_FULL /></td>
-   <td class="lista" align="left"><select class="form-control"<tag:upload_categories_combo /></td></select>
+   <td class="lista" align="left"><select class="form-control"<tag:upload_categories_combo /></select></td>
 </tr>
 
 
@@ -344,7 +344,7 @@ $w(window).resize(function () {
 <if:upload_gold_level>
 <tr>
    <td class="header" ><tag:language.GOLD_TYPE /></td>
-   <td class="lista" align="left"><tag:upload_gold_combo /></td>
+   <td class="lista" align="left"><select class="form-control"<tag:upload_gold_combo /></select></td>
 </tr>
 </if:upload_gold_level>
 </if:gast_enabled>
