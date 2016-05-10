@@ -173,14 +173,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
             $sticky = 1;
             /*Mod by losmi -sticky end*/
          }
-         if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-         {
-            // start seedbox
-            $seedbox = 0;
-            if($_POST["seedbox"] == 'on')
-            $seedbox = 1;
-            // end seedbox
-         }
          //gold mod
          if($btit_settings["fmhack_gold_and_silver_torrents"] == "enabled")
          {
@@ -834,8 +826,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                         }
                         if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
                         $query2_update .= ", `imdb`='".$imdb."'";
-                        if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-                        $query2_update .= ", `seedbox`='".$seedbox."'";
                         if($btit_settings["fmhack_sticky_torrent"] == "enabled")
                         {
                            $check = get_result("SELECT `level` FROM `{$TABLE_PREFIX}sticky` WHERE `id`=1", true, $btit_settings["cache_duration"]);
@@ -1011,8 +1001,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                      // <-- Image Upload
                      if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
                      $query1_select .= "`f`.`imdb`,";
-                     if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-                     $query1_select .= "`f`.`seedbox`,";
                      if($btit_settings["fmhack_sticky_torrent"] == "enabled")
                      $query1_select .= "`f`.`sticky`,";
                      if($btit_settings["fmhack_torrent_nuked_and_requested"] == "enabled")
@@ -1201,38 +1189,6 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                            $torrent["sticky"] = "<input type='checkbox' name='sticky'>";
                            /*End sticky by losmi*/
                         }
-                        $torrenttpl->set("seedbox_enabled", (($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")?true:false), true);
-                        if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
-                        {
-                           // Start seedbox
-                           if(is_integer($btit_settings["seedbox"]) || substr($btit_settings["seedbox"], 0, 4)!="lro-")
-                           stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-
-                           $lroPerms=explode("-", $btit_settings["seedbox"]);
-                           if($btit_settings["fmhack_logical_rank_ordering"]=="enabled")
-                           {
-                              if($lroPerms[1]==1 && $lroPerms[2]>0)
-                              $seedboxOverOrEqual=(($CURUSER["logical_rank_order"]>=$lroPerms[2])?true:false);
-                              else
-                              stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-                           }
-                           elseif($btit_settings["fmhack_logical_rank_ordering"]=="disabled")
-                           {
-                              if($lroPerms[1]==0 && $lroPerms[2]>0)
-                              $seedboxOverOrEqual=(($CURUSER["id_level"]>=$lroPerms[2])?true:false);
-                              else
-                              stderr($language["ERROR"], $language["ERR_NEEDS_RECONFIG_1"]." <b>Show If Seedbox Is Used</b> ".$language["ERR_NEEDS_RECONFIG_2"].(($CURUSER["admin_access"]=="no")?"<br /><br />".$language["ERR_NEEDS_RECONFIG_3"]:""));
-                           }
-                           if($CURUSER["uid"] > 1 && $seedboxOverOrEqual && $CURUSER['can_upload'] == 'yes')
-                           $torrenttpl->set("LEVEL_SB", true, false);
-                           else
-                           $torrenttpl->set("LEVEL_SB", false, true);
-                           if($results["seedbox"] == 1)
-                           $torrent["seedbox"] = "<input type='checkbox' name='seedbox' checked>";
-                           else
-                           $torrent["seedbox"] = "<input type='checkbox' name='seedbox'>";
-                           //End seedbox
-                        }
                         /*Start gold mod by losmi*/
                         $torrenttpl->set("gast_enabled", (($btit_settings["fmhack_gold_and_silver_torrents"] == "enabled")?true:false), true);
                         if($btit_settings["fmhack_gold_and_silver_torrents"] == "enabled")
@@ -1289,7 +1245,7 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                               $torrent["nfo"] = "
                               <tr>
                               <td class='header' align='right'>".$language["NFO_NFO"]."</td>
-                              <td class='lista' align='left'><sup>".$language["NFO_OPTION"]."</sup><br /><input type='file' name='nfo' /></td>
+                              <td class='lista' align='left'><br><input type='file' name='nfo' /></td>
                               </tr>";
                            }
                         }
@@ -1381,7 +1337,8 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                                     <option $checked3 value=\"um\">".$language["MODERATE_STATUS_UN"]."</option>
                                     </select> ";
                                  }
-                                 $torrent["moder"] .= "<img name=\"icons\" src=\"images/mod/".$moder_status["moder"].".png\" alt=\"".$moder_status["moder"]."\" title=\"".$moder_status["moder"]."\">";
+                                 $torrent["moder"] .= "<a title=\"".$moder_status["moder"]."\">".(($moder_status["moder"]=="ok")?"<button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-thumbs-up'></i></span>Approved</button>":"<button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-thumbs-down'></i></span>Denied</button>")."</a>";
+
                                  $torrent["ex_moder"] = $moder_status["moder"];
                               }
                               $torrenttpl->set("anon", (($results["anonymous"] == "true")?true:false), true);

@@ -3,7 +3,7 @@
     <table class="table table-bordered">
       <tr>
         <td align="right" class="header"><tag:language.FILE /></td>
-        <td class="lista"><input type="text" name="name" value="<tag:torrent.filename />" size="60" /><if:nfo_enabled2><br /><tag:torrent.nfo /></if:nfo_enabled2></td>
+        <td class="lista"><input type="text" name="name" value="<tag:torrent.filename />" size="100" /><if:nfo_enabled2><br /><tag:torrent.nfo /></if:nfo_enabled2></td>
       </tr>
 
       <if:bump_enabled>
@@ -30,18 +30,6 @@
       </if:st_comm_enabled>
 
       <if:tmod2_enabled>
-      <script language="JavaScript" type="text/javascript">
-        var icon_urls = {
-        "ok": "images/mod/ok.png",
-        "bad": "images/mod/bad.png",
-        "um": "images/mod/um.png",
-        };
-      function showimage()
-      {
-          document.images.icons.src = icon_urls[document.forms.postmodify.icon.options[document.forms.postmodify.icon.selectedIndex].value];
-      }
-      </script>
-
       <tr>
         <td class="header"><tag:language.TORRENT_MODERATION /></td>
         <td class="lista"><tag:torrent.moder /></td>
@@ -179,15 +167,6 @@
       </tr>
       </if:LEVEL_OK>
       </if:sticky_enabled>
-
-      <if:seedbox_enabled>
-      <if:LEVEL_SB>
-      <tr>
-        <td align="right" class="header">Seedbox</td>
-        <td class="lista"><tag:torrent.seedbox /></td>
-      </tr>
-      </if:LEVEL_SB>
-      </if:seedbox_enabled>
 
       <tr>
         <td align=right class="header"><tag:language.SIZE /></td>
