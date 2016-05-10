@@ -113,7 +113,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 			<tag:language.DESCRIPTION />
 		</td>
 		<td>
-			<textarea rows='7' cols='60' name='description'><tag:description /></textarea>
+			<textarea rows='7' cols='60' name='description' class='form-control'><tag:description /></textarea>
 		</td>
 	</tr>
 	</div>

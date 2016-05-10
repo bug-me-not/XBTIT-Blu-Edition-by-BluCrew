@@ -66,7 +66,7 @@
             <input type='hidden' name='req_id' value='<tag:req_id />'>
             <input type='hidden' name='uid' value='<tag:uid />'>
             <input type='hidden' name='auth' value='<tag:uid_auth />'>
-            <input type='text' name='amount' size='9'>
+            <input type='text' name='amount' size='9' class='form-control'>
             <input type='submit' class='btn btn-primary btn-sm' '<tag:disabled />' value='<tag:language.TRAV_AB />'>
             <strong><tag:language.TRAV_TAX /> </strong>
           </form>
