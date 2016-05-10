@@ -103,8 +103,8 @@
           <tag:main_dropdown />
         </ul>
         <form action="index.php" method="get" name="torrent_search" class="navbar-form navbar-right">
-          <input type="hidden" name="page" value="torrents" />
-          <input onfocus="if (this.value == 'Torrents') this.value='';"onblur="if(this.value == '') this.value='Torrents';" type="text" name="search" class="search" size="30" maxlength="50" value="Torrents" />
+          <input type="hidden" name="page" value="torrents">
+          <input onfocus="if (this.value == 'Torrents') this.value='';"onblur="if(this.value == '') this.value='Torrents';" type="text" name="search" class="search" size="30" maxlength="50" value="Torrents">
         </form>
       </nav>
     </div>
@@ -206,9 +206,9 @@
 </div>
 
 <!--Spacer-->
-</br>
-</br>
-</br>
+<br>
+<br>
+<br>
 
 <!-- MainUser Info Bar / Tracker Settings -->
 <div class="container-fluid">
@@ -228,8 +228,8 @@
 </h1></div></center> -->
 
 <!--Spacer-->
-</br>
-</br>
+<br>
+<br>
 
 <!--Main Page Content -->
 <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
