@@ -40,6 +40,8 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Temp Disable
 <script>
     var Bs = jQuery.noConflict();
     var themes = {
@@ -54,7 +56,7 @@
         themesheet.attr('href',themeurl);
       });
     });
-</script>
+</script> -->
 
 <!-- Bootstrap Switch JS -->
 <script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
