@@ -6328,13 +6328,16 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+
+
+
 /*CUSTOM*/
 
 body {
     font-family: 'Source Sans Pro', sans-serif !important;
     color: #9b9b9b;
     font-size: 14px;
-    background: #292929;
+    background: #1E1E1E;
 }
 
 h1,h2,h3,h4,h5,h6 {
