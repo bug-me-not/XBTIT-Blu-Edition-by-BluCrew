@@ -2,7 +2,6 @@
 
 function showTorrents(file)
 {
-
    if (file=="")
    {
       document.getElementById("txtHint").innerHTML="";
@@ -31,7 +30,6 @@ function showTorrents(file)
 
 function checkExtension()
 {
-
    // for mac/linux, else assume windows
    if (navigator.appVersion.indexOf('Mac') != -1 || navigator.appVersion.indexOf('Linux') != -1)
    var fileSplit = '/';
@@ -51,11 +49,28 @@ function checkExtension()
    return true;
 }
 
+//Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+function filterInt(value) 
+{
+   if(/^(\-|\+)?([0-9]+)$/.test(value))
+      return true;
+   return false;
+}
+
 function CheckForm()
 {
    // file extension
    if (checkExtension()==false)
    return false;
+
+   var name = document.getElementsByName('filename')[0];
+   //File Name
+   if(name.value.length==0)
+   {
+      alert('<tag:language.WRITE_FILE_NAME />');
+      name.focus();
+      return false;
+   }
 
    var cat=document.getElementsByName('category')[0];
    // categories
@@ -77,7 +92,7 @@ function CheckForm()
 
    var imdb=document.getElementsByName('imdb')[0];
    //IMDB
-   if(imdb.value.length==0)
+   if(!filterInt(imdb.value))
    {
       alert("Please fill IMDB. Otherwise enter 0 if not available.");
       imdb.focus();
@@ -86,7 +101,7 @@ function CheckForm()
 
    var tvdb=document.getElementsByName('tvdb_number')[0];
    //TVDB
-   if(tvdb.value.length==0)
+   if(!filterInt(tvdb.value))
    {
       alert("Please fill TVDB ID. Otherwise enter 0 if not available.");
       tvdb.focus();
@@ -196,7 +211,6 @@ $w('#mask').click(function () {
    $w('.window').hide();
 });
 
-
 $w(window).resize(function () {
 
    var box = $w('#boxes .window');
@@ -217,7 +231,6 @@ $w(window).resize(function () {
    box.css('left', winW/2 - box.width()/2);
 
 });
-
 });
 </script>
 <div style="background: #075ca0;border: none;width:auto;height:45px; border:solid 1px #101010; border-radius:3px;color: #fff;text-align: center;line-height:45px;font-size: 15px;margin-bottom: 3px;">Please Ensure That You Fill In All The Fields Below </div>
@@ -347,7 +360,6 @@ $w(window).resize(function () {
 </if:upload_gold_level>
 </if:gast_enabled>
 
-
 <if:mult_enabled>
 <tr>
    <td align='left' class='header'><tag:language.UPM_UPL_MULT /></td>
@@ -355,12 +367,10 @@ $w(window).resize(function () {
 </tr>
 </if:mult_enabled>
 
-
 <tr>
    <if:tmod_enabled>
    <input type="hidden" name="moder" value="<tag:moder />" />
 </if:tmod_enabled>
-
 
 </tr>
 <if:ddl_enabled>
@@ -384,18 +394,16 @@ $w(window).resize(function () {
 <if:tvdb_enabled>
 <tr>
    <td class="header" ><tag:language.TVDB_UL_TITLE /></td>
-   <td class="lista" align="left"><tag:language.TVDB_UL_1 /> <input type="number" name="tvdb_number" value="0" size="10" maxlength="10" class="form-control" /> <tag:language.TVDB_UL_2 /></td>
+   <td class="lista" align="left"><tag:language.TVDB_UL_1 /> <input type="text" name="tvdb_number" value="0" size="10" maxlength="10" class="form-control" /> <tag:language.TVDB_UL_2 /></td>
 </tr>
 </if:tvdb_enabled>
-
 
 <if:imdb_enabled>
 <tr>
    <td class="header" >IMDB</td>
-   <td class="lista" align="left"><tag:language.IMDB_UL_FORM /></td>
+   <td class="lista" align="left"><b>tt<b><input type='text' name='imdb' value='0' size='10' maxlength='10' class="form-control" />&nbsp;<tag:language.IMDB__EDIT_FORM /></td>
 </tr>
 </if:imdb_enabled>
-
 
 <if:imageup_enabled>
 <if:imageon>

@@ -237,7 +237,7 @@ function BBTag(opentag, closetag, textarea)
     </tr>
     <tr>
       <td>
-      <textarea name="<tag:object_name />" rows="15" style="width:96%" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onchange="storeCaret(this);"><tag:content /></textarea>
+      <textarea name="<tag:object_name />" rows="15" style="width:96%" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onchange="storeCaret(this);" class="form-control"><tag:content /></textarea>
       </td>
     </tr>
 		<tr>

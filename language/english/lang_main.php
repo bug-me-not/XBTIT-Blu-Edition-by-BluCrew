@@ -644,8 +644,8 @@ $language["BT"] = "Ban Time";
 $language["BM"] = "Ban Motivation";
 
 
-$language["IMDB_UL_FORM"] = "&nbsp;<b>tt<b><input type='text' name='imdb' size='10' maxlength='200' />&nbsp; The numbers after tt in the url.";
 $language["IMDB_EDIT_FORM"] = "The numbers after tt in the url.";
+$language["IMDB_UL_FORM"] = "&nbsp;<b>tt<b><input type='text' name='imdb' size='10' maxlength='200' />&nbsp;{$language['IMDB_EDIT_FORM']}";
 $language["IMDB_NOT_ADDED"] = "No IMDB ID has been added..";
 $language["IMDB_RESIZE_ERR"] = "Resizable window will not work without Javascript.<br />Please enable Javascript or view the Info in a new window";
 $language["IMDB_EXTRA"] = "IMDB Extra";
