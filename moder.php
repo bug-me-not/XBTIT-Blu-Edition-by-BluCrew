@@ -10,7 +10,7 @@ if (!defined("IN_BTIT"))
 if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
 {
     $torrenttpl=new bTemplate();
-    $full="SELECT ".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?"`f`.`id` `fileid`, ":"")."`f`.`moder` `moder`, `f`.`filename`, `f`.`info_hash`, `f`.`uploader` `upname`, `u`.`username` `uploader`, `c`.`image`, `c`.`name` `cname`, `f`.`category` `catid`, `u2`.`username` `approved_by` FROM `{$TABLE_PREFIX}files` `f` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id` = `f`.`uploader` LEFT JOIN `{$TABLE_PREFIX}categories` `c` ON `c`.`id` = `f`.`category` LEFT JOIN `{$TABLE_PREFIX}users` `u2` ON `f`.`approved_by` = `u2`.`id`";
+    $full="SELECT `f`.`moder` `moder`, `f`.`filename`, `f`.`info_hash`, `f`.`uploader` `upname`, `u`.`username` `uploader`, `c`.`image`, `c`.`name` `cname`, `f`.`category` `catid`, `u2`.`username` `approved_by` FROM `{$TABLE_PREFIX}files` `f` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `u`.`id` = `f`.`uploader` LEFT JOIN `{$TABLE_PREFIX}categories` `c` ON `c`.`id` = `f`.`category` LEFT JOIN `{$TABLE_PREFIX}users` `u2` ON `f`.`approved_by` = `u2`.`id`";
     if ($_GET["hash"])
     {
         $_GET["hash"]=strtolower(preg_replace("/[^A-Fa-f0-9]/", "", $_GET["hash"]));
@@ -23,14 +23,14 @@ if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
             while ($data=$row->fetch_array())
             {
                 $torrenttpl->set("filename",$data['filename']);
-                $torrenttpl->set("uploader","<a href=\"".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$data["upname"]."_".strtr($data["uploader"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$data["upname"])."\">".$data["uploader"]."</a>");
+                $torrenttpl->set("uploader","<a href=\""."index.php?page=userdetails&id=".$data["upname"]."\">".$data["uploader"]."</a>");
                 $torrenttpl->set("info_hash",$data['info_hash']);
                 $link="index.php?page=moder&hash=".$data['info_hash']."";
                 $torrenttpl->set("link",$link);
 
                 if (!empty($_POST["msg"]))
                 {
-                    $torrent="[url=".$btit_settings['url']."/".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($data["filename"], $res_seo["str"], $res_seo["strto"])."-".$data["fileid"].".html":"index.php?page=torrent-details&id=".$data["info_hash"])."]".$data['filename']."[/url]";
+                    $torrent="[url=".$btit_settings['url']."/"."index.php?page=torrent-details&id=".$data["info_hash"]."]".$data['filename']."[/url]";
                     $msg=$language["TMOD_SOR1"]." ".$data["uploader"].", ".$language["TMOD_SOR2"]." $torrent ".$language["TMOD_SOR3"].":\n\n[b]".sqlesc(htmlspecialchars($_POST["msg"].$_POST['moderate_reasons']))."[/b]".$language["TMOD_SOR4"];
 
                     send_pm($CURUSER["uid"],$data['upname'],sqlesc($data['filename']), sqlesc($msg));
@@ -77,7 +77,7 @@ if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
         {
             while ($data=$row->fetch_array()) {
                 $torrenttpl->set("filename2",$data['filename']);
-                $torrenttpl->set("uploader2","<a href=\"".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$data["upname"]."_".strtr($data["uploader"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$data["upname"])."\">".$data["uploader"]."</a>");
+                $torrenttpl->set("uploader2","<a href=\""."index.php?page=userdetails&id=".$data["upname"]."\">".$data["uploader"]."</a>");
                 $torrenttpl->set("info_hash2",$data['info_hash']);
                 switch ($data['moder'])
                 {
@@ -143,11 +143,11 @@ if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
                     $link="moder&edit";
                 }
                 $selecting.="<tr>";
-                $selecting.="<td align=\"center\"><a href=\"index.php?page=".$link."=".$data["info_hash"]."\" title=\"".$data["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $data["approved_by"]!=$language["SYSTEM_USER"] && $data["moder"]=="bad")?" (".$language["TMOD_REJECTED_BY"]." ".$data["approved_by"].")":"")."\"><img alt=\"".$data["moder"]."\" src=\"images/mod/".$data["moder"].".png\"></a></td>";
-                $selecting.="<td align=\"center\"><a href=\"index.php?page=torrents&category=$data[catid]\" title=\"".$data["cname"]."\">".image_or_link(($data["image"]==""?"":"$STYLEPATH/images/categories/".$data["image"]),"",$data["cname"])."</a></td>";
-                $selecting.="<td align=\"center\"><a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($data["filename"], $res_seo["str"], $res_seo["strto"])."-".$data["fileid"].".html":"index.php?page=torrent-details&id=".$data["info_hash"])."' title='".$language["VIEW_DETAILS"]. ": ".$data["filename"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $data["approved_by"]!=$language["SYSTEM_USER"] && $data["moder"]=="bad")?" (".$language["TMOD_REJECTED_BY"]." ".$data["approved_by"].")":"")."'>".$data['filename']."</a></td>";
+                $selecting.="<td align=\"center\"><a title=\"".$data["moder"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $data["username"]!=$language["SYSTEM_USER"] && $data["moder"]!="um")?(($data["moder"]=="ok")?" (".$language["TMOD_APPROVED_BY"]." ".$data["username"].")":" (".$language["TMOD_REJECTED_BY"]." ".$data["approved_by"].")"):"")."\" href=\"index.php?page=edit&info_hash=".$data["info_hash"]."\">".(($data["moder"]=="ok")?"<button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-thumbs-up'></i></span>Approved</button>":"<button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-thumbs-down'></i></span>Denied</button>")."</a></td>";
+                $selecting.="<td align=\"center\"><a href=\"index.php?page=torrents&category=".$data['catid']."\" title=\"".$data["cname"]."\">".image_or_link(($data["image"]==""?"":"$STYLEPATH/images/categories/".$data["image"]),"",$data["cname"])."</a></td>";
+                $selecting.="<td align=\"center\"><a href='index.php?page=torrent-details&id=".$data["info_hash"]."' title='".$language["VIEW_DETAILS"]. ": ".$data["filename"].(($btit_settings["mod_app_sa"]=="yes" && $CURUSER["admin_access"]=="yes" && $data["approved_by"]!=$language["SYSTEM_USER"] && $data["moder"]=="bad")?" (".$language["TMOD_REJECTED_BY"]." ".$data["approved_by"].")":"")."'>".$data['filename']."</a></td>";
                 $selecting.="<td align=\"center\"><a href=\"download.php?id=".$data["info_hash"]."&f=".urlencode($data["filename"]).".torrent\" title=\"".$data["filename"]."\">".image_or_link("images/download.gif","","torrent")."</a></td>";
-                $selecting.="<td align=\"center\"><a href=\"".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$data["upname"]."_".strtr($data["uploader"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$data["upname"])."\">".$data["uploader"]."</a></td>";
+                $selecting.="<td align=\"center\"><a href=\""."index.php?page=userdetails&id=".$data["upname"]."\">".$data["uploader"]."</a></td>";
                 $selecting.="</tr>";
             }
             $selecting.="</table>";
