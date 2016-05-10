@@ -696,8 +696,7 @@ else
 							$uid = $CURUSER['uid'];
 							$reqid = intval($_POST['req_id']);
 
-							$com = quickQuery("INSERT INTO `{$TABLE_PREFIX}requests_comments` (`req_id`,`addedby`,`addedwhen`,`comment`) 
-								VALUES ({$reqid},{$uid},NOW(),{$comment});");
+							$com = quickQuery("INSERT INTO `{$TABLE_PREFIX}requests_comments` (`req_id`,`addedby`,`addedwhen`,`comment`) VALUES ({$reqid},{$uid},NOW(),{$comment});");
 
 							if($com)
 							{
