@@ -66,31 +66,34 @@ $(document).ready(function(){
 </script>
 <?php
 echo'
+<center>
 <form method="get" action="index.php">
 <input type="hidden" name="page" value="modules">
 <input type="hidden" name="module" value="hitnrun_cleaner">
 <input type="hidden" name="action" value="user_all">
-<table width="50%" align="center" cellpadding="0" cellspacing="0" border="0">
-<td class="header" colspan="2">Delete a Users Hit n Runs</td>
-</tr>
-<td class="header">Userid:</td><td class="lista"><input id="uid_check" type="text" size="10" name="user">&nbsp;&nbsp;&nbsp;&nbsp;<span id="uload"></span></td>
+<table class="table table-bordered">
+<p class= "text-warning">Delete A Users Hit & Runs</p>
+<td class="lista" style="text-align:center;">Userid:<input id="uid_check" type="text" size="10" name="user" class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;<span id="uload"></span></td>
 </tr>
 <tr>
-<td class="header" colspan="2"><input type="submit" value="GO"></td>
+<td class="lista" style="text-align:center;"><input type="submit" class="btn btn-primary" value="GO"></td>
 </tr>
 </table>
-</form>';
+</form>
+</center>';
 
 if ($CURUSER["admin_access"]=="yes"){
 
 echo'
-<br /><table width="50%" align="center" cellpadding="0" cellspacing="0" border="0">
-<td class="header">Delete all Hit n Runs</td>
+<center>
+<br /><table class="table table-bordered">
+<p class= "text-danger">Delete All Users Hit & Runs</p>
 </tr>
-<td class="lista" style="text-align:center;"><a href="index.php?page=modules&amp;module=hitnrun_cleaner&amp;action=all"><button>GO</button></a></td>
+<td class="lista" style="text-align:center;"><a href="index.php?page=modules&amp;module=hitnrun_cleaner&amp;action=all"><button class="btn btn-primary">GO</button></a></td>
 </tr>
 </table>
-<br />';
+<br />
+</center>';
 }
 default;
 break;
