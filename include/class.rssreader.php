@@ -31,7 +31,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 class rss_reader {
-    function rss_reader() {
+    function __construct() {
         // constructor
     }
 

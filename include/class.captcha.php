@@ -40,7 +40,7 @@ class ocr_captcha {
   var $public_key;                         // public key
   var $font_file='./include/adlibn.ttf';   // path to font file
 
-  function ocr_captcha($long=6,$lx=120,$ly=30,$nb_noise=25) {
+  function __construct($long=6,$lx=120,$ly=30,$nb_noise=25) {
     $this->key=md5('If you happy and you know it, clap your hands... clap clap');
     $this->long=$long;
     $this->lx=$lx;

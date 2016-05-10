@@ -47,7 +47,7 @@ class update_hacks
       var $ftp_files_to_chmod=array();
       var $files_to_backup=array();
 
-      function update_hacks()
+      function __construct()
             {
             
             include(dirname(__FILE__)."/class.archive.php");
