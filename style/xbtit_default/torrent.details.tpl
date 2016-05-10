@@ -297,24 +297,24 @@ $clock(document).ready(function(){
 
    <table class="table table-bordered">
    <if:has_cover_banner>
-   <tr class="active">
+   <tr>
    <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:tvdb_banner />" /></td>
    </tr>
    </if:has_cover_banner>
 
-   <tr class="active">
+   <tr>
    <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD></td>
    </tr>
 
    <if:fls_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
    <td class="lista" style="text-align:left;" valign="middle"><if:hash_found><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-unlock'></i></span>FL Slot Active</button><else:hash_found><if:have_slots1><a href="index.php?page=fls&id=<tag:torrent.info_hash />"></if:have_slots1><button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-lock'></i></span>FL Slot Inactive</button><if:have_slots2></a></if:have_slots2></if:hash_found></td>
    </tr>
    </if:fls_enabled>
    <if:tmod1_enabled>
    <if:MODER>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.TORRENT_MODERATION /></td>
    <td class="lista" align="left"><tag:torrent.moderation /></td>
    </tr>
@@ -323,13 +323,13 @@ $clock(document).ready(function(){
 
    <if:download_locked>
    <if:need_intro>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.TORRENT /></td>
    <td class="lista"><span style="font-weight:bold;"><tag:language.IBD_NEED_TO_INTRODUCE_1 /> <if:newThread><tag:language.IBD_NEED_TO_INTRODUCE_2A /><else:newThread><tag:language.IBD_NEED_TO_INTRODUCE_2B /></if:newThread> <tag:language.IBD_NEED_TO_INTRODUCE_3 /> <tag:introForumLink /><tag:language.HERE /></a></span>.</td>
    </tr>
    </if:need_intro>
    <else:download_locked>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.TORRENT /></td>
    <if:dlratiocheck>
    <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled1><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled1><a href="index.php?page=downloadcheck&amp;id=<tag:torrent.info_hash />"><button class='btn btn-labeled btn-primary' type='button'>
@@ -343,7 +343,7 @@ $clock(document).ready(function(){
 
    <if:ddl_enabled>
    <if:has_direct_link>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.DIRECT_DOWNLOAD /></td>
    <td class="lista" align="left" style="text-align:left;" valign="top"><a href="<tag:direct_link />" target="_blank"><img src="<tag:BASEURL />/images/ddl.png" border="0" alt="<tag:language.DIRECT_DOWNLOAD />" title="<tag:language.DIRECT_DOWNLOAD />" /></a></td>
    </tr>
@@ -351,7 +351,7 @@ $clock(document).ready(function(){
    </if:ddl_enabled>
 
    <if:mult_enabled>
-   <tr class="active">
+   <tr>
    <td align='right' class='header'><tag:language.UPM_UPL_MULT /></td>
    <td align='left' class='lista' colspan='2'><tag:mult /></td>
    </tr>
@@ -361,27 +361,27 @@ $clock(document).ready(function(){
    <div role="tabpanel" class="tab-pane fade" id="details">
    <if:auto_topic_enabled>
    <if:FORUM_LNK>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.FORUM /></td>
    <td class="lista" align="center"><tag:torrent.topicid /></td>
    </tr>
    </if:FORUM_LNK>
    </if:auto_topic_enabled>
 
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.INFO_HASH /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.info_hash /></td>
    </tr>
    
    <if:addthis_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.ADDTHIS_SHARE2 /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:show_addthis /></td>
    </tr>
    </if:addthis_enabled>
 
    <if:reenc_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top"><tag:language.REENCODE /></td>
    <td class="lista" align="center">
    <form action="reencode.php" method="post" onsubmit="return false">
@@ -407,7 +407,7 @@ $clock(document).ready(function(){
    </if:teams_enabled>
 
    <if:thanks_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top"><tag:language.THANKS_USERS /></td>
    <td class="lista" align="left">
    <form action="thanks.php" method="post" onsubmit="return false">
@@ -420,7 +420,7 @@ $clock(document).ready(function(){
    </tr>
    </if:thanks_enabled>
 
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.SEND_POINTS /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:coin /></td>
    </tr>
@@ -435,7 +435,7 @@ $clock(document).ready(function(){
    <!--
    <if:imageup_enabled2>
    <if:IMAGEIS>
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top"><tag:language.IMAGE /></td>
    <td class="lista" align="center"><a href="<tag:uploaddir /><tag:torrent.image />" title="view image" class="lightbox"><img src="<tag:uploaddir /><tag:torrent.image />" width=<tag:width />></a></td>
    </tr>
@@ -443,7 +443,7 @@ $clock(document).ready(function(){
    </if:imageup_enabled2>
    -->
 
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top"><tag:language.DESCRIPTION /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top">
 
@@ -463,7 +463,7 @@ $clock(document).ready(function(){
    </div>
 
    <if:torlang>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.LANGUAGE /></td>
    <td class="lista" align="left"><tag:language /></td>
    </tr>
@@ -471,14 +471,14 @@ $clock(document).ready(function(){
 
    <if:st_comm_enabled>
    <if:LEVEL_SC>
-   <tr class="active">
+   <tr>
    <td align="right" class="header" ><tag:language.STAFF_COMMENT /></td>
    <td class="lista" align="center"><tag:torrent_staff_comment /></td>
    </tr>
    </if:LEVEL_SC>
    </if:st_comm_enabled>
 
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top">BluMovieDB</td>
    <td class="lista" align="center" style="text-align:left;" valign="top">
    <body ng-app="app">
@@ -519,32 +519,32 @@ $clock(document).ready(function(){
    </td>
    </tr>
       
-   <tr class="active">
+   <tr>
    <td align="right" class="header">Artwork<br >(High Res)</td>
    <td class="lista" style="text-align:left;" valign="top"><tag:covers /></td>
    </tr>
 
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.CATEGORY_FULL /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.cat_name /></td>
    </tr>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.RATING /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.rating /></td>
    </tr>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.SIZE /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.size /></td>
    </tr>
 
    <if:sub_enabled>
    <if:HAVE_SUBTITLE>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.SUB_T_H /></td>
    <td class="lista" align="center">
    <table>
    <loop:subs>
-   <tr class="active">
+   <tr>
    <td align="center"><tag:subs[].flag /></td>
    <td align="center"><tag:subs[].name /></td>
    </tr>
@@ -556,17 +556,17 @@ $clock(document).ready(function(){
    </if:sub_enabled>
 
    <if:DISPLAY_FILES>
-   <tr class="active">
+   <tr>
    <td align="right" class="header" valign="top"><a name="expand" href="#expand" onclick="javascript:ShowHide('files','msgfile');"><tag:language.SHOW_HIDE /></a></td>
    <td align="left" class="lista">
    <div style="display:none" id="files">
    <table class="lista">
-   <tr class="active">
+   <tr>
    <td align="center" class="header"><tag:language.FILE /></td>
    <td align="center" class="header" style="text-align:left;" valign="top"><tag:language.SIZE /></td>
    </tr>
    <loop:files>
-   <tr class="active">
+   <tr>
    <td align="center" class="lista" style="text-align:left;" valign="top"><tag:files[].filename /></td>
    <td align="center" class="lista" style="text-align:left;" valign="top"><tag:files[].size /></td>
    </tr>
@@ -577,39 +577,39 @@ $clock(document).ready(function(){
    </td>
    </tr>
    </if:DISPLAY_FILES>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.ADDED /></td>
    <td class="lista" style="text-align:left;" valign="top"><tag:torrent.date /></td>
    </tr>
    <if:SHOW_UPLOADER>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.UPLOADER /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.uploader /></td>
    </tr>
    </if:SHOW_UPLOADER>
    <if:NOT_XBTT>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.SPEED /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.speed /></td>
    </tr>
    </if:NOT_XBTT>
    <if:viewcount_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.TORRENT_VIEWS /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.viewcount /></td>
    </tr>
    </if:viewcount_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.DOWNLOADED /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.downloaded /></td>
    </tr>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.PEERS /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><div id="peer_counts"><tag:torrent.seeds />, <tag:torrent.leechers /> = <tag:torrent.peers /><if:refresh_peers_enabled>&nbsp;&nbsp;&nbsp;<i class="fa fa-refresh fa-spin" border="0" onclick="refresh_peers('<tag:torrent.info_hash />')" title="<tag:language.REFRESH_PEERS />" /></if:refresh_peers_enabled></div></td>
    </tr>
 
    <if:bookmark_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.ADDB /></td>
    <td class="lista" align="left"><a href="index.php?page=bookmark&do=add&torrent_id=<tag:id />"><button class='btn btn-labeled btn-success' type='button'>
    <span class='btn-label'><i class='fa fa-bookmark'></i></span>Bookmark This Upload</button></span></a></td>
@@ -618,7 +618,7 @@ $clock(document).ready(function(){
 
    <if:AFR>
    <if:reseed_possible>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.AFR_RESEED /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:reseed /></td>
    </tr>
@@ -627,7 +627,7 @@ $clock(document).ready(function(){
 
    <!-- Report users & Torrents by DiemThuy - Start -->
    <if:ruat>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.REP_TORR /></td>
    <td align="center" class="lista" style="text-align:left;" valign="top"><tag:rep /></td>
    </tr>
@@ -636,11 +636,11 @@ $clock(document).ready(function(){
 
 
    <if:similar_enabled>
-   <tr class="active">
+   <tr>
    <td align="right" class="header"><tag:language.details_similar_torrents /></td>
    <td class="lista" style="text-align:center;">
    <table width="100%" class="main" border="1" cellspacing="0" cellpadding="1">
-   <tr class="active">
+   <tr>
    <td class="header" style="text-align:center;"><tag:language.details_name /></td>
    <td class="header" style="text-align:center;"><tag:language.details_date /></td>
    <td class="header" style="text-align:center;"><tag:language.details_size /></td>
@@ -648,7 +648,7 @@ $clock(document).ready(function(){
    <td class="header" style="text-align:center;"><tag:language.details_leechers /></td>
    </tr>
    <loop:similar_torrents>
-   <tr class="active">
+   <tr>
    <td class="lista" style="text-align:center;"><a href="index.php?page=torrent-details&id=<tag:similar_torrents[].info_hash />&hit=1"><b><tag:similar_torrents[].name /></b></a></td>
    <td class="lista" style="text-align:center;"><tag:similar_torrents[].date /></td>
    <td class="lista" style="text-align:center;"><tag:similar_torrents[].size /></td>
@@ -661,7 +661,7 @@ $clock(document).ready(function(){
    </tr>
    </if:similar_enabled>
    
-	<tr class="active">
+	<tr>
 	<td class="header" style="text-align:center;">All Uploads From This Uploader</td>
     <td class="lista" style="text-align:center;"><marquee onmouseover=this.stop() onmouseout=this.start()  scrollAmount=3 direction=left >
 	<loop:upl>
@@ -672,11 +672,11 @@ $clock(document).ready(function(){
     
 
    <if:EXTERNAL>
-   <tr class="active">
+   <tr>
    <td valign="middle" align="right" class="header"><tag:torrent.update_url /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.announce_url /></td>
    </tr>
-   <tr class="active">
+   <tr>
    <td valign="middle" align="right" class="header"><tag:language.LAST_UPDATE /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.lastupdate /> (<tag:torrent.lastsuccess />)</td>
    </tr>

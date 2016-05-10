@@ -916,7 +916,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 a:hover,
@@ -2126,7 +2126,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid rgba(255,255,255,0.09);
+  border: 1px solid rgba(3, 3, 3, 0.09);
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2812,7 +2812,7 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #fff;
-  background-color: rgba(255,255,255,0.5);
+  background-color:  rgba(4, 4, 4, 0.5);
   border:none;
 }
 .btn-default:hover,
@@ -6335,12 +6335,18 @@ button.close {
 
 body {
     font-family: 'Source Sans Pro', sans-serif !important;
-    color: #9b9b9b;
+    color: #111;
     font-size: 14px;
-    background: #1E1E1E;
+    background: #fff;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h5,h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    color: #111;
+}
+
+h4 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
     color: #fff;
