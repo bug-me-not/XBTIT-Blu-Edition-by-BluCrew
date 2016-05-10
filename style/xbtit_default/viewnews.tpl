@@ -31,9 +31,9 @@
   </loop:viewnews>
   <else:news_exists>
     <tr>
-      <td align="center"><tag:language.NO_NEWS /><br />
+      <td align="center"><h3><p class= "text-danger"><tag:language.NO_NEWS /></p></h3>
         <if:can_edit_news_1>
-          <br /><tag:insert_news_link /><br />
+        <tag:insert_news_link /><br />
         </if:can_edit_news_1>
       </td>
     </tr>

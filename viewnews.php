@@ -71,7 +71,7 @@ $viewnews=array();
 $i=0;
 
 $viewnewstpl -> set("news_exists", (count($res) > 0),TRUE);
-$viewnewstpl -> set("insert_news_link", (count($res) == 0?"<a href=\"index.php?page=news&amp;act=add\"><img border=\"0\" alt=\"".$language["ADD"]."\" src=\"$BASEURL/images/new.gif\" /></a>":""));
+$viewnewstpl -> set("insert_news_link", (count($res) == 0?"<a href=\"index.php?page=news&amp;act=add\"><button type=\"button\" class=\"btn btn-primary btn-sm\">ADD NEWS!</button></a>":""));
 
 include("$THIS_BASEPATH/include/offset.php");
 
