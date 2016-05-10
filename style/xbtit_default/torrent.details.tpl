@@ -518,11 +518,6 @@ $clock(document).ready(function(){
    </body>
    </td>
    </tr>
-
-   <tr class="active">
-   <td align="right" class="header">Stream This</td>
-   <td class="lista" style="text-align:left;" valign="top"><tag:streaming /></td>
-   </tr>
       
    <tr class="active">
    <td align="right" class="header">Artwork<br >(High Res)</td>
