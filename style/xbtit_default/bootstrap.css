@@ -4627,7 +4627,7 @@ a.list-group-item.active > .badge,
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 300;
 }
 .jumbotron > hr {

@@ -1,6 +1,8 @@
 <!-- VIEWNEWS.PHP Template - Just plain HTML and CSS + Template TAGS-->
 
-<table cellpadding="4" cellspacing="1" border="0" width="100%" style="font-family:Verdana;font-size:10px">
+<center><h2>Under Contruction</h2></center>
+
+<table class="table table-bordered">
   <if:news_exists>
   <loop:viewnews>
   <if:can_edit_news>
