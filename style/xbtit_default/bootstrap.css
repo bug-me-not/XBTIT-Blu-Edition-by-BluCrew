@@ -2367,10 +2367,9 @@ output {
   color: #555;
 }
 .form-control {
-  display: block;
-  width: 100%;
+  width: auto;
   height: 31px;
-  padding: 8px 50px;
+  padding: 0px 0px;
   font-size: 15px;
   line-height: 1.42857143;
   color: #999999;
@@ -4014,8 +4013,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li {
     float: left;
-	text-align:center;
-	min-width:80px;
+  text-align:center;
+  min-width:80px;
   }
   .navbar-nav > li > a {
     padding-top: 15px;
@@ -4098,7 +4097,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
-	
+  
 }
 @media (min-width: 768px) {
   .navbar-form {
