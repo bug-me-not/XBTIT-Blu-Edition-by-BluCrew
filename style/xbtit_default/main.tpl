@@ -2,12 +2,6 @@
 <html<tag:main_rtl /> xmlns='http://www.w3.org/1999/xhtml'>
 <head>
 <title><tag:main_title /></title>
-<if:seo_enabled>
-<tag:cano />
-<tag:meta />
-<tag:analytic />
-<tag:ggwebmaster />
-</if:seo_enabled>
 <meta http-equiv='content-type' content='text/html; charset=<tag:main_charset />' />
 
 <!-- #CSS Links -->
@@ -62,7 +56,7 @@
 <script type="text/javascript">
   jQuery(function($) {
   $('input[name="my-checkbox"]').bootstrapSwitch();
-  })
+  });
 </script>
 
 <!-- Bootstrap iCheck JS -->
@@ -75,7 +69,7 @@
    radioClass: 'iradio_flat-red'
    });
    });
-   })
+   });
 </script>
   
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -125,7 +119,7 @@
           </a>
         </li>
         <li>
-          <a href='index.php?page=modules&module=getrss'>
+          <a href='index.php?page=modules&amp;module=getrss'>
             <i class="fa fa-rss"></i>
             <span>RSS</span>
           </a>
@@ -137,7 +131,7 @@
           </a>
         </li>
         <li>
-          <a href='index.php?page=extra-stats&type=users'>
+          <a href='index.php?page=extra-stats&amp;type=users'>
             <i class="fa fa-pie-chart"></i>
             <span>Extra Stats</span>
           </a>
@@ -216,7 +210,6 @@
 </br>
 </br>
 
-
 <!-- MainUser Info Bar / Tracker Settings -->
 <div class="container-fluid">
   <div class="row">
@@ -229,7 +222,6 @@
   <p class="text-danger">Your #1 HD Tracker</p></center>
   <!-- BANNER END -->
 
-
 <!-- Site Alerts
 <center><div class="page-header">
 <h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
@@ -240,7 +232,6 @@
 </br>
 
 <!--Main Page Content -->
-
 <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
   <tr>
     <td valign='top' width='5' rowspan='2'></td>
@@ -270,7 +261,6 @@
     </div>
   </div>
 </div>
-</body>
 <!-- Footer -->
 <footer>
   <div class="container-fluid">
@@ -294,4 +284,5 @@
     </div>
   </div>
 </footer>
+</body>
 </html>
