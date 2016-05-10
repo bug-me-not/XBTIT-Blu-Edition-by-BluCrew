@@ -101,9 +101,6 @@ $admintpl->set("ibd_enabled_3", (($btit_settings["fmhack_download_requires_intro
 $admintpl->set("pfet_enabled_1", (($btit_settings["fmhack_permissions_for_external_torrents"] == "enabled")?true:false), true);
 $admintpl->set("pfet_enabled_2", (($btit_settings["fmhack_permissions_for_external_torrents"] == "enabled")?true:false), true);
 $admintpl->set("pfet_enabled_3", (($btit_settings["fmhack_permissions_for_external_torrents"] == "enabled")?true:false), true);
-$admintpl->set("bluflix_enabled_1",(($btit_settings["fmhack_bluflix"] == "enabled")?true:false),true);
-$admintpl->set("bluflix_enabled_2",(($btit_settings["fmhack_bluflix"] == "enabled")?true:false),true);
-$admintpl->set("bluflix_enabled_3",(($btit_settings["fmhack_bluflix"] == "enabled")?true:false),true);
 
 if($btit_settings["fmhack_teams"] == "enabled")
 require_once (load_language("lang_teams.php"));
@@ -298,10 +295,6 @@ switch($action)
       $current_group["add_ddl"] = ($current_group["add_ddl"] == "yes"?"checked=\"checked\"":"");
       $current_group["view_ddl"] = ($current_group["view_ddl"] == "yes"?"checked=\"checked\"":"");
    }
-   if($btit_settings["fmhack_bluflix"] == "enabled")
-   {
-      $current_group["can_stream"] = ($current_group["can_stream"] == "yes"?"checked=\"checked\"":"");
-   }
    $admintpl->set("group", $current_group);
    break;
    case 'add':
@@ -472,10 +465,6 @@ switch($action)
          {
             $update[] = "add_ddl=".sqlesc(isset($_POST["add_ddl"])?"yes":"no");
             $update[] = "view_ddl=".sqlesc(isset($_POST["view_ddl"])?"yes":"no");
-         }
-         if($btit_settings["fmhack_bluflix"] == "enabled")
-         {
-            $update[] = "can_stream=".sqlesc(isset($_POST["can_stream"])?"yes":"no");
          }
          $strupdate = implode(",", $update);
          quickQuery("UPDATE {$TABLE_PREFIX}users_level SET $strupdate WHERE id=$gid", true);
@@ -655,10 +644,6 @@ switch($action)
       {
          $groups[$i]["add_ddl"] = $level["add_ddl"];
          $groups[$i]["view_ddl"] = $level["view_ddl"];
-      }
-      if($btit_settings["fmhack_bluflix"] == "enabled")
-      {
-         $groups[$i]["can_stream"] = $level["can_stream"];
       }
       $i++;
    }

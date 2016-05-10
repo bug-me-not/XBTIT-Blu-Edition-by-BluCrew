@@ -589,7 +589,6 @@ if($count > 0)
       }
       $torrenttpl->set("torrent_header_allow","$allow");
       //multi delete staff
-      $torrenttpl->set("bluflix_enabled",(($btit_settings["fmhack_bluflix"] == 'enabled')?true:false),true);
       $torrenttpl->set("XBTT", $XBTT_USE, true);
       $torrenttpl->set("torrent_pagerbottom", $pagerbottom);
       $torrenttpl->set("torlang1", (($btit_settings["fmhack_language_in_torrent_list_and_details"] == "enabled")?true:false), true);
@@ -1403,28 +1402,7 @@ if($count > 0)
                      else
                      $torrents[$i]["recommended"] = "<a href='index.php?page=torrents&action=add&info_hash=".$data["hash"]."'><button class='btn btn-xs btn-danger' type='button'>Recommend</button></a>";
                   }
-
-                  // show stream available
-
-                  if ($btit_settings["fmhack_bluflix"] == 'enabled')
-                  {
-                     $ilink = $data['imdb'];
-                     //$row720 = sql_num_rows(do_sqlquery("SELECT * FROM {$TABLE_PREFIX}stream WHERE imdb = {$ilink} AND res = 2"));
-                     $row1080 = sql_num_rows(do_sqlquery("SELECT * FROM {$TABLE_PREFIX}stream WHERE imdb = {$ilink} AND res = 3"));
-
-                     /*if ($row720 > 0)
-                     $q720 = "<img src=\"images/tick.png\" alt=\"Available\" height=\"16\" width=\"16\">";
-                     else
-                     $q720 = "<img src=\"images/cross.png\" alt=\"Not Available\" height=\"16\" width=\"16\">";*/
-
-                     if ($row1080 > 0)
-                     $q1080 = "<img src=\"images/tick.png\" alt=\"Available\" height=\"16\" width=\"16\">";
-                     else
-                     $q1080 = "<img src=\"images/cross.png\" alt=\"Now Available\" height=\"16\" width=\"16\">";
-
-                     $torrents[$i]["stream_1080"]=" {$q1080}";
-                     // show stream available
-                  }
+                  
                   //Bookmark
                   $torrents[$i]["bookmark"]="<a href=\"index.php?page=bookmark&do=add&torrent_id=".$data["hash"]."\" style=\"color: green;\">{$language['NEW_BOOKMARK']}</a>";
                   //Bookmark

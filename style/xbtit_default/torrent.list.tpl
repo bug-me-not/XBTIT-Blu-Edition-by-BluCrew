@@ -268,7 +268,7 @@ Snatched
          <b>Seeds:</b> &nbsp; <tag:torrents[].seeds />&nbsp; <b>Leechers:</b> &nbsp; <tag:torrents[].leechers />&nbsp; <b>Complete:</b> &nbsp; <tag:torrents[].complete />&nbsp;
          </p>
          <p>
-          <b>Comments:</b> &nbsp;&nbsp&nbsp<tag:torrents[].comments />&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp;<b>IMDB Rating:</b>&nbsp;&nbsp;<tag:torrents[].imdb />&nbsp;&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <b>Upload Perks:</b> <if:free_leech_enabled><tag:torrents[].free /></if:free_leech_enabled><if:gast_enabled>&nbsp;<tag:torrents[].gold /></if:gast_enabled> &nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <if:bluflix_enabled><b>BluFLIX:</b>&nbsp;&nbsp; <tag:torrents[].stream_1080 /><tag:torrents[].color /> &nbsp;&nbsp; <b>|</b></if:bluflix_enabled> &nbsp;&nbsp; <span><tag:torrents[].bookmark /></span>&nbsp;&nbsp;
+          <b>Comments:</b> &nbsp;&nbsp&nbsp<tag:torrents[].comments />&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp;<b>IMDB Rating:</b>&nbsp;&nbsp;<tag:torrents[].imdb />&nbsp;&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <b>Upload Perks:</b> <if:free_leech_enabled><tag:torrents[].free /></if:free_leech_enabled><if:gast_enabled>&nbsp;<tag:torrents[].gold /></if:gast_enabled> &nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <span><tag:torrents[].bookmark /></span>&nbsp;&nbsp;
           </p>
           </td>
           <td align="center" width="3" class="lista" style="text-align: center;"><a href="<tag:torrents[].alt_image_imgup />" title="view image" class="lightbox"><img src="<tag:torrents[].alt_image_imgup />" width="125" height="170"></td>

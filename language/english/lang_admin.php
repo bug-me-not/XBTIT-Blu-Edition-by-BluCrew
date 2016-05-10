@@ -1454,6 +1454,4 @@ $language["INTEGRITY_ALINDEX"]="You have previously indexed your files. This tim
 $language["INTEGRITY_MSG"]="This will catalogue your filebase so then you can check at a later time if any files have been modified<br />and will alert you if any changes have been made. This is to help incase any files get modified without your<br />knowledge and you can track them down very easily.<br />Current Status:<br />";
 $language["INTEGRITY_MENU"]="File Integrity check";
 $language["INTEGRITY_SETUP"]="File Integrity Setup";
-
-$language["BLUFLIX_ADMIN"]="Can Stream"
 ?>

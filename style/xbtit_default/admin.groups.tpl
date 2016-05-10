@@ -140,10 +140,6 @@
       <td class="header" align="center"><tag:language.PFET_REF_EXT /></td>
     </if:pfet_enabled_1>
 
-    <if:bluflix_enabled_1>
-      <td class="header" align="center"><tag:language.BLUFLIX_ADMIN /></td>
-    </if:bluflix_enabled_1>
-
     <td class="header" align="center"><tag:language.DELETE /></td>
   </tr>
   <loop:groups>
@@ -268,10 +264,6 @@
       <td class="lista" style="text-align:center;"><tag:groups[].external_upload /></td>
       <td class="lista" style="text-align:center;"><tag:groups[].external_refresh /></td>
     </if:pfet_enabled_2>
-
-    <if:bluflix_enabled_2>
-      <td class="lista" style="text-align:center;"><tag:groups[].can_stream /></td>
-    </if:bluflix_enabled_2>
 
     <td class="lista" style="text-align:center;"><tag:groups[].delete /></td>
   </tr>
@@ -586,11 +578,6 @@
       <td class="lista"><input type="checkbox" name="external_refresh" <tag:group.external_refresh /> /></td>
     </tr>
     </if:pfet_enabled_3>
-
-    <if:bluflix_enabled_3>
-      <td class="header"><tag:language.BLUFLIX_ADMIN /></td>
-      <td class="lista"><input type="checkbox" name="can_stream" <tag:group.can_stream /> /></td>
-    </if:bluflix_enabled_3>
 
     <tr>
       <td align="center" class="header"><input type="submit" class="btn" name="write" value="<tag:language.FRM_CONFIRM />" /></td>

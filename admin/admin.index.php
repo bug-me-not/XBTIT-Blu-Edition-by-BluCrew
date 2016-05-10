@@ -457,11 +457,6 @@ include("$ADMIN_PATH/admin.seedbox.use.php");
 $tpl->set("main_content",set_block($language["SB_SS_SETTINGS"],"center",$admintpl->fetch(load_template("admin.seedbox.use.tpl"))));
 break;
 
-case 'ticker_conf':
-include("$ADMIN_PATH/admin.ticker.conf.php");
-$tpl->set("main_content",set_block($language["TICKER_CONF"],"center",$admintpl->fetch(load_template("admin.ticker.conf.tpl"))));
-break;
-
 case 'warn_settings':
 include("$ADMIN_PATH/admin.warn_settings.php");
 $tpl->set("main_content",set_block($language["WS_WARN_SETTINGS"],"center",$admintpl->fetch(load_template("admin.warn_settings.tpl"))));

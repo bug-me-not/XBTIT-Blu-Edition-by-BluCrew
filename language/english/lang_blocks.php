@@ -69,9 +69,6 @@ $language["ACP_CAPTCHA_CONF"]='Comment Captcha';
 $language["GALLERY"]='Gallery';
 $language["BLOCK_CAT"]="Categories";
 
-#BluFlix
-$language["BLOCK_STREAM"]="BluFLIX Checks";
-
 #Staff CP
 $language["STAFF_MENU"]="Staff Checks";
 
