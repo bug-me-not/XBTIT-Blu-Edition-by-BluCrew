@@ -1376,7 +1376,7 @@ $language["LOGS_COOLY_NOTE"]="<b>If u change path to another doc root dir be sur
 $language["LOGS_COOLY_LIST"]="The list of old logs in your folder.";
 $language["LOGS_COOLY_FLUSH"]="Flush out</a> old logs";
 $language['SSL'] = "Force SSL:";
-$language['SSL_DESC'] = "&nbsp;Force a Secure Connection in Site.";
+$language['SSL_DESC'] = "&nbsp;Force a Secure Connection in Tracker.";
 $language['ADDTHIS_SHARE']='Share';
 $language['ADDTHIS_SHARE2']='Share with friends';
 
