@@ -62,7 +62,7 @@
 <div class="panel-heading">
 <h4 class="text-center">Request Guidelines</h4>
 </div>
-Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</br>Please Be Sure To Enter A Proper Description In Detail As To What It Is You Are Requesting</br>Please Be Sure To Enter A Proper Title For Your Request (Title)(Year)(Resolution)(Format)</br>It Cost 500 BON To Make A Request In Which It Is Added As A Bounty
+Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</br>Please Be Sure To Enter A Proper Description In Detail As To What It Is You Are Requesting</br>Please Be Sure To Enter A Proper Title For Your Request (Title)(Year)(Resolution)(Format)</br>It Cost <tag:aBON /> BON To Make A Request In Which It Is Added As A Bounty
 <div class="panel-footer">
 </div>
 </br>

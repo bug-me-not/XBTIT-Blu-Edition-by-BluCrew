@@ -153,6 +153,7 @@ else
 				$createreqtpl->set("url",'index.php?page=requests&action=takereq');
 				$createreqtpl->set("req_id","");
 				$createreqtpl->set("reqtitle","");
+				$createreqtpl->set("aBON",$btit_settings['req_bon']);
 				$createreqtpl->set("imdb","");
 				$createreqtpl->set("tvdb","");
 				$createreqtpl->set("description","");
@@ -272,6 +273,7 @@ else
 						$editreqtpl->set("url","index.php?page=requests&action=takereqedit");
 						$editreqtpl->set("uid",$CURUSER['uid']);
 						$editreqtpl->set("uid_auth",sha1($CURUSER['random']));
+						$editreqtpl->set("aBON",$btit_settings['req_bon']);
 
 						$editreqtpl->set("req_id",$edit_res['id']);
 						$editreqtpl->set("reqtitle",$edit_res['reqname']);
