@@ -94,7 +94,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 	</tr>
 	<tr>
 		<td>
-			<tag:language.IMDB_SEARCH />
+			<tag:language.IMDB_SEARCH /> <tag:language.NOTE_ID />
 		</td>
 		<td> 
 			<input type="text" name="imdb" size='10' class='search' value='<tag:imdb />'>
@@ -102,7 +102,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 	</tr>
 	<tr>
 		<td>
-			<tag:language.TVDB />
+			<tag:language.TVDB /> <tag:language.NOTE_ID />
 		</td>
 		<td>
 			<input type='text' name='tvdb' size='10' class='search' value='<tag:tvdb />'>
