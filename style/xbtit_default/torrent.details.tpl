@@ -546,8 +546,7 @@ $clock(document).ready(function(){
    <if:bookmark_enabled>
    <tr>
    <td align="right" class="header"><tag:language.ADDB /></td>
-   <td class="lista" align="left"><a href="index.php?page=bookmark&do=add&torrent_id=<tag:id />"><button class='btn btn-labeled btn-success' type='button'>
-   <span class='btn-label'><i class='fa fa-bookmark'></i></span>Bookmark This Upload</button></span></a></td>
+   <td class="lista" align="left"><a href="index.php?page=bookmark&do=add&torrent_id=<tag:id />"><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-bookmark'></i></span>Bookmark This Upload</button></span></a></td>
    </tr>
    </if:bookmark_enabled>
 
@@ -555,7 +554,7 @@ $clock(document).ready(function(){
    <if:reseed_possible>
    <tr>
    <td align="right" class="header"><tag:language.AFR_RESEED /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:reseed /></td>
+   <td class="lista" align="center" style="text-align:left;"><tag:reseed /></td>
    </tr>
    </if:reseed_possible>
    </if:AFR>
@@ -564,7 +563,7 @@ $clock(document).ready(function(){
    <if:ruat>
    <tr>
    <td align="right" class="header"><tag:language.REP_TORR /></td>
-   <td align="center" class="lista" style="text-align:left;" valign="top"><tag:rep /></td>
+   <td align="center" class="lista" style="text-align:left;"><tag:rep /></td>
    </tr>
    </if:ruat>
    <!-- Report users & Torrents by DiemThuy - End -->
@@ -573,8 +572,10 @@ $clock(document).ready(function(){
    <if:similar_enabled>
    <tr>
    <td align="right" class="header"><tag:language.details_similar_torrents /></td>
-   <td class="lista" style="text-align:center;">
-   <table width="100%" class="main" border="1" cellspacing="0" cellpadding="1">
+   <td class="lista">
+   <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#similar">Show Similar Uploads</button>
+   <div id="similar" class="collapse">
+   <table width="100%" class="main" border="1" cellspacing="0" cellpadding="1" style="text-align:center;">
    <tr>
    <td class="header" style="text-align:center;"><tag:language.details_name /></td>
    <td class="header" style="text-align:center;"><tag:language.details_date /></td>
@@ -592,6 +593,7 @@ $clock(document).ready(function(){
    </tr>
    </loop:similar_torrents>
    </table>
+   </div>
    </td>
    </tr>
    </if:similar_enabled>
