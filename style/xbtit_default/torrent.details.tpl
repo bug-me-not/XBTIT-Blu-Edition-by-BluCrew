@@ -285,6 +285,7 @@ $clock(document).ready(function(){
   <ul class="nav nav-tabs">
     <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
     <li class""><a href="#details" data-toggle="tab">Details</a></li>
+    <li class""><a href="#gift" data-toggle="tab">Gift</a></li>
     <li class""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
     <li class""><a href="#trailer" data-toggle="tab">Trailer</a></li>
     <li class""><a href="#comment" data-toggle="tab">Comments</a></li>
@@ -305,7 +306,7 @@ $clock(document).ready(function(){
    <br>
 
    <tr>
-   <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><if:MOD><tag:mod_task /></if:MOD></td>
+   <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><p class= "text-danger"><tag:language.INFO_HASH />:&nbsp;&nbsp;<tag:torrent.info_hash /></p><if:MOD><tag:mod_task /></if:MOD></td>
    </tr>
 
    <if:fls_enabled>
@@ -367,11 +368,6 @@ $clock(document).ready(function(){
    </tr>
    </if:FORUM_LNK>
    </if:auto_topic_enabled>
-
-   <tr>
-   <td align="right" class="header"><tag:language.INFO_HASH /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.info_hash /></td>
-   </tr>
    
    <if:addthis_enabled>
    <tr>
@@ -413,17 +409,12 @@ $clock(document).ready(function(){
    <form action="thanks.php" method="post" onsubmit="return false">
    <div id="thanks_div" name="thanks_div" style="display:block;"></div>
    <div id="loading" name="loading" style="display:none;"><img src="images/ajax-loader.gif" alt="" title="ajax-loader" /></div>
-   <input type="button" id="ty" disabled="disabled" class="btn btn-primary" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />')" />
+   <input type="button" id="ty" disabled="disabled" class="btn btn-primary btn-sm" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />')" />
    </form>
    <script type="text/javascript">ShowThank('<tag:torrent.info_hash />');</script>
    </td>
    </tr>
    </if:thanks_enabled>
-
-   <tr>
-   <td align="right" class="header"><tag:language.SEND_POINTS /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:coin /></td>
-   </tr>
 
    <!--
 
@@ -443,13 +434,6 @@ $clock(document).ready(function(){
    </if:imageup_enabled2>
    -->
 
-   <if:torlang>
-   <tr>
-   <td align="right" class="header"><tag:language.LANGUAGE /></td>
-   <td class="lista" align="left"><tag:language /></td>
-   </tr>
-   </if:torlang>
-
    <if:st_comm_enabled>
    <if:LEVEL_SC>
    <tr>
@@ -459,14 +443,25 @@ $clock(document).ready(function(){
    </if:LEVEL_SC>
    </if:st_comm_enabled>
 
+   <if:SHOW_UPLOADER>
+   <tr>
+   <td align="right" class="header"><tag:language.UPLOADER /></td>
+   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.uploader /></td>
+   </tr>
+   </if:SHOW_UPLOADER>
+
    <tr>
    <td align="right" class="header"><tag:language.CATEGORY_FULL /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.cat_name /></td>
    </tr>
+
+   <if:torlang>
    <tr>
-   <td align="right" class="header"><tag:language.RATING /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.rating /></td>
+   <td align="right" class="header"><tag:language.LANGUAGE /></td>
+   <td class="lista" align="left"><tag:language /></td>
    </tr>
+   </if:torlang>
+
    <tr>
    <td align="right" class="header"><tag:language.SIZE /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.size /></td>
@@ -512,35 +507,39 @@ $clock(document).ready(function(){
    </td>
    </tr>
    </if:DISPLAY_FILES>
+
    <tr>
    <td align="right" class="header"><tag:language.ADDED /></td>
    <td class="lista" style="text-align:left;" valign="top"><tag:torrent.date /></td>
    </tr>
-   <if:SHOW_UPLOADER>
-   <tr>
-   <td align="right" class="header"><tag:language.UPLOADER /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.uploader /></td>
-   </tr>
-   </if:SHOW_UPLOADER>
+   
    <if:NOT_XBTT>
    <tr>
    <td align="right" class="header"><tag:language.SPEED /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.speed /></td>
    </tr>
    </if:NOT_XBTT>
+
    <if:viewcount_enabled>
    <tr>
    <td align="right" class="header"><tag:language.TORRENT_VIEWS /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.viewcount /></td>
    </tr>
    </if:viewcount_enabled>
+
    <tr>
    <td align="right" class="header"><tag:language.DOWNLOADED /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.downloaded /></td>
    </tr>
+
    <tr>
    <td align="right" class="header"><tag:language.PEERS /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><div id="peer_counts"><tag:torrent.seeds />, <tag:torrent.leechers /> = <tag:torrent.peers /><if:refresh_peers_enabled>&nbsp;&nbsp;&nbsp;<i class="fa fa-refresh fa-spin" border="0" onclick="refresh_peers('<tag:torrent.info_hash />')" title="<tag:language.REFRESH_PEERS />" /></if:refresh_peers_enabled></div></td>
+   </tr>
+
+   <tr>
+   <td align="right" class="header"><tag:language.RATING /></td>
+   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.rating /></td>
    </tr>
 
    <if:bookmark_enabled>
@@ -629,11 +628,19 @@ $clock(document).ready(function(){
    <div align='center' style='display:none' id='slidenfo'>
    <img src='nfo/nfogen.php?nfo=rep/<tag:torrent.info_hash />.nfo&colour=1'>
    </div>
-   </div>
    </if:nfo_exists>
    </if:view_nfo>
    </if:nfo_enabled>
    <tag:torrent.description />
+   </div> <!-- Tab End -->
+
+   <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
+   <p class= "text-info"><h3><tag:language.SEND_POINTS /></h3></p>
+   <div class="row">
+   <div class="col-md-12">
+   <tag:coin />
+   </div>
+   </div>
    </div> <!-- Tab End -->
 
    <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"><!-- Tab Start -->
@@ -684,7 +691,6 @@ $clock(document).ready(function(){
    <br>
    <br>
    <p class="text-warning">Powered By TMDB API</p>
-
    </div> <!-- Tab End -->
 
    <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
