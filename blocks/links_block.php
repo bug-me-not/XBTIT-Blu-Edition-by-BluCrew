@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Affiliates</h4>
+<h4 class="text-center">Friends</h4>
 </div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
