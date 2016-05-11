@@ -53,6 +53,7 @@ switch ($pageID) {
    case 'expected':
    case 'expectdetails':
    case 'faq':
+   case 'peers':
       stdfoot(false,true,false,true,true);
    break;
 
