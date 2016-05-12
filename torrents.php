@@ -916,7 +916,7 @@ if($count > 0)
             //imdb rating
             if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
             {
-               
+               $torrents[$i]["imdb"] = "Coming Soon.";
                $torrents[$i]["imdb_genre"] = "Coming Soon.";
             }
             else
