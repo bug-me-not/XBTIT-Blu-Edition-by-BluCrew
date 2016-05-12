@@ -7,9 +7,14 @@
 //
 ///////////////////////////////////////////////////////// 
 require_once('include/functions.php');
-
 dbconn(false);
-global $TABLE_PREFIX;
+global $TABLE_PREFIX, $CURUSER;
+
+if(!$CURUSER || $CURUSER['uid']==1)
+{
+ redirect("index.php");
+}
+
 $type = $_GET["a"];
 if (strlen($_GET['q']) > 3) 
 {
