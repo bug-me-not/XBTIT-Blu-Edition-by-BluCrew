@@ -916,84 +916,8 @@ if($count > 0)
             //imdb rating
             if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
             {
-               #Imdb Ratings
-               require_once ("imdb/imdb.class.php");
-               $movie = new imdb($data["imdb"]);
-               $ratv_file = dirname(__file__).'/cache/'.$data["imdb"].'_torrents_IMDB_rating.txt';
-               if(file_exists($ratv_file))
-               {
-                  $ratv = unserialize(file_get_contents($ratv_file));
-               }
-               else
-               {
-                  $ratv = $movie->rating();
-                  if($data["imdb"] != 0)
-                  write_file($ratv_file, serialize($ratv));
-               }
-
-               if($ratv <= 0.4)
-               $rat_img = "00";
-               elseif($ratv >= 0.5 && $ratv <= 0.9)
-               $rat_img = "05";
-               elseif($ratv >= 1 && $ratv <= 1.4)
-               $rat_img = "10";
-               elseif($ratv >= 1.5 && $ratv <= 1.9)
-               $rat_img = "15";
-               elseif($ratv >= 2 && $ratv <= 2.4)
-               $rat_img = "20";
-               elseif($ratv >= 2.5 && $ratv <= 2.9)
-               $rat_img = "25";
-               elseif($ratv >= 3 && $ratv <= 3.4)
-               $rat_img = "30";
-               elseif($ratv >= 3.5 && $ratv <= 3.9)
-               $rat_img = "35";
-               elseif($ratv >= 4 && $ratv <= 4.4)
-               $rat_img = "40";
-               elseif($ratv >= 4.5 && $ratv <= 4.9)
-               $rat_img = "45";
-               elseif($ratv >= 5 && $ratv <= 5.4)
-               $rat_img = "50";
-               elseif($ratv >= 5.5 && $ratv <= 5.9)
-               $rat_img = "55";
-               elseif($ratv >= 6 && $ratv <= 6.4)
-               $rat_img = "60";
-               elseif($ratv >= 6.5 && $ratv <= 6.9)
-               $rat_img = "65";
-               elseif($ratv >= 7 && $ratv <= 7.4)
-               $rat_img = "70";
-               elseif($ratv >= 7.5 && $ratv <= 7.9)
-               $rat_img = "75";
-               elseif($ratv >= 8 && $ratv <= 8.4)
-               $rat_img = "80";
-               elseif($ratv >= 8.5 && $ratv <= 8.9)
-               $rat_img = "85";
-               elseif($ratv >= 9 && $ratv <= 9.4)
-               $rat_img = "90";
-               elseif($ratv >= 9.5 && $ratv <= 9.9)
-               $rat_img = "95";
-               elseif($ratv == 10)
-               $rat_img = "100";
-               $rater = "N/A";
-               if(!empty($ratv))
-               {
-                  $rater = "<img src='".$BASEURL."/imdb/imgs/showtimes/".$rat_img.".gif' alt='".$ratv."/10' title='".$ratv."/10'>";
-                  ++$datas;
-               }
-               $torrents[$i]["imdb"] = $rater;
-               if($data["genre"]=='')
-               {
-                  $in = $movie->genres();
-                  $find = array("|", "&nbsp;");
-                  $rep = array(",", "");
-                  $SAVE_ARRAY = str_replace($find, $rep, strip_tags(implode("|", $in)), $SAVE_ARRAY);
-                  $new_ARRAY= array_unique(explode(",",$SAVE_ARRAY));
-                  $FINAL=implode(",",$new_ARRAY);
-                  quickQuery("UPDATE {$TABLE_PREFIX}files set genre='".$FINAL."' where info_hash='".$data["hash"]."'", true);
-               }
-               $find = array(",");
-               $rep = array("&nbsp;|&nbsp;");
-               $list=str_replace($find, $rep, $data["genre"], $list);
-               $torrents[$i]["imdb_genre"] = "".$list;
+               
+               $torrents[$i]["imdb_genre"] = "Coming Soon.";
             }
             else
             $torrents[$i]["imdb_genre"]="";
