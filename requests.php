@@ -478,8 +478,8 @@ else
 					$reqid = intval($_POST['req_id']);
 					if(isset($_POST['fill_link']) && strlen($_POST['fill_link'])==40)
 					{
-						$hash = sqlesc($_POST['fill_link']);
-						$hashque = do_sqlquery("SELECT UNIX_TIMESTAMP(data) as data,uploader FROM {$TABLE_PREFIX}files WHERE info_hash={$hash}");
+						$hash = sql_esc($_POST['fill_link']);
+						$hashque = do_sqlquery("SELECT UNIX_TIMESTAMP(data) as data,uploader FROM {$TABLE_PREFIX}files WHERE info_hash=\"{$hash}\"");
 
 						if(sql_num_rows($hashque)==1)
 						{
@@ -487,7 +487,7 @@ else
 
 							$reqres = do_sqlquery("SELECT `req`.`reqname`,`req`.`requester`,`req`.`infohash`,(SELECT sum(`reqbou`.`seedbonus`) FROM {$TABLE_PREFIX}requests_bounty `reqbou` WHERE `reqbou`.`req_id`=`req`.`id`) as `seedbonus` FROM {$TABLE_PREFIX}requests `req` WHERE id={$reqid}")->fetch_assoc();
 
-							$link = "{$BASEURL}/index.php?page=torrent-details&id={$reqres['infohash']}";
+							$link = "{$BASEURL}/index.php?page=torrent-details&id={$hash}";
 							$message = "Dear Member, \n\n Your request: {$reqres['reqname']} , has been filled. \n\n See this link: [url={$link}]{$reqres['reqname']}[/url] for more info. \n\n If this is incorrect, Please reset via the request section. \n\nSincerely Blu-Bot.";
 							send_pm(0,$reqres['requester'],sqlesc($language['RF']),sqlesc($message));
 
@@ -497,13 +497,13 @@ else
 							
 							if($CURUSER['uid']==$hashres['uploader'])
 							{
-								quickQuery("UPDATE {$TABLE_PREFIX}requests SET uploadedby={$hashres['uploader']}, uploadedwhen=NOW(), infohash={$hash} WHERE id={$reqid}");
+								quickQuery("UPDATE {$TABLE_PREFIX}requests SET uploadedby={$hashres['uploader']}, uploadedwhen=NOW(), infohash=\"{$hash}\" WHERE id={$reqid}");
 								quickQuery("UPDATE {$TABLE_PREFIX}users SET seedbonus=seedbonus+{$bounty} WHERE id={$CURUSER['uid']}");
 								$_SESSION["CURUSER"]["seedbonus"]+=$bounty;
 							}
 							elseif(time() > $hasres['data']+3600 && $CURUSER['uid']!=$hashres['uploader'])
 							{
-								quickQuery("UPDATE {$TABLE_PREFIX}requests SET uploadedby={$CURUSER['uid']}, uploadedwhen=NOW(), infohash={$hash} WHERE id={$reqid}");
+								quickQuery("UPDATE {$TABLE_PREFIX}requests SET uploadedby={$CURUSER['uid']}, uploadedwhen=NOW(), infohash=\"{$hash}\" WHERE id={$reqid}");
 								quickQuery("UPDATE {$TABLE_PREFIX}users SET seedbonus=seedbonus+{$bounty} WHERE id={$CURUSER['uid']}");
 								$_SESSION["CURUSER"]["seedbonus"]+=$bounty;
 							}
