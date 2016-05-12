@@ -32,7 +32,7 @@ class bTemplate {
         Method: bTemplate()
         Simply sets the base path (if you don't set the default).
     \*--------------------------------------------------------------*/
-    function bTemplate($base_path = NULL, $reset_vars = TRUE) {
+    function __construct($base_path = NULL, $reset_vars = TRUE) {
         if($base_path) $this->base_path = $base_path;
         $this->reset_vars = $reset_vars;
     }
