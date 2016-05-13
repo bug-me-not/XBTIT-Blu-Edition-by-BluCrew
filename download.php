@@ -237,21 +237,13 @@ else
 */
     fclose($fd);
 
-    $BASEURLn = '';   
+    $BASEURLn = str_replace("/announce.php","",$TRACKER_ANNOUNCEURLS[0]);   
     if(substr($BASEURL,0,5) == "https")
     {
-        if($CURUSER["force_ssl"] == "yes")
-        {
-            $BASEURLn = $BASEURL;
-        }
-        else
+        if($CURUSER["force_ssl"] != "yes")
         {
             $BASEURLn = str_replace("https","http",$BASEURL);
         }
-    }
-    else
-    {
-        $BASEURLn = $BASEURL;   
     }
 
     if ($XBTT_USE)
