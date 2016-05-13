@@ -1,4 +1,9 @@
 <?php
+
+//KIS
+$language['UCP_KIS']='Invites';
+//KIS
+
 $language['DELETE_READED']='Delete';
 $language['USER_LANGUE']='Language';
 $language['USER_STYLE']='Style';

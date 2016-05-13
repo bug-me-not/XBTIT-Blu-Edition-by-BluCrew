@@ -1,6 +1,11 @@
 <?php
 
 global $CURUSER, $XBTT_USE;
+
+//KIS
+$language['ACP_KIS']='KIS Tools';
+//KIS
+
 //Featured Torrent
 $language['ACP_FEATURED']='Featured Torrent';
 //Featured Torrent
