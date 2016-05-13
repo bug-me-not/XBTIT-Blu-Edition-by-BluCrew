@@ -222,6 +222,26 @@
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_local_time /></td>
   </tr>
 
+   <tr>
+    <td class="header">Upload Count</td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_uploads /></td>
+  </tr>
+  
+  <tr>
+    <td class="header">Seeding</td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_seeding /></td>
+  </tr>
+  
+  <tr>
+    <td class="header">Leeching</td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_leeching /></td>
+  </tr>
+  
+  <tr>
+    <td class="header">Snatched</td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_completed /></td>
+  </tr>
+
   <tr>
     <td class="header"><tag:language.DOWNLOADED /></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_downloaded /></td>
@@ -292,7 +312,7 @@
 <form name='torrents_limit' method='post' action='index.php?page=userdetails&amp;id=<tag:userdetailarr.id />'>
   <tr>
     <td class="header"><tag:language.TORRENTS_LIMIT /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><input type='text' name='tlimit' size='4' maxlength='4' value='<tag:userdetailarr.torrents_limit />'>&nbsp;&nbsp;&nbsp;&nbsp;<input type='submit' name='submit' value='<tag:language.UPDATE />'>&nbsp;&nbsp;&nbsp;<tag:language.ENTER_NEG /></td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><input type='text' name='tlimit' size='4' maxlength='4' value='<tag:userdetailarr.torrents_limit />'>&nbsp;&nbsp;&nbsp;&nbsp;<input type='submit' name='submit' class='btn btn-warning btn-sm' value='<tag:language.UPDATE />'>&nbsp;&nbsp;&nbsp;<tag:language.ENTER_NEG /></td>
   </tr>
 </form>
 
@@ -557,7 +577,7 @@
 
     <td align="center" class="header"><if:acsort13><a href="<tag:userdetailarr.udacsorturl5 />"></if:acsort13><span style="color:green;">&#9650;</span><if:acsort14></a></if:acsort14><if:acsort15><tag:userdetailarr.uarrow2 /></if:acsort15></td>
 
-    <td align="center" class="header"><if:acsort16><a href="<tag:userdetailarr.udacsorturl6 />"></if:acsort16><tag:language.RATIO /><if:acsort17></a></if:acsort17><if:acsort18><tag:userdetailarr.uarrow2 /></if:acsort18></td>
+    <!--<td align="center" class="header"><if:acsort16><a href="<tag:userdetailarr.udacsorturl6 />"></if:acsort16><tag:language.RATIO /><if:acsort17></a></if:acsort17><if:acsort18><tag:userdetailarr.uarrow2 /></if:acsort18></td>-->
 
     <if:ttimes_enabled_1>
     <td align="center" class="header"><if:acsort31><a href="<tag:userdetailarr.udacsorturl11 />"></if:acsort31><tag:language.ETH_START_DATE /><if:acsort32></a></if:acsort32><if:acsort33><tag:userdetailarr.uarrow2 /></if:acsort33></td>
@@ -595,7 +615,7 @@
 
     <td align="center" class="lista" style="text-align: center;"><tag:tortpl[].uploaded /></td>
 
-    <td align="center" class="lista" style="text-align: center;"><tag:tortpl[].peerratio /></td>
+    <!--<td align="center" class="lista" style="text-align: center;"><tag:tortpl[].peerratio /></td>-->
 
     <if:ttimes_enabled_2>
     <td align="center" class="lista" style="text-align: center;"><tag:tortpl[].started_time /></td>
@@ -665,7 +685,7 @@
 
     <td align="center" class="header"><if:hisort13><a href="<tag:userdetailarr.udhisorturl5 />"></if:hisort13><span style="color:green;">&#9650;</span><if:hisort14></a></if:hisort14><if:hisort15><tag:userdetailarr.uarrow3 /></if:hisort15></td>
 
-    <td align="center" class="header"><if:hisort16><a href="<tag:userdetailarr.udhisorturl6 />"></if:hisort16><tag:language.RATIO /><if:hisort17></a></if:hisort17><if:hisort18><tag:userdetailarr.uarrow3 /></if:hisort18></td>
+    <!--<td align="center" class="header"><if:hisort16><a href="<tag:userdetailarr.udhisorturl6 />"></if:hisort16><tag:language.RATIO /><if:hisort17></a></if:hisort17><if:hisort18><tag:userdetailarr.uarrow3 /></if:hisort18></td>-->
 
     <if:ttimes_enabled_3>
     <td align="center" class="header"><if:hisort31><a href="<tag:userdetailarr.udhisorturl11 />"></if:hisort31><tag:language.ETH_START_DATE /><if:hisort32></a></if:hisort32><if:hisort33><tag:userdetailarr.uarrow3 /></if:hisort33></td>
@@ -705,7 +725,7 @@
 
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].uploaded /></td>
 
-    <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].ratio /></td>
+    <!--<td align="center" class="lista" style="text-align: center;"><tag:torhistory[].ratio /></td>-->
 
     <if:ttimes_enabled_4>
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].started_time /></td>
