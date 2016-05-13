@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Hot Picks</h4>
+<h4 class="text-center">Torrent Of The Week</h4>
 </div>
 <?php
 global $btit_settings, $TABLE_PREFIX, $XBTT_USE, $language, $res_seo, $THIS_BASEPATH;
