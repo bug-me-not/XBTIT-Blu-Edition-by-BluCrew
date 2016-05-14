@@ -25,16 +25,16 @@ if (!defined('IN_BTIT'))
 
 # KOCS
 require load_language('lang_kocs.php');
-require 'include/kocs.php';
+require $THIS_BASEPATH.'/include/kocs.php';
 # Khez
 require load_language('lang_khez.php');
-require 'include/khez.php';
+require $THIS_BASEPATH.'/include/khez.php';
 # KIS
 global $kisfig;
 if (!isset($kisfig)) {
 	$kisfig=get_khez_config('SELECT `key`,`value` FROM `'.$TABLE_PREFIX.'khez_configs` WHERE `key` LIKE "kis_%" LIMIT 7;',$reload_cfg_interval);
 	require(load_language('lang_kis.php'));
-	require 'include/kis.php';
+	require $THIS_BASEPATH.'/include/kis.php';
 }
 # Test Database
 $res=do_sqlquery('SHOW TABLES LIKE "'.$TABLE_PREFIX.'kis_users";');
@@ -57,14 +57,14 @@ $_TABS[]=array('ktab=help', $language['KHEZ_HELP']);
 if ($kisfig && $kisfig['kis_enabled']) {
 	switch ($_GET['ktab']) {
 		case 'help':
-			include $USER_PATH.'usercp.kis.help.php';
+			include $USER_PATH.'/usercp.kis.help.php';
 			break;
 		case 'invite':
-			include $USER_PATH.'usercp.kis.invite.php';
+			include $USER_PATH.'/usercp.kis.invite.php';
 			break;
 		case 'view':
 		default:
-			include $USER_PATH.'usercp.kis.view.php';
+			include $USER_PATH.'/usercp.kis.view.php';
 			break;
 	}
 } else {
