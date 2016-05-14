@@ -192,7 +192,7 @@ else
 
 $i=0;
 
-$admin_menu[8]["title"]=$language["ACP_FM_HACK_CONFIG"];
+$admin_menu[9]["title"]=$language["ACP_FM_HACK_CONFIG"];
 $alphabetize=array();
 if($btit_settings["fmhack_invitation_system"]=="enabled")
 {
@@ -856,15 +856,15 @@ if(isset($alphabetize) && !empty($alphabetize))
     $i=0;
     foreach($alphabetize as $key => $value)
     {
-        $admin_menu[8]["menu"][$i]["url"]=$unsorted[$key]["url"];
-        $admin_menu[8]["menu"][$i]["description"]=$unsorted[$key]["description"];
+        $admin_menu[9]["menu"][$i]["url"]=$unsorted[$key]["url"];
+        $admin_menu[9]["menu"][$i]["description"]=$unsorted[$key]["description"];
         $i++;
     }
 }
-if(!is_array($admin_menu[8]["menu"]))
+if(!is_array($admin_menu[9]["menu"]))
 {
-    $admin_menu[8]["menu"][0]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=hacks&amp;action=read";
-    $admin_menu[8]["menu"][0]["description"]=$language["ACP_NO_HACKS_ENABLED"];
+    $admin_menu[9]["menu"][0]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=hacks&amp;action=read";
+    $admin_menu[9]["menu"][0]["description"]=$language["ACP_NO_HACKS_ENABLED"];
 }
 
 if($btit_settings["fmhack_staffpanel"]=="enabled")
