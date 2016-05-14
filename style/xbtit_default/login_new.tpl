@@ -37,7 +37,7 @@
 	<if:singup_enabled>
 	<div class="button"><a href="index.php?page=signup">Not A Member?</a></div>
 	</if:singup_enabled>
-	<div class="button"><a href="index.php?page=contact">Contact Us</a></div>
+	<!--<div class="button"><a href="index.php?page=contact">Contact Us</a></div>-->
 </body>
 <footer>
 	<h2>By: BluCrew <tag:year /></h2>
