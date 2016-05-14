@@ -165,31 +165,50 @@ print("</span><span style=\"text-align:left; color: #636311;\" align=\"left\">&n
 
 print "<br />";
 
-//FreeLeech w/ Happy Hour
-  if($btit_settings["fmhack_free_leech_with_happy_hour"]=="enabled")
-   {
-      $query = get_result("SELECT free, happy_hour, happy, UNIX_TIMESTAMP(`free_expire_date`) AS `timestamp` FROM `{$TABLE_PREFIX}files` WHERE `external`='no' LIMIT 1",true,$btit_settings["cache_interval"]);
-      $row = $query[0];
-      if(($row["free"]=="no" AND $row["happy_hour"] =="no") || (@sql_num_rows($query)==0))
-      {
-         $freec="red";
-         $till='';
-         $col=$language['FL_FREE_LEECH'];
-         $post=' '.$language['FL_NOT_TODAY'];
-         $img='';
-      }
-     
-      if($row["free"]=="yes")
-      {
-         $freec="green";
-         $till=' '.$language['FL_TO'].' ';
-         $col=$language['FL_FREE_LEECH'];
-         $post=date("l F jS Y \a\\t g:i a",$row["timestamp"]);
-         $img='';
-      }
-      print("<span style=\"text-align:center\";><font color='$freec'>".$col."".$till."".ucfirst($post)."</font>".(($img!="")?"&nbsp;&nbsp;&nbsp;".$img:"")."</span>\n");
-   }
-//FreeLeech w/ Happy Hour
+// freeleech hack
+   $query = do_sqlquery("SELECT *, UNIX_TIMESTAMP(`free_expire_date`) AS `timestamp` FROM `{$TABLE_PREFIX}files` WHERE `external`='no'", true);
+   $row = $query->fetch_array()
+;
+
+if($row["free"]=="no" AND $row["happy_hour"] =="no" )
+{
+      $freec="blue";
+      $till='';
+      $col='Free Leech';
+      $post=' Not Today';
+      $img='';
+}
+if ($row["happy"]=="no" AND $row["happy_hour"] =="yes" )
+{
+   $happy1= do_sqlquery("SELECT UNIX_TIMESTAMP(`value_s`) AS `timestampp` FROM `{$TABLE_PREFIX}avps` WHERE `arg`='happyhour'");
+   $happy2 =$happy1->fetch_array()
+;
+
+      $freec="red";
+      $till='';
+      $col='';
+      $post='Next Happy Hour Starts '.date("l F jS Y \a\\t g:i a",$happy2["timestampp"]);
+      $img='';
+}
+if($row["happy"]=="yes")
+{
+      $freec="green";
+      $till='';
+      $col='';
+      $post='It Is Happy Hour ';
+      $img ='<img src="images/proost.jpg" alt="free leech"/>';
+}
+if($row["free"]=="yes")
+{
+     $freec="green";
+     $till=' To ';
+     $col='Free Leech';
+     $post=date("l jS F Y \a\\t g:i a",$row["timestamp"]);
+     $img='';
+}
+
+print("<td align='center'><b><font color='$freec'>".$col."".$till."".ucfirst($post)."\n(UTC)</b></font></td>\n");
+// end freeleech hack
 
 print "</tr>";
 
