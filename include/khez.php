@@ -174,7 +174,7 @@ function uplMod($uid, $by, $exact=false) {
 } # uplMod($uid, $by, $exact=false)
 
 function isValidMail(&$email) {
-	return eregi('^[_+a-z0-9-]+(\.[_+a-z0-9-]+)*'.
+	return preg_match('^[_+a-z0-9-]+(\.[_+a-z0-9-]+)*'.
 	             '@[a-z0-9-]+(\.[a-z0-9-]{1,})*'.
 	             '\.([a-z]{2,}){1}$',$email);
 } # isValidMail(&$email)
