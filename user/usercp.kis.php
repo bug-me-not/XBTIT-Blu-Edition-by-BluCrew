@@ -38,9 +38,9 @@ if (!isset($kisfig)) {
 }
 # Test Database
 $res=do_sqlquery('SHOW TABLES LIKE "'.$TABLE_PREFIX.'kis_users";');
-$kis_db=mysql_fetch_array($res, MYSQL_NUM);
+$kis_db=$res->fetch_array();
 $kis_db=(bool)$kis_db[0];
-mysql_free_result($res);
+$res->free();
 
 # inits
 $_MSG=array();
@@ -57,14 +57,14 @@ $_TABS[]=array('ktab=help', $language['KHEZ_HELP']);
 if ($kisfig && $kisfig['kis_enabled']) {
 	switch ($_GET['ktab']) {
 		case 'help':
-			include $USER_PATH.'/kis/ucp.help.php';
+			include $USER_PATH.'usercp.kis.help.php';
 			break;
 		case 'invite':
-			include $USER_PATH.'/kis/ucp.invite.php';
+			include $USER_PATH.'usercp.kis.invite.php';
 			break;
 		case 'view':
 		default:
-			include $USER_PATH.'/kis/ucp.view.php';
+			include $USER_PATH.'usercp.kis.view.php';
 			break;
 	}
 } else {

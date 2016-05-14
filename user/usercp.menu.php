@@ -43,6 +43,8 @@ $usercp_menu=array(
             "title"=>$language["UCP_KHEZ"],
             'menu'=>array(
             # ==Khez==
+                0=>array('url'=>'index.php?page=usercp&amp;do=kis&amp;action=read&amp;uid='.$uid,
+                      'description'=>$language['UCP_KIS'])
                 )))
         ),
     1=>array(
