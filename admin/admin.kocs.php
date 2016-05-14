@@ -66,17 +66,17 @@ if ($kocs_db) {
 if ($goodKey) {
 	switch ($_GET['ktab']) {
 		case 'help':
-			include $ADMIN_PATH.'admin.kocs.help.php';
+			include $ADMIN_PATH.'/admin.kocs.help.php';
 			break;
 		case 'config':
-			include $ADMIN_PATH.'admin.kocs.config.php';
+			include $ADMIN_PATH.'/admin.kocs.config.php';
 			break;
 		case 'restore':
-			include $ADMIN_PATH.'admin.kocs.restore.php';
+			include $ADMIN_PATH.'/admin.kocs.restore.php';
 			break;
 		case 'backup':
 		default:
-			include $ADMIN_PATH.'admin.kocs.backup.php';
+			include $ADMIN_PATH.'/admin.kocs.backup.php';
 			break;
 	}
 } else {

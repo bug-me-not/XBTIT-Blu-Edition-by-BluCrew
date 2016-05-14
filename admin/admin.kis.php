@@ -27,12 +27,12 @@ if (!defined('IN_ACP'))
 
 # KHEZ
 require load_language('lang_khez.php');
-require 'include/khez.php';
+require $THIS_BASEPATH.'/include/khez.php';
 # KIS
 if (!isset($kisfig)) {
 	$kisfig=get_khez_config('SELECT `key`,`value` FROM `'.$TABLE_PREFIX.'khez_configs` WHERE `key` LIKE "kis_%" LIMIT 7;', 0);
 	require load_language('lang_kis.php');
-	require 'include/kis.php';
+	require $THIS_BASEPATH.'/include/kis.php';
 }
 
 # test database
@@ -62,23 +62,23 @@ $_TABS[]=array('ktab=help', $language['KHEZ_FAQ']);
 if ($kis_db) {
 	switch ($_GET['ktab']) {
 		case 'help':
-			require $ADMIN_PATH.'admin.kis.help.php';
+			require $ADMIN_PATH.'/admin.kis.help.php';
 			break;
 		case 'award':
-			require $ADMIN_PATH.'admin.kis.award.php';
+			require $ADMIN_PATH.'/admin.kis.award.php';
 			break;
 		case 'users':
-			require $ADMIN_PATH.'admin.kis.users.php';
+			require $ADMIN_PATH.'/admin.kis.users.php';
 			break;
 		case 'invites':
-			require $ADMIN_PATH.'admin.kis.invites.php';
+			require $ADMIN_PATH.'/admin.kis.invites.php';
 			break;
 		case 'stats':
-			require $ADMIN_PATH.'admin.kis.stats.php';
+			require $ADMIN_PATH.'/admin.kis.stats.php';
 			break;
 		case 'config':
 		default:
-			require $ADMIN_PATH.'admin.kis.config.php';
+			require $ADMIN_PATH.'/admin.kis.config.php';
 			break;
 	}
 } # if db

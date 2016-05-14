@@ -20,7 +20,9 @@
 ##############################################################################
 
 # direct access
-if (!defined('IN_BTIT'))
+if(!defined("IN_BTIT"))
+    die("non direct access!");
+if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
 $kisTabTemplate='admin.kis.help.tpl';

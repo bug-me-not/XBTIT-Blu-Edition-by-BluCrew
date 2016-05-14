@@ -39,14 +39,7 @@ $usercp_menu=array(
         "menu"=>array(0=>array(
             "url"=>"index.php?page=usercp&amp;uid=".$uid."" ,
             "description"=>$language["MNU_UCP_HOME"]),
-        1=>array(
-            "title"=>$language["UCP_KHEZ"],
-            'menu'=>array(
-            # ==Khez==
-                0=>array('url'=>'index.php?page=usercp&amp;do=kis&amp;action=read&amp;uid='.$uid,
-                      'description'=>$language['UCP_KIS'])
-                )))
-        ),
+        )),
     1=>array(
         "title"=>$language["MNU_UCP_PM"],
         "menu"=>array(0=>array(
@@ -72,26 +65,32 @@ $usercp_menu=array(
             "url"=>"index.php?page=usercp&amp;do=pid_c&amp;action=change&amp;uid=".$uid."" ,
             "description"=>$language["CHANGE_PID"]), 
         )),
+    3=>array(
+             # ==Khez==
+        "title"=>$language["UCP_KHEZ"],
+        'menu'=>array(0=>array('url'=>'index.php?page=usercp&amp;do=kis&amp;action=read&amp;uid='.$uid,
+          'description'=>$language['UCP_KIS'])
+        ))
     );
 
 if($btit_settings["fmhack_avatar_signature_sync"]=="enabled"){
-	$usercp_menu[3]["title"]=$language["SIG_EX"];
-    $usercp_menu[3]["menu"][1]["url"]="index.php?page=usercp&amp;uid=".$uid."&amp;do=user_extras";
-    $usercp_menu[3]["menu"][1]["description"]=$language["SIG_CP"];
+	$usercp_menu[4]["title"]=$language["SIG_EX"];
+    $usercp_menu[4]["menu"][1]["url"]="index.php?page=usercp&amp;uid=".$uid."&amp;do=user_extras";
+    $usercp_menu[4]["menu"][1]["description"]=$language["SIG_CP"];
 }
 if($btit_settings["fmhack_social_network"]=="enabled")
 {
-    $usercp_menu[3]["menu"][2]["url"]="index.php?page=friendlist&amp;uid=".$uid;
-    $usercp_menu[3]["menu"][2]["description"]=$language["FL_FRIENDLIST"];
+    $usercp_menu[4]["menu"][2]["url"]="index.php?page=friendlist&amp;uid=".$uid;
+    $usercp_menu[4]["menu"][2]["description"]=$language["FL_FRIENDLIST"];
 }
 if($btit_settings["fmhack_invitation_system"]=="enabled")
 {
-    $usercp_menu[3]["menu"][3]["url"]="index.php?page=usercp&amp;do=invite&amp;action=read&amp;uid=".$uid;
-    $usercp_menu[3]["menu"][3]["description"]=$language["MNU_UCP_INVITATIONS"];
+    $usercp_menu[4]["menu"][3]["url"]="index.php?page=usercp&amp;do=invite&amp;action=read&amp;uid=".$uid;
+    $usercp_menu[4]["menu"][3]["description"]=$language["MNU_UCP_INVITATIONS"];
 }
 if($btit_settings["fmhack_avatar_upload"]=="enabled")
 {
-    $usercp_menu[3]["menu"][4]["url"]="index.php?page=usercp&amp;do=avatar&amp;action=read&amp;uid=".$uid;
-    $usercp_menu[3]["menu"][4]["description"]=$language["MNU_UCP_AVATAR"];
+    $usercp_menu[4]["menu"][4]["url"]="index.php?page=usercp&amp;do=avatar&amp;action=read&amp;uid=".$uid;
+    $usercp_menu[4]["menu"][4]["description"]=$language["MNU_UCP_AVATAR"];
 }
 ?>
