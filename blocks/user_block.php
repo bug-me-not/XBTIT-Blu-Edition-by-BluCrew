@@ -1,24 +1,24 @@
 <div class="panel panel-primary">
-    <div class="panel-heading">
-        <h4 class="text-center">User Info</h4>
-    </div>           
+<div class="panel-heading">
+<h4 class="text-center">User Info</h4>
+</div>           
 
-    <?php
+<?php
 /////////////////////////////////////////////////////////////////////////////////////
 // 
-//
+//  User Info Block by BluCrew
 //
 ////////////////////////////////////////////////////////////////////////////////////
 
-    global $CURUSER, $user, $USERLANG, $FORUMLINK, $db_prefix, $btit_settings, $ipb_prefix;
+global $CURUSER, $user, $USERLANG, $FORUMLINK, $db_prefix, $btit_settings, $ipb_prefix, $kisfig;
 
-    require_once(load_language("lang_account.php"));
+require_once(load_language("lang_account.php"));
 
-    block_begin("".BLOCK_USER."");
+block_begin("".BLOCK_USER."");
 
-    if (!$CURUSER || $CURUSER["id"]==1)
+if (!$CURUSER || $CURUSER["id"]==1)
     {
-            // guest-anonymous, login require
+        // guest-anonymous, login require
         ?>
         <form action="index.php?page=login" name="login" method="post">
             <table class="lista" border="0" align="center" width="100%">
@@ -32,7 +32,7 @@
     }
     else
     {
-             // user information
+    // user information
      $style=style_list();
      $langue=language_list();
 
@@ -63,6 +63,8 @@
 
      if($btit_settings["fmhack_uploader_medals"]=="enabled")
      {
+    // user information END
+      
     // DT Uploader Medals
         if ($CURUSER["up_med"] >= $btit_settings["UPB"])
             $up_med="<tr><td align=\"center\"><center>".$language["UM_UPL_MED"].": <img src='images/goblet/medaille_bronze.gif' alt='".$language["UM_BRONZE"]."' title='".$language["UM_BRONZE"]."' /></center></tr></td>";
@@ -72,15 +74,17 @@
             $up_med="<tr><td align=\"center\"><center>".$language["UM_UPL_MED"].": <img src='images/goblet/medaille_or.gif' alt='".$language["UM_GOLD"]."' title='".$language["UM_GOLD"]."' /></center></tr></td>";
 
         print($up_med);
-    // DT Uploader Medals
     }
+    // DT Uploader Medals END
+
 //Avatar
     if ($CURUSER["avatar"] && $CURUSER["avatar"]!="")
         print("\n<tr><td align=center class=poller><center><img  width=150 max-height=250 border=0 src=".unesc($CURUSER["avatar"])." /></center></td></tr>\n");
     else
         print("\n<tr><td align=center class=poller><center><img width=150 max-height=250 border=0 src=\"$STYLEURL/images/default_avatar.gif\"></center></td></tr>\n");
-//Avatar
+//Avatar END
 
+//Warnings
     if($btit_settings["fmhack_warning_system"]=="enabled")
     {
         $stage4=$btit_settings["warn_max"];
@@ -104,6 +108,9 @@
 
         print("<tr><td align='center'>$wl</td>");
     }
+    //Warnings END
+
+    //Mail
     if(substr($FORUMLINK,0,3)=="smf")
      $resmail=get_result("SELECT `unread".(($FORUMLINK=="smf")?"M":"_m")."essages` `ur` FROM `{$db_prefix}members` WHERE ".(($FORUMLINK=="smf")?"`ID_MEMBER`":"`id_member`")."=".$CURUSER["smf_fid"],true,$btit_settings['cache_duration']);
  elseif($FORUMLINK=="ipb")
@@ -121,23 +128,28 @@
 else
  print("<tr><td align=\"center\">".$language["NO_MAIL"]."</td></tr>");
 print("<tr><td align=\"center\">");
+     //Mail END
 
-if($INVITATIONSON)
-{
-  require(load_language("lang_usercp.php"));
-  $resinvs=do_sqlquery("SELECT invitations FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER["uid"]);
-  $arrinvs=$resinvs->fetch_row();
-  $invs=$arrinvs[0];
-  print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-info\" href=\"index.php?page=usercp&do=invite&action=read&uid=".$CURUSER["uid"]."\">Invites".($invs>0?"(".$invs.")":"")."</tr></a></td>\n");
-}
+     //Invites
+if ($kisfig['kis_enabled']) {
+$rem=kisUserInfo($CURUSER['uid']);
+$rem=$rem['invites'];
+} else $rem='-';
+echo '<td style="text-align:center;" align="center"><a href="index.php?page=usercp&amp;uid='.$CURUSER['uid'].'&amp;do=kis&amp;ktab=invite&amp;action=read">'.sprintf($language['KIS_BAR'], $rem).'</a></td>'."\n";
+    //Invites END
 
+//Seedbonus
 print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus><img src=\"images/bonus.png\"> ".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
+//Seedbonus END
 
+//FL Slots
 if($btit_settings["fmhack_freeleech_slots"] == "enabled")
 {
   print("<tr><td align=\"center\"><button class='btn btn-xs btn-primary' type='button'>".$language["FLS_SLOTS"].": ".$CURUSER["freeleech_slots"]."</div></button></td>\n");
 }
+//FL SLots END
 
+// H&R Count
 if($btit_settings["fmhack_anti_hit_and_run_system"]=="enabled")
 {
   $hnr=get_result("SELECT COUNT(*) `count` FROM ".(($XBTT_USE)?"`xbt_files_users`":"`{$TABLE_PREFIX}history`")." WHERE `hit`='yes' AND `uid`=".$CURUSER["uid"], true, $btit_settings["cache_duration"]);
@@ -147,26 +159,14 @@ if($btit_settings["fmhack_anti_hit_and_run_system"]=="enabled")
 {
   print("<tr><td align=\"center\"><button class='btn btn-xs btn-danger' type='button'>".$language["HNR_ABBREVIATION"].": ".$hnr[0]["count"]."</div></button></td>\n");
 }
+//H&R Count END
 
-/*if($btit_settings["userinfo_style"]!="disabled")
-{
- print("<tr><td align=\"center\">");
- print($language["USER_STYLE"].":<br />\n<select name=\"style\" size=\"1\" onchange=\"location=document.jump.style.options[document.jump.style.selectedIndex].value\">");
- foreach($style as $a)
- {
-     print("<option ");
-     if ($a["id"]==$CURUSER["style"])
-         print("selected=\"selected\"");
-     print(" value=\"account_change.php?style=".$a["id"]."&amp;returnto=".urlencode($_SERVER['REQUEST_URI'])."\">".$a["style"]."</option>");
- }
- print("</select>");
- print("</td>\n</tr>\n");
-}*/
-
+//User Options
 print("\n<tr><td align=\"center\"><a class= \"btn btn-xs btn-default\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></td></tr>\n");
 print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></td></tr>\n");
 if ($CURUSER["admin_access"]=="yes")
     print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."\">".$language["MNU_ADMINCP"]."</a></td></tr>\n");
+//User Option END
 
 // gift
 $xmasdayst= mktime(0,0,0,11,30,date("Y"));
@@ -177,7 +177,7 @@ if ($CURUSER["gotgift"] == "no" && ($today >= $xmasdayst) && ($today <= $xmasday
 {
    print("<td class='lista' style='text-align:center;;' align='center'><a href='index.php?page=gift&open=1'><img src='images/gift.gif' alt='Xmas Gift' title='Xmas Gift' /></a></td>");
 }
-// gift
+// gift END
 
 print("</table>\n</form>");
 }
