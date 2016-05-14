@@ -2,6 +2,7 @@
 
 <center><h2>Under Contruction</h2></center>
 
+<div class="panel panel-primary">
 <table class="table table-bordered">
   <if:news_exists>
   <loop:viewnews>
@@ -39,3 +40,4 @@
     </tr>
   </if:news_exists>
 </table>
+  </div>
