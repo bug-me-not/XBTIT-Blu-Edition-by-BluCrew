@@ -174,9 +174,7 @@ function uplMod($uid, $by, $exact=false) {
 } # uplMod($uid, $by, $exact=false)
 
 function isValidMail(&$email) {
-	return preg_match('^[_+a-z0-9-]+(\.[_+a-z0-9-]+)*'.
-	             '@[a-z0-9-]+(\.[a-z0-9-]{1,})*'.
-	             '\.([a-z]{2,}){1}$',$email);
+	return filter_var($email, FILTER_VALIDATE_EMAIL);
 } # isValidMail(&$email)
 
 function sqlSlashIt($string='', $like=false, $crlf=false, $php=false) {
