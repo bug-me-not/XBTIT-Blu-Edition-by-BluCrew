@@ -625,8 +625,8 @@
 70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)}
 80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)}
 90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)}
-100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)}
-}
+100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)} }
+
 .hvr-icon-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;position:relative;padding-right:2.2em;-webkit-transition-duration:0.3s;transition-duration:0.3s}
 .hvr-icon-buzz-out:before{content:"\f023";position:absolute;right:1em;padding:0 1px;font-family:FontAwesome;-webkit-transform:translateZ(0);transform:translateZ(0)}
 .hvr-icon-buzz-out:hover:before,.hvr-icon-buzz-out:focus:before,.hvr-icon-buzz-out:active:before{-webkit-animation-name:hvr-icon-buzz-out;animation-name:hvr-icon-buzz-out;-webkit-animation-duration:0.75s;animation-duration:0.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1}
