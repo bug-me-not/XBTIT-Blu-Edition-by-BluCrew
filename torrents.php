@@ -896,7 +896,7 @@ if($count > 0)
                }
                elseif(!is_null($data["has_downloaded"]))
                {
-                  $dl = (($data["has_downloaded"]=="yes")?"<img src='images/downloaded.gif' alt='".$language["GRAB_AL_DOWN"]."' title='".$language["GRAB_AL_DOWN"]."' />":"");
+                  $dl = (($data["has_downloaded"]=="yes")?"<span class='label label-primary'>Already Downloaded</span>":"");
                }
             }
             $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data[catid]\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
@@ -1060,11 +1060,11 @@ if($count > 0)
                }
                $torrents[$i]["gold"] = '';
                if($data['gold'] == 1)
-               $torrents[$i]["gold"] = '<img title="'.$language["IS_SILVER"].' '.$silver_percentage.' '.$language["IS_ALL"].'" src="images/'.$silver_picture.'" alt="'.$language["IS_SILVER"].' '.$silver_percentage.' '.$language["IS_ALL"].'" />';
+               $torrents[$i]["gold"] = '<span class="label label-info">50% FL</span>';
                elseif($data['gold'] == 2)
-               $torrents[$i]["gold"] = '<img title="'.$language["IS_GOLD"].' '.$gold_percentage.' '.$language["IS_ALL"].'" src="images/'.$gold_picture.'" alt="'.$language["IS_GOLD"].' '.$gold_percentage.' '.$language["IS_ALL"].'" src="images/'.$gold_picture.'" />';
+               $torrents[$i]["gold"] = '<span class="label label-info">100% FL</span>';
                elseif($data['gold'] == 3)
-               $torrents[$i]["gold"] = '<img title="'.$language["IS_BRONZE"].' '.$bronze_percentage.' '.$language["IS_ALL"].'" src="images/'.$bronze_picture.'" alt="'.$language["IS_BRONZE"].' '.$bronze_percentage.' '.$language["IS_ALL"].'" />';
+               $torrents[$i]["gold"] = '<span class="label label-info">25% FL</span>';
             }
             //free leech hack
             $torrenttpl->set("free_leech_enabled", (($btit_settings["fmhack_free_leech_with_happy_hour"] == "enabled")?true:false), true);
@@ -1072,7 +1072,7 @@ if($count > 0)
             {
                $torrents[$i]["free"] = '';
                if($data['free'] == 'yes')
-               $torrents[$i]["free"] = '<img title="'.$language["FL_FREE_LEECH"].'" src="images/freeleech.gif" alt="'.$language["FL_FREE_LEECH"].'"/>';
+               $torrents[$i]["free"] = '<span class="label label-info">Global FreeLeech</span>';
             }
             // end free leech
             //waitingtime
@@ -1660,7 +1660,7 @@ if($count > 0)
                         }
                         elseif(!is_null($rtorr_results["has_downloaded"]))
                         {
-                           $dl = (($rtorr_results["has_downloaded"]=="yes")?"<img src='images/downloaded.gif' alt='".$language["GRAB_AL_DOWN"]."' title='".$language["GRAB_AL_DOWN"]."' />":"");
+                           $dl = (($rtorr_results["has_downloaded"]=="yes")?"<span class='label label-primary'>Already Downloaded</span>":"");
                         }
                      }
                      if($btit_settings["fmhack_torrent_nuked_and_requested"] == "enabled")
@@ -1693,11 +1693,11 @@ if($count > 0)
                         }
                         $tora[$i]["gold"] = '';
                         if($rtorr_results['gold'] == 1)
-                        $tora[$i]["gold"] = '<img title="'.$language["IS_SILVER"].' '.$silver_percentage.' '.$language["IS_ALL"].'" src="images/'.$silver_picture.'" alt="'.$language["IS_SILVER"].' '.$silver_percentage.' '.$language["IS_ALL"].'" />';
+                        $tora[$i]["gold"] = '<span class="label label-info">50% FL</span>';
                         elseif($rtorr_results['gold'] == 2)
-                        $tora[$i]["gold"] = '<img title="'.$language["IS_GOLD"].' '.$gold_percentage.' '.$language["IS_ALL"].'" src="images/'.$gold_picture.'" alt="'.$language["IS_GOLD"].' '.$gold_percentage.' '.$language["IS_ALL"].'" src="images/'.$gold_picture.'" />';
+                        $tora[$i]["gold"] = '<span class="label label-info">100% FL</span>';
                         elseif($rtorr_results['gold'] == 3)
-                        $tora[$i]["gold"] = '<img title="'.$language["IS_BRONZE"].' '.$bronze_percentage.' '.$language["IS_ALL"].'" src="images/'.$bronze_picture.'" alt="'.$language["IS_BRONZE"].' '.$bronze_percentage.' '.$language["IS_ALL"].'" />';
+                        $tora[$i]["gold"] = '<span class="label label-info">25% FL</span>';
                      }
                      //free leech hack
                      $torrenttpl->set("free_leech_enabled_req", (($btit_settings["fmhack_free_leech_with_happy_hour"] == "enabled")?true:false), true);
@@ -1705,7 +1705,7 @@ if($count > 0)
                      {
                         $tora[$i]["free"] = '';
                         if($rtorr_results['free'] == yes)
-                        $tora[$i]["free"] = '<img title="'.$language["FL_FREE_LEECH"].'" src="images/freeleech.gif" alt="'.$language["FL_FREE_LEECH"].'"/>';
+                        $tora[$i]["free"] = '<span class="label label-info">Global FreeLeech</span>';
                      }
                      // end free leech
 

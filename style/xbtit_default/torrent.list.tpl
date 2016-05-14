@@ -247,7 +247,7 @@ Snatched
 		  <tag:torrents[].dt />
         <tr>
           <td align="center" width="125" class="lista" style="text-align: center;<if:sticky_enabled_1><tag:torrents[].color /></if:sticky_enabled_1>">  <tag:torrents[].category />&nbsp;&nbsp;</td>
-          <td class="lista" valign="middle" style="padding-left:10px;overflow:auto;<if:sticky_enabled_2><tag:torrents[].color /></if:sticky_enabled_2>"><b style="font-size: 16px;"><tag:torrents[].filename /></b>&nbsp;
+          <td class="lista" valign="middle" style="padding-left:10px;overflow:auto;<if:sticky_enabled_2><tag:torrents[].color /></if:sticky_enabled_2>"><b style="font-size: 16px;"><tag:torrents[].filename /></b>&nbsp;&nbsp;
 
          <p>
          <b>Uploader:</b> &nbsp; <tag:torrents[].uploader />     |    <b>Release Group:</b> &nbsp;&nbsp;&nbsp; <tag:torrents[].RG />
