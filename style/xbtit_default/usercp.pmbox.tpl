@@ -30,12 +30,11 @@ function popusers(url)
  -->
 </script>
 <if:MSG_LIST>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Mailbox</h4>
+</div>
 <table class="table table-bordered">
-<if:pagert>
-   <tr>
-      <td colspan='2' align='center'><tag:pagertop /></td>
-   </tr>
-</if:pagert>
 <form action="<tag:pmbox.frm_action />" name="deleteall" method="post">
     <tr>
      <td class="header" align="center"><tag:language.READED /></td>
@@ -74,6 +73,13 @@ function popusers(url)
 </if:NO_MESSAGES>
   </table>
 </form>
+<div class="panel panel-primary">
+<if:pagert>
+<tag:pagertop />
+</if:pagert>
+</div>
+</div>
+
 </if:MSG_LIST>
 <if:MSG_EDIT>
 <form method="post" name="edit" action="<tag:pmedit.frm_action />">

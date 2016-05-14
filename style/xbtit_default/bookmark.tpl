@@ -1,3 +1,4 @@
+<div class="panel panel-primary">
 <table class="table table-bordered">
 
   <if:pagertop_visible>
@@ -46,5 +47,6 @@
   </if:pagerbottom_visible>
 
 </table>
+</div>
 
 

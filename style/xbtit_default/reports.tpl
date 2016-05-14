@@ -1,4 +1,7 @@
-<tag:pager_top />
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Reports</h4>
+</div>
 <form method="post" action="index.php?page=takedelreport">
 	<table class="table table-bordered">
 		<tr>
@@ -29,3 +32,4 @@
 	</table>
 </form>
 <tag:pager_bottom />
+</div>

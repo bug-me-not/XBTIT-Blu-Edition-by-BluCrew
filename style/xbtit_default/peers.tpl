@@ -1,9 +1,9 @@
+
 <if:speedstats_enabled>
 <div class="panel panel-primary">
 <div class="panel-heading">
 <div align="center">
 <tag:peers.filename />&nbsp;&nbsp;&nbsp;&nbsp;<tag:peers.size />
-</div>
 </div>
 </div>
 </if:speedstats_enabled>
@@ -109,7 +109,13 @@ function windowunder(link)
     <br />
     <table class="table table-bordered">
       <tr>
-        <td class='block' align='center' colspan='6'><tag:language.BAN_CLIENTS /></td>
+      <div class="panel panel-danger">
+      <div class="panel-heading">
+      <div align="center">
+      <tag:language.BAN_CLIENTS />
+      </div>
+      </div>
+      </div>
       </tr>
       <tr>
         <td align='center' class='header'><tag:language.PEER_CLIENT /></td>
@@ -163,4 +169,5 @@ function windowunder(link)
 </if:ADMIN_ACCESS>
 </if:ban_clients_enabled>
 </if:NOPEERS>
+</div>
 <tag:BACK2 />

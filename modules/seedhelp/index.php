@@ -20,7 +20,6 @@ $seedhelp = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.
 <h2>Below is a list of torrents that you have uploaded or previously downloaded that could use another seeder</h2>
 </div>
 </div>
-</div>
 <table class="table table-bordered">
 	<?php
 	if ($seedhelp && sql_num_rows($seedhelp)>0) 
@@ -53,6 +52,7 @@ $seedhelp = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.
 	}
 	?>
 </table>
+</div>
 <br /><br />
 <center><h4>Created by Spidi----Modified by BluCrew</h4></center>
 
