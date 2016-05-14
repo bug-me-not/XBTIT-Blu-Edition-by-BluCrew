@@ -1,6 +1,7 @@
 <?php
 
 //KIS
+$language['UCP_KHEZ']='Tools & Settings';
 $language['UCP_KIS']='Invites';
 //KIS
 

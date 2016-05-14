@@ -3,6 +3,8 @@
 global $CURUSER, $XBTT_USE;
 
 //KIS
+$language['ACP_KHEZ']='Hack Settings';
+$language['ACP_KOCS']='KOCS Tools';
 $language['ACP_KIS']='KIS Tools';
 //KIS
 
