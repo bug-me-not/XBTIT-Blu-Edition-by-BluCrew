@@ -102,10 +102,6 @@
         <ul class="nav navbar-nav navbar-left">
           <tag:main_dropdown />
         </ul>
-        <form action="index.php" method="get" name="torrent_search" class="navbar-form navbar-right">
-          <input type="hidden" name="page" value="torrents">
-          <input onfocus="if (this.value == 'Torrents') this.value='';" onblur="if(this.value == '') this.value='Torrents';" type="text" name="search" class="search" size="30" maxlength="50" value="Torrents">
-        </form>
       </nav>
     </div>
 
