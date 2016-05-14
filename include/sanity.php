@@ -36,7 +36,7 @@ function do_sanity($ts = 0)
         @ini_set("max_execution_time", 300);
     if(trim(@ini_get("memory_limit"), "M") < 128)
         @ini_set("memory_limit", "128M");
-    global $BASEURL, $PRIVATE_ANNOUNCE, $TORRENTSDIR, $CAPTCHA_FOLDER, $CURRENTPATH, $LIVESTATS, $LOG_HISTORY, $TABLE_PREFIX, $btit_settings, $clean_interval, $XBTT_USE, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $INV_EXPIRES, $ipb_prefix, $SITENAME, $reload_cfg_interval;
+    global $BASEURL, $PRIVATE_ANNOUNCE, $TORRENTSDIR, $CAPTCHA_FOLDER, $CURRENTPATH, $LIVESTATS, $LOG_HISTORY, $TABLE_PREFIX, $btit_settings, $clean_interval, $XBTT_USE, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $INV_EXPIRES, $ipb_prefix, $SITENAME, $reload_cfg_interval, $kisfig;
     if(!isset($THIS_BASEPATH) || empty($THIS_BASEPATH))
     {
         $THIS_BASEPATH = str_replace(array("/include", "\\include"), "", dirname(__FILE__));
@@ -2052,6 +2052,43 @@ if($btit_settings["fmhack_download_requires_introduction"]=="enabled")
 require dirname(__FILE__).'/khez.php';
 quickQuery('OPTIMIZE TABLE `'.$TABLE_PREFIX.'khez_configs`;');
       # hacks can start here ==Khez==
+
+# get config vars
+if (!isset($kisfig)) 
+{
+    $kisfig=get_khez_config('SELECT `key`,`value` FROM `'.$TABLE_PREFIX.'khez_configs` WHERE `key` LIKE "kis_%" LIMIT 7;', $reload_cfg_interval);
+    require load_language('lang_kis.php');
+    require dirname(__FILE__).'/kis.php';
+}
+if ($kisfig['kis_enabled'] && $kisfig['kis_invExpireAmmount']!=0) 
+{
+    # remove old invites
+    $last=getTime(-$kisfig['kis_invExpireAmmount'], $kisfig['kis_invExpireType']);
+    $old=get_result('SELECT uid FROM `'.$TABLE_PREFIX.'kis_sent` WHERE `time`<'.$last.' AND used=0;');
+    # inits
+    if (isset($old[0])) 
+    {
+        $i=0;
+        $j=0;
+        $users=array();
+        $subject=sqlesc($language['KIS_SANITY_TITLE']);
+        $msg=sqlesc($language['KIS_SANITY_BODY']);
+        foreach ($old as $invite) 
+        {
+            $i++;
+            $users[$invite['uid']]++;
+        }
+        foreach ($users as $uid => $invites) 
+        {
+            $j++;
+            kisMod($uid, $invites);
+            send_pm(0,$uid,$subject,$msg);
+        }
+        quickQuery('DELETE FROM `'.$TABLE_PREFIX.'kis_sent` WHERE `time`<'.$last.' AND used=0;');
+        if ($kisfig['kis_logs'])
+            write_log('[KIS] Sanity cleaned '.$i.' old invites from '.$j.' users.','delete');
+    }
+}
 
     // OK We're finished, let's reset max_execution_time and memory_limit back to the php.ini defaults
 @ini_restore("max_execution_time");
