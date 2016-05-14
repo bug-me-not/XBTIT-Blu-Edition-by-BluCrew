@@ -156,12 +156,40 @@ $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHE
 $comp_count = sql_num_rows($res_com);
 print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td>&nbsp;&nbsp;&nbsp;");
 //END Snatched torrents
-print "<br />";
+
 //Stats
 print("<spam style=\"text-align:right; color: #00C900\" align=\"center\">&uarr;&nbsp;".makesize($CURUSER['uploaded']));
 print("</span><span style=\"text-align:center; color: #bd362f;\" align=\"left\">&nbsp;&darr;&nbsp;".makesize($CURUSER['downloaded']));
 print("</span><span style=\"text-align:left; color: #636311;\" align=\"left\">&nbsp;(SR ".($CURUSER['downloaded']>0?number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2):"---").")</span> \n");
 //END Stats    
+
+print "<br />";
+
+//FreeLeech w/ Happy Hour
+  if($btit_settings["fmhack_free_leech_with_happy_hour"]=="enabled")
+   {
+      $query = get_result("SELECT free, happy_hour, happy, UNIX_TIMESTAMP(`free_expire_date`) AS `timestamp` FROM `{$TABLE_PREFIX}files` WHERE `external`='no' LIMIT 1",true,$btit_settings["cache_interval"]);
+      $row = $query[0];
+      if(($row["free"]=="no" AND $row["happy_hour"] =="no") || (@sql_num_rows($query)==0))
+      {
+         $freec="red";
+         $till='';
+         $col=$language['FL_FREE_LEECH'];
+         $post=' '.$language['FL_NOT_TODAY'];
+         $img='';
+      }
+     
+      if($row["free"]=="yes")
+      {
+         $freec="green";
+         $till=' '.$language['FL_TO'].' ';
+         $col=$language['FL_FREE_LEECH'];
+         $post=date("l F jS Y \a\\t g:i a",$row["timestamp"]);
+         $img='';
+      }
+      print("<span style=\"text-align:center\";><font color='$freec'>".$col."".$till."".ucfirst($post)."</font>".(($img!="")?"&nbsp;&nbsp;&nbsp;".$img:"")."</span>\n");
+   }
+//FreeLeech w/ Happy Hour
 
 print "</tr>";
 
