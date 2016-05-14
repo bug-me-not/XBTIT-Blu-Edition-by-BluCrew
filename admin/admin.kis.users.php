@@ -23,7 +23,7 @@
 if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/acp.users.tpl';
+$kisTabTemplate='admin.kis.users.tpl';
 # inits
 $form=false;
 # code

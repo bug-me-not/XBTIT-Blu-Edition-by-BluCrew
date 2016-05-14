@@ -23,7 +23,7 @@
 if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/acp.invites.tpl';
+$kisTabTemplate='admin.kis.invites.tpl';
 # code
 switch ($action) {
 	# delete

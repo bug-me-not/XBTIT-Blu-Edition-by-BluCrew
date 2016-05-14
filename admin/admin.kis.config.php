@@ -23,7 +23,7 @@
 if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/acp.config.tpl';
+$kisTabTemplate='admin.kis.config.tpl';
 # code
 switch ($action) {
 	# save/uninstall config

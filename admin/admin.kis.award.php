@@ -23,7 +23,7 @@
 if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/acp.award.tpl';
+$kisTabTemplate='admin.kis.award.tpl';
 # inits
 $msg=isset($_POST['msg'])?$_POST['msg']:'';
 $subject=isset($_POST['subject'])?$_POST['subject']:'';

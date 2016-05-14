@@ -23,7 +23,7 @@
 if (!defined('IN_ACP'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/acp.stats.tpl';
+$kisTabTemplate='admin.kis.stats.tpl';
 # cache results if we don't force
 $cache=($_GET['force']==1)?1:$CACHE_DURATION;
 # inits
