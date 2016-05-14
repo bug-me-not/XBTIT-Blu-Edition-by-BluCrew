@@ -107,15 +107,15 @@ switch ($_GET['action']) {
 				$row=array();
 				$row['TIME']=date('Y.m.d H:i:s', $invite['time']);
 				if ($invite['used']==0) {
-					$row['TOKEN']='<input type="text" value="'.$invite['token'].'" />';
+					$row['TOKEN']='<input type="text" class="form-control" value="'.$invite['token'].'" />';
 					$row['EMAIL']=$invite['email'];
 					$row['STATUS']=$language['KIS_PENDING'];
-					$row['ACTION']='<a href="'.$script.'ktab=view&amp;action=delete&amp;email='.$invite['email'].'"><img src="'.load_css('images/delete.png').'" border="0" /></a>';
+					$row['ACTION']='<a href="'.$script.'ktab=view&amp;action=delete&amp;email='.$invite['email'].'"><button class="btn btn-danger btn-circle" type="button"><i class="fa fa-times"></i></button></a>';
 				} else {
 					$row['TOKEN']='-';
 					$row['EMAIL']='['.getName($invite['used']).'] '.$invite['email'];
 					$row['STATUS']=$language['KIS_REGISTERED'];
-					$row['ACTION']='<a href="'.$BASEURL.'/index.php?page=userdetails&amp;id='.$invite['used'].'"><img src="'.load_css('images/account.png').'" border="0" /></a>';
+					$row['ACTION']='<a href="'.$BASEURL.'/index.php?page=userdetails&amp;id='.$invite['used'].'"><button class="btn btn-primary btn-circle" type="button"><i class="fa fa-user"></i></button></a>';
 				}
 				$invites[]=$row;
 			}

@@ -1,19 +1,28 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Invite Tools</h4>
+</div>
 <if:usetabs>
-<div class="ktabs">
 	<loop:tabs>
-	<span class="ktab"><a href="<tag:script /><tag:tabs[].0 />"><span class="kbutton"><tag:tabs[].1 /></span></a></span>
+	<a href="<tag:script /><tag:tabs[].0 />"><button class='btn btn-sm btn-primary' type='button'><tag:tabs[].1 /></button></a>
 	</loop:tabs>
 </div>
 </if:usetabs>
+<br>
 <if:usemsg>
 <span class="kMessage">
 	<loop:msgs>
-	<div class="k<tag:msgs[].0 />"><tag:msgs[].1 /></div>
+	<div class="alert alert-danger" role="alert" ng-show="error"><tag:msgs[].1 /></div>
 	</loop:msgs>
 </span>
 </if:usemsg>
+<br>
 <if:doinvites>
-<table class="lista">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
+<table class="table table-bordered"> 
 <tr align="center">
 	<td class="header"><tag:kis.EMAIL /></td>
 	<td class="header" width="45px"><tag:kis.STATUS /></td>
@@ -37,3 +46,4 @@
 </if:dopager>
 </table>
 </if:doinvites>
+</div>
