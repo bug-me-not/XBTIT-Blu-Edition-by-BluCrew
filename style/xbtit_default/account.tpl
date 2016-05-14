@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.WELCOME_INVITE /></h4>
+</div>  
 
 <!-- ### Password strength javascript ### -->
 
@@ -111,21 +115,15 @@ function form_control()
   <input type="hidden" name="flag" value="<tag:account_IDcountry />" />
   <input type="hidden" name="username" value="<tag:account_username />"/>
   <table width="60%" border="0" class="lista">
-  <if:BY_INVITATION>
-  <input type="hidden" name="code" value="<tag:account_IDcode />" />
-  <input type="hidden" name="inviter" value="<tag:account_IDinviter />" />
-	<tr>
-	  <td class="lista" colspan="2"><div style="text-align:center; padding:10px;"><tag:language.WELCOME_INVITE /></div></td>
-	</tr>
-  </if:BY_INVITATION>
-  
+
+<table class="table table-bordered"> 
     <tr>
        <td align="left" class="header"><tag:language.USER_NAME />:</td>
        <td align="left" class="lista">
        <if:DEL>
-         <input type="text" size="40" name="user" id="user" value="<tag:dati.username />" "readonly" />
+         <input type="text" size="40" name="user" id="user" class="form-control" value="<tag:dati.username />" "readonly" />
        <else:DEL>
-         <input type="text" size="40" name="user" id="user" value="<tag:dati.username />" />
+         <input type="text" size="40" name="user" id="user" class="form-control"  value="<tag:dati.username />" />
        </if:DEL>
        </td>
     </tr>
@@ -140,7 +138,7 @@ function form_control()
          <if:pass_uct_set><li><tag:language.SECSUI_ACC_PWD_4 /> <span style="color:blue;font-weight:bold;"><tag:pass_min_uct /></span> <if:pass_uct_plural><tag:language.SECSUI_ACC_PWD_6A /><else:pass_uct_plural><tag:language.SECSUI_ACC_PWD_6 /></if:pass_uct_plural></li></if:pass_uct_set>
          <if:pass_num_set><li><tag:language.SECSUI_ACC_PWD_4 /> <span style="color:blue;font-weight:bold;"><tag:pass_min_num /></span> <if:pass_num_plural><tag:language.SECSUI_ACC_PWD_7A /><else:pass_num_plural><tag:language.SECSUI_ACC_PWD_7 /></if:pass_num_plural></li></if:pass_num_set>
          <if:pass_sym_set><li><tag:language.SECSUI_ACC_PWD_4 /> <span style="color:blue;font-weight:bold;"><tag:pass_min_sym /></span> <if:pass_sym_plural><tag:language.SECSUI_ACC_PWD_8A /><else:pass_sym_plural><tag:language.SECSUI_ACC_PWD_8 /></if:pass_sym_plural></li></if:pass_sym_set>
-         <input type="password" size="40" id="want_password" name="pwd" 
+         <input type="password" size="40" class="form-control"  id="want_password" name="pwd" 
            onkeyup="EvalPwdStrength(document.forms[0],this.value);"/><br /> <!-- The textbox itself onkeyup-->
 
        
@@ -176,21 +174,21 @@ function form_control()
 
     <tr>
        <td align="left" class="header"><tag:language.USER_PWD_AGAIN />:</td>
-       <td align="left" class="lista"><input type="password" size="40" id="check_password" name="pwd1" /></td>
+       <td align="left" class="lista"><input type="password" size="40" class="form-control"  id="check_password" name="pwd1" /></td>
     </tr>
     <tr>
        <td align="left" class="header"><tag:language.USER_EMAIL />:</td>
-       <td align="left" class="lista"><input type="text" size="30" name="email" id="email" value="<tag:dati.email />"/></td>
+       <td align="left" class="lista"><input type="text" size="30" name="email" class="form-control"  id="email" value="<tag:dati.email />"/></td>
     </tr>
     <tr>
        <td align="left" class="header"><tag:language.USER_EMAIL_AGAIN />:</td>
-       <td align="left" class="lista"><input type="text" size="30" name="email_again" id="email_again" autocomplete="off" value="<tag:dati.email />"/></td>
+       <td align="left" class="lista"><input type="text" size="30" name="email_again" class="form-control"  id="email_again" autocomplete="off" value="<tag:dati.email />"/></td>
     </tr>
 
     <if:birthdays_enabled>
     <tr>
        <td align="left" class="header"><tag:language.DOB />:</td>
-       <td align="left" class="lista"><input type="text" size="2" name="dobday" maxlength="2" value=""/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="2" name="dobmonth" maxlength="2" value=""/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="4" name="dobyear" maxlength="4" value=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.DOB_FORMAT /></td>
+       <td align="left" class="lista"><input type="text" size="2" name="dobday" class="form-control" maxlength="2" value=""/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="2" name="dobmonth" class="form-control" maxlength="2" value=""/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="4" name="dobyear" class="form-control"  maxlength="4" value=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.DOB_FORMAT /></td>
     </tr>
     </if:birthdays_enabled>
     
@@ -223,21 +221,22 @@ function form_control()
        <if:kis>
           <tr>
        <td align="left" class="header"><tag:language.KIS_TOKEN />:</td>
-       <td align="left" class="lista"><input type="text" name="token" maxlength="40" size="40" value="<tag:kistoken />" /></td>
+       <td align="left" class="lista"><input type="text" name="token" maxlength="40" size="40" class="form-control" value="<tag:kistoken />" /></td>
          </tr>
        </if:kis>
     </tr>
     <if:CAPTCHA>
     <tr>
        <td align="left" class="header"><tag:language.IMAGE_CODE />:</td>
-       <td align="left" class="lista"><input type="text" name="private_key" maxlength="6" size="6" value="" />&nbsp;&nbsp;<tag:account_captcha /></td>
+       <td align="left" class="lista"><input type="text" name="private_key" maxlength="6" class="form-control" size="6" value="" />&nbsp;&nbsp;<tag:account_captcha /></td>
     </tr>
     <else:CAPTCHA>
     <tr>
        <td align="left" class="header"><tag:language.SECURITY_CODE />:</td>
-       <td align="left" class="lista"><tag:scode_question /><input type="text" name="scode_answer" maxlength="6" size="6" value="" /></td>
+       <td align="left" class="lista"><tag:scode_question /><input type="text" name="scode_answer" class="form-control" maxlength="6" size="6" value="" /></td>
     </tr>
     </if:CAPTCHA>
+    </table>
     <tr>
        <td align="center" class="header" colspan="2">
               <!-- input/button for confirm or delete -->
@@ -247,3 +246,4 @@ function form_control()
   </if:DISPLAY_FULL>
   </table>
 </form>
+</div>

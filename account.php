@@ -445,15 +445,15 @@ if($_POST["conferma"])
             $tpl_account->set("BY_INVITATION", false, true);
     //end invitation system
         if($action == "del")
-            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
+            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" class=\"btn btn-sucess btn-md\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
                 $language["FRM_CANCEL"]."\" />");
         else
-            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"conferma\" value=\"".$language["FRM_CONFIRM"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" name=\"annulla\" value=\"".
+            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" class=\"btn btn-success btn-md\" name=\"conferma\" value=\"".$language["FRM_CONFIRM"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" class=\"btn btn-danger btn-md\" name=\"annulla\" value=\"".
                 $language["FRM_CANCEL"]."\" />");
         if($btit_settings["createacc_language"] != "disabled")
         {
             $lres = language_list();
-            $option = "\n<select name=\"language\" size=\"1\">";
+            $option = "\n<select name=\"language\" class=\"form-control\" size=\"1\">";
             foreach($lres as $langue)
             {
                 $option .= "\n<option ";
@@ -467,7 +467,7 @@ if($_POST["conferma"])
         if($btit_settings["createacc_style"] != "disabled")
         {
             $sres = style_list();
-            $option = "\n<select name=\"style\" size=\"1\">";
+            $option = "\n<select name=\"style\" class=\"form-control\" size=\"1\">";
             foreach($sres as $style)
             {
                 $option .= "\n<option ";
@@ -479,7 +479,7 @@ if($_POST["conferma"])
             $tpl_account->set("account_combo_style", $option);
         }
         $fres = flag_list();
-        $option = "\n<select name=\"flag\" size=\"1\">\n<option value='0'>---</option>";
+        $option = "\n<select name=\"flag\" class=\"form-control\" size=\"1\">\n<option value='0'>---</option>";
         $thisip = $_SERVER["REMOTE_ADDR"];
         $remotedns = gethostbyaddr($thisip);
         if($remotedns != $thisip)
@@ -512,7 +512,7 @@ if($_POST["conferma"])
         if(!$CURUSER || $CURUSER["uid"] == 1)
             $dati["time_offset"] = $timeoff;
         $tres = timezone_list();
-        $option = "<select name=\"timezone\">";
+        $option = "<select name=\"timezone\" class=\"form-control\">";
         foreach($tres as $timezone)
         {
             $option .= "\n<option ";
