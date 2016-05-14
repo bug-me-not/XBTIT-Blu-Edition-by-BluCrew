@@ -37,27 +37,25 @@ $reload_cfg_interval=60;
 
 function get_khez_config($qrystr, $cachetime=-1)
 {
-    $cache_dir=realpath(dirname(__FILE__).'/..').'/cache/';
-    $cache_ext='.txt';
-    $cache_file=$cache_dir.md5($qrystr).$cache_ext;
+    $cache_file=realpath(dirname(__FILE__).'/..').'/cache/'.md5($qrystr).'.txt';
 
-    if ($cachetime>-1)
+    if ($cachetime>0)
     {
         if (file_exists($cache_file) && (time()-$cachetime) < filemtime($cache_file))
             return unserialize(file_get_contents($cache_file));
     }
 
-    $mr=do_sqlquery($qrystr) or die($signon->error);
-    while ($mz=$mr->fetch_assoc())
+    $mr=do_sqlquery($qrystr) or die(sql_error());
+    while ($mz=$mr->fetch_assoc()) 
     {
         if ($mz['value']=='true')
-            $return[$mz['key']]= true;
+            $return[$mz['key']] = true;
         elseif ($mz['value']=='false')
-            $return[$mz['key']]= false;
+            $return[$mz['key']] = false;
         elseif (is_numeric($mz["value"]))
-            $return[$mz['key']]= max(0,$mz['value']);
+            $return[$mz['key']] = max(0,$mz['value']);
         else
-            $return[$mz['key']]= StripSlashes($mz['value']);
+            $return[$mz['key']] = StripSlashes($mz['value']);
     }
     unset($mz);
     $mr->free();
@@ -72,15 +70,17 @@ function get_khez_config($qrystr, $cachetime=-1)
 }
 
 
-function get_cached_config($qrystr, $cachetime=0) {
+function get_cached_config($qrystr, $cachetime=0) 
+{
   global $dbhost, $dbuser, $dbpass, $database, $num_queries, $cached_querys, $mySecret;
   $cache_file=realpath(dirname(__FILE__).'/..').'/cache/'.md5($qrystr." -- ".$mySecret).'.txt';
   $num_queries++;
   if ($cachetime>0)
-    if (file_exists($cache_file) && (time()-$cachetime) < filemtime($cache_file)) {
-          $cached_querys++;
+    if (file_exists($cache_file) && (time()-$cachetime) < filemtime($cache_file)) 
+    {
+      $cached_querys++;
       return unserialize(file_get_contents($cache_file));
-        }
+  }
 
   $configDB = new mysqli($dbhost, $dbuser, $dbpass,$database) or die($configDB->connect_error);
 
@@ -88,29 +88,30 @@ function get_cached_config($qrystr, $cachetime=0) {
   while ($mz=$mr->fetch_assoc()) {
     if ($mz['value']=='true')
       $return[$mz['key']]= true;
-    elseif ($mz['value']=='false')
+  elseif ($mz['value']=='false')
       $return[$mz['key']]= false;
-    elseif (is_numeric($mz['value']))
+  elseif (is_numeric($mz['value']))
       $return[$mz['key']]= max(0,$mz['value']);
-    else
+  else
       $return[$mz['key']]= StripSlashes($mz['value']);
-  }
+}
 
-  unset($mz);
-  $mr->free();
-  $configDB->close();
+unset($mz);
+$mr->free();
+$configDB->close();
 
-  if ($cachetime>0) {
+if ($cachetime>0) {
     $fp=fopen($cache_file,'w');
     fputs($fp,serialize($return));
     fclose($fp);
-  }
-  return $return;
+}
+return $return;
 }
 
 
 // default settings
-function apply_default_settings() {
+function apply_default_settings() 
+{
     global $btit_settings;
     if (!array_key_exists('max_announce',$btit_settings)) $btit_settings['max_announce']=1800;
     if (!array_key_exists('min_announce',$btit_settings)) $btit_settings['min_announce']=300;
@@ -242,7 +243,7 @@ $TRACKER_ANNOUNCE_URL=array();
 $TRACKER_ANNOUNCEURLS=array();
 $TRACKER_ANNOUNCE_URL=unserialize($btit_settings['announce']);
 for($i=0,$count=count($TRACKER_ANNOUNCE_URL); $i<$count; $i++)
-  {
+{
   if (trim($TRACKER_ANNOUNCE_URL[$i])!='')
      $TRACKER_ANNOUNCEURLS[]=trim($TRACKER_ANNOUNCE_URL[$i]);
 }

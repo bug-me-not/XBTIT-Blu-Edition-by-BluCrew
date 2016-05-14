@@ -36,7 +36,7 @@ function do_sanity($ts = 0)
         @ini_set("max_execution_time", 300);
     if(trim(@ini_get("memory_limit"), "M") < 128)
         @ini_set("memory_limit", "128M");
-    global $BASEURL, $PRIVATE_ANNOUNCE, $TORRENTSDIR, $CAPTCHA_FOLDER, $CURRENTPATH, $LIVESTATS, $LOG_HISTORY, $TABLE_PREFIX, $btit_settings, $clean_interval, $XBTT_USE, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $INV_EXPIRES, $ipb_prefix, $SITENAME;
+    global $BASEURL, $PRIVATE_ANNOUNCE, $TORRENTSDIR, $CAPTCHA_FOLDER, $CURRENTPATH, $LIVESTATS, $LOG_HISTORY, $TABLE_PREFIX, $btit_settings, $clean_interval, $XBTT_USE, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $INV_EXPIRES, $ipb_prefix, $SITENAME, $reload_cfg_interval;
     if(!isset($THIS_BASEPATH) || empty($THIS_BASEPATH))
     {
         $THIS_BASEPATH = str_replace(array("/include", "\\include"), "", dirname(__FILE__));
@@ -258,43 +258,6 @@ function do_sanity($ts = 0)
             $archive_bonus = 0;
         if($btit_settings["sb_max_ph_enable"] == "true")
             $max_allowed_points = number_format(($elapsed_time / 3600) * $btit_settings["bonus_max_per_hour"], 6, ".", "");
-        if($btit_settings["fmhack_shoutcast_stats_and_DJ_application"] == "enabled" && $btit_settings["sb_radio_enable"] == "true" && $btit_settings["bonus_listen2radio"] > 0)
-        {
-            $radio_bonus = number_format(($elapsed_time / 3600) * $btit_settings["bonus_listen2radio"], 6, ".", "");
-            include_once ($THIS_BASEPATH."/radiostats/shoutcast.class.php");
-            $listen = new ShoutCast();
-            $listen->host = $btit_settings["radio_ip"];
-            $listen->port = $btit_settings["radio_port"];
-            $listen->passwd = $btit_settings["radio_pass"];
-            if($listen->openstats())
-            {
-                // We got the XML, gogogo!..
-                if($listen->GetStreamStatus())
-                {
-                    $hostname = $listen->GetListeners();
-                    $j = 0;
-                    $list = array();
-                    if(is_array($hostname))
-                    {
-                        $listening = "";
-                        for($i = 0; $i < sizeof($hostname); $i++)
-                        {
-                            $ip = $hostname[$i]["hostname"];
-                            $client = $hostname[$i]["useragent"];
-                            $damn = do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}users` WHERE `cip`='".$ip."' AND `id`>1 ORDER BY `lastconnect` DESC LIMIT 1");
-                            if(@sql_num_rows($damn) > 0)
-                            {
-                                $gimme = $damn->fetch_assoc();
-                                $listening .= $gimme["id"].",";
-                            }
-                        }
-                        $listening = trim($listening, ",");
-                        if($listening != "")
-                            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `seedbonus`=`seedbonus`+".$radio_bonus." WHERE `id` IN(".$listening.")");
-                    }
-                }
-            }
-        }
         if($btit_settings["forpost_enable"] == "true" && substr($FORUMLINK, 0, 3) == "smf")
         {
             $petr1 = do_sqlquery("SELECT `u`.`id`, `u`.`smf_postcount`, `u`.`seedbonus`, `m`.`posts` FROM `{$TABLE_PREFIX}users` `u` LEFT JOIN `{$db_prefix}members` `m` ON `u`.`smf_fid`=`m`.".(($FORUMLINK ==
@@ -1179,7 +1142,8 @@ function do_sanity($ts = 0)
     }
     // warn-ban system with acp by DT
     //Auto Seedbox Start
-    if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled"){
+    if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
+    {
       do_sqlquery("UPDATE {$TABLE_PREFIX}files SET `seedbox`='0' ");
 
       $query = do_sqlquery("select ip FROM {$TABLE_PREFIX}seedboxip");
@@ -2084,6 +2048,10 @@ if($btit_settings["fmhack_download_requires_introduction"]=="enabled")
         }
     }
 }
+
+require dirname(__FILE__).'/khez.php';
+quickQuery('OPTIMIZE TABLE `'.$TABLE_PREFIX.'khez_configs`;');
+      # hacks can start here ==Khez==
 
     // OK We're finished, let's reset max_execution_time and memory_limit back to the php.ini defaults
 @ini_restore("max_execution_time");
