@@ -50,7 +50,7 @@ $alert='
 
 <!-- annoucement end #'.$arr[id].'-->
 
-<span id="new_ann" style="background-color:#231708;visibility: visible"><table border=0 cellspacing=0 cellpadding=10 bgcolor=red width=100% align=center><tr><td style=\'padding: 10px; background: red\' align=\'center\'>
+<span id="new_ann" style="background-color:#231708;visibility: visible"><table border=0 cellspacing=0 cellpadding=10 bgcolor=red width=100% align=center><tr><td style=\'padding: 10px; background: #E64141\' align=\'center\'>
 
 <b><a href="javascript:show_announcement()"><font color=white>'.$language['NEW_ANNOUNCEMENT'].'</font></a></b></td></tr></table></span><br />
 

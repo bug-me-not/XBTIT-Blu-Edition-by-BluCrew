@@ -227,6 +227,14 @@
 <br>
 <br>
 
+<script type="text/javascript">
+var q=jQuery.noConflict();
+q(document).ready(function(){
+q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
+});
+</script>
+<div id="ann"></div>
+
 <!--Main Page Content -->
 <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
   <tr>
