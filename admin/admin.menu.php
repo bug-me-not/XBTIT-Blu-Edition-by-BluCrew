@@ -184,7 +184,10 @@ else
             'menu'=>array(0=>array(
               # ==KhezMenu==
                 'url'=>'index.php?page=admin&amp;user='.$CURUSER['uid'].'&amp;code='.$CURUSER['random'].'&amp;do=kocs',
-                'description'=>$language['ACP_KOCS'])
+                'description'=>$language['ACP_KOCS']),
+            1=>array(
+                'url'=>'index.php?page=admin&amp;user='.$CURUSER['uid'].'&amp;code='.$CURUSER['random'].'&amp;do=kis',
+                    'description'=>$language['ACP_KIS'])
             )
             )
         );

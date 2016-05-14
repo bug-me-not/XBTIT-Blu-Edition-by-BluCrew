@@ -20,6 +20,8 @@
 ##############################################################################
 
 # direct access
+if(!defined("IN_BTIT"))
+    die("non direct access!");
 if (!defined('IN_ACP'))
 	die('non direct access!');
 
@@ -35,9 +37,9 @@ if (!isset($kisfig)) {
 
 # test database
 $res=do_sqlquery('SHOW TABLES LIKE "'.$TABLE_PREFIX.'kis_sent";');
-$kis_db=mysql_fetch_array($res, MYSQL_NUM);
+$kis_db=$res->fetch_array();
 $kis_db=(bool)$kis_db[0];
-mysql_free_result($res);
+$res->free();
 
 # inits
 $hack_info['id']=0;
@@ -60,23 +62,23 @@ $_TABS[]=array('ktab=help', $language['KHEZ_FAQ']);
 if ($kis_db) {
 	switch ($_GET['ktab']) {
 		case 'help':
-			require $ADMIN_PATH.'/kis/acp.help.php';
+			require $ADMIN_PATH.'admin.kis.help.php';
 			break;
 		case 'award':
-			require $ADMIN_PATH.'/kis/acp.award.php';
+			require $ADMIN_PATH.'admin.kis.award.php';
 			break;
 		case 'users':
-			require $ADMIN_PATH.'/kis/acp.users.php';
+			require $ADMIN_PATH.'admin.kis.users.php';
 			break;
 		case 'invites':
-			require $ADMIN_PATH.'/kis/acp.invites.php';
+			require $ADMIN_PATH.'admin.kis.invites.php';
 			break;
 		case 'stats':
-			require $ADMIN_PATH.'/kis/acp.stats.php';
+			require $ADMIN_PATH.'admin.kis.stats.php';
 			break;
 		case 'config':
 		default:
-			require $ADMIN_PATH.'/kis/acp.config.php';
+			require $ADMIN_PATH.'admin.kis.config.php';
 			break;
 	}
 } # if db
@@ -85,7 +87,7 @@ if ($kis_db) {
 if (!$kis_db) {
 	# get hack id
 	$hack_info=do_sqlquery('SELECT id FROM `'.$TABLE_PREFIX.'hacks` WHERE `title` = "KIS - Khez Invite System" LIMIT 1;');
-	$hack_info=mysql_fetch_array($hack_info, MYSQL_ASSOC);
+	$hack_info=$hack_info->fetch_assoc();
 	# show db error template
 	$kisTabTemplate='hack.nodb.tpl';
 	# block tabs and messages

@@ -321,6 +321,11 @@ switch ($do)
    $tpl->set('main_content',set_block($language['ACP_KOCS'],'center',$admintpl->fetch(load_template($kocsTabTemplate))));
    break;
 
+   case 'kis':
+   include $ADMIN_PATH.'/admin.kis.php';
+   $tpl->set('main_content',set_block($language['ACP_KIS'],'center',$admintpl->fetch(load_template($kisTabTemplate))));
+   break;
+
    case 'lottery_settings':
    include("$ADMIN_PATH/admin.lottery.php");
    $tpl->set("main_content",set_block($language["LOTT_SETTINGS"],"center",$admintpl->fetch(load_template("admin.lottery.tpl"))));
