@@ -896,7 +896,7 @@ if($count > 0)
                }
                elseif(!is_null($data["has_downloaded"]))
                {
-                  $dl = (($data["has_downloaded"]=="yes")?"<span class='label label-primary'>Already Downloaded</span>":"");
+                  $dl = (($data["has_downloaded"]=="yes")?"<span class='label label-success'>Already Downloaded</span>":"");
                }
             }
             $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data[catid]\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
@@ -1660,7 +1660,7 @@ if($count > 0)
                         }
                         elseif(!is_null($rtorr_results["has_downloaded"]))
                         {
-                           $dl = (($rtorr_results["has_downloaded"]=="yes")?"<span class='label label-primary'>Already Downloaded</span>":"");
+                           $dl = (($rtorr_results["has_downloaded"]=="yes")?"<span class='label label-success'>Already Downloaded</span>":"");
                         }
                      }
                      if($btit_settings["fmhack_torrent_nuked_and_requested"] == "enabled")
