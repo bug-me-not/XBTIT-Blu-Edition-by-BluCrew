@@ -220,6 +220,12 @@ function form_control()
     <tr>
        <td align="left" class="header"><tag:language.TIMEZONE />:</td>
        <td align="left" class="lista"><tag:account_combo_timezone /></td>
+       <if:kis>
+          <tr>
+       <td align="left" class="header"><tag:language.KIS_TOKEN />:</td>
+       <td align="left" class="lista"><input type="text" name="token" maxlength="40" size="40" value="<tag:kistoken />" /></td>
+         </tr>
+       </if:kis>
     </tr>
     <if:CAPTCHA>
     <tr>
