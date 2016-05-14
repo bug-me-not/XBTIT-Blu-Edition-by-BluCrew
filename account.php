@@ -149,6 +149,33 @@ if($act == "signup" && isset($CURUSER["uid"]) && $CURUSER["uid"] != 1)
 }
 $nusers = get_result("SELECT count(*) as tu FROM {$TABLE_PREFIX}users WHERE id>1", true, $btit_settings['cache_duration']);
 $numusers = $nusers[0]['tu'];
+
+global $kisfig;
+if (!isset($kisfig)) 
+{
+  $kisfig=get_khez_config("SELECT `key`,`value` FROM `{$TABLE_PREFIX}khez_configs` WHERE `key` LIKE 'kis_%' LIMIT 7;",$reload_cfg_interval);
+  require load_language('lang_kis.php');
+  require 'include/kis.php';
+  require 'include/khez.php';
+}
+if ($kisfig['kis_enabled']) 
+{
+    $language['REACHED_MAX_USERS'].=$language['KIS_SIGNUP_USE'];
+    $token=(isset($_REQUEST['token']))?$_REQUEST['token']:'';
+    $sql_token=sqlesc($token);
+    if ($token!='') 
+    {
+        $user=get_result('SELECT uid FROM '.$TABLE_PREFIX.'kis_sent WHERE `token`='.$sql_token.' AND used=0 LIMIT 1;');
+        if (isset($user[0])) 
+        {
+            $MAX_USERS=0;
+            $user=$user[0]['uid'];
+            $valid_token=true;
+        }
+    }
+} else $language['REACHED_MAX_USERS'].=$language['KIS_SIGNUP_NONE'];
+
+
 if($btit_settings["fmhack_invitation_system"] == "enabled")
 {
     if($act == "signup" && $MAX_USERS != 0 && $numusers >= $MAX_USERS && !$INVITATIONSON)
@@ -263,253 +290,266 @@ if($_POST["conferma"])
                             stdfoot();
                             exit();
                         }
-                }
-            }
-            else
-            {
-                if($VALIDATION == "user")
-                {
-                    success_msg($language["ACCOUNT_CREATED"], $language["EMAIL_SENT"]);
-                    stdfoot();
-                    exit();
+                    }
                 }
                 else
-                    if($VALIDATION == "none")
+                {
+                    if($VALIDATION == "user")
                     {
-                        success_msg($language["ACCOUNT_CREATED"], $language["ACCOUNT_CONGRATULATIONS"]);
+                        success_msg($language["ACCOUNT_CREATED"], $language["EMAIL_SENT"]);
                         stdfoot();
                         exit();
                     }
                     else
-                    {
-                        success_msg($language["ACCOUNT_CREATED"], $language["WAIT_ADMIN_VALID"]);
-                        stdfoot();
-                        exit();
-                    }
-            }
-        }
-        elseif($ret == -1)
-            stderr($language["ERROR"], $language["ERR_MISSING_DATA"]);
-        elseif($ret == -2)
-            stderr($language["ERROR"], $language["ERR_EMAIL_ALREADY_EXISTS"]);
-        elseif($ret == -3)
-            stderr($language["ERROR"], $language["ERR_NO_EMAIL"]);
-        elseif($ret == -4)
-            stderr($language["ERROR"], $language["ERR_USER_ALREADY_EXISTS"]);
-        elseif($ret == -7)
-            stderr($language["ERROR"], $language["ERR_NO_SPACE"]."<span style=\"color:red;font-weight:bold;\">".preg_replace('/\ /', '_', sql_esc($_POST["user"]))."</span><br />");
-        elseif($ret == -8)
-            stderr($language["ERROR"], $language["ERR_SPECIAL_CHAR"]);
-        elseif($ret == -9)
-            stderr($language["ERROR"], $language["ERR_PASS_LENGTH_1"]." <span style=\"color:blue;font-weight:bold;\">".$pass_min_req[0]."</span> ".$language["ERR_PASS_LENGTH_2"]);
-        elseif($ret == -10)
-            stderr($language["ERROR"], $language["ERR_NAME_BANNED"]);
-        elseif($ret == -99)
-            stderr($language["ERROR"], $language["ERR_REG_IP_BANNED"]);
-        elseif($ret == -98)
-            stderr($language["ERROR"], $language["ERR_IP_ALREADY_EXISTS_1"]." (".getip().") ".$language["ERR_IP_ALREADY_EXISTS_2"]);
-        elseif($ret == -97)
-        {
-            $errorOutput="";
-            if($btit_settings["email_allowed"]!="")
-            {
-                $allowedMail=unserialize($btit_settings["email_allowed"]);
-                $emailCount=count($allowedMail);
-                if($emailCount>0)
-                {
-                    $errorOutput=$language["OASED_ERR_MSG_1"]." ".(($emailCount==1)?$language["OASED_ERR_MSG_2"]:$language["OASED_ERR_MSG_3"]).":<br /><br />";
-                    foreach($allowedMail as $key => $value)
-                    {
-                        $errorOutput.=$value."<br />";
+                        if($VALIDATION == "none")
+                        {
+                            success_msg($language["ACCOUNT_CREATED"], $language["ACCOUNT_CONGRATULATIONS"]);
+                            stdfoot();
+                            exit();
+                        }
+                        else
+                        {
+                            success_msg($language["ACCOUNT_CREATED"], $language["WAIT_ADMIN_VALID"]);
+                            stdfoot();
+                            exit();
+                        }
                     }
                 }
+                elseif($ret == -1)
+                    stderr($language["ERROR"], $language["ERR_MISSING_DATA"]);
+                elseif($ret == -2)
+                    stderr($language["ERROR"], $language["ERR_EMAIL_ALREADY_EXISTS"]);
+                elseif($ret == -3)
+                    stderr($language["ERROR"], $language["ERR_NO_EMAIL"]);
+                elseif($ret == -4)
+                    stderr($language["ERROR"], $language["ERR_USER_ALREADY_EXISTS"]);
+                elseif($ret == -7)
+                    stderr($language["ERROR"], $language["ERR_NO_SPACE"]."<span style=\"color:red;font-weight:bold;\">".preg_replace('/\ /', '_', sql_esc($_POST["user"]))."</span><br />");
+                elseif($ret == -8)
+                    stderr($language["ERROR"], $language["ERR_SPECIAL_CHAR"]);
+                elseif($ret == -9)
+                    stderr($language["ERROR"], $language["ERR_PASS_LENGTH_1"]." <span style=\"color:blue;font-weight:bold;\">".$pass_min_req[0]."</span> ".$language["ERR_PASS_LENGTH_2"]);
+                elseif($ret == -10)
+                    stderr($language["ERROR"], $language["ERR_NAME_BANNED"]);
+                elseif($ret == -99)
+                    stderr($language["ERROR"], $language["ERR_REG_IP_BANNED"]);
+                elseif($ret == -98)
+                    stderr($language["ERROR"], $language["ERR_IP_ALREADY_EXISTS_1"]." (".getip().") ".$language["ERR_IP_ALREADY_EXISTS_2"]);
+                elseif($ret == -97)
+                {
+                    $errorOutput="";
+                    if($btit_settings["email_allowed"]!="")
+                    {
+                        $allowedMail=unserialize($btit_settings["email_allowed"]);
+                        $emailCount=count($allowedMail);
+                        if($emailCount>0)
+                        {
+                            $errorOutput=$language["OASED_ERR_MSG_1"]." ".(($emailCount==1)?$language["OASED_ERR_MSG_2"]:$language["OASED_ERR_MSG_3"]).":<br /><br />";
+                            foreach($allowedMail as $key => $value)
+                            {
+                                $errorOutput.=$value."<br />";
+                            }
+                        }
+                    }
+                    stderr($language["ERROR"], $errorOutput);
+                }
+                elseif($ret == -998)
+                {
+                    $newpassword = pass_the_salt(20);
+                    stderr($language["ERROR"], $language["ERR_PASS_TOO_WEAK_1"].":<br /><br />".(($pass_min_req[1] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[1]."</span> ".(($pass_min_req[1] ==
+                        1)?$language["ERR_PASS_TOO_WEAK_2"]:$language["ERR_PASS_TOO_WEAK_2A"])."</li>":"").(($pass_min_req[2] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[2]."</span> ".(($pass_min_req[2] ==
+                        1)?$language["ERR_PASS_TOO_WEAK_3"]:$language["ERR_PASS_TOO_WEAK_3A"])."</li>":"").(($pass_min_req[3] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[3]."</span> ".(($pass_min_req[3] ==
+                        1)?$language["ERR_PASS_TOO_WEAK_4"]:$language["ERR_PASS_TOO_WEAK_4A"])."</li>":"").(($pass_min_req[4] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[4]."</span> ".(($pass_min_req[4] ==
+                        1)?$language["ERR_PASS_TOO_WEAK_5"]:$language["ERR_PASS_TOO_WEAK_5A"])."</li>":"")."<br />".$language["ERR_PASS_TOO_WEAK_6"].":<br /><br /><span style='color:blue;font-weight:bold;'>".$newpassword.
+                        "</span><br />");
+                }
+                elseif($ret == -999)
+                    stderr($language["ERROR"], $language["DOMAIN_BANNED"]);
+                else
+                    stderr($language["ERROR"], $language["ERR_USER_ALREADY_EXISTS"]);
             }
-            stderr($language["ERROR"], $errorOutput);
         }
-        elseif($ret == -998)
-        {
-            $newpassword = pass_the_salt(20);
-            stderr($language["ERROR"], $language["ERR_PASS_TOO_WEAK_1"].":<br /><br />".(($pass_min_req[1] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[1]."</span> ".(($pass_min_req[1] ==
-                1)?$language["ERR_PASS_TOO_WEAK_2"]:$language["ERR_PASS_TOO_WEAK_2A"])."</li>":"").(($pass_min_req[2] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[2]."</span> ".(($pass_min_req[2] ==
-                1)?$language["ERR_PASS_TOO_WEAK_3"]:$language["ERR_PASS_TOO_WEAK_3A"])."</li>":"").(($pass_min_req[3] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[3]."</span> ".(($pass_min_req[3] ==
-                1)?$language["ERR_PASS_TOO_WEAK_4"]:$language["ERR_PASS_TOO_WEAK_4A"])."</li>":"").(($pass_min_req[4] > 0)?"<li><span style='color:blue;font-weight:bold;'>".$pass_min_req[4]."</span> ".(($pass_min_req[4] ==
-                1)?$language["ERR_PASS_TOO_WEAK_5"]:$language["ERR_PASS_TOO_WEAK_5A"])."</li>":"")."<br />".$language["ERR_PASS_TOO_WEAK_6"].":<br /><br /><span style='color:blue;font-weight:bold;'>".$newpassword.
-                "</span><br />");
-        }
-        elseif($ret == -999)
-            stderr($language["ERROR"], $language["DOMAIN_BANNED"]);
         else
-            stderr($language["ERROR"], $language["ERR_USER_ALREADY_EXISTS"]);
-    }
-}
-else
-{
-    $tpl_account = new bTemplate();
-    tabella($act);
-}
-function tabella($action, $dati = array())
-{
-    global $btit_settings;
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-        global $SITENAME, $INVITATIONSON, $code, $inviter;
-    global $idflag, $link, $idlangue, $idstyle, $CURUSER, $USE_IMAGECODE, $TABLE_PREFIX, $language, $tpl_account, $THIS_BASEPATH;
-    $pass_min_req = explode(",", $btit_settings["secsui_pass_min_req"]);
-    $tpl_account->set("pass_min_char", $pass_min_req[0]);
-    $tpl_account->set("pass_min_lct", $pass_min_req[1]);
-    $tpl_account->set("pass_min_uct", $pass_min_req[2]);
-    $tpl_account->set("pass_min_num", $pass_min_req[3]);
-    $tpl_account->set("pass_min_sym", $pass_min_req[4]);
-    $tpl_account->set("pass_char_plural", (($pass_min_req[0] == 1)?false:true), true);
-    $tpl_account->set("pass_lct_plural", (($pass_min_req[1] == 1)?false:true), true);
-    $tpl_account->set("pass_uct_plural", (($pass_min_req[2] == 1)?false:true), true);
-    $tpl_account->set("pass_num_plural", (($pass_min_req[3] == 1)?false:true), true);
-    $tpl_account->set("pass_sym_plural", (($pass_min_req[4] == 1)?false:true), true);
-    $tpl_account->set("pass_lct_set", (($pass_min_req[1] > 0)?true:false), true);
-    $tpl_account->set("pass_uct_set", (($pass_min_req[2] > 0)?true:false), true);
-    $tpl_account->set("pass_num_set", (($pass_min_req[3] > 0)?true:false), true);
-    $tpl_account->set("pass_sym_set", (($pass_min_req[4] > 0)?true:false), true);
-    if($action == "signup" || $action == "invite")
-    {
-        $tpl_account->set("BY_INVITATION", false, true);
-        $dati["username"] = "";
-        $dati["email"] = "";
-        $dati["language"] = $idlangue;
-        $dati["style"] = $idstyle;
-    }
+        {
+            $tpl_account = new bTemplate();
+            tabella($act);
+        }
+        function tabella($action, $dati = array())
+        {
+            global $btit_settings;
+            if($btit_settings["fmhack_invitation_system"] == "enabled")
+                global $SITENAME, $INVITATIONSON, $code, $inviter;
+            global $idflag, $link, $idlangue, $idstyle, $CURUSER, $USE_IMAGECODE, $TABLE_PREFIX, $language, $tpl_account, $THIS_BASEPATH;
+            $pass_min_req = explode(",", $btit_settings["secsui_pass_min_req"]);
+            $tpl_account->set("pass_min_char", $pass_min_req[0]);
+            $tpl_account->set("pass_min_lct", $pass_min_req[1]);
+            $tpl_account->set("pass_min_uct", $pass_min_req[2]);
+            $tpl_account->set("pass_min_num", $pass_min_req[3]);
+            $tpl_account->set("pass_min_sym", $pass_min_req[4]);
+            $tpl_account->set("pass_char_plural", (($pass_min_req[0] == 1)?false:true), true);
+            $tpl_account->set("pass_lct_plural", (($pass_min_req[1] == 1)?false:true), true);
+            $tpl_account->set("pass_uct_plural", (($pass_min_req[2] == 1)?false:true), true);
+            $tpl_account->set("pass_num_plural", (($pass_min_req[3] == 1)?false:true), true);
+            $tpl_account->set("pass_sym_plural", (($pass_min_req[4] == 1)?false:true), true);
+            $tpl_account->set("pass_lct_set", (($pass_min_req[1] > 0)?true:false), true);
+            $tpl_account->set("pass_uct_set", (($pass_min_req[2] > 0)?true:false), true);
+            $tpl_account->set("pass_num_set", (($pass_min_req[3] > 0)?true:false), true);
+            $tpl_account->set("pass_sym_set", (($pass_min_req[4] > 0)?true:false), true);
+            if($action == "signup" || $action == "invite")
+            {
+                $tpl_account->set("BY_INVITATION", false, true);
+                $dati["username"] = "";
+                $dati["email"] = "";
+                $dati["language"] = $idlangue;
+                $dati["style"] = $idstyle;
+            }
     // avoid error with js
-    $language["DIF_PASSWORDS"] = AddSlashes($language["DIF_PASSWORDS"]);
-    $language["INSERT_PASSWORD"] = AddSlashes($language["INSERT_PASSWORD"]);
-    $language["USER_PWD_AGAIN"] = AddSlashes($language["USER_PWD_AGAIN"]);
-    $language["INSERT_USERNAME"] = AddSlashes($language["INSERT_USERNAME"]);
-    $language["ERR_NO_EMAIL"] = AddSlashes($language["ERR_NO_EMAIL"]);
-    $language["ERR_NO_EMAIL_AGAIN"] = AddSlashes($language["ERR_NO_EMAIL_AGAIN"]);
-    $language["DIF_EMAIL"] = AddSlashes($language["DIF_EMAIL"]);
-    $tpl_account->set("language", $language);
-    $tpl_account->set("account_action", $action);
-    $tpl_account->set("account_form_actionlink", htmlspecialchars("index.php?page=signup&act=$action&returnto=$link"));
-    $tpl_account->set("account_uid", $dati["id"]);
-    $tpl_account->set("account_returnto", urlencode($link));
-    if($btit_settings["createacc_language"]!="disabled")
-       $tpl_account->set("account_IDlanguage",$idlang);
-    if($btit_settings["createacc_style"]!="disabled")
-       $tpl_account->set("account_IDstyle",$idstyle);
-    $tpl_account->set("account_IDcountry", $idflag);
-    $tpl_account->set("account_username", $dati["username"]);
-    $tpl_account->set("dati", $dati);
-    $tpl_account->set("DEL", $action == "delete", true);
-    $tpl_account->set("DISPLAY_FULL", $action == "signup" || $action == "invite", true);
-    $tpl_account->set("createacc_language_enabled", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
-    $tpl_account->set("createacc_style_enabled", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
-    $tpl_account->set("createacc_language_enabled_1", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
-    $tpl_account->set("createacc_style_enabled_1", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
-    $tpl_account->set("birthdays_enabled", (($btit_settings["fmhack_birthdays"] == "enabled")?true:false), true);
-    $tpl_account->set("ssl_enabled", (($btit_settings["fmhack_force_ssl"] == "enabled")?true:false), true);
+            $language["DIF_PASSWORDS"] = AddSlashes($language["DIF_PASSWORDS"]);
+            $language["INSERT_PASSWORD"] = AddSlashes($language["INSERT_PASSWORD"]);
+            $language["USER_PWD_AGAIN"] = AddSlashes($language["USER_PWD_AGAIN"]);
+            $language["INSERT_USERNAME"] = AddSlashes($language["INSERT_USERNAME"]);
+            $language["ERR_NO_EMAIL"] = AddSlashes($language["ERR_NO_EMAIL"]);
+            $language["ERR_NO_EMAIL_AGAIN"] = AddSlashes($language["ERR_NO_EMAIL_AGAIN"]);
+            $language["DIF_EMAIL"] = AddSlashes($language["DIF_EMAIL"]);
+            $tpl_account->set("language", $language);
+            $tpl_account->set("account_action", $action);
+            $tpl_account->set("account_form_actionlink", htmlspecialchars("index.php?page=signup&act=$action&returnto=$link"));
+            $tpl_account->set("account_uid", $dati["id"]);
+            $tpl_account->set("account_returnto", urlencode($link));
+            if($btit_settings["createacc_language"]!="disabled")
+               $tpl_account->set("account_IDlanguage",$idlang);
+           if($btit_settings["createacc_style"]!="disabled")
+               $tpl_account->set("account_IDstyle",$idstyle);
+           $tpl_account->set("account_IDcountry", $idflag);
+           $tpl_account->set("account_username", $dati["username"]);
+           $tpl_account->set("dati", $dati);
+           $tpl_account->set("DEL", $action == "delete", true);
+           $tpl_account->set("DISPLAY_FULL", $action == "signup" || $action == "invite", true);
+           $tpl_account->set("createacc_language_enabled", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
+           $tpl_account->set("createacc_style_enabled", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
+           $tpl_account->set("createacc_language_enabled_1", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
+           $tpl_account->set("createacc_style_enabled_1", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
+           $tpl_account->set("birthdays_enabled", (($btit_settings["fmhack_birthdays"] == "enabled")?true:false), true);
+           $tpl_account->set("ssl_enabled", (($btit_settings["fmhack_force_ssl"] == "enabled")?true:false), true);
     //begin invitation system by dodge
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-    {
-        if($INVITATIONSON)
-        {
-            $tpl_account->set("BY_INVITATION", true, true);
-            $tpl_account->set("account_IDcode", $code);
-            $tpl_account->set("account_IDinviter", $inviter);
+           if($btit_settings["fmhack_invitation_system"] == "enabled")
+           {
+            if($INVITATIONSON)
+            {
+                $tpl_account->set("BY_INVITATION", true, true);
+                $tpl_account->set("account_IDcode", $code);
+                $tpl_account->set("account_IDinviter", $inviter);
+            }
         }
-    }
-    else
-        $tpl_account->set("BY_INVITATION", false, true);
+        else
+            $tpl_account->set("BY_INVITATION", false, true);
     //end invitation system
-    if($action == "del")
-        $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
-            $language["FRM_CANCEL"]."\" />");
-    else
-        $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"conferma\" value=\"".$language["FRM_CONFIRM"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" name=\"annulla\" value=\"".
-            $language["FRM_CANCEL"]."\" />");
-    if($btit_settings["createacc_language"] != "disabled")
-    {
-        $lres = language_list();
-        $option = "\n<select name=\"language\" size=\"1\">";
-        foreach($lres as $langue)
+        if($action == "del")
+            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
+                $language["FRM_CANCEL"]."\" />");
+        else
+            $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" name=\"conferma\" value=\"".$language["FRM_CONFIRM"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" name=\"annulla\" value=\"".
+                $language["FRM_CANCEL"]."\" />");
+        if($btit_settings["createacc_language"] != "disabled")
+        {
+            $lres = language_list();
+            $option = "\n<select name=\"language\" size=\"1\">";
+            foreach($lres as $langue)
+            {
+                $option .= "\n<option ";
+                if($langue["id"] == $dati["language"])
+                    $option .= "selected=\"selected\"  ";
+                $option .= "value=\"".$langue["id"]."\">".$langue["language"]."</option>";
+            }
+            $option .= "\n</select>";
+            $tpl_account->set("account_combo_language", $option);
+        }
+        if($btit_settings["createacc_style"] != "disabled")
+        {
+            $sres = style_list();
+            $option = "\n<select name=\"style\" size=\"1\">";
+            foreach($sres as $style)
+            {
+                $option .= "\n<option ";
+                if($style["id"] == $dati["style"])
+                    $option .= "selected=\"selected\"  ";
+                $option .= "value=\"".$style["id"]."\">".$style["style"]."</option>";
+            }
+            $option .= "\n</select>";
+            $tpl_account->set("account_combo_style", $option);
+        }
+        $fres = flag_list();
+        $option = "\n<select name=\"flag\" size=\"1\">\n<option value='0'>---</option>";
+        $thisip = $_SERVER["REMOTE_ADDR"];
+        $remotedns = gethostbyaddr($thisip);
+        if($remotedns != $thisip)
+        {
+            $remotedns = strtoupper($remotedns);
+            preg_match('/^(.+)\.([A-Z]{2,3})$/', $remotedns, $tldm);
+            if(isset($tldm[2]))
+                $remotedns = sql_esc($tldm[2]);
+        }
+        foreach($fres as $flag)
         {
             $option .= "\n<option ";
-            if($langue["id"] == $dati["language"])
+            if($flag["id"] == $dati["flag"] || ($flag["domain"] == $remotedns && $action == "signup"))
                 $option .= "selected=\"selected\"  ";
-            $option .= "value=\"".$langue["id"]."\">".$langue["language"]."</option>";
+            $option .= "value=\"".$flag["id"]."\">".$flag["name"]."</option>";
         }
         $option .= "\n</select>";
-        $tpl_account->set("account_combo_language", $option);
-    }
-    if($btit_settings["createacc_style"] != "disabled")
-    {
-        $sres = style_list();
-        $option = "\n<select name=\"style\" size=\"1\">";
-        foreach($sres as $style)
+        $tpl_account->set("account_combo_country", $option);
+        $zone = date('Z', time());
+        $daylight = date('I', time()) * 3600;
+        $os = $zone - $daylight;
+        if($os != 0)
+        {
+            $timeoff = $os / 3600;
+        }
+        else
+        {
+            $timeoff = 0;
+        }
+        if(!$CURUSER || $CURUSER["uid"] == 1)
+            $dati["time_offset"] = $timeoff;
+        $tres = timezone_list();
+        $option = "<select name=\"timezone\">";
+        foreach($tres as $timezone)
         {
             $option .= "\n<option ";
-            if($style["id"] == $dati["style"])
-                $option .= "selected=\"selected\"  ";
-            $option .= "value=\"".$style["id"]."\">".$style["style"]."</option>";
+            if($timezone["difference"] == $dati["time_offset"])
+                $option .= "selected=\"selected\" ";
+            $option .= "value=\"".$timezone["difference"]."\">".unesc($timezone["timezone"])."</option>";
         }
         $option .= "\n</select>";
-        $tpl_account->set("account_combo_style", $option);
-    }
-    $fres = flag_list();
-    $option = "\n<select name=\"flag\" size=\"1\">\n<option value='0'>---</option>";
-    $thisip = $_SERVER["REMOTE_ADDR"];
-    $remotedns = gethostbyaddr($thisip);
-    if($remotedns != $thisip)
-    {
-        $remotedns = strtoupper($remotedns);
-        preg_match('/^(.+)\.([A-Z]{2,3})$/', $remotedns, $tldm);
-        if(isset($tldm[2]))
-            $remotedns = sql_esc($tldm[2]);
-    }
-    foreach($fres as $flag)
-    {
-        $option .= "\n<option ";
-        if($flag["id"] == $dati["flag"] || ($flag["domain"] == $remotedns && $action == "signup"))
-            $option .= "selected=\"selected\"  ";
-        $option .= "value=\"".$flag["id"]."\">".$flag["name"]."</option>";
-    }
-    $option .= "\n</select>";
-    $tpl_account->set("account_combo_country", $option);
-    $zone = date('Z', time());
-    $daylight = date('I', time()) * 3600;
-    $os = $zone - $daylight;
-    if($os != 0)
-    {
-        $timeoff = $os / 3600;
-    }
-    else
-    {
-        $timeoff = 0;
-    }
-    if(!$CURUSER || $CURUSER["uid"] == 1)
-        $dati["time_offset"] = $timeoff;
-    $tres = timezone_list();
-    $option = "<select name=\"timezone\">";
-    foreach($tres as $timezone)
-    {
-        $option .= "\n<option ";
-        if($timezone["difference"] == $dati["time_offset"])
-            $option .= "selected=\"selected\" ";
-        $option .= "value=\"".$timezone["difference"]."\">".unesc($timezone["timezone"])."</option>";
-    }
-    $option .= "\n</select>";
-    $tpl_account->set("account_combo_timezone", $option);
+        $tpl_account->set("account_combo_timezone", $option);
+        global $token, $kisfig;
+        $tpl_account->set("kis",$kisfig['kis_enabled'],true);
+        $tpl_account->set("kistoken",$token);
     // -----------------------------
     // Captcha hack
     // -----------------------------
     // if set to use secure code: try to display imagecode
-    if($USE_IMAGECODE && $action != "mod")
-    {
-        if(extension_loaded('gd'))
+        if($USE_IMAGECODE && $action != "mod")
         {
-            $arr = gd_info();
-            if($arr['FreeType Support'] == 1)
+            if(extension_loaded('gd'))
             {
-                $p = new ocr_captcha();
-                $tpl_account->set("CAPTCHA", true, true);
-                $tpl_account->set("account_captcha", $p->display_captcha(true));
-                $private = $p->generate_private();
+                $arr = gd_info();
+                if($arr['FreeType Support'] == 1)
+                {
+                    $p = new ocr_captcha();
+                    $tpl_account->set("CAPTCHA", true, true);
+                    $tpl_account->set("account_captcha", $p->display_captcha(true));
+                    $private = $p->generate_private();
+                }
+                else
+                {
+                    include ("$THIS_BASEPATH/include/security_code.php");
+                    $scode_index = rand(0, count($security_code) - 1);
+                    $scode = "<input type=\"hidden\" name=\"security_index\" value=\"$scode_index\" />\n";
+                    $scode .= $security_code[$scode_index]["question"];
+                    $tpl_account->set("scode_question", $scode);
+                    $tpl_account->set("CAPTCHA", false, true);
+                }
             }
             else
             {
@@ -521,180 +561,182 @@ function tabella($action, $dati = array())
                 $tpl_account->set("CAPTCHA", false, true);
             }
         }
-        else
+        elseif($action != "mod")
         {
             include ("$THIS_BASEPATH/include/security_code.php");
             $scode_index = rand(0, count($security_code) - 1);
             $scode = "<input type=\"hidden\" name=\"security_index\" value=\"$scode_index\" />\n";
             $scode .= $security_code[$scode_index]["question"];
             $tpl_account->set("scode_question", $scode);
+        // we will request simple operation to user
             $tpl_account->set("CAPTCHA", false, true);
         }
-    }
-    elseif($action != "mod")
-    {
-        include ("$THIS_BASEPATH/include/security_code.php");
-        $scode_index = rand(0, count($security_code) - 1);
-        $scode = "<input type=\"hidden\" name=\"security_index\" value=\"$scode_index\" />\n";
-        $scode .= $security_code[$scode_index]["question"];
-        $tpl_account->set("scode_question", $scode);
-        // we will request simple operation to user
-        $tpl_account->set("CAPTCHA", false, true);
-    }
     // -----------------------------
     // Captcha hack
     // -----------------------------
-}
-function aggiungiutente()
-{
-    global $btit_settings;
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-        global $INVITATIONSON, $VALID_INV;
-    global $SITENAME, $SITEEMAIL, $BASEURL, $VALIDATION, $USERLANG, $USE_IMAGECODE, $TABLE_PREFIX, $XBTT_USE, $language, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $res_seo;
-    if(!isset($language["SYSTEM_USER"]))
-        $language["SYSTEM_USER"]="System";
-    if($btit_settings["fmhack_birthdays"] == "enabled")
-    {
-        $dobday = str_pad(intval($_POST["dobday"]), 2, 0, STR_PAD_LEFT);
-        $dobmonth = str_pad(intval($_POST["dobmonth"]), 2, 0, STR_PAD_LEFT);
-        $dobyear = str_pad(intval($_POST["dobyear"]), 4, 0, STR_PAD_LEFT);
     }
-    if($btit_settings["fmhack_force_ssl"] == "enabled")
+    function aggiungiutente()
     {
-        $force = isset($_POST["force"])?"yes":"no";
-    }
-    $utente = sql_esc($_POST["user"]);
-    $pwd = sql_esc($_POST["pwd"]);
-    $pwd1 = sql_esc($_POST["pwd1"]);
-    $email = sql_esc($_POST["email"]);
-if (isset($_POST["language"]))
-    $idlangue=intval($_POST["language"]);
-else
-    $idlangue=max(1,$btit_settings["default_language"]);
-
-if (isset($_POST["style"]))
-    $idstyle=intval($_POST["style"]);
-else
-    $idstyle=max(1,$btit_settings["default_style"]);
-    $idflag = intval($_POST["flag"]);
-    $timezone = intval($_POST["timezone"]);
-    if(strtoupper($utente) == strtoupper("Guest"))
-    {
-        err_msg($language["ERROR"], $language["ERR_GUEST_EXISTS"]);
-        stdfoot();
-        exit;
-    }
-    if($pwd != $pwd1)
-    {
-        err_msg($language["ERROR"], $language["DIF_PASSWORDS"]);
-        stdfoot();
-        exit;
-    }
-    if($VALIDATION == "none")
-        $idlevel = 3;
-    else
-        $idlevel = 2;
-    //begin invitation system by dodge
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-    {
-        if($INVITATIONSON == "true")
+        global $btit_settings;
+        if($btit_settings["fmhack_invitation_system"] == "enabled")
+            global $INVITATIONSON, $VALID_INV;
+        global $SITENAME, $SITEEMAIL, $BASEURL, $VALIDATION, $USERLANG, $USE_IMAGECODE, $TABLE_PREFIX, $XBTT_USE, $language, $THIS_BASEPATH, $FORUMLINK, $db_prefix, $res_seo;
+        if(!isset($language["SYSTEM_USER"]))
+            $language["SYSTEM_USER"]="System";
+        if($btit_settings["fmhack_birthdays"] == "enabled")
         {
-            if($VALID_INV == "true")
-                $idlevel = 2;
-            else
-                $idlevel = 3;
+            $dobday = str_pad(intval($_POST["dobday"]), 2, 0, STR_PAD_LEFT);
+            $dobmonth = str_pad(intval($_POST["dobmonth"]), 2, 0, STR_PAD_LEFT);
+            $dobyear = str_pad(intval($_POST["dobyear"]), 4, 0, STR_PAD_LEFT);
         }
-    }
+        if($btit_settings["fmhack_force_ssl"] == "enabled")
+        {
+            $force = isset($_POST["force"])?"yes":"no";
+        }
+        $utente = sql_esc($_POST["user"]);
+        $pwd = sql_esc($_POST["pwd"]);
+        $pwd1 = sql_esc($_POST["pwd1"]);
+        $email = sql_esc($_POST["email"]);
+        if (isset($_POST["language"]))
+            $idlangue=intval($_POST["language"]);
+        else
+            $idlangue=max(1,$btit_settings["default_language"]);
+
+        if (isset($_POST["style"]))
+            $idstyle=intval($_POST["style"]);
+        else
+            $idstyle=max(1,$btit_settings["default_style"]);
+        $idflag = intval($_POST["flag"]);
+        $timezone = intval($_POST["timezone"]);
+        if(strtoupper($utente) == strtoupper("Guest"))
+        {
+            err_msg($language["ERROR"], $language["ERR_GUEST_EXISTS"]);
+            stdfoot();
+            exit;
+        }
+        if($pwd != $pwd1)
+        {
+            err_msg($language["ERROR"], $language["DIF_PASSWORDS"]);
+            stdfoot();
+            exit;
+        }
+        if($VALIDATION == "none")
+            $idlevel = 3;
+        else
+            $idlevel = 2;
+    //begin invitation system by dodge
+        if($btit_settings["fmhack_invitation_system"] == "enabled")
+        {
+            if($INVITATIONSON == "true")
+            {
+                if($VALID_INV == "true")
+                    $idlevel = 2;
+                else
+                    $idlevel = 3;
+            }
+        }
     //end invitation system
     # Create Random number
-    $floor = 100000;
-    $ceiling = 999999;
-    srand((double)microtime() * 1000000);
-    $random = rand($floor, $ceiling);
-    if($utente == "" || $pwd == "" || $email == "")
-    {
-        return - 1;
-        exit;
-    }
-    $res = do_sqlquery("SELECT email FROM {$TABLE_PREFIX}users WHERE email='$email'", true);
-    if(sql_num_rows($res) > 0)
-    {
-        return - 2;
-        exit;
-    }
-    // valid email check - by vibes
-    $regex = '/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/i';
-    if(!preg_match($regex, $email))
-    {
-        return - 3;
-        exit;
-    }
-    if($btit_settings["fmhack_only_allow_specified_email_domains"]=="enabled")
-    {
-        if($btit_settings["email_allowed"]!="")
+        $floor = 100000;
+        $ceiling = 999999;
+        srand((double)microtime() * 1000000);
+        $random = rand($floor, $ceiling);
+        if($utente == "" || $pwd == "" || $email == "")
         {
-            $allowedMail=unserialize($btit_settings["email_allowed"]);
-            if(count($allowedMail)>0)
+            return - 1;
+            exit;
+        }
+        $res = do_sqlquery("SELECT email FROM {$TABLE_PREFIX}users WHERE email='$email'", true);
+        if(sql_num_rows($res) > 0)
+        {
+            return - 2;
+            exit;
+        }
+    // valid email check - by vibes
+        $regex = '/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/i';
+        if(!preg_match($regex, $email))
+        {
+            return - 3;
+            exit;
+        }
+        if($btit_settings["fmhack_only_allow_specified_email_domains"]=="enabled")
+        {
+            if($btit_settings["email_allowed"]!="")
             {
-                $mailSplit=explode("@", $email);
-                if(!in_array($mailSplit[1], $allowedMail))
+                $allowedMail=unserialize($btit_settings["email_allowed"]);
+                if(count($allowedMail)>0)
                 {
-                    return -97;
-                    exit;
+                    $mailSplit=explode("@", $email);
+                    if(!in_array($mailSplit[1], $allowedMail))
+                    {
+                        return -97;
+                        exit;
+                    }
                 }
             }
         }
-    }
     // valid email check end
     // duplicate username
-    $res = do_sqlquery("SELECT username FROM {$TABLE_PREFIX}users WHERE username='$utente'", true);
-    if(sql_num_rows($res) > 0)
-    {
-        return - 4;
-        exit;
-    }
-    // duplicate username
-    if($btit_settings["fmhack_protected_usernames"] == "enabled" && !empty($btit_settings["banned_usernames"]))
-    {
-        $usernameToEval=strtolower($utente);
-        $bannedUsers = explode(",", strtolower($btit_settings["banned_usernames"]));
-        if(count($bannedUsers) > 0)
+        $res = do_sqlquery("SELECT username FROM {$TABLE_PREFIX}users WHERE username='$utente'", true);
+        if(sql_num_rows($res) > 0)
         {
-            foreach($bannedUsers as $bannedUser)
+            return - 4;
+            exit;
+        }
+    // duplicate username
+        if($btit_settings["fmhack_protected_usernames"] == "enabled" && !empty($btit_settings["banned_usernames"]))
+        {
+            $usernameToEval=strtolower($utente);
+            $bannedUsers = explode(",", strtolower($btit_settings["banned_usernames"]));
+            if(count($bannedUsers) > 0)
             {
-                if($usernameToEval == $bannedUser)
+                foreach($bannedUsers as $bannedUser)
                 {
-                    return -10;
-                    exit;
-                }
-                elseif(strpos($usernameToEval, $bannedUser)!==false)
-                {
-                    return -10;
-                    exit;
+                    if($usernameToEval == $bannedUser)
+                    {
+                        return -10;
+                        exit;
+                    }
+                    elseif(strpos($usernameToEval, $bannedUser)!==false)
+                    {
+                        return -10;
+                        exit;
+                    }
                 }
             }
         }
-    }
-    if(strpos($utente, " ") == true)
-    {
-        return - 7;
-        exit;
-    }
-    if($USE_IMAGECODE)
-    {
-        if(extension_loaded('gd'))
+        if(strpos($utente, " ") == true)
         {
-            $arr = gd_info();
-            if($arr['FreeType Support'] == 1)
+            return - 7;
+            exit;
+        }
+        if($USE_IMAGECODE)
+        {
+            if(extension_loaded('gd'))
             {
-                $public = $_POST['public_key'];
-                $private = $_POST['private_key'];
-                $p = new ocr_captcha();
-                if($p->check_captcha($public, $private) != true)
+                $arr = gd_info();
+                if($arr['FreeType Support'] == 1)
                 {
-                    err_msg($language["ERROR"], $language["ERR_IMAGE_CODE"]);
-                    stdfoot();
-                    exit;
+                    $public = $_POST['public_key'];
+                    $private = $_POST['private_key'];
+                    $p = new ocr_captcha();
+                    if($p->check_captcha($public, $private) != true)
+                    {
+                        err_msg($language["ERROR"], $language["ERR_IMAGE_CODE"]);
+                        stdfoot();
+                        exit;
+                    }
+                }
+                else
+                {
+                    include ("$THIS_BASEPATH/include/security_code.php");
+                    $scode_index = intval($_POST["security_index"]);
+                    if($security_code[$scode_index]["answer"] != $_POST["scode_answer"])
+                    {
+                        err_msg($language["ERROR"], $language["ERR_IMAGE_CODE"]);
+                        stdfoot();
+                        exit;
+                    }
                 }
             }
             else
@@ -720,197 +762,185 @@ else
                 exit;
             }
         }
-    }
-    else
-    {
-        include ("$THIS_BASEPATH/include/security_code.php");
-        $scode_index = intval($_POST["security_index"]);
-        if($security_code[$scode_index]["answer"] != $_POST["scode_answer"])
+        $bannedchar = array(
+            "\\",
+            "/",
+            ":",
+            "*",
+            "?",
+            "\"",
+            "@",
+            "$",
+            "'",
+            "`",
+            ",",
+            ";",
+            ".",
+            "<",
+            ">",
+            "!",
+            "�",
+            "%",
+            "^",
+            "&",
+            "(",
+            ")",
+            "+",
+            "=",
+            "#",
+            "~");
+        if(straipos($utente, $bannedchar) == true)
         {
-            err_msg($language["ERROR"], $language["ERR_IMAGE_CODE"]);
-            stdfoot();
+            return - 8;
             exit;
         }
-    }
-    $bannedchar = array(
-        "\\",
-        "/",
-        ":",
-        "*",
-        "?",
-        "\"",
-        "@",
-        "$",
-        "'",
-        "`",
-        ",",
-        ";",
-        ".",
-        "<",
-        ">",
-        "!",
-        "�",
-        "%",
-        "^",
-        "&",
-        "(",
-        ")",
-        "+",
-        "=",
-        "#",
-        "~");
-    if(straipos($utente, $bannedchar) == true)
-    {
-        return - 8;
-        exit;
-    }
-    $pass_to_test = $_POST["pwd"];
-    $pass_min_req = explode(",", $btit_settings["secsui_pass_min_req"]);
-    if(strlen($pass_to_test) < $pass_min_req[0])
-    {
-        return - 9;
-        exit;
-    }
-    $lct_count = 0;
-    $uct_count = 0;
-    $num_count = 0;
-    $sym_count = 0;
-    $pass_end = (int)(strlen($pass_to_test) - 1);
-    $pass_position = 0;
-    $pattern1 = '#[a-z]#';
-    $pattern2 = '#[A-Z]#';
-    $pattern3 = '#[0-9]#';
-    $pattern4 = '/[�!"�$%^&*()`{}\[\]:@~;\'#<>?,.\/\\-=_+\|]/';
-    for($pass_position = 0; $pass_position <= $pass_end; $pass_position++)
-    {
-        if(preg_match($pattern1, substr($pass_to_test, $pass_position, 1), $matches))
-            $lct_count++;
-        elseif(preg_match($pattern2, substr($pass_to_test, $pass_position, 1), $matches))
-            $uct_count++;
-        elseif(preg_match($pattern3, substr($pass_to_test, $pass_position, 1), $matches))
-            $num_count++;
-        elseif(preg_match($pattern4, substr($pass_to_test, $pass_position, 1), $matches))
-            $sym_count++;
-    }
-    if($lct_count < $pass_min_req[1] || $uct_count < $pass_min_req[2] || $num_count < $pass_min_req[3] || $sym_count < $pass_min_req[4])
-    {
-        return - 998;
-        exit;
-    }
-    if($btit_settings["fmhack_ban_cheapmail_domains"] == "enabled")
-    {
-        $exploded = explode("@", $email);
-        $exploded2 = explode(".", $exploded[1]);
-        $cheapmail = sql_esc($exploded[1]);
-        $cheapmail2 = sql_esc("@".$exploded2[0].".");
-        $mailischeap = do_sqlquery("SELECT `domain` FROM `{$TABLE_PREFIX}cheapmail` WHERE `domain`='".$cheapmail."' OR `domain`='".$cheapmail2."'", true);
-        if(@sql_num_rows($mailischeap) > 0)
-            return - 999;
-    }
-    if($btit_settings["fmhack_ban_button"] == "enabled")
-    {
-        $userip = getip();
-        $signupipblock = @do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}signup_ip_block` WHERE `first_ip` <=INET_ATON('$userip') AND `last_ip` >=INET_ATON('$userip')")->fetch_assoc();
-        if($signupipblock)
+        $pass_to_test = $_POST["pwd"];
+        $pass_min_req = explode(",", $btit_settings["secsui_pass_min_req"]);
+        if(strlen($pass_to_test) < $pass_min_req[0])
         {
-            return - 99;
-            exit();
+            return - 9;
+            exit;
         }
-    }
-    if($btit_settings["fmhack_disable_user_registration_with_duplicate_IP"] == "enabled")
-    {
-        $userip = getip();
-        $i = @do_sqlquery("SELECT COUNT(*) `count` FROM `{$TABLE_PREFIX}users` WHERE `cip`='$userip'")->fetch_assoc();
-        if($i["count"] > 0)
+        $lct_count = 0;
+        $uct_count = 0;
+        $num_count = 0;
+        $sym_count = 0;
+        $pass_end = (int)(strlen($pass_to_test) - 1);
+        $pass_position = 0;
+        $pattern1 = '#[a-z]#';
+        $pattern2 = '#[A-Z]#';
+        $pattern3 = '#[0-9]#';
+        $pattern4 = '/[�!"�$%^&*()`{}\[\]:@~;\'#<>?,.\/\\-=_+\|]/';
+        for($pass_position = 0; $pass_position <= $pass_end; $pass_position++)
         {
-            return - 98;
-            exit();
+            if(preg_match($pattern1, substr($pass_to_test, $pass_position, 1), $matches))
+                $lct_count++;
+            elseif(preg_match($pattern2, substr($pass_to_test, $pass_position, 1), $matches))
+                $uct_count++;
+            elseif(preg_match($pattern3, substr($pass_to_test, $pass_position, 1), $matches))
+                $num_count++;
+            elseif(preg_match($pattern4, substr($pass_to_test, $pass_position, 1), $matches))
+                $sym_count++;
         }
-    }
-    if($btit_settings["fmhack_signup_bonus_upload"] == "enabled")
-    {
-        $uploaded = 0;
-        $result = get_result("SELECT (SELECT `value` FROM `{$TABLE_PREFIX}settings` WHERE `key` = 'donate_upload') as `donate_upload`, (SELECT `value` FROM `{$TABLE_PREFIX}settings` WHERE `key` = 'unit') AS `unit`", true,
-            $btit_settings["cache_duration"]);
-        $result = $result[0];
-        $credit = $result['donate_upload'];
-        $unit = $result['unit'];
-        $kb = 1024;
-        $mb = 1024 * 1024;
-        $gb = 1024 * 1024 * 1024;
-        $tb = 1024 * 1024 * 1024 * 1024;
-        if($unit == 'Kb')
-            $uploaded = $credit * $kb;
-        elseif($unit == 'Mb')
-            $uploaded = $credit * $mb;
-        elseif($unit == 'Gb')
-            $uploaded = $credit * $gb;
-        elseif($unit == 'Tb')
-            $uploaded = $credit * $tb;
-    }
-    if($btit_settings["fmhack_birthdays"] == "enabled")
-    {
-        $realdate = checkdate($dobmonth, $dobday, $dobyear);
-        if($realdate)
+        if($lct_count < $pass_min_req[1] || $uct_count < $pass_min_req[2] || $num_count < $pass_min_req[3] || $sym_count < $pass_min_req[4])
         {
-            $dob = $dobyear."-".$dobmonth."-".$dobday;
-            $age = userage($dobyear, $dobmonth, $dobday);
-            $dobtime = mktime(0, 0, 0, $dobmonth, $dobday, $dobyear);
-            if($dobtime > time())
+            return - 998;
+            exit;
+        }
+        if($btit_settings["fmhack_ban_cheapmail_domains"] == "enabled")
+        {
+            $exploded = explode("@", $email);
+            $exploded2 = explode(".", $exploded[1]);
+            $cheapmail = sql_esc($exploded[1]);
+            $cheapmail2 = sql_esc("@".$exploded2[0].".");
+            $mailischeap = do_sqlquery("SELECT `domain` FROM `{$TABLE_PREFIX}cheapmail` WHERE `domain`='".$cheapmail."' OR `domain`='".$cheapmail2."'", true);
+            if(@sql_num_rows($mailischeap) > 0)
+                return - 999;
+        }
+        if($btit_settings["fmhack_ban_button"] == "enabled")
+        {
+            $userip = getip();
+            $signupipblock = @do_sqlquery("SELECT `id` FROM `{$TABLE_PREFIX}signup_ip_block` WHERE `first_ip` <=INET_ATON('$userip') AND `last_ip` >=INET_ATON('$userip')")->fetch_assoc();
+            if($signupipblock)
             {
-                err_msg($language["ERROR"], $language["ERR_BORN_IN_FUTURE"]);
-                stdfoot();
+                return - 99;
                 exit();
             }
-            elseif($age < $btit_settings["birthday_lower_limit"])
+        }
+        if($btit_settings["fmhack_disable_user_registration_with_duplicate_IP"] == "enabled")
+        {
+            $userip = getip();
+            $i = @do_sqlquery("SELECT COUNT(*) `count` FROM `{$TABLE_PREFIX}users` WHERE `cip`='$userip'")->fetch_assoc();
+            if($i["count"] > 0)
             {
-                err_msg($language["ERROR"], $language["ERR_DOB_1"].$age.$language["ERR_DOB_2"]);
-                stdfoot();
+                return - 98;
                 exit();
             }
-            elseif($age > $btit_settings["birthday_upper_limit"])
+        }
+        if($btit_settings["fmhack_signup_bonus_upload"] == "enabled")
+        {
+            $uploaded = 0;
+            $result = get_result("SELECT (SELECT `value` FROM `{$TABLE_PREFIX}settings` WHERE `key` = 'donate_upload') as `donate_upload`, (SELECT `value` FROM `{$TABLE_PREFIX}settings` WHERE `key` = 'unit') AS `unit`", true,
+                $btit_settings["cache_duration"]);
+            $result = $result[0];
+            $credit = $result['donate_upload'];
+            $unit = $result['unit'];
+            $kb = 1024;
+            $mb = 1024 * 1024;
+            $gb = 1024 * 1024 * 1024;
+            $tb = 1024 * 1024 * 1024 * 1024;
+            if($unit == 'Kb')
+                $uploaded = $credit * $kb;
+            elseif($unit == 'Mb')
+                $uploaded = $credit * $mb;
+            elseif($unit == 'Gb')
+                $uploaded = $credit * $gb;
+            elseif($unit == 'Tb')
+                $uploaded = $credit * $tb;
+        }
+        if($btit_settings["fmhack_birthdays"] == "enabled")
+        {
+            $realdate = checkdate($dobmonth, $dobday, $dobyear);
+            if($realdate)
             {
-                err_msg($language["ERROR"], $language["ERR_DOB_1"].$age.$language["ERR_DOB_2"]);
+                $dob = $dobyear."-".$dobmonth."-".$dobday;
+                $age = userage($dobyear, $dobmonth, $dobday);
+                $dobtime = mktime(0, 0, 0, $dobmonth, $dobday, $dobyear);
+                if($dobtime > time())
+                {
+                    err_msg($language["ERROR"], $language["ERR_BORN_IN_FUTURE"]);
+                    stdfoot();
+                    exit();
+                }
+                elseif($age < $btit_settings["birthday_lower_limit"])
+                {
+                    err_msg($language["ERROR"], $language["ERR_DOB_1"].$age.$language["ERR_DOB_2"]);
+                    stdfoot();
+                    exit();
+                }
+                elseif($age > $btit_settings["birthday_upper_limit"])
+                {
+                    err_msg($language["ERROR"], $language["ERR_DOB_1"].$age.$language["ERR_DOB_2"]);
+                    stdfoot();
+                    exit();
+                }
+            }
+            else
+            {
+                err_msg($language["ERROR"], $language["INVALID_DOB_1"].$dobday."/".$dobmonth."/".$dobyear.$language["INVALID_DOB_2"]);
                 stdfoot();
                 exit();
             }
         }
-        else
+        $multipass = hash_generate(array("salt" => ""), $_POST["pwd"], $_POST["user"]);
+        $i = $btit_settings["secsui_pass_type"];
+        $pid = md5(uniqid(rand(), true));
+        $key.="";
+        $value.="";
+        if($btit_settings["fmhack_VIP_freeleech"] == "enabled")
         {
-            err_msg($language["ERROR"], $language["INVALID_DOB_1"].$dobday."/".$dobmonth."/".$dobyear.$language["INVALID_DOB_2"]);
-            stdfoot();
-            exit();
-        }
-    }
-    $multipass = hash_generate(array("salt" => ""), $_POST["pwd"], $_POST["user"]);
-    $i = $btit_settings["secsui_pass_type"];
-    $pid = md5(uniqid(rand(), true));
-    $key.="";
-    $value.="";
-    if($btit_settings["fmhack_VIP_freeleech"] == "enabled")
-    {
-        $res=get_result("SELECT `freeleech` FROM `{$TABLE_PREFIX}users_level` WHERE `id`=".$idlevel);
-        if(count($res[0])>0)
-        {
-            if($res[0]["freeleech"]=="yes")
+            $res=get_result("SELECT `freeleech` FROM `{$TABLE_PREFIX}users_level` WHERE `id`=".$idlevel);
+            if(count($res[0])>0)
             {
-                $key.=",`vipfl_date`";
-                $value.=", UNIX_TIMESTAMP()";
+                if($res[0]["freeleech"]=="yes")
+                {
+                    $key.=",`vipfl_date`";
+                    $value.=", UNIX_TIMESTAMP()";
+                }
             }
         }
-    }
-    if($btit_settings["createacc_language"]=="disabled")
-    {
-	$idlangue=$btit_settings["default_language"];
-    }
-    quickQuery("INSERT INTO {$TABLE_PREFIX}users (`username`, `password`, `salt`, `pass_type`, `dupe_hash`, `random`, `id_level`, `email`, `style`, `language`, `flag`, `joined`, `lastconnect`, `pid`, `time_offset`".
+        if($btit_settings["createacc_language"]=="disabled")
+        {
+         $idlangue=$btit_settings["default_language"];
+     }
+     quickQuery("INSERT INTO {$TABLE_PREFIX}users (`username`, `password`, `salt`, `pass_type`, `dupe_hash`, `random`, `id_level`, `email`, `style`, `language`, `flag`, `joined`, `lastconnect`, `pid`, `time_offset`".
         (($btit_settings["fmhack_signup_bonus_upload"] == "enabled" && !$XBTT_USE)?", `uploaded`":"").(($btit_settings["fmhack_birthdays"] == "enabled")?", `dob`":"").(($btit_settings["fmhack_force_ssl"] ==
-        "enabled")?", `force_ssl`":"").$key.") VALUES ('".$utente."', '".sql_esc($multipass[$i]["rehash"])."', '".sql_esc($multipass[$i]["salt"])."', '".$i."', '".
+            "enabled")?", `force_ssl`":"").$key.") VALUES ('".$utente."', '".sql_esc($multipass[$i]["rehash"])."', '".sql_esc($multipass[$i]["salt"])."', '".$i."', '".
         sql_esc($multipass[$i]["dupehash"])."', ".$random.", ".$idlevel.", '".$email."', ".$idstyle.", ".$idlangue.", ".$idflag.", NOW(), NOW(),'".$pid."', '".$timezone."'".(($btit_settings["fmhack_signup_bonus_upload"] ==
-        "enabled" && !$XBTT_USE)?", ".$uploaded:"").(($btit_settings["fmhack_birthdays"] == "enabled")?", '".$dob."'":"").(($btit_settings["fmhack_force_ssl"] == "enabled")?", '".$force."'":"").$value.")", true);
-    $newuid = sql_insert_id();
-    if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"] == "enabled")
-    {
+            "enabled" && !$XBTT_USE)?", ".$uploaded:"").(($btit_settings["fmhack_birthdays"] == "enabled")?", '".$dob."'":"").(($btit_settings["fmhack_force_ssl"] == "enabled")?", '".$force."'":"").$value.")", true);
+     $newuid = sql_insert_id();
+     if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"] == "enabled")
+     {
         // begin - announce new confirmed user in shoutbox
         system_shout((sql_esc($language["ANN_NEW_USER"])." [url=".$BASEURL."/index.php?page=userdetails&id=".$newuid."]".$utente."[/url]"), false,true);
         // end - announce new confirmed user in shoutbox
@@ -978,7 +1008,7 @@ else
     {
         $msg_settings=get_fresh_config("SELECT `key`,`value` FROM {$TABLE_PREFIX}welcome_msg");
         if(!empty($msg_settings["fm_welcome_sub"]) && !empty($msg_settings["fm_welcome_msg"]))
-        send_pm(0,$newuid,sqlesc($msg_settings["fm_welcome_sub"]),sqlesc($msg_settings["fm_welcome_msg"]));
+            send_pm(0,$newuid,sqlesc($msg_settings["fm_welcome_sub"]),sqlesc($msg_settings["fm_welcome_msg"]));
     }
 
     // xbt
@@ -1008,6 +1038,27 @@ else
             ini_set("sendmail_from", "");
             if(sql_errno() == 0)
             {
+                global $valid_token, $user, $sql_token, $kisfig;
+                if (isset($valid_token)) 
+                {
+                    kisJoined($newuid, $sql_token, $user);
+                    if ($kisfig['kis_regAmmount']!=0) 
+                    {
+                        $kisSize=getSize($kisfig['kis_regAmmount'], $kisfig['kis_regType']);
+                        uplMod($user, $kisSize);
+                        $kisSize=makeSize($kisSize);
+                        $note=sprintf($language['KIS_REG_NOTE'], $kisSize);
+                        $logNote=' He was awarded '.$kisSize.'.';
+                    } else 
+                    {
+                        $note='';
+                        $logNote='';
+                    }
+                    send_pm(0,$user,sqlesc($language['KIS_REG_TITLE']),sqlesc(sprintf($language['KIS_REG_BODY'], $email, $BASEURL, $newuid, $utente ).$note));
+                    if ($kisfig['kis_logs'])
+                        write_log('[KIS] '.getNameX($user, $BASEURL).' invited <a href="'.$BASEURL.'/index.php?page=userdetails&id='.$newuid.'">'.$utente.'</a> ('.$email.').'.$logNote, 'add');
+                }
+
                 send_mail($email, $language["ACCOUNT_CONFIRM"], $language["ACCOUNT_MSG"]."\n\n".$BASEURL."/index.php?page=account&act=confirm&confirm=$random&language=$idlangue");
                 write_log("Signup new user $utente ($email)", "add");
             }
