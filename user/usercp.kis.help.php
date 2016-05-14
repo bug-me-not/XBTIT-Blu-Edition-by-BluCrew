@@ -23,5 +23,5 @@
 if (!defined('IN_BTIT'))
 	die('non direct access!');
 # template
-$kisTabTemplate='kis/ucp.help.tpl';
+$kisTabTemplate='usercp.kis.help.tpl';
 ?>

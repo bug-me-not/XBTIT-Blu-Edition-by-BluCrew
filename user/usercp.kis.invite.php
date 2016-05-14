@@ -24,7 +24,7 @@ if (!defined('IN_BTIT'))
 	die('non direct access!');
 
 # template
-$kisTabTemplate='kis/ucp.invite.tpl';
+$kisTabTemplate='usercp.kis.invite.tpl';
 
 # inits
 $user=kisUserInfo($uid);

@@ -24,7 +24,7 @@ if (!defined('IN_BTIT'))
 	die('non direct access!');
 
 # template
-$kisTabTemplate='kis/ucp.view.tpl';
+$kisTabTemplate='usercp.kis.view.tpl';
 
 # code
 switch ($_GET['action']) {
