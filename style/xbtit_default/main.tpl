@@ -26,8 +26,6 @@
 <!-- Custom CSS -->
 <link rel='stylesheet' href='css/global.css' type='text/css' />
 <link rel='stylesheet' href='css/hover.css' type='text/css' />
-<link rel='stylesheet' href='css/pulseglow.css' type='text/css' />
-<link rel='stylesheet' href='css/SideNav.css' type='text/css'/>
 <tag:more_css /> 
 <!-- #CSS Links -->
 
