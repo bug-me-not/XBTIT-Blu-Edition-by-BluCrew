@@ -4,7 +4,6 @@
 <tag:language.FL_FFF />&nbsp;:&nbsp;<tag:un />
 </div>
 </div>
-</div>
 <br>
 <table class="table table-bordered">
 
@@ -38,3 +37,4 @@
     </tr>
   </if:have_friends>
 </table>
+</div>
