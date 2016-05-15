@@ -4,7 +4,6 @@
 <tag:language.FL_FPENDING />
 </div>
 </div>
-</div>
 <table class="table table-bordered">
 
   <tr>
@@ -33,14 +32,15 @@
       <td class="lista" colspan="7" style="text-align:center;font-weight:bold;"><tag:language.FL_NOPENFRO /></td>
     </tr>
   </if:have_pending>
-
 </table>
+</div>
+
 <br><br>
+
 <div class="panel panel-primary">
 <div class="panel-heading">
 <div align="center">
 <tag:language.FL_FFRIEND />
-</div>
 </div>
 </div>
 <table class="table table-bordered">
@@ -73,14 +73,15 @@
       <td class="lista" colspan="8" style="text-align:center;font-weight:bold;"><tag:language.FL_NOPENFRI /></td>
     </tr>
   </if:have_requests>  
-
 </table>
+</div>
+
 <br><br>
+
 <div class="panel panel-primary">
 <div class="panel-heading">
 <div align="center">
 <tag:language.FL_FCONF />
-</div>
 </div>
 </div>
 <table class="table table-bordered">
@@ -112,13 +113,14 @@
     </tr>
   </if:have_confirmed>
 </table>
+</div>
 
 <br><br>
+
 <div class="panel panel-primary">
 <div class="panel-heading">
 <div align="center">
 <tag:language.FL_FREJ />
-</div>
 </div>
 </div>
 <table class="table table-bordered">
@@ -150,3 +152,4 @@
     </tr>
   </if:have_rejected>
 </table>
+</div>
