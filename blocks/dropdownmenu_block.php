@@ -92,7 +92,7 @@ if ($CURUSER["admin_access"]=="yes")
 //SEARCH 
 print("<form action='index.php' method='get' name='torrent_search' class='navbar-form navbar-right'>
           <input type='hidden' name='page' value='torrents'>
-          <input onfocus='if (this.value == 'Torrents') this.value='';' onblur='if(this.value == '') this.value='Torrents';' type='text' name='search' class='search' size='30' maxlength='50' value='Torrents'>
+          <input onfocus='if (this.value == 'Torrents') this.value='';' onblur='if(this.value == '') this.value='Torrents';' type='text' name='search' class='search' size='30' maxlength='50' placeholder='Torrents'>
         </form>");
 
 ?>

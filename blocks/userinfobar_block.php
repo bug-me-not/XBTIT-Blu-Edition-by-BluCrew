@@ -33,14 +33,6 @@ if ($rowuser["up_med"] >= 3)
 $upr= "<img src='images/goblet/medaille_or.gif' alt='Gold Medal' title='Gold Medal' />";
 // DT Uploader Medals
 
-// DT arcade
-if ($rowuser["trophy"] == 0)
-$rra="";
-
-if ($rowuser["trophy"] == 1)
-$rra= "<img src='images/crown.gif' alt='Arcade King' title='Arcade King' />";
-
-// DT arcade
 
 // user image
 $do=$btit_settings["img_don"];
@@ -206,6 +198,14 @@ if($row["free"]=="yes")
      $post=date("l jS F Y \a\\t g:i a",$row["timestamp"]);
      $img='';
 }
+/*else
+{
+            $freec="red";
+            $till='';
+            $col='';
+            $post='VIP Free Leech Is Enabled';
+            $img =''; 
+}*/
 
 print("<td align='center'><b><font color='$freec'>".$col."".$till."".ucfirst($post)."\n(UTC)</b></font></td>\n");
 // end freeleech hack
