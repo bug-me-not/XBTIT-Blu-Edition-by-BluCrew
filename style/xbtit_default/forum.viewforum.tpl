@@ -1,9 +1,10 @@
 <if:HAS_SUBFORUMS>
 <br />
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:sub_forum_name /></h4>
+</div>
 <table class="table table-bordered">
-  <tr>
-    <td class="header" align="center" colspan="7"><tag:sub_forum_name /></td>
-  </tr>
   <tr>
     <td class="header" align="center" width="2%">&nbsp;</td>
     <td class="header" align="center"><tag:language.FORUM /></td>
@@ -21,24 +22,25 @@
   </tr>
   </loop:forums>
 </table>
+</div>
 <br />
 </if:HAS_SUBFORUMS>
+
 <table width="100%">
   <tr>
-    <td align="left" valign="middle">
-      <tag:forum_pager />
-    </td>
     <if:can_create>
-    <td align="right" valign="middle">
+    <td align="center" valign="middle">
       <span class="pager"><a href="<tag:forum_action />"><tag:language.NEW_TOPIC /></a></span>
     </td>
     </if:can_create>
   </tr>
 </table>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:forum_name /></h4>
+</div>
 <table class="table table-bordered">
-  <tr>
-    <td class="header" align="center" colspan="7"><tag:forum_name /></td>
-  </tr>
   <tr>
     <td class="header" align="center" width="2%">&nbsp;</td>
     <td class="header" align="center"><tag:language.TOPIC /></td>
@@ -61,16 +63,23 @@
     <td class="lista" style="text-align:center;" align="center"><tag:topics[].view /></td>
     <td class="lista" align="center"><tag:topics[].lastpost /></td>
   </tr>
-
+  </div>
   </loop:topics>
   </if:NO_TOPICS>
+
   <tr>
   <td valign='middle' align='left' colspan='7'>
   <tag:forum_pager_bottom />
   </td>
   </tr>
 </table>
+</div>
 <br />
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Legend</h4>
+</div>
 <div align="center">
   <table class="lista" cellpadding="5" width="100%">
     <tr valign="middle">

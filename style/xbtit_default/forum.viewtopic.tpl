@@ -1,26 +1,16 @@
-<table width="100%">
-  <tr>
-    <td class="header"><a name="top" /><tag:topic_title /></td>
-  </tr>
-</table>
-<table width="100%" align="center">
-  <tr>
-    <td align="center" valign="middle">
-        <table width="100%">
-          <tr>
-            <td align="center" valign="middle"><tag:forum_pager /></td>
-            </td>
-          </tr>
-        </table>
-    </td>
-  </tr>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:topic_title /></h4>
+</div>
+
   <tr>
     <td align="center" valign="middle">
     <loop:posts>
       <table class="table table-bordered">
         <!-- Message header (with delete/quote/edit) if authorized) -->
         <tr>
-          <td align="left" class="header" colspan="2">
+          <td align="left" class="head" colspan="2">
             <table width="100%">
               <tr>
               <td align="left">
@@ -68,20 +58,23 @@
           <td class="post" width="100%" valign="top" style="padding:10px"><tag:posts[].body /></td>
         </tr>
         <tr>
-          <td align="right" class="header" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
+          <td align="right" class="panel-footer" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
         </tr>
       </table>
       <br />
     </loop:posts>
     </td>
   </tr>
+  </div>
+
   <tr>
     <td align="center" valign="middle">
       <table width="100%">
             <td align="center" valign="middle"><tag:topic_locked /></td>
         <tr>
           <if:can_write_1>
-            <td align="center" valign="middle"><a href="<tag:forum_action />"><img src="images/comm.png"></a></td>
+            <td align="center" valign="middle"><a href="<tag:forum_action />"><button class="btn btn-labeled btn-info btn-lg" type="button">
+   <span class="btn-label"><i class="fa fa-comment"></i></span>Insert Comment Here</button></a></td>
           </if:can_write_1>
           </td>
         </tr>
@@ -90,6 +83,10 @@
     </td>
   </tr>
 </table>
+
+
+
+
 <if:moderator>
 <script type="text/javascript">
 function ShowHide(id,id1) {
@@ -111,8 +108,9 @@ function windowunder(link)
 }
 </script>
 <br />
-<div align="left" style="width:98%">
-<span class="pager"><a name="expand" href="#expand" onclick="javascript:ShowHide('moderator','modoption');"><tag:language.MOD_OPTION /></a></span>
+<div class="panel panel-danger">
+<div class="panel-heading">
+<h4 class="text-center"><span class="pager"><a name="expand" href="#expand" onclick="javascript:ShowHide('moderator','modoption');"><tag:language.MOD_OPTION />&nbsp;&nbsp;<i class="fa fa-plus"></i></a></span></h4>
 </div>
 <div id="moderator" style="display:none">
 <br />
@@ -127,7 +125,7 @@ function windowunder(link)
 <input type="hidden" name="returnto" value="<tag:return_to />" />
 &nbsp;<input type="radio" name="sticky" value="yes" <tag:sticky_yes /> /><tag:language.YES />
 &nbsp;<input type="radio" name="sticky" value="no"  <tag:sticky_no /> /><tag:language.NO />
-&nbsp;&nbsp;<input type="submit" value="<tag:language.SET_STICKY />" name="sticky_btn" class="btn" />
+&nbsp;&nbsp;<input type="submit" value="<tag:language.SET_STICKY />" name="sticky_btn" class="btn btn-primary btn-sm" />
 </form>
 </td>
 </tr>
@@ -140,7 +138,7 @@ function windowunder(link)
 <input type="hidden" name="returnto" value="<tag:return_to />" />
 &nbsp;<input type="radio" name="locked" value="yes"  <tag:locked_yes /> /><tag:language.YES />
 &nbsp;<input type="radio" name="locked" value="no"  <tag:locked_no /> /><tag:language.NO />
-&nbsp;&nbsp;<input type="submit" value="<tag:language.SET_LOCKED />" name="locked_btn" class="btn" />
+&nbsp;&nbsp;<input type="submit" value="<tag:language.SET_LOCKED />" name="locked_btn" class="btn btn-primary btn-sm" />
 </form>
 </td>
 </tr>
@@ -151,8 +149,8 @@ function windowunder(link)
 <form name="rename" action="index.php?page=forum&amp;action=rename" method="post">
 <input type="hidden" name="topicid" value="<tag:topic_id />" />
 <input type="hidden" name="returnto" value="<tag:return_to />" />
-&nbsp;<input type="text" size="40" maxlength="40" name="subject" value="<tag:topic_subject />" />
-&nbsp;&nbsp;<input type="submit" value="<tag:language.RENAME_TOPIC />" name="rename" class="btn" />
+&nbsp;<input type="text" size="40" maxlength="40" name="subject" class="form-control" value="<tag:topic_subject />" />
+&nbsp;&nbsp;<input type="submit" value="<tag:language.RENAME_TOPIC />" name="rename" class="btn btn-primary btn-sm " />
 </form>
 </td>
 </tr>
@@ -162,7 +160,7 @@ function windowunder(link)
 <!-- move topic in other forum -->
 <form method="post" action="index.php?page=forum&amp;action=movetopic&amp;topicid=<tag:topic_id />" name="movetopic">
 &nbsp;<tag:forums_combo />
-&nbsp;&nbsp;<input type="submit" value="<tag:language.MOVE />" name="movetopic" class="btn" />
+&nbsp;&nbsp;<input type="submit" value="<tag:language.MOVE />" name="movetopic" class="btn btn-primary btn-sm" />
 </form>
 </td>
 </tr>
@@ -176,14 +174,12 @@ function windowunder(link)
 <input type="hidden" name="forumid" value="<tag:forum_id />" />
 <input type="checkbox" name="sure" value="1" />
 &nbsp;<tag:language.IM_SURE />
-&nbsp;&nbsp;<input type="submit" value="<tag:language.DELETE_TOPIC />" class="btn" />
+&nbsp;&nbsp;<input type="submit" value="<tag:language.DELETE_TOPIC />" class="btn btn-danger btn-sm" />
 </form>
 </td>
 </tr>
 </table>
-<br />
 </div>
-<div id="modoption" style="display:block"><br />
 </div>
 </if:moderator>
 

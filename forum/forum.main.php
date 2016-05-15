@@ -64,7 +64,7 @@ else
    {
       if($forums_arr["category"]=="yes")
       {
-         $forums[$i]["header"] =  "<tr><td class=header colspan=5><b><center>".htmlspecialchars(unesc($forums_arr["name"]))."</b></center></td></tr>";
+         $forums[$i]["header"] =  "<tr><td class=head colspan=5><b><center>".htmlspecialchars(unesc($forums_arr["name"]))."</b></center></td></tr>";
       }
       else
       {
