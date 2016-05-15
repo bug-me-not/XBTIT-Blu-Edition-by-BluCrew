@@ -20,6 +20,14 @@
     </if:pka_enabled>
     </tr>
 
+    <if:social_network_enabled>
+    <tr>
+    <td class="header"><tag:language.FL_W2BF /></td>
+    <td class="lista"><tag:userdetailarr.friend /><span style="color:red"><tag:language.FL_FRIENDLIST />:</span>&nbsp;&nbsp; <tag:userdetailarr.showfriend />
+    </td>
+    </if:social_network_enabled>
+    </tr>
+
     <if:user_img_enabled>
     <tr>
     <td class="header"><tag:language.UIMG_USR_ICONS /></td>
