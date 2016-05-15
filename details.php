@@ -1326,10 +1326,10 @@ $sres->free();
    $coverquery = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers");
    $covernum = sql_num_rows($coverquery);
 
-   if ($artc == 0)
-   {
+   //if ($artc == 0)
+   //{
       $artwork = "No Covers/Artwork currently available for this torrent <a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
-   }else{
+   /*}else{
       $artwork = ""; 
       while ($artr = $artq->fetch_array()) 
       {
@@ -1340,7 +1340,7 @@ $sres->free();
       }
       
       $artwork .= "<br /><br /><a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
-   }  
+   }  */
    $torrenttpl->set("covers",$artwork);
 // cover/artwork section by medishack
 
