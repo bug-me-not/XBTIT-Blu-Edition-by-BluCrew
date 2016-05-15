@@ -57,7 +57,7 @@
 
    <tr>
       <td class="header">Last Browser</td>
-      <td class="lista"><tag:browser_colspan_1/></td>
+      <td class="lista"><tag:browser /></td>
     </tr>
 
     <if:ip2c_view>

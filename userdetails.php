@@ -518,6 +518,7 @@ $userdetailtpl->set("userdetail_edit_admin", $CURUSER["edit_users"] == "yes" || 
 if($CURUSER["edit_users"] == "yes" || $CURUSER["admin_access"] == "yes")
 {
     $userdetailarr["userdetail_email"] = "<a href=\"mailto:".$row["email"]."\">".$row["email"]."</a>";
+    $userdetailtpl-> set("browser", ($row["browser"]));
     // ip to country
     $userdetailtpl->set("ip2c_view", (($btit_settings["fmhack_IP_to_country"] == "enabled" && $CURUSER["delete_users"] == "yes")?true:false), true);
     if($btit_settings["fmhack_IP_to_country"] == "enabled")
