@@ -102,45 +102,6 @@ if($btit_settings["fmhack_block_signup_from_certain_countries"]=="enabled")
         }
     }
 }
-if($btit_settings["fmhack_registration_open_randomly"] == "enabled")
-{
-    if(!$_POST["conferma"])
-    {
-        if($act != "invite")
-        {
-            $taskres = get_result("SELECT `last_time` FROM `{$TABLE_PREFIX}tasks` WHERE `task`='rreg'", true, $btit_settings["cache_duration"]);
-            $open = (int)(0 + $taskres[0]["last_time"]);
-            $close = (int)(0 + ($taskres[0]["last_time"] + ($btit_settings["rreg_open_for"] * 60)));
-            if(time() < $open || time() > $close)
-            {
-                $err_msg = $language["RREG_CLOSED_1"];
-                if($btit_settings["fmhack_invitation_system"] == "enabled")
-                    $err_msg .= "<br /><br />".$language["RREG_CLOSED_2"];
-                stderr($language["ERROR"], $err_msg);
-            }
-        }
-    }
-}
-//start Invitation System by dodge
-if($btit_settings["fmhack_invitation_system"] == "enabled")
-{
-    if(!$_POST["conferma"] && $INVITATIONSON)
-    {
-        if($act == "invite")
-        {
-            $code = sql_esc(strtolower(preg_replace("/[^A-Fa-f0-9]/", "", $_GET["invitationnumber"])));
-            $res = do_sqlquery("SELECT `inviter`, `confirmed` FROM `{$TABLE_PREFIX}invitations` WHERE `hash` = '".$code."'", true);
-            @$inv = $res->fetch_assoc();
-            $inviter = $inv["inviter"];
-            $confirmed = $inv["confirmed"];
-            if(!$inv || $confirmed == "true")
-                stderr($language["ERROR"], $code."<br>".$language["INVALID_INVITATION"]."<br>".$language["ERR_INVITATION"]);
-        }
-        else
-            stderr($language["ERROR"], $language["INVITATION_ONLY"]);
-    }
-}
-//end Invitation System by dodge
 // already logged?
 if($act == "signup" && isset($CURUSER["uid"]) && $CURUSER["uid"] != 1)
 {
@@ -431,19 +392,7 @@ if($_POST["conferma"])
            $tpl_account->set("createacc_style_enabled_1", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
            $tpl_account->set("birthdays_enabled", (($btit_settings["fmhack_birthdays"] == "enabled")?true:false), true);
            $tpl_account->set("ssl_enabled", (($btit_settings["fmhack_force_ssl"] == "enabled")?true:false), true);
-    //begin invitation system by dodge
-           if($btit_settings["fmhack_invitation_system"] == "enabled")
-           {
-            if($INVITATIONSON)
-            {
-                $tpl_account->set("BY_INVITATION", true, true);
-                $tpl_account->set("account_IDcode", $code);
-                $tpl_account->set("account_IDinviter", $inviter);
-            }
-        }
-        else
-            $tpl_account->set("BY_INVITATION", false, true);
-    //end invitation system
+
         if($action == "del")
             $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" class=\"btn btn-sucess btn-md\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
                 $language["FRM_CANCEL"]."\" />");
@@ -947,28 +896,6 @@ if($_POST["conferma"])
         if($btit_settings["fmhack_IMG_in_SB_after_x_shouts"] == "enabled")
             auto_shout(sql_insert_id());
     }
-    //begin invitation system by dodge
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-    {
-        if($INVITATIONSON == "true")
-        {
-            $inviter = 0 + $_POST["inviter"];
-            $code = unesc($_POST["code"]);
-            $res = do_sqlquery("SELECT username FROM {$TABLE_PREFIX}users WHERE id = $inviter", true);
-            $arr = $res->fetch_assoc();
-            $invusername = $arr["username"];
-            quickQuery("UPDATE {$TABLE_PREFIX}users SET invited_by='".$inviter."' WHERE id='".$newuid."'", true);
-            quickQuery("UPDATE {$TABLE_PREFIX}invitations SET confirmed='true' WHERE hash='$code'", true);
-            if($btit_settings["fmhack_user_notes"] == "enabled" && $btit_settings["un_invite"] == "enabled")
-            {
-                $usernotes = array();
-                $usernotes[] = base64_encode($language["UN_INV_ACC_1"]." ".$invusername." ".$language["UN_INV_ACC_2"]."<+>0<+>".$language["SYSTEM_USER"]."<+>".time());
-                $new_notes = serialize($usernotes);
-                quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `user_notes`='".sql_esc($new_notes)."' WHERE `id`=".$newuid, true);
-            }
-        }
-    }
-    //end invitation system
     // Continue to create smf members if they disable smf mode
     if(!isset($db_prefix))
         $db_prefix="smf_";

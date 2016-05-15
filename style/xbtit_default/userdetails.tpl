@@ -45,6 +45,11 @@
     <td class="lista"<tag:userdetailarr.avatar_colspan_1 />><tag:userdetailarr.userdetail_email /></td>
   </tr>
 
+  <tr>
+    <td class="header">Last Client IP</td>
+    <td class="lista"<tag:userdetailarr.avatar_colspan_2 />>Coming Soon!</td>
+   </tr>
+
    <tr>
     <td class="header"><tag:language.LAST_IP /></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_2 />><tag:userdetailarr.userdetail_last_ip /></td>
@@ -172,29 +177,6 @@
     </tr>
   </if:custom_title_enabled>
 
-  <if:invite_enabled>
-  <tr>
-    <td class="header"><tag:language.USER_INVITATIONS /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_invs /></td>
-  </tr>
-
-  <if:was_invited>
-  <tr>
-    <td class="header"><tag:language.USER_INVITED_BY /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_invby /></td>
-  </tr>
-  </if:was_invited>
-  </if:invite_enabled>
-  
-  <tr>
-
-    <td class="header">Users Invited</td>
-
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><a href="index.php?page=modules&module=invite&amp;id=<tag:id />">Show</a></td>
-
-  </tr>
-
-
   <tr>
     <td class="header"><tag:language.USER_JOINED /></td>
     <td class="lista" <tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_joined /></td>
@@ -203,6 +185,11 @@
   <tr>
     <td class="header"><tag:language.USER_LASTACCESS /></td>
     <td class="lista" <tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_lastaccess /></td>
+  </tr>
+
+  <tr>
+    <td class="header">Invited By</td>
+    <td class="lista" <tag:userdetailarr.avatar_colspan_14 />>Coming Soon!</td>
   </tr>
 
   <tr>

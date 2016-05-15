@@ -85,8 +85,6 @@ if($id > 1)
     $query1_select = "`ul`.`id_level` `base_level`,";
     $query1_join = "";
     $query1_and = "";
-    if($btit_settings["fmhack_invitation_system"] == "enabled")
-        $query1_select .= "u.invited_by, u.invitations,";
     if($btit_settings["fmhack_custom_title"] == "enabled")
         $query1_select .= "u.custom_title,";
     if($btit_settings["fmhack_bonus_system"] == "enabled")
@@ -762,35 +760,6 @@ else
     $userdetailarr["userdetail_level"] = (($btit_settings["fmhack_group_colours_overall"] == "enabled")?unesc($row["prefixcolor"].$row["level"].$row["suffixcolor"]):($row["level"]));
     $userdetailarr["userdetail_colspan"] = "0";
 }
-//begin invitation system by dodge
-$userdetailtpl->set("invite_enabled", (($btit_settings["fmhack_invitation_system"] == "enabled")?true:false), true);
-if($btit_settings["fmhack_invitation_system"] == "enabled")
-{
-    $userdetailarr["userdetail_invs"] = $row["invitations"];
-    if($row["invited_by"] > 0)
-    {
-        $res2 = get_result("SELECT u.`id`, u.`username`".(($btit_settings["fmhack_group_colours_overall"] == "enabled")?", `ul`.`prefixcolor`, `ul`.`suffixcolor`":"")." FROM `{$TABLE_PREFIX}users` `u`".(($btit_settings["fmhack_group_colours_overall"] == "enabled")?" LEFT JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id`":"")." WHERE `u`.`id`='".$row["invited_by"]."'", true, $btit_settings["cache_duration"]);
-        if(count($res2) > 0)
-        {
-            $userdetailtpl->set("was_invited", true, true);
-            $invite = $res2[0];
-            if($btit_settings["fmhack_group_colours_overall"] != "enabled")
-            {
-                $invite["prefixcolor"] = "";
-                $invite["suffixcolor"] = "";
-            }
-            $userdetailarr["userdetail_invby"] = "<a href=".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated_user"] == "true")?$invite["id"]."_".strtr($invite["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$invite["id"]).">".unesc($invite["prefixcolor"].$invite["username"].$invite["suffixcolor"])."</a>";
-        }
-    }
-    else
-        $userdetailtpl->set("was_invited", false, true);
-}
-else
-    $userdetailtpl->set("was_invited", false, true);  
-	
-	$userdetailtpl->set("id",$id);
-	  
-//end invitation system
 $userdetailarr["userdetail_joined"] = ($row["joined"] == 0?"N/A":get_date_time($row["joined"]));
 $userdetailtpl->set("custom_title_enabled", false, true);
 if($btit_settings["fmhack_custom_title"] == "enabled")
