@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Post</h4>
+</div>
 <form method="post" name="compose" action="<tag:frm_action />">
   <table class="table table-bordered">
     <tr>
@@ -11,7 +15,7 @@
         <if:newtopic_1>
         <tr>
           <td class="header"><tag:language.SUBJECT /></td>
-          <td align="left" style="padding: 0px" class="header"><input type="text" size="60" maxlength="40" name="subject" value="<tag:post_subject />" /></td>
+          <td align="left" style="padding: 0px" class="header"><input type="text" size="60" maxlength="40" name="subject" class="form-control" value="<tag:post_subject />" /></td>
         </tr>
         </if:newtopic_1>
         <tr>
@@ -20,8 +24,8 @@
         </tr>
         <tr>
           <td colspan="2" align="center" class="header">
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CONFIRM />" />
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CANCEL />" />
+            <input type="submit" name="confirm" class="btn btn-primary btn-md" value="<tag:language.FRM_CONFIRM />" />
+            <input type="submit" name="confirm" class="btn btn-danger btn-md" value="<tag:language.FRM_CANCEL />" />
           </td>
         </tr>
         </table>
@@ -29,12 +33,16 @@
     </tr>
   </table>
 </form>
+</div>
+
+
 <if:old_posts>
 <a name="top" />
-<div align="center" style="width:100%; font-size:10pt; font-weight:bold;">
-<tag:language.LAST_10_POSTS /><br />
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.LAST_10_POSTS /></h4>
 </div>
-<table class="table table-bordered">
+<table>
   <tr>
     <td align="center">
     <loop:posts>
@@ -66,11 +74,12 @@
           <td class="post" width="100%" valign="top" style="padding:10px"><tag:posts[].body /></td>
         </tr>
         <tr>
-          <td align="right" class="header" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
+          <td align="right" class="head" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
         </tr>
       </table>
     </loop:posts>
     </td>
   </tr>
 </table>
+</div>
 </if:old_posts>

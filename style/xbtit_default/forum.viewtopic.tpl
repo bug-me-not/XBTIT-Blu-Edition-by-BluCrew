@@ -3,7 +3,6 @@
 <div class="panel-heading">
 <h4 class="text-center"><tag:topic_title /></h4>
 </div>
-
   <tr>
     <td align="center" valign="middle">
     <loop:posts>
@@ -61,11 +60,12 @@
           <td align="right" class="panel-footer" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
         </tr>
       </table>
+      </div>
       <br />
     </loop:posts>
     </td>
   </tr>
-  </div>
+</div>
 
   <tr>
     <td align="center" valign="middle">
