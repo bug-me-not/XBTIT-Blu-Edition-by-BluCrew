@@ -1137,7 +1137,7 @@ if($count > 0)
             include ("include/offset.php");
             $torrents[$i]["added"] = date("d/m/Y", $data["added"] - $offset); // data
             // Alternate date format requested by blubits
-            $torrents[$i]["alt_added"] = date("H:i:s d/m/Y", $data["added"] - $offset);
+            $torrents[$i]["alt_added"] = date("m/d/Y @ H:i:s", $data["added"] - $offset);
             $torrents[$i]["size"] = makesize($data["size"]);
             //multi delete owner of torrent/staff
             if($btit_settings["fmhack_multi_delete_torrents"]=="enabled" || $btit_settings["fmhack_sticky_torrent"] == "enabled")
