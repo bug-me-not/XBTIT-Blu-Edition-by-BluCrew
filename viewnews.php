@@ -79,10 +79,10 @@ include("$THIS_BASEPATH/include/offset.php");
 foreach ($res as $rows)
   {
   
-      $viewnews[$i]["add_edit_news"] = "<a href=\"index.php?page=news&amp;act=add\">".$language["ADD"]."</a>&nbsp;&nbsp;&nbsp;<a href=\"index.php?page=news&amp;act=edit&amp;id=".$rows["id"]."\">".$language["EDIT"]."</a>";
-      $viewnews[$i]["delete_news"] = "&nbsp;&nbsp;&nbsp;<a onclick=\"return confirm('". str_replace("'","\'",$language["DELETE_CONFIRM"])."')\" href=\"index.php?page=news&amp;act=del&amp;id=".$rows["id"]."\">".$language["DELETE"]."</a>";
+      $viewnews[$i]["add_edit_news"] = "<a href=\"index.php?page=news&amp;act=add\"><button type=\"button\" class=\"btn btn-primary btn-xs\">ADD</button></a>&nbsp;&nbsp;&nbsp;<a href=\"index.php?page=news&amp;act=edit&amp;id=".$rows["id"]."\"><button type=\"button\" class=\"btn btn-warning btn-xs\">EDIT</button></a>";
+      $viewnews[$i]["delete_news"] = "&nbsp;&nbsp;&nbsp;<a onclick=\"return confirm('". str_replace("'","\'",$language["DELETE_CONFIRM"])."')\" href=\"index.php?page=news&amp;act=del&amp;id=".$rows["id"]."\"><button type=\"button\" class=\"btn btn-danger btn-xs\">DELETE</button></a>";
       $viewnews[$i]["user_posted"]=(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($rows["prefixcolor"].$rows["username"].$rows["suffixcolor"]):unesc($rows["username"]));
-      $viewnews[$i]["posted_date"] = date("d/m/Y H:i",$rows["news_date"]-$offset);
+      $viewnews[$i]["posted_date"] = date("m/d/Y H:i",$rows["news_date"]-$offset);
       $viewnews[$i]["news_title"] = unesc($rows["title"]);
       $viewnews[$i]["news"] = format_comment($rows["news"]);
     

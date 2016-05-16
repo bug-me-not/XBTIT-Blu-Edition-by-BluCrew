@@ -10,7 +10,7 @@
 <table class="table table-bordered">
   <if:news_exists>
   <loop:viewnews>
-   <tr class= "danger">
+   <tr class= "info">
      <td class="lista" align="center">
        <h4><tag:viewnews[].news_title /></h4>     
      </td>
