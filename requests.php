@@ -854,7 +854,7 @@ else
 
 					//has access
 					$hasaccess = "";
-					if(($CURUSER['admin_access']=='yes' && ($tres['uploadedby']>0 || $tres['jobtakenby']>0 && (($uploadedwhen+48*3600)>time()))) || ($CURUSER['uid']==$tres['requester'] && $tres['uploadedby']>0 && $tres['jobtakenby']>0 && (($uploadedwhen+48*3600)>time())) || ($CURUSER['uid']==$tres['jobtakenby']))
+					if(($CURUSER['admin_access']=='yes' && ($tres['uploadedby']>0 || $tres['jobtakenby']>0)) || ($CURUSER['uid']==$tres['requester'] && $tres['uploadedby']>0 && $tres['jobtakenby']>0 && (($uploadedwhen+48*3600)>time())) || ($CURUSER['uid']==$tres['jobtakenby']))
 					{
 						$hasaccess .= "<form action='index.php?page=requests&action=reqreset' method='post'>\n<input type='hidden' name='req_id' value='{$tres['id']}'>\n<input type='hidden' name='req_name' value='{$tres['reqname']}'>\n<input type='hidden' name='uid' value='{$cid}'>\n<input type='hidden' name='auth' value='{$cauth}'>\n<input type='submit' class='btn btn-sm btn-danger' value='{$language['RS']}'>\n</form>";
 					}
