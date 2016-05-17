@@ -234,7 +234,7 @@ $tpl->set("main_jscript",$morescript);
 if (!$no_columns && $pageID!='admin' && $pageID!='forum' && $pageID!='torrents' && $pageID!='usercp' 
   && $pageID!='torrent-details' && $pageID!="upload" && $pageID!="userdetails" && $pageID!="viewrequests"
   && $pageID!="requests" && $pageID!="reqdetails" && $pageID!="veiwexpected" && $pageID!="expectdetails"
-  && $pageID!="expected" && $pageID!="faq" && $pageID!='peers') 
+  && $pageID!="expected" && $pageID!="faq" && $pageID!='peers' && $pageID!='seedbox') 
 {
   $tpl->set("main_left",$left_col);
   $tpl->set("main_right",$right_col);

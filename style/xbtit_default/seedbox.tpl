@@ -1,46 +1,64 @@
-          <tag:sw1 />
-          <tag:sw2 />
-          <tag:sw2.3 />
-          <tag:sw3 />
-          <tag:sw4 />
-          <tag:sw5 />
-          <tag:sw6 />
-          <tag:sw6.5 />
-          <tag:sw7 />
-          <tag:sw8 />
-          <tag:sw9 />
-          <tag:sw10 />
-          <tag:sw11 />
-          
-       <loop:seedbox>
-          <tag:seedbox[].sw12 />
-          <tag:seedbox[].sw13 />
-          <tag:seedbox[].sw14 />
-          <tag:seedbox[].sw15 />
-          <tag:seedbox[].sw16 />
-          <tag:seedbox[].sw17 />
-          <tag:seedbox[].sw18 />
-          <tag:seedbox[].sw19 />
-          <tag:seedbox[].sw20 />
-          <tag:seedbox[].sw20.5 />
-          <tag:seedbox[].sw21 />
-          <tag:seedbox[].sw22 />
-          <tag:seedbox[].sw23 />
-          <tag:seedbox[].sw24 />
-          <tag:seedbox[].sw25 />
-          <tag:seedbox[].sw26 />
-          <tag:seedbox[].sw27 />
-          <tag:seedbox[].sw28 />
-          <tag:seedbox[].sw29 />
-          <tag:seedbox[].sw30 />
-          <tag:seedbox[].sw31 />
-          <tag:seedbox[].sw32 />
-          <tag:seedbox[].sw33 />
-          <tag:seedbox[].sw34 />
-       </loop:seedbox>
-       
-          <tag:sw35 />
-          <tag:sw36 />
-          <tag:sw37 />
-          <tag:sw38 />
-          <tag:sw39 /
+<div class='container'>
+     <if:has_torrents>
+     <div id='pager'>
+          <tag:pagertop />
+     </div>
+     <table>
+          <thead>
+               <tr>
+                    <td><tag:language.DOWN /></td>
+                    <td><tag:language.TORRENT_FILE /></td>
+                    <td><tag:language.CATEGORY /></td>
+                    <if:wait_time>
+                    <td><tag:language.WT /></td>
+               </if:wait_time>
+               <td><tag:language.ADDED /></td>
+               <td><tag:language.UPLOADER /></td>
+               <td><tag:language.SIZE /></td>
+               <td><tag:language.SHORT_S /></td>
+               <td><tag:language.SHORT_L /></td>
+               <td><tag:language.SHORT_C /></td>
+          </tr>
+     </thead>
+     <tbody>
+          <loop:seedbox>
+          <tr>
+               <if:dcheck>
+               <td><a href='index.php?page=downloadcheck&amp;id=<tag:seedbox[].hash />'><img src='images/download_release.png' border='0' alt='<tag:language.DOWNLOAD_TORRENT />' title='<tag:language.DOWNLOAD_TORRENT />'></a></td>
+               <else:dcheck>
+               <td><a href='download.php?id=<tag:seedbox[].hash />&amp;f=<tag:seedbox[].dfile />.torrent'><img src='images/download_release.png' border='0' alt='<tag:language.DOWNLOAD_TORRENT />' title='<tag:language.DOWNLOAD_TORRENT />'></td>
+          </if:dcheck>
+          <if:popup>
+          <td><a href="javascript:popdetails('index.php?page=torrent-details&amp;id=<tag:seedbox[].hash />" title="<tag:language.VIEW_DETAILS /> : <tag:seedbox[].filename />"><tag:seedbox[].filename /></a></td>
+          <else:popup>
+          <td><a href="index.php?page=torrent-details&amp;id=<tag:seedbox[].hash />" title="<tag:language.VIEW_DETAILS /> : <tag:seedbox[].filename />"><tag:seedbox[].filename /></a></td>
+     </if:popup>
+     <td><a href='index.php?page=torrents&amp;category=<tag:seedbox[].catid />'><img src='<tag:spath />/images/categories/<tag:seedbox[].catimage />' title='<tag:seedbox[].catname />'></a></td>
+     <if:wait_time1>
+     <td><tag:seedbox[].wait /></td>
+</if:wait_time1>
+<td><tag:seedbox[].datetime /></td>
+<td><a href='index.php?page=userdetails&amp;id=<tag:seedbox[].uploaderid />' title='<tag:seedbox[].uploader />'><tag:seedbox[].uploader /></a></td>
+<td><tag:seedbox[].size /></td>
+<if:popup1>
+<td class='<tag:seedbox[].lseeds />'><a href="javascript:poppeer('index.php?page=peers&amp;id=<tag:seedbox[].hash />" title='<tag:language.PEERS_DETAILS />'><tag:seedbox[].seeds /></a></td>
+<td class='<tag:seedbox[].lleechers />'><a href="javascript:poppeer('index.php?page=peers&amp;id=<tag:seedbox[].hash />" title='<tag:language.PEERS_DETAILS />'><tag:seedbox[].leechers /></a></td>
+<td class='<tag:seedbox[].lfinished />'><a href="javascript:poppeer('index.php?page=torrent_history&amp;id=<tag:seedbox[].hash />" title="History -  <tag:seedbox[].filename />"><tag:seedbox[].finished /></a></td>
+<else:popup1>
+<td class='<tag:seedbox[].lseeds />'><a href='index.php?page=peers&amp;id=<tag:seedbox[].hash />' title='<tag:language.PEERS_DETAILS />'><tag:seedbox[].seeds /></a></td>
+<td class='<tag:seedbox[].lleechers />'><a href='index.php?page=peers&amp;id=<tag:seedbox[].hash />' title='<tag:language.PEERS_DETAILS />'><tag:seedbox[].leechers /></a></td>
+<td class='<tag:seedbox[].lfinished />'><a href='index.php?page=torrent_history&amp;id=<tag:seedbox[].hash />' title="History - <tag:seedbox[].filename />"><tag:seedbox[].finished /></a></td>
+</if:popup1>
+</tr>
+</loop:seedbox>
+</tbody>
+</table>
+<div id='pager'>
+     <tag:pagerbottom />
+</div>
+<else:has_torrents>
+<div align='center'>
+     <tag:language.NO_TORRENTS />
+</div>
+</if:has_torrents>
+</div>

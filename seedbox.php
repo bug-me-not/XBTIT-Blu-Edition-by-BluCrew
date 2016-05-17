@@ -33,7 +33,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 if (!defined("IN_BTIT"))
-die("non direct access!");
+   die("non direct access!");
 
 if (!$CURUSER || $CURUSER["view_torrents"]=="no")
 {
@@ -41,132 +41,100 @@ if (!$CURUSER || $CURUSER["view_torrents"]=="no")
 }
 else
 {
+   include("include/offset.php");
+
    global $CURUSER, $BASEURL, $STYLEPATH, $XBTT_USE;
    //   $limit=10;
    if ($XBTT_USE)
-   $sql = "SELECT f.seedbox,f.info_hash as hash, f.seeds+ifnull(x.seeders,0) as seeds , f.leechers + ifnull(x.leechers,0) as leechers, dlbytes AS dwned, format(f.finished+ifnull(x.completed,0),0) as finished, filename, url, info, UNIX_TIMESTAMP(data) AS added, c.image, c.name AS cname, category AS catid, size, external, uploader FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no' ORDER BY f.leechers + ifnull(x.leechers,0) DESC ";
+      $sql = "SELECT count(*) FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no'";
    else
-   $sql = "SELECT seedbox,info_hash as hash, seeds, leechers, dlbytes AS dwned, finished, filename, url, info, UNIX_TIMESTAMP(data) AS added, c.image, c.name AS cname, category AS catid, size, external, uploader FROM {$TABLE_PREFIX}files as f LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category WHERE  seedbox='1' ORDER BY added DESC ";
-   $seedbox=array();
-   $i=0;
-   $row = do_sqlquery($sql,true);
+      $sql = "SELECT count(*) FROM blurg_files as f LEFT JOIN blurg_categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1'";
 
-   if (sql_num_rows($row)>0)
+   $count = (do_sqlquery($sql,true)->fetch_array())[0];
+
+   $seedboxtpl=new bTemplate();
+   $seedboxtpl->set("language",$language);
+
+   if($count > 0)
    {
-      $seedboxtpl=new bTemplate();
-      $seedboxtpl->set("language",$language);
-      $seedboxtpl->set("sw1","<table cellpadding=4 cellspacing=1 width=100%>");
-      $seedboxtpl->set("sw2","<tr>");
-      $seedboxtpl->set("sw2.3","<TD align= center class=header>".$language["DOWN"]."</TD>");
-      $seedboxtpl->set("sw3","<td colspan=1 align=center class=header>".$language["TORRENT_FILE"]."</td>");
-      $seedboxtpl->set("sw4","<td align=center class=header>".$language["CATEGORY"]."</td>");
+      list($pagertop, $pagerbottom, $limit) = pager(25, $count,"index.php?page=seedbox&amp;");
 
-      if (max(0,$CURUSER["WT"])>0)
-      $seedboxtpl->set("sw5","<TD align= center class=header>".$language["WT"]."</TD>");
-      $seedboxtpl->set("sw6","<td align=center class=header>".$language["ADDED"]."</td>");
-      $seedboxtpl->set("sw6.5","<td align=center class=header>Uploader</td>");
-      $seedboxtpl->set("sw7","<td align=center class=header>".$language["SIZE"]."</td>");
-      $seedboxtpl->set("sw8","<td align=center class=header>".$language["SHORT_S"]."</td>");
-      $seedboxtpl->set("sw9","<td align=center class=header>".$language["SHORT_L"]."</td>");
-      $seedboxtpl->set("sw10","<td align=center class=header>".$language["SHORT_C"]."</td>");
-      $seedboxtpl->set("sw11","</tr>");
+      if ($XBTT_USE)
+         $sql = "SELECT f.seedbox,f.info_hash as hash, f.seeds+ifnull(x.seeders,0) as seeds , f.leechers + ifnull(x.leechers,0) as leechers, dlbytes AS dwned, format(f.finished+ifnull(x.completed,0),0) as finished, filename, url, info, UNIX_TIMESTAMP(data) AS added, c.image, c.name AS cname, category AS catid, size, external, uploader, u.username, ul.prefixcolor, ul.suffixcolor, f.anonymous FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no' ORDER BY f.leechers + ifnull(x.leechers,0) DESC {$limit}";
+      else
+         $sql = "SELECT f.anonymous, f.seedbox,f.info_hash as hash, f.seeds, f.leechers, f.dlbytes AS dwned, f.finished, f.filename, f.url, f.info, UNIX_TIMESTAMP(f.data) AS added, c.image, c.name AS cname, f.category AS catid, f.size, f.external, f.uploader, u.username, ul.prefixcolor, ul.suffixcolor FROM blurg_files as f LEFT JOIN blurg_categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1' AND f.external='no' ORDER BY added DESC {$limit}";
 
-      if ($row)
+      $row = do_sqlquery($sql,true);
+
+      if(sql_num_rows($row)>0)
       {
-         while ($data=$row->fetch_array())
+         $seedboxtpl->set("has_torrents",true,true);
+         $seedboxtpl->set("pagertop",$pagertop);
+         $seedboxtpl->set("wait_time",(max(0,$CURUSER["WT"]) > 0),true);
+         $seedboxtpl->set("wait_time1",(max(0,$CURUSER["WT"]) > 0),true);
+         $seedboxtpl->set("dcheck",($btit_settings["fmhack_download_ratio_checker"] == "enabled"),true);
+         $seedboxtpl->set("popup",$GLOBALS["usepopup"],true);
+         $seedboxtpl->set("popup1",$GLOBALS["usepopup"],true);
+         $seedboxtpl->set("spath",$STYLEURL);
+         $seedbox=array();
+         $i=0;
+
+         while($data = $row->fetch_assoc())
          {
-            if (strpos($CURUSER['catte'],"[c".$data[catid]."]")!== false){
-            }else{
-               $seedbox[$i]["sw12"]=("<tr>");
-               if ( strlen($data["hash"]) > 0 )
-               {
-                  $seedbox[$i]["sw13"]=("<td NOWRAP align=center class=lista>");
-                  $seedbox[$i]["sw14"]=("<a href=download.php?id=".$data["hash"]."><center><img src='images/download.gif' border='0' alt='".$language["DOWNLOAD_TORRENT"]."' title='".$language["DOWNLOAD_TORRENT"]."' /></center></a>");
+            $seedbox[$i]['hash'] = $data['hash'];
+            $seedbox[$i]['dfile'] = rawurlencode($data['filename']);
+            $seedbox[$i]['filename'] = $data['filename'];
+            $seedbox[$i]['catid'] = $data['catid'];
+            $seedbox[$i]['catname'] = $data['cname'];
+            $seedbox[$i]['catimage'] = $data['image'];
 
-                  //waitingtime
-                  if (max(0,$CURUSER["WT"])>0){
-                     $resuser=do_sqlquery("SELECT * FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER["uid"]);
-                     $rowuser=$resuser->fetch_array();
-                     if (max(0,$rowuser['downloaded'])>0) $ratio=number_format($rowuser['uploaded']/$rowuser['downloaded'],2);
-                     else $ratio=0.0;
-                     $res2 =do_sqlquery("SELECT * FROM {$TABLE_PREFIX}files WHERE info_hash='".$data["hash"]."'");
-                     $added=$res2->fetch_array();
-                     $vz = sql_timestamp_to_unix_timestamp($added["data"]);
-                     $timer = floor((time() - $vz) / 3600);
-                     if($ratio<1.0 && $rowuser['id']!=$added["uploader"]){ $wait=$CURUSER["WT"]; }
-                     $wait -=$timer;
-                     if ($wait<=0)$wait=0;
-                  }
-                  //end waitingtime
+            if(max(0,$CURUSER["WT"]) > 0)
+            {
+               if(max(0,$CURUSER['downloaded']) > 0)
+                  $ratio = number_format($CURUSER['uploaded']/$CURUSER['downloaded'],2);
+               else
+                  $ratio = 0.0;
 
-                  $id=do_sqlquery("select username,id_level FROM {$TABLE_PREFIX}users WHERE id =".$data["uploader"]);
-                  $rowt=$id->fetch_array();
+               $timer = floor((time() - $data['added']) / 3600);
 
-                  $idi=do_sqlquery("select prefixcolor, suffixcolor FROM {$TABLE_PREFIX}users_level WHERE id =".$rowt["id_level"]);
-                  $rowti=$idi->fetch_array();
+               if($ratio < 1.0 && $CURUSER['uid']!=$data['uploaded'])
+                  $wait = $CURUSER['WT'];
 
-                  $seedbox[$i]["sw15"]=("</td>");
-                  if ($GLOBALS["usepopup"])
-                  $seedbox[$i]["sw16"]=("<td width=60% class=\"lista\" style=\"padding-left:10px;\"><a href=\"javascript:popdetails('index.php?page=torrent-details&amp;id=" . $data['hash'] . "');\" title=\"" . $language["VIEW_DETAILS"] . ": " . $data["filename"] . "\">" . $data["filename"] . "</a></td>");
-                  else
-                  $seedbox[$i]["sw17"]=("<TD align=\"left\" class=\"lista\" style=\"padding-left:10px;\"><A HREF=\"index.php?page=torrent-details&amp;id=".$data["hash"]."\" title=\"".$language["VIEW_DETAILS"].": ".$data["filename"]."\">".$data["filename"]."</A></td>");
-                  $seedbox[$i]["sw18"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\"><a href=\"index.php?page=torrents&amp;category=$data[catid]\">".image_or_link(($data["image"]==""?"":"$STYLEPATH/images/categories/" . $data["image"]),"",$data["cname"])."</a></td>");
-                  if (max(0,$CURUSER["WT"])>0)
-                  $seedbox[$i]["sw19"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\">".$wait." h</td>");
-                  include("include/offset.php");
-                  $seedbox[$i]["sw20"]=("<td nowrap=\"nowrap\" class=\"lista\" align=\"center\" style=\"text-align: center;\">" . date("d/m/Y", $data["added"]-$offset) . "</td>");
-                  $seedbox[$i]["sw20.5"]=("<td nowrap=\"nowrap\" class=\"lista\" align=\"center\" style=\"text-align: center;\">".$rowti['prefixcolor'].$rowt["username"].$rowti['suffixcolor']."</td>");
-                  $seedbox[$i]["sw21"]=("<td nowrap=\"nowrap\" align=\"center\" class=\"lista\" style=\"text-align: center;\">" . makesize($data["size"]) . "</td>");
+               $wait -= $timer;
 
-                  if ($data["external"]=="no")
-                  {
-                     if ($GLOBALS["usepopup"])
-                     {
-                        $seedbox[$i]["sw22"]=("<td align=\"center\" class=\"".linkcolor($data["seeds"])."\" style=\"text-align: center;\"><a href=\"javascript:poppeer('index.php?page=peers&amp;id=".$data["hash"]."');\" title=\"".$language["PEERS_DETAILS"]."\">" . $data["seeds"] . "</a></td>\n");
-                        $seedbox[$i]["sw23"]=("<td align=\"center\" class=\"".linkcolor($data["leechers"])."\" style=\"text-align: center;\"><a href=\"javascript:poppeer('index.php?page=peers&amp;id=".$data["hash"]."');\" title=\"".$language["PEERS_DETAILS"]."\">" .$data["leechers"] . "</a></td>\n");
-                        if ($data["finished"]>0)
-                        $seedbox[$i]["sw24"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\"><a href=\"javascript:poppeer('index.php?page=torrent_history&amp;id=".$data["hash"]."');\" title=\"History - ".$data["filename"]."\">" . $data["finished"] . "</a></td>");
-                        else
-                        $seedbox[$i]["sw24"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\">---</td>");
-                     }
-                     else
-                     {
-                        $seedbox[$i]["sw25"]=("<td align=\"center\" class=\"".linkcolor($data["seeds"])."\" style=\"text-align: center;\"><a href=\"index.php?page=peers&amp;id=".$data["hash"]."\" title=\"".$language["PEERS_DETAILS"]."\">" . $data["seeds"] . "</a></td>\n");
-                        $seedbox[$i]["sw26"]=("<td align=\"center\" class=\"".linkcolor($data["leechers"])."\" style=\"text-align: center;\"><a href=\"index.php?page=peers&amp;id=".$data["hash"]."\" title=\"".$language["PEERS_DETAILS"]."\">" .$data["leechers"] . "</a></td>\n");
-                        if ($data["finished"]>0)
-                        $seedbox[$i]["sw27"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\"><a href=\"index.php?page=torrent_history&amp;id=".$data["hash"]."\" title=\"History - ".$data["filename"]."\">" . $data["finished"] . "</a></td>");
-                        else
-                        $seedbox[$i]["sw27"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\">---</td>");
-                     }
-                  }
-                  else
-                  {
-                     // linkcolor
-                     $seedbox[$i]["sw28"]=("<td align=\"center\" class=\"".linkcolor($data["seeds"])."\" style=\"text-align: center;\">" . $data["seeds"] . "</td>");
-                     $seedbox[$i]["sw29"]=("<td align=\"center\" class=\"".linkcolor($data["leechers"])."\" style=\"text-align: center;\">" .$data["leechers"] . "</td>");
-                     if ($data["finished"]>0)
-                     $seedbox[$i]["sw30"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\">" . $data["finished"] . "</td>");
-                     else
-                     $seedbox[$i]["sw30"]=("<td align=\"center\" class=\"lista\" style=\"text-align: center;\">---</td>");
-                  }
-                  $seedbox[$i]["sw34"]=("</tr>\n");
-               }
+               if($wait <= 0)
+                  $wait = 0;
+
+               $seedbox[$i]['wait'] = $wait;
             }
+
+            $seedbox[$i]['datetime'] = date("d/m/Y",$data['added'] - $offset);
+
+            $seedbox[$i]['uploaderid'] = $data['uploader'];
+            $seedbox[$i]['uploader'] = $data['prefixcolor'].$data['username'].$data['suffixcolor'];
+
+            $seedbox[$i]['size'] = makesize($data['size']);
+
+            $seedbox[$i]['seeds'] = $data['seeds'];
+            $seedbox[$i]['lseeds'] = linkcolor($data['seeds']);
+            $seedbox[$i]['leechers'] = $data['leechers'];
+            $seedbox[$i]['lleechers'] = linkcolor($data['leechers']);
+            $seedbox[$i]['finished'] = $data['finished'];
+            $seedbox[$i]['lfinished'] = linkcolor($data['finished']);
+
             $i++;
-            $seedboxtpl->set("seedbox",$seedbox);
          }
+         $seedboxtpl->set("seedbox",$seedbox);
+         $seedboxtpl->set("pagerbottom",$pagerbottom);
       }
       else
       {
-         $seedboxtpl->set("sw35","<tr><td class=\"lista\" colspan=\"9\" align=\"center\" style=\"text-align: center;\">" . $language["NO_TORRENTS"] . "</td></tr>");
+         $seedboxtpl->set("has_torrents",false,true);
       }
-      $seedboxtpl->set("sw36","</table>");
    }
    else
    {
-      $seedboxtpl=new bTemplate();
-      $seedboxtpl->set("language",$language);
-      $seedboxtpl->set("sw37","<table class=\"lista\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" align=\"center\"><tr><td><div align=\"center\" style=\"text-align: center;\">".$language["NO_TORRENTS"]."</div></td></tr></table>");
+      $seedboxtpl->set("has_torrents",false,true);
    }
 } // end if user can view
 ?>
