@@ -16,18 +16,22 @@
       <a name="comments" /></a>
       <br />
       <br />
-
-      <table width="90%" class="lista">
+      <div class="panel panel-primary">
+    <div class="panel-heading">
+    <h4 class="text-center">Comments</h4>
+    </div>
+      <table class="table table-bordered">
         <if:INSERT_COMMENT>
         <tr>
           <td align="center" colspan="3">
-             <a href="index.php?page=offer_comment&amp;id=<tag:offer_id />&amp;usern=<tag:current_username />"><tag:language.NEW_COMMENT /></a>
+             <a href="index.php?page=offer_comment&amp;id=<tag:offer_id />&amp;usern=<tag:current_username />"><button class="btn btn-labeled btn-info btn-lg" type="button"><span class="btn-label"><i class="fa fa-comment"></i></span><tag:language.NEW_COMMENT /></button></a>
           </td>
         </tr>
         </if:INSERT_COMMENT>
         <if:NO_COMMENTS>
         <tr>
-          <td colspan="3" class="lista" align="center"><tag:language.NO_COMMENTS /></td>
+          <td colspan="3" class="lista" align="center"><button class="btn btn-labeled btn-warning btn-lg" type="button">
+   <span class="btn-label"><i class="fa fa-exclamation-circle"></i></span><tag:language.NO_COMMENTS /></button></td>
         </tr>
         <else:NO_COMMENTS>
 <loop:comments>
@@ -68,3 +72,4 @@
         </loop:comments>
         </if:NO_COMMENTS>
       </table>
+      </div>

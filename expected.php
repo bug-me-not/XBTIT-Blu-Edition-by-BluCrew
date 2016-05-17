@@ -70,11 +70,10 @@ $expectedtpl->set("ex28","</table></div></div><BR><HR><BR>");
 
 $expectedtpl->set("ex30","<br>\n");
 
-$expectedtpl->set("ex32","<table class=lista align='center' width='550' cellspacing=2><form name=expect method=post action=index.php?page=takeexpect><a name=add id=add></a>");
-$expectedtpl->set("ex34","<tr><td class=header align=center width=100% colspan=\"2\">" . $language["ADD_EXPECTED"] . "</td></tr>");
-$expectedtpl->set("ex36","<tr><td class=header align=left width=30%>". $language["NAME"] ."</td><td class=lista align=left width=70%><input type=text size=40 name=expecttitle></td></tr>");
-$expectedtpl->set("ex38","<tr><td class=header align=left width=30%>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left width=70%><input type=text size=15 name=date>&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
-$expectedtpl->set("ex40","<tr><td class=header align=left width=30%>".$language["CATEGORY"]."</td><td class=lista align=left width=70%>");
+$expectedtpl->set("ex32","<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>" . $language["ADD_EXPECTED"] . "</h4></div><table class='table table-bordered'><form name=expect method=post action=index.php?page=takeexpect><a name=add id=add></a>");
+$expectedtpl->set("ex36","<tr><td class=header align=left>". $language["NAME"] ."</td><td class=lista align=left><input type=text class='form-control' size=40 name=expecttitle></td></tr>");
+$expectedtpl->set("ex38","<tr><td class=header align=left>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left><input type=text class='form-control' size=15 name=date>&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
+$expectedtpl->set("ex40","<tr><td class=header align=left>".$language["CATEGORY"]."</td><td class=lista align=left>");
 
 $expectedtpl->set("ex42","");
 $expectedtpl->set("ex44","");
@@ -82,10 +81,10 @@ $expectedtpl->set("ex46",categories());
 $expectedtpl->set("ex48","");
 
 $expectedtpl->set("ex50","<br>\n");
-$expectedtpl->set("ex52","<tr><td class=header align=left width=30%>".$language["DESCRIPTION"]."</td><td class=lista align=left width=70%>");
+$expectedtpl->set("ex52","<tr><td class=header align=left>".$language["DESCRIPTION"]."</td><td class=lista align=left>");
 $expectedtpl->set("ex54",textbbcode("expect","description"));
 $expectedtpl->set("ex56","</td></tr>");
-$expectedtpl->set("ex58","<tr><td class=lista align=center width=100% colspan=\"2\"><center><input type=submit value='" . $language["FRM_CONFIRM"] . "'></center></td></tr>");
+$expectedtpl->set("ex58","<tr><td class=lista align=center width=100% colspan=\"2\"><center><input type=submit class='btn btn-md btn-primary' value='" . $language["FRM_CONFIRM"] . "'></center></td></tr>");
 $expectedtpl->set("ex60","</form>\n");
 $expectedtpl->set("ex62","</table></CENTER>\n");
 

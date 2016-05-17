@@ -101,7 +101,7 @@ else
    $viewexpectedtpl->set("vex20","<input type=submit align=center class='btn btn-primary btn-sm' value=" . $language["FIND_EXPECT"] . ">\n");
    $viewexpectedtpl->set("vex22","</form></td></tr></table>");
    $viewexpectedtpl->set("vex24","<form method=post action=index.php?page=takedelexpect>");
-   $viewexpectedtpl->set("vex26","<table class='table table-bordered'>");
+   $viewexpectedtpl->set("vex26","<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Upcoming</h4></div><table class='table table-bordered'>");
    $viewexpectedtpl->set("vex28","<tr><td class=head align=center>" . $language["UPLOADED"] . "</td><td class=head align=center>" . $language["TYPE"] . "</td><td class=head align=center>" . $language["NAME"] . "</td><td class=head align=center>" . $language["CATEGORY"] . "</td><td class=head align=center>" . $language["ADDED"] . "</td><td class=head align=center>" . $language["UPLOADER"] . "</td><td class=head align=center>" . $language["EXPECVOTE"] . "</td>\n");
 
    if (!$CURUSER || $CURUSER["delete_torrents"]=="yes")
@@ -153,7 +153,7 @@ else
       $ii++;
    }
    $viewexpectedtpl->set("exp",$exp);
-   $viewexpectedtpl->set("vex36","</table>\n");
+   $viewexpectedtpl->set("vex36","</table></div>\n");
 
    if (!$CURUSER || $CURUSER["delete_torrents"]=="yes")
    $viewexpectedtpl->set("vex38","<table width=99%><td align=right><input type=submit class='btn btn-danger' value= Delete></td></table>");

@@ -48,7 +48,7 @@ $s = $num["expect"];
 $expectdetailstpl = new bTemplate();
 $expectdetailstpl ->set("language",$language);
 
-$expectdetailstpl->set("exd2","<center><table class='table table-bordered'>\n");
+$expectdetailstpl->set("exd2","<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Details</h4></div><center><table class='table table-bordered'>\n");
 
 $url = "index.php?page=expectedit&id=$id";
  if (isset($_GET["returnto"])) {
@@ -71,13 +71,13 @@ $expectdetailstpl->set("exd10","</td></tr>");
 
 if($num["expect_offer"]=="yes")
 {
-	$ex_of = "<font color=\"purple\">" . $language["OFFER"] . "</font></a>";
+	$ex_of = "<font color=\"#0FB492\">" . $language["OFFER"] . "</font></a>";
 	$type="<a href=index.php?page=votesexpectedview&expectid=$num[id]><b>".$num["hits"]."</b>";
 	$lang=$language["VOTE_EXPECTED"];
 }
 else
 {
-	$ex_of = "<font color=\"darkblue\">" . $language["EXPECTED"] . "</font";
+	$ex_of = "<font color=\"#E64141\">" . $language["EXPECTED"] . "</font";
 	$type=$num["date"];
 	$lang=$language["EXPECTED"];
 }
@@ -99,8 +99,8 @@ if ($num["uploaded"]=="yes"){
 $expectdetailstpl->set("exd19","<tr><td align=left class=header><b>" . $language["UPLOADED"] . ":</b></td><td class=lista align=left><a href=" . $num["torrenturl"] . ">" . $language["TORR_CLICK"] . "</a></td></tr>");
 }
 
-$expectdetailstpl->set("exd20","<tr><td class=lista align=center width=100% colspan='2'><form method=get action=index.php><input type=hidden name=page value=viewexpected /><center><input type=submit class='btn btn-danger' value=\"".$language["BACK"] ."\"></center></form></td></tr>");
-$expectdetailstpl->set("exd22","</table>");
+$expectdetailstpl->set("exd20","<tr><td class=lista align=center width=100% colspan='2'><form method=get action=index.php><input type=hidden name=page value=viewexpected /><center><input type=submit class='btn btn-sm btn-danger' value=\"".$language["BACK"] ."\"></center></form></td></tr>");
+$expectdetailstpl->set("exd22","</table></div>");
 
 // comments...
 $subres = get_result("SELECT u.downloaded as downloaded, u.uploaded as uploaded, u.avatar, u.id_level, c.id, text, UNIX_TIMESTAMP(added) as data, user, u.id as uid FROM {$TABLE_PREFIX}offer_comments c LEFT JOIN {$TABLE_PREFIX}users u ON c.user=u.username WHERE offer_id = '" . $id . "' ORDER BY added DESC",true,$btit_settings['cache_duration']);
@@ -137,7 +137,7 @@ else {
 $comments[$count]["date"]=date("d/m/Y H.i.s",$subrow["data"]-$offset);
        // only users able to delete torrents can delete comments...
        if ($CURUSER["delete_torrents"]=="yes")
-       $comments[$count]["delete"]="<a onclick=\"return confirm('". str_replace("'","\'",$language["DELETE_CONFIRM"])."')\" href=\"index.php?page=offer_comment&amp;id=$id&amp;cid=" . $subrow["id"] . "&amp;action=delete\">".image_or_link("$STYLEPATH/images/delete.png","",$language["DELETE"])."</a>";
+       $comments[$count]["delete"]="<a onclick=\"return confirm('". str_replace("'","\'",$language["DELETE_CONFIRM"])."')\" href=\"index.php?page=offer_comment&amp;id=$id&amp;cid=" . $subrow["id"] . "&amp;action=delete\"><button class='btn btn-danger btn-circle' type='button'><i class='fa fa-times'></i></button></a>";
        $comments[$count]["comment"]=format_comment($subrow["text"]);
        $comments[$count]["elapsed"]="(".get_elapsed_time($subrow["data"]) . " ago)";
        $comments[$count]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($subrow["avatar"] && $subrow["avatar"] != "" ? htmlspecialchars($subrow["avatar"]): "$STYLEURL/images/default_avatar.gif" )."\" alt=\"\" />";

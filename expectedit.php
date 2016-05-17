@@ -50,9 +50,9 @@ if ($CURUSER["uid"] == $row["userid"] || $CURUSER["can_upload"]== "yes")
    $num2 = sql_num_rows($res2);
 
    $expectedittpl->set("exe2","<form name=\"edit\" method=post action=index.php?page=takeexpectedit><a name=edit id=edit></a>");
-   $expectedittpl->set("exe4","<table class=lista align=center width=550 cellspacing=2 cellpadding=0>\n");
-   $expectedittpl->set("exe6","<tr><td align=left class=header>". $language["NAME"] ."</td> <td class=lista align=left><input type=text size=60 name=expecttitle value=\"" . htmlspecialchars($row["expect"]) . "\"></td></tr>");
-   $expectedittpl->set("exe8","<tr><td class=header align=left width=30%>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left width=70%><input type=text size=15 name=date value=\"" . htmlspecialchars($row["date"]) . "\">&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
+   $expectedittpl->set("exe4","<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Edit</h4></div><table class='table table-bordered'>\n");
+   $expectedittpl->set("exe6","<tr><td align=left class=header>". $language["NAME"] ."</td> <td class=lista align=left><input type=text class='form-control' size=60 name=expecttitle value=\"" . htmlspecialchars($row["expect"]) . "\"></td></tr>");
+   $expectedittpl->set("exe8","<tr><td class=header align=left width=30%>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left width=70%><input type=text size=15 class='form-control' name=date value=\"" . htmlspecialchars($row["date"]) . "\">&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
    $expectedittpl->set("exe10","<tr><td class=header align=left>" . $language["CATEGORY"] . "</td><td align=left class=lista>\n");
 
    $s = categories($row['cat']);
@@ -85,14 +85,14 @@ if ($CURUSER["uid"] == $row["userid"] || $CURUSER["can_upload"]== "yes")
    $expectedittpl->set("exe14",textbbcode("edit","description",unesc($row["descr"])));
    $expectedittpl->set("exe16","</td></tr>");
    $expectedittpl->set("exe17", ($row["uploaded"]=="yes"?"checked=\"checked\"":""));
-   $expectedittpl->set("exe171","<tr><td align=left class=header>".$language["TORR_LINK"]."</td><td align=left class=lista><input type=text name=torrenturl value=\"".$row["torrenturl"]. "\" size=70 /></td></tr>");
+   $expectedittpl->set("exe171","<tr><td align=left class=header>".$language["TORR_LINK"]."</td><td align=left class=lista><input type=text name=torrenturl class='form-control' value=\"".$row["torrenturl"]. "\" size=70 /></td></tr>");
 
 
 
    $expectedittpl->set("exe18","<input type=\"hidden\" name=\"id\" value=\"$id2\">\n");
-   $expectedittpl->set("exe20","<tr><td colspan=2 align=center class=lista><center><input type=submit value=\"Submit\"></center>\n");
+   $expectedittpl->set("exe20","<tr><td colspan=2 align=center class=lista><center><input type=submit class='btn btn-primary' value=\"Submit\"></center>\n");
    $expectedittpl->set("exe22","</form>\n");
-   $expectedittpl->set("exe24","</table>\n");
+   $expectedittpl->set("exe24","</table></div>\n");
 }
 
 else
