@@ -97,9 +97,9 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
     $last_key=(count($server_url)-1);
     $user_location=$server_url[$last_key];
 
-    if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["uid"]==1))
+    if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["id"]==1))
     {
-        if($user_location!="" || $user_location!="index.php")
+        if($user_location=="" || $user_location=="index.php" )//|| $user_location!="index.php?page=login" || $user_location!="index.php?page=recover&act=takerecover")
         {
             redirect("login_new.php");
         }
