@@ -1,9 +1,18 @@
 <div class='container'>
      <if:has_torrents>
+     <div class="panel panel-default">
+     <div class="panel-heading">
+     <h4 class="text-center"></h4>
+     </div>
      <div id='pager'>
           <tag:pagertop />
      </div>
-     <table>
+     </div>
+     <div class="panel panel-primary">
+     <div class="panel-heading">
+     <h4 class="text-center">High Speed Seedbox Torrents</h4>
+     </div>
+     <table class="table table-bordered">
           <thead>
                <tr>
                     <td><tag:language.DOWN /></td>
@@ -24,12 +33,13 @@
           <loop:seedbox>
           <tr>
                <if:dcheck>
-               <td><a href='index.php?page=downloadcheck&amp;id=<tag:seedbox[].hash />'><img src='images/download_release.png' border='0' alt='<tag:language.DOWNLOAD_TORRENT />' title='<tag:language.DOWNLOAD_TORRENT />'></a></td>
+               <td><a href='index.php?page=downloadcheck&amp;id=<tag:seedbox[].hash />'><button class='btn btn-labeled btn-primary' type='button'>
+      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button></a></td>
                <else:dcheck>
-               <td><a href='download.php?id=<tag:seedbox[].hash />&amp;f=<tag:seedbox[].dfile />.torrent'><img src='images/download_release.png' border='0' alt='<tag:language.DOWNLOAD_TORRENT />' title='<tag:language.DOWNLOAD_TORRENT />'></td>
+               <td><a href='download.php?id=<tag:seedbox[].hash />&amp;f=<tag:seedbox[].dfile />.torrent'><button class='btn btn-labeled btn-primary' type='button'></td>
           </if:dcheck>
           <if:popup>
-          <td><a href="javascript:popdetails('index.php?page=torrent-details&amp;id=<tag:seedbox[].hash />" title="<tag:language.VIEW_DETAILS /> : <tag:seedbox[].filename />"><tag:seedbox[].filename /></a></td>
+          <td><a href="javascript:popdetails('index.php?page=torrent-details&amp;id=<tag:seedbox[].hash />" title="<tag:language.VIEW_DETAILS /> : <tag:seedbox[].filename />"><tag:seedbox[].filename /></a></td>      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button>
           <else:popup>
           <td><a href="index.php?page=torrent-details&amp;id=<tag:seedbox[].hash />" title="<tag:language.VIEW_DETAILS /> : <tag:seedbox[].filename />"><tag:seedbox[].filename /></a></td>
      </if:popup>
@@ -53,12 +63,19 @@
 </loop:seedbox>
 </tbody>
 </table>
+</div>
+<br>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <div id='pager'>
      <tag:pagerbottom />
 </div>
-<else:has_torrents>
-<div align='center'>
-     <tag:language.NO_TORRENTS />
 </div>
+<else:has_torrents>
+<div class="alert alert-danger" role="alert" ng-show="error">
+   <strong>Ooops!</strong><tag:language.NO_TORRENTS />
+   </div>
 </if:has_torrents>
 </div>
