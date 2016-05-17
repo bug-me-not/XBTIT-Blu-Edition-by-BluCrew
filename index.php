@@ -99,7 +99,7 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
 
     if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["uid"]==1))
     {
-        if($user_location=="" || $user_location=="index.php")
+        if($user_location!="" || $user_location!="index.php")
         {
             redirect("login_new.php");
         }
