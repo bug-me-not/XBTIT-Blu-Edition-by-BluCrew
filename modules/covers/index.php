@@ -60,17 +60,17 @@ print "<div align=\"center\">Sort By:
 
 // only allow mod and above to upload
 if ($CURUSER['id_level'] >= 6)
-print "<div align=\"center\"><a href=\"index.php?page=modules&module=covers&opt=upload\">Upload Cover</a><br/><br /></div>";
+print "<div align=\"center\"><a href=\"index.php?page=modules&module=covers&opt=upload\"><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-check'></i></span>Upload Cover</button></a><br/><br /></div>";
 
 // show upload form
 if ($page == "upload"){
 if ($CURUSER['id_level'] < 6)
 die();
 
-print "<div align=\"center\">
+print "<div align=\"center\"><table class='table table-bordered'>
 <form action=\"index.php?page=modules&module=covers&opt=takeupload\" method=\"post\" enctype=\"multipart/form-data\">
 <input type=\"file\" name=\"coverfile\" id=\"coverfile\"><br /><br />
-Title: <input type=\"text\" name=\"title\" id=\"title\" size=\"100\"><br />
+Title: <input type=\"text\" name=\"title\" class='form-control' id=\"title\" size=\"100\"><br />
 IMDB Number: <input type=\"text\" name=\"imdbnum\" id=\"imdbnum\"> e.g 0787474<br />
 <br />
 Type:
@@ -88,7 +88,7 @@ Type:
 <br /><br />
 <input type=\"submit\" name=\"submit\" value=\"Upload\">
 </form>
-<br/><br /></div>";
+<br/><br /></table></div>";
 }
 // mysql query to get cover id's that match
 if ($list == "all" || $list = ""){
@@ -180,7 +180,7 @@ print "</select>
 if ($page == "view"){
 // only allow mod and above to delete
 if ($CURUSER['id_level'] >= 6)
-print "<div align=\"center\"><a href=\"index.php?page=modules&module=covers&opt=del\">Delete Cover (Not working yet)</a><br/><br /></div>";
+print "<div align=\"center\"><a href=\"index.php?page=modules&module=covers&opt=del\"><button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-times'></i></span>Delete Cover</button></a><br/><br /></div>";
 
 print "<div align=\"center\">";
 // show image
@@ -195,12 +195,12 @@ $covid = 0;
 
 $coverquery = "SELECT * FROM `{$TABLE_PREFIX}covers` WHERE `id` = ".$covid."";
 $cover = do_sqlquery($coverquery)->fetch_assoc();
-print "<div align=\"center\">
-<h1>".$cover['name']."</h1><br />
+print "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>".$cover['name']."</h4></div>
+<div align=\"center\">
 Size: ".$cover['width']." x ".$cover['height']." @ ".makesize($cover['size'])."
 <br/><br /></div>";
 print "<img src=\"covers/".$cover['filename']."\" alt=\"".$cover['name']."\" width=\"400\">";
-print "<br/><br /></div>";
+print "<br/><br /></div></div>";
 }
 
 

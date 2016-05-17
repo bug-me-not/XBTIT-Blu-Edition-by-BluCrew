@@ -470,13 +470,13 @@ $clock(document).ready(function(){
    <if:sub_enabled>
    <if:HAVE_SUBTITLE>
    <tr>
-   <td align="right" class="header"><tag:language.SUB_T_H /></td>
+   <td align="right" class="header">External Subtitles</td>
    <td class="lista" align="center">
    <table>
    <loop:subs>
    <tr>
-   <td align="center"><tag:subs[].flag /></td>
-   <td align="center"><tag:subs[].name /></td>
+   <td align="left"><tag:subs[].flag /></td>
+   <td align="left"><tag:subs[].name /></td>
    </tr>
    </loop:subs>
    </table>
