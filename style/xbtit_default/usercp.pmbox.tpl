@@ -79,9 +79,13 @@ function popusers(url)
 </if:pagert>
 </div>
 </div>
-
 </if:MSG_LIST>
+
 <if:MSG_EDIT>
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+    <h4 class="text-center">Message</h4>
+    </div>
 <form method="post" name="edit" action="<tag:pmedit.frm_action />">
   <table class="table table-bordered">
 <if:PREVIEW>
@@ -128,9 +132,14 @@ function popusers(url)
     </tr>
   </table>
 </form>
+</div>
 </if:MSG_EDIT>
 
 <if:MSG_READ>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Message</h4>
+</div>
   <table class="table table-bordered">
     <tr>
       <td width="30%" rowspan="2" class="lista"><a href="<tag:pmread.sender_link />"><tag:pmread.sender_name /></a><br /><tag:pmread.added /><br />(<tag:pmread.elapsed /> ago)</td>
@@ -144,13 +153,14 @@ function popusers(url)
       <td colspan="2" class="lista">
     <table align="center" width="100%" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center"><input onclick="<tag:pmread.quote_link />" type="button" value="<tag:language.QUOTE />"/></td>
-        <td align="center"><input onclick="<tag:pmread.answer_link />" type="button" value="<tag:language.ANSWER />"/></td>
-        <td align="center"><input onclick="<tag:pmread.delete_link />" type="button" value="<tag:language.DELETE />"/></td>
+        <td align="center"><input onclick="<tag:pmread.quote_link />" type="button" class="btn btn-info btn-md" value="<tag:language.QUOTE />"/></td>
+        <td align="center"><input onclick="<tag:pmread.answer_link />" type="button" class="btn btn-primary btn-md" value="<tag:language.ANSWER />"/></td>
+        <td align="center"><input onclick="<tag:pmread.delete_link />" type="button" class="btn btn-danger btn-md" value="<tag:language.DELETE />"/></td>
       </tr>
     </table>
       </td>
     </tr>
 </if:MSG_MENU>
   </table>
+  </div>
 </if:MSG_READ>
