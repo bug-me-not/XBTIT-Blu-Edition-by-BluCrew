@@ -256,9 +256,13 @@ $tpl->set("main_slideIt",$slideIt);
 
 $tpl->set("main_header",$header.$err_msg_install);
 
-$tpl->set("more_css",$morecss); $tpl->set("HAS_MT",false,true);
+$tpl->set("more_css",$morecss); 
+
+$tpl->set("HAS_MT",false,true);
 
 $tpl->set("uid",$CURUSER['uid']);
+
+$tpl->set("show_nav",(($CURUSER['id']>2)?true:false),true);
 
 $tpl->set("anon_enabled", (($btit_settings["fmhack_anonymous_links"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_anonymous_links"]=="enabled")

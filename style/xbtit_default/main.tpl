@@ -102,7 +102,7 @@
         </ul>
       </nav>
     </div>
-
+<if:show_nav>
     <!-- SideNav  -->
     <div id='snav' class='en'>
       <ul>
@@ -198,7 +198,7 @@
   </li>
 </ul>
 </div>
-
+</if:show_nav>
 <!--Spacer-->
 <br>
 <br>
