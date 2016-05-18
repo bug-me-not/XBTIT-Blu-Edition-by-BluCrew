@@ -170,6 +170,11 @@ if($btit_settings["fmhack_advanced_torrent_search"] == "enabled")
    $options = 0;
 }
 // end advanced search hack DT
+
+// Files Count
+
+//Files Count END
+
 if($active == 0 || ($btit_settings["fmhack_archive_torrents"] == "enabled" && $active == 3))
 {
    $where = " WHERE 1=1".(($btit_settings["fmhack_archive_torrents"] == "enabled" && $active == 0)?" AND `f`.`archive`=0":(($btit_settings["fmhack_archive_torrents"] == "enabled" && $active == 3)?

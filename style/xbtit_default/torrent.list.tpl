@@ -256,6 +256,9 @@ Snatched
          <b>Size:</b>  &nbsp; <tag:torrents[].size />
          </p>
          <p>
+         <b>Files:</b>  &nbsp; Coming Soon!
+         </p>
+         <p>
          <b>Language:</b>  &nbsp; <tag:torrents[].language />
          </p>
          <p>
