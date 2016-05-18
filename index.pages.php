@@ -55,6 +55,7 @@ switch ($pageID) {
    case 'faq':
    case 'peers':
    case 'seedbox':
+   case 'staffchecks':
       stdfoot(false,true,false,true,true);
    break;
 
