@@ -34,108 +34,99 @@
 ob_start();
 
 if (!defined("IN_BTIT"))
-      die("non direct access!");
+  die("non direct access!");
 
 require_once("include/functions.php");
 require_once("include/config.php");
-    dbconn();
+dbconn();
 $i=-1;
-?>
-
- 
-<?php 
 
 $risultato = do_sqlquery("select * from {$TABLE_PREFIX}categories where (sub!='0') ORDER BY sort_index ASC");
 
-while ($cat = $risultato->fetch_array()){
-
-
-$id = $cat["id"];
-$name = $cat["name"];
-$res = do_sqlquery("select count(*) as allincat FROM {$TABLE_PREFIX}files where seeds!=0 AND category=".$id);
-                if ($res)
-                {
-                $row=$res->fetch_array();
-                $tot=$row['allincat'];
-} else {
-$tot=0;
-
-}
-$i++;
-if ($i% 10==0)
+while ($cat = $risultato->fetch_array())
 {
-$catoptions .= "<tr></tr>";
-}
-$catoptions .= "<td>";
+  $id = $cat["id"];
+  $name = $cat["name"];
+  $res = do_sqlquery("select count(*) as allincat FROM {$TABLE_PREFIX}files where seeds!=0 AND category=".$id);
+  if ($res)
+  {
+    $row=$res->fetch_array();
+    $tot=$row['allincat'];
+  } 
+  else 
+  {
+    $tot=0;
+  }
+  $i++;
+  if ($i%10==0)
+  {
+    $catoptions .= "<tr></tr>";
+  }
+  $catoptions .= "<td>";
 //$catoptions .= "<a href=\"index.php?page=torrents&amp;category=$id\" title=\"$name\" alt=\"$name\">" . image_or_link( ($cat["image"] == "" ? "" : "$STYLEPATH/images/categories/" . $cat["image"]), "", $cat["name"]) ."</a><center>$tot</center></td><td>&nbsp;</td>";
-$catoptions .= "<a href=\"index.php?page=torrents&amp;category=$cat[id]\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><center>Seeds: $tot<br><input type=\"checkbox\" name=\"cat[]\" value=\"$cat[id]\" " .(strpos($CURUSER['notifs'], "[cat$cat[id]]") !== false ? " checked" : "") ."/></center>";
-        
+  $catoptions .= "<a href=\"index.php?page=torrents&amp;category=".$cat['id']."\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><center>Seeds: ".$tot."<br><input type=\"checkbox\" name=\"cat[]\" value=\"".$cat['id']."\" " .(strpos($CURUSER['notifs'], "[cat{$cat['id']}]") !== false ? " checked" : "") ."/></center>";
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
+  if (empty($_POST['cat']))
+    stderr("Error", "You need to chose at least one category !!");
+
+  if (empty($_POST['feed']))
+    stderr("Error", "You need to chose a feed type !!");
+
+  $link = "$BASEURL/rss_torrents.php";
+  if ($_POST['feed'] == "dl")
+    $query[] = "feed=dl";
+  foreach($_POST['cat'] as $cat)
+    $query[] = "cat[]=$cat";
+
+  $row =get_result("SELECT pid FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER['uid'],true,$btit_settings['cache_duration']);
+  $pid=$row[0]["pid"];
+
+  $query[] = "pid=$pid";
+  $queries = implode("&", $query);
+  if ($queries)
+    $link .= "?$queries";
+
+  if ($_POST['feed'] == "dl")
+  {           
+    information_msg("RSS Link","Use the following url in your RSS reader:<br><b>$link</b><br>");
+    stdfoot();
+    exit();
+  }
+  else
+    header("Refresh: 0; url=".$link."");        
 }
 
 ?>
 
-<?php
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="text-center">Categories To Retrieve</h4>
+  </div>
 
- if ($_SERVER['REQUEST_METHOD'] == "POST") {
-         
-        if (empty($_POST['cat']))
-stderr("Error", "You need to chose at least one category !!");
+  <center><table class="table table-bordered">
 
-         if (empty($_POST['feed']))
-stderr("Error", "You need to chose a feed type !!");
+    <form method="POST" action="index.php?page=modules&amp;module=getrss">
 
-        $link = "$BASEURL/rss_torrents.php";
-        if ($_POST['feed'] == "dl")
-            $query[] = "feed=dl";
-        foreach($_POST['cat'] as $cat)
-            $query[] = "cat[]=$cat";
-            
-            $row =get_result("SELECT pid FROM {$TABLE_PREFIX}users WHERE id=".$CURUSER['uid'],true,$btit_settings['cache_duration']);
-             $pid=$row[0]["pid"];
-      
-            $query[] = "pid=$pid";
-        $queries = implode("&", $query);
-        if ($queries)
-            $link .= "?$queries";
-            
-        if ($_POST['feed'] == "dl")
-        {           
-        information_msg("RSS Link","Use the following url in your RSS reader:<br><b>$link</b><br>");
-        stdfoot();
-        exit();
-        }else
-        header("Refresh: 0; url=".$link."");        
-}
-
-?>
-
- <div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">Categories To Retrieve</h4>
-</div>
-
-<center><table class="table table-bordered">
+    <?php echo $catoptions; ?>
 
 
-<form method="POST" action="index.php?page=modules&module=getrss">
-    
-            <?php echo $catoptions?>
-     
-     
-     </table></center><br>   
-     <center>
+    </table></center><br>   
+    <center>
       <table class="table table-bordered">
-     <tr>
-            <td align="center" width="50%" class="header">Feed Type:&nbsp;
-            <input type="radio" name="feed" value="web" />Web Link
-             &nbsp;&nbsp;&nbsp;<input type="radio" name="feed" value="dl" />Download link</td>
-             <td align="left" width="50%"><button  type="submit" class="btn btn-primary btn-md">Get RSS</button></td>
+       <tr>
+        <td align="center" width="50%" class="header">Feed Type:&nbsp;
+          <input type="radio" name="feed" value="web" />Web Link
+          &nbsp;&nbsp;&nbsp;<input type="radio" name="feed" value="dl" />Download link</td>
+          <td align="left" width="50%"><button  type="submit" class="btn btn-primary btn-md">Get RSS</button></td>
         </tr>
-        </table>
-        </center>
-</form>
+      </table>
+    </center>
+  </form>
 </div>
-   
+
 <?php    
 $module_out=ob_get_contents();
 ob_end_clean();
