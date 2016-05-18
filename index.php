@@ -31,12 +31,12 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 if (file_exists("install.unlock") && file_exists("install.php"))
-   {
-   if (dirname($_SERVER["PHP_SELF"])=="/" || dirname($_SERVER["PHP_SELF"])=="\\")
-      header("Location: http://".$_SERVER["HTTP_HOST"]."/install.php");
-   else
-      header("Location: http://".$_SERVER["HTTP_HOST"].dirname($_SERVER["PHP_SELF"])."/install.php");
-   exit;
+{
+ if (dirname($_SERVER["PHP_SELF"])=="/" || dirname($_SERVER["PHP_SELF"])=="\\")
+  header("Location: http://".$_SERVER["HTTP_HOST"]."/install.php");
+else
+  header("Location: http://".$_SERVER["HTTP_HOST"].dirname($_SERVER["PHP_SELF"])."/install.php");
+exit;
 }
 
 define("IN_BTIT",true);
@@ -53,19 +53,19 @@ include($THIS_BASEPATH.'/index.begin.php');
 /*if($CURUSER['id_level']!=8)
 {
    stderr($language["SORRY"],$btit_settings["offline_msg"]);
-}*/
-session_name("BluRG");
-session_start();
-dbconn(true);
+ }*/
+ session_name("BluRG");
+ session_start();
+ dbconn(true);
 
 // If they've updated to SMF 2.0 and their tracker settings still thinks they're using SMF 1.x.x force an update
-if($FORUMLINK=="smf")
-{
-    $check_ver=get_result("SELECT `value` FROM `{$db_prefix}settings` WHERE `variable`='smfVersion'", true, 60);
-    if(((int)substr($check_ver[0]["value"],0,1))==2)
-        quickQuery("UPDATE `{$TABLE_PREFIX}settings` SET `value`='smf2' WHERE `key`='forum'",true);
-    foreach (glob($THIS_BASEPATH."/cache/*.txt") as $filename)
-        unlink($filename);
+ if($FORUMLINK=="smf")
+ {
+  $check_ver=get_result("SELECT `value` FROM `{$db_prefix}settings` WHERE `variable`='smfVersion'", true, 60);
+  if(((int)substr($check_ver[0]["value"],0,1))==2)
+    quickQuery("UPDATE `{$TABLE_PREFIX}settings` SET `value`='smf2' WHERE `key`='forum'",true);
+  foreach (glob($THIS_BASEPATH."/cache/*.txt") as $filename)
+    unlink($filename);
 }
 
 $sp = $_SERVER['SERVER_PORT']; $ss = $_SERVER['HTTPS']; if ( $sp =='443' || $ss == 'on' || $ss == '1') $p = 's';
@@ -93,24 +93,24 @@ $pageID=(isset($_GET["page"])?$_GET["page"]:"");
 
 if($btit_settings["fmhack_alternate_login"]=="enabled")
 {
-    global $CURUSER;
+  global $CURUSER;
 
-    $server_url=explode("/", $_SERVER["REQUEST_URI"]);
-    $last_key=(count($server_url)-1);
-    $user_location=$server_url[$last_key];
+  $server_url=explode("/", $_SERVER["REQUEST_URI"]);
+  $last_key=(count($server_url)-1);
+  $user_location=$server_url[$last_key];
 
-    if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["uid"]==1))
+  if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["uid"]==1))
+  {
+    if($user_location=="" || $user_location=="index.php")
     {
-        if($user_location=="" || $user_location=="index.php")
-        {
-            redirect("login_new.php");
-        }
-
-        if($pageID!="login" && $pageID!="signup" && $pageID!="contact")
-        {
-          redirect("login_new.php");
-        }
+      redirect("login_new.php");
     }
+
+    if($pageID!="login" && $pageID!="signup" && $pageID!="contact")
+    {
+      redirect("login_new.php");
+    }
+  }
 }
 
 $style_css=load_css("bootstrap.css");
@@ -122,10 +122,12 @@ $no_columns=(isset($_GET["nocolumns"]) && intval($_GET["nocolumns"])==1?true:fal
 //which module by cooly
 if($pageID=="modules")
 {
-$MID=(isset($_GET["module"])?htmlentities($_GET["module"]):$MID="");
-check_online(session_id(), ($MID==""?"index":$MID));
-}else{
-check_online(session_id(), ($pageID==""?"index":$pageID));
+  $MID=(isset($_GET["module"])?htmlentities($_GET["module"]):$MID="");
+  check_online(session_id(), ($MID==""?"index":$MID));
+}
+else
+{
+  check_online(session_id(), ($pageID==""?"index":$pageID));
 }
 
 require(load_language("lang_main.php"));
@@ -137,31 +139,31 @@ $tpl->set("main_title",$btit_settings["name"]." .::. "."Index");
 //ads system cooly
 if($btit_settings["fmhack_ads_system"]=="enabled" && in_array($CURUSER["id_level"],explode(",",$btit_settings["ad_groups"])))
 {
-$ad_settings=get_fresh_config("SELECT `key`,`value` FROM {$TABLE_PREFIX}ads");
-if($ad_settings["header_enabled"]=="enabled")
-{
-$tpl->set("ads_header",$ad_settings["header"]);
-}else{}
-if($ad_settings["left_top_enabled"]=="enabled")
-{
-$tpl->set("left_top",$ad_settings["left_top"]);
-}else{}
-if($ad_settings["left_bottom_enabled"]=="enabled")
-{
-$tpl->set("left_bottom",$ad_settings["left_bottom"]);
-}else{}
-if($ad_settings["right_top_enabled"]=="enabled")
-{
-$tpl->set("right_top",$ad_settings["right_top"]);
-}else{}
-if($ad_settings["right_bottom_enabled"]=="enabled")
-{
-$tpl->set("right_bottom",$ad_settings["right_bottom"]);
-}else{}
-if($ad_settings["footer_enabled"]=="enabled")
-{
-$tpl->set("ads_footer",$ad_settings["footer"]);
-}else{}
+  $ad_settings=get_fresh_config("SELECT `key`,`value` FROM {$TABLE_PREFIX}ads");
+  if($ad_settings["header_enabled"]=="enabled")
+  {
+    $tpl->set("ads_header",$ad_settings["header"]);
+  }else{}
+  if($ad_settings["left_top_enabled"]=="enabled")
+  {
+    $tpl->set("left_top",$ad_settings["left_top"]);
+  }else{}
+  if($ad_settings["left_bottom_enabled"]=="enabled")
+  {
+    $tpl->set("left_bottom",$ad_settings["left_bottom"]);
+  }else{}
+  if($ad_settings["right_top_enabled"]=="enabled")
+  {
+    $tpl->set("right_top",$ad_settings["right_top"]);
+  }else{}
+  if($ad_settings["right_bottom_enabled"]=="enabled")
+  {
+    $tpl->set("right_bottom",$ad_settings["right_bottom"]);
+  }else{}
+  if($ad_settings["footer_enabled"]=="enabled")
+  {
+    $tpl->set("ads_footer",$ad_settings["footer"]);
+  }else{}
 }
 $tpl->set("footer_en",(($btit_settings["fmhack_ads_system"]=="enabled")?TRUE:FALSE),TRUE);
 $tpl->set("right_bottom_en",(($btit_settings["fmhack_ads_system"]=="enabled")?TRUE:FALSE),TRUE);
@@ -174,20 +176,20 @@ $tpl->set("header_en",(($btit_settings["fmhack_ads_system"]=="enabled")?TRUE:FAL
 // Seo by atmoner
 $tpl->set("seo_enabled", (($btit_settings["fmhack_SEO_panel"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_SEO_panel"]=="enabled")
-    require("$THIS_BASEPATH/seo.php");
+  require("$THIS_BASEPATH/seo.php");
 // Seo by atmoner
 
 $tpl->set("balloons_enabled", (($btit_settings["fmhack_balloons_on_mouseover"]=="enabled")?true:false), true);
 
 // is language right to left?
 if (!empty($language["rtl"]))
-   $tpl->set("main_rtl"," dir=\"".$language["rtl"]."\"");
+ $tpl->set("main_rtl"," dir=\"".$language["rtl"]."\"");
 else
-   $tpl->set("main_rtl","");
+ $tpl->set("main_rtl","");
 if (!empty($language["charset"]))
-  {
-   $GLOBALS["charset"]=$language["charset"];
-   $btit_settings["default_charset"]=$language["charset"];
+{
+ $GLOBALS["charset"]=$language["charset"];
+ $btit_settings["default_charset"]=$language["charset"];
 }
 $tpl->set("main_charset",$GLOBALS["charset"]);
 $tpl->set("main_css","$style_css");
@@ -216,22 +218,22 @@ $right_col=right_menu();
 
 if($btit_settings["fmhack_site_offline"]=="enabled")
 {
-    if (($left_col=="" && $right_col=="") || $btit_settings["site_offline"])
-        $no_columns=1;
+  if (($left_col=="" && $right_col=="") || $btit_settings["site_offline"])
+    $no_columns=1;
 }
 else
 {
-    if ($left_col=="" && $right_col=="")
-        $no_columns=1;
+  if ($left_col=="" && $right_col=="")
+    $no_columns=1;
 }
 if($btit_settings["fmhack_no_columns_display"]=="enabled")
 {
-    $noColArr=(($btit_settings["nocol_exceptions"]=="")?array():unserialize($btit_settings["nocol_exceptions"]));
-    $pageID2=$pageID;
-    if($pageID2=="")
-        $pageID2="index";
-    if(!in_array($pageID2, $noColArr))
-        $no_columns=1;
+  $noColArr=(($btit_settings["nocol_exceptions"]=="")?array():unserialize($btit_settings["nocol_exceptions"]));
+  $pageID2=$pageID;
+  if($pageID2=="")
+    $pageID2="index";
+  if(!in_array($pageID2, $noColArr))
+    $no_columns=1;
 }
 include 'include/jscss.php';
 
@@ -269,64 +271,64 @@ $tpl->set("valid_user",(($CURUSER['id']>2)?true:false),true);
 $tpl->set("anon_enabled", (($btit_settings["fmhack_anonymous_links"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_anonymous_links"]=="enabled")
 {
-    $tpl->set("protected",$BASEURL);
+  $tpl->set("protected",$BASEURL);
 }
 //start private shout
 if($btit_settings["fmhack_private_shouts"]=="enabled")
 {
-    if($CURUSER["uid"]>1 && $CURUSER["pchat"]=="")
-        quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `pchat`=".rand(1000,100000)." WHERE `id`=".$CURUSER["uid"],true);
+  if($CURUSER["uid"]>1 && $CURUSER["pchat"]=="")
+    quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `pchat`=".rand(1000,100000)." WHERE `id`=".$CURUSER["uid"],true);
 }
 //end private shout
 
 if($btit_settings["fmhack_booted"]=="enabled")
 {
-    if ($CURUSER["uid"]>1 && $CURUSER["booted"] == "yes")
-        redirect("logout.php");
+  if ($CURUSER["uid"]>1 && $CURUSER["booted"] == "yes")
+    redirect("logout.php");
 }
 
 if($btit_settings["fmhack_site_offline"]=="enabled")
 {
-    if ($btit_settings["site_offline"] && $CURUSER["id"]>1 && $CURUSER["admin_access"]!="yes")
-        stderr($language["SORRY"],$btit_settings["offline_msg"]);
-    elseif ($btit_settings["site_offline"] && $CURUSER["id"]==1)
-        $pageID="login";
+  if ($btit_settings["site_offline"] && $CURUSER["id"]>1 && $CURUSER["admin_access"]!="yes")
+    stderr($language["SORRY"],$btit_settings["offline_msg"]);
+  elseif ($btit_settings["site_offline"] && $CURUSER["id"]==1)
+    $pageID="login";
 }
 if($btit_settings["fmhack_account_parked"]=="enabled" && $CURUSER["parked"]=="yes" && $pageID!="usercp")
 {
-        information_msg($language["PARK_ACC_PARKED"], $language["PARK_ACC_PARKED_INFO_1"]." <a href='index.php?page=usercp&amp;do=user&amp;action=change&amp;uid=".$CURUSER["uid"]."'>".$language["PARK_ACC_PARKED_INFO_2"]."</a>.");
+  information_msg($language["PARK_ACC_PARKED"], $language["PARK_ACC_PARKED_INFO_1"]." <a href='index.php?page=usercp&amp;do=user&amp;action=change&amp;uid=".$CURUSER["uid"]."'>".$language["PARK_ACC_PARKED_INFO_2"]."</a>.");
 }
 
 if($btit_settings["fmhack_forced_FAQ"]=="enabled")
 {
-    $faq=get_result("SELECT COUNT(*) `count` FROM `{$TABLE_PREFIX}faq`", true, $btit_settings["cache_duration"]);
-    if ($CURUSER["id_level"]>=3 && $CURUSER["viewed_faq"]==0 && $faq[0]["count"]>0)
-        $pageID="faq";
+  $faq=get_result("SELECT COUNT(*) `count` FROM `{$TABLE_PREFIX}faq`", true, $btit_settings["cache_duration"]);
+  if ($CURUSER["id_level"]>=3 && $CURUSER["viewed_faq"]==0 && $faq[0]["count"]>0)
+    $pageID="faq";
 }
 //if arcade
 /*$act=(isset($_GET["act"])?$_GET["act"]:$act="");
 if($act=="Arcade"){
 include("$THIS_BASEPATH/Arcade.php");
 }else{*/
-require("index_arc.php");
+  require("index_arc.php");
 
-include($THIS_BASEPATH.'/index.switch.php');
+  include($THIS_BASEPATH.'/index.switch.php');
 
 //}//end if arcade
 
-include($THIS_BASEPATH.'/index.pages.php');
+  include($THIS_BASEPATH.'/index.pages.php');
 
-if($btit_settings["fmhack_user_watch_list"]=="enabled")
-{
+  if($btit_settings["fmhack_user_watch_list"]=="enabled")
+  {
     if($CURUSER["IS_WATCHED"]=="yes")
     {
-        $the_page=$BASEURL.$_SERVER['REQUEST_URI'];
-        $the_ip=$_SERVER['REMOTE_ADDR'];
-        $cuid=$CURUSER["uid"];
-        $cuser=$CURUSER["username"];
-        quickQuery("INSERT INTO `{$TABLE_PREFIX}watched_users` (`id`,`uid`,`username`,`cip`,`location`,`date`) VALUES ('',$cuid,'$cuser','$the_ip','$the_page',NOW())",true);
+      $the_page=$BASEURL.$_SERVER['REQUEST_URI'];
+      $the_ip=$_SERVER['REMOTE_ADDR'];
+      $cuid=$CURUSER["uid"];
+      $cuser=$CURUSER["username"];
+      quickQuery("INSERT INTO `{$TABLE_PREFIX}watched_users` (`id`,`uid`,`username`,`cip`,`location`,`date`) VALUES ('',$cuid,'$cuser','$the_ip','$the_page',NOW())",true);
     }
-}
-include($THIS_BASEPATH.'/index.end.php');
+  }
+  include($THIS_BASEPATH.'/index.end.php');
 
-?>
+  ?>
