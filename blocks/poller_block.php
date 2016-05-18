@@ -104,6 +104,10 @@ else
                 print ("<a name=\"poll\" /></a>");
 
 ?>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Poll</h4>
+</div>
   <table border="0" class="block" cellspacing="0" cellpadding="0" width="100%"><tr><td align="center">
   <form action="<?php
                 echo $_SERVER['PHP_SELF'];
@@ -211,7 +215,7 @@ else
       <div class="clear"></div>
   </div>
   </form>
-  </td></tr></table>
+  </td></tr></table>    </div>
       <?php
             }
         }
