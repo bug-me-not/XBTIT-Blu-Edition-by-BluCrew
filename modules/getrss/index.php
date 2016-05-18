@@ -113,8 +113,6 @@ stderr("Error", "You need to chose a feed type !!");
 <div class="panel-heading">
 <h4 class="text-center">Categories To Retrieve</h4>
 </div>
-</div>
-
 
 <center><table class="table table-bordered">
 
@@ -131,11 +129,12 @@ stderr("Error", "You need to chose a feed type !!");
             <td align="center" width="50%" class="header">Feed Type:&nbsp;
             <input type="radio" name="feed" value="web" />Web Link
              &nbsp;&nbsp;&nbsp;<input type="radio" name="feed" value="dl" />Download link</td>
-             <td align="left" width="50%"><button  type="submit" class="btn btn=primary">Get RSS</button></td>
+             <td align="left" width="50%"><button  type="submit" class="btn btn-primary btn-md">Get RSS</button></td>
         </tr>
         </table>
         </center>
 </form>
+</div>
    
 <?php    
 $module_out=ob_get_contents();
