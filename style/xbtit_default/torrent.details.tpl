@@ -471,7 +471,7 @@ $clock(document).ready(function(){
    <if:HAVE_SUBTITLE>
    <tr>
    <td align="right" class="header">External Subtitles</td>
-   <td class="lista" align="center">
+   <td class="lista" align="left">
    <table>
    <loop:subs>
    <tr>
