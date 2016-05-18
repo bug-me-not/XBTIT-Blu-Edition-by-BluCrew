@@ -89,6 +89,8 @@ $time_start = get_microtime();
 
 clearstatcache();
 
+$pageID=(isset($_GET["page"])?$_GET["page"]:"");
+
 if($btit_settings["fmhack_alternate_login"]=="enabled")
 {
     global $CURUSER;
@@ -97,11 +99,16 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
     $last_key=(count($server_url)-1);
     $user_location=$server_url[$last_key];
 
-    if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["id"]==1))
+    if(!isset($CURUSER) || (isset($CURUSER) && $CURUSER["uid"]==1))
     {
-        if($user_location=="" || $user_location=="index.php" )//|| $user_location!="index.php?page=login" || $user_location!="index.php?page=recover&act=takerecover")
+        if($user_location=="" || $user_location=="index.php")
         {
             redirect("login_new.php");
+        }
+
+        if($pageID!="login" && $pageID!="signup" && $pageID!="contact")
+        {
+          redirect("login_new.php");
         }
     }
 }
@@ -109,8 +116,6 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
 $style_css=load_css("bootstrap.css");
 
 $idlang=intval($_GET["language"]);
-
-$pageID=(isset($_GET["page"])?$_GET["page"]:"");
 
 $no_columns=(isset($_GET["nocolumns"]) && intval($_GET["nocolumns"])==1?true:false);
 
