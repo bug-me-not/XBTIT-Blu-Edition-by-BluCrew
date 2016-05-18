@@ -72,7 +72,7 @@ padding - bottom : 40px;
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Hot Picks</h4>
+<h4 class="text-center">Throwbacks</h4>
 </div>
    
 
