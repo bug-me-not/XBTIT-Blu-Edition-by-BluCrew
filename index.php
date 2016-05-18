@@ -264,6 +264,8 @@ $tpl->set("uid",$CURUSER['uid']);
 
 $tpl->set("show_nav",(($CURUSER['id']>2)?true:false),true);
 
+$tpl->set("valid_user",(($CURUSER['id']>2)?true:false),true);
+
 $tpl->set("anon_enabled", (($btit_settings["fmhack_anonymous_links"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_anonymous_links"]=="enabled")
 {

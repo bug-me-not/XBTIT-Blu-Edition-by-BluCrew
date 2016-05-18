@@ -264,6 +264,7 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
   </div>
 </div>
 <!-- Footer -->
+<if:valid_user>
 <footer>
   <div class="container-fluid">
     <div class="row">
@@ -290,5 +291,6 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
     </div>
   </div>
 </footer>
+</if:valid_user>
 </body>
 </html>
