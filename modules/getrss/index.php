@@ -62,9 +62,8 @@ while ($cat = $risultato->fetch_array())
   {
     $catoptions .= "<tr></tr>";
   }
-  $catoptions .= "<td>";
 //$catoptions .= "<a href=\"index.php?page=torrents&amp;category=$id\" title=\"$name\" alt=\"$name\">" . image_or_link( ($cat["image"] == "" ? "" : "$STYLEPATH/images/categories/" . $cat["image"]), "", $cat["name"]) ."</a><center>$tot</center></td><td>&nbsp;</td>";
-  $catoptions .= "<a href=\"index.php?page=torrents&amp;category=".$cat['id']."\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><center>Seeds: ".$tot."<br><input type=\"checkbox\" name=\"cat[]\" value=\"".$cat['id']."\" " .(strpos($CURUSER['notifs'], "[cat{$cat['id']}]") !== false ? " checked" : "") ."/></center>";
+  $catoptions .= "<td><a href=\"index.php?page=torrents&amp;category=".$cat['id']."\">".image_or_link(($cat["image"]==""?"":"$STYLEPATH/images/categories/" . $cat["image"]),"",$cat["name"])."</a><center>Seeds: ".$tot."<br><input type=\"checkbox\" name=\"cat[]\" value=\"".$cat['id']."\" " .(strpos($CURUSER['notifs'], "[cat{$cat['id']}]") !== false ? " checked" : "") ."/></center></td>";
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -98,22 +97,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   else
     header("Refresh: 0; url=".$link."");        
 }
-
 ?>
 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h4 class="text-center">Categories To Retrieve</h4>
   </div>
+  
+  <form method="POST" action="index.php?page=modules&amp;module=getrss">
+    <center><table class="table table-bordered">
 
-  <center><table class="table table-bordered">
+      <?php print($catoptions); ?>
 
-    <form method="POST" action="index.php?page=modules&amp;module=getrss">
-
-    <?php echo $catoptions; ?>
-
-
-    </table></center><br>   
+    </table></center>
+    <br>   
     <center>
       <table class="table table-bordered">
        <tr>
