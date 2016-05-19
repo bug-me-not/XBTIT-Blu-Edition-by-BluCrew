@@ -50,13 +50,6 @@ else
 if($res[0]["count"]>0)
     $completedb4=true;
 
-if($btit_settings["fmhack_advanced_RSS_feed"]=="enabled" && $CURUSER["uid"]==1)
-{
-    (isset($_GET["auth"]) && !empty($_GET["auth"]))?$auth = explode("-", base64_decode($_GET["auth"])):$auth = false;
-    unset($CURUSER);
-    userlogin($auth);
-}
-
 if($btit_settings["fmhack_download_ratio_checker"]=="enabled" && $CURUSER["bypass_dlcheck"]==0 && $completedb4===false)
 {
     session_name("BluRG");
