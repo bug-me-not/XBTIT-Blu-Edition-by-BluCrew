@@ -711,8 +711,6 @@ if($btit_settings["fmhack_signature_on_internal_forum"] == "enabled")
    $query1_select .= "`u`.`signature`,";
 if($btit_settings["fmhack_total_online_time"] == "enabled")
    $query1_select .= "`u`.`tot_on`,";
-if($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")
-   $query1_select .= "`u`.`custom_rss`,";
 if($btit_settings["fmhack_VIP_freeleech"] == "enabled")
    $query1_select .= "`u`.`vipfl_down`,";
 if($btit_settings["fmhack_default_cat_browse"]=="enabled")
@@ -3328,23 +3326,6 @@ function sqlerr($file = '', $line = '')
                      $salt .= chr($num);
                   }
                   return $salt;
-               }
-               function whatsMyRssUrl() {
-                  global $BASEURL, $CURUSER;
-
-                  $custom_rss=(isset($CURUSER["custom_rss"]) && !empty($CURUSER["custom_rss"]))?explode("[X]", $CURUSER["custom_rss"]):array();
-                  $auth = base64_encode(substr($CURUSER["password"], -10)."-".$CURUSER["uid"]."-".substr($CURUSER["password"], 0, 10)."-".$CURUSER["random"]);
-                  if(count($custom_rss) > 0)
-                  {
-                     $rss_catlist = explode(".", $custom_rss[0]);
-                     $rss_limit = $custom_rss[1];
-                  }
-                  else
-                  {
-                     $rss_catlist[0] = "all";
-                     $rss_limit = 5;
-                  }
-                  return $BASEURL."/advanced_rss.php?cats=".(($rss_catlist[0] == "all")?"all":implode(";", $rss_catlist))."&tpc=".$rss_limit."&auth=".$auth;
                }
                function is_mod_rewrite_enabled(){
                   //    if ($_SERVER['HTTP_MOD_REWRITE'] == 'On')
