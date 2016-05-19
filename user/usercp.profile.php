@@ -222,17 +222,6 @@ switch($action)
                 $set[] = "showporn='$showporn'";
             if($btit_settings["fmhack_private_profile"] == "enabled")
                 $set[] = "profileview=".intval(0 + $_POST["profileview"]);
-            if($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")
-            {
-                $custom_rss="";
-                foreach($_POST as $k => $v)
-                {
-                    if(substr($k, 0, 8)=="category")
-                        $custom_rss.=(int)0+$v.".";
-                }
-                $custom_rss=sql_esc(trim($custom_rss,".")."[X]".((int)0+$_POST["rss_limit"]));
-                $set[] = "custom_rss='".$custom_rss."'";
-            }
             if($btit_settings["fmhack_default_cat_browse"]=="enabled")
                 $set[]="catins='".((isset($_POST["cat_groups"]) && !empty($_POST["cat_groups"]))?implode(",",$_POST["cat_groups"]):"")."'";
             $updateset = implode(",", $set);
@@ -290,64 +279,6 @@ switch($action)
                 $cat_checks.='</tr></table><br />';
             }
             $usercptpl->set("catlist", $cat_checks);
-        }
-        if($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")
-        {
-            (isset($CURUSER["custom_rss"]) && !empty($CURUSER["custom_rss"]))?$custom_rss = explode("[X]", $CURUSER["custom_rss"]):$custom_rss = array();
-
-            if(count($custom_rss)>0)
-            {
-                $rss_catlist=explode(".", $custom_rss[0]);
-                $rss_limit=$custom_rss[1];
-            }
-            else
-            {
-                $rss_catlist[0]="all";
-                $rss_limit=5;
-            }
-            $rss_output="";
-
-            $res = get_result("SELECT `id`, `name`, `image` FROM `{$TABLE_PREFIX}categories` WHERE `sub`='0' ORDER BY `sort_index` ASC", true, $btit_settings["cache_duration"]);
-            $counter = 1;
-            $i = 0;
-            if(count($res) > 0)
-            {
-                $rss_output.="\n<table>\n<tr>\n";
-                foreach($res as $row)
-                {
-                    $res2 = get_result("SELECT `id`, `name`, `image` FROM `{$TABLE_PREFIX}categories` WHERE `sub`='".$row["id"]."'", true, $btit_settings["cache_duration"]);
-                    if(count($res2) > 0)
-                    {
-                        foreach($res2 as $row2)
-                        {
-                            if($counter == 6)
-                            {
-                                $rss_output.="\n</tr>\n<tr>\n";
-                                $counter = 1;
-                            }
-                            $rss_output.= "<td valign='middle'><img src='".$STYLEURL."/images/categories/".$row2["image"]."' title='".$row["name"]." --> ".$row2["name"].
-                                "' height='32' width='32' />&nbsp;&nbsp;<input type='checkbox' name='category".$i."' value='".$row2["id"]."'".(($rss_catlist[0]=="all" || in_array($row2["id"],$rss_catlist) )?" checked='checked' ":"")."></td>\n";
-                            $counter++;
-                            $i++;
-                        }
-                    }
-                    else
-                    {
-                        if($counter == 6)
-                        {
-                            $rss_output.="\n</tr>\n<tr>\n";
-                            $counter = 1;
-                        }
-                        $rss_output .= "<td valign='middle'><img src='".$STYLEURL."/images/categories/".$row["image"]."' title='".$row["name"]."' height='32' width='32' />&nbsp;&nbsp;<input type='checkbox' name='category".$i.
-                            "' value='".$row["id"]."'".(($rss_catlist[0]=="all" || in_array($row["id"],$rss_catlist) )?" checked='checked' ":"")."></td>\n";
-                        $counter++;
-                        $i++;
-                    }
-                }
-                $rss_output.="</tr>\n</table>\n";
-            }
-            $usercptpl->set("rss_output", $rss_output);
-            $usercptpl->set("rss_limit", $rss_limit);
         }
         if($btit_settings["fmhack_birthdays"] == "enabled")
         {
@@ -475,7 +406,6 @@ switch($action)
             $usercptpl->set("hide_profile", (($CURUSER["profileview"] == 1)?true:false), true);
         }
         $usercptpl->set("signature_enabled", (($btit_settings["fmhack_signature_on_internal_forum"] == "enabled")?true:false), true);
-        $usercptpl->set("advanced_rss_enabled", (($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")?true:false), true);
         $usercptpl->set("torrcomm_enabled", (($btit_settings["fmhack_pM_notification_on_torrent_comment"]=="enabled")?true:false), true);
         break;
 }

@@ -38,11 +38,6 @@ $usercptpl->set("delete_allowed_1", true, true);
 $usercptpl->set("delete_allowed_2", true, true);
 $usercptpl->set("showporn_enabled", (($btit_settings["fmhack_show_or_hide_porn"] == "enabled")?true:false), true);
 $usercptpl->set("about_me_enabled", (($btit_settings["fmhack_about_me"] == "enabled")?true:false), true);
-$usercptpl->set("rss_feed_enabled", (($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")?true:false), true);
-if($btit_settings["fmhack_advanced_RSS_feed"] == "enabled")
-{
-    $usercptpl->set("custom_rss_feed", whatsMyRssUrl());
-}
 if($btit_settings["fmhack_about_me"] == "enabled")
 {
     $usercptpl->set("about_me", format_comment($CURUSER["about_me"]));
