@@ -167,7 +167,7 @@ ob_start();
 
       <div class='r_row'>
         <div class='r_cell'>
-          1) UPLOADING VIDEO GUIDE HERE: (LINK WILL BE ADDED)</br></br>
+          1) UPLOADING VIDEO GUIDE HERE: https://www.youtube.com/watch?v=XCDb9D5Y3q8</br></br>
 
           2) Allowed content:</br>
           Untouched Blurays</br>
