@@ -23,9 +23,9 @@ if ($BASEURL != $domain) {
  header ("Location: " . $BASEURL . $filename . "");
 }
 
-(isset($_POST["cr"]) && $_POST["cr"] == 1)?$cr = (int)1:$cr = 0;
+(isset($_POST["cr"]) && $_POST["cr"] == 1) ? $cr = (int)1:$cr = 0;
 (isset($_POST["bo"]) && $_POST["bo"] >1) ? ($bo=(int)$_POST["bo"]):($bo=0);
-
+(isSet($_POST["vu"]) && $_POST['vu'] == 1) ? $vu = (int)1:$vu = 0;
 
 $logintpl = new bTemplate();
 
@@ -57,6 +57,12 @@ if($bo>1)
         $logintpl->set("title","You have been booted!");
         $logintpl->set("error_message",("<p><span class='ui-icon ui-icon-alert' style='float:left;margin:0 7px 20px 0;'></span>  <b>".$language["BOOTED"]." <br>".$language["BOOTEDUT"]." ".unesc($que_res['addbooted'])."<br>".$language["WHYBOOTED"]."&nbsp;&nbsp;".unesc($que_res['whybooted'])."</b></p>"));
     }
+}
+if($vu==1)
+{
+    $logintpl->set("div_setting","shake");
+    $logintpl->set("title","User not Validated.");
+    $logintpl->set("error_message","<p><span class='ui-icon ui-icon-alert' style='float:left;margin:0 7px 20px 0;'></span>Your account has not been validated, please check your account for an email from us.</p>");
 }
 
 //ImageCode

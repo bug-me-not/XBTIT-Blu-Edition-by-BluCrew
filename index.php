@@ -111,6 +111,10 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
       redirect("login_new.php");
     }
   }
+  if(isSet($CURUSER) && $CURUSER['id']==2)
+  {
+    login_redirect("vu",1);
+  }
 }
 
 $style_css=load_css("bootstrap.css");

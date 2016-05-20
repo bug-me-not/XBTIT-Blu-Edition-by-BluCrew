@@ -972,4 +972,20 @@ function announcement ($uid) {
    }
    return $ret;
 }
+
+function login_redirect($name, $value)
+{
+    echo "<html><head></head>
+    <body> 
+    <form name='dir' action='/login_new.php' method='post'>
+        <input type=hidden name='{$name}' value='{$value}' />
+        <input type=hidden name='submitter' value='true' />
+        <input type=hidden name='cmd' value='test' />
+    </form>
+    <script>
+        document.dir.submit();
+    </script>
+    </body></html>";
+}
+
 ?>
