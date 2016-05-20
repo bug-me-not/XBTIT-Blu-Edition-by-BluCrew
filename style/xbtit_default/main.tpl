@@ -212,8 +212,7 @@
 </div>
 
 <!-- BANNER START -->
-<center><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i><font size="40px" color="#00aeff">BluRG.xyz</font><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i>
-  <p class="text-danger">Your #1 HD Tracker</p></center>
+<center><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i><font size="40px" color="#00aeff">BluRG.xyz</font><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i></center>
   <!-- BANNER END -->
 
 <!-- Site Alerts
