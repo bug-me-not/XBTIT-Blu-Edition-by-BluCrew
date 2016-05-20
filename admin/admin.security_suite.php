@@ -10,7 +10,7 @@ if(isset($_POST) && !empty($_POST))
 {
     (isset($_POST["secsui_quarantine_search_terms"]) && !empty($_POST["secsui_quarantine_search_terms"])) ? $secsui_quarantine_search_terms=
     sqlesc(strtolower(str_replace(array("\r\n", "\n\r", " "), array(",", ",", ""), $_POST["secsui_quarantine_search_terms"]))) : $secsui_quarantine_search_terms="";
-    (isset($_POST["secsui_quarantine_dir"]) && !empty($_POST["secsui_quarantine_dir"])) ? $secsui_quarantine_dir=sqlesc(str_replace("\\", "/", $_POST["secsui_quarantine_dir"])) : $secsui_quarantine_dir="";
+    (isset($_POST["secsui_quarantine_dir"]) && !empty($_POST["secsui_quarantine_dir"])) ? $secsui_quarantine_dir=sql_esc(str_replace("\\", "/", $_POST["secsui_quarantine_dir"])) : $secsui_quarantine_dir="";
     (isset($_POST["secsui_quarantine_pm"]) && !empty($_POST["secsui_quarantine_pm"]) && is_numeric($_POST["secsui_quarantine_pm"]) && $_POST["secsui_quarantine_pm"]>=2) ? $secsui_quarantine_pm=(int)0+$_POST["secsui_quarantine_pm"] : $secsui_quarantine_pm=2;
     (isset($_POST["secsui_pass_type"]) && !empty($_POST["secsui_pass_type"]) && is_numeric($_POST["secsui_pass_type"]) && $_POST["secsui_pass_type"]>=1 && $_POST["secsui_pass_type"]<=7) ? $secsui_pass_type=(int)0+$_POST["secsui_pass_type"] : $secsui_pass_type=1;
     (isset($_POST["secsui_ss"]) && !empty($_POST["secsui_ss"])) ? $secsui_ss=sqlesc($_POST["secsui_ss"]) : $secsui_ss="";
