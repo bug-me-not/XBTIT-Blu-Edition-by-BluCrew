@@ -195,7 +195,7 @@ function form_control()
     <if:ssl_enabled>
 	<tr>
        <td align="left" class="header"><tag:language.SSL /></td>
-       <td class="lista"><input type="checkbox" name="force"><tag:language.SSL_DESC /></td>
+       <td class="lista"><input type="checkbox" name="force" checked><tag:language.SSL_DESC /></td>
     </tr>
     </if:ssl_enabled>
     
