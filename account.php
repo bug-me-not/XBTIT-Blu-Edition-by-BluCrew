@@ -981,15 +981,16 @@ if($_POST["conferma"])
                         $note='';
                         $logNote='';
                     }
-                    $vmail = send_pm(0,$user,sqlesc($language['KIS_REG_TITLE']),sqlesc(sprintf($language['KIS_REG_BODY'], $email, $BASEURL, $newuid, $utente ).$note));
-                    if($vmail!=true)
-                        write_log("Send mail failed, due to: ".sql_esc($vmail),'add');
+                    send_pm(0,$user,sqlesc($language['KIS_REG_TITLE']),sqlesc(sprintf($language['KIS_REG_BODY'], $email, $BASEURL, $newuid, $utente ).$note));
 
                     if ($kisfig['kis_logs'])
                         write_log('[KIS] '.getNameX($user, $BASEURL).' invited <a href="'.$BASEURL.'/index.php?page=userdetails&id='.$newuid.'">'.$utente.'</a> ('.$email.').'.$logNote, 'add');
                 }
 
-                send_mail($email, $language["ACCOUNT_CONFIRM"], $language["ACCOUNT_MSG"]."\n\n".$BASEURL."/index.php?page=account&act=confirm&confirm=$random&language=$idlangue");
+                $vmail = send_mail($email, $language["ACCOUNT_CONFIRM"], $language["ACCOUNT_MSG"]."\n\n".$BASEURL."/index.php?page=account&act=confirm&confirm=$random&language=$idlangue");
+                if(!$vmail)
+                        write_log("Send mail failed, due to: ".sql_esc($vmail),'add');
+                    
                 write_log("Signup new user $utente ($email)", "add");
             }
             else
