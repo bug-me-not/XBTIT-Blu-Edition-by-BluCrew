@@ -378,22 +378,22 @@ if($_POST["conferma"])
             $tpl_account->set("account_uid", $dati["id"]);
             $tpl_account->set("account_returnto", urlencode($link));
             if($btit_settings["createacc_language"]!="disabled")
-               $tpl_account->set("account_IDlanguage",$idlang);
-           if($btit_settings["createacc_style"]!="disabled")
-               $tpl_account->set("account_IDstyle",$idstyle);
-           $tpl_account->set("account_IDcountry", $idflag);
-           $tpl_account->set("account_username", $dati["username"]);
-           $tpl_account->set("dati", $dati);
-           $tpl_account->set("DEL", $action == "delete", true);
-           $tpl_account->set("DISPLAY_FULL", $action == "signup" || $action == "invite", true);
-           $tpl_account->set("createacc_language_enabled", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
-           $tpl_account->set("createacc_style_enabled", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
-           $tpl_account->set("createacc_language_enabled_1", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
-           $tpl_account->set("createacc_style_enabled_1", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
-           $tpl_account->set("birthdays_enabled", (($btit_settings["fmhack_birthdays"] == "enabled")?true:false), true);
-           $tpl_account->set("ssl_enabled", (($btit_settings["fmhack_force_ssl"] == "enabled")?true:false), true);
+             $tpl_account->set("account_IDlanguage",$idlang);
+         if($btit_settings["createacc_style"]!="disabled")
+             $tpl_account->set("account_IDstyle",$idstyle);
+         $tpl_account->set("account_IDcountry", $idflag);
+         $tpl_account->set("account_username", $dati["username"]);
+         $tpl_account->set("dati", $dati);
+         $tpl_account->set("DEL", $action == "delete", true);
+         $tpl_account->set("DISPLAY_FULL", $action == "signup" || $action == "invite", true);
+         $tpl_account->set("createacc_language_enabled", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
+         $tpl_account->set("createacc_style_enabled", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
+         $tpl_account->set("createacc_language_enabled_1", (($btit_settings["createacc_language"]=="enabled")?true:false), true);
+         $tpl_account->set("createacc_style_enabled_1", (($btit_settings["createacc_style"]=="enabled")?true:false), true);
+         $tpl_account->set("birthdays_enabled", (($btit_settings["fmhack_birthdays"] == "enabled")?true:false), true);
+         $tpl_account->set("ssl_enabled", (($btit_settings["fmhack_force_ssl"] == "enabled")?true:false), true);
 
-        if($action == "del")
+         if($action == "del")
             $tpl_account->set("account_from_delete_confirm", "<input type=\"submit\" class=\"btn btn-sucess btn-md\" name=\"elimina\" value=\"".$language["FRM_DELETE"]."\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"elimina\" value=\"".
                 $language["FRM_CANCEL"]."\" />");
         else
@@ -880,16 +880,16 @@ if($_POST["conferma"])
         }
         if($btit_settings["createacc_language"]=="disabled")
         {
-         $idlangue=$btit_settings["default_language"];
-     }
-     quickQuery("INSERT INTO {$TABLE_PREFIX}users (`username`, `password`, `salt`, `pass_type`, `dupe_hash`, `random`, `id_level`, `email`, `style`, `language`, `flag`, `joined`, `lastconnect`, `pid`, `time_offset`".
+           $idlangue=$btit_settings["default_language"];
+       }
+       quickQuery("INSERT INTO {$TABLE_PREFIX}users (`username`, `password`, `salt`, `pass_type`, `dupe_hash`, `random`, `id_level`, `email`, `style`, `language`, `flag`, `joined`, `lastconnect`, `pid`, `time_offset`".
         (($btit_settings["fmhack_signup_bonus_upload"] == "enabled" && !$XBTT_USE)?", `uploaded`":"").(($btit_settings["fmhack_birthdays"] == "enabled")?", `dob`":"").(($btit_settings["fmhack_force_ssl"] ==
             "enabled")?", `force_ssl`":"").$key.") VALUES ('".$utente."', '".sql_esc($multipass[$i]["rehash"])."', '".sql_esc($multipass[$i]["salt"])."', '".$i."', '".
         sql_esc($multipass[$i]["dupehash"])."', ".$random.", ".$idlevel.", '".$email."', ".$idstyle.", ".$idlangue.", ".$idflag.", NOW(), NOW(),'".$pid."', '".$timezone."'".(($btit_settings["fmhack_signup_bonus_upload"] ==
             "enabled" && !$XBTT_USE)?", ".$uploaded:"").(($btit_settings["fmhack_birthdays"] == "enabled")?", '".$dob."'":"").(($btit_settings["fmhack_force_ssl"] == "enabled")?", '".$force."'":"").$value.")", true);
-     $newuid = sql_insert_id();
-     if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"] == "enabled")
-     {
+       $newuid = sql_insert_id();
+       if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"] == "enabled")
+       {
         // begin - announce new confirmed user in shoutbox
         system_shout((sql_esc($language["ANN_NEW_USER"])." [url=".$BASEURL."/index.php?page=userdetails&id=".$newuid."]".$utente."[/url]"), false,true);
         // end - announce new confirmed user in shoutbox
@@ -990,8 +990,7 @@ if($_POST["conferma"])
                 $vmail = send_mail($email, $language["ACCOUNT_CONFIRM"], $language["ACCOUNT_MSG"]."\n\n".$BASEURL."/index.php?page=account&act=confirm&confirm=$random&language=$idlangue");
                 write_log("Signup new user $utente ($email)", "add");
 
-                if(!$vmail)
-                        error_log("Send mail failed, due to: ".sql_esc($vmail));
+                error_log("Send mail failed, due to: ".sql_esc($vmail));
             }
             else
                 die(sql_error());
