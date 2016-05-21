@@ -12,13 +12,13 @@ if(!empty($pid))
   $user = do_sqlquery("SELECT count(*) FROM {$TABLE_PREFIX}users u LEFT JOIN {$TABLE_PREFIX}users_level ul ON u.id_level=ul.id WHERE u.pid='$pid' AND ul.id_level>2 AND ul.view_torrents='yes'");
   if(sql_num_rows($user) != 1)
   {
-    header('Invalid user', true, 400);
-    die();
+    header('HTTP/1.0 400 Invalid User', true, 400);
+    die("Invalid User");
   }
 }
 else
 {
-  header('No user identification', true, 400);
+  header('HTTP/1.0 400 No User Identification', true, 400);
   die();
 }
 
@@ -35,8 +35,8 @@ if(isSet($_GET['cat']) && !empty($_GET['cat']))
 
 if(count($cats) < 1)
 {
-  header('No categories specified', true, 400);
-  die();
+  header('HTTP/1.0 400 No Categories', true, 400);
+  die("No Categories Specified");
 }
 
 if(count($cats) >1)
