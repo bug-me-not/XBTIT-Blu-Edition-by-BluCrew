@@ -9,7 +9,7 @@ $pid = (isSet($_GET['pid']) && !empty($_GET['pid'])) ? sql_esc($_GET['pid']) : "
 
 if(!empty($pid))
 {
-  $user = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}users WHERE pid='$pid' AND id_level>2");
+  $user = do_sqlquery("SELECT count(*) FROM {$TABLE_PREFIX}users u LEFT JOIN {$TABLE_PREFIX}users_level ul ON u.id_level=ul.id WHERE u.pid='$pid' AND ul.id_level>2");
   if(sql_num_rows($user) != 1)
   {
     header(ERR_500);
