@@ -988,10 +988,10 @@ if($_POST["conferma"])
                 }
 
                 $vmail = send_mail($email, $language["ACCOUNT_CONFIRM"], $language["ACCOUNT_MSG"]."\n\n".$BASEURL."/index.php?page=account&act=confirm&confirm=$random&language=$idlangue");
-                if(!$vmail)
-                        write_log("Send mail failed, due to: ".sql_esc($vmail),'add');
-                    
                 write_log("Signup new user $utente ($email)", "add");
+
+                if(!$vmail)
+                        error_log("Send mail failed, due to: ".sql_esc($vmail));
             }
             else
                 die(sql_error());
