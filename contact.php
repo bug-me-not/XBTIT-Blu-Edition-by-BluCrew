@@ -50,9 +50,8 @@ if(isset($_POST['submit']))
    $message = sql_esc($_POST['message']);
 
    $ipaddress = $_SERVER["REMOTE_ADDR"];
-   $regex = "^[_+a-z0-9-]+(\.[_+a-z0-9-]+)*"
-   ."@[a-z0-9-]+(\.[a-z0-9-]{1,})*"
-   ."\.([a-z]{2,}){1}$";
+   $regex = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)".
+         "*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";
 
    //captcha
    global $USE_IMAGECODE,$THIS_BASEPATH;
@@ -118,7 +117,8 @@ if(isset($_POST['submit']))
       stdfoot();
       die;
 
-   }else
+   }
+   else
    {
       if($cat=="" || $cat=="Select Main Subject")
       {

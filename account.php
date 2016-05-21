@@ -977,11 +977,14 @@ if($_POST["conferma"])
                         $note=sprintf($language['KIS_REG_NOTE'], $kisSize);
                         $logNote=' He was awarded '.$kisSize.'.';
                     } else 
-                    {
+                    { 
                         $note='';
                         $logNote='';
                     }
-                    send_pm(0,$user,sqlesc($language['KIS_REG_TITLE']),sqlesc(sprintf($language['KIS_REG_BODY'], $email, $BASEURL, $newuid, $utente ).$note));
+                    $vmail = send_pm(0,$user,sqlesc($language['KIS_REG_TITLE']),sqlesc(sprintf($language['KIS_REG_BODY'], $email, $BASEURL, $newuid, $utente ).$note));
+                    if($vmail!=true)
+                        write_log("Send mail failed, due to: ".sql_esc($vmail),'add');
+
                     if ($kisfig['kis_logs'])
                         write_log('[KIS] '.getNameX($user, $BASEURL).' invited <a href="'.$BASEURL.'/index.php?page=userdetails&id='.$newuid.'">'.$utente.'</a> ('.$email.').'.$logNote, 'add');
                 }
