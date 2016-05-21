@@ -25,7 +25,7 @@ else
 $feed = (isSet($_GET['feed']) && !empty($_GET['feed'])) ? sql_esc($_GET['feed']) : "";  
 $cats = array();
 
-if(isSet($_GET['cat']))
+if(isSet($_GET['cat']) && !empty($_GET['cat']))
 {
   foreach($_GET['cat'] as $cat)
   {
