@@ -110,20 +110,20 @@ if($id > 1)
     // <-- Booted
 
 //My Uploads
-$res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$id} AND anonymous='false' GROUP BY info_hash");
-$up_count = sql_num_rows($res_up);
+    $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$id} AND anonymous='false' GROUP BY info_hash");
+    $up_count = sql_num_rows($res_up);
 //My Uploads End
 
 // Seeding/Leeching hack
-$res = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'seeder' AND pid ='".$row["pid"]."' GROUP BY infohash");
-$res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'leecher' AND pid ='".$row["pid"]."' GROUP BY infohash");
+    $res = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'seeder' AND pid ='".$row["pid"]."' GROUP BY infohash");
+    $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'leecher' AND pid ='".$row["pid"]."' GROUP BY infohash");
 //$num = $res->fetch_array(); $num1 = $res1->fetch_array();
-$seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
+    $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
 // END Seeding/Leeching hack
 
 //Snatched torrents
-$res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$id} GROUP BY infohash");
-$comp_count = sql_num_rows($res_com);
+    $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$id} GROUP BY infohash");
+    $comp_count = sql_num_rows($res_com);
 //Snatched torrents
 
     if($btit_settings["fmhack_group_colours_overall"] == "enabled")
@@ -178,7 +178,7 @@ $comp_count = sql_num_rows($res_com);
         $query1_select .= "`u`.`freeleech_slots`,";
     if($btit_settings["fmhack_previous_usernames"]=="enabled")
         $query1_select.="`u`.`previous_names`,";
-    $res = get_result("SELECT ".$query1_select." u.avatar,u.email,u.cip,u.username,$udownloaded as downloaded,$uuploaded as uploaded,UNIX_TIMESTAMP(u.joined) as joined,UNIX_TIMESTAMP(u.lastconnect) as lastconnect,ul.level, u.flag, c.name, c.flagpic, u.pid, u.time_offset, u.smf_fid, u.ipb_fid FROM $utables INNER JOIN {$TABLE_PREFIX}users_level ul ON ul.id=u.id_level LEFT JOIN {$TABLE_PREFIX}countries c ON u.flag=c.id ".$query1_join." WHERE u.id=$id", true, $btit_settings['cache_duration']);
+    $res = get_result("SELECT ".$query1_select." u.avatar,u.browser,u.email,u.cip,u.username,$udownloaded as downloaded,$uuploaded as uploaded,UNIX_TIMESTAMP(u.joined) as joined,UNIX_TIMESTAMP(u.lastconnect) as lastconnect,ul.level, u.flag, c.name, c.flagpic, u.pid, u.time_offset, u.smf_fid, u.ipb_fid FROM $utables INNER JOIN {$TABLE_PREFIX}users_level ul ON ul.id=u.id_level LEFT JOIN {$TABLE_PREFIX}countries c ON u.flag=c.id ".$query1_join." WHERE u.id=$id", true, $btit_settings['cache_duration']);
     $num = count($res);
     if($num == 0)
     {
@@ -448,7 +448,7 @@ $userdetailtpl->set("whois_enabled", (($btit_settings["fmhack_show_members_whois
 $userdetailtpl->set("ruat", (($btit_settings["fmhack_report_users_and_torrents"] == "enabled" && $id!=$CURUSER["uid"])?true:false), true);
 if($btit_settings["fmhack_report_users_and_torrents"] == "enabled")
     $userdetailarr["rep"] = "<a href=index.php?page=report&user=".$id."><button class='btn btn-labeled btn-danger' type='button'>
-      <span class='btn-label'><i class='fa fa-flag'></i></span>Report User</button></a>";
+<span class='btn-label'><i class='fa fa-flag'></i></span>Report User</button></a>";
 // <-- Report users & Torrents by DiemThuy
 $userdetailtpl->set("timed_ranks_enabled", (($btit_settings["fmhack_timed_ranks"] == "enabled")?true:false), true);
 if($btit_settings["fmhack_timed_ranks"] == "enabled" && $CURUSER["edit_users"] == "yes")
@@ -518,6 +518,9 @@ $userdetailtpl->set("userdetail_edit_admin", $CURUSER["edit_users"] == "yes" || 
 if($CURUSER["edit_users"] == "yes" || $CURUSER["admin_access"] == "yes")
 {
     $userdetailarr["userdetail_email"] = "<a href=\"mailto:".$row["email"]."\">".$row["email"]."</a>";
+    /* Last Browser */
+    $userdetailtpl-> set("browser", ($row["browser"]));
+    /* Last Browser */
     $userdetailtpl-> set("browser", ($row["browser"]));
     // ip to country
     $userdetailtpl->set("ip2c_view", (($btit_settings["fmhack_IP_to_country"] == "enabled" && $CURUSER["delete_users"] == "yes")?true:false), true);
@@ -787,7 +790,7 @@ if($btit_settings["fmhack_anti_hit_and_run_system"] == "enabled")
     $userdetailarr["userdetail_hnr"] = $row["hnr_count"];
 $userdetailtpl->set("bonus_system_enabled", (($btit_settings["fmhack_bonus_system"] == "enabled")?true:false), true);
 if($btit_settings["fmhack_bonus_system"] == "enabled")
-$userdetailarr["userdetail_bonus"] = number_format($row["seedbonus"], 2);
+    $userdetailarr["userdetail_bonus"] = number_format($row["seedbonus"], 2);
 $userdetailtpl->set("signature_enabled", (($btit_settings["fmhack_signature_on_internal_forum"] == "enabled")?true:false), true);
 if($btit_settings["fmhack_signature_on_internal_forum"] == "enabled")
     $userdetailarr["userdetail_signature"] = format_comment($row["signature"]);
@@ -987,56 +990,56 @@ if($numtorrent > 0)
         switch($ordup)
         {
             case 1:
-                $orderBy = "`f`.`filename`";
-                $userdetailtpl->set("upsort3", true, true);
-                break;
+            $orderBy = "`f`.`filename`";
+            $userdetailtpl->set("upsort3", true, true);
+            break;
             case 3:
-                $orderBy = "`f`.`size`";
-                $userdetailtpl->set("upsort9", true, true);
-                break;
+            $orderBy = "`f`.`size`";
+            $userdetailtpl->set("upsort9", true, true);
+            break;
             case 4:
-                $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
-                $userdetailtpl->set("upsort12", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
+            $userdetailtpl->set("upsort12", true, true);
+            break;
             case 5:
-                $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
-                $userdetailtpl->set("upsort15", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
+            $userdetailtpl->set("upsort15", true, true);
+            break;
             case 6:
-                $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
-                $userdetailtpl->set("upsort18", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
+            $userdetailtpl->set("upsort18", true, true);
+            break;
             case 2:
             default:
-                $orderBy = "`f`.`data`";
-                $userdetailtpl->set("upsort6", true, true);
-                break;
+            $orderBy = "`f`.`data`";
+            $userdetailtpl->set("upsort6", true, true);
+            break;
         }
         switch($dirup)
         {
             case 2:
-                $direction = "ASC";
-                $udupsorturl .= "&amp;dirup=1";
-                $userdetailarr["uarrow"] = "&nbsp;&uarr;";
-                $userdetailarr["udupsorturl1"] = $udupsorturl1 .= "1";
-                $userdetailarr["udupsorturl2"] = $udupsorturl2 .= "1";
-                $userdetailarr["udupsorturl3"] = $udupsorturl3 .= "1";
-                $userdetailarr["udupsorturl4"] = $udupsorturl4 .= "1";
-                $userdetailarr["udupsorturl5"] = $udupsorturl5 .= "1";
-                $userdetailarr["udupsorturl6"] = $udupsorturl6 .= "1";
-                break;
+            $direction = "ASC";
+            $udupsorturl .= "&amp;dirup=1";
+            $userdetailarr["uarrow"] = "&nbsp;&uarr;";
+            $userdetailarr["udupsorturl1"] = $udupsorturl1 .= "1";
+            $userdetailarr["udupsorturl2"] = $udupsorturl2 .= "1";
+            $userdetailarr["udupsorturl3"] = $udupsorturl3 .= "1";
+            $userdetailarr["udupsorturl4"] = $udupsorturl4 .= "1";
+            $userdetailarr["udupsorturl5"] = $udupsorturl5 .= "1";
+            $userdetailarr["udupsorturl6"] = $udupsorturl6 .= "1";
+            break;
             case 1:
             default:
-                $direction = "DESC";
-                $udupsorturl .= "&amp;dirup=2";
-                $userdetailarr["uarrow"] = "&nbsp;&darr;";
-                $userdetailarr["udupsorturl1"] = $udupsorturl1 .= "2";
-                $userdetailarr["udupsorturl2"] = $udupsorturl2 .= "2";
-                $userdetailarr["udupsorturl3"] = $udupsorturl3 .= "2";
-                $userdetailarr["udupsorturl4"] = $udupsorturl4 .= "2";
-                $userdetailarr["udupsorturl5"] = $udupsorturl5 .= "2";
-                $userdetailarr["udupsorturl6"] = $udupsorturl6 .= "2";
-                break;
+            $direction = "DESC";
+            $udupsorturl .= "&amp;dirup=2";
+            $userdetailarr["uarrow"] = "&nbsp;&darr;";
+            $userdetailarr["udupsorturl1"] = $udupsorturl1 .= "2";
+            $userdetailarr["udupsorturl2"] = $udupsorturl2 .= "2";
+            $userdetailarr["udupsorturl3"] = $udupsorturl3 .= "2";
+            $userdetailarr["udupsorturl4"] = $udupsorturl4 .= "2";
+            $userdetailarr["udupsorturl5"] = $udupsorturl5 .= "2";
+            $userdetailarr["udupsorturl6"] = $udupsorturl6 .= "2";
+            break;
         }
     }
     $resuploaded = get_result("SELECT ".$query3_select." `f`.`info_hash`, `f`.`filename`, UNIX_TIMESTAMP(`f`.`data`) `added`, `f`.`size`, ".$tseeds." `seeds`, ".$tleechs." `leechers`, ".$tcompletes." `finished` FROM ".$ttables." ".$query3_join." WHERE `f`.`uploader`=".$id." AND `f`.`anonymous` = 'false' ".$query3_where." ORDER BY ".$orderBy." ".$direction." ".$limit, true, $btit_settings["cache_duration"]);
@@ -1243,109 +1246,109 @@ if($anq[0]['tp'] > 0)
         switch($ordac)
         {
             case 1:
-                $orderBy = "`f`.`filename`";
-                $userdetailtpl->set("acsort3", true, true);
-                break;
+            $orderBy = "`f`.`filename`";
+            $userdetailtpl->set("acsort3", true, true);
+            break;
             case 2:
-                $orderBy = "`f`.`size`";
-                $userdetailtpl->set("acsort6", true, true);
-                break;
+            $orderBy = "`f`.`size`";
+            $userdetailtpl->set("acsort6", true, true);
+            break;
             case 4:
-                $orderBy = "`p`.`downloaded`";
-                $userdetailtpl->set("acsort12", true, true);
-                break;
+            $orderBy = "`p`.`downloaded`";
+            $userdetailtpl->set("acsort12", true, true);
+            break;
             case 5:
-                $orderBy = "`p`.`uploaded`";
-                $userdetailtpl->set("acsort15", true, true);
-                break;
+            $orderBy = "`p`.`uploaded`";
+            $userdetailtpl->set("acsort15", true, true);
+            break;
             case 6:
-                $orderBy = "(`p`.`uploaded`/`p`.`downloaded`)";
-                $userdetailtpl->set("acsort18", true, true);
-                break;
+            $orderBy = "(`p`.`uploaded`/`p`.`downloaded`)";
+            $userdetailtpl->set("acsort18", true, true);
+            break;
             case 7:
-                $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
-                $userdetailtpl->set("acsort21", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
+            $userdetailtpl->set("acsort21", true, true);
+            break;
             case 8:
-                $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
-                $userdetailtpl->set("acsort24", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
+            $userdetailtpl->set("acsort24", true, true);
+            break;
             case 9:
-                $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
-                $userdetailtpl->set("acsort27", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
+            $userdetailtpl->set("acsort27", true, true);
+            break;
             case 10:
-                if($btit_settings["fmhack_anti_hit_and_run_system"] == "enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`p`.`seeding_time`":"`h`.`seed`");
-                    $userdetailtpl->set("acsort30", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_anti_hit_and_run_system"] == "enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`p`.`seeding_time`":"`h`.`seed`");
+                $userdetailtpl->set("acsort30", true, true);
+            }
+            break;
 
             case 11:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`p`":"`h`").".`started_time`";
-                    $userdetailtpl->set("acsort33", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`p`":"`h`").".`started_time`";
+                $userdetailtpl->set("acsort33", true, true);
+            }
+            break;
             case 12:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`p`":"`h`").".`completed_time`";
-                    $userdetailtpl->set("acsort36", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`p`":"`h`").".`completed_time`";
+                $userdetailtpl->set("acsort36", true, true);
+            }
+            break;
             case 13:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`p`.`mtime`":"`h`.`date`");
-                    $userdetailtpl->set("acsort39", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`p`.`mtime`":"`h`.`date`");
+                $userdetailtpl->set("acsort39", true, true);
+            }
+            break;
             case 3:
             default:
-                $orderBy =(($XBTT_USE)?"":"`p`.")."`status`";
-                $userdetailtpl->set("acsort9", true, true);
-                break;
+            $orderBy =(($XBTT_USE)?"":"`p`.")."`status`";
+            $userdetailtpl->set("acsort9", true, true);
+            break;
         }
         switch($dirac)
         {
             case 2:
-                $direction = "ASC";
-                $userdetailarr["uarrow2"] = "&nbsp;&uarr;";
-                $userdetailarr["udacsorturl1"] = $udacsorturl1 .= "1";
-                $userdetailarr["udacsorturl2"] = $udacsorturl2 .= "1";
-                $userdetailarr["udacsorturl3"] = $udacsorturl3 .= "1";
-                $userdetailarr["udacsorturl4"] = $udacsorturl4 .= "1";
-                $userdetailarr["udacsorturl5"] = $udacsorturl5 .= "1";
-                $userdetailarr["udacsorturl6"] = $udacsorturl6 .= "1";
-                $userdetailarr["udacsorturl7"] = $udacsorturl7 .= "1";
-                $userdetailarr["udacsorturl8"] = $udacsorturl8 .= "1";
-                $userdetailarr["udacsorturl9"] = $udacsorturl9 .= "1";
-                $userdetailarr["udacsorturl10"] = $udacsorturl10 .= "1";
-                $userdetailarr["udacsorturl11"] = $udacsorturl11 .= "1";
-                $userdetailarr["udacsorturl12"] = $udacsorturl12 .= "1";
-                $userdetailarr["udacsorturl13"] = $udacsorturl13 .= "1";
-                break;
+            $direction = "ASC";
+            $userdetailarr["uarrow2"] = "&nbsp;&uarr;";
+            $userdetailarr["udacsorturl1"] = $udacsorturl1 .= "1";
+            $userdetailarr["udacsorturl2"] = $udacsorturl2 .= "1";
+            $userdetailarr["udacsorturl3"] = $udacsorturl3 .= "1";
+            $userdetailarr["udacsorturl4"] = $udacsorturl4 .= "1";
+            $userdetailarr["udacsorturl5"] = $udacsorturl5 .= "1";
+            $userdetailarr["udacsorturl6"] = $udacsorturl6 .= "1";
+            $userdetailarr["udacsorturl7"] = $udacsorturl7 .= "1";
+            $userdetailarr["udacsorturl8"] = $udacsorturl8 .= "1";
+            $userdetailarr["udacsorturl9"] = $udacsorturl9 .= "1";
+            $userdetailarr["udacsorturl10"] = $udacsorturl10 .= "1";
+            $userdetailarr["udacsorturl11"] = $udacsorturl11 .= "1";
+            $userdetailarr["udacsorturl12"] = $udacsorturl12 .= "1";
+            $userdetailarr["udacsorturl13"] = $udacsorturl13 .= "1";
+            break;
             case 1:
             default:
-                $direction = "DESC";
-                $userdetailarr["uarrow2"] = "&nbsp;&darr;";
-                $userdetailarr["udacsorturl1"] = $udacsorturl1 .= "2";
-                $userdetailarr["udacsorturl2"] = $udacsorturl2 .= "2";
-                $userdetailarr["udacsorturl3"] = $udacsorturl3 .= "2";
-                $userdetailarr["udacsorturl4"] = $udacsorturl4 .= "2";
-                $userdetailarr["udacsorturl5"] = $udacsorturl5 .= "2";
-                $userdetailarr["udacsorturl6"] = $udacsorturl6 .= "2";
-                $userdetailarr["udacsorturl7"] = $udacsorturl7 .= "2";
-                $userdetailarr["udacsorturl8"] = $udacsorturl8 .= "2";
-                $userdetailarr["udacsorturl9"] = $udacsorturl9 .= "2";
-                $userdetailarr["udacsorturl10"] = $udacsorturl10 .= "2";
-                $userdetailarr["udacsorturl11"] = $udacsorturl11 .= "2";
-                $userdetailarr["udacsorturl12"] = $udacsorturl12 .= "2";
-                $userdetailarr["udacsorturl13"] = $udacsorturl13 .= "2";
-                break;
+            $direction = "DESC";
+            $userdetailarr["uarrow2"] = "&nbsp;&darr;";
+            $userdetailarr["udacsorturl1"] = $udacsorturl1 .= "2";
+            $userdetailarr["udacsorturl2"] = $udacsorturl2 .= "2";
+            $userdetailarr["udacsorturl3"] = $udacsorturl3 .= "2";
+            $userdetailarr["udacsorturl4"] = $udacsorturl4 .= "2";
+            $userdetailarr["udacsorturl5"] = $udacsorturl5 .= "2";
+            $userdetailarr["udacsorturl6"] = $udacsorturl6 .= "2";
+            $userdetailarr["udacsorturl7"] = $udacsorturl7 .= "2";
+            $userdetailarr["udacsorturl8"] = $udacsorturl8 .= "2";
+            $userdetailarr["udacsorturl9"] = $udacsorturl9 .= "2";
+            $userdetailarr["udacsorturl10"] = $udacsorturl10 .= "2";
+            $userdetailarr["udacsorturl11"] = $udacsorturl11 .= "2";
+            $userdetailarr["udacsorturl12"] = $udacsorturl12 .= "2";
+            $userdetailarr["udacsorturl13"] = $udacsorturl13 .= "2";
+            break;
         }
     }
     if($XBTT_USE)
@@ -1370,8 +1373,8 @@ if($anq[0]['tp'] > 0)
             $query4_select .= "`p`.`completed_time`, `p`.`started_time`,";
         }
         $anq = get_result("SELECT ".$query4_select." INET_NTOA(`ipa`) as ip, f.info_hash as infohash, f.filename, f.size, IF(p.left=0,'seeder','leecher') as status, p.downloaded, p.uploaded, $tseeds as seeds, $tleechs as leechers, $tcompletes as finished
-                        FROM xbt_files_users p INNER JOIN xbt_files x ON p.fid=x.fid INNER JOIN {$TABLE_PREFIX}files f ON f.bin_hash = x.info_hash ".$query4_join."
-                        WHERE p.uid=$id AND p.active=1 ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
+            FROM xbt_files_users p INNER JOIN xbt_files x ON p.fid=x.fid INNER JOIN {$TABLE_PREFIX}files f ON f.bin_hash = x.info_hash ".$query4_join."
+            WHERE p.uid=$id AND p.active=1 ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
     }
     else
     {
@@ -1389,12 +1392,12 @@ if($anq[0]['tp'] > 0)
         }
         if($PRIVATE_ANNOUNCE)
             $anq = get_result("SELECT ".$query4_select." p.ip, p.infohash, f.filename, f.size, p.status, p.downloaded, p.uploaded, f.seeds, f.leechers, f.finished
-                        FROM {$TABLE_PREFIX}peers p INNER JOIN {$TABLE_PREFIX}files f ON f.info_hash = p.infohash ".$query4_join."
-                        WHERE p.pid='".$row["pid"]."' ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
+                FROM {$TABLE_PREFIX}peers p INNER JOIN {$TABLE_PREFIX}files f ON f.info_hash = p.infohash ".$query4_join."
+                WHERE p.pid='".$row["pid"]."' ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
         else
             $anq = get_result("SELECT ".$query4_select." p.ip, p.infohash, f.filename, f.size, p.status, p.downloaded, p.uploaded, f.seeds, f.leechers, f.finished
-                        FROM {$TABLE_PREFIX}peers p INNER JOIN {$TABLE_PREFIX}files f ON f.info_hash = p.infohash ".$query4_join."
-                        WHERE p.ip='".($row["cip"])."' ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
+                FROM {$TABLE_PREFIX}peers p INNER JOIN {$TABLE_PREFIX}files f ON f.info_hash = p.infohash ".$query4_join."
+                WHERE p.ip='".($row["cip"])."' ".$query4_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
     }
     foreach($anq as $torlist)
     {
@@ -1626,110 +1629,110 @@ if($anq[0]['th'] > 0)
         switch($ordhi)
         {
             case 1:
-                $orderBy = "`f`.`filename`";
-                $userdetailtpl->set("hisort3", true, true);
-                break;
+            $orderBy = "`f`.`filename`";
+            $userdetailtpl->set("hisort3", true, true);
+            break;
             case 2:
-                $orderBy = "`f`.`size`";
-                $userdetailtpl->set("hisort6", true, true);
-                break;
+            $orderBy = "`f`.`size`";
+            $userdetailtpl->set("hisort6", true, true);
+            break;
             case 3:
-                $orderBy = "`h`.`active`";
-                $userdetailtpl->set("hisort9", true, true);
-                break;
+            $orderBy = "`h`.`active`";
+            $userdetailtpl->set("hisort9", true, true);
+            break;
             case 4:
-                $orderBy = "`h`.`downloaded`";
-                $userdetailtpl->set("hisort12", true, true);
-                break;
+            $orderBy = "`h`.`downloaded`";
+            $userdetailtpl->set("hisort12", true, true);
+            break;
             case 5:
-                $orderBy = "`h`.`uploaded`";
-                $userdetailtpl->set("hisort15", true, true);
-                break;
+            $orderBy = "`h`.`uploaded`";
+            $userdetailtpl->set("hisort15", true, true);
+            break;
             case 6:
-                $orderBy = "(`h`.`uploaded`/`h`.`downloaded`)";
-                $userdetailtpl->set("hisort18", true, true);
-                break;
+            $orderBy = "(`h`.`uploaded`/`h`.`downloaded`)";
+            $userdetailtpl->set("hisort18", true, true);
+            break;
             case 7:
-                $orderBy = (($XBTT_USE)?"`h`.`seeding_time`":"`h`.`seed`");
-                $userdetailtpl->set("hisort21", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`h`.`seeding_time`":"`h`.`seed`");
+            $userdetailtpl->set("hisort21", true, true);
+            break;
             case 8:
-                $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
-                $userdetailtpl->set("hisort24", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`.`seeders`":"`f`.`seeds`");
+            $userdetailtpl->set("hisort24", true, true);
+            break;
             case 9:
-                $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
-                $userdetailtpl->set("hisort27", true, true);
-                break;
+            $orderBy = (($XBTT_USE)?"`x`":"`f`").".`leechers`";
+            $userdetailtpl->set("hisort27", true, true);
+            break;
             case 10:
-                if($btit_settings["fmhack_anti_hit_and_run_system"]=="enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
-                    $userdetailtpl->set("hisort30", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_anti_hit_and_run_system"]=="enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`x`.`completed`":"`f`.`finished`");
+                $userdetailtpl->set("hisort30", true, true);
+            }
+            break;
             case 11:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = "`h`.`started_time`";
-                    $userdetailtpl->set("hisort33", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = "`h`.`started_time`";
+                $userdetailtpl->set("hisort33", true, true);
+            }
+            break;
             case 12:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = "`h`.`completed_time`";
-                    $userdetailtpl->set("hisort36", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = "`h`.`completed_time`";
+                $userdetailtpl->set("hisort36", true, true);
+            }
+            break;
             case 13:
-                if($btit_settings["fmhack_torrent_times"]=="enabled")
-                {
-                    $orderBy = (($XBTT_USE)?"`h`.`mtime`":"`h`.`date`");
-                    $userdetailtpl->set("hisort39", true, true);
-                }
-                break;
+            if($btit_settings["fmhack_torrent_times"]=="enabled")
+            {
+                $orderBy = (($XBTT_USE)?"`h`.`mtime`":"`h`.`date`");
+                $userdetailtpl->set("hisort39", true, true);
+            }
+            break;
             default:
-                $orderBy = (($XBTT_USE)?"`h`.`mtime`":"`date`");
-                break;
+            $orderBy = (($XBTT_USE)?"`h`.`mtime`":"`date`");
+            break;
         }
         switch($dirhi)
         {
             case 2:
-                $direction = "ASC";
-                $userdetailarr["uarrow3"] = "&nbsp;&uarr;";
-                $userdetailarr["udhisorturl1"] = $udhisorturl1 .= "1";
-                $userdetailarr["udhisorturl2"] = $udhisorturl2 .= "1";
-                $userdetailarr["udhisorturl3"] = $udhisorturl3 .= "1";
-                $userdetailarr["udhisorturl4"] = $udhisorturl4 .= "1";
-                $userdetailarr["udhisorturl5"] = $udhisorturl5 .= "1";
-                $userdetailarr["udhisorturl6"] = $udhisorturl6 .= "1";
-                $userdetailarr["udhisorturl7"] = $udhisorturl7 .= "1";
-                $userdetailarr["udhisorturl8"] = $udhisorturl8 .= "1";
-                $userdetailarr["udhisorturl9"] = $udhisorturl9 .= "1";
-                $userdetailarr["udhisorturl10"] = $udhisorturl10 .= "1";
-                $userdetailarr["udhisorturl11"] = $udhisorturl11 .= "1";
-                $userdetailarr["udhisorturl12"] = $udhisorturl12 .= "1";
-                $userdetailarr["udhisorturl13"] = $udhisorturl13 .= "1";
-                break;
+            $direction = "ASC";
+            $userdetailarr["uarrow3"] = "&nbsp;&uarr;";
+            $userdetailarr["udhisorturl1"] = $udhisorturl1 .= "1";
+            $userdetailarr["udhisorturl2"] = $udhisorturl2 .= "1";
+            $userdetailarr["udhisorturl3"] = $udhisorturl3 .= "1";
+            $userdetailarr["udhisorturl4"] = $udhisorturl4 .= "1";
+            $userdetailarr["udhisorturl5"] = $udhisorturl5 .= "1";
+            $userdetailarr["udhisorturl6"] = $udhisorturl6 .= "1";
+            $userdetailarr["udhisorturl7"] = $udhisorturl7 .= "1";
+            $userdetailarr["udhisorturl8"] = $udhisorturl8 .= "1";
+            $userdetailarr["udhisorturl9"] = $udhisorturl9 .= "1";
+            $userdetailarr["udhisorturl10"] = $udhisorturl10 .= "1";
+            $userdetailarr["udhisorturl11"] = $udhisorturl11 .= "1";
+            $userdetailarr["udhisorturl12"] = $udhisorturl12 .= "1";
+            $userdetailarr["udhisorturl13"] = $udhisorturl13 .= "1";
+            break;
             case 1:
             default:
-                $direction = "DESC";
-                $userdetailarr["uarrow3"] = "&nbsp;&darr;";
-                $userdetailarr["udhisorturl1"] = $udhisorturl1 .= "2";
-                $userdetailarr["udhisorturl2"] = $udhisorturl2 .= "2";
-                $userdetailarr["udhisorturl3"] = $udhisorturl3 .= "2";
-                $userdetailarr["udhisorturl4"] = $udhisorturl4 .= "2";
-                $userdetailarr["udhisorturl5"] = $udhisorturl5 .= "2";
-                $userdetailarr["udhisorturl6"] = $udhisorturl6 .= "2";
-                $userdetailarr["udhisorturl7"] = $udhisorturl7 .= "2";
-                $userdetailarr["udhisorturl8"] = $udhisorturl8 .= "2";
-                $userdetailarr["udhisorturl9"] = $udhisorturl9 .= "2";
-                $userdetailarr["udhisorturl10"] = $udhisorturl10 .= "2";
-                $userdetailarr["udhisorturl11"] = $udhisorturl11 .= "2";
-                $userdetailarr["udhisorturl12"] = $udhisorturl12 .= "2";
-                $userdetailarr["udhisorturl13"] = $udhisorturl13 .= "2";
-                break;
+            $direction = "DESC";
+            $userdetailarr["uarrow3"] = "&nbsp;&darr;";
+            $userdetailarr["udhisorturl1"] = $udhisorturl1 .= "2";
+            $userdetailarr["udhisorturl2"] = $udhisorturl2 .= "2";
+            $userdetailarr["udhisorturl3"] = $udhisorturl3 .= "2";
+            $userdetailarr["udhisorturl4"] = $udhisorturl4 .= "2";
+            $userdetailarr["udhisorturl5"] = $udhisorturl5 .= "2";
+            $userdetailarr["udhisorturl6"] = $udhisorturl6 .= "2";
+            $userdetailarr["udhisorturl7"] = $udhisorturl7 .= "2";
+            $userdetailarr["udhisorturl8"] = $udhisorturl8 .= "2";
+            $userdetailarr["udhisorturl9"] = $udhisorturl9 .= "2";
+            $userdetailarr["udhisorturl10"] = $udhisorturl10 .= "2";
+            $userdetailarr["udhisorturl11"] = $udhisorturl11 .= "2";
+            $userdetailarr["udhisorturl12"] = $udhisorturl12 .= "2";
+            $userdetailarr["udhisorturl13"] = $udhisorturl13 .= "2";
+            break;
         }
     }
     $query2_select = "";
@@ -1763,10 +1766,10 @@ if($anq[0]['th'] > 0)
         $query2_select .= ((!$XBTT_USE)?"`h`.`date` `mtime`, ":"")."`h`.`completed_time`, `h`.`started_time`,";
     if($XBTT_USE)
         $anq = get_result("SELECT ".$query2_select." f.filename, f.size, f.info_hash, IF(h.active=1,'yes','no') `active`, LOWER(HEX(`h`.`peer_id`)) as agent, h.downloaded, h.uploaded, $tseeds as seeds, $tleechs as leechers, $tcompletes as finished
-       FROM $ttables INNER JOIN xbt_files_users h ON h.fid=x.fid ".$query2_join." WHERE h.uid=$id ".$query2_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
+           FROM $ttables INNER JOIN xbt_files_users h ON h.fid=x.fid ".$query2_join." WHERE h.uid=$id ".$query2_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
     else
         $anq = get_result("SELECT ".$query2_select." f.filename, f.size, f.info_hash, h.active, h.agent, h.downloaded, h.uploaded, $tseeds as seeds, $tleechs as leechers, $tcompletes as finished
-      FROM $ttables INNER JOIN {$TABLE_PREFIX}history h ON h.infohash=f.info_hash ".$query2_join." WHERE h.uid=$id ".$query2_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
+          FROM $ttables INNER JOIN {$TABLE_PREFIX}history h ON h.infohash=f.info_hash ".$query2_join." WHERE h.uid=$id ".$query2_where." ORDER BY $orderBy $direction $limit", true, $btit_settings['cache_duration']);
     //    print("<div align=\"center\">$pagertop</div>");
     foreach($anq as $torlist)
     {
@@ -2045,8 +2048,4 @@ if($CURUSER["edit_users"]=="yes")
     }
 }
 //Port/Client Info
-
-//Last Browser
-$userdetailtpl-> set("browser", ($row["browser"]));
-//Last Browser
 ?>

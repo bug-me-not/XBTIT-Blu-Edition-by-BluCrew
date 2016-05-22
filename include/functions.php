@@ -725,9 +725,9 @@ if($btit_settings["fmhack_download_requires_introduction"]=="enabled")
    $query1_select.="`u`.`made_intro`,";
 if($id > 1)
 {
-   $show3 = $_SERVER["HTTP_USER_AGENT"];
-   $res = do_sqlquery("SELECT ".$query1_select." `u`.`salt`,`u`.`gotgift`, `u`.`pass_type`, `u`.`lip`, `u`.`cip`, $udownloaded `downloaded`, $uuploaded `uploaded`, `u`.`smf_fid`, `u`.`ipb_fid`,  `u`.`topicsperpage`, `u`.`postsperpage`, `u`.`torrentsperpage`, `u`.`flag`, `u`.`avatar`, UNIX_TIMESTAMP(`u`.`lastconnect`) `lastconnect`, UNIX_TIMESTAMP(`u`.`joined`) `joined`, `u`.`id` `uid`, `u`.`username`, `u`.`password`, `u`.`random`, `u`.`email`, `u`.`language`, `u`.`style`, `u`.`time_offset`, `ul`.*, `s`.`style_url`, `s`.`style_type`, `l`.`language_url` FROM $utables INNER JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` LEFT JOIN `{$TABLE_PREFIX}style` `s` ON `u`.`style`=`s`.`id` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` ".
-      $query1_join." WHERE `u`.`id` = $id LIMIT 1;", true);
+   $browser = $_SERVER["HTTP_USER_AGENT"];
+   quickQuery("UPDATE {$TABLE_PREFIX}users SET browser='".addslashes($browser)."' WHERE id=$id");
+   $res = do_sqlquery("SELECT ".$query1_select." `u`.`salt`,`u`.`browser`, `u`.`gotgift`, `u`.`pass_type`, `u`.`lip`, `u`.`cip`, $udownloaded `downloaded`, $uuploaded `uploaded`, `u`.`smf_fid`, `u`.`ipb_fid`,  `u`.`topicsperpage`, `u`.`postsperpage`, `u`.`torrentsperpage`, `u`.`flag`, `u`.`avatar`, UNIX_TIMESTAMP(`u`.`lastconnect`) `lastconnect`, UNIX_TIMESTAMP(`u`.`joined`) `joined`, `u`.`id` `uid`, `u`.`username`, `u`.`password`, `u`.`random`, `u`.`email`, `u`.`language`, `u`.`style`, `u`.`time_offset`, `ul`.*, `s`.`style_url`, `s`.`style_type`, `l`.`language_url` FROM $utables INNER JOIN `{$TABLE_PREFIX}users_level` `ul` ON `u`.`id_level`=`ul`.`id` LEFT JOIN `{$TABLE_PREFIX}style` `s` ON `u`.`style`=`s`.`id` LEFT JOIN `{$TABLE_PREFIX}language` `l` ON `u`.`language`=`l`.`id` ".$query1_join." WHERE `u`.`id` = $id LIMIT 1;", true);
    $row = $res->fetch_assoc();
    if($btit_settings["secsui_cookie_type"] == 1)
    {
