@@ -17,40 +17,8 @@ else
    $ttables="{$TABLE_PREFIX}files f";
 }
 
-$exclude="";
+$res = get_result("SELECT f.info_hash, f.filename, UNIX_TIMESTAMP(f.data) as data, f.size, f.imdb, $tseeds, $tleechs, $tcompletes FROM $ttables WHERE f.moder='ok' AND seeds>0 AND f.imdb>0 ORDER BY RAND() LIMIT 5",true,$btit_settings['cache_duration']);
 
-if ($XBTT_USE)
-$rowcat = do_sqlquery("SELECT u.id, (u.downloaded+IFNULL(x.downloaded,0)) as downloaded, ((u.uploaded+IFNULL(x.uploaded,0))/(u.downloaded+IFNULL(x.downloaded,0))) as uratio, cp.* FROM {$TABLE_PREFIX}users u LEFT JOIN xbt_users x ON x.uid=u.id INNER JOIN {$TABLE_PREFIX}categories_perm cp ON u.id_level=cp.levelid WHERE u.id = ".$CURUSER["uid"].";",true);
-else
-$rowcat = do_sqlquery("SELECT u.id, u.downloaded, (u.uploaded/u.downloaded) as uratio, cp.* FROM {$TABLE_PREFIX}users u INNER JOIN {$TABLE_PREFIX}categories_perm cp ON u.id_level=cp.levelid WHERE u.id = ".$CURUSER["uid"].";",true);
-if (sql_num_rows($rowcat)>0)
-while ($catdata=$rowcat->fetch_array())
-if($catdata["viewtorrlist"]!="yes" && (($catdata["downloaded"]>=$GLOBALS["download_ratio"] && ($catdata["ratio"]>$catdata["uratio"]))||($catdata["downloaded"]<$GLOBALS["download_ratio"])||($catdata["ratio"]=="0")))
-$exclude.=' AND f.category!='.$catdata['catid'];
-
-$sql = do_sqlquery("SELECT torrent_id FROM {$TABLE_PREFIX}featured ORDER BY fid DESC limit 1");
-$result = $sql->fetch_assoc();
-
-$torrent = do_sqlquery("SELECT f.moder,f.imdb,f.image, f.info_hash, f.filename, f.url, UNIX_TIMESTAMP(f.data) as data, f.size, f.comment, f.uploader, c.name as cat_name, c.image as cat_image, c.id as cat_id, $tseeds, $tleechs, $tcompletes, f.speed, f.external, f.announce_url,UNIX_TIMESTAMP(f.lastupdate) as lastupdate,UNIX_TIMESTAMP(f.lastsuccess) as lastsuccess, f.anonymous, u.username FROM $ttables LEFT JOIN {$TABLE_PREFIX}categories c ON c.id=f.category LEFT JOIN {$TABLE_PREFIX}users u ON u.id=f.uploader WHERE f.info_hash ='$result[torrent_id]' AND (f.team = 0 OR ".$CURUSER['id_level']."> 7) $exclude AND f.moder = 'ok'",true);
-
-$tor = $torrent->fetch_assoc();
-
-// progress
-$id = $tor['info_hash'];
-$subres = get_result("SELECT sum(IFNULL(bytes,0)) as to_go, count(*) as numpeers FROM {$TABLE_PREFIX}peers where infohash='{$id}'",true,$btit_settings['cache_duration']);
-$subres2 = get_result("SELECT size FROM {$TABLE_PREFIX}files WHERE info_hash ='{$id}'",true,$btit_settings['cache_duration']);
-$torrent = $subres2[0];
-$subrow = $subres[0];
-$tmp=0+$subrow["numpeers"];
-if ($tmp>0) {
-   $tsize=(0+$torrent["size"])*$tmp;
-   $tbyte=0+$subrow["to_go"];
-   $prgs=(($tsize-$tbyte)/$tsize) * 100; //100 * (1-($tbyte/$tsize));
-   $prgsf=floor($prgs);
-}
-else
-$prgsf=0;
-// progress end
 ?>
 
 <style>
@@ -80,38 +48,41 @@ padding - bottom : 40px;
 <div class="carousel-inner">
 <div class="item active"><!-- class of active since it's the first item -->
 <div class="carousel-caption">
-<a href="index.php?page=torrent-details&amp;id=<?php echo $tor['info_hash']; ?>">
-<h3><?php
-echo $tor['filename'];
-?></h3></a>
-<p class= "text-danger">Info Hash:<?php
-echo $tor['info_hash'];
-?></p>
-<p class= "text-success">Seeders: Leechers: Completed:</p>
+<a href="index.php?page=torrent-details&amp;id=<?php echo $res[0]['info_hash'];?>"><h3><?php echo $res[0]['filename'];?></h3></a>
+<p class= "text-danger">Info Hash: <?php echo $res[0]['info_hash'];?></p>
+<p class= "text-success">Seeders: <?php echo $res[0]['seeds'];?> | Leechers: <?php echo $res[0]['leechers'];?> | Completed: <?php echo $res[0]['finished'];?></p>
 </div>
 </div>
 
 <div class="item">
 <div class="carousel-caption">
-<h3>NEXT</h3>
+<a href="index.php?page=torrent-details&amp;id=<?php echo $res[1]['info_hash'];?>"><h3><?php echo $res[1]['filename'];?></h3></a>
+<p class= "text-danger">Info Hash: <?php echo $res[1]['info_hash'];?></p>
+<p class= "text-success">Seeders: <?php echo $res[1]['seeds'];?> | Leechers: <?php echo $res[1]['leechers'];?> | Completed: <?php echo $res[1]['finished'];?></p>
 </div>
 </div>
 
 <div class="item">
 <div class="carousel-caption">
-<h3>NEXT</h3>
+<a href="index.php?page=torrent-details&amp;id=<?php echo $res[2]['info_hash'];?>"><h3><?php echo $res[2]['filename'];?></h3></a>
+<p class= "text-danger">Info Hash: <?php echo $res[2]['info_hash'];?></p>
+<p class= "text-success">Seeders: <?php echo $res[2]['seeds'];?> | Leechers: <?php echo $res[2]['leechers'];?> | Completed: <?php echo $res[2]['finished'];?></p>
 </div>
 </div>
 
 <div class="item">
 <div class="carousel-caption">
-<h3>NEXT</h3>
+<a href="index.php?page=torrent-details&amp;id=<?php echo $res[3]['info_hash'];?>"><h3><?php echo $res[3]['filename'];?></h3></a>
+<p class= "text-danger">Info Hash: <?php echo $res[3]['info_hash'];?></p>
+<p class= "text-success">Seeders: <?php echo $res[3]['seeds'];?> | Leechers: <?php echo $res[3]['leechers'];?> | Completed: <?php echo $res[3]['finished'];?></p>
 </div>
 </div>
 
 <div class="item">
 <div class="carousel-caption">
-<h3>NEXT</h3>
+<a href="index.php?page=torrent-details&amp;id=<?php echo $res[4]['info_hash'];?>"><h3><?php echo $res[4]['filename'];?></h3></a>
+<p class= "text-danger">Info Hash: <?php echo $res[4]['info_hash'];?></p>
+<p class= "text-success">Seeders: <?php echo $res[4]['seeds'];?> | Leechers: <?php echo $res[4]['leechers'];?> | Completed: <?php echo $res[4]['finished'];?></p>
 </div>
 </div>
 </div><!-- /.carousel-inner -->
