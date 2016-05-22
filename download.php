@@ -231,11 +231,11 @@ else
     fclose($fd);
 
     $BASEURLn = str_replace("/announce.php","",$TRACKER_ANNOUNCEURLS[0]);   
-    if(substr($BASEURL,0,5) == "https")
+    if(substr($BASEURLn,0,5) == "https")
     {
         if($CURUSER["force_ssl"] != "yes")
         {
-            $BASEURLn = str_replace("https","http",$BASEURL);
+            $BASEURLn = str_replace("https","http",$BASEURLn);
         }
     }
 
