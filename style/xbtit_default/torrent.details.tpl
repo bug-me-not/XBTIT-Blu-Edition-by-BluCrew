@@ -597,6 +597,7 @@ $clock(document).ready(function(){
    </tr>
    </if:similar_enabled>
    
+   <!--
 	<tr>
 	<td class="header" style="text-align:center;">All Uploads From This Uploader</td>
     <td class="lista" style="text-align:center;"><marquee onmouseover=this.stop() onmouseout=this.start()  scrollAmount=3 direction=left >
@@ -605,7 +606,7 @@ $clock(document).ready(function(){
 	</loop:upl>
 	</marquee>
 	</td></tr>
-    
+  -->
 
    <if:EXTERNAL>
    <tr>
