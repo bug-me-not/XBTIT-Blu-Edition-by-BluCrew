@@ -6987,6 +6987,39 @@ box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 5px 0 rgba(0, 0, 0, 
 background-color: rgba(100, 100, 100, 0.6);
 }
 
+ /* ## codes below used for internal forum ##*/
+ /* A quote, perhaps from another post. */
+ .quote { color: #000; background:#404040; font-family: verdana, arial, helvetica, sans-serif; border: 1px solid #817cae; margin: 1px; padding: 1px; font-size: x-small; line-height: 1.4em; }
+ 
+
+ /* ## Start Ajax Poll System ## */
+ td.deleted { background-color:#FF95AC; color:#000000; }
+ td.added { background-color:#C1FF83; color:#000000; }
+ td.modified { background-color:#DEDEDE; color:#000000; }
+ #mainContainer { width:100%; overflow:auto; margin:0; text-align:left; }
+ #mainContent { padding:0px; }
+ .clear { clear:both; }
+ /* The poller box */
+ .poller { width:100%; color:#999; font-weight:normal; font-style: normal; overflow:hidden;}
+ /* Poller title above radio buttons */
+ .pollerTitle { margin-top:0px; margin-bottom:5px; font-weight:bold; font-size:1em; }
+ /* Label for each radio button */
+ .pollerOption { margin:0px; }
+ /* Label for each option above graph - i.e. results */
+ .result_pollerOption { margin:0px; font-size:12px; }
+ /* Title of poller - when ajax shows the results */
+ .result_pollerTitle { margin-top:0px; margin-bottom:5px; font-weight:bold; font-size:1em; }
+ /* Don't change this one, it is used to get the left and right image(the corner) positioned correctly */
+ .result_pollGraph img { float:left; }
+ /* The <div> tag where the percentage result is shown */
+ .result_pollGraph div { float:left; height:12px; background-repeat:repeat-x; color:#FFF; font-size:0.9em; line-height:16px; }
+ /* Graph div - parent of both the corner images and the div displaying percentage votes */
+ .result_pollGraph { height:12px; }
+ /* Message when Ajax is working getting restults from the server */
+ .poller_waitMessage { display:none; }
+ .result_totalVotes{ clear:left; font-size:12px; margin-top:10px; font-style:italic; background:transparent; text-align:center }
+ th { text-align:left; text-align:center }
+ .formButton { width:75px; }
 
 
 
