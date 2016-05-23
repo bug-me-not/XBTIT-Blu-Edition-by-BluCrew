@@ -50,7 +50,7 @@ padding - bottom : 40px;
 <div class="carousel-caption">
 <a href="index.php?page=torrent-details&amp;id=<?php echo $res[0]['info_hash'];?>"><h3><?php echo $res[0]['filename'];?></h3></a>
 <p class= "text-danger">Info Hash: <?php echo $res[0]['info_hash'];?></p>
-<p class= "text-success">Seeders: <?php echo $res[0]['seeds'];?> | Leechers: <?php echo $res[0]['leechers'];?> | Completed: <?php echo $res[0]['finished'];?></p>
+<p class= "text-success">Size: <?php echo makesize($res[0]['size']);?> | Seeders: <?php echo $res[0]['seeds'];?> | Leechers: <?php echo $res[0]['leechers'];?> | Completed: <?php echo $res[0]['finished'];?></p>
 </div>
 </div>
 
@@ -58,7 +58,7 @@ padding - bottom : 40px;
 <div class="carousel-caption">
 <a href="index.php?page=torrent-details&amp;id=<?php echo $res[1]['info_hash'];?>"><h3><?php echo $res[1]['filename'];?></h3></a>
 <p class= "text-danger">Info Hash: <?php echo $res[1]['info_hash'];?></p>
-<p class= "text-success">Seeders: <?php echo $res[1]['seeds'];?> | Leechers: <?php echo $res[1]['leechers'];?> | Completed: <?php echo $res[1]['finished'];?></p>
+<p class= "text-success">Size: <?php echo makesize($res[1]['size']);?> | Seeders: <?php echo $res[1]['seeds'];?> | Leechers: <?php echo $res[1]['leechers'];?> | Completed: <?php echo $res[1]['finished'];?></p>
 </div>
 </div>
 
@@ -66,7 +66,7 @@ padding - bottom : 40px;
 <div class="carousel-caption">
 <a href="index.php?page=torrent-details&amp;id=<?php echo $res[2]['info_hash'];?>"><h3><?php echo $res[2]['filename'];?></h3></a>
 <p class= "text-danger">Info Hash: <?php echo $res[2]['info_hash'];?></p>
-<p class= "text-success">Seeders: <?php echo $res[2]['seeds'];?> | Leechers: <?php echo $res[2]['leechers'];?> | Completed: <?php echo $res[2]['finished'];?></p>
+<p class= "text-success">Size: <?php echo makesize($res[2]['size']);?> | Seeders: <?php echo $res[2]['seeds'];?> | Leechers: <?php echo $res[2]['leechers'];?> | Completed: <?php echo $res[2]['finished'];?></p>
 </div>
 </div>
 
@@ -74,7 +74,7 @@ padding - bottom : 40px;
 <div class="carousel-caption">
 <a href="index.php?page=torrent-details&amp;id=<?php echo $res[3]['info_hash'];?>"><h3><?php echo $res[3]['filename'];?></h3></a>
 <p class= "text-danger">Info Hash: <?php echo $res[3]['info_hash'];?></p>
-<p class= "text-success">Seeders: <?php echo $res[3]['seeds'];?> | Leechers: <?php echo $res[3]['leechers'];?> | Completed: <?php echo $res[3]['finished'];?></p>
+<p class= "text-success">Size: <?php echo makesize($res[3]['size']);?> | Seeders: <?php echo $res[3]['seeds'];?> | Leechers: <?php echo $res[3]['leechers'];?> | Completed: <?php echo $res[3]['finished'];?></p>
 </div>
 </div>
 
@@ -82,7 +82,7 @@ padding - bottom : 40px;
 <div class="carousel-caption">
 <a href="index.php?page=torrent-details&amp;id=<?php echo $res[4]['info_hash'];?>"><h3><?php echo $res[4]['filename'];?></h3></a>
 <p class= "text-danger">Info Hash: <?php echo $res[4]['info_hash'];?></p>
-<p class= "text-success">Seeders: <?php echo $res[4]['seeds'];?> | Leechers: <?php echo $res[4]['leechers'];?> | Completed: <?php echo $res[4]['finished'];?></p>
+<p class= "text-success">Size: <?php echo makesize($res[4]['size']);?> | Seeders: <?php echo $res[4]['seeds'];?> | Leechers: <?php echo $res[4]['leechers'];?> | Completed: <?php echo $res[4]['finished'];?></p>
 </div>
 </div>
 </div><!-- /.carousel-inner -->
