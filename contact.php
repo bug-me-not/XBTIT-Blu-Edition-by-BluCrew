@@ -50,8 +50,6 @@ if(isset($_POST['submit']))
    $message = sql_esc($_POST['message']);
 
    $ipaddress = $_SERVER["REMOTE_ADDR"];
-   $regex = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)".
-         "*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";
 
    //captcha
    global $USE_IMAGECODE,$THIS_BASEPATH;
@@ -111,7 +109,7 @@ if(isset($_POST['submit']))
    }
    //captcha
 
-   if(!preg_match($regex,$email))
+   if(!filter_var($email, FILTER_VALIDATE_EMAIL))
    {
       stderr("Error","E-mail address is not valid !!");
       stdfoot();
