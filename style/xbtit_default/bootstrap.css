@@ -6989,7 +6989,7 @@ background-color: rgba(100, 100, 100, 0.6);
 
  /* ## codes below used for internal forum ##*/
  /* A quote, perhaps from another post. */
- .quote { color: #000; background:#404040; font-family: verdana, arial, helvetica, sans-serif; border: 1px solid #817cae; margin: 1px; padding: 1px; font-size: x-small; line-height: 1.4em; }
+ .quote { color: #000; background:#404040; margin: 1px; padding: 1px; font-size: small; line-height: 1.4em; }
  
 
  /* ## Start Ajax Poll System ## */
