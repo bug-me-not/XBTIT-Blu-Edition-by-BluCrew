@@ -826,13 +826,6 @@ switch ($pageID) {
    break;
         // New Tables Layout End
 
-        //Staff Checks
-   case 'staffchecks':
-   require("$THIS_BASEPATH/staffchecks.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->staffchecks");
-   break;
-        //Staff Checks
-
    case 'index':
    case '':
    default:
