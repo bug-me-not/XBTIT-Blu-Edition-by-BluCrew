@@ -103,6 +103,7 @@ objCheckBoxes[i].checked = CheckValue;
 </div>
 <ul>
 <div align="center">
+<if:swit><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></if:swit>
 <form action="<tag:torrent_script />" method="get" name="torrent_search">
   <input type="hidden" name="page" value="torrents" />
   <table border="0" class="lista" align="center">
