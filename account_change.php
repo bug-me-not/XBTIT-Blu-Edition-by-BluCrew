@@ -33,12 +33,13 @@
 require_once(dirname(__FILE__)."/include/functions.php");
 include(dirname(__FILE__)."/btemplate/bTemplate.php");
 
-if (isset($_GET["tpp"]))
+
+if (isSet($_GET['tds']))
 {
-if ($CURUSER["torpag"]=="dt") 
-   $topa="org";
-else
-   $topa="dt";
+    if($_GET['tds']=='new')
+        $tds = sqlesc("new");
+    else
+        $tds = sqlesc("old");
 }
 
 if (isset($_GET["style"]))
@@ -72,6 +73,10 @@ if ($style!=0)
 if ($langue!=0)
 {
     quickQuery("UPDATE {$TABLE_PREFIX}users SET language=$langue WHERE id=".(int)$CURUSER["uid"],true);
+}
+if ($tds=='new' || $tds=='old') 
+{
+    quickQuery("UPDATE {$TABLE_PREFIX}users SET tds=$tds WHERE id=".(int)$CURUSER['uid'],true);
 }
 unset($_SESSION["CURUSER"], $_SESSION["CURUSER_EXPIRE"]);
 redirect($url);
