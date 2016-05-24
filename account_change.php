@@ -33,6 +33,14 @@
 require_once(dirname(__FILE__)."/include/functions.php");
 include(dirname(__FILE__)."/btemplate/bTemplate.php");
 
+if (isset($_GET["tpp"]))
+{
+if ($CURUSER["torpag"]=="dt") 
+   $topa="org";
+else
+   $topa="dt";
+}
+
 if (isset($_GET["style"]))
     $style=intval($_GET["style"]);
 else

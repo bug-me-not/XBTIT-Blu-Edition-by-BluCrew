@@ -880,16 +880,15 @@ if($count > 0)
                if($balon=="")
                $balon = $btit_settings["uploaddir"]."nocover.jpg";
             }
+            //Seedbox Start
             if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
             {
-
-               //seedbox start
                if($data["seedbox"]=="1") {
                   $sb = "<span class='label label-danger'>High Speeds</span>";
                }
                else {   $sb='';
                }
-               //seedbox end
+            //Seedbox END
 	
             }
             if($btit_settings["fmhack_downloaded_torrents"] == "enabled")
@@ -906,9 +905,10 @@ if($count > 0)
             }
             $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data[catid]\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
             "</a>";
+
+            //Torrent Nuke/Req Hack Start
             if($btit_settings["fmhack_torrent_nuked_and_requested"] == "enabled")
             {
-               //Torrent Nuke/Req Hack Start
                if($data["requested"] != "false")
                $req = "&nbsp;<span class='label label-primary'>Requested</span>";
                else
@@ -918,7 +918,19 @@ if($count > 0)
                else
                $nuk = "";
             }
-            //imdb rating
+            //Torrent Nuke/Req Hack END
+
+            // User PageLayout Switch
+            {
+            $te=("<script language=javascript>var a=document.createElement('a');a.href='account_change.php?tpp=tp&returnto=".urlencode($_SERVER['REQUEST_URI'])."';var image = document.getElementById('div').getElementsByTagName('img')[0];b=a.appendChild(image);document.getElementById('div').appendChild(a);</script>");
+            $torrenttpl->set("switch","\n<td style=\"text-align:left;\"><div id=\"div\">
+            <button type=\"button\" class=\"btn btn-labeled btn-success\"><span class=\"btn-label\"><i class=\"fa fa-cog\"></i></span>Page Layout Switch</button>
+            </div></td>".$te);
+            $torrenttpl->set("swit",TRUE,TRUE); 
+            }
+            // User PageLayout Switch END
+
+            //IMDB Rating Start
             if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
             {
                $torrents[$i]["imdb"] = "Coming Soon.";
@@ -926,7 +938,9 @@ if($count > 0)
             }
             else
             $torrents[$i]["imdb_genre"]="";
-            //end imdb rating
+            //IMDB Rating END
+
+
             if($GLOBALS["usepopup"])
             {
                $torrents[$i]["filename"] = "<a href=\"javascript:popdetails('".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated"] == "true")?strtr($filename, $res_seo["str"], $res_seo["strto"]).

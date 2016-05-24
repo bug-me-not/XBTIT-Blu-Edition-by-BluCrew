@@ -121,11 +121,8 @@ $q(function() {
 <div align="center">
 <form action="<tag:torrent_script />" method="get" name="torrent_search">
   <input type="hidden" name="page" value="torrents" />
-  <table border="0" class="lista" align="center">
-  <td><a class="btn btn-primary" href="#torrent.list_OLD.tpl">
-  <i class="fa fa-bars" aria-hidden="true" title="Load Old Layout Style"></i>
-  <span class="sr-only">Load Old Layout Style</span>
-</a></td>
+  <table border="0" class="lista" align="center">  
+  <td class="block"><tag:switch /></td>
       <td align=center style="width: 340px;"><input type="text" class="form-control input-sm" name="search" id="searchinput" ondblclick="suggest(event.keyCode, this.value, 'torrent');" onkeyup="suggest(event.keyCode, this.value, 'torrent');" onkeypress="return noenter(event.keyCode);" autocomplete="off" style="width: 320px;" maxlength="50" value="<tag:torrent_search />" />
     <div id="suggcontainer" style="display: none; padding-left:0px;" align="left">
 	<div id="suggestions" style="cursor: default; position: absolute; background-color: #373737; border: 1px solid #7f9db9; border-top: 0px;"></div>
