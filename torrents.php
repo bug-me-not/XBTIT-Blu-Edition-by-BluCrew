@@ -922,9 +922,14 @@ if($count > 0)
 
             // User PageLayout Switch
             {
-            $te=("<script language=javascript>var a=document.createElement('a');a.href='account_change.php?tpp=tp&returnto=".urlencode($_SERVER['REQUEST_URI'])."';var image = document.getElementById('div').getElementsByTagName('img')[0];b=a.appendChild(image);document.getElementById('div').appendChild(a);</script>");
+            $te=("<script language=javascript>
+            var a=document.createElement('a');
+            a.href='account_change.php?tpp=tp&returnto=".urlencode($_SERVER['REQUEST_URI'])."';
+            var image = document.getElementById('div').getElementsByTagName('img')[0];
+            b=a.appendChild(image);document.getElementById('div').appendChild(a);
+            </script>");
             $torrenttpl->set("switch","\n<td style=\"text-align:left;\"><div id=\"div\">
-            <button type=\"button\" class=\"btn btn-labeled btn-success\"><span class=\"btn-label\"><i class=\"fa fa-cog\"></i></span>Page Layout Switch</button>
+            <img src=\"images/switch.png\" />
             </div></td>".$te);
             $torrenttpl->set("swit",TRUE,TRUE); 
             }
