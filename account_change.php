@@ -34,9 +34,9 @@ require_once(dirname(__FILE__)."/include/functions.php");
 include(dirname(__FILE__)."/btemplate/bTemplate.php");
 
 
-if (isSet($_GET['tds']))
+if (isSet($_GET['tls']))
 {
-    if($_GET['tds']=='new')
+    if($_GET['tls']=='new')
         $tds = sqlesc("new");
     else
         $tds = sqlesc("old");
@@ -76,7 +76,7 @@ if ($langue!=0)
 }
 if ($tds=='new' || $tds=='old') 
 {
-    quickQuery("UPDATE {$TABLE_PREFIX}users SET tds=$tds WHERE id=".(int)$CURUSER['uid'],true);
+    quickQuery("UPDATE {$TABLE_PREFIX}users SET tls=$tls WHERE id=".(int)$CURUSER['uid'],true);
 }
 unset($_SESSION["CURUSER"], $_SESSION["CURUSER_EXPIRE"]);
 redirect($url);

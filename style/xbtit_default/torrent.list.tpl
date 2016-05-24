@@ -122,7 +122,7 @@ for(var i = 0; i < countCheckBoxes; i++)
       <form action="<tag:torrent_script />" method="get" name="torrent_search">
       <input type="hidden" name="page" value="torrents" />
       <table border="0" class="lista" align="center">  
-      <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tds=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></td></if:swit>
+      <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></td></if:swit>
         <td align=center style="width: 340px;"><input type="text" class="form-control input-sm" name="search" id="searchinput" ondblclick="suggest(event.keyCode, this.value, 'torrent');" onkeyup="suggest(event.keyCode, this.value, 'torrent');" onkeypress="return noenter(event.keyCode);" autocomplete="off" style="width: 320px;" maxlength="50" value="<tag:torrent_search />" />
           <div id="suggcontainer" style="display: none; padding-left:0px;" align="left">
            <div id="suggestions" style="cursor: default; position: absolute; background-color: #373737; border: 1px solid #7f9db9; border-top: 0px;"></div>

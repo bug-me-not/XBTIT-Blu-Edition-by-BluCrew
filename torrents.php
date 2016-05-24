@@ -921,7 +921,7 @@ if($count > 0)
             //Torrent Nuke/Req Hack END
 
             // User PageLayout Switch
-         if($btit_settings['fmhack_torrent_details_switch']=='enabled')
+         if($btit_settings['fmhack_torrent_list_switch']=='enabled')
          {
             if ($CURUSER['torrent_style']=='new')
                $switch = "old";
@@ -934,7 +934,7 @@ if($count > 0)
          else
          {
             $torrenttpl->set("switch","");
-            $torrentrpl->set("swit",FALSE,TRUE);
+            $torrenttpl->set("swit",FALSE,TRUE);
          }
             // User PageLayout Switch END
 
