@@ -132,7 +132,10 @@ switch ($pageID) {
 
    case 'torrents':
    require("$THIS_BASEPATH/torrents.php");
-   $tpl->set("main_content",set_block($language["MNU_TORRENT"],"center",$torrenttpl->fetch(load_template("torrent.list.tpl"))));
+   if($CURUSER['torrent_style']=='new')
+      $tpl->set("main_content",set_block($language["MNU_TORRENT"],"center",$torrenttpl->fetch(load_template("torrent.list.tpl"))));
+   else
+      $tpl->set("main_content",set_block($language["MNU_TORRENT"],"center",$torrenttpl->fetch(load_template("torrent.listdc.tpl"))));
    $tpl->set("main_title","Index->Torrents");
    break;
       //file host start

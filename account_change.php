@@ -37,9 +37,9 @@ include(dirname(__FILE__)."/btemplate/bTemplate.php");
 if (isSet($_GET['tls']))
 {
     if($_GET['tls']=='new')
-        $tds = sqlesc("new");
+        $tds = sql_esc("new");
     else
-        $tds = sqlesc("old");
+        $tds = sql_esc("old");
 }
 
 if (isset($_GET["style"]))
@@ -76,7 +76,7 @@ if ($langue!=0)
 }
 if ($tds=='new' || $tds=='old') 
 {
-    quickQuery("UPDATE {$TABLE_PREFIX}users SET tls=$tls WHERE id=".(int)$CURUSER['uid'],true);
+    quickQuery("UPDATE {$TABLE_PREFIX}users SET torrent_style=\"$tls\" WHERE id=".(int)$CURUSER['uid'],true);
 }
 unset($_SESSION["CURUSER"], $_SESSION["CURUSER_EXPIRE"]);
 redirect($url);
