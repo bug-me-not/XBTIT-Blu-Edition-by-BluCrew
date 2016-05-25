@@ -12,8 +12,6 @@
 <!-- alertify Dialogs -->
 <link rel="stylesheet" href="assets/plugins/alertify/css/alertify.core.css" />
 <link rel="stylesheet" href="assets/plugins/alertify/css/alertify.default.css" id="toggleCSS" />
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="assets/plugins/fuelux/css/fuelux.min.css" />
 <!-- #GOOGLE FONT -->
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
@@ -32,22 +30,7 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<!--
-<script>
-    var Bs = jQuery.noConflict();
-    var themes = {
-      "Dark": "assets/bootstrap/css/bootstrap.css",
-      "Light" : "assets/bootstrap/css/bootstrap1.css",
-    }
-    Bs(function(){
-      var themesheet = Bs('<link href="'+themes['Dark']+'" rel="stylesheet" />');
-      themesheet.appendTo('head');
-      Bs('.theme-link').click(function(){
-        var themeurl = themes[Bs(this).attr('data-theme')]; 
-        themesheet.attr('href',themeurl);
-      });
-    });
-</script> -->
+<script src="assets/plugins/alertify/js/alertify.js"></script>
 
 <!-- Bootstrap Switch JS -->
 <script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
