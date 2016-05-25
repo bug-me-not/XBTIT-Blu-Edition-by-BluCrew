@@ -4,7 +4,7 @@
 //  BluCrew Nav
 //
 ////////////////////////////////////////////////////////////////////////////////////
-global $CURUSER, $btit_settings, $language;
+global $CURUSER, $btit_settings, $language, $user, $USERLANG, $FORUMLINK, $db_prefix, $btit_settings, $ipb_prefix;
 
 //HOME
 print("<li><a href='index.php'>".$language["MNU_INDEX"]."</a></li>\n");
@@ -42,11 +42,6 @@ if($CURUSER["view_users"]=="yes" && $CURUSER["view_torrents"]=="yes" && $CURUSER
 
 if($CURUSER["view_torrents"]=="yes")
 {
-//SEEDHELP
-    $seedque = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.`username`,`h`.`seed`, `f`.`seeds`, `f`.`leechers`, `h`.`uploaded` FROM {$TABLE_PREFIX}files `f` LEFT JOIN {$TABLE_PREFIX}users `u` ON `u`.`id`=`f`.`uploader` LEFT JOIN {$TABLE_PREFIX}history `h` ON `h`.`infohash`=`f`.`info_hash` WHERE (`f`.`uploader`={$CURUSER['uid']} OR `h`.`uid`={$CURUSER['uid']}) AND `f`.`seeds`=0 AND `f`.`leechers`>=1 AND `h`.`completed`='yes' AND `h`.`active`='no' GROUP BY `f`.`info_hash`");
-    $seedcount = sql_num_rows($seedque);
-    print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp &nbsp;<span class='badge'>{$seedcount}</span></a></li>\n");
-}        
 
 //FORUMS
 if ($CURUSER["view_forum"]=="yes")
@@ -56,6 +51,31 @@ if ($CURUSER["view_forum"]=="yes")
     else
         print("<li><a href='".$GLOBALS["FORUMLINK"]."'>Fourms</a></li>\n");
 }
+
+//SEEDHELP
+    $seedque = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.`username`,`h`.`seed`, `f`.`seeds`, `f`.`leechers`, `h`.`uploaded` FROM {$TABLE_PREFIX}files `f` LEFT JOIN {$TABLE_PREFIX}users `u` ON `u`.`id`=`f`.`uploader` LEFT JOIN {$TABLE_PREFIX}history `h` ON `h`.`infohash`=`f`.`info_hash` WHERE (`f`.`uploader`={$CURUSER['uid']} OR `h`.`uid`={$CURUSER['uid']}) AND `f`.`seeds`=0 AND `f`.`leechers`>=1 AND `h`.`completed`='yes' AND `h`.`active`='no' GROUP BY `f`.`info_hash`");
+    $seedcount = sql_num_rows($seedque);
+    print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp &nbsp;<span class='badge'>{$seedcount}</span></a></li>\n");
+}        
+
+//MAIL
+if(substr($FORUMLINK,0,3)=="smf")
+     $resmail=get_result("SELECT `unread".(($FORUMLINK=="smf")?"M":"_m")."essages` `ur` FROM `{$db_prefix}members` WHERE ".(($FORUMLINK=="smf")?"`ID_MEMBER`":"`id_member`")."=".$CURUSER["smf_fid"],true,$btit_settings['cache_duration']);
+ elseif($FORUMLINK=="ipb")
+     $resmail=get_result("SELECT `msg_count_new` `ur` FROM `{$ipb_prefix}members` WHERE `member_id`=".$CURUSER["ipb_fid"],true,$btit_settings['cache_duration']);
+ else
+     $resmail=get_result("SELECT COUNT(*) `ur` FROM `{$TABLE_PREFIX}messages` WHERE `readed`='no' AND `receiver`=".$CURUSER["uid"],true,$btit_settings['cache_duration']);
+ if ($resmail && count($resmail)>0)
+ {
+     $mail=$resmail[0];
+     if ($mail['ur']>0)
+        print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge'>".$mail['ur']."</span></a></li>\n");
+    else
+     print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge'>".$mail['ur']."</span></a></li>\n");
+}
+else
+ print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge'>".$mail['ur']."</span></a></li>\n");
+
 
 //THEMES
 if($btit_settings["userinfo_style"]!="disabled")

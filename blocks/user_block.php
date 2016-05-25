@@ -197,8 +197,9 @@ if ($CURUSER["gotgift"] == "no" && ($today >= $xmasdayst) && ($today <= $xmasday
 
 print("</table>\n</form>");
 }
+
 //Static Mail
-/*print("<div class='mail' style='position: fixed; bottom: 5px; right: 1%' ><b>You Have <font color=\"#FF0000\"><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">(".$mail['ur'].")</a></font> New Message(s)!</b>
+/*print("<div class='mail'><b>You Have <font color=\"#FF0000\"><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">(".$mail['ur'].")</a></font> New Message(s)!</b>
 </div></a>");*/
 //Static Mail End
 

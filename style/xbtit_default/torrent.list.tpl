@@ -46,7 +46,7 @@ for(var i = 0; i < countCheckBoxes; i++)
                  <table class="table table-bordered">
                   <tr>
                     <td class="header" align="center" width="45"><tag:language.CATEGORY /></td>
-                    <td align="center" class="header" ><tag:language.FILE /></td>
+                    <td align="center" class="header" width="100%"><tag:language.FILE /></td>
                     <if:reql1>
                     <td align="center" class="header" ><tag:req_header_comments /></td>
                   </if:reql1>
