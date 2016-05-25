@@ -16,16 +16,19 @@ objCheckBoxes[i].checked = CheckValue;
 }
 </script>
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">Staff Picks</h4>
-</div>
+  <div class="panel-heading">
+    <h4 class="text-center"><a data-toggle="collapse" data-target="#collapseTwo" 
+     href="#collapseTwo" class="collapsed">Staff Picks&nbsp;&nbsp;<i class="fa fa-plus"></i></a></h4>
+   </div>
+   <div id="collapseTwo" class="panel-collapse collapse">
+    <div class="panel-body">
 <ul>
 <if:rtorr_enabled>
 <div align="center">
 <table width="100%">
   <tr>
     <td>
-      <table width="100%" class="lista" cellspacing=1>
+      <table class="table table-bordered">
         <tr>
           <td class="block" colspan="14" align="center"><b><tag:language.RTORR_OUR_TEAM /></b></td>
         </tr>
@@ -96,6 +99,8 @@ objCheckBoxes[i].checked = CheckValue;
 <div class="panel-footer">
 </div>
 </div>
+</div>
+</div>
 
 <div class="panel panel-primary">
 <div class="panel-heading">
@@ -103,11 +108,11 @@ objCheckBoxes[i].checked = CheckValue;
 </div>
 <ul>
 <div align="center">
-<if:swit><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></if:swit>
 <form action="<tag:torrent_script />" method="get" name="torrent_search">
   <input type="hidden" name="page" value="torrents" />
   <table border="0" class="lista" align="center">
     <tr>
+      <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></td></if:swit>
       <td class="block"><tag:language.TORRENT_SEARCH /></td>
       <td class="block"><tag:language.CATEGORY_FULL /></td>
       <if:ash_enabled_1>
@@ -198,15 +203,11 @@ objCheckBoxes[i].checked = CheckValue;
 </div>
 <ul>
 <table width="100%">
-
-  <tr>
-    <td colspan="2" align="center"> <tag:torrent_pagertop /></td>
-  </tr>
 <if:multi_del><form name="deltorrent" action="index.php?page=torrents&do=del" method="post"></if:multi_del>
 
   <tr>
     <td>
-      <table width="100%" class="lista">
+      <table class="table table-bordered">
         <tr>
           <td align="center" width="45" class="header"><tag:torrent_header_category /></td>
           <td align="center" class="header"><tag:torrent_header_filename /></td>
