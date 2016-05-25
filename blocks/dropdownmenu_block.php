@@ -55,7 +55,7 @@ if ($CURUSER["view_forum"]=="yes")
 //SEEDHELP
     $seedque = do_sqlquery("SELECT `f`.`info_hash`, `f`.`filename`, `f`.`size`,`u`.`username`,`h`.`seed`, `f`.`seeds`, `f`.`leechers`, `h`.`uploaded` FROM {$TABLE_PREFIX}files `f` LEFT JOIN {$TABLE_PREFIX}users `u` ON `u`.`id`=`f`.`uploader` LEFT JOIN {$TABLE_PREFIX}history `h` ON `h`.`infohash`=`f`.`info_hash` WHERE (`f`.`uploader`={$CURUSER['uid']} OR `h`.`uid`={$CURUSER['uid']}) AND `f`.`seeds`=0 AND `f`.`leechers`>=1 AND `h`.`completed`='yes' AND `h`.`active`='no' GROUP BY `f`.`info_hash`");
     $seedcount = sql_num_rows($seedque);
-    print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp &nbsp;<span class='badge badge-red'>{$seedcount}</span></a></li>\n");
+    print("<li><a href='index.php?page=modules&module=seedhelp'>Seedhelp &nbsp;<span class='badge badge-salmon'>{$seedcount}</span></a></li>\n");
 }        
 
 //MAIL
@@ -69,7 +69,7 @@ if(substr($FORUMLINK,0,3)=="smf")
  {
      $mail=$resmail[0];
      if ($mail['ur']>0)
-        print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge badge-red'>".$mail['ur']."</span></a></li>\n");
+        print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge badge-salmon'>".$mail['ur']."</span></a></li>\n");
     else
      print("<li><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">Mail &nbsp;<span class='badge badge-green'>".$mail['ur']."</span></a></li>\n");
 }

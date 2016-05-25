@@ -7046,7 +7046,7 @@ background-color: rgba(100, 100, 100, 0.6);
   background-color:#5BC236;
     color:#fff;
 }
-[class*='-red'] {
+[class*='-salmon'] {
   background-color:#E64141;
     color:#fff;
 }
@@ -7077,7 +7077,7 @@ background-color: rgba(100, 100, 100, 0.6);
   background-color:#6cd347;
     color:#fff;
 }
-[class*='-red']:hover,[class*='-red']:active {
+[class*='-red']:hover,[class*='-salmon']:active {
   background-color:#E64141;
     color:#fff;
 }
