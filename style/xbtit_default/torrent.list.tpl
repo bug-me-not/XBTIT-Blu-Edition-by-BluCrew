@@ -193,7 +193,7 @@ for(var i = 0; i < countCheckBoxes; i++)
 </if:arc_enabled>
 </select>
 </td>
-<td><button class="btn btn-anchor btn-labeled btn-primary" type="button"><span class="btn-label"><i class="fa fa-search"></i></span><tag:language.SEARCH /></button></td>
+<td><button class="btn btn-anchor btn-labeled btn-primary" type="submit"><span class="btn-label"><i class="fa fa-search"></i></span><tag:language.SEARCH /></button></td>
 </tr>
 </table>
 </form>
