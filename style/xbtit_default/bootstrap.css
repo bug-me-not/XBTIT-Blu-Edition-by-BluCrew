@@ -7082,6 +7082,26 @@ background-color: rgba(100, 100, 100, 0.6);
     color:#fff;
 }
 
+/* Not Safe For Work*/
+img[src$="#nsfw"] {
+  filter: blur(15px) !important; 
+  -webkit-filter: blur(15px) !important; 
+  -moz-filter: blur(15px) !important;
+  -o-filter: blur(15px) !important; 
+  -ms-filter: blur(15px) !important;
+  filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+PGZpbHRlciBpZD0iZiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMjUiLz48L2ZpbHRlcj48L3N2Zz4=#f) !important;
+  border: 5px solid #F00 !important;
+  margin: 5px !important;
+}
+img[src$="#nsfw"]:hover {
+  -webkit-filter: none !important; 
+  -moz-filter: none !important;
+  -o-filter: none !important; 
+  -ms-filter: none !important;
+  filter:none !important;
+  border: 5px solid transparent !important;
+}
+
 
 
 

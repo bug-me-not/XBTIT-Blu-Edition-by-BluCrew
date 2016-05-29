@@ -198,6 +198,20 @@ function parseCustomCommands($text, $textParts) {
 			return true;
 			default:
 			return false;
+
+  //NSFW 
+	       case '/nsfw':
+$text = str_replace('/nsfw ','',$text); //remove the "/nsfw " part
+
+if ($text == "/nsfw") {	
+			$say = " image is not safe for work";
+		} else {
+			$say = "[img]" . $text . "#nsfw[/img]";	// This appends the #nsfw fragment to the image, allowing the css rules 
+													// supplied in nsfw.css to catch it, and apply the svg blur filter.
+		}
+$this->insertChatBotMessage( $this->getChannel(), $this->getUserName(). $say );
+	return true; 
+
   // User Away Mod		
 	case '/away':
 		$this->insertChatBotMessage($this->getChannel(), $this->getLoginUserName().' has set their status to Away');
@@ -211,6 +225,7 @@ function parseCustomCommands($text, $textParts) {
 		$this->updateOnlineList();
 		$this->addInfoMessage($this->getUserName(), 'userName');
 		return true;
+		
   // Global Annoucment 	
 		case '/wall':
             if($this->getUserRole()==AJAX_CHAT_ADMIN || $this->getUserRole() == AJAX_CHAT_MODERATOR) {

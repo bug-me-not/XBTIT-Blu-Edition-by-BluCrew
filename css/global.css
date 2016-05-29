@@ -152,3 +152,23 @@ td.disclaimer { -moz-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.3) inset, 0 2px
 #snav li:nth-child(10n+9) span, #snav li:nth-child(10n+9) a:hover .fa { background-color: #777; }
 #snav li:nth-child(10n+10) span, #snav li:nth-child(10n+10) a:hover .fa { background-color: #30555C; }
 /* ##### SIDENAV ##### */
+
+/*NSFW*/
+img[src$="#nsfw"] {
+	filter: blur(15px) !important; 
+	-webkit-filter: blur(15px) !important; 
+	-moz-filter: blur(15px) !important;
+	-o-filter: blur(15px) !important; 
+	-ms-filter: blur(15px) !important;
+	filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+PGZpbHRlciBpZD0iZiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMjUiLz48L2ZpbHRlcj48L3N2Zz4=#f) !important;
+	border: 5px solid #F00 !important;
+	margin: 5px !important;
+}
+img[src$="#nsfw"]:hover {
+	-webkit-filter: none !important; 
+	-moz-filter: none !important;
+	-o-filter: none !important; 
+	-ms-filter: none !important;
+	filter:none !important;
+	border: 5px solid transparent !important;
+}
