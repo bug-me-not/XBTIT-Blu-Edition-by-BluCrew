@@ -52,7 +52,7 @@ if($btit_settings["fmhack_poll_from_integrated_forum"] == "enabled")
                     {
                         $percent = floor(($row2["votes"]==0)?0:$row2["votes"] / $total_votes * 100);
                         $width = (($percent<=11)?14:(1.2 * $percent));
-                        print ("\n<p class=\"result_pollerOption\">".$row2["label"]."</p><div class=\"result_pollGraph\"><img src=\"images/poll_left.gif\"><div id=\"result_voteTxt".$i."\" style=\"background-image:url('images/poll_middle.gif');width:".$width."px;\">".$percent."%</div><img src=\"/images/poll_right.gif\"></div>");
+                        print ("\n<p class=\"result_pollerOption\">".$row2["label"]."</p><div class=\"result_pollGraph\"><div id=\"result_voteTxt".$i."\" style=\"background-image:url('images/poll_middle.gif');width:".$width."px;\">".$percent."%</div></div>");
                         $i++;
                     }
                     print("<p class=\"result_totalVotes\">".$language["TOTAL_VOTES"].": ".$total_votes."</p><p><a href=\"index.php?page=forum&action=viewtopic&topicid=".$row["id_topic"].".0\">".$language["DISCUSS_POLL"]."</a></p></div></div></div></div>");
@@ -80,7 +80,7 @@ if($btit_settings["fmhack_poll_from_integrated_forum"] == "enabled")
                 {
                     $percent = floor(($choices[1]["votes"][$i]==0)?0:$choices[1]["votes"][$i] / $total_votes * 100);
                     $width = (($percent<=11)?14:(1.2 * $percent));
-                    print ("\n<p class=\"result_pollerOption\">".$choices[1]["choice"][$i]."</p><div class=\"result_pollGraph\"><img src=\"images/poll_left.gif\"><div id=\"result_voteTxt".$i."\" style=\"background-image:url('images/poll_middle.gif');width:".$width."px;\">".$percent."%</div><img src=\"/images/poll_right.gif\"></div>");
+                    print ("\n<p class=\"result_pollerOption\">".$choices[1]["choice"][$i]."</p><div class=\"result_pollGraph\"><div id=\"result_voteTxt".$i."\" style=\"background-image:url('images/poll_middle.gif');width:".$width."px;\">".$percent."%</div></div>");
                     $i++;
                 }
                 print("<p class=\"result_totalVotes\">".$language["TOTAL_VOTES"].": ".$total_votes."</p><p><a href=\"index.php?page=forum&action=viewtopic&topicid=".$row["tid"]."\">".$language["DISCUSS_POLL"]."</a></p></div></div></div></div>");
