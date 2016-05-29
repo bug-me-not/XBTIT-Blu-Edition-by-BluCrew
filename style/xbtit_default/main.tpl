@@ -168,7 +168,7 @@
     </a>
   </li>
   <li>
-    <a href='https://www.gofundme.com/k4e9zyz8?utm_medium=wdgt'>
+    <a href='https://www.gofundme.com/kfukmgyc?utm_medium=wdgt'>
       <i class="fa fa-usd"></i>
       <span>Donate</span>
     </a>
