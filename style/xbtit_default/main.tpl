@@ -195,7 +195,7 @@
 </div>
 
 <!-- BANNER START -->
-<center><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i><font size="40px" color="#00aeff">BluRG.xyz</font><i class="fa fa-bolt fa-3x fa-fw margin-bottom"></i></center>
+<center><div class="colors"><i class="fa fa-bolt fa-fw margin-bottom"></i>BluRG.xyz<i class="fa fa-bolt fa-fw margin-bottom"></i></div></center>
   <!-- BANNER END -->
 
 <!-- Site Alerts
