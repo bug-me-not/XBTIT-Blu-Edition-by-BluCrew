@@ -106,7 +106,7 @@ if($btit_settings["fmhack_alternate_login"]=="enabled")
       redirect("login_new.php");
     }
 
-    if($pageID!="login" && $pageID!="signup" && $pageID!="contact")
+    if($pageID!="login" && $pageID!="signup" && $pageID!="contact" && $pageID!="recover")
     {
       redirect("login_new.php");
     }
