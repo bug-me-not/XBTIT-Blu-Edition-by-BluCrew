@@ -231,6 +231,9 @@ else
 						$last_id = sql_insert_id();
 						quickQuery("INSERT INTO {$TABLE_PREFIX}requests_bounty (`addedby`,`seedbonus`,`req_id`) VALUES ({$CURUSER['uid']},{$btit_settings['req_bon']},{$last_id});") or sqlerr(); 
 
+						quickQuery("UPDATE {$TABLE_PREFIX}users SET `seedbonus` = `seedbonus` - {$btit_settings['req_bon']} WHERE id = {$CURUSER['uid']}") or sqlerr();
+						$_SESSION["CURUSER"]["seedbonus"] -= $btit_settings['req_bon'];
+
 						if($btit_settings['req_shout']==true)
 						{
 							$url=("[color=RED]".sql_esc($language["TRAV_NEWREQUEST"]).":[/color] [url=".$BASEURL."/index.php?page=viewrequests]".sql_esc($reqtitle)."[/url] [color=RED]".sql_esc($language["TRAV_ADDEDBY"]).":[/color] [url=$BASEURL/index.php?page=userdetails&id=" .$CURUSER['uid']."]".$CURUSER['prefixcolor'].$CURUSER["username"].$CURUSER['suffixcolor']."[/url]");
