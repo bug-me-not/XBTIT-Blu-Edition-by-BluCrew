@@ -39,7 +39,7 @@
 
 global $TABLE_PREFIX, $language;
 
-echo "<TABLE width=100% border=0 cellspacing=1 cellpadding=1 class=forumline>
+echo " <table class= table table-bordered>
 <tr><td align=center><a href=index.php?page=bet><img src=images/bet.png border=0></a></td></tr>";
 
 $bet = get_result("SELECT `undertext`, `endtime` FROM `{$TABLE_PREFIX}betgames` WHERE `active`=1 ORDER BY `endtime` ASC LIMIT 5", true, $btit_settings["cache_duration"]);
@@ -49,12 +49,12 @@ if(count($bet)==0)
 else
     $bb=$language["SB_CURR_BETS"];	
 
-echo"<TR><TD class = header align = center>$bb</TD></TR>";
+echo"<TR class= info><TD class = header align = center>$bb</TD></TR>";
 
 foreach($bet as $fetch)
 {
     $a=$fetch['undertext'];
-    echo"<TR ><TD align=center>$a</TD></TR>";
+    echo"<TR ><TD align=center><p class= text-warning>$a</p></TD></TR>";
     echo"<TR><TD class = lista align = center><font color = red>Ends: </font>".date('jS F \a\\t g:ia',$fetch['endtime'])."</TD></TR>";
 }
 print("</table>");

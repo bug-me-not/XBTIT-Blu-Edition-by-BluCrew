@@ -2,26 +2,30 @@
 <div align=center>
 <br />
 <img src='images/betting.png' alt='<tag:language.SB_BET />' title='<tag:language.SB_BETTING />' width='400' height='125' />
-<h1><tag:language.SB_ADMIN /></h1>
-<table align='center' class='main' width='200' cellspacing='0' cellpadding='5' border='0'><br />
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Betting Control Panel</h4>
+</div>
+<table class="table table-bordered"><br />
   <tr>
-    <td align='center' class='navigation'><a href='index.php?page=bet'><tag:language.SB_CURR_BETS /></a></td>
-    <td align='center' class='navigation'><a href='index.php?page=betgameinfo'><tag:language.SB_BET_INFO /></a></td>
-    <td align='center' class='navigation'><a href='index.php?page=betfinish'><tag:language.SB_END_BETS /></a></td>
+  <p>
+    <button class="btn btn-md btn-primary"><a href='index.php?page=bet'><tag:language.SB_CURR_BETS /></a></button>
+    <button class="btn btn-md btn-primary"><a href='index.php?page=betgameinfo'>Game Stats</a></button>
+    <button class="btn btn-md btn-primary"><a href='index.php?page=betfinish'><tag:language.SB_END_BETS /></a></button>
+    </p>
   </tr>
 </table>
 
-
 <form method='post' action='index.php?page=bettakenew'>
-  <table align='center' cellpadding='5'>
+  <table class="table table-bordered">
     <tr>
       <td class='header'><tag:language.SB_BET_TITLE />:</td><td class='lista'><input type='text' name='heading' size='52' /></td>
     </tr>
     <tr>
-      <td class='header'><i><tag:language.SB_BETTING_ON />:</i></td><td class='lista'><input type='text' name='undertext' size='52' value='<tag:language.SB_ENTER_WAGER />' /></td>
+      <td class='header'><tag:language.SB_BETTING_ON />:</td><td class='lista'><input type='text' name='undertext' size='52' value='<tag:language.SB_ENTER_WAGER />' /></td>
     </tr>
     <tr>
-      <td class='header' align='center'><tag:language.SB_ENDTIME /></td>
+      <td class='header'><tag:language.SB_ENDTIME /></td>
       <td class=lista>
         <select name='endday'>
           <option value='na'>----</option>
@@ -191,15 +195,22 @@
       <td class='lista'><input type='radio' name='sort' value='1' checked='checked' /><tag:language.SB_BY_ID /><input type='radio' name='sort' value='0' /><tag:language.SB_BY_ODDS /></td>
     </tr>
     <tr>
-      <td colspan='2' align='center'><input  type='submit' value='<tag:language.SB_SUBMIT />' /></td>
+      <td colspan='2' align='center'><input  type='submit' class='btn btn-sm btn-success' value='<tag:language.SB_SUBMIT />' /></td>
     </tr>
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>
 
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Current Bets</h4>
+</div>
 <if:result>
   <br /><br />
-  <table align='center' cellpadding='5'>
-    <tr>
+  <table class="table table-bordered">
+    <tr class='info'>
       <td class='header'><b><tag:language.SB_CREATOR /></b></td>
       <td class='header'><b><tag:language.SB_ENDTIME /></b></td>
       <td class='header'><b><tag:language.SB_BET_TITLE /></b></td>
@@ -221,6 +232,8 @@
     </loop:loop1>
   </table><br /><br />
 </if:result>
-
+<div class="panel-footer">
+</div>
+</div>
 </div>
 </if:admin_access>

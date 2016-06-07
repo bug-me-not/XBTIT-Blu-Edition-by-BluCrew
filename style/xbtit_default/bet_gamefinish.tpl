@@ -1,17 +1,26 @@
 <div align='center'>
 
 <img src='images/betting.png' alt='<tag:language.SB_BET />' title='<tag:language.SB_BETTING />' width='400' height='125' />
-<h1><tag:language.ADMIN /></h1>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">End Bets</h4>
+</div>
 <table class='main' width='200' cellspacing='0' cellpadding='5' border='0'><br>
 <tr>
-<td align='center' class='navigation'><a href='index.php?page=betadmin'><tag:language.SB_ADD_BETS /></a></td>
-<td align='center' class='navigation'><a href='index.php?page=betgameinfo'><tag:language.SB_BET_INFO /></a></td>
-<td align='center' class='navigation'><a href='index.php?page=betgamefinish'><tag:language.SB_END_BETS /></a></td>
+<p>
+<button class="btn btn-md btn-primary"><a href='index.php?page=betadmin'><tag:language.SB_ADD_BETS /></a></button>
+<button class="btn btn-md btn-primary"><a href='index.php?page=betgameinfo'><tag:language.SB_BET_INFO /></a></button>
+<button class="btn btn-md btn-primary"><a href='index.php?page=betgamefinish'><tag:language.SB_END_BETS /></a></button>
+</p>
 </tr>
 </table>
 <br />
 
-<h1><span style='color:#FF0000'><tag:language.SB_WARNING /></span><br /> <tag:language.SB_CLICK_TO_PAY /><br /><span style='color:#FF0000'><tag:language.SB_WARNING /></span></h1>
+<div class="alert alert-dismissable alert-bg-white alert-danger">
+ <button data-dismiss="alert" class="close" type="button">×</button>
+ <div class="icon"><i class="fa fa-exclamation"></i></div>
+ <strong><tag:language.SB_WARNING /></strong><br><tag:language.SB_CLICK_TO_PAY />
+</div>
 
 <if:result>
   <loop:loop1>
