@@ -3,14 +3,10 @@
 
 <br />
 <img src='images/betting.png' alt='<tag:language.SB_BET />' title='<tag:language.SB_BETTING />' width='400' height='125' />
-<h1>Admin</h1>
-<table class='main' width='200' cellspacing='0' cellpadding='5' border='0'><br>
-  <tr>
-    <td align='center' class='navigation'><a href='index.php?page=betadmin'><tag:language.SB_CREATE_BETS /></a></td>
-    <td align='center' class='navigation'><a href='index.php?page=betgameinfo'><tag:language.SB_BET_INFO /></a></td>
-    <td align='center' class='navigation'><a href='index.php?page=betgamefinish'><tag:language.SB_END_BETS /></a></td>
-  </tr>
-</table>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Bet Options</h4>
+</div>
 <br />
 
 <h2><tag:language.SB_ADD_OPT_TO_BET /></h2>
@@ -27,9 +23,9 @@
 </table>
 <br />
 
-<table border='1' cellspacing='0' cellpadding='5'>
-  <tr>
-    <td colspan='2' class='header' align='left'><tag:language.SB_OPTIONS /></td>
+<table class="table table-bordered">
+  <tr class='info'>
+    <td colspan='2' class='header' align='center'><tag:language.SB_OPTIONS /></td>
   </tr>
 
   <loop:loop2>
@@ -45,13 +41,9 @@
 <form action='index.php?page=betaddoption' method='post'>
 <tag:language.SB_OPT_TXT />: <input type='text' size='10' name='opt' />
 <input type='hidden' name='id' value='<tag:id />' />
-<input type='submit' value='<tag:language.SB_ADD_TO_GAME />' />
+<input type='submit' class='btn btn-sm btn-primary' value='<tag:language.SB_ADD_TO_GAME />' />
 </form>
-<br /><br />
-<form action='index.php?page=betaddonetwo' method='post'>
-<input type='hidden' name='id' value='<tag:id />' />
-<input type='submit' value='<tag:language.SB_ADD_1X2 />' />
-</form>
-
-
+<div class="panel-footer">
+</div>
+</div>
 </div>
