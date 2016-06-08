@@ -3930,9 +3930,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 7px 0px;
-  font-size: 18px;
+  padding: 10px 0px;
+  font-size: 20px;
   line-height: 25px;
+  font-weight: bolder;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -7105,8 +7106,6 @@ img[src$="#nsfw"]:hover {
 /*Colorful Text*/
 .colors {
   display: block;
-  text-align: center;
-  font: 4em Sans-Serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

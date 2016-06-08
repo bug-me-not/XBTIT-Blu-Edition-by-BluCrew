@@ -77,6 +77,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="#"><div class="colors"><i class="fa fa-bolt fa-fw margin-bottom"></i>BluRG.xyz<i class="fa fa-bolt fa-fw margin-bottom"></i></div></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -194,17 +195,17 @@
   </div>
 </div>
 
-<!-- BANNER START -->
+<!-- BANNER START
 <center><div class="colors"><i class="fa fa-bolt fa-fw margin-bottom"></i>BluRG.xyz<i class="fa fa-bolt fa-fw margin-bottom"></i></div></center>
-  <!-- BANNER END -->
+BANNER END -->
 
 <!-- Site Alerts
 <center><div class="page-header">
-<h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled | Global Freeleech OFF</small>
-</h1></div></center> -->
+<h1><p class="text-danger">Site Alerts</p><small> Ratio Free Enabled | Bootstrap {LESS} Enabled</small>
+</h1></div></center>
+Site Alerts END -->
 
 <!--Spacer-->
-<br>
 <br>
 
 <script type="text/javascript">
