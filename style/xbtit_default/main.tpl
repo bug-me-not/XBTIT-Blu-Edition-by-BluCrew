@@ -220,8 +220,6 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
 <div id="ann"></div>
 
 <!--Main Page Content -->
-<div class="container-fluid">
-<div class="row">
 <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
 <tr>
 <td valign='top' width='5' rowspan='2'></td>
@@ -242,8 +240,6 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
 <td valign='top' width='5' rowspan='2'></td>
 </tr>
 </table>
-</div>
-</div>
 
 <!-- Bottom Blocks -->
 <div class="container-fluid">
