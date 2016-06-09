@@ -79,7 +79,7 @@ else
       if($btit_settings["nav"]==true)
       {
          ?>
-         #SliderNameNavigation { margin: 0px 0 0 0; padding-top: 15px; height: 30px; text-align: center; -moz-border-radius: 6px 6px; background: #FFF; }
+         #SliderNameNavigation { margin: 0px 0 0 0; height: 30px; text-align: center; -moz-border-radius: 6px 6px; background: #FFF; }
          #SliderNameNavigation a:link, #SliderNameNavigation a:active, #SliderNameNavigation a:visited, #SliderNameNavigation a:hover{
             margin: 0 2px;
             background: url(images/slider/nav.gif) no-repeat center center;
