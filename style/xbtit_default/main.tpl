@@ -1,8 +1,11 @@
-<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-<html<tag:main_rtl /> xmlns='http://www.w3.org/1999/xhtml'>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><tag:main_title /></title>
-<meta http-equiv='content-type' content='text/html; charset=<tag:main_charset />' />
 
 <!-- #CSS Links -->
 <!-- Main Bootstrap Style  -->
@@ -190,7 +193,7 @@
 
 <!-- MainUser Info Bar / Tracker Settings -->
 <div class="container-fluid">
-  <div class="row">
+  <div class="row-fluid">
     <tag:main_header />
   </div>
 </div>
@@ -217,26 +220,30 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
 <div id="ann"></div>
 
 <!--Main Page Content -->
+<div class="container-fluid">
+<div class="row">
 <table border='0' align='center' cellpadding='0' cellspacing='0' width='100%'>
-  <tr>
-    <td valign='top' width='5' rowspan='2'></td>
-    <if:HAS_LEFT_COL>
-    <td valign='top' width='225'><tag:main_left /></td>
-  </if:HAS_LEFT_COL>
+<tr>
+<td valign='top' width='5' rowspan='2'></td>
+<if:HAS_LEFT_COL>
+<td valign='top' width='225'><tag:main_left /></td>
+</if:HAS_LEFT_COL>
 
-  <td valign='top'>
-    <table align='center' width='100%' cellpadding='0' cellspacing='0' border='0'>
-      <tr>
-        <td valign='top'><tag:main_content /></td>
-      </tr>
-    </table></td>
+<td valign='top'>
+<table align='center' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+<td valign='top'><tag:main_content /></td>
+</tr>
+</table></td>
 
-    <if:HAS_RIGHT_COL>
-    <td valign='top' width='225'><tag:main_right /></td>
-  </if:HAS_RIGHT_COL>
-  <td valign='top' width='5' rowspan='2'></td>
+<if:HAS_RIGHT_COL>
+<td valign='top' width='225'><tag:main_right /></td>
+</if:HAS_RIGHT_COL>
+<td valign='top' width='5' rowspan='2'></td>
 </tr>
 </table>
+</div>
+</div>
 
 <!-- Bottom Blocks -->
 <div class="container-fluid">
