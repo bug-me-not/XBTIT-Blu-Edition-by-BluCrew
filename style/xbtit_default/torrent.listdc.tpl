@@ -112,7 +112,7 @@ objCheckBoxes[i].checked = CheckValue;
   <input type="hidden" name="page" value="torrents" />
   <table border="0" class="lista" align="center">
     <tr>
-      <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><img src="images/switch.png" /></div></a></td></if:swit>
+      <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><button class="btn btn-labeled btn-warning" type="button"><span class="btn-label"><i class="fa fa-cog"></i></span>Layout Switch</button></div></a></td></if:swit>
       <td class="block"><tag:language.TORRENT_SEARCH /></td>
       <td class="block"><tag:language.CATEGORY_FULL /></td>
       <if:ash_enabled_1>
@@ -222,7 +222,7 @@ objCheckBoxes[i].checked = CheckValue;
           <if:imdb_enabled_2>
           <td align="center" width="20" class="header"><tag:torrent_header_imdb /></td>
           </if:imdb_enabled_2>
-          <td align="center" width="85" class="header"><tag:torrent_header_added /></td>
+          <!-- <td align="center" width="85" class="header"><tag:torrent_header_added /></td> -->
           <td align="center" width="30" class="header"><tag:torrent_header_seeds /></td>
           <td align="center" width="30" class="header"><tag:torrent_header_leechers /></td>
           <td align="center" width="30" class="header"><tag:torrent_header_complete /></td>
@@ -242,7 +242,9 @@ objCheckBoxes[i].checked = CheckValue;
         <tr>
           <td align="center" width="45" class="lista" style="text-align: center;<if:sticky_enabled_1><tag:torrents[].color /></if:sticky_enabled_1>"><tag:torrents[].category /></td>
           <td class="lista" valign="middle" onMouseOver="this.className='post'" onMouseOut="this.className='lista'" style="padding-left:10px;overflow:auto;<if:sticky_enabled_2><tag:torrents[].color /></if:sticky_enabled_2>"><tag:torrents[].filename /><if:free_leech_enabled><tag:torrents[].free /></if:free_leech_enabled><if:gast_enabled><tag:torrents[].gold /></if:gast_enabled>
-<tag:torrents[].imdb_genre /></td>
+
+          <!--<br><tag:torrents[].imdb_genre /></td>-->
+
           <if:usacotl3>
           <td align="center" width="30" class="lista" style="white-space:wrap;padding-left:10px;<if:sticky_enabled_11><tag:torrents[].color /></if:sticky_enabled_11>"><tag:torrents[].comments />
           </if:usacotl3>
@@ -257,10 +259,14 @@ objCheckBoxes[i].checked = CheckValue;
           <td align="center" width="20" class="lista" style="text-align: center;<if:sticky_enabled_14><tag:torrents[].color /></if:sticky_enabled_14>"><tag:torrents[].imdb /></td>
           </if:imdb_enabled_3>
 
-          <td align="center" width="85" class="lista" style="white-space:wrap; text-align:center;<if:sticky_enabled_5><tag:torrents[].color /></if:sticky_enabled_5>"><tag:torrents[].added /></td>
+          <!-- <td align="center" width="85" class="lista" style="white-space:wrap; text-align:center;<if:sticky_enabled_5><tag:torrents[].color /></if:sticky_enabled_5>"><tag:torrents[].added /></td>-->
+
           <td align="center" width="30" class="lista <tag:torrents[].classe_seeds />" style="text-align: center;<if:sticky_enabled_6><tag:torrents[].color /></if:sticky_enabled_6>"><tag:torrents[].seeds /></td>
+
           <td align="center" width="30" class="lista <tag:torrents[].classe_leechers />" style="text-align: center;<if:sticky_enabled_7><tag:torrents[].color /></if:sticky_enabled_7>"><tag:torrents[].leechers /></td>
+
           <td align="center" width="30" class="lista" style="text-align: center;<if:sticky_enabled_8><tag:torrents[].color /></if:sticky_enabled_8>"><tag:torrents[].complete /></td>
+
           <if:usacotl4>
           <if:show_uploader2>
           <td align="center" width="30" class="lista"<if:sticky_enabled_12> style="<tag:torrents[].color />"</if:sticky_enabled_12>><tag:torrents[].uploader /></td>
