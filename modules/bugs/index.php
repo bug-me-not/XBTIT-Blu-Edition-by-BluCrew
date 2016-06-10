@@ -126,20 +126,23 @@ $dt=$strankk;
 $by = "<a href='index.php?page=userdetails&id={$a['staff']}'>{$a['st']}</a> <i>(".$dt.")</i>";
 break;
 }
-$HTML .= "<form method='post' action='index.php?page=modules&amp;module=bugs&action=viewbug'>
+$HTML .= "<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Bug</h4></div>
+<form method='post' action='index.php?page=modules&amp;module=bugs&action=viewbug'>
 <input type='hidden' name='id' value='{$a['id']}'/>
-<table cellpadding='5' cellspacing='0' border='0' align='center'>
+<table class='table table-bordered'>
 <tr><td class='rowhead'>{$language['title']}:</td><td>{$title}</td></tr>
 <tr><td class='rowhead'>{$language['added']} / {$language['by']}</td><td>{$added} / {$addedby}</td></tr>
 <tr><td class='rowhead'>{$language['priority']}</td><td>{$priority}</td></tr>
-<tr><td class='rowhead'>{$language['problem_bug']}</td><td><textarea cols='60' rows='10' readonly='readonly'>{$problem}</textarea></td></tr>
+<tr><td class='rowhead'>{$language['problem_bug']}</td><td><textarea cols='60' class='form-control' rows='10' readonly='readonly'>{$problem}</textarea></td></tr>
 <tr><td class='rowhead'>{$language['status']} / {$language['by']}</td><td>{$status} - {$by}</td></tr>";
 if ($a['status'] == 'na') {
-$HTML .= "<tr><td colspan='2' align='center'><input type='submit' value='{$language['submit_btn_fix']}' class='btn'/></td></tr>\n";
+$HTML .= "<tr><td colspan='2' align='center'><button class='btn btn-labeled btn-danger' input type='submit'><span class='btn-label'><i class='fa fa-bug'></i></span>{$language['submit_btn_fix']}</button></td></tr>\n";
+
 }
 }
-$HTML .= "</table></form><a href='index.php?page=modules&amp;module=bugs&action=bugs'>{$language['go_back']}</a>\n";
+$HTML .= "</table></form><center><a href='index.php?page=modules&amp;module=bugs&action=bugs'>{$language['go_back']}</a></center><div class='panel-footer'></div></div>\n";
 }
+
 //This is staffs page
 elseif ($action == 'bugs') {
 if ($CURUSER["admin_access"]=="no") stderr("{$language['stderr_error']}", "{$language['stderr_only_staff_can_view']}");
@@ -153,10 +156,11 @@ if (sql_num_rows($res) > 0) {
 $count = sql_num_rows($r);
 
 $HTML .= "
+<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Reported Bugs</h4></div>
 <!--<h1 align='center'>There is <font color='#FF0000'>{$count}</font> new bug".($count > 1 ? "s" : "").". Please check them.</h1>-->
 <h1 align='center'>".sprintf($language['h1_count_bugs'], $count, ($count > 1 ? "s" : ""))."</h1>
-<font class='small' style='font-weight:bold;'>{$language['delete_when']}</font><br/>
-<table cellpadding='10' cellspacing='0' border='0' align='center'><tr>
+<center><p class='text-danger'>{$language['delete_when']}</p></center><br/>
+<table class='table table-bordered'><tr class= 'info'>
 <td class='colhead' align='center'>{$language['title']}</td>
 <td class='colhead' align='center'>{$language['added']} / {$language['by']}</td>
 <td class='colhead' align='center'>{$language['priority']}</td>
@@ -225,20 +229,24 @@ stderr("{$language['stderr_error']}", "{$language['stderr_something_is_wrong']}"
 }
 else
 //Default page :]
-$HTML .= "<form method='post' action='index.php?page=modules&amp;module=bugs&action=add'>
-<table cellpadding='5' cellspacing='0' border='0' align='center'>
-<tr><td class='rowhead'>{$language['title']}:</td><td><input type='text' name='title' size='60'/><br/>{$language['proper_title']}</td></tr>
-<tr><td class='rowhead'>{$language['problem_bug']}:</td><td><textarea cols='60' rows='10' name='problem'></textarea><br/>{$language['describe_problem']}</td></tr>
-<tr><td class='rowhead'>{$language['priority']}:</td><td><select name='priority'>
+$HTML .= "
+<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Report A Site Bug</h4></div>
+<form method='post' action='index.php?page=modules&amp;module=bugs&action=add'>
+<table class='table table-bordered'>
+<tr><td class='rowhead'>{$language['title']}:</td><td>{$language['proper_title']}<br><input type='text' class='form-control' name='title' size='60'/></td></tr>
+<tr><td class='rowhead'>{$language['problem_bug']}:</td><td>{$language['describe_problem']}<br><textarea cols='60' rows='10' class='form-control' name='problem'></textarea></td></tr>
+<tr><td class='rowhead'>{$language['priority']}:</td><td>{$language['only_veryhigh_when']}<br><select class='form-control' name='priority'>
 <option value='0'>{$language['select_one']}</option>
 <option value='low'>{$language['low']}</option>
 <option value='high'>{$language['high']}</option>
 <option value='veryhigh'>{$language['veryhigh']}</option>
 </select>
-<br/>{$language['only_veryhigh_when']}</td></tr>
-<tr><td colspan='2' align='center'><input type='submit' value='{$language['submit_btn_send']}' class='btn'/></td></tr>
-</table></form>";
-
+</td></tr>
+<tr><td colspan='2' align='center'><button class='btn btn-labeled btn-danger' input type='submit'><span class='btn-label'><i class='fa fa-bug'></i></span>{$language['submit_btn_send']}</button></td></tr>
+</table></form>
+<div class='panel-footer'>
+</div>
+</div>";
 
 print $HTML ;
 
