@@ -916,7 +916,6 @@ textarea {
   line-height: inherit;
 }
 a {
-  display: inline-block;
   position: relative;
   color: #fff;
   text-decoration: none;
