@@ -1,0 +1,70 @@
+/*==== Strapslide Minimalistic ====*/
+
+/*==== Slides ====*/
+ #slide1_text2, #slide1_text3, #slide1_text4{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+
+/*==== Container ====*/
+#strapslide > .strapslide-container{
+    height:820px;
+}
+
+/*==== Navigation ====*/
+.strapslide .strapslide-nav{
+    
+}
+
+.strapslide .prev{
+    
+}
+.strapslide .next{
+    
+}
+
+.strapslide .prev:hover, .strapslide .next:hover{
+
+}
+
+@media screen and (max-width:767px){
+    .strapslide .strapslide-nav{
+
+    }
+}
+
+
+/*==== Progress Bar ====*/
+.strapslide .progress{
+
+}
+.strapslide .progress .bar{
+
+}
+
+/*==== Pagination ====*/
+.strapslide-pagination ul{
+
+}
+
+.strapslide-pagination ul li{
+
+}
+
+.strapslide-pagination ul li a{
+
+}
+
+.strapslide-pagination ul li.active a{
+
+}
+
+@media screen and (max-width:767px){
+    .strapslide-pagination ul{
+
+    }
+}

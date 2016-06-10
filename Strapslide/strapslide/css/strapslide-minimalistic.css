@@ -1,0 +1,177 @@
+/*==== Strapslide Minimalistic ====*/
+
+/*==== Slides ====*/
+*{
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+}
+
+#slide1_content{
+    position:absolute;
+    display:block;
+    margin-top:-100px;
+}
+@media screen and (max-width:767px){
+    #slide3_text1, #slide2_text1{
+        text-align:center;
+    }
+    #slide3_content{
+        padding:20px;
+        text-align:center;
+    }
+}
+
+/*==== Container ====*/
+#strapslide > .strapslide-container{
+    height:820px;
+    color:white;
+    font-weight:normal;
+}
+
+/*==== Navigation ====*/
+.strapslide .strapslide-nav{
+    position:relative;
+    float:right;
+    right:40px;
+    bottom:70px;
+    width:100px;
+    height:50px;
+}
+.strapslide .prev{
+    float:left;
+    left:0;
+    width:22px;
+    height:25px;
+    display:block;
+    position:absolute;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+    transition: all 0.5s ease; 
+}
+.strapslide .next{
+    float:right;
+    right:0;
+    width:22px;
+    height:25px;
+    display:block;
+    position:absolute;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+    transition: all 0.5s ease; 
+
+}
+
+.strapslide .prev:hover, .strapslide .next:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+@media screen and (max-width:767px){
+    .strapslide .strapslide-nav{
+        right:10px;
+        bottom:45px;
+    }
+}
+
+
+/*==== Progress Bar ====*/
+.strapslide .progress{
+    background:#404040;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+.strapslide .progress .bar{
+    background:#fff;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+
+/*==== Pagination ====*/
+.strapslide-pagination ul{
+    display:block;
+    position:absolute;
+    left:40px;
+    bottom:70px;
+    width:200px;
+    height:25px;
+    line-height:25px;
+}
+
+.strapslide-pagination ul li{
+    float:left;
+    display:block;
+    position:relative;
+    width:25px;
+    height:25px;
+    line-height:25px;
+    text-indent:-10000px;
+    margin:0px 5px;
+    text-align:center;
+
+    -webkit-transition: border 0.3s ease; 
+    -moz-transition: border 0.3s ease; 
+    -o-transition: border 0.3s ease; 
+    transition: border 0.3s ease; 
+
+}
+
+.strapslide-pagination ul li a{
+    position:relative;
+    width:15px;
+    height:15px;
+    display:block;
+    background:white;
+    padding:0;
+    margin:5px auto 0px;
+
+    border: dotted 0px #fff;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+
+    -webkit-transition: border 0.3s ease; 
+    -moz-transition: border 0.3s ease; 
+    -o-transition: border 0.3s ease; 
+    transition: border 0.3s ease; 
+
+}
+
+.strapslide-pagination ul li.active a{
+    margin:0px;
+    border:5px solid #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+@media screen and (max-width:767px){
+    .strapslide-pagination ul{
+        left:10px;
+        bottom:40px;
+    }
+}

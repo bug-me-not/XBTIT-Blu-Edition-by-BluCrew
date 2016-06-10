@@ -1,0 +1,750 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Strapslide Documentation
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+        <link href="strapslide/css-bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="strapslide/css-bootstrap/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="strapslide/css/strapslide.css" rel="stylesheet" media="screen">
+
+        <style>
+            pre{
+                background:none;
+                border:0;
+                border-radius:0;
+                -moz-border-radius: 0;
+                -webkit-border-radius: 0;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div id="totop" style="display:none;width:50px;height:50px;background:black;color:white; line-height:50px;text-align:center;cursor:pointer; font-size:24px; font-weight:bold; position:fixed; bottom:0; right:0;">
+            ^
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="span12">
+                    <h1 class="text-center" style="font-size:48px;">STRAPSLIDE V2</h1>
+                    <h2 class="text-center" style="font-weight:normal;">
+                        Premium Responsive Bootstrap Slider Plugin
+                    </h2>
+                    <hr/>
+                    <div class="row">
+                        <div class="span12">
+                            <h3 style="font-weight:normal;">
+                                THANK YOU FOR BUYING STRAPSLIDE. <b>YOU'RE AWESOME!</b>
+                            </h3>
+                            <p>
+                                <b>Strapslide</b> is the ultimate premium slider offering the capability to show images, videos and captions paired with simple,
+                                modern and fancy 3D transitions. Even more important, it is 
+                                fully responsive and mobile optimized and can take on any dimensions.
+                                <br/><br/>
+                                In case you are not familiar with the features of Twitter Bootstrap, 
+                                you can view the documentation <strong><a href="http://getbootstrap.com/getting-started/" target="_blank">HERE</a></strong>. 
+                                <br/>
+                                Still, have no worries! Strapslide works well without Bootstrap as well.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div class="span4">
+                            <div class="well">
+                                <b>Author:</b> Alex Grozav
+                                <br/><br/>
+                                <b>Email:</b> <a href="mailto:alex@grozav.com">alex@grozav.com</a>
+                                <br/><br/>
+                                <b>Created:</b> 12/08/2013
+                                <br/><br/><div class="hidden-phone"><br/><br/><br/><br/><br/><br/><br/></div>
+                                <div class="text-center">
+                                    <a href="http://strapslide.grozav.com" class="btn btn-large">Live Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span8">
+                            <h3 style="font-weight:normal;">
+                                TABLE OF CONTENTS
+                            </h3>
+                            <ol id="table">
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#howitworks">How does it work?</a></li>
+                                <li><a href="#htmlstructure">HTML Structure</a></li>
+                                <li><a href="#cssfiles">CSS Files</a></li>
+                                <li><a href="#javascript">Javascript</a></li>
+                                <li><a href="#advanced">Advanced Settings</a>
+                                    <ul style="list-style:bullet;">
+                                        <li><a href="#animation">Animation</a></li>
+                                        <li><a href="#callbacks">Callbacks</a></li>
+                                        <li><a href="#datacontrol">Data-Control</a></li>
+                                        <li><a href="#cssclasses">CSS Classes</a></li>
+                                        <li><a href="#videosmarkup">Videos Markup</a></li>
+                                        <li><a href="#captionpositioning">Caption Positioning</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#sourcescredits">Sources and Credits</a></li>
+                                <li><a href="#endofdocumentation">End of Documentation</a></li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row" id="features">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        FEATURES
+                    </h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span4">
+                    <ul style="list-style-image:url('images/liststyle.png');">
+                        <li><b>UNLIMITED</b> Customizability</li>
+                        <li>jQuery 1.7 - jQuery 2.x Supported</li>
+                        <li>Based on <b>Bootstrap</b></li>
+                        <li>CSS3 Transition library</li>
+                        <li><b>Touch</b> Enabled</li>
+                        <li><b>Responsive</b></li>
+                        <li>Pause on Hover</li>
+                        <li>Dynamic Pagination</li>
+                        <li>Keyboard Navigation </li>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <ul style="list-style-image:url('images/liststyle.png');">
+                        <li><b>Tons</b> of Features</li>
+                        <li>FullScreen Support</li>
+                        <li>HTML5 Support to play self hosted videos</li>
+                        <li>Animation of each Caption element</li>
+                        <li>Powerful CSS Transitions with jQuery FallBack</li>
+                        <li>Adapts to Bootstrap spans</li>
+                        <li>Add <b>Unlimited</b> amount of Captions</li>
+                        <li>Turn on/off on Hover Stop function</li>
+                        <li>Turn on/off on Touch function </li>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <ul style="list-style-image:url('images/liststyle.png');">
+                        <li>Set <b>Fullscreen</b> YouTube and Vimeo Videos</li>
+                        <li>Easy Align of Captions</li>
+                        <li>Change Speed of Transitions</li>
+                        <li>Set per slide Link and Target</li>
+                        <li>Set Start time and speed of Captions</li>
+                        <li>Set End time and speed of Captions</li>
+                        <li>Set different End and Start <b>Transitions</b> of Captions</li>
+                        <li>Set link per Captions</li>
+                        <li>Add YouTube and Vimeo Captions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" id="howitworks">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        HOW DOES IT WORK?
+                    </h1>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Strapslide is item based. Therefore, it uses list items for navigation. 
+                        It has minimal Javascript use, therefore grants complete control to anyone
+                        with a little HTML and CSS knowledge.
+                        <br/>
+                        All you have to do is to copy the markup or use one of the already made templates.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" id="htmlstructure">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        HTML STRUCTURE
+                    </h1>
+                    <hr/>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Strapslide uses bootstrap elements as a markup. Our main container can be either simple, boxed <label class="label label-info">row</label> or fluid <label class="label label-info">row-fluid</label>. The fluid container allows it to take any size, being 
+                        completely responsive. The boxed container will adjust according to the width of the span it's in. 
+                        <br/><br/>
+
+                        We have a spanx structure which defines our slider width, spanning over x out of 12 columns.
+                        <b>Each list element represents a slide.</b> This is what interests you. Each slide has a background image and an content area. 
+
+                        <br/><br/>
+                        You can add anything in the content area: <b>text, images, videos, audio files, iframes, anything</b>. 
+                        The markup inside the content area div <label class="label label-info">strapslide-content</label> can be simple HTML or Bootstrap structured and is also real time responsive through media queries.
+
+                        <br/><br/>
+                        The slide which starts needs to have the <label class="label label-info">active</label> class.
+
+
+                    </p>
+
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">&lt;!-- STRAPSLIDE --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;strapslide&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;strapslide&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- PRELOADER --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;preloader text-center&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;images/loader.gif&quot;</span> <span style="color: #bbbbbb">alt=</span><span style="color: #ed9d13">&quot;Loading..&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;loader&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /PRELOADER --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- STRAPSLIDE CONTAINER --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;strapslide-container&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- SLIDE --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;slide&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- SLIDE CONTENT --&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;slide-content container-fluid&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- /SLIDE CONTENT --&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- BACKGROUND IMAGE --&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;images/background.jpg&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;background-image&quot;</span> <span style="color: #bbbbbb">alt=</span><span style="color: #ed9d13">&quot;&quot;</span><span style="color: #6ab825; font-weight: bold">/&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- /BACKGROUND IMAGE --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- /SLIDE --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /STRAPSLIDE CONTAINER --&gt;</span> 
+
+        <span style="color: #999999; font-style: italic">&lt;!-- PROGRESS BAR --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;row-fluid&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;span12&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;progress progress-striped&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;bar&quot;</span> <span style="color: #bbbbbb">style=</span><span style="color: #ed9d13">&quot;width: 20%;&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /PROGRESS BAR --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- NEXT-PREV NAVIGATION --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;row-fluid strapslide-nav&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;prev btn btn-large btn-primary&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span><span style="color: #d0d0d0">&amp;lt;</span><span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;next btn btn-large btn-primary&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span><span style="color: #d0d0d0">&amp;gt;</span><span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /NEXT-PREV NAVIGATION --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- PAGINATION --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;row-fluid strapslide-pagination&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;span4 offset4 text-center pagination&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;ul&gt;</span>
+
+                <span style="color: #6ab825; font-weight: bold">&lt;/ul&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /PAGINATION --&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- /STRAPSLIDE --&gt;</span>
+                        </pre></div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="row" id="cssfiles">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        CSS Files
+                    </h1>
+                    <hr/>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Next, we link up our CSS file inside our <b>head</b> tag. The file can be found inside the <span class="label label-success"><b>strapslide / css</b></span> folder.
+                    </p>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #3498db">&quot;strapslide/css/strapslide.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #3498db">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #3498db">&quot;screen&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span></pre></div>
+
+
+
+
+                    <p><br/>The CSS provided by Bootstrap is very recommended in order to use Strapslide at its full potential.</p>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #3498db">&quot;strapslide/css-bootstrap/bootstrap-responsive.min.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #3498db">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #3498db">&quot;screen&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+  <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #3498db">&quot;strapslide/css-bootstrap/bootstrap.min.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #3498db">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #3498db">&quot;screen&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span></pre></div>
+
+
+                    <br/>
+                    <div class="alert alert-danger">
+                        <strong>Important!</strong> Each of the background images used in strapslide must have the same size.
+                    </div>
+                    <div class="alert alert-warning">
+                        <strong>Warning!</strong> Strapslide <b>.slider-container</b> height must be set manually to prevent any issues.
+                    </div>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #447fcf">#strapslide</span> <span style="color: #447fcf; text-decoration: underline">.slider-container</span><span style="color: #d0d0d0">{</span> 
+        <span style="color: #6ab825; font-weight: bold">height</span><span style="color: #d0d0d0">:</span><span style="color: #3677a9">820px</span><span style="color: #d0d0d0">;</span> 
+    <span style="color: #d0d0d0">}</span>
+                        </pre></div>
+                    <br/>
+                </div>
+            </div>
+
+            <div class="row" id="captionpositioning">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h3 style="font-weight:normal;">
+                        STRAPSLIDE THEMES
+                    </h3>
+                    
+
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='span12'>
+                    
+                    <p>
+                        You can change the strapslide theme by simply including one of the CSS Themes:
+                    </p>
+                    <br/>
+                    
+                    Default:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;strapslide/css/strapslide-default.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #ed9d13">&quot;screen&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span></pre></div>
+                    Minimalistic:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;strapslide/css/strapslide-minimalistic.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #ed9d13">&quot;screen&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span></pre></div>
+                    Metro:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;strapslide/css/strapslide-metro.css&quot;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">media=</span><span style="color: #ed9d13">&quot;screen&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span></pre></div>
+                    <br/>
+                    Or create your own using <span class='label label-info'>strapslide-template.css</span>
+
+                </div>
+            </div>
+
+            <div class="row" id="javascript">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        JAVASCRIPT
+                    </h1>
+                    <hr/>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        First of all, we need to include the required javascript into our HTML page. 
+                        All the required files can be found in the <span class="label label-success"><b>strapslide / js</b></span> folder. We use the jQuery library together with the transit library for animations. The touchswipe and mousewheel plugins bring extra functionality. Strapslide.js puts them all together in a fully working plugin.
+                    </p>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;http://code.jquery.com/jquery.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- jQuery Library --&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js/jquery.touchSwipe.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- Mobile Swipe Feature --&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js/jquery.transit.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- REQUIRED! CSS3 transitions --&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js/jquery.mousewheel.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- Mousewheel Feature --&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js/jquery.fitVids.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- Responsive Videos --&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js/strapslide.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span><span style="color: #999999; font-style: italic">&lt;!-- Slider Plugin --&gt;</span>
+                        </pre></div>
+
+
+
+                    <p><br/>We recommend including the Bootstrap library as well to use strapslide at it's full potential.</p>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js-bootstrap/bootstrap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;strapslide/js-bootstrap/respond.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+                        </pre></div>
+                    <br/>
+                    <p>
+                        Now that we have included the required files and we've set up the mark up, it's time to see what strapslide can really do.
+                    </p>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #d0d0d0">$(</span><span style="color: #ed9d13">&#39;#strapslide&#39;</span><span style="color: #d0d0d0">).strapslide({</span>
+        <span style="color: #d0d0d0">animation:</span> <span style="color: #ed9d13">&quot;string&quot;</span><span style="color: #d0d0d0">,</span>    <span style="color: #999999; font-style: italic">//List of animations, example: &quot;fade, rotatecw, scaleup, top&quot;</span>
+        <span style="color: #d0d0d0">speed:</span> <span style="color: #3677a9">1000</span><span style="color: #d0d0d0">,</span>    <span style="color: #999999; font-style: italic">//Slide animation speed</span>
+        <span style="color: #d0d0d0">timeout:</span> <span style="color: #3677a9">5000</span><span style="color: #d0d0d0">,</span>  <span style="color: #999999; font-style: italic">//Slide display time</span>
+        <span style="color: #d0d0d0">responsive:</span> <span style="color: #ed9d13">&#39;keyword&#39;</span><span style="color: #d0d0d0">,</span>   <span style="color: #999999; font-style: italic">//Responsive mode, example: &#39;resize&#39;, &#39;after&#39;, &#39;none&#39;</span>
+        <span style="color: #d0d0d0">autoplay:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>       <span style="color: #999999; font-style: italic">//Autoplay feature, boolean means: true / false</span>
+        <span style="color: #d0d0d0">preload:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>        <span style="color: #999999; font-style: italic">//Preload feature</span>
+        <span style="color: #d0d0d0">pauseOnHover:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>   <span style="color: #999999; font-style: italic">//Pause On Hover feature</span>
+        <span style="color: #d0d0d0">pagination:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>     <span style="color: #999999; font-style: italic">//Pagination feature</span>
+        <span style="color: #d0d0d0">mousewheel:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>     <span style="color: #999999; font-style: italic">//Mousewheel feature</span>
+        <span style="color: #d0d0d0">keyboard:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span>       <span style="color: #999999; font-style: italic">//Keyboard Navigation feature</span>
+        <span style="color: #d0d0d0">touchscreen:</span> <span style="color: #6ab825; font-weight: bold">boolean</span>     <span style="color: #999999; font-style: italic">//Touchscreen Enabled</span>
+    <span style="color: #d0d0d0">},</span> <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(){</span>
+        <span style="color: #999999; font-style: italic">//callback when slide enters</span>
+    <span style="color: #d0d0d0">},</span> <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(){</span>
+        <span style="color: #999999; font-style: italic">//callback when slide exits</span>
+    <span style="color: #d0d0d0">})</span>
+                        </pre></div>
+
+
+                    <br/><br/>
+                </div>
+            </div>
+
+            <div class="row" id="advanced">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h1 style="font-weight:normal;">
+                        ADVANCED SETTINGS
+                    </h1>
+                    <hr/>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="span12">
+                    <br/>
+                    <p>Here are all the settings and features you can exploit with strapslide:</p>
+
+                </div>
+            </div>
+
+            <div class="row" id="animation">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h3 style="font-weight:normal;">
+                        ANIMATION
+                    </h3>
+                    <hr/>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="span12">
+                    <p>Naturally, the question "What animations does it have?" appears. 
+                        Luckily for you, strapslide comes with a suite of cool CSS3 animations. Any combination of these is possible in the animation input string/p> 
+
+                    <ul style="list-style:square;">
+                        <li><strong>'fade'</strong> - Fade Animation</li>
+                        <li><strong>'right'</strong> - Right Direction</li> 
+                        <li><strong>'left'</strong> - Left Direction </li>
+                        <li><strong>'top'</strong> - Top Direction</li>
+                        <li><strong>'bottom'</strong> - Bottom Direction</li>
+                        <li><strong>'scaleup'</strong> - Scale up</li>
+                        <li><strong>'scaledown'</strong> - Scale down</li>
+                        <li><strong>'rotatecw'</strong> - Rotate Clockwise</li>
+                        <li><strong>'rotateccw'</strong> - Rotate Counterclockwise</li>
+                    </ul>
+                    <br/>
+                </div>
+            </div>
+
+            <div class="row" id="callbacks">
+                <div class="span12 text-center">
+                    <hr/>
+                    <h3 style="font-weight:normal;">
+                        CALLBACKS
+                    </h3>
+                    <hr/>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Each Caption can be animated directly with a function call and has it's own callback!<br/>
+                    </p>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #d0d0d0">callbackin:</span>
+    <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(){</span>
+        <span style="color: #6ab825; font-weight: bold">if</span><span style="color: #d0d0d0">($(</span><span style="color: #3498db">&#39;#strapslide .active&#39;</span><span style="color: #d0d0d0">).attr(</span><span style="color: #3498db">&#39;id&#39;</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">==</span> <span style="color: #3498db">&#39;slideID&#39;</span><span style="color: #d0d0d0">){</span>
+            <span style="color: #d0d0d0">$(</span><span style="color: #3498db">&#39;#caption&#39;</span><span style="color: #d0d0d0">).fxenter(</span><span style="color: #3498db">&quot;string&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">500</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">}</span>
+
+    <span style="color: #d0d0d0">callbackout:</span>
+    <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(){</span>
+        <span style="color: #6ab825; font-weight: bold">if</span><span style="color: #d0d0d0">($(</span><span style="color: #3498db">&#39;#strapslide .active&#39;</span><span style="color: #d0d0d0">).attr(</span><span style="color: #3498db">&#39;id&#39;</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">==</span> <span style="color: #3498db">&#39;slideID&#39;</span><span style="color: #d0d0d0">){</span>
+            <span style="color: #d0d0d0">$(</span><span style="color: #3498db">&#39;#caption&#39;</span><span style="color: #d0d0d0">).fxexit(</span><span style="color: #3498db">&quot;string&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">500</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">}</span>
+                        </pre></div>
+
+                    <br/>
+
+                    <div class="row" id="datacontrol">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h3 style="font-weight:normal;">
+                                DATA-CONTROL
+                            </h3>
+                            <hr/>
+                        </div>
+                    </div>  
+
+
+
+                    <div class="row">
+                        <div class="span12">
+                            <p>With strapslide, you're always <b>unique</b>. That's why we made it possible to set custom settings for each slide.</p>
+
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;li</span> <span style="color: #bbbbbb">class=</span><span style="color: #3498db">&quot;slide active&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #3498db">&quot;slideID&quot;</span> <span style="color: #bbbbbb">data-animation=</span><span style="color: #3498db">&quot;string&quot;</span> <span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #3498db">&quot;container-fluid slide-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">class=</span><span style="color: #3498db">&quot;slide-background&quot;</span> <span style="color: #bbbbbb">src=</span><span style="color: #3498db">&quot;path/to/image.ext&quot;</span><span style="color: #6ab825; font-weight: bold">/&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/li&gt;</span>
+                                </pre></div>
+                            Example:
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold"></span><span style="color: #bbbbbb">data-animation=</span><span style="color: #3498db">&quot;fade, left, scaleup, rotateccw&quot;</span>
+                                </pre></div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row" id="cssclasses">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h3 style="font-weight:normal;">
+                                CSS CLASSES
+                            </h3>
+                            <hr/>
+                        </div>
+                    </div>  
+
+                    <div class="row" id="captionbackgrounds">
+                        <div class="span12">
+                            <p>
+                                The following classes will be helpful on your way to creating the perfect strapslide slider.
+                            </p>
+
+                            <h5 >Caption backgrounds</h5>
+
+                            <!-- HTML generated using hilite.me -->
+                            <div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #447fcf; text-decoration: underline">.background-red</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-orange</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-yellow</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-green</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-blue</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-darkblue</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-lightgray</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-darkgray</span>
+    <span style="color: #447fcf; text-decoration: underline">.background-black</span>
+                                </pre></div>
+
+                        </div>
+                    </div>
+
+                    <div class="row" id="videosmarkup">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h3 style="font-weight:normal;">
+                                VIDEOS MARKUP
+                            </h3>
+                            <p>Can be used inside of .slide-content</p>
+                        </div>
+                    </div>  
+                    <hr/>
+
+                    <div class="row">
+                        <div class="span12">
+
+
+
+                            <h5>Responsive Videos Markup</h5>
+
+
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #d0d0d0">&lt;</span><span style="color: #6ab825; font-weight: bold">div</span> <span style="color: #6ab825; font-weight: bold">class</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;strapslide-video&quot;</span><span style="color: #d0d0d0">&gt;</span>
+        <span style="color: #d0d0d0">&lt;</span><span style="color: #6ab825; font-weight: bold">iframe</span> <span style="color: #6ab825; font-weight: bold">src</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;http://link&quot;</span> <span style="color: #6ab825; font-weight: bold">width</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;500&quot;</span> <span style="color: #6ab825; font-weight: bold">height</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;281&quot;</span> <span style="color: #6ab825; font-weight: bold">frameborder</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;0&quot;</span><span style="color: #d0d0d0">&gt;&lt;/</span><span style="color: #6ab825; font-weight: bold">iframe</span><span style="color: #d0d0d0">&gt;</span>
+    <span style="color: #d0d0d0">&lt;/</span><span style="color: #6ab825; font-weight: bold">div</span><span style="color: #d0d0d0">&gt;</span>
+                                </pre></div>
+
+                            <h5>Fullscreen Video Slide Markup</h5>
+
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #d0d0d0">&lt;</span><span style="color: #6ab825; font-weight: bold">div</span> <span style="color: #6ab825; font-weight: bold">class</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;strapslide-videofullscreen&quot;</span><span style="color: #d0d0d0">&gt;</span>
+        <span style="color: #d0d0d0">&lt;</span><span style="color: #6ab825; font-weight: bold">iframe</span> <span style="color: #6ab825; font-weight: bold">src</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;http://link&quot;</span> <span style="color: #6ab825; font-weight: bold">width</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;500&quot;</span> <span style="color: #6ab825; font-weight: bold">height</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;281&quot;</span> <span style="color: #6ab825; font-weight: bold">frameborder</span><span style="color: #d0d0d0">=</span><span style="color: #3498db">&quot;0&quot;</span><span style="color: #d0d0d0">&gt;&lt;/</span><span style="color: #6ab825; font-weight: bold">iframe</span><span style="color: #d0d0d0">&gt;</span>
+    <span style="color: #d0d0d0">&lt;/</span><span style="color: #6ab825; font-weight: bold">div</span><span style="color: #d0d0d0">&gt;</span>
+                                </pre></div>
+
+                        </div>
+                    </div>
+
+                    <div class="row" id="captionpositioning">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h3 style="font-weight:normal;">
+                                CAPTION POSITIONING
+                            </h3>
+                            Can be set in % or in px.
+                        </div>
+                    </div>  
+                    <hr/>
+                    <div class="row">
+                        <div class="span12">
+
+                            <p>Caption positioning is a great feature. It allows you to position the elements based on the slide's current height.</p>
+
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">data-left=</span><span style="color: #3498db">&quot;number%&quot;</span> <span style="color: #bbbbbb">data-top=</span><span style="color: #3498db">&quot;number%&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">data-right=</span><span style="color: #3498db">&quot;number px&quot;</span> <span style="color: #bbbbbb">data-bottom=</span><span style="color: #3498db">&quot;number px&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+                                </pre></div>
+
+                            <br/>
+                            <p>Therefore, if <span class="label label-info">data-top=&quot;10%&quot;</span> the div will remain at 10% from the top of the slide and responsively change position.</p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="row" id="sourcescredits">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h1 style="font-weight:normal;">
+                                SOURCES AND CREDITS
+                            </h1>
+                            <hr/>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="span12">
+                            The following assets have been used in the creation of strapslide:
+                            <ul style="list-style-image:url('images/liststyle.png');">
+                                <li>jQuery - <a href="http://jquery.com/">http://jquery.com/</a></li>
+                                <li>Twitter Bootstrap - <a href="http://getbootstrap.com/2.3.2/">http://getbootstrap.com/2.3.2/</a></li>
+                                <li>jQuery Transit - <a href="http://ricostacruz.com/jquery.transit/">http://ricostacruz.com/jquery.transit/</a></li>
+                                <li>jQuery TouchSwipe - <a href="http://labs.rampinteractive.co.uk/touchSwipe/demos/">http://labs.rampinteractive.co.uk/touchSwipe/demos/</a></li>
+                                <li>jQuery MouseWheel - <a href="https://github.com/brandonaaron/jquery-mousewheel">https://github.com/brandonaaron/jquery-mousewheel</a></li>
+                                <li>jQuery Timer - <a href="http://jchavannes.com/jquery-timer/demo">http://jchavannes.com/jquery-timer/demo</a></li>
+                                <li>jQuery FitVids - <a href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row" id="endofdocumentation">
+                        <div class="span12 text-center">
+                            <hr/>
+                            <h1 style="font-weight:normal;">
+                                END OF DOCUMENTATION
+                            </h1>
+                            <hr/>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="span12">
+                            <p><b>You're awesome!</b> You've just learned the basics about using strapslide.</p>
+                            <p>Here's my email: <a href="mailto:alex@grozav.com">alex@grozav.com</a>. If you've got any questions, feel free to ask me.
+
+
+
+                                With your purchase, you're eligible for all the future updates strapslide will get.<br/> Prepare for some cool stuff!</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span12">
+                            <br/>
+                            <h3 style="font-weight:normal; text-transform:uppercase;"><b>Thank you</b> for reading and thanks again for buying!</h3>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+
+                        <div class="span12">
+                            <small>Copyright &copy; <a href="http://grozav.com" target="_blank">Grozav</a> 2013. Some rights reserved.</small>
+                            <br/><br/>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="strapslide/js-bootstrap/bootstrap.min.js">
+        </script>
+        <script src="strapslide/js-bootstrap/respond.min.js">
+        </script>
+
+        <!-- JavaScript plugins (requires jQuery) -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="strapslide/js/jquery.touchSwipe.min.js"></script>
+        <script src="strapslide/js/jquery.transit.min.js"></script>
+        <script src="strapslide/js/jquery.mousewheel.js"></script>
+        <!-- Slider plugin -->
+        <script src="strapslide/js/strapslide.js"></script>
+        <!-- Script -->
+        <script>
+            $(document).ready(function() {
+
+                $("#strapslide2").strapslide({
+                    animation: "scaledown",
+                    speed: 800,
+                    timeout: 3000,
+                    preload: 'none',
+                    autoplay: true,
+                    autoHeight: false,
+                    pagination: false,
+                    mousewheel: true,
+                    pauseOnHover: true
+                }, function() {
+                    if ($('#strapslide2 .active').attr('id') == 'imboxed') {
+                        $('#imboxedtext').animationIn('scaleup', 300);
+                    }
+                    if ($('#strapslide2 .active').attr('id') == 'imunlimited') {
+                        $('#imunlimitedtext').animationIn('scaledown', 300);
+                    }
+                    if ($('#strapslide2 .active').attr('id') == 'showtime') {
+                        $('#showtimetext').animationIn('fromtop', 300);
+                    }
+                    if ($('#strapslide2 .active').attr('id') == 'scrollable') {
+                        $('#scrollabletext').animationIn('frombottom', 300);
+                    }
+                    if ($('#strapslide2 .active').attr('id') == 'imstrapslide') {
+                        $('#imstrapslidetext').animationIn('scaleuprotatecw', 300);
+                    }
+                });
+
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 100)
+                        $('#totop').fadeIn(500);
+                    else
+                        $('#totop').fadeOut(500);
+                })
+
+                $('#totop').click(function() {
+                    $("html, body").animate({scrollTop: "0px"});
+                });
+
+                $('#table li a').click(function(e) {
+                    var href = $(this).attr('href');
+                    $('html, body').animate({scrollTop: $(href).position().top}, 'slow');
+                    e.preventDefault();
+                });
+
+            });
+        </script>
+
+    </body>
+</html>
+

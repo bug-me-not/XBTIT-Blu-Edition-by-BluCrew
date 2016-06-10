@@ -1,0 +1,198 @@
+/*========================*/
+/*==== User CSS ====*/
+/*========================*/
+
+/*==== Strapslide Container Height ====*/
+#strapslide > .strapslide-container{
+    height:500px; 
+}
+
+.strapslide > .strapslide-pagination{
+    position:absolute; 
+    bottom:20px;
+}
+
+.strapslide h1, .strapslide h2, .strapslide h3, .strapslide h4{
+    font-weight:normal;
+}
+
+
+/*========================*/
+/*==== Strapslide CSS ====*/
+/*========================*/
+
+.strapslide{
+    width:100%;
+    display:block;
+    position:relative;
+    float:left;
+}
+
+/*==== Strapslide Container ====*/
+.strapslide > .strapslide-container{
+    width:100%;
+    position:relative;
+    display:block;
+    overflow:hidden;
+}
+
+/*==== Strapslide Slides ====*/
+.strapslide > .strapslide-container > .slide{
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+}
+.strapslide > .strapslide-container > .slide.active{
+    display:block;
+    z-index:1;
+}
+
+/*==== Strapslide Background Image ====*/
+.strapslide > .strapslide-container > .slide > .background-image{
+    position:static;
+    top:0;
+    left:0;
+    max-width:none!important;
+}
+
+/*==== Strapslide Slide Content ====*/
+.strapslide > .strapslide-container > .slide > .slide-content{
+    margin:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+.strapslide .slide-content.container-fluid{
+    position:absolute;
+    width:100%;
+    padding-left:0;
+    padding-right:0;    
+}
+
+/*==== Strapslide Pagination ====*/
+.strapslide > .strapslide-pagination{
+    z-index:99;
+}
+
+/*==== Strapslide Navigation ====*/
+.strapslide > .strapslide-nav{
+    position:absolute; 
+    top:50%; 
+    margin-top:-40px; 
+    z-index:99;
+}
+.strapslide > .strapslide-nav .next{
+    right:15px;
+    float:right;
+    position:absolute;
+}
+.strapslide > .strapslide-nav .prev{
+    left:15px;
+    float:left;
+    position:absolute;
+}
+
+/*==== Strapslide Progress Bar ====*/
+.strapslide .progress{
+    height:5px;
+}
+
+/*==== Strapslide Preloader ====*/
+.strapslide > .preloader{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:black;
+    display:block;
+    z-index:999;
+    text-align:center;
+}
+.strapslide > .preloader > #loader{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-24px;
+    margin-left:-24px;
+    display:block;
+}
+
+/*==== Strapslide FullWidth Class ====*/
+.background-fullwidth{
+    width:100%;
+}
+
+.reference-image{
+    display:block;
+    position:relative;
+    visibility:hidden;
+}
+
+/*==== Strapslide Video ====*/
+.strapslide-video{
+    background:black;
+}
+
+/*==== Strapslide VideoFullscreen ====*/
+.strapslide-videofullscreen{
+    top:0;
+    left:0;
+}
+.strapslide-videofullscreen iframe, .strapslide-videofullscreen object, .strapslide-videofullscreen embed{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+}
+
+
+/*==== Default Background Colors ====*/
+.strapslide .background-red{
+    color:white;
+    background: #e74c3c;
+    padding:5px 10px;
+}
+.strapslide .background-orange{
+    color:white;
+    background: #e67e22;
+    padding:5px 10px;
+}
+.strapslide .background-yellow{
+    background: #f1c40f;
+    padding:5px 10px;
+}
+.strapslide .background-green{
+    background: #1abc9c;
+    padding:5px 10px;
+}
+.strapslide .background-blue{
+    color:white;
+    background: #3498db;
+    padding:5px 10px;
+}
+.strapslide .background-darkblue{
+    color:white;
+    background: #0074cd;
+    padding:5px 10px;
+}
+.strapslide .background-lightgray{
+    background: #7f8c8d;
+    padding:5px 10px;
+}
+.strapslide .background-darkgray{
+    color:white;
+    background: #34495e;
+    padding:5px 10px;
+}
+.strapslide .background-black{
+    color:white;
+    background: black;
+    padding:5px 10px;
+}
