@@ -188,23 +188,23 @@ else
    $_POST['name']=$CURUSER["username"];
 
    $contacttpl->set("con2","<form name='frmSelect' method='POST' action='index.php?page=contact'>
-   <table border='0'>
-   <tr><td>Subject</td><td><select name='cat' onChange='handleOnChange(this);'>
+   <table class='table table-bordered'>
+   <tr><td>Subject</td><td><select name='cat' class='form-control' onChange='handleOnChange(this);'>
    <option>Select Main Subject</option>
    <option>General Support</option>
    <option>Upload Errors</option>
    <option>Download Errors</option>
    <option>Bug Reports</option>
    <option>Advertising</option>
-   </select>&nbsp;&nbsp;&nbsp;&nbsp;<select name=\"subcat\">
+   </select>&nbsp;&nbsp;&nbsp;&nbsp;<select class='form-control' name=\"subcat\">
    <option>Select A Subcategory</option>
    </select></td></tr>
    <tr><td></td><td></td></tr>
-   <tr><td>Your Username</td><td><input type=\"text\" name=\"name\" value=\"".$_POST['name']."\" size=\"50\" maxlength=\"200\"></td></tr>
+   <tr><td>Your Username</td><td><input type=\"text\" class='form-control' name=\"name\" value=\"".$_POST['name']."\" size=\"50\" maxlength=\"200\"></td></tr>
    <tr><td></td><td></td></tr>
-   <tr><td>Email Address</td><td><input type=\"text\" name=\"email\" value=\"".$_POST['email']."\" size=\"50\" maxlength=\"200\"></td></tr>
+   <tr><td>Email Address</td><td><input type=\"text\" class='form-control' name=\"email\" value=\"".$_POST['email']."\" size=\"50\" maxlength=\"200\"></td></tr>
    <tr><td></td><td></td></tr>
-   <tr><td>Message</td><td><textarea name=\"message\" cols=\"39\" rows=\"10\">".$_POST['message']."</textarea></td></tr>");
+   <tr><td>Message</td><td><textarea name=\"message\" class='form-control' cols=\"39\" rows=\"10\">".$_POST['message']."</textarea></td></tr>");
 
    //captcha
    global $USE_IMAGECODE,$THIS_BASEPATH;
@@ -256,9 +256,9 @@ else
    }
    //captcha
    $contacttpl->set("con3","<input type=\"hidden\" name=\"ipaddress\" value=\"$ipaddress\">
-   <tr><td>&nbsp;</td><td><input type=\"submit\" name=\"submit\" value=\"Send\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" name=\"reset\" value=\"Reset\"></td></tr>
+   <tr><td>&nbsp;</td><td><input type=\"submit\" class='btn btn-sm btn-primary' name=\"submit\" value=\"Send\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"reset\" class='btn btn-sm btn-danger' name=\"reset\" value=\"Reset\"></td></tr>
    </form>
    </table>
-   <b>Your IP Address Is - ($ipaddress).</b>");
+   <b><p class='text-warning'>Your IP Address Is - ($ipaddress)</p></b>");
 }
 ?>

@@ -38,25 +38,31 @@ function fillsubcat(xmlreply, subcatelmt)
 }
 </script>
 
-<table width=50% align=center><tr><td class=header>
-If you need to contact us for any reason you may either send an administrator a private message, alternatively you may email us with the form below.
-<BR><BR>
-<b>Please be aware that we will not reply regarding help downloading or uploading. Please use the forum for these kind of problems.</b><br><br>This form is strictly for contacting us regarding website problems or concerns.<br><br>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Contact Us</h4>
+</div>
+<table>
+<center><p class='text-danger'>This form is strictly for contacting us regarding website problems or concerns.</p></center>
 
 <tag:con2 />
 
 <if:CAPTCHA>
     <tr>
        <td align="left" class="header">Image Code:</td>
-       <td align="left" class="lista"><input type="text" name="private_key" maxlength="6" size="6" value="" />&nbsp;&nbsp;<tag:upload_captcha /></td>
+       <td align="left" class="lista"><input type="text" class='form-control' name="private_key" maxlength="6" size="6" value="" />&nbsp;&nbsp;<tag:upload_captcha /></td>
     </tr>
     <else:CAPTCHA>
     <tr>
        <td align="left" class="header">Security Code:</td>
-       <td align="left" class="lista"><tag:scode_question /><input type="text" name="scode_answer" maxlength="6" size="6" value="" /></td>
+       <td align="left" class="lista"><tag:scode_question /><input type="text" class='form-control' name="scode_answer" maxlength="6" size="6" value="" /></td>
     </tr>
 </if:CAPTCHA>
 
 <tag:con3 />
 
-</td></tr></table>
+</table>
+<div class="panel-footer">
+</div>
+</div>
