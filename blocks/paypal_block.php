@@ -20,14 +20,14 @@ print("<i class='fa fa-credit-card-alt fa-4x'></i>");
 //MANUAL PP
 
 //go fund me
-print("<p align=\"center\"><span style='color:red;'>Donate via Gofundme:</span></p>");
-print("<p align=\"center\"><span style='color:red;'>(Visa/Mastercard/Discover)</span></p>");
-print "<a target=\"_blank\" style=\"border:none;\" href=\"http://www.gofundme.com/kfukmgyc?utm_medium=wdgt\" title=\"Visit this page now.\"><i class='fa fa-usd fa-5x'></i></a><br />";
+print("<p align=\"center\" class='text-danger'>Donate via Gofundme</p>");
+print("<p align=\"center\" class='text-danger'>(Visa/Mastercard/Discover)</p><br />");
+print "<a target=\"_blank\" style=\"border:none;\" href=\"http://www.gofundme.com/kfukmgyc?utm_medium=wdgt\" title=\"Visit this page now.\"class=\"donate\">DONATE NOW</a><br />";
 //go fund me
 
 print "<br><a href=index.php?page=forum&action=viewtopic&topicid=1600&pages=1>Donor's Perks Here</a>&nbsp;";
 
-echo "<br /><br /></td>\n</tr>\n</table>\n";
+echo "<br /></td>\n</tr>\n</table>\n";
 
 block_end();
 
