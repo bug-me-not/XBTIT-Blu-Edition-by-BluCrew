@@ -83,7 +83,6 @@
 
 /*==== Strapslide Navigation ====*/
 .strapslide > .strapslide-nav{
-    position:absolute; 
     top:50%; 
     margin-top:-40px; 
     z-index:99;
@@ -91,12 +90,12 @@
 .strapslide > .strapslide-nav .next{
     right:15px;
     float:right;
-    position:absolute;
+    position:relative;
 }
 .strapslide > .strapslide-nav .prev{
     left:15px;
     float:left;
-    position:absolute;
+    position:relative;
 }
 
 /*==== Strapslide Progress Bar ====*/

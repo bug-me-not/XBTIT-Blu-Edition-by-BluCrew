@@ -6,7 +6,7 @@
     <body>
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Latest Uploads</h4>
+<h4 class="text-center">Latest Uploads(Under Development)</h4>
 </div>
         <div class="container-fluid" style="padding:0;">
             <div class="row-fluid">
@@ -25,110 +25,41 @@
 
                         <!-- SLIDE -->
                         <div class="slide active" data-animation="fade, scaledown, top" id="slide1">
-                            <!-- SLIDE CONTENT -->
-                            <div class="slide-content container-fluid">
-
-                                <div class="row-fluid" data-top="10%" id="slide1_content">
-                                    <div class="span12 offset6" id="slide1_text1">
-                                        <div>
-                                            <h1>TRON LEGACY</h1>
-                                            <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /SLIDE CONTENT -->
-                            <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
-                            <!-- /BACKGROUND IMAGE -->
+                        <!-- BACKGROUND IMAGE -->
+                        <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
+                        <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
                          <!-- SLIDE -->
                         <div class="slide" data-animation="fade, rotatecw, top" id="slide2">
-                            <!-- SLIDE CONTENT -->
-                            <div class="slide-content container-fluid">
-
-                                <div class="row-fluid" data-top="10%" id="slide2_content">
-                                    <div class="span4 offset2" id="slide1_text1">
-                                        <div>
-                                             <h1>TRON LEGACY</h1>
-                                            <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /SLIDE CONTENT -->
-                            <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/metro_phone.png" class="background-image" alt=""/>
-                            <!-- /BACKGROUND IMAGE -->
+                        <!-- BACKGROUND IMAGE -->
+                        <img src="Strapslide/images/metro_phone.png" class="background-image" alt=""/>
+                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
                          <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide3">
-                            <!-- SLIDE CONTENT -->
-                            <div class="slide-content container-fluid">
-
-                                <div class="row-fluid" data-top="10%" id="slide3_content">
-                                    <div class="span4 offset2" id="slide1_text1">
-                                        <div>
-                                            <h1>TRON LEGACY</h1>
-                                            <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /SLIDE CONTENT -->
-                            <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/tron.jpg" class="background-image" alt=""/>
-                            <!-- /BACKGROUND IMAGE -->
+                        <!-- BACKGROUND IMAGE -->
+                        <img src="Strapslide/images/tron.jpg" class="background-image" alt=""/>
+                        <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
-<!-- SLIDE -->
+                        <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide4">
-                            <!-- SLIDE CONTENT -->
-                            <div class="slide-content container-fluid">
-
-                                <div class="row-fluid" data-top="10%" id="slide3_content">
-                                    <div class="span4 offset2" id="slide1_text1">
-                                        <div>
-                                            <h1>TRON LEGACY</h1>
-                                            <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /SLIDE CONTENT -->
-                            <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
-                            <!-- /BACKGROUND IMAGE -->
+                        <!-- BACKGROUND IMAGE -->
+                        <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
+                        <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
-<!-- SLIDE -->
+                        <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide5">
-                            <!-- SLIDE CONTENT -->
-                            <div class="slide-content container-fluid">
-
-                                <div class="row-fluid" data-top="10%" id="slide3_content">
-                                    <div class="span4 offset2" id="slide1_text1">
-                                        <div>
-                                            <h1>TRON LEGACY</h1>
-                                            <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /SLIDE CONTENT -->
-                            <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
-                            <!-- /BACKGROUND IMAGE -->
+                        <!-- BACKGROUND IMAGE -->
+                        <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
+                        <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
@@ -143,8 +74,19 @@
                             </div>
                         </div>
                     </div>
-                    <br>
                     <!-- /PROGRESS BAR -->
+
+                    <!-- TORRENT INFO -->
+                    <div>
+                    <h2>Tron Legacy 2010 Blu-ray 1080p AVC DTS-HD MA 7.1 tater44-BluRG</h2>
+                    <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
+                    </div>
+                    <!-- TORRENT INFO -->
+
+                    <!-- DOWNLOAD BUTTON -->
+                    <button class="btn btn-labeled btn-danger" type="button">
+                    <span class="btn-label"><i class="fa fa-download"></i></span><a href="#" target="_blank">Download</a></button>
+                    <!-- DOWNLAOD BUTTON -->
 
                     <!-- NEXT-PREV NAVIGATION -->
                     <div class="row-fluid strapslide-nav">
@@ -156,15 +98,6 @@
                         </div>
                     </div>
                     <!-- /NEXT-PREV NAVIGATION -->
-
-                    <!-- DOWNLOAD BUTTON -->
-                    <div class="row-fluid strapslide-download">
-                    <div class="span12" style="float:right;">
-                    <button class="btn btn-labeled btn-danger" type="button">
-                    <span class="btn-label"><i class="fa fa-download"></i></span><a href="#" target="_blank">Download</a></button>
-                    </div>
-                    </div>
-                    <!-- DOWNLAOD BUTTON -->
 
                     <!-- PAGINATION -->
                     <div class="row-fluid strapslide-pagination">

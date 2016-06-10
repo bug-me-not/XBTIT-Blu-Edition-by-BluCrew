@@ -2,6 +2,9 @@
 
 /* Download Button */
 .strapslide-download{
+     height:100%;
+    width:100%;
+    display:block;
     float:right;
 }
 
@@ -97,7 +100,7 @@
     display:none;
 }
 .strapslide:hover .strapslide-nav{
-    display:block;
+
 }
 
 .strapslide .prev a, .strapslide .next a{
@@ -157,7 +160,7 @@
     display:block;
     width:auto;
     height:30px;
-    margin-left:-40px;
+    margin-left:325px;
     text-indent:-10000px;
 }
 
