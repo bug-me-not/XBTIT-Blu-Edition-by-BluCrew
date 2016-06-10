@@ -1,10 +1,19 @@
 /*==== Strapslide Minimalistic ====*/
 
+/* Download Button */
+.strapslide-download{
+    float:right;
+}
+
 /*==== Slides ====*/
 
-.strapslide h1, .strapslide h2, .strapslide h3, .strapslide h4, .strapslide p{
+.strapslide h1, .strapslide h2, .strapslide h3, .strapslide h4{
+    color:#E64141;
+    font-weight:bolder;
+}
+
+.strapslide p{
     color:#fff;
-    font-weight:normal;
 }
 
 .tilerow{
@@ -80,7 +89,7 @@
 
 /*==== Container ====*/
 #strapslide > .strapslide-container{
-    height:800px;
+    height:500px;
 }
 
 /*==== Navigation ====*/

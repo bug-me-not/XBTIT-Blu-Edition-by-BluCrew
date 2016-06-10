@@ -1,7 +1,6 @@
 <html>
     <head>
         <link href="Strapslide/strapslide/css/strapslide.css" rel="stylesheet" media="screen" />
-
         <link href="Strapslide/strapslide/css/strapslide-metro.css" rel="stylesheet" media="screen" />
     </head>
     <body>
@@ -32,17 +31,11 @@
                                 <div class="row-fluid" data-top="10%" id="slide1_content">
                                     <div class="span12 offset6" id="slide1_text1">
                                         <div>
-                                            <h2>TRON LEGACY</h2>
+                                            <h1>TRON LEGACY</h1>
                                             <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                            <div class="metrobtn transparent">
-                                                <a href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931" target="_blank">
-                                                    DOWNLOAD
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- /SLIDE CONTENT -->
                             <!-- BACKGROUND IMAGE -->
@@ -59,13 +52,8 @@
                                 <div class="row-fluid" data-top="10%" id="slide2_content">
                                     <div class="span4 offset2" id="slide1_text1">
                                         <div>
-                                            <h2>TRON LEGACY</h2>
+                                             <h1>TRON LEGACY</h1>
                                             <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                            <div class="metrobtn transparent">
-                                                <a href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931" target="_blank">
-                                                    DOWNLOAD
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -86,13 +74,8 @@
                                 <div class="row-fluid" data-top="10%" id="slide3_content">
                                     <div class="span4 offset2" id="slide1_text1">
                                         <div>
-                                            <h2>TRON LEGACY</h2>
+                                            <h1>TRON LEGACY</h1>
                                             <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                            <div class="metrobtn transparent">
-                                                <a href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931" target="_blank">
-                                                    DOWNLOAD
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +83,7 @@
                             </div>
                             <!-- /SLIDE CONTENT -->
                             <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
+                            <img src="Strapslide/images/tron.jpg" class="background-image" alt=""/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -113,13 +96,8 @@
                                 <div class="row-fluid" data-top="10%" id="slide3_content">
                                     <div class="span4 offset2" id="slide1_text1">
                                         <div>
-                                            <h2>TRON LEGACY</h2>
+                                            <h1>TRON LEGACY</h1>
                                             <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                            <div class="metrobtn transparent">
-                                                <a href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931" target="_blank">
-                                                    DOWNLOAD
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +105,7 @@
                             </div>
                             <!-- /SLIDE CONTENT -->
                             <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
+                            <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -140,13 +118,8 @@
                                 <div class="row-fluid" data-top="10%" id="slide3_content">
                                     <div class="span4 offset2" id="slide1_text1">
                                         <div>
-                                            <h2>TRON LEGACY</h2>
+                                            <h1>TRON LEGACY</h1>
                                             <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
-                                            <div class="metrobtn transparent">
-                                                <a href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931" target="_blank">
-                                                    DOWNLOAD
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,13 +127,14 @@
                             </div>
                             <!-- /SLIDE CONTENT -->
                             <!-- BACKGROUND IMAGE -->
-                            <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
+                            <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
                     </div>
                     <!-- /STRAPSLIDE CONTAINER --> 
+
                     <!-- PROGRESS BAR -->
                     <div class="row-fluid">
                         <div class="span12">
@@ -182,6 +156,15 @@
                         </div>
                     </div>
                     <!-- /NEXT-PREV NAVIGATION -->
+
+                    <!-- DOWNLOAD BUTTON -->
+                    <div class="row-fluid strapslide-download">
+                    <div class="span12" style="float:right;">
+                    <button class="btn btn-labeled btn-danger" type="button">
+                    <span class="btn-label"><i class="fa fa-download"></i></span><a href="#" target="_blank">Download</a></button>
+                    </div>
+                    </div>
+                    <!-- DOWNLAOD BUTTON -->
 
                     <!-- PAGINATION -->
                     <div class="row-fluid strapslide-pagination">
