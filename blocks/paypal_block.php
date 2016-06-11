@@ -14,10 +14,6 @@ block_begin("Donate");
 echo "<table width='100%'>\n<tr>\n<td class='lista' style='text-align:center;'><br />";
 
 print("<i class='fa fa-credit-card-alt fa-4x'></i>");
-//MANUAL PP
-//print("<br /><p align=\"center\"><span style='color:red;'>Donate via PayPal:</span><br /></p>");
-//print "<a href=index.php?page=forum&action=viewtopic&topicid=1579&msg=10832#10832><img src=images/paypal.png border=0></a>&nbsp;";
-//MANUAL PP
 
 //go fund me
 print("<p align=\"center\" class='text-danger'>Donate via Gofundme</p>");
@@ -25,6 +21,7 @@ print("<p align=\"center\" class='text-danger'>(Visa/Mastercard/Discover)</p><br
 print "<a target=\"_blank\" style=\"border:none;\" href=\"http://www.gofundme.com/kfukmgyc?utm_medium=wdgt\" title=\"Visit this page now.\"class=\"donate\">DONATE NOW</a><br />";
 //go fund me
 
+// Donors Perks Modal
 print '<br><button class="btn btn-danger btn-xs" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Donors Perks</button>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
@@ -78,19 +75,7 @@ Get 1 Invite PER 5 USD donated
 <br>
 VIP Rank includes the following perks:
 <br>
-Warnings removed
-1 Invite if donation is over 10 USD
-Hit and run log count cleared
-Immune to H&R System
-Immune to Low Ratio System
-Immune to Auto Warn and Ban System
-Higher Requests Priority 
-Donor Star
-Sparkle Effects Username
-Sitewide Freeleech
-VIP Forum Access (Includes Forum for other tracker invites)
-That warm fuzzy feeling that your helping the site O:-
-
+Warnings removed &nbsp;&nbsp;|&nbsp;&nbsp; 1 Invite if donation is over 10 USD &nbsp;&nbsp;|&nbsp;&nbsp; Hit and run log count cleared &nbsp;&nbsp;|&nbsp;&nbsp; Immune to H&R System  &nbsp;&nbsp;|&nbsp;&nbsp; Immune to Low Ratio System  &nbsp;&nbsp;|&nbsp;&nbsp;  Immune to Auto Warn and Ban System  &nbsp;&nbsp;|&nbsp;&nbsp;  Higher Requests Priority  &nbsp;&nbsp;|&nbsp;&nbsp;  Donor Star  &nbsp;&nbsp;|&nbsp;&nbsp;  Sparkle Effects Username  &nbsp;&nbsp;|&nbsp;&nbsp;  Sitewide Freeleech  &nbsp;&nbsp;|&nbsp;&nbsp;  VIP Forum Access (Includes Forum for other tracker invites)  &nbsp;&nbsp;|&nbsp;&nbsp;  That warm fuzzy feeling that your helping the site O:-
 </div>
 <div class="modal-footer">
 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -98,6 +83,7 @@ That warm fuzzy feeling that your helping the site O:-
 </div>
 </div>
 </div>';
+// Donors Perks Modal
 
 echo "<br /></td>\n</tr>\n</table>\n";
 
