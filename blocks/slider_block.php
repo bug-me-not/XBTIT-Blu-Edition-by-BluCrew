@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <link href="Strapslide/strapslide/css/strapslide.css" rel="stylesheet" media="screen" />
@@ -6,7 +7,7 @@
     <body>
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Latest Uploads(Under Development)</h4>
+<h4 class="text-center">Latest Internals(Under Development)</h4>
 </div>
         <div class="container-fluid" style="padding:0;">
             <div class="row-fluid">
@@ -78,7 +79,7 @@
 
                     <!-- TORRENT INFO -->
                     <div>
-                    <h2>Tron Legacy 2010 Blu-ray 1080p AVC DTS-HD MA 7.1 tater44-BluRG</h2>
+                    <h2>TITLE</h2>
                     <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
                     </div>
                     <!-- TORRENT INFO -->
