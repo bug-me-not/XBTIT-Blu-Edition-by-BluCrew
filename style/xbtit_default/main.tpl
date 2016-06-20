@@ -249,6 +249,7 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
     </div>
   </div>
 </div>
+
 <!-- Footer -->
 <if:valid_user>
 <footer>
@@ -261,6 +262,7 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
           </div>
           <div class="panel-body">
             <center>
+              <p>Made with <i class="fa fa-fw fa-magic"></i> by <a href="#">BluCrew</a></p>
               <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
               <p class="text-success">Copyright &copy; 2016 Styled By HDVinnie</p>
               <p class="text-danger"><tag:xbtit_debug /></p>
