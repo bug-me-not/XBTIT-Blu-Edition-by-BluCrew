@@ -1,11 +1,5 @@
-<style>
-#private {
-	background-color: #fff;
-	color: #000;
-}
-</style>
-<div id="private">
-<table width="100%" cellspacing="0" cellpadding="0">
-<tr><td align="center"><img src="images/private.jpg"></td></tr>
-<tr><td align="center"><tag:username /> <tag:language.PP_PRIVATE_INFO />.<tag:private_send_pm /></td></tr></table>
+<div class="alert alert-dismissable alert-bg-white alert-danger">
+<button data-dismiss="alert" class="close" type="button">×</button>
+<div class="icon"><i class="fa fa-lock"></i></div>
+<strong><tag:username />&nbsp;<tag:language.PP_PRIVATE_INFO />. Feel free to PM him/her.<tag:private_send_pm /></strong>
 </div>
