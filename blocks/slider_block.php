@@ -27,7 +27,7 @@
                         <!-- SLIDE -->
                         <div class="slide active" data-animation="fade, scaledown, top" id="slide1">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/metro_tablet.png" class="background-image" alt=""/>
+                        <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -35,7 +35,7 @@
                          <!-- SLIDE -->
                         <div class="slide" data-animation="fade, rotatecw, top" id="slide2">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/metro_phone.png" class="background-image" alt=""/>
+                        <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
                          <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
