@@ -462,7 +462,7 @@ img[src$="#nsfw"]:hover {
     margin-left: -15px;
 }
 .profile.panel .info-col .btn-group .btn{
-    width: 33.33%;
+    width: 25%;
     border-radius: 0;
 }
 .profile.panel .info-col{

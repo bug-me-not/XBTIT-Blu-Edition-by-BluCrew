@@ -24,9 +24,10 @@
 </div>
 
 <div class="btn-group btn-block">
-<button class="btn btn-green btn-lg">Seeding:<tag:seeding /></button>
-<button class="btn btn-danger btn-lg">Leeching:<tag:leeching /></button>
-<button class="btn btn-blue btn-lg">Completed:<tag:snatched /></button>
+<button class="btn btn-success btn-lg type="button"">Upload Count:<tag:uploads /></button>
+<button class="btn btn-green btn-lg type="button"">Seeding:<tag:seeding /></button>
+<button class="btn btn-danger btn-lg type="button"">Leeching:<tag:leeching /></button>
+<button class="btn btn-blue btn-lg type="button"">Completed:<tag:snatched /></button>
 </div>
 </div>
 </div>
