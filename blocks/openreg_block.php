@@ -46,7 +46,7 @@
 </center>
 
 <script>
-var deadline = 'May 23 2016 7:00:00 EST';
+var deadline = 'July 23 2016 7:00:00 EST'; // SET OPEN REGISTRATION DEADLINE HERE //
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
