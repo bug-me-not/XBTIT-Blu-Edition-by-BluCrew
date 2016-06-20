@@ -17,10 +17,6 @@
 </if:userdetail_has_avatar>
 <div class="header">
 <h1><tag:userdetailarr.userdetail_username /><tag:userdetailarr.userdetail_send_pm /><tag:userdetailarr.userdetail_edit /><tag:userdetailarr.userdetail_delete /><if:watch_1>&nbsp;<a href="index.php?page=watch&do=on&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Watch</button></a>&nbsp;<a href="index.php?page=watch&do=off&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Unwatch</button></a></if:watch_1><if:ban_button_enabled><tag:userdetailarr.userdetail_banbutton /></if:ban_button_enabled></h1>
-<if:about_me_enabled>
-<h4>About Me:<br></h4>
-</if:about_me_enabled>
-<h5><tag:userdetailarr.about_me /></h5>
 </div>
 
 <div class="btn-group btn-block">
