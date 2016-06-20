@@ -478,11 +478,11 @@ if($btit_settings["fmhack_previous_usernames"]=="enabled")
 }
 //$userdetailtpl-> set("userdetail_no_guest", $CURUSER["uid"]>1, TRUE);
 if($CURUSER["uid"] > 1 && $id != $CURUSER["uid"])
-    $userdetailarr["userdetail_send_pm"] = "&nbsp;&nbsp;&nbsp;<a href=\"".(substr($GLOBALS["FORUMLINK"], 0, 3) == "smf"?"index.php?page=forum&amp;action=pm;sa=send;u=".$row["smf_fid"]."":"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($row["username"]))."")."\"><button class='btn btn-xs btn-primary' type='button'>PM</button></a>";
+    $userdetailarr["userdetail_send_pm"] = "&nbsp;<a href=\"".(substr($GLOBALS["FORUMLINK"], 0, 3) == "smf"?"index.php?page=forum&amp;action=pm;sa=send;u=".$row["smf_fid"]."":"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($row["username"]))."")."\"><button class='btn btn-xs btn-primary' type='button'>PM</button></a>";
 if($CURUSER["edit_users"] == "yes" && $id != $CURUSER["uid"])
-    $userdetailarr["userdetail_edit"] = "&nbsp;&nbsp;&nbsp<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=users&amp;action=edit&amp;uid=$id&amp;returnto=".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated_user"] == "true")?$id."_".strtr($row["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."\"><button class='btn btn-xs btn-primary' type='button'>Edit</button></a>";
+    $userdetailarr["userdetail_edit"] = "&nbsp;<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=users&amp;action=edit&amp;uid=$id&amp;returnto=".(($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated_user"] == "true")?$id."_".strtr($row["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."\"><button class='btn btn-xs btn-primary' type='button'>Edit</button></a>";
 if($CURUSER["delete_users"] == "yes" && $id != $CURUSER["uid"])
-    $userdetailarr["userdetail_delete"] = "&nbsp;&nbsp;&nbsp<a onclick=\"return confirm('".AddSlashes($language["DELETE_CONFIRM"])."')\" href=index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=users&amp;action=delete&amp;uid=$id&amp;smf_fid=".$row["smf_fid"]."&amp;returnto=".urlencode("index.php?page=users")."><button class='btn btn-xs btn-primary' type='button'>Delete</button></a>";
+    $userdetailarr["userdetail_delete"] = "&nbsp;<a onclick=\"return confirm('".AddSlashes($language["DELETE_CONFIRM"])."')\" href=index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=users&amp;action=delete&amp;uid=$id&amp;smf_fid=".$row["smf_fid"]."&amp;returnto=".urlencode("index.php?page=users")."><button class='btn btn-xs btn-primary' type='button'>Delete</button></a>";
 if($btit_settings["fmhack_ban_button"] == "enabled")
 {
     if(is_integer($btit_settings["banbutton"]) || substr($btit_settings["banbutton"], 0, 4)!="lro-" || $btit_settings["banbutton"]=="lro-0-0")
@@ -496,10 +496,10 @@ if($btit_settings["fmhack_ban_button"] == "enabled")
             $banButtonAllow=(($CURUSER["id_level"]>=$banButtonPerms[2])?true:false);
     }
     if($id!=$CURUSER["uid"] && $rankOverOrEqual && $row["ban"]=="no" && $banButtonAllow)
-        $userdetailarr["userdetail_banbutton"] = "&nbsp;&nbsp;&nbsp<a href=index.php?page=banbutton&ban_id=".$id."><button class='btn btn-xs btn-primary' type='button'>IP Ban</button></a>";
+        $userdetailarr["userdetail_banbutton"] = "&nbsp;<a href=index.php?page=banbutton&ban_id=".$id."><button class='btn btn-xs btn-primary' type='button'>IP Ban</button></a>";
 }
 $userdetailtpl->set("userdetail_has_avatar", $row["avatar"] && $row["avatar"] != "", true);
-$userdetailarr["userdetail_avatar"] = "<img border=\"0\" onload=\"resize_avatar(this);\" src=\"".htmlspecialchars($row["avatar"])."\" alt=\"\" />";
+$userdetailarr["userdetail_avatar"] = "<img border=\"0\" style=\"height: 188px; width: 138px;\" src=\"".htmlspecialchars($row["avatar"])."\" alt=\"\" />";
 if($btit_settings["fmhack_avatar_signature_sync"] == "enabled")
 {
     $sigshit = array('[img]', '[/img]');

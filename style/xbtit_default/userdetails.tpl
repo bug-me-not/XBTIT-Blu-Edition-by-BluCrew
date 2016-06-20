@@ -3,15 +3,36 @@
 <h4 class="text-center">My Info</h4>
 </div>
 <div class="panel-body">
+
+<!-- Profile Card -->
+<div class="row profile panel">
+<div class="col-md-4 bg_blur ">
+          
+</div>
+<div class="col-md-8  col-xs-12 info-col">
+<if:userdetail_has_avatar>
+<div class="img-rounded picture hidden-xs"><tag:userdetailarr.userdetail_avatar /></div>
+<else:userdetail_has_avatar>
+<img src="https://i.imgur.com/p1Rvxdt.jpg" class="img-rounded picture hidden-xs">
+</if:userdetail_has_avatar>
+<div class="header">
+<h1><tag:userdetailarr.userdetail_username /><tag:userdetailarr.userdetail_send_pm /><tag:userdetailarr.userdetail_edit /><tag:userdetailarr.userdetail_delete /><if:watch_1>&nbsp;<a href="index.php?page=watch&do=on&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Watch</button></a>&nbsp;<a href="index.php?page=watch&do=off&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Unwatch</button></a></if:watch_1><if:ban_button_enabled><tag:userdetailarr.userdetail_banbutton /></if:ban_button_enabled></h1>
+<if:about_me_enabled>
+<h4>About Me:<br></h4>
+</if:about_me_enabled>
+<h5><tag:userdetailarr.about_me /></h5>
+</div>
+
+<div class="btn-group btn-block">
+<button class="btn btn-green btn-lg">Seeding:<tag:userdetailarr.userdetail_seeding /></button>
+<button class="btn btn-danger btn-lg">Leeching:<tag:userdetailarr.userdetail_leeching /></button>
+<button class="btn btn-blue btn-lg">Completed:<tag:userdetailarr.userdetail_completed /></button>
+</div>
+</div>
+</div>
+
 <table class="table table-bordered">
   <tr>
-    <td width="20%" class="header"><tag:language.USERNAME /></td>
-    <td width="80%" class="lista"><tag:userdetailarr.userdetail_username /><tag:userdetailarr.userdetail_send_pm /><tag:userdetailarr.userdetail_edit /><tag:userdetailarr.userdetail_delete /><if:watch_1>&nbsp;<a href="index.php?page=watch&do=on&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Watch</button></a>&nbsp;<a href="index.php?page=watch&do=off&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Unwatch</button></a></if:watch_1><if:ban_button_enabled><tag:userdetailarr.userdetail_banbutton /></if:ban_button_enabled></td>
-
-    <if:userdetail_has_avatar>
-      <td class="lista" align="center" valign="middle" rowspan="4" style="padding:20px 20px 20px 20px;"><tag:userdetailarr.userdetail_avatar /></td>
-    <else:userdetail_has_avatar>
-    </if:userdetail_has_avatar>
 
     <tr>
     <td class="header"><tag:language.PUN /></td>
@@ -220,21 +241,6 @@
    <tr>
     <td class="header">Upload Count</td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_uploads /></td>
-  </tr>
-  
-  <tr>
-    <td class="header">Seeding</td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_seeding /></td>
-  </tr>
-  
-  <tr>
-    <td class="header">Leeching</td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_leeching /></td>
-  </tr>
-  
-  <tr>
-    <td class="header">Snatched</td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_completed /></td>
   </tr>
 
   <tr>
