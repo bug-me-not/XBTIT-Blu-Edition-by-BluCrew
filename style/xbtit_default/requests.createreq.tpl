@@ -81,7 +81,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 			<tag:language.TRAV_REQ_NAME />
 		</td>
 		<td> 
-			<input type='text' name='reqtitle' size='75' class='search' value='<tag:reqtitle />'>
+			<input type='text' name='reqtitle' size='75' class='form-control' value='<tag:reqtitle />'>
 		</td>
 	</tr>
 	<tr>
@@ -97,7 +97,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 			<tag:language.IMDB_SEARCH /> <tag:language.NOTE_ID />
 		</td>
 		<td> 
-			<input type="text" name="imdb" size='10' class='search' value='<tag:imdb />'>
+			<input type="text" name="imdb" size='10' class='form-control' value='<tag:imdb />'>
 		</td>
 	</tr>
 	<tr>
@@ -105,7 +105,7 @@ Please Be Sure To Add Proper IMDB ID If Movie and or Proper TVDB ID is TV Show</
 			<tag:language.TVDB /> <tag:language.NOTE_ID />
 		</td>
 		<td>
-			<input type='text' name='tvdb' size='10' class='search' value='<tag:tvdb />'>
+			<input type='text' name='tvdb' size='10' class='form-control' value='<tag:tvdb />'>
 		</td>
 	</tr>
 	<tr>

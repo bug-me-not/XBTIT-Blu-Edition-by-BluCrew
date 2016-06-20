@@ -27,7 +27,7 @@
 				<tbody>
 					<tr>
 						<td><h1><tag:language.TRAV_REQ_NAME /></h1></td>
-						<td><input type='text' name='title' class='search' size='40' placeholder="<tag:language.TRAV_SEARCH_TITLE />" value="<tag:title_value />"></td>
+						<td><input type='text' name='title' class='form-control' size='40' placeholder="<tag:language.TRAV_SEARCH_TITLE />" value="<tag:title_value />"></td>
 					</tr>
 					<tr>
 						<td><h1><tag:language.TRAV_SELCAT /></h1></td>
