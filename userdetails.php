@@ -109,23 +109,6 @@ if($id > 1)
         $query1_select .= "u.booted, u.whybooted, u.whobooted, u.addbooted,";
     // <-- Booted
 
-//My Uploads
-    $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$id} AND anonymous='false' GROUP BY info_hash");
-    $up_count = sql_num_rows($res_up);
-//My Uploads End
-
-// Seeding/Leeching hack
-    $res = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'seeder' AND pid ='".$row["pid"]."' GROUP BY infohash");
-    $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'leecher' AND pid ='".$row["pid"]."' GROUP BY infohash");
-//$num = $res->fetch_array(); $num1 = $res1->fetch_array();
-    $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
-// END Seeding/Leeching hack
-
-//Snatched torrents
-    $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$id} GROUP BY infohash");
-    $comp_count = sql_num_rows($res_com);
-//Snatched torrents
-
     if($btit_settings["fmhack_group_colours_overall"] == "enabled")
     {
         $query1_select .= "ul.prefixcolor, ul.suffixcolor,";
@@ -2048,4 +2031,24 @@ if($CURUSER["edit_users"]=="yes")
     }
 }
 //Port/Client Info
+
+//My Uploads
+    $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$id} AND anonymous='false' GROUP BY info_hash");
+    $up_count = sql_num_rows($res_up);
+//My Uploads End
+
+// Seeding/Leeching hack
+    $res = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'seeder' AND pid ='".$row["pid"]."' GROUP BY infohash");
+    $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE status = 'leecher' AND pid ='".$row["pid"]."' GROUP BY infohash");
+//$num = $res->fetch_array(); $num1 = $res1->fetch_array();
+    $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1); 
+    $userdetailtpl->set("seeding",$seeder);
+    $userdetailtpl->set("leeching",$leecher);
+// END Seeding/Leeching hack
+
+//Snatched torrents
+    $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$id} GROUP BY infohash");
+    $comp_count = sql_num_rows($res_com);
+    $userdetailtpl->set("snatched",$comp_count);
+//Snatched torrents
 ?>

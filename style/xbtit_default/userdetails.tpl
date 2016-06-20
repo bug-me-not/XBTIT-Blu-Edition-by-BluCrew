@@ -24,9 +24,9 @@
 </div>
 
 <div class="btn-group btn-block">
-<button class="btn btn-green btn-lg">Seeding:<tag:userdetailarr.userdetail_seeding /></button>
-<button class="btn btn-danger btn-lg">Leeching:<tag:userdetailarr.userdetail_leeching /></button>
-<button class="btn btn-blue btn-lg">Completed:<tag:userdetailarr.userdetail_completed /></button>
+<button class="btn btn-green btn-lg">Seeding:<tag:seeding /></button>
+<button class="btn btn-danger btn-lg">Leeching:<tag:leeching /></button>
+<button class="btn btn-blue btn-lg">Completed:<tag:snatched /></button>
 </div>
 </div>
 </div>
