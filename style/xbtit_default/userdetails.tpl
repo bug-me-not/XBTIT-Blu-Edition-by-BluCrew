@@ -7,16 +7,32 @@
 <!-- Profile Card -->
 <div class="row profile panel">
 <div class="col-md-4 bg_blur ">
-          
 </div>
+
 <div class="col-md-8  col-xs-12 info-col">
 <if:userdetail_has_avatar>
 <div class="img-rounded picture hidden-xs"><tag:userdetailarr.userdetail_avatar /></div>
 <else:userdetail_has_avatar>
 <img src="https://i.imgur.com/p1Rvxdt.jpg" class="img-rounded picture hidden-xs">
 </if:userdetail_has_avatar>
+
 <div class="header">
 <h1><tag:userdetailarr.userdetail_username /><tag:userdetailarr.userdetail_send_pm /><tag:userdetailarr.userdetail_edit /><tag:userdetailarr.userdetail_delete /><if:watch_1>&nbsp;<a href="index.php?page=watch&do=on&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Watch</button></a>&nbsp;<a href="index.php?page=watch&do=off&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Unwatch</button></a></if:watch_1><if:ban_button_enabled><tag:userdetailarr.userdetail_banbutton /></if:ban_button_enabled></h1>
+<tag:language.USER_LEVEL />:&nbsp;<tag:userdetailarr.userdetail_level /><tag:userdetailarr.userdetail_level_admin />
+<br>
+<if:user_img_enabled>
+<tag:language.UIMG_USR_ICONS />:&nbsp;<tag:userdetailarr.img_list />
+</if:user_img_enabled>
+<br>
+<if:custom_title_enabled>
+<tag:language.CUSTOM_TITLE />:&nbsp;<tag:userdetailarr.custom_title />
+</if:custom_title_enabled>
+<br>
+<tag:language.UPLOADED />:&nbsp;<tag:userdetailarr.userdetail_uploaded />
+<br>
+<tag:language.DOWNLOADED />:&nbsp;<tag:userdetailarr.userdetail_downloaded />
+<br>
+<tag:language.RATIO />:&nbsp;<tag:userdetailarr.userdetail_ratio />
 </div>
 
 <div class="btn-group btn-block">
@@ -45,13 +61,6 @@
     </td>
     </if:social_network_enabled>
     </tr>
-
-    <if:user_img_enabled>
-    <tr>
-    <td class="header"><tag:language.UIMG_USR_ICONS /></td>
-    <td class="lista"><tag:userdetailarr.img_list /></td>
-    </tr>
-    </if:user_img_enabled>
 
   <if:warn_enabled>
   <tr>
@@ -178,16 +187,6 @@
      </if:donation_history_enabled>
      <!-- Donation History by DiemThuy - End -->
 
-  <tr>
-    <td class="header"><tag:language.USER_LEVEL /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_13 />><tag:userdetailarr.userdetail_level_admin /></td>
-  </tr>
-  <else:userdetail_edit_admin>
-
-  <tr>
-    <td class="header"><tag:language.USER_LEVEL /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_13 />><tag:userdetailarr.userdetail_level /></td>
-  </tr>
   </if:userdetail_edit_admin>
 
     <if:aads_enabled>
@@ -195,13 +194,6 @@
     <tag:userdetailarr.timed_rank_title />
     </if:aads_enabled>
 
-
-  <if:custom_title_enabled>
-    <tr>
-      <td class="header"><tag:language.CUSTOM_TITLE /></td>
-      <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.custom_title /></td>
-    </tr>
-  </if:custom_title_enabled>
 
   <tr>
     <td class="header"><tag:language.USER_JOINED /></td>
@@ -233,26 +225,6 @@
   <tr>
     <td class="header"><tag:language.USER_LOCAL_TIME /></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_local_time /></td>
-  </tr>
-
-   <tr>
-    <td class="header">Upload Count</td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_uploads /></td>
-  </tr>
-
-  <tr>
-    <td class="header"><tag:language.DOWNLOADED /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_downloaded /></td>
-  </tr>
-
-  <tr>
-    <td class="header"><tag:language.UPLOADED /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_uploaded /></td>
-  </tr>
-
-  <tr>
-    <td class="header"><tag:language.RATIO /></td>
-    <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><tag:userdetailarr.userdetail_ratio /></td>
   </tr>
 
   <if:hnr_enabled7>
