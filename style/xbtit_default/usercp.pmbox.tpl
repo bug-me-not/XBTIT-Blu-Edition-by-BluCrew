@@ -37,15 +37,14 @@ function popusers(url)
 <table class="table table-bordered">
 <form action="<tag:pmbox.frm_action />" name="deleteall" method="post">
     <tr>
-     <td class="header" align="center"><tag:language.READED /></td>
      <if:OUTBOX>
      <td class="header" align="center"><tag:language.RECEIVER /></td>
      <else:OUTBOX>
      <td class="header" align="center"><tag:language.SENDER /></td>
      </if:OUTBOX>
-     <td class="header" align="center"><tag:language.DATE /></td>
      <td class="header" align="center"><tag:language.SUBJECT /></td>
-
+     <td class="header" align="center"><tag:language.DATE /></td>
+     <td class="header" align="center"><tag:language.READED /></td>
 <if:NO_MESSAGES>
     </tr>
     <tr>
@@ -56,10 +55,10 @@ function popusers(url)
     </tr>
 <loop:pm>
     <tr>
-      <td class="lista" align="center"><tag:pm[].readed /></td>
-      <td class="lista" align="center"><a href="<tag:pm[].senderid />"><tag:pm[].sendername /></a></td>
+      <td><a href="<tag:pm[].senderid />"><tag:pm[].sendername /></a></td>
+      <td><strong><a href="<tag:pm[].pmlink />"><tag:pm[].subject /></a></strong></td>
       <td class="lista" align="center"><tag:pm[].added /></td>
-      <td class="lista" align="center"><a href="<tag:pm[].pmlink />"><tag:pm[].subject /></a></td>
+      <td class="lista" align="center"><span class="label label-green"><tag:pm[].readed /></span></td>
       <td class="lista" align="center"><input type="checkbox" name="msg[]" value="<tag:pm[].msgid />" /></td>
     </tr>
 </loop:pm>
