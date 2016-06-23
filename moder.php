@@ -128,7 +128,8 @@ if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
         $row = do_sqlquery($sql,true);
         if (sql_num_rows($row)>0)
         {
-            $selecting="<table border=\"1\">";
+            $selecting="<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Mod Panel</h4>
+</div><table class='table table-bordered'>";
             $selecting.="<tr><td align=\"center\"><b>".$language["TMOD_S_MOD"]."</b></td><td align=\"center\"><b>".$language["TMOD_S_CAT"]."</b></td><td align=\"center\"><b>".$language["NAME"]."<b></td><td align=\"center\"><b>".$language["TMOD_Dl"]."<b></td><td align=\"center\"><b>".$language["UPLOADED"]."</b></td></tr>";
             if(!isset($language["SYSTEM_USER"]))
                 $language["SYSTEM_USER"]="System";
@@ -150,7 +151,7 @@ if ($CURUSER["moderate_trusted"] || $CURUSER["edit_torrents"]=="yes")
                 $selecting.="<td align=\"center\"><a href=\""."index.php?page=userdetails&id=".$data["upname"]."\">".$data["uploader"]."</a></td>";
                 $selecting.="</tr>";
             }
-            $selecting.="</table>";
+            $selecting.="</table></div></div>";
         }
         else
             $selecting=$language["TMOD_NOTORR"]."<br>";
