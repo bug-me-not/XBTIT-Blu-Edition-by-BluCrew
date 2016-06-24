@@ -185,6 +185,13 @@ switch($action)
                 }
             }
             // <--- Reverify Mail Hack by Petr1fied - End
+
+            //Profile Status Start
+    if (isset($_POST['status']) && ($status = $_POST['status']) && !empty($status)) {
+        do_sqlquery("INSERT INTO {$TABLE_PREFIX}profile_status (userid, last_status, last_update) VALUES (".sqlesc($CURUSER['uid']).", ".sqlesc($status).", ".time().") ON DUPLICATE KEY UPDATE last_status = values(last_status), last_update = values(last_update)") or sqlerr(__FILE__, __LINE__);
+    }
+    //Profile Status End
+
             if($idlangue > 0)
                 $set[] = "language=$idlangue";
             if($idstyle > 0)

@@ -24,6 +24,16 @@
       <td align="left" class="lista"><input type="text" size="40" name="avatar" maxlength="100" value="<tag:profile.avatar_field />"/></td>
     </tr>
     <tr>
+        <td align="left" class="header">Profile Status</td>
+    <td align="left" class="lista"><fieldset><legend><strong>Status update</strong></legend>
+        <div id="current_holder">
+       <small style="font-weight:bold;">Share your status</small>
+       <textarea name="status" id="status" cols="50" rows="4"></textarea>
+       <div style="width:380px;">
+       <div style="clear:both;"></div></div>
+       </fieldset></td>
+  </tr>
+    <tr>
       <td align="left" class="header"><tag:language.USER_EMAIL />:</td>
       <td align="left" class="lista"><input type="text" size="30" name="email" maxlength="50" value="<tag:profile.email />"/></td>
     </tr>

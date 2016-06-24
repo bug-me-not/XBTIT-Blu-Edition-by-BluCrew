@@ -252,6 +252,15 @@ if($btit_settings["fmhack_private_profile"] == "enabled")
     }
 }
 include ("include/offset.php");
+//Profile Status 
+    $status_sql = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}profile_status WHERE userid = ".sqlesc($id));
+    if (sql_num_rows($status_sql)) 
+        $profile_status = $status_sql->fetch_assoc();
+    else 
+        $profile_status = array('last_status' => '',
+                                         'last_update' => 0
+    );
+    //Profile Status End
 if($btit_settings["fmhack_ban_button"] == "enabled" || $btit_settings["fmhack_low_ratio_ban_system"] == "enabled")
 {
     if($row["ban"] == 'yes' || $row["bandt"] == "yes")
@@ -2051,4 +2060,10 @@ if($CURUSER["edit_users"]=="yes")
     $comp_count = sql_num_rows($res_com);
     $userdetailtpl->set("snatched",$comp_count);
 //Snatched torrents
+
+//Profile Status
+$userdetailtpl -> set("userdetail_has_status", $profile_status["last_status"] && $profile_status["last_status"]!="", TRUE);
+$userdetailtpl -> set("userdetail_profile_status", format_comment($profile_status["last_status"]));
+$userdetailtpl -> set("userdetail_status_time", time_ago($profile_status["last_update"]));
+//Profile Status Ends
 ?>

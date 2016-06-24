@@ -20,6 +20,10 @@
 <h1><tag:userdetailarr.userdetail_username /><tag:userdetailarr.userdetail_send_pm /><tag:userdetailarr.userdetail_edit /><tag:userdetailarr.userdetail_delete /><if:watch_1>&nbsp;<a href="index.php?page=watch&do=on&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Watch</button></a>&nbsp;<a href="index.php?page=watch&do=off&wid=<tag:userdetailarr.watchid />"><button class="btn btn-xs btn-primary" type="button">Unwatch</button></a></if:watch_1><if:ban_button_enabled><tag:userdetailarr.userdetail_banbutton /></if:ban_button_enabled></h1>
 <tag:language.USER_LEVEL />:&nbsp;<tag:userdetailarr.userdetail_level /><tag:userdetailarr.userdetail_level_admin />
 <br>
+<if:userdetail_has_status>
+Status:&nbsp;<tag:userdetail_profile_status /><small>&nbsp;added(<tag:userdetail_status_time />)</small>
+</if:userdetail_has_status>
+<br>
 <if:user_img_enabled>
 <tag:language.UIMG_USR_ICONS />:&nbsp;<tag:userdetailarr.img_list />
 </if:user_img_enabled>
