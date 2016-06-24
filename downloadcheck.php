@@ -8,6 +8,54 @@ require(load_language("lang_downloadcheck.php"));
 $dlchecktpl = new bTemplate();
 $dlchecktpl -> set("language",$language);
 
+//Ratio After Download
+if ($XBTT_USE)
+   {
+    $udownloaded="u.downloaded+IFNULL(x.downloaded,0)";
+    $uuploaded="u.uploaded+IFNULL(x.uploaded,0)";
+    $utables="{$TABLE_PREFIX}users u LEFT JOIN xbt_users x ON x.uid=u.id";
+   }
+else
+    {
+    $udownloaded="u.downloaded";
+    $uuploaded="u.uploaded";
+    $utables="{$TABLE_PREFIX}users u";
+}
+
+$resuser=do_sqlquery("SELECT $udownloaded as downloaded,$uuploaded as uploaded FROM $utables WHERE u.id=".$CURUSER["uid"]);
+$rowuser= $resuser->fetch_array();
+
+if (max(0,$rowuser["downloaded"])>0)
+{
+$new = $rowuser["downloaded"]+$row["size"];
+$after = $rowuser["uploaded"]/$new;
+$ratioafter=number_format($after,2);
+$rnow = $rowuser["uploaded"]/$rowuser["downloaded"];
+$rationow=number_format($rnow,2);
+}
+else
+{
+$ratioafter="oo";
+$rationow="oo";
+}
+
+if($ratioafter<1)
+    $conn="red";
+if($ratioafter>=1)
+    $conn="green";
+
+if($rationow<1)
+    $con="red";
+if($rationow>=1)
+    $con="green";
+
+$dlchecktpl->set("ratio_after",$ratioafter);
+$dlchecktpl->set("ratio_now",$rationow);
+$dlchecktpl->set("color_after",$conn);
+$dlchecktpl->set("color_now",$con);
+// Ratio After Download END
+
+
 if (!$CURUSER || $CURUSER["view_torrents"]=="no" || $CURUSER["can_download"]=="no")
 {
     err_msg($language["ERROR"],$language["NOT_AUTH_DOWNLOAD"]);

@@ -21,6 +21,9 @@
     <td class="blocklist" align="left"><tag:language.UPLOADER />:&nbsp;&nbsp;&nbsp;&nbsp;<tag:dlcheck.uploader /></td>
   </tr>
   <tr>
+          <td class="blocklist" align="center">Your ratio will be <font color =<tag:color_after />><tag:ratio_after /></font> after downloading this torrent , your ratio is now  <font color =<tag:color_now />><tag:ratio_now /></font></td>
+        </tr>
+  <tr>
     <td class="blocklist" align="center" colspan="2"><br /><tag:dlcheck.link /></td>
   </tr>
 </table>
