@@ -34,7 +34,7 @@
 			<input name="submit" value="Recover" type="submit" class="btn">
 		</form>
 	</div>
-	<!--<div class="button"><a href="index.php?page=signup">Not A Member?</a></div>-->
+	<div class="button"><a href="index.php?page=signup">Not A Member?</a></div>
 	<div class="button"><a href="index.php?page=contact">Contact Us</a></div>
 </body>
 <footer>
