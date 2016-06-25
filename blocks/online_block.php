@@ -114,7 +114,7 @@ else
      print("<tr><td colspan=\"2\" class=\"blocklist\">".$language["ACTIVATED"].": ".implode(", ",$uo)."</td>\n</tr>\n");
 
 {
-print("<br><table><tr><td align=\"left\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Total Users Online Now: <font color ='red'>".$total_online."</font>)</b></td>");
+print("<table><tr><td align=\"left\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Total Users Online Now: <font color ='red'>".$total_online."</font>)</b></td>");
 print("<td align=\"center\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Unique Visit Today: <font color ='red'>Coming Soon</font>)</b></td></tr></table>");
 }
 

@@ -114,37 +114,25 @@ $rulestpl -> set("rules", $rules);
 $rulestpl -> set("rules2", $rules2);*/
 
 ob_start();
-  $text = "<div class='r_fs'><h1><span class='r_highlight'>Blu Rules</span></h1></div>
+  $text = "<center><h1><span class='r_highlight'>Blu Rules</span></h1></center>
 
-  <div class='r_wrapper'>
-
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          General Rules
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>General Rules</h4>
+</div>
           1) Do not defy the expressed wishes of Staff!</br></br>
           2) Possession of multiple BTNET (blu-torrents.net) accounts will result in a ban!</br></br>
           3) All Blu-Torrents BluRG Internal releases uploaded to other sites MUST have the full title, description and TAG left in tact! Also all BluRG uploads will be exclusive to Blu-Torrents for 1 day / 24 hours before it can be uploaded to another Private Tracker. (Failure to follow this rule will result in a BAN) (Please don't upload our Internals to Public Trackers!!!!).</br></br>
           4) Disruptive behaviour in the forums may result in a warning.</br></br>
           5) Asking for/Trading of invites is not allowed anywhere on the site, and will get you permanently banned.</br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          Downloading Rules
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Downloading Rules</h4>
+</div>
           1) You can always download FREE torrents to improve your Share Ratio.</br></br>
 
           2) HnR is not allowed. The site has a detection system in place to auto warn and/or ban members.</br></br>
@@ -154,19 +142,14 @@ ob_start();
           4) Keep your ratio high, If your ratio falls below 0.50 you will get a strike after 3 your account will be disabled. Any one having trouble maintaining a good ratio ( that seeds to seeding requirements )  please contact admin as they can assist.</br></br>
 
           5) Low ratio strikes will be removed after your ratio has remained above 0.50 for a period of 30 days.</br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          Uploading Rules
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Uploading Rules</h4>
+</div>
           1) UPLOADING VIDEO GUIDE HERE: https://www.youtube.com/watch?v=XCDb9D5Y3q8</br></br>
 
           2) Allowed content:</br>
@@ -230,55 +213,38 @@ ob_start();
           18) ONLY UPLOAD WHAT YOU CAN SEED!</br></br>
 
           19) All uploads posted by Blu Users or below will be stopped for approval before posting to the site. Once your rank is above Blu User this will no longer happen.</br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
 
-    <div class='r_table'>
-
-      <div class='r_header'>
-        <div class='r_cell'>
-          General Forum Guidelines
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Forum Rules</h4>
+</div>
           1) No aggressive behavior or flaming in the forums.  No trashing of other peoples topics (i.e. SPAM).</br></br>
           2) No systematic foul language (and none at all on titles). </br></br>
           3) Please ensure all questions are posted in the correct section!
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          Avatar Guidelines
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Avatar Rules</h4>
+</div>
           1) The allowed formats are .gif, .jpg and .png. </br></br>
           2) Do not upload images larger than 2000 kb.</br></br>
           3) Do not upload images that are bigger than 300 x 250.</br></br>
           4) Do not use potentially offensive material involving but no limited to porn, religious material, animal / human cruelty or ideologically charged images.</br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
-    <div class='r_table'>
-
-      <div class='r_header'>
-        <div class='r_cell'>
-          H&R (Hit and Run) Rules
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Hit and Run Rules</h4>
+</div>
           Superleech - Must seed for minimum of 7 Days</br></br>
           Leecher - Must seed for minimum of 7 Days</br></br>
           Recruit -  Must seed for a minimum of 7 Days</br></br>
@@ -294,58 +260,41 @@ ob_start();
           You will not be affected with a H&R if you stop an delete a torrent because you didn't fully download it. Due to it being dead or other reasons. The H&R rule engages once you download 1024MB of the file. Once you have 1024MB of the download complete you are then considered a seeder and the rule goes into effect. </br></br>
 
           You have up to three days at a time to disconnect from seeding without getting punishment. If you are disconnected (not seeding) for over 3 days and you have not met the seeding requirements you will get a warning by the system. Once you accumulate 2 active warnings your download rights will be disabled. If you accumulate 3 active warnings you will be banned and account disabled.  If you get a warning it will last 14 days. If you don't get another warning within that 14 days it will be cleared. </br>
+<div class='panel-footer'>
+</div>
+</div>
 
-        </div>
-      </div>
-    </div>
-
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          Requests Guidelines
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Request Rules</h4>
+</div>
           A user is only permitted to make only 100 requests.</br> </br>
           Do NOT use external links (to another site) to fill requests. It is meant for the request to be uploaded to Blu-Torrents and then linked to the request.</br></br>
           If you properly fill a members request you will be granted 500 Bonus Points by the System.</br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 
-    <div class='r_table'>
-      <div class='r_header'>
-        <div class='r_cell'>
-          ReSeed Request Guidelines
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Reseed Request Rules</h4>
+</div>
           If a torrent meets the following conditions, a Reseed button will appear:</br></br>
           Amount of seeds: 1 or less</br></br>
           Amount completed: 1 or more</br></br>
           Leechers: 1 or more</br></br>
           Age of torrent (days): 1 or more</br></br>
           Amount of days since the last reseed request: 5</br></br>
-        </div>
-      </div>
-    </div>
+<div class='panel-footer'>
+</div>
+</div>
 "
 .//////////////////////lkjsdhfkjdshfkljdshfkjlsadhflkjdshf
 "
-    <div class='r_table'>
-
-      <div class='r_header'>
-        <div class='r_cell'>
-          Donation Guidelines
-        </div>
-      </div>
-
-      <div class='r_row'>
-        <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>Donation Rules</h4>
+</div>
           Any users that are having a donation error, didn't receive freeleech slots, VIP Rank or upload credit. Please contact Vinnie.</br>
 
         </br>Donation made under \"Get Timed V.I.P Rank\"
@@ -360,18 +309,14 @@ ob_start();
 
   </br>Donation made under \"Anonymous\"</br>
   In this case your account will be not credited in anyway , but in all cases we thank you for your support!</br>
-</div>
+<div class='panel-footer'>
 </div>
 </div>
 
-<div class='r_table'>
-  <div class='r_header'>
-    <div class='r_cell'>
-      Blu Chat Guidelines
-    </div>
-  </div>
-  <div class='r_row'>
-    <div class='r_cell'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>
+<h4 class='text-center'>BluChat Rules</h4>
+</div>
       No aggressive behaviour or flaming in chat</br>
     </br>No constant posting of useless things, such as just emotes, pictures, random nonsensical junk, ie: spamming. This could result in a warning or ban from chat.</br>
   </br>Do not mini mod. There is normally a Staff member around. Just because you can't see them, doesn't mean that they can't see you. If there is a serious problem and you see no Staff appear, then feel free to go to the HELPDESK. There is also the /ignore membername feature in chat.</br>
@@ -379,9 +324,8 @@ ob_start();
 </br>No advertising/referring or selling of anything is to be posted in chat.</br>
 </br>We advise you to not post your contact details e.g address or email address publicly in chat for your own privacy. If found, we will remove it without warning for your protection.</br>
 </br>Disruptive behaviour in chat may result in a warning and or ban</br>
+<div class='panel-footer'>
 </div>
-</div>
-</div> 
 </div>";
 
 ob_end_clean();
