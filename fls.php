@@ -39,7 +39,7 @@ else
             $newflsList=sql_esc(((empty($CURUSER["freeleech_slot_hashes"]))?"":$CURUSER["freeleech_slot_hashes"].",").$info_hash);
             quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `freeleech_slots`=`freeleech_slots`-1, `freeleech_slot_hashes`='".$newflsList."' WHERE `id`=".$CURUSER["uid"], true);
             #unset($_SESSION["CURUSER"], $_SESSION["CURUSER_EXPIRE"]);
-            success_msg($language["SUCCESS"],$language["FLS_USED_SLOT1"]." <b>".$data["filename"]."</b> ".$language["FLS_USED_SLOT2"].".<br /><br /><a href='index.php?page=torrents'>".$language["FLS_USED_SLOT3"]."</a>");
+            success_msg($language["SUCCESS"],$language["FLS_USED_SLOT1"]." <b>".$data["filename"]."</b> ".$language["FLS_USED_SLOT2"].".<br /><br /><a href='javascript: history.go(-2);'>".$language["FLS_USED_SLOT3"]."</a>");
         }
         else
             stderr($language["ERROR"], $language["TB_NO_TORR_EXISTS"]);
