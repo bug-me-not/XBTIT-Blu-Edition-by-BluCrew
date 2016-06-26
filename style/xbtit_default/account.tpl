@@ -178,11 +178,11 @@ function form_control()
     </tr>
     <tr>
        <td align="left" class="header"><tag:language.USER_EMAIL />:</td>
-       <td align="left" class="lista"><input type="text" size="30" name="email" class="form-control"  id="email" value="<tag:dati.email />"/></td>
+       <td align="left" class="lista"><input type="text" size="30" name="email" class="form-control"  id="email" placeholder="Use A Valid Email!" value="<tag:dati.email />"/></td>
     </tr>
     <tr>
        <td align="left" class="header"><tag:language.USER_EMAIL_AGAIN />:</td>
-       <td align="left" class="lista"><input type="text" size="30" name="email_again" class="form-control"  id="email_again" autocomplete="off" value="<tag:dati.email />"/></td>
+       <td align="left" class="lista"><input type="text" size="30" name="email_again" class="form-control" placeholder="Use A Valid Email!" id="email_again" autocomplete="off" value="<tag:dati.email />"/></td>
     </tr>
 
     <if:birthdays_enabled>
@@ -236,7 +236,23 @@ function form_control()
        <td align="left" class="lista"><tag:scode_question /><input type="text" name="scode_answer" class="form-control" maxlength="6" size="6" value="" /></td>
     </tr>
     </if:CAPTCHA>
+
+    <div class="alert alert-dismissable alert-bg-white alert-danger">
+    <button data-dismiss="alert" class="close" type="button">×</button>
+    <div class="icon"><i class="fa fa-exclamation-triangle"></i></div>
+    <strong>USE A VALID EMAIL OR YOU WILL NOT BE ABLE TO VALIDATE YOUR ACCOUNT!!!</strong>
+    </div>
+    </div>
+
+    <div class="alert alert-dismissable alert-bg-white alert-warning">
+    <button data-dismiss="alert" class="close" type="button">×</button>
+    <div class="icon"><i class="fa fa-exclamation-triangle"></i></div>
+    <strong>USERNAME MUST (NOT) CONTAIN ONLY NUMBERS OR YOUR ACCOUNT WILL BE DISABLED!!!</strong>
+    </div>
+    </div>
+
     </table>
+
     <tr>
        <td align="center" class="header" colspan="2">
               <!-- input/button for confirm or delete -->
