@@ -115,7 +115,7 @@ else
 
 {
 print("<table><tr><td align=\"left\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Total Users Online Now: <font color ='red'>".$total_online."</font>)</b></td>");
-print("<td align=\"center\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Unique Visit Today: <font color ='red'>Coming Soon</font>)</b></td></tr></table>");
+print("<td align=\"center\">&nbsp;<img src=\"images/whos_online.gif\"><b>&nbsp;  (Unique Visits Today: <font color ='red'>Coming Soon</font>)</b></td></tr></table>");
 }
 
      block_end();
