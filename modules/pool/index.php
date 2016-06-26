@@ -358,7 +358,12 @@ if($CURUSER["seedbonus"] > 0)
 	}
 	else
 	{
-		print "<span id='pspan'><b>Free leech is currently in place.</b></span>";
+	print "<div class='alert alert-dismissable alert-bg-white alert-danger'>
+	<button data-dismiss='alert' class='close' type='button'>×</button>
+	<div class='icon'><i class='fa fa-star'></i></div>
+	<strong>Free leech is currently in place, please come back once it expires.</strong>
+	</div>
+	</div>";
 	}
 }
 else
