@@ -120,7 +120,7 @@ while($row=$res->fetch_assoc())
 <b><?php echo $language["TORRENTS"]; ?>:</b>&nbsp;&nbsp;<?php echo $torrents; ?>&nbsp;&nbsp;&nbsp;<br />
 <b><?php echo $language["SEEDERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $seeds; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["LEECHERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $leechers; ?>&nbsp;&nbsp;&nbsp;
-<b><?php echo $language["PEERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $peers; ?>
+<b><?php echo $language["PEERS"]; ?>:</b>&nbsp;&nbsp;<?php echo $peers; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["SEEDERS"]."/".$language["LEECHERS"]; ?>:&nbsp;&nbsp;<?php echo $percent."%"; ?>&nbsp;&nbsp;&nbsp;
 <b><?php echo $language["TRAFFIC"]; ?>:</b>&nbsp;&nbsp;<?php echo $traffic; ?>
 </br>
