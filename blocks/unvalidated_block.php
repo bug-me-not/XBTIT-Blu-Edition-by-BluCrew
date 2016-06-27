@@ -29,9 +29,8 @@ if ($VALIDATION=="user" && $i==0)
     print("<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>Unvalidated</h4>
 </div>");
     print("<div style='width:100%;'><p style='font-size:120%;text-align:center'>".$language["ERR_NOT_VALIDATED_1"]." (".$CURUSER["email"].") ".$language["ERR_NOT_VALIDATED_2"]."<a href='index.php?page=usercp&do=user&action=change&uid=".$CURUSER["uid"]."'>".$language["HERE"]."</a>.</p>");
-    print ("<form method=post><p style='text-align:center'><input type='submit' class='btn btn-success' name='Re' value='".$language["RESEND_VALIDATION_MAIL"]."'></input></form></p></div>\n");
+    print ("<form method=post><p style='text-align:center'><button class='btn btn-labeled btn-success' name='Re' input type='submit'><span class='btn-label'><i class='fa fa-star'></i></span>".$language["RESEND_VALIDATION_MAIL"]."</button></form></p></div>\n");
     print("<div class='panel-footer'></div></div>");
     block_end();
 }
-
 ?>
