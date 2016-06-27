@@ -2,6 +2,8 @@
 
 global $CURUSER, $XBTT_USE;
 
+$language["WHERE_HEARD"] = 'Heard About Us';
+
 //KIS
 $language['ACP_KHEZ']='Hack Settings';
 $language['ACP_KOCS']='KOCS Tools';
