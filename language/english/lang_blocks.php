@@ -91,4 +91,7 @@ $language['LATEST_RELEASES']="Latest Releases";
 
 #BluFM
 $language['BLOCK_BLUFM']='BluFM';
+
+#Unvalidated
+$language['BLOCK_UNVALIDATED'] =  'Account not yet validated';
 ?>
