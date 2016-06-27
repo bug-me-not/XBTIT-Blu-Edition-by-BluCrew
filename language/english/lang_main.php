@@ -1695,7 +1695,7 @@ $language["BANNED_IP"]="Banned IPs";
 #Tracker Block
 
 #Unvalidated
-$language['ERR_NOT_VALIDATED_1'] = 'Your account is not yet validated and most of the features of this tracker are disabled for this rank. If you wish to resend the validation email to the account listed on your record';
+$language['ERR_NOT_VALIDATED_1'] = 'Your account is not yet validated so access to this site is blocked. If you wish to resend the validation email to the account listed on your record';
 $language['ERR_NOT_VALIDATED_2'] = 'please click the button below.<br /><br />If you have already attempted this and are still having problems then you can change the email to another one by clicking ';
 $language['RESEND_VALIDATION_MAIL'] = 'Resend Validation Mail';
 $language['BLOCK_SEND_VALIDATION_MAIL'] = 'Send Validation Mail';
