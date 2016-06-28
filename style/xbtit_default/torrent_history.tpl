@@ -8,13 +8,17 @@ function windowunder(link)
   window.close();
 }
 </script>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">History</h4>
+</div>
 <table class="table table-bordered">
 <if:pagertop_visible>
 <tr>
   <td class="blocklist" style="text-align:center;" colspan="<tag:colspan />"><tag:pagertop /></td>
 </tr>
 </if:pagertop_visible>
-<tr>
+<tr class="info">
 <td align=center class="header" colspan=2><tag:language.USER_NAME /></td>
 <td align=center class="header"><tag:language.PEER_COUNTRY /></td>
 <td align=center class="header"><tag:language.ACTIVE /></td>
@@ -64,5 +68,8 @@ function windowunder(link)
 </tr>
 </if:pagerbottom_visible>
 </table>
+<div class="panel-footer">
+</div>
+</div>
 <tag:BACK2 />
 </if:NOHISTORY>
