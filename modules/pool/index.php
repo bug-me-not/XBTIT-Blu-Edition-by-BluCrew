@@ -331,7 +331,8 @@ $free = pinfo($freestat,"free",true);
 if($CURUSER["id_level"] >= 6)
 {
 	print "<br/><br/><br/>";
-	print "<div class='padmin' align='center'><a href=\"index.php?page=modules&module=pool&opt=admin\">Pool Admin</a></div>";
+	print "<div class=\"panel panel-primary\"><div class=\"panel-heading\"><h3 class=\"panel-title\"><center>Freeleech BON Pool</center></h3></div>";
+	print "<center><button class=\"btn btn-labeled btn-success\" type=\"button\"><a href=\"index.php?page=modules&module=pool&opt=admin\"><span class=\"btn-label\"><i class=\"fa fa-user\"></i></span>Pool Admin</a></button></center>";
 }
 
 print "<br/><br/><br/>
@@ -339,8 +340,13 @@ print "<br/><br/><br/>
 
 if($free == "no")
 {
-	print "<br/><div align='center'>You have donated " . number_format($usdonated). " towards the current pot.</div><br/>
-		<div align='center'>The current pool stands at ". number_format($tdonated) ." out of ". number_format($pot) .".</div>";
+	print "<div align='center'>You have donated " . number_format($usdonated). " towards the current pot.</div><br/>";
+
+	print "<div class='alert alert-dismissable alert-bg-white alert-warning'>
+	<button data-dismiss='alert' class='close' type='button'>×</button>
+	<div class='icon'><i class='fa fa-exclamation-circle'></i></div>
+	<strong>The current pool stands at ". number_format($tdonated) ." out of ". number_format($pot) .".</strong>
+	</div>";
 }
 
 print "<br/><br/><br/>";
@@ -352,26 +358,29 @@ if($CURUSER["seedbonus"] > 0)
 		$show = true;
 
 		print "<center><form action=\"index.php?page=modules&module=pool&opt=send\" method=\"post\">
-			<input type = \"text\" name = \"amount\"> &nbsp;&nbsp;&nbsp;
-			<input type = \"submit\" value='Contribute!'>
+			<input type = \"text\" class=\"form-control\" name = \"amount\"> &nbsp;&nbsp;&nbsp;
+			<input type = \"submit\" class=\"btn btn-sm btn-primary\" value='Contribute!'>
 			</form></center>";
 	}
 	else
 	{
-	print "<div class='alert alert-dismissable alert-bg-white alert-danger'>
+	print "<div class='alert alert-dismissable alert-bg-white alert-primary'>
 	<button data-dismiss='alert' class='close' type='button'>×</button>
 	<div class='icon'><i class='fa fa-star'></i></div>
 	<strong>Free leech is currently in place, please come back once it expires.</strong>
-	</div>
 	</div>";
 	}
 }
 else
 {
-	print "<span id='pspan'><b>It would seem you have insufficient funds in your account, Kindly recharge and return again soon.</b></span>";
+	print "<div class='alert alert-dismissable alert-bg-white alert-danger'>
+	<button data-dismiss='alert' class='close' type='button'>×</button>
+	<div class='icon'><i class='fa fa-exclamation-circle'></i></div>
+	<strong>It would seem you have insufficient funds in your account, Kindly recharge and return again soon.</strong>
+	</div>";
 }
 
-print "<br/><br/><br/>";
+print "</div><br/><br/><br/>";
 
 //Display table ranking user contribution to current pot
 if($show)
