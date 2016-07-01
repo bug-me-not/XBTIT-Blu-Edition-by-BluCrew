@@ -44,7 +44,7 @@ padding - bottom : 40px;
 </div>
    
 
-<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+<div id="this-carousel-id" class="carousel slide" data-ride="carousel"><!-- class of slide for animation -->
 <div class="carousel-inner">
 <div class="item active"><!-- class of active since it's the first item -->
 <div class="carousel-caption">
