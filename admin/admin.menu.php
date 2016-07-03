@@ -807,13 +807,6 @@ if($btit_settings["fmhack_block_signup_from_certain_countries"]=="enabled")
     $alphabetize[$i]=$unsorted[$i]["description"];
     $i++;
 }
-if($btit_settings["fmhack_gallery"]=="enabled")
-{
-    $unsorted[$i]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=gallery";
-    $unsorted[$i]["description"]=$language["GALLERY_SET"];
-    $alphabetize[$i]=$unsorted[$i]["description"];
-    $i++;
-}
 if($btit_settings["fmhack_custom_smileys"]=="enabled")
 {
     $unsorted[$i]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=smilies";
