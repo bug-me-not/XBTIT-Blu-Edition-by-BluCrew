@@ -128,11 +128,7 @@ if(isset($_POST) && !empty($_POST))
     elseif($_POST["fmhack_last_download_block"]=="enabled" && $_POST["fmhack_IP_to_country"]=="disabled" && $ip2c_count == 120778)
     {
         $_POST["fmhack_IP_to_country"]="enabled";
-    }
-    if($_POST["fmhack_file_hosting"]=="disabled" && $_POST["fmhack_file_hosting"] == "enabled")
-    {
-        $_POST["fmhack_file_hosting"]="enabled";
-    }     
+    }    
     if($btit_settings["fmhack_invitation_system"]=="disabled" && $_POST["fmhack_invitation_system"]=="enabled" && ($btit_settings["fmhack_user_signup_agreement"]=="enabled" || $_POST["fmhack_user_signup_agreement"]=="enabled"))
     {
         $_POST["fmhack_user_signup_agreement"]="disabled";

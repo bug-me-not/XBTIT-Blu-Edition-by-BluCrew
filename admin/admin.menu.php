@@ -830,14 +830,6 @@ if($btit_settings["fmhack_hide_language"]=="enabled")
     $alphabetize[$i]=$unsorted[$i]["description"];
     $i++;
 }
-if($btit_settings["fmhack_file_hosting"]=="enabled")
-{
-    require_once(load_language("lang_file_hosting.php"));
-    $unsorted[$i]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=file_hosting";
-    $unsorted[$i]["description"]=$language['ACP_FHOST'];
-    $alphabetize[$i]=$unsorted[$i]["description"];
-    $i++;
-}
 if($btit_settings["fmhack_apply_for_membership"]=="enabled")
 {
     require_once(load_language("lang_apply_membership.php"));

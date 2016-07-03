@@ -66,10 +66,7 @@ if ($CURUSER["view_torrents"]=="yes")
 }
 if ($CURUSER["can_upload"]=="yes")
    print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\" href=\"index.php?page=upload\">".$language["MNU_UPLOAD"]."</a></td>\n");
-if($btit_settings["fmhack_file_hosting"] == "enabled" && $CURUSER["uid"] > 1)
-    {
-    print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\" href=\"index.php?page=file_hosting\">".$language["MNU_FHOST"]."</a></td>\n");	
-    }
+
 if ($CURUSER["view_users"]=="yes")
    print("<td class=\"header\" align=\"center\"><a class=\"mainmenu\" href=\"index.php?page=users\">".$language["MNU_MEMBERS"]."</a></td>\n");
 

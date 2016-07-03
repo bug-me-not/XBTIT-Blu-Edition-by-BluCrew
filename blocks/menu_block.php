@@ -47,10 +47,6 @@ global $CURUSER, $btit_settings, $language, $FORUMLINK;
       print("<tr><td class=\"blocklist\" style=\"text-align:left; padding-left: 45px;\" align=\"center\"><a class=\"menu\" href=\"index.php?page=users\">&bull;&nbsp;&nbsp;".$language["MNU_MEMBERS"]."</a></td></tr>\n");
       if($btit_settings["fmhack_helpdesk"]=="enabled")
           print("<tr><td class=\"blocklist\" style=\"text-align:left; padding-left: 45px;\" align=\"center\"><a class=\"menu\" href=\"index.php?page=modules&amp;module=helpdesk\">&bull;&nbsp;&nbsp;".$language["HELPDESK"]."</a></td>\n");
-   if($btit_settings["fmhack_file_hosting"] == "enabled" && $CURUSER["uid"] > 1)
-    {
-    print("<tr><td class=\"blocklist\" style=\"text-align:left; padding-left: 45px;\" align=\"center\"><a class=\"menu\" href=\"index.php?page=file_hosting\">&bull;&nbsp;&nbsp;".$language["MNU_FHOST"]."</a></td></tr>\n");	
-    }
 
    if ($CURUSER["view_news"]=="yes")
       print("<tr><td class=\"blocklist\" style=\"text-align:left; padding-left: 45px;\" align=\"center\"><a class=\"menu\" href=\"index.php?page=viewnews\">&bull;&nbsp;&nbsp;".$language["MNU_NEWS"]."</a></td></tr>\n");
