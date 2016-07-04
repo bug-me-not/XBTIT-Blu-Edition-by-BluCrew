@@ -120,7 +120,7 @@ var tronstr = ''
   <script type="text/javascript" src="jscript/overlib.js"></script>
 </if:balloons_enabled>
 </head>
-<body>
+<body onkeypress="tron(event)">
   <!-- Top Navigation Start-->
   <div class="container">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
