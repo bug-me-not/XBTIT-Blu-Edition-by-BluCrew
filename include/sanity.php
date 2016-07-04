@@ -1467,15 +1467,7 @@ function do_sanity($ts = 0)
     }
 }
     // warn-ban system with acp by DT
-    //file host Hack Start
-$r = do_sqlquery("SELECT id, filename, added FROM {$TABLE_PREFIX}file_hosting WHERE added < '" . date('Y-m-d', strtotime('-' . $btit_settings["fhost_delete_days"] . ' weeks')) . "'");
-while ($del = $r->fetch_array())
-{
-  $MANNE="$CURRENTPATH/../$FILE_HOSTINGPATH";
-  unlink("$MANNE/$del[filename]");
-  quickQuery("DELETE FROM {$TABLE_PREFIX}file_hosting WHERE id=$del[id]");
-}
-//file host Hack End
+
     // SANITY FOR TORRENTS
 $results = do_sqlquery("SELECT info_hash, seeds, leechers, finished, dlbytes, filename FROM {$TABLE_PREFIX}files WHERE external='no'");
 $i = 0;
