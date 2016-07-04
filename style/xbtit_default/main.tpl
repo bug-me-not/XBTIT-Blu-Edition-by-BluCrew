@@ -61,7 +61,53 @@
    });
    });
 </script>
-  
+
+<!-- Easter Egg Test -->
+<script>
+var tronstr = ''
+  function tron(e){
+    switch (e.key) {
+      case "t":
+        if(tronstr.length == 0){
+          tronstr = 't'
+        }
+        break;
+      case "r":
+        if(tronstr.length == 1){
+          tronstr = 'tr'
+        }else{
+          tronstr = ''
+        }
+        break;
+      case "o":
+        if(tronstr.length == 2){
+          tronstr = 'tro'
+        }else{
+          tronstr = ''
+        }
+        break;
+      case "n":
+        if(tronstr.length == 3){
+          tronstr = 'tron'
+        }else{
+          tronstr = ''
+        }
+        break;
+      default:
+        tronstr = ''
+    }
+    if(tronstr == 'tron'){
+      var head = document.head, link = document.createElement('link')
+      link.type = 'text/css'
+      link.rel = 'stylesheet'
+      link.href = '/style/Tron/bootstrap.css'
+      head.appendChild(link)
+
+    }
+    console.log(tronstr);
+  }
+</script>
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
