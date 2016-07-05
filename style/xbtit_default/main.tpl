@@ -100,7 +100,7 @@ var tronstr = ''
       var head = document.head, link = document.createElement('link')
       link.type = 'text/css'
       link.rel = 'stylesheet'
-      link.href = '/style/Tron/bootstrap.css'
+      link.href = '/style/tron.css'
       head.appendChild(link)
 
     }
