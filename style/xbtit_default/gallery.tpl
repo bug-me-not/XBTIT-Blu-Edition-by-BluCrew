@@ -7,14 +7,15 @@
 		</tr>
 	</thead>
 	<tbody>
-		<form action='index.php?page=modules&amp;module=gallery' method='POST'>
+		<form action='index.php?page=modules&amp;module=gallery' method='GET'>
+		<input type='hidden' name='action' value='search'>
 			<tr>
 				<td>Name</td> 
-				<td><input type='text' name='filename' value='' size='40'></td>
+				<td><input type='text' name='name' value='' size='40'></td>
 			</tr>
 			<tr>
 				<td>IMDB ID</td> 
-				<td><input type='text' name='imdb' value='0' size='10'></td>
+				<td><input type='text' name='imdb' value='0' placeholder='tt1234567' size='10'></td>
 			</tr>
 			<tr>
 				<td>Cover Type</td>
@@ -46,7 +47,21 @@
 <br><br><br>
 
 <if:has_images>
+<div class='container'>
+	<div class='row'>
 
+		<loop:images>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a title='<tag:images[].count />' href='<tag:images[].href />' target="_blank" class='thumbnail'>
+			<img class="img-responsive" src="<tag:images[].href />" alt="<tag:images[].name />" >
+		</a>
+	</div>
+
+</loop:images>
+
+</div>
+</div>
 <else:has_images>
 <div><center>There are no images to display.</center></div>
 </if:has_images>
