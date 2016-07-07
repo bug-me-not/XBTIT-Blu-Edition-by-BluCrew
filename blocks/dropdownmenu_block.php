@@ -19,7 +19,7 @@ if ($CURUSER["view_torrents"]=="yes")
 //BLUFLIX 2.0
 if ($btit_settings["fmhack_bluflix"] == 'enabled')
 {
-    print("<li><a href=https://stream.blurg.xyz>BluFLIX</a></li>\n");
+    print("<li><a href='index.php?page=forum&action=viewtopic&topicid=1804'>BluFLIX</a></li>\n");
 }
 
 //UPLOAD
