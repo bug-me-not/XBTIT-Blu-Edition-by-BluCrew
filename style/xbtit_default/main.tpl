@@ -163,12 +163,12 @@ var tronstr = ''
             <span>Artwork Section</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href='index.php?page=extra-stats&amp;type=users'>
             <i class="fa fa-pie-chart"></i>
             <span>Extra Stats</span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href='index.php?page=flush'>
             <i class="fa fa-refresh"></i>
