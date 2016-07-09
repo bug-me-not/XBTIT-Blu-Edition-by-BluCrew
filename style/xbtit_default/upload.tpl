@@ -401,7 +401,7 @@ $w(window).resize(function () {
 <if:imdb_enabled>
 <tr>
    <td class="header" >IMDB</td>
-   <td class="lista" align="left"><b>tt<b><input type='text' name='imdb' value='0' size='10' maxlength='10' class="form-control" />&nbsp;<tag:language.IMDB__EDIT_FORM /></td>
+   <td class="lista" align="left"><b>tt<b><input type='text' name='imdb' value='0' size='10' maxlength='10' class="form-control" />&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy (http://www.imdb.com/title/tt<font color="red">1104001</font>) <tag:language.IMDB__EDIT_FORM /></td>
 </tr>
 </if:imdb_enabled>
 
