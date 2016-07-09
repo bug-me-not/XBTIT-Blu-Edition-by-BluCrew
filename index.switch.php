@@ -826,6 +826,12 @@ switch ($pageID) {
    break;
         // New Tables Layout End
 
+         //Donate Page
+   case 'donate_options':
+   require("$THIS_BASEPATH/donate_options.php");
+   break;
+         //Donate Page End
+
    case 'index':
    case '':
    default:

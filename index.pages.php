@@ -63,6 +63,7 @@ switch ($pageID) {
    case 'comment':
    case 'torrent_history':
    case 'peers':
+   case 'donation_options':
       stdfoot(($GLOBALS["usepopup"]?false:true));
    break;
 
