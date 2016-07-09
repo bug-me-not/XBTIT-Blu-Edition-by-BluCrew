@@ -50,10 +50,14 @@ require("$THIS_BASEPATH/include/functions.php");
 include($THIS_BASEPATH.'/index.begin.php');
 
 
-/*if($CURUSER['id_level']!=8)
+/*if($_GET['auth'] != "kaljshdkajshdkajsdh")
 {
-   stderr($language["SORRY"],$btit_settings["offline_msg"]);
+require_once "error/503.html";
+//die("Service Temporarily Unavailable");
+die();
+   //stderr($language["SORRY"],$btit_settings["offline_msg"]);
  }*/
+
  session_name("BluRG");
  session_start();
  dbconn(true);
@@ -245,7 +249,7 @@ $tpl->set("main_jscript",$morescript);
 if (!$no_columns && $pageID!='admin' && $pageID!='forum' && $pageID!='torrents' && $pageID!='usercp' 
   && $pageID!='torrent-details' && $pageID!="upload" && $pageID!="userdetails" && $pageID!="viewrequests"
   && $pageID!="requests" && $pageID!="reqdetails" && $pageID!="veiwexpected" && $pageID!="expectdetails"
-  && $pageID!="expected" && $pageID!="faq" && $pageID!='peers' && $pageID!='seedbox' && $PageID!='staffchecks') 
+  && $pageID!="expected" && $pageID!="faq" && $pageID!='peers' && $pageID!='seedbox' && $PageID!='staffchecks' && $pageID!='donate_options') 
 {
   $tpl->set("main_left",$left_col);
   $tpl->set("main_right",$right_col);

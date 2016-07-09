@@ -1,1 +1,1 @@
-<tag:donate[].doante_text />
+<tag:doante_text />
