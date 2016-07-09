@@ -829,6 +829,8 @@ switch ($pageID) {
          //Donate Page
    case 'donate_options':
    require("$THIS_BASEPATH/donate_options.php");
+   $tpl->set("main_content",set_block($language["DONATE"],"center",$donate_optionstpl->fetch(load_template("donate_options.tpl"))));
+   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
    break;
          //Donate Page End
 

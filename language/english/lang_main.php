@@ -79,6 +79,7 @@ $language['DOWN']='Dl';
 $language['DOWNLOAD']='Download';
 $language['DOWNLOAD_TORRENT']='Download Torrent';
 $language['DOWNLOADED']='Downloaded';
+$language['DONATE']='Donate Today';
 $language['EDIT']='Edit';
 $language['EDIT_LANGUAGE']='Edit Language';
 $language['EDIT_POST']='Edit Post';
