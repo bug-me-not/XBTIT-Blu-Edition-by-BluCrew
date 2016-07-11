@@ -281,28 +281,50 @@ $text =
          </div>
       </div>
       <div class=\"row\">
-         <div class=\"col-md-12\">
+         <div class=\"col-md-6\">
             <div class=\"panel panel-primary\">
                <div class=\"panel-heading\">
-                  <h3 class=\"text-center\">BluFLIX PLEX Access</h3>
+                  <h3 class=\"text-center\">BluFLIX PLEX Access BASIC</h3>
                </div>
                <div class=\"panel-body text-center\">
-                  <p class=\"lead\" style=\"font-size:40px\"><strong>$7 Per Month<br>$10 Per Month w/Media Sync</strong></p>
+                  <p class=\"lead\" style=\"font-size:40px\"><strong>$7 Per Month</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Access to BluFLIX Library via PLEX</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i>Only Two Active Stream Per BluFLIX Plex account at a time please!</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i>Only One Active Stream Per BluFLIX Plex account at a time please!</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Movies, HDTV and Kids Librarys</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Offline Play Option (Sync Media To A Device) Extra $3 Per Month</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i><br></li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-primary\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
                </div>
             </div>
          </div>
+
+         <div class=\"col-md-6\">
+            <div class=\"panel panel-primary\">
+               <div class=\"panel-heading\">
+                  <h3 class=\"text-center\">BluFLIX PLEX Access PLUS</h3>
+               </div>
+               <div class=\"panel-body text-center\">
+                  <p class=\"lead\" style=\"font-size:40px\"><strong>$10 Per Month</strong></p>
+               </div>
+               <ul class=\"list-group list-group-flush text-center\">
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Access to BluFLIX Library via PLEX</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i>Only Two Active Stream Per BluFLIX Plex account at a time please!</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Movies, HDTV and Kids Librarys</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Offline Play Option (Sync Media To A Device)</li>
+               </ul>
+               <div class=\"panel-footer\">
+                  <a class=\"btn btn-lg btn-block btn-primary\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
+               </div>
+            </div>
+         </div>
+         </div>
       </div>
-   </div>
 </div>";
+
+
 
 $donateotpl = new bTemplate();
 $donateotpl->set("doante_text",$text);
