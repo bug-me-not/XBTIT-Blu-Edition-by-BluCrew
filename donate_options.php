@@ -8,8 +8,8 @@ $text =
 <div class=\"row\">
    <div class=\"col-md-12\">
 
-      <center><h1>BluRG.xyz Donation Page</h1><br><br>
-         <p><b>Thank You $USERNAME for visiting the Donation page.</b><br><br><br>
+      <center><h1>BluRG.xyz Donation Page</h1>
+         <p><b>Thank You $USERNAME for visiting the Donation page! We are a community run site so your support means alot!</b><br><br><br>
             <p class='text-danger'>IMPORTANT NOTES:</p>
             <p class='text-danger'>Donations DO NOT exempt you from the rules or from being banned.</p><br><br>
 
@@ -59,7 +59,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$5</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 1 Week VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -78,7 +78,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$10</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 2 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -97,7 +97,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$20</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 5 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -127,7 +127,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$30</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 7 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -146,7 +146,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$40</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 10 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -165,7 +165,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$50</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 20 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -195,7 +195,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$60</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 30 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -214,7 +214,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$80</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 40 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -233,7 +233,7 @@ $text =
                   <p class=\"lead\" style=\"font-size:40px\"><strong>$100</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 50 Weeks VIP</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
@@ -267,6 +267,33 @@ $text =
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-warning\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class=\"bs-example-main clearfix\">
+   <div class=\"container\">
+      <div class=\"row\">
+         <div class=\"col-md-12\">
+         </div>
+      </div>
+      <div class=\"row\">
+         <div class=\"col-md-12\">
+            <div class=\"panel panel-primary\">
+               <div class=\"panel-heading\">
+                  <h3 class=\"text-center\">BluFLIX PLEX Access</h3>
+               </div>
+               <div class=\"panel-body text-center\">
+                  <p class=\"lead\" style=\"font-size:40px\"><strong>$7 Per Month</strong></p>
+               </div>
+               <ul class=\"list-group list-group-flush text-center\">
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Access to BluFLIX Library via PLEXt</li>
+               </ul>
+               <div class=\"panel-footer\">
+                  <a class=\"btn btn-lg btn-block btn-primary\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
                </div>
             </div>
          </div>
