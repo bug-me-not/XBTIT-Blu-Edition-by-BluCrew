@@ -60,9 +60,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 1 Week VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 5000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 15GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 1 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-danger\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -79,9 +79,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 2 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 10,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 30GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 3 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-info\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -98,9 +98,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 5 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 15,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 75GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 6 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-success\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -128,9 +128,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 7 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 20,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 125GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 9 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-danger\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -147,9 +147,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 10 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 30,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 200GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 12 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-info\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -166,9 +166,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 20 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 40,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 300GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 15 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-success\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -196,9 +196,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 30 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 50,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 400GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 18 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-danger\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -215,9 +215,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 40 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 75,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 500GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 21 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-info\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -234,9 +234,9 @@ $text =
                </div>
                <ul class=\"list-group list-group-flush text-center\">
                   <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 50 Weeks VIP</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> ?</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 100,000 BON</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 600 GB Upload Credit</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 25 Freelecch Slot</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-success\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
@@ -287,10 +287,13 @@ $text =
                   <h3 class=\"text-center\">BluFLIX PLEX Access</h3>
                </div>
                <div class=\"panel-body text-center\">
-                  <p class=\"lead\" style=\"font-size:40px\"><strong>$7 Per Month</strong></p>
+                  <p class=\"lead\" style=\"font-size:40px\"><strong>$7 Per Month<br>$10 Per Month w/Media Sync</strong></p>
                </div>
                <ul class=\"list-group list-group-flush text-center\">
-                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Access to BluFLIX Library via PLEXt</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Access to BluFLIX Library via PLEX</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i>Only Two Active Stream Per BluFLIX Plex account at a time please!</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Movies, HDTV and Kids Librarys</li>
+                  <li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Offline Play Option (Sync Media To A Device) Extra $3 Per Month</li>
                </ul>
                <div class=\"panel-footer\">
                   <a class=\"btn btn-lg btn-block btn-primary\" href=\"https://www.gofundme.com/kfukmgyc?utm_medium=wdgt\">GET NOW!</a>
