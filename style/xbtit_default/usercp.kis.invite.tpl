@@ -32,6 +32,10 @@
 	<td class="header" style="text-align: right; vertical-align: text-top;"><tag:language.KIS_EMAIL /></td>
 	<td class="lista" align="left"><input type="text" name="emails" value="<tag:kis.EMAILS />" size="80" /></td>
 </tr>
+<tr>
+	<td class="header" width="70px" style="text-align: right; vertical-align: text-top;">Agreement</td>
+	<td class="lista" align="left"><input id="agree" name="agree" type="checkbox" value="1"><p class='text-danger'>Please note! You are responsible for inviting this member. If you agree to this, check the box to proceed.</p></td>
+</tr>
 </table>
 <tr>
 	<td class="lista" align="center"><input type="submit" name="submit" class="btn btn-success btn-md" value="<tag:language.FRM_SEND />" />
