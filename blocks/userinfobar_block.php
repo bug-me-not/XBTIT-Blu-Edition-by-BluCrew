@@ -129,7 +129,7 @@ print("<td style=\"text-align:left;\" align=\"left\"><a href='index.php?page=use
 //My Uploads
 $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$CURUSER['uid']} AND anonymous='false' GROUP BY info_hash");
 $up_count = sql_num_rows($res_up);
-print("&nbsp;<td style=\"text-align:left;\" align=\"left\"><a class=\"mainmenu\"><a href='index.php?page=my_uploads&id=".$CURUSER["uid"]."'>My Uploads: {$up_count}</a></td>&nbsp;&nbsp;&nbsp;");
+print("&nbsp;<td style=\"text-align:left;\" align=\"left\"><a class=\"mainmenu\">My Uploads: {$up_count}</td>&nbsp;&nbsp;&nbsp;");
 //END My Uploads End
 
 // Seeding/Leeching hack
@@ -139,14 +139,14 @@ $res1 = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}peers WHERE 
 //$num = $res->fetch_array(); $num1 = $res1->fetch_array();
 $seeder=sql_num_rows($res); $leecher=sql_num_rows($res1);
 
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Seed: ".$seeder."</a></td>&nbsp;&nbsp;&nbsp;");
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=active&id=".$CURUSER["uid"]."'>Leech: ".$leecher."</a></td>&nbsp;&nbsp;&nbsp;");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\">Seed: ".$seeder."</td>&nbsp;&nbsp;&nbsp;");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\">Leech: ".$leecher."</td>&nbsp;&nbsp;&nbsp;");
 // END Seeding/Leeching hack
 
 //Snatched torrents
 $res_com = do_sqlquery("SELECT Count(*) as Count FROM {$TABLE_PREFIX}history WHERE uid = {$CURUSER['uid']} GROUP BY infohash");
 $comp_count = sql_num_rows($res_com);
-print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\"><a href='index.php?page=snatched&id=".$CURUSER["uid"]."'>Snatched: {$comp_count}</a></td>&nbsp;&nbsp;&nbsp;");
+print("&nbsp;<td style=\"text-align:center;\" align=\"center\"><a class=\"mainmenu\">Snatched: {$comp_count}</td>&nbsp;&nbsp;&nbsp;");
 //END Snatched torrents
 
 //Stats

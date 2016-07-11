@@ -1,13 +1,11 @@
-<tag:pagertop />
-<table class="table table-bordered">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><b><tag:language.UPLOADED /> <tag:language.TORRENTS /></b></h4>
+</div>
 
-  <tr>
+<table class="table table-bordered table-hover">
 
-    <td class="block" align="left" colspan="6"><b><tag:language.UPLOADED /> <tag:language.TORRENTS /></b></td>
-
-  </tr>
-
-  <tr>
+  <tr class="info">
 
     <td align="center" class="header"><tag:language.FILE /></td>
 
@@ -56,6 +54,17 @@
   </if:RESULTS>
 
 </table>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <tag:pagertop />
+<div class="panel-footer">
+</div>
+</div>
 
 <center><tag:userdetail_back /></center>

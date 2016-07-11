@@ -1,19 +1,17 @@
-<tag:pagertophist />
-<table class="table table-striped">
 
-  <tr>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><b><tag:language.HISTORY /></b></h4>
+</div>
+<table class="table table-bordered table-hover">
 
-    <td class="block" align="left" colspan="14"><b><tag:language.HISTORY /></b></td>
-
-  </tr>
-
-  <tr>
+  <tr class="info">
 
     <td align="center" class="header"><tag:language.FILE /></td>
 
     <td align="center" class="header"><tag:language.SIZE /></td>
     
-    <td align="center" class="header"><tag:language.PEER_CLIENT /></td>
+    <!-- <td align="center" class="header"><tag:language.PEER_CLIENT /></td> -->
 
     <td align="center" class="header"><tag:language.PEER_STATUS /></td>
 
@@ -21,7 +19,7 @@
 
     <td align="center" class="header"><tag:language.UPLOADED /></td>
 
-    <td align="center" class="header"><tag:language.RATIO /></td>
+    <!-- <td align="center" class="header"><tag:language.RATIO /></td> -->
     
     <if:ttimes_enabled_1>
     <td align="center" class="header"><tag:language.ETH_START_DATE /></td>
@@ -53,7 +51,7 @@
 
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].size /></td>
 
-    <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].agent /></td>
+    <!-- <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].agent /></td> -->
 
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].status /></td>
 
@@ -61,7 +59,7 @@
 
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].uploaded /></td>
 
-    <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].ratio /></td>
+    <!-- <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].ratio /></td> -->
 
     <if:ttimes_enabled_4>
     <td align="center" class="lista" style="text-align: center;"><tag:torhistory[].started_time /></td>
@@ -96,9 +94,17 @@
   </if:RESULTS_2>
 
 </table>
+<div class="panel-footer">
+</div>
+</div>
 
-
-
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <tag:pagertophist />
+<div class="panel-footer">
+</div>
+</div>
 
 <center><tag:userdetail_back /></center>

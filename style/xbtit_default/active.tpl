@@ -1,13 +1,10 @@
-<tag:pagertopact />
-<table class="table table-bordered">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><b><tag:language.ACTIVE_TORRENT /></b></h4>
+</div>
+<table class="table table-bordered table-hover">
 
-  <tr>
-
-    <td class="block" align="left" colspan="13"><b><tag:language.ACTIVE_TORRENT /></b></td>
-
-  </tr>
-
-  <tr>
+  <tr class="info">
 
     <td align="center" class="header"><tag:language.FILE /></td>
 
@@ -93,8 +90,17 @@
   </if:RESULTS_1>
 
 </table>
+<div class="panel-footer">
+</div>
+</div>
 
-
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <tag:pagertopact />
+<div class="panel-footer">
+</div>
+</div>
 
 <center><tag:userdetail_back /></center>
