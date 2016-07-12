@@ -109,11 +109,11 @@ function popusers(url)
 </if:PREVIEW>
     <tr>
       <td class="header" align="left"><tag:language.RECEIVER />:</td>
-      <td class="header" align="left"><input type="text" name="receiver" value="<tag:pmedit.receiver />" size="35" maxlength="40" <tag:pmedit.readonly /> />&nbsp;&nbsp;<tag:pmedit.searchuser /></td>
+      <td class="header" align="left"><input type="text" name="receiver" class="form-control" value="<tag:pmedit.receiver />" size="35" maxlength="40" <tag:pmedit.readonly /> />&nbsp;&nbsp;<tag:pmedit.searchuser /></td>
     </tr>
     <tr>
       <td class="header" align="left"><tag:language.SUBJECT />:</td>
-      <td class="header" align="left"><input type="text" name="subject" value="<tag:pmedit.subject />" size="35" maxlength="40" /></td>
+      <td class="header" align="left"><input type="text" name="subject" class="form-control" value="<tag:pmedit.subject />" size="35" maxlength="40" /></td>
     </tr>
     <tr>
       <td class="lista" colspan="2"><tag:pmedit.bbcode /></td>
