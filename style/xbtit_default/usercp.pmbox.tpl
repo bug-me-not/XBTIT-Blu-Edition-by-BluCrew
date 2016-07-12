@@ -90,10 +90,18 @@ function popusers(url)
 <if:PREVIEW>
     <tr>
       <td colspan="2">
-        <table class="table table-bordered">
+        <table align="center">
+        <center>
           <tr>
-            <td class="block" align="center"><b><tag:language.FRM_PREVIEW /></b></td>
+          <td>
+          <div class="panel panel-warning">
+          <div class="panel-heading">
+          <h4 class="text-center"><b><tag:language.FRM_PREVIEW /></b></h4>
+          </div>
+          </div>
+          </td>
           </tr>
+
           <tr>
             <td class="header" align="center"><tag:language.SUBJECT />: <tag:pmpreview.subject /></td>
           </tr>
@@ -101,6 +109,7 @@ function popusers(url)
             <td class="lista" align="center"><tag:pmpreview.body /></td>
           </tr>
         </table>
+        </center>
       </td>
     </tr>
     <tr>

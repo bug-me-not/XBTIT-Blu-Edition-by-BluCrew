@@ -117,13 +117,13 @@ function BBTag(opentag, closetag, textarea)
 </td></tr>
 <tr><td valign="top">
 <table width="40%" cellpadding="0" cellspacing="5" align="left">
-<td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']', '[/align]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="videoalignment">
+<td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']', '[/align]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="videoalignment">
               <option value="" selected="selected">Video Alignment</option>
               <option value="align=left">Left</option>
               <option value="align=center">Center</option>
               <option value="align=right">Right</option>
               </select></td>
-<td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value, ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="videotype">
+<td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value, ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="videotype">
               <option value="" selected="selected">Video Types</option>
               <option value="video=">YouTube Videos</option>
               <option value="video=">Google Videos</option>
@@ -135,7 +135,7 @@ function BBTag(opentag, closetag, textarea)
 <tr><td valign="top">
         <table width="50%" cellpadding="0" cellspacing="5" align="left">
                 <tr colspan="2">
-                <td align="left"><select onchange="BBTag('[size=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/size]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                <td align="left"><select onchange="BBTag('[size=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/size]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Font Size</option>
               <option value="smaller">smaller</option>
               <option value="xx-small">xx-small</option>
@@ -147,7 +147,7 @@ function BBTag(opentag, closetag, textarea)
               <option value="xx-large">xx-large</option>
               <option value="larger">larger</option>
               </select></td>
-                 <td align="left" style="text-align:left;"><select onchange="BBTag('[color=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/color]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                 <td align="left" style="text-align:left;"><select onchange="BBTag('[color=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/color]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Text Color</option>
               <option value="Black" style="color:black; background:#93A4AC;">Black</option>
               <option value="Blue" style="color:Blue; background:#93A4AC;">Blue</option>
@@ -166,7 +166,7 @@ function BBTag(opentag, closetag, textarea)
               <option value="White" style="color:White; background:#93A4AC;">White</option>
               <option value="Yellow" style="color:Yellow; background:#93A4AC;">Yellow</option>
               </select></td>
-                 <td align="left" style="text-align:left;"><select onchange="BBTag('[bg-color=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/bg-color]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                 <td align="left" style="text-align:left;"><select onchange="BBTag('[bg-color=' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/bg-color]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Background Color</option>
               <option value="Black" style="color:white; background:Black">Black</option>
               <option value="Blue" style="color:white; background:Blue">Blue</option>
@@ -190,7 +190,7 @@ function BBTag(opentag, closetag, textarea)
 </td></tr>
 <tr><td valign="top">
         <table width="65%" cellpadding="0" cellspacing="5" align="left">
-                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/' + this.options[this.selectedIndex].value.toLowerCase() + ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/' + this.options[this.selectedIndex].value.toLowerCase() + ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Text Formatting</option>
               <option value="none">no formatting</option>
               <option value="b" style="font-weight: bold;">bold text</option>
@@ -202,7 +202,7 @@ function BBTag(opentag, closetag, textarea)
               <option value="sub">subscript</option>
               <option value="sup">superscript</option>
               </select></td>
-                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/' + this.options[this.selectedIndex].value.toLowerCase() + ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value.toLowerCase() + ']','[/' + this.options[this.selectedIndex].value.toLowerCase() + ']', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Text Alignment</option>
               <option value="left">left</option>
               <option value="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right</option>
@@ -210,14 +210,14 @@ function BBTag(opentag, closetag, textarea)
               <option value="justified">j u s t i f i e d</option>
               <option value="pre">preformatted</option>
               </select></td>
-                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']', '[/scroll]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="scroll">
+                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']', '[/scroll]', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="scroll">
               <option value="" selected="selected">Scrolling Text</option>
               <option value="scroll=left">Scroll Left</option>
               <option value="scroll=right">Scroll Right</option>
               <option value="scroll=up">Scroll Up</option>
               <option value="scroll=down">Scroll Down</option>
               </select></td>
-                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']\n[*]\n[*]\n[/list]', '', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" style="background:#E9F4F8;" name="fontchange">
+                <td align="left"><select onchange="BBTag('[' + this.options[this.selectedIndex].value + ']\n[*]\n[*]\n[/list]', '', document.forms.<tag:form_name />.<tag:object_name />); this.selectedIndex = 0;" size="1" class="form-control" name="fontchange">
               <option value="" selected="selected">Lists</option>
               <option value="list">unordered list</option>
               <option value="list=circle">circle list</option>
