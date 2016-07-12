@@ -1121,6 +1121,7 @@ else{
 }
 $torrenttpl->set("tvdb_banner",$tvdb_banner_out);
 $torrenttpl->set("TheTVDBExtra", $theTVDBExtraOutput);
+
    // subtitles begin
 $torrenttpl->set("sub_enabled", (($btit_settings["fmhack_subtitles"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_subtitles"]=="enabled")
@@ -1152,22 +1153,6 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
 $sres->free();
 }
    // subtitles end
-   //addthis by signo
-   /*$torrenttpl->set("show_addthis","	<!-- Code genarated from http://www.addthis.com/ -->
-   <!-- AddThis Button BEGIN -->
-   <div class='addthis_toolbox addthis_default_style'>
-   <a class='addthis_button_facebook'></a>
-   <a class='addthis_button_myspace'></a>
-   <a class='addthis_button_googlebuzz'></a>
-   <a class='addthis_button_twitter'></a>
-   <a class='addthis_button_live'></a>
-   <a class='addthis_button_google_plusone'></a>
-   <a class='addthis_button_compact'></a>
-   <a class='addthis_counter addthis_bubble_style'></a>
-   </div>
-   <script type='text/javascript' src='http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e57b1bb3fd7f0ca'></script>
-   <!-- AddThis Button END -->");*/
-   //end addthis
 
    $row["alt_image_imgup"]=$GLOBALS["uploaddir"]."nocover.jpg";
    $row["alt_image_imdb"]=$GLOBALS["uploaddir"]."nocover.jpg";
@@ -1271,7 +1256,6 @@ $sres->free();
    $torrenttpl->set("bookmark_enabled", (($btit_settings["fmhack_torrent_bookmark"]=="enabled")?true:false), true);
    $torrenttpl->set("avatar_signature_sync_enabled", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
    $torrenttpl->set("avatar_signature_sync_enabled_1", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
-   $torrenttpl->set("addthis_enabled",(($btit_settings["fmhack_addthis"]=="enabled")?true:false),true);
    
 
    //Gift BON to Uploader Hack

@@ -1,46 +1,14 @@
-<!-- BluMovieDB Latest angular.js -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-
-<!-- BluMovieDB Some Needed angular module JS -->
-<script>
-var app = angular.module('app', []);
-var imdb = "<tag:torrent.imdb />";
-app.controller("ListCtrl", function ($scope, $http) {
-     // Search submit
-    angular.element(document).ready(function () {
-        $scope.loading = true;
-        $scope.error = false;
-        $http.get('https://www.omdbapi.com/?i=tt' + imdb + '&y=&plot=full&r=json')
-               .success(function (data, status, headers, config) {
-                   $scope.movie = data;
-                   $scope.results = true;
-                   $scope.error = false;
-                   $scope.loading = false;
-
-                   if ($scope.movie.Response === "False") {
-                       $scope.results = false;
-                       $scope.error = true;
-                   }
-               })
-               .error(function (data, status, headers, config) {
-                   // called asynchronously if an error occurs
-                   // or server returns response with an error status.
-                   $scope.results = false;
-                   $scope.loading = false;
-                   $scope.error = true;
-               });
-    });
-});
-</script>
-
 <script type="text/javascript">
-function ShowHide(id,id1) {
+function ShowHide(id,id1) 
+{
    obj = document.getElementsByTagName("div");
-   if (obj[id].style.display == 'block'){
+   if (obj[id].style.display == 'block')
+   {
       obj[id].style.display = 'none';
       obj[id1].style.display = 'block';
    }
-   else {
+   else 
+   {
       obj[id].style.display = 'block';
       obj[id1].style.display = 'none';
    }
@@ -50,6 +18,16 @@ function windowunder(link)
 {
    window.opener.document.location=link;
    window.close();
+}
+
+function refresh_peers(myvar)
+{
+   var xhReq = new XMLHttpRequest();
+   xhReq.open("GET", "refresh_peers.php?id="+myvar, false);
+   xhReq.send(null);
+   var serverResponse = xhReq.responseText;
+   var new_peers=serverResponse.split('[*]');
+   document.getElementById("peer_counts").innerHTML = "<tag:language.SEEDERS />: <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[0]+"</a>, <tag:language.LEECHERS />:  <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[1]+"</a> = <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[2]+"</a> <tag:language.PEERS />&nbsp;&nbsp;&nbsp;<i class='fa fa-refresh fa-spin' border='0' onclick='refresh_peers(\"<tag:torrent.info_hash />\")' title='<tag:language.REFRESH_PEERS />' />";
 }
 
 function disable_button(state)
@@ -187,19 +165,9 @@ function dt_show_waitb()
    document.getElementById('loadingb').style.display='block';
 }
 
-function refresh_peers(myvar)
-{
-   var xhReq = new XMLHttpRequest();
-   xhReq.open("GET", "refresh_peers.php?id="+myvar, false);
-   xhReq.send(null);
-   var serverResponse = xhReq.responseText;
-   var new_peers=serverResponse.split('[*]');
-   document.getElementById("peer_counts").innerHTML = "<tag:language.SEEDERS />: <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[0]+"</a>, <tag:language.LEECHERS />:  <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[1]+"</a> = <a href='index.php?page=peers&amp;id=<tag:torrent.info_hash />'>"+new_peers[2]+"</a> <tag:language.PEERS />&nbsp;&nbsp;&nbsp;<i class='fa fa-refresh fa-spin' border='0' onclick='refresh_peers(\"<tag:torrent.info_hash />\")' title='<tag:language.REFRESH_PEERS />' />";
-}
-
 </script>
 
-<if:imageup_enabled>
+<!-- <if:imageup_enabled>
 <link rel="stylesheet" href="css/jquery.lightbox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="jscript/jquery.lightbox.js"></script>
 <script type="text/javascript">
@@ -208,7 +176,7 @@ $q(function() {
    $q('a.lightbox').lightBox();
 });
 </script>
-</if:imageup_enabled>
+</if:imageup_enabled> -->
 
 <if:internal_clock>
 <div align="center" class="panel">
@@ -284,11 +252,11 @@ $clock(document).ready(function(){
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
-    <li class""><a href="#details" data-toggle="tab">Details</a></li>
-    <li class""><a href="#gift" data-toggle="tab">Gift</a></li>
-    <li class""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
-    <li class""><a href="#trailer" data-toggle="tab">Trailer</a></li>
-    <li class""><a href="#comment" data-toggle="tab">Comments</a></li>
+    <li class=""><a href="#details" data-toggle="tab">Details</a></li>
+    <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
+    <li class=""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
+    <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
+    <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
 
   <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
@@ -312,7 +280,7 @@ $clock(document).ready(function(){
    <if:fls_enabled>
    <tr>
    <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
-   <td class="lista" style="text-align:left;" valign="middle"><if:hash_found><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-unlock'></i></span>FL Slot Active</button><else:hash_found><if:have_slots1><a href="index.php?page=fls&id=<tag:torrent.info_hash />"></if:have_slots1><button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-lock'></i></span>FL Slot Inactive</button><if:have_slots2></a></if:have_slots2></if:hash_found></td>
+   <td class="lista" style="text-align:left;" valign="middle"><if:hash_found><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-unlock'></i></span>FL Slot Active</button><else:hash_found><if:have_slots1><a href="index.php?page=fls&amp;id=<tag:torrent.info_hash />"></if:have_slots1><button class='btn btn-labeled btn-danger' type='button'><span class='btn-label'><i class='fa fa-lock'></i></span>FL Slot Inactive</button><if:have_slots2></a></if:have_slots2></if:hash_found></td>
    </tr>
    </if:fls_enabled>
    <if:tmod1_enabled>
@@ -335,11 +303,9 @@ $clock(document).ready(function(){
    <tr>
    <td align="right" class="header"><tag:language.TORRENT /></td>
    <if:dlratiocheck>
-   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled1><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled1><a href="index.php?page=downloadcheck&amp;id=<tag:torrent.info_hash />"><button class='btn btn-labeled btn-primary' type='button'>
-      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button></a></if:magnet_enabled1></td>
+   <td class="lista" align="left" style="text-align:left;" valign="top"><a href="index.php?page=downloadcheck&amp;id=<tag:torrent.info_hash />" role="button" class="btn btn-labeled btn-primary"><span class='btn-label'><i class='fa fa-download'></i></span>Download</a></td>
    <else:dlratiocheck>
-   <td class="lista" align="left" style="text-align:left;" valign="top"><if:magnet_enabled2><a href="<tag:magnetLink />"><img src="images/magnet.gif" alt="<tag:language.MAGNET_DOWN_USING />" title="<tag:language.MAGNET_DOWN_USING />" /></a><else:magnet_enabled2><a href="download.php?id=<tag:torrent.info_hash />&amp;f=<tag:down_filename />.torrent"><button class='btn btn-labeled btn-primary' type='button'>
-      <span class='btn-label'><i class='fa fa-download'></i></span>Download</button></a></if:magnet_enabled2></td>
+   <td class="lista" align="left" style="text-align:left;" valign="top"><a href="download.php?id=<tag:torrent.info_hash />&amp;f=<tag:down_filename />.torrent" role="button" class="btn btn-labeled btn-primary"><span class='btn-label'><i class='fa fa-download'></i></span>Download</a></td>
    </if:dlratiocheck>
    </tr>
    </if:download_locked>
@@ -368,15 +334,8 @@ $clock(document).ready(function(){
    </tr>
    </if:FORUM_LNK>
    </if:auto_topic_enabled>
-   
-   <if:addthis_enabled>
-   <tr>
-   <td align="right" class="header"><tag:language.ADDTHIS_SHARE2 /></td>
-   <td class="lista" align="center" style="text-align:left;" valign="top"><tag:show_addthis /></td>
-   </tr>
-   </if:addthis_enabled>
 
-   <if:reenc_enabled>
+  <if:reenc_enabled>
    <tr>
    <td align="right" class="header" valign="top"><tag:language.REENCODE /></td>
    <td class="lista" align="center">
@@ -387,7 +346,6 @@ $clock(document).ready(function(){
    </form>
    <script type="text/javascript">dt_ShowThank('<tag:torrent.info_hash />');</script>
 
-
    <form action="reencodeb.php" method="post" onsubmit="return false">
    <div id="reencodeb_div" name="reencodeb_div" style="display:block;"></div>
    <div id="loadingb" name="loadingb" style="display:none;"><img src="images/ajax-loader.gif" alt="" title="ajax-loader" /></div>
@@ -396,13 +354,13 @@ $clock(document).ready(function(){
    <script type="text/javascript">dt_ShowThankb('<tag:torrent.info_hash />');</script>
    </td>
    </tr>
-   </if:reenc_enabled>
+   </if:reenc_enabled> 
 
    <if:teams_enabled>
    <tag:teamview />
    </if:teams_enabled>
 
-   <if:thanks_enabled>
+    <if:thanks_enabled>
    <tr>
    <td align="right" class="header" valign="top"><tag:language.THANKS_USERS /></td>
    <td class="lista" align="left">
@@ -545,7 +503,7 @@ $clock(document).ready(function(){
    <if:bookmark_enabled>
    <tr>
    <td align="right" class="header"><tag:language.ADDB /></td>
-   <td class="lista" align="left"><a href="index.php?page=bookmark&do=add&torrent_id=<tag:id />"><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-bookmark'></i></span>Bookmark This Upload</button></span></a></td>
+   <td class="lista" align="left"><a href="index.php?page=bookmark&amp;do=add&amp;torrent_id=<tag:id />"><button class='btn btn-labeled btn-success' type='button'><span class='btn-label'><i class='fa fa-bookmark'></i></span>Bookmark This Upload</button></span></a></td>
    </tr>
    </if:bookmark_enabled>
 
@@ -644,7 +602,8 @@ $clock(document).ready(function(){
    </div>
    </div> <!-- Tab End -->
 
-   <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"><!-- Tab Start -->
+<!-- Tab Start -->
+   <!-- <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
    <body ng-app="app">
    <div ng-controller="ListCtrl">        
    <div class="alert alert-info" ng-show="loading">
@@ -684,7 +643,8 @@ $clock(document).ready(function(){
    <br>
    <p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
    </body>
-   </div> <!-- Tab End -->
+   </div> -->
+   <!-- Tab End -->
 
    <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
    <p><h1>COMING SOON!</h1></p>
@@ -721,7 +681,7 @@ $clock(document).ready(function(){
    -->
    </script>
 
-   <form name="deleteallcomments" method="post" action="index.php?page=torrent-details&id=<tag:torrent.info_hash />">
+   <form name="deleteallcomments" method="post" action="index.php?page=torrent-details&amp;id=<tag:torrent.info_hash />">
 
    <!-- # End
    ####################################################### -->
@@ -840,6 +800,41 @@ $clock(document).ready(function(){
    </div>
    </div> <!-- Tab End -->
    </div> <!-- Main Tab Content End -->
+
+   <!-- BluMovieDB Latest angular.js 
+<script src="/jscript/angular.min.js"></script> -->
+
+<!-- BluMovieDB Some Needed angular module JS 
+<script>
+var app = angular.module('app', []);
+var imdb = "<tag:torrent.imdb />";
+app.controller("ListCtrl", function ($scope, $http) {
+     // Search submit
+    angular.element(document).ready(function () {
+        $scope.loading = true;
+        $scope.error = false;
+        $http.get('https://www.omdbapi.com/?i=tt' + imdb + '&y=&plot=full&r=json')
+               .success(function (data, status, headers, config) {
+                   $scope.movie = data;
+                   $scope.results = true;
+                   $scope.error = false;
+                   $scope.loading = false;
+
+                   if ($scope.movie.Response === "False") {
+                       $scope.results = false;
+                       $scope.error = true;
+                   }
+               })
+               .error(function (data, status, headers, config) {
+                   // called asynchronously if an error occurs
+                   // or server returns response with an error status.
+                   $scope.results = false;
+                   $scope.loading = false;
+                   $scope.error = true;
+               });
+    });
+});
+</script> -->
 
 
 
