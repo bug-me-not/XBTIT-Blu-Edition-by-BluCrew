@@ -1,16 +1,3 @@
-<script type="text/javascript">
-$(function () {
-    $("#agree").change(function () {
-        if ($("#agree").is(':checked')) {
-            $('.btn').attr('disabled', false);
-        } else {
-            $('.btn').attr('disabled', true);
-        }
-    });
-
-});
-</script>
-
 <div class="panel panel-primary">
 <div class="panel-heading">
 <h4 class="text-center">Invite Tools</h4>
@@ -51,7 +38,7 @@ $(function () {
 </tr>
 </table>
 <tr>
-	<td class="lista" align="center"><input type="submit" name="submit" class="btn" value="<tag:language.FRM_SEND />" disabled="" />
+	<td class="lista" align="center"><input type="submit" name="submit" class="btn btn-success btn-md" value="<tag:language.FRM_SEND />" />
 	<input type="reset" class="btn btn-danger btn-md" value="<tag:language.FRM_RESET />" /></td>
 </tr>
 </form>
