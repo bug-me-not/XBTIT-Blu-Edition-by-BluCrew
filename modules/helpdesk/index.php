@@ -336,6 +336,7 @@ print("<center><a href=index.php?page=modules&amp;module=helpdesk&action=problem
     <td align="left"><input type="text" size="60" maxlength="50" name="title"></td>
   </tr>
 </br>
+<br>
   <tr>
     <td colspan="2"><textarea name="msg_problem" cols="75" rows="10"></textarea>
     </br>
