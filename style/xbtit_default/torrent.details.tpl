@@ -255,6 +255,7 @@ $q(function() {
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
      <li class=""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
+     <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
@@ -643,6 +644,16 @@ $q(function() {
 </div> 
 </div>
 <br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
+</div>
+<!-- Tab End -->
+
+<!-- Tab Start -->
+<div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
+<p><h1>COMING SOON!</h1></p>
+   <br>
+   <br>
+   <br>
+   <p class="text-warning">Powered By FanArt API</p>
 </div>
 <!-- Tab End -->
 
