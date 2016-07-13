@@ -19,7 +19,7 @@ class MovieInformation
 	 * API URL
 	 * @var string
 	 */
-	protected $apiUrl = 'http://www.omdbapi.com/';
+	protected $apiUrl = 'https://www.omdbapi.com/';
 
 	/**
 	 * Movie Title or IMDB ID

@@ -606,10 +606,14 @@ $q(function() {
 <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
   <div class="row">
    <div class="col-md-12">
-   <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title /></p></a><small>Rating: <tag:blu_rating /></small></h1>
-   Runtime: <tag:blu_runtime /><br>
-   Genre: <tag:blu_genre /><br>
-   Released: <tag:blu_released /><br><br>
+   <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title />&nbsp;&nbsp;(<tag:blu_year />)</p></a><small>Rating: <tag:blu_rating /></small></h1>
+   <b>Runtime:</b> <tag:blu_runtime /><br>
+   <b>Genre:</b> <tag:blu_genre /><br>
+   <b>Langauge:</b> <tag:blu_lang /><br>
+   <b>Country:</b> <tag:blu_country /><br>
+   <b>Production:</b> <tag:blu_pro /><br>
+   <b>Released:</b> <tag:blu_released /><br><br>
+
 
    <p class='lead'>
       <b>Director:</b> <tag:blu_director /><br>
@@ -618,7 +622,24 @@ $q(function() {
 
    <p>Plot: <tag:blu_plot /></p><br>
    <p>Awards: <tag:blu_awards /></p>
+   <br>
 
+   <h1 style="color:red;">Rotten Tomatoes</h1>
+   <b>Tomato Meter:</b> <tag:blu_tmeter /><br>
+   <b>Tomato Rating:</b> <tag:blu_trating /><br><br>
+   <b>Tomato Reviews:</b> <tag:blu_treview /><br>
+   <b>Tomato Fresh (+):</b> <tag:blu_tfresh /><br>
+   <b>Tomato Rotten (-):</b> <tag:blu_trotten /><br>
+   <br>
+   <b>Tomato User Meter:</b> <tag:blu_tumeter /><br>
+   <b>Tomato User Rating:</b> <tag:blu_turating /><br>
+   <b>Tomato User Review:</b> <tag:blu_tureviews /><br>
+   <br>
+
+   <h1 style="color:red;">Extra</h1>
+   <b>DVD Release Date:</b> <tag:blu_dvd /><br>
+   <b>Box Office:</b> <tag:blu_office /><br>
+   <b>Website:</b> <tag:blu_site /><br>
 </div> 
 </div>
 <br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
