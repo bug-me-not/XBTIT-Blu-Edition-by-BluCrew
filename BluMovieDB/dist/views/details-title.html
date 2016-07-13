@@ -1,0 +1,87 @@
+<div class="details-header" ng-class="{ 'details-header-small': backdrops.length === 0 }">
+  <div class="background" ng-repeat="backdrop in backdrops track by $index" ng-style="{ 'background-image': 'url('+backdropPath+backdrop.file_path+')' }" ng-class="{ invisible: $index !== backdropIndex }"></div>
+  <div class="backdrop-controls" ng-if="backdrops.length > 1"> <i class="ion-ios7-arrow-back" ng-click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" ng-click="nextBackdrop()"></i> </div>
+  <div class="main-info-holder">
+    <div class="main-info">
+      <h1>{{details.title || details.name}}</h1> <span class="stars"><i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }"></i><i ng-if="halfStar" class="ion-ios7-star-half"></i> ({{details.vote_average}})</span>
+      <div class="external button" ng-if="details.imdb_id || details.homepage"> <a ng-if="details.imdb_id" ng-href="http://www.imdb.com/title/{{details.imdb_id}}" target="_blank">IMDB</a> <a ng-if="details.homepage" ng-href="{{details.homepage}}" target="_blank">Homepage</a> <i class="ion-share"></i> </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-holder">
+  <div class="details-poster" ng-style="{ 'background-image': 'url('+posterPath+details.images.posters[posterIndex].file_path+')' }">
+    <div class="poster-controls" ng-if="details.images.posters.length > 1"> <i class="ion-ios7-arrow-back" ng-click="prevPoster()"></i><i class="ion-ios7-arrow-forward" ng-click="nextPoster()"></i> </div>
+  </div>
+  <div class="details-content">
+    <div class="col-12">
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+    <h4 class="text-center">Details</h4>
+    </div>
+      <table>
+        <tr ng-repeat="detail in sidebarDetails track by $index" ng-if="$index < 4 || showFullDetailsSidebar">
+          <td><b>{{detail.label}}</b>
+            <td>{{detail.value}} </table>
+      <div class="centered-buttons">
+        <div ng-if="sidebarDetails.length > 4" class="button" ng-click="toggleFullDetailsSidebar()">Show <span ng-if="!showFullDetailsSidebar">More</span><span ng-if="showFullDetailsSidebar">Less</span></div>
+      </div>
+    <div class="panel-footer">
+</div>
+</div>
+
+    <div class="col-12">
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+    <h4 class="text-center">Description</h4>
+    </div>
+      <p ng-if="!showFullOverview && details.overview.length > 775">{{details.overview.substr(0,750)}}...</p>
+      <p ng-if="showFullOverview || details.overview.length < 776">{{details.overview}}</p>
+      <div class="centered-buttons">
+        <div ng-if="details.overview.length > 775" class="button" ng-click="toggleFullOverview()">Show <span ng-if="!showFullOverview">More</span><span ng-if="showFullOverview">Less</span></div>
+      </div>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="page-holder" ng-if="trailerYoutube">
+  <h5>Trailer</h5> </div>
+<div class="trailer-wrapper" ng-if="trailerYoutube">
+  <iframe ng-if="trailerYoutube" ng-src="{{trustSrc('//www.youtube.com/embed/'+trailerYoutube.key)}}" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="page-holder" ng-if="details.credits.cast.length > 0">
+  <h5>Cast members</h5> </div>
+<div class="item-scroller" ng-if="details.credits.cast.length > 0">
+  <a ng-href="#/name/{{person.id}}" ng-repeat="person in details.credits.cast" class="item item-poster">
+    <div class="background" ng-style="{ 'background-image': 'url('+profilePath + person.profile_path+')' }"></div>
+    <div class="info"> {{person.name}}
+      <br> <small ng-if="person.character">as {{person.character}}</small> </div>
+  </a>
+</div>
+<div class="page-holder" ng-if="details.seasons && details.seasons.length > 0">
+  <h5>Seasons</h5> </div>
+<div class="item-scroller" ng-if="details.seasons && details.seasons.length > 0">
+  <a ng-href="#/title/{{details.id}}/tv/season/{{season.season_number}}" ng-repeat="season in details.seasons" class="item item-poster">
+    <div class="background" ng-style="{ 'background-image': 'url('+posterPath + season.poster_path+')' }"></div>
+    <div class="info"> <span ng-if="season.season_number === 0">Extra: </span>Season {{season.season_number}}
+      <br> <small>{{season.air_date}}</small> </div>
+  </a>
+</div>
+<div class="page-holder" ng-if="details.credits.crew.length > 0">
+  <h5>Crew members</h5> </div>
+<div class="item-scroller" ng-if="details.credits.crew.length > 0">
+  <a ng-href="#/name/{{person.id}}" ng-repeat="person in details.credits.crew" class="item item-poster">
+    <div class="background" ng-style="{ 'background-image': 'url('+profilePath + person.profile_path+')' }"></div>
+    <div class="info"> {{person.name}}
+      <br> <small>{{person.job}}</small> </div>
+  </a>
+</div>
+<div class="page-holder" ng-if="details.similar.results.length > 0">
+  <h5>Similar</h5> </div>
+<div class="item-scroller" ng-if="details.similar.results.length > 0">
+  <a ng-href="#/title/{{title.id}}/{{type}}" ng-repeat="title in details.similar.results | orderBy:'-popularity'" class="item item-poster">
+    <div class="background" ng-style="{ 'background-image': 'url('+posterPath + title.poster_path+')' }"></div>
+    <div class="info"> {{title.title || title.name}}<span ng-if="type === 'movie'"> ({{title.release_date.substr(0,4)}})</span> </div>
+  </a>
+</div>
+
