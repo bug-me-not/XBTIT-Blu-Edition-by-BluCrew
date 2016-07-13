@@ -606,11 +606,22 @@ $q(function() {
 <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
   <div class="row">
    <div class="col-md-12">
-   <h1><a href='' target='_blank'><p class="text-success"><tag:blu_title /></p><small>Rating: <tag:blu_rating /></small></h1>
-   
-   </div>
+   <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title /></p></a><small>Rating: <tag:blu_rating /></small></h1>
+   Runtime: <tag:blu_runtime /><br>
+   Genre: <tag:blu_genre /><br>
+   Released: <tag:blu_released /><br><br>
+
+   <p class='lead'>
+      <b>Director:</b> <tag:blu_director /><br>
+      <b>Actors:</b> <tag:blu_actors /><br>
+   </p>
+
+   <p>Plot: <tag:blu_plot /></p><br>
+   <p>Awards: <tag:blu_awards /></p>
+
 </div> 
-<p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
+</div>
+<br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
 </div>
 <!-- Tab End -->
 
@@ -768,41 +779,6 @@ $q(function() {
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->
-
-   <!-- BluMovieDB Latest angular.js 
-   <script src="/jscript/angular.min.js"></script> -->
-
-<!-- BluMovieDB Some Needed angular module JS 
-<script>
-var app = angular.module('app', []);
-var imdb = "<tag:torrent.imdb />";
-app.controller("ListCtrl", function ($scope, $http) {
-     // Search submit
-    angular.element(document).ready(function () {
-        $scope.loading = true;
-        $scope.error = false;
-        $http.get('https://www.omdbapi.com/?i=tt' + imdb + '&y=&plot=full&r=json')
-               .success(function (data, status, headers, config) {
-                   $scope.movie = data;
-                   $scope.results = true;
-                   $scope.error = false;
-                   $scope.loading = false;
-
-                   if ($scope.movie.Response === "False") {
-                       $scope.results = false;
-                       $scope.error = true;
-                   }
-               })
-               .error(function (data, status, headers, config) {
-                   // called asynchronously if an error occurs
-                   // or server returns response with an error status.
-                   $scope.results = false;
-                   $scope.loading = false;
-                   $scope.error = true;
-               });
-    });
-});
-</script> -->
 
 
 

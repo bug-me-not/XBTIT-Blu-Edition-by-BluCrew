@@ -1301,7 +1301,15 @@ if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled" && $btit_setti
       $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$row["imdb"], array('plot'=>'full', 'tomatoes'=>'true'));
 
 $torrenttpl->set("blu_title",$movie->title);  
-$torrenttpl->set("blu_rating",$movie->imdbRating);   
+$torrenttpl->set("blu_rating",$movie->imdbRating);
+$torrenttpl->set("blu_runtime",$movie->runtime);
+$torrenttpl->set("blu_genre",$movie->genre);
+$torrenttpl->set("blu_released",$movie->released);
+$torrenttpl->set("blu_director",$movie->director);
+$torrenttpl->set("blu_actors",$movie->actors);
+$torrenttpl->set("blu_plot",$movie->plot);
+$torrenttpl->set("blu_awards",$movie->awards);
+$torrenttpl->set("blu_imdb",$movie->imdbID);
 /*echo $movie->year . '<br>';       
 echo $movie->rated . '<br>';      
 echo $movie->released . '<br>';   
