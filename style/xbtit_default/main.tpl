@@ -230,7 +230,7 @@ var tronstr = ''
     </a>
   </li>
   <li>
-    <a href='https://www.gofundme.com/kfukmgyc?utm_medium=wdgt'>
+    <a href='index.php?page=donate_options'>
       <i class="fa fa-usd"></i>
       <span>Donate</span>
     </a>

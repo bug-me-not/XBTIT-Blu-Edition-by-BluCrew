@@ -37,7 +37,7 @@ $text =
         </div>
 
 
-        <h3>Choose the amount you wish to donate from the 9 options below</h3><h4>[Please PM <a href=\"#\"><span class=\"text-lime\">Staff</span></a> with your confirmation details and your account will be credited ASAP]</h4><h4>Please mark your donation as hidden on gofundme or else your real name will be made public. Due to the provider refunds are NOT possible.</h4><br><br></center>
+        <h3>Choose the amount you wish to donate from the 9 options below</h3><h4>[Please PM <a href=\"index.php?page=userdetails&id=12922\"><span class=\"red\">Vinnie</span></a> with your confirmation details and your account will be credited ASAP]</h4><h4>Please mark your donation as hidden/anon on gofundme or else your real name will be made public. Due to the provider refunds are NOT possible.</h4><br><br></center>
 
      </div>
   </div>
