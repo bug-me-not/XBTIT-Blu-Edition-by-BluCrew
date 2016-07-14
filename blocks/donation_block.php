@@ -18,11 +18,11 @@ print("<i class='fa fa-credit-card-alt fa-4x'></i>");
 //go fund me
 print("<p align=\"center\" class='text-danger'>Donate via Gofundme</p>");
 print("<p align=\"center\" class='text-danger'>(Visa/Mastercard/Discover)</p><br />");
-print "<a target=\"_blank\" style=\"border:none;\" href=\"http://www.gofundme.com/kfukmgyc?utm_medium=wdgt\" title=\"Visit this page now.\"class=\"donate\">DONATE NOW</a><br />";
+print "<a target=\"_blank\" style=\"border:none;\" href=\"index.php?page=donate_options\" title=\"Visit this page now.\"class=\"donate\">DONATE NOW</a><br />";
 //go fund me
 
-// Donors Perks Modal
-print '<br><button class="btn btn-danger btn-xs" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Donors Perks</button>
+// Donors Perks Modal 
+/*print '<br><button class="btn btn-danger btn-xs" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Donors Perks</button>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
@@ -82,7 +82,7 @@ Warnings removed &nbsp;&nbsp;|&nbsp;&nbsp; 1 Invite if donation is over 10 USD &
 </div>
 </div>
 </div>
-</div>';
+</div>';*/
 // Donors Perks Modal
 
 echo "<br /></td>\n</tr>\n</table>\n";
