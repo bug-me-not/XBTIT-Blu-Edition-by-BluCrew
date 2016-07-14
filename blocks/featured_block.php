@@ -27,34 +27,12 @@ $sql = do_sqlquery("SELECT torrent_id FROM {$TABLE_PREFIX}featured ORDER BY fid 
 $result = $sql->fetch_assoc();
 $torrent = do_sqlquery("SELECT f.moder,f.imdb,f.image, f.info_hash, f.filename, f.url, UNIX_TIMESTAMP(f.data) as data, f.size, f.comment, f.uploader, c.name as cat_name, c.image as cat_image, c.id as cat_id, $tseeds, $tleechs, $tcompletes, f.speed, f.external, f.announce_url,UNIX_TIMESTAMP(f.lastupdate) as lastupdate,UNIX_TIMESTAMP(f.lastsuccess) as lastsuccess, f.anonymous, u.username FROM $ttables LEFT JOIN {$TABLE_PREFIX}categories c ON c.id=f.category LEFT JOIN {$TABLE_PREFIX}users u ON u.id=f.uploader WHERE f.info_hash ='$result[torrent_id]' AND (f.team = 0 OR ".$CURUSER['id_level']."> 7) $exclude AND f.moder = 'ok'",true);
 $tor = $torrent->fetch_assoc();
-// progress
-$id = $tor['info_hash'];
-$subres = get_result("SELECT sum(IFNULL(bytes,0)) as to_go, count(*) as numpeers FROM {$TABLE_PREFIX}peers where infohash='{$id}'",true,$btit_settings['cache_duration']);
-$subres2 = get_result("SELECT size FROM {$TABLE_PREFIX}files WHERE info_hash ='{$id}'",true,$btit_settings['cache_duration']);
-$torrent = $subres2[0];
-$subrow = $subres[0];
-$tmp=0+$subrow["numpeers"];
-if ($tmp>0) {
-   $tsize=(0+$torrent["size"])*$tmp;
-   $tbyte=0+$subrow["to_go"];
-   $prgs=(($tsize-$tbyte)/$tsize) * 100; //100 * (1-($tbyte/$tsize));
-   $prgsf=floor($prgs);
-}
-else
-$prgsf=0;
-// progress end
-// speed
-if ($tor["speed"] <= 1)
-$speed = 0;
-else
-$speed = $tor["speed"]/1048576 ;
-// speed end
 ?>
 
 <html>
     <head>
-        <link href="Strapslide/strapslide/css/strapslide.css" rel="stylesheet" media="screen" />
-        <link href="Strapslide/strapslide/css/strapslide-metro.css" rel="stylesheet" media="screen" />
+        <link href="css/featured_torrent.css" rel="stylesheet" media="screen" />
+        <link href="css/featured_torrent_metro.css" rel="stylesheet" media="screen" />
     </head>
     <body>
 <div class="panel panel-primary">
@@ -69,7 +47,7 @@ $speed = $tor["speed"]/1048576 ;
 
                     <!-- PRELOADER -->
                     <div class="preloader text-center">
-                        <img src="Strapslide/images/loader.gif" alt="Loading.." id="loader" />
+                        <img src="/images/loader.gif" alt="Loading.." id="loader" />
                     </div>
                     <!-- /PRELOADER -->
 
@@ -79,7 +57,7 @@ $speed = $tor["speed"]/1048576 ;
                         <!-- SLIDE -->
                         <div class="slide active" data-animation="fade, scaledown, top" id="slide1">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
+                        <img src="/images/tron1.jpg" class="background-image" alt=""/>
                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -87,7 +65,7 @@ $speed = $tor["speed"]/1048576 ;
                          <!-- SLIDE -->
                         <div class="slide" data-animation="fade, rotatecw, top" id="slide2">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
+                        <img src="/images/tron2.jpg" class="background-image" alt=""/>
                          <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -95,7 +73,7 @@ $speed = $tor["speed"]/1048576 ;
                          <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide3">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/tron.jpg" class="background-image" alt=""/>
+                        <img src="/images/tron.jpg" class="background-image" alt=""/>
                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -103,7 +81,7 @@ $speed = $tor["speed"]/1048576 ;
                         <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide4">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/tron1.jpg" class="background-image" alt=""/>
+                        <img src="/images/tron1.jpg" class="background-image" alt=""/>
                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -111,7 +89,7 @@ $speed = $tor["speed"]/1048576 ;
                         <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide5">
                         <!-- BACKGROUND IMAGE -->
-                        <img src="Strapslide/images/tron2.jpg" class="background-image" alt=""/>
+                        <img src="/images/tron2.jpg" class="background-image" alt=""/>
                         <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -171,12 +149,12 @@ $speed = $tor["speed"]/1048576 ;
 
 
         <!-- JavaScript plugins (requires jQuery) -->
-        <script src="Strapslide/strapslide/js/jquery.touchSwipe.min.js"></script>
-        <script src="Strapslide/strapslide/js/jquery.transit.min.js"></script>
-        <script src="Strapslide/strapslide/js/jquery.mousewheel.js"></script>
-        <script src="Strapslide/strapslide/js/jquery.fitVids.js"></script>
+        <script src="jscript/Featured_Torrent/jquery.touchSwipe.min.js"></script>
+        <script src="jscript/Featured_Torrent/jquery.transit.min.js"></script>
+        <script src="jscript/Featured_Torrent/jquery.mousewheel.js"></script>
+        <script src="jscript/Featured_Torrent/jquery.fitVids.js"></script>
         <!-- Slider plugin -->
-        <script src="Strapslide/strapslide/js/strapslide.js"></script>
+        <script src="jscript/Featured_Torrent/strapslide.js"></script>
 
         <script>
         jQuery.noConflict()(function($){
