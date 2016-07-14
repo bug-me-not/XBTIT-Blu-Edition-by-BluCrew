@@ -58,7 +58,7 @@ function popusers(url)
       <td><a href="<tag:pm[].senderid />"><tag:pm[].sendername /></a></td>
       <td><strong><a href="<tag:pm[].pmlink />"><tag:pm[].subject /></a></strong></td>
       <td class="lista" align="center"><tag:pm[].added /></td>
-      <td class="lista" align="center"><span class="label label-green"><tag:pm[].readed /></span></td>
+      <td class="lista" align="center"><tag:pm[].readed /></td>
       <td class="lista" align="center"><input type="checkbox" name="msg[]" value="<tag:pm[].msgid />" /></td>
     </tr>
 </loop:pm>
@@ -172,3 +172,4 @@ function popusers(url)
   </table>
   </div>
 </if:MSG_READ>
+

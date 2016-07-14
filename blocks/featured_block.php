@@ -148,6 +148,9 @@ $tor = $torrent->fetch_assoc();
             </div>
         </div>
         </div>
+        <div class="panel-footer">
+        </div>
+        </div>
 
 
         <!-- JavaScript plugins (requires jQuery) -->

@@ -12,7 +12,7 @@ function popusers(url)
 <h4 class="text-center">User CP</h4>
 </div>
 <div class="panel-body">
-<table class="table table-striped">
+<table class="table table-bordered">
   <tr>
     <td align="center" class="lista" colspan="3"><br /><tag:language.UCP_NOTE_1 /><br /><tag:language.UCP_NOTE_2 /><br /><br /></td>
   </tr>

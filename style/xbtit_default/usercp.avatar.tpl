@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Avatar Settings</h4>
+</div>
 <div align=center>
 <if:already_upload>
 <div class="panel panel-danger">
@@ -62,4 +66,7 @@
 </form>
 </if:already_upload>
 <br />
+</div>
+<div class="panel-footer">
+</div>
 </div>

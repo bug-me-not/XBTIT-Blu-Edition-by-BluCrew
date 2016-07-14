@@ -177,7 +177,7 @@ if($btit_settings["fmhack_anti_hit_and_run_system"]=="enabled")
 
 
 //User Options
-print("\n<tr><td align=\"center\"><a class= \"btn btn-xs btn-default\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Info</a></td></tr>\n");
+print("\n<tr><td align=\"center\"><a class= \"btn btn-xs btn-default\" href=\"index.php?page=userdetails&id=".$CURUSER["uid"]."\">My Profile</a></td></tr>\n");
 print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."\">User CP</a></td></tr>\n");
 if ($CURUSER["admin_access"]=="yes")
     print("\n<tr><td align=\"center\"><a class=\"btn btn-xs btn-default\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."\">".$language["MNU_ADMINCP"]."</a></td></tr>\n");

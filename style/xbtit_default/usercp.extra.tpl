@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Change Signature</h4>
+</div>
 <form method="post" action="<tag:frm_action />" name="user_extras">
 <center>
 <table class="table table-bordered">
@@ -32,3 +36,6 @@
 										  </center></td>
 		</tr>	
 </table></form>
+<div class="panel-footer">
+</div>
+</div>

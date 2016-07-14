@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Change PID</h4>
+</div>
 <form method="post" name="pid" action="<tag:pid_c.frm_action />">
   <table class="table table-bordered">
  <if:IS_PEER>
@@ -21,3 +25,6 @@
    </tr>
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

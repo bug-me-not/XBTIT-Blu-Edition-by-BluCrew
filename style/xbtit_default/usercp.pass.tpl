@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Change Password</h4>
+</div>
 <form method="post" name="password" action="<tag:pwd.frm_action />">
   <table class="table table-bordered">
     <tr>

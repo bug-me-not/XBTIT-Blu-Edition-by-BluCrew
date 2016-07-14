@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Edit Profile</h4>
+</div>
 <form name="utente" method="post" action="<tag:profile.frm_action />">
   <table class="table table-bordered">
     <tr>
@@ -24,6 +28,7 @@
     <td align="left" class="lista"><fieldset><legend><strong>Status update</strong></legend>
         <div id="current_holder">
        <small style="font-weight:bold;">Share your status</small>
+       <br>
        <textarea name="status" id="status" cols="50" rows="4"></textarea>
        <div style="width:380px;">
        <div style="clear:both;"></div></div>
@@ -149,3 +154,6 @@
     </tr>
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>
