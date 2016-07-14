@@ -11,11 +11,7 @@
   <if:birthdays_enabled>
     <tr>
       <td align="left" class="header"><tag:language.DOB />:</td>
-  <if:DOBEDIT> 
      <td align="left" class="lista"><input type="text" size="2" name="dobday" maxlength="2" value="<tag:profile.dobday />"/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="2" name="dobmonth" maxlength="2" value="<tag:profile.dobmonth />"/>&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="4" name="dobyear" maxlength="4" value="<tag:profile.dobyear />"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.DOB_FORMAT /></td>
-  <else:DOBEDIT>
-     <td align="left" class="lista"><input type="text" size="2" name="dobday" maxlength="2" value="<tag:profile.dobday />" readonly />&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="2" name="dobmonth" maxlength="2" value="<tag:profile.dobmonth />" readonly />&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" size="4" name="dobyear" maxlength="4" value="<tag:profile.dobyear />" readonly />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tag:language.DOB_FORMAT /></td>
-  </if:DOBEDIT> 
    </tr>
   </if:birthdays_enabled>
 
