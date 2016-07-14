@@ -2044,6 +2044,7 @@ if($CURUSER["edit_users"]=="yes")
 //My Uploads
     $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$id} AND anonymous='false' GROUP BY info_hash");
     $up_count = sql_num_rows($res_up);
+    $userdetailtpl->set("uploads",$up_count);
 //My Uploads End
 
 // Seeding/Leeching hack
