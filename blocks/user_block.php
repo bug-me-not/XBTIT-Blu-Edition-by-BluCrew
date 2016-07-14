@@ -128,7 +128,7 @@ if (!$CURUSER || $CURUSER["id"]==1)
      if ($mail['ur']>0)
         print("<tr><td align=\"center\"><a class= \"btn btn-xs btn-danger\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]." (<font color=\"#FFFFFF\"><b>".$mail['ur']."</b></font>)</a></td></tr>\n");
     else
-     print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-danger\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]."</a></td></tr>\n");
+     print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-green\" href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">".$language["MAILBOX"]."</a></td></tr>\n");
 }
 else
  print("<tr><td align=\"center\">".$language["NO_MAIL"]."</td></tr>");
@@ -151,7 +151,7 @@ echo '<td style="text-align:center;" align="center"><a class="btn btn-xs btn-inf
 
 
 //Seedbonus
-print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus><img src=\"images/bonus.png\"> ".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
+print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus>BON:<img src=\"images/bonus.png\">".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
 //Seedbonus END
 
 
