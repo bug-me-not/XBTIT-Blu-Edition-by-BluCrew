@@ -938,16 +938,6 @@ if($count > 0)
          }
             // User PageLayout Switch END
 
-            //IMDB Rating Start
-         if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")
-         {
-            $torrents[$i]["imdb"] = "Coming Soon.";
-            $torrents[$i]["imdb_genre"] = "Coming Soon.";
-         }
-         else
-            $torrents[$i]["imdb_genre"]="";
-            //IMDB Rating END
-
 
          if($GLOBALS["usepopup"])
          {
