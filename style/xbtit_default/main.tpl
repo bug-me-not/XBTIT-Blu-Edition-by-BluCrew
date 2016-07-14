@@ -151,6 +151,12 @@ var tronstr = ''
             <span>Home</span>
           </a>
         </li>
+         <li>
+          <a href='http://bmdb.blurg.xyz/#/'>
+            <i class="fa fa-film"></i>
+            <span>BluMovieDB</span>
+          </a>
+        </li>
         <li>
           <a href='index.php?page=modules&amp;module=getrss'>
             <i class="fa fa-rss"></i>
@@ -158,11 +164,11 @@ var tronstr = ''
           </a>
         </li>
         <li>
-          <a href='index.php?page=modules&amp;module=covers'>
+          <!--<a href='index.php?page=modules&amp;module=covers'>
             <i class="fa fa-photo"></i>
             <span>Artwork Section</span>
           </a>
-        </li>
+        </li>-->
         <!--<li>
           <a href='index.php?page=extra-stats&amp;type=users'>
             <i class="fa fa-pie-chart"></i>
