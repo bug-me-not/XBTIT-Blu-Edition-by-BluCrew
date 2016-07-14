@@ -8,6 +8,10 @@
     float:right;
 }
 
+.strapslide a{
+    color:#E64141;
+}
+
 /*==== Slides ====*/
 
 .strapslide h1, .strapslide h2, .strapslide h3, .strapslide h4{

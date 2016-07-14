@@ -109,15 +109,15 @@ $tor = $torrent->fetch_assoc();
 
                     <!-- TORRENT INFO -->
                     <div>
-                    <h2><a href="index.php?page=torrent-details&amp;id=<?php echo $tor['info_hash']; ?>"><?php echo $tor['filename']; ?></font></a></h2>
-                    <p>Size: 10.05 GB | Seeders: 3 | Leechers: 0 | Completed: 25</p>
+                    <center><h2><a href="index.php?page=torrent-details&amp;id=<?php echo $tor['info_hash']; ?>"><?php echo $tor['filename']; ?></font></a></h2>
+                    <p>Category: | Seeders: | Leechers: | Completed: </p></center>
                     </div>
                     <!-- TORRENT INFO -->
 
-                    <!-- DOWNLOAD BUTTON -->
+                    <!-- DOWNLOAD BUTTON
                     <button class="btn btn-labeled btn-danger" type="button">
-                    <span class="btn-label"><i class="fa fa-download"></i></span><a href="index.php?page=torrent-details&id=<?php echo $tor['info_hash']; ?>" alt="Torrent Details">Download</a></button>
-                    <!-- DOWNLAOD BUTTON -->
+                    <span class="btn-label"><i class="fa fa-download"></i></span><a href="index.php?page=torrent-details&id= <?php echo $tor['info_hash']; ?>"/>Download</a></button>
+                     DOWNLAOD BUTTON -->
 
                     <!-- NEXT-PREV NAVIGATION -->
                     <div class="row-fluid strapslide-nav">
@@ -131,6 +131,8 @@ $tor = $torrent->fetch_assoc();
                     <!-- /NEXT-PREV NAVIGATION -->
 
                     <!-- PAGINATION -->
+                    <br>
+                    <br>
                     <div class="row-fluid strapslide-pagination">
                         <div class="span12 text-center" style="text-align:center;">
                             <ul>
