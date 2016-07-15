@@ -988,4 +988,19 @@ function login_redirect($name, $value)
     </body></html>";
 }
 
+function setImageData($imdb, $tvdb)
+{
+
+}
+
+function getPosterImage($imdb, $tvdb)
+{
+
+}
+
+function getBannerData($imdb, $tvdb)
+{
+
+}
+
 ?>
