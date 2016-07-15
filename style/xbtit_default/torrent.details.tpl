@@ -605,6 +605,7 @@ $q(function() {
 
 <!-- Tab Start -->
 <div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
+<if:has_bmdb>
   <div class="row">
    <div class="col-md-12">
    <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title />&nbsp;&nbsp;(<tag:blu_year />)</p></a><small>Rating: <tag:blu_rating /></small></h1>
@@ -643,6 +644,9 @@ $q(function() {
    <b>Website:</b> <tag:blu_site /><br>
 </div> 
 </div>
+<else:has_bmdb>
+<p class='text-warning'>No data available</p>
+</if:has_bmdb>
 <br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
 </div>
 <!-- Tab End -->

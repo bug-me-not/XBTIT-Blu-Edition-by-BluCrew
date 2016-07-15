@@ -1261,56 +1261,7 @@ if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled" && $btit_setti
 
 //BluMovieDB
 
-   if($row['imdb']>0)
-   {
-// Include the Class
-      require("MovieInformation.php");
-
-// Namespace
-      //use SparksCoding\MovieInformation\MovieInformation;
-
-// Get move by title
-      $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$row["imdb"], array('plot'=>'full', 'tomatoes'=>'true'));
-
-//OMDB STATS
-      $torrenttpl->set("blu_title",$movie->title); 
-      $torrenttpl->set("blu_year",$movie->year); 
-      $torrenttpl->set("blu_rating",$movie->imdbRating);
-      $torrenttpl->set("blu_runtime",$movie->runtime);
-      $torrenttpl->set("blu_genre",$movie->genre);
-      $torrenttpl->set("blu_released",$movie->released);
-      $torrenttpl->set("blu_director",$movie->director);
-      $torrenttpl->set("blu_actors",$movie->actors);
-      $torrenttpl->set("blu_plot",$movie->plot);
-      $torrenttpl->set("blu_awards",$movie->awards);
-      $torrenttpl->set("blu_lang",$movie->language);
-      $torrenttpl->set("blu_country",$movie->country);
-      $torrenttpl->set("blu_poster" ,$movie->poster);
-      $torrenttpl->set("blu_metscore",$movie->metscore);
-
-//Rotten Tomato Stats
-      $torrenttpl->set("blu_tmeter",$movie->tomatoMeter); 
-      $torrenttpl->set("blu_timage",$movie->tomatoImage); 
-      $torrenttpl->set("blu_trating",$movie->tomatoRating); 
-      $torrenttpl->set("blu_treview",$movie->tomatoReviews); 
-      $torrenttpl->set("blu_tfresh",$movie->tomatoFresh); 
-      $torrenttpl->set("blu_trotten",$movie->tomatoRotten); 
-      $torrenttpl->set("blu_tconsensus",$movie->tomatoConsensus); 
-      $torrenttpl->set("blu_tumeter",$movie->tomatoUserMeter); 
-      $torrenttpl->set("blu_turating",$movie->tomatoUserRating); 
-      $torrenttpl->set("blu_tureviews",$movie->tomatoUserReviews); 
-
-// IMDB Stats
-      $torrenttpl->set("blu_irating",$movie->imdbRating); 
-      $torrenttpl->set("blu_ivotes",$movie->imdbVotes); 
-      $torrenttpl->set("blu_imdb",$movie->imdbID);
-
-//General Info
-      $torrenttpl->set("blu_dvd",$movie->dvd); 
-      $torrenttpl->set("blu_office",$movie->boxOffice); 
-      $torrenttpl->set("blu_pro",$movie->production);
-      $torrenttpl->set("blu_site",$movie->website);
-   }
+   $torrenttpl->set("has_bmdb",false,true);
 
 //BluMovieDB END
 
