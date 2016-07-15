@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User Search</h4>
+</div>
 <div align="center">
   <form action="index.php" name="ricerca" method="get">
   <input type="hidden" name="page" value="users" />
@@ -21,10 +25,15 @@
         <td><input type="submit" class="btn btn-primary" value="<tag:language.SEARCH />" /></td>
       </tr>
     </table>
-
+</div>
+<br>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Advanced Search</h4>
+</div>
 <if:extra_staff>
 <!-- Search by ip, email, pid ################################################################# -->
-<a href="javascript:animatedcollapse.toggle('slideadvanced')">.:. <u>[Extra Staff Search]</u> .:.</a>
+<a href="javascript:animatedcollapse.toggle('slideadvanced')"><center><u>[Extra Staff Search]</u></center></a>
 <script type="text/javascript">
 animatedcollapse.addDiv('slideadvanced', 'fade=1,speed=1000,persist=1,hide=0')
 animatedcollapse.ontoggle=function($, divobj, state){ }
@@ -46,8 +55,15 @@ animatedcollapse.init()
 </div>
 <!-- Search by ip, email, pid # end ########################################################### -->
 </if:extra_staff>
-  </form>
-  <tag:users_pagertop />
+</form>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Users List</h4>
+</div>
     <table class="table table-bordered">
       <tr>
         <td class="header" align="center"><tag:users_sort_username /></td>
@@ -106,5 +122,9 @@ animatedcollapse.init()
         </loop:users>
       </if:no_users>
     </table>
+</div>
+      <tag:users_pagertop />
+<div class="panel-footer">
+</div>
 </div>
 <br />
