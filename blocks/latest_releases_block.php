@@ -100,40 +100,8 @@ else
          while($result=$res->fetch_array())
          {
             //Banner Grab
-            $tvdb_banners=array();
-            if($result['imdb']>0)
-            {
-               if(file_exists($THIS_BASEPATH."/fanart/imdb/tt".$result["imdb"]."/banners"))
-               {
-                  foreach(glob($THIS_BASEPATH."/fanart/imdb/tt".$result["imdb"]."/banners/*.*") as $imageFilename)
-                  $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-               }
-            }
-
-            if($result['tvdb_id']>0)
-            {
-               if(file_exists($THIS_BASEPATH."/thetvdb/".$result["tvdb_id"]."/banners"))
-               {
-                  foreach(glob($THIS_BASEPATH."/thetvdb/".$result["tvdb_id"]."/banners/*.*") as $imageFilename)
-                  $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-               }
-
-               if(file_exists($THIS_BASEPATH."/fanart/thetvdb/".$result["tvdb_id"]."/banners"))
-               {
-                  foreach(glob($THIS_BASEPATH."/fanart/thetvdb/".$result["tvdb_id"]."/banners/*.*") as $imageFilename)
-                  $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-               }
-            }
-
-            if(count($tvdb_banners)>0)
-            {
-               $key_b=mt_rand(0,(count($tvdb_banners)-1));
-               $img=$tvdb_banners[$key_b];
-            }
-            else
                $img = "images/default_fanart.png";
             //Banner Grab
-            $tvdb_banners=null;
 
             $dowl="#";
             if($btit_settings["fmhack_download_ratio_checker"] == "enabled")

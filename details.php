@@ -251,9 +251,9 @@ else
 {
    while ($dts = $dt->fetch_array())
    {
-    $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
-    $i++;
- }
+     $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
+     $i++;
+  }
 }
 $torrenttpl->set("upl",$upl);
 // show all uploads per user end
@@ -1036,7 +1036,6 @@ else
 
 $torrenttpl->set("imdb_enabled", (($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")?(($btit_settings["fmhack_grab_images_from_theTVDB"]=="enabled" && $row["tvdb_id"]>0 && $btit_settings["tvdb_hide_imdb"]=="yes")?false:true):false),true);
 
-$tvdb_banners=array();
 if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")
 {
    if ($row["imdb"]==0)
@@ -1081,11 +1080,7 @@ if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")
          return false;\">".$language["SEARCH"]."</a></td>
       </tr>";
 
-      if(file_exists($THIS_BASEPATH."/fanart/imdb/tt".$row["imdb"]."/banners"))
-      {
-         foreach(glob($THIS_BASEPATH."/fanart/imdb/tt".$row["imdb"]."/banners/*.*") as $imageFilename)
-            $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-      }
+      
    }
    $torrenttpl->set("extra1",$extra1);
    $torrenttpl->set("frameit",$frameit);
@@ -1093,32 +1088,9 @@ if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")
 $theTVDBExtraOutput="";
 $img_src="";
 $banner_src="";
-if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled" && $row["tvdb_id"]!=0)
-{
 
-   if(file_exists($THIS_BASEPATH."/thetvdb/".$row["tvdb_id"]."/banners"))
-   {
-      foreach(glob($THIS_BASEPATH."/thetvdb/".$row["tvdb_id"]."/banners/*.*") as $imageFilename)
-         $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-   }
+$torrenttpl->set("has_cover_banner",false,true);
 
-   if(file_exists($THIS_BASEPATH."/fanart/thetvdb/".$row["tvdb_id"]."/banners"))
-   {
-      foreach(glob($THIS_BASEPATH."/fanart/thetvdb/".$row["tvdb_id"]."/banners/*.*") as $imageFilename)
-         $tvdb_banners[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-   }
-}
-if(count($tvdb_banners)>0)
-{
-   $key_b=mt_rand(0,(count($tvdb_banners)-1));
-   $tvdb_banner_out=$tvdb_banners[$key_b];
-}
-if(!empty($tvdb_banner_out) && $tvdb_banner_out!=""){
-   $torrenttpl->set("has_cover_banner",true,true);
-}
-else{
-   $torrenttpl->set("has_cover_banner",false,true);
-}
 $torrenttpl->set("tvdb_banner",$tvdb_banner_out);
 $torrenttpl->set("TheTVDBExtra", $theTVDBExtraOutput);
 
@@ -1136,18 +1108,18 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
       while ($srow = $sres->fetch_assoc())
       {
 // Begin Anonymous Comments for Anonymous Uploader Part 1
-       if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
-          $srow["user"] = "Anonymous";
-       }
+        if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
+           $srow["user"] = "Anonymous";
+        }
 // End Anonymous Comments for Anonymous Uploader Part 1
-       $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
-       $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
-       $i++;
-    }
-    $torrenttpl->set('subs',$sub);
-    unset($sub);
- }
- else
+        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
+        $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
+        $i++;
+     }
+     $torrenttpl->set('subs',$sub);
+     unset($sub);
+  }
+  else
    $torrenttpl->set("HAVE_SUBTITLE",false,true);
 
 $sres->free();
@@ -1301,76 +1273,76 @@ if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled" && $btit_setti
       $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$row["imdb"], array('plot'=>'full', 'tomatoes'=>'true'));
 
 //OMDB STATS
-$torrenttpl->set("blu_title",$movie->title); 
-$torrenttpl->set("blu_year",$movie->year); 
-$torrenttpl->set("blu_rating",$movie->imdbRating);
-$torrenttpl->set("blu_runtime",$movie->runtime);
-$torrenttpl->set("blu_genre",$movie->genre);
-$torrenttpl->set("blu_released",$movie->released);
-$torrenttpl->set("blu_director",$movie->director);
-$torrenttpl->set("blu_actors",$movie->actors);
-$torrenttpl->set("blu_plot",$movie->plot);
-$torrenttpl->set("blu_awards",$movie->awards);
-$torrenttpl->set("blu_lang",$movie->language);
-$torrenttpl->set("blu_country",$movie->country);
-$torrenttpl->set("blu_poster" ,$movie->poster);
-$torrenttpl->set("blu_metscore",$movie->metscore);
+      $torrenttpl->set("blu_title",$movie->title); 
+      $torrenttpl->set("blu_year",$movie->year); 
+      $torrenttpl->set("blu_rating",$movie->imdbRating);
+      $torrenttpl->set("blu_runtime",$movie->runtime);
+      $torrenttpl->set("blu_genre",$movie->genre);
+      $torrenttpl->set("blu_released",$movie->released);
+      $torrenttpl->set("blu_director",$movie->director);
+      $torrenttpl->set("blu_actors",$movie->actors);
+      $torrenttpl->set("blu_plot",$movie->plot);
+      $torrenttpl->set("blu_awards",$movie->awards);
+      $torrenttpl->set("blu_lang",$movie->language);
+      $torrenttpl->set("blu_country",$movie->country);
+      $torrenttpl->set("blu_poster" ,$movie->poster);
+      $torrenttpl->set("blu_metscore",$movie->metscore);
 
 //Rotten Tomato Stats
-$torrenttpl->set("blu_tmeter",$movie->tomatoMeter); 
-$torrenttpl->set("blu_timage",$movie->tomatoImage); 
-$torrenttpl->set("blu_trating",$movie->tomatoRating); 
-$torrenttpl->set("blu_treview",$movie->tomatoReviews); 
-$torrenttpl->set("blu_tfresh",$movie->tomatoFresh); 
-$torrenttpl->set("blu_trotten",$movie->tomatoRotten); 
-$torrenttpl->set("blu_tconsensus",$movie->tomatoConsensus); 
-$torrenttpl->set("blu_tumeter",$movie->tomatoUserMeter); 
-$torrenttpl->set("blu_turating",$movie->tomatoUserRating); 
-$torrenttpl->set("blu_tureviews",$movie->tomatoUserReviews); 
+      $torrenttpl->set("blu_tmeter",$movie->tomatoMeter); 
+      $torrenttpl->set("blu_timage",$movie->tomatoImage); 
+      $torrenttpl->set("blu_trating",$movie->tomatoRating); 
+      $torrenttpl->set("blu_treview",$movie->tomatoReviews); 
+      $torrenttpl->set("blu_tfresh",$movie->tomatoFresh); 
+      $torrenttpl->set("blu_trotten",$movie->tomatoRotten); 
+      $torrenttpl->set("blu_tconsensus",$movie->tomatoConsensus); 
+      $torrenttpl->set("blu_tumeter",$movie->tomatoUserMeter); 
+      $torrenttpl->set("blu_turating",$movie->tomatoUserRating); 
+      $torrenttpl->set("blu_tureviews",$movie->tomatoUserReviews); 
 
 // IMDB Stats
-$torrenttpl->set("blu_irating",$movie->imdbRating); 
-$torrenttpl->set("blu_ivotes",$movie->imdbVotes); 
-$torrenttpl->set("blu_imdb",$movie->imdbID);
+      $torrenttpl->set("blu_irating",$movie->imdbRating); 
+      $torrenttpl->set("blu_ivotes",$movie->imdbVotes); 
+      $torrenttpl->set("blu_imdb",$movie->imdbID);
 
 //General Info
-$torrenttpl->set("blu_dvd",$movie->dvd); 
-$torrenttpl->set("blu_office",$movie->boxOffice); 
-$torrenttpl->set("blu_pro",$movie->production);
-$torrenttpl->set("blu_site",$movie->website);
-}
+      $torrenttpl->set("blu_dvd",$movie->dvd); 
+      $torrenttpl->set("blu_office",$movie->boxOffice); 
+      $torrenttpl->set("blu_pro",$movie->production);
+      $torrenttpl->set("blu_site",$movie->website);
+   }
 
 //BluMovieDB END
 
    //Internal clock Hack
-if(internal_check($row['category']))
-{
-   $clocktime=do_sqlquery("select UNIX_TIMESTAMP(now()) as now, UNIX_TIMESTAMP(data) as data, UNIX_TIMESTAMP((data + INTERVAL 1 DAY)) as done, filename FROM {$TABLE_PREFIX}files WHERE info_hash='".sql_esc($id)."'")->fetch_assoc();
-   $clocknow=$clocktime['now']-$offset;
-   $clockup=$clocktime['data']-$offset;
-   $clockdone=$clocktime['done']-$offset;
-   $torrenttpl->set("internal_clock",true,true);
-   $torrenttpl->set("timenow",$clocknow);
-   $torrenttpl->set("timeup",$clockup);
-   $torrenttpl->set("timedone",$clockdone);
-}
-else
-{
-   $torrenttpl->set("internal_clock",false,true);
-}
-unset($clocktime); unset($clocknow); unset($clockup); unset($clockdone);
+   if(internal_check($row['category']))
+   {
+      $clocktime=do_sqlquery("select UNIX_TIMESTAMP(now()) as now, UNIX_TIMESTAMP(data) as data, UNIX_TIMESTAMP((data + INTERVAL 1 DAY)) as done, filename FROM {$TABLE_PREFIX}files WHERE info_hash='".sql_esc($id)."'")->fetch_assoc();
+      $clocknow=$clocktime['now']-$offset;
+      $clockup=$clocktime['data']-$offset;
+      $clockdone=$clocktime['done']-$offset;
+      $torrenttpl->set("internal_clock",true,true);
+      $torrenttpl->set("timenow",$clocknow);
+      $torrenttpl->set("timeup",$clockup);
+      $torrenttpl->set("timedone",$clockdone);
+   }
+   else
+   {
+      $torrenttpl->set("internal_clock",false,true);
+   }
+   unset($clocktime); unset($clocknow); unset($clockup); unset($clockdone);
    //Internal clock hack
 
    // cover/artwork section by medishack
-$artq = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers WHERE imdb=".$row['imdb']."");
-$artc = sql_num_rows($artq);
+   $artq = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers WHERE imdb=".$row['imdb']."");
+   $artc = sql_num_rows($artq);
 
-$coverquery = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers");
-$covernum = sql_num_rows($coverquery);
+   $coverquery = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers");
+   $covernum = sql_num_rows($coverquery);
 
    //if ($artc == 0)
    //{
-$artwork = "No Covers/Artwork currently available for this torrent <a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
+   $artwork = "No Covers/Artwork currently available for this torrent <a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
    /*}else{
       $artwork = ""; 
       while ($artr = $artq->fetch_array()) 
