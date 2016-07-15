@@ -91,6 +91,6 @@ padding - bottom : 40px;
 <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
 <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div><!-- /.carousel -->
-
-
-               </div>
+<div class="panel-footer">
+</div>
+</div>

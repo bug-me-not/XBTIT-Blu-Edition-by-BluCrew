@@ -67,7 +67,7 @@ if(count($res)>0)
     print("<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>".number_format($data['bounty'])."</td><td>{$reqfill}</td></tr>\n");
   }
 
-  print("</table></div>\n");
+  print("</table><div class='panel-footer'></div></div>\n");
 
   if($CURUSER['view_torrents'] == 'no')
   {
