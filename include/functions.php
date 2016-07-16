@@ -1076,29 +1076,29 @@ function pager($rpp, $count, $href, $opts = array())
          '.pages.options[document.change_page'.$pagename.'.pages.selectedIndex].value" size="1">';
          for($i = 1; $i <= $pages; $i++)
             $pager .= "\n<option ".($i == $page?'selected="selected"':'')."value=\"$href$pagename=$i\">$i</option>";
-         $pager .= "\n</select>";
+         $pager .= "\n</select><br>";
       }
    $mp = $pages; // - 1;
    $begin = ($page > 3?($page < $pages - 2?$page - 2:$pages - 2):1);
    $end = ($pages > $begin + 2?($begin + 2 < $pages?$begin + 2:$pages):$pages);
    if($page > 1)
    {
-      $pager .= "\n&nbsp;<span class=\"pager\"><a href=\"{$href}$pagename=1\">&nbsp;&laquo;</a></span>";
-      $pager .= "\n<span class=\"pager\"><a href=\"{$href}$pagename=".($page - 1)."\">&lt;&nbsp;</a></span>";
+      $pager .= "\n&nbsp;<ul class=\"pagination\"><li><a href=\"{$href}$pagename=1\"><i class=\"fa fa-backward\" aria-hidden=\"true\"></i></a></li></ul>";
+      $pager .= "\n<ul class=\"pagination\"><li><a href=\"{$href}$pagename=".($page - 1)."\"><i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i></a></li></ul>";
    }
    if($count)
    {
       for($i = $begin; $i <= $end; $i++)
       {
          if($i != $page)
-            $pager .= "\n&nbsp;<span class=\"pager\"><a href=\"{$href}$pagename=$i\">$i</a></span>";
+            $pager .= "\n&nbsp;<ul class=\"pagination\"><li><a href=\"{$href}$pagename=$i\">$i</a></li></ul>";
          else
-            $pager .= "\n&nbsp;<span class=\"pagercurrent\"><b>$i</b></span>";
+            $pager .= "\n&nbsp;<ul class=\"pagination\"><li>$i</li></ul>";
       }
       if($page < $mp && $mp >= 1)
       {
-         $pager .= "\n&nbsp;<span class=\"pager\"><a href=\"{$href}$pagename=".($page + 1)."\">&nbsp;&gt;</a></span>";
-         $pager .= "\n&nbsp;<span class=\"pager\"><a href=\"{$href}$pagename=$pages\">&nbsp;&raquo;</a></span>";
+         $pager .= "\n&nbsp;<ul class=\"pagination\"><li><a href=\"{$href}$pagename=".($page + 1)."\"><i class=\"fa fa-arrow-right\" aria-hidden=\"true\"></i></a></li></ul>";
+         $pager .= "\n&nbsp;<ul class=\"pagination\"><li><a href=\"{$href}$pagename=$pages\"><i class=\"fa fa-forward\" aria-hidden=\"true\"></i></a></li></ul>";
       }
       $pagertop = "$pager\n</form>";
       $pagerbottom = str_replace("change_page", "change_page1", $pagertop)."\n";
