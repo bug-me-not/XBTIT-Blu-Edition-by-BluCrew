@@ -1023,6 +1023,8 @@ function getPosterImage($imdb = 0 , $tvdb = 0, $infohash = '')
 
 function getBannerData($imdb = 0 , $tvdb = 0)
 {
+   global $THIS_BASEPATH;
+   
    $banners = array();
    $banner = "images/default_fanart.png";
 
@@ -1058,7 +1060,7 @@ function getBannerData($imdb = 0 , $tvdb = 0)
 
    if(count($banners) > 0)
    {
-      $rkey = mt_rand(0, (count($banners) -1));
+      $rkey = mt_rand(0, (count($banners) - 1));
       $banner = $banners[$rkey];
    }
 
