@@ -100,7 +100,7 @@ else
          while($result=$res->fetch_array())
          {
             //Banner Grab
-               $img = "images/default_fanart.png";
+               $img = getBannerData($result['imdb'],$result['tvdb_id']);
             //Banner Grab
 
             $dowl="#";
