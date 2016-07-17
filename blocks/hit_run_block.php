@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Latest H&R's</h4>
+</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -45,7 +49,7 @@ global $btit_settings, $TABLE_PREFIX, $XBTT_USE, $language, $res_seo;
     }
     if(count($res)>0)
     {
-        echo "<table class=lista border=0 align=center>";
+        echo "<table class=\"table table-bordered\">";
         foreach($res as $row)
         {
             echo "<tr><td width=15% class=lista><center><span style='color:red'>".$language["USER"].":</span> <a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$row["id"]."_".strtr($row["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$row["id"])."'>" . unesc($row["prefixcolor"] . $row["username"] . $row["suffixcolor"]) . " <img src='images/warn.gif' border=0></a></center></td></tr>";
@@ -69,3 +73,6 @@ global $btit_settings, $TABLE_PREFIX, $XBTT_USE, $language, $res_seo;
 
 
 ?>
+<div class="panel-footer">
+</div>
+</div>
