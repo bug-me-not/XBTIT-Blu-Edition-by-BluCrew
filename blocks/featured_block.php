@@ -39,7 +39,7 @@ $fname = $tor['filename'];
     <link href="css/featured_torrent_metro.css" rel="stylesheet" media="screen" />
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h4 class="text-center">Featured Torrent(Under Development)</h4>
+            <h4 class="text-center">Featured Torrent</h4>
         </div>
         <div class="container-fluid" style="padding:0;">
             <div class="row-fluid">
