@@ -229,8 +229,6 @@ for(var i = 0; i < countCheckBoxes; i++)
   <td align="center" width="20" class="header"><tag:torrent_header_waiting /></td>
   <else:WT>
 </if:WT>
-<if:imdb_enabled_2>
-</if:imdb_enabled_2>
 <if:usacotl2>
 <if:show_uploader1>
 </if:show_uploader1>
@@ -271,7 +269,7 @@ for(var i = 0; i < countCheckBoxes; i++)
     <b>Comments:</b> &nbsp;&nbsp;&nbsp;<tag:torrents[].comments />&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp;<b>IMDB Rating:</b>&nbsp;&nbsp;<tag:blu_rating />&nbsp;&nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <b>Upload Perks:</b> <if:free_leech_enabled><tag:torrents[].free /></if:free_leech_enabled><if:gast_enabled>&nbsp;<tag:torrents[].gold /></if:gast_enabled> &nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <span><tag:torrents[].bookmark /></span> &nbsp;&nbsp; <b>|</b> &nbsp;&nbsp; <tag:torrents[].download />
   </p>
 </td>
-<td align="center" width="3" class="lista" style="text-align: center;"><a href="<tag:torrents[].alt_image_imgup />" title="view image" class="lightbox"><img src="<tag:torrents[].alt_image_imgup />" width="125" height="170"></td>
+<td align="center" width="3" class="lista" style="text-align: center;"><a href="<tag:torrents[].poster />" title="view image" class="lightbox"><img src="<tag:torrents[].poster />" width="125" height="170"></td>
 <if:show_recommended_2>
 <td align="center" width="3" class="lista" style="text-align: center;"><tag:torrents[].recommended /></td>
 </if:show_recommended_2>
