@@ -964,67 +964,94 @@ function announcement ($uid) {
 
 function login_redirect($name, $value)
 {
-  echo "<html><head></head>
-  <body> 
-     <form name='dir' action='/login_new.php' method='post'>
-       <input type=hidden name='{$name}' value='{$value}' />
-       <input type=hidden name='submitter' value='true' />
-       <input type=hidden name='cmd' value='test' />
-    </form>
-    <script>
-       document.dir.submit();
-    </script>
- </body></html>";
+ echo "<html><head></head>
+ <body> 
+    <form name='dir' action='/login_new.php' method='post'>
+     <input type=hidden name='{$name}' value='{$value}' />
+     <input type=hidden name='submitter' value='true' />
+     <input type=hidden name='cmd' value='test' />
+  </form>
+  <script>
+     document.dir.submit();
+  </script>
+</body></html>";
 }
 
 function setImageData($imdb = 0 , $tvdb = 0)
 {
-
    require_once dirname(__file__)."/include/class.tvdb.php";
    $tvdb_api_key="84198CDB1D6D23DE";
-
    require_once dirname(__FILE__)."/include/class.fanart.php";
    $fanart_api_key="05e03e4887f762022f945ee1d27ca627";
+
+   if(getPosterImage($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
+   {
+
+   }
+
+   if(getBannerData($imdb, $tvdb) == "images/default_fanart.png")
+   {
+
+   }
+
+   if(!getDiscArt($imdb, $tvdb))
+   {
+
+   }
 
 }
 
 function getPosterImage($imdb = 0 , $tvdb = 0, $infohash = '')
 {
-   /*$posters = array();
+   $posters = array();
    $poster = $GLOBALS["uploaddir"]."nocover.jpg";
 
    if($imdb > 0)
    {
       if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters"))
       {
-
+         foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters/*.*") as $postersFile)
+         {
+            $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
+         }
       }
    }
 
    if($tvdb > 0)
    {
-
+      if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters"))
+      {
+         foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters/*.*") as $postersFile)
+         {
+            $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
+         }
+      }
    }
 
-   if(strlen($infohash) == 40)
+   if(strlen($infohash) >= 40)
    {
-
+      if(file_exists($THIS_BASEPATH."/".$GLOBALS['uploaddir'].$infohash))
+      {
+         $poster = $GLOBALS['uploaddir'].$infohash;
+      }
    }
 
-   if(count($posters) > 0)
+   if(count($posters) > 0 && $infohash == '')
    {
-      $rkey = mt_rand(0, (count($posters) -1));
+      $rkey = mt_rand(0, (count($posters) - 1));
       $poster = $posters[$rkey];
    }
 
-   return $poster; */
+   unset($rkey);
+   unset($posters);
 
+   return $poster; 
 }
 
 function getBannerData($imdb = 0 , $tvdb = 0)
 {
    global $THIS_BASEPATH;
-   
+
    $banners = array();
    $banner = "images/default_fanart.png";
 
@@ -1072,7 +1099,11 @@ function getBannerData($imdb = 0 , $tvdb = 0)
 
 function getDiscArt($imdb = 0, $tvdb = 0)
 {
+   $dArtS = array();
+   $dArt = false;
 
+
+   return $dArt;
 }
 
 ?>
