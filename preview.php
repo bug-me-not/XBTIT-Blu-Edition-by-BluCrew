@@ -32,7 +32,7 @@ else
 $text=(isset($_POST["data"]) && $_SERVER["REQUEST_METHOD"]=="POST"?htmlentities($_POST["data"]):$text='');
 if($text!='')
 {
-echo"<link rel=\"stylesheet\" type=\"text/css\" href=\"".$STYLEURL."/main.css\" />";
+echo"<link rel=\"stylesheet\" type=\"text/css\" href=\"".$STYLEURL."/bootstrap.css\" />";
 echo '<table width="98%" class="main" align="center"><tr><td class="header" align="center">'.$language["UP_PREV"].'</div></td></tr><tr><td class="lista" align="center">'.format_comment($text).'</td></td></tr></table>';
 }
 else{
