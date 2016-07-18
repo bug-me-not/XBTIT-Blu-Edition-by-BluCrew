@@ -54,7 +54,7 @@
         $max=60;
         if (strlen($chaine)>=$max)
 {
-        $chaine=substr($chaine,0,$max) . '[...]';
+        $chaine=substr($chaine,0,$max) . '...';
 }
 {
         $res2 = do_sqlquery("SELECT filename FROM {$TABLE_PREFIX}files WHERE info_hash='".$rq["info_hash"] ."'") or sqlerr();
@@ -64,8 +64,8 @@
         $arr3 = $res3->fetch_assoc();
         $post['username']=$arr3['prefixcolor'].$rq['user'].$arr3['suffixcolor'];
 }
-        print("<b><a href=index.php?page=torrent-details&amp;id=" . $rq["info_hash"]. ">" . $arr2["filename"] . "</a>&nbsp;".$is_new."<br>". format_comment(unesc($chaine))."</b><br>");
-        print("<span style=\"font-style: italic;\">By <a href=index.php?page=userdetails&amp;id=".$rq["uid"].">".  $post['username'] . "</a>, on ".date("d/m/Y H:i:s", strtotime($rq["added"]))."</span></td>");
+        print("<p class=\"text-info\"><a href=index.php?page=torrent-details&amp;id=" . $rq["info_hash"]. ">" . $arr2["filename"] . "</a>&nbsp;".$is_new."<br><br>". format_comment(unesc($chaine))."</p>");
+        print("<span style=\"font-style: italic;\">By <a href=index.php?page=userdetails&amp;id=".$rq["uid"].">".  $post['username'] . "</a>, on ".date("m/d/Y H:i:s", strtotime($rq["added"]))."</span></td>");
         print("<tr><b><td align=\"center\">" . $file["filename"]. "</td></b></tr>\n");
 }
 }

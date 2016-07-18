@@ -785,8 +785,7 @@ if($count > 0)
             $torrenttpl->set("sticky_enabled_19", $sticky_enabled, true);
             if($btit_settings["fmhack_sticky_torrent"] == "enabled")
             {
-               /*Mod by losmi - sticky mod
-               Start Operation #5*/
+               /*Mod by losmi - sticky mod*/
                //$sticky_color = get_result("SELECT * FROM {$TABLE_PREFIX}sticky ORDER BY id", true, $btit_settings["cache_duration"]);
                if(count($sticky_color) > 0)
                {
@@ -795,7 +794,6 @@ if($count > 0)
                }
                else
                {
-                  /*Default value some green #bce1ac;*/
                   $s_c = '#bce1ac;';
                }
                $torrents[$i]["color"] = '';
@@ -803,8 +801,8 @@ if($count > 0)
                {
                   $torrents[$i]["color"] = 'background:'.$s_c;
                }
-               /*Mod by losmi - sticky mod
-               End Operation #5*/
+               /*Mod by losmi - sticky mod*/
+
                $torrents[$i]["torrentid"]=$data["seoid"];
                $torrents[$i]["checked"]=(($data["sticky"]==1)?" checked=\"checked\"":"");
                $torrenttpl->set("queryString", $_SERVER["QUERY_STRING"]);
