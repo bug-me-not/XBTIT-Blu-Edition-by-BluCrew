@@ -681,57 +681,9 @@ if($count > 0)
                $userHasSlots=(($CURUSER["freeleech_slots"]>0)?true:false);
                $torrents[$i]["custom_freeleech"]=((!$freeByOtherMeans && !$flsTorrent && $userHasSlots)?"<a href='index.php?page=fls&id=".$data["hash"]."'>":"").image_or_link("images/fls_".(($flsTorrent)?"un":"")."locked.png", "", $language["FLS_".(($flsTorrent)?"UN":"")."LOCKED"]).((!$freeByOtherMeans && !$flsTorrent && $userHasSlots)?"</a>":"");
             }
-            $torrents[$i]["alt_image_with_priority"] = $GLOBALS["uploaddir"]."nocover.jpg";
-            if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled" || $btit_settings["fmhack_torrent_image_upload"] == "enabled" || $btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled")
-            {
-               $imgup_img = ((isset($data["imgup"]) && !empty($data["imgup"]) && file_exists(dirname(__file__)."/".$GLOBALS["uploaddir"].$data["imgup"]))?true:false);
-               $imdb_img = ((isset($data["imdb"]) && !empty($data["imdb"]) && file_exists(dirname(__file__)."/imdb/images/".$data["imdb"].".jpg"))?true:false);
-               $tvdb_img = false;
-               if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled" && !empty($data["tvdb_id"]))
-               {
-                  $selectedPics=array();
-                  if(file_exists($THIS_BASEPATH."/thetvdb/".$data["tvdb_id"]."/poster"))
-                  {
-                     foreach(glob($THIS_BASEPATH."/thetvdb/".$data["tvdb_id"]."/poster/*.*") as $imageFilename)
-                        $selectedPics[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-                  }
-                  if(count($selectedPics)>0)
-                  {
-                     $randomkey=array_rand($selectedPics, 1);
-                     if(file_exists($THIS_BASEPATH."/".$selectedPics[$randomkey]))
-                        $tvdb_img = $selectedPics[$randomkey];
-                  }
-               }
-               if($btit_settings["balloontype"]=="1,2,3")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($imgup_img)?$GLOBALS["uploaddir"].$data["img"]:(($imdb_img)?"imdb/images/".$data["imdb"].".jpg":(($tvdb_img)?$tvdb_img:$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
-               elseif($btit_settings["balloontype"]=="1,3,2")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($imgup_img)?$GLOBALS["uploaddir"].$data["img"]:(($tvdb_img)?$tvdb_img:(($imdb_img)?"imdb/images/".$data["imdb"].".jpg":$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
-               elseif($btit_settings["balloontype"]=="2,1,3")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($imdb_img)?"imdb/images/".$data["imdb"].".jpg":(($imgup_img)?$GLOBALS["uploaddir"].$data["img"]:(($tvdb_img)?$tvdb_img:$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
-               elseif($btit_settings["balloontype"]=="2,3,1")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($imdb_img)?"imdb/images/".$data["imdb"].".jpg":(($tvdb_img)?$tvdb_img:(($imgup_img)?$GLOBALS["uploaddir"].$data["img"]:$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
-               elseif($btit_settings["balloontype"]=="3,1,2")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($tvdb_img)?$tvdb_img:(($imgup_img)?$GLOBALS["uploaddir"].$data["image"]:(($imdb_img)?"imdb/images/".$data["imdb"].".jpg":$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
-               elseif($btit_settings["balloontype"]=="3,2,1")
-               {
-                  $torrents[$i]["alt_image_with_priority"] = (($tvdb_img)?$tvdb_img:(($imdb_img)?"imdb/images/".$data["imdb"].".jpg":(($imgup_img)?$GLOBALS["uploaddir"].$data["img"]:$GLOBALS["uploaddir"]."nocover.jpg")));
-               }
 
-               $torrents[$i]["alt_image_imgup"]= (($imgup_img === true)?$GLOBALS["uploaddir"].$data["imgup"]:(($imdb_img === true)?"imdb/images/".$data["imdb"].".jpg":$GLOBALS["uploaddir"].
-                  "nocover.jpg"));
+            $torrents[$i]["poster"] = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
 
-
-            }
             if($btit_settings["fmhack_torrent_moderation"] == "enabled" && $btit_settings["mod_app_sa"] == "yes" && $CURUSER["admin_access"] == "yes" && is_null($data["approved_by"]))
             {
                $data["approved_by"] = $language["SYSTEM_USER"];
@@ -834,50 +786,12 @@ if($count > 0)
                else
                   $mult = "";
             }
+
             if($btit_settings["fmhack_balloons_on_mouseover"] == "enabled")
             {
-               $balon="";
-               $balloonPriority=explode(",", $btit_settings["balloontype"]);
-               if(count($balloonPriority)>0)
-               {
-                  foreach($balloonPriority as $balloonValue)
-                  {
-                     if($balon=="")
-                     {
-                        if($balloonValue==1)
-                        {
-                           if(!empty($data["img"]) && @file_exists($THIS_BASEPATH."/".$btit_settings["uploaddir"].$data["img"]))
-                              $balon = $btit_settings["uploaddir"].$data["img"];
-                        }
-                        elseif($balloonValue==2)
-                        {
-                           if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled" && !empty($data["imdb"]) && @file_exists($THIS_BASEPATH."/imdb/images/".$data["imdb"].".jpg"))
-                              $balon = "imdb/images/".$data["imdb"].".jpg";
-                        }
-                        elseif($balloonValue==3)
-                        {
-                           if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled" && !empty($data["tvdb_id"]))
-                           {
-                              $selectedPics=array();
-                              if(file_exists($THIS_BASEPATH."/thetvdb/".$data["tvdb_id"]."/poster"))
-                              {
-                                 foreach(glob($THIS_BASEPATH."/thetvdb/".$data["tvdb_id"]."/poster/*.*") as $imageFilename)
-                                    $selectedPics[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-                              }
-                              if(count($selectedPics)>0)
-                              {
-                                 $randomkey=array_rand($selectedPics, 1);
-                                 if(file_exists($THIS_BASEPATH."/".$selectedPics[$randomkey]))
-                                    $balon = $selectedPics[$randomkey];
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-               if($balon=="")
-                  $balon = $btit_settings["uploaddir"]."nocover.jpg";
+               $balon = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
             }
+
             //Seedbox Start
             if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
             {
@@ -1561,17 +1475,9 @@ if($count > 0)
                            }
                         }
                      }
-                     $tora[$i]["alt_image_imgup"] = $GLOBALS["uploaddir"]."nocover.jpg";
-                     $tora[$i]["alt_image_imdb"] = $GLOBALS["uploaddir"]."nocover.jpg";
-                     if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled" && $btit_settings["fmhack_torrent_image_upload"] == "enabled")
-                     {
-                        $imgup_img = ((isset($rtorr_results["image"]) && !empty($rtorr_results["image"]) && file_exists(dirname(__file__)."/".$GLOBALS["uploaddir"].$rtorr_results["image"]))?true:false);
-                        $imdb_img = ((isset($rtorr_results["imdb"]) && !empty($rtorr_results["imdb"]) && file_exists(dirname(__file__)."/imdb/images/".$rtorr_results["imdb"].".jpg"))?true:false);
-                        $tora[$i]["alt_image_imgup"] = (($imgup_img === true)?$GLOBALS["uploaddir"].$rtorr_results["image"]:(($imdb_img === true)?"imdb/images/".$rtorr_results["imdb"].".jpg":$GLOBALS["uploaddir"].
-                           "nocover.jpg"));
-                        $tora[$i]["alt_image_imdb"] = (($imdb_img === true)?"imdb/images/".$rtorr_results["imdb"].".jpg":(($imgup_img === true)?$GLOBALS["uploaddir"].$rtorr_results["img"]:$GLOBALS["uploaddir"].
-                           "nocover.jpg"));
-                     }
+
+                     $tora[$i]["poster"] = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+
                      if($btit_settings["fmhack_uploader_size_and_comments_on_torrent_list"] == "enabled")
                      {
                         // search for comments
@@ -1726,48 +1632,9 @@ if($count > 0)
 
                      if($btit_settings["fmhack_balloons_on_mouseover"] == "enabled")
                      {
-                        $balon="";
-                        $balloonPriority=explode(",", $btit_settings["balloontype"]);
-                        if(count($balloonPriority)>0)
-                        {
-                           foreach($balloonPriority as $balloonValue)
-                           {
-                              if($balon=="")
-                              {
-                                 if($balloonValue==1)
-                                 {
-                                    if(!empty($rtorr_results["img"]) && @file_exists($THIS_BASEPATH."/".$btit_settings["uploaddir"].$rtorr_results["img"]))
-                                       $balon = $btit_settings["uploaddir"].$rtorr_results["img"];
-                                 }
-                                 elseif($balloonValue==2)
-                                 {
-                                    if($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled" && !empty($rtorr_results["imdb"]) && @file_exists($THIS_BASEPATH."/imdb/images/".$rtorr_results["imdb"].".jpg"))
-                                       $balon = "imdb/images/".$rtorr_results["imdb"].".jpg";
-                                 }
-                                 elseif($balloonValue==3)
-                                 {
-                                    if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled" && !empty($rtorr_results["tvdb_id"]))
-                                    {
-                                       $selectedPics=array();
-                                       if(file_exists($THIS_BASEPATH."/thetvdb/".$rtorr_results["tvdb_id"]."/poster"))
-                                       {
-                                          foreach(glob($THIS_BASEPATH."/thetvdb/".$rtorr_results["tvdb_id"]."/poster/*.*") as $imageFilename)
-                                             $selectedPics[]=str_replace($THIS_BASEPATH."/", "", $imageFilename);
-                                       }
-                                       if(count($selectedPics)>0)
-                                       {
-                                          $randomkey=array_rand($selectedPics, 1);
-                                          if(file_exists($THIS_BASEPATH."/".$selectedPics[$randomkey]))
-                                             $balon = $selectedPics[$randomkey];
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                        if($balon=="")
-                           $balon = $btit_settings["uploaddir"]."nocover.jpg";
+                        $balon = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
                      }
+
                      $tora[$i]["catid"] = $rtorr_results["catid"];
                      $tora[$i]["image"] = image_or_link(($rtorr_results["image"] == ""?"":"$STYLEPATH/images/categories/".$rtorr_results["image"]), "", $rtorr_results["cname"]);
                      $tora[$i]["hash"] = $rtorr_results["info_hash"];

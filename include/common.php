@@ -984,7 +984,7 @@ function setImageData($imdb = 0 , $tvdb = 0)
    require_once dirname(__FILE__)."/include/class.fanart.php";
    $fanart_api_key="05e03e4887f762022f945ee1d27ca627";
 
-   if(getPosterImage($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
+   if(getPosterData($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
    {
 
    }
@@ -1001,8 +1001,10 @@ function setImageData($imdb = 0 , $tvdb = 0)
 
 }
 
-function getPosterImage($imdb = 0 , $tvdb = 0, $infohash = '')
+function getPosterData($imdb = 0 , $tvdb = 0, $infohash = '')
 {
+   global $THIS_BASEPATH;
+
    $posters = array();
    $poster = $GLOBALS["uploaddir"]."nocover.jpg";
 
