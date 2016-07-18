@@ -530,93 +530,93 @@
             <tr>
               <td class="header">IMDB</td>
               <td class="lista" align="left"><b>tt<b><input type='text' name='imdb' value='0' size='10' maxlength='10' class="form-control" />&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy (http://www.imdb.com/title/tt<font color="red">1104001</font>) <tag:language.IMDB__EDIT_FORM /></td>
-</tr>
-</if:imdb_enabled>
-<!-- IMDB END -->
+            </tr>
+          </if:imdb_enabled>
+          <!-- IMDB END -->
 
-<!-- IMAGE UPLOAD START -->
-<if:imageup_enabled>
-<if:imageon>
-<tr>
-   <td class="header" ><tag:language.IMAGE />:</td>
-   <td class="lista" align="left"><input type="file" name="userfile" size="2000" class="btn btn-primary btn-anchor" /></td>
-</tr>
-</if:imageon>
-</if:imageup_enabled>
-<!-- IMAGE UPLOAD END -->
+          <!-- IMAGE UPLOAD START -->
+          <if:imageup_enabled>
+          <if:imageon>
+            <tr>
+              <td class="header" ><tag:language.IMAGE />:</td>
+              <td class="lista" align="left"><input type="file" name="userfile" size="2000" class="btn btn-primary btn-anchor" /></td>
+            </tr>
+          </if:imageon>
+          </if:imageup_enabled>
+          <!-- IMAGE UPLOAD END -->
 
-<!-- UPLOAD DESCRIPTION START -->
-<tr>
-   <td class="header" valign="top"><tag:language.DESCRIPTION /></td>
-   <td class="lista" ><tag:textbbcode /></td>
-</tr>
-<!-- UPLOAD DESCRIPTION END -->
+          <!-- UPLOAD DESCRIPTION START -->
+            <tr>
+              <td class="header" valign="top"><tag:language.DESCRIPTION /></td>
+              <td class="lista" ><tag:textbbcode /></td>
+            </tr>
+          <!-- UPLOAD DESCRIPTION END -->
 
-<!-- SCREENS UPLOAD START -->
-<if:imageup_enabled2>
-<if:screenon>
-<tr>
-   <td class="header"><tag:language.SCREEN /> (<tag:language.FACOLTATIVE />):</td>
-   <td class="lista">
-      <table class="lista" border="0" cellspacing="0" cellpadding="0">
-            <td class="lista" align="left"><input type="file" name="screen1" size="5" /></td>
-            <td class="lista" align="left"><input type="file" name="screen2" size="5" /></td>
-            <td class="lista" align="left"><input type="file" name="screen3" size="5" /></td>
-      </table>
-   </td>
-</tr>
-</if:screenon>
-</if:imageup_enabled2>
-<!-- SCREENS UPLOAD END -->
+          <!-- SCREENS UPLOAD START -->
+          <if:imageup_enabled2>
+          <if:screenon>
+            <tr>
+              <td class="header"><tag:language.SCREEN /> (<tag:language.FACOLTATIVE />):</td>
+              <td class="lista">
+              <table class="lista" border="0" cellspacing="0" cellpadding="0">
+              <td class="lista" align="left"><input type="file" name="screen1" size="5" /></td>
+              <td class="lista" align="left"><input type="file" name="screen2" size="5" /></td>
+              <td class="lista" align="left"><input type="file" name="screen3" size="5" /></td>
+            </table>
+            </td>
+            </tr>
+            </if:screenon>
+            </if:imageup_enabled2>
+          <!-- SCREENS UPLOAD END -->
 
-<!-- STICKY TORRENT START -->
-<if:sticky_enabled>
-<if:LEVEL_OK>
-<tr>
-   <td class="header" ><tag:language.STICKY_TORRENT /></td>
-   <td class="lista" align="left">
-      <input type="checkbox" name="sticky"> - <tag:language.STICKY_TORRENT_EXPLAIN />
-   </td>
-</tr>
-</if:LEVEL_OK>
-</if:sticky_enabled>
-<!-- STICKY TORRENT END -->
+          <!-- STICKY TORRENT START -->
+          <if:sticky_enabled>
+          <if:LEVEL_OK>
+            <tr>
+              <td class="header" ><tag:language.STICKY_TORRENT /></td>
+              <td class="lista" align="left">
+              <input type="checkbox" name="sticky"> - <tag:language.STICKY_TORRENT_EXPLAIN /></td>
+            </tr>
+          </if:LEVEL_OK>
+          </if:sticky_enabled>
+          <!-- STICKY TORRENT END -->
 
-<!-- ANON UPLOAD START -->
-<tr>
-   <td class="header"><tag:language.TORRENT_ANONYMOUS /></td>
-   <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" checked="checked" /></td>
-</tr>
-<!-- ANON UPLOAD END -->
+          <!-- ANON UPLOAD START -->
+            <tr>
+              <td class="header"><tag:language.TORRENT_ANONYMOUS /></td>
+              <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="anonymous" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="anonymous" value="false" checked="checked" /></td>
+            </tr>
+          <!-- ANON UPLOAD END -->
 
-<!-- REQUESTED START -->
-<if:nar_enabled>
-<tr>
-   <td class="header"><tag:language.TNR_REQUESTED /></td>
-   <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="false" checked="checked" /></td>
-   </tr>
-<!-- REQUESTED END -->
+          <!-- REQUESTED START -->
+          <if:nar_enabled>
+            <tr>
+              <td class="header"><tag:language.TNR_REQUESTED /></td>
+              <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="false" checked="checked" /></td>
+            </tr>
+          <!-- REQUESTED END -->
 
-<!-- NUKED START -->
-   <tr>
-      <td class="header"><tag:language.TNR_NUKED /></td>
-      <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="false" checked="checked" />
-         <input type="text" name="nuk_rea" size="43" maxlength="100" class="form-control"></td>
-      </tr>
-   </if:nar_enabled>
-<!-- NUKED END -->
-</br>  
-</table>
+          <!-- NUKED START -->
+            <tr>
+              <td class="header"><tag:language.TNR_NUKED /></td>
+              <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="nuk" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="nuk" value="false" checked="checked" />
+              <input type="text" name="nuk_rea" size="43" maxlength="100" class="form-control"></td>
+            </tr>
+            </if:nar_enabled>
+          <!-- NUKED END -->
+          </br>  
+          </table>
 
-<!-- BUTTONS START -->
-<table>
-   <tr>
-      <center><input type="submit" class="btn btn-primary" value="<tag:language.FRM_SEND />" />&nbsp;&nbsp;&nbsp;
-      <input type="reset" class="btn btn-danger" value="<tag:language.FRM_RESET />" />&nbsp;&nbsp;&nbsp;<a border="0" href="#dialog" name="modal"><button class="btn btn-success"><tag:language.UP_PREV /></button></a></center>
-   </tr>
-</table>
-<!-- BUTTONS END -->
-</form>
-</div>
-</div>
+          <!-- BUTTONS START -->
+          <table>
+            <tr>
+              <center><input type="submit" class="btn btn-primary" value="<tag:language.FRM_SEND />" />&nbsp;&nbsp;&nbsp;
+              <input type="reset" class="btn btn-danger" value="<tag:language.FRM_RESET />" />&nbsp;&nbsp;&nbsp;<a border="0" href="#dialog" name="modal"><button class="btn btn-success"><tag:language.UP_PREV /></button></a></center>
+            </tr>
+          </table>
+          <!-- BUTTONS END -->
+          
+          </form>
+          </div>
+          </div>
 
