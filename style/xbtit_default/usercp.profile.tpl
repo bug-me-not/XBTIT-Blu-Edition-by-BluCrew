@@ -36,7 +36,7 @@
   </tr>
     <tr>
       <td align="left" class="header"><tag:language.USER_EMAIL />:</td>
-      <td align="left" class="lista"><input type="text" size="30" name="email" maxlength="50" value="<tag:profile.email />"/></td>
+      <td align="left" class="lista"><input type="text" size="30" name="email" maxlength="50" autocomplete="off" value="<tag:profile.email />"/></td>
     </tr>
   <if:USER_VALIDATION>
     <tr>
@@ -139,7 +139,7 @@
     <!-- Password confirmation required to update user record -->
     <tr>
         <td align="left" class="header"><tag:language.USER_PWD />: </td>
-        <td align="left" class="lista" colspan="2"><input type="password" size="40" name="passconf" value=""/><tag:language.MUST_ENTER_PASSWORD /></td>
+        <td align="left" class="lista" colspan="2"><input type="password" size="40" name="passconf" autocomplete="off" value=""/><tag:language.MUST_ENTER_PASSWORD /></td>
     </tr>
     <!-- Password confirmation required to update user record -->
     <tr>
