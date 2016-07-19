@@ -251,9 +251,9 @@ else
 {
    while ($dts = $dt->fetch_array())
    {
-     $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
-     $i++;
-  }
+    $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
+    $i++;
+ }
 }
 $torrenttpl->set("upl",$upl);
 // show all uploads per user end
@@ -441,53 +441,6 @@ else
 
 $title2 = $row["filename"]." at ".$btit_settings["name"];
 $torrenttpl->set("language",$language);
-
-$torrenttpl->set("imageup_enabled",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
-$torrenttpl->set("imageup_enabled2",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
-$torrenttpl->set("imageup_enabled3",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
-if($btit_settings["fmhack_torrent_image_upload"]=="enabled")
-{
-   $torrenttpl->set("IMAGEIS",!empty($row["image"]),TRUE);
-      //Gaart edit: disabling screenshots section.
-   $torrenttpl->set("IMAGESC",FALSE);
-      //$torrenttpl->set("IMAGESC",!empty($row["screen1"]) OR !empty($row["screen2"])OR !empty($row["screen3"]) ,TRUE);
-      //End Gaart
-   $torrenttpl->set("SCREENIS1",!empty($row["screen1"]),TRUE);
-   $torrenttpl->set("SCREENIS2",!empty($row["screen2"]),TRUE);
-   $torrenttpl->set("SCREENIS3",!empty($row["screen3"]),TRUE);
-
-   if (!empty($row["image"]) && file_exists(($GLOBALS["uploaddir"].$row["image"])))
-   {
-      $image1 = $row["image"];
-      $uploaddir = $GLOBALS["uploaddir"];
-      $torrenttpl->set("uploaddir",$uploaddir);
-         $image_new = $uploaddir.$image1; //url of picture
-         //$image_new = str_replace(' ','%20',$image_new); //take url and replace spaces
-         $max_width= "490"; //maximum width allowed for pictures
-         $resize_width= "490"; //same as max width
-         $size = @getimagesize("$image_new"); //get the actual size of the picture
-         $width= $size[0]; // get width of picture
-         $height= $size[1]; // get height of picture
-
-         if ($width>$max_width)
-         $new_width=$resize_width; // Resize Image If over max width
-      else
-         $new_width=$width; // Keep original size from array because smaller than max
-
-      $torrenttpl->set("width",$new_width);
-   }
-   else
-   {
-      $torrenttpl->set("uploaddir","");
-   }
-}
-else
-{
-   $torrenttpl->set("IMAGEIS",FALSE,TRUE);
-   $torrenttpl->set("SCREENIS1",FALSE,TRUE);
-   $torrenttpl->set("SCREENIS2",FALSE,TRUE);
-   $torrenttpl->set("SCREENIS3",FALSE,TRUE);
-}
 
    // Temp Fix
 $torrenttpl->set("SHOW_UPLOADER",true,true);
@@ -1108,33 +1061,25 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
       while ($srow = $sres->fetch_assoc())
       {
 // Begin Anonymous Comments for Anonymous Uploader Part 1
-        if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
-           $srow["user"] = "Anonymous";
-        }
+       if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
+          $srow["user"] = "Anonymous";
+       }
 // End Anonymous Comments for Anonymous Uploader Part 1
-        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
-        $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
-        $i++;
-     }
-     $torrenttpl->set('subs',$sub);
-     unset($sub);
-  }
-  else
+       $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
+       $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
+       $i++;
+    }
+    $torrenttpl->set('subs',$sub);
+    unset($sub);
+ }
+ else
    $torrenttpl->set("HAVE_SUBTITLE",false,true);
 
 $sres->free();
 }
    // subtitles end
 
-$row["alt_image_imgup"]=$GLOBALS["uploaddir"]."nocover.jpg";
-$row["alt_image_imdb"]=$GLOBALS["uploaddir"]."nocover.jpg";
-if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled" && $btit_settings["fmhack_torrent_image_upload"]=="enabled")
-{
-   $imgup_img=((isset($row["image"]) && !empty($row["image"]) && file_exists(dirname(__FILE__)."/".$GLOBALS["uploaddir"].$row["image"]))?true:false);
-   $imdb_img=((isset($row["imdb"]) && !empty($row["imdb"]) && file_exists(dirname(__FILE__)."/imdb/images/".$row["imdb"].".jpg"))?true:false);
-   $row["alt_image_imgup"]=(($imgup_img===true)?$GLOBALS["uploaddir"].$row["image"]:(($imdb_img===true)?"imdb/images/".$row["imdb"].".jpg":$GLOBALS["uploaddir"]."nocover.jpg"));
-   $row["alt_image_imdb"]=(($imdb_img===true)?"imdb/images/".$row["imdb"].".jpg":(($imgup_img===true)?$GLOBALS["uploaddir"].$row["image"]:$GLOBALS["uploaddir"]."nocover.jpg"));
-}
+
 
    //Rate This Upload
    require('ajaxstarrater/_drawrating.php'); # ajax rating

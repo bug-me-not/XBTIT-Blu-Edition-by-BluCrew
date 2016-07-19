@@ -167,17 +167,6 @@ function dt_show_waitb()
 
 </script>
 
-<!-- <if:imageup_enabled>
-<link rel="stylesheet" href="css/jquery.lightbox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="jscript/jquery.lightbox.js"></script>
-<script type="text/javascript">
-var $q=jQuery.noConflict()
-$q(function() {
-   $q('a.lightbox').lightBox();
-});
-</script>
-</if:imageup_enabled> -->
-
 <if:internal_clock>
 <div align="center" class="panel">
    <script type="text/javascript" src="jscript/countdown.js"></script>
@@ -374,24 +363,6 @@ $q(function() {
    </td>
 </tr>
 </if:thanks_enabled>
-
-   <!--
-
-   NOTE: If using both the IMDB and image upload hacks you can replace "<tag:uploaddir /><tag:torrent.image />" with
-   <tag:torrent.alt_image_imgup /> to get an either/or image with Image upload having priority. To have IMDB with
-   priority use <tag:torrent.alt_image_imdb /> instead.
-
--->
-   <!--
-   <if:imageup_enabled2>
-   <if:IMAGEIS>
-   <tr>
-   <td align="right" class="header" valign="top"><tag:language.IMAGE /></td>
-   <td class="lista" align="center"><a href="<tag:uploaddir /><tag:torrent.image />" title="view image" class="lightbox"><img src="<tag:uploaddir /><tag:torrent.image />" width=<tag:width />></a></td>
-   </tr>
-   </if:IMAGEIS>
-   </if:imageup_enabled2>
--->
 
 <if:st_comm_enabled>
 <if:LEVEL_SC>
