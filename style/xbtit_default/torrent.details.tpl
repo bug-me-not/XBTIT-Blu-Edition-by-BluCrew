@@ -252,14 +252,10 @@ function dt_show_waitb()
   <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
     <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
 
-      <tag:TheTVDBExtra />
-
       <table class="table table-bordered">
-         <if:has_cover_banner>
          <tr>
-            <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:tvdb_banner />" /></td>
+            <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:banner />" /></td>
          </tr>
-      </if:has_cover_banner>
 
       <br>
 

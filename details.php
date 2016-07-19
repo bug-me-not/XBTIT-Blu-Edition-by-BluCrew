@@ -987,65 +987,7 @@ if ($GLOBALS["usepopup"])
 else
    $torrenttpl->set("torrent_footer","<a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a>");
 
-$torrenttpl->set("imdb_enabled", (($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")?(($btit_settings["fmhack_grab_images_from_theTVDB"]=="enabled" && $row["tvdb_id"]>0 && $btit_settings["tvdb_hide_imdb"]=="yes")?false:true):false),true);
-
-if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled")
-{
-   if ($row["imdb"]==0)
-   {
-      $searchit=$language["IMDB_NOT_ADDED"];
-   }
-   else
-   {
-      $frameit="<script type=\"text/javascript\" src=\"".$BASEURL."/jscript/imdb.js\"></script>
-
-      <div id='imdb'></div>
-      <script>
-         $(\"#imdb\").empty().html('<center><br><b>".$language["IMDB_SCAN"]."</b><br><img src=\"".$BASEURL."/images/loading.gif\" /></center>');
-         $(\"#imdb\").load(\"getimdb.php?mid=".$row["imdb"]."\");
-         jQuery.noConflict();
-      </script>
-      ";
-
-      $lang_path=$_SESSION["CURUSER"]["language_url"];
-
-      if($lang_path=="language/german" && !isset($imdburl))
-         $imdburl="www.imdb.de";
-      elseif($lang_path=="language/italian" && !isset($imdburl))
-         $imdburl="www.imdb.it";
-      elseif($lang_path=="language/spanish" && !isset($imdburl))
-         $imdburl="www.imdb.es";
-      elseif($lang_path=="language/french" && !isset($imdburl))
-         $imdburl="www.imdb.fr";
-      elseif(substr($lang_path, 0, 19)=="language/portuguese" && !isset($imdburl))
-         $imdburl="www.imdb.pt";
-      elseif(!isset($imdburl))
-         $imdburl="www.imdb.com";
-
-      $extra1="<tr>
-      <td align=\"right\" class=\"header\" valign=\"top\">".$language["IMDB_EXTRA"]."</td>
-      <td class=\"lista\" style=\"text-align:center\"><a href='http://".$imdburl."/title/tt".$row["imdb"]."' target='_blank'>".$language["IMDB_VIEW"]."</a>
-         &nbsp;&nbsp;<a href=\"javascript: void(0)\"
-         onclick=\"window.open('$BASEURL/imdb/imdb.php?mid=<tag:torrent.imdb />','windowname1','width=600, height=400,scrollbars=yes');
-         return false;\">".$language["IMDB_MORE_INFO"]."</a>
-         &nbsp;&nbsp;<a href=\"javascript: void(0)\"
-         onclick=\"window.open('$BASEURL/imdb/search.php?mid=".$row["imdb"]."&engine=imdb&name=".$row["filename"]."','windowname1','width=600,height=400,scrollbars=yes');
-         return false;\">".$language["SEARCH"]."</a></td>
-      </tr>";
-
-      
-   }
-   $torrenttpl->set("extra1",$extra1);
-   $torrenttpl->set("frameit",$frameit);
-}
-$theTVDBExtraOutput="";
-$img_src="";
-$banner_src="";
-
-$torrenttpl->set("has_cover_banner",false,true);
-
-$torrenttpl->set("tvdb_banner",$tvdb_banner_out);
-$torrenttpl->set("TheTVDBExtra", $theTVDBExtraOutput);
+$torrenttpl->set("banner",getBannerData($row["imdb"],$row["tvdb_id"]));
 
    // subtitles begin
 $torrenttpl->set("sub_enabled", (($btit_settings["fmhack_subtitles"]=="enabled")?true:false), true);
