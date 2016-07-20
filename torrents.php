@@ -815,7 +815,7 @@ if($count > 0)
                $dl = (($data["has_downloaded"]=="yes")?"<span class='label label-success'>Already Downloaded</span>":"");
             }
          }
-         $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data['catid']\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
+         $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=".$data['catid']."\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
          "</a>";
 
             //Torrent Nuke/Req Hack Start
