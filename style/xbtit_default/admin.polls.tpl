@@ -36,7 +36,7 @@
       <input type="hidden" name="userid" value="<tag:poll_user_id />" />
     </td>
     <td class="lista" align="center" style="white-space:nowrap;">
-      <input type="text" size="60" maxlength="55" id="pollerTitle" name="pollerTitle" value="<tag:poll_title />" />&nbsp;&nbsp;
+      <input type="text" size="60" maxlength="100" id="pollerTitle" name="pollerTitle" value="<tag:poll_title />" />&nbsp;&nbsp;
       <label for="active_yes"><tag:language.POLL_ACTIVE_TRUE /><input type="radio" name="active" value="yes" id="active_yes" <tag:checked_active_yes /> /></label>&nbsp;&nbsp;
       <label for="active_no"><tag:language.POLL_ACTIVE_FALSE /><input type="radio" name="active" id="active_no" value="no" <tag:checked_active_no /> /></label>
     </td>
