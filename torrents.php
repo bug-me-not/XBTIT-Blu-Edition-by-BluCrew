@@ -815,7 +815,7 @@ if($count > 0)
                $dl = (($data["has_downloaded"]=="yes")?"<span class='label label-success'>Already Downloaded</span>":"");
             }
          }
-         $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data[catid]\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
+         $torrents[$i]["category"] = "<a href=\"index.php?page=torrents&amp;category=$data['catid']\">".image_or_link(($data["image"] == ""?"":"$STYLEPATH/images/categories/".$data["image"]), "", $data["cname"]).
          "</a>";
 
             //Torrent Nuke/Req Hack Start
@@ -1287,8 +1287,6 @@ if($count > 0)
             $torrenttpl->set("ash_enabled_1", (($btit_settings["fmhack_advanced_torrent_search"] == "enabled")?true:false), true);
             $torrenttpl->set("ash_enabled_2", (($btit_settings["fmhack_advanced_torrent_search"] == "enabled")?true:false), true);
             $torrenttpl->set("imdb_enabled", (($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")?true:false), true);
-            $torrenttpl->set("imdb_enabled_2", (($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")?true:false), true);
-            $torrenttpl->set("imdb_enabled_3", (($btit_settings["fmhack_getIMDB_in_torrent_details"] == "enabled")?true:false), true);
             $torrenttpl->set("gold_enabled", (($btit_settings["fmhack_gold_and_silver_torrents"] == "enabled")?true:false), true);
             $torrenttpl->set("mult_enabled", (($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")?true:false), true);
             if($btit_settings["fmhack_advanced_torrent_search"] == "enabled")
