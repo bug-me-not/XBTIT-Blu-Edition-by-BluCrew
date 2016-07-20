@@ -109,6 +109,19 @@ if (isset($_GET["action"]))
 
 $tpl_comment=new bTemplate();
 
+//QUOTE START
+(isset($_GET["quoteid"]) && is_numeric($_GET["quoteid"])) ? $quoteid=intval($_GET["quoteid"]) : $quoteid=0;
+if($quoteid!=0)
+{
+   $quoteres=do_sqlquery("SELECT UNIX_TIMESTAMP(`c`.`added`) `added`, `c`.`text`, `u`.`id`, `c`.`user` FROM `{$TABLE_PREFIX}comments` `c` LEFT JOIN `{$TABLE_PREFIX}users` `u` ON `c`.`user`=`u`.`username` WHERE `c`.`id`=$quoteid AND `c`.`info_hash`='".sql_esc($id)."'");
+   if(@sql_num_rows($quoteres)==1)
+   {
+      $quoterow=$quoteres->fetch_assoc();
+      $quote="[quote] ".date("d F Y, H:i:s", $quoterow["added"])." [url=".$BASEURL."/index.php?page=userdetails&id=".$quoterow["id"]."]".$quoterow["user"]."[/url]".stripslashes($quoterow["text"])."[/quote]\n\n";
+   }
+}
+//QUOTE END
+
 $tpl_comment->set("vedsc_enabled", (($btit_settings["fmhack_view_edit_delete_preview_shoutBox_comments"]=="enabled")?true:false),true);
 $tpl_comment->set("captcha_enabled", (($btit_settings["fmhack_comment_captcha"]=="enabled")?true:false),true);
 
