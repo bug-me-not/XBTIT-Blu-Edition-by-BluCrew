@@ -834,6 +834,14 @@ switch ($pageID) {
    break;
          //Donate Page End
 
+         //Donate Page
+   case 'irc': 
+   require("$THIS_BASEPATH/irc.php");
+   $tpl->set("main_content",set_block($language["IRC"],"center",$donateotpl->fetch(load_template("irc.tpl"))));
+   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->IRC");
+   break;
+         //Donate Page End
+
    case 'index':
    case '':
    default:

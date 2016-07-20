@@ -1705,5 +1705,8 @@ $language['VALIDATION_SENT_TO_1'] = 'A validation email has been sent to:';
 $language['VALIDATION_SENT_TO_2'] = 'You will need to click on the link contained within the email in order to validate your account. The email should arrive within 10 minutes (usually instantly) although some email providers may mark it as SPAM so be sure to check your SPAM folder if you can\'t find it.<br /><br />If you still don\'t receive the email after this point then you should change your email address on your profile by clicking ';
 #Unvalidated
 
+#IRC
+$language['IRC'] = 'IRC';
+#IRC
 
 ?>
