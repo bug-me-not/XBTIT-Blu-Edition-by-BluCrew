@@ -9,14 +9,14 @@ $text =
    <div class=\"col-md-12\">
             <div class=\"panel panel-primary\">
                <div class=\"panel-heading\">
-                  <h4 class=\"text-center\"></h4>
+                  <h2 class=\"text-center\">BluRG IRC</h2>
                </div>
-               <span style=\"font-size: 14px\">
-                  To connect to our IRC with your client our official IRC network is irc.blurg.xyz
+               <center>
+                  <h3>To connect to our IRC with your client our official IRC network is irc.blurg.xyz</h3>
                   <br>
-                  BluRG Channel List 
-                  ( #blurg | #blurg_announce | #blurg_support )
-              </span>
+                  <h4>BluRG Channel List</h4>
+                  <p class=\"text-danger\">( #blurg | #blurg_announce | #blurg_support )</p>
+              </center>
            </p>
            <div class=\"panel-footer\">
            </div>
