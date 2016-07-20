@@ -254,7 +254,7 @@ function dt_show_waitb()
 
       <table class="table table-bordered">
          <tr>
-            <td class="lista" style="text-align:center;" colspan="2"><img class="tvdb_img" src="<tag:banner />" /></td>
+            <td class="lista" style="text-align:center;" colspan="2"><img class="banner" src="<tag:banner />" /></td>
          </tr>
 
       <br>
@@ -510,7 +510,7 @@ function dt_show_waitb()
             </tr>
             <loop:similar_torrents>
             <tr>
-               <td class="lista" style="text-align:center;"><a href="index.php?page=torrent-details&id=<tag:similar_torrents[].info_hash />&hit=1"><b><tag:similar_torrents[].name /></b></a></td>
+               <td class="lista" style="text-align:center;"><a href="index.php?page=torrent-details&amp;id=<tag:similar_torrents[].info_hash />&amp;hit=1"><b><tag:similar_torrents[].name /></b></a></td>
                <td class="lista" style="text-align:center;"><tag:similar_torrents[].date /></td>
                <td class="lista" style="text-align:center;"><tag:similar_torrents[].size /></td>
                <td class="lista" style="text-align:center;"><span style="color:<tag:similar_torrents[].sc />"><tag:similar_torrents[].seeds /></span></td>
@@ -522,17 +522,6 @@ function dt_show_waitb()
 </td>
 </tr>
 </if:similar_enabled>
-
-   <!--
-	<tr>
-	<td class="header" style="text-align:center;">All Uploads From This Uploader</td>
-    <td class="lista" style="text-align:center;"><marquee onmouseover=this.stop() onmouseout=this.start()  scrollAmount=3 direction=left >
-	<loop:upl>
-	<font size = 2><b><tag:upl[].filename /></b>
-	</loop:upl>
-	</marquee>
-	</td></tr>
--->
 
 <if:EXTERNAL>
 <tr>
@@ -553,7 +542,7 @@ function dt_show_waitb()
    <if:nfo_exists>
    <div align=right><a href='#nfo' onclick='javascript:ShowHide("slidenfo","");'><tag:language.NFO_SHOW_HIDE /></a></div>
    <div align='center' style='display:none' id='slidenfo'>
-      <img src='nfo/nfogen.php?nfo=rep/<tag:torrent.info_hash />.nfo&colour=1'>
+      <img src='nfo/nfogen.php?nfo=rep/<tag:torrent.info_hash />.nfo&amp;colour=1'>
    </div>
 </if:nfo_exists>
 </if:view_nfo>

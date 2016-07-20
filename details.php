@@ -251,9 +251,9 @@ else
 {
    while ($dts = $dt->fetch_array())
    {
-    $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
-    $i++;
- }
+     $upl[$i]["filename"]="<a href=index.php?page=torrent-details&id=".$dts["info_hash"].">".$dts["filename"]."</a>&nbsp;<font color = red><b>--</b></font>";
+     $i++;
+  }
 }
 $torrenttpl->set("upl",$upl);
 // show all uploads per user end
@@ -1003,18 +1003,18 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
       while ($srow = $sres->fetch_assoc())
       {
 // Begin Anonymous Comments for Anonymous Uploader Part 1
-       if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
-          $srow["user"] = "Anonymous";
-       }
+        if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
+           $srow["user"] = "Anonymous";
+        }
 // End Anonymous Comments for Anonymous Uploader Part 1
-       $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
-       $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
-       $i++;
-    }
-    $torrenttpl->set('subs',$sub);
-    unset($sub);
- }
- else
+        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
+        $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
+        $i++;
+     }
+     $torrenttpl->set('subs',$sub);
+     unset($sub);
+  }
+  else
    $torrenttpl->set("HAVE_SUBTITLE",false,true);
 
 $sres->free();
@@ -1170,30 +1170,5 @@ $sres->free();
    }
    unset($clocktime); unset($clocknow); unset($clockup); unset($clockdone);
    //Internal clock hack
-
-   // cover/artwork section by medishack
-   $artq = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers WHERE imdb=".$row['imdb']."");
-   $artc = sql_num_rows($artq);
-
-   $coverquery = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}covers");
-   $covernum = sql_num_rows($coverquery);
-
-   //if ($artc == 0)
-   //{
-   $artwork = "No Covers/Artwork currently available for this torrent <a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
-   /*}else{
-      $artwork = ""; 
-      while ($artr = $artq->fetch_array()) 
-      {
-         $loc = "covers/".$artr['filename'];
-         $name = $artr['name']." - ".$artr['type'] ." ". $artr['scan'];
-         $desc = $artr['name'] . " - Width = " .$artr['width']. "px Height = " . $artr['height'] ."px";
-         $artwork .= "<a href='covers/download.php?img={$artr['filename']}&name={$name}'><img src='coverthumb.php?file={$loc}&maxw=400&maxh=150' alt='{$desc}' title='{$desc}' border='0' /></a>&nbsp; &nbsp;";   
-      }
-      
-      $artwork .= "<br /><br /><a href='index.php?page=modules&module=covers'>View other available covers/artwork {$covernum} available</a>";
-   }  */
-   $torrenttpl->set("covers",$artwork);
-// cover/artwork section by medishack
 
    ?>
