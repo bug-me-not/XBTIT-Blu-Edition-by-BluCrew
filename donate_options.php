@@ -9,7 +9,9 @@ $text =
    <div class=\"col-md-12\">
 
       <center><h1>BluRG.xyz Donation Page</h1>
-         <p><b>Thank You $USERNAME for visiting the Donation page! We are a community run site so your support means alot!</b><br><br><br>
+         <p><b>Thank You for visiting the Donation page! We are a community run site so your support means alot!</b></p><br>
+         <div class=\"colors\" font-size=\"2em\">[Please PM <a href=\"index.php?page=userdetails&id=12922\"><span class=\"red\">Vinnie</span></a> with your confirmation details and your account will be credited ASAP]</div><br>
+         <br>
             <p class='text-danger'>IMPORTANT NOTES:</p>
             <p class='text-danger'>Donations DO NOT exempt you from the rules or from being banned.</p><br><br>
 
@@ -37,7 +39,8 @@ $text =
         </div>
 
 
-        <h3>Choose the amount you wish to donate from the 9 options below</h3><h4>[Please PM <a href=\"index.php?page=userdetails&id=12922\"><span class=\"red\">Vinnie</span></a> with your confirmation details and your account will be credited ASAP]</h4><h4>Please mark your donation as hidden/anon on gofundme or else your real name will be made public. Due to the provider refunds are NOT possible.</h4><br><br></center>
+        <h2>Choose the amount you wish to donate from the 9 options below</h2>
+        <h3>Please mark your donation as hidden/anon on gofundme or else your real name will be made public. Due to the provider refunds are NOT possible.</h3><br><br></center>
 
      </div>
   </div>
