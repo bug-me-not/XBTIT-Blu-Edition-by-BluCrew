@@ -29,7 +29,7 @@ $text =
          <div class=\"panel panel-primary\">
          <div class=\"panel-heading\">
          <h2 class=\"text-center\"></h2></div>
-         <center><iframe width=\"550\" height=\"350\" scrolling=\"no\" src=\"http://widget.mibbit.com/?settings=c9cfb89f40f649efc2ffe7c60f80a20c&server=irc.blurg.xyz&channel=%23blurg\"></iframe></center>
+         <center><iframe src=\"https://kiwiirc.com/client/irc.blurg.xyz/?nick=BluRG|?&theme=cli#blurg\" style=\"border:0; width:100%; height:450px;\"></iframe></center>
          <div class=\"panel-footer\">
         </div>
         </div>
