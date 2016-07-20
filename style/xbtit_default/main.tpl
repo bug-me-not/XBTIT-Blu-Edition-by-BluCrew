@@ -158,14 +158,14 @@ var tronstr = ''
           </a>
         </li>
         <li>
-          <a href='index.php?page=irc'>
+          <a href='index.php?page=modules&amp;module=getrss'>
             <i class="fa fa-rss"></i>
             <span>RSS</span>
           </a>
         </li>
         <li>
         <li>
-          <a href='index.php?page=modules&amp;module=getrss'>
+          <a href='index.php?page=irc'>
             <i class="fa fa-comments"></i>
             <span>IRC</span>
           </a>
