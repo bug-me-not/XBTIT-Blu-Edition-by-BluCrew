@@ -13,9 +13,11 @@ $text =
                </div>
                <center>
                   <h3>To connect to our IRC with your client our official IRC network is irc.blurg.xyz</h3>
+                  <h3>You will have to register with following command /msg NickServ REGISTER password  <---replace 'password' with your password of choice.</h3>
                   <br>
                   <h4>BluRG Channel List</h4>
                   <p class=\"text-danger\">( #blurg | #blurg_announce | #blurg_support )</p>
+                  <p class=\"text-success\">Ports: 6667 standard, 6697 ssl</p>
               </center>
            </p>
            <div class=\"panel-footer\">
