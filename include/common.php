@@ -979,9 +979,9 @@ function login_redirect($name, $value)
 
 function setImageData($imdb = 0 , $tvdb = 0)
 {
-   require_once dirname(__file__)."/include/class.tvdb.php";
+   require_once dirname(__file__)."/class.tvdb.php";
    $tvdb_api_key="84198CDB1D6D23DE";
-   require_once dirname(__FILE__)."/include/class.fanart.php";
+   require_once dirname(__FILE__)."/class.fanart.php";
    $fanart_api_key="05e03e4887f762022f945ee1d27ca627";
 
    if(getPosterData($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
@@ -1106,6 +1106,15 @@ function getDiscArt($imdb = 0, $tvdb = 0)
 
 
    return $dArt;
+}
+
+function getOMDBData($imdb)
+{
+   require_once dirname(__FILE__)."/class.omdb.php";
+
+   $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$imdb, array('plot'=>'full', 'tomatoes'=>'true'));
+
+   return $movie;
 }
 
 ?>
