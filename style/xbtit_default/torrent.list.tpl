@@ -251,7 +251,7 @@ for(var i = 0; i < countCheckBoxes; i++)
      <b>Size:</b>  &nbsp; <tag:torrents[].size />
    </p>
    <p>
-     <b>Files:</b>  &nbsp; Coming Soon!
+     <b>Files:</b>  &nbsp; <tag:torrents[].files />
    </p>
    <p>
      <b>Language:</b>  &nbsp; <tag:torrents[].language />
