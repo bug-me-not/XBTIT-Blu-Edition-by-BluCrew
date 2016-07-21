@@ -257,7 +257,7 @@ for(var i = 0; i < countCheckBoxes; i++)
      <b>Language:</b>  &nbsp; <tag:torrents[].language />
    </p>
    <p>
-     <b>Genre:</b> &nbsp; <tag:blu_genre />
+     <b>Genre:</b> &nbsp; <tag:torrents[].blu_genre />
    </p>
    <p>
      <b>Added:</b> &nbsp; <tag:torrents[].alt_added />
