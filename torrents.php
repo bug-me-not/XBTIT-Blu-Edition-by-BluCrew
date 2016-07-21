@@ -32,6 +32,8 @@
 if(!defined("IN_BTIT"))
    die("non direct access!");
 
+require_once(dirname(__FILE__)."/include/BDecode.php");
+
 $scriptname = htmlspecialchars($_SERVER["PHP_SELF"]."?page=torrents");
 $addparam = "";
 if($btit_settings["fmhack_display_new_torrents_since_last_Visit"] == "enabled")
@@ -683,6 +685,41 @@ if($count > 0)
             }
 
             $torrents[$i]["poster"] = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+
+            if(file_exists($data['url']))
+            {
+               $ffile=fopen($data["url"],"rb");
+               $content=fread($ffile,filesize($data["url"]));
+               fclose($ffile);
+               $content=BDecode($content);
+
+               $numcount = 0;
+               $numfiles = '';
+
+               if (isset($content["info"]) && $content["info"])
+               {
+                  $thefile=$content["info"];
+                  if (isset($thefile["length"]))
+                  {
+                     $numcount++;
+                  }
+                  elseif (isset($thefile["files"]))
+                  {
+                     foreach($thefile["files"] as $singlefile)
+                     {
+                        $numcount++;
+                     }
+                  }
+                  else
+                  {
+            // can't be but...
+                  }
+               }
+               $numfiles = $numcount.($numcount==1?" file":" files");
+               unset($content);
+            }
+
+            $torrents[$i]['files'] = $numfiles;
 
             if($btit_settings["fmhack_torrent_moderation"] == "enabled" && $btit_settings["mod_app_sa"] == "yes" && $CURUSER["admin_access"] == "yes" && is_null($data["approved_by"]))
             {
