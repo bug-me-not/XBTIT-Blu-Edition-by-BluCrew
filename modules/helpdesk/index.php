@@ -123,7 +123,10 @@ $wyn_s = $zap_s->fetch_array();
 
 $solved_by_name = $wyn_s["username"];
 
-print("<table align=center border=1 cellpadding=5 cellspacing=0>".
+print("<div class=\"panel panel-primary\">
+       <div class=\"panel-heading\">
+       <h4 class=\"text-center\">Issue</h4>
+       </div><table class=\"table table-bordered\">".
       "<tr><td align=center colspan=2 class=colhead>".$arr["title"]."</td></tr>".
       "<tr><td align=right><b>".$language['ADDED']."</b></td><td align=left>".$language["HD_ON"]."&nbsp;<b>".get_date_time($arr["added"])."</b>&nbsp;".$language["BY"]."&nbsp;<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["added_by"]."_".strtr($added_by_name, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["added_by"])."'><b>".$added_by_name."</b></a></td></tr>");
 
@@ -133,13 +136,13 @@ if ($arr["solved"] == 'yes') {
   print("<tr><td align=right><b>".$language["HD_PROBLEM"]."</b></td><td align=left><textarea name=msg_problem cols=60 rows=10>".$arr["msg_problem"]."</textarea></td></tr>".
         "<tr><td align=right><b>".$language["HD_SOLVED"]."</b></td><td align=left><span style='color:green'><b>".$language["YES"]."</b></span>&nbsp;".$language["HD_ON"]."&nbsp;<b>".get_date_time($arr["solved_date"])."</b>&nbsp;".$language["BY"]."&nbsp;<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["solved_by"]."_".strtr($solved_by_name, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["solved_by"])."'><b>".$solved_by_name."</b></a></td></tr>".
         "<tr><td align=right><b>".$language["HD_ANSWER"]."</b></td><td align=left><textarea name=msg_answer cols=60 rows=10>".$arr["msg_answer"]."</textarea></td></tr>".
-        "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></table>");
+        "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></table><div class=\"panel-footer\"></div></div>");
  }
 else if ($arr["solved"] == 'ignored') {
 
   print("<tr><td align=right><b>".$language["HD_PROBLEM"]."</b></td><td align=left><textarea name=msg_problem cols=60 rows=10>".$arr["msg_problem"]."</textarea></td></tr>".
         "<tr><td align=right><b>".$language["HD_SOLVED"]."</b></td><td align=left><span style='color=orange'><b>".$language["HD_IGNORED"]."</b></span>&nbsp;".$language["HD_ON"]."&nbsp;<b>".get_date_time($arr["solved_date"])."</b>&nbsp;".$language["BY"]."&nbsp;<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$arr["solved_by"]."_".strtr($solved_by_name, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$arr["solved_by"])."'><b>".$solved_by_name."</b></a></td></tr>".
-       "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></table>");
+       "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></table><div class=\"panel-footer\"></div></div>");
 
 }
 else if ($arr["solved"] == 'no') {
@@ -147,10 +150,11 @@ else if ($arr["solved"] == 'no') {
 $addedbyid = $arr["added_by"];
 
 print("<form method=post action=index.php?page=modules&amp;module=helpdesk><tr><td><tr><td align=right><b>".$language["HD_PROBLEM"]."</b></td><td align=left><textarea name=msg_problem cols=60 rows=10>".$arr["msg_problem"]."</textarea></td></tr>".
-      "<tr><td align=right><b>".$language["HD_SOLVED"]."</b></td><td align=center><span style='color=red'><b>".$language["NO"]."</b></span>".
+      "<tr><td align=right><b>".$language["HD_SOLVED"]."</b></td><td align=left><span style='color=red'><b>".$language["NO"]."</b></span>".
       "<tr><td align=right><b>".$language["HD_ANSWER"]."</b></td><td><textarea name=msg_answer cols=60 rows=10>$body</textarea><br/>[".$language["HD_BB"]."]<input type=hidden name=id value=$id><input type=hidden name=addedbyid value=$addedbyid></td></tr>".
-      "<tr><td colspan=2 align=center><input type=submit value=".$language["HD_ANSWER"]."! class=btn> <b>||</b> <a href=index.php?page=modules&amp;module=helpdesk&action=solve&pid=$id&solve=ignored><span style='color=red'><b>".$language["HD_IGNORE"]."</b></span></a></td></tr>".
-      "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></form></table>");
+      "<tr><td colspan=2 align=center><input type='submit' value=".$language["HD_ANSWER"]." class='btn btn-success btn-md'>
+      <a href=index.php?page=modules&amp;module=helpdesk&action=solve&pid=$id&solve=ignored><button class='btn btn-danger btn-md'>".$language["HD_IGNORE"]."</button></a></td></tr>".
+      "<tr><td align=center colspan=2 class=colhead><a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a></td></tr></form></table><div class=\"panel-footer\"></div></div>");
 }
 }
 
@@ -161,8 +165,11 @@ print("<form method=post action=index.php?page=modules&amp;module=helpdesk><tr><
 else {
 
 
-print("<br><table align=center border=1 cellpadding=5 cellspacing=0>"
-     ."<tr><td class=colhead align=center>".$language["HD_ADDED"]."</td>"
+print("<br><div class=\"panel panel-primary\">
+       <div class=\"panel-heading\">
+       <h4 class=\"text-center\">Helpdesk</h4>
+       </div><br><table class=\"table table-bordered\">"
+     ."<tr class='info'><td class=colhead align=center>".$language["HD_ADDED"]."</td>"
 	 ."<td class=colhead align=center>".$language["HD_ADDEDBY"]."</td>"
 	 ."<td class=colhead align=center>".$language["HD_PROBLEM"]."</td>"
 	 ."<td class=colhead align=center>".$language["HD_SOLVEDBY"]."</td>"
@@ -227,11 +234,15 @@ else
 
 }
 
-print("<tr><td align=center class=colhead colspan=5><form method=post action=index.php?page=modules&module=helpdesk&action=cleanuphd><input type=submit value='".$language["HD_DELPROB"]."' style='height:20;align:center;'></form></tr></table>");
+print("<tr><td align=center class=colhead colspan=5><form method=post action=index.php?page=modules&module=helpdesk&action=cleanuphd><input type=submit class='btn btn-warning btn-sm' value='".$language["HD_DELPROB"]."' style='height:20;align:center;'></form></tr></table><div class=\"panel-footer\"></div></div>");
+
 print("<br><br>".
-      "<center><span style='color:green'>[ xx ]</span> -".$language["HD_S_FAST"]." ".
-      "<span style='color:black'>[ xx ]</span> - ".$language["HD_S_INTIME"]." ".
-      "<span style='color:red'>[ xx ]</span> - ".$language["HD_S_LATE"]." </center>");
+      "<div class=\"panel panel-primary\">
+       <div class=\"panel-heading\">
+       <h4 class=\"text-center\">Legend</h4>
+       </div><center><span style='color:green'>".$language["HD_S_FAST"]."</span>".
+      "<span style='color:black'>&nbsp;&nbsp;&nbsp;&nbsp;".$language["HD_S_INTIME"]."</span>".
+      "<span style='color:red'>&nbsp;&nbsp;&nbsp;&nbsp;".$language["HD_S_LATE"]."</span></center><div class=\"panel-footer\"></div></div>");
 }
 
 //block_end();
