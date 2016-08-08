@@ -964,17 +964,17 @@ function announcement ($uid) {
 
 function login_redirect($name, $value)
 {
- echo "<html><head></head>
- <body> 
-    <form name='dir' action='/login_new.php' method='post'>
-     <input type=hidden name='{$name}' value='{$value}' />
-     <input type=hidden name='submitter' value='true' />
-     <input type=hidden name='cmd' value='test' />
-  </form>
-  <script>
-     document.dir.submit();
-  </script>
-</body></html>";
+  echo "<html><head></head>
+  <body> 
+     <form name='dir' action='/login_new.php' method='post'>
+       <input type=hidden name='{$name}' value='{$value}' />
+       <input type=hidden name='submitter' value='true' />
+       <input type=hidden name='cmd' value='test' />
+    </form>
+    <script>
+       document.dir.submit();
+    </script>
+ </body></html>";
 }
 
 function setImageData($imdb = 0 , $tvdb = 0)
@@ -1108,11 +1108,23 @@ function getDiscArt($imdb = 0, $tvdb = 0)
    return $dArt;
 }
 
-function getOMDBData($imdb)
+function getOMDBData($imdb) //Needs a caching system
 {
+   $cache_file = realpath(dirname(__FILE__)."/../cache/omdb/tt".$imdb.".txt");
+
+   if(file_exists($cache_file))
+   {
+      return unserialize($cache_file);
+   }
+
    require_once dirname(__FILE__)."/class.omdb.php";
 
    $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$imdb, array('plot'=>'full', 'tomatoes'=>'true'));
+
+   $contents = serialize($movie);
+   $file = fopen($cache_file,"w");
+   fputs($file,$contents);
+   fclose($file);
 
    return $movie;
 }
