@@ -37,6 +37,8 @@ Plus many more changes from small to big.
 
 
 REQUIREMENTS
+NGINX
+PHP 7
 
 
 
