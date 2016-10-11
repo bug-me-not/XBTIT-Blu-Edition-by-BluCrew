@@ -48,5 +48,3 @@ CREDITS
 
 
 
-
-[center][img]http://i.imgur.com/60FKNzd.png?1[/img][/center]
