@@ -1,0 +1,130 @@
+www.xbtit.com making it easy to own a tracker, my cat has a tracker and she is no PHP guru ...
+
+here are some pointers for novice and expert alike. first decide what you want:
+
+QUESTION: internal PHP tracker or xbtt?
+xbtt is recommended but you need root access to your server. the PHP tracker can handle 5-10,000 peers but creates a high volume of hits on your webserver. if you intend in time to migrate to xbtt then START with xbtt (those legacy PHP torrents will be a burden on your server for as long as they live, think about it)
+
+QUESTION: internal forum or smf?
+smf is the best but the internal forum is good, and you can migrate the site to smf at any time with our easy import script
+
+- PHP TRACKER AND INTERNAL FORUM -
+this is the easiest and fastest way to get your tracker up and running
+
+1. place the xbtit code in your webroot
+2. create your db (utf8_unicode_ci) and db user e.g. using phpMyAdmin. grant your db user usage privileges (data+structure, not grant/administration)
+3. use a web browser to open the site
+4. follow the instructions on the screen
+5. delete install.php
+6. enter the admin control panel and set your tracker's URL and announce URL's (delete the xbtt example announce with the :2710) and set your preferences ... save
+
+- xbtt AND INTERNAL FORUM -
+xbtt is the recommended tracker
+
+1. place the xbtit code in your webroot
+2. create your db (utf8_unicode_ci) and db user e.g. using phpMyAdmin. grant your db user usage privileges (data+structure, not grant/administration)
+3. use a web browser to open the site
+4. follow the instructions on the screen
+5. delete install.php
+6. install xbtt from http://xbtt.sourceforge.net/tracker/ *see the XBTT NOTES at the end of this readme
+7. create the xbtt tables in your db using /xbt/Tracker/xbt_tracker.sql
+8. configure xbtt /xbt/Tracker/xbt_tracker.conf with the same db and db user as above
+9. add these two lines to /xbt/Tracker/xbt_tracker.conf (leave 1xblank line at end of file)
+auto_register = 0
+full_scrape = 0
+10. enter the admin control panel and set your tracker's URL and announce URL's (delete the PHP tracker example) check the Use xbtt as backend? option and set your preferences ... save
+12. start the xbtt tracker and test by browsing to http://www.YOURSITE.com:2710/stats
+
+- smf -
+smf is GREAT forum code
+
+A. installing smf at installation of xbtit
+
+1. place the xbtit code in your webroot
+2. create your db (utf8_unicode_ci) and db user e.g. using phpMyAdmin. grant your db user usage privileges (data+structure, not grant/administration)
+3. get your smf code from http://www.simplemachines.org/ and place it in your webroot ./smf/
+4. use a web browser to open the site
+5. follow the instructions on the screen
+6. for smf use the same db and db user you created for xbtt and xbtit ...
+7. follow the instructions on screen
+
+B. migrating an internal forum to smf AFTER installation of xbtit
+
+1. get your smf code from http://www.simplemachines.org/ and place it in your webroot ./smf/
+2. open smf_import.php in a browser
+3. use the same db and db user you created for xbtt and xbtit ...
+4. follow the instructions on screen
+
+- xbtt AND smf -
+the *recommended* configuration
+
+1. read the above, it is all there. focus on xbtt and smf ;-)
+2. do it in a relaxed style. you are cool. you are a tracker owner
+3. enjoy your state of the devine art tracker  ;D
+4. donate to btiteam.org
+5. join xbtit and gain access to private hacks, modifications, and styles @ www.xbtit.com
+
+- UPGRADING FROM BTIT 1.4.* -
+your hacks and mods are NOT gonna migrate. the best you can do is bring ALL your torrents and members and posts and comments and stats etc ... and that is a RESULT!
+
+1. place the xbtit code in your webroot
+2. open  
+3. use a web browser to open the site (URL: http://yoursite/upgrade.php)
+4. follow the instructions on the screen
+5. delete install.php
+6. enter the admin control panel and set your tracker's URL and announce URL's (delete the xbtt example announce with the :2710) and set your preferences ... save
+7. re-apply your hacks and mods (join xbtit and gain access to the one click hacks and mods)
+
+- INSTALLING THE DEV SVN VERSION OF XBTIT -
+
+1. svn co https://btit-tracker.svn.sourceforge.net/svnroot/btit-tracker/BtitT2/branches/beta /var/www/html/
+2. use a web browser to open the site and proceed as normal install
+- CHANGING CURRENT XBTIT VERSION TO DEV SVN VERSION -
+
+1. save ./include/settings.php
+2. uninstall all hacks
+3. delete all files in webroot /html/
+4. enter the following command in bash:
+svn co https://btit-tracker.svn.sourceforge.net/svnroot/btit-tracker/BtitT2/branches/beta /var/www/html/
+4. restore ./include/settings.php
+5. delete upgrade.php install.php install.unlock
+6. apply your hacks
+
+- UPDATING DEV SVN VERSION -
+
+1. save ./include/settings.php
+2. uninstall all hacks
+3. delete all files in webroot /html/
+4. enter the following command in bash:
+svn up https://btit-tracker.svn.sourceforge.net/svnroot/btit-tracker/BtitT2/branches/beta /var/www/html/
+4. restore ./include/settings.php
+5. delete upgrade.php install.php install.unlock
+6. apply your hacks
+
+GENERAL NOTES:
+- the default xbtit tracker config needs your attention, i have made settings in there which you want to change 100%, look for them and learn your system (the tracker timings are all good)
+- look to your Users Group Settings, do they match what you want?
+- you need to create the boards for your internal forum
+- it is a lot of new stuff to take in, visit us at btiteam.org for free opensource support
+- for the adventurous, the latest (unstable) revision of xbtit is available at:
+svn co https://btit-tracker.svn.sourceforge.net/svnroot/btit-tracker/BtitT2/branches/beta
+
+XBTT NOTES
+- xbtt installs with auto_register = 1 which means people can use your tracker without uploading to your site, you most likely do not want that to happen
+- xbtt @ http://xbtt.sourceforge.net/tracker/ works with CentOS 5
+- the last revision of xbtt which works with CentOS 4.* is 1849. to checkout this specific version use the following subversion commands:
+
+svn co -r 1849 https://xbtt.svn.sourceforge.net/svnroot/xbtt/trunk/xbt/misc xbt/misc
+svn co -r 1849 https://xbtt.svn.sourceforge.net/svnroot/xbtt/trunk/xbt/Tracker xbt/Tracker
+
+the installation procedure is otherwise the same
+
+---------------------------------------------------------
+
+>> if you need help and want to support the project then buy xbtit PREMIUM @ www.xbtit.com and join the private support forum
+
+free support is available @ www.btiteam.org <<
+
+Locutius
+version 1.1 Jan 2008
+admin@xbtit.com
