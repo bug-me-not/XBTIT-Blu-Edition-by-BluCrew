@@ -104,7 +104,7 @@ if ($CURUSER["admin_access"]=="yes")
     print("<li><a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Staff Panel</a></li>\n");
     print("<li><a href='index.php?page=moder&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."'>Moderation Panel</a></li>\n");
     print("<li class='divider'></li>");
-    print("<li><a href='BluCrewPanel/index.html'>BluCrew Panel</a></li>\n");
+    print("<li><a href='http://blu-edition.hdinnovations.xyz/server/server_dashboard.php'>Web Server Panel</a></li>\n");
     print("</ul></li>");
 }
 
