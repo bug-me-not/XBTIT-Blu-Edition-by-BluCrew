@@ -153,6 +153,7 @@ if(isset($_FILES["torrent"])) {
     else $nuk_rea='';
     //Torrent Nuke/Req Hack Stop
   }
+
   if($btit_settings["fmhack_extended_torrent_description"]=="enabled") {
     # get config $xtdfig_db=get_khez_config("SELECT `key`,`value` FROM `{$TABLE_PREFIX}khez_configs` WHERE `key` LIKE 'xtd_%' LIMIT 7;", $reload_cfg_interval);
     # get langs require (load_language('lang_xtd.php'));
@@ -206,11 +207,13 @@ if(isset($_FILES["torrent"])) {
       foreach($bbcodes as $bbcode) {
         if(substr_count($lowercase_info, '['.$bbcode['name']) < $bbcode['min']) stderr($language['ERROR'], sprintf($language['XTD_ERROR_TAGS'], $bbcode['min'], $bbcode['name']));
       }
-      # test length if($xtdfig_db['xtd_chars'] !=0) {
+      # test length
+      if($xtdfig_db['xtd_chars'] !=0) {
         if(strlen($_POST['info']) < $xtdfig_db['xtd_chars']) stderr($language['ERROR'], sprintf($language['XTD_ERROR_CHARS'], $xtdfig_db['xtd_chars']));
       }
     }
   }
+
   if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled") {
     if(isset($_POST["imdb"])&&$_POST["imdb"]!="") $imdb=sql_esc(htmlspecialchars($_POST["imdb"]));
     else $imdb=0;
@@ -256,7 +259,7 @@ if(isset($_FILES["torrent"])) {
     (isset($_POST["multiplier"]) && is_numeric($_POST["multiplier"]) && $_POST["multiplier"] >=1 && $_POST["multiplier"] <=10)?$multiplier=(int)0 + $_POST["multiplier"]: $multiplier=1;
   }
   // UPLOAD MULTIPIER END //
-  
+
   if(isset($_POST["info"]) && $_POST["info"] !="") $comment=sql_esc($_POST["info"]);
   else {
     // description is now required (same as for edit.php)
@@ -1129,4 +1132,3 @@ switch($status) {
 }
 
 ?>
-
