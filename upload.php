@@ -780,7 +780,7 @@ if(isset($_FILES["torrent"]))
             }
 
             //Database is updated with new torrent.
-            $status = do_sqlquery($query);
+            $status = do_sqlquery($query,true);
             $file_id = sql_insert_id();
 
             //Upload status check section
