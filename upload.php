@@ -876,6 +876,9 @@ if(isset($_FILES["torrent"]))
 
                 $mf=@move_uploaded_file($_FILES["torrent"]["tmp_name"], $TORRENTSDIR."/".$hash.".btf");
 
+                var_dump("working");
+                die();
+
                 // Nfo hack -->
                 if($btit_settings["fmhack_NFO_uploader_-_viewer"]=="enabled")
                 {
