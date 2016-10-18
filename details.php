@@ -1115,7 +1115,7 @@ $sres->free();
    $torrenttpl->set("bookmark_enabled", (($btit_settings["fmhack_torrent_bookmark"]=="enabled")?true:false), true);
    $torrenttpl->set("avatar_signature_sync_enabled", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
    $torrenttpl->set("avatar_signature_sync_enabled_1", (($btit_settings["fmhack_avatar_signature_sync"]=="enabled")?true:false), true);
-   
+
 
    //Gift BON to Uploader Hack
    $tellen = 0;
@@ -1153,7 +1153,7 @@ $sres->free();
 //BluMovieDB END
 
    //Internal clock Hack
-   if(internal_check($row['category']))
+   if(false)//internal_check($row['category']))
    {
       $clocktime=do_sqlquery("select UNIX_TIMESTAMP(now()) as now, UNIX_TIMESTAMP(data) as data, UNIX_TIMESTAMP((data + INTERVAL 1 DAY)) as done, filename FROM {$TABLE_PREFIX}files WHERE info_hash='".sql_esc($id)."'")->fetch_assoc();
       $clocknow=$clocktime['now']-$offset;
