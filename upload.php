@@ -724,8 +724,8 @@ if(isset($_FILES["torrent"]))
             }
             if($btit_settings["fmhack_grab_images_from_theTVDB"]=="enabled")
             {
-                $query1_insert_key .=", `tvdb_id`");
-                $query1_insert_value .=", '".$tvdb_number."'");
+                $query1_insert_key .=", `tvdb_id`";
+                $query1_insert_value .=", '".$tvdb_number."'";
             }
             if($btit_settings["fmhack_magnet_links"]=="enabled" && !$DHT_PRIVATE && !$PRIVATE_ANNOUNCE)
             {
