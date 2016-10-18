@@ -315,6 +315,19 @@ if(isset($_FILES["torrent"]))
                 }
             }
         }
+        else
+        {
+            $imdb = 0;
+        }
+
+        if($btit_settings["fmhack_grab_images_from_theTVDB"] == "enabled")
+        {
+            $tvdb_number = (isset($_POST["tvdb_number"]) && !empty($_POST["tvdb_number"])) ? (int)0+$_POST["tvdb_number"]: 0;
+        }
+        else
+        {
+            $tvdb_number = 0;
+        }
 
         if(isset($hash) && $hash)
         $url = $TORRENTSDIR."/".$hash.".btf";
@@ -711,8 +724,8 @@ if(isset($_FILES["torrent"]))
             }
             if($btit_settings["fmhack_grab_images_from_theTVDB"]=="enabled")
             {
-                $query1_insert_key .=", `tvdb_id`".((isset($tvdb_extra) && !empty($tvdb_extra))?", `tvdb_extra`": "");
-                $query1_insert_value .=", '".$tvdb_number."'".((isset($tvdb_extra) && !empty($tvdb_extra))?", '".$tvdb_extra."'": "");
+                $query1_insert_key .=", `tvdb_id`");
+                $query1_insert_value .=", '".$tvdb_number."'");
             }
             if($btit_settings["fmhack_magnet_links"]=="enabled" && !$DHT_PRIVATE && !$PRIVATE_ANNOUNCE)
             {
@@ -784,7 +797,6 @@ if(isset($_FILES["torrent"]))
             $file_id = sql_insert_id();
 
             //Upload status check section
-
             if($status === TRUE)
             {
                 if($btit_settings["fmhack_forum_auto_topic"]=="enabled" && $btit_settings["smf_autotopic"]=="true" && $team==0)
