@@ -1,0 +1,246 @@
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=password] {
+	width: 500px;	
+}
+
+iframe,
+#bigdumpContainer {
+	padding: 0;
+    margin: 0;
+}
+
+#bigdumpBody {
+	overflow: hidden;
+}
+
+#dbErrorMessage,
+#dbSuccessMessage {
+	display: none;	
+}
+
+#dataImportStatus {
+	display: none;	
+}
+
+#bigdumpContainer {
+	height: 500px;
+	width: 100%;	
+}
+
+.disabled {
+	cursor: not-allowed;	
+}
+
+div.disabled {
+	display: none !important;	
+}
+
+.button-finish {
+	display: none;	
+}
+
+.frmLabel {
+	font-weight: normal;	
+}
+
+label.error {
+	margin-left: 10px;
+	color: #ff0000;
+	font-weight: normal;	
+}
+
+input.error {
+	border-color: rgba(255, 0, 0, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px rgba(255, 0, 0, 0.6);
+	outline: 0 none;	
+}
+
+.ui-dialog .ui-dialog-title .ui-icon {
+    float: left;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.btnPageRefresh {
+	cursor: pointer;	
+}
+
+.pager {
+	margin-top: 30px;	
+}
+
+.btnPager {
+    background-color: #F5F5F5 !important;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6) !important;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3 !important;
+    border-image: none;	
+}
+
+.btnPager.disabled, .btnPager[disabled] {
+    background-image: none !important;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.65;
+}
+
+#logo {
+	margin-top: 10px;	
+	margin-bottom: 10px;	
+}
+
+.label {
+	background-color: #999999 !important;	
+}
+
+#installWizard {
+	margin-bottom: 30px;
+	display: none;	
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width: 70%;
+}
+
+.bwizard-steps {
+    display: inline-block;
+    margin: 0; padding: 0;
+	background: #fff; 
+	margin-bottom: 20px;
+}
+    
+.bwizard-steps .active {
+    color: #fff;
+    background: #BE324C; 
+}
+    
+.bwizard-steps .active:after {
+    border-left-color: #BE324C; 
+}
+    
+.bwizard-steps .active a {
+    color: #fff;
+    cursor: default; 
+}
+    
+.bwizard-steps .label {
+    position: relative;
+    top: -1px;
+    margin: 0 5px 0 0; padding: 1px 5px 2px; 
+}
+
+.bwizard-steps .active .label {
+    background-color: #333 !important;
+}
+
+.bwizard-steps li {
+    display: inline-block; 
+    position: relative;
+    margin-right: 5px;
+    padding: 12px 17px 10px 30px;
+    *display: inline;
+    *padding-left: 17px;
+    background: #efefef;
+    line-height: 18px;
+    list-style: none;
+    zoom: 1; 
+}
+    
+.bwizard-steps li:first-child {
+    padding-left: 12px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px; 
+}
+
+.bwizard-steps li:first-child:before {
+    border: none; 
+}
+    
+.bwizard-steps li:last-child {
+    margin-right: 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0; 
+}
+    
+.bwizard-steps li:last-child:after {
+    border: none; 
+}
+
+.bwizard-steps li:before {
+    position: absolute;
+    left: 0; top: 0;
+    height: 0; width: 0;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #fff;
+    border-top: 20px inset transparent;
+    content: ""; 
+}
+
+.bwizard-steps li:after {
+	position: absolute;
+    right: -20px; top: 0;
+    height: 0; width: 0;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #efefef;
+    border-top: 20px inset transparent;
+    content: "";
+    z-index: 2; 
+}
+
+.bwizard-steps a {
+    color: #333; 
+}
+
+.bwizard-steps a:hover {
+    text-decoration: none; 
+}
+
+.bwizard-steps.clickable li:not(.active) {
+    cursor: pointer; 
+}
+
+.bwizard-steps.clickable li:hover:not(.active) {
+    background: #ccc; 
+}
+
+.bwizard-steps.clickable li:hover:not(.active):after {
+    border-left-color: #ccc; 
+}
+
+.bwizard-steps.clickable li:hover:not(.active) a {
+    color: #08c; 
+}
+
+a:hover, a:focus {
+    color: #F0647E; 
+}
+
+a {
+    color: #BE324C; 
+}
+
+@media (max-width: 480px) {
+    /* badges only on small screens */
+    .bwizard-steps li:after,
+    .bwizard-steps li:before {
+    	border: none; 
+    }
+    
+    .bwizard-steps li,
+    .bwizard-steps li.active,
+    .bwizard-steps li:first-child,
+    .bwizard-steps li:last-child {
+    	margin-right: 0;
+    	padding: 0;
+    	background-color: transparent; 
+    }
+}

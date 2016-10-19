@@ -1,0 +1,6 @@
+/* source:  http://www.bioneural.net/2006/04/01/create-a-valid-css-alert-message */
+/* CSS messages */
+
+.alert { background: #fff6bf url('../images/exclamation.png') 15px 50% no-repeat; padding: 5px 20px 5px 45px; border-top: 2px solid #ffd324; border-bottom: 2px solid #ffd324; }
+.info { background: #f8fafc url('../images/information.png') 15px 50% no-repeat; padding: 5px 20px 5px 45px; border-top: 2px solid #b5d4fe; border-bottom: 2px solid #b5d4fe; }
+.download { background: #cfc url('../images/arrow_down.png') 15px 50% no-repeat; padding: 5px 20px 5px 45px; border-top: 2px solid #3C6; border-bottom: 2px solid #3C6; }
