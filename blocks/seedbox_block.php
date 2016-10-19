@@ -45,7 +45,11 @@ else
 {
    $query = do_sqlquery("select ip FROM {$TABLE_PREFIX}seedboxip");
 
-   while ($row = $query->fetch_row()) {    $seedip[] = $row[0]; }
+   while ($row = $query->fetch_row())
+   {
+     $seedip[] = $row[0];
+   }
+
    $id=do_sqlquery("select DISTINCT(infohash) FROM {$TABLE_PREFIX}peers WHERE ip IN ('".implode("','",$seedip)."')");
    $num=sql_num_rows($id);
    $rowt=$id->fetch_array();
@@ -53,10 +57,14 @@ else
 
    while ($row=$od->fetch_assoc())
    {
-      if ($row["upload_difference"]>0){//&& $rowt['announce_interval'] > '0')
-      $transferrateUP="".makesize(round(round($row['upload_difference']/900),2))."";
-      }else{
-      $transferrateUP="0 KB/sec";
+      if ($row["upload_difference"]>0)
+      {
+        //&& $rowt['announce_interval'] > '0')
+        $transferrateUP="".makesize(round(round($row['upload_difference']/900),2))."";
+      }
+      else
+      {
+        $transferrateUP="0 KB/sec";
       }
    }
    ?>
@@ -73,12 +81,14 @@ else
                .thisclass{background-color:#41383C}
                </style>
                <script language="javascript">
-               function change(color){
+               function change(color)
+               {
                   var el=event.srcElement
                   if (el.tagName=="INPUT"&&el.type=="button")
-                  event.srcElement.style.backgroundColor=color
+                    event.srcElement.style.backgroundColor=color
                }
-               function jumpto2(url){
+               function jumpto2(url)
+               {
                   window.location=url
                }
                </script>
@@ -89,9 +99,9 @@ else
                      <td  class = "header" align="center"><input type="button" name="Button" class="btn btn-danger" value="SB Torrents" onClick="jumpto2('index.php?page=seedbox')"></td>
                   <?php
                }
-
                ?>
-            </tr></table>
+            </tr>
+          </table>
             <?php }?>
 <div class="panel-footer">
 </div>
