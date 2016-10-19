@@ -874,149 +874,139 @@ if(isset($_FILES["torrent"]))
                     }
                 }
 
-                $mf=@move_uploaded_file($_FILES["torrent"]["tmp_name"], $TORRENTSDIR."/".$hash.".btf");
-
-                var_dump("working");
-                die();
-
-                // Nfo hack -->
-                if($btit_settings["fmhack_NFO_uploader_-_viewer"]=="enabled")
+                $mf = @move_uploaded_file($_FILES["torrent"]["tmp_name"], $TORRENTSDIR."/".$hash.".btf");
+                ##############################################################
+                # Nfo hack -->
+                if($btit_settings["fmhack_NFO_uploader_-_viewer"] == "enabled")
                 {
-                    // Nfo hack
-                    if($btit_settings["fmhack_NFO_uploader_-_viewer"]=="enabled")
+                    if($nfocheck)
                     {
-                        if($nfocheck)
+                        if(empty($error))
                         {
-                            if(empty($error))
-                            {
-                                $result=@move_uploaded_file($nfo, "nfo/rep/".$hash.".nfo");
-                                if(empty($result))
-                                $error["result"]=stderr($language["ERROR"], $language["NFO_CANT_MOVE"]);
-                            }
+                            $result = @move_uploaded_file($nfo, "nfo/rep/".$hash.".nfo");
+                            if(empty($result))
+                            $error["result"] = stderr($language["ERROR"], $language["NFO_CANT_MOVE"]);
                         }
-
-                        if(is_array($error))
-                        {
-                            while(list($key, $val)=each($error))
-                            echo $val;
-                        }
-
-                        // End NFO Hack
-                        if(!$mf) // failed to move file
-                        {
-                            quickQuery("DELETE FROM {$TABLE_PREFIX}files WHERE info_hash=\"$hash\"", true);
-
-                            if($XBTT_USE)
-                            quickQuery("UPDATE xbt_files SET flags=1 WHERE info_hash=0x$hash", true);
-
-                            stderr($language["ERROR"], $language["ERR_MOVING_TORR"]);
-                        }
-
-                        // try to chmod new moved file, on some server chmod without this could result 600, seems to be php bug
-                        @chmod($TORRENTSDIR."/".$hash.".btf", 0766);
-
-                        if($btit_settings["fmhack_gold_and_silver_torrents"]=="enabled")
-                        {
-                            // gold/silver torrent
-                            $getgold=get_result("SELECT `gold_percentage`, `silver_percentage`, `bronze_percentage` FROM `{$TABLE_PREFIX}gold` WHERE `id`=1", true, $btit_settings["cache_duration"]);
-
-                            if($gold==0)
-                            $xgold=100;
-                            elseif($gold==1)
-                            $xgold=$getgold[0]["silver_percentage"];
-                            elseif($gold==2)
-                            $xgold=$getgold[0]["gold_percentage"];
-                            elseif($gold==3)
-                            $xgold=$getgold[0]["bronze_percentage"];
-
-                            $free_mode=false;
-
-                            if($btit_settings["fmhack_free_leech_with_happy_hour"]=="enabled" && $XBTT_USE)
-                            {
-                                $petr1=do_sqlquery("SELECT `free`, `happy` FROM `{$TABLE_PREFIX}files` WHERE `info_hash`='".$hash."'", true);
-                                if(@sql_num_rows($petr1) > 0)
-                                {
-                                    $fied=$petr1->fetch_assoc();
-                                    if($fied["free"]=="yes" || $fied["happy"]=="yes")
-                                    {
-                                        $free_mode=true;
-                                    }
-                                }
-                            }
-                            if($XBTT_USE && $free_mode===false)
-                            quickQuery("UPDATE `xbt_files` SET `down_multi`=".$xgold.", `flags`=2 WHERE `info_hash`=0x".$hash, true);
-                        }
-
-                        if(!in_array($announce, $TRACKER_ANNOUNCEURLS))
-                        {
-                            if($btit_settings["fmhack_multi_tracker_scrape"]=="enabled")
-                            require_once (dirname(__file__)."/include/getscrape_multiscrape.php");
-                            else
-                            require_once (dirname(__file__)."/include/getscrape.php");
-
-                            scrape($announce, $hash);
-                            $status=2;
-                            write_log("Uploaded new torrent $filename - ".$language["SHORT_EXTERNAL"]." ($hash)", "add");
-                        }
-                        else
-                        {
-                            if($DHT_PRIVATE)
-                            {
-                                $alltorrent=bencode($array);
-                                $fd=fopen($TORRENTSDIR."/".$hash.".btf", "rb+");
-                                fwrite($fd, $alltorrent);
-                                fclose($fd);
-                            }
-                            // with pid system active or private flag (dht disabled), tell the user to download the new torrent
-                            write_log("Uploaded new torrent $filename ($hash)", "add");
-                            $status=1;
-                        }
-
-                        if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"]=="enabled")
-                        {
-                            if(($btit_settings["fmhack_torrent_moderation"]=="enabled" && $CURUSER["trusted"]=="yes") || $btit_settings["fmhack_torrent_moderation"]=="disabled")
-                            {
-                                $thisIsPorn=false;
-                                if($btit_settings["fmhack_show_or_hide_porn"]=="enabled")
-                                {
-                                    $pornCats=explode(",", $btit_settings["porncat"]);
-                                    if(in_array($categoria, $pornCats)) $thisIsPorn=true;
-                                }
-                                if($team==0 && !$thisIsPorn)
-                                {
-                                    if($btit_settings["shoutann_display_uploader"]=="yes" && $_POST["anonymous"] !="true")
-                                    $added_by = "{$language['ANN_ADDED_BY']} [url={$BASEURL}/index.php?page=userdetails&id={$CURUSER['uid']}]{$CURUSER['username']}[/url]";
-                                    else
-                                    $added_by="";
-
-                                    if(internal_check($categoria))
-                                    {
-                                        $system_shout_data_1=sql_esc("{$language['ANN_NEW_INT']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
-                                        system_shout($system_shout_data_1, true, true);
-                                    }
-                                    else
-                                    {
-                                        $system_shout_data_2=sql_esc("{$language['ANN_NEW_TORR']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
-                                        system_shout($system_shout_data_2, true, true);
-                                    }
-
-                                    if($btit_settings["fmhack_IMG_in_SB_after_x_shouts"]=="enabled")
-                                    auto_shout(sql_insert_id());
-
-                                    quickQuery("UPDATE `{$TABLE_PREFIX}files` SET `shout_announced`=1 WHERE `info_hash`='".$hash."'", true);
-                                }
-                            }
-                        }
-
                     }
+                    if(is_array($error))
+                    {
+                        while(list($key, $val) = each($error))
+                        echo $val;
+                    }
+                }
+                # End
+                ########################################################## -->
+
+                if(!$mf)
+                {
+                    // failed to move file
+                    quickQuery("DELETE FROM {$TABLE_PREFIX}files WHERE info_hash=\"$hash\"", true);
+                    if($XBTT_USE)
+                    quickQuery("UPDATE xbt_files SET flags=1 WHERE info_hash=0x$hash", true);
+                    stderr($language["ERROR"], $language["ERR_MOVING_TORR"]);
+                }
+
+                // try to chmod new moved file, on some server chmod without this could result 600, seems to be php bug
+                @chmod($TORRENTSDIR."/".$hash.".btf", 0766);
+
+                if($btit_settings["fmhack_gold_and_silver_torrents"] == "enabled")
+                {
+                    // gold/silver torrent
+                    $getgold = get_result("SELECT `gold_percentage`, `silver_percentage`, `bronze_percentage` FROM `{$TABLE_PREFIX}gold` WHERE `id`=1", true, $btit_settings["cache_duration"]);
+
+                    if($gold == 0)
+                    $xgold = 100;
+                    elseif($gold == 1)
+                    $xgold = $getgold[0]["silver_percentage"];
+                    elseif($gold == 2)
+                    $xgold = $getgold[0]["gold_percentage"];
+                    elseif($gold == 3)
+                    $xgold = $getgold[0]["bronze_percentage"];
+
+                    $free_mode = false;
+
+                    if($btit_settings["fmhack_free_leech_with_happy_hour"] == "enabled" && $XBTT_USE)
+                    {
+                        $petr1 = do_sqlquery("SELECT `free`, `happy` FROM `{$TABLE_PREFIX}files` WHERE `info_hash`='".$hash."'", true);
+                        if(@sql_num_rows($petr1) > 0)
+                        {
+                            $fied = $petr1->fetch_assoc();
+                            if($fied["free"] == "yes" || $fied["happy"] == "yes")
+                            {
+                                $free_mode = true;
+                            }
+                        }
+                    }
+                    if($XBTT_USE && $free_mode === false)
+                    quickQuery("UPDATE `xbt_files` SET `down_multi`=".$xgold.", `flags`=2 WHERE `info_hash`=0x".$hash, true);
+                }
+
+                if(!in_array($announce, $TRACKER_ANNOUNCEURLS))
+                {
+                    if($btit_settings["fmhack_multi_tracker_scrape"] == "enabled")
+                    require_once (dirname(__file__)."/include/getscrape_multiscrape.php");
+                    else
+                    require_once (dirname(__file__)."/include/getscrape.php");
+                    scrape($announce, $hash);
+                    $status = 2;
+                    write_log("Uploaded new torrent $filename - ".$language["SHORT_EXTERNAL"]." ($hash)", "add");
                 }
                 else
                 {
-                    err_msg($language["ERROR"], $language["ERR_ALREADY_EXIST"]);
-                    unlink($_FILES["torrent"]["tmp_name"]);
-                    stdfoot();
-                    die();
+                    if($DHT_PRIVATE)
+                    {
+                        $alltorrent = bencode($array);
+                        $fd = fopen($TORRENTSDIR."/".$hash.".btf", "rb+");
+                        fwrite($fd, $alltorrent);
+                        fclose($fd);
+                    }
+                    // with pid system active or private flag (dht disabled), tell the user to download the new torrent
+                    write_log("Uploaded new torrent $filename ($hash)", "add");
+                    $status = 1;
                 }
+
+                if($btit_settings["fmhack_shoutbox_member_and_torrent_announce"]=="enabled")
+                {
+                    if(($btit_settings["fmhack_torrent_moderation"]=="enabled" && $CURUSER["trusted"]=="yes") || $btit_settings["fmhack_torrent_moderation"]=="disabled")
+                    {
+                        $thisIsPorn=false;
+                        if($btit_settings["fmhack_show_or_hide_porn"]=="enabled")
+                        {
+                            $pornCats=explode(",", $btit_settings["porncat"]);
+                            if(in_array($categoria, $pornCats)) $thisIsPorn=true;
+                        }
+                        if($team==0 && !$thisIsPorn)
+                        {
+                            if($btit_settings["shoutann_display_uploader"]=="yes" && $_POST["anonymous"] !="true")
+                            $added_by = "{$language['ANN_ADDED_BY']} [url={$BASEURL}/index.php?page=userdetails&id={$CURUSER['uid']}]{$CURUSER['username']}[/url]";
+                            else
+                            $added_by="";
+
+                            if(internal_check($categoria))
+                            {
+                                $system_shout_data_1=sql_esc("{$language['ANN_NEW_INT']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
+                                system_shout($system_shout_data_1, true, true);
+                            }
+                            else
+                            {
+                                $system_shout_data_2=sql_esc("{$language['ANN_NEW_TORR']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
+                                system_shout($system_shout_data_2, true, true);
+                            }
+
+                            if($btit_settings["fmhack_IMG_in_SB_after_x_shouts"]=="enabled")
+                            auto_shout(sql_insert_id());
+
+                            quickQuery("UPDATE `{$TABLE_PREFIX}files` SET `shout_announced`=1 WHERE `info_hash`='".$hash."'", true);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                err_msg($language["ERROR"], $language["ERR_ALREADY_EXIST"]);
+                unlink($_FILES["torrent"]["tmp_name"]);
+                stdfoot();
+                die();
             }
         }
         else
