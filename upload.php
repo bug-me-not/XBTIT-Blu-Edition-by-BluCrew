@@ -982,7 +982,7 @@ if(isset($_FILES["torrent"]))
                             else
                             $added_by="";
 
-                            if(internal_check($categoria))
+                            /*if(internal_check($categoria))
                             {
                                 $system_shout_data_1=sql_esc("{$language['ANN_NEW_INT']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
                                 system_shout($system_shout_data_1, true, true);
@@ -991,7 +991,7 @@ if(isset($_FILES["torrent"]))
                             {
                                 $system_shout_data_2=sql_esc("{$language['ANN_NEW_TORR']} [url={$BASEURL}/index.php?page=torrent-details&id={$hash}]".mb_convert_encoding($filename, "UTF-8", "HTML-ENTITIES")."[/url] {$added_by}");
                                 system_shout($system_shout_data_2, true, true);
-                            }
+                            }*/
 
                             if($btit_settings["fmhack_IMG_in_SB_after_x_shouts"]=="enabled")
                             auto_shout(sql_insert_id());
