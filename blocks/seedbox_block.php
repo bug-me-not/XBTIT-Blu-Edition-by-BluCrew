@@ -1,7 +1,3 @@
-<div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">SeedBox</h4>
-</div>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -35,74 +31,93 @@
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 ////////////////////////////////////////////////////////////////////////////////////
+?>
 
-global $CURUSER,$TABLE_PREFIX,$btit_settings;
-if (!$CURUSER || $CURUSER["view_torrents"]=="no")
-{
-   // do nothing
-}
-else
-{
-   $query = do_sqlquery("select ip FROM {$TABLE_PREFIX}seedboxip");
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4 class="text-center">SeedBox</h4>
+    </div>
+    <?php
+    global $CURUSER,$TABLE_PREFIX,$btit_settings;
 
-   while ($row = $query->fetch_row())
-   {
-     $seedip[] = $row[0];
-   }
+    if($CURUSER['view_torrents'] == 'yes')
+    {
+        $query = do_sqlquery("select ip FROM {$TABLE_PREFIX}seedboxip");
+        $seedip = array();
 
-   $id=do_sqlquery("select DISTINCT(infohash) FROM {$TABLE_PREFIX}peers WHERE ip IN ('".implode("','",$seedip)."')");
-   $num=sql_num_rows($id);
-   $rowt=$id->fetch_array();
-   $od=do_sqlquery("select sum(upload_difference) as upload_difference FROM {$TABLE_PREFIX}peers WHERE ip IN ('".implode("','",$seedip)."') AND upload_difference !='0'");
+        if(sql_num_rows($query) > 0)
+        {
+            while ($row = $query->fetch_row())
+            {
+                $seedip[] = $row[0];
+            }
 
-   while ($row=$od->fetch_assoc())
-   {
-      if ($row["upload_difference"]>0)
-      {
-        //&& $rowt['announce_interval'] > '0')
-        $transferrateUP="".makesize(round(round($row['upload_difference']/900),2))."";
-      }
-      else
-      {
-        $transferrateUP="0 KB/sec";
-      }
-   }
-   ?>
-   <table class="lista" width="100%">
-      <tr><td align="center"><i class="fa fa-server fa-3x"></i></tr>
-         <tr><td align="center"><b>Seedbox Torrents</td></tr>
-            <tr><td align="center"><b><font color="red"><?php echo $num; ?></font></b></td></tr>
-            <tr><td align="center"><b>Seedbox Current UP Speed</td></tr>
-               <tr><td align="center"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td></tr>
-            </table>
-            <table align = "center" cellpadding="1" cellspacing="1" width="100%">
-               <tr>
-               <style>
-               .thisclass{background-color:#41383C}
-               </style>
-               <script language="javascript">
-               function change(color)
-               {
-                  var el=event.srcElement
-                  if (el.tagName=="INPUT"&&el.type=="button")
-                    event.srcElement.style.backgroundColor=color
-               }
-               function jumpto2(url)
-               {
-                  window.location=url
-               }
-               </script>
-               <?php
-               if ($CURUSER["view_torrents"]=="yes")
-               {
-                  ?>
-                     <td  class = "header" align="center"><input type="button" name="Button" class="btn btn-danger" value="SB Torrents" onClick="jumpto2('index.php?page=seedbox')"></td>
-                  <?php
-               }
-               ?>
-            </tr>
-          </table>
-            <?php }?>
-<div class="panel-footer">
-</div>
-</div>
+            $implodeS = implode(",",$seedip);
+
+            $id = do_sqlquery("select DISTINCT(infohash) FROM {$TABLE_PREFIX}peers WHERE ip IN ('".$implodeS."')");
+            $num = sql_num_rows($id);
+
+            $rowt = $id->fetch_array();
+            $od = do_sqlquery("select sum(upload_difference) as upload_difference FROM {$TABLE_PREFIX}peers WHERE ip IN ('".$implodeS."') AND upload_difference !='0'");
+
+            $transferrateUP = 0;
+
+            while ($row=$od->fetch_assoc())
+            {
+                if ($row["upload_difference"]>0)
+                {
+                    $transferrateUP += $row['upload_difference'];
+                }
+            }
+
+            $transferrateUP = "".makesize(round(round($transferrateUP,$btit_settings['rinterval']),2))."";
+        }
+        else
+        {
+            $transferrateUP = "".makesize(0)."";
+        }
+
+        ?>
+
+        <table class="lista" width="100%">
+            <tr><td align="center"><i class="fa fa-server fa-3x"></i></tr>
+                <tr><td align="center"><b>Seedbox Torrents</td></tr>
+                    <tr><td align="center"><b><font color="red"><?php echo $num; ?></font></b></td></tr>
+                    <tr><td align="center"><b>Seedbox Current Max UP Speed</td></tr>
+                        <tr><td align="center"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td></tr>
+                    </table>
+
+                    <table align = "center" cellpadding="1" cellspacing="1" width="100%">
+                        <tr>
+                        <style>
+                        .thisclass{background-color:#41383C}
+                        </style>
+                        <script language="javascript">
+                        function change(color)
+                        {
+                            var el=event.srcElement
+                            if (el.tagName=="INPUT"&&el.type=="button")
+                            event.srcElement.style.backgroundColor=color
+                        }
+                        function jumpto2(url)
+                        {
+                            window.location=url
+                        }
+                        </script>
+                            <td  class = "header" align="center"><input type="button" name="Button" class="btn btn-danger" value="SB Torrents" onClick="jumpto2('index.php?page=seedbox')"></td>
+                    </tr>
+                </table>
+                <?php
+            }
+            else
+            {
+                ?>
+                <table class="lista" width="100%">
+                    <tr><td>Access Restricted</td></tr>
+                </table>
+                <?php
+            }
+            ?>
+            <div class="panel-footer">
+            </div>
+        </div>
