@@ -46,9 +46,9 @@ else
    global $CURUSER, $BASEURL, $STYLEPATH, $XBTT_USE;
    //   $limit=10;
    if ($XBTT_USE)
-      $sql = "SELECT count(*) FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no'";
+      $sql = "SELECT count(*) FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN {$TABLE_PREFIX}users as u ON u.id=f.uploader LEFT JOIN {$TABLE_PREFIX}users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no'";
    else
-      $sql = "SELECT count(*) FROM blurg_files as f LEFT JOIN blurg_categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1'";
+      $sql = "SELECT count(*) FROM {$TABLE_PREFIX}files as f LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN {$TABLE_PREFIX}users as u ON u.id=f.uploader LEFT JOIN {$TABLE_PREFIX}users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1'";
 
    $count = (do_sqlquery($sql,true)->fetch_array())[0];
 
@@ -60,9 +60,9 @@ else
       list($pagertop, $pagerbottom, $limit) = pager(25, $count,"index.php?page=seedbox&amp;");
 
       if ($XBTT_USE)
-         $sql = "SELECT f.seedbox,f.info_hash as hash, f.seeds+ifnull(x.seeders,0) as seeds , f.leechers + ifnull(x.leechers,0) as leechers, dlbytes AS dwned, format(f.finished+ifnull(x.completed,0),0) as finished, filename, url, info, UNIX_TIMESTAMP(data) AS added, c.image, c.name AS cname, category AS catid, size, external, uploader, u.username, ul.prefixcolor, ul.suffixcolor, f.anonymous FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no' ORDER BY f.leechers + ifnull(x.leechers,0) DESC {$limit}";
+         $sql = "SELECT f.seedbox,f.info_hash as hash, f.seeds+ifnull(x.seeders,0) as seeds , f.leechers + ifnull(x.leechers,0) as leechers, dlbytes AS dwned, format(f.finished+ifnull(x.completed,0),0) as finished, filename, url, info, UNIX_TIMESTAMP(data) AS added, c.image, c.name AS cname, category AS catid, size, external, uploader, u.username, ul.prefixcolor, ul.suffixcolor, f.anonymous FROM {$TABLE_PREFIX}files as f LEFT JOIN xbt_files x ON f.bin_hash=x.info_hash LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN {$TABLE_PREFIX}users as u ON u.id=f.uploader LEFT JOIN {$TABLE_PREFIX}users_level as ul ON ul.id=u.id_level WHERE f.leechers + ifnull(x.leechers,0) > 0 AND f.seeds+ifnull(x.seeders,0) = 0 AND f.external='no' ORDER BY f.leechers + ifnull(x.leechers,0) DESC {$limit}";
       else
-         $sql = "SELECT f.anonymous, f.seedbox,f.info_hash as hash, f.seeds, f.leechers, f.dlbytes AS dwned, f.finished, f.filename, f.url, f.info, UNIX_TIMESTAMP(f.data) AS added, c.image, c.name AS cname, f.category AS catid, f.size, f.external, f.uploader, u.username, ul.prefixcolor, ul.suffixcolor FROM blurg_files as f LEFT JOIN blurg_categories as c ON c.id = f.category LEFT JOIN blurg_users as u ON u.id=f.uploader LEFT JOIN blurg_users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1' AND f.external='no' ORDER BY added DESC {$limit}";
+         $sql = "SELECT f.anonymous, f.seedbox,f.info_hash as hash, f.seeds, f.leechers, f.dlbytes AS dwned, f.finished, f.filename, f.url, f.info, UNIX_TIMESTAMP(f.data) AS added, c.image, c.name AS cname, f.category AS catid, f.size, f.external, f.uploader, u.username, ul.prefixcolor, ul.suffixcolor FROM {$TABLE_PREFIX}files as f LEFT JOIN {$TABLE_PREFIX}categories as c ON c.id = f.category LEFT JOIN {$TABLE_PREFIX}users as u ON u.id=f.uploader LEFT JOIN {$TABLE_PREFIX}users_level as ul ON ul.id=u.id_level WHERE  f.seedbox='1' AND f.external='no' ORDER BY added DESC {$limit}";
 
       $row = do_sqlquery($sql,true);
 
