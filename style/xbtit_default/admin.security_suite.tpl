@@ -27,12 +27,15 @@ function show(obj)
       obj1.style.visibility = 'visible';
   }
 </script>
-
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Security Settings</h4>
+</div>
 <div align='center'>
   <form name='security_suite' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=security_suite'>
     <table>
     <tr>
-      <td class="header" align="center" colspan="2"><b><tag:language.SECSUI_QUAR_SETTING /></b></td>
+      <td class="head" align="center" colspan="2"><b><tag:language.SECSUI_QUAR_SETTING /></b></td>
     </tr>
     <tr>
       <td class="header"><b><tag:language.SECSUI_QUAR_TERMS_1 /></b></td>
@@ -48,7 +51,7 @@ function show(obj)
     </tr>
 
     <tr>
-      <td class="header" align="center" colspan="2"><b><tag:language.SECSUI_PASS_SETTINGS /></b></td>
+      <td class="head" align="center" colspan="2"><b><tag:language.SECSUI_PASS_SETTINGS /></b></td>
     </tr>
     <tr>
       <td class="header"><b><tag:language.SECSUI_PASS_TYPE /></b></td>
@@ -82,7 +85,7 @@ function show(obj)
       </td>
     </tr>
     <tr>
-      <td class="header" align="center" colspan="2"><b><tag:language.SECSUI_COOKIE_SETTINGS /></b></td>
+      <td class="head" align="center" colspan="2"><b><tag:language.SECSUI_COOKIE_SETTINGS /></b></td>
     </tr>
     <tr>
       <td class="header"><b><tag:language.SECSUI_COOKIE_PRIMARY /></b></td>
@@ -147,8 +150,11 @@ function show(obj)
     </tr>
 
     <tr>
-      <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' value='<tag:language.SUBMIT />'></td>
+      <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' class="btn btn-success" value='<tag:language.SUBMIT />'></td>
     </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>

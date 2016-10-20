@@ -1,6 +1,11 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Ban IP</h4>
+</div>
 <form action="<tag:frm_action />" name="ban" method="post">
-  <div align="center"><tag:language.BAN_NOTE /></div>
+  <div align="center"><p class="text-danger"><tag:language.BAN_NOTE /></p></div>
   <table class="lista" width="100%" align="center">
+  <br>
     <tr>
       <td class="header" colspan="4" align="center"><tag:language.BAN_INSERT /></td>
     </tr>
@@ -16,20 +21,20 @@
     </tr>
     <tr>
       <td align="center" class="header" colspan="4">
-        <input type="submit" name="write" class="btn" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
-        <input type="submit" name="write" class="btn" value="<tag:language.FRM_CANCEL />" />
+        <input type="submit" name="write" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="write" class="btn btn-danger" value="<tag:language.FRM_CANCEL />" />
       </td>
     </tr>
   </table>
   <br />
   <table class="lista" width="100%" align="center">
     <tr>
-      <td class="header"><tag:language.BAN_ADDED /></td>
-      <td class="header" align="left"><tag:language.BAN_FIRSTIP /></td>
-      <td class="header" align="left"><tag:language.BAN_LASTIP /></td>
-      <td class="header" align="left"><tag:language.BAN_BY /></td>
-      <td class="header" align="left"><tag:language.BAN_COMMENTS /></td>
-      <td class="header"><tag:language.BAN_REMOVE /></td>
+      <td class="head"><tag:language.BAN_ADDED /></td>
+      <td class="head" align="left"><tag:language.BAN_FIRSTIP /></td>
+      <td class="head" align="left"><tag:language.BAN_LASTIP /></td>
+      <td class="head" align="left"><tag:language.BAN_BY /></td>
+      <td class="head" align="left"><tag:language.BAN_COMMENTS /></td>
+      <td class="head"><tag:language.BAN_REMOVE /></td>
     </tr>
     <if:no_records>
     <tr>
@@ -51,3 +56,6 @@
   <br />
   <br />
 </form>
+<div class="panel-footer">
+</div>
+</div>

@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <script type="text/javascript" src="jscript/btit_functions.js"></script>
 <form action="<tag:frm_action />" name="config" method="post" onsubmit="return test_smtp_password()">
 <table class="lista" width="100%" align="center">
@@ -7,7 +11,7 @@
 </tr>
 </if:config_saved>
 <tr>
-<td class="header" align="center" colspan="4"><tag:language.XBTT_BACKEND /></td>
+<td class="head" align="center" colspan="4"><tag:language.XBTT_BACKEND /></td>
 </tr>
 <if:xbtt_error>
 <tr>
@@ -21,7 +25,7 @@
 <td class="lista"><input type="text" name="xbtt_url" value="<tag:config.xbtt_url />" size="30" /></td>
 </tr>
 <tr>
-<td class="header" align="center" colspan="4"><tag:language.GENERAL_SETTINGS /></td>
+<td class="head" align="center" colspan="4"><tag:language.GENERAL_SETTINGS /></td>
 </tr>
 <tr>
 <td class="header" colspan="1"><tag:language.TRACKER_NAME /></td>
@@ -90,7 +94,7 @@
 <td class="lista"><input type="text" name="ntorrents" value="<tag:config.max_torrents_per_page />" size="10" /></td>
 </tr>
 <tr>
-<td class="header" align="center" colspan="4"><tag:language.MAILER_SETTINGS /></td>
+<td class="head" align="center" colspan="4"><tag:language.MAILER_SETTINGS /></td>
 </tr>
 <tr>
 <td class="header"><tag:language.SETTING_MAIL_TYPE /></td>
@@ -111,7 +115,7 @@
 <td class="lista"><input type="password" id="smtp_pwd_repeat" name="smtp_pwd_repeat" value="<tag:config.smtp_password />" size="20" /></td>
 </tr>
 <tr>
-<td class="header" align="center" colspan="4"><tag:language.SPECIFIC_SETTINGS /></td>
+<td class="head" align="center" colspan="4"><tag:language.SPECIFIC_SETTINGS /></td>
 </tr>
 <tr>
 <td class="header"><tag:language.SETTING_INTERVAL_SANITY /></td>
@@ -176,7 +180,7 @@
 </tr>
 
 <tr>
-<td class="header" align="center" colspan="4"><tag:language.BLOCKS_SETTING /></td>
+<td class="head" align="center" colspan="4"><tag:language.BLOCKS_SETTING /></td>
 </tr>
 <tr>
 <td class="header"><tag:language.SETTING_CLOCK /></td>
@@ -226,3 +230,6 @@
 </tr>
 </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

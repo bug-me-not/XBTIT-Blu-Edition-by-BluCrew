@@ -67,6 +67,11 @@ table#inputs
 table-layout:fixed;
 }
 </style>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">PHP Errors</h4>
+</div>
 <table width="100%" valign="top">
 <tr>
 <td align="center" class="lista">
@@ -100,11 +105,16 @@ table-layout:fixed;
 	  </td>
     </tr>
 	 <tr>
-      <td align="center" class="header"><input type="submit" name="write" class="btn" value="<tag:language.FRM_CONFIRM />" /></td>
-      <td align="center" class="header"><input type="submit" name="cancel" class="btn" value="<tag:language.FRM_CANCEL />" /></td>
+      <td align="center" class="header"><input type="submit" name="write" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" /></td>
+      <td align="center" class="header"><input type="submit" name="cancel" class="btn btn-danger" value="<tag:language.FRM_CANCEL />" /></td>
     </tr>
 </form>
 </table>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
 <div style="float-center" align="center"><tag:language.LOGS_COOLY_NOTE /></div>
 <table width=100%>
 <tr>
@@ -119,3 +129,6 @@ table-layout:fixed;
 </td>
 </tr>
 </table>
+<div class="panel-footer">
+</div>
+</div>

@@ -2,6 +2,10 @@
 <tag:language.STYLE_NOTE />
 </div>
 <if:style_add>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">New Style</h4>
+</div>
   <form name="language_add_new" action="<tag:frm_action />" method="post">
     <table class="lista">
       <tr>
@@ -26,13 +30,20 @@
       </tr>
       <tr>
         <td class="header" align="center" colspan="2">
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CANCEL />" />
+            <input type="submit" name="confirm" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="confirm" class="btn btn-danger" value="<tag:language.FRM_CANCEL />" />
         </td>
       </tr>
     </table>
   </form>
+  <div class="panel-footer">
+</div>
+</div>
 <else:style_add>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Bootstrap Styles</h4>
+</div>
   <table class="lista" width="100%" align="center">
   <tr>
     <td class="header" align="center"><tag:language.STYLE_NAME /></td>
@@ -56,4 +67,7 @@
     <td class="header" align="center" colspan="6"><tag:style_add_new /></td>
   </tr>
   </table>
+  <div class="panel-footer">
+</div>
+</div>
 </if:style_add>
