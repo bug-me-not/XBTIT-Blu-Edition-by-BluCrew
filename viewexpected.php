@@ -87,7 +87,11 @@ else
    $num = sql_num_rows($res);
 
    $viewexpectedtpl->set("vex6","<br><br><CENTER><form method=get action=index.php><input type=hidden name=page value=viewexpected/>");
-   $viewexpectedtpl->set("vex7","&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text size=30 name=search class='form-control'>");
+   $viewexpectedtpl->set("vex7","&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class='input-group'>
+      <input type='text' class='form-control' name='search' id='validate-text' size='30' required=''>
+      <span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+      </div>");
    $viewexpectedtpl->set("vex8","<input type=submit align=center class='btn btn-primary btn-sm' value=".$language["SEARCH"].">\n");
    $viewexpectedtpl->set("vex10","</form></CENTER><br>");
    $viewexpectedtpl->set("pagtop","<center>$pagertop</center>");

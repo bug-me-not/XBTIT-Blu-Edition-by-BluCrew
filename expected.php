@@ -51,7 +51,10 @@ $num2 = sql_num_rows($res2);
 $expectedtpl->set("ex4","<div class='panel panel-primary'>");
 $expectedtpl->set("ex6","<div class='panel-heading'><h3 class='panel-title'><center>" . $language["SEARCH"]  ." ". $language["TORRENT"] . "</center></h3></div>");
 $expectedtpl->set("ex8","<div class='panel-body'><form method=get action=index.php><input type=hidden name=page value=torrents />");
-$expectedtpl->set("ex10","<input type=text name=search size=40 value=$searchstr >");
+$expectedtpl->set("ex10","<div class='input-group'>
+      <input type='text' class='form-control' value='$searchstr' name='search' id='validate-text' size='40' required=''>
+      <span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+      </div>");
 $expectedtpl->set("ex12","in");
 $expectedtpl->set("ex14","");
 $expectedtpl->set("ex16","");
@@ -71,8 +74,21 @@ $expectedtpl->set("ex28","</table></div></div><BR><HR><BR>");
 $expectedtpl->set("ex30","<br>\n");
 
 $expectedtpl->set("ex32","<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>" . $language["ADD_EXPECTED"] . "</h4></div><table class='table table-bordered'><form name=expect method=post action=index.php?page=takeexpect><a name=add id=add></a>");
-$expectedtpl->set("ex36","<tr><td class=header align=left>". $language["NAME"] ."</td><td class=lista align=left><input type=text class='form-control' size=40 name=expecttitle></td></tr>");
-$expectedtpl->set("ex38","<tr><td class=header align=left>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left><input type=text class='form-control' size=15 name=date>&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
+$expectedtpl->set("ex36","<tr><td class=header align=left>". $language["NAME"] ."</td><td class=lista align=left><div class='input-group'>
+      <input type='text' class='form-control' value='$searchstr'  name='expecttitle' id='validate-text' size='40' required=''>
+      <span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+      </div></td></tr>");
+$expectedtpl->set("ex38","<tr><td class=header align=left>" . $language["DATE_EXPECTED"] . "</td><td class=lista align=left><form class='form-horizontal'>
+   <fieldset>
+      <div class='control-group'>
+         <div class='controls'>
+            <div class='input-prepend input-group'>
+               <span class='add-on input-group-addon'><i class='fa fa-calendar'></i></span><input type='text' style='width: 200px' name='date' id='birthday' class='form-control' value='10/18/2016'> 
+            </div>
+         </div>
+      </div>
+   </fieldset>
+</form>&nbsp;" . $language["TEXT_DTD"] . "</td></tr>");
 $expectedtpl->set("ex40","<tr><td class=header align=left>".$language["CATEGORY"]."</td><td class=lista align=left>");
 
 $expectedtpl->set("ex42","");
