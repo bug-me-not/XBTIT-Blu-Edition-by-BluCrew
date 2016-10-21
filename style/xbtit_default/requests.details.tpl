@@ -66,7 +66,10 @@
             <input type='hidden' name='req_id' value='<tag:req_id />'>
             <input type='hidden' name='uid' value='<tag:uid />'>
             <input type='hidden' name='auth' value='<tag:uid_auth />'>
-            <input type='text' name='amount' size='9' class='form-control'>
+            <div class="input-group" data-validate="number">
+            <input type="text" class="form-control" name="amount" id="validate-number" size="9" maxlength="200" required="">
+            <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+            </div>
             <input type='submit' class='btn btn-primary btn-sm' '<tag:disabled />' value='<tag:language.TRAV_AB />'>
             <strong><tag:language.TRAV_TAX /> </strong>
           </form>

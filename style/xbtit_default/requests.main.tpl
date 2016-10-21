@@ -27,7 +27,12 @@
 				<tbody>
 					<tr>
 						<td><h1><tag:language.TRAV_REQ_NAME /></h1></td>
-						<td><input type='text' name='title' class='form-control' size='40' placeholder="<tag:language.TRAV_SEARCH_TITLE />" value="<tag:title_value />"></td>
+						<td>
+                        <div class="input-group">
+            			<input type='text' name='title' class='form-control' id='validate-text' size='40' required='' placeholder="<tag:language.TRAV_SEARCH_TITLE />" value="<tag:title_value />">
+            			<span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+            			</div>
+						</td>
 					</tr>
 					<tr>
 						<td><h1><tag:language.TRAV_SELCAT /></h1></td>
