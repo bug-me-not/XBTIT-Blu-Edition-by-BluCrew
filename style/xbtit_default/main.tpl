@@ -30,6 +30,9 @@
 <link href="assets/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet">
 <!-- Bootstrap Icheck -->
 <link href="assets/plugins/iCheck-master/skins/all.css" rel="stylesheet">
+<!-- bootstrap-datetimepicker -->
+<link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker-master/css/daterangepicker-bs3.css">
 <!-- Custom CSS -->
 <link rel='stylesheet' href='css/global.css' type='text/css' />
 <link rel='stylesheet' href='css/hover.css' type='text/css' />
@@ -48,6 +51,28 @@
   $('input[name="my-checkbox"]').bootstrapSwitch();
   });
 </script>
+    
+<!-- #DATE Range Picker -->
+      <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
+      <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/moment.min.js"></script>
+      <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/daterangepicker.js"></script>
+      <script type="text/javascript">
+          jQuery(function($) {
+            $('#reservation').daterangepicker(null, function(start, end, label) {
+              console.log(start.toISOString(), end.toISOString(), label);
+            });
+         $('#birthday').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+              console.log(start.toISOString(), end.toISOString(), label);
+            });
+         $('#reservationtime').daterangepicker({
+              timePicker: true,
+              timePickerIncrement: 30,
+              format: 'MM/DD/YYYY h:mm A'
+            }, function(start, end, label) {
+              console.log(start.toISOString(), end.toISOString(), label);
+            });
+         });
+      </script>
 
 <!-- #Form Validation -->
 <script type="text/javascript">
