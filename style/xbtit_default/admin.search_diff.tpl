@@ -1,11 +1,13 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User Search Difference</h4>
+</div>
 <if:final_result>
 <tag:show_tasks />
 <else:final_result>
 <form method="post" action="<tag:frm_action />" name="test">
   <table class="lista" align="center">
-    <tr>
-      <td align="center" class="header"><tag:language.SEARCH_DIFF /></td>
-    </tr>
+  <br>
     <tr>
       <td align="center" class="blocklist"><input type="text" name="diff" value="<tag:search_value />" size="13" maxlength="16" />&nbsp;<tag:search_combo_kb /></td>
     </tr>
@@ -13,7 +15,7 @@
       <td align="center" class="blocklist"><tag:language.RANK />&nbsp;<tag:search_combo_groups /></td>
     </tr>
     <tr>
-      <td align="center" class="lista"><input type="submit" class="btn" name="readyto" value="Go" /></td>
+      <td align="center" class="lista"><input type="submit" class="btn btn-success" name="readyto" value="Go" /></td>
     </tr>
   </table>
 </form>
@@ -80,4 +82,6 @@
 <tag:users_founds />
 </if:display_result>
 </if:final_result>
-
+<div class="panel-footer">
+</div>
+</div>

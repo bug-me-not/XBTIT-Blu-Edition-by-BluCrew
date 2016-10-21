@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Site Polls</h4>
+</div>
 <tag:poll_script />
 <form action="<tag:frm_action />" method="post">
   <if:show_poller>
@@ -66,10 +70,10 @@
   </table>
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td class="header" align="center"><input type="submit" class="btn" name="save" value="<tag:language.POLL_SAVE />" class="formButton" /></td>
-      <td class="header" align="center"><input type="submit" class="btn" name="cancel" value="<tag:language.POLL_CANCEL />" class="formButton" /></td>
+      <td class="header" align="center"><input type="submit" class="btn btn-success" name="save" value="<tag:language.POLL_SAVE />" class="formButton" /></td>
+      <td class="header" align="center"><input type="submit" class="btn btn-warning" name="cancel" value="<tag:language.POLL_CANCEL />" class="formButton" /></td>
       <if:poll_delete>
-      <td class="header" align="center"><input type="submit" class="btn" name="delete" value="<tag:language.POLL_DELETE />" onclick="return confirm('<tag:language.POLL_DEL_CONFIRM />')" class="formButton" /></td>
+      <td class="header" align="center"><input type="submit" class="btn btn-danger" name="delete" value="<tag:language.POLL_DELETE />" onclick="return confirm('<tag:language.POLL_DEL_CONFIRM />')" class="formButton" /></td>
       </if:poll_delete>
     </tr>
   </table>
@@ -100,9 +104,12 @@
   </table>
   <table width="100%" border="0" cellspacing="0" cellpadding="5">
     <tr>
-      <td class="header" align="center"><input type="submit" class="btn" name="new" value="<tag:language.POLL_NEW />" class="formButton" /></td>
+      <td class="header" align="center"><input type="submit" class="btn btn-primary" name="new" value="<tag:language.POLL_NEW />" class="formButton" /></td>
     </tr>
   </table>
   </if:new_poll>
   </if:show_poller>
 </form>
+<div class="panel-footer">
+</div>
+</div>

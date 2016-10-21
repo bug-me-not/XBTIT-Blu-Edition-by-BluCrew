@@ -10,6 +10,10 @@ function update_cat(newimage,blank)
 //-->
 </script>
 
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Categories</h4>
+</div>
 <if:category_add>
   <form name="category_add_new" action="<tag:frm_action />" method="post">
     <table class="lista">
@@ -30,8 +34,8 @@ function update_cat(newimage,blank)
       </tr>
       <tr>
         <td class="header" align="center" colspan="4">
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CANCEL />" />
+            <input type="submit" name="confirm" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="confirm" class="btn btn-danger" value="<tag:language.FRM_CANCEL />" />
         </td>
       </tr>
     </table>
@@ -59,3 +63,6 @@ function update_cat(newimage,blank)
   </tr>
   </table>
 </if:category_add>
+<div class="panel-footer">
+</div>
+</div>

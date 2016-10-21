@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Site Blocks</h4>
+</div>
 <form name="blocks" action="<tag:frm_action />" method="post">
 <if:edit_block>
   <table class="lista" border="1">
@@ -29,7 +33,9 @@
 <else:edit_block>
   <table class="lista" width="100%" border="1">
     <tr>
-      <td colspan="3" valign="top"><a href="<tag:add_new_block />"><tag:language.BLOCK_ADD_NEW /></a></td>
+      <br>
+      <td colspan="3" valign="top" align="center"><a href="<tag:add_new_block />"><p class="text-danger"><tag:language.BLOCK_ADD_NEW /></p></a></td>
+      <br>
     </tr>
     <if:top_blocks>
     <tr>
@@ -249,10 +255,12 @@
 </if:edit_block>
 <br />
 <div align="center">
-  <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CONFIRM />" />
+  <input type="submit" name="confirm" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" />
   &nbsp;&nbsp;
-  <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CANCEL />" />
+  <input type="submit" name="confirm" class="btn btn-warning" value="<tag:language.FRM_CANCEL />" />
 </div>
 </form>
 <br />
-
+<div class="panel-footer">
+</div>
+</div>

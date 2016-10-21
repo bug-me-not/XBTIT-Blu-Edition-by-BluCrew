@@ -1,7 +1,11 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Mass Private Mail</h4>
+</div>
 <if:masspm_post>
 <table class="lista" width="100%" align="center" cellpadding="2">
   <tr>
-    <td colspan="2" class="header" align="center"><tag:language.MASS_SENT /></td>
+    <td colspan="2" class="header" align="center"><p class="text-success"><tag:language.MASS_SENT /></p></td>
   </tr>
   <tr>
     <td class="header"><tag:language.SUBJECT /></td>
@@ -14,9 +18,6 @@
     <td class="header"><tag:language.MASSPM_INFO /></td>
     <td><tag:masspm.info /></td>
   </tr>
-  <tr>
-    <td colspan="2" align="center" class="lista">Mass PM by vibes</td>
-  </tr> 
 </table>
 <else:masspm_post>
 <form method="post" name="masspm" action="<tag:frm_action />">
@@ -29,7 +30,7 @@
   </if:frm_error>
   <table class="lista" align="center" cellpadding="2">
     <tr>
-      <td colspan="2" class="header" align="center"><tag:language.WHO_PM /></td>
+      <td colspan="2" class="header" align="center"><p class="text-warning"><tag:language.WHO_PM /></p></td>
     </tr>
     <tr>
       <td class="header"><tag:language.RATIO_FROM />&nbsp;<tag:language.USER_LEVEL /></td>
@@ -55,8 +56,11 @@
       <td colspan="2" class="lista"><tag:masspm.body /></td>
     </tr>
     <tr>
-      <td colspan="2" class="header" align="center"><input type="submit" name="masspm" class="btn" value="<tag:language.FRM_CONFIRM />" /></td>
+      <td colspan="2" class="header" align="center"><input type="submit" name="masspm" class="btn btn-success" value="<tag:language.FRM_CONFIRM />" /></td>
     </tr>
   </table>
 </form>
 </if:masspm_post>
+<div class="panel-footer">
+</div>
+</div>

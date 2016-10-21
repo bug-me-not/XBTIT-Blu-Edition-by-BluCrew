@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User Groups</h4>
+</div>
 <if:add_new>
 <form action="<tag:frm_action />" name="level" method="post">
   <table class="lista" width="100%" align="center" style='overflow:auto;'>
@@ -10,8 +14,8 @@
       <td class="lista"><tag:groups_combo /></td>
     </tr>
     <tr>
-      <td align="center" class="header"><input type="submit" class="btn" name="write" value="<tag:language.FRM_CONFIRM />" /></td>
-      <td align="center" class="header"><input type="submit" class="btn" name="write" value="<tag:language.FRM_CANCEL />" /></td>
+      <td align="center" class="header"><input type="submit" class="btn btn-success" name="write" value="<tag:language.FRM_CONFIRM />" /></td>
+      <td align="center" class="header"><input type="submit" class="btn btn-warning" name="write" value="<tag:language.FRM_CANCEL />" /></td>
     </tr>
   </table>
 </form>
@@ -580,10 +584,13 @@
     </if:pfet_enabled_3>
 
     <tr>
-      <td align="center" class="header"><input type="submit" class="btn" name="write" value="<tag:language.FRM_CONFIRM />" /></td>
-      <td align="center" class="header"><input type="submit" class="btn" name="write" value="<tag:language.FRM_CANCEL />" /></td>
+      <td align="center" class="header"><input type="submit" class="btn btn-success" name="write" value="<tag:language.FRM_CONFIRM />" /></td>
+      <td align="center" class="header"><input type="submit" class="btn btn-warning" name="write" value="<tag:language.FRM_CANCEL />" /></td>
     </tr>
   </table>
 </form>
 </if:list>
 </if:add_new>
+<div class="panel-footer">
+</div>
+</div>

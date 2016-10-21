@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Prune Users</h4>
+</div>
 <if:pruned_done>
 <div align="center" style="font-size:12pt"><tag:prune_done_msg /></div>
 <else:pruned_done>
@@ -47,7 +51,7 @@
     </loop:users>
     </if:no_records>
     <tr>
-      <td class="lista" style="text-align:right;" colspan="5"><input type="submit" class="btn" name="action" value="GO" /></td>
+      <td class="lista" style="text-align:right;" colspan="5"><input type="submit" class="btn btn-success" name="action" value="GO" /></td>
     </tr>
   </table>
 </form>
@@ -59,8 +63,11 @@
     <br />
     <br />
     <input type="text" name="days" value="<tag:prune_days />" size="10" maxlength="3" />
-    <input type="submit" class="btn" name="action" value="View" />
+    <input type="submit" class="btn btn-sm btn-info" name="action" value="View" />
   </div>
 </form>
 </if:prune_list>
 </if:pruned_done>
+<div class="panel-footer">
+</div>
+</div>
