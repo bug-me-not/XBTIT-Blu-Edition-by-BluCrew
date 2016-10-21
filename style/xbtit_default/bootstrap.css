@@ -3478,7 +3478,7 @@ tbody.collapse.in {
   position: relative;
   z-index: 2;
   float: left;
-  width: 100%;
+  width: auto;
   margin-bottom: 0;
 }
 .input-group-lg > .form-control,
@@ -3539,7 +3539,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon,
 .input-group-btn {
-  width: 1%;
+  width: auto;
   white-space: nowrap;
   vertical-align: middle;
 }

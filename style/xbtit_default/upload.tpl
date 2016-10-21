@@ -250,7 +250,10 @@ $w(document).ready(function() {
                 <tag:language.FILE_NAME />
             </td>
             <td class="lista" align="left">
-                <input type="text" id="filename" name="filename" size="50" maxlength="200" class="form-control" />
+            <div class="input-group">
+            <input type="text" class="form-control" name="validate-text" id="validate-text" size="50" maxlength="200" required="">
+            <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+            </div>
             </td>
             <if:arc_enabled>
             <if:arc_both>
@@ -307,8 +310,8 @@ $w(document).ready(function() {
         <tag:language.RG />
     </td>
     <td class="lista" align="left">
-        <select class="form-control" name="release_group">
-            <option value="0">---</option>
+            <select class="form-control" name="RG">
+            <option value="">----</option>
             <option value="1">
                 <tag:language.BluRG />
             </option>
@@ -333,8 +336,9 @@ $w(document).ready(function() {
         <tag:language.LANGUAGE />
     </td>
     <td class="lista" align="left">
-        <select class="form-control" name="language">
-            <option value="0">---</option>
+        <div class="input-group">
+        <select class="form-control" name="validate-select" id="validate-select" placeholder="Validate Select" required>
+            <option value="">----</option>
             <option value="1">
                 <tag:language.LANG_ENG />
             </option>
@@ -417,6 +421,8 @@ $w(document).ready(function() {
                 <tag:language.LANG_VIE />
             </option>
         </select>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
     </td>
 </tr>
 </if:torlang>
@@ -502,7 +508,10 @@ $w(document).ready(function() {
     </td>
     <td class="lista" align="left">
         <tag:language.TVDB_UL_1 />
-        <input type="text" name="tvdb_number" value="0" size="10" maxlength="10" class="form-control" />
+        <div class="input-group" data-validate="number">
+        <input type="text" class="form-control" name="tvdb_number" size="10" maxlength="10" id="validate-number" required>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
         <tag:language.TVDB_UL_2 />
     </td>
 </tr>
@@ -513,7 +522,10 @@ $w(document).ready(function() {
 <if:imdb_enabled>
 <tr>
     <td class="header">IMDB</td>
-    <td class="lista" align="left"><b>tt<b><input type='text' name='imdb' value='0' size='10' maxlength='10' class="form-control" />&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy (http://www.imdb.com/title/tt<font color="red">1104001</font>) <tag:language.IMDB__EDIT_FORM /></td>
+    <td class="lista" align="left"><div class="input-group" data-validate="number">
+        <input type="text" class="form-control" name="imdb" size="10" maxlength="10" id="validate-number" required>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy http://www.imdb.com/title/tt<font color="red">1104001</font><tag:language.IMDB__EDIT_FORM /></td>
     </tr>
 </if:imdb_enabled>
 <!-- IMDB END -->

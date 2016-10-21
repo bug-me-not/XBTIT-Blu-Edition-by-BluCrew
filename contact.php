@@ -189,22 +189,32 @@ else
 
    $contacttpl->set("con2","<form name='frmSelect' method='POST' action='index.php?page=contact'>
    <table class='table table-bordered'>
-   <tr><td>Subject</td><td><select name='cat' class='form-control' onChange='handleOnChange(this);'>
-   <option>Select Main Subject</option>
-   <option>General Support</option>
-   <option>Upload Errors</option>
-   <option>Download Errors</option>
-   <option>Bug Reports</option>
-   <option>Advertising</option>
-   </select>&nbsp;&nbsp;&nbsp;&nbsp;<select class='form-control' name=\"subcat\">
-   <option>Select A Subcategory</option>
-   </select></td></tr>
+   <tr><td>Subject</td><td><div class='input-group'>
+   <select class='form-control' name='cat' id='validate-select' onChange='handleOnChange(this);' required>
+   <option value=''>Select Main Subject</option>
+   <option value='1'>General Support</option>
+   <option value='2'>Upload Errors</option>
+   <option value='3'>Download Errors</option>
+   <option value='4'>Bug Reports</option>
+   <option value='5'>Advertising</option>
+   </select><span class='input-group-addon danger'><span class='fa fa-times'></span></span></div>
+   
+   <div class='input-group'>
+   <select class='form-control' name='subcat' id='validate-select' required>
+   <option value='1'>Select Sub Category</option>
+   </select><span class='input-group-addon danger'><span class='fa fa-times'></span></span></div></td></tr>
+
    <tr><td></td><td></td></tr>
-   <tr><td>Your Username</td><td><input type=\"text\" class='form-control' name=\"name\" value=\"".$_POST['name']."\" size=\"50\" maxlength=\"200\"></td></tr>
+   <tr><td>Your Username</td><td><div class='input-group'>
+   <input type='text' class='form-control' id='validate-text' name='name' value=\"".$_POST['name']."\" size='50' maxlength='200' required=''>
+   <span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+   </div></td></tr>
    <tr><td></td><td></td></tr>
-   <tr><td>Email Address</td><td><input type=\"text\" class='form-control' name=\"email\" value=\"".$_POST['email']."\" size=\"50\" maxlength=\"200\"></td></tr>
+   <tr><td>Email Address</td><td><div class='input-group' data-validate='email'><input type=\"text\" id='validate-email' class='form-control' name=\"email\" value=\"".$_POST['email']."\" size=\"50\" maxlength=\"200\" required=''><span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+   </div></td></tr>
    <tr><td></td><td></td></tr>
-   <tr><td>Message</td><td><textarea name=\"message\" class='form-control' cols=\"39\" rows=\"10\">".$_POST['message']."</textarea></td></tr>");
+   <tr><td>Message</td><td><div class='input-group'><textarea name=\"message\" id='validate-text' class='form-control' cols=\"39\" rows=\"10\" required=''>".$_POST['message']."</textarea><span class='input-group-addon danger'><span class='fa fa-times'></span></span>
+   </div></td></tr>");
 
    //captcha
    global $USE_IMAGECODE,$THIS_BASEPATH;

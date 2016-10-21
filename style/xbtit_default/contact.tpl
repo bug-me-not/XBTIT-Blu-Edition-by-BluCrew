@@ -51,12 +51,20 @@ function fillsubcat(xmlreply, subcatelmt)
 <if:CAPTCHA>
     <tr>
        <td align="left" class="header">Image Code:</td>
-       <td align="left" class="lista"><input type="text" class='form-control' name="private_key" maxlength="6" size="6" value="" />&nbsp;&nbsp;<tag:upload_captcha /></td>
+       <td align="left" class="lista"><div class="input-group">
+            <input type="text" class="form-control" name="private_key" id="validate-text" size="50" maxlength="200" required="">&nbsp;&nbsp;<tag:upload_captcha />
+            <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+            </div>
+            </td>
     </tr>
     <else:CAPTCHA>
     <tr>
        <td align="left" class="header">Security Code:</td>
-       <td align="left" class="lista"><tag:scode_question /><input type="text" class='form-control' name="scode_answer" maxlength="6" size="6" value="" /></td>
+       <td align="left" class="lista"><tag:scode_question /><div class="input-group" data-validate="number">
+        <input type="text" class="form-control" name="scode_answer" size="6" maxlength="6" id="validate-number" required>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
+        </td>
     </tr>
 </if:CAPTCHA>
 
