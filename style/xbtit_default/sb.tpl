@@ -94,7 +94,10 @@
         <form action="title2.php?action=changetitle" method="post">
           <tr>
             <td class="lista" style="text-align:center;font-weight:bold;">9</td>
-            <td class="lista" colspan="2"><input type="text" name="title" size="50" maxlength="50" value="<tag:custom_title />"></td>
+            <td class="lista" colspan="2">
+            <div class="input-group">
+            <input type='text' name='title' class='form-control' id='validate-text' size='40' required='' value='<tag:custom_title />'>
+            <span class="input-group-addon danger"><span class="fa fa-times"></span></span></div>
             <td class="lista" style="text-align:center;"><input type="submit" name="submit" class="btn btn-labeled btn-danger" value="<tag:language.EXCHANGE />!"></td>
           </tr>
         </form>
@@ -139,8 +142,16 @@
       </tr>
       <form action="seedbonus_exchange.php?id=sb_gift" method="post">
         <tr>
-          <td class="lista"><input type="text" name="gift_user" value="" size="43" maxlength="40" /></td>
-          <td class="lista"><input type="text" name="gift_points" value="" size="3" maxlength="6" /></td>
+          <td class="lista">
+          <div class="input-group">
+          <input type='text' name='title' class='form-control' id='validate-text' size='40' required=''>
+          <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+          </div>
+          </td>
+          <td class="lista">
+          <div class="input-group" data-validate="number">
+          <input type='text' name='gift_points' class='form-control' id='validate-number' size='40' required=''>
+          <span class="input-group-addon danger"><span class="fa fa-times"></span></span></div></td>
           <td class="lista" style="text-align:center";><input type="hidden" name="approval_code" value="<tag:approval_code />" /><input type="submit" class="btn btn-labeled btn-danger" value="<tag:language.EXCHANGE />!" /></td>
         </tr>
       </form>
