@@ -1004,14 +1004,16 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                            else
                            $torrent["nolang"]=" selected=\"selected\"";
 
-                           if($results['release_group']==0)
-                           $torrent["nogroup"]=" selected=\"selected\"";
-                           elseif($results['release_group']==1)
-                           $torrent["blurg"]=" selected=\"selected\"";
-                           elseif($results['release_group']==2)
-                           $torrent["simple"]=" selected=\"selected\"";
-						   elseif($results['release_group']==3)
-                           $torrent["legion"]=" selected=\"selected\"";
+                           if($results['release_group']== '0')
+                           $torrent["nogroup"]=" selected=\"selected\">";
+                           elseif($results['release_group']== '1')
+                           $torrent["blurg"]=" selected=\"selected\">";
+                           elseif($results['release_group']== '2')
+                           $torrent["simple"]=" selected=\"selected\">";
+						         elseif($results['release_group']== '3')
+                           $torrent["legion"]=" selected=\"selected\">";
+                           elseif($results['release_group']== '4')
+                           $torrent["united"]=" selected=\"selected\">";
                            else
                            $torrent["nogroup"]=" selected=\"selected\"";
                         }
@@ -1114,7 +1116,7 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
 
                               <div style='display:none' id='uploadmenfo'>
 
-                              <input type='file' name='nfo'>
+                               <input type='file' class='btn btn-primary btn-anchor' name='nfo' />
                               </div>";
                            }
                            else
@@ -1122,7 +1124,7 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                               $torrent["nfo"] = "
                               <tr>
                               <td class='header' align='right'>".$language["NFO_NFO"]."</td>
-                              <td class='lista' align='left'><br><input type='file' name='nfo' /></td>
+                              <td class='lista' align='left'><br><input type='file' class='btn btn-primary btn-anchor' name='nfo' /></td>
                               </tr>";
                            }
                         }
@@ -1226,9 +1228,12 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                                  //Torrent Nuke/Req Hack Start
                                  if($results["requested"] != "false")
                                  $selected1 = "selected='selected'";
-                                 $torrent["req"] = "<select name='req'>
+                                 $torrent["req"] = "<div class='input-group'>
+                                 <select class='form-control' name='req' id='validate-optional'>
                                  <option value='false' selected='selected'>".$language["NO"]."</option>
-                                 <option value='true' ".$selected1.">".$language["YES"]."</option></select>";
+                                 <option value='true' ".$selected1.">".$language["YES"]."</option></select>
+                                 <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
+                                 </div>";
                                  if($results["nuked"] != "false")
                                  {
                                     $selected2 = "selected='selected'";
@@ -1236,9 +1241,12 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                                  }
                                  else
                                  $value = "";
-                                 $torrent["nuk"] = "<select name='nuk'>
+                                 $torrent["nuk"] = "<div class='input-group'>
+                                 <select class='form-control' name='nuk' id='validate-optional'>
                                  <option value='false' selected='selected'>".$language["NO"]."</option>
                                  <option value='true' ".$selected2.">".$language["YES"]."</option></select>
+                                 <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
+                                 </div>
                                  <input type='text' name='nuk_rea' value='".$value."' size='43' maxlength='100'>";
                                  //Torrent Nuke/Req Hack Stop
                               }

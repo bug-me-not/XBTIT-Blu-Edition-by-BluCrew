@@ -299,7 +299,10 @@ $w(document).ready(function() {
         <tag:language.CATEGORY_FULL />
     </td>
     <td class="lista" align="left">
-        <select class="form-control" <tag:upload_categories_combo /></select>
+    <div class="input-group">
+        <select class="form-control" name="validate-select" id="validate-select" placeholder="Validate Select" required <tag:upload_categories_combo /></select>
+    <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+    </div>
     </td>
 </tr>
 <!-- CATEGORY END -->
@@ -310,7 +313,8 @@ $w(document).ready(function() {
         <tag:language.RG />
     </td>
     <td class="lista" align="left">
-            <select class="form-control" name="RG">
+            <div class="input-group">
+            <select class="form-control" name="release_group" id="validate-optional">
             <option value="">----</option>
             <option value="1">
                 <tag:language.BluRG />
@@ -325,6 +329,8 @@ $w(document).ready(function() {
                 <tag:language.Unit3d />
             </option>
         </select>
+        <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
+        </div>
     </td>
 </tr>
 <!-- RG END -->
@@ -442,7 +448,10 @@ $w(document).ready(function() {
         <tag:language.GOLD_TYPE />
     </td>
     <td class="lista" align="left">
-        <select class="form-control" <tag:upload_gold_combo /></select>
+         <div class="input-group">
+            <select class="form-control" name="gold" id="validate-optional" <tag:upload_gold_combo /></select>
+            <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
+        </div>
     </td>
 </tr>
 </if:upload_gold_level>
@@ -456,9 +465,12 @@ $w(document).ready(function() {
         <tag:language.UPM_UPL_MULT />
     </td>
     <td align='left' class='lista' colspan='2'>
-        <select class="form-control" name='multiplier'>
+         <div class="input-group">
+            <select class="form-control" name="multiplier" id="validate-optional">
             <tag:multie3 />
         </select>
+        <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
+        </div>
     </td>
 </tr>
 </if:mult_enabled>

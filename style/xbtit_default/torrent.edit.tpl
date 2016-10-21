@@ -1,9 +1,19 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Edit Upload</h4>
+</div>
 <div align="center">
   <form<if:tmod1_enabled> id="postmodify"</if:tmod1_enabled><if:nfo_enabled> enctype="multipart/form-data"</if:nfo_enabled> action="<tag:torrent.link />" method="post" name="edit" <if:imageup_enabled>enctype="multipart/form-data"</if:imageup_enabled> >
     <table class="table table-bordered">
       <tr>
         <td align="right" class="header"><tag:language.FILE /></td>
-        <td class="lista"><input type="text" name="name" value="<tag:torrent.filename />" size="100" /><if:nfo_enabled2><br /><tag:torrent.nfo /></if:nfo_enabled2></td>
+        <td class="lista">
+        <div class="input-group">
+        <input type="text" class="form-control" name="name" value="<tag:torrent.filename />" id="validate-text" size="50" maxlength="200" required="">
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
+        <if:nfo_enabled2><br /><tag:torrent.nfo /></if:nfo_enabled2>
+        </td>
       </tr>
 
       <if:bump_enabled>
@@ -39,20 +49,30 @@
       <if:tvdb_enabled>
       <tr>
         <td align="right" class="header"><tag:language.TVDB_UL_TITLE /></td>
-        <td class="lista" align="left"><tag:language.TVDB_UL_1 /> <input type="number" name="tvdb_number" value="<tag:tvdb_id />" size="10" maxlength="10" /> <tag:language.TVDB_UL_2 /></td>
+        <td class="lista" align="left"><tag:language.TVDB_UL_1 /> 
+        <div class="input-group" data-validate="number">
+        <input type="text" class="form-control" value="<tag:tvdb_id />" name="tvdb_number" size="10" maxlength="10" id="validate-number" required>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
+        <tag:language.TVDB_UL_2 />
+        </td>
       </tr>
       </if:tvdb_enabled>
 
       <if:imdb_enabled>
       <tr>
         <td align="right" class="header">IMDB</td>
-        <td class="lista" align="left"><input type="number" name="imdb" value="<tag:torrent.imdb />" size="10" maxlength="200" />&nbsp; <tag:language.IMDB_EDIT_FORM /></td>
+        <td class="lista" align="left">
+        <div class="input-group" data-validate="number">
+        <input type="text" class="form-control" value="<tag:torrent.imdb />" name="imdb" size="10" maxlength="10" id="validate-number" required>
+        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy http://www.imdb.com/title/tt<font color="red">1104001</font><tag:language.IMDB__EDIT_FORM /></td>
       </tr>
       </if:imdb_enabled>
 
       <tr>
         <td align="right" class="header"><tag:language.INFO_HASH /></td>
-        <td class="lista"><tag:torrent.info_hash /></td>
+        <td class="lista"><p class="text-danger"><tag:torrent.info_hash /></p></td>
       </tr>
 
 
@@ -60,7 +80,7 @@
       <if:imageon>
       <tr>
       <td class="header" ><tag:language.IMAGE /> (<tag:language.FACOLTATIVE />):<input type="hidden" name="userfileold" value="<tag:torrent.image />" /></td>
-      <td class="lista" align="left"><input type="file" name="userfile" size="15" /></td>
+      <td class="lista" align="left"><input type="file" class="btn btn-primary btn-anchor" name="userfile" size="15" /></td>
       </tr>
       </if:imageon>
       </if:imageup_enabled>
@@ -98,19 +118,25 @@
 
 <tr>
       <td class="header" ><tag:language.RG /></td>
-      <td class="lista" align="left"><select name="release_group">
-										<option value="0" <tag:torrent.nogroup /> >---</option>
-										<option value="1" <tag:torrent.blurg /> ><tag:language.BluRG /></option>
-										<option value="2" <tag:torrent.simple /> ><tag:language.SiMPLE /></option>
-                              <option value="3" <tag:torrent.legion /> ><tag:language.Legion /></option>
-                                        </select>
+      <td class="lista" align="left">
+      <div class="input-group">
+      <select class="form-control" name="release_group" id="validate-optional">
+										<option value="" <tag:torrent.nogroup />---</option>
+										<option value="1" <tag:torrent.blurg /><tag:language.BluRG /></option>
+										<option value="2" <tag:torrent.simple /><tag:language.SiMPLE /></option>
+                    <option value="3" <tag:torrent.legion /><tag:language.Legion /></option>
+                    <option value="4" <tag:torrent.united /><tag:language.United /></option>
+        </select>
+        <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
+        </div>
       </td>
     </tr>
 
     <if:torlang>
     <tr>
       <td class="header" ><tag:language.LANGUAGE /></td>
-      <td class="lista" align="left"><select name="language">
+      <td class="lista" align="left"><div class="input-group">
+        <select class="form-control" name="language" id="validate-select" placeholder="Validate Select" required>
 										<option value="0" <tag:torrent.nolang />---</option>
 										<option value="1" <tag:torrent.english /><tag:language.LANG_ENG /></option>
 										<option value="2" <tag:torrent.french /><tag:language.LANG_FRE /></option>
@@ -118,28 +144,30 @@
 										<option value="4" <tag:torrent.german /><tag:language.LANG_GER /></option>
 										<option value="5" <tag:torrent.spanish /><tag:language.LANG_SPA /></option>
 										<option value="6" <tag:torrent.italian /><tag:language.LANG_ITA /></option>
-                              <option value="7" <tag:torrent.Finnish /><tag:language.LANG_FIN /></option>
+                    <option value="7" <tag:torrent.Finnish /><tag:language.LANG_FIN /></option>
 										<option value="8" <tag:torrent.Greek /><tag:language.LANG_GRE /></option>
 										<option value="9" <tag:torrent.Icelandic /><tag:language.LANG_ICE /></option>
 										<option value="10" <tag:torrent.Japanese /><tag:language.LANG_JAP /></option>
 										<option value="11" <tag:language.Korean /><tag:language.LANG_KOR /></option>
-                              <option value="12" <tag:language.Latin /><tag:language.LANG_LAT /></option>
+                    <option value="12" <tag:language.Latin /><tag:language.LANG_LAT /></option>
 										<option value="13" <tag:language.Norwegian /><tag:language.LANG_NOR /></option>
 										<option value="14" <tag:language.Phillipino/><tag:language.LANG_PHI /></option>
 										<option value="15" <tag:language.Polish /><tag:language.LANG_POL /></option>
 										<option value="16" <tag:language.Portuguese /><tag:language.LANG_POR /></option>
 										<option value="17" <tag:language.Slovenian /><tag:language.LANG_SLO /></option>
-                              <option value="18" <tag:language.Russian /><tag:language.LANG_RUS /></option>
+                    <option value="18" <tag:language.Russian /><tag:language.LANG_RUS /></option>
 										<option value="19" <tag:language.Castillian /><tag:language.LANG_CAS /></option>
 										<option value="20" <tag:language.Swedish /><tag:language.LANG_SWE /></option>
 										<option value="21" <tag:language.Turkish /><tag:language.LANG_TUR /></option>
 										<option value="22" <tag:language.Danish /><tag:language.LANG_DAN /></option>
 										<option value="23" <tag:language.Czech /><tag:language.LANG_CZE /></option>
-                              <option value="24" <tag:language.Chinese /><tag:language.LANG_CHI /></option>
-                              <option value="25" <tag:language.Bulgarian /><tag:language.LANG_BUL /></option>
+                    <option value="24" <tag:language.Chinese /><tag:language.LANG_CHI /></option>
+                    <option value="25" <tag:language.Bulgarian /><tag:language.LANG_BUL /></option>
 										<option value="26" <tag:language.Arabic /><tag:language.LANG_ARA /></option>
-                              <option value="27" <tag:language.Vietnamese /><tag:language.LANG_VIE /></option>
-                                      </select>
+                    <option value="27" <tag:language.Vietnamese /><tag:language.LANG_VIE /></option>
+           </select>
+          <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+        </div>
       </td>
     </tr>
     </if:torlang>
@@ -197,7 +225,12 @@
     <if:mult_enabled>
       <tr>
         <td align='right' class='header'><tag:language.UPM_UPL_MULT /></td>
-        <td align='left' class='lista' colspan='2'><select name='multiplier'><tag:multie3 /></select></td>
+        <td align='left' class='lista' colspan='2'>
+        <div class='input-group'>
+        <select class='form-control' name='multiplier' id='validate-optional'><tag:multie3 /></select>
+        <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
+        </div>
+        </td>
       </tr>
     </if:mult_enabled>
 
@@ -250,5 +283,7 @@
    <!-- # End
         ########################################################## -->
    </if:nfo_enabled3>
-
+</div>
+<div class="panel-footer">
+</div>
 </div>
