@@ -16,12 +16,6 @@ if ($CURUSER["view_torrents"]=="yes")
     print("<li><a href='index.php?page=torrents&search=&category=0&uploader=0&options=0&active=0&gold=0'>".$language["MNU_TORRENT"]."</a>\n");
 }
 
-//BLUFLIX 2.0
-if ($btit_settings["fmhack_bluflix"] == 'enabled')
-{
-    print("<li><a href='index.php?page=forum&action=viewtopic&topicid=1804'>BluFLIX</a></li>\n");
-}
-
 //UPLOAD
 if ($CURUSER["can_upload"]=="yes")
 {            

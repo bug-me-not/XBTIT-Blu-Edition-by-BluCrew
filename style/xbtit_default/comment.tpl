@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Comment</h4>
+</div>
 <if:PREVIEW>
 <div width="100%" align="center" class="lista">
 <tag:comment_preview />
@@ -32,4 +36,6 @@
     </table>
   </form>
 </div>
-
+<div class="panel-footer">
+</div>
+</div>
