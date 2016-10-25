@@ -284,7 +284,7 @@ switch ($pageID) {
    $tpl->set("main_content",set_block($language["USER_DETAILS"],"center",$userdetailtpl->fetch(load_template("userdetails.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Users->Details");
    break;
-   
+
    case 'fav_up':
    require("$THIS_BASEPATH/fav_up.php");
    $tpl->set("main_content",set_block($language["FAV_UP"],"center",$fav_uptpl->fetch(load_template("fav_up.tpl"))));
@@ -581,7 +581,7 @@ switch ($pageID) {
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->F.A.Q.");
    break;
    /*End mod by losmi faq - mod*/
-   
+
       //Bookmark
    case 'bookmark':
    require("$THIS_BASEPATH/bookmark.php");
@@ -671,76 +671,6 @@ switch ($pageID) {
    break;
       //End Social Network DT
 
-      // offer/expected start
-
-   case 'viewexpected':
-   require("$THIS_BASEPATH/viewexpected.php");
-   $tpl->set("main_content",set_block($language["viewexpected"],"center",$viewexpectedtpl->fetch(load_template("viewexpected.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'expected':
-   require("$THIS_BASEPATH/expected.php");
-   $tpl->set("main_content",set_block($language["EXPECTED_V"],"center",$expectedtpl->fetch(load_template("expected.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'expectdetails':
-   require("$THIS_BASEPATH/expectdetails.php");
-   $tpl->set("main_content",set_block($language["EXPECTED_D"],"center",$expectdetailstpl->fetch(load_template("expectdetails.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'expectedit':
-   require("$THIS_BASEPATH/expectedit.php");
-   $tpl->set("main_content",set_block($language["EXPECTED_E"],"center",$expectedittpl->fetch(load_template("expectedit.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'votesexpectedview':
-   require("$THIS_BASEPATH/votesexpectedview.php");
-   $tpl->set("main_content",set_block($language["EXPECTED_VV"],"center",$votesexpectedviewtpl->fetch(load_template("votesexpectedview.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'takeexpect':
-   require("$THIS_BASEPATH/takeexpect.php");
-   break;
-
-   case 'addexpected':
-   require("$THIS_BASEPATH/addexpected.php");
-   break;
-
-   case 'takeexpectedit':
-   require("$THIS_BASEPATH/takeexpectedit.php");
-   break;
-
-   case 'takedelexpect':
-   require("$THIS_BASEPATH/takedelexpect.php");
-   break;
-
-   case 'offer_comment':
-   require("$THIS_BASEPATH/offer_comment.php");
-   $tpl->set("main_content",set_block($language["COMMENTS"],"center",$tpl_offer_comment->fetch(load_template("offer_comment.tpl")),false));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected->Comment");
-   break;
-
-      // offer/expected end
-
-      //offer/expected admin start
-
-   case 'votesexpectedviewmin':
-   require("$THIS_BASEPATH/votesexpectedviewmin.php");
-   $tpl->set("main_content",set_block($language["EXPECTED_VV"],"center",$votesexpectedviewtpl->fetch(load_template("votesexpectedviewmin.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
-   break;
-
-   case 'addexpectedmin':
-   require("$THIS_BASEPATH/addexpectedmin.php");
-   break;
-
-      // offer/expected admin end
-
       //Comment Vote start
    case 'votes':
    require("$THIS_BASEPATH/votes.php");
@@ -805,20 +735,20 @@ switch ($pageID) {
    $tpl->set("main_title","Index->Contact");
    break;
          // contact end
-   
+
 		// New Tables Layout
    case 'my_uploads':
    require("$THIS_BASEPATH/my_uploads.php");
    $tpl->set("main_content",set_block($language["UPLOAD_TABLE"],"center",$my_uploadstpl->fetch(load_template("my_uploads.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
    break;
-   
+
    case 'active':
    require("$THIS_BASEPATH/active.php");
    $tpl->set("main_content",set_block($language["ACTIVE_TABLE"],"center",$activetpl->fetch(load_template("active.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
    break;
-   
+
    case 'snatched':
    require("$THIS_BASEPATH/history.php");
    $tpl->set("main_content",set_block($language["HISTORY_TABLE"],"center",$historytpl->fetch(load_template("history.tpl"))));
@@ -827,7 +757,7 @@ switch ($pageID) {
         // New Tables Layout End
 
          //Donate Page
-   case 'donate_options': 
+   case 'donate_options':
    require("$THIS_BASEPATH/donate_options.php");
    $tpl->set("main_content",set_block($language["DONATE"],"center",$donateotpl->fetch(load_template("donate_options.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
@@ -835,7 +765,7 @@ switch ($pageID) {
          //Donate Page End
 
          //IRC Page
-   case 'irc': 
+   case 'irc':
    require("$THIS_BASEPATH/irc.php");
    $tpl->set("main_content",set_block($language["IRC"],"center",$irctpl->fetch(load_template("irc.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->IRC");
