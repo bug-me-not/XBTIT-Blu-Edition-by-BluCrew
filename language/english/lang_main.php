@@ -1578,44 +1578,6 @@ $language["NOT_AUTH_REQ"]="You are not authorised to view this section.";
 $language["MNU_FHOST"]="File Hosting";
 $language["FHOST"]="File Hosting";
 
-# Language expected/offer torrents start
-$language['viewexpected']='View Expected/To Offer Torrents';
-$language['EXPECTED_V']='Expected/To Offer Torrents';
-$language['EXPECTED_VV']='Offer Votes View';
-$language['EX_NAME']='Want This ?';
-$language['EXPECTED_D']='Expected/To Offer Torrent Details';
-$language['EXPECTED_E']='Edit Expected/To Offer Torrent';
-$language['INC_DEAD']='Inc. dead';
-$language['ADD_EXPECTED']='Add a new expected/to offer torrent';
-$language['EXPECTED']='Expected';
-$language['EXPECVOTE']='Expected/Vote';
-$language['OFFER']='To Offer';
-$language['VIEW_MY_EXPECTED']='View my expected/to offer torrents';
-$language['VIEW_ONLY']='View Only';
-$language['TYPE']='Type';
-$language['FIND_EXPECT']='Find';
-$language['GO']='Go';
-$language['WRITE_CATEGORY']='Select Category!';
-$language['NO_NAME']='No Name!';
-$language['NO_DESCR']='Description Empty!';
-$language['EXP_ADD_SUCCES']='was added to the Expected section';
-$language['MUST_SEL_EXP']='You must select at least one expected torrent to delete.';
-$language['DELETED']='Deleted';
-$language['RETURN_EXPECT']='Go back to';
-$language['DATE_EXPECTED']='Date expected';
-$language['TORR_LINK']='Torrent Link';
-$language['TORR_CLICK']='Click here to go to the torrent';
-$language['FILL_INFO']='If you did upload the torrent , fill in the info below';
-$language['VOTE_EXPECTED']='Vote for this ';
-$language['OFFER_A']='Offer';
-$language['OFFER_N']='Nothing Here Yet';
-$language['OF_USER']='Username';
-$language['TEXT_DTA']='<p>You have already voted for this offer, only 1 vote for each offer is allowed</p></b>';
-$language['TEXT_DTB']='Successfully voted';
-$language['TEXT_DTC']='Your vote is added to this offer';
-$language['TEXT_DTD']='Only needed for expected torrents!';
-# Language expected/offer torrents end
-
 #Notepad Start
 $language['NOTEPAD']=' Personal Notepad ';
 $language['NOTEPAD1']='(';
