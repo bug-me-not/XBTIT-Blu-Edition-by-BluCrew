@@ -1,3 +1,33 @@
+<!-- Trailers -->
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready(function () {
+  $('#get-data').click(function () {
+    var showData = $('#show-data');
+        $.getJSON('https://api.themoviedb.org/3/movie/tt2285752/videos?api_key=aa8b43b8cbce9d1689bef3d0c3087e4d&language=en-US', function (data) {
+      console.log(data);
+
+      var items = data.results.map(function (item) {
+/*        return item.key + ': ' + item.value;  */
+            return item.name +'<br><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="http://www.youtube.com/embed/'+ item.key +'?html5=1" frameborder="0"></iframe></div>';
+      });
+
+      showData.empty();
+
+      if (items.length) {
+        var content = '<li class="list-unstyled">' + items.join('</li><li class="list-unstyled">') + '</li>';
+        var list = $('<ul />').html(content);
+        showData.append(list);
+      }
+    });
+
+    showData.text('Loading the JSON file.');
+  });
+});
+});
+</script>
+<!-- Trailers END -->
+
 <script type="text/javascript">
    function ShowHide(id,id1) 
    {
@@ -618,7 +648,10 @@ function dt_show_waitb()
 <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
-   <p><h1>COMING SOON!</h1></p>
+<div id="get-data" class="btn btn-info">Load Trailer</div>
+<div class="container">
+   <div id="show-data"></div> 
+</div>
    <br>
    <br>
    <br>
