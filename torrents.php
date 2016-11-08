@@ -817,7 +817,7 @@ if($count > 0)
             {
                $fsub = ((isset($data["shash"]) && !is_null($data["shash"]))?$data["shash"]:"");
                if($fsub != "")
-                  $sub = "<a href='index.php?page=subtitles&id=$fsub'><img src='images/subs.png' border='0' title='subs' alt='subs'></a>";
+                  $sub = "<a href='index.php?page=subtitles&id=$fsub'><span class='label label-danger'>Subtitles</span></a>";
                else
                   $sub = "";
             }

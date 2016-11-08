@@ -395,7 +395,7 @@ function dt_show_waitb()
 <if:LEVEL_SC>
 <tr>
    <td align="right" class="header" ><tag:language.STAFF_COMMENT /></td>
-   <td class="lista" align="center"><tag:torrent_staff_comment /></td>
+   <td class="lista" align="center" style="text-align:left;"><tag:torrent_staff_comment /></td>
 </tr>
 </if:LEVEL_SC>
 </if:st_comm_enabled>

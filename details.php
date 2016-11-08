@@ -518,10 +518,10 @@ if($btit_settings["fmhack_torrent_nuked_and_requested"]=="enabled")
       //Torrent Nuke/Req Hack Start
    $row["torrentname"]=$row["filename"];
    if ($row["requested"]!="false")
-      $req="&nbsp;<img title='".$language["TNR_REL_REQ"]."' src='images/req.gif' border='0' />";
+      $req="&nbsp;<span class='label label-primary'>Requested</span>";
 
    if ($row["nuked"]!="false")
-      $nuk="&nbsp;<img title='".$row["nuke_reason"]."' src='images/nuked.gif' border='0' />";
+      $nuk="&nbsp;<span class='label label-warning'>Nuked</span>";
 
    $row["filename2"]=$row["filename"].$nuk.$req;
       //Torrent Nuke/Req Hack End
