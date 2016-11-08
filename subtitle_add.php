@@ -155,8 +155,11 @@ Success", "The subtitle was added to the database!<br><a href=index.php?page=sub
     }
     $option .= "\n</select>";
     $upform = "<form id=\"form1\" enctype=\"multipart/form-data\" name=\"form1\" method=\"post\" action=\"index.php?page=subadd\">
-<p>&nbsp;</p>
-<table border=\"0\" align=\"center\">
+<div class=\"panel panel-default\">
+<div class=\"panel-heading\">
+<h4 class=\"text-center\">Add A Subtitle</h4>
+</div>
+<table class=\"table table-bordered\">
 <tr><td class=\"block\" colspan=\"4\">&nbsp;</td></tr><tr>
   <tr>
     <td class=\"header\">" . $language['SUB_NAME'] . " *</td>
@@ -200,10 +203,12 @@ Success", "The subtitle was added to the database!<br><a href=index.php?page=sub
 </table>
 <p align=\"center\">
   <input name=\"crk\" type=\"hidden\" id=\"crk\" value=\"100\" />
-  <input class=btn name=\"Submit\" type=\"submit\" id=\"Submit\" value=\"" . $language['SUB'] .
+  <input class=\"btn btn-primary\" name=\"Submit\" type=\"submit\" id=\"Submit\" value=\"" . $language['SUB'] .
         "\" />&nbsp;" . $language['SUBCANCEL'] . "
 </p>
-</form>";
+</form>
+</div>
+</div>";
 }
 $subsaddtpl->set("upform", $upform);
 //converted to xbtit by cooly

@@ -21,15 +21,21 @@ $substpl->set("language",$language);
 
 if ($CURUSER["can_upload"]=="yes")
 {
-    $subadd="<br><center><a href='index.php?page=subadd'><img src='images/Add.png' width=30 height=30 alt='Add Subtitle' title='Add Subtitle'></a></center>";
+    $subadd="<div class='panel panel-primary'>
+             <div class='panel-heading'>
+             <h4 class='text-center'>Options</h4>
+             </div><br><center><a href='index.php?page=subadd'><role='button' class='btn btn-labeled btn-primary'><span class='btn-label'><i class='fa fa-upload'></i></span>Upload</a></center>";
 }
 
 $search="<form id='form1' name='form1' method='post' action='index.php?page=subsearch'>
          <div align='center'>
          <input name='src' type='text' size='40' />
-         <input type='submit' class=btn name='Submit' value='".$language['SUBSEARCH']."' />
+         <input type='submit' class='btn btn-sm btn-primary' name='Submit' value='".$language['SUBSEARCH']."' />
          </div>
          </form>
+         <br>
+         </div>
+         </div>
         ";
 
 require_once ("include/sanitize.php");

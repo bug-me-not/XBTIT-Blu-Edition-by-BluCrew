@@ -7578,4 +7578,128 @@ border-radius: 2px;
 -webkit-border-radius: 2px;
 }
 
+/* Movie Card */
+.reveal-modal-bg {
+  position: fixed !important;
+}
+
+.moviecard {
+    background: #fff;
+    display: block;
+    padding: 0;
+    position: relative;
+}
+.moviecard__modal {
+    /*margin-top: -4em;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+.moviecard__modal:focus,
+.moviecard__modal:active {
+    outline: 0;
+}
+.moviecard__backdrop {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 325px;
+}
+.moviecard__slider {
+    max-height: 330px;
+}
+.moviecard__slider li {
+    overflow: hidden;
+}
+.moviecard__slider + .orbit-timer {
+    display: none;
+    left: 10px;
+    right: auto;
+}
+.moviecard__slider + .orbit-timer > span {
+    opacity: .5;
+    right: -20px;
+}
+.moviecard__slider + .orbit-timer.paused > span {
+    opacity: .5;
+    right: -24px;
+}
+.moviecard__slider + .orbit-timer .orbit-progress {
+    left: 0;
+}
+.moviecard__backdrop #loading {
+    position: absolute;
+    top: 30%;
+    padding-left: 2em;
+    max-height: 330px;
+    font-size: 6vw;
+}
+.moviecard__poster {
+    margin-top: -2em;
+    margin-left: .5em;
+    border: 4px solid #ccc;
+}
+.moviecard__info {
+    padding: 15px 20px;
+}
+.moviecard__info h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+.moviecard__info .bio {
+    margin-top: 5px;
+}
+.moviecard__info .progress {
+    height: 10px;
+}
+.moviecard__searchbox {
+    padding-top: 50px;
+}
+.moviecard__searchbox input,
+.moviecard__searchbox .button {
+    border: 1px solid #808000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+}
+.moviecard__searchbox input {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-right-color: #808000;
+}
+.moviecard__searchbox .button {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #6B8E23;
+}
+.moviecard__autocomplete {
+    display: block;
+}
+.moviecard__autocomplete > li {
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    display: block;
+    padding: .25em;
+    text-align: center;
+}
+.moviecard__autocomplete > li P {
+    color: #ccc;
+    font-size: 0.75rem;
+    line-height: 1;
+    margin-top: 0.625rem;
+    text-transform: uppercase;
+}
+.moviecard__autocomplete > li:hover {
+    background: #6B8E23;
+  /*border: #000 .1em solid;*/
+    border-radius: 5px;
+    color: #fff;
+}
 

@@ -240,6 +240,12 @@ var tronstr = ''
             <span>Artwork Section</span>
           </a>
         </li>
+         <li>
+          <a href='index.php?page=subtitles'>
+            <i class="fa fa-font"></i>
+            <span>Subtitles</span>
+          </a>
+        </li>
         <li>
           <a href='index.php?page=extra-stats&amp;type=users'>
             <i class="fa fa-pie-chart"></i>

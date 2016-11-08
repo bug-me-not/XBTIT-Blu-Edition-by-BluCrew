@@ -87,8 +87,11 @@ if ($action == "edit")
     }
     $option .= "\n</select>";
     $upform = "<form id=\"form1\" name=\"form1\" method=\"post\" action=\"index.php?page=subedit&action=edit&save=1&id=$id\">
-<p>&nbsp;</p>
-<table width=\"349\" border=\"0\" align=\"center\">
+<div class=\"panel panel-default\">
+<div class=\"panel-heading\">
+<h4 class=\"text-center\">Subtitle Edit</h4>
+</div>
+<table class=\"table table-bordered\">
 <tr><td class=block colspan=4>&nbsp;</td></tr><tr>
   <tr>
     <td class=header width=\"95\">" . $language['SUB_NAME'] . "</td>
@@ -135,10 +138,12 @@ if ($action == "edit")
 </table>
 <p align=\"center\">
   <input name=\"crk\" type=\"hidden\" id=\"crk\" value=\"100\" />
-  <input class=btn name=\"Submit\" type=\"submit\" id=\"Submit\" value=\"" . $language['SUB'] .
+  <input class=\"btn btn-primary\" name=\"Submit\" type=\"submit\" id=\"Submit\" value=\"" . $language['SUB'] .
         "\" />&nbsp; " . $language['SUBCANCEL'] . "
 </p>
-</form>";
+</form>
+</div>
+</div>";
 }
 $endp = "</p>";
 $subsedittpl->set("upform", $upform);
