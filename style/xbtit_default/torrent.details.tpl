@@ -292,10 +292,11 @@ function dt_show_waitb()
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
 
-  <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
-    <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
-
-      <table class="table table-bordered">
+   <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
+   <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
+   <div class="container">
+   <div class="row">
+   <table class="table table-bordered">
          
    <div class="details-header">
    <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>  
@@ -599,9 +600,13 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="details"><!-- Tab Start -->
+<div class="container">
+  <div class="row">
    <if:nfo_enabled>
    <if:view_nfo>
    <if:nfo_exists>
@@ -613,15 +618,21 @@ function dt_show_waitb()
 </if:view_nfo>
 </if:nfo_enabled>
 <tag:torrent.description />
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
+<div class="container">
+  <div class="row">
    <p class= "text-info"><h3><tag:language.SEND_POINTS /></h3></p>
    <div class="row">
       <div class="col-md-12">
          <tag:coin />
       </div>
    </div>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <!-- Tab Start -->
@@ -661,6 +672,8 @@ function dt_show_waitb()
 <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
+<div class="container">
+<div class="row">
 <div id="get-data" class="btn btn-info">Load Trailer</div>
 <div class="container">
    <div id="show-data"></div> 
@@ -669,9 +682,13 @@ function dt_show_waitb()
    <br>
    <br>
    <p class="text-warning">Powered By TMDB API</p>
+   </div>
+   </div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
+<div class="container">
+<div class="row">
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -813,7 +830,9 @@ function dt_show_waitb()
 <br />
 <br />
 <div align="center">
-   <tag:torrent_footer />
+<tag:torrent_footer />
+</div>
+</div>
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->
