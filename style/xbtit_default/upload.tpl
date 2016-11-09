@@ -299,10 +299,7 @@ $w(document).ready(function() {
         <tag:language.CATEGORY_FULL />
     </td>
     <td class="lista" align="left">
-    <div class="input-group">
-        <select class="form-control" name="validate-select" id="validate-select" placeholder="Validate Select" required <tag:upload_categories_combo /></select>
-    <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
-    </div>
+    <select class="form-control" <tag:upload_categories_combo /></select>
     </td>
 </tr>
 <!-- CATEGORY END -->

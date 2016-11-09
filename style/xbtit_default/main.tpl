@@ -43,6 +43,7 @@
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/alertify/js/alertify.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
 <!-- Bootstrap Switch JS -->
 <script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
