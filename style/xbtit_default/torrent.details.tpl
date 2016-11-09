@@ -1,4 +1,3 @@
-
 <!-- Trailers -->
 <script type="text/javascript">
 jQuery(function($) {
@@ -284,15 +283,34 @@ function dt_show_waitb()
     <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
 
       <table class="table table-bordered">
-         <tr>
-            <td class="lista" style="text-align:center;" colspan="2"><img class="banner" src="<tag:banner />" /></td>
-         </tr>
+         
+   <div ng-view="" class="view ng-scope"><div class="details-header ng-scope" ng-class="{ 'details-header-small': backdrops.length === 0 }">
+   <div class="background ng-scope" ng-repeat="backdrop in backdrops track by $index" ng-style="{ 'background-image': 'url('+backdropPath+backdrop.file_path+')' }" ng-class="{ invisible: $index !== backdropIndex }" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>               
+   <div class="backdrop-controls ng-scope" ng-if="backdrops.length &gt; 1" style=""><i class="ion-ios7-arrow-back" ng-click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" ng-click="nextBackdrop()"></i> </div>
 
+  <div class="main-info-holder">
+    <div class="main-info">
+      <h1 class="ng-binding"><tag:torrent.filename2 /></h1> 
+      <span class="stars ng-binding">Rating:&nbsp;<i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
+      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
+      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
+      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>
+      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>(6)</span>
+      <div class="external button ng-scope" ng-if="details.imdb_id || details.homepage" style=""><a ng-if="details.imdb_id" ng-href="http://www.imdb.com/title/tt1386697" target="_blank" class="ng-scope" href="http://www.imdb.com/title/tt2975590/">IMDB</a>
+      <a ng-if="details.homepage" ng-href="http://www.suicidesquad.com/" target="_blank" class="ng-scope" href="http://batmanvsuperman.dccomics.com">Homepage</a><i class="ion-share"></i></div>
+      <if:MOD>
+    </div>
+  </div>
+</div>
+
+<div class="page-holder ng-scope">
+<div class="details-poster" ng-style="{ 'background-image': 'url('+posterPath+details.images.posters[posterIndex].file_path+')' }" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
+<div class="poster-controls ng-scope" ng-if="details.images.posters.length &gt; 1" style=""> <i class="ion-ios7-arrow-back" ng-click="prevPoster()"></i><i class="ion-ios7-arrow-forward" ng-click="nextPoster()"></i> </div>
+  </div>
+  </div>
+  <tag:mod_task /></if:MOD>   
+      
       <br>
-
-      <tr>
-         <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><p class= "text-danger"><tag:language.INFO_HASH />:&nbsp;&nbsp;<tag:torrent.info_hash /></p><if:MOD><tag:mod_task /></if:MOD></td>
-      </tr>
 
       <if:fls_enabled>
       <tr>
@@ -495,6 +513,11 @@ function dt_show_waitb()
 </tr>
 
 <tr>
+   <td align="right" class="header"><tag:language.INFO_HASH /></td>
+    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.info_hash /></td>
+</tr>
+
+<tr>
    <td align="right" class="header"><tag:language.RATING /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.rating /></td>
 </tr>
@@ -529,8 +552,8 @@ function dt_show_waitb()
 <tr>
    <td align="right" class="header"><tag:language.details_similar_torrents /></td>
    <td class="lista">
-      <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#similar">Show Similar Uploads</button>
-      <div id="similar" class="collapse">
+      <!-- <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#similar">Show Similar Uploads</button>
+      <div id="similar" class="collapse"> -->
          <table width="100%" class="main" border="1" cellspacing="0" cellpadding="1" style="text-align:center;">
             <tr>
                <td class="header" style="text-align:center;"><tag:language.details_name /></td>
@@ -549,7 +572,7 @@ function dt_show_waitb()
             </tr>
          </loop:similar_torrents>
       </table>
-   </div>
+   <!-- </div> -->
 </td>
 </tr>
 </if:similar_enabled>
