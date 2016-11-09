@@ -291,11 +291,11 @@ function dt_show_waitb()
     <div class="main-info">
       <h1><tag:torrent.filename2 /></h1> 
       <span class="stars">
-         <h3>Genre:&nbsp;<tag:torrents[].blu_genre /></h3>
-         <h3>Rating:&nbsp;<tag:torrents[].blu_rating /></h3>
+         <h3>Genre:&nbsp;OMDB GENRE TAG</h3>
+         <h3>Rating:&nbsp;OMDB IMDB RATING TAG</h3>
       </span>
-      <div class="external button" style=""><a href="http://www.imdb.com/title/tt2975590/">IMDB</a>
-      <a href="http://batmanvsuperman.dccomics.com">Website</a><i class="ion-share"></i></div>
+      <div class="external button" style=""><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a>
+      <a href="OMDB WEBSITE TAG">Website</a></div>
     </div>
   </div>
 </div>
