@@ -309,8 +309,8 @@ function dt_show_waitb()
          <h3>Genre:&nbsp;OMDB GENRE TAG</h3>
          <h3>Rating:&nbsp;OMDB IMDB RATING TAG</h3>
       </span>
-      <div class="external button" style=""><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a>
-      <a href="OMDB WEBSITE TAG">Website</a><i class="ion-star"></i></div>
+      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="OMDB WEBSITE TAG">Website</a></button>
     </div>
   </div>
 </div>
@@ -319,8 +319,7 @@ function dt_show_waitb()
 <div class="details-poster" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
 <div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
   </div>
-  </div>
-  <if:MOD><tag:mod_task /></if:MOD>   
+  </div> 
 
       <if:fls_enabled>
       <tr>
@@ -598,6 +597,8 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
+<p class="text-danger">Staff Moderation</p>
+<if:MOD><tag:mod_task /></if:MOD>  
 </div>
 </div>
 </div> <!-- Tab End -->
