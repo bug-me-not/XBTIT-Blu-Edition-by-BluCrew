@@ -298,7 +298,6 @@ function dt_show_waitb()
       <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>(6)</span>
       <div class="external button ng-scope" ng-if="details.imdb_id || details.homepage" style=""><a ng-if="details.imdb_id" ng-href="http://www.imdb.com/title/tt1386697" target="_blank" class="ng-scope" href="http://www.imdb.com/title/tt2975590/">IMDB</a>
       <a ng-if="details.homepage" ng-href="http://www.suicidesquad.com/" target="_blank" class="ng-scope" href="http://batmanvsuperman.dccomics.com">Homepage</a><i class="ion-share"></i></div>
-      <if:MOD>
     </div>
   </div>
 </div>
@@ -308,7 +307,7 @@ function dt_show_waitb()
 <div class="poster-controls ng-scope" ng-if="details.images.posters.length &gt; 1" style=""> <i class="ion-ios7-arrow-back" ng-click="prevPoster()"></i><i class="ion-ios7-arrow-forward" ng-click="nextPoster()"></i> </div>
   </div>
   </div>
-  <tag:mod_task /></if:MOD>   
+  <if:MOD><tag:mod_task /></if:MOD>   
       
       <br>
 
