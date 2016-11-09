@@ -8008,12 +8008,11 @@ select:hover {
 
 .main-info-holder .main-info {
   display: block;
-  left: 0;
-  padding-left: 0px;
-  padding-right: 25px;
+  padding-left: 90px;
   padding-bottom: 25px;
   bottom: 0;
-  z-index: 9999
+  z-index: 9999;
+  text-align: left
 }
 
 @media screen and (max-width:1110px) {
@@ -8038,7 +8037,6 @@ select:hover {
   font-size: 30px;
   line-height: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .36);
-  padding-left: 100px;
   text-align: left
 }
 

@@ -321,9 +321,7 @@ function dt_show_waitb()
   </div>
   </div>
   <if:MOD><tag:mod_task /></if:MOD>   
-      
-      <br>
-
+  
       <if:fls_enabled>
       <tr>
          <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
