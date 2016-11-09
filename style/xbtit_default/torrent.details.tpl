@@ -284,27 +284,27 @@ function dt_show_waitb()
 
       <table class="table table-bordered">
          
-   <div ng-view="" class="view ng-scope"><div class="details-header ng-scope" ng-class="{ 'details-header-small': backdrops.length === 0 }">
-   <div class="background ng-scope" ng-repeat="backdrop in backdrops track by $index" ng-style="{ 'background-image': 'url('+backdropPath+backdrop.file_path+')' }" ng-class="{ invisible: $index !== backdropIndex }" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>               
-   <div class="backdrop-controls ng-scope" ng-if="backdrops.length &gt; 1" style=""><i class="ion-ios7-arrow-back" ng-click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" ng-click="nextBackdrop()"></i> </div>
+   <div class="details-header">
+   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>  
+   <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
 
   <div class="main-info-holder">
     <div class="main-info">
-      <h1 class="ng-binding"><tag:torrent.filename2 /></h1> 
+      <h1><tag:torrent.filename2 /></h1> 
       <span class="stars ng-binding">Rating:&nbsp;<i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
       <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
       <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
       <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>
       <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>(6)</span>
-      <div class="external button ng-scope" ng-if="details.imdb_id || details.homepage" style=""><a ng-if="details.imdb_id" ng-href="http://www.imdb.com/title/tt1386697" target="_blank" class="ng-scope" href="http://www.imdb.com/title/tt2975590/">IMDB</a>
-      <a ng-if="details.homepage" ng-href="http://www.suicidesquad.com/" target="_blank" class="ng-scope" href="http://batmanvsuperman.dccomics.com">Homepage</a><i class="ion-share"></i></div>
+      <div class="external button" style=""><a href="http://www.imdb.com/title/tt1386697">IMDB</a>
+      <a href="http://www.suicidesquad.com/">Homepage</a><i class="ion-share"></i></div>
     </div>
   </div>
 </div>
 
-<div class="page-holder ng-scope">
-<div class="details-poster" ng-style="{ 'background-image': 'url('+posterPath+details.images.posters[posterIndex].file_path+')' }" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
-<div class="poster-controls ng-scope" ng-if="details.images.posters.length &gt; 1" style=""> <i class="ion-ios7-arrow-back" ng-click="prevPoster()"></i><i class="ion-ios7-arrow-forward" ng-click="nextPoster()"></i> </div>
+<div class="page-holder">
+<div class="details-poster" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
+<div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
   </div>
   </div>
   <if:MOD><tag:mod_task /></if:MOD>   
