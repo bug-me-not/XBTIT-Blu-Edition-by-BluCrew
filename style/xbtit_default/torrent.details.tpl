@@ -295,7 +295,7 @@ function dt_show_waitb()
          <h3>Rating:&nbsp;OMDB IMDB RATING TAG</h3>
       </span>
       <div class="external button" style=""><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a>
-      <a href="OMDB WEBSITE TAG">Website</a></div>
+      <a href="OMDB WEBSITE TAG">Website</a><i class="ion-star"></i></div>
     </div>
   </div>
 </div>
