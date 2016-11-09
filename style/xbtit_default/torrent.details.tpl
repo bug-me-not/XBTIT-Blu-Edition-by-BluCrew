@@ -294,7 +294,7 @@ function dt_show_waitb()
 
    <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
    <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
-   <div class="container">
+   <div class="container-fluid">
    <div class="row">
    <table class="table table-bordered">
          
@@ -321,7 +321,7 @@ function dt_show_waitb()
   </div>
   </div>
   <if:MOD><tag:mod_task /></if:MOD>   
-  
+
       <if:fls_enabled>
       <tr>
          <td align="right" class="header"><tag:language.FLS_CUSTOM_FL /></td>
@@ -603,7 +603,7 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="details"><!-- Tab Start -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
    <if:nfo_enabled>
    <if:view_nfo>
@@ -621,7 +621,7 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
    <p class= "text-info"><h3><tag:language.SEND_POINTS /></h3></p>
    <div class="row">
@@ -635,7 +635,7 @@ function dt_show_waitb()
 
 <!-- Tab Start -->
 <div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <h1>FANART DISC ART</h1>
     <div class="row">
@@ -670,10 +670,10 @@ function dt_show_waitb()
 <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
-<div class="container">
+<div class="container-fluid">
 <div class="row">
 <div id="get-data" class="btn btn-info">Load Trailer</div>
-<div class="container">
+<div class="container-fluid">
    <div id="show-data"></div> 
 </div>
    <br>
@@ -685,7 +685,7 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
-<div class="container">
+<div class="container-fluid">
 <div class="row">
    <if:vedsc_enabled_1>
    <!-- #######################################################
