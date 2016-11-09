@@ -273,7 +273,6 @@ function dt_show_waitb()
      <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
-     <li class=""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
      <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
@@ -291,13 +290,12 @@ function dt_show_waitb()
   <div class="main-info-holder">
     <div class="main-info">
       <h1><tag:torrent.filename2 /></h1> 
-      <span class="stars ng-binding">Rating:&nbsp;<i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
-      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
-      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star"></i>
-      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>
-      <i ng-repeat="star in stars track by $index" ng-class="{ 'ion-ios7-star': star === 2, 'ion-ios7-star-half': star === 1, 'ion-ios7-star-outline': star === 0 }" class="ng-scope ion-ios7-star-outline"></i>(6)</span>
-      <div class="external button" style=""><a href="http://www.imdb.com/title/tt1386697">IMDB</a>
-      <a href="http://www.suicidesquad.com/">Homepage</a><i class="ion-share"></i></div>
+      <span class="stars">
+         <h3>Genre:&nbsp;<tag:torrents[].blu_genre /></h3>
+         <h3>Rating:&nbsp;<tag:torrents[].blu_rating /></h3>
+      </span>
+      <div class="external button" style=""><a href="http://www.imdb.com/title/tt2975590/">IMDB</a>
+      <a href="http://batmanvsuperman.dccomics.com">Website</a><i class="ion-share"></i></div>
     </div>
   </div>
 </div>
@@ -611,54 +609,6 @@ function dt_show_waitb()
       </div>
    </div>
 </div> <!-- Tab End -->
-
-<!-- Tab Start -->
-<div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
-<if:has_bmdb>
-  <div class="row">
-   <div class="col-md-12">
-   <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title />&nbsp;&nbsp;(<tag:blu_year />)</p></a><small>Rating: <tag:blu_rating /></small></h1>
-   <b>Runtime:</b> <tag:blu_runtime /><br>
-   <b>Genre:</b> <tag:blu_genre /><br>
-   <b>Langauge:</b> <tag:blu_lang /><br>
-   <b>Country:</b> <tag:blu_country /><br>
-   <b>Production:</b> <tag:blu_pro /><br>
-   <b>Released:</b> <tag:blu_released /><br><br>
-
-
-   <p class='lead'>
-      <b>Director:</b> <tag:blu_director /><br>
-      <b>Actors:</b> <tag:blu_actors /><br>
-   </p>
-
-   <p>Plot: <tag:blu_plot /></p><br>
-   <p>Awards: <tag:blu_awards /></p>
-   <br>
-
-   <h1 style="color:red;">Rotten Tomatoes</h1>
-   <b>Tomato Meter:</b> <tag:blu_tmeter /><br>
-   <b>Tomato Rating:</b> <tag:blu_trating /><br><br>
-   <b>Tomato Reviews:</b> <tag:blu_treview /><br>
-   <b>Tomato Fresh (+):</b> <tag:blu_tfresh /><br>
-   <b>Tomato Rotten (-):</b> <tag:blu_trotten /><br>
-   <br>
-   <b>Tomato User Meter:</b> <tag:blu_tumeter /><br>
-   <b>Tomato User Rating:</b> <tag:blu_turating /><br>
-   <b>Tomato User Review:</b> <tag:blu_tureviews /><br>
-   <br>
-
-   <h1 style="color:red;">Extra</h1>
-   <b>DVD Release Date:</b> <tag:blu_dvd /><br>
-   <b>Box Office:</b> <tag:blu_office /><br>
-   <b>Website:</b> <tag:blu_site /><br>
-</div> 
-</div>
-<else:has_bmdb>
-<p class='text-warning'>No data available</p>
-</if:has_bmdb>
-<br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
-</div>
-<!-- Tab End -->
 
 <!-- Tab Start -->
 <div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
