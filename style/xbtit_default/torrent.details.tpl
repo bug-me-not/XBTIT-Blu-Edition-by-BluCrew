@@ -1,3 +1,17 @@
+<!-- Disc Art -->
+<script type="text/javascript">
+jQuery(function($) {
+$('.thumbnail').click(function(){
+   $('.modal-body').empty();
+   var title = $(this).parent('a').attr("title");
+   $('.modal-title').html(title);
+   $($(this).parents('div').html()).appendTo('.modal-body');
+   $('#myModal').modal({show:true});
+});
+});
+</script>
+<!-- Disc Art -->
+
 <!-- Trailers -->
 <script type="text/javascript">
 jQuery(function($) {
@@ -612,7 +626,33 @@ function dt_show_waitb()
 
 <!-- Tab Start -->
 <div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
-<p><h1>COMING SOON!</h1></p>
+<div class="container">
+  <div class="row">
+    <h1>FANART DISC ART</h1>
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 1"><img src="//placehold.it/600x350" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 2"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 3"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 4"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-title">OMDB MOVIE NAME TAG</h3>
+   </div>
+   <div class="modal-body">
+      
+   </div>
+   <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal">Close</button>
+   </div>
+   </div>
+  </div>
+</div>
    <br>
    <br>
    <br>
