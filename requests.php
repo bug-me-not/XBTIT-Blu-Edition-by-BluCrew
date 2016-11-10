@@ -1,9 +1,10 @@
 <?php
 ////////////////////////////////////////
 //
+// Request system
+// For use only with XBTIT Blu Edition
 //
-//
-//
+// By MrG04
 //
 ////////////////////////////////////////
 
@@ -120,7 +121,7 @@ else
 					{
 						$reqdetailstpl->set("has_comments",false,true);
 					}
-					
+
 					$reqdetailstpl->set("comment_comment",textbbcode("comment","comment",""));
 
 					//Comments Section
@@ -197,7 +198,7 @@ else
 					$desc = $_POST['description'];
 
 					if(!$reqtitle)
-					{	
+					{
 						stderr($language['ERROR'],$language['TRAV_MUSTADDTITLE']);
 						die();
 					}
@@ -229,7 +230,7 @@ else
 						quickQuery("INSERT INTO {$TABLE_PREFIX}requests (`reqname`,`category`,`requester`,`dateadded`,`description`,`views`,`imdb`,`tvdb`) VALUES ($req1title,$cat,{$CURUSER['uid']},NOW(),$desc,1,$imdb,$tvdb)") or sqlerr();
 
 						$last_id = sql_insert_id();
-						quickQuery("INSERT INTO {$TABLE_PREFIX}requests_bounty (`addedby`,`seedbonus`,`req_id`) VALUES ({$CURUSER['uid']},{$btit_settings['req_bon']},{$last_id});") or sqlerr(); 
+						quickQuery("INSERT INTO {$TABLE_PREFIX}requests_bounty (`addedby`,`seedbonus`,`req_id`) VALUES ({$CURUSER['uid']},{$btit_settings['req_bon']},{$last_id});") or sqlerr();
 
 						quickQuery("UPDATE {$TABLE_PREFIX}users SET `seedbonus` = `seedbonus` - {$btit_settings['req_bon']} WHERE id = {$CURUSER['uid']}") or sqlerr();
 						$_SESSION["CURUSER"]["seedbonus"] -= $btit_settings['req_bon'];
@@ -333,7 +334,7 @@ else
 						$desc = $_POST['description'];
 
 						if(!$reqtitle)
-						{	
+						{
 							stderr($language['ERROR'],$language['TRAV_MUSTADDTITLE']);
 							die();
 						}
@@ -497,7 +498,7 @@ else
 							//BON allocation
 							$bounty = intval($reqres['seedbonus'])*(1-((int)$btit_settings['req_tax']/100));
 							$tax = intval($reqres['seedbonus'])*((int)$btit_settings['req_tax']/100);
-							
+
 							if($CURUSER['uid']==$hashres['uploader'])
 							{
 								quickQuery("UPDATE {$TABLE_PREFIX}requests SET uploadedby={$hashres['uploader']}, uploadedwhen=NOW(), infohash=\"{$hash}\" WHERE id={$reqid}");
@@ -746,7 +747,7 @@ else
 			$requeststpl->set("language",$language);
 
 			//Form handling
-			$requeststpl->set("title_value",(($act=='search')?$_GET['title']:"")); 
+			$requeststpl->set("title_value",(($act=='search')?$_GET['title']:""));
 			$requeststpl->set("category",(($act=='search')?categories(0+$_GET['category']):categories()));
 			$requeststpl->set("hfillcheck",(($act=='search' && $_GET['hfilled']=='on')?"checked='yes'":""));
 			$requeststpl->set("htakencheck",(($act=='search' && $_GET['htaken']=='on')?"checked='yes'":""));
@@ -836,7 +837,7 @@ else
 
 					$reqdata[$i]['req_uid'] = $tres['requester'];
 					$reqdata[$i]['req_by'] = $tres['req_prefix'].$tres['req_username'].$tres['req_suffix'];
-					$reqdata[$i]['req_when'] = "[".date("d/m/Y H:i:s",$tres['dateadded']-$offset)."]"; 
+					$reqdata[$i]['req_when'] = "[".date("d/m/Y H:i:s",$tres['dateadded']-$offset)."]";
 
 					if($tres['uploadedby']>0)
 					{

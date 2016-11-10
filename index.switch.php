@@ -149,6 +149,7 @@ switch ($pageID) {
    require("$THIS_BASEPATH/get_file_hosting.php");
    break;
       //file host end
+
       //apply for membership
    case 'apply':
    require(load_language("lang_apply_membership.php"));
@@ -161,6 +162,7 @@ switch ($pageID) {
    require("$THIS_BASEPATH/applysend.php");
    break;
       //apply for membership
+
       // shouthistory
    case 'allshout':
    ob_start();
@@ -195,14 +197,21 @@ switch ($pageID) {
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Statistics");
    break;
 
-      // DT request hack start
+    /* Requests system by MrG04 [Start] */
    case 'requests':
    require("$THIS_BASEPATH/requests.php");
    $tpl->set("main_content",set_block("Requests","center",$requeststpl->fetch(load_template("requests.main.tpl"))));
    $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Requests");
    break;
+    /* Requests system by MrG04 [End] */
 
-      // DT request hack end
+    /* Upcoming System by MrG04 [Start] */
+    /* case 'upcoming':
+    require $THIS_BASEPATH."/upcoming.php";
+    $tpl->set();
+    $tpl->set();
+    break; */
+    /* Upcoming System by MrG04 [End] */
 
    case 'timedrank':
    require("$THIS_BASEPATH/timedrank.php");
