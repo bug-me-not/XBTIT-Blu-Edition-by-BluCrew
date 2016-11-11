@@ -106,13 +106,10 @@ $a=0;
 
 while ($tor = $torrent->fetch_assoc() )
 {
-  $description = format_comment($tor["comment"]);
   $featured[$a]["name"]="<a href=/index.php?page=torrent-details&id=".$tor['info_hash'].">".$tor['filename']."</a>";
   $featured[$a]["cat"]="<a href=\"index.php?page=torrents&amp;category=".$tor['cat_id']."\">" . image_or_link( ($tor["cat_image"] == "" ? "" : "$STYLEPATH/images/categories/large/" . $tor["cat_image"]), "", $tor["cat_name"]) . "</a>";
-  $featured[$a]["sl"]="<br /><b>Seeders: </b>".$tor['seeds']."<br />
+  $featured[$a]["sl"]="<br /><b>Seeders: </b>".$tor['seeds']."
   <b>Leechers: </b>".$tor['leechers']."";
-//description
-  $featured[$a]["desc"]="<table border=0 style=\"border:0px\" width=\"99%\"><tr><td>".((strlen($description)>40)?substr($description,0,40):$description)."</td></tr></table>";
 
 $a++;
 }

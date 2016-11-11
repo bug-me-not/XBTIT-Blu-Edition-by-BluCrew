@@ -1,17 +1,21 @@
 <if:read>
-<table class="lista" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Forums Settings</h4>
+</div>
+<table class="table table-bordered">
   <tr>
-    <td class="header" align="center"><tag:language.FORUM_NAME /></td>
-    <td class="header" align="center"><tag:language.FORUM_N_TOPICS /></td>
-    <td class="header" align="center"><tag:language.FORUM_N_POSTS /></td>
-    <td class="header" align="center"><tag:language.FORUM_MIN_READ /></td>
-    <td class="header" align="center"><tag:language.FORUM_MIN_WRITE /></td>
-    <td class="header" align="center"><tag:language.FORUM_MIN_CREATE /></td>
-    <td class="header" align="center">Sort Order head</td>
-    <td class="header" align="center">Sort Order sub</td>
-    <td class="header" align="center">Category</td>
-    <td class="header" align="center"><tag:language.EDIT /></td>
-    <td class="header" align="center"><tag:language.DELETE /></td>
+    <td class="head" align="center"><tag:language.FORUM_NAME /></td>
+    <td class="head" align="center"><tag:language.FORUM_N_TOPICS /></td>
+    <td class="head" align="center"><tag:language.FORUM_N_POSTS /></td>
+    <td class="head" align="center"><tag:language.FORUM_MIN_READ /></td>
+    <td class="head" align="center"><tag:language.FORUM_MIN_WRITE /></td>
+    <td class="head" align="center"><tag:language.FORUM_MIN_CREATE /></td>
+    <td class="head" align="center">Sort Order head</td>
+    <td class="head" align="center">Sort Order sub</td>
+    <td class="head" align="center">Category</td>
+    <td class="head" align="center"><tag:language.EDIT /></td>
+    <td class="head" align="center"><tag:language.DELETE /></td>
   </tr>
   <loop:forums>
   <tr>
@@ -29,6 +33,9 @@
   </tr>
   </loop:forums>
 </table>
+<div class="panel-footer">
+</div>
+</div>
 <table width="100%" align="center">
   <tr>
     <td class="header" align="center">
@@ -36,9 +43,16 @@
     </td>
   </tr>
 </table>
+
 <else:read>
+
+
 <form name="editforum" action="<tag:frm_action />" method="post">
-  <table class="lista" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Add / Edit</h4>
+</div>
+<table class="table table-bordered">
     <tr>
       <td class="header" align="center"><tag:language.NAME /></td>
       <td class="lista"><input type="text" name="name" value="<tag:forum.name />" size="40" maxlength="60" /></td>
@@ -73,10 +87,13 @@
   </tr>
     <tr>
       <td class="header" align="center" colspan="2">
-      <input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CONFIRM />" />
-      <input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CANCEL />" />
+      <input type="submit" class="btn btn-md btn-primary" name="confirm" value="<tag:language.FRM_CONFIRM />" />
+      <input type="submit" class="btn btn-md btn-warning" name="confirm" value="<tag:language.FRM_CANCEL />" />
       </td>
     </tr>
   </table>
+  <div class="panel-footer">
+</div>
+</div>
 </form>
 </if:read>

@@ -21,14 +21,19 @@
  }
  // -->
 </script>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Prune List</h4>
+</div>
 <form action="<tag:frm_action />" name="prune" method="post">
-  <table class="lista" width="100%">
+  <table class="table table-bordered">
     <tr>
-      <td class="header" align="center"><tag:language.FILE_NAME /></td>
-      <td class="header" align="center"><tag:language.LAST_UPDATE /></td>
-      <td class="header" align="center"><tag:language.SEEDS /></td>
-      <td class="header" align="center"><tag:language.LEECHERS /></td>
-      <td class="header" align="center"><input type="checkbox" name="all" onclick="SetAllCheckBoxes('prune','hash[]',this.checked)" /></td>
+      <td class="head" align="center"><tag:language.FILE_NAME /></td>
+      <td class="head" align="center"><tag:language.LAST_UPDATE /></td>
+      <td class="head" align="center"><tag:language.SEEDS /></td>
+      <td class="head" align="center"><tag:language.LEECHERS /></td>
+      <td class="head" align="center"><input type="checkbox" name="all" onclick="SetAllCheckBoxes('prune','hash[]',this.checked)" /></td>
     </tr>
     <if:no_records>
     <tr>
@@ -46,11 +51,20 @@
     </loop:torrents>
     </if:no_records>
     <tr>
-      <td class="lista" align="right" colspan="5"><input type="submit" class="btn" name="action" value="GO" /></td>
+      <td class="lista" align="right" colspan="5"><input type="submit" class="btn btn-md btn-danger" name="action" value="Prune" /></td>
     </tr>
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>
+
 <else:prune_list>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Prune Torrents</h4>
+</div>
 <form action="<tag:frm_action />" name="prune" method="post">
   <div align="center">
     <br />
@@ -58,8 +72,11 @@
     <br />
     <br />
     <input type="text" name="days" value="<tag:prune_days />" size="10" maxlength="3" />
-    <input type="submit" class="btn" name="action" value="View" />
+    <input type="submit" class="btn btn-sm btn-primary" name="action" value="View" />
   </div>
 </form>
+<div class="panel-footer">
+</div>
+</div>
 </if:prune_list>
 </if:pruned_done>

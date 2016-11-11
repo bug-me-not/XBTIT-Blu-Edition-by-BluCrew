@@ -45,14 +45,24 @@ if($_GET['option']=="delete")
 
       if($cid=="0")
       {
-         $delte="<center><font color=\"red\"><b>Invalid  ID!</b></font></center><br><br>";
+         $delte="<div class=\"alert alert-dismissable alert-bg-white alert-danger\">
+        <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+        <div class=\"icon\"><i class=\"fa fa-times\"></i></div>
+        <strong>Invalid ID</strong>
+        </div>
+        </div>";
       }
       else
       {
          $del = do_sqlquery("DELETE FROM {$TABLE_PREFIX}contact_system WHERE id = '$id'") or die(sql_error());
          if($del)
          {
-            $delte= "<center><font color=\"green\"><b>Deleted message.</b></font></center><br><br>";
+            $delte= "<div class=\"alert alert-dismissable alert-bg-white alert-success\">
+        <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+        <div class=\"icon\"><i class=\"fa fa-info\"></i></div>
+        <strong>Message Has Been Successfully Deleted</strong>
+        </div>
+        </div>";
          }
          else
          {
@@ -98,14 +108,21 @@ if($_GET['option']=="reply")
    if($message=="")
    {
       $send="<p>".$message2."</p>
+      <div class=\"panel panel-primary\">
+      <div class=\"panel-heading\">
+      <h4 class=\"text-center\">Reply</h4>
+      </div>
       <form action=\"\" method=\"post\">
-      <table  align=\"center\" class=\"lista\" border=\"0\">
+      <table class=\"table table-bordered\">
       <tr><td class=\"header\">E-mail: </td><td  class=\"lista\"><input type=\"text\" name=\"email\" value=\"".$msg2['email']."\" size=\"35\" maxlength=\"150\"></td></tr>
       <tr><td class=\"header\">Title: </td><td  class=\"lista\"><input type=\"text\" name=\"sub\" value=\"RE: ".$cat2." - ".$subcat2."\" size=\"35\" maxlength=\"150\"></td></tr>
       <tr><td class=\"header\">Message:</td><td  class=\"lista\"> <textarea rows=\"20\" cols=\"80\" name=\"messe\">\n\n\n\n\n\n\n\n----- Original Message ----- \n\n".format_comment($messagecyt)."</textarea></td></tr>
       </table><table align=\"center\" border=\"0\" class=\"lista\"><tr>
-      <td class=\"header\" align=\"right\"><input type=\"submit\" class=\"btn\" name=\"bt\" value=\"Send\" /></form></td><td class=\"header\" align=\"left\"><form method=\"post\" action=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages\"><input type=\"submit\" class=\"btn\" value=\"Back\"></form></td></tr>
+      <td class=\"header\" align=\"right\"><input type=\"submit\" class=\"btn btn-md btn-primary\" name=\"bt\" value=\"Send\" /></form></td><td class=\"header\" align=\"left\"><form method=\"post\" action=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages\"><input type=\"submit\" class=\"btn btn-md btn-warning\" value=\"Back\"></form></td></tr>
       </table>
+      <div class=\"panel-footer\">
+      </div>
+      </div>
       ";
    }
    else
@@ -133,33 +150,59 @@ elseif($_GET['option']=="view")
       $message = $msg['message'];
       $message2 = $msg['message2'];
 
-      $w="<fieldset><legend> Details of sender  </legend>
-      <table border=\"0\">
+      $w="<div class=\"panel panel-primary\">
+      <div class=\"panel-heading\">
+      <h4 class=\"text-center\">Details Of Sender</h4>
+      </div>
+      <table class=\"table table-bordered\">
       <tr><td>Id:</td><td>".$msgid."</td></tr>
       <tr><td>IP :</td><td>".$ipaddress."</td></tr>
       <tr><td>From:</td><td>".$name."</td></tr>
       <tr><td>Email :</td><td>".$email."</td></tr>
-      </table></fieldset>
+      </table>
+      <div class=\"panel-footer\">
+      </div>
+      </div>
+
       <br><br>
-      <fieldset><legend>Message </legend>
-      <table border=\"0\">
+
+      <div class=\"panel panel-primary\">
+      <div class=\"panel-heading\">
+      <h4 class=\"text-center\">Message</h4>
+      </div>
+      <table class=\"table table-bordered\">
       <tr><td>Sent Date:</td><td>".$date."</td></tr>
       <tr><td>Main Category:</td><td>".$cat."</td></tr>
       <tr><td>Sub Category:</td><td>".$subcat."</td></tr>
-      <tr><td></td><td></td></tr>
-      <tr><td><hr></td><td><hr></td></tr>
-      <tr><td>Message Details:</td><td>".format_comment($message)."</td></tr></table></fieldset>
-      <fieldset><legend>Message cumulative</legend>
-      <table border=\"0\">
+      <tr><td>Message Details:</td><td>".format_comment($message)."</td></tr></table>
+      <div class=\"panel-footer\">
+      </div>
+      </div>
+
+      <div class=\"panel panel-primary\">
+      <div class=\"panel-heading\">
+      <h4 class=\"text-center\">Staff Response</h4>
+      </div>
+      <table class=\"table table-bordered\">
       <tr><td>".format_comment($message2)."
       </td>
       </tr>
       </table>
-      </fieldset>
-      <table border=\"0\">
+      <div class=\"panel-footer\">
+      </div>
+      </div>
+
+      <div class=\"panel panel-primary\">
+      <div class=\"panel-heading\">
+      <h4 class=\"text-center\">Options</h4>
+      </div>
+      <table class=\"table table-bordered\">
       <tr><td><a  href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages&amp;option=reply&amp;id=".$msgid."\"><b>Reply</b></a> | <a title=\"Delete Message\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages&amp;option=delete&amp;id=".$msgid."\"><b>Delete</b></a> | <a title=\"back\" href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages\"><b>Back</b></a></td>
       </tr>
-      </table>";
+      </table>
+      <div class=\"panel-footer\">
+      </div>
+      </div>";
 
    }
    else
@@ -172,25 +215,29 @@ else
    $sql = do_sqlquery("SELECT * FROM {$TABLE_PREFIX}contact_system ORDER BY id");
    if (sql_num_rows($sql)>0)
    {
-      $s2="<table align=\"center\" class=\"lista\" width=\"100%\">";
+      $s2="<div class=\"panel panel-primary\">
+           <div class=\"panel-heading\">
+           <h4 class=\"text-center\">Contact Us</h4>
+           </div>
+           <table class=\"table table-bordered\">";
       $s2.="<tr>
-      <td class=\"header\" align=\"center\">ID</td>
-      <td class=\"header\" align=\"center\">Category</td>
-      <td class=\"header\" align=\"center\">Name</td>
-      <td class=\"header\" align=\"center\">Email</td>
-      <td class=\"header\" align=\"center\">Date</td>
-      <td class=\"header\" align=\"center\">Answered</td>
-      <td class=\"header\" align=\"center\">View | Delete</td>
+      <td class=\"head\" align=\"center\">ID</td>
+      <td class=\"head\" align=\"center\">Category</td>
+      <td class=\"head\" align=\"center\">Name</td>
+      <td class=\"head\" align=\"center\">Email</td>
+      <td class=\"head\" align=\"center\">Date</td>
+      <td class=\"head\" align=\"center\">Answered</td>
+      <td class=\"head\" align=\"center\">View | Delete</td>
       </tr>";
       while($res = $sql->fetch_assoc())
       {
          if($res['re']=='no')
          {
-            $re="<font color=\"#FF0000\">NO</font>";
+            $re="<p class=\"text-danger\">NO</p>";
          }
          else
          {
-            $re="<font color=\"#00FF00\">YES</font>";
+            $re="<p class=\"text-success\">YES</p>";
          }
 
          $s2.="<tr>";
@@ -203,7 +250,10 @@ else
          $s2.="<td align=\"center\" class=\"lista\"><a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages&amp;option=view&amp;id=".$res['id']."\"><b>View</b></a> | <a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages&amp;option=delete&amp;id=".$res['id']."\"><b>Delete</b></a> </td>";
          $s2.="</tr>";
       }
-      $s2.="</table>";
+      $s2.="</table>
+      <div class=\"panel-footer\">
+      </div>
+      </div>";
    }
    else
    $s2="<font color=\"red\"><b>There are no messages to display.</b></font>";
