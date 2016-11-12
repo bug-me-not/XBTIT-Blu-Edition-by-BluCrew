@@ -32,6 +32,7 @@
 
 require_once(dirname(__FILE__).'/config.php');
 
+
 if (!function_exists('bcsub')) {
    function bcsub($first_num, $second_num) {
       return ((int)$first_num)-((int)$second_num);
@@ -965,7 +966,7 @@ function announcement ($uid) {
 function login_redirect($name, $value)
 {
   echo "<html><head></head>
-  <body> 
+  <body>
      <form name='dir' action='/login_new.php' method='post'>
        <input type=hidden name='{$name}' value='{$value}' />
        <input type=hidden name='submitter' value='true' />
@@ -980,9 +981,9 @@ function login_redirect($name, $value)
 function setImageData($imdb = 0 , $tvdb = 0)
 {
    require_once dirname(__file__)."/class.tvdb.php";
-   $tvdb_api_key="84198CDB1D6D23DE";
+   $tvdb_api_key="84198CDB1D6D23DE"; //Needs to be inserted from Admin CP
    require_once dirname(__FILE__)."/class.fanart.php";
-   $fanart_api_key="05e03e4887f762022f945ee1d27ca627";
+   $fanart_api_key="05e03e4887f762022f945ee1d27ca627"; //Needs to be inserted from Admin CP
 
    if(getPosterData($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
    {
@@ -998,7 +999,6 @@ function setImageData($imdb = 0 , $tvdb = 0)
    {
 
    }
-
 }
 
 function getPosterData($imdb = 0 , $tvdb = 0, $infohash = '')
@@ -1047,7 +1047,7 @@ function getPosterData($imdb = 0 , $tvdb = 0, $infohash = '')
    unset($rkey);
    unset($posters);
 
-   return $poster; 
+   return $poster;
 }
 
 function getBannerData($imdb = 0 , $tvdb = 0)
@@ -1103,6 +1103,8 @@ function getDiscArt($imdb = 0, $tvdb = 0)
 {
    $dArtS = array();
    $dArt = false;
+
+
 
 
    return $dArt;
