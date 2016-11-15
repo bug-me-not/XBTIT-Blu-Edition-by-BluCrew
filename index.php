@@ -307,6 +307,8 @@ if($btit_settings["fmhack_forced_FAQ"]=="enabled")
     $pageID="faq";
 }
 
+  include($THIS_BASEPATH.'/index.switch.php');
+
   include($THIS_BASEPATH.'/index.pages.php');
 
   if($btit_settings["fmhack_user_watch_list"]=="enabled")
