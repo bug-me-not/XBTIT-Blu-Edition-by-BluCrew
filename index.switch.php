@@ -805,26 +805,6 @@ switch ($pageID) {
    $tpl->set("main_title","Index->Contact");
    break;
          // contact end
-   
-		// New Tables Layout
-   case 'my_uploads':
-   require("$THIS_BASEPATH/my_uploads.php");
-   $tpl->set("main_content",set_block($language["UPLOAD_TABLE"],"center",$my_uploadstpl->fetch(load_template("my_uploads.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-   
-   case 'active':
-   require("$THIS_BASEPATH/active.php");
-   $tpl->set("main_content",set_block($language["ACTIVE_TABLE"],"center",$activetpl->fetch(load_template("active.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-   
-   case 'snatched':
-   require("$THIS_BASEPATH/history.php");
-   $tpl->set("main_content",set_block($language["HISTORY_TABLE"],"center",$historytpl->fetch(load_template("history.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-        // New Tables Layout End
 
          //Donate Page
    case 'donate_options': 

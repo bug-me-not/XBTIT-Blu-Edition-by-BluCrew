@@ -280,10 +280,11 @@ function dt_show_waitb()
       <div class="internal-clock-text" style="font-size: 22px; text-align: center; text-decoration: underline;">This is an internal release so please wait until 24hr countdown timer is complete to share elsewhere</div>
       <div class="internal-clock" style="padding-left: 35%; padding-top:20px; padding-bottom:200px;"></div></div>
    </if:internal_clock>
+
    <div align="center">
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs">
+   <ul class="nav nav-tabs">
      <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
