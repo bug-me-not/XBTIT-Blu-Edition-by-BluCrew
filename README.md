@@ -4,7 +4,7 @@
 
 Demo Site: http://blu-edition.hdinnovations.xyz/index.php
 
-Username: Demo
+Username: Demo <br>
 Pass: Demo123.
 
 #NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
