@@ -10,10 +10,10 @@ Pass: Demo123.
 #NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
 
 
-:REQUIREMENTS:
+<b>:REQUIREMENTS:</b>
 - Web server with NGINX<br>
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
-:DOCUMENTATION:
+<b>:DOCUMENTATION:</b><br>
 -Still a work in progress but will be launched very soon.
