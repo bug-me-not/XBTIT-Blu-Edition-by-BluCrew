@@ -10,4 +10,10 @@ Pass: Demo123.
 #NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
 
 
-How To: TBA
+:REQUIREMENTS:
+- Web server with NGINX<br>
+- PHP 4.3 or higher (Suggest using PHP 7.X)<br>
+- MySQL 4.1 or higher<br>
+
+:DOCUMENTATION:
+-Still a work in progress but will be launched very soon.
