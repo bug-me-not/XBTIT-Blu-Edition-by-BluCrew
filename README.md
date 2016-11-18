@@ -11,7 +11,7 @@ Pass: Demo123.
 
 
 <b>:REQUIREMENTS:</b>
-- Web server with NGINX<br>
+- Web server with NGINX (Apache can be used but not recommended)<br>
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
