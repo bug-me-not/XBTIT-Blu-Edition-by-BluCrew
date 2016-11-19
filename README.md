@@ -12,11 +12,29 @@ Pass: Demo123.
 
 <b>:REQUIREMENTS:</b>
 - Web server with NGINX (Apache can be used but not recommended)<br>
+- A valid domain<br>
+- Domain Privacy (not required but recommended)<br>
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
 <b>:DOCUMENTATION:</b><br>
-- Still a work in progress but will be launched very soon.
+*PHP TRACKER AND INTERNAL FORUM <br>
+This is the easiest and fastest way to get your tracker up and running!*
+<br>
+1. Place the xbtitFM Blu-Edition code in your webroot<br>
+2. Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin. Grant your database user usage privileges (data+structure, not grant/administration)<br>
+3. Use a web browser to open the site<br>
+4. Follow the instructions displayed by the installer<br>
+5. Once install is complete delete the install.php from your server<br>
+6. Log into your new site with the username and password you created during the install process<br>
+7. Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
+8. Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
+9. Enjoy!<br>
+
+*GENERAL NOTES:<br>
+- Look to your Users Group Settings, do they match what you want?<br>
+- You need to create the boards for your internal forum.<br>
+- It is a lot of new stuff to take in, any bugs please open a issue on git.*<br>
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
