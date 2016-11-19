@@ -17,8 +17,7 @@ Pass: Demo123.
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
-<b>:DOCUMENTATION:</b>
-<br>
+<b>:DOCUMENTATION:</b><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
@@ -32,10 +31,10 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
 - Enjoy!<br>
 
-<i>GENERAL NOTES:<br>
+<b>GENERAL NOTES:</b><br>
 - Look to your Users Group Settings, do they match what you want?<br>
 - You need to create the boards for your internal forum.<br>
-- It is a lot of new stuff to take in, any bugs please open a issue on git.</i><br>
+- It is a lot of new stuff to take in, any bugs please open a issue on git.<br>
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
