@@ -1,4 +1,4 @@
-# XBTIT Blu-Edition by BluCrew
+# XBTIT Blu-Edition by BluCrew v1.0
 
 
 
