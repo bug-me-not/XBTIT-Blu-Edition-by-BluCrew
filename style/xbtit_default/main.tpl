@@ -202,7 +202,7 @@ var tronstr = ''
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><div class="colors"><i class="fa fa-bolt fa-fw margin-bottom"></i>SITE NAME<i class="fa fa-bolt fa-fw margin-bottom"></i></div></a>
+        <a class="navbar-brand" href="#"><div class="colors"><i class="fa fa-bolt fa-fw margin-bottom"></i>Blu-Edition<i class="fa fa-bolt fa-fw margin-bottom"></i></div></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

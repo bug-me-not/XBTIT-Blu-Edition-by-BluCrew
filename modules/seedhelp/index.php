@@ -3,7 +3,7 @@
 // 
 //   SeedHelp Module 
 //	 Originally developed by Spidi 
-//   Coverted by HDVinnie for xbtitFM v1.1 by BluCrew
+//   Coverted by HDVinnie for XBTIT Blu-Edition by BluCrew
 //
 ////////////////////////////////////////////////////////////////////////////////////
 

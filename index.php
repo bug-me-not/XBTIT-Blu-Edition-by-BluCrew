@@ -143,7 +143,7 @@ require(load_language("lang_main.php"));
 
 $tpl=new bTemplate();
 $tpl->set("aads_enabled", (($btit_settings["fmhack_advanced_auto_donation_system"]=="enabled" && $pageID=="donatebc")?true:false), true);
-$tpl->set("main_title",$btit_settings["name"]." .::. "."Index");
+$tpl->set("main_title",$btit_settings["name"]." - "."Index");
 //ads system cooly
 if($btit_settings["fmhack_ads_system"]=="enabled" && in_array($CURUSER["id_level"],explode(",",$btit_settings["ad_groups"])))
 {
