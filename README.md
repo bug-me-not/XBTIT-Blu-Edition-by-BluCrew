@@ -17,7 +17,8 @@ Pass: Demo123.
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
-<b>:DOCUMENTATION:</b><br>
+<b>:DOCUMENTATION:</b>
+<br><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
