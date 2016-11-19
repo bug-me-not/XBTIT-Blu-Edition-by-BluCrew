@@ -16,8 +16,8 @@ Pass: Demo123.
 - MySQL 4.1 or higher<br>
 
 <b>:DOCUMENTATION:</b><br>
--Still a work in progress but will be launched very soon.
+- Still a work in progress but will be launched very soon.
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
--This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
+- This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
