@@ -39,7 +39,8 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
-
+<br>
+<br>
 
 ### UPDATES
 
@@ -48,7 +49,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 ```
 
 
-### SOME COMPONENTS USED
+### COMPONENTS USED
 * [jquery](https://jquery.com)
 * [icheck](http://icheck.fronteed.com)
 * [Bootstrap-Switch](http://www.bootstrap-switch.org)
@@ -58,7 +59,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 * [TMDB API](https://www.themoviedb.org)
 * [OMDB API](http://omdbapi.com)
 
-### License
+### LICENSE
 ```
 The MIT License (MIT)
 
