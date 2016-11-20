@@ -31,7 +31,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
 - Enjoy!<br>
 
-<b>GENERAL NOTES:</b><br>
+<b>:GENERAL NOTES:</b><br>
 - Look to your Users Group Settings, do they match what you want?<br>
 - You need to create the boards for your internal forum.<br>
 - It is a lot of new stuff to take in, any bugs please open a issue on git.<br>
