@@ -32,7 +32,6 @@
 
 require_once(dirname(__FILE__).'/config.php');
 
-
 if (!function_exists('bcsub')) {
    function bcsub($first_num, $second_num) {
       return ((int)$first_num)-((int)$second_num);
@@ -978,157 +977,26 @@ function login_redirect($name, $value)
  </body></html>";
 }
 
-function setImageData($imdb = 0 , $tvdb = 0)
+function getOMDBData($imdb)
 {
-   require_once dirname(__file__)."/class.tvdb.php";
-   $tvdb_api_key="84198CDB1D6D23DE"; //Needs to be inserted from Admin CP
-   require_once dirname(__FILE__)."/class.fanart.php";
-   $fanart_api_key="05e03e4887f762022f945ee1d27ca627"; //Needs to be inserted from Admin CP
+    global $THIS_BASEPATH;
+    
+    require_once dirname(__FILE__)."/class.omdb.php";
 
-   if(getPosterData($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
-   {
+    $cache_file = $THIS_BASEPATH."/cache/omdb/tt".$imdb.".txt");
 
-   }
+    if(file_exists($cache_file))
+    {
+        return unserialize($cache_file);
+    }
 
-   if(getBannerData($imdb, $tvdb) == "images/default_fanart.png")
-   {
+    $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$imdb, array('plot'=>'full', 'tomatoes'=>'true'));
 
-   }
+    $contents = serialize($movie);
+    $file = fopen($cache_file,"w");
+    fputs($file,$contents);
+    fclose($file);
 
-   if(!getDiscArt($imdb, $tvdb))
-   {
-
-   }
+    return $movie;
 }
-
-function getPosterData($imdb = 0 , $tvdb = 0, $infohash = '')
-{
-   global $THIS_BASEPATH;
-
-   $posters = array();
-   $poster = $GLOBALS["uploaddir"]."nocover.jpg";
-
-   if($imdb > 0)
-   {
-      if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters"))
-      {
-         foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters/*.*") as $postersFile)
-         {
-            $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
-         }
-      }
-   }
-
-   if($tvdb > 0)
-   {
-      if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters"))
-      {
-         foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters/*.*") as $postersFile)
-         {
-            $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
-         }
-      }
-   }
-
-   if(strlen($infohash) >= 40)
-   {
-      if(file_exists($THIS_BASEPATH."/".$GLOBALS['uploaddir'].$infohash))
-      {
-         $poster = $GLOBALS['uploaddir'].$infohash;
-      }
-   }
-
-   if(count($posters) > 0 && $infohash == '')
-   {
-      $rkey = mt_rand(0, (count($posters) - 1));
-      $poster = $posters[$rkey];
-   }
-
-   unset($rkey);
-   unset($posters);
-
-   return $poster;
-}
-
-function getBannerData($imdb = 0 , $tvdb = 0)
-{
-   global $THIS_BASEPATH;
-
-   $banners = array();
-   $banner = "images/default_fanart.png";
-
-   if($imdb > 0)
-   {
-      if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/banners"))
-      {
-         foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/banners/*.*") as $bannersFile)
-         {
-            $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
-         }
-      }
-   }
-
-   if($tvdb > 0)
-   {
-      if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/banners"))
-      {
-         foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/banners/*.*") as $bannersFile)
-         {
-            $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
-         }
-      }
-
-      if(file_exists($THIS_BASEPATH."/images/thetvdb/".$tvdb."/banners"))
-      {
-         foreach(glob($THIS_BASEPATH."/images/thetvdb/".$tvdb."/banners/*.*") as $bannersFile)
-         {
-            $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
-         }
-      }
-   }
-
-   if(count($banners) > 0)
-   {
-      $rkey = mt_rand(0, (count($banners) - 1));
-      $banner = $banners[$rkey];
-   }
-
-   unset($rkey);
-   unset($banners);
-
-   return $banner;
-}
-
-function getDiscArt($imdb = 0, $tvdb = 0)
-{
-   $dArtS = array();
-   $dArt = false;
-
-
-
-
-   return $dArt;
-}
-
-function getOMDBData($imdb) //Needs a caching system
-{
-   $cache_file = realpath(dirname(__FILE__)."/../cache/omdb/tt".$imdb.".txt");
-
-   if(file_exists($cache_file))
-   {
-      return unserialize($cache_file);
-   }
-
-   require_once dirname(__FILE__)."/class.omdb.php";
-
-   $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$imdb, array('plot'=>'full', 'tomatoes'=>'true'));
-
-   $contents = serialize($movie);
-   $file = fopen($cache_file,"w");
-   fputs($file,$contents);
-   fclose($file);
-
-   return $movie;
-}
-
 ?>
