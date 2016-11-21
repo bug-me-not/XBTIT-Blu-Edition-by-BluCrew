@@ -16,18 +16,11 @@
 <!-- #CSS Links -->
 <!-- Main Bootstrap Style  -->
 <link rel="stylesheet" type="text/css" href="<tag:main_css />">
-<!-- jasny-bootstrap -->
-<link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
-<!-- alertify Dialogs -->
-<link rel="stylesheet" href="assets/plugins/alertify/css/alertify.core.css" />
-<link rel="stylesheet" href="assets/plugins/alertify/css/alertify.default.css" id="toggleCSS" />
 <!-- #GOOGLE FONT -->
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="font-awesome-4.5-2.0/css/font-awesome.min.css" type='text/css'>
-<!-- Bootstrap Switch -->
-<link href="assets/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet">
 <!-- Bootstrap Icheck -->
 <link href="assets/plugins/iCheck-master/skins/all.css" rel="stylesheet">
 <!-- bootstrap-datetimepicker -->
@@ -42,15 +35,6 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/plugins/alertify/js/alertify.js"></script>
-
-<!-- Bootstrap Switch JS -->
-<script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-<script type="text/javascript">
-  jQuery(function($) {
-  $('input[name="my-checkbox"]').bootstrapSwitch();
-  });
-</script>
     
 <!-- #DATE Range Picker -->
       <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
