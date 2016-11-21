@@ -389,5 +389,12 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
   </div>
 </footer>
 </if:valid_user>
+<if:anon_enabled>
+  <script src="<tag:protected />/jscript/anon.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  protected_links = "<tag:protected />";
+  auto_anonymize();
+  </script>
+</if:anon_enabled>
 </body>
 </html>
