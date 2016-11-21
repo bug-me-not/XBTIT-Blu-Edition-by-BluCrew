@@ -372,12 +372,12 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
           <div class="panel-body">
             <center>
               <p>Made with <i class="fa fa-fw fa-magic"></i> by <a href="#">BluCrew</a></p>
-              <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
+              <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition v1.0 by BluCrew</p>
               <p class="text-success">Copyright &copy; 2016 Styled By BluCrew</p>
               <p class="text-danger"><tag:xbtit_debug /></p>
               <a class="btn btn-lg btn-success" href="https://fortawesome.github.io/Font-Awesome/"><i class="fa fa-fort-awesome fa-2x pull-left" aria-hidden="true"></i> Font Awesome Version 4.6.1</a>&nbsp;&nbsp;
               <a class="btn btn-lg btn-primary" href="https://getbootstrap.com"><i class="fa fa-css3 fa-2x pull-left" aria-hidden="true"></i> Bootstrap Version 3.3.6</a>
-              <p class="text-danger">SITENAME is best viewed with the following browsers</p>
+              <p class="text-danger">This site is best viewed with the following browsers</p>
               <button class="btn btn-primary btn-circle btn-lg" type="button"><i class="fa fa-safari"></i></button>
               <button class="btn btn-warning btn-circle btn-lg" type="button"><i class="fa fa-firefox"></i></button>
               <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-chrome"></i></button>
