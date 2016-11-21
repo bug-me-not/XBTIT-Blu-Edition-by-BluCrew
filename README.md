@@ -46,6 +46,11 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
 <br>
 
+### SOURCE CODE CHANGES
+
+- There are no developer guidelines in place.
+- We do however ask that all code changes be submitted via a pull request. This allows for peer reviews. Ensures that code changes are effective and that merges are conflict free.
+
 ### UPDATES
 
 ```
