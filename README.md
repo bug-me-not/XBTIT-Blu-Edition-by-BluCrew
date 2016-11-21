@@ -7,13 +7,17 @@ Demo Site: http://blu-edition.hdinnovations.xyz/index.php
 Username: Demo <br>
 Pass: Demo123.
 
+Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
+<i>Come chat with us!</i>
+
+<br>
+<br>
 #NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
 
 
 <b>:REQUIREMENTS:</b>
 - Web server with NGINX (Apache can be used but not recommended)<br>
 - A valid domain<br>
-- Domain Privacy (not required but recommended)<br>
 - PHP 4.3 or higher (Suggest using PHP 7.X)<br>
 - MySQL 4.1 or higher<br>
 
