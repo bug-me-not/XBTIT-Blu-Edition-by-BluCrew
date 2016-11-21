@@ -49,7 +49,7 @@ $fname = $tor['filename'];
 
                     <!-- PRELOADER -->
                     <div class="preloader text-center">
-                    <img src="/images/loader.gif" alt="Loading.." id="loader" />
+                    <img src="/static/images/loader.gif" alt="Loading.." id="loader" />
                     </div>
                     <!-- /PRELOADER -->
 

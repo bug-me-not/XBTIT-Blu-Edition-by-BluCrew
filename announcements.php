@@ -175,7 +175,7 @@ window.onload=initbox
 
 
 <div id="dropin" style="background-color:#231708;position:absolute;visibility:hidden;left:5px;top:100px;width:650px;height:130px;">
-<table width="650" align="center" border="1" cellspacing="0" cellpadding="5" background-color:#231708;><tr><td class="header"><div style="float:left;"><font color=white><?php echo $subject;?> -- <b><?php echo $language["CREATED_ON"]?>:</b> <?php echo $added;?> -- <b><?php echo $language["BY"]?>:</b> <?php echo $by;?></b> -- <b><?php echo $language["TO_LEVEL"]?>:</b> <?php echo $id_level;?></div><div style="float:right; width:16px;"><a href="#" onClick="dismissbox();return false"><img border="0" src="./images/close.jpg"></a></div></td><tr><td class="lista"><?php echo format_comment($message);?></font></td></tr></table>
+<table width="650" align="center" border="1" cellspacing="0" cellpadding="5" background-color:#231708;><tr><td class="header"><div style="float:left;"><font color=white><?php echo $subject;?> -- <b><?php echo $language["CREATED_ON"]?>:</b> <?php echo $added;?> -- <b><?php echo $language["BY"]?>:</b> <?php echo $by;?></b> -- <b><?php echo $language["TO_LEVEL"]?>:</b> <?php echo $id_level;?></div><div style="float:right; width:16px;"><a href="#" onClick="dismissbox();return false"><img border="0" src="static/images/close.jpg"></a></div></td><tr><td class="lista"><?php echo format_comment($message);?></font></td></tr></table>
 </div>
 
 

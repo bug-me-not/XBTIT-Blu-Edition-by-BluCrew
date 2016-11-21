@@ -36,8 +36,8 @@ echo ("<html xmlns=\"http://www.w3.org/1999/xhtml\">");
 echo ("<head>");
 echo ("<meta http-equiv=\"content-type\" content=\"text/html; charset=".(isset($install_lang["charset"])?$install_lang["charset"]:"ISO-8859-1")."\" />");
 echo ("<title>XBTIT Blu-Edition Installer</title>");
-echo ("<link rel=\"stylesheet\" href=\"style/xbtit_default/bootstrap.css\" type=\"text/css\" />
-       <link rel=\"stylesheet\" href=\"font-awesome-4.5-2.0/css/font-awesome.min.css\" type='text/css'>");
+echo ("<link rel=\"stylesheet\" href=\"static/style/xbtit_default/bootstrap.css\" type=\"text/css\" />
+       <link rel=\"stylesheet\" href=\"static/css/font-awesome.min.css\" type='text/css'>");
 echo ("</head>");
 echo ("<body>");
 echo ("<div id=\"main\" />");

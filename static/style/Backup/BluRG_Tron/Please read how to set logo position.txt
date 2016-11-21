@@ -1,0 +1,18 @@
+to set and position your logo find in main.css
+
+.logo1 {
+  background:url("images/logo.png") no-repeat;  
+  height:100px; 
+  width:100%;
+  margin: auto;
+  background-position: 100% 60%;
+}
+
+This is for the logo image used replace the logo.png image or if you use .gif .jpg change to suit your logo needs (ie logo.jpg).
+background:url("images/logo.png") no-repeat; 
+
+
+This is for the position of the logo the first 100% is for the left and right margin if you set it lower it will float more left as you decrease the number. 
+the second 50% is the height of the logo if you set 40% it will display higher and 60% will make it float lower in the logo area.
+
+background-position: 100% 60%;  

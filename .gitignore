@@ -1,7 +1,4 @@
-
+.idea
 *.db
-
-
 config.codekit
-
 .DS_Store

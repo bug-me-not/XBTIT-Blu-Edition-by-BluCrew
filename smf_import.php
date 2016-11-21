@@ -39,7 +39,7 @@ echo "
   <head>
   <title>SMF Import</title>
   <meta http-equiv=\"content-type\" content=\"text/html; charset=ISO-8859-1\" />
-  <link rel=\"stylesheet\" href=\"style/xbtit_default/main.css\" type=\"text/css\" />
+  <link rel=\"stylesheet\" href=\"static/style/xbtit_default/main.css\" type=\"text/css\" />
   </head>
   <body>
 ";

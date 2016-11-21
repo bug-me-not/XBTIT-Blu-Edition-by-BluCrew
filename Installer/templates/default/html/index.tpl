@@ -266,7 +266,7 @@
 	<div style="z-index: 1011; position: fixed; width: 30%; top: 40%; left: 35%;" class="blockUI blockMsg blockPage ui-dialog ui-widget ui-corner-all ui-widget-content ui-draggable">
 		<div class="ui-widget-header ui-dialog-titlebar ui-corner-all blockTitle">Loading</div>
 		<div class="ui-widget-content ui-dialog-content">
-			<p>Loading, please wait... <img border="0" src="{$smarty.const.BASEURL}/img/loading.gif"></p>
+			<p>Loading, please wait... <img border="0" src="{$smarty.const.BASEURL}/static/img/loading.gif"></p>
 		</div>
 	</div>
 	<!--  END:		blockUI on page load -->

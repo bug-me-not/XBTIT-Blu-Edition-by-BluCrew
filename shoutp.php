@@ -125,10 +125,10 @@ function smile() {
       <input onclick="sendComment();" type="submit" id="submit" name="submit" value="<?php echo $language["FRM_CONFIRM"]; ?>" />
       &nbsp;
       <a href="javascript: PopMoreSmiles('chatForm','chatbarText');">
-      <img src="images/smile.gif" border="0" class="form" title="<?php echo $language['MORE_SMILES']; ?>" align="top" alt="" /></a>
+      <img src="static/images/smile.gif" border="0" class="form" title="<?php echo $language['MORE_SMILES']; ?>" align="top" alt="" /></a>
 
       <a href="javascript: PopPhistory()">
-      <img src="images/quote.gif" border="0" class="form" title="<?php echo $language['HISTORY']; ?>/Moderate" align="top" alt="" /></a>
+      <img src="static/images/quote.gif" border="0" class="form" title="<?php echo $language['HISTORY']; ?>/Moderate" align="top" alt="" /></a>
 
 <!--
        &nbsp;&nbsp;

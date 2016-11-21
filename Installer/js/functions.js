@@ -32,14 +32,14 @@ function blockUIWithMessage( title, message, timeout )
 		$.blockUI({ 
 			theme:		true, 
 			title:    	title, 
-			message:	message + '&nbsp;&nbsp;<img style="vertical-align: middle;" src="'+ BASEURL +'/img/loading.gif" border="0">',
+			message:	message + '&nbsp;&nbsp;<img style="vertical-align: middle;" src='+ BASEURL +'"/static/img/loading.gif" border="0">',
 			timeout:	timeout
 		});	
 	} else {
 		$.blockUI({ 
 			theme:		true, 
 			title:    	title, 
-			message:	message + '&nbsp;&nbsp;<img style="vertical-align: middle;" src="'+ BASEURL +'/img/loading.gif" border="0">'			
+			message:	message + '&nbsp;&nbsp;<img style="vertical-align: middle;" src='+ BASEURL +'"/static/img/loading.gif" border="0">'
 		});	
 	}
 }

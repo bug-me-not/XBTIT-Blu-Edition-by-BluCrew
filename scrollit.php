@@ -152,7 +152,7 @@ a:hover {color: transparent; text-decoration: none; border:0; }
   
   height: 36px;
   width: 37px;
-  background: url(<?php echo $BASEURL;?>/images/arrow.png) no-repeat 0 0; 
+  background: url(<?php echo $BASEURL;?>/static/images/arrow.png) no-repeat 0 0;
   text-indent: -999px;
   position: absolute;
   top: 37px;
@@ -183,7 +183,7 @@ a:hover {color: transparent; text-decoration: none; border:0; }
 -->
 </style>
 
-<script src="jscript/scroll.js"></script>
+<script src="static/js/scroll.js"></script>
 
 
 

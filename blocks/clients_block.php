@@ -20,25 +20,25 @@
 	</div>
 	<div id='index-clients-client'>
 	<div id='index-clients-graphic'>
-	<img src='/images/btclients/rtorrent.png'>
+	<img src='/static/images/btclients/rtorrent.png'>
 	</div>
 	<h15><a href='http://mac.softpedia.com/get/Internet-Utilities/RTorrent.shtml'>rTorrent 0.9.2/3</a></h15>&nbsp;&nbsp;(Mac/Linux)
 	</div>
 	<div id='index-clients-client'>
 	<div id='index-clients-graphic'>
-	<img src='/images/btclients/transmission.png'>
+	<img src='/static/images/btclients/transmission.png'>
 	</div>
 	<h15><a href='http://www.oldapps.com/mac/transmission.php?old_transmission=9334'>Tranmission 2.03</a></h15>&nbsp;(Mac/Linux)
 	</div>
 	<div id='index-clients-client'>
 	<div id='index-clients-graphic'>
-	<img src='/images/btclients/deluge.png'>
+	<img src='/static/images/btclients/deluge.png'>
 	</div>
 	<h15><a href='http://deluge-torrent.org/'>Deluge 1.3</a></h15>&nbsp;&nbsp;(Win/Mac/Linux)
 	</div>
   <div id='index-clients-client'>
 	<div id='index-clients-graphic'>
-	<img src='/images/btclients/qbit.png'>
+	<img src='/static/images/btclients/qbit.png'>
 	</div>
 	<h15><a href='http://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-2.8.5//'>qBittorrent 2.8.5</a></h15>&nbsp;&nbsp;(Win/Mac)
 	</div>
