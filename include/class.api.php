@@ -3,7 +3,7 @@
 // API Management Class
 //
 // Exmaple
-//  
+//
 //
 //
 //
@@ -18,17 +18,27 @@ class api
 
     private $tvdb;
 
-    private $tvdb_api_key ="84198CDB1D6D23DE"; //Needs to be inserted from Admin CP
+    private $infohash;
 
-    private $fanart_api_key ="05e03e4887f762022f945ee1d27ca627"; //Needs to be inserted from Admin CP
+    private $tvdb_api_key;
 
-    function __construct($imdb = 0, $tvdb = 0, $tvdb_api, $fanart_api)
+    private $fanart_api_key;
+
+    private $fanart_imdb_data;
+
+    private $fanart_tvdb_data;
+
+    private $tvdb_data;
+
+
+    function __construct($tvdb_api, $fanart_api, $imdb = 0, $tvdb = 0, $infohash = "")
     {
         /*
          * This speak to the API identifiers
          */
         $this->imdb = $imdb;
         $this->tvdb = $tvdb;
+        $this->infohash = $infohash;
 
         /*
          * This places the API keys within the class
@@ -40,57 +50,73 @@ class api
 
     function setImageData()
     {
+        if($this->imdb > 0)
+        {
+            $this->fanart_imdb_data = new fanart("tt".$this->imdb , $this->fanart_api_key);
+        }
 
-        if(getPosterData($imdb, $tvdb) == $GLOBALS["uploaddir"]."nocover.jpg")
+        if($this->tvdb > 0)
+        {
+            $this->fanart_tvdb_data = new fanart("tt".$this->imdb , $this->fanart_api_key);
+
+            $this->tvdb_data = new tvdb($this->tvdb , $this->tvdb_api_key);
+        }
+
+        if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
         {
 
         }
 
-        if(getBannerData($imdb, $tvdb) == "images/default_fanart.png")
+        if(getBannerData() == "images/default_fanart.png")
         {
 
         }
 
-        if(!getDiscArt($imdb, $tvdb))
+        if(count(getcdart()) != 0)
         {
 
+        }
+
+        if(count(getBackground()) != 0)
+        {
+            
         }
     }
 
-    function getPosterData($imdb = 0 , $tvdb = 0, $infohash = '')
+    function getPosterData()
     {
         global $THIS_BASEPATH;
 
         $posters = array();
         $poster = $GLOBALS["uploaddir"]."nocover.jpg";
 
-        if($imdb > 0)
+        if($this->imdb > 0)
         {
-            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters"))
+            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/posters"))
             {
-                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/posters/*.*") as $postersFile)
+                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/posters/*.*") as $postersFile)
                 {
                     $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
                 }
             }
         }
 
-        if($tvdb > 0)
+        if($this->tvdb > 0)
         {
-            if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters"))
+            if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$this->tvdb."/posters"))
             {
-                foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/posters/*.*") as $postersFile)
+                foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$this->tvdb."/posters/*.*") as $postersFile)
                 {
                     $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
                 }
             }
         }
 
-        if(strlen($infohash) >= 40)
+        if(strlen($this->infohash) >= 40)
         {
-            if(file_exists($THIS_BASEPATH."/".$GLOBALS['uploaddir'].$infohash))
+            if(file_exists($THIS_BASEPATH."/".$GLOBALS['uploaddir'].$this->infohash))
             {
-                $poster = $GLOBALS['uploaddir'].$infohash;
+                $poster = $GLOBALS['uploaddir'].$this->infohash;
             }
         }
 
@@ -106,37 +132,37 @@ class api
         return $poster;
     }
 
-    function getBannerData($imdb = 0 , $tvdb = 0)
+    function getBannerData()
     {
         global $THIS_BASEPATH;
 
         $banners = array();
         $banner = "images/default_fanart.png";
 
-        if($imdb > 0)
+        if($this->imdb > 0)
         {
-            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/banners"))
+            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/banners"))
             {
-                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$imdb."/banners/*.*") as $bannersFile)
+                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/banners/*.*") as $bannersFile)
                 {
                     $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
                 }
             }
         }
 
-        if($tvdb > 0)
+        if($this->tvdb > 0)
         {
-            if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/banners"))
+            if(file_exists($THIS_BASEPATH."/images/fanart/thetvdb/".$this->tvdb."/banners"))
             {
-                foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$tvdb."/banners/*.*") as $bannersFile)
+                foreach(glob($THIS_BASEPATH."/images/fanart/thetvdb/".$this->tvdb."/banners/*.*") as $bannersFile)
                 {
                     $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
                 }
             }
 
-            if(file_exists($THIS_BASEPATH."/images/thetvdb/".$tvdb."/banners"))
+            if(file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners"))
             {
-                foreach(glob($THIS_BASEPATH."/images/thetvdb/".$tvdb."/banners/*.*") as $bannersFile)
+                foreach(glob($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners/*.*") as $bannersFile)
                 {
                     $banners[] = str_replace($THIS_BASEPATH."/", "", $bannersFile);
                 }
@@ -155,15 +181,27 @@ class api
         return $banner;
     }
 
-    function getDiscArt($imdb = 0, $tvdb = 0)
+    function getDiscArt()
     {
-        $dArtS = array();
-        $dArt = false;
+        $dArt = array();
 
-
-
+        if($this->imdb > 0)
+        {
+            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/discArt"))
+            {
+                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/discArt/*.*") as $cdartfile)
+                {
+                    $dArt[] = str_replace($THIS_BASEPATH."/", "", $cdartfile);
+                }
+            }
+        }
 
         return $dArt;
+    }
+
+    function getBackground()
+    {
+
     }
 
 }
