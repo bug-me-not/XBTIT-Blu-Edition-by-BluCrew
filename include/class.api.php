@@ -79,7 +79,7 @@ class api
 
         if(count(getBackground()) != 0)
         {
-            
+
         }
     }
 
@@ -201,7 +201,20 @@ class api
 
     function getBackground()
     {
+        $background = array();
 
+        if($this->imdb > 0)
+        {
+            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/background"))
+            {
+                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/background/*.*") as $backfile)
+                {
+                    $background[] = str_replace($THIS_BASEPATH."/", "", $backfile);
+                }
+            }
+        }
+
+        return $background;
     }
 
 }
