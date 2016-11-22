@@ -88,12 +88,28 @@ class fanart
       return $temp['thetvdb_id'];
    }
 
+   public function getposter()
+   {
+       $poster = $this->decode_json($this->movies)[''];
+       $temp = array();
+
+       $count = (count($poster) > 3) ? 3 : count($poster);
+
+       for($i = 0; $i < $count; $i++)
+       {
+           if($poster[$i]['lang'] == 'en')
+           $temp[] = $poster[$i]['url'];
+       }
+
+       return $temp;
+   }
+
    public function getmoviebanner()
    {
       $bann = $this->decode_json($this->movies)['moviebanner'];
       $temp = array();
 
-      $count = ((count($bann)>2) ? 2 : count($bann));
+      $count = ((count($bann) > 2) ? 2 : count($bann));
 
       for($i = 0; $i < $count; $i++)
       {
@@ -109,7 +125,7 @@ class fanart
       $bann = $this->decode_json($this->tv)['tvbanner'];
       $temp = array();
 
-      $count = ((count($bann)>2) ? 2 : count($bann));
+      $count = ((count($bann) > 2) ? 2 : count($bann));
 
       for($i = 0; $i < $count; $i++)
       {
@@ -131,6 +147,22 @@ class fanart
        {
            if($cdart['$i']['lang'] == 'en')
            $temp[] = $cdart[$i]['url'];
+       }
+
+       return $temp;
+   }
+
+   public function getbackground()
+   {
+       $background = $this->decode_json($this->movies)['hdmovieclearart'];
+       $temp = array();
+
+       $count = ((count($background) > 2) ? 2 : count($background));
+
+       for($i = 0; $i < $count; $i++)
+       {
+           if($background[$i]['hdmovieclearart'] == 'en')
+           $temp[] = $background[$i]['hdmovieclearart'];
        }
 
        return $temp;
