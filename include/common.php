@@ -977,10 +977,10 @@ function login_redirect($name, $value)
  </body></html>";
 }
 
-function getOMDBData($imdb)
+function getOMDBData($imdb = 0)
 {
     global $THIS_BASEPATH;
-    
+
     require_once dirname(__FILE__)."/class.omdb.php";
 
     $cache_file = $THIS_BASEPATH."/cache/omdb/tt".$imdb.".txt");
