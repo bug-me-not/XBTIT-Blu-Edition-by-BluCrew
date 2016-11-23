@@ -154,15 +154,15 @@ class fanart
 
    public function getbackground()
    {
-       $background = $this->decode_json($this->movies)['hdmovieclearart'];
+       $background = $this->decode_json($this->movies)['moviebackground'];
        $temp = array();
 
        $count = ((count($background) > 2) ? 2 : count($background));
 
        for($i = 0; $i < $count; $i++)
        {
-           if($background[$i]['hdmovieclearart'] == 'en')
-           $temp[] = $background[$i]['hdmovieclearart'];
+           if($background[$i]['moviebackground'] == 'en')
+           $temp[] = $background[$i]['moviebackground'];
        }
 
        return $temp;
