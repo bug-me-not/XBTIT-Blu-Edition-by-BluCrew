@@ -55,7 +55,12 @@ $subnum=$subres->fetch_row();
 
 $result="";
 $num2=$subnum[0];
-if($num2==0) { $result=$language['SUBS_EMPTY']; }
+if($num2==0) { $result="<div class=\"alert alert-dismissable alert-bg-white alert-danger\">
+    <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+    <div class=\"icon\"><i class=\"fa fa-times\"></i></div>
+    <strong>".$language['SUBS_EMPTY']."</strong>
+    </div>
+    </div>"; }
 
 $perpage=(max(0,$CURUSER["torrentsperpage"])>0?$CURUSER["torrentsperpage"]:10);
 
