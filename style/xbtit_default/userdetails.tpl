@@ -67,12 +67,12 @@ Status:&nbsp;<tag:userdetail_profile_status /><small>&nbsp;Added(<tag:userdetail
   <if:warn_enabled>
   <tr>
       <td class="header"><tag:language.WS_WL /></td>
-      <td class="lista"><if:warn_edit_allowed_1><if:warn_dec_allowed_1><a href="index.php?page=warn&id=<tag:userdetailarr.id />&type=dec" title="<tag:language.WS_DEC />"></if:warn_dec_allowed_1><img src="images/minus.png" alt="<tag:language.WS_DEC />"/><if:warn_dec_allowed_2></a></if:warn_dec_allowed_2></if:warn_edit_allowed_1>
+      <td class="lista"><if:warn_edit_allowed_1><if:warn_dec_allowed_1><a href="index.php?page=warn&id=<tag:userdetailarr.id />&type=dec" title="<tag:language.WS_DEC />"></if:warn_dec_allowed_1><i class="fa fa-minus-circle" aria-hidden="true"></i><if:warn_dec_allowed_2></a></if:warn_dec_allowed_2></if:warn_edit_allowed_1>
 
       <if:warn_log_allowed_1><a href='index.php?page=warnlog&id=<tag:userdetailarr.id />'></if:warn_log_allowed_1>
       <tag:userdetailarr.w_level />
       <if:warn_log_allowed_2></a></if:warn_log_allowed_2>
-      <if:warn_edit_allowed_2><if:warn_inc_allowed_1><a href=index.php?page=warn&id=<tag:userdetailarr.id />&type=inc title="<tag:language.WS_INC />"></if:warn_inc_allowed_1><img src="images/plus.png" /><if:warn_inc_allowed_2></a></if:warn_inc_allowed_2></if:warn_edit_allowed_2></td>
+      <if:warn_edit_allowed_2><if:warn_inc_allowed_1><a href=index.php?page=warn&id=<tag:userdetailarr.id />&type=inc title="<tag:language.WS_INC />"></if:warn_inc_allowed_1><i class="fa fa-plus-circle" aria-hidden="true"></i><if:warn_inc_allowed_2></a></if:warn_inc_allowed_2></if:warn_edit_allowed_2></td>
   </tr>
   </if:warn_enabled>
 

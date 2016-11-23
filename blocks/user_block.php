@@ -151,7 +151,7 @@ echo '<td style="text-align:center;" align="center"><a class="btn btn-xs btn-inf
 
 
 //Seedbonus
-print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus>BON:<img src=\"images/bonus.png\">".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
+print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus>BON:<i class=\"fa fa-certificate\" aria-hidden=\"true\"></i>".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
 //Seedbonus END
 
 

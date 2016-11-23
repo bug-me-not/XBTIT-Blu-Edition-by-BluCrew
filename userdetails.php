@@ -265,7 +265,7 @@ if($btit_settings["fmhack_ban_button"] == "enabled" || $btit_settings["fmhack_lo
 {
     if($row["ban"] == 'yes' || $row["bandt"] == "yes")
     {
-        $banp = "<img src='images/ban.gif'>";
+        $banp = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"User IP Banned\"></i>";
     }
     else
     {
