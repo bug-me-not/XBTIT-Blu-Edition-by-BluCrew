@@ -57,30 +57,57 @@ class api
 
         if($this->tvdb > 0)
         {
-            $this->fanart_tvdb_data = new fanart("tt".$this->imdb , $this->fanart_api_key);
+            $this->fanart_tvdb_data = new fanart($this->tvdb , $this->fanart_api_key);
 
             $this->tvdb_data = new tvdb($this->tvdb , $this->tvdb_api_key);
         }
 
         if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
         {
+            if($this->imdb > 0)
+            {
+                $this->fanart_imdb_data->fetch();
+            }
+
+            if($this->tvdb > 0)
+            {
+                $this->fanart_tvdb_data->fetch(TRUE);
+                $this->tvdb_data->fetch();
+            }
 
         }
 
         if(getBannerData() == "images/default_fanart.png")
         {
+            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
+            {
+                $this->fanart_imdb_data->fetch();
+            }
 
+            if($this->tvdb > 0 && $this->tvdb_data->isBannersEmpty())
+            {
+                $this->tvdb_data->fetch(TRUE);
+            }
         }
 
         if(count(getcdart()) != 0)
         {
-
+            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
+            {
+                $this->fanart_imdb_data->fetch();
+            }
         }
 
         if(count(getBackground()) != 0)
         {
-
+            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
+            {
+                $this->fanart_imdb_data->fetch();
+            }
         }
+
+
+
     }
 
     function getPosterData()
@@ -120,7 +147,7 @@ class api
             }
         }
 
-        if(count($posters) > 0 && $infohash == '')
+        if(count($posters) > 0 && $this->infohash == '')
         {
             $rkey = mt_rand(0, (count($posters) - 1));
             $poster = $posters[$rkey];
