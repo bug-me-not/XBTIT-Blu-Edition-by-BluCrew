@@ -19,7 +19,7 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 - Web server with NGINX (Apache can be used but not recommended)<br>
 - A valid domain<br>
 - PHP 7.X +<br>
-- MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB and enabled by default in MySQL 5.7 and MariaDB 10)<br>
+- MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
 <b>:DOCUMENTATION:</b><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
@@ -42,6 +42,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
+- Our Collaborators (flier56, Chocolatkey, nilimahona)<br>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
 <br>
 
