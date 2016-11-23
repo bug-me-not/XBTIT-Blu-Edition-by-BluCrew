@@ -172,4 +172,9 @@ class fanart
    {
        return empty($this->movies);
    }
+
+   public function isTVEmpty()
+   {
+       return empty($this->tv);
+   }
 }
