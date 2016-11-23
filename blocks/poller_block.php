@@ -133,7 +133,7 @@ else
                 if($res)
                 {
                     $inf = $res[0];
-                    echo "<div class=\"pollerTitle\">".$inf["pollerTitle"]."</div>"; // Output poller title
+                    echo "<br><center>".$inf["pollerTitle"]."</center><hr>"; // Output poller title
                     $resOptions = get_result("select * from {$TABLE_PREFIX}poller_option where pollerID='$pollerId' order by pollerOrder", true, $btit_settings['cache_duration']); // Find poll options, i.e. radio buttons
                     foreach($resOptions as $id => $infOptions)
                     {
@@ -141,7 +141,7 @@ else
                             $checked = " checked=\"checked\"";
                         else
                             $checked = "";
-                        echo "<div class=\"pollerOption\"><input$checked type=\"radio\" value=\"".$infOptions["ID"]."\" name=\"vote[".$inf["ID"]."]\" id=\"pollerOption".$infOptions["ID"]."\" /><label for=\"pollerOption".$infOptions["ID"]."\" id=\"optionLabel".$infOptions["ID"]."\">".$infOptions["optionText"]."</label></div>";
+                        echo "<div class=\"checkbox\"><input$checked type=\"checkbox\" value=\"".$infOptions["ID"]."\" name=\"vote[".$inf["ID"]."]\" id=\"pollerOption".$infOptions["ID"]."\" />&nbsp;&nbsp;&nbsp;<label for=\"pollerOption".$infOptions["ID"]."\" id=\"optionLabel".$infOptions["ID"]."\"><strong>".$infOptions["optionText"]."</strong></label></div>";
                     }
                 }
 
@@ -150,7 +150,7 @@ else
                 echo $pollerId;
 
 ?>,document.forms['poller'])"><img src="images/vote_button.gif"></a> -->
-      <img src="images/vote_button.gif" alt="<?php
+      <hr><img src="images/vote_button.gif" alt="<?php
                 echo $language["CAST_VOTE"];
 
 ?>" title="<?php
