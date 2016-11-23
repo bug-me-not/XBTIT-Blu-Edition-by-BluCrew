@@ -67,7 +67,7 @@ class fanart
       return FALSE;
    }
 
-   public function decode_json($temp)
+   private function decode_json($temp)
    {
       if(!empty($temp))
       return json_decode($temp,true);
@@ -166,5 +166,10 @@ class fanart
        }
 
        return $temp;
+   }
+
+   public function isMoviesEmpty()
+   {
+       return empty($this->movies);
    }
 }
