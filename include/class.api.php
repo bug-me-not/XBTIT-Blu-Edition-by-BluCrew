@@ -34,17 +34,17 @@ class api
     function __construct($tvdb_api, $fanart_api, $imdb = 0, $tvdb = 0, $infohash = "")
     {
         /*
-         * This speak to the API identifiers
-         */
+        * This speak to the API identifiers
+        */
         $this->imdb = $imdb;
         $this->tvdb = $tvdb;
         $this->infohash = $infohash;
 
         /*
-         * This places the API keys within the class
-         */
-         $this->tvdb_api_key = $tvdb_api;
-         $this->fanart_api_key = $fanart_api;
+        * This places the API keys within the class
+        */
+        $this->tvdb_api_key = $tvdb_api;
+        $this->fanart_api_key = $fanart_api;
 
     }
 
@@ -53,61 +53,116 @@ class api
         if($this->imdb > 0)
         {
             $this->fanart_imdb_data = new fanart("tt".$this->imdb , $this->fanart_api_key);
+
+            if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
+            {
+                if($this->fanart_imdb_data->fetch())
+                {
+
+                }
+                else
+                {
+                    // Error fetching Data from Fanart
+                }
+            }
+
+            if(getBannerData() == "images/default_fanart.png")
+            {
+                if($this->fanart_imdb_data->isMoviesEmpty())
+                {
+                    if($this->fanart_imdb_data->fetch())
+                    {
+
+                    }
+                    else
+                    {
+                        // Error fetching Data from Fanart
+                    }
+                }
+                else
+                {
+
+                }
+            }
+
+            if(count(getcdart()) != 0)
+            {
+                if($this->fanart_imdb_data->isMoviesEmpty())
+                {
+                    if($this->fanart_imdb_data->fetch())
+                    {
+
+                    }
+                    else
+                    {
+                        // Error fetching Data from Fanart
+                    }
+                }
+                else
+                {
+
+                }
+            }
+
+            if(count(getBackground()) != 0)
+            {
+                if($this->fanart_imdb_data->isMoviesEmpty())
+                {
+                    if($this->fanart_imdb_data->fetch())
+                    {
+
+                    }
+                    else
+                    {
+                        // Error fetching Data from Fanart
+                    }
+                }
+                else
+                {
+
+                }
+            }
         }
 
         if($this->tvdb > 0)
         {
             $this->fanart_tvdb_data = new fanart($this->tvdb , $this->fanart_api_key);
-
             $this->tvdb_data = new tvdb($this->tvdb , $this->tvdb_api_key);
-        }
 
-        if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
-        {
-            if($this->imdb > 0)
+            if(getBannerData() == "images/default_fanart.png")
             {
-                $this->fanart_imdb_data->fetch();
+                if($this->fanart_tvdb_data->fetch(TRUE))
+                {
+
+                }
+                else
+                {
+                    //Error fetch TVDB data from Fanart
+                }
+
+
+                if($this->tvdb_data->fetch())
+                {
+
+                }
+                else
+                {
+                    //Error Fetching data from TVDB
+                }
             }
 
-            if($this->tvdb > 0)
+            if(getBannerData() == "images/default_fanart.png")
             {
-                $this->fanart_tvdb_data->fetch(TRUE);
-                $this->tvdb_data->fetch();
-            }
+                if($this->tvdb_data->fetch(TRUE))
+                {
 
-        }
-
-        if(getBannerData() == "images/default_fanart.png")
-        {
-            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
-            {
-                $this->fanart_imdb_data->fetch();
-            }
-
-            if($this->tvdb > 0 && $this->tvdb_data->isBannersEmpty())
-            {
-                $this->tvdb_data->fetch(TRUE);
-            }
-        }
-
-        if(count(getcdart()) != 0)
-        {
-            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
-            {
-                $this->fanart_imdb_data->fetch();
+                }
+                else
+                {
+                    //Error fetching Banner data from TVDB
+                }
             }
         }
-
-        if(count(getBackground()) != 0)
-        {
-            if($this->imdb > 0 && $this->fanart_imdb_data->isMoviesEmpty())
-            {
-                $this->fanart_imdb_data->fetch();
-            }
-        }
-
-
-
     }
 
     function getPosterData()
