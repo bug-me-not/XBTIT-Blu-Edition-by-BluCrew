@@ -50,6 +50,8 @@ class api
 
     function setImageData()
     {
+        global $THIS_BASEPATH;
+
         if($this->imdb > 0)
         {
             $this->fanart_imdb_data = new fanart("tt".$this->imdb , $this->fanart_api_key);
@@ -141,27 +143,55 @@ class api
                 }
 
 
-                if($this->tvdb_data->fetch())
+                if($this->tvdb_data->fetch(TRUE))
                 {
+                    $bdata = $this->tvdb_data->get5banners();
+                    $bcount = count($bdata);
 
+                    if(!file_exists())
+                        mkdir();
+
+                    if(!file_exists())
+                        mkdir();
+
+                    if($bcount > 0)
+                    {
+                        foreach($bdata as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $FileLastKey = (count($imagefile) - 1);
+
+                            if(!file_exists());
+                            {
+                                //save image
+                            }
+                        }
+                    }
                 }
                 else
                 {
                     //Error Fetching data from TVDB
                 }
             }
+        }
+    }
 
-            if(getBannerData() == "images/default_fanart.png")
+    function getIMDB()
+    {
+        if($this->fanart_tvdb_data->isDataEmpty())
+        {
+            if($this->fanart_tvdb_data->fetch())
             {
-                if($this->tvdb_data->fetch(TRUE))
-                {
-
-                }
-                else
-                {
-                    //Error fetching Banner data from TVDB
-                }
+                return (($this->fanart_tvdb_data->getimdb() > 0) ? $this->fanart_tvdb_data->getimdb() : 0);
             }
+            else
+            {
+                //Error fetching data from TVDB
+            }
+        }
+        else
+        {
+            return (($this->fanart_tvdb_data->getimdb() > 0) ? $this->fanart_tvdb_data->getimdb() : 0);
         }
     }
 
