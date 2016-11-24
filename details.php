@@ -987,8 +987,6 @@ if ($GLOBALS["usepopup"])
 else
    $torrenttpl->set("torrent_footer","<a href=\"javascript: history.go(-1);\">".$language["BACK"]."</a>");
 
-$torrenttpl->set("banner",getBannerData($row["imdb"],$row["tvdb_id"]));
-
    // subtitles begin
 $torrenttpl->set("sub_enabled", (($btit_settings["fmhack_subtitles"]=="enabled")?true:false), true);
 if($btit_settings["fmhack_subtitles"]=="enabled")
@@ -1020,8 +1018,6 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
 $sres->free();
 }
    // subtitles end
-
-
 
    //Rate This Upload
    require('ajaxstarrater/_drawrating.php'); # ajax rating
@@ -1146,11 +1142,13 @@ $sres->free();
          <img src='images/1000coin.png' alt='1000 Points' title='1000 Points' border='0' /></a>", 1);
    //Gift BON to Uploader Hack
 
-//BluMovieDB
+//API Section
+   $torrenttpl->set("omdb_genre",getOMDBData($row['imdb'])->genre);
+   $torrenttpl->set("omdb_rating",getOMDBData($row['imdb'])->imdbRating);
 
-   $torrenttpl->set("has_bmdb",false,true);
+   $torrenttpl->set("banner","");
 
-//BluMovieDB END
+//APi Section
 
    //Internal clock Hack
    if(false)//internal_check($row['category']))

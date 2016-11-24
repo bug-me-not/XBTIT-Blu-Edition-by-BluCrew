@@ -29,7 +29,7 @@ $(document).ready(function () {
 <!-- Trailers END -->
 
 <script type="text/javascript">
-   function ShowHide(id,id1) 
+   function ShowHide(id,id1)
    {
       obj = document.getElementsByTagName("div");
       if (obj[id].style.display == 'block')
@@ -37,7 +37,7 @@ $(document).ready(function () {
          obj[id].style.display = 'none';
          obj[id1].style.display = 'block';
       }
-      else 
+      else
       {
          obj[id].style.display = 'block';
          obj[id1].style.display = 'none';
@@ -282,19 +282,19 @@ function dt_show_waitb()
     <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
 
       <table class="table table-bordered">
-         
+
    <div class="details-header">
-   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>  
+   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
    <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
 
   <div class="main-info-holder">
     <div class="main-info">
-      <h1><tag:torrent.filename2 /></h1> 
+      <h1><tag:torrent.filename2 /></h1>
       <span class="stars">
-         <h3>Genre:&nbsp;OMDB GENRE TAG</h3>
-         <h3>Rating:&nbsp;OMDB IMDB RATING TAG</h3>
+         <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
+         <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
       </span>
-      <div class="external button" style=""><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a>
+      <div class="external button" style=""><a href="http://www.imdb.com/title/<tag:torrent.imdb />">IMDB</a>
       <a href="OMDB WEBSITE TAG">Website</a></div>
     </div>
   </div>
@@ -305,8 +305,8 @@ function dt_show_waitb()
 <div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
   </div>
   </div>
-  <if:MOD><tag:mod_task /></if:MOD>   
-      
+  <if:MOD><tag:mod_task /></if:MOD>
+
       <br>
 
       <if:fls_enabled>
@@ -386,7 +386,7 @@ function dt_show_waitb()
       <script type="text/javascript">dt_ShowThankb('<tag:torrent.info_hash />');</script>
    </td>
 </tr>
-</if:reenc_enabled> 
+</if:reenc_enabled>
 
 <if:teams_enabled>
 <tag:teamview />
@@ -611,7 +611,7 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <!-- Tab Start -->
-<div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
+<div role="tabpanel" class="tab-pane fade" id="DiscArt">
 <p><h1>COMING SOON!</h1></p>
    <br>
    <br>
@@ -623,7 +623,7 @@ function dt_show_waitb()
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
 <div id="get-data" class="btn btn-info">Load Trailer</div>
 <div class="container">
-   <div id="show-data"></div> 
+   <div id="show-data"></div>
 </div>
    <br>
    <br>
@@ -777,6 +777,3 @@ function dt_show_waitb()
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->
-
-
-
