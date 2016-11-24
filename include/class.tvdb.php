@@ -139,6 +139,11 @@ class tvdb
       return ("http://thetvdb.com/banners/{$temp['Series']['poster']}");
    }
 
+   public function isDataEmpty()
+   {
+       return empty($this->data);
+   }
+   
    public function isBannersEmpty()
    {
        return empty($this->banners);
