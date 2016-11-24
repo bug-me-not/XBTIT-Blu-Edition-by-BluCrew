@@ -721,12 +721,16 @@ if($count > 0)
 
                 $torrents[$i]['files'] = $numfiles;
 
+                //OMDB Data section
+                
                 $omdb = getOMDBData($data['imdb']);
                 $omdb_genre = $omdb->genre;
                 $torrents[$i]['blu_genre'] = (strlen($data['genre']) > 0) ? $data['genre'] : (strlen($omdb_genre) > 0 ? $omdb_genre : "No Genre Found");
 
                 $omdb_rating = $omdb->imdbRating;
                 $torrents[$i]['blu_rating'] = (strlen($omdb_rating) > 0) ? $omdb_rating : "No rating available";
+
+                //OMDB Data section
 
                 if($btit_settings["fmhack_torrent_moderation"] == "enabled" && $btit_settings["mod_app_sa"] == "yes" && $CURUSER["admin_access"] == "yes" && is_null($data["approved_by"]))
                 {
