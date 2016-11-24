@@ -135,6 +135,31 @@ class api
             {
                 if($this->fanart_tvdb_data->fetch(TRUE))
                 {
+                    $fbanners = $this->fanart_tvdb_data->gettvbanner();
+                    $fcount = count($fbanners);
+
+                    if(!file_exists())
+                        mkdir();
+
+                    if(!file_exists())
+                        mkdir();
+
+                    if(!file_exists())
+                        mkdir();
+
+                    if($fcount > 0)
+                    {
+                        foreach($fbanners as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $FileLastKey = (count($imageFile) - 1);
+
+                            if(!file_exists())
+                            {
+                                //Save Data
+                            }
+                        }
+                    }
 
                 }
                 else
@@ -145,8 +170,8 @@ class api
 
                 if($this->tvdb_data->fetch(TRUE))
                 {
-                    $bdata = $this->tvdb_data->get5banners();
-                    $bcount = count($bdata);
+                    $tbanners = $this->tvdb_data->get5banners();
+                    $bcount = count($tbanners);
 
                     if(!file_exists())
                         mkdir();
@@ -156,12 +181,12 @@ class api
 
                     if($bcount > 0)
                     {
-                        foreach($bdata as $files)
+                        foreach($tbanners as $files)
                         {
                             $imagefile = explode("/", $files);
                             $FileLastKey = (count($imagefile) - 1);
 
-                            if(!file_exists());
+                            if(!file_exists())
                             {
                                 //save image
                             }
