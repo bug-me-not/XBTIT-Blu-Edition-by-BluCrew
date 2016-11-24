@@ -93,7 +93,7 @@ while($row = $r->fetch_array())
     $subs[$i]["cds"] = (empty($row["cds"])?"":$language["SUB_CD"].": <b>".$row["cds"]."</b><br />\n");
     $subs[$i]["author"] = (!empty($row["author"])?$language["SUB_AUTH"].": <b>".$row["author"]."</b><br />\n":"");
     $subs[$i]["details"] = "<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$row["fileid"].".html":"index.php?page=torrent-details&id=".$row["hash"])."'>".$language["TORRENT_DETAIL"]."</a><br />\n";
-    $subs[$i]["dl"] = "<a href='subtitle_download.php?id=".$row["id"]."'>".$row["name"]."&nbsp; <img src='images/download.gif' alt='download' title='download'></a>";
+    $subs[$i]["dl"] = "<a href='subtitle_download.php?id=".$row["id"]."'>".$row["name"]."&nbsp; <i class=\"fa fa-download\" aria-hidden=\"true\"></i></a>";
     if($CURUSER["edit_torrents"]=="yes")
     { 
         $subs[$i][del] = "<a href='subtitle_del.php?do=del&id=".$row["id"]."'><img src='".$STYLEURL."/images/delete.png' alt='delete' title='delete'></a>";

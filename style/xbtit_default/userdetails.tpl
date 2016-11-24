@@ -13,7 +13,7 @@
 <if:userdetail_has_avatar>
 <div class="img-rounded picture hidden-xs"><tag:userdetailarr.userdetail_avatar /></div>
 <else:userdetail_has_avatar>
-<img src="https://i.imgur.com/p1Rvxdt.jpg" class="img-rounded picture hidden-xs">
+<img src="/avatar/default_avatar.gif" class="img-rounded picture hidden-xs">
 </if:userdetail_has_avatar>
 
 <div class="header">
@@ -274,7 +274,7 @@ Status:&nbsp;<tag:userdetail_profile_status /><small>&nbsp;Added(<tag:userdetail
 
   <if:watch>
   <tr>
-    <td class="header"><tag:language.WATCH_LOG /><div style="float:right;"><img id="all" src="images/plus.gif" title="list">&nbsp;<img id="none" src="images/minus.gif" title="close list"></div></td>
+    <td class="header"><tag:language.WATCH_LOG /><div style="float:right;"><i class="fa fa-plus-square" id="all" title="Show List" aria-hidden="true"></i>&nbsp;<i class="fa fa-minus-square" id="none" title="Close List" aria-hidden="true"></i></div></td>
     <td class="lista"<tag:userdetailarr.avatar_colspan_14 />><div id="watchlist"></div></td>
   </tr>
   </if:watch>

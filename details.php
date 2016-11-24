@@ -530,24 +530,6 @@ if($btit_settings["fmhack_torrent_nuked_and_requested"]=="enabled")
 if (!empty($row["comment"]))
    $row["description"]=format_comment($row["comment"]);
 
-if($btit_settings["fmhack_torrent_details_media_player"]=="enabled")
-{
-   if (!empty($row["mplayer"]))
-   {
-      $row["mplayer"]=unesc("<div id=\"container\"><a href=\"http://www.macromedia.com/go/getflashplayer\">Get the Flash Player</a> to see this player.</div>
-         <script type=\"text/javascript\" src=\"mplayer/swfobject.js\"></script>
-         <script type=\"text/javascript\">
-            var s1 = new SWFObject(\"mplayer/player.swf\",\"ply\",\"100%\",\"200\", \"9\",\"#FFFFFF\");
-            s1.addParam(\"allowfullscreen\",\"true\");
-            s1.addParam(\"allowscriptaccess\",\"always\");
-            s1.addParam(\"flashvars\",\"file=".$row["mplayer"]."&image=mplayer/background.jpg\");
-            s1.write(\"container\");
-         </script>");
-   }
-   else
-      $row["mplayer"]=unesc($language["MPLAYERNON"]);
-}
-
 if (isset($row["cat_name"]))
    $row["cat_name"]=unesc($row["cat_name"]);
 else
@@ -914,8 +896,8 @@ if ($CURUSER["view_comments"]=="yes")
                $title = unesc($subrow["custom_title"]);
          }
 
-         $comments[$count]["user"]="<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$subrow["uid"]."_".strtr($subrow["user"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$subrow["uid"])."'>".(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($subrow["prefixcolor"].$subrow["user"].$subrow["suffixcolor"]):unesc($subrow["user"]).(($btit_settings["fmhack_comments_layout"]=="enabled")?"</a>":"")).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($subrow):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($subrow):"") . (($btit_settings["fmhack_custom_title"]=="enabled")?(($btit_settings["fmhack_comments_layout"]=="enabled")?"":"</a>")." .::. ".$title:"");
-         $comments[$count]["date"]=date("d/m/Y H.i.s",$subrow["data"]-$offset);
+         $comments[$count]["user"]="<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$subrow["uid"]."_".strtr($subrow["user"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$subrow["uid"])."'>".(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($subrow["prefixcolor"].$subrow["user"].$subrow["suffixcolor"]):unesc($subrow["user"]).(($btit_settings["fmhack_comments_layout"]=="enabled")?"</a>":"")).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($subrow):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($subrow):"") . (($btit_settings["fmhack_custom_title"]=="enabled")?(($btit_settings["fmhack_comments_layout"]=="enabled")?"":"</a>")." ".$title:"");
+         $comments[$count]["date"]=date("m/d/Y H.i.s",$subrow["data"]-$offset);
 			// Begin Anonymous Comments for Anonymous Uploader Part 2
          $anon = "Anonymous";
          $anoncomm = do_sqlquery("select anonymous, uploader from {$TABLE_PREFIX}files WHERE info_hash='$id'");
@@ -924,7 +906,7 @@ if ($CURUSER["view_comments"]=="yes")
             if ($CURUSER["edit_torrents"]=="no")
             {
                ($comments[$count]["user"]="$anon");
-               ($srow["avatar"] = "$STYLEURL/images/default_avatar.gif");
+               ($srow["avatar"] = "/avatar/default_avatar.gif");
                ($srow["downloaded"] = "");
                ($srow["uploaded"] = "");
             }
@@ -942,10 +924,10 @@ if ($CURUSER["view_comments"]=="yes")
          if($btit_settings["fmhack_comments_layout"]=="enabled")
          {
             $comments[$count]["elapsed"]="(".get_elapsed_time($subrow["data"]) . " ".$language["TRAV_AGO"].")";
-            $comments[$count]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($subrow["avatar"] && $subrow["avatar"] != "" ? htmlspecialchars($subrow["avatar"]): "$STYLEURL/images/default_avatar.gif" )."\" alt=\"\" border=\"0\" />";
-            $comments[$count]["ratio"]="<img src=\"images/arany.png\" border=\"0\" />&nbsp;".(intval($subrow['downloaded']) > 0?number_format($subrow['uploaded'] / $subrow['downloaded'], 2):"---");
-            $comments[$count]["uploaded"]="<img src=\"images/speed_up.png\" border=\"0\" />&nbsp;".(makesize($subrow["uploaded"]));
-            $comments[$count]["downloaded"]="<img src=\"images/speed_down.png\" border=\"0\" />&nbsp;".(makesize($subrow["downloaded"]));
+            $comments[$count]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($subrow["avatar"] && $subrow["avatar"] != "" ? htmlspecialchars($subrow["avatar"]): "/avatar/default_avatar.gif" )."\" alt=\"\" border=\"0\" />";
+            $comments[$count]["ratio"]="<i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>&nbsp;".(intval($subrow['downloaded']) > 0?number_format($subrow['uploaded'] / $subrow['downloaded'], 2):"---");
+            $comments[$count]["uploaded"]="<i class=\"fa fa-upload\" aria-hidden=\"true\"></i>&nbsp;".(makesize($subrow["uploaded"]));
+            $comments[$count]["downloaded"]="<i class=\"fa fa-download\" aria-hidden=\"true\"></i>&nbsp;".(makesize($subrow["downloaded"]));
          }
             // only users able to delete torrents can delete comments...
          if($btit_settings["fmhack_view_edit_delete_preview_shoutBox_comments"]=="enabled")

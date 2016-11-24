@@ -169,7 +169,7 @@ else
         foreach($qrr as $resrr)
         {
             (is_null($resrr["lastaction"])?$lastseen = $resrr["lastconnect"]:$lastseen = $resrr["lastaction"]);
-            $pending[$i]["avatar"] = ($resrr["avatar"] && $resrr["avatar"] != ""?htmlspecialchars($resrr["avatar"]):htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            $pending[$i]["avatar"] = ($resrr["avatar"] && $resrr["avatar"] != ""?htmlspecialchars($resrr["avatar"]):htmlspecialchars("/avatar/default_avatar.gif"));
             $pending[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $pending[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $pending[$i]["id"] = $resrr["id"];
@@ -195,7 +195,7 @@ else
         foreach($qry as $ret)
         {
             (is_null($ret["lastaction"])?$lastseen = $ret["lastconnect"]:$lastseen = $ret["lastaction"]);
-            $friend[$i]["avatar"] = ($ret["avatar"] && $ret["avatar"] != ""?htmlspecialchars($ret["avatar"]):htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            $friend[$i]["avatar"] = ($ret["avatar"] && $ret["avatar"] != ""?htmlspecialchars($ret["avatar"]):htmlspecialchars("/avatar/default_avatar.gif"));
             $friend[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $friend[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $friend[$i]["id"] = $ret["id"];
@@ -228,7 +228,7 @@ else
             $friends[$i]["id"] = $rdt["id"];
             (is_null($rdt[(($type == 1)?"user":"friend")."_lastaction"])?$lastseen = $rdt[(($type == 1)?"user":"friend")."_lastconnect"]:$lastseen = $rdt[(($type == 1)?"user":"friend")."_lastaction"]);
             $friends[$i]["avatar"] = ($rdt[(($type == 1)?"user":"friend")."_avatar"] && $rdt[(($type == 1)?"user":"friend")."_avatar"] != ""?htmlspecialchars($rdt[(($type == 1)?"user":"friend")."_avatar"]):
-                htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+                htmlspecialchars("/avatar/default_avatar.gif"));
             $friends[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $friends[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $friends[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$id."_".strtr($username, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."'>".unesc($rdt[(($type == 1)?"user":"friend")."_prefixcolor"].$rdt[(($type == 1)?"user":"friend")."_username"].$rdt[(($type == 1)?
