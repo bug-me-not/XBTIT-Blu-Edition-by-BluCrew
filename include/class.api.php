@@ -59,7 +59,31 @@ class api
             {
                 if($this->fanart_imdb_data->fetch())
                 {
+                    $fposters = $this->fanart_imdb_data->getmovieposter();
+                    $pcount = count($fposters);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/posters"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/posters");
+
+                    if($pcount > 0)
+                    {
+                        foreach($fposters as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $LastImageKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/posters/".$imagefile[$LastImageKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/posters/".$imagefile[$LastImageKey]);
+                            }
+                        }
+                    }
                 }
                 else
                 {
@@ -79,11 +103,11 @@ class api
                         if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
                         mkdir($THIS_BASEPATH."/images/fanart/imdb");
 
-                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb))
-                        mkdir($THIS_BASEPATH."/images/fanart/imdb".$this->imdb);
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
 
-                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners"))
-                        mkdir($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners");
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners");
 
                         if($bcount > 0)
                         {
@@ -92,9 +116,9 @@ class api
                                 $imagefile = explode("/", $files);
                                 $LastImageKey = (count($imagefile) - 1);
 
-                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners/".$imagefile[$LastImageKey]))
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners/".$imagefile[$LastImageKey]))
                                 {
-                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners/".$imagefile[$LastImageKey]);
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners/".$imagefile[$LastImageKey]);
                                 }
                             }
                         }
@@ -106,7 +130,31 @@ class api
                 }
                 else
                 {
+                    $fbanners = $this->fanart_imdb_data->getmoviebanner();
+                    $bcount = count($fbanners);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners");
+
+                    if($bcount > 0)
+                    {
+                        foreach($fbanners as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $LastImageKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners/".$imagefile[$LastImageKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/banners/".$imagefile[$LastImageKey]);
+                            }
+                        }
+                    }
                 }
             }
 
@@ -219,6 +267,11 @@ class api
                 {
                     //Error Fetching data from TVDB
                 }
+            }
+
+            if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
+            {
+
             }
         }
     }
