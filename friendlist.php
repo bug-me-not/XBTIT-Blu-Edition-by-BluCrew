@@ -169,15 +169,14 @@ else
         foreach($qrr as $resrr)
         {
             (is_null($resrr["lastaction"])?$lastseen = $resrr["lastconnect"]:$lastseen = $resrr["lastaction"]);
-            $pending[$i]["avatar"] = ($resrr["avatar"] && $resrr["avatar"] != ""?htmlspecialchars($resrr["avatar"]):htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            $pending[$i]["avatar"] = ($resrr["avatar"] && $resrr["avatar"] != ""?htmlspecialchars($resrr["avatar"]):htmlspecialchars("/avatar/default_avatar.gif"));
             $pending[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $pending[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $pending[$i]["id"] = $resrr["id"];
             $pending[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$resrr["friend_id"]."_".strtr($resrr["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$resrr["friend_id"])."'>".unesc($resrr["prefixcolor"].$resrr["username"].$resrr["suffixcolor"])."</a>");
             $pending[$i]["level"] = $resrr['level'];
             $pending[$i]["acces"] = date("d/m/Y H:i:s", $resrr['friend_date']);
-            $pending[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($resrr["username"]))."'>".image_or_link("images/pm.gif",
-                "", $language["USERS_PM"])."</a>";
+            $pending[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($resrr["username"]))."'><i class=\"fa fa-envelope\" aria-hidden=\"true\"></a>";
             $pending[$i]["delete"] = ("<a href='index.php?page=friendlist&do=rem&amp;id=".$pending[$i]["id"]."' onclick=\"return confirm('".AddSlashes($language["FL_REMOVE"])."')\">".image_or_link("images/user_remove.png",
                 "", $language["DELETE"])."</a>");
             $i++;
@@ -195,15 +194,14 @@ else
         foreach($qry as $ret)
         {
             (is_null($ret["lastaction"])?$lastseen = $ret["lastconnect"]:$lastseen = $ret["lastaction"]);
-            $friend[$i]["avatar"] = ($ret["avatar"] && $ret["avatar"] != ""?htmlspecialchars($ret["avatar"]):htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            $friend[$i]["avatar"] = ($ret["avatar"] && $ret["avatar"] != ""?htmlspecialchars($ret["avatar"]):htmlspecialchars("/avatar/default_avatar.gif"));
             $friend[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $friend[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $friend[$i]["id"] = $ret["id"];
             $friend[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$ret["user_id"]."_".strtr($ret["username"], $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$ret["user_id"])."'>".unesc($ret["prefixcolor"].$ret["username"].$ret["suffixcolor"])."</a>");
             $friend[$i]["level"] = $ret['level'];
             $friend[$i]["acces"] = date("d/m/Y H:i:s", $ret['friend_date']);
-            $friend[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($ret["username"]))."'>".image_or_link("images/pm.gif",
-                "", $language["USERS_PM"])."</a>";
+            $friend[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($ret["username"]))."'><i class=\"fa fa-envelope\" aria-hidden=\"true\"></a>";
             $friend[$i]["add"] = ("<a href=\"index.php?page=friendlist&do=fadd&amp;id=".$friend[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["FL_REFRIEND"])."')\">".image_or_link("images/user_accept.png",
                 "", $language["ADD"])."</a>");
             $friend[$i]["delete"] = ("<a href=\"index.php?page=friendlist&do=del&amp;id=".$friend[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["FL_REJECT"])."')\">".image_or_link("images/user_remove.png",
@@ -228,7 +226,7 @@ else
             $friends[$i]["id"] = $rdt["id"];
             (is_null($rdt[(($type == 1)?"user":"friend")."_lastaction"])?$lastseen = $rdt[(($type == 1)?"user":"friend")."_lastconnect"]:$lastseen = $rdt[(($type == 1)?"user":"friend")."_lastaction"]);
             $friends[$i]["avatar"] = ($rdt[(($type == 1)?"user":"friend")."_avatar"] && $rdt[(($type == 1)?"user":"friend")."_avatar"] != ""?htmlspecialchars($rdt[(($type == 1)?"user":"friend")."_avatar"]):
-                htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+                htmlspecialchars("/avatar/default_avatar.gif"));
             $friends[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $friends[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $friends[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$id."_".strtr($username, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."'>".unesc($rdt[(($type == 1)?"user":"friend")."_prefixcolor"].$rdt[(($type == 1)?"user":"friend")."_username"].$rdt[(($type == 1)?
@@ -236,7 +234,7 @@ else
             $friends[$i]["level"] = $rdt[(($type == 1)?"user":"friend")."_level"];
             $friends[$i]["acces"] = date("d/m/Y H:i:s", $rdt['friend_date']);
             $friends[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rdt[(($type == 1)?"user":"friend")."_username"])).
-                "'>".image_or_link("images/pm.gif", "", $language["USERS_PM"])."</a>";
+                "'><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></a>";
             $friends[$i]["delete"] = ("<a href=\"index.php?page=friendlist&do=del&amp;id=".$friends[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["FL_UNFRIEND"])."')\">".image_or_link("images/user_remove.png",
                 "", $language["DELETE"])."</a>");
             $i++;
@@ -260,7 +258,7 @@ else
         $unfriends[$i]["id"] = $rdtt["id"];
         (is_null($rdtt[(($type == 1)?"user":"friend")."_lastaction"])?$lastseen = $rdtt[(($type == 1)?"user":"friend")."_lastconnect"]:$lastseen = $rdtt[(($type == 1)?"user":"friend")."_lastaction"]);
         $unfriends[$i]["avatar"] = ($rdtt[(($type == 1)?"user":"friend")."_avatar"] && $rdtt[(($type == 1)?"user":"friend")."_avatar"] != ""?htmlspecialchars($rdtt[(($type == 1)?"user":"friend")."_avatar"]):
-            htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            htmlspecialchars("/avatar/default_avatar.gif"));
         $unfriends[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
         $unfriends[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
         $unfriends[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$id."_".strtr($username, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."'>".unesc($rdtt[(($type == 1)?"user":"friend")."_prefixcolor"].$rdtt[(($type == 1)?"user":"friend")."_username"].$rdtt[(($type ==
@@ -268,7 +266,7 @@ else
         $unfriends[$i]["level"] = $rdtt[(($type == 1)?"user":"friend")."_level"];
         $unfriends[$i]["acces"] = date("d/m/Y H:i:s", $rdtt['friend_date']);
         $unfriends[$i]["pm"] = "<a href='index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=".$CURUSER["uid"]."&amp;what=new&amp;to=".urlencode(unesc($rdtt[(($type == 1)?"user":"friend")."_username"])).
-            "'>".image_or_link("images/pm.gif", "", $language["USERS_PM"])."</a>";
+            "'><i class=\"fa fa-envelope\" aria-hidden=\"true\"></a>";
         $unfriends[$i]["delete"] = ("<a href=\"index.php?page=friendlist&do=badd&amp;id=".$unfriends[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["FL_REFRIEND"])."')\">".image_or_link("images/user_accept.png",
             "", $language["ADD"])."</a>");
         $i++;

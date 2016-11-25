@@ -1,3 +1,17 @@
+<!-- Disc Art -->
+<script type="text/javascript">
+jQuery(function($) {
+$('.thumbnail').click(function(){
+   $('.modal-body').empty();
+   var title = $(this).parent('a').attr("title");
+   $('.modal-title').html(title);
+   $($(this).parents('div').html()).appendTo('.modal-body');
+   $('#myModal').modal({show:true});
+});
+});
+</script>
+<!-- Disc Art -->
+
 <!-- Trailers -->
 <script type="text/javascript">
 jQuery(function($) {
@@ -266,22 +280,25 @@ function dt_show_waitb()
       <div class="internal-clock-text" style="font-size: 22px; text-align: center; text-decoration: underline;">This is an internal release so please wait until 24hr countdown timer is complete to share elsewhere</div>
       <div class="internal-clock" style="padding-left: 35%; padding-top:20px; padding-bottom:200px;"></div></div>
    </if:internal_clock>
+
    <div align="center">
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs">
+   <ul class="nav nav-tabs">
      <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
+     <li class=""><a href="#screens" data-toggle="tab">Screen Shots</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
      <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
 
-  <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
-    <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
-
-      <table class="table table-bordered">
+   <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
+   <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
+   <div class="container-fluid">
+   <div class="row">
+   <table class="table table-bordered">
 
    <div class="details-header">
    <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
@@ -294,8 +311,8 @@ function dt_show_waitb()
          <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
          <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
       </span>
-      <div class="external button" style=""><a href="http://www.imdb.com/title/<tag:torrent.imdb />">IMDB</a>
-      <a href="OMDB WEBSITE TAG">Website</a></div>
+      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="OMDB WEBSITE TAG">Website</a></button>
     </div>
   </div>
 </div>
@@ -305,9 +322,6 @@ function dt_show_waitb()
 <div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
   </div>
   </div>
-  <if:MOD><tag:mod_task /></if:MOD>
-
-      <br>
 
       <if:fls_enabled>
       <tr>
@@ -585,9 +599,14 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
+<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="details"><!-- Tab Start -->
+<div class="container-fluid">
+  <div class="row">
    <if:nfo_enabled>
    <if:view_nfo>
    <if:nfo_exists>
@@ -599,20 +618,87 @@ function dt_show_waitb()
 </if:view_nfo>
 </if:nfo_enabled>
 <tag:torrent.description />
+</div>
+</div>
+</div> <!-- Tab End -->
+
+<div role="tabpanel" class="tab-pane fade" id="screens"><!-- Tab Start -->
+<if:IMAGESC>
+<div class="container-fluid">
+<div class="row">
+      <if:SCREENIS1>
+      <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS1>
+      <if:SCREENIS2>
+      <div class="col-md-4"><a href="#" title="Image 2"><img src="<tag:uploaddir /><tag:torrent.screen2 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS2>
+      <if:SCREENIS3>
+      <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS3>
+    </div>
+  </div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-title"><tag:language.SCREEN /></h3>
+   </div>
+   <div class="modal-body">
+
+   </div>
+   <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal">Close</button>
+      <a href="<tag:uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</button></a>
+   </div>
+   </div>
+   </div>
+  </div>
+  </if:IMAGESC>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
+<div class="container-fluid">
+  <div class="row">
    <p class= "text-info"><h3><tag:language.SEND_POINTS /></h3></p>
    <div class="row">
       <div class="col-md-12">
          <tag:coin />
       </div>
    </div>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <!-- Tab Start -->
 <div role="tabpanel" class="tab-pane fade" id="DiscArt">
-<p><h1>COMING SOON!</h1></p>
+<div class="container-fluid">
+  <div class="row">
+    <h1>FANART DISC ART</h1>
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 1"><img src="//placehold.it/600x350" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 2"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 3"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 4"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-title">OMDB MOVIE NAME TAG</h3>
+   </div>
+   <div class="modal-body">
+
+   </div>
+   <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal">Close</button>
+   </div>
+   </div>
+  </div>
+</div>
    <br>
    <br>
    <br>
@@ -621,17 +707,23 @@ function dt_show_waitb()
 <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
+<div class="container-fluid">
+<div class="row">
 <div id="get-data" class="btn btn-info">Load Trailer</div>
-<div class="container">
+<div class="container-fluid">
    <div id="show-data"></div>
 </div>
    <br>
    <br>
    <br>
    <p class="text-warning">Powered By TMDB API</p>
+   </div>
+   </div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
+<div class="container-fluid">
+<div class="row">
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -773,7 +865,9 @@ function dt_show_waitb()
 <br />
 <br />
 <div align="center">
-   <tag:torrent_footer />
+<tag:torrent_footer />
+</div>
+</div>
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->

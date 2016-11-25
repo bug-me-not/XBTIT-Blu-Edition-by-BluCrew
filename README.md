@@ -1,52 +1,94 @@
-# XBTIT-Blu-Edition-by-BluCrew
-Copyright 2016 BluCrew
+# XBTIT Blu-Edition by BluCrew v1.0
 
 
 
-XBTIT Blu Edition by BluCrew
+Demo Site: http://blu-edition.hdinnovations.xyz/index.php
+
+Username: Demo <br>
+Pass: Demo123.
+
+Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
+<i>Come chat with us!</i>
+
+<br>
+<br>
+#NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
 
 
-ABOUT 
+<b>:REQUIREMENTS:</b>
+- Web server with NGINX (Apache can be used but not recommended)<br>
+- A valid domain<br>
+- PHP 7.X +<br>
+- MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
-XBTIT Blu Edition is based off Xbtit, XbtitDTFM, XbtitDTDC and XbtitFM. Taking the best from all versions and combining it into one. So lets start off by giving credit to the dev teams of the projects mention above! While XBTIT Blu Edition maybe based off these the code is very different. Most of it has been fully rewritten and optimized for better navigation. NO MORE MESSY CODE! One major change is no more theming that looks very very outdated. XBTIT Blu Edition is fully rewritten in BOOTSTRAP {LESS} + FONT-AWESOME making the site look Modern and tasteful. One Style folder is all thats needed....want to change your style? Simply just write a new css file and change the look of your site via a selector that calls between custom bootstrap.css files. The also greatly increases the load time of your site since there is no more heavy images and crud built in like the old themes.
+<b>:DOCUMENTATION:</b><br>
+<i>PHP TRACKER AND INTERNAL FORUM <br>
+This is the easiest and fastest way to get your tracker up and running!</i>
+<br>
+- Place the xbtitFM Blu-Edition code in your webroot<br>
+- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin. Grant your database user usage privileges (data+structure, not grant/administration)<br>
+- Use a web browser to open the site<br>
+- Follow the instructions displayed by the installer<br>
+- Once install is complete delete the install.php from your server<br>
+- Log into your new site with the username and password you created during the install process<br>
+- Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
+- Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
+- Enjoy!<br>
 
-XBTIT Blu Edition will remain active and alive in OPEN SOURCE soon! This will not be a paid script! Although donations are open for receiving, we leave that completely up to you to decide weather you think its worth it or not. We also hope to see contributions added but we will be strict on what to add and what not to. We don't want to add hacks or modules that are sloppy coded. So we ask anyone that wants to contribute to please try to make the code neat and organized. We will review them and do further clean-up if needed.
+<b>:GENERAL NOTES:</b><br>
+- Look to your Users Group Settings, do they match what you want?<br>
+- You need to create the boards for your internal forum.<br>
+- It is a lot of new stuff to take in, any bugs please open a issue on git.<br>
 
+<b>:CREDITS:</b><br>
+- BluCrew (HDVinie and MrG01)<br>
+- Our Collaborators (flier56, Chocolatkey, nilimahona)<br>
+- This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
+<br>
 
-MAJOR NEW FEATURES
+### SOURCE CODE CHANGES
 
-Fully ReWritten In SQLi (No Tools Used) -- BluCrew
-Complete Owners Dashboard System to display server statistics and site info -- BluCrew
-New Integrated AJAX ChatSystem (BluImp) -- BluCrew
-Custom ChatBot and ChatBot Commands for ChatSystem -- BluCrew
-Themes Driven By Bootstrap + FontAwesome -- BluCrew
-Complete New Requests Section -- Inspiration from DiemThuy Created by BluCrew
-BON Pool -- BluCrew
-Modern Login System -- BluCrew
-Modern FAQ's Page w/Accordion & Pagination -- BluCrew
-Modern Rules Page -- BluCrew
-24HR Internal Countdown Timer -- BluCrew
-FanArt Banners System -- BluCrew
-OMDB Movie/TV API (No more heavy IMDB) -- BluCrew
-Seed Help Module -- Spidi
-Latest Releases Block Using Banner System -- Inspired from DiemThuy Modified and Inplemented by BluCrew
-Simple Clean JS Radio using Radionomy -- Implemented by BluCrew
+- There are no developer guidelines in place.
+- We do however ask that all code changes be submitted via a pull request. This allows for peer reviews. Ensures that code changes are effective and that merges are conflict free.
 
-Plus many more changes from small to big. 
+### UPDATES
 
-
-
-REQUIREMENTS
-NGINX
-PHP 7
-
-
-
-DOCUMENTATION
-
-
-
-CREDITS
+```
+  v1.0 - Initail Release
+```
 
 
+### COMPONENTS USED
+* [jquery](https://jquery.com)
+* [icheck](http://icheck.fronteed.com)
+* [Bootstrap-Switch](http://www.bootstrap-switch.org)
+* [Bootstrap](http://getbootstrap.com)
+* [FontAwesome](http://fontawesome.io)
+* [FanArt API](https://fanart.tv)
+* [TMDB API](https://www.themoviedb.org)
+* [OMDB API](http://omdbapi.com)
 
+### LICENSE
+```
+The MIT License (MIT)
+
+Copyright (c) 2016 BluCrew
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

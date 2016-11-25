@@ -1,6 +1,5 @@
 <!--  MODIFIED select for deletion by gAnDo -->
 <script type="text/javascript">
-<!--
 function SetAllCheckBoxes(FormName, FieldName, CheckValue)
 {
 if(!document.forms[FormName])
@@ -16,19 +15,17 @@ else
 for(var i = 0; i < countCheckBoxes; i++)
 objCheckBoxes[i].checked = CheckValue;
 }
--->
 </script>
-<script type="text/javascript">
-<!--
 
+<script type="text/javascript">
 var newwindow;
 function popusers(url)
 {
   newwindow=window.open(url,'popusers','height=100,width=450');
   if (window.focus) {newwindow.focus()}
 }
- -->
 </script>
+
 <if:MSG_LIST>
 <div class="panel panel-primary">
 <div class="panel-heading">

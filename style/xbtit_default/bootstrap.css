@@ -968,7 +968,7 @@ img {
 }
 hr {
   margin-top: 20px;
-  margin-bottom: 43px;
+  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
 }
@@ -7597,32 +7597,6 @@ border-radius: 2px;
   padding: 10px 15px
 }
 
-.button,
-select {
-  display: inline-block;
-  padding: 5px 20px;
-  line-height: 26px;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .16);
-  background-color: #E64141;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  margin: 15px 10px;
-  text-decoration: none;
-  position: relative;
-  -webkit-appearance: none;
-  -webkit-transition: .3s
-}
-
-.button *,
-select * {
-  color: #fff
-}
-
 .button.icon-right,
 select.icon-right {
   padding-right: 45px
@@ -7636,24 +7610,6 @@ select.icon-right i {
   font-size: 24px;
   width: 20px;
   line-height: 36px
-}
-
-.button:hover,
-select:hover {
-  background-color: #E64141;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, .16)
-}
-
-select {
-  color: #4C4E5F;
-  background-image: url(../images/arrow-down.57b4aa67.png);
-  background-position: right 15px center;
-  background-repeat: no-repeat;
-  padding-right: 40px
-}
-
-select:hover {
-  color: #5677fc
 }
 
 .promotional {
@@ -8008,12 +7964,11 @@ select:hover {
 
 .main-info-holder .main-info {
   display: block;
-  left: 0;
-  padding-left: 0px;
-  padding-right: 25px;
+  padding-left: 90px;
   padding-bottom: 25px;
   bottom: 0;
-  z-index: 9999
+  z-index: 9999;
+  text-align: left
 }
 
 @media screen and (max-width:1110px) {
@@ -8038,7 +7993,7 @@ select:hover {
   font-size: 30px;
   line-height: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .36);
-  padding-right: 840px
+  text-align: left
 }
 
 .main-info-holder .main-info p {

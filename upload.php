@@ -499,127 +499,410 @@ if(isset($_FILES["torrent"]))
         }
 
         // Image Upload
-        $file_name='';
-        $file_name_s1='';
-        $file_name_s2='';
-        $file_name_s3='';
-        if($btit_settings["fmhack_torrent_image_upload"]=="enabled")
-        {
-            $userfile=$_FILES["userfile"];
-            if((isset($userfile["tmp_name"]) && !empty($userfile["tmp_name"])) && (isset($userfile["name"]) && !empty($userfile["name"])))
+      $file_name = '';
+      $file_name_s1 = '';
+      $file_name_s2 = '';
+      $file_name_s3 = '';
+      if($btit_settings["fmhack_torrent_image_upload"] == "enabled")
+      {
+         $userfile = $_FILES["userfile"];
+         if((isset($userfile["tmp_name"]) && !empty($userfile["tmp_name"])) && (isset($userfile["name"]) && !empty($userfile["name"])))
+         {
+            $check_userfile = check_upload($userfile["tmp_name"], $userfile["name"]);
+            switch($check_userfile)
             {
-                $check_userfile=check_upload($userfile["tmp_name"], $userfile["name"]);
-                switch($check_userfile)
-                {
-                    case 1:
-                    case 2:
-                    $check_userfile_err = $language["ERR_MISSING_DATA"];
-                    if(file_exists($userfile["tmp_name"]))
-                    @unlink($userfile["tmp_name"]);
-                    break;
-
-                    case 3:
-                    $check_userfile_err = $language["QUAR_TMP_FILE_MISS"];
-                    break;
-
-                    case 4:
-                    $check_userfile_err = $language["QUAR_OUTPUT"];
-                    break;
-
-                    case 5:
-                    default:
-                    $check_userfile_err = "";
-                    break;
-                }
-                if($check_userfile_err != "")
-                stderr($language["ERROR"], $check_userfile_err);
+               case 1:
+               case 2:
+               $check_userfile_err = $language["ERR_MISSING_DATA"];
+               if(file_exists($userfile["tmp_name"]))
+               @unlink($userfile["tmp_name"]);
+               break;
+               case 3:
+               $check_userfile_err = $language["QUAR_TMP_FILE_MISS"];
+               break;
+               case 4:
+               $check_userfile_err = $language["QUAR_OUTPUT"];
+               break;
+               case 5:
+               default:
+               $check_userfile_err = "";
+               break;
             }
-
-            $image_types=array( "image/bmp", "image/jpeg", "image/pjpeg", "image/gif", "image/x-png", "image/png");
+            if($check_userfile_err != "")
+            stderr($language["ERROR"], $check_userfile_err);
+         }
+         $screen1 = $_FILES["screen1"];
+         if((isset($screen1["tmp_name"]) && !empty($screen1["tmp_name"])) && (isset($screen1["name"]) && !empty($screen1["name"])))
+         {
+            $check_screen1 = check_upload($screen1["tmp_name"], $screen1["name"]);
+            switch($check_screen1)
+            {
+               case 1:
+               case 2:
+               $check_screen1_err = $language["ERR_MISSING_DATA"];
+               if(file_exists($screen1["tmp_name"]))
+               @unlink($screen1["tmp_name"]);
+               break;
+               case 3:
+               $check_screen1_err = $language["QUAR_TMP_FILE_MISS"];
+               break;
+               case 4:
+               $check_screen1_err = $language["QUAR_OUTPUT"];
+               break;
+               case 5:
+               default:
+               $check_screen1_err = "";
+               break;
+            }
+            if($check_screen1_err != "")
+            stderr($language["ERROR"], $check_screen1_err);
+         }
+         $screen2 = $_FILES["screen2"];
+         if((isset($screen2["tmp_name"]) && !empty($screen2["tmp_name"])) && (isset($screen2["name"]) && !empty($screen2["name"])))
+         {
+            $check_screen2 = check_upload($screen2["tmp_name"], $screen2["name"]);
+            switch($check_screen2)
+            {
+               case 1:
+               case 2:
+               $check_screen2_err = $language["ERR_MISSING_DATA"];
+               if(file_exists($screen2["tmp_name"]))
+               @unlink($screen2["tmp_name"]);
+               break;
+               case 3:
+               $check_screen2_err = $language["QUAR_TMP_FILE_MISS"];
+               break;
+               case 4:
+               $check_screen2_err = $language["QUAR_OUTPUT"];
+               break;
+               case 5:
+               default:
+               $check_screen2_err = "";
+               break;
+            }
+            if($check_screen2_err != "")
+            stderr($language["ERROR"], $check_screen2_err);
+         }
+         $screen3 = $_FILES["screen3"];
+         if((isset($screen3["tmp_name"]) && !empty($screen3["tmp_name"])) && (isset($screen3["name"]) && !empty($screen3["name"])))
+         {
+            $check_screen3 = check_upload($screen3["tmp_name"], $screen3["name"]);
+            switch($check_screen3)
+            {
+               case 1:
+               case 2:
+               $check_screen3_err = $language["ERR_MISSING_DATA"];
+               if(file_exists($screen3["tmp_name"]))
+               @unlink($screen3["tmp_name"]);
+               break;
+               case 3:
+               $check_screen3_err = $language["QUAR_TMP_FILE_MISS"];
+               break;
+               case 4:
+               $check_screen3_err = $language["QUAR_OUTPUT"];
+               break;
+               case 5:
+               default:
+               $check_screen3_err = "";
+               break;
+            }
+            if($check_screen3_err != "")
+            stderr($language["ERROR"], $check_screen3_err);
+         }
+         $image_types = array(
+            "image/bmp",
+            "image/jpeg",
+            "image/pjpeg",
+            "image/gif",
+            "image/x-png",
+            "image/png");
             switch($_FILES["userfile"]["type"])
             {
-                case 'image/bmp':
-                $file_name=$hash.".bmp";
-                break;
-
-                case 'image/jpeg':
-                $file_name=$hash.".jpg";
-                break;
-
-                case 'image/pjpeg':
-                $file_name=$hash.".jpeg";
-                break;
-
-                case 'image/gif':
-                    $file_name=$hash.".gif";
-                    break;
-
-                    case 'image/x-png':
-                    $file_name=$hash.".png";
-                    break;
-
-                    case 'image/png':
-                    $file_name=$hash.".png";
-                    break;
-                }
-
-                $uploadfile = $GLOBALS["uploaddir"].$file_name;
-                $file_size = $_FILES["userfile"]["size"];
-                $file_type = $_FILES["userfile"]["type"];
-                $file_size = makesize1($file_size);
-
-                if(isset($_FILES["userfile"]))
-                {
-                    if($_FILES["userfile"]["name"]=='')
-                    {
-                        // do nothing...
-                    }
-                    else
-                    {
-                        if($file_size > $GLOBALS["file_limit"])
-                        {
-                            err_msg($language["ERROR"], $language["FILE_UPLOAD_TO_BIG"].": ".$file_limit.". ".$language["IMAGE_WAS"].": ".$file_size);
-                            stdfoot();
-                            exit();
+               case 'image/bmp':
+               $file_name = $hash.".bmp";
+               break;
+               case 'image/jpeg':
+               $file_name = $hash.".jpg";
+               break;
+               case 'image/pjpeg':
+               $file_name = $hash.".jpeg";
+               break;
+               case 'image/gif':
+                  $file_name = $hash.".gif";
+                  break;
+                  case 'image/x-png':
+                  $file_name = $hash.".png";
+                  break;
+                  case 'image/png':
+                  $file_name = $hash.".png";
+                  break;
+               }
+               switch($_FILES["screen1"]["type"])
+               {
+                  case 'image/bmp':
+                  $file_name_s1 = "s1".$hash.".bmp";
+                  break;
+                  case 'image/jpeg':
+                  $file_name_s1 = "s1".$hash.".jpg";
+                  break;
+                  case 'image/pjpeg':
+                  $file_name_s1 = "s1".$hash.".jpeg";
+                  break;
+                  case 'image/gif':
+                     $file_name_s1 = "s1".$hash.".gif";
+                     break;
+                     case 'image/x-png':
+                     $file_name_s1 = "s1".$hash.".png";
+                     break;
+                     case 'image/png':
+                     $file_name_s1 = "s1".$hash.".png";
+                     break;
+                  }
+                  switch($_FILES["screen2"]["type"])
+                  {
+                     case 'image/bmp':
+                     $file_name_s2 = "s2".$hash.".bmp";
+                     break;
+                     case 'image/jpeg':
+                     $file_name_s2 = "s2".$hash.".jpg";
+                     break;
+                     case 'image/pjpeg':
+                     $file_name_s2 = "s2".$hash.".jpeg";
+                     break;
+                     case 'image/gif':
+                        $file_name_s2 = "s2".$hash.".gif";
+                        break;
+                        case 'image/x-png':
+                        $file_name_s2 = "s2".$hash.".png";
+                        break;
+                        case 'image/png':
+                        $file_name_s2 = "s2".$hash.".png";
+                        break;
+                     }
+                     switch($_FILES["screen3"]["type"])
+                     {
+                        case 'image/bmp':
+                        $file_name_s3 = "s3".$hash.".bmp";
+                        break;
+                        case 'image/jpeg':
+                        $file_name_s3 = "s3".$hash.".jpg";
+                        break;
+                        case 'image/pjpeg':
+                        $file_name_s3 = "s3".$hash.".jpeg";
+                        break;
+                        case 'image/gif':
+                           $file_name_s3 = "s3".$hash.".gif";
+                           break;
+                           case 'image/x-png':
+                           $file_name_s3 = "s3".$hash.".png";
+                           break;
+                           case 'image/png':
+                           $file_name_s3 = "s3".$hash.".png";
+                           break;
                         }
-                        if(in_array(strtolower($file_type), $image_types, true))
+                        $uploadfile = $GLOBALS["uploaddir"].$file_name;
+                        $uploadfile1 = $GLOBALS["uploaddir"].$file_name_s1;
+                        $uploadfile2 = $GLOBALS["uploaddir"].$file_name_s2;
+                        $uploadfile3 = $GLOBALS["uploaddir"].$file_name_s3;
+                        $file_size = $_FILES["userfile"]["size"];
+                        $file_size1 = $_FILES["screen1"]["size"];
+                        $file_size2 = $_FILES["screen2"]["size"];
+                        $file_size3 = $_FILES["screen3"]["size"];
+                        $file_type = $_FILES["userfile"]["type"];
+                        $file_type1 = $_FILES["screen1"]["type"];
+                        $file_type2 = $_FILES["screen2"]["type"];
+                        $file_type3 = $_FILES["screen3"]["type"];
+                        $file_size = makesize1($file_size);
+                        $file_size1 = makesize1($file_size1);
+                        $file_size2 = makesize1($file_size2);
+                        $file_size3 = makesize1($file_size3);
+                        if(isset($_FILES["userfile"]))
                         {
-                            $img_info=@getimagesize($_FILES['userfile']['tmp_name']);
-                            if(isset($img_info) && is_array($img_info))
-                            {
-                                if($img_info[0] > $btit_settings["imgup_maxw"] || $img_info[1] > $btit_settings["imgup_maxh"])
-                                {
-                                    err_msg($language["ERROR"], $language["IMGUP_DIM_TOO_BIG_1"]."<br /><br />".$btit_settings["imgup_maxw"]." X ".$btit_settings["imgup_maxh"]." ".$language["IMGUP_DIM_TOO_BIG_2"]."<br /><br />".$img_info[0]. " X ".$img_info[1]." ".$language["IMGUP_DIM_TOO_BIG_3"]);
+                           if($_FILES["userfile"]["name"] == '')
+                           {
+                              // do nothing...
+                           }
+                           else
+                           {
+                              if($file_size > $GLOBALS["file_limit"])
+                              {
+                                 err_msg($language["ERROR"], $language["FILE_UPLOAD_TO_BIG"].": ".$file_limit.". ".$language["IMAGE_WAS"].": ".$file_size);
+                                 stdfoot();
+                                 exit();
+                              }
+                              if(in_array(strtolower($file_type), $image_types, true))
+                              {
+                                 $img_info = @getimagesize($_FILES['userfile']['tmp_name']);
+                                 if(isset($img_info) && is_array($img_info))
+                                 {
+                                    if($img_info[0] > $btit_settings["imgup_maxw"] || $img_info[1] > $btit_settings["imgup_maxh"])
+                                    {
+                                       err_msg($language["ERROR"], $language["IMGUP_DIM_TOO_BIG_1"]."<br /><br />".$btit_settings["imgup_maxw"]." X ".$btit_settings["imgup_maxh"]." ".$language["IMGUP_DIM_TOO_BIG_2"]."<br /><br />".$img_info[0].
+                                       " X ".$img_info[1]." ".$language["IMGUP_DIM_TOO_BIG_3"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                    if(@move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
+                                    {
+                                    }
+                                    else
+                                    {
+                                       err_msg($language["ERROR"], $language["MOVE_IMAGE_TO"]." ".$GLOBALS["uploaddir"].". ".$language["CHECK_FOLDERS_PERM"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                 }
+                                 else
+                                 {
+                                    err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
                                     stdfoot();
-                                    exit();
-                                }
-                                if(@move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
-                                {
-                                    // do nothing...
-                                }
-                                else
-                                {
-                                    err_msg($language["ERROR"], $language["MOVE_IMAGE_TO"]." ".$GLOBALS["uploaddir"].". ".$language["CHECK_FOLDERS_PERM"]);
-                                    stdfoot();
-                                    exit();
-                                }
-                            }
-                            else
-                            {
-                                err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
-                                stdfoot();
-                                exit;
-                            }
+                                    exit;
+                                 }
+                              }
+                              else
+                              {
+                                 err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
+                                 stdfoot();
+                                 exit;
+                              }
+                           }
                         }
-                        else
+                        if(isset($_FILES["screen1"]))
                         {
-                            err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
-                            stdfoot();
-                            exit;
+                           if($_FILES["screen1"]["name"] == '')
+                           {
+                              // do nothing...
+                           }
+                           else
+                           {
+                              if($file_size1 > $GLOBALS["file_limit"])
+                              {
+                                 err_msg($language["ERROR"], $language["FILE_UPLOAD_TO_BIG"].": ".$file_limit.". ".$language["IMAGE_WAS"].": ".$file_size1);
+                                 stdfoot();
+                                 exit();
+                              }
+                              if(in_array(strtolower($file_type1), $image_types, true))
+                              {
+                                 $screen1_info = @getimagesize($_FILES['screen1']['tmp_name']);
+                                 if(isset($screen1_info) && is_array($screen1_info))
+                                 {
+                                    if($screen1_info[0] > $btit_settings["imgup_maxw"] || $screen1_info[1] > $btit_settings["imgup_maxh"])
+                                    {
+                                       err_msg($language["ERROR"], $language["IMGUP_DIM_TOO_BIG_1"]."<br /><br />".$btit_settings["imgup_maxw"]." X ".$btit_settings["imgup_maxh"]." ".$language["IMGUP_DIM_TOO_BIG_2"]."<br /><br />".$img_info[0].
+                                       " X ".$img_info[1]." ".$language["IMGUP_DIM_TOO_BIG_3"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                    if(@move_uploaded_file($_FILES['screen1']['tmp_name'], $uploadfile1))
+                                    {
+                                    }
+                                    else
+                                    {
+                                       err_msg($language["ERROR"], $language["MOVE_IMAGE_TO"]." ".$GLOBALS["uploaddir"].". ".$language["CHECK_FOLDERS_PERM"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                 }
+                                 else
+                                 {
+                                    err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
+                                    stdfoot();
+                                    exit;
+                                 }
+                              }
+                           }
                         }
-                    }
-                }
-            }
+                        if(isset($_FILES["screen2"]))
+                        {
+                           if($_FILES["screen2"]["name"] == '')
+                           {
+                              // do nothing...
+                           }
+                           else
+                           {
+                              if($file_size2 > $GLOBALS["file_limit"])
+                              {
+                                 err_msg($language["ERROR"], $language["FILE_UPLOAD_TO_BIG"].": ".$file_limit.". ".$language["IMAGE_WAS"].": ".$file_size2);
+                                 stdfoot();
+                                 exit();
+                              }
+                              if(in_array(strtolower($file_type2), $image_types, true))
+                              {
+                                 $screen2_info = @getimagesize($_FILES['screen2']['tmp_name']);
+                                 if(isset($screen2_info) && is_array($screen2_info))
+                                 {
+                                    if($screen2_info[0] > $btit_settings["imgup_maxw"] || $screen2_info[1] > $btit_settings["imgup_maxh"])
+                                    {
+                                       err_msg($language["ERROR"], $language["IMGUP_DIM_TOO_BIG_1"]."<br /><br />".$btit_settings["imgup_maxw"]." X ".$btit_settings["imgup_maxh"]." ".$language["IMGUP_DIM_TOO_BIG_2"]."<br /><br />".$img_info[0].
+                                       " X ".$img_info[1]." ".$language["IMGUP_DIM_TOO_BIG_3"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                    if(@move_uploaded_file($_FILES['screen2']['tmp_name'], $uploadfile2))
+                                    {
+                                    }
+                                    else
+                                    {
+                                       err_msg($language["ERROR"], $language["MOVE_IMAGE_TO"]." ".$GLOBALS["uploaddir"].". ".$language["CHECK_FOLDERS_PERM"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                 }
+                                 else
+                                 {
+                                    err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
+                                    stdfoot();
+                                    exit;
+                                 }
+                              }
+                           }
+                        }
+                        if(isset($_FILES["screen3"]))
+                        {
+                           if($_FILES["screen3"]["name"] == '')
+                           {
+                              // do nothing...
+                           }
+                           else
+                           {
+                              if($file_size3 > $GLOBALS["file_limit"])
+                              {
+                                 err_msg($language["ERROR"], $language["FILE_UPLOAD_TO_BIG"].": ".$file_limit.". ".$language["IMAGE_WAS"].": ".$file_size3);
+                                 stdfoot();
+                                 exit();
+                              }
+                              if(in_array(strtolower($file_type3), $image_types, true))
+                              {
+                                 $screen3_info = @getimagesize($_FILES['screen3']['tmp_name']);
+                                 if(isset($screen3_info) && is_array($screen3_info))
+                                 {
+                                    if($screen3_info[0] > $btit_settings["imgup_maxw"] || $screen3_info[1] > $btit_settings["imgup_maxh"])
+                                    {
+                                       err_msg($language["ERROR"], $language["IMGUP_DIM_TOO_BIG_1"]."<br /><br />".$btit_settings["imgup_maxw"]." X ".$btit_settings["imgup_maxh"]." ".$language["IMGUP_DIM_TOO_BIG_2"]."<br /><br />".$img_info[0].
+                                       " X ".$img_info[1]." ".$language["IMGUP_DIM_TOO_BIG_3"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                    if(@move_uploaded_file($_FILES['screen3']['tmp_name'], $uploadfile3))
+                                    {
+                                    }
+                                    else
+                                    {
+                                       err_msg($language["ERROR"], $language["MOVE_IMAGE_TO"]." ".$GLOBALS["uploaddir"].". ".$language["CHECK_FOLDERS_PERM"]);
+                                       stdfoot();
+                                       exit();
+                                    }
+                                 }
+                                 else
+                                 {
+                                    err_msg($language["ERROR"], $language["ILEGAL_UPLOAD"]);
+                                    stdfoot();
+                                    exit;
+                                 }
+                              }
+                           }
+                        }
+                     }
             // End Image Upload
 
             $query1_insert_key="";

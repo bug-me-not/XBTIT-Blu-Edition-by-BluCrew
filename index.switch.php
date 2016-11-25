@@ -55,7 +55,7 @@ switch ($pageID) {
 
    case 'admin':
    require("$THIS_BASEPATH/admin/admin.index.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Admin");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Admin");
    // the main_content for current template is setting within admin/index.php
    break;
 
@@ -96,11 +96,11 @@ switch ($pageID) {
    if($btit_settings["donate_mode"]=="custom")
    {
       $tpl->set("main_content",set_block($language["DONATE"],"center",$pptpl->fetch(load_template("pp_new.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    else{
       $tpl->set("main_content",set_block($language["DONATE"],"center",$pptpl->fetch(load_template("pp.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    break;
 
@@ -109,11 +109,11 @@ switch ($pageID) {
    if($btit_settings["donate_mode"]=="custom")
    {
       $tpl->set("main_content",set_block($language["DONATE"],"center",$aptpl->fetch(load_template("pz_new.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    else{
       $tpl->set("main_content",set_block($language["DONATE"],"center",$aptpl->fetch(load_template("pz.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    break;
 
@@ -122,11 +122,11 @@ switch ($pageID) {
    if($btit_settings["donate_mode"]=="custom")
    {
       $tpl->set("main_content",set_block($language["DONATE"],"center",$bctpl->fetch(load_template("bc_new.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    else{
       $tpl->set("main_content",set_block($language["DONATE"],"center",$bctpl->fetch(load_template("bc.tpl"))));
-      $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+      $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    }
    break;
 
@@ -142,7 +142,7 @@ switch ($pageID) {
    case 'file_hosting':
    require("$THIS_BASEPATH/file_hosting.php");
    $tpl->set("main_content",set_block($language["FHOST"],"center",$file_hostingtpl->fetch(load_template("file_hosting.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FHOST"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["FHOST"]."");
    break;
 
    case 'get_file_hosting':
@@ -154,7 +154,7 @@ switch ($pageID) {
    require(load_language("lang_apply_membership.php"));
    require("$THIS_BASEPATH/apply.php");
    $tpl->set("main_content",set_block($language['APPLY_MEMBERSHIP'],"center",$applytpl->fetch(load_template("apply.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language['APPLY_MEMBERSHIP']."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language['APPLY_MEMBERSHIP']."");
    break;
 
    case 'applysend':
@@ -165,7 +165,7 @@ switch ($pageID) {
    case 'allshout':
    ob_start();
    require("$THIS_BASEPATH/ajaxchat/getHistoryChatData.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Shout History");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Shout History");
    $out=ob_get_contents();
    ob_end_clean();
    $tpl->set("main_content",set_block($language["SHOUTBOX"]." ".$language["HISTORY"],"left",$out));
@@ -174,32 +174,32 @@ switch ($pageID) {
    case 'comment':
    require("$THIS_BASEPATH/comment.php");
    $tpl->set("main_content",set_block($language["COMMENTS"],"center",$tpl_comment->fetch(load_template("comment.tpl")),false));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Comment");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Comment");
    break;
 
    case 'delete':
    require("$THIS_BASEPATH/delete.php");
    $tpl->set("main_content",set_block($language["DELETE_TORRENT"],"center",$torrenttpl->fetch(load_template("torrent.delete.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Delete");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Delete");
    break;
 
    case 'edit':
    require("$THIS_BASEPATH/edit.php");
    $tpl->set("main_content",set_block($language["EDIT_TORRENT"],"center",$torrenttpl->fetch(load_template("torrent.edit.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Edit");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Edit");
    break;
 
    case 'extra-stats':
    require("$THIS_BASEPATH/extra-stats.php");
    $tpl->set("main_content",set_block($language["MNU_STATS"],"center",$out));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Statistics");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Statistics");
    break;
 
       // DT request hack start
    case 'requests':
    require("$THIS_BASEPATH/requests.php");
    $tpl->set("main_content",set_block("Requests","center",$requeststpl->fetch(load_template("requests.main.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Requests");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Requests");
    break;
 
       // DT request hack end
@@ -212,13 +212,13 @@ switch ($pageID) {
    case 'torrent_history':
    require("$THIS_BASEPATH/torrent_history.php");
    $tpl->set("main_content",set_block($language["MNU_TORRENT"],"center",$historytpl->fetch(load_template("torrent_history.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->History");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->History");
    break;
 
    case 'login':
    require("$THIS_BASEPATH/login.php");
    $tpl->set("main_content",set_block($language["LOGIN"],"center",$logintpl->fetch(load_template("login.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Login");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Login");
    break;
 
    case 'moresmiles':
@@ -230,19 +230,19 @@ switch ($pageID) {
    case 'news':
    require("$THIS_BASEPATH/news.php");
    $tpl->set("main_content",set_block($language["MANAGE_NEWS"],"center",$newstpl->fetch(load_template("news.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->News");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->News");
    break;
 
    case 'peers':
    require("$THIS_BASEPATH/peers.php");
    $tpl->set("main_content",set_block($language["MNU_TORRENT"],"center",$peerstpl->fetch(load_template("peers.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Peers");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Peers");
    break;
 
    case 'recover':
    require("$THIS_BASEPATH/recover.php");
    $tpl->set("main_content",set_block($language["RECOVER_PWD"],"center",$recovertpl->fetch(load_template("recover.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Recover");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Recover");
    break;
 
    case 'account':
@@ -251,7 +251,7 @@ switch ($pageID) {
    require("$THIS_BASEPATH/account.php");
    $tpl->set("more_css","<link rel=\"stylesheet\" type=\"text/css\" href=\"$BASEURL/css/passwdcheck.css\" />");
    $tpl->set("main_content",set_block($language["ACCOUNT_CREATE"],"center",$tpl_account->fetch(load_template("account.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Signup");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Signup");
    break;
 
    case 'torrent-details':
@@ -264,50 +264,50 @@ switch ($pageID) {
    case 'users':
    require("$THIS_BASEPATH/users.php");
    $tpl->set("main_content",set_block($language["MEMBERS_LIST"],"center",$userstpl->fetch(load_template("users.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Users");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Users");
    break;
 
    case 'usercp':
    require("$THIS_BASEPATH/user/usercp.index.php");
       // the main_content for current template is setting within users/index.php
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->My Panel");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->My Panel");
    break;
 
    case 'upload':
    require("$THIS_BASEPATH/upload.php");
    $tpl->set("main_content",set_block($language["MNU_UPLOAD"],"center",$uploadtpl->fetch(load_template("$tplfile.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Upload");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Upload");
    break;
 
    case 'userdetails':
    require("$THIS_BASEPATH/userdetails.php");
    $tpl->set("main_content",set_block($language["USER_DETAILS"],"center",$userdetailtpl->fetch(load_template("userdetails.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Users->Details");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Users->Details");
    break;
    
    case 'fav_up':
    require("$THIS_BASEPATH/fav_up.php");
    $tpl->set("main_content",set_block($language["FAV_UP"],"center",$fav_uptpl->fetch(load_template("fav_up.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["FAV_UP"]."");
    break;
 
    case 'fav_up_up':
    require("$THIS_BASEPATH/fav_up_up.php");
    $tpl->set("main_content",set_block($language["FAV_UP_UP"],"center",$fav_up_uptpl->fetch(load_template("fav_up_up.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["FAV_UP"]."");
    break;
 
       // Report users & Torrents by DiemThuy -->
    case 'report':
    require("$THIS_BASEPATH/report.php");
    $tpl->set("main_content",set_block($language["REP_ALLUSERS"],"center",$reporttpl->fetch(load_template("report.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["REP_ALLUSERS"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["REP_ALLUSERS"]."");
    break;
 
    case 'reports':
    require("$THIS_BASEPATH/reports.php");
    $tpl->set("main_content",set_block($language["REP_ADMIN"],"center",$reportstpl->fetch(load_template("reports.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["REP_ADMIN"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["REP_ADMIN"]."");
    break;
 
    case 'takedelreport':
@@ -319,31 +319,31 @@ switch ($pageID) {
    case 'reseed':
    require("$THIS_BASEPATH/reseed.php");
    $tpl->set("main_content",set_block($language["AFR_RESEED"],"center",$torrenttpl->fetch(load_template("reseed.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->reseed");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->reseed");
    break;
       // FM end reseed hack
 
    case 'viewnews':
    require("$THIS_BASEPATH/viewnews.php");
    $tpl->set("main_content",set_block($language["LAST_NEWS"],"center",$viewnewstpl->fetch(load_template("viewnews.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->News");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->News");
    break;
    case 'lottery_tickets':
    require("$THIS_BASEPATH/lottery.tickets.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.tickets.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
    case 'lottery_winners':
    require("$THIS_BASEPATH/lottery.winners.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.winners.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
    case 'lottery_purchase':
    require("$THIS_BASEPATH/lottery.purchase.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.purchase.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
    case 'booted':
@@ -357,13 +357,13 @@ switch ($pageID) {
    case 'warn':
    require("$THIS_BASEPATH/warn.php");
    $tpl->set("main_content",set_block($language["WS_WARN"],"center",$warntpl->fetch(load_template("warn.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["WS_WARN"]);
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["WS_WARN"]);
    break;
 
    case 'warnlog':
    require("$THIS_BASEPATH/warnlog.php");
    $tpl->set("main_content",set_block($language["WS_WARNLOG"],"center",$warnlogtpl->fetch(load_template("warnlog.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["WS_WARNLOG"]);
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["WS_WARNLOG"]);
    break;
 
    case 'rewarn':
@@ -373,63 +373,63 @@ switch ($pageID) {
    case 'downloadcheck':
    require("$THIS_BASEPATH/downloadcheck.php");
    $tpl->set("main_content",set_block($language["DOWNLOAD_CHECK"],"center",$dlchecktpl->fetch(load_template("downloadcheck.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Download Check");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Download Check");
    break;
 
    /*Mod by losmi - rules mod*/
    case 'rules':
    require("$THIS_BASEPATH/rules.php");
    $tpl->set("main_content",set_block($language["RULES"],"center",$text));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Rules");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Rules");
    break;
    /*End mod by losmi rules - mod*/
 
    case 'lottery':
    require("$THIS_BASEPATH/lottery.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Games->Lottery");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Games->Lottery");
    break;
 
    case 'lottery_tickets':
    require("$THIS_BASEPATH/lottery.tickets.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.tickets.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
    case 'lottery_winners':
    require("$THIS_BASEPATH/lottery.winners.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.winners.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
    case 'lottery_purchase':
    require("$THIS_BASEPATH/lottery.purchase.php");
    $tpl->set("main_content",set_block($language["LOTTERY"],"center",$ticketstpl->fetch(load_template("lottery.purchase.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["LOTTERY"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["LOTTERY"]."");
    break;
 
       // betting mod start
    case 'bet':
    require("$THIS_BASEPATH/bet.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$bettpl->fetch(load_template("bet.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betinfo':
    require("$THIS_BASEPATH/bet_info.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betinfotpl->fetch(load_template("bet_info.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betgameinfo':
    require("$THIS_BASEPATH/bet_gameinfo.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betgameinfotpl->fetch(load_template("bet_gameinfo.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betadmin':
    require("$THIS_BASEPATH/bet_admin.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betadmintpl->fetch(load_template("bet_admin.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'bettakeedit':
@@ -455,13 +455,13 @@ switch ($pageID) {
    case 'betopttwee':
    require("$THIS_BASEPATH/bet_opt2.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betopttweetpl->fetch(load_template("bet_opt2.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betodds':
    require("$THIS_BASEPATH/bet_odds.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betoddstpl->fetch(load_template("bet_odds.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betoddstwo':
@@ -479,37 +479,37 @@ switch ($pageID) {
    case 'betcoupon':
    require("$THIS_BASEPATH/bet_coupon.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betcoupontpl->fetch(load_template("bet_coupon.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betoption':
    require("$THIS_BASEPATH/bet_opt.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betopttpl->fetch(load_template("bet_opt.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betbonustop':
    require("$THIS_BASEPATH/bet_bonustop.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betbonustpl->fetch(load_template("bet_bonustop.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betback':
    require("$THIS_BASEPATH/bet_nullbet.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betbacktpl->fetch(load_template("bet_nullbet.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betfinish':
    require("$THIS_BASEPATH/bet_gamefinish.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betfinishtpl->fetch(load_template("bet_gamefinish.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
 
    case 'betfinishtwo':
    require("$THIS_BASEPATH/bet_gamefinish2.php");
    $tpl->set("main_content",set_block($language["BETTING"],"center",$betfintwotpl->fetch(load_template("bet_gamefinish2.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Betting");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Betting");
    break;
       // betting mod end
    /*End Games section*/
@@ -518,7 +518,7 @@ switch ($pageID) {
    case 'banbutton':
    require("$THIS_BASEPATH/banbutton.php");
    $tpl->set("main_content",set_block($language["DTBAN"],"center",$banbuttontpl->fetch(load_template("banbutton.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["DTBAN"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["DTBAN"]."");
    break;
       //end ban button
 
@@ -545,14 +545,14 @@ switch ($pageID) {
    case 'moder':
    require("$THIS_BASEPATH/moder.php");
    $tpl->set("main_content",set_block($language["MODERATE_TORRENT"],"center",$torrenttpl->fetch(load_template("admin.moder.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Torrent->Moderate");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Torrent->Moderate");
    break;
 
       // private history
    case 'allPshout':
    ob_start();
    require("$THIS_BASEPATH/ajaxchat/getHistoryPChatData.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Shout History");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Shout History");
    $out=ob_get_contents();
    ob_end_clean();
    $tpl->set("main_content",set_block($language["SHOUTBOX"]." ".$language["HISTORY"],"left",$out));
@@ -562,7 +562,7 @@ switch ($pageID) {
    case 'Pshout':
    ob_start();
    require("$THIS_BASEPATH/shoutp.php");
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language['SHOUTBOXP']."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language['SHOUTBOXP']."");
    $out=ob_get_contents();
    ob_end_clean();
    $tpl->set("main_content",set_block($language['SHOUTBOXP'],"left",$out));
@@ -571,14 +571,14 @@ switch ($pageID) {
    case 'comment-edit':
    require("$THIS_BASEPATH/commedit.php");
    $tpl->set("main_content",set_block($language["COMMENTS"],"center",$tpl_comment->fetch(load_template("comment.edit.tpl")),false));
-   $tpl->set("main_title",$btit_settings["name"]." .::. ".$language["NCL_COM_EDIT"]);
+   $tpl->set("main_title",$btit_settings["name"]." - ".$language["NCL_COM_EDIT"]);
    break;
 
    /*Mod by losmi - faq mod*/
    case 'faq':
    require("$THIS_BASEPATH/faq.php");
    $tpl->set("main_content",set_block("FAQ","center",$text));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->F.A.Q.");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->F.A.Q.");
    break;
    /*End mod by losmi faq - mod*/
    
@@ -586,7 +586,7 @@ switch ($pageID) {
    case 'bookmark':
    require("$THIS_BASEPATH/bookmark.php");
    $tpl->set("main_content",set_block($language["BOOKMARK"],"center",$bookmarktpl->fetch(load_template("bookmark.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["BOOKMARK"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["BOOKMARK"]."");
    break;
       //end Bookmark
 
@@ -604,7 +604,7 @@ switch ($pageID) {
    case 'user_img':
    require("$THIS_BASEPATH/user_img.php");
    $tpl->set("main_content",set_block($language["UIMG"],"center",$user_imgtpl->fetch(load_template("user_img.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. ".$language["UIMG"]);
+   $tpl->set("main_title",$btit_settings["name"]." - ".$language["UIMG"]);
    break;
       // user images
 
@@ -628,7 +628,7 @@ switch ($pageID) {
    case 'partners':
    require("$THIS_BASEPATH/partners.php");
    $tpl->set("main_content",set_block($language["PARTNERS"],"center",$partnerstpl->fetch(load_template("partners.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["PARTNERS"]);
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["PARTNERS"]);
    break;
       //Partners
 
@@ -647,7 +647,7 @@ switch ($pageID) {
    case 'private':
    require("$THIS_BASEPATH/private.php");
    $tpl->set("main_content",set_block($language["PRIVATE"],"center",$privatetpl->fetch(load_template("private.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Private");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Private");
    break;
 
    case 'agree':
@@ -661,13 +661,13 @@ switch ($pageID) {
    case 'friendlist':
    require("$THIS_BASEPATH/friendlist.php");
    $tpl->set("main_content",set_block($language["FRIENDLIST"],"center",$friendtpl->fetch(load_template("friendlist.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FL_FRIENDLIST"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["FL_FRIENDLIST"]."");
    break;
 
    case 'friends':
    require("$THIS_BASEPATH/friends.php");
    $tpl->set("main_content",set_block($language["FRIENDS"],"center",$friendstpl->fetch(load_template("friends.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FL_FRIENDS"]);
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["FL_FRIENDS"]);
    break;
       //End Social Network DT
 
@@ -676,31 +676,31 @@ switch ($pageID) {
    case 'viewexpected':
    require("$THIS_BASEPATH/viewexpected.php");
    $tpl->set("main_content",set_block($language["viewexpected"],"center",$viewexpectedtpl->fetch(load_template("viewexpected.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'expected':
    require("$THIS_BASEPATH/expected.php");
    $tpl->set("main_content",set_block($language["EXPECTED_V"],"center",$expectedtpl->fetch(load_template("expected.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'expectdetails':
    require("$THIS_BASEPATH/expectdetails.php");
    $tpl->set("main_content",set_block($language["EXPECTED_D"],"center",$expectdetailstpl->fetch(load_template("expectdetails.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'expectedit':
    require("$THIS_BASEPATH/expectedit.php");
    $tpl->set("main_content",set_block($language["EXPECTED_E"],"center",$expectedittpl->fetch(load_template("expectedit.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'votesexpectedview':
    require("$THIS_BASEPATH/votesexpectedview.php");
    $tpl->set("main_content",set_block($language["EXPECTED_VV"],"center",$votesexpectedviewtpl->fetch(load_template("votesexpectedview.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'takeexpect':
@@ -722,7 +722,7 @@ switch ($pageID) {
    case 'offer_comment':
    require("$THIS_BASEPATH/offer_comment.php");
    $tpl->set("main_content",set_block($language["COMMENTS"],"center",$tpl_offer_comment->fetch(load_template("offer_comment.tpl")),false));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected->Comment");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected->Comment");
    break;
 
       // offer/expected end
@@ -732,7 +732,7 @@ switch ($pageID) {
    case 'votesexpectedviewmin':
    require("$THIS_BASEPATH/votesexpectedviewmin.php");
    $tpl->set("main_content",set_block($language["EXPECTED_VV"],"center",$votesexpectedviewtpl->fetch(load_template("votesexpectedviewmin.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Expected");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Expected");
    break;
 
    case 'addexpectedmin':
@@ -762,7 +762,7 @@ switch ($pageID) {
    case 'uploadrequest':
    require("$THIS_BASEPATH/uploadrequest.php");
    $tpl->set("main_content",set_block($language["ULR"],"center",$uploadrequesttpl->fetch(load_template("uploadrequest.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["ULR"]."");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->".$language["ULR"]."");
    break;
 
    case 'uploadrequest2':
@@ -786,7 +786,7 @@ switch ($pageID) {
    case 'seedbox':
    require("$THIS_BASEPATH/seedbox.php");
    $tpl->set("main_content",set_block($language["SEEDBOX"],"center",$seedboxtpl->fetch(load_template("seedbox.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->seedbox");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->seedbox");
    break;
          //Seedbox
 
@@ -805,32 +805,12 @@ switch ($pageID) {
    $tpl->set("main_title","Index->Contact");
    break;
          // contact end
-   
-		// New Tables Layout
-   case 'my_uploads':
-   require("$THIS_BASEPATH/my_uploads.php");
-   $tpl->set("main_content",set_block($language["UPLOAD_TABLE"],"center",$my_uploadstpl->fetch(load_template("my_uploads.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-   
-   case 'active':
-   require("$THIS_BASEPATH/active.php");
-   $tpl->set("main_content",set_block($language["ACTIVE_TABLE"],"center",$activetpl->fetch(load_template("active.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-   
-   case 'snatched':
-   require("$THIS_BASEPATH/history.php");
-   $tpl->set("main_content",set_block($language["HISTORY_TABLE"],"center",$historytpl->fetch(load_template("history.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->".$language["FAV_UP"]."");
-   break;
-        // New Tables Layout End
 
          //Donate Page
    case 'donate_options': 
    require("$THIS_BASEPATH/donate_options.php");
    $tpl->set("main_content",set_block($language["DONATE"],"center",$donateotpl->fetch(load_template("donate_options.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->Donate");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->Donate");
    break;
          //Donate Page End
 
@@ -838,7 +818,7 @@ switch ($pageID) {
    case 'irc': 
    require("$THIS_BASEPATH/irc.php");
    $tpl->set("main_content",set_block($language["IRC"],"center",$irctpl->fetch(load_template("irc.tpl"))));
-   $tpl->set("main_title",$btit_settings["name"]." .::. "."Index->IRC");
+   $tpl->set("main_title",$btit_settings["name"]." - "."Index->IRC");
    break;
          //IRC Page End
 
