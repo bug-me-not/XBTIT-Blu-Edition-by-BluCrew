@@ -557,6 +557,25 @@ $w(document).ready(function() {
 </tr>
 <!-- UPLOAD DESCRIPTION END -->
 
+<!-- SCREEN SHOTS START -->
+<if:imageup_enabled2>
+<if:screenon>
+<tr>
+   <td class="header"><tag:language.SCREEN /> (<tag:language.FACOLTATIVE />):</td>
+   <td class="lista">
+      <table class="lista" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="lista" align="left"><input type="file" name="screen1" class="btn btn-primary btn-anchor" size="5" /></td>
+            <td class="lista" align="left"><input type="file" name="screen2" class="btn btn-primary btn-anchor" size="5" /></td>
+            <td class="lista" align="left"><input type="file" name="screen3" class="btn btn-primary btn-anchor" size="5" /></td>
+         </tr>
+      </table>
+   </td>
+</tr>
+</if:screenon>
+</if:imageup_enabled2>
+<!-- SCREEN SHOTS END -->
+
 <!-- STICKY TORRENT START -->
 <if:sticky_enabled>
 <if:LEVEL_OK>

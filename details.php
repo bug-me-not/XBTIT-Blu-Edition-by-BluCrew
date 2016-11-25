@@ -442,6 +442,50 @@ else
 $title2 = $row["filename"]." at ".$btit_settings["name"];
 $torrenttpl->set("language",$language);
 
+// SCREEN SHOTS //
+$torrenttpl->set("imageup_enabled",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
+$torrenttpl->set("imageup_enabled2",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
+$torrenttpl->set("imageup_enabled3",(($btit_settings["fmhack_torrent_image_upload"]=="enabled")?true:false),true);
+if($btit_settings["fmhack_torrent_image_upload"]=="enabled")
+{
+   $torrenttpl->set("IMAGEIS",!empty($row["image"]),TRUE);
+   $torrenttpl->set("IMAGESC",FALSE);
+   $torrenttpl->set("IMAGESC",!empty($row["screen1"]) OR !empty($row["screen2"])OR !empty($row["screen3"]) ,TRUE);
+   $torrenttpl->set("SCREENIS1",!empty($row["screen1"]),TRUE);
+   $torrenttpl->set("SCREENIS2",!empty($row["screen2"]),TRUE);
+   $torrenttpl->set("SCREENIS3",!empty($row["screen3"]),TRUE);
+   if (!empty($row["image"]) && file_exists(($GLOBALS["uploaddir"].$row["image"])))
+   {
+      $image1 = $row["image"];
+      $uploaddir = $GLOBALS["uploaddir"];
+      $torrenttpl->set("uploaddir",$uploaddir);
+         $image_new = $uploaddir.$image1; //url of picture
+         //$image_new = str_replace(' ','%20',$image_new); //take url and replace spaces
+         $max_width= "490"; //maximum width allowed for pictures
+         $resize_width= "490"; //same as max width
+         $size = @getimagesize("$image_new"); //get the actual size of the picture
+         $width= $size[0]; // get width of picture
+         $height= $size[1]; // get height of picture
+         if ($width>$max_width)
+         $new_width=$resize_width; // Resize Image If over max width
+      else
+         $new_width=$width; // Keep original size from array because smaller than max
+      $torrenttpl->set("width",$new_width);
+   }
+   else
+   {
+      $torrenttpl->set("uploaddir","");
+   }
+}
+else
+{
+   $torrenttpl->set("IMAGEIS",FALSE,TRUE);
+   $torrenttpl->set("SCREENIS1",FALSE,TRUE);
+   $torrenttpl->set("SCREENIS2",FALSE,TRUE);
+   $torrenttpl->set("SCREENIS3",FALSE,TRUE);
+}
+// SCREEN SHOTS END //
+
    // Temp Fix
 $torrenttpl->set("SHOW_UPLOADER",true,true);
    //
