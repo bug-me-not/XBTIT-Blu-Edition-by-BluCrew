@@ -158,13 +158,37 @@ class api
                 }
             }
 
-            if(count(getcdart()) != 0)
+            if(count(getDiscArt()) != 0)
             {
                 if($this->fanart_imdb_data->isMoviesEmpty())
                 {
                     if($this->fanart_imdb_data->fetch())
                     {
+                        $fcdart = $this->fanart_imdb_data->getmoviedisc();
+                        $fcount = count($fcdart);
 
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart");
+
+                        if($fcount > 0)
+                        {
+                            foreach($fcdart as $files)
+                            {
+                                $imagefile = explode("/", $files);
+                                $LastImageKey = (count($imagefile) - 1);
+
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]))
+                                {
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -173,7 +197,31 @@ class api
                 }
                 else
                 {
+                    $fcdart = $this->fanart_imdb_data->getmoviedisc();
+                    $fcount = count($fcdart);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart");
+
+                    if($fcount > 0)
+                    {
+                        foreach($fcdart as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $LastImageKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]);
+                            }
+                        }
+                    }
                 }
             }
 
@@ -326,6 +374,11 @@ class api
                 {
                     $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
                 }
+            }
+
+            if()
+            {
+
             }
         }
 
