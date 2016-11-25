@@ -372,7 +372,7 @@ class api
             {
                 if($this->fanart_tvdb_data->isTVEmpty())
                 {
-                    if($this->fanart_tvdb_data->fetch())
+                    if($this->fanart_tvdb_data->fetch(TRUE))
                     {
 
                     }
@@ -405,7 +405,21 @@ class api
 
             if(count(getBackground()) != 0)
             {
+                if($this->fanart_tvdb_data->isTVEmpty())
+                {
+                    if($this->fanart_tvdb_data->fetch(TRUE))
+                    {
 
+                    }
+                    else
+                    {
+                        //Error fetching data form Fanart
+                    }
+                }
+                else
+                {
+
+                }
             }
         }
     }
