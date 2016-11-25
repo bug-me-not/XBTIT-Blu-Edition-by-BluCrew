@@ -231,7 +231,31 @@ class api
                 {
                     if($this->fanart_imdb_data->fetch())
                     {
+                        $fbackground = $this->fanart_imdb_data->getmoviebackground();
+                        $bcount = count($fbackground);
 
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background");
+
+                        if($bcount > 0)
+                        {
+                            foreach($fbanners as $files)
+                            {
+                                $imagefile = explode("/", $files);
+                                $LastImageKey = (count($imagefile) - 1);
+
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]))
+                                {
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -240,7 +264,31 @@ class api
                 }
                 else
                 {
+                    $fbackground = $this->fanart_imdb_data->getmoviebackground();
+                    $bcount = count($fbackground);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background");
+
+                    if($bcount > 0)
+                    {
+                        foreach($fbanners as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $LastImageKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]);
+                            }
+                        }
+                    }
                 }
             }
         }
