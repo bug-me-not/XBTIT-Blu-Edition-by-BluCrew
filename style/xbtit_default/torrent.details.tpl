@@ -412,8 +412,8 @@ function dt_show_waitb()
    <td class="lista" align="left">
       <form action="thanks.php" method="post" onsubmit="return false">
          <div id="thanks_div" name="thanks_div" style="display:block;"></div>
-         <div id="loading" name="loading" style="display:none;"><img src="images/ajax-loader.gif" alt="" title="ajax-loader" /></div>
-         <input type="button" id="ty" disabled="disabled" class="btn btn-primary btn-sm" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />')" />
+         <div id="loading" name="loading" style="display:none;"><img src="images/loader.gif" alt="" title="ajax-loader" /></div>
+         <input type="button" id="ty" disabled="disabled" class="btn btn-primary btn-sm" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />');thank_success();" />
       </form>
       <script type="text/javascript">ShowThank('<tag:torrent.info_hash />');</script>
    </td>
@@ -649,7 +649,9 @@ function dt_show_waitb()
    </div>
    <div class="modal-footer">
       <button class="btn btn-default" data-dismiss="modal">Close</button>
-      <a href="<tag:uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</button></a>
+      <a href="<tag:uploaddir /><tag:torrent.screen1 />" button class="btn btn-primary">View Full Res</a>
+      <a href="<tag:uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</a>
+
    </div>
    </div>
    </div>
