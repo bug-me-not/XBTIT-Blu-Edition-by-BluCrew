@@ -370,7 +370,37 @@ class api
 
             if(getPosterData() == $GLOBALS["uploaddir"]."nocover.jpg")
             {
+                if($this->fanart_tvdb_data->isTVEmpty())
+                {
+                    if($this->fanart_tvdb_data->fetch())
+                    {
 
+                    }
+                    else
+                    {
+                        //Error fetching data from Fanart
+                    }
+                }
+                else
+                {
+
+                }
+
+                if($this->tvdb_data->isDataEmpty())
+                {
+                    if($this->tvdb_data->fetch())
+                    {
+
+                    }
+                    else
+                    {
+                        //Error fetching data from TVDB
+                    }
+                }
+                else
+                {
+
+                }
             }
 
             if(count(getBackground()) != 0)
