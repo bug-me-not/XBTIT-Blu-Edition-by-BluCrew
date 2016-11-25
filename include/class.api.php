@@ -273,6 +273,11 @@ class api
             {
 
             }
+
+            if(count(getBackground()) != 0)
+            {
+
+            }
         }
     }
 
