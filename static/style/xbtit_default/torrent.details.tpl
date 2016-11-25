@@ -287,6 +287,7 @@ function dt_show_waitb()
    <ul class="nav nav-tabs">
      <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
+     <li class=""><a href="#screens" data-toggle="tab">Screen Shots</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
      <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
@@ -598,8 +599,7 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
-<p class="text-danger">Staff Moderation</p>
-<if:MOD><tag:mod_task /></if:MOD>  
+<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>  
 </div>
 </div>
 </div> <!-- Tab End -->
@@ -620,6 +620,41 @@ function dt_show_waitb()
 <tag:torrent.description />
 </div>
 </div>
+</div> <!-- Tab End -->
+
+<div role="tabpanel" class="tab-pane fade" id="screens"><!-- Tab Start -->
+<if:IMAGESC>
+<div class="container-fluid">
+<div class="row">
+      <if:SCREENIS1>
+      <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS1>
+      <if:SCREENIS2>
+      <div class="col-md-4"><a href="#" title="Image 2"><img src="<tag:uploaddir /><tag:torrent.screen2 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS2>
+      <if:SCREENIS3>
+      <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS3>
+    </div>
+  </div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-title"><tag:language.SCREEN /></h3>
+   </div>
+   <div class="modal-body">
+      
+   </div>
+   <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal">Close</button>
+      <a href="<tag:uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</button></a>
+   </div>
+   </div>
+   </div>
+  </div>
+  </if:IMAGESC> 
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->

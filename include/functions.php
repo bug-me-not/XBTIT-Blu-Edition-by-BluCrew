@@ -528,15 +528,15 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $language;
          if($unboot)
          {
-            $bootpic = "booted.gif";
+            $bootpic = "fa fa-lock";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $bootpic = "booted.gif";
+            $bootpic = "fa fa-lock";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pic = $arr["booted"] == "yes"?"<img title=\"".$language['BOOT_DISABLED']."\" src=\"images/$bootpic\" alt=\"".$language['BOOT_DISABLED']."\" border=\"0\" $style />":"";
+         $pic = $arr["booted"] == "yes"?"<i class=\"$bootpic\" title=\"".$language['BOOT_DISABLED']."\" aria-hidden=\"true\" $style /></i>":"";
          return $pic;
       }
 // <-- booted
@@ -546,15 +546,15 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $language;
          if($big)
          {
-            $warnpic = "warn.gif";
+            $warnpic = "fa fa-exclamation-circle";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $warnpic = "warn.gif";
+            $warnpic = "fa fa-exclamation-circle";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pics = $arr["warn_lev"] > 0?"<img title=\"".$language['WS_WARNED_USER']."\" src=\"images/$warnpic\" alt=\"".$language['WS_WARNED_USER']."\" border=\"0\" $style />":"";
+         $pics = $arr["warn_lev"] > 0?"<i class=\"$warnpic\" title=\"".$language['WS_WARNED_USER']."\" aria-hidden=\"true\" $style /></i> ":"";
          return $pics;
       }
 // <-- Warning System
@@ -1974,15 +1974,15 @@ function sqlerr($file = '', $line = '')
       {
          if($big)
          {
-            $donorpic = "donor_big.gif";
+            $donorpic = "fa fa-star";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $donorpic = "donor.gif";
+            $donorpic = "fa fa-star";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pics = $arr["donor"] == "yes"?"<img title=\"Donor\" src=\"images/$donorpic\" alt=\"Donor\" border=\"0\" $style />":"";
+         $pics = $arr["donor"] == "yes"?"<i class=\"$donorpic\" title=\"Donor\" aria-hidden=\"true\" $style /></i>":"";
          return $pics;
       }
       function get_combodt($select, $opts = array())

@@ -80,15 +80,15 @@ else
             {
                 if  ($fetch_U["up_med"] >= $btit_settings["UPB"] AND $fetch_U["up_med"] < $btit_settings["UPS"])
                 {
-                    $upr= "<img src='images/goblet/medaille_bronze.gif' alt='".$language["UM_BRONZE"]."' title='".$language["UM_BRONZE"]."' />";
+                    $upr= "<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"BRONZE MEDAL\" /></i>";
                 }
                 if ($fetch_U["up_med"] >= $btit_settings["UPS"] AND $fetch_U["up_med"] < $btit_settings["UPG"])
                 {
-                    $upr= "<img src='images/goblet/medaille_argent.gif' alt='".$language["UM_SILVER"]."' title='".$language["UM_SILVER"]."' />";
+                    $upr= "<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"SILVER MEDAL\" />";
                 }
                 elseif ($fetch_U["up_med"] >= $btit_settings["UPG"])
                 {
-                    $upr= "<img src='images/goblet/medaille_or.gif' alt='".$language["UM_GOLD"]."' title='".$language["UM_GOLD"]."' />";
+                    $upr= "<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"GOLD MEDAL\" />";
                 }
                 else
                 {

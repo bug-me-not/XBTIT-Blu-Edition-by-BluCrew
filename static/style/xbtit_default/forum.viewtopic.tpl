@@ -41,11 +41,11 @@
                 <tag:posts[].avatar />
                 <br /><br />
                 
-      			 <img src="images/arany.png">&nbsp;<tag:posts[].ratio />
+      			 <i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;<tag:posts[].ratio />
                  <br />
-                 <img src="images/speed_up.png">&nbsp;<tag:posts[].uploaded />
+                 <i class="fa fa-upload" aria-hidden="true"></i>&nbsp;<tag:posts[].uploaded />
                 <br />
-                 <img src="images/speed_down.png">&nbsp;<tag:posts[].downloaded /><br />
+                 <i class="fa fa-download" aria-hidden="true"></i></i>&nbsp;<tag:posts[].downloaded /><br />
                 <br />       <tag:language.POSTS />:&nbsp;<tag:posts[].posts />
                 <br />
                 &nbsp;<tag:posts[].online />&nbsp;

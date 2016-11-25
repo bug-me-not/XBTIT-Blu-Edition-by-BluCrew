@@ -17,12 +17,12 @@
 
 
 html{
-	background:url('../../img/bg_tile.jpg') #161718;
+	background:url('../img/bg_tile.jpg') #161718;
 }
 
 body{
-	background:url('../../img/bg_center.jpg') no-repeat center center;
-    padding: 200px 0 0;
+	background:url('../img/bg_center.jpg') no-repeat center center;
+    padding: 150px 0 0;
 	font:14px/1.3 'Segoe UI',Arial, sans-serif;
 }
 
@@ -109,12 +109,12 @@ img{
 }
 
 #login{
-	background:url('../../img/login_form_bg.jpg') no-repeat;
+	background:url('../img/login_form_bg.jpg') no-repeat;
 	z-index:100;
 }
 
 #recover{
-	background:url('../../img/recover_form_bg.jpg') no-repeat;
+	background:url('../img/recover_form_bg.jpg') no-repeat;
 	z-index:1;
 	opacity:0;
 	
@@ -178,7 +178,7 @@ img{
 	width:98px;
 	height:16px;
 	content:'';
-	background:url('../../img/click_here.png') no-repeat;
+	background:url('../img/click_here.png') no-repeat;
 	position:absolute;
 	right:-120px;
 	top:22px;

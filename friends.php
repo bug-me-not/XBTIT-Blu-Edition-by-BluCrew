@@ -88,10 +88,10 @@ if(count($name) > 0)
             $friend[$i]["online_img"] = "images/o".((time() - $lastseen > 900)?"ff":"n")."line.gif";
             $friend[$i]["online_alt"] = $language["FL_O".((time() - $lastseen > 900)?"FF":"N")."LINE"];
             $friend[$i]["id"] = $row["id"];
-            $friend[$i]["avatar"] = ($row[(($type == 1)?"user":"friend")."_avatar"] && $row[(($type == 1)?"user":"friend")."_avatar"] != ""?htmlspecialchars($row[(($type == 1)?"user":"friend")."_avatar"]):htmlspecialchars($STYLEURL."/images/default_avatar.gif"));
+            $friend[$i]["avatar"] = ($row[(($type == 1)?"user":"friend")."_avatar"] && $row[(($type == 1)?"user":"friend")."_avatar"] != ""?htmlspecialchars($row[(($type == 1)?"user":"friend")."_avatar"]):htmlspecialchars("/avatar/default_avatar.gif"));
             $friend[$i]["name"] = ("<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated_user"]=="true")?$id."_".strtr($username, $res_seo["str"], $res_seo["strto"]).".html":"index.php?page=userdetails&id=".$id)."'>".unesc($row[(($type == 1)?"user":"friend")."_prefixcolor"].$row[(($type == 1)?"user":"friend")."_username"].$row[(($type == 1)?"user":"friend")."_suffixcolor"])."</a>");
             $friend[$i]["level"] = $row[(($type == 1)?"user":"friend")."_level"];
-            $friend[$i]["acces"] = date("d/m/Y H:i:s", $row['friend_date']);
+            $friend[$i]["acces"] = date("m/d/Y", $row['friend_date']);
             $i++;
         }
     }

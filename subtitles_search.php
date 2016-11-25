@@ -47,7 +47,12 @@ $num2 = $subnum[0];
 
 if ($num2 == 0)
 {
-    stderr("Sorry", $language['SUBS_EMPTY_STD']);
+    "<div class=\"alert alert-dismissable alert-bg-white alert-danger\">
+    <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+    <div class=\"icon\"><i class=\"fa fa-times\"></i></div>
+    <strong>".$language['SUBS_EMPTY_STD']."</strong>
+    </div>
+    </div>"
 }
 
 $perpage = (max(0, $CURUSER["torrentsperpage"]) > 0 ? $CURUSER["torrentsperpage"] :

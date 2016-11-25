@@ -16,18 +16,11 @@
 <!-- #CSS Links -->
 <!-- Main Bootstrap Style  -->
 <link rel="stylesheet" type="text/css" href="<tag:main_css />">
-<!-- jasny-bootstrap -->
-<link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
-<!-- alertify Dialogs -->
-<link rel="stylesheet" href="assets/plugins/alertify/css/alertify.core.css" />
-<link rel="stylesheet" href="assets/plugins/alertify/css/alertify.default.css" id="toggleCSS" />
 <!-- #GOOGLE FONT -->
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="font-awesome-4.5-2.0/css/font-awesome.min.css" type='text/css'>
-<!-- Bootstrap Switch -->
-<link href="assets/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet">
 <!-- Bootstrap Icheck -->
 <link href="assets/plugins/iCheck-master/skins/all.css" rel="stylesheet">
 <!-- bootstrap-datetimepicker -->
@@ -42,15 +35,6 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/plugins/alertify/js/alertify.js"></script>
-
-<!-- Bootstrap Switch JS -->
-<script type="text/javascript" src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-<script type="text/javascript">
-  jQuery(function($) {
-  $('input[name="my-checkbox"]').bootstrapSwitch();
-  });
-</script>
     
 <!-- #DATE Range Picker -->
       <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
@@ -388,12 +372,12 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
           <div class="panel-body">
             <center>
               <p>Made with <i class="fa fa-fw fa-magic"></i> by <a href="#">BluCrew</a></p>
-              <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition by BluCrew</p>
+              <p class="text-success">Copyright &copy; 2016 XBTIT Blu Edition v1.0 by BluCrew</p>
               <p class="text-success">Copyright &copy; 2016 Styled By BluCrew</p>
               <p class="text-danger"><tag:xbtit_debug /></p>
               <a class="btn btn-lg btn-success" href="https://fortawesome.github.io/Font-Awesome/"><i class="fa fa-fort-awesome fa-2x pull-left" aria-hidden="true"></i> Font Awesome Version 4.6.1</a>&nbsp;&nbsp;
               <a class="btn btn-lg btn-primary" href="https://getbootstrap.com"><i class="fa fa-css3 fa-2x pull-left" aria-hidden="true"></i> Bootstrap Version 3.3.6</a>
-              <p class="text-danger">SITENAME is best viewed with the following browsers</p>
+              <p class="text-danger">This site is best viewed with the following browsers</p>
               <button class="btn btn-primary btn-circle btn-lg" type="button"><i class="fa fa-safari"></i></button>
               <button class="btn btn-warning btn-circle btn-lg" type="button"><i class="fa fa-firefox"></i></button>
               <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-chrome"></i></button>
@@ -405,5 +389,12 @@ q('#ann').load('ann.php?ignoreMe=' + new Date().getTime()).fadeIn("slow");
   </div>
 </footer>
 </if:valid_user>
+<if:anon_enabled>
+  <script src="<tag:protected />/jscript/anon.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  protected_links = "<tag:protected />";
+  auto_anonymize();
+  </script>
+</if:anon_enabled>
 </body>
 </html>
