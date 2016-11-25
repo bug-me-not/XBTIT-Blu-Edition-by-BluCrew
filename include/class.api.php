@@ -15,19 +15,14 @@ class api
 {
 
     private $imdb;
-
     private $tvdb;
-
     private $infohash;
 
     private $tvdb_api_key;
-
     private $fanart_api_key;
 
     private $fanart_imdb_data;
-
     private $fanart_tvdb_data;
-
     private $tvdb_data;
 
     function __construct($tvdb_api, $fanart_api, $imdb = 0, $tvdb = 0, $infohash = "")
