@@ -1169,8 +1169,10 @@ $sres->free();
    //Gift BON to Uploader Hack
 
 //API Section
-   $torrenttpl->set("omdb_genre",getOMDBData($row['imdb'])->genre);
-   $torrenttpl->set("omdb_rating",getOMDBData($row['imdb'])->imdbRating);
+   $torrenttpl->set("omdb_genre", getOMDBData($row['imdb'])->genre);
+   $torrenttpl->set("omdb_rating", getOMDBData($row['imdb'])->imdbRating);
+   $torrenttpl->set("omdb_website", getOMDBData($row['imdb'])->website);
+   $torrenttpl->set("omdb_movie_name", getOMDBData($row['imdb'])->title);
 
    $torrenttpl->set("banner","");
 

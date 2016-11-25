@@ -312,7 +312,7 @@ function dt_show_waitb()
          <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
       </span>
       <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/<tag:torrent.imdb />">IMDB</a></button>
-      <button class="btn btn-sm btn-default" type="button"><a href="OMDB WEBSITE TAG">Website</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="<tag:omdb_website />">Website</a></button>
     </div>
   </div>
 </div>
@@ -688,7 +688,7 @@ function dt_show_waitb()
   <div class="modal-content">
    <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">×</button>
-      <h3 class="modal-title">OMDB MOVIE NAME TAG</h3>
+      <h3 class="modal-title"><tag:omdb_movie_name /></h3>
    </div>
    <div class="modal-body">
 
