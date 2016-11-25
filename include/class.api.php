@@ -345,6 +345,9 @@ class api
                     if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb))
                         mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
 
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners"))
+                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners");
+
                     if($bcount > 0)
                     {
                         foreach($tbanners as $files)
