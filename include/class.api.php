@@ -73,7 +73,31 @@ class api
                 {
                     if($this->fanart_imdb_data->fetch())
                     {
+                        $fbanners = $this->fanart_imdb_data->getmoviebanner();
+                        $bcount = count($fbanners);
 
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb".$this->imdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners");
+
+                        if($bcount > 0)
+                        {
+                            foreach($fbanners as $files)
+                            {
+                                $imagefile = explode("/", $files);
+                                $LastImageKey = (count($imagefile) - 1);
+
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners/".$imagefile[$LastImageKey]))
+                                {
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb".$this->imdb."/banners/".$imagefile[$LastImageKey]);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -151,7 +175,7 @@ class api
                         foreach($fbanners as $files)
                         {
                             $imagefile = explode("/", $files);
-                            $FileLastKey = (count($imageFile) - 1);
+                            $FileLastKey = (count($imagefile) - 1);
 
                             if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners/".$imagefile[$FileLastKey]))
                             {
