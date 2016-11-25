@@ -301,13 +301,13 @@ class api
                     $fcount = count($fbanners);
 
                     if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
-                        mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
+                    mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
 
                     if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
-                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
 
                     if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners"))
-                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners");
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners");
 
                     if($fcount > 0)
                     {
@@ -335,13 +335,13 @@ class api
                     $bcount = count($tbanners);
 
                     if(!file_exists($THIS_BASEPATH."/images/thetvdb"))
-                        mkdir($THIS_BASEPATH."/images/thetvdb");
+                    mkdir($THIS_BASEPATH."/images/thetvdb");
 
                     if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb))
-                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
+                    mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
 
                     if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners"))
-                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners");
+                    mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners");
 
                     if($bcount > 0)
                     {
@@ -369,7 +369,31 @@ class api
                 {
                     if($this->fanart_tvdb_data->fetch(TRUE))
                     {
+                        $fposters = $this->fanart_tvdb_data->gettvposter();
+                        $pcount = count($fposters);
 
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters"))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters");
+
+                        if($pcount > 0)
+                        {
+                            foreach($fposters as $files)
+                            {
+                                $imagefile = explode("/", $files);
+                                $FileLastKey = (count($imagefile) - 1);
+
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                                {
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -378,14 +402,55 @@ class api
                 }
                 else
                 {
+                    $fposters = $this->fanart_tvdb_data->gettvposter();
+                    $pcount = count($fposters);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters"))
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters");
+
+                    if($pcount > 0)
+                    {
+                        foreach($fposters as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $FileLastKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                            }
+                        }
+                    }
                 }
 
                 if($this->tvdb_data->isDataEmpty())
                 {
                     if($this->tvdb_data->fetch())
                     {
+                        $tposter = $this->tvdb_data->getposter();
 
+                        if(!file_exists($THIS_BASEPATH."/images/thetvdb"))
+                        mkdir($THIS_BASEPATH."/images/thetvdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb))
+                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters"))
+                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters");
+
+                        $imagefile = explode("/", $tposter);
+                        $FileLastKey = (count($imagefile) - 1);
+
+                        if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                        {
+                            save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                        }
                     }
                     else
                     {
@@ -394,7 +459,24 @@ class api
                 }
                 else
                 {
+                    $tposter = $this->tvdb_data->getposter();
 
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb"))
+                    mkdir($THIS_BASEPATH."/images/thetvdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb))
+                    mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters"))
+                    mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters");
+
+                    $imagefile = explode("/", $tposter);
+                    $FileLastKey = (count($imagefile) - 1);
+
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                    {
+                        save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                    }
                 }
             }
 
@@ -404,7 +486,31 @@ class api
                 {
                     if($this->fanart_tvdb_data->fetch(TRUE))
                     {
+                        $fbackground = $this->fanart_tvdb_data->getshowbackground();
+                        $bcount = count($fbackground);
 
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
+
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background"))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background");
+
+                        if($bcount > 0)
+                        {
+                            foreach($fbackground as $files)
+                            {
+                                $imagefile = explode("/", $files);
+                                $FileLastKey = (count($imagefile) - 1);
+
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]))
+                                {
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -413,7 +519,31 @@ class api
                 }
                 else
                 {
+                    $fbackground = $this->fanart_tvdb_data->getshowbackground();
+                    $bcount = count($fbackground);
 
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
+                    mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
+
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background"))
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background");
+
+                    if($bcount > 0)
+                    {
+                        foreach($fbackground as $files)
+                        {
+                            $imagefile = explode("/", $files);
+                            $FileLastKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]);
+                            }
+                        }
+                    }
                 }
             }
         }
