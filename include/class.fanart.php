@@ -120,6 +120,38 @@ class fanart
       return $temp;
    }
 
+   public function getmoviecdart()
+   {
+       $cdart = $this->decode_json($this->movies)['moviedisc'];
+       $temp = array();
+
+       $count = ((count($cdart) > 4) ? 4 : count($cdart));
+
+       for($i = 0; $i < $count; $i++)
+       {
+           if($cdart['$i']['lang'] == 'en')
+           $temp[] = $cdart[$i]['url'];
+       }
+
+       return $temp;
+   }
+
+   public function getmoviebackground()
+   {
+       $background = $this->decode_json($this->movies)['moviebackground'];
+       $temp = array();
+
+       $count = ((count($background) > 2) ? 2 : count($background));
+
+       for($i = 0; $i < $count; $i++)
+       {
+           if($background[$i]['moviebackground'] == 'en')
+           $temp[] = $background[$i]['moviebackground'];
+       }
+
+       return $temp;
+   }
+
    public function gettvposter()
    {
        $bann = $this->decode_json($this->tv)['tvposter'];
@@ -152,33 +184,17 @@ class fanart
       return $temp;
    }
 
-   public function getcdart()
+   public function gettvbackground()
    {
-       $cdart = $this->decode_json($this->movies)['moviedisc'];
+       $bann = $this->decode_json($this->tv)['showbackground'];
        $temp = array();
 
-       $count = ((count($cdart) > 4) ? 4 : count($cdart));
+       $count = ((count($bann) > 2) ? 2 : count($bann));
 
        for($i = 0; $i < $count; $i++)
        {
-           if($cdart['$i']['lang'] == 'en')
-           $temp[] = $cdart[$i]['url'];
-       }
-
-       return $temp;
-   }
-
-   public function getbackground()
-   {
-       $background = $this->decode_json($this->movies)['moviebackground'];
-       $temp = array();
-
-       $count = ((count($background) > 2) ? 2 : count($background));
-
-       for($i = 0; $i < $count; $i++)
-       {
-           if($background[$i]['moviebackground'] == 'en')
-           $temp[] = $background[$i]['moviebackground'];
+           if($bann[$i]['lang'] == 'en')
+           $temp[] = $bann[$i]['url'];
        }
 
        return $temp;
