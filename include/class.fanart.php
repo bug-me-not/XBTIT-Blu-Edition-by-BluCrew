@@ -88,7 +88,7 @@ class fanart
       return $temp['thetvdb_id'];
    }
 
-   public function getposter()
+   public function getmovieposter()
    {
        $poster = $this->decode_json($this->movies)[''];
        $temp = array();
