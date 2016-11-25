@@ -120,7 +120,7 @@ class fanart
       return $temp;
    }
 
-   public function getmoviecdart()
+   public function getmoviedisc()
    {
        $cdart = $this->decode_json($this->movies)['moviedisc'];
        $temp = array();
@@ -184,7 +184,7 @@ class fanart
       return $temp;
    }
 
-   public function gettvbackground()
+   public function getshowbackground()
    {
        $bann = $this->decode_json($this->tv)['showbackground'];
        $temp = array();
