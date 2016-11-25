@@ -598,8 +598,7 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
-<p class="text-danger">Staff Moderation</p>
-<if:MOD><tag:mod_task /></if:MOD>  
+<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>  
 </div>
 </div>
 </div> <!-- Tab End -->
