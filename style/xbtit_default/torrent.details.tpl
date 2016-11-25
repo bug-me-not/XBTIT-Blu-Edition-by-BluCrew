@@ -311,7 +311,7 @@ function dt_show_waitb()
          <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
          <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
       </span>
-      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/<tag:torrent.imdb />">IMDB</a></button>
       <button class="btn btn-sm btn-default" type="button"><a href="OMDB WEBSITE TAG">Website</a></button>
     </div>
   </div>
