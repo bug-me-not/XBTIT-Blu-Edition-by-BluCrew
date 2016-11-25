@@ -17,22 +17,16 @@
 global $CURUSER, $XBTT_USE, $TABLE_PREFIX, $btit_settings, $language, $INVITATIONSON, $FORUMLINK, $db_prefix, $btit_settings, $ipb_prefix;
 
 // DT Uploader Medals
-$resuser=do_sqlquery("SELECT  trophy, reputation , up_med FROM {$TABLE_PREFIX}users WHERE id =".$CURUSER['uid']);
-$rowuser= $resuser->fetch_array();
-
-if ($rowuser["up_med"] == 0)
-$upr="";
-
-if ($rowuser["up_med"] == 1)
-$upr= "<img src='images/goblet/medaille_bronze.gif' alt='Bronze Medal' title='Bronze Medal' />";
-
-if ($rowuser["up_med"] == 2)
-$upr= "<img src='images/goblet/medaille_argent.gif' alt='Silver Medal' title='Silver Medal' />";
-
-if ($rowuser["up_med"] >= 3)
-$upr= "<img src='images/goblet/medaille_or.gif' alt='Gold Medal' title='Gold Medal' />";
-// DT Uploader Medals
-
+if($btit_settings["fmhack_uploader_medals"]=="enabled")
+    {
+        if ($CURUSER["up_med"] >= $btit_settings["UPB"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"BRONZE MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPS"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"SILVER MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPG"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"GOLD MEDAL\" /></i>";
+    }
+// DT Uploader Medals END
 
 // user image
 $do=$btit_settings["img_don"];
@@ -124,7 +118,7 @@ $usys= "&nbsp;<img src='images/user_images/" . $sy . "' alt='" . $btit_settings[
 // user image
 
 
-print("<td style=\"text-align:left;\" align=\"left\"><a href='index.php?page=userdetails&id=".$CURUSER["uid"]."'> " . user_with_color($CURUSER["username"],$CURUSER["prefixcolor"],$CURUSER["suffixcolor"]) . get_user_icons($CURUSER) . warn($CURUSER). $rra .$upr.$udo.$udob.$ubir.$umal.$ufem.$uban.$uwar.$upar.$ubot.$utrmu.$utrmo.$uvimu.$uvimo.$ufrie.$ujunk.$ustaf.$usys." </a></td>");
+print("<td style=\"text-align:left;\" align=\"left\"><a href='index.php?page=userdetails&id=".$CURUSER["uid"]."'> " . user_with_color($CURUSER["username"],$CURUSER["prefixcolor"],$CURUSER["suffixcolor"]) . get_user_icons($CURUSER) . warn($CURUSER).$up_med.$rra.$upr.$udo.$udob.$ubir.$umal.$ufem.$uban.$uwar.$upar.$ubot.$utrmu.$utrmo.$uvimu.$uvimo.$ufrie.$ujunk.$ustaf.$usys." </a></td>");
 
 //My Uploads
 $res_up = do_sqlquery("SELECT count( * ) AS Count FROM {$TABLE_PREFIX}files WHERE uploader = {$CURUSER['uid']} AND anonymous='false' GROUP BY info_hash");

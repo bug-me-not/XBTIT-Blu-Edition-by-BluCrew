@@ -42,7 +42,19 @@ if (!$CURUSER || $CURUSER["view_users"]=="no")
 else
     {
 
-     //block_begin("Online Users");
+    // DT Uploader Medals
+        if($btit_settings["fmhack_uploader_medals"]=="enabled")
+     {
+        if ($CURUSER["up_med"] >= $btit_settings["UPB"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"BRONZE MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPS"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"SILVER MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPG"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"GOLD MEDAL\" /></i>";
+    }
+    // DT Uploader Medals END
+
+    //block_begin("Online Users");
      print("\n<table class=\"lista\" width=\"100%\">\n");
 
      $u_online=array();
@@ -107,7 +119,7 @@ else
                         }
                     }
                 }
-                $uo[]="<a class=\"online\" href=\""."index.php?page=userdetails&id=".$users_online["user_id"]."\" title=\"".unesc(ucfirst($users_online["location"]))."\">".unesc($users_online["prefixcolor"].$users_online["user_name"].$users_online["suffixcolor"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($users_online):"").(($btit_settings["fmhack_booted"]=="enabled")?booted($users_online):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($users_online):"")."</a>".$my_img_list.(($btit_settings["fmhack_hide_online_status"]=="enabled" && $users_online["invisible"]=="yes")?"*":"");
+                $uo[]="<a class=\"online\" href=\""."index.php?page=userdetails&id=".$users_online["user_id"]."\" title=\"".unesc(ucfirst($users_online["location"]))."\">".unesc($users_online["prefixcolor"].$users_online["user_name"].$users_online["suffixcolor"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($users_online):"").$up_med.(($btit_settings["fmhack_booted"]=="enabled")?booted($users_online):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($users_online):"").$my_img_list.(($btit_settings["fmhack_hide_online_status"]=="enabled" && $users_online["invisible"]=="yes")?"<i class=\"fa fa-user-secret\" aria-hidden=\"true\" title=\"Online Status Hidden\"></i></a>":"");
             }
      }
 

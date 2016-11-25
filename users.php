@@ -286,7 +286,7 @@ else
         {
             if($row_user["ban"] == 'yes')
             {
-                $banp = "<img src='images/ban.gif'>";
+                $banp = "<i class=\"fa fa-ban\" aria-hidden=\"true\"></i>";
             }
             else
             {
