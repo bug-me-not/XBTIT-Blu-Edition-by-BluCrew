@@ -30,7 +30,6 @@ class api
 
     private $tvdb_data;
 
-
     function __construct($tvdb_api, $fanart_api, $imdb = 0, $tvdb = 0, $infohash = "")
     {
         /*
@@ -138,14 +137,14 @@ class api
                     $fbanners = $this->fanart_tvdb_data->gettvbanner();
                     $fcount = count($fbanners);
 
-                    if(!file_exists())
-                        mkdir();
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/thetvdb"))
+                        mkdir($THIS_BASEPATH."/images/fanart/thetvdb");
 
-                    if(!file_exists())
-                        mkdir();
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
 
-                    if(!file_exists())
-                        mkdir();
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners"))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners");
 
                     if($fcount > 0)
                     {
@@ -154,13 +153,12 @@ class api
                             $imagefile = explode("/", $files);
                             $FileLastKey = (count($imageFile) - 1);
 
-                            if(!file_exists())
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners/".$imagefile[$FileLastKey]))
                             {
-                                //Save Data
+                                save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/banners/".$imagefile[$FileLastKey]);
                             }
                         }
                     }
-
                 }
                 else
                 {
@@ -173,11 +171,11 @@ class api
                     $tbanners = $this->tvdb_data->get5banners();
                     $bcount = count($tbanners);
 
-                    if(!file_exists())
-                        mkdir();
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb"))
+                        mkdir($THIS_BASEPATH."/images/thetvdb");
 
-                    if(!file_exists())
-                        mkdir();
+                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb))
+                        mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb);
 
                     if($bcount > 0)
                     {
@@ -186,9 +184,9 @@ class api
                             $imagefile = explode("/", $files);
                             $FileLastKey = (count($imagefile) - 1);
 
-                            if(!file_exists())
+                            if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners/".$imagefile[$FileLastKey]))
                             {
-                                //save image
+                                save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/banners/".$imagefile[$FileLastKey]);
                             }
                         }
                     }
