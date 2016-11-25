@@ -90,7 +90,7 @@ class fanart
 
    public function getmovieposter()
    {
-       $poster = $this->decode_json($this->movies)[''];
+       $poster = $this->decode_json($this->movies)['movieposter'];
        $temp = array();
 
        $count = (count($poster) > 3) ? 3 : count($poster);
@@ -118,6 +118,22 @@ class fanart
       }
 
       return $temp;
+   }
+
+   public function gettvposter()
+   {
+       $bann = $this->decode_json($this->tv)['tvposter'];
+       $temp = array();
+
+       $count = ((count($bann) > 3) ? 3 : count($bann));
+
+       for($i = 0; $i < $count; $i++)
+       {
+           if($bann[$i]['lang'] == 'en')
+           $temp[] = $bann[$i]['url'];
+       }
+
+       return $temp;
    }
 
    public function gettvbanner()
