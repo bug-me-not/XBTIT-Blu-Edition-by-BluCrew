@@ -684,7 +684,7 @@ if($count > 0)
                     $torrents[$i]["custom_freeleech"]=((!$freeByOtherMeans && !$flsTorrent && $userHasSlots)?"<a href='index.php?page=fls&id=".$data["hash"]."'>":"").image_or_link("images/fls_".(($flsTorrent)?"un":"")."locked.png", "", $language["FLS_".(($flsTorrent)?"UN":"")."LOCKED"]).((!$freeByOtherMeans && !$flsTorrent && $userHasSlots)?"</a>":"");
                 }
 
-                $torrents[$i]["poster"] = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+                $torrents[$i]["poster"] = $GLOBALS["uploaddir"]."nocover.jpg";//getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
 
                 if(file_exists($data['url']))
                 {
@@ -722,7 +722,7 @@ if($count > 0)
                 $torrents[$i]['files'] = $numfiles;
 
                 //OMDB Data section
-                
+
                 $omdb = getOMDBData($data['imdb']);
                 $omdb_genre = $omdb->genre;
                 $torrents[$i]['blu_genre'] = (strlen($data['genre']) > 0) ? $data['genre'] : (strlen($omdb_genre) > 0 ? $omdb_genre : "No Genre Found");
@@ -837,7 +837,7 @@ if($count > 0)
 
                 if($btit_settings["fmhack_balloons_on_mouseover"] == "enabled")
                 {
-                    $balon = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+                    $balon = $GLOBALS["uploaddir"]."nocover.jpg";//getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
                 }
 
                 //Seedbox Start
@@ -1522,7 +1522,7 @@ if($count > 0)
                                 }
                             }
 
-                            $tora[$i]["poster"] = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+                            $tora[$i]["poster"] = $GLOBALS["uploaddir"]."nocover.jpg";//getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
 
                             if($btit_settings["fmhack_uploader_size_and_comments_on_torrent_list"] == "enabled")
                             {
@@ -1678,7 +1678,7 @@ if($count > 0)
 
                             if($btit_settings["fmhack_balloons_on_mouseover"] == "enabled")
                             {
-                                $balon = getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
+                                $balon = $GLOBALS["uploaddir"]."nocover.jpg";//getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
                             }
 
                             $tora[$i]["catid"] = $rtorr_results["catid"];

@@ -59,7 +59,7 @@ $fname = $tor['filename'];
                         <!-- SLIDE -->
                         <div class="slide active" data-animation="fade, scaledown, top" id="slide1">
                             <!-- BACKGROUND IMAGE -->
-                            <img src="<?php echo getBannerData($tor['imdb'],$tor['tvdb_id']); ?>" class="background-image" alt="<?php echo $fname; ?>"/>
+                            <img src="<?php echo "images/default_fanart.png";/*getBannerData($tor['imdb'],$tor['tvdb_id']);*/ ?>" class="background-image" alt="<?php echo $fname; ?>"/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -67,7 +67,7 @@ $fname = $tor['filename'];
                         <!-- SLIDE -->
                         <div class="slide" data-animation="fade, rotatecw, top" id="slide2">
                             <!-- BACKGROUND IMAGE -->
-                            <img src="<?php echo getBannerData($tor['imdb'],$tor['tvdb_id']); ?>" class="background-image" alt="<?php echo $fname; ?>"/>
+                            <img src="<?php echo "images/default_fanart.png";/*getBannerData($tor['imdb'],$tor['tvdb_id']);*/ ?>" class="background-image" alt="<?php echo $fname; ?>"/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
@@ -75,13 +75,13 @@ $fname = $tor['filename'];
                         <!-- SLIDE -->
                         <div class="slide" data-animation="fade, scaleup, top" id="slide3">
                             <!-- BACKGROUND IMAGE -->
-                            <img src="<?php echo getBannerData($tor['imdb'],$tor['tvdb_id']); ?>" class="background-image" alt="<?php echo $fname; ?>"/>
+                            <img src="<?php echo "images/default_fanart.png";/*getBannerData($tor['imdb'],$tor['tvdb_id']);*/ ?>" class="background-image" alt="<?php echo $fname; ?>"/>
                             <!-- /BACKGROUND IMAGE -->
                         </div>
                         <!-- /SLIDE -->
 
                     </div>
-                    <!-- /STRAPSLIDE CONTAINER --> 
+                    <!-- /STRAPSLIDE CONTAINER -->
 
                     <!-- PROGRESS BAR -->
                     <div class="row-fluid">
