@@ -168,8 +168,8 @@ class api
                         if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
                         mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
 
-                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart"))
-                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart");
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt");
 
                         if($fcount > 0)
                         {
@@ -178,9 +178,9 @@ class api
                                 $imagefile = explode("/", $files);
                                 $LastImageKey = (count($imagefile) - 1);
 
-                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]))
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt/".$imagefile[$LastImageKey]))
                                 {
-                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]);
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt/".$imagefile[$LastImageKey]);
                                 }
                             }
                         }
@@ -201,8 +201,8 @@ class api
                     if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
                     mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
 
-                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart"))
-                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart");
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt");
 
                     if($fcount > 0)
                     {
@@ -211,16 +211,16 @@ class api
                             $imagefile = explode("/", $files);
                             $LastImageKey = (count($imagefile) - 1);
 
-                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]))
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt/".$imagefile[$LastImageKey]))
                             {
-                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discart/".$imagefile[$LastImageKey]);
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/discArt/".$imagefile[$LastImageKey]);
                             }
                         }
                     }
                 }
             }
 
-            if(count(getBackground()) != 0)
+            if(getBackground() == "")
             {
                 if($this->fanart_imdb_data->isMoviesEmpty())
                 {
@@ -235,8 +235,8 @@ class api
                         if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
                         mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
 
-                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background"))
-                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background");
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds"))
+                        mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds");
 
                         if($bcount > 0)
                         {
@@ -245,9 +245,9 @@ class api
                                 $imagefile = explode("/", $files);
                                 $LastImageKey = (count($imagefile) - 1);
 
-                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]))
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds/".$imagefile[$LastImageKey]))
                                 {
-                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]);
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds/".$imagefile[$LastImageKey]);
                                 }
                             }
                         }
@@ -268,8 +268,8 @@ class api
                     if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb))
                     mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb);
 
-                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background"))
-                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background");
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds"))
+                    mkdir($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds");
 
                     if($bcount > 0)
                     {
@@ -278,9 +278,9 @@ class api
                             $imagefile = explode("/", $files);
                             $LastImageKey = (count($imagefile) - 1);
 
-                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]))
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds/".$imagefile[$LastImageKey]))
                             {
-                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/background/".$imagefile[$LastImageKey]);
+                                save_image($files, $THIS_BASEPATH."/images/fanart/imdb/".$this->imdb."/backgrounds/".$imagefile[$LastImageKey]);
                             }
                         }
                     }
@@ -480,7 +480,7 @@ class api
                 }
             }
 
-            if(count(getBackground()) != 0)
+            if(getBackground() == "")
             {
                 if($this->fanart_tvdb_data->isTVEmpty())
                 {
@@ -495,8 +495,8 @@ class api
                         if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
                         mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
 
-                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background"))
-                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background");
+                        if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds"))
+                        mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds");
 
                         if($bcount > 0)
                         {
@@ -505,9 +505,9 @@ class api
                                 $imagefile = explode("/", $files);
                                 $FileLastKey = (count($imagefile) - 1);
 
-                                if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]))
+                                if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds/".$imagefile[$FileLastKey]))
                                 {
-                                    save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]);
+                                    save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds/".$imagefile[$FileLastKey]);
                                 }
                             }
                         }
@@ -528,8 +528,8 @@ class api
                     if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb))
                     mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb);
 
-                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background"))
-                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background");
+                    if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds"))
+                    mkdir($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds");
 
                     if($bcount > 0)
                     {
@@ -538,9 +538,9 @@ class api
                             $imagefile = explode("/", $files);
                             $FileLastKey = (count($imagefile) - 1);
 
-                            if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]))
+                            if(!file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds/".$imagefile[$FileLastKey]))
                             {
-                                save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/background/".$imagefile[$FileLastKey]);
+                                save_image($files, $THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds/".$imagefile[$FileLastKey]);
                             }
                         }
                     }
@@ -596,9 +596,12 @@ class api
                 }
             }
 
-            if()
+            if(file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters"))
             {
-
+                foreach(glob($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/*.*") as $postersFile)
+                {
+                    $posters[] = str_replace($THIS_BASEPATH."/", "", $postersFile);
+                }
             }
         }
 
@@ -691,18 +694,39 @@ class api
 
     function getBackground()
     {
-        $background = array();
+        $background = "";
+        $backgrounds = array();
 
         if($this->imdb > 0)
         {
-            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/background"))
+            if(file_exists($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/backgrounds"))
             {
-                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/background/*.*") as $backfile)
+                foreach(glob($THIS_BASEPATH."/images/fanart/imdb/tt".$this->imdb."/backgrounds/*.*") as $backfile)
                 {
-                    $background[] = str_replace($THIS_BASEPATH."/", "", $backfile);
+                    $backgrounds[] = str_replace($THIS_BASEPATH."/", "", $backfile);
                 }
             }
         }
+
+        if($this->tvdb > 0)
+        {
+            if(file_exists($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds"))
+            {
+                foreach(glob($THIS_BASEPATH."/images/fanart/tvdb/".$this->tvdb."/backgrounds/*.*") as $backfile)
+                {
+                    $backgrounds[] = str_replace($THIS_BASEPATH."/", "", $backfile);
+                }
+            }
+        }
+
+        if(count($backgrounds) > 0)
+        {
+            $rkey = mt_rand(0, (count($backgrounds) -1));
+            $background = $backgrounds[$rkey];
+        }
+
+        unset($rkey);
+        unset($backgrounds);
 
         return $background;
     }
