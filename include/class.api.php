@@ -444,12 +444,15 @@ class api
                         if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters"))
                         mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters");
 
-                        $imagefile = explode("/", $tposter);
-                        $FileLastKey = (count($imagefile) - 1);
-
-                        if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                        if(!empty($tposter) && $tposter != "")
                         {
-                            save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                            $imagefile = explode("/", $tposter);
+                            $FileLastKey = (count($imagefile) - 1);
+
+                            if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                            {
+                                save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                            }
                         }
                     }
                     else
@@ -470,12 +473,15 @@ class api
                     if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters"))
                     mkdir($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters");
 
-                    $imagefile = explode("/", $tposter);
-                    $FileLastKey = (count($imagefile) - 1);
-
-                    if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                    if(!empty($tposter) && $tposter != "")
                     {
-                        save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                        $imagefile = explode("/", $tposter);
+                        $FileLastKey = (count($imagefile) - 1);
+
+                        if(!file_exists($THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]))
+                        {
+                            save_image($files, $THIS_BASEPATH."/images/thetvdb/".$this->tvdb."/posters/".$imagefile[$FileLastKey]);
+                        }
                     }
                 }
             }
