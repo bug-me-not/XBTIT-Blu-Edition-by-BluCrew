@@ -54,7 +54,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 ### UPDATES
 
 ```
-  v1.0 - Initail Release
+  v1.0 - Initial Release
 ```
 
 
