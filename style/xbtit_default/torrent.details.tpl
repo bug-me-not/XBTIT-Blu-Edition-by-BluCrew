@@ -18,7 +18,7 @@ jQuery(function($) {
 $(document).ready(function () {
   $('#get-data').click(function () {
     var showData = $('#show-data');
-        $.getJSON('https://api.themoviedb.org/3/movie/tt1386697/videos?api_key=aa8b43b8cbce9d1689bef3d0c3087e4d&language=en-US', function (data) {
+        $.getJSON('https://api.themoviedb.org/3/movie/tt<tag:torrent.imdb />/videos?api_key=aa8b43b8cbce9d1689bef3d0c3087e4d&language=en-US', function (data) {
       console.log(data);
 
       var items = data.results.map(function (item) {
@@ -43,7 +43,7 @@ $(document).ready(function () {
 <!-- Trailers END -->
 
 <script type="text/javascript">
-   function ShowHide(id,id1) 
+   function ShowHide(id,id1)
    {
       obj = document.getElementsByTagName("div");
       if (obj[id].style.display == 'block')
@@ -51,7 +51,7 @@ $(document).ready(function () {
          obj[id].style.display = 'none';
          obj[id1].style.display = 'block';
       }
-      else 
+      else
       {
          obj[id].style.display = 'block';
          obj[id1].style.display = 'none';
@@ -299,20 +299,20 @@ function dt_show_waitb()
    <div class="container-fluid">
    <div class="row">
    <table class="table table-bordered">
-         
+
    <div class="details-header">
-   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>  
+   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
    <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
 
   <div class="main-info-holder">
     <div class="main-info">
-      <h1><tag:torrent.filename2 /></h1> 
+      <h1><tag:torrent.filename2 /></h1>
       <span class="stars">
-         <h3>Genre:&nbsp;OMDB GENRE TAG</h3>
-         <h3>Rating:&nbsp;OMDB IMDB RATING TAG</h3>
+         <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
+         <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
       </span>
-      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/OMDB IMDB ID TAG">IMDB</a></button>
-      <button class="btn btn-sm btn-default" type="button"><a href="OMDB WEBSITE TAG">Website</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/tt<tag:torrent.imdb />">IMDB</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="<tag:omdb_website />">Website</a></button>
     </div>
   </div>
 </div>
@@ -321,7 +321,7 @@ function dt_show_waitb()
 <div class="details-poster" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
 <div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
   </div>
-  </div> 
+  </div>
 
       <if:fls_enabled>
       <tr>
@@ -400,7 +400,7 @@ function dt_show_waitb()
       <script type="text/javascript">dt_ShowThankb('<tag:torrent.info_hash />');</script>
    </td>
 </tr>
-</if:reenc_enabled> 
+</if:reenc_enabled>
 
 <if:teams_enabled>
 <tag:teamview />
@@ -599,7 +599,7 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
-<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>  
+<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>
 </div>
 </div>
 </div> <!-- Tab End -->
@@ -645,7 +645,7 @@ function dt_show_waitb()
       <h3 class="modal-title"><tag:language.SCREEN /></h3>
    </div>
    <div class="modal-body">
-      
+
    </div>
    <div class="modal-footer">
       <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -656,7 +656,7 @@ function dt_show_waitb()
    </div>
    </div>
   </div>
-  </if:IMAGESC> 
+  </if:IMAGESC>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
@@ -673,7 +673,7 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <!-- Tab Start -->
-<div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
+<div role="tabpanel" class="tab-pane fade" id="DiscArt">
 <div class="container-fluid">
   <div class="row">
     <h1>FANART DISC ART</h1>
@@ -690,10 +690,10 @@ function dt_show_waitb()
   <div class="modal-content">
    <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">×</button>
-      <h3 class="modal-title">OMDB MOVIE NAME TAG</h3>
+      <h3 class="modal-title"><tag:omdb_movie_name /></h3>
    </div>
    <div class="modal-body">
-      
+
    </div>
    <div class="modal-footer">
       <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -713,7 +713,7 @@ function dt_show_waitb()
 <div class="row">
 <div id="get-data" class="btn btn-info">Load Trailer</div>
 <div class="container-fluid">
-   <div id="show-data"></div> 
+   <div id="show-data"></div>
 </div>
    <br>
    <br>
@@ -873,6 +873,3 @@ function dt_show_waitb()
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->
-
-
-

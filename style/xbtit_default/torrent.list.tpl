@@ -27,7 +27,7 @@ for(var i = 0; i < countCheckBoxes; i++)
 </if:imageup_enabled>
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h4 class="text-center"><a data-toggle="collapse" data-target="#collapseTwo" 
+    <h4 class="text-center"><a data-toggle="collapse" data-target="#collapseTwo"
      href="#collapseTwo" class="collapsed">Staff Picks&nbsp;&nbsp;<i class="fa fa-plus"></i></a></h4>
    </div>
    <div id="collapseTwo" class="panel-collapse collapse">
@@ -121,7 +121,7 @@ for(var i = 0; i < countCheckBoxes; i++)
     <div align="center">
       <form action="<tag:torrent_script />" method="get" name="torrent_search">
       <input type="hidden" name="page" value="torrents" />
-      <table border="0" class="lista" align="center">  
+      <table border="0" class="lista" align="center">
       <if:swit><td class="block" style="text-align:left;"><a href='account_change.php?tls=<tag:switch />&amp;returnto=%2Findex.php%3Fpage%3Dtorrents'><div id="div"><button class="btn btn-labeled btn-warning" type="button"><span class="btn-label"><i class="fa fa-cog"></i></span>Layout Switch</button></div></a></td></if:swit>
         <td align=center style="width: 340px;"><input type="text" class="form-control input-sm" name="search" id="searchinput" ondblclick="suggest(event.keyCode, this.value, 'torrent');" onkeyup="suggest(event.keyCode, this.value, 'torrent');" onkeypress="return noenter(event.keyCode);" autocomplete="off" style="width: 320px;" maxlength="50" value="<tag:torrent_search />" />
           <div id="suggcontainer" style="display: none; padding-left:0px;" align="left">
@@ -283,4 +283,3 @@ for(var i = 0; i < countCheckBoxes; i++)
 </tr>
 </div>
 </div>
-
