@@ -721,6 +721,10 @@ if($count > 0)
 
                     unset($content);
                 }
+                else
+                {
+                    $numfiles = "Error getting files count."
+                }
 
                 $torrents[$i]['files'] = $numfiles;
 
