@@ -201,7 +201,7 @@ if($row["free"]=="yes")
             $img =''; 
 }*/
 
-print("<div class=\"background-color\"><p>".$col."".$till."".ucfirst($post)."\n(UTC)</p></div>\n");
+print("<div class=\"background-color\"><p>".$col."".$till."".ucfirst($post)."\n</p></div>\n");
 // end freeleech hack
 
 print "</tr>";
