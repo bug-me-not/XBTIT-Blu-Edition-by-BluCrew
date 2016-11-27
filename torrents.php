@@ -690,7 +690,7 @@ if($count > 0)
                 if(file_exists($THIS_BASEPATH."/".$data['url']))
                 {
 
-                    $ffile = fopen($data["url"],"rb");
+                    $ffile = fopen($THIS_BASEPATH."/".$data['url'],"rb");
                     $content = fread($ffile,filesize($THIS_BASEPATH."/".$data["url"]));
                     fclose($ffile);
                     $content = BDecode($content);
