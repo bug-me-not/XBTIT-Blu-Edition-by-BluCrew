@@ -57,6 +57,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
   v1.0      - Initial Release
   v1.1      - API class to handle Posters, Banners, CD Art and Background images from TVDB and FanArt
   v1.1.03   - Fixes cache issue relating to OMDB
+  v1.1.04   - Minor fixes to bugs relating to list and details pages
 ```
 
 
