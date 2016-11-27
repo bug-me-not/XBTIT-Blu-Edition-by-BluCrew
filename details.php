@@ -1056,6 +1056,8 @@ $sres->free();
    //$row["rating"];
    //Rate This Upload
 
+   $row['uploaddir'] = $GLOBALS['uploaddir'];
+
    $torrenttpl->set("torrent",$row);
    $torrenttpl->set("media_enabled", (($btit_settings["fmhack_torrent_details_media_player"]=="enabled")?true:false), true);
    $torrenttpl->set("torlang", (($btit_settings["fmhack_language_in_torrent_list_and_details"]=="enabled")?true:false), true);

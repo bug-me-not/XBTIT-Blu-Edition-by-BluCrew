@@ -627,13 +627,13 @@ function dt_show_waitb()
 <div class="container-fluid">
 <div class="row">
       <if:SCREENIS1>
-      <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
+      <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:torrent.uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
       </if:SCREENIS1>
       <if:SCREENIS2>
-      <div class="col-md-4"><a href="#" title="Image 2"><img src="<tag:uploaddir /><tag:torrent.screen2 />" class="thumbnail img-responsive"></a></div>
+      <div class="col-md-4"><a href="#" title="Image 2"><img src="<tag:torrent.uploaddir /><tag:torrent.screen2 />" class="thumbnail img-responsive"></a></div>
       </if:SCREENIS2>
       <if:SCREENIS3>
-      <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
+      <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:torrent.uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
       </if:SCREENIS3>
     </div>
   </div>
@@ -649,8 +649,8 @@ function dt_show_waitb()
    </div>
    <div class="modal-footer">
       <button class="btn btn-default" data-dismiss="modal">Close</button>
-      <a href="<tag:uploaddir /><tag:torrent.screen1 />" button class="btn btn-primary">View Full Res</a>
-      <a href="<tag:uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</a>
+      <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" button class="btn btn-primary">View Full Res</a>
+      <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</a>
 
    </div>
    </div>
