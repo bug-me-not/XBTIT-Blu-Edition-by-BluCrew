@@ -175,6 +175,7 @@ if($btit_settings["fmhack_advanced_torrent_search"] == "enabled")
 
 // Files Count
 
+
 //Files Count END
 
 if($active == 0 || ($btit_settings["fmhack_archive_torrents"] == "enabled" && $active == 3))
@@ -686,19 +687,20 @@ if($count > 0)
 
                 $torrents[$i]["poster"] = $GLOBALS["uploaddir"]."nocover.jpg";//getPosterData($data["imdb"], $data["tvdb_id"], $data["imgup"]);
 
-                if(file_exists($data['url']))
+                if(file_exists($THIS_BASEPATH."/".$data['url']))
                 {
-                    $ffile=fopen($data["url"],"rb");
-                    $content=fread($ffile,filesize($data["url"]));
+
+                    $ffile = fopen($data["url"],"rb");
+                    $content = fread($ffile,filesize($THIS_BASEPATH."/".$data["url"]));
                     fclose($ffile);
-                    $content=BDecode($content);
+                    $content = BDecode($content);
 
                     $numcount = 0;
                     $numfiles = '';
 
                     if (isset($content["info"]) && $content["info"])
                     {
-                        $thefile=$content["info"];
+                        $thefile = $content["info"];
                         if (isset($thefile["length"]))
                         {
                             $numcount++;
@@ -715,7 +717,8 @@ if($count > 0)
                             // can't be but...
                         }
                     }
-                    $numfiles = $numcount.($numcount==1?" file":" files");
+                    $numfiles = $numcount.($numcount == 1?" file" : " files");
+
                     unset($content);
                 }
 
