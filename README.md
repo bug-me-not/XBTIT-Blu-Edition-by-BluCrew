@@ -18,7 +18,7 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 <b>:REQUIREMENTS:</b>
 - Web server with NGINX (Apache can be used but not recommended)<br>
 - A valid domain<br>
-- PHP 7.X +<br>
+- PHP 7.X+ Recommended (PHP 5.4+ minimum)<br>
 - MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
 <b>:DOCUMENTATION:</b><br>
