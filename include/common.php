@@ -987,7 +987,7 @@ function getOMDBData($imdb = 0)
 
     if(file_exists($cache_file))
     {
-        return unserialize($cache_file);
+        return unserialize(file_get_contents($cache_file));
     }
 
     $movie = new SparksCoding\MovieInformation\MovieInformation('tt'.$imdb, array('plot'=>'full', 'tomatoes'=>'true'));
