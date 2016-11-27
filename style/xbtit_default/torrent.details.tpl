@@ -623,9 +623,9 @@ function dt_show_waitb()
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="screens"><!-- Tab Start -->
-<if:IMAGESC>
 <div class="container-fluid">
 <div class="row">
+<if:IMAGESC>
       <if:SCREENIS1>
       <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:torrent.uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
       </if:SCREENIS1>
@@ -635,8 +635,7 @@ function dt_show_waitb()
       <if:SCREENIS3>
       <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:torrent.uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
       </if:SCREENIS3>
-    </div>
-  </div>
+  </if:IMAGESC>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg">
   <div class="modal-content">
@@ -651,12 +650,12 @@ function dt_show_waitb()
       <button class="btn btn-default" data-dismiss="modal">Close</button>
       <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" button class="btn btn-primary">View Full Res</a>
       <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</a>
-
-   </div>
    </div>
    </div>
   </div>
-  </if:IMAGESC>
+</div>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
@@ -676,37 +675,21 @@ function dt_show_waitb()
 <div role="tabpanel" class="tab-pane fade" id="DiscArt">
 <div class="container-fluid">
   <div class="row">
-    <h1>FANART DISC ART</h1>
-    <div class="row">
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 1"><img src="//placehold.it/600x350" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 2"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 3"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 4"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+    <h1><tag:omdb_movie_name /> DISC ART</h1>
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
+
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
+
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
+
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
     </div>
   </div>
-</div>
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-  <div class="modal-content">
-   <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal">×</button>
-      <h3 class="modal-title"><tag:omdb_movie_name /></h3>
-   </div>
-   <div class="modal-body">
-
-   </div>
-   <div class="modal-footer">
-      <button class="btn btn-default" data-dismiss="modal">Close</button>
-   </div>
-   </div>
-  </div>
-</div>
    <br>
    <br>
    <br>
    <p class="text-warning">Powered By FanArt API</p>
-</div>
-<!-- Tab End -->
+</div><!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
 <div class="container-fluid">
