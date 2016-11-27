@@ -100,10 +100,10 @@ else
          while($result=$res->fetch_array())
          {
             //Banner Grab
-               $img = "images/default_fanart.png"//getBannerData($result['imdb'],$result['tvdb_id']);
+               $img = "images/default_fanart.png";//getBannerData($result['imdb'],$result['tvdb_id']);
             //Banner Grab
 
-            $dowl="#";
+            $dowl = "#";
             if($btit_settings["fmhack_download_ratio_checker"] == "enabled")
             {
                $dowl="index.php?page=downloadcheck&amp;id={$result['info_hash']}";

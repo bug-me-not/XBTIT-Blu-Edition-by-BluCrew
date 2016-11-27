@@ -983,7 +983,7 @@ function getOMDBData($imdb = 0)
 
     require_once dirname(__FILE__)."/class.omdb.php";
 
-    $cache_file = $THIS_BASEPATH."/cache/omdb/tt".$imdb.".txt");
+    $cache_file = $THIS_BASEPATH."/cache/omdb/tt".$imdb.".txt";
 
     if(file_exists($cache_file))
     {
