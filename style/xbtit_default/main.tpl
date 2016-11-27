@@ -35,7 +35,6 @@
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    
 <!-- #DATE Range Picker -->
       <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
       <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/moment.min.js"></script>
@@ -172,7 +171,7 @@ var tronstr = ''
 
   <if:balloons_enabled>
   <script type="text/javascript" src="jscript/overlib.js"></script>
-</if:balloons_enabled>
+  </if:balloons_enabled>
 </head>
 <body onkeypress="tron(event)">
   <!-- Top Navigation Start-->

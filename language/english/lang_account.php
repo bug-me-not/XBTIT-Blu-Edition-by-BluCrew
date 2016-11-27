@@ -1,5 +1,5 @@
 <?php
-$language['HEARD_ABOUT_US'] = '<font color = red>[optional] </font>Where did you hear about us ?';
+$language['HEARD_ABOUT_US'] ='Referral?';
 $language['ACCOUNT_CREATED']='Account Created';
 $language['USER_NAME']='User';
 $language['USER_PWD_AGAIN']='Repeat password';
