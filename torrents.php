@@ -723,7 +723,7 @@ if($count > 0)
                 }
                 else
                 {
-                    $numfiles = "Error getting files count."
+                    $numfiles = "Error getting files count.";
                 }
 
                 $torrents[$i]['files'] = $numfiles;
