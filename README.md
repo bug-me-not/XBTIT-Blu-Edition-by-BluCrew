@@ -20,8 +20,8 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 - A valid domain<br>
 - PHP 7.X+ Recommended (PHP 5.4+ minimum)<br>
 - Dependencies for PHP:
--   php-gettext -> This is primarly for phpmyadmin, if your going to use it, there has been cases where it does not install when installing phpmyadmin.
--   php-curl    -> This is specifically needed for the Various API's we have running.
+  -   php-gettext -> This is primarly for phpmyadmin, if your going to use it, there has been cases where it does not install when installing phpmyadmin.
+  -   php-curl    -> This is specifically needed for the Various API's we have running.
 - MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
 <b>:DOCUMENTATION:</b><br>
