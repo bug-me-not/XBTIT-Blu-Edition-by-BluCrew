@@ -1,0 +1,425 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: #383838;
+  font-family: 'Open sans',sans-serif;
+}
+
+.lego {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffc37b;
+  color: #ffc37b;
+  width: 79px;
+  height: 79px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -39.5px;
+  margin-top: -39.5px;
+  bottom: 45px;
+  right: 30px;
+  background: url(http://legomushroom.com/__img/legomushroom.svg) no-repeat center 45%;
+  background-size: 75% auto;
+  opacity: 0;
+}
+
+.lego__text {
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  margin-left: -13px;
+  font-size: 12px;
+}
+
+.lego__text--header {
+  top: -25px;
+  font-size: 10px;
+  margin-left: 0;
+}
+
+.restart {
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  margin-top: 128px;
+  background: url(http://legomushroom.com/__img/restart.svg) no-repeat center 42.5%;
+  background-size: 50% auto;
+  opacity: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.restart:hover {
+  cursor: pointer;
+  border-color: #ccc;
+}
+
+.github {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #00ffc6;
+  width: 201px;
+  height: 201px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -181px;
+  margin-left: -100.5px;
+  background: url(http://legomushroom.com/__img/octocat.svg) no-repeat center center;
+  background-size: 75% auto;
+  opacity: 0;
+}
+
+.github__text {
+  bottom: -40px;
+  color: #00ffc6;
+  width: 100%;
+  text-align: center;
+}
+
+.my-logo {
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  display: inline-block;
+  color: #fcf7c0;
+  text-align: center;
+}
+
+.my-logo__header {
+  width: 108px;
+  font-size: 14px;
+}
+
+.my-logo__img {
+  margin-top: 25px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ff6664;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: #fcf7c0 url(https://en.gravatar.com/userimage/42114947/493706219cfb7cd584f4612557f759cd.png?size=100);
+}
+
+.my-logo__text {
+  color: #fcf7c0;
+  bottom: -160px;
+  left: -4px;
+  font-size: 14px;
+}
+
+.line {
+  width: 2px;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  margin-left: -1px;
+  background: #00ffc6;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.bubble {
+  width: 24px;
+  height: 24px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #00ffc6;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.bubbles {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: -100px;
+  margin-left: -10px;
+}
+
+.easy {
+  top: 50%;
+  left: 50%;
+  line-height: 240px;
+  background: #00ffc6;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: #383838;
+  text-transform: uppercase;
+  z-index: 11;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.easy__wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.easy__text {
+  width: 100%;
+  height: 100%;
+}
+
+.easy__line {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #383838;
+  z-index: 0;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.drop {
+  width: 4px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.spark {
+  background: #00ffc6;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.thunder-bg {
+  background: #00ffc6;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.arrow {
+  width: 2px;
+  height: 200px;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  background: #00ffc6;
+  top: -100%;
+  left: 100%;
+  margin-top: -175px;
+}
+
+.arrow--center {
+  margin-left: -28px;
+  margin-top: -120px;
+}
+
+.arrow--wrap {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  background: 0 0;
+}
+
+.car {
+  height: 10px;
+  width: 40%;
+  opacity: 0;
+}
+
+.car--1 {
+  right: 100%;
+  top: 40%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.car--2 {
+  left: 100%;
+  top: 60%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.text {
+  font-family: 'Open Sans';
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.text--fast {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text--robust {
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.text--robust__shade {
+  background: #383838;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text--robust__shade--1 {
+  -webkit-transform: skew(-20deg) translateX(-4px);
+  transform: skew(-20deg) translateX(-4px);
+  left: -90px;
+}
+
+.text--robust__shade--2 {
+  width: 90px;
+  right: 0;
+}
+
+.text__bit {
+  top: 50%;
+  left: 50%;
+}
+
+.text__bit--1 {
+  margin-left: -90px;
+}
+
+.text__bit--2 {
+  margin-left: -45px;
+}
+
+.text__bit--3 {
+  margin-left: 0;
+}
+
+.text__bit--4 {
+  margin-left: 45px;
+}
+
+.text__bit__inner {
+  display: inline-block;
+  position: static;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.text__bit span {
+  display: inline-block;
+  margin-top: -30px;
+}
+
+.c-green-g {
+  background: #00ffc6;
+}
+
+.c-green-c-g {
+  color: #00ffc6;
+}
+
+.c-grey-g {
+  background: #383838;
+}
+
+.c-red-g {
+  background: #ff1493;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+}
+
+.a-g {
+  position: absolute;
+}
+
+div {
+  position: absolute;
+  z-index: 10;
+  font-family: 'Open sans',sans-serif;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen--robust {
+  z-index: 1;
+}
+
+.screen--easy {
+  z-index: 12;
+}
+
+.screen--logos {
+  z-index: 20;
+}
+
+.inherit-bg {
+  background: inherit;
+}
+
+.velocity {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #00ffc6;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-left: 1320px;
+  min-width: 400px;
+  margin-top: -40px;
+  -webkit-transform: translateX(-160px);
+  transform: translateX(-160px);
+}
+
+.velocity span {
+  display: inline-block;
+}
+
+
+
+
