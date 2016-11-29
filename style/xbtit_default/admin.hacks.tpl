@@ -1,23 +1,23 @@
-<style>
-div.scroller
-{
-width:75%;
-height:600px;
-overflow:auto;
-}
-</style>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Hacks</h4>
+</div>
 <div align=center>
 <br />
-<tag:language.HACK_INFO />
+<div class="alert alert-dismissable alert-bg-white alert-info">
+<button data-dismiss="alert" class="close" type="button">×</button>
+<div class="icon"><i class="fa fa-info"></i></div>
+<strong><tag:language.HACK_INFO /></strong>
+</div>
+</div>
 <br /><br />
 <form name="test" action="index.php?page=admin&amp;user=<tag:uid />&code=<tag:random />&do=hacks&action=read" method="post">
-<div class="scroller">
-<table class="lista" width="75%" cellspacing="1" cellpadding="6">
+<table class="lista" width="100%" cellspacing="1" cellpadding="6">
   <tr>
-    <td class="header"><tag:language.DESCRIPTION /></td>
-    <td class="header"><tag:language.HACK_VERSION /></td>
-    <td class="header"><tag:language.HACK_AUTHOR /></td>
-    <td class="header"><tag:language.HACK_STATUS /></td>
+    <td class="head"><tag:language.DESCRIPTION /></td>
+    <td class="head"><tag:language.HACK_VERSION /></td>
+    <td class="head"><tag:language.HACK_AUTHOR /></td>
+    <td class="head"><tag:language.HACK_STATUS /></td>
   </tr>
 
   <cloop:hack>  
@@ -48,24 +48,29 @@ overflow:auto;
   </tr>
   </case:disabled>
   </cloop:hack>
-</table></div>
-<table class="lista" width="75%" cellspacing="1" cellpadding="6">
-    <tr>
-    <td class='header' colspan='4' align='center'><b><tag:language.HACK_EN_DIS_ALL /></b></td>
-  </tr>
+</table>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Mass Enable/Disable Hacks</h4>
+</div>
+<table class="lista" width="100%" cellspacing="1" cellpadding="6">
   <tr>
-    <td class='lista' colspan='4' style='text-align:center'>
+    <td class='lista' colspan='12' style='text-align:center'>
     <tag:language.HACK_SET_ABOVE />: <input type='radio' name='enable_all' value='take_no_action' checked='checked' />&nbsp;&nbsp;|&nbsp;&nbsp;
     <tag:language.HACK_EN_ALL />: <input type='radio' name='enable_all' value='enable_all' onclick="alert('<tag:language.HACK_ENABLE_ALL_WARN />')" />&nbsp;&nbsp;|&nbsp;&nbsp;
     <tag:language.HACK_DIS_ALL />: <input type='radio' name='enable_all' value='disable_all' />
     </td>
   </tr>
   <tr>
-  <td colspan=4 class=blocklist align=center><input type="submit" value="<tag:language.SUBMIT />" /></td>
+  <td colspan=4 class=blocklist align=center><input type="submit" class="btn btn-md btn-primary" value="<tag:language.SUBMIT />" /></td>
   </tr>
 </form>  
 </table>
-<br /><br />
-<tag:language.HACK_INFO_2 />
-<br /><br />
+</div>
+<div class="panel-footer">
+</div>
 </div>
