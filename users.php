@@ -251,14 +251,14 @@ else
                 $joined = (($row_user["joined"] == 0)?$language["NOT_AVAILABLE"]:date("d/m/Y H:i:s", $row_user["joined"] - $offset));
                 $lastconnect = (($row_user["lastconnect"] == 0)?$language["NOT_AVAILABLE"]:date("d/m/Y H:i:s", $row_user["lastconnect"] - $offset));
                 $flag = (($row_user["flag"] == 0)?"<img src='images/flag/unknown.gif' alt='".$language["UNKNOWN"]."' title='".$language["UNKNOWN"]."' />":"<img src='images/flag/".$row_user['flagpic']."' alt='".$row_user['name']."' title='".$row_user['name']."' />");
-                $private = "<img src=\"images/greengo.gif\" title=\"".$language["PP_PUBLIC"]."\">";
+                $private = "<i class=\"fa fa-eye\" aria-hidden=\"true\" title=\"".$language["PP_PUBLIC"]."\"</i>";
             }
             elseif($row_user["profileview"] == 1)
             {
-                $joined = "<img src=\"images/private2.png\" title=\"".$language["PP_PRIVATE"]."\">";
-                $lastconnect = "<img src=\"images/private2.png\" title=\"".$language["PP_PRIVATE"]."\">";
-                $flag = "<img src=\"images/private2.png\" title=\"".$language["PP_PRIVATE"]."\">";
-                $private = "<img src=\"images/private2.png\" title=\"".$language["PP_PRIVATE"]."\">";
+                $joined = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"".$language["PP_PRIVATE"]."\"</i>";
+                $lastconnect = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"".$language["PP_PRIVATE"]."\"</i>";
+                $flag = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"".$language["PP_PRIVATE"]."\"</i>";
+                $private = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"".$language["PP_PRIVATE"]."\"</i>";
             }
             $users[$i]["private"] = $private;
             //private profile MrFix
@@ -316,16 +316,17 @@ else
         }
         if($btit_settings["fmhack_uploader_medals"] == "enabled")
         {
-            // DT Uploader Medals
-            if($row_user["up_med"] == 0)
-                $upr = "";
-            if($row_user["up_med"] >= $btit_settings["UPB"])
-                $upr = "<img src='images/goblet/medaille_bronze.gif' alt='".$language["UM_BRONZE"]."' title='".$language["UM_BRONZE"]."' />";
-            if($row_user["up_med"] >= $btit_settings["UPS"])
-                $upr = "<img src='images/goblet/medaille_argent.gif' alt='".$language["UM_SILVER"]."' title='".$language["UM_SILVER"]."' />";
-            if($row_user["up_med"] >= $btit_settings["UPG"])
-                $upr = "<img src='images/goblet/medaille_or.gif' alt='".$language["UM_GOLD"]."' title='".$language["UM_GOLD"]."' />";
-            // DT Uploader Medals
+// DT Uploader Medals
+if($btit_settings["fmhack_uploader_medals"]=="enabled")
+    {
+        if ($CURUSER["up_med"] >= $btit_settings["UPB"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"BRONZE MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPS"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"SILVER MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPG"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"GOLD MEDAL\" /></i>";
+    }
+// DT Uploader Medals END
         }
         // Xbtit seo by Atmoner
         if($btit_settings["fmhack_SEO_panel"] == "enabled" && $res_seo["activated_user"] == "true")
@@ -353,7 +354,7 @@ else
             }
             else
             {
-                $ratio = "<img src=\"images/private2.png\" title=\"".$language["PP_PRIVATE"]."\">";
+                $ratio = "<i class=\"fa fa-ban\" aria-hidden=\"true\" title=\"".$language["PP_PRIVATE"]."\"</i>";
             }
         }
         else
@@ -365,7 +366,7 @@ else
         }
         $users[$i]["ratio"] = $ratio;
         if($CURUSER["uid"] > 1 && $CURUSER["uid"] != $row_user["id"])
-            $users[$i]["pm"] = "<a href=\"".(substr($GLOBALS["FORUMLINK"], 0, 3) == "smf"?"index.php?page=forum&amp;action=pm;sa=send;u=".$row_user["smf_fid"]."":"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=$CURUSER[uid]&amp;what=new&amp;to=".urlencode(unesc($row_user["username"]))."")."\">".image_or_link("$STYLEPATH/images/pm.png", "", $language["USERS_PM"])."</a>";
+            $users[$i]["pm"] = "<a href=\"".(substr($GLOBALS["FORUMLINK"], 0, 3) == "smf"?"index.php?page=forum&amp;action=pm;sa=send;u=".$row_user["smf_fid"]."":"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=$CURUSER[uid]&amp;what=new&amp;to=".urlencode(unesc($row_user["username"]))."")."\"><i class=\"fa fa-envelope\" aria-hidden=\"true\" title=\"PM User\"</i></a>";
         if($CURUSER["edit_users"] == "yes" && $CURUSER["uid"] != $row_user["id"])
             $users[$i]["edit"] = "<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=users&amp;action=edit&amp;uid=".$row_user["id"]."\">".image_or_link("$STYLEPATH/images/edit.png", "", $language["EDIT"])."</a>";
         if($CURUSER["delete_users"] == "yes" && $CURUSER["uid"] != $row_user["id"])
