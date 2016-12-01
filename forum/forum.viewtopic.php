@@ -220,7 +220,7 @@ foreach($res as $id=>$arr)
    $posts[$pn]["elapsed"]="(".get_elapsed_time($arr["added"]) . " ago)";
    $posts[$pn]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($arr["avatar"] && $arr["avatar"] != "" ? htmlspecialchars($arr["avatar"]): "/avatar/default_avatar.gif" )."\" alt=\"\" />";
    (is_null($arr["lastaction"])?$lastseen=$arr["lastconnect"]:$lastseen=$arr["lastaction"]);
-   ((time()-$lastseen>900)?$status="<img src='images/offline.gif' border='0' alt='".$language["OFFLINE"]."'>":$status="<img src='images/online.gif' border='0' alt='".$language["ONLINE"]."'>");
+   ((time()-$lastseen>100)?$status="<img src='images/offline.gif' border='0' alt='".$language["OFFLINE"]."'>":$status="<img src='images/online.gif' border='0' alt='".$language["ONLINE"]."'>");
    $posts[$pn]["online"]=$status;
    $posts[$pn]["user_group"]=$arr["user_group"];
 
