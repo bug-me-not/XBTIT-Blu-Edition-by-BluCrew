@@ -3224,35 +3224,7 @@ function sqlerr($file = '', $line = '')
          }
       }
                //end new_forum_topic
-               //clean shoutbox start
-      if($btit_settings["fmhack_shoutbox_clean"] == "enabled")
-      {
-         function execcommand_clean($Data)
-         {
-            $Data = trim($Data[0][1]);
-            if(empty($Data))
-            {
-               global $TABLE_PREFIX;
-               require ("../".load_language("lang_main.php"));
-               if(!isset($language["SYSTEM_USER"]))
-                  $language["SYSTEM_USER"]="System";
-               (@quickQuery("TRUNCATE {$TABLE_PREFIX}chat"));
-               (@quickQuery("INSERT INTO {$TABLE_PREFIX}chat (uid, time, name, text) VALUES (0,".time().", '".sql_esc($language["SYSTEM_USER"])."','".$language["SHOUT_CLEANED"]."')"));
-            }
-            return false;
-         }
-         function execcommand_noclean($Data)
-         {
-            $preMatchn = "/clean";
-            if(!empty($preMatchn))
-            {
-               global $TABLE_PREFIX, $CURUSER;
-               (@quickQuery("delete from {$TABLE_PREFIX}chat where text LIKE '%".$preMatchn."%' AND uid=".$CURUSER["uid"].""));
-            }
-            return false;
-         }
-      }
-               //clean shoutbox end
+
                //staff comment
       function getLevelSC($cur_level) {
          global $TABLE_PREFIX;
