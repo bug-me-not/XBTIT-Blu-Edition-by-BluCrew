@@ -2,7 +2,7 @@
 
 global $CURUSER, $XBTT_USE;
 
-$language["WHERE_HEARD"] = 'Heard About Us';
+$language["WHERE_HEARD"] = 'Signup Referrals';
 
 //KIS
 $language['ACP_KHEZ']='Hack Settings';
@@ -292,7 +292,7 @@ $language['HACK_TITLE']='Title';
 $language['HACK_VERSION']='Version';
 $language['HACK_AUTHOR']='Author';
 $language['HACK_ADDED']='Added';
-$language['HACK_NONE']='There is no hacks installed';
+$language['HACK_NONE']='There are no hacks installed';
 $language['HACK_ADD_NEW']='Add new hack';
 $language['HACK_SELECT']='Select';
 $language['HACK_STATUS']='Status';
@@ -345,9 +345,8 @@ $language['RECYCLE_DATE']='Recycle period';
 $language['RECYCLE_EXPL']='<i>Period in <u>days</u> after which invitations will be recycled</i>';
 $language["ACP_FM_HACK_CONFIG"]='FM Hacks Config';
 $language["ACP_NO_HACKS_ENABLED"]='No Hacks Enabled';
-$language['HACK_INFO']='Switch Hacks on and off in here.<br /><br /><b>Please note you cannot disable a prerequisite hack if the parent hack is still enabled.</b> Please hover your mouse over the <img src="images/info.png"> images below to find out what the parent hack is.';
+$language['HACK_INFO']='Switch Hacks on and off in here.<br /><br /><b>Please note you cannot disable a prerequisite hack if the parent hack is still enabled.</b> Please hover your mouse over the <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> images below to find out what the parent hack is.';
 global $BASEURL;
-$language['HACK_INFO_2']='<b>Please note: The installed hacks may have multiple contributors, please <a target="_blank" href="'.$BASEURL.'/FM-Hacks.txt">click here</a> for further information.</b>';
 $language['HACK_ENABLED']='Enabled';
 $language['HACK_DISABLED']='Disabled';
 $language['SUBMIT'] = 'Submit';

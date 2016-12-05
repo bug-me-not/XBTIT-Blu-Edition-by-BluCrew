@@ -1,70 +1,31 @@
-
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <div class="panel panel-primary">
 <div class="panel-heading">
 <h4 class="text-center"><tag:topic_title /></h4>
 </div>
-  <tr>
-    <td align="center" valign="middle">
-    <loop:posts>
-      <table class="table table-bordered">
-        <!-- Message header (with delete/quote/edit) if authorized) -->
-        <tr>
-          <td align="left" class="head" colspan="2">
-            <table width="100%">
-              <tr>
-              <td align="left">
-                <tag:posts[].new />
-                <a name="<tag:posts[].id />" href="<tag:posts[].msglink />"><tag:language.POST />&nbsp;#<tag:posts[].post_number /></a>
-              </td>
-                <td align="right"><tag:posts[].actions /></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td class="blocklist" align="left" valign="top">
-          <!-- poster infos -->
-            <table width="140">
-              <tr>
-                <td>
-                <tag:posts[].username />&nbsp;<tag:posts[].pm />
-                <br />
-                Rank:<tag:posts[].user_group />
-      
+<loop:posts>
+<table class="maibaugrand left" align="center" width="100%" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td class="head" align="left" colspan="2" height="24">
+<span><tag:posts[].username />&nbsp;<tag:posts[].pm /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-refresh" aria-hidden="true"></i> <tag:posts[].ratio /> &nbsp;&nbsp;&nbsp; <i class="fa fa-upload" aria-hidden="true"></i><tag:posts[].uploaded /> &nbsp;&nbsp;&nbsp; <i class="fa fa-download" aria-hidden="true"></i><tag:posts[].downloaded /> &nbsp;&nbsp;&nbsp; <i class="fa fa-commenting" aria-hidden="true"></i><tag:posts[].posts /></span>
+</td>
+<td class="head" align="right" colspan="2" height="24"><tag:posts[].online /></td>
+</tr>
 
-     
-                <br />
-                <tag:posts[].date />
-                <br />
-                <tag:posts[].elapsed />
-                <br /><br />
-                <tag:posts[].avatar />
-                <br /><br />
-                
-      			 <img src="images/arany.png">&nbsp;<tag:posts[].ratio />
-                 <br />
-                 <img src="images/speed_up.png">&nbsp;<tag:posts[].uploaded />
-                <br />
-                 <img src="images/speed_down.png">&nbsp;<tag:posts[].downloaded /><br />
-                <br />       <tag:language.POSTS />:&nbsp;<tag:posts[].posts />
-                <br />
-                &nbsp;<tag:posts[].online />&nbsp;
-                </td>
-              </tr>
-            </table>
-          </td>
-          <!-- post -->
-          <td class="post" width="100%" valign="top" style="padding:10px"><tag:posts[].body /></td>
-        </tr>
-        <tr>
-          <td align="right" class="panel-footer" colspan="2"><a href="#top"><tag:posts[].top /></a></td>
-        </tr>
-      </table>
-      </div>
-      <br />
-    </loop:posts>
-    </td>
-  </tr>
+<td align="left" class="comment-avatar-container">
+  <div class="user-avatar comment-avatar" style="background-image:url(/avatar/default_avatar.gif), url(/avatar/default_avatar.gif);background-position:0,0;background-repeat:no-repeat;max-width: 100px; width: expression(this.width &gt; 100 ? 100: true);"> </div>
+</td>
+<td width="100%" align="left" class="text"><tag:posts[].body /></td>
+
+<tr>
+<td class="comment_footer" align="center" colspan="2">
+<div style="float: left; width: auto;"><tag:posts[].actions /></div>
+<div align="right" class="comment-added"><tag:posts[].new /><a name="<tag:posts[].id />" href="<tag:posts[].msglink />"><tag:language.POST />&nbsp;#<tag:posts[].post_number /></a>&nbsp;&nbsp;on&nbsp;&nbsp;<tag:posts[].date /><tag:posts[].elapsed /></div>
+</td></tr></tbody></table>
+</loop:posts>
 </div>
 
   <tr>
@@ -83,7 +44,9 @@
     </td>
   </tr>
 </table>
-
+</div>
+</div>
+</div>
 
 
 

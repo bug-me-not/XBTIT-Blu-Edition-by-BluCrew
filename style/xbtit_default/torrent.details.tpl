@@ -1,5 +1,49 @@
+<!-- Disc Art -->
 <script type="text/javascript">
-   function ShowHide(id,id1) 
+jQuery(function($) {
+$('.thumbnail').click(function(){
+   $('.modal-body').empty();
+   var title = $(this).parent('a').attr("title");
+   $('.modal-title').html(title);
+   $($(this).parents('div').html()).appendTo('.modal-body');
+   $('#myModal').modal({show:true});
+});
+});
+</script>
+<!-- Disc Art -->
+
+<!-- Trailers -->
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready(function () {
+  $('#get-data').click(function () {
+    var showData = $('#show-data');
+        $.getJSON('https://api.themoviedb.org/3/movie/tt<tag:torrent.imdb />/videos?api_key=aa8b43b8cbce9d1689bef3d0c3087e4d&language=en-US', function (data) {
+      console.log(data);
+
+      var items = data.results.map(function (item) {
+/*        return item.key + ': ' + item.value;  */
+            return item.name +'<br><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="http://www.youtube.com/embed/'+ item.key +'?html5=1" frameborder="0"></iframe></div>';
+      });
+
+      showData.empty();
+
+      if (items.length) {
+        var content = '<li class="list-unstyled">' + items.join('</li><li class="list-unstyled">') + '</li>';
+        var list = $('<ul />').html(content);
+        showData.append(list);
+      }
+    });
+
+    showData.text('Loading the JSON file.');
+  });
+});
+});
+</script>
+<!-- Trailers END -->
+
+<script type="text/javascript">
+   function ShowHide(id,id1)
    {
       obj = document.getElementsByTagName("div");
       if (obj[id].style.display == 'block')
@@ -7,7 +51,7 @@
          obj[id].style.display = 'none';
          obj[id1].style.display = 'block';
       }
-      else 
+      else
       {
          obj[id].style.display = 'block';
          obj[id1].style.display = 'none';
@@ -236,32 +280,48 @@ function dt_show_waitb()
       <div class="internal-clock-text" style="font-size: 22px; text-align: center; text-decoration: underline;">This is an internal release so please wait until 24hr countdown timer is complete to share elsewhere</div>
       <div class="internal-clock" style="padding-left: 35%; padding-top:20px; padding-bottom:200px;"></div></div>
    </if:internal_clock>
+
    <div align="center">
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs">
+   <ul class="nav nav-tabs">
      <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
+     <li class=""><a href="#screens" data-toggle="tab">Screen Shots</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
-     <li class=""><a href="#BluMovieDB" data-toggle="tab">BluMovieDB</a></li>
      <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
 
-  <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
-    <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
+   <div id="myTabContent" class="tab-content"><!-- Main Content Tab Start -->
+   <div role="tabpanel" class="tab-pane fade in active" id="main"><!-- Tab Start -->
+   <div class="container-fluid">
+   <div class="row">
+   <table class="table table-bordered">
 
-      <table class="table table-bordered">
-         <tr>
-            <td class="lista" style="text-align:center;" colspan="2"><img class="banner" src="<tag:banner />" /></td>
-         </tr>
+   <div class="details-header">
+   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
+   <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
 
-      <br>
+  <div class="main-info-holder">
+    <div class="main-info">
+      <h1><tag:torrent.filename2 /></h1>
+      <span class="stars">
+         <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
+         <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
+      </span>
+      <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/tt<tag:torrent.imdb />">IMDB</a></button>
+      <button class="btn btn-sm btn-default" type="button"><a href="<tag:omdb_website />">Website</a></button>
+    </div>
+  </div>
+</div>
 
-      <tr>
-         <td class="lista" style="text-align:center;" colspan="2"><h1><tag:torrent.filename2 /></h1><p class= "text-danger"><tag:language.INFO_HASH />:&nbsp;&nbsp;<tag:torrent.info_hash /></p><if:MOD><tag:mod_task /></if:MOD></td>
-      </tr>
+<div class="page-holder">
+<div class="details-poster" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
+<div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
+  </div>
+  </div>
 
       <if:fls_enabled>
       <tr>
@@ -340,7 +400,7 @@ function dt_show_waitb()
       <script type="text/javascript">dt_ShowThankb('<tag:torrent.info_hash />');</script>
    </td>
 </tr>
-</if:reenc_enabled> 
+</if:reenc_enabled>
 
 <if:teams_enabled>
 <tag:teamview />
@@ -352,8 +412,8 @@ function dt_show_waitb()
    <td class="lista" align="left">
       <form action="thanks.php" method="post" onsubmit="return false">
          <div id="thanks_div" name="thanks_div" style="display:block;"></div>
-         <div id="loading" name="loading" style="display:none;"><img src="images/ajax-loader.gif" alt="" title="ajax-loader" /></div>
-         <input type="button" id="ty" disabled="disabled" class="btn btn-primary btn-sm" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />')" />
+         <div id="loading" name="loading" style="display:none;"><img src="images/loader.gif" alt="" title="ajax-loader" /></div>
+         <input type="button" id="ty" disabled="disabled" class="btn btn-primary btn-sm" value="<tag:language.THANKS_YOU />" onclick="thank_you('<tag:torrent.info_hash />');thank_success();" />
       </form>
       <script type="text/javascript">ShowThank('<tag:torrent.info_hash />');</script>
    </td>
@@ -364,7 +424,7 @@ function dt_show_waitb()
 <if:LEVEL_SC>
 <tr>
    <td align="right" class="header" ><tag:language.STAFF_COMMENT /></td>
-   <td class="lista" align="center"><tag:torrent_staff_comment /></td>
+   <td class="lista" align="center" style="text-align:left;"><tag:torrent_staff_comment /></td>
 </tr>
 </if:LEVEL_SC>
 </if:st_comm_enabled>
@@ -464,6 +524,11 @@ function dt_show_waitb()
 </tr>
 
 <tr>
+   <td align="right" class="header"><tag:language.INFO_HASH /></td>
+    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.info_hash /></td>
+</tr>
+
+<tr>
    <td align="right" class="header"><tag:language.RATING /></td>
    <td class="lista" align="center" style="text-align:left;" valign="top"><tag:torrent.rating /></td>
 </tr>
@@ -498,8 +563,8 @@ function dt_show_waitb()
 <tr>
    <td align="right" class="header"><tag:language.details_similar_torrents /></td>
    <td class="lista">
-      <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#similar">Show Similar Uploads</button>
-      <div id="similar" class="collapse">
+      <!-- <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#similar">Show Similar Uploads</button>
+      <div id="similar" class="collapse"> -->
          <table width="100%" class="main" border="1" cellspacing="0" cellpadding="1" style="text-align:center;">
             <tr>
                <td class="header" style="text-align:center;"><tag:language.details_name /></td>
@@ -518,7 +583,7 @@ function dt_show_waitb()
             </tr>
          </loop:similar_torrents>
       </table>
-   </div>
+   <!-- </div> -->
 </td>
 </tr>
 </if:similar_enabled>
@@ -534,9 +599,14 @@ function dt_show_waitb()
 </tr>
 </if:EXTERNAL>
 </table>
+<if:MOD><p class="text-danger">Moderation</p><tag:mod_task /></if:MOD>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="details"><!-- Tab Start -->
+<div class="container-fluid">
+  <div class="row">
    <if:nfo_enabled>
    <if:view_nfo>
    <if:nfo_exists>
@@ -548,84 +618,97 @@ function dt_show_waitb()
 </if:view_nfo>
 </if:nfo_enabled>
 <tag:torrent.description />
+</div>
+</div>
+</div> <!-- Tab End -->
+
+<div role="tabpanel" class="tab-pane fade" id="screens"><!-- Tab Start -->
+<div class="container-fluid">
+<div class="row">
+<if:IMAGESC>
+      <if:SCREENIS1>
+      <div class="col-md-4"><a href="#" title="Image 1"><img src="<tag:torrent.uploaddir /><tag:torrent.screen1 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS1>
+      <if:SCREENIS2>
+      <div class="col-md-4"><a href="#" title="Image 2"><img src="<tag:torrent.uploaddir /><tag:torrent.screen2 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS2>
+      <if:SCREENIS3>
+      <div class="col-md-4"><a href="#" title="Image 3"><img src="<tag:torrent.uploaddir /><tag:torrent.screen3 />" class="thumbnail img-responsive"></a></div>
+      </if:SCREENIS3>
+  </if:IMAGESC>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-title"><tag:language.SCREEN /></h3>
+   </div>
+   <div class="modal-body">
+
+   </div>
+   <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal">Close</button>
+      <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" button class="btn btn-primary">View Full Res</a>
+      <a href="<tag:torrent.uploaddir /><tag:torrent.screen1 />" download="screenshot.png" button class="btn btn-primary">Download</a>
+   </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="gift"><!-- Tab Start -->
+<div class="container-fluid">
+  <div class="row">
    <p class= "text-info"><h3><tag:language.SEND_POINTS /></h3></p>
    <div class="row">
       <div class="col-md-12">
          <tag:coin />
       </div>
    </div>
+</div>
+</div>
 </div> <!-- Tab End -->
 
 <!-- Tab Start -->
-<div role="tabpanel" class="tab-pane fade" id="BluMovieDB"> 
-<if:has_bmdb>
+<div role="tabpanel" class="tab-pane fade" id="DiscArt">
+<div class="container-fluid">
   <div class="row">
-   <div class="col-md-12">
-   <h1><a href='https://www.imdb.com/title/<tag:blu_imdb />/' target='_blank'><p class="text-success"><tag:blu_title />&nbsp;&nbsp;(<tag:blu_year />)</p></a><small>Rating: <tag:blu_rating /></small></h1>
-   <b>Runtime:</b> <tag:blu_runtime /><br>
-   <b>Genre:</b> <tag:blu_genre /><br>
-   <b>Langauge:</b> <tag:blu_lang /><br>
-   <b>Country:</b> <tag:blu_country /><br>
-   <b>Production:</b> <tag:blu_pro /><br>
-   <b>Released:</b> <tag:blu_released /><br><br>
+    <h1><tag:omdb_movie_name /> DISC ART</h1>
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
 
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
 
-   <p class='lead'>
-      <b>Director:</b> <tag:blu_director /><br>
-      <b>Actors:</b> <tag:blu_actors /><br>
-   </p>
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
 
-   <p>Plot: <tag:blu_plot /></p><br>
-   <p>Awards: <tag:blu_awards /></p>
-   <br>
-
-   <h1 style="color:red;">Rotten Tomatoes</h1>
-   <b>Tomato Meter:</b> <tag:blu_tmeter /><br>
-   <b>Tomato Rating:</b> <tag:blu_trating /><br><br>
-   <b>Tomato Reviews:</b> <tag:blu_treview /><br>
-   <b>Tomato Fresh (+):</b> <tag:blu_tfresh /><br>
-   <b>Tomato Rotten (-):</b> <tag:blu_trotten /><br>
-   <br>
-   <b>Tomato User Meter:</b> <tag:blu_tumeter /><br>
-   <b>Tomato User Rating:</b> <tag:blu_turating /><br>
-   <b>Tomato User Review:</b> <tag:blu_tureviews /><br>
-   <br>
-
-   <h1 style="color:red;">Extra</h1>
-   <b>DVD Release Date:</b> <tag:blu_dvd /><br>
-   <b>Box Office:</b> <tag:blu_office /><br>
-   <b>Website:</b> <tag:blu_site /><br>
-</div> 
-</div>
-<else:has_bmdb>
-<p class='text-warning'>No data available</p>
-</if:has_bmdb>
-<br><p class="text-warning">Powered By FanArt, OMDB, TVDB, API's and The BluRG Community</p>
-</div>
-<!-- Tab End -->
-
-<!-- Tab Start -->
-<div role="tabpanel" class="tab-pane fade" id="DiscArt"> 
-<p><h1>COMING SOON!</h1></p>
+      <div class="col-lg-3 col-sm-4 col-6"><img src="https://fanart.tv/detailpreview/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" class="img-responsive"><a href="https://fanart.tv/fanart/movies/209112/moviedisc/batman-v-superman-dawn-of-justice-57b912d0cd34f.png" download="discart.png" button class="btn btn-primary">Download</a></div>
+    </div>
+  </div>
    <br>
    <br>
    <br>
    <p class="text-warning">Powered By FanArt API</p>
-</div>
-<!-- Tab End -->
+</div><!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
-   <p><h1>COMING SOON!</h1></p>
+<div class="container-fluid">
+<div class="row">
+<div id="get-data" class="btn btn-info">Load Trailer</div>
+<div class="container-fluid">
+   <div id="show-data"></div>
+</div>
    <br>
    <br>
    <br>
    <p class="text-warning">Powered By TMDB API</p>
+   </div>
+   </div>
 </div> <!-- Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="comment"><!-- Tab Start -->
+<div class="container-fluid">
+<div class="row">
    <if:vedsc_enabled_1>
    <!-- #######################################################
    # view/edit/delete shout, comments -->
@@ -767,10 +850,9 @@ function dt_show_waitb()
 <br />
 <br />
 <div align="center">
-   <tag:torrent_footer />
+<tag:torrent_footer />
+</div>
+</div>
 </div>
 </div> <!-- Tab End -->
 </div> <!-- Main Tab Content End -->
-
-
-

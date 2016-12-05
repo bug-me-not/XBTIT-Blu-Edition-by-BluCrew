@@ -166,20 +166,13 @@ unset($row);
 $res = @do_sqlquery('SELECT UNIX_TIMESTAMP() - ' . $serverStatus['Uptime']);
 $row = $res->fetch_row();
 //echo sprintf("Server Status Uptime", timespanFormat($serverStatus['Uptime']), localisedDate($row[0])) . "\n";
-?>
-<table align="center" width="99%" class="lista" border="1" cellpadding="2" cellspacing="1">
-<tr><td class="blocklist" align="center" width="100%">
-    <table align="center" width="96%" class="lista" border="0" cellpadding="4" cellspacing="1">
-      <tr>
-        <td style="padding-left:40px;"><b>
-<?php
-print("\tThis MySQL server has been running for ". timespanFormat($serverStatus['Uptime']) .". It started up on ". localisedDate($row[0])) . "\n";
-?>
-        </b></td>
-      </tr>
-    </table>
 
-<?php
+print("<div class=\"alert alert-dismissable alert-bg-white alert-success\">
+        <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+        <div class=\"icon\"><i class=\"fa fa-info\"></i></div>
+        <strong>This MySQL server has been running for ". timespanFormat($serverStatus['Uptime']) .". It started up on ". localisedDate($row[0])) . "</strong>
+        </div>
+        </div>";
 
 $res->free();
 unset($res);
@@ -195,19 +188,15 @@ $tmp_array = $serverStatus;
     }
 unset($tmp_array);
 ?>
-<table align="center" width="96%" class="lista" border="0" cellpadding="4" cellspacing="1">
-      <tr>
-        <td>
-<div align="left">
-<ul>
-    <li>
-        <!-- Server Traffic -->
-        <b>Server traffic:</b> These tables show the network traffic statistics of this MySQL server since its startup</li></ul>
-                </div>
 
-        </td>
-      </tr>
-    </table>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"></h4>
+</div>
+        <!-- Server Traffic -->
+        <b>Server traffic:</b> These tables show the network traffic statistics of this MySQL server since its startup.
+
         <table align="center" width="96%" class="lista" border="0" cellpadding="4" cellspacing="1">
             <tr>
                 <td valign="top">
@@ -409,6 +398,9 @@ if (!empty($serverStatus)) {
                 </td>
             </tr>
         </table>
+        <div class="panel-footer">
+</div>
+</div>
 
 <?php
 }
@@ -417,12 +409,7 @@ if (!empty($serverStatus)) {
 <table align="center" width="96%" class="lista" border="0" cellpadding="4" cellspacing="1">
       <tr>
         <td>
-<div align="left">
-<ul>
-    <li>The code for MySQL server status is kindly provided by CoLdFuSiOn (Tbdev.net)</li></ul>
-                </div>
-            <div align="right">
-<ul><a href="#">Back to Top</a></div>
+<div align="right"><ul><a href="#">Back to Top</a></div>
         </td>
       </tr>
     </table></td>

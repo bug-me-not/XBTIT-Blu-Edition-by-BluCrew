@@ -436,7 +436,7 @@ $language['MODULE_LOAD_ERROR']='Modulen som krävs verkar ha ett fel!';
 $language["CUSTOM_TITLE"]="Anpassad titel";
 // <-- Custom title
 
-// Seed Bonus -->    
+// Seed Bonus -->
 $language["BONUS_INFO1"]="Här kan du byta bort Bonus Poäng (Nuvarande) ";
 $language["BONUS_INFO2"]="(Om knapparna inte fungerar har du inte nog med poäng !)";
 $language["BONUS_INFO3"]="Vad får jag poäng för?";
@@ -910,7 +910,7 @@ $language["TRAV_WATTRS"] = "lades till i Requestsektionen";
 $language["TRAV_VOTEFORTHIS"] = "Rösta på denna";
 $language["TRAV_NOWTFOUND"] = "Inget hittades";
 $language["TRAV_AGO"] = "sedan";
-$language["DOH_URL"]="Skriv in hela direktlänken till torrenten, dvs. ".$BASEURL."/index.php?page=torrent-details&id=813.. (Det går bara att kopiera och klistra från ett annat fönster) eller ändra befintliga  URL-n till torrentID!"; 
+$language["DOH_URL"]="Skriv in hela direktlänken till torrenten, dvs. ".$BASEURL."/index.php?page=torrent-details&id=813.. (Det går bara att kopiera och klistra från ett annat fönster) eller ändra befintliga  URL-n till torrentID!";
 // Torrent Request
 
 
@@ -1325,8 +1325,8 @@ $language["UN_NOTES"] = "Anteckningar";
 $language["UN_ADD_NOTE"] = "Lägg till anteckning";
 
 $language['REALCOUNTRY']='IP-land';
-//advanced torrent search extra 
-$language['UPLS']='Uppladdare'; 
+//advanced torrent search extra
+$language['UPLS']='Uppladdare';
 
 $language["UN_BONUS_GENERAL_1"]="har använt";
 $language["UN_BONUS_GENERAL_2"]="bonuspoäng på";
@@ -1365,8 +1365,8 @@ $language["UN_UNBOOTED"]="har manuellt kopplats ner";
 $language["UN_BAN_BUT_1"]="har bannats via Banknappen för att";
 
 //end of month paypal setting diemthuy
-$language["AADS_AUTO"] ="Auto set ny månad"; 
-//for forced faq. 
+$language["AADS_AUTO"] ="Auto set ny månad";
+//for forced faq.
 $language["SUBMIT"] ="Lämna";
 
 $language["STAFF_COMMENT"]="Staffkommentar";
@@ -1395,8 +1395,6 @@ $language["UIMG_MSG_3"]="Dina användarbilder";
 $language["UIMG_USR_ICONS"]="Användarikoner";
 $language["UIMG_USR_IMGS"]="Användarbild";
 
-//shoutbox clean 
-$language["SHOUT_CLEANED"]="[b]Shoutboxen har just städats![/b][IMG]".$BASEURL."/images/sweep.gif[/IMG]";
 
 $language["ERR_PASS_TOO_WEAK_1"]="Ditt lösenord är för svagt.<br />Av säkerhetsskäl måste det innehålla";
 $language["ERR_PASS_TOO_WEAK_1A"]="Lösenordet är för svagt.<br />Av säkerhetsskäl måste det innehålla";

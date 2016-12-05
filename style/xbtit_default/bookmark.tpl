@@ -1,4 +1,7 @@
 <div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">My Bookmarks</h4>
+</div>
 <table class="table table-bordered">
 
   <if:pagertop_visible>
@@ -47,6 +50,8 @@
   </if:pagerbottom_visible>
 
 </table>
+<div class="panel-footer">
+</div>
 </div>
 
 

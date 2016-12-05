@@ -21,15 +21,21 @@ $substpl->set("language",$language);
 
 if ($CURUSER["can_upload"]=="yes")
 {
-    $subadd="<br><center><a href='index.php?page=subadd'><img src='images/Add.png' width=30 height=30 alt='Add Subtitle' title='Add Subtitle'></a></center>";
+    $subadd="<div class='panel panel-primary'>
+             <div class='panel-heading'>
+             <h4 class='text-center'>Options</h4>
+             </div><br><center><a href='index.php?page=subadd'><role='button' class='btn btn-labeled btn-primary'><span class='btn-label'><i class='fa fa-upload'></i></span>Upload</a></center>";
 }
 
 $search="<form id='form1' name='form1' method='post' action='index.php?page=subsearch'>
          <div align='center'>
          <input name='src' type='text' size='40' />
-         <input type='submit' class=btn name='Submit' value='".$language['SUBSEARCH']."' />
+         <input type='submit' class='btn btn-sm btn-primary' name='Submit' value='".$language['SUBSEARCH']."' />
          </div>
          </form>
+         <br>
+         </div>
+         </div>
         ";
 
 require_once ("include/sanitize.php");
@@ -49,7 +55,12 @@ $subnum=$subres->fetch_row();
 
 $result="";
 $num2=$subnum[0];
-if($num2==0) { $result=$language['SUBS_EMPTY']; }
+if($num2==0) { $result="<div class=\"alert alert-dismissable alert-bg-white alert-danger\">
+    <button data-dismiss=\"alert\" class=\"close\" type=\"button\">×</button>
+    <div class=\"icon\"><i class=\"fa fa-times\"></i></div>
+    <strong>".$language['SUBS_EMPTY']."</strong>
+    </div>
+    </div>"; }
 
 $perpage=(max(0,$CURUSER["torrentsperpage"])>0?$CURUSER["torrentsperpage"]:10);
 
@@ -82,7 +93,7 @@ while($row = $r->fetch_array())
     $subs[$i]["cds"] = (empty($row["cds"])?"":$language["SUB_CD"].": <b>".$row["cds"]."</b><br />\n");
     $subs[$i]["author"] = (!empty($row["author"])?$language["SUB_AUTH"].": <b>".$row["author"]."</b><br />\n":"");
     $subs[$i]["details"] = "<a href='".(($btit_settings["fmhack_SEO_panel"]=="enabled" && $res_seo["activated"]=="true")?strtr($row["filename"], $res_seo["str"], $res_seo["strto"])."-".$row["fileid"].".html":"index.php?page=torrent-details&id=".$row["hash"])."'>".$language["TORRENT_DETAIL"]."</a><br />\n";
-    $subs[$i]["dl"] = "<a href='subtitle_download.php?id=".$row["id"]."'>".$row["name"]."&nbsp; <img src='images/download.gif' alt='download' title='download'></a>";
+    $subs[$i]["dl"] = "<a href='subtitle_download.php?id=".$row["id"]."'>".$row["name"]."&nbsp; <i class=\"fa fa-download\" aria-hidden=\"true\"></i></a>";
     if($CURUSER["edit_torrents"]=="yes")
     { 
         $subs[$i][del] = "<a href='subtitle_del.php?do=del&id=".$row["id"]."'><img src='".$STYLEURL."/images/delete.png' alt='delete' title='delete'></a>";

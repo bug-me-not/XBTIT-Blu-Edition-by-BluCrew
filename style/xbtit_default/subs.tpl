@@ -3,8 +3,12 @@
 <tag:result />
 <tag:pagertop />
 <br><br>
-<table>
-<tr>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="text-center">Subtitles</h4>
+</div>
+<table class="table table-bordered">
+<tr class="info">
 <td class=block align=center><tag:language.SUB_IMGT /></td>
 <td class=block align=center><tag:language.SUB_DLT /></td>
 <td class=block align=center><tag:language.SUB_LANGT /></td>
@@ -39,5 +43,7 @@
 </tr>
 </loop:subs>
 </table>
+</div>
+</div>
 <tag:pagerbottom />
 <br /><br />

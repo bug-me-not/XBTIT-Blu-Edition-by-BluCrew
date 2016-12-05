@@ -109,6 +109,8 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          require_once $CURRENTPATH.'/class.bbcode.php';
       require_once $CURRENTPATH.'/class.captcha.php';
       require_once $CURRENTPATH.'/class.ajaxpoll.php';
+      require_once $CURRENTPATH."/class.api.php";
+
       if(!isset($TRACKER_ANNOUNCEURLS))
       {
          $TRACKER_ANNOUNCEURLS = array();
@@ -528,15 +530,15 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $language;
          if($unboot)
          {
-            $bootpic = "booted.gif";
+            $bootpic = "fa fa-lock";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $bootpic = "booted.gif";
+            $bootpic = "fa fa-lock";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pic = $arr["booted"] == "yes"?"<img title=\"".$language['BOOT_DISABLED']."\" src=\"images/$bootpic\" alt=\"".$language['BOOT_DISABLED']."\" border=\"0\" $style />":"";
+         $pic = $arr["booted"] == "yes"?"<i class=\"$bootpic\" title=\"".$language['BOOT_DISABLED']."\" aria-hidden=\"true\" $style /></i>":"";
          return $pic;
       }
 // <-- booted
@@ -546,15 +548,15 @@ if($php_version[0] <= 5 && $php_version[1] <= 2)
          global $language;
          if($big)
          {
-            $warnpic = "warn.gif";
+            $warnpic = "fa fa-exclamation-circle";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $warnpic = "warn.gif";
+            $warnpic = "fa fa-exclamation-circle";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pics = $arr["warn_lev"] > 0?"<img title=\"".$language['WS_WARNED_USER']."\" src=\"images/$warnpic\" alt=\"".$language['WS_WARNED_USER']."\" border=\"0\" $style />":"";
+         $pics = $arr["warn_lev"] > 0?"<i class=\"$warnpic\" title=\"".$language['WS_WARNED_USER']."\" aria-hidden=\"true\" $style /></i> ":"";
          return $pics;
       }
 // <-- Warning System
@@ -1819,52 +1821,52 @@ function time_ago($timestamp)
     $timestamp = (int) $timestamp;
     $current_time = time();
     $diff = $current_time - $timestamp;
-   
+
     //intervals in seconds
     $intervals      = array (
         'year' => 31556926, 'month' => 2629744, 'week' => 604800, 'day' => 86400, 'hour' => 3600, 'minute'=> 60
     );
-   
+
     //now we just find the difference
     if ($diff == 0)
     {
         return 'just now';
-    }   
+    }
 
     if ($diff < 60)
     {
         return $diff == 1 ? $diff . ' second ago' : $diff . ' seconds ago';
-    }       
+    }
 
     if ($diff >= 60 && $diff < $intervals['hour'])
     {
         $diff = floor($diff/$intervals['minute']);
         return $diff == 1 ? $diff . ' minute ago' : $diff . ' minutes ago';
-    }       
+    }
 
     if ($diff >= $intervals['hour'] && $diff < $intervals['day'])
     {
         $diff = floor($diff/$intervals['hour']);
         return $diff == 1 ? $diff . ' hour ago' : $diff . ' hours ago';
-    }   
+    }
 
     if ($diff >= $intervals['day'] && $diff < $intervals['week'])
     {
         $diff = floor($diff/$intervals['day']);
         return $diff == 1 ? $diff . ' day ago' : $diff . ' days ago';
-    }   
+    }
 
     if ($diff >= $intervals['week'] && $diff < $intervals['month'])
     {
         $diff = floor($diff/$intervals['week']);
         return $diff == 1 ? $diff . ' week ago' : $diff . ' weeks ago';
-    }   
+    }
 
     if ($diff >= $intervals['month'] && $diff < $intervals['year'])
     {
         $diff = floor($diff/$intervals['month']);
         return $diff == 1 ? $diff . ' month ago' : $diff . ' months ago';
-    }   
+    }
 
     if ($diff >= $intervals['year'])
     {
@@ -1974,15 +1976,15 @@ function sqlerr($file = '', $line = '')
       {
          if($big)
          {
-            $donorpic = "donor_big.gif";
+            $donorpic = "fa fa-star";
             $style = "style=\"margin-left: 4pt\"";
          }
          else
          {
-            $donorpic = "donor.gif";
+            $donorpic = "fa fa-star";
             $style = "style=\"margin-left: 2pt\"";
          }
-         $pics = $arr["donor"] == "yes"?"<img title=\"Donor\" src=\"images/$donorpic\" alt=\"Donor\" border=\"0\" $style />":"";
+         $pics = $arr["donor"] == "yes"?"<i class=\"$donorpic\" title=\"Donor\" aria-hidden=\"true\" $style /></i>":"";
          return $pics;
       }
       function get_combodt($select, $opts = array())
@@ -2825,11 +2827,11 @@ function sqlerr($file = '', $line = '')
             if($btit_settings['shoutann_in_main']=='yes' || $in_main)
                quickQuery("INSERT INTO ajax_chat_messages (userID,userName,userRole,channel,dateTime,ip,text) VALUES
                   ('2147483647','Blu_Bot','17','".$chan_id."',NOW(),'".$ip."',\"".$safeContent."\")");
-            
+
             if($sep_chan)
                quickQuery("INSERT INTO ajax_chat_messages (userID,userName,userRole,channel,dateTime,ip,text) VALUES
                   ('2147483647','Blu_Bot','17','".$chan_id."',NOW(),'".$ip."',\"".$safeContent."\")");
-            
+
             unset($ip); unset($channel);
          }else{
             if(!isset($language["SYSTEM_USER"]))
@@ -3222,35 +3224,7 @@ function sqlerr($file = '', $line = '')
          }
       }
                //end new_forum_topic
-               //clean shoutbox start
-      if($btit_settings["fmhack_shoutbox_clean"] == "enabled")
-      {
-         function execcommand_clean($Data)
-         {
-            $Data = trim($Data[0][1]);
-            if(empty($Data))
-            {
-               global $TABLE_PREFIX;
-               require ("../".load_language("lang_main.php"));
-               if(!isset($language["SYSTEM_USER"]))
-                  $language["SYSTEM_USER"]="System";
-               (@quickQuery("TRUNCATE {$TABLE_PREFIX}chat"));
-               (@quickQuery("INSERT INTO {$TABLE_PREFIX}chat (uid, time, name, text) VALUES (0,".time().", '".sql_esc($language["SYSTEM_USER"])."','".$language["SHOUT_CLEANED"]."')"));
-            }
-            return false;
-         }
-         function execcommand_noclean($Data)
-         {
-            $preMatchn = "/clean";
-            if(!empty($preMatchn))
-            {
-               global $TABLE_PREFIX, $CURUSER;
-               (@quickQuery("delete from {$TABLE_PREFIX}chat where text LIKE '%".$preMatchn."%' AND uid=".$CURUSER["uid"].""));
-            }
-            return false;
-         }
-      }
-               //clean shoutbox end
+
                //staff comment
       function getLevelSC($cur_level) {
          global $TABLE_PREFIX;

@@ -15,23 +15,18 @@ global $CURUSER, $user, $USERLANG, $FORUMLINK, $db_prefix, $btit_settings, $ipb_
 require_once(load_language("lang_account.php"));
 
 block_begin("".BLOCK_USER."");
-
-if (!$CURUSER || $CURUSER["id"]==1)
     {
-// guest-anonymous, login require
-        ?>
-        <form action="index.php?page=login" name="login" method="post">
-            <table class="lista" border="0" align="center" width="100%">
-                <tr><td style="text-align:center;" align="center" class="poller"><?php echo $language["USER_NAME"]?>:</td></tr><tr><td class="poller" style="text-align:center;" align="center"><input type="text" size="9" name="uid" value="<?php $user ?>" maxlength="40" /></td></tr>
-                <tr><td style="text-align:center;" align="center" class="poller"><?php echo $language["USER_PWD"]?>:</td></tr><tr><td class="poller" style="text-align:center;" align="center"><input type="password" size="9" name="pwd" maxlength="40" /></td></tr>
-                <tr><td colspan="2" class="poller" style="text-align:center;" align="center"><input type="submit" value="<?php echo $language["FRM_LOGIN"]?>" /></td></tr>
-                <tr><td class="lista" style="text-align:center;" align="center"><a class="user" href="index.php?page=signup"><?php echo $language["ACCOUNT_CREATE"]?></a></td></tr><tr><td class="lista" style="text-align:center;" align="center"><a class="user" href="index.php?page=recover"><?php echo $language["RECOVER_PWD"]?></a></td></tr>
-            </table>
-        </form>
-        <?php
+// DT Uploader Medals
+        if($btit_settings["fmhack_uploader_medals"]=="enabled")
+     {
+        if ($CURUSER["up_med"] >= $btit_settings["UPB"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"BRONZE MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPS"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"SILVER MEDAL\" /></i>";
+        if ($CURUSER["up_med"] >= $btit_settings["UPG"])
+            $up_med="<i class=\"fa fa-trophy\" aria-hidden=\"true\" title=\"GOLD MEDAL\" /></i>";
     }
-    else
-    {
+// DT Uploader Medals END
 
 // user information
      $style=style_list();
@@ -59,26 +54,9 @@ if (!$CURUSER || $CURUSER["id"]==1)
          }
      }
 
-     print("\n<form name=\"jump\" method=\"post\" action=\"index.php\">\n<table class=\"poller\" width=\"100%\" cellspacing=\"0\">\n<tr><td align=\"center\">".$language["USER_NAME"].":  " .unesc((($btit_settings["fmhack_group_colours_overall"]=="enabled")?$CURUSER["prefixcolor"].$CURUSER["username"].$CURUSER["suffixcolor"]:$CURUSER["username"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($CURUSER):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($CURUSER):""))."</td></tr>\n");
+     print("\n<form name=\"jump\" method=\"post\" action=\"index.php\">\n<table width=\"100%\" cellspacing=\"0\">\n<tr><td align=\"center\">".$language["USER_NAME"].":  " .unesc((($btit_settings["fmhack_group_colours_overall"]=="enabled")?$CURUSER["prefixcolor"].$CURUSER["username"].$CURUSER["suffixcolor"]:$CURUSER["username"]).(($btit_settings["fmhack_simple_donor_display"]=="enabled")?get_user_icons($CURUSER):"").(($btit_settings["fmhack_warning_system"]=="enabled")?warn($CURUSER):"")).$up_med."</td></tr>\n");
      print("<tr><td align=\"center\">".$language["USER_LEVEL"].": ".(($btit_settings["fmhack_group_colours_overall"]=="enabled")?unesc($CURUSER["prefixcolor"].$CURUSER["level"].$CURUSER["suffixcolor"]):$CURUSER["level"]).$my_img_list.(($btit_settings["fmhack_account_parked"]=="enabled" && $CURUSER["parked"]=="yes")?" ".$language["PARK_PARKED"]:"")."</td></tr>\n");
-
-     if($btit_settings["fmhack_uploader_medals"]=="enabled")
-     {
 // user information END
-      
-
-// DT Uploader Medals
-        if ($CURUSER["up_med"] >= $btit_settings["UPB"])
-            $up_med="<tr><td align=\"center\"><center>".$language["UM_UPL_MED"].": <img src='images/goblet/medaille_bronze.gif' alt='".$language["UM_BRONZE"]."' title='".$language["UM_BRONZE"]."' /></center></tr></td>";
-        if ($CURUSER["up_med"] >= $btit_settings["UPS"])
-            $up_med="<tr><td align=\"center\"><center>".$language["UM_UPL_MED"].": <img src='images/goblet/medaille_argent.gif' alt='".$language["UM_SILVER"]."' title='".$language["UM_SILVER"]."' /></center></tr></td>";
-        if ($CURUSER["up_med"] >= $btit_settings["UPG"])
-            $up_med="<tr><td align=\"center\"><center>".$language["UM_UPL_MED"].": <img src='images/goblet/medaille_or.gif' alt='".$language["UM_GOLD"]."' title='".$language["UM_GOLD"]."' /></center></tr></td>";
-
-        print($up_med);
-    }
-// DT Uploader Medals END
-
 
 //Avatar
     if ($CURUSER["avatar"] && $CURUSER["avatar"]!="")
@@ -151,7 +129,7 @@ echo '<td style="text-align:center;" align="center"><a class="btn btn-xs btn-inf
 
 
 //Seedbonus
-print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus>BON:<img src=\"images/bonus.png\">".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
+print("<tr><td align=\"center\"><a class=\"btn btn-xs btn-warning\" href=index.php?page=modules&module=seedbonus>BON:<i class=\"fa fa-certificate\" aria-hidden=\"true\"></i>".($CURUSER['seedbonus']>0?number_format($CURUSER['seedbonus'],2):"---")."</tr></a></td>\n");
 //Seedbonus END
 
 
@@ -197,11 +175,6 @@ if ($CURUSER["gotgift"] == "no" && ($today >= $xmasdayst) && ($today <= $xmasday
 
 print("</table>\n</form>");
 }
-
-//Static Mail
-/*print("<div class='mail'><b>You Have <font color=\"#FF0000\"><a href=\"".($FORUMLINK=="smf"?"index.php?page=forum&action=pm":"index.php?page=usercp&amp;uid=".$CURUSER["uid"]."&amp;do=pm&amp;action=list")."\">(".$mail['ur'].")</a></font> New Message(s)!</b>
-</div></a>");*/
-//Static Mail End
 
 block_end();
 ?>

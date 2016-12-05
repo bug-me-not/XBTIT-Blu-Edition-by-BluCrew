@@ -1,9 +1,13 @@
-<table class="header" width="100%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Failed Logins</h4>
+</div>
+<table class="table table-bordered">
   <tr>
-    <td class="header" style="text-align:center;"><b><tag:language.LOGLOG_IP /></b></td>
-    <td class="header" style="text-align:center;"><b><tag:language.LOGLOG_FAIL /></b></td>
-    <td class="header" style="text-align:center;"><b><tag:language.LOGLOG_REM /></b></td>
-    <td class="header" style="text-align:center;"><b><tag:language.LOGLOG_UNIK /></b></td>
+    <td class="head" style="text-align:center;"><b><tag:language.LOGLOG_IP /></b></td>
+    <td class="head" style="text-align:center;"><b><tag:language.LOGLOG_FAIL /></b></td>
+    <td class="head" style="text-align:center;"><b><tag:language.LOGLOG_REM /></b></td>
+    <td class="head" style="text-align:center;"><b><tag:language.LOGLOG_UNIK /></b></td>
   </tr>
   <loop:loglog>
   <tr>
@@ -14,3 +18,6 @@
   </tr>
   </loop:loglog>
 </table>
+<div class="panel-footer">
+</div>
+</div>

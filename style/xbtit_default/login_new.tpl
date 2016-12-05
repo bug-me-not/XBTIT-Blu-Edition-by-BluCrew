@@ -38,6 +38,6 @@
 	<div class="button"><a href="index.php?page=contact">Contact Us</a></div>
 </body>
 <footer>
-	<h2>By: BluCrew <tag:year /></h2>
+	<a href="http://v2.blu-bits.com/BluCrew/index.html"><h2>By: BluCrew <tag:year /></h2></a>
 </footer>
 </html>

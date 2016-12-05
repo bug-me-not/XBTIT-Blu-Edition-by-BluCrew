@@ -218,9 +218,9 @@ foreach($res as $id=>$arr)
 
    $posts[$pn]["date"]=get_date_time($arr["added"]);
    $posts[$pn]["elapsed"]="(".get_elapsed_time($arr["added"]) . " ago)";
-   $posts[$pn]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($arr["avatar"] && $arr["avatar"] != "" ? htmlspecialchars($arr["avatar"]): "$STYLEURL/images/default_avatar.gif" )."\" alt=\"\" />";
+   $posts[$pn]["avatar"]="<img onload=\"resize_avatar(this);\" src=\"".($arr["avatar"] && $arr["avatar"] != "" ? htmlspecialchars($arr["avatar"]): "/avatar/default_avatar.gif" )."\" alt=\"\" />";
    (is_null($arr["lastaction"])?$lastseen=$arr["lastconnect"]:$lastseen=$arr["lastaction"]);
-   ((time()-$lastseen>900)?$status="<img src='images/offline.gif' border='0' alt='".$language["OFFLINE"]."'>":$status="<img src='images/online.gif' border='0' alt='".$language["ONLINE"]."'>");
+   ((time()-$lastseen>100)?$status="<img src='images/offline.gif' border='0' alt='".$language["OFFLINE"]."'>":$status="<img src='images/online.gif' border='0' alt='".$language["ONLINE"]."'>");
    $posts[$pn]["online"]=$status;
    $posts[$pn]["user_group"]=$arr["user_group"];
 
@@ -262,8 +262,8 @@ foreach($res as $id=>$arr)
    if (is_valid_id($arr['editedby']))
    $posts[$pn]["body"].= "<p><font size=\"1\">".$language["LAST_EDITED_BY"]." <a href=\"index.php?page=userdetails&amp;id=".$arr["editedby"]."\"><b>".$arr["editor"]."</b></a> at ".get_date_time($arr['editedat'])."</font></p>\n";
 
-   $posts[$pn]["pm"]=($CURUSER["uid"]>1?"<a href=\"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=$userid&amp;what=new&amp;to=".urlencode($arr["username"])."\">".image_or_link("$STYLEPATH/images/pm.png","",$language["PM"])."</a>":"");
-   $posts[$pn]["top"]=image_or_link("$STYLEPATH/images/top.gif","",$language["TOP"]);
+   $posts[$pn]["pm"]=($CURUSER["uid"]>1?"<a href=\"index.php?page=usercp&amp;do=pm&amp;action=edit&amp;uid=$userid&amp;what=new&amp;to=".urlencode($arr["username"])."\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></a>":"");
+   $posts[$pn]["top"]=("<i class=\"fa fa-arrow-circle-o-up\" aria-hidden=\"true\">");
    ++$pn;
    ++$post_number;
 

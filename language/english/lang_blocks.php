@@ -27,6 +27,7 @@ $language['BLOCK_MAINUSERTOOLBAR']='Main User Toolbar';
 $language['WELCOME_LASTUSER']=' Welcome to our Tracker ';
 $language['BLOCK_MINCLASSVIEW']='Minimum rank that can view';
 $language['BLOCK_MAXCLASSVIEW']='Maximum rank that can view';
+$language['BLOCK_DISCALIMER']='Disclaimer';
 
 $language["BLOCK_HIT"]="Hit & Run Warns"; # changed HIT & RUN Warning for proper block display
 

@@ -84,14 +84,10 @@
       </tr>
       </if:imageon>
       </if:imageup_enabled>
+
       <tr>
         <td align="right" class="header"><tag:language.DESCRIPTION /></td>
         <td class="lista"><tag:torrent.description /></td>
-      </tr>
-
-      <tr>
-        <td align="right" class="header"><tag:language.ANONYMOUS /></td>
-        <td class="lista"><input type="radio" name="anonymous" value="true" <if:anon>checked</if:anon>><tag:language.YES />&nbsp;&nbsp;<input type="radio" name="anonymous" value="false" <if:anon1>checked</if:anon1>><tag:language.NO /></td>
       </tr>
 
      <if:imageup_enabled2>
@@ -101,15 +97,20 @@
       <td class="lista">
       <table class="lista" border="0" cellspacing="0" cellpadding="0">
       <tr>
-      <td class="lista" align="left"><input type="file" name="screen1" size="5" /></td>
-      <td class="lista" align="left"><input type="file" name="screen2" size="5" /></td>
-      <td class="lista" align="left"><input type="file" name="screen3" size="5" /></td>
+      <td class="lista" align="left"><input type="file" name="screen1" class="btn btn-primary btn-anchor" size="5" /></td>
+      <td class="lista" align="left"><input type="file" name="screen2" class="btn btn-primary btn-anchor" size="5" /></td>
+      <td class="lista" align="left"><input type="file" name="screen3" class="btn btn-primary btn-anchor" size="5" /></td>
       </tr>
       </table>
       </td>
       </tr>
       </if:screenon>
       </if:imageup_enabled2>
+
+      <tr>
+        <td align="right" class="header"><tag:language.ANONYMOUS /></td>
+        <td class="lista"><input type="radio" name="anonymous" value="true" <if:anon>checked</if:anon>><tag:language.YES />&nbsp;&nbsp;<input type="radio" name="anonymous" value="false" <if:anon1>checked</if:anon1>><tag:language.NO /></td>
+      </tr>
 
       <tr>
         <td class="header" align="right"><tag:language.CATEGORY_FULL /></td>

@@ -299,10 +299,7 @@ $w(document).ready(function() {
         <tag:language.CATEGORY_FULL />
     </td>
     <td class="lista" align="left">
-    <div class="input-group">
-        <select class="form-control" name="validate-select" id="validate-select" placeholder="Validate Select" required <tag:upload_categories_combo /></select>
-    <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
-    </div>
+    <select class="form-control" <tag:upload_categories_combo /></select>
     </td>
 </tr>
 <!-- CATEGORY END -->
@@ -559,6 +556,25 @@ $w(document).ready(function() {
     <td class="lista" ><tag:textbbcode /></td>
 </tr>
 <!-- UPLOAD DESCRIPTION END -->
+
+<!-- SCREEN SHOTS START -->
+<if:imageup_enabled2>
+<if:screenon>
+<tr>
+   <td class="header"><tag:language.SCREEN /> (<tag:language.FACOLTATIVE />):</td>
+   <td class="lista">
+      <table class="lista" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="lista" align="left"><input type="file" name="screen1" class="btn btn-primary btn-anchor" size="5" /></td>
+            <td class="lista" align="left"><input type="file" name="screen2" class="btn btn-primary btn-anchor" size="5" /></td>
+            <td class="lista" align="left"><input type="file" name="screen3" class="btn btn-primary btn-anchor" size="5" /></td>
+         </tr>
+      </table>
+   </td>
+</tr>
+</if:screenon>
+</if:imageup_enabled2>
+<!-- SCREEN SHOTS END -->
 
 <!-- STICKY TORRENT START -->
 <if:sticky_enabled>

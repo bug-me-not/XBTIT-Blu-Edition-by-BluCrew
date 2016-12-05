@@ -1,11 +1,15 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Modules</h4>
+</div>
 <table class="lista" width="100%" cellspacing="1" cellpadding="6">
   <tr>
-    <td class="header" width="25"><tag:language.ID_MODULE /></td>
-    <td class="header"><tag:language.NAME />         </td>
-    <td class="header"><tag:language.TYPE />         </td>
-    <td class="header"><tag:language.DATE_CHANGED /> </td>
-    <td class="header"><tag:language.DATE_CREATED /> </td>
-    <td class="header"><tag:language.ACTIVATED />    </td>
+    <td class="head" width="25"><tag:language.ID_MODULE /></td>
+    <td class="head"><tag:language.NAME />         </td>
+    <td class="head"><tag:language.TYPE />         </td>
+    <td class="head"><tag:language.DATE_CHANGED /> </td>
+    <td class="head"><tag:language.DATE_CREATED /> </td>
+    <td class="head"><tag:language.ACTIVATED />    </td>
   </tr>
   <loop:modules>
     <tr>
@@ -26,12 +30,18 @@
     </td>
   </tr>
 </table>
+<div class="panel-footer">
+</div>
+</div>
+
 <br />
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.ADD_NEW_MODULE /></h4>
+</div>
 <form name="add_module" action="<tag:form_action />" method="post">
 <table class="lista" cellpadding="4" cellspacing="0">
-  <tr>
-    <td class="header" colspan="2"><tag:language.ADD_NEW_MODULE /></td>
-  </tr>
   <tr>
     <td class="lista"><tag:language.NAME /></td>
     <td class="lista"><input type="text" name="module_name" size="40" /></td>
@@ -45,7 +55,10 @@
     <option value="style"><tag:language.STYLE /></option></select></td>
   </tr>
   <tr>
-    <td colspan="2" class="lista"><input type="submit" class="btn" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
+    <td colspan="2" class="lista"><input type="submit" class="btn btn-md btn-primary" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
   </tr>
 </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

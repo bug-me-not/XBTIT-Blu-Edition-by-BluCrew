@@ -72,7 +72,7 @@ if ($res)
  $ad=array_diff($xbt_tables,$xbt_in_db);
 
  if (count($ad)==0)
-    $admin["xbtt_ok"]="<br />\nIT SEEMS THAT ALL XBTT TABLES ARE PRESENT!<br />\n<br />\n";
+    $admin["xbtt_ok"]="<br />\n<p class=\"text-success\">IT SEEMS THAT ALL XBTT TABLES ARE PRESENT!</p><br />\n<br />\n";
  else
     $admin["xbtt_ok"]="";
 
@@ -87,45 +87,52 @@ $res->free();
 if (file_exists($TORRENTSDIR))
   {
   if (is_writable($TORRENTSDIR))
-        $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\n<span style=\"color:#BEC635; font-weight: bold;\">is writable</span><br />\n");
+        $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\n<p class=\"text-success\">is writable</p><br />\n");
   else
-        $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\nis <span style=\"color:#FF0000; font-weight: bold;\">NOT writable</span><br />\n");
+        $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\nis <p class=\"text-warning\">NOT writable</p><br />\n");
   }
 else
-  $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\n<span style=\"color:#FF0000; font-weight: bold;\">NOT FOUND!</span><br />\n");
+  $admin["torrent_ok"]=("<br />\nTorrent's folder $TORRENTSDIR<br />\n<p class=\"text-danger\">NOT FOUND!</p><br />\n");
 
 // check cache folder
 if (file_exists("$THIS_BASEPATH/cache"))
   {
   if (is_writable("$THIS_BASEPATH/cache"))
-        $admin["cache_ok"]=("cache folder<br />\n<span style=\"color:#BEC635; font-weight: bold;\">is writable</span><br />\n");
+        $admin["cache_ok"]=("cache folder<br />\n<p class=\"text-success\">is writable</p><br />\n");
   else
-        $admin["cache_ok"]=("cache folder is<br />\n<span style=\"color:#FF0000; font-weight: bold;\">NOT writable</span><br />\n");
+        $admin["cache_ok"]=("cache folder is<br />\n<p class=\"text-warning\">NOT writable</p><br />\n");
   }
 else
-  $admin["cache_ok"]=("cache folder<br />\n<span style=\"color:#FF0000; font-weight: bold;\">NOT FOUND!</span><br />\n");
+  $admin["cache_ok"]=("cache folder<br />\n<p class=\"text-danger\">NOT FOUND!</p><br />\n");
 
 
 // check censored worlds file
 if (file_exists("badwords.txt"))
   {
   if (is_writable("badwords.txt"))
-        $admin["badwords_ok"]=("Censored words file (badwords.txt)<br />\n<span style=\"color:#BEC635; font-weight: bold;\">is writable</span><br />\n");
+        $admin["badwords_ok"]=("Censored words file (badwords.txt)<br />\n<p class=\"text-success\">is writable</p><br />\n");
   else
-        $admin["badwords_ok"]=("Censored words file (badwords.txt)<br />\nis <span style=\"color:#FF0000; font-weight: bold;\">NOT writable</span> (cannot writing tracker's configuration change)<br />\n");
+        $admin["badwords_ok"]=("Censored words file (badwords.txt)<br />\nis <p class=\"text-warning\">NOT writable</p> (cannot writing tracker's configuration change)<br />\n");
    }
 else
-  $admin["badwords_ok"]=("<br />\nCensored words file (badwords.txt)<br />\n<span style=\"color:#FF0000; font-weight: bold;\">NOT FOUND!</span><br />\n");
+  $admin["badwords_ok"]=("<br />\nCensored words file (badwords.txt)<br />\n<p class=\"text-danger\">NOT FOUND!</p><br />\n");
+
+$bytes = disk_free_space(".");
+$si_prefix = array( 'B', 'KB', 'MB', 'GB', 'TB', 'EB', 'ZB', 'YB' );
+$base = 1024;
+$class = min((int)log($bytes , $base) , count($si_prefix) - 1);
 
 $admin["infos"].=("<br />\n<table border=\"0\">\n");
-$admin["infos"].=("<tr><td class=\"header\" align=\"center\">Server's OS</td></tr><tr><td align=\"left\">".php_uname()."</td></tr>");
-$admin["infos"].=("<tr><td class=\"header\" align=\"center\">PHP version</td></tr><tr><td align=\"left\">".phpversion()."</td></tr>");
+$admin["infos"].=("<tr><td class=\"head\" align=\"left\">Server's OS</td></tr><tr><td align=\"left\">".php_uname()."</td></tr>");
+$admin["infos"].=("<tr><td class=\"head\" align=\"left\">Script Location</td></tr><tr><td align=\"left\"><b>".$_SERVER["DOCUMENT_ROOT"]."<br></td></tr>");
+$admin["infos"].=('<tr><td class="head" align="left">Free Space</td></tr><tr><td align="left">Unused Server Space:&nbsp;<font color=red>'.sprintf('%1.2f' , $bytes / pow($base,$class)) . ' ' . $si_prefix[$class] . '</b></td></tr>');
+$admin["infos"].=("<tr><td class=\"head\" align=\"left\">PHP Version</td></tr><tr><td align=\"left\">".phpversion()."</td></tr>");
 
 $sqlver=do_sqlquery("SELECT VERSION()")->fetch_row();
-$admin["infos"].=("\n<tr><td class=\"header\" align=\"center\">MYSQL version</td></tr><tr><td align=\"left\">$sqlver[0]</td></tr>");
+$admin["infos"].=("\n<tr><td class=\"head\" align=\"left\">MYSQL Version</td></tr><tr><td align=\"left\">$sqlver[0]</td></tr>");
 $sqlver=sql_stat();
 $sqlver=explode('  ',$sqlver);
-$admin["infos"].=("\n<tr><td valign=\"top\" class=\"header\" align=\"center\">MYSQL stats</td></tr>\n");
+$admin["infos"].=("\n<tr><td valign=\"top\" class=\"head\" align=\"left\">MYSQL stats</td></tr>\n");
 for ($i=0;$i<count($sqlver);$i++)
       $admin["infos"].=("<tr><td align=\"left\">$sqlver[$i]</td></tr>\n");
 $admin["infos"].=("\n</table><br />\n");

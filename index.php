@@ -143,7 +143,7 @@ require(load_language("lang_main.php"));
 
 $tpl=new bTemplate();
 $tpl->set("aads_enabled", (($btit_settings["fmhack_advanced_auto_donation_system"]=="enabled" && $pageID=="donatebc")?true:false), true);
-$tpl->set("main_title",$btit_settings["name"]." .::. "."Index");
+$tpl->set("main_title",$btit_settings["name"]." - "."Index");
 //ads system cooly
 if($btit_settings["fmhack_ads_system"]=="enabled" && in_array($CURUSER["id_level"],explode(",",$btit_settings["ad_groups"])))
 {
@@ -214,13 +214,6 @@ $adarea=adarea_menu();
 $altlogin=altlogin_menu();
 
 $header.="<div>".main_menu()."</div>";
-/* for the header collapse */
-$slideIt="<span style=\"float:left; padding-left:20px; border:none; margin: 0px;\"><a href=\"#\" rel=\"toggle[header]\" data-closedimage=\"$STYLEURL/images/open.png\" data-openimage=\"$STYLEURL/images/close.png\"><img src=\"$STYLEURL/images/close.png\" border=\"0\" alt=\"click\" /></a></span>";
-
-
-/* for the footer block collapse */
-$slideIt2="<span style=\"float:left; padding-left:20px; border:0; margin: 0px;\"><a href=\"#\" rel=\"toggle[bottom_menu]\" data-closedimage=\"$STYLEURL/images/open.png\" data-openimage=\"$STYLEURL/images/close.png\"><img src=\"$STYLEURL/images/close.png\" border=\"0\" alt=\"click\" /></a></span>";
-/*---*/
 $left_col=side_menu();
 $right_col=right_menu();
 
@@ -313,16 +306,8 @@ if($btit_settings["fmhack_forced_FAQ"]=="enabled")
   if ($CURUSER["id_level"]>=3 && $CURUSER["viewed_faq"]==0 && $faq[0]["count"]>0)
     $pageID="faq";
 }
-//if arcade
-/*$act=(isset($_GET["act"])?$_GET["act"]:$act="");
-if($act=="Arcade"){
-include("$THIS_BASEPATH/Arcade.php");
-}else{*/
-  require("index_arc.php");
 
   include($THIS_BASEPATH.'/index.switch.php');
-
-//}//end if arcade
 
   include($THIS_BASEPATH.'/index.pages.php');
 
