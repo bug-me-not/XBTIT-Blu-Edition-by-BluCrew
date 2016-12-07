@@ -837,7 +837,7 @@ if($count > 0)
                 if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")
                 {
                     if($data["multiplier"] > 1)
-                    $mult = "<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
+                    $mult = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
                     else
                     $mult = "";
                 }
@@ -851,7 +851,7 @@ if($count > 0)
                 if($btit_settings["fmhack_show_if_seedbox_is_used"] == "enabled")
                 {
                     if($data["seedbox"]=="1") {
-                        $sb = "<span class='label label-danger'>High Speeds</span>";
+                        $sb = "&nbsp;<span class='label label-danger'>High Speeds</span>";
                     }
                     else {   $sb='';
                     }
@@ -881,7 +881,7 @@ if($count > 0)
                     else
                     $req = "";
                     if($data["nuked"] != "false")
-                    $nuk = "&nbsp;<span class='label label-warning'>Nuked</span>";
+                    $nuk = "&nbsp;<span class='label label-warning' title='".$rtorr_results["nuke_reason"]."'>Nuked</span>";
                     else
                     $nuk = "";
                 }
@@ -1059,6 +1059,7 @@ if($count > 0)
                     $torrents[$i]["free"] = '<span class="label label-info">Global FreeLeech</span>';
                 }
                 // end free leech
+                
                 //waitingtime
                 // display only if the curuser have some WT restriction
                 if(((max(0, $CURUSER["WT"]) > 0 || max(0, $CURUSER["wait_time"]) > 0 || ($CURUSER["custom_wait_time"] == "yes" && max(0, $CURUSER["php_cust_wait_time"]) > 0))?true:false))
@@ -1611,7 +1612,7 @@ if($count > 0)
                             if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")
                             {
                                 if($rtorr_results["multiplier"] > 1)
-                                $mult1 = "<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
+                                $mult1 = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
                                 else
                                 $mult1 = "";
                             }
@@ -1619,7 +1620,7 @@ if($count > 0)
                             {
                                 //seedbox start
                                 if($rtorr_results["seedbox"] == "1")
-                                $sb1 = "<img title='".$language["SB_HS_TORRENT"]."' src='images/seedbox.gif' alt='".$language["SB_HS_TORRENT"]."'>";
+                                $sb1 = "&nbsp;<span class='label label-danger'>High Speeds</span>";
                                 else
                                 $sb1 = '';
                                 //seedbox end
@@ -1640,11 +1641,11 @@ if($count > 0)
                             {
                                 //Torrent Nuke/Req Hack Start
                                 if($rtorr_results["requested"] != "false")
-                                $req1 = "&nbsp;<img title='".$language["TNR_REL_REQ"]."' src='images/req.gif' />";
+                                $req1 = "&nbsp;<span class='label label-primary'>Requested</span>";
                                 else
                                 $req1 = "";
                                 if($rtorr_results["nuked"] != "false")
-                                $nuk1 = "&nbsp;<img title='".$rtorr_results["nuke_reason"]."' src='images/nuked.gif' />";
+                                $nuk1 = "&nbsp;<span class='label label-warning' title='".$rtorr_results["nuke_reason"]."'>Nuked</span>";
                                 else
                                 $nuk1 = "";
                             }

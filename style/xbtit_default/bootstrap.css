@@ -8082,6 +8082,11 @@ select.icon-right i {
   hyphens: auto
 }
 
+.tags {
+  position: absolute;
+  right: .5%;
+}
+
 /*  Forums Comments */
 .user-avatar:hover {
   animation: pulse .2s ease;

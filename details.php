@@ -404,16 +404,6 @@ if($btit_settings["fmhack_staff_comment_in_torrent_details"]=="enabled")
 
 $torrenttpl->set("reenc_enabled", (($btit_settings["fmhack_offer_to_re-encode"]=="enabled" && $CURUSER["view_reencode"]=="yes" && $row["reencode"]==1)?true:false), true);
 
-$torrenttpl->set("mult_enabled", (($btit_settings["fmhack_upload_multiplier"]=="enabled" && $row["multiplier"]>1)?true:false), true);
-if($btit_settings["fmhack_upload_multiplier"]=="enabled")
-{
-   if($row["multiplier"]>1)
-      $mult="<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
-   else
-      $mult="";
-   $torrenttpl->set("mult", $mult);
-}
-
 $torrenttpl->set("ruat", (($btit_settings["fmhack_report_users_and_torrents"]=="enabled")?true:false),true);
 if($btit_settings["fmhack_report_users_and_torrents"]=="enabled")
 {
@@ -555,20 +545,23 @@ if($btit_settings["fmhack_NFO_uploader_-_viewer"]=="enabled")
    # End
    ########################################################## -->
 
-$row["filename2"]=$row["filename"];
-$torrenttpl->set("down_filename",str_replace("&amp;","_",$row["filename2"]));
 if($btit_settings["fmhack_torrent_nuked_and_requested"]=="enabled")
+if($btit_settings["fmhack_upload_multiplier"]=="enabled")
 {
-      //Torrent Nuke/Req Hack Start
-   $row["torrentname"]=$row["filename"];
+   // Upload Multiplier
+   if($row["multiplier"]!="false")
+      $mult="&nbsp;<span class='label label-green' title='".$row["multiplier"]."x ".$language["UPM_UPL_MULT"]."'>".$row["multiplier"]." x Multiplier </span>";
+   // Upload Multiplier END
+
+   //Torrent Nuke/Req Hack Start
    if ($row["requested"]!="false")
       $req="&nbsp;<span class='label label-primary'>Requested</span>";
 
    if ($row["nuked"]!="false")
-      $nuk="&nbsp;<span class='label label-warning'>Nuked</span>";
+      $nuk="&nbsp;<span class='label label-warning' title='".$rtorr_results["nuke_reason"]."'>Nuked</span>";
+   //Torrent Nuke/Req Hack End
 
-   $row["filename2"]=$row["filename"].$nuk.$req;
-      //Torrent Nuke/Req Hack End
+   $torrenttpl->set("tags",$nuk.$req.$free.$mult);
 }
 
 if (!empty($row["comment"]))

@@ -304,6 +304,9 @@ function dt_show_waitb()
    <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
    <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
 
+<div class="tags">
+ <h2><tag:tags /></h2>
+  </div>
   <div class="main-info-holder">
     <div class="main-info">
       <h1><tag:torrent.filename2 /></h1>
@@ -364,13 +367,6 @@ function dt_show_waitb()
 </tr>
 </if:has_direct_link>
 </if:ddl_enabled>
-
-<if:mult_enabled>
-<tr>
-   <td align='right' class='header'><tag:language.UPM_UPL_MULT /></td>
-   <td align='left' class='lista' colspan='2'><tag:mult /></td>
-</tr>
-</if:mult_enabled>
 
 <if:auto_topic_enabled>
 <if:FORUM_LNK>
