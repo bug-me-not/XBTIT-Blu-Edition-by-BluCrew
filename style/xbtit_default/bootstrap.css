@@ -8305,3 +8305,58 @@ select.icon-right i {
   display: none;
 }
 
+/* Material Colors */
+[class*='material-red']  {
+  background-color: #f44336;
+}
+[class*='material-pink']  {
+  background-color: #e91e63;
+}
+[class*='material-purple']  {
+  background-color: #9c27b0;
+}
+[class*='material-deeppurple']  {
+  background-color: #673ab7;
+}
+[class*='material-indigo']  {
+  background-color: #3f51b5;
+}
+[class*='material-lightblue']  {
+  background-color: #03a9f4;
+}
+[class*='material-cyan']  {
+  background-color: #00bcd4;
+}
+[class*='material-teal']  {
+  background-color: #009688;
+}
+[class*='material-lightgreen']  {
+  background-color: #8bc34a;
+}
+[class*='material-lime']  {
+  background-color: #cddc39;
+}
+[class*='material-lightyellow']  {
+  background-color: #ffeb3b;
+  color: #4D4D4D;
+}
+[class*='material-orange']  {
+  background-color: #ff9800;
+}
+[class*='material-deeporange']  {
+  background-color: #ff5722;
+}
+[class*='material-grey']  {
+  background-color: #9e9e9e;
+}
+[class*='material-bluegrey']  {
+  background-color: #607d8b;
+}
+[class*='material-brown']  {
+  background-color: #795548;
+}
+[class*='material-lightgrey']  {
+  background-color: #ececec;
+  color: #4D4D4D;    
+}
+
