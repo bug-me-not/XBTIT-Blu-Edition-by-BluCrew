@@ -809,28 +809,33 @@ switch ($do)
    include("$ADMIN_PATH/admin.flush.php");
    break;
 
-               //login log hack
+//login log hack
    case 'loglog':
    include("$ADMIN_PATH/admin.loglog.php");
    $tpl->set("main_content",set_block($language["ACP_LOGLOG"],"center",$admintpl->fetch(load_template("admin.loglog.tpl"))));
    break;
-               //login log hack
+//login log hack
 
-               //Medi Seedbox IP's
+//Medi Seedbox IP's
    case 'seedip':    include("$ADMIN_PATH/admin.seedip.php");    $tpl->set("main_content",set_block("Seedbox IPs","center",$admintpl->fetch(load_template("admin.seedip.tpl"))));    break;
-               //Medi Seedbox IP's
+//Medi Seedbox IP's
 
-			   //Featured Torrent
+//Featured Torrent
    case 'featured':
    include("$ADMIN_PATH/admin.featured.php");
    $tpl->set("main_content",set_block($language["FEATURED_SETTINGS"],"center",$admintpl->fetch(load_template("admin.featured.tpl"))));
    break;
-	   			//Featured Torrent
+//Featured Torrent
 
    case 'apply_membership':
    require(load_language("lang_apply_membership.php"));
    include("$ADMIN_PATH/admin.apply_membership.php");
    $tpl->set("main_content",set_block($language["ACP_APPLY_MEMBERSHIP_SET"],"center",$admintpl->fetch(load_template("admin.apply_membership.tpl"))));
+   break;
+
+   case 'massemail':
+   include("$ADMIN_PATH/admin.massemail.php");
+   $tpl->set("main_content",set_block($language["ACP_MASSEMAIL"],"center",$admintpl->fetch(load_template("admin.massemail.tpl"))));
    break;
 
    case 'sanity':

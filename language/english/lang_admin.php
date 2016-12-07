@@ -35,6 +35,7 @@ $language['ACP_HACKS_CONFIG']='Hacks Settings';
 $language['ACP_MODULES']='Modules';
 $language['ACP_MODULES_CONFIG']='Modules Settings';
 $language['ACP_MASSPM']='Mass Private Mail';
+$language["ACP_MASSEMAIL"]="Mass E-Mail";
 $language['ACP_PRUNE_TORRENTS']='Prune Torrents';
 $language['ACP_PRUNE_USERS']='Prune Users';
 $language['ACP_SITE_LOG']='View Site Log';

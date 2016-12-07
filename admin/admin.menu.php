@@ -46,9 +46,12 @@ if ($moderate_user)
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=masspm&amp;action=write" ,
                 "description"=>$language["ACP_MASSPM"]),
             1=>array(
+                    "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=massemail&amp;action=write" ,
+                    "description"=>$language["ACP_MASSEMAIL"]),
+            2=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=".(($btit_settings["fmhack_advanced_prune_users_and_torrents"]=="enabled")?"adv_":"")."pruneu" ,
                 "description"=>$language["ACP_PRUNE_USERS"]),
-            2=>array(
+            3=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=searchdiff" ,
                 "description"=>$language["ACP_SEARCH_DIFF"])
             )
@@ -109,18 +112,21 @@ else
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=masspm&amp;action=write" ,
                 "description"=>$language["ACP_MASSPM"]),
             2=>array(
+                    "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=massemail&amp;action=write" ,
+                    "description"=>$language["ACP_MASSEMAIL"]),
+            3=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=".(($btit_settings["fmhack_advanced_prune_users_and_torrents"]=="enabled")?"adv_":"")."pruneu" ,
                 "description"=>$language["ACP_PRUNE_USERS"]),
-            3=>array(
+            4=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=searchdiff" ,
                 "description"=>$language["ACP_SEARCH_DIFF"]),
-            4=>array(
+            5=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=loglog" ,
                 "description"=>$language["ACP_LOGLOG"]),
-            5=>array(
+            6=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=proxy" ,
                 "description"=>$language["ACP_PROXY"]),
-            6=>array(
+            7=>array(
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=read_messages" ,
                 "description"=>$language["ACP_MENU_SUPPORT"])
             )
