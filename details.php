@@ -408,7 +408,7 @@ $torrenttpl->set("mult_enabled", (($btit_settings["fmhack_upload_multiplier"]=="
 if($btit_settings["fmhack_upload_multiplier"]=="enabled")
 {
    if($row["multiplier"]>1)
-      $mult="<img src='images/".$row["multiplier"]."x.gif' border='0' alt='".$row["multiplier"]."x ".$language["UPM_UPL_MULT"]."' title='".$row["multiplier"]."x ".$language["UPM_UPL_MULT"]."' />";
+      $mult="<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
    else
       $mult="";
    $torrenttpl->set("mult", $mult);

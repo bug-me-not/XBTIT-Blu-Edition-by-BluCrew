@@ -1611,8 +1611,7 @@ if($count > 0)
                             if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")
                             {
                                 if($rtorr_results["multiplier"] > 1)
-                                $mult1 = "<img alt='".$rtorr_results["multiplier"]."x ".$language["UPM_UPL_MULT"]."' title='".$rtorr_results["multiplier"]."x ".$language["UPM_UPL_MULT"]."' src='images/".$rtorr_results['multiplier'].
-                                "x.gif' />";
+                                $mult1 = "<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
                                 else
                                 $mult1 = "";
                             }
