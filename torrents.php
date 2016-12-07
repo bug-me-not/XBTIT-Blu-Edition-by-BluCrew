@@ -829,7 +829,7 @@ if($count > 0)
                 {
                     $fsub = ((isset($data["shash"]) && !is_null($data["shash"]))?$data["shash"]:"");
                     if($fsub != "")
-                    $sub = "<a href='index.php?page=subtitles&id=$fsub'><span class='label label-danger'>Subtitles</span></a>";
+                    $sub = "<a href='index.php?page=subtitles&id=$fsub'><span class='label label-blue'>Subtitles</span></a>";
                     else
                     $sub = "";
                 }

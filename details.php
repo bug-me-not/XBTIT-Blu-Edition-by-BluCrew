@@ -1021,13 +1021,14 @@ if($btit_settings["fmhack_subtitles"]=="enabled")
       $i=0;
       while ($srow = $sres->fetch_assoc())
       {
+
 // Begin Anonymous Comments for Anonymous Uploader Part 1
         if ($srow[uid]==$anonrow["uploader"] AND $anonrow["anonymous"]=="true") {
            $srow["user"] = "Anonymous";
         }
 // End Anonymous Comments for Anonymous Uploader Part 1
-        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'>".$srow["name"]."</a>";
-        $sub[$i]['flag']="<img src='images/flag/".$srow["flag"]."' title='".$srow["flagname"]."' alt='".$srow["flagname"]."'  border='0' />";
+
+        $sub[$i]['name']="<a href='subtitle_download.php?id=".$srow["id"]."'><span class='label label-blue'>'".$srow["flagname"]."' Subtitles</span></a>";
         $i++;
      }
      $torrenttpl->set('subs',$sub);

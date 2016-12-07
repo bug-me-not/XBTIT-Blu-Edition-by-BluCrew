@@ -457,7 +457,6 @@ function dt_show_waitb()
       <table>
          <loop:subs>
          <tr>
-            <td align="left"><tag:subs[].flag /></td>
             <td align="left"><tag:subs[].name /></td>
          </tr>
       </loop:subs>
