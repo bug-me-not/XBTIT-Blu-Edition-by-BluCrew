@@ -406,6 +406,7 @@ if($count > 0)
             $by = "DESC";
             list($pagertop, $pagerbottom, $limit) = pager($torrentperpage, $count, $scriptname."&amp;".$addparam.(strlen($addparam) > 0?"&amp;":"").(($btit_settings["fmhack_advanced_torrent_search"] == "enabled")?
             "options=".$options:"")."&amp;order=$order_param&amp;by=$by_param&amp;");
+            
             /*Mod by losmi - gold mod*/
             $query1_select = "`f`.`anonymous`,";
             $query1_order = "";
@@ -1059,7 +1060,7 @@ if($count > 0)
                     $torrents[$i]["free"] = '<span class="label label-info">Global FreeLeech</span>';
                 }
                 // end free leech
-                
+
                 //waitingtime
                 // display only if the curuser have some WT restriction
                 if(((max(0, $CURUSER["WT"]) > 0 || max(0, $CURUSER["wait_time"]) > 0 || ($CURUSER["custom_wait_time"] == "yes" && max(0, $CURUSER["php_cust_wait_time"]) > 0))?true:false))

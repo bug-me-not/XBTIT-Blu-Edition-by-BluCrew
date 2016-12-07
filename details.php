@@ -545,6 +545,8 @@ if($btit_settings["fmhack_NFO_uploader_-_viewer"]=="enabled")
    # End
    ########################################################## -->
 
+$row["filename2"]=$row["filename"];
+$torrenttpl->set("down_filename",str_replace("&amp;","_",$row["filename2"]));
 if($btit_settings["fmhack_torrent_nuked_and_requested"]=="enabled")
 if($btit_settings["fmhack_upload_multiplier"]=="enabled")
 {
