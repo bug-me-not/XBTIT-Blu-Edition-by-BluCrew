@@ -40,11 +40,6 @@ $language['USER_INVITED_BY']	= 'Invited By';
 $language["POINTS"] = "Points";
 $language['GUEST_DETAILS']      = 'You can\'t view the details for the Guest account!';
 
-// Radio
-$language["PLAYER"]= 'Player';
-$language["NOPLAYER"]='Nobody listening!';
-$language["NOSHOUTCAST"]='Must be no Dj!';
-$language["NOSHOUTCASTCONN"]='<b>Shoutcast Down!</b>';
 //sig sync
 $language['SIG_UD']='Signature';
 
@@ -53,7 +48,7 @@ $language["IP2C"]="IP to Country";
 $language["UN_EDBY"]="Edited by";
 $language["UN_ON"]="on";
 
-$language["PP_PRIVATE_INFO"]="has set their profile to private";
+$language["PP_PRIVATE_INFO"]="has set their profile set to private";
 
 $language["PUN"]="Previous Names";
 

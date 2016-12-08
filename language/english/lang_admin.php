@@ -5,7 +5,7 @@ global $CURUSER, $XBTT_USE;
 $language["WHERE_HEARD"] = 'Signup Referrals';
 
 //KIS
-$language['ACP_KHEZ']='Hack Settings';
+$language['ACP_KHEZ']='Khez Settings';
 $language['ACP_KOCS']='KOCS Tools';
 $language['ACP_KIS']='KIS Tools';
 //KIS
@@ -344,7 +344,7 @@ $language['ERR_SENDINVS']='Please, choose username or user level.';
 $language['SENDINV_EXPL']='If username is not inserted, rank will be chosen instead.';
 $language['RECYCLE_DATE']='Recycle period';
 $language['RECYCLE_EXPL']='<i>Period in <u>days</u> after which invitations will be recycled</i>';
-$language["ACP_FM_HACK_CONFIG"]='FM Hacks Config';
+$language["ACP_FM_HACK_CONFIG"]='Hacks Settings';
 $language["ACP_NO_HACKS_ENABLED"]='No Hacks Enabled';
 $language['HACK_INFO']='Switch Hacks on and off in here.<br /><br /><b>Please note you cannot disable a prerequisite hack if the parent hack is still enabled.</b> Please hover your mouse over the <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> images below to find out what the parent hack is.';
 global $BASEURL;
