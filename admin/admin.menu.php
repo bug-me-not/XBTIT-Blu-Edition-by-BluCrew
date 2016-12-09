@@ -166,7 +166,11 @@ else
                 "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=logview" ,
                 "description"=>$language["ACP_SITE_LOG"]),
             3=>array(
-               "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=seedip" ,                    "description"=>$language["SEEDBOX_LOG"])
+               "url"=>"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=seedip" ,                    
+               "description"=>$language["SEEDBOX_LOG"]),
+            4=>array(
+               "url"=>"index.php?page=modules&module=cache" ,
+                "description"=>$language["ACP_CACHE"])
             )
             ),
 

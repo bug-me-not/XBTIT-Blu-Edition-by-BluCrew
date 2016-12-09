@@ -2,6 +2,8 @@
 
 global $CURUSER, $XBTT_USE;
 
+$language["ACP_CACHE"] = 'Cache Settings';
+
 $language["WHERE_HEARD"] = 'Signup Referrals';
 
 //KIS
