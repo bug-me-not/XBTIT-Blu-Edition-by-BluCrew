@@ -552,7 +552,7 @@ if($btit_settings["fmhack_upload_multiplier"]=="enabled")
 {
    // Upload Multiplier
    if($row["multiplier"]!="false")
-      $mult="&nbsp;<span class='label label-green' title='".$row["multiplier"]."x ".$language["UPM_UPL_MULT"]."'>".$row["multiplier"]." x Multiplier </span>";
+      $mult="&nbsp;<span class='label label-green' title='".$row["multiplier"]."x ".$language["UPM_UPL_MULT"]."'>".$row["multiplier"]." x Upload Multiplier </span>";
    // Upload Multiplier END
 
    //Torrent Nuke/Req Hack Start

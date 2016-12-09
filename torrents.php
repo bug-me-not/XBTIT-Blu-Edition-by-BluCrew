@@ -838,7 +838,7 @@ if($count > 0)
                 if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")
                 {
                     if($data["multiplier"] > 1)
-                    $mult = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
+                    $mult = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Upload Multiplier </span>";
                     else
                     $mult = "";
                 }
@@ -1621,7 +1621,7 @@ if($count > 0)
                             if($btit_settings["fmhack_upload_multiplier"] == "enabled" && $CURUSER["view_multi"] == "yes")
                             {
                                 if($rtorr_results["multiplier"] > 1)
-                                $mult1 = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Multiplier </span>";
+                                $mult1 = "&nbsp;<span class='label label-green' title='".$data["multiplier"]."x ".$language["UPM_UPL_MULT"]."'> ".$data['multiplier']."x Upload Multiplier </span>";
                                 else
                                 $mult1 = "";
                             }
