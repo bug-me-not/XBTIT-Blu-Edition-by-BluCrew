@@ -31,6 +31,33 @@
 ////////////////////////////////////////////////////////////////////////////////////
 function do_sanity($ts = 0)
 {
+
+// SeedBonus (BON) Multiplier
+$multie=$btit_settings["multie"]*$GLOBALS["bonus"];     
+if ($XBTT_USE) {
+ $ressb = do_sqlquery("SELECT uid FROM xbt_files_users as u INNER JOIN xbt_files as x ON u.fid=x.fid WHERE u.left = '0' AND x.flags='0' AND u.active='1'");
+   if (sql_num_rows($ressb) > 0)
+   {
+       while ($arrsb=$ressb->fetch_assoc())
+       {
+       $x=$arrsb["uid"];
+       quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `seedbonus`=`seedbonus`+'".number_format((((($ts>0)?(time()-$ts):$clean_interval)/3600)*$multie),6,".","")."' WHERE `id` = '$x'");
+
+       }
+   } }else
+   {
+ $ressb = do_sqlquery("SELECT pid FROM {$TABLE_PREFIX}peers WHERE status = 'seeder'");
+   if (sql_num_rows($ressb) > 0)
+   {
+       while ($arrsb=$ressb->fetch_assoc())
+       {
+       $x=$arrsb['pid'];
+       quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `seedbonus`=`seedbonus`+'".number_format((((($ts>0)?(time()-$ts):$clean_interval)/3600)*$multie),6,".","")."' WHERE `pid`= '$x'");
+
+    }
+   } }
+// SeedBonus (BON) Multiplier
+
     // Lets try upping the max_execution_time and memory_limit if we can
     if(@ini_get("max_execution_time") < 300)
         @ini_set("max_execution_time", 300);

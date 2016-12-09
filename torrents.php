@@ -1061,6 +1061,14 @@ if($count > 0)
                 }
                 // end free leech
 
+                // BON Multiplier
+                if($btit_settings["multie"]>1) 
+                {
+                $mult = "".$btit_settings["multie"]."";
+                $torrents[$i]["bon"] = "<span class='label label-danger'>".$mult." x BON Multiplier Activated</span>";
+                }
+                // BON Multiplier END
+
                 //waitingtime
                 // display only if the curuser have some WT restriction
                 if(((max(0, $CURUSER["WT"]) > 0 || max(0, $CURUSER["wait_time"]) > 0 || ($CURUSER["custom_wait_time"] == "yes" && max(0, $CURUSER["php_cust_wait_time"]) > 0))?true:false))

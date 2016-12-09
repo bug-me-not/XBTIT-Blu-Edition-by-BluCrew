@@ -207,7 +207,7 @@
 <td class="lista">&nbsp;<tag:language.HTML_SPECIAL />&nbsp;<input type="radio" name="parsetype" value="true"<tag:config.HTML_SPECIAL /> />&nbsp;<tag:language.HTML_ENT />&nbsp;<input type="radio" name="parsetype" value="false"<tag:config.HTML_ENT /> /></td>
 </tr>
 <tr>
-<td class="header" align="center" colspan="4">Upload Request PM Settings</td>
+<td class="head" align="center" colspan="4">Upload Request PM Settings</td>
 </tr>
 <tr>
 <td class="header">Staff ID to send PM to</td>
@@ -216,7 +216,7 @@
 <td class="lista">&nbsp;&nbsp;enable&nbsp;<input type="radio" name="up_all" value="true"<tag:config.up_allyes /> />&nbsp;&nbsp;disabled&nbsp;<input type="radio" name="up_all" value="false"<tag:config.up_allno /> /></td>
 </tr>
 <tr>
-<td class="header" align="center" colspan="4">Last Upload Slider Block Settings</td>
+<td class="head" align="center" colspan="4">Last Upload Slider Block Settings</td>
 </tr>
 <tr>
 <td class="header">Image Width</td>
@@ -225,8 +225,15 @@
 <td class="lista">&nbsp;&nbsp;Enable&nbsp;<input type="radio" name="nav" value="true"<tag:config.navyes /> />&nbsp;&nbsp;Disable&nbsp;<input type="radio" name="nav" value="false"<tag:config.navno /> /></td>
 </tr>
 <tr>
-<td align="center" class="header" colspan="2"><input type="submit" name="write" class="btn" value="<tag:language.FRM_CONFIRM />" /></td>
-<td align="center" class="header" colspan="2"><input type="submit" name="cancel" class="btn" value="<tag:language.FRM_CANCEL />" /></td>
+<td class="head" align="center" colspan="4">SeedBonus (BON) Multiplier</td>
+</tr>
+<tr>
+<td class="header">SB Multiplier</td>
+<td class="lista"><tag:config.multie_combo /></td>
+</tr>
+<tr>
+<td align="center" class="header" colspan="2"><input type="submit" name="write" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" /></td>
+<td align="center" class="header" colspan="2"><input type="submit" name="cancel" class="btn btn-md btn-warning" value="<tag:language.FRM_CANCEL />" /></td>
 </tr>
 </table>
 </form>

@@ -85,6 +85,10 @@ switch ($action)
       $btit_settings["nav"]=$_POST["nav"];
       // dt last upload jquery block
 
+      // SeedBonus (BON) Multiplier
+      $btit_settings["multie"]=$_POST["multie"];
+      // SeedBonus (BON) Multiplier
+
       if (isset($_POST["xbtt_use"]))
       {
          // check base xbtt url
@@ -347,6 +351,23 @@ switch ($action)
    }
    $btit_settings["language_combo"].=("\n</select>\n");
    unset($lres);
+
+   // SeedBonus (BON) Multiplier
+        $btit_settings["multie_combo"]="
+                    <select name=\"multie\" size=\"1\">
+                    <option value=\"1\"".($btit_settings["multie"]=="1"?" selected=\"selected\"":"").">1x</option>
+                    <option value=\"2\"".($btit_settings["multie"]=="2"?" selected=\"selected\"":"").">2x</option>
+                    <option value=\"3\"".($btit_settings["multie"]=="3"?" selected=\"selected\"":"").">3x</option>
+                    <option value=\"4\"".($btit_settings["multie"]=="4"?" selected=\"selected\"":"").">4x</option>
+                    <option value=\"5\"".($btit_settings["multie"]=="5"?" selected=\"selected\"":"").">5x</option>
+                    <option value=\"6\"".($btit_settings["multie"]=="6"?" selected=\"selected\"":"").">6x</option>
+                    <option value=\"7\"".($btit_settings["multie"]=="7"?" selected=\"selected\"":"").">7x</option>
+                    <option value=\"8\"".($btit_settings["multie"]=="8"?" selected=\"selected\"":"").">8x</option>
+                    <option value=\"9\"".($btit_settings["multie"]=="9"?" selected=\"selected\"":"").">9x</option>
+                    <option value=\"10\"".($btit_settings["multie"]=="10"?" selected=\"selected\"":"").">10x</option>
+                    </select>";
+   // SeedBonus (BON) Multiplier
+                    
    // charset
    $btit_settings["charset_combo"]="\n<select name=\"default_charset\" size=\"1\">";
    $btit_settings["charset_combo"].="\n<option".($btit_settings["default_charset"]=="ISO-8859-1"?" selected=\"selected\"":"").">ISO-8859-1</option>";
