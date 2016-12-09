@@ -1,4 +1,5 @@
-# XBTIT Blu-Edition by BluCrew v1.0
+# XBTIT Blu-Edition by BluCrew v1.1.04
+A modern front and backend bittorrent tracker
 
 
 
