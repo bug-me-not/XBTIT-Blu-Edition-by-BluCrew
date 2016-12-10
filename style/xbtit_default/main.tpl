@@ -29,12 +29,15 @@
 <!-- Custom CSS -->
 <link rel='stylesheet' href='css/global.css' type='text/css' />
 <link rel='stylesheet' href='css/hover.css' type='text/css' />
+<link rel='stylesheet' href='css/pace.css' type='text/css' />
 <tag:more_css /> 
 <!-- #CSS Links -->
 
 <!-- JavaScript -->
 <tag:main_jscript />
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jscript/pace.js"></script>
+
 <!-- #DATE Range Picker -->
       <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
       <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/moment.min.js"></script>
@@ -304,6 +307,7 @@ var tronstr = ''
 </ul>
 </div>
 </if:show_nav>
+
 <!--Spacer-->
 <br>
 <br>
@@ -319,6 +323,7 @@ var tronstr = ''
 <!--Spacer-->
 <br>
 
+<!-- Announments -->
 <script type="text/javascript">
 var q=jQuery.noConflict();
 q(document).ready(function(){
