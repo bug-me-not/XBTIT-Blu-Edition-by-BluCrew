@@ -1,5 +1,6 @@
 # XBTIT Blu-Edition by BluCrew v1.1.04
-A modern front and backend bittorrent tracker
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+> A modern front and backend bittorrent tracker!
 
 
 
@@ -13,7 +14,7 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 
 <br>
 <br>
-#NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
+## NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
 
 
 <b>:REQUIREMENTS:</b>
@@ -50,7 +51,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
 <br>
 
-### SOURCE CODE CHANGES
+### CONTRIBUTERS
 
 - There are no developer guidelines in place.
 - We do however ask that all code changes be submitted via a pull request. This allows for peer reviews. Ensures that code changes are effective and that merges are conflict free.
