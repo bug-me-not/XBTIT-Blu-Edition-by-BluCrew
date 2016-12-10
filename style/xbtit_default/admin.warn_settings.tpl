@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User Warning Settings</h4>
+</div>
 <form name='warnset' action='index.php?page=admin&user=<tag:CURUSER.uid />&code=<tag:CURUSER.random />&do=warn_settings' method='post'>
   <table align=center>
     <tr>
@@ -23,8 +27,10 @@
       <td class='lista'><input type='radio' name='warn_bantype' value='no_action_at_max' <if:tna_checked>checked='checked'</if:tna_checked> /></td>
     </tr>
     <tr>
-      <td class='header' colspan='2' align='center'><input type='submit' name='submit' value='<tag:language.WS_SUBMIT />' /></td>
+      <td class='header' colspan='2' align='center'><input type='submit' class='btn btn-md btn-primary' name='submit' value='<tag:language.WS_SUBMIT />' /></td>
     </tr>
-
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

@@ -1,13 +1,12 @@
-<table class="header" width="100%" align="center">
-  <if:need_pager_top>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User With Active Warnings</h4>
+</div>
+<table class="table table-bordered table-hover">
   <tr>
-    <td class="lista" colspan="3" style="text-align:center;"><tag:pager_top /></td>
-  </tr>
-  </if:need_pager_top>
-  <tr>
-    <td class="header" align="center"><b><tag:language.USERNAME /></b></td>
-    <td class="header" align="center"><b><tag:language.WS_WL /></b></td>
-    <td class="header" align="center"><b><tag:language.WS_NEXT_AUTO_DOWNGRADE /></b></td>
+    <td class="head" align="center"><b><tag:language.USERNAME /></b></td>
+    <td class="head" align="center"><b><tag:language.WS_WL /></b></td>
+    <td class="head" align="center"><b><tag:language.WS_NEXT_AUTO_DOWNGRADE /></b></td>
   </tr>
   <loop:warns>
   <tr>
@@ -22,3 +21,6 @@
   </tr>
   </if:need_pager_bottom>
 </table>
+<div class="panel-footer">
+</div>
+</div>

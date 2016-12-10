@@ -145,60 +145,6 @@ CREATE TABLE IF NOT EXISTS `{$db_prefix}baseline` (
   PRIMARY KEY (`file_path`)
 ); -- TABLEOPT --
 
-CREATE TABLE `{$db_prefix}betgames` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `heading` varchar(50) NOT NULL DEFAULT '',
-  `undertext` varchar(150) NOT NULL DEFAULT '',
-  `endtime` int(11) NOT NULL,
-  `active` int(1) NOT NULL DEFAULT '0',
-  `sort` int(1) NOT NULL DEFAULT '0',
-  `creator` varchar(20) NOT NULL,
-  `fix` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-); -- TABLEOPT --
-
-
-CREATE TABLE `{$db_prefix}betlog` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userid` int(11) NOT NULL DEFAULT '0',
-  `date` int(11) NOT NULL,
-  `bonus` int(11) NOT NULL DEFAULT '0',
-  `msg` varchar(150) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`),
-  KEY `userid` (`userid`),
-  KEY `userid_2` (`userid`,`bonus`)
-); -- TABLEOPT --
-
-
-CREATE TABLE `{$db_prefix}betoptions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `gameid` int(11) NOT NULL DEFAULT '0',
-  `text` varchar(100) NOT NULL DEFAULT '',
-  `odds` double NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `gameid` (`gameid`)
-); -- TABLEOPT --
-
-
-CREATE TABLE `{$db_prefix}bets` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `gameid` int(11) NOT NULL DEFAULT '0',
-  `bonus` int(11) NOT NULL DEFAULT '0',
-  `optionid` int(11) NOT NULL DEFAULT '0',
-  `userid` int(11) NOT NULL DEFAULT '0',
-  `date` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `gameid` (`gameid`),
-  KEY `userid` (`userid`)
-); -- TABLEOPT --
-
-
-CREATE TABLE `{$db_prefix}bettop` (
-  `userid` int(11) NOT NULL DEFAULT '0',
-  `bonus` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`userid`)
-); -- TABLEOPT --
-
 
 CREATE TABLE `{$db_prefix}bitcoin_invoices` (
   `invoice_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -756,7 +702,6 @@ CREATE TABLE `{$db_prefix}files` (
   `direct_download` varchar(255) NOT NULL DEFAULT '',
   `announces` text NOT NULL,
   `language` int(9) NOT NULL DEFAULT '0',
-  `mplayer` varchar(250) NOT NULL DEFAULT '',
   `approved_by` int(10) unsigned NOT NULL DEFAULT '0',
   `viewcount` int(10) unsigned NOT NULL DEFAULT '0',
   `genre` text,
@@ -774,19 +719,6 @@ CREATE TABLE `{$db_prefix}files` (
   KEY `bin_hash` (`bin_hash`(20)),
   KEY `approved_by` (`approved_by`),
   KEY `dead_time` (`dead_time`)
-); -- TABLEOPT --
-
-
-CREATE TABLE `xbtit_file_hosting` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `added` datetime default '0000-00-00 00:00:00',
-  `title` varchar(255) NOT NULL default '',
-  `filename` varchar(255) NOT NULL default '',
-  `size` int(10) unsigned NOT NULL default '0',
-  `uppedby` int(10) unsigned NOT NULL default '0',
-  `url` varchar(255) NOT NULL default '',
-  `hits` int(10) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`id`)
 ); -- TABLEOPT --
 
 
@@ -1588,7 +1520,7 @@ CREATE TABLE `{$db_prefix}settings` (
 ); -- TABLEOPT --
 
 INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
-('name', 'xbtitFM'),
+('name', 'Blu-Edition'),
 ('url', 'http://localhost/dev'),
 ('announce', 'a:2:{i:0;s:30:"http://localhost/announce.php\r";i:1;s:30:"http://localhost:2710/announce";}'),
 ('email', 'admin@localhost'),
@@ -2063,18 +1995,7 @@ INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
 ('apply_all', 'true'),
 ('apply_id', '8'),
 ('apply_rules_text', 'Place Your Apply for Membership Rules Here');
-
-CREATE TABLE `{$db_prefix}shoutcastdj` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `uid` int(10) unsigned NOT NULL DEFAULT '0',
-  `active` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `activedays` char(30) NOT NULL DEFAULT '',
-  `activetime` char(11) NOT NULL DEFAULT '',
-  `genre` char(50) NOT NULL DEFAULT '',
-  KEY `id` (`id`),
-  KEY `active` (`active`)
-); -- TABLEOPT --
-
+('multie', '1');
 
 CREATE TABLE `{$db_prefix}signup_ip_block` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -2120,15 +2041,8 @@ CREATE TABLE `{$db_prefix}style` (
 ); -- TABLEOPT --
 
 INSERT INTO `{$db_prefix}style` (`id`, `style`, `style_url`, `style_type`) VALUES
-(1, 'FM Default', 'style/xbtit_default', 3),
-(2, 'Black Neon', 'style/Black_Neon', 3),
-(3, 'Cherry Splash', 'style/Cherry_Splash', 3),
-(4, 'Christmas 20XX', 'style/Christmas_20XX', 3),
-(5, 'Rustic Moon', 'style/Rustic_Moon', 3),
-(6, 'Splatter', 'style/Splatter', 3),
-(7, 'SR-5', 'style/SR-5', 3),
-(8, 'Valentine', 'style/Valentine', 3),
-(9, 'XBTIT', 'style/Xbtit_Original', 3);
+(1, 'Dark', 'style/xbtit_default', 3),
+(2, 'Light', 'style/light', 3);
 
 CREATE TABLE `{$db_prefix}style_bridge` (
   `id` int(10) NOT NULL AUTO_INCREMENT,

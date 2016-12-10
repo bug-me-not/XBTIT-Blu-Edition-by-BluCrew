@@ -1,10 +1,10 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.UM_UPLOADER_MED /></h4>
+</div>
 <div align='center'>
   <form name='up_med' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=up_med'>
     <table>
-
-      <tr>
-      <td class="header" align="center" colspan="4"><tag:language.UM_UPLOADER_MED /></td>
-      </tr>
       <tr>
       <td class="header"><tag:language.UM_HOW_MANY /></td>
       <td class="lista"><input type="text" name="UPD" value="<tag:config.UPD />" size="5" /></td>
@@ -25,8 +25,11 @@
       </tr>
 
       <tr>
-        <td class='blocklist' align='center' colspan='4'><input type='submit' name='submit' value='<tag:language.SUBMIT />'></td>
+        <td class='blocklist' align='center' colspan='4'><input type='submit' name='submit' class='btn btn-md btn-primary' value='<tag:language.SUBMIT />'></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>

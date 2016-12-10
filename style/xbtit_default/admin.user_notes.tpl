@@ -1,8 +1,11 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Notes Recorded On User Profile</h4>
+</div>
 <div align='center'>
   <form name='user_notes' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=user_notes'>
     <table>
-
-      <tr>
+     <tr>
       <td class="header" align="center" colspan="2"><tag:language.UN_AUTONOTE />:</td>
       </tr>
 
@@ -92,8 +95,11 @@
       </tr>
 
       <tr>
-        <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' value='<tag:language.SUBMIT />'></td>
+        <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' class='btn btn-md btn-primary' value='<tag:language.SUBMIT />'></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>
