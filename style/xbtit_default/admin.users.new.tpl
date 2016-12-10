@@ -170,9 +170,12 @@ function form_control()
 
    Check_Data();
   }
-
-
 </script>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Add New User</h4>
+</div>
 <form name="new_users" method="post" action="<tag:frm_action />" >
     <table width="100%" border="0" class="lista">
         <tr>
@@ -239,3 +242,6 @@ function form_control()
         </tr>
     </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

@@ -1,5 +1,11 @@
 <script type="text/javascript" src="jscript/btit_functions.js"></script>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Membership Apply Settings</h4>
+</div>
 <div align='center'>
+<br>
   <form name='config' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=apply_membership'>
     <table class="lista" width="100%" cellspacing="0" cellpadding="0">
       <tr>
@@ -21,7 +27,7 @@
       </tr>
       <tr>
       <td class="header" valign="top" colspan="1"><tag:language.ACP_TEXT_BOX /></td>
-      <td class="lista" colspan="3"><textarea name="apply_rules_text" rows="3" cols="60"><tag:config.apply_rules_text /></textarea></td>
+      <td class="lista" colspan="9"><textarea name="apply_rules_text" rows="12" cols="130"><tag:config.apply_rules_text /></textarea></td>
       </tr>
       <tr>
       </tr>
@@ -30,8 +36,11 @@
 <br /> 
 <table width="40%" cellspacing="0" cellpadding="0">
     <tr>
-  <td colspan="4" align="center"><input type="submit" value="<tag:language.SUBMIT />" /></td>
+  <td colspan="4" align="center"><input type="submit" class="btn btn-md btn-primary" value="<tag:language.SUBMIT />" /></td>
   </tr>
 </form>  
 </table>
 </div>    
+<div class="panel-footer">
+</div>
+</div>

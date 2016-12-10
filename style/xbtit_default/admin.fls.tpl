@@ -64,6 +64,10 @@ function popusers(url)
 -->
 </script>
 
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Gift FreeLeech Slots</h4>
+</div>
 <div align='center'>
   <form name='edit' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=fls'>
     <table>
@@ -94,9 +98,13 @@ function popusers(url)
           <input type="text" name="taskText" value="0" size="3" maxlength="4" />
         </td>
       </tr>
+      <br>
         <tr>
-        <td class='header' colspan="2" style="text-align:center;"><input type="submit" name="confirm" value="<tag:language.FRM_CONFIRM />" /></td>
+        <td class='header' colspan="2" style="text-align:center;"><input type="submit" name="confirm" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" /></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>

@@ -531,9 +531,9 @@ $language["HNR_BU"] = "Boot Users";
 
 $language["ACP_AUTORANK"] = "Autorank Administration";
 $language["AUTORANK_INVALID"] = "Invalid Input, please enter a number between 1 and 23";
-$language["AUTORANK_MAIN_1"] = "To save on excessive load only users who are connected to torrents will be scanned for rank changes regularly. The entire memberbase will be scanned once every 24 hours and you should set the time for this scan below.<br /><br /><b>Please Note:</b> You should set this overall scan time to something off-peak but it also needs to be a time when there are still users likely to be browsing your site otherwise it will probably not get triggered.<br /><br />Valid values are 0-23 (0 = midnight, 1 = 1:00am, 5=5:00am, 14=2:00pm etc.)";
+$language["AUTORANK_MAIN_1"] = "To save on excessive load only users who are connected to torrents will be scanned for rank changes regularly. The entire memberbase will be scanned once every 24 hours.<br /><br /><b>Please Note:</b> You should set this overall scan time to something off-peak but it also needs to be a time when there are still users likely to be browsing your site otherwise it will probably not get triggered.<br /><br />Valid values are 0-23 (0 = midnight, 1 = 1:00am, 5=5:00am, 14=2:00pm etc.)";
 $language["AUTORANK_MAIN_2"] = "Full Scan Time";
-$language["AUTORANK_MAIN_3"] = "You can set all the other values from";
+$language["AUTORANK_MAIN_3"] = "You can set all other rank/usergroup values from";
 $language["AUTORANK_MAIN_4"] = "here";
 $language["AUTORANK_SEND_PM"] = "Send PM to inform member of rank change?";
 
@@ -692,8 +692,8 @@ $language['REASON']='Reason';
 $language["ACP_BB"]="Ban Button - IP Range";
 $language["ACP_BB_USER"]="Ban Button - User";
 $language["BB_SETTINGS"] = "Ban Button Settings";
-$language["BB_LEVEL"] = "Min Ban Level";
-$language["BB_DAYS"] = "Ban Days";
+$language["BB_LEVEL"] = "Min Ban Level Rank";
+$language["BB_DAYS"] = "Temp IP Range Days Banned";
 $language["BB_NONE_YET_1"] = "There";
 $language["BB_NONE_YET_2"] = "are";
 $language["BB_NONE_YET_3"] = "no";
@@ -1011,7 +1011,7 @@ $language["ACP_DPS_SETTINGS"]="Dwnld Prefix/Suffix Setup"; # shortened download 
 $language["DPS_PREFIX"]="Torrent Filename Prefix";
 $language["DPS_SUFFIX"]="Torrent Filename Suffix";
 $language["DPS_EXAMPLE"]="Example";
-$language["DPS_EXAMPLE_TORR"]="Some.Movie.2011.DVDRip.XviD-SomeTeam.torrent";
+$language["DPS_EXAMPLE_TORR"]="Batman v Superman Dawn of Justice (2016) 720Pad BluRay AAC x264 aSOUL@BluRG";
 $language["DPS_BEFORE"]="Before";
 $language["DPS_AFTER"]="After";
 

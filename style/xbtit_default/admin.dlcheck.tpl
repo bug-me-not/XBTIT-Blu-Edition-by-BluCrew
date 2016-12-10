@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Download Check Settings</h4>
+</div>
 <div align='center'>
   <form name='dlcheck' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=dlcheck'>
     <table>
@@ -7,10 +11,13 @@
         </tr>
 
       <tr>
-        <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' value='<tag:language.SUBMIT />'></td>
+        <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' class='btn btn-md btn-primary' value='<tag:language.SUBMIT />'></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>
 
 

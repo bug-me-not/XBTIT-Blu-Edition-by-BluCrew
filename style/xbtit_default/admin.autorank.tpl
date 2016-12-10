@@ -1,6 +1,11 @@
-<tag:language.AUTORANK_MAIN_1 />
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Autoranking Settings</h4>
+</div>
+<p class="text-danger"><tag:language.AUTORANK_MAIN_1 /></p>
 <br /><br />
 <form name='frm_autorank' method='post' action='<tag:autorank_action />'>
+<center>
   <table>
     <tr>
       <td class='header'><tag:language.AUTORANK_MAIN_2 /></td>
@@ -21,8 +26,12 @@
       </td>
     </tr>
     <tr>
-      <td class='header' colspan='2' align='center'><input type='submit' name='submit' value='<tag:language.SUBMIT />' /></td>
+      <td class='header' colspan='2' align='center'><input type='submit' class='btn btn-md btn-primary' name='submit' value='<tag:language.SUBMIT />' /></td>
     </tr>
   </table>
 </form>
 <tag:language.AUTORANK_MAIN_3 /> <a href='<tag:autorank_main />'><tag:language.AUTORANK_MAIN_4 /></a><br /><br />
+</center>
+<div class="panel-footer">
+</div>
+</div>
