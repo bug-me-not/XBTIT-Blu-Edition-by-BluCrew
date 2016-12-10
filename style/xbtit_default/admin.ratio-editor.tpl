@@ -1,21 +1,13 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">User Ratio Editor</h4>
+</div>
 <if:updated>
-<div align="center">
 <br />
-  <table border="1" width="500" cellspacing="0" cellpadding="0" style="border-color:#00C900" >
-    <tr>
-       <td class="success" valign="bottom" align="center">
-       <tag:language.RATIO_SUCCES />
-       </td>
-    </tr>
-    <tr>
-      <td bgcolor="#FFFFFF" align="center">
-        <br />
-        <tag:language.RATIO_UPDATE_SUCCES />
-        <br />
-        <br />        
-      </td>
-    </tr>
-  </table>
+<div class="alert alert-dismissable alert-bg-white alert-success">
+<button data-dismiss="alert" class="close" type="button">×</button>
+<div class="icon"><i class="fa fa-check"></i></div>
+<strong><tag:language.RATIO_UPDATE_SUCCES /></strong>
 </div>
 <br />
 <br />
@@ -23,9 +15,6 @@
 </if:updated>
 <form method="post" action="<tag:frm_action />" name="ratio_change">
 	<table cellspacing="0" cellpadding="5" class="lista" align="center">
-		<tr>
-			<td class="header" colspan="2"><tag:language.RATIO_HEADER /></td>
-		</tr>
 		<tr>
 			<td class="header"><tag:language.RATIO_USERNAME /></td>
 			<td class="lista"><input type="text" name="username" size="40"></td>
@@ -55,7 +44,10 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="lista" colspan="2"><center><input type="submit" value="<tag:language.FRM_CONFIRM />"></center></td>
+			<td class="lista" colspan="2"><center><input type="submit" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />"></center></td>
 		</tr>
 	</table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

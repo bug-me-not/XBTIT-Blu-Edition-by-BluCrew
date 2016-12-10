@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Requests Section Settings</h4>
+</div>
 <div align='center'>
   <form name='requests' method='post' action='index.php?page=admin&amp;user=<tag:uid />&amp;code=<tag:random />&amp;do=requests'>
     <table>
@@ -22,6 +26,8 @@
       <td class="header"><tag:language.TRAV_REQ_IB /></td>
       <td class="lista"><input type="text" name="req_limit" value="<tag:config.req_limit />" size="4" /></td>
       </tr>
+      <br>
+      <br>
       <tr>
       <td class="header" align="center" colspan="4"><tag:language.TRAV_RRFFAR /></td>
       </tr>
@@ -32,10 +38,13 @@
       <td class="lista"><input type="text" name="req_tax" value="<tag:config.req_tax />" size="4" /></td>
       </tr>
       <tr>
-        <td class='blocklist' align='center' colspan='4'><input type='submit' name='submit' value='<tag:language.SUBMIT />'></td>
+        <td class='blocklist' align='center' colspan='4'><input type='submit' class='btn btn-md btn-primary' name='submit' value='<tag:language.SUBMIT />'></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>
 
 

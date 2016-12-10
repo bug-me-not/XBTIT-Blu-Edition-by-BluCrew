@@ -1,15 +1,18 @@
-<p>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">SeedBonus (BON) Settings</h4>
+</div>
 <if:firstview>
-<table width="66%">
+<table class="table table-bordered table-hover">
   <tr>
     <form method="post" action="index.php?page=admin&amp;user=<tag:uid />&amp;code=<tag:random />&amp;do=seedbonus">
 
     <td class="header"><tag:language.AWARD_FOR />:</td>
-    <td class="lista"colspan="3"><input type="radio" name="sb_type" value="all"<if:all> checked</if:all>><tag:language.ALL_TORR /><input type="radio" name="sb_type" value="one"<if:one> checked</if:one>><tag:language.ONE_TORR /></td>
+    <td class="lista" colspan="3"><input type="radio" name="sb_type" value="all"<if:all> checked</if:all>><tag:language.ALL_TORR /><input type="radio" name="sb_type" value="one"<if:one> checked</if:one>><tag:language.ONE_TORR /></td>
   </tr>
   <tr>
     <td class="header"><tag:language.BONUS />:</td>
-    <td class="lista" colspan="3" style="text-align:center;"><input type="text" size="10" name="bonus" maxlength="5" value="<tag:bonus />"/></td>
+    <td class="lista" colspan="0" style="text-align:center;"><input type="text" size="10" name="bonus" maxlength="5" value="<tag:bonus />"/></td>
   </tr>
   <if:arc_enabled>
   <tr>
@@ -137,10 +140,12 @@
   </tr>
   </if:show_fls>
   <tr>
-    <td class="header" colspan="4" align="center"><input type="submit" value="<tag:language.UPDATE />" name="action"></td>
+    <td class="header" colspan="4" align="center"><input type="submit" class="btn btn-md btn-primary" value="<tag:language.UPDATE />" name="action"></td>
   </tr>
 </table>
 <else:firstview>
 <tag:language.SEEDBONUS_UPDATED />
 </if:firstview>
-</p><br />
+<div class="panel-footer">
+</div>
+</div>
