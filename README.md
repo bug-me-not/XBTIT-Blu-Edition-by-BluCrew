@@ -1,4 +1,4 @@
-# XBTIT Blu-Edition by BluCrew v1.1.04 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+# XBTIT Blu-Edition by BluCrew v1.1.05 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
 > A modern front and backend bittorrent tracker!
 
 
@@ -64,6 +64,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
   v1.1      - API class to handle Posters, Banners, CD Art and Background images from TVDB and FanArt
   v1.1.03   - Fixes cache issue relating to OMDB
   v1.1.04   - Minor fixes to bugs relating to list and details pages
+  v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added  
 ```
 
 
