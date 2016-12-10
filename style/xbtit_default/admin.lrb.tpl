@@ -1,9 +1,9 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.RAT_OV_SET /></h4>
+</div>
 <form name="lrba" action="<tag:frm_actiona />" method="post">
 <table class="header" width="85%" align="center">
-
-      <tr>
-      <td class="header" align="center" colspan="4"><tag:language.RAT_OV_SET /></td>
-      </tr>
       <tr>
       <td class="header"><tag:language.RAT_EN_SYS /></td>
       <td class="lista" colspan="3"><input type="checkbox" name="wb_sys" value="wb_sys" <tag:wb_button /> /></td>
@@ -21,14 +21,11 @@
       <td class="lista" colspan="3"><textarea name="wb_text_fin" rows="3" cols="60"><tag:lrb.wb_text_fin /></textarea></td>
       </tr>
       <tr>
-    <td colspan="6" class="lista" style="text-align:center"><br><input type="submit" name="action" value="<tag:language.FRM_CONFIRM />" /></td>
+    <td colspan="6" class="lista" style="text-align:center"><br><input type="submit" name="action" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" /></td>
 </tr>
-</form>  
+</form>
 
 <form name="lrbb" action="<tag:frm_actionb />" method="post">      
-      <tr>
-      <td class="header" align="center" colspan="4"><tag:language.RAT_US_SET /></td>
-      </tr>
       <tr>
       <td class="header"><tag:language.RAT_RANK_ID /></td>
       <td class="lista"><input type="text" name="wb_rank" size="4" /></td>
@@ -58,29 +55,34 @@
       <td class="lista"><input type="text" name="wb_fin" size="4" /></td>
       <td class="header"><tag:language.RAT_SWS /></td>
       <td class="lista"><input type="checkbox" name="wb_warn" /></td>
-      </tr>
-
-     
-	<tr>
-    <td colspan="6" class="lista" style="text-align:center"><br><input type="submit" name="action" value="<tag:language.RAT_NEW_GROUP />" /></td>
-</tr>
-	  </table></form>
-
-<table class="header" width="85%" align="center"><center><b><tag:language.RAT_GROUP_RULES /></b></center>
-
+      </tr>     
 <tr>
-    <td class="header" align="center"><tag:language.RAT_ID_LEVEL /></td>
-    <td class="header" align="center"><tag:language.RAT_USERG /></td>
-    <td class="header" align="center"><tag:language.RAT_MIN_DOWN_A /></td>
-    <td class="header" align="center"><tag:language.RAT_1ST_RAT_A /></td>
-    <td class="header" align="center"><tag:language.RAT_DTSW /></td>
-    <td class="header" align="center"><tag:language.RAT_2ND_RAT_A /></td>
-    <td class="header" align="center"><tag:language.RAT_DTTW /></td>
-    <td class="header" align="center"><tag:language.RAT_3RD_RAT_A /></td>
-    <td class="header" align="center"><tag:language.RAT_DTB /></td>
-    <td class="header" align="center"><tag:language.RAT_FIN_RAT_A /></td>
-    <td class="header" align="center"><tag:language.RAT_WS /></td>
-    <td class="header" align="center"><tag:language.DELETE /></td>
+    <td colspan="6" class="lista" style="text-align:center"><br><input type="submit" class="btn btn-md btn-primary" name="action" value="<tag:language.RAT_NEW_GROUP />" /></td>
+</tr>
+</table>
+</form>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.RAT_GROUP_RULES /></h4>
+</div>
+<table class="table table-bordered table-hover">
+<tr>
+    <td class="head" align="center"><tag:language.RAT_ID_LEVEL /></td>
+    <td class="head" align="center"><tag:language.RAT_USERG /></td>
+    <td class="head" align="center"><tag:language.RAT_MIN_DOWN_A /></td>
+    <td class="head" align="center"><tag:language.RAT_1ST_RAT_A /></td>
+    <td class="head" align="center"><tag:language.RAT_DTSW /></td>
+    <td class="head" align="center"><tag:language.RAT_2ND_RAT_A /></td>
+    <td class="head" align="center"><tag:language.RAT_DTTW /></td>
+    <td class="head" align="center"><tag:language.RAT_3RD_RAT_A /></td>
+    <td class="head" align="center"><tag:language.RAT_DTB /></td>
+    <td class="head" align="center"><tag:language.RAT_FIN_RAT_A /></td>
+    <td class="head" align="center"><tag:language.RAT_WS /></td>
+    <td class="head" align="center"><tag:language.DELETE /></td>
 </tr>
 
 <loop:hit>
@@ -99,18 +101,25 @@
     <td class="lista" style="text-align:center;"><tag:hit[].delete /></td>
 </tr>
 </loop:hit>
-
 </table>
-<table class="header" width="85%" align="center"><center><b><tag:language.RAT_WABH /></b></center>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.RAT_WABH /></h4>
+</div>
+<table class="table table-bordered table-hover">
 <tr>
-    <td class="header" align="center"><tag:language.RAT_USER /></td>
-    <td class="header" align="center"><tag:language.RAT_USERG /></td>
-    <td class="header" align="center"><tag:language.RAT_WARN_TIM /></td>
-    <td class="header" align="center"><tag:language.DATE /></td>
-    <td class="header" align="center"><tag:language.RAT_WS /></td>
-    <td class="header" align="center"><tag:language.RAT_WS_BANNED /></td>
-    <td class="header" align="center"><tag:language.RAT_UNWARN /></td>
-    <td class="header" align="center"><tag:language.RAT_UNBAN /></td>
+    <td class="head" align="center"><tag:language.RAT_USER /></td>
+    <td class="head" align="center"><tag:language.RAT_USERG /></td>
+    <td class="head" align="center"><tag:language.RAT_WARN_TIM /></td>
+    <td class="head" align="center"><tag:language.DATE /></td>
+    <td class="head" align="center"><tag:language.RAT_WS /></td>
+    <td class="head" align="center"><tag:language.RAT_WS_BANNED /></td>
+    <td class="head" align="center"><tag:language.RAT_UNWARN /></td>
+    <td class="head" align="center"><tag:language.RAT_UNBAN /></td>
 </tr>
 
   <loop:list>
@@ -126,3 +135,6 @@
   </tr>
   </loop:list>
 </table>
+<div class="panel-footer">
+</div>
+</div>

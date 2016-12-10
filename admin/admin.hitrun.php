@@ -148,7 +148,7 @@ if(substr($FORUMLINK,0,3)=="smf")
             else
                 $current_settings[$i]["forum_post"]=$row["name"];
 
-            $current_settings[$i]["delete"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=delete&id=".$row["id_level"]."'><img src='$STYLEURL/images/delete.gif' border='0' alt='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
+            $current_settings[$i]["delete"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=delete&id=".$row["id_level"]."'><img src='$STYLEURL/images/delete.png' border='0' alt='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
 
             $i++;
         }
@@ -245,8 +245,8 @@ else
             else
                 $current_settings[$i]["forum_post"]=$row["name"];
 
-            $current_settings[$i]["delete"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=delete&id=".$row["id_level"]."'><img src='$STYLEURL/images/delete.gif' border='0' alt='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
-            $current_settings[$i]["edit"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=edit&id=".$row["id_level"]."'><img src='$STYLEURL/images/edit.gif' border='0' alt='".$language["EDIT"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["EDIT"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
+            $current_settings[$i]["delete"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=delete&id=".$row["id_level"]."'><img src='$STYLEURL/images/delete.png' border='0' alt='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["DELETE"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
+            $current_settings[$i]["edit"]="<a href='index.php?page=admin&user=".$CURUSER["uid"]."&code=".$CURUSER["random"]."&do=hitrun&option=edit&id=".$row["id_level"]."'><img src='$STYLEURL/images/edit.png' border='0' alt='".$language["EDIT"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' title='".$language["EDIT"]." ".$language["HNR_SET_FOR"]." ".$row["level"]."' />";
             $i++;
         }
     }

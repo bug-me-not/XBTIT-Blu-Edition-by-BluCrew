@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Hit and Run Settings</h4>
+</div>
 <if:is_edit>
 <br />
 <form name='hitrun' action='index.php?page=admin&user=<tag:CURUSER.uid />&code=<tag:CURUSER.random />&do=hitrun&job=save&id=<tag:this_id />' method='post'>
@@ -80,7 +84,7 @@
       </td>
     </tr>
     <tr>
-      <td colspan='2' class='block' align='center'><input type='submit' name='submit' value='Edit' /></td>
+      <td colspan='2' class='block' align='center'><input type='submit' class='btn btn-md btn-primary' name='submit' value='Edit' /></td>
     </tr>
   </table>
 </form>
@@ -167,25 +171,28 @@
       </td>
     </tr>
     <tr>
-      <td colspan='2' class='block' align='center'><input type='submit' name='submit' value='<tag:language.HNR_NEW_GROUP />' /></td>
+      <td colspan='2' class='block' align='center'><input type='submit' class='btn btn-md btn-primary' name='submit' value='<tag:language.HNR_NEW_GROUP />' /></td>
     </tr>
   </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>
 
 <if:is_loop>
   <br /><br />
-  <table width='100%'>
+  <table class="table table-bordered table-hover">
     <tr>
-      <td class='header' align='center'><b><tag:language.RANK /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_METHOD /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_MINSEED /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_MINRAT /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_TOL /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_DLTRIG /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_BLOLEECH /></b></td>
-      <td class='header' align='center'><b><tag:language.HNR_FORPOST /></b></td>
-      <td class='header' align='center'><b><tag:language.EDIT /></b></td>
-      <td class='header' align='center'><b><tag:language.DELETE /></b></td>
+      <td class='head' align='center'><b><tag:language.RANK /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_METHOD /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_MINSEED /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_MINRAT /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_TOL /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_DLTRIG /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_BLOLEECH /></b></td>
+      <td class='head' align='center'><b><tag:language.HNR_FORPOST /></b></td>
+      <td class='head' align='center'><b><tag:language.EDIT /></b></td>
+      <td class='head' align='center'><b><tag:language.DELETE /></b></td>
     </tr>
     <loop:hnrloop>
       <tr>
@@ -204,3 +211,4 @@
 </table>
 </if:is_loop>
 </if:is_edit>
+

@@ -1,4 +1,4 @@
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
   <loop:admin_menu>
   <tr>
     <td class="head">

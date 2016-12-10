@@ -15,22 +15,27 @@ for(var i = 0; i < countCheckBoxes; i++)
 objCheckBoxes[i].checked = CheckValue;
 }
 </script>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Message Spy</h4>
+</div>
 <form name="delpm" action="<tag:frmdel />" method="post">
-<table class="header" width="100%" align="center">
+<table class="table table-bordered table-hover">
   <if:pager_needed_1>
   <tr>
     <td class="lista" colspan="8"><tag:pager_top /></td>
   </tr>
   </if:pager_needed_1>
   <tr>
-    <td class="header"><b><tag:language.SENDER /></b></td>
-    <td class="header"><b><tag:language.RECEIVER /></b></td>
-    <td class="header"><b><tag:language.SUBJECT /></b></td>
-    <td class="header"><b><tag:language.MESSAGE /></b></td>
-    <td class="header"><b><tag:language.DATE_SENT /></b></td>
-    <td class="header"><b><tag:language.READED /></b></td>
-    <td class="header"><b><tag:language.DELETE /></b></td>
-    <td class='header'><input type=checkbox name=all onclick=SetAllCheckBoxes('delpm','pm[]',this.checked)></td>
+    <td class="head"><b><tag:language.SENDER /></b></td>
+    <td class="head"><b><tag:language.RECEIVER /></b></td>
+    <td class="head"><b><tag:language.SUBJECT /></b></td>
+    <td class="head"><b><tag:language.MESSAGE /></b></td>
+    <td class="head"><b><tag:language.DATE_SENT /></b></td>
+    <td class="head"><b><tag:language.READED /></b></td>
+    <td class="head"><b><tag:language.DELETE /></b></td>
+    <td class='head'><input type=checkbox name=all onclick=SetAllCheckBoxes('delpm','pm[]',this.checked)></td>
   </tr>
   <loop:spy>
   <tr>
@@ -50,9 +55,12 @@ objCheckBoxes[i].checked = CheckValue;
   </tr>
   </if:pager_needed_2>
   <tr>
-  <td class="lista" colspan="4" style="text-align:left;"><a title="Empty" class="btn" href="<tag:flushurl />"><tag:language.SPY_TRUNCATE /></a></td>
-  <td class="lista" colspan="4" style="text-align:right;"><input onclick="return confirm('<tag:language.DELETE_CONFIRM />')" class="btn" type=submit name=action value=<tag:language.DELETE />>&nbsp;</td>
+  <td class="lista" colspan="4" style="text-align:left;"><a title="Empty" class="btn btn-md btn-danger" href="<tag:flushurl />"><tag:language.SPY_TRUNCATE /></a></td>
+  <td class="lista" colspan="4" style="text-align:right;"><input onclick="return confirm('<tag:language.DELETE_CONFIRM />')" class="btn btn-md btn-warning" type=submit name=action value=<tag:language.DELETE />>&nbsp;</td>
   </td>
   </tr>
 </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>

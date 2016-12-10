@@ -1022,7 +1022,7 @@ $language["UPRI_DELETE"]="Allow uploader to delete their own torrent";
 $language["ACP_PG_SETT"]="Pager Type Settings";
 $language["PG_TYPE"]="Select Pager Type";
 $language["PG_OLD"]="Old Style";
-$language["PG_NEW"]="New Style";
+$language["PG_NEW"]="New Style (BOOTSTRAP)";
 
 $language["BAN_CHEAPMAIL"]="Ban Cheapmail Domains";
 $language["ERR_WILDCARD_1"]="The wildcard ";
@@ -1433,7 +1433,7 @@ $language["CSIGN_COUNT_TO_BLOCK"]="Countries to block (one per line)";
 $language["PFET_UPL_EXT"]="Upload External Torrents";
 $language["PFET_REF_EXT"]="Refresh External Torrents";
 $language["PFET_NO_ENABLE"]="<span style='color:red;font-weight:bold;'>Your tracker must allow External torrents to use this hack.</span>";
-$language["SPY_TRUNCATE"]="TRUNCATE";
+$language["SPY_TRUNCATE"]="Delete All From DB";
 $language["SPY_INFO"]="Wait";
 $language["SPY_INFO_MSG"]="Are you sure you want to empty all messages?<br />Be sure to let your Members know before hand.<br /><a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=ispy&amp;action=flush'>Yes</a>&nbsp;&nbsp;<a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=ispy'>No</a>";
 $language["SPY_ERR_MSG"]="Delete Failed!";

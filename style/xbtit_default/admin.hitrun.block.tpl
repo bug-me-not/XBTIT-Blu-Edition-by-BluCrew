@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Hit and Run Block Settings</h4>
+</div>
 <form method="post" action="<tag:frm_action />" name="hrb_conf">
 <table width="50%" align="center">
 <tr>
@@ -9,8 +13,11 @@
       <td class="lista" colspan="3"><input type="text" name="hitnumber" value="<tag:hrbconfig.hitnumber />" size="4" /></td>
       </tr>
 <tr>
-      <td align="center" class="header" colspan="4"><input type="submit" name="send" class="btn" value="<tag:language.FRM_CONFIRM />" />&nbsp;
-      <input type="submit" name="cancel" class="btn" value="<tag:language.FRM_CANCEL />" /></td>
+      <td align="center" class="header" colspan="4"><input type="submit" name="send" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" />&nbsp;
+      <input type="submit" name="cancel" class="btn btn-md btn-warning" value="<tag:language.FRM_CANCEL />" /></td>
     </tr>
 </table>
 </form>
+<div class="panel-footer">
+</div>
+</div>
