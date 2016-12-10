@@ -3,8 +3,7 @@
 
 
 
-Demo Site: http://blu-edition.hdinnovations.xyz/index.php
-
+Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
 Username: Demo <br>
 Pass: Demo123.
 
