@@ -1,6 +1,10 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Ban Client Settings</h4>
+</div>
 <p align='center'><tag:language.BAN_MAIN /></p>
 <form method='post' name='action'>
-<table align='center' width=90%>
+<table class="table table-bordered table-hover">
   <tr>
     <td class='header' align='center'><tag:language.PEER_CLIENT /></td>
     <td class='header' align='center'><tag:language.USER_AGENT /></td>
@@ -21,5 +25,12 @@
 </table>
 <p align='center'><tag:language.CONFIRM_ACTION /></p>
 <center>
-<input type='submit' name='confirm' value='<tag:language.YES />'>&nbsp;<input type='submit' name='confirm' value='<tag:language.NO />'>
+<input type='submit' class='btn btn-md btn-primary' name='confirm' value='<tag:language.YES />'>&nbsp;<input type='submit' class='btn btn-md btn-warning' name='confirm' value='<tag:language.NO />'>
 <center></form><br />
+<div class="panel-footer">
+</div>
+</div>
+<br />
+<center><tag:clearban /><button class="btn btn-md btn-danger">Click Here To Unban Clients</button></a></center>
+
+

@@ -26,6 +26,8 @@ if (!defined("IN_BTIT"))
 if (!defined("IN_ACP"))
     die("non direct access!");
 
+global $TABLE_PREFIX, $settings, $language, $BASEURL;
+
 include(load_language("lang_peers.php"));
 $admintpl->set('language',$language);
 
@@ -47,6 +49,7 @@ $admintpl->set('reason',$reason);
 $admintpl->set('banall',$banall);
 $admintpl->set('peer_id_ascii',$peer_id_ascii);
 $admintpl->set('client',$client);
+$admintpl->set('clearban',"<a href='index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=clearclientban'>");
 
 
 if($_POST["confirm"])

@@ -207,6 +207,12 @@ $i=0;
 
 $admin_menu[9]["title"]=$language["ACP_FM_HACK_CONFIG"];
 $alphabetize=array();
+{
+    $unsorted[$i]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=banclient";
+    $unsorted[$i]["description"]=$language["ACP_CLIENTBAN"];
+    $alphabetize[$i]=$unsorted[$i]["description"];
+    $i++;
+}
 if($btit_settings["fmhack_invitation_system"]=="enabled")
 {
     $unsorted[$i]["url"]="index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=invitations";
