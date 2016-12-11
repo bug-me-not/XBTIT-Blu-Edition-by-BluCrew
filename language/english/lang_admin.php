@@ -24,18 +24,18 @@ $language["SUPPORT"]="Contact Us";
 
 $language['ACP_BAN_IP']='Ban IPs';
 $language['ACP_FORUM']='Forum&rsquo;s Settings';
-$language['ACP_USER_GROUP']='Users Group Settings';
-$language['ACP_STYLES']='Styles Settings';
-$language['ACP_LANGUAGES']='Languages Settings';
-$language['ACP_CATEGORIES']='Categories Settings';
+$language['ACP_USER_GROUP']='Users Rank/Group Settings';
+$language['ACP_STYLES']='Bootstrap Style Settings';
+$language['ACP_LANGUAGES']='Language Settings';
+$language['ACP_CATEGORIES']='Category Settings';
 $language['ACP_TRACKER_SETTINGS']='Tracker&rsquo;s Settings';
-$language['ACP_OPTIMIZE_DB']='Optimize your Database';
-$language['ACP_CENSORED']='Censored words Settings';
+$language['ACP_OPTIMIZE_DB']='Optimize Your Database';
+$language['ACP_CENSORED']='Censored Word Settings';
 $language['ACP_DBUTILS']='Database Utilities';
 $language['ACP_HACKS']='Hacks';
-$language['ACP_HACKS_CONFIG']='Hacks Settings';
+$language['ACP_HACKS_CONFIG']='Hack Settings';
 $language['ACP_MODULES']='Modules';
-$language['ACP_MODULES_CONFIG']='Modules Settings';
+$language['ACP_MODULES_CONFIG']='Module Settings';
 $language['ACP_MASSPM']='Mass Private Mail';
 $language["ACP_MASSEMAIL"]="Mass E-Mail";
 $language['ACP_PRUNE_TORRENTS']='Prune Torrents';
@@ -52,7 +52,7 @@ $language["LOGLOG_NOTH"]="Nothing";
 $language["LOGLOG_HERE"]="Here";
 $language["LOGLOG_YET"]="Yet";
 //End Invalid Login Attemps AdminCP
-$language['ACP_SEARCH_DIFF']='Search Diff.';
+$language['ACP_SEARCH_DIFF']='User Search Difference';
 $language['ACP_BLOCKS']='Block Settings';
 $language['ACP_POLLS']='Poll Settings';
 $language['ACP_MENU']='Admin Menu';
@@ -60,66 +60,66 @@ $language['ACP_FRONTEND']='Content Settings';
 $language['ACP_USERS_TOOLS']='User&rsquo;s Tools';
 $language['ACP_TORRENTS_TOOLS']='Torrent&rsquo;s Tools';
 $language['ACP_OTHER_TOOLS']='Other Tools';
-$language['ACP_MYSQL_STATS']='MySql Statistics';
+$language['ACP_MYSQL_STATS']='MySQL Statistics';
 $language['ACP_FHOST']='File Hosting';
 $language['ACP_ANNOUNCEMENT']='Staff Announcements';
-$language['XBTT_BACKEND']='xbtt Option';
-$language['XBTT_USE']='Use <a href="http://xbtt.sourceforge.net/tracker/" target="_blank">xbtt</a> as backend?';
+$language['XBTT_BACKEND']='XBTT Option';
+$language['XBTT_USE']='Use <a href="http://xbtt.sourceforge.net/tracker/" target="_blank">XBTT</a> as backend?';
 $language['XBTT_URL']='xbtt base url e.g. http://localhost:2710';
-$language['GENERAL_SETTINGS']='General settings';
+$language['GENERAL_SETTINGS']='General Settings';
 $language['TRACKER_NAME']='Site&rsquo;s Name';
 $language['TRACKER_BASEURL']='Base Tracker&rsquo;s URL (without last /)';
 $language['TRACKER_ANNOUNCE']='Tracker&rsquo;s Announce URLS (one url per row)'.($XBTT_USE?'<br />'."\n".'<span style="color:#FF0000; font-weight: bold;">Check your announce urls twice, you&rsquo;ve enable xbtt backend...</span>':'');
 $language['TRACKER_EMAIL']='Tracker&rsquo;s/owner&rsquo;s email';
-$language['TORRENT_FOLDER']='Torrent folder';
-$language['ALLOW_EXTERNAL']='Allow External torrents';
-$language['ALLOW_GZIP']='enabled GZIP';
-$language['ALLOW_DEBUG']='Show Debug infos on page&rsquo;s bottom';
+$language['TORRENT_FOLDER']='Torrent Folder';
+$language['ALLOW_EXTERNAL']='Allow External Torrents';
+$language['ALLOW_GZIP']='Enabled GZIP';
+$language['ALLOW_DEBUG']='Show Debug Info In Footer';
 $language['ALLOW_DHT']='Disable DHT (private flag in torrent)<br />'."\n".'will be set only on  new uploaded torrents';
-$language['ALLOW_LIVESTATS']='Enable Live Stats (warning to high server load!)';
+$language['ALLOW_LIVESTATS']='Enable Live Stats (warning high server load!)';
 $language['ALLOW_SITELOG']='Enable Basic Site Log (log change on torrents/users)';
-$language['ALLOW_HISTORY']='Enable Basic History (torrents/users)';
+$language['ALLOW_HISTORY']='Enable Basic History (Torrents/Users)';
 $language['ALLOW_PRIVATE_ANNOUNCE']='Private Announce';
 $language['ALLOW_PRIVATE_SCRAPE']='Private Scrape';
-$language['SHOW_UPLOADER']='Show Uploader&rsquo;s nick';
-$language['USE_POPUP']='Use Popup for Torrents details/peers';
+$language['SHOW_UPLOADER']='Show Uploader&rsquo;s Nick';
+$language['USE_POPUP']='Use Popup Window For Torrents Details/Peers';
 $language['DEFAULT_LANGUAGE']='Default Language';
 $language['DEFAULT_CHARSET']='Default Charset Encoding<br />'."\n".'(if your language don&rsquo;t display correctly, try UTF-8)';
 $language['DEFAULT_STYLE']='Default Style';
-$language['MAX_USERS']='Max Users (numeric, 0 = no limits)';
-$language['MAX_TORRENTS_PER_PAGE']='Torrents per page';
-$language['SPECIFIC_SETTINGS']='Tracker&rsquo;s specific settings';
-$language['SETTING_INTERVAL_SANITY']='Sanity interval (numeric seconds, 0 = disabled)<br />Good value, if enabled, is 1800 (30 minutes)';
-$language['SETTING_INTERVAL_EXTERNAL']='Update External interval (numeric seconds, 0 = disabled)<br />Depending of how many external torrents';
-$language['SETTING_INTERVAL_MAX_REANNOUNCE']='Maximum reannounce interval (numeric seconds)';
-$language['SETTING_INTERVAL_MIN_REANNOUNCE']='Minimum reannounce interval (numeric seconds)';
-$language['SETTING_MAX_PEERS']='Max N. of peers for request (numeric)';
-$language['SETTING_DYNAMIC']='Allow Dynamic Torrents (not recommended)';
-$language['SETTING_NAT_CHECK']='NAT checking';
-$language['SETTING_PERSISTENT_DB']='Persistent connections (Database, not recommended)';
-$language['SETTING_OVERRIDE_IP']='Allow users to override detected ip';
-$language['SETTING_CALCULATE_SPEED']='Calculate Speed and Downloaded bytes';
-$language['SETTING_PEER_CACHING']='Table caches (should decrease a little load)';
-$language['SETTING_SEEDS_PID']='Max num. of seeds with same PID';
-$language['SETTING_LEECHERS_PID']='Max num. of leechers with same PID';
+$language['MAX_USERS']='Sites Max Users (numeric, 0 = no limits)';
+$language['MAX_TORRENTS_PER_PAGE']='Torrents Per Page';
+$language['SPECIFIC_SETTINGS']='Tracker&rsquo;s Specific Settings';
+$language['SETTING_INTERVAL_SANITY']='Sanity Interval (numeric seconds, 0 = disabled)<br />Good value, if enabled, is 1800 (30 minutes)';
+$language['SETTING_INTERVAL_EXTERNAL']='Update External Interval (numeric seconds, 0 = disabled)<br />Depending of how many external torrents';
+$language['SETTING_INTERVAL_MAX_REANNOUNCE']='Maximum Reannounce Interval (numeric seconds)';
+$language['SETTING_INTERVAL_MIN_REANNOUNCE']='Minimum Reannounce Interval (numeric seconds)';
+$language['SETTING_MAX_PEERS']='Max Number Of Peers Per Request (numeric)';
+$language['SETTING_DYNAMIC']='Allow Dynamic Torrents (Not Recommended)';
+$language['SETTING_NAT_CHECK']='NAT Checking';
+$language['SETTING_PERSISTENT_DB']='Persistent Connections To Database (Not Recommended)';
+$language['SETTING_OVERRIDE_IP']='Allow User Singups To Override Dupe Detected IP';
+$language['SETTING_CALCULATE_SPEED']='Calculate Speed and Downloaded Bytes';
+$language['SETTING_PEER_CACHING']='Table Caches (should decrease a little load)';
+$language['SETTING_SEEDS_PID']='Max Number Of Seeds With Same PID';
+$language['SETTING_LEECHERS_PID']='Max Number Of Leechers With Same PID';
 $language['SETTING_VALIDATION']='Validation Mode';
 $language['SETTING_CAPTCHA']='Secure Registration (use ImageCode, GD+Freetype libraries needed)';
 $language['SETTING_FORUM']='Forum link, can be:<br /><li><font color="#FF0000">internal</font> or empty (no value) for internal forum</li><li><font color="#FF0000">smf</font> for integrated <a target="_new" href="http://www.simplemachines.org">Simple Machines Forum</a> (1.x.x)</li><li><font color="#FF0000">smf2</font> for integrated <a target="_new" href="http://www.simplemachines.org">Simple Machines Forum</a> (2.x)</li><li><font color="#FF0000">ipb</font> for integrated <a target="_new" href="http://www.invisionpower.com">Invision Power Board</a> (3.x.x)</li><li>Your own forum solution (Specify url in the box)</li>';
-$language['BLOCKS_SETTING']='Index/Blocks page settings';
-$language['SETTING_CLOCK']='Clock type';
+$language['BLOCKS_SETTING']='Index/Blocks Page Settings';
+$language['SETTING_CLOCK']='Clock Type';
 $language['SETTING_FORUMBLOCK']='Forum Block Type';
-$language['SETTING_NUM_NEWS']='Limit for Latest News block (numeric)';
-$language['SETTING_NUM_POSTS']='Limit for Forum block (numeric)';
-$language['SETTING_NUM_LASTTORRENTS']='Limit for Latest Torrents block (numeric)';
-$language['SETTING_NUM_TOPTORRENTS']='Limit for Most Popular Torrents block (numeric)';
+$language['SETTING_NUM_NEWS']='Limit For Dev News Block (numeric)';
+$language['SETTING_NUM_POSTS']='Limit For Forum Posts Block (numeric)';
+$language['SETTING_NUM_LASTTORRENTS']='Limit For Latest Uploads Block (numeric)';
+$language['SETTING_NUM_TOPTORRENTS']='Limit For Most Popular Torrents Block (numeric)';
 $language['CLOCK_ANALOG']='Analog';
 $language['CLOCK_DIGITAL']='Digital';
 $language['FORUMBLOCK_POSTS']='Last Posts';
 $language['FORUMBLOCK_TOPICS']='Last Active Topics';
-$language['CONFIG_SAVED']='The configuration has been saved correctly!';
-$language['CACHE_SITE']='Cache interval (numeric seconds, 0 = disabled)';
-$language['ALL_FIELDS_REQUIRED']='All fields are required!';
-$language['SETTING_CUT_LONG_NAME']='Cut long torrent&rsquo;s name after x chars (0 = don&rsquo;t cut)';
+$language['CONFIG_SAVED']='Your Configuration Has Been Saved Correctly!';
+$language['CACHE_SITE']='File Cache Interval (numeric seconds, 0 = disabled)';
+$language['ALL_FIELDS_REQUIRED']='All Fields Are Required!';
+$language['SETTING_CUT_LONG_NAME']='Cut Long Torrent&rsquo;s Name After x chars (0 = don&rsquo;t cut)';
 $language['MAILER_SETTINGS']='Mailer';
 $language['SETTING_MAIL_TYPE']='Mail Type';
 $language['SETTING_SMTP_SERVER']='SMTP Server';
@@ -128,10 +128,10 @@ $language['SETTING_SMTP_USERNAME']='SMTP Username';
 $language['SETTING_SMTP_PASSWORD']='SMTP Password';
 $language['SETTING_SMTP_PASSWORD_REPEAT']='SMTP Password (Repeat)';
 $language['XBTT_TABLES_ERROR']='You should have to import xbtt tables (look at xbtt installation instructions) into your database before activate xbtt backend!';
-$language['XBTT_URL_ERROR']='xbtt base url is mandatory!';
+$language['XBTT_URL_ERROR']='XBTT Base URL Is Mandatory!';
 // BAN FORM
 $language['BAN_NOTE']='In this part of the admin panel, you can see the banned IPs and ban new IPs from accessing the tracker.<br />'."\n".'You must insert a range from (first IP) to (last IP).';
-$language['BAN_NOIP']='There are no banned IPs';
+$language['BAN_NOIP']='There Are Currently No Banned IP&rsquo;s';
 $language['BAN_FIRSTIP']='First IP';
 $language['BAN_LASTIP']='Last IP';
 $language['BAN_COMMENTS']='Comments';
@@ -139,14 +139,14 @@ $language['BAN_REMOVE']='Remove';
 $language['BAN_BY']='By';
 $language['BAN_ADDED']='Date';
 $language['BAN_INSERT']='Insert New Banned IP Range';
-$language['BAN_IP_ERROR']='Bad IP address.';
-$language['BAN_NO_IP_WRITE']='You haven&rsquo;t wrote an IP address. Sorry!';
-$language['BAN_DELETED']='The IP range has been deleted from database.<br />'."\n".'<br />'."\n".'<a href="index.php?page=admin&amp;user='.$CURUSER['uid'].'&amp;code='.$CURUSER['random'].'&amp;do=banip&amp;action=read">Go back to Ban IP</a>';
+$language['BAN_IP_ERROR']='Bad IP Address.';
+$language['BAN_NO_IP_WRITE']='You Have Not Entered A IP Address. Sorry!';
+$language['BAN_DELETED']='The IP Range Has Been Deleted From The Database.<br />'."\n".'<br />'."\n".'<a href="index.php?page=admin&amp;user='.$CURUSER['uid'].'&amp;code='.$CURUSER['random'].'&amp;do=banip&amp;action=read">Go back to Ban IP</a>';
 // LANGUAGES
 $language['LANGUAGE_SETTINGS']='Language Settings';
 $language['LANGUAGE']='Language';
-$language['LANGUAGE_ADD']='Insert new Language';
-$language['LANGUAGE_SAVED']='Congratulations, language has been modified';
+$language['LANGUAGE_ADD']='Insert New Language';
+$language['LANGUAGE_SAVED']='Congratulations, Language Has Been Modified';
 // STYLES
 $language['STYLE_SETTINGS']='Style/Themes Settings';
 $language['STYLE_EDIT']='Edit Style';
@@ -165,34 +165,34 @@ $language['CATEGORY_EDIT']='Edit Category';
 $language['CATEGORY_SUB']='Sub-Category';
 $language['CATEGORY_NAME']='Category';
 // CENSORED
-$language['CENSORED_NOTE']='Write <b>one word per line</b> to ban it (will be changed into *censored*)';
+$language['CENSORED_NOTE']='Write <b>One Word Per Line</b> To Ban It (will be changed into *censored*)';
 $language['CENSORED_EDIT']='Edit Censored Words';
 // BLOCKS
 $language['BLOCKS_SETTINGS']='Block Configuration';
 $language['ENABLED']='Enabled';
 $language['ORDER']='Order';
-$language['BLOCK_NAME']='Block&rsquo;s name';
+$language['BLOCK_NAME']='Block&rsquo;s Name';
 $language['BLOCK_POSITION']='Position';
-$language['BLOCK_TITLE']='Language title (will be used to display the translated title)';
-$language['BLOCK_USE_CACHE']='Cache this block?';
-$language['ERR_BLOCK_NAME']='You must select one of the enabled file in the name&rsquo;s dropdown!';
-$language['BLOCK_ADD_NEW']='Add a New Block';
+$language['BLOCK_TITLE']='Language Title (will be used to display the translated title)';
+$language['BLOCK_USE_CACHE']='Cache This Block? (Not Recommended)';
+$language['ERR_BLOCK_NAME']='You Must Select One Of The Blocks From The Dropdown!';
+$language['BLOCK_ADD_NEW']='Add A New Block';
 // POLLS (more in lang_polls.php)
 $language['POLLS_SETTINGS']='Poll Configuration';
-$language['POLLID']='Pollid';
-$language['INSERT_NEW_POLL']='Add new Poll';
-$language['CANT_FIND_POLL']='Can&rsquo;t find poll';
+$language['POLLID']='Poll ID';
+$language['INSERT_NEW_POLL']='Add New Poll';
+$language['CANT_FIND_POLL']='Poll Not Found';
 $language['ADD_NEW_POLL']='Add Poll';
 // GROUPS
 $language['USER_GROUPS']='Users Group Settings (click on group&rsquo;s name to edit)';
 $language['VIEW_EDIT_DEL']='View/Edit/Del';
-$language['CANT_DELETE_GROUP']='This Level/Group can&rsquo;t be canceled!';
-$language['GROUP_NAME']='Group&rsquo;s name';
+$language['CANT_DELETE_GROUP']='This Rank/Group can&rsquo;t Be Removed!';
+$language['GROUP_NAME']='Group&rsquo;s Name';
 $language['GROUP_VIEW_NEWS']='View News';
 $language['GROUP_VIEW_FORUM']='View Forum';
 $language['GROUP_EDIT_FORUM']='Edit Forum';
-$language['GROUP_BASE_LEVEL']='Choose base level';
-$language['GROUP_ERR_BASE_SEL']='Error on base level select!';
+$language['GROUP_BASE_LEVEL']='Choose Ranks Base Level';
+$language['GROUP_ERR_BASE_SEL']='Error On Base Level Select!';
 $language['GROUP_DELETE_NEWS']='Delete News';
 $language['GROUP_PCOLOR']='Prefix Color (like ';
 $language['GROUP_SCOLOR']='Suffix Color (like ';
@@ -213,37 +213,37 @@ $language['GROUP_EDIT_GROUP']='Edit Group';
 $language['GROUP_VIEW']='View';
 $language['GROUP_EDIT']='Edit';
 $language['GROUP_DELETE']='Delete';
-$language['INSERT_USER_GROUP']='Insert new User Group';
-$language['ERR_CANT_FIND_GROUP']='Can&rsquo;t find this group!';
-$language['GROUP_DELETED']='The group has been deleted!';
+$language['INSERT_USER_GROUP']='Insert New User Group';
+$language['ERR_CANT_FIND_GROUP']='Rank/Group Not Found!';
+$language['GROUP_DELETED']='The Rank/Group Has Been Deleted!';
 // MASS PM
-$language['USERS_FOUND']='users found';
-$language['USERS_PMED']='users PMed';
-$language['WHO_PM']='Who will the pm be sent to?';
-$language['MASS_SENT']='Mass PM sent!!!';
+$language['USERS_FOUND']='Users Found';
+$language['USERS_PMED']='Users PMed';
+$language['WHO_PM']='Who Will The PM Be Sent To?';
+$language['MASS_SENT']='Mass PM Sent!!!';
 $language['MASS_PM']='Mass PM';
-$language['MASS_PM_ERROR']='It maybe a good idea to actually write something before submitting it!!!!';
-$language['RATIO_ONLY']='this ratio only';
-$language['RATIO_GREAT']='greater then this ratio';
-$language['RATIO_LOW']='lower then this ratio';
+$language['MASS_PM_ERROR']='Need Your Eyes Checked? You Have Not Wrote Anything In The Text Field To Send.';
+$language['RATIO_ONLY']='This Ratio Only';
+$language['RATIO_GREAT']='Greater Than This Ratio';
+$language['RATIO_LOW']='Lower Than This Ratio';
 $language['RATIO_FROM']='From';
 $language['RATIO_TO']='To';
 $language['MASSPM_INFO']='Info';
 // PRUNE USERS
-$language['PRUNE_USERS_PRUNED']='Pruned users';
-$language['PRUNE_USERS']='Prune users';
+$language['PRUNE_USERS_PRUNED']='Pruned Users';
+$language['PRUNE_USERS']='Prune Users';
 $language['PRUNE_USERS_INFO']='Input the number of days which the users are to be considered as "dead" (not connected from x days OR has signed from x days and still validating)';
 // SEARCH DIFF
-$language['SEARCH_DIFF']='Search Diff.';
+$language['SEARCH_DIFF']='Search User Difference';
 $language['SEARCH_DIFF_MESSAGE']='Message';
 $language['DIFFERENCE']='Difference';
 $language['SEARCH_DIFF_CHANGE_GROUP']='Change User Group';
 // PRUNE TORRENTS
-$language['PRUNE_TORRENTS_PRUNED']='Pruned torrents';
-$language['PRUNE_TORRENTS']='Prune torrents';
+$language['PRUNE_TORRENTS_PRUNED']='Pruned Torrents';
+$language['PRUNE_TORRENTS']='Prune Torrents';
 $language['PRUNE_TORRENTS_INFO']='Input the number of days which the torrents are to be considered as "dead"';
-$language['LEECHERS']='leecher(s)';
-$language['SEEDS']='seed(s)';
+$language['LEECHERS']='Leecher(s)';
+$language['SEEDS']='Seed(s)';
 // DBUTILS
 $language['DBUTILS_TABLENAME']='Table Name';
 $language['DBUTILS_RECORDS']='Records';
@@ -281,7 +281,7 @@ $language['TYPE']='Type';
 $language['DATE_CHANGED']='Date Changed';
 $language['DATE_CREATED']='Date Created';
 $language['ACTIVE_MODULES']='Active Modules: ';
-$language['NOT_ACTIVE_MODULES']='Non-Active Modules: ';
+$language['NOT_ACTIVE_MODULES']='Deactivated Modules: ';
 $language['TOTAL_MODULES']='Total Modules: ';
 $language['DEACTIVATE']='Deactivate';
 $language['ACTIVATE']='Activate';
@@ -295,8 +295,8 @@ $language['HACK_TITLE']='Title';
 $language['HACK_VERSION']='Version';
 $language['HACK_AUTHOR']='Author';
 $language['HACK_ADDED']='Added';
-$language['HACK_NONE']='There are no hacks installed';
-$language['HACK_ADD_NEW']='Add new hack';
+$language['HACK_NONE']='There Are No Hacks Installed';
+$language['HACK_ADD_NEW']='Add New Hack';
 $language['HACK_SELECT']='Select';
 $language['HACK_STATUS']='Status';
 $language['HACK_INSTALL']='Install';
@@ -334,7 +334,7 @@ $language['SENT_TO']='Sent to';
 $language['DATE_SENT']='Date Sent';
 $language['INV_WELCOME']='Welcome to Invitation System Panel.<br />Activating this option will prevent users from<br />signing up without an invitation code.';
 $language['HASH']='Hash';
-$language['VALID_INV_MODE']='Confirmation needed';
+$language['VALID_INV_MODE']='Confirmation Needed';
 $language['VALID_INV_EXPL']='<i>Inviter will have to confirm invited user account</i>';
 $language['INVITE_TIMEOUT']='Dead time for invitations<br />( on days )';
 $language['GIVE_INVITES_TO']='Give Invitations';
@@ -357,11 +357,11 @@ $language['PRE_OF'] = 'Prerequisite of';
 
 // Seed bonus -->
 $language["ACP_SEEDBONUS"]="SeedBonus Settings";
-$language["BONUS"]="Points awarded per hour seeding";
-$language["PRICE_VIP"]="Price for rank VIP";
-$language["PRICE_CT"]="Price for CustomTitle";
-$language["PRICE_NAME"]="Price for change username";
-$language["PRICE_GB"]="Price for GB";
+$language["BONUS"]="Points Awarded Per Hour Seeding";
+$language["PRICE_VIP"]="Price For VIP Rank";
+$language["PRICE_CT"]="Price For CustomTitle";
+$language["PRICE_NAME"]="Price For Username Change";
+$language["PRICE_GB"]="Price Per GB";
 $language["POINTS"]="Points";
 $language["SEEDBONUS_UPDATED"]="SeedBonus settings updated";
 $language["ENABLE"] = "Enable";
@@ -465,7 +465,7 @@ $language["AADS_NO_FLS"]= "no freeleech slots";
 // <-- Advanced Auto Donation System by DiemThuy
 
 //GOLD
-$language["ACP_GOLD"]="Gold torrents settings";
+$language["ACP_GOLD"]="Gold/Silver/Bronze Torrent Settings";
 $language["GOLD_CHOOSE_PIC"] = "Choose new picture (max size 100px x 100px)";
 $language["GOLD_NO_FILE"] = "File not uploaded!";
 $language["GOLD_TOO_BIG"] = "Picture size is limited to 100px X 100px!";
@@ -473,7 +473,7 @@ $language["GOLD_NOT_UPPED"] = "File not uploaded!";
 $language["GOLD_TOO_SMALL"] = "Picture size is too small!";
 $language["GOLD_ONLY_BASE"] = "(Member levels based upon the defaults will automatically inherit these permissions)";
 
-
+//FREELEECH
 $language['ACP_FREECTRL']='Free Leech Control';
 $language['FL_INFO'] = 'Free Leech, if enabled all torrents (including new uploads) will be free Leech, no download stats will be recorded. (Only upload)';
 $language['FL_DTE'] = 'Date to expire';
@@ -484,14 +484,14 @@ $language['FL_ENABLE'] = 'Enable';
 $language['FL_HAPPY_HOUR'] = 'Happy Hour, if enabled Free Leech will be set randomly for 1 hour a day';
 $language['FL_EN_HAPPY_HOUR'] = 'Enable Happy Hour';
 
-
+//IMAGE
 $language["IMAGE_SETTING"]="Image Settings";
 $language["ALLOW_IMAGE_UPLOAD"]="Allow image upload";
 $language["ALLOW_SCREEN_UPLOAD"]="Allow screens upload";
 $language["IMAGE_UPLOAD_DIR"]="Image upload dir";
 $language["FILE_SIZELIMIT"]="Image size limit";
 
-
+//H&R
 $language["ACP_HITRUN"]="Hit & Run Settings";
 $language["HNR_BLOCK_SETTINGS"] = "Hit & Run Block Settings";
 $language["HNR_SCROLLING_TEXT"] = "Scrolling Text";
@@ -529,6 +529,7 @@ $language["HNR_WIB"] = "Warn is Boot";
 $language["HNR_WT"] = "Warn Times";
 $language["HNR_BU"] = "Boot Users";
 
+//AUTO RANK
 $language["ACP_AUTORANK"] = "Autorank Administration";
 $language["AUTORANK_INVALID"] = "Invalid Input, please enter a number between 1 and 23";
 $language["AUTORANK_MAIN_1"] = "To save on excessive load only users who are connected to torrents will be scanned for rank changes regularly. The entire memberbase will be scanned once every 24 hours.<br /><br /><b>Please Note:</b> You should set this overall scan time to something off-peak but it also needs to be a time when there are still users likely to be browsing your site otherwise it will probably not get triggered.<br /><br />Valid values are 0-23 (0 = midnight, 1 = 1:00am, 5=5:00am, 14=2:00pm etc.)";
@@ -537,31 +538,28 @@ $language["AUTORANK_MAIN_3"] = "You can set all other rank/usergroup values from
 $language["AUTORANK_MAIN_4"] = "here";
 $language["AUTORANK_SEND_PM"] = "Send PM to inform member of rank change?";
 
-
+//Booted
 $language["ACP_BOOTED"]="Booted Users";
 			$language["ACP_BOOTED_NM"]="Username";
 $language["ACP_BOOTED_EXP"]="Expire Time";
 $language["ACP_BOOTED_REA"]="Ban Reason";
 $language["ACP_BOOTED_WHO"]="Ban Added By";
 
-// --------> modpanel
+//Staff Panel
 $language['ACP_MODPANEL']='Staff Panel Settings';
 $language['MODCP_SECTION']='Section (the section you want to allow your mod/admin, it\'s the do=xxxx part in the link):';
 $language['MODCP_DESC']='Description (if you use a language definition, then language string will be used, else the string you wrote. eg: you put "ACP_BAN_IP" it\'ll display "'.$language['ACP_BAN_IP'].'" ):';
 $language['MODCP_URL']='URL (the url to access the resource, {uid} will be replaced by user\'s id and {ucode} eg: link for banip is index.php?page=admin&user={uid}&code={ucode}&do=category&action=read):';
 $language['MODCP_NEWSECTION']='Add a new section';
 $language['NO_SECTION_ACCESS']='You can\'t access this section.';
-// --------> modpanel
-
-
 
 //RULES
-$language["ACP_RULES_GROUP"]="Rules groups";
+$language["ACP_RULES_GROUP"]="Rule Groups";
 $language["ACP_RULES"]="Rules";
 
 
 //Sticky
-$language["ACP_STICKY_TORRENTS"]="Sticky settings";
+$language["ACP_STICKY_TORRENTS"]="Sticky Settings";
 $language["STICKY_SETTINGS"]="Sticky settings";
 $language["COLOR"]="Color";
 $language["LEVEL_STICKY"]="Who can add sticky torrents? (default: Uploader)";
@@ -589,6 +587,7 @@ $language["TRAV_ADD_REQ"] = "Add request";
 
 $language['XTD_ACP']='XTD Settings';
 
+//Lottery
 $language["ACP_LOTTERY"]="Lottery";
 $language["LOTT_SETTINGS"]="Lottery Settings";
 $language["EXPIRE_DATE"]="Expire date";
@@ -615,11 +614,6 @@ $language["BACK_TO_LOTTERY"]="Back to Lottery";
 $language["LOTT_SENDER_ID"]="Sender ID for PM";
 $language["ADMIN_SB_BANNED"] = "Shoutbox banned";
 
-$language['tmsg1']="Ticker Message 1";
-$language['tmsg2']="Ticker Message 2";
-$language['tmsg3']="Ticker Message 3";
-$language['tmsg4']="Ticker Message 4";
-
 // Site Offline
 $language["ACP_OFFLINE"]="Offline Settings";
 $language["OFFLINE_SETTING"]="Site is Offline?";
@@ -630,22 +624,10 @@ $language["SETTING_MIN_DLRATIO"]="Minimum ratio to download torrents";
 $language["SETTING_CUSTOM_SETTINGS"]="Download Check Settings";
 $language["BYPASS_DLCHECK"]="Bypass Download check";
 
-// Radio
-$language["RAD_SETTINGS"]="Radio Settings";
-$language['djhead']="Dj List";
-
 // Message Spy
 $language["ACP_ISPY"]="Message Spy";
 $language["DATE_SENT"]="Date Sent";
 $language["MESSAGE"]="Message";
-
-// Sport Betting - Start
-$language["SB_SETTINGS"] = "Sport Betting Settings";
-$language["SB_MIN_IDL_2_BET"] = "Minimum rank To Bet";
-$language["SB_FOR_ID"] = "Forum number to post in";
-$language["SB_FOR_USER_ID"] = "Forum member ID to post with";
-$language["SB_MAX_BON"] = "Maximum Bonus Points";
-// Sport Betting - End
 
 // NEW USER DONATE UPLOAD
 $language["SETTINGS_UPLOAD"]="Donations of items for new members.";
@@ -674,6 +656,7 @@ The Staff';
 $language["MAX_TORRENTS"] = "Maximum Torrents";
 
 // Client ban
+$language["ACP_CLIENTBAN"]="Ban BitTorrent Clients";
 $language['BAN_CLIENT']='Ban BitTorrent Client';
 $language['REMOVE_CLIENTBAN']='Remove BitTorrent Client Ban';
 $language['CLIENT_REMOVED']='This client has been removed from the banned list.<br /><br />';
@@ -687,6 +670,7 @@ $language['NEED_A_REASON']='You must enter a reason!';
 $language['BAN_MAIN']='By visiting this page you are indicating that you want to ban the following client:';
 $language['BAN_ALL_VERSIONS']='Ban all versions?';
 $language['REASON']='Reason';
+$language['UNBAN']='Click Here To Unban Clients';
 
 // Ban Button
 $language["ACP_BB"]="Ban Button - IP Range";
