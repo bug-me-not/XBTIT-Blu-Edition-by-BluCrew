@@ -75,6 +75,10 @@ if(isset($_POST["list"]))
         }
     }
     $out .= '
+  <div class="panel panel-primary">
+  <div class="panel-heading">
+  <h4 class="text-center">Staff Panel Settings</h4>
+  </div>
   <form id="aut_list" name="aut_list" action="admin.modpanel.php" method="post">
   <table>
   <tr>
@@ -94,7 +98,7 @@ if(isset($_POST["list"]))
     }
     $out .= '
   </select>&nbsp;&nbsp;
-  <input type="button" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value);" name="sel_level" value="'.$language['SELECT'].'"/>
+  <input type="button" class="btn btn-md btn-primary" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value);" name="sel_level" value="'.$language['SELECT'].'"/>
   </td>
   </tr>
   <tr>
@@ -110,10 +114,10 @@ if(isset($_POST["list"]))
             $out .= '
           <br />
           <br />
-          <table width="100%" class="lista">
+          <table class="table table-bordered table-hover">
           <tr>
-          <td class="header" style="text-align:center">Section</td>
-          <td class="header" style="text-align:center">Allow</td>
+          <td class="head" style="text-align:center">Section</td>
+          <td class="head" style="text-align:center">Allow</td>
           </tr>
           ';
             while($rlevel = $radmincp->fetch_assoc())
@@ -127,7 +131,7 @@ if(isset($_POST["list"]))
             }
             $out .= '
         <tr>
-        <td colspan="2" style="text-align:center"><input type="button" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value,1);" name="sel_level" value="Save"/></td>
+        <td colspan="2" style="text-align:center"><input type="button" class="btn btn-md btn-primary" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value,1);" name="sel_level" value="Save Settings"/></td>
         </tr>
         </table>
         ';
@@ -140,15 +144,21 @@ if(isset($_POST["list"]))
     <br />
     <br />
     <table class="lista" width="100%">
-    <tr><td class="header" colspan="2" style="text-align:center">'.$language['MODCP_NEWSECTION'].'</td></tr>
+    <tr><td class="header" colspan="2" style="text-align:center"><p class="text-danger">'.$language['MODCP_NEWSECTION'].'</p></td></tr>
+
     <tr><td class="lista" width="30%">'.$language['MODCP_SECTION'].'</td><td class="lista" width="70%"><input type="text" maxlenght="50" name="section" id="section" style="width:95%" /></td></tr>
+
     <tr><td class="lista" width="30%">'.$language['MODCP_DESC'].
             '</td><td class="lista" width="70"><input type="text" maxlenght="250" name="description" id="description" style="width:95%" /></td></tr>
+
     <tr><td class="lista" width="30%">'.$language['MODCP_URL'].'</td><td class="lista" width="70%"><input type="text" maxlenght="200" name="link" id="link" style="width:95%" /></td></tr>
-    <tr><td colspan="2" style="text-align:center"><input type="button" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value,2);" name="sel_level" value="'.
-            $language['FRM_CONFIRM'].'"/></td></tr>
+
+    <tr><td colspan="2" style="text-align:center"><input type="button" class="btn btn-md btn-primary" onclick="Show_ModPanel(document.aut_list.r_opt.options[document.aut_list.r_opt.selectedIndex].value,2);" name="sel_level" value="Apply New Section"/></td></tr>
     </table>
-    </form>';
+    </form>
+    <div class="panel-footer">
+    </div>
+    </div>';
     }
     echo $out;
     die;

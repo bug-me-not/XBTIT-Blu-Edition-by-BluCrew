@@ -1,12 +1,15 @@
-<table class="header" width="100%" align="center">
-<td class="header" align="center" colspan="6"><b><tag:language.UP_RANK_UPL /></b></td>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.UP_RANK_UPL /></h4>
+</div>
+<table class="table table-bordered table-hover">
 <tr>
-  <td class="header" align="center"><b><tag:language.UPLOADER /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_LAST_ONLINE /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_LAST_UPLOAD /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_DAYS_AGO /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_ACT_UPL /></b></td>
-  <td class="header" align="center"><b><tag:language.PM /></b></td>
+  <td class="head" align="center"><b><tag:language.UPLOADER /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_LAST_ONLINE /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_LAST_UPLOAD /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_DAYS_AGO /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_ACT_UPL /></b></td>
+  <td class="head" align="center"><b><tag:language.PM /></b></td>
 </tr>
 
 <loop:UC>
@@ -20,15 +23,22 @@
 </tr>
 </loop:UC>
 </table>
-<table class="header" width="100%" align="center">
-<td class="header" align="center" colspan="6"><b><tag:language.UP_RANK_OTH /></b></td>
+<div class="panel-footer">
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center"><tag:language.UP_RANK_OTH /></h4>
+</div>
+<table class="table table-bordered table-hover">
 <tr>
-  <td class="header" align="center"><b><tag:language.UPLOADER /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_LAST_ONLINE /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_LAST_UPLOAD /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_DAYS_AGO /></b></td>
-  <td class="header" align="center"><b><tag:language.UP_ACT_UPL /></b></td>
-  <td class="header" align="center"><b><tag:language.PM /></b></td>
+  <td class="head" align="center"><b><tag:language.UPLOADER /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_LAST_ONLINE /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_LAST_UPLOAD /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_DAYS_AGO /></b></td>
+  <td class="head" align="center"><b><tag:language.UP_ACT_UPL /></b></td>
+  <td class="head" align="center"><b><tag:language.PM /></b></td>
 </tr>
 
 <loop:UCO>
@@ -42,3 +52,6 @@
 </tr>
 </loop:UCO>
 </table>
+<div class="panel-footer">
+</div>
+</div>

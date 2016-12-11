@@ -1,5 +1,7 @@
-
-
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Torrent Moderation Reasons</h4>
+</div>
 <if:warn_add>
   <form name="warn_add_new" action="<tag:frm_action />" method="post">
     <table class="lista">
@@ -15,19 +17,19 @@
       </tr>
       <tr>
         <td class="header" align="center" colspan="4">
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
-            <input type="submit" name="confirm" class="btn" value="<tag:language.FRM_CANCEL />" />
+            <input type="submit" name="confirm" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" />&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="confirm" class="btn btn-md btn-warning" value="<tag:language.FRM_CANCEL />" />
         </td>
       </tr>
     </table>
   </form>
 <else:warn_add>
-  <table class="lista" width="100%" align="center">
+  <table class="table table-bordered table-hover">
   <tr>
-    <td class="header" align="center"><tag:language.WARN_TITLE /></td>
-    <td class="header" align="center"><tag:language.WARN_TEXT /></td>
-    <td class="header" align="center"><tag:language.EDIT /></td>
-    <td class="header" align="center"><tag:language.DELETE /></td>
+    <td class="head" align="center"><tag:language.WARN_TITLE /></td>
+    <td class="head" align="center"><tag:language.WARN_TEXT /></td>
+    <td class="head" align="center"><tag:language.EDIT /></td>
+    <td class="head" align="center"><tag:language.DELETE /></td>
   </tr>
   <loop:warn>
   <tr>
@@ -42,3 +44,6 @@
   </tr>
   </table>
 </if:warn_add>
+  <div class="panel-footer">
+  </div>
+  </div>

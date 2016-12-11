@@ -1,3 +1,7 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Torrent Activity Colors Legend Settings</h4>
+</div>
 <div align='center'>
   <form name='archive' method='post' action='index.php?page=admin&user=<tag:uid />&code=<tag:random />&do=toractcou'>
     <table>
@@ -34,8 +38,11 @@
       </tr>
       </if:downTorrEnabled2>
       <tr>
-        <td class='blocklist' align='center' colspan='2'><input type='submit' name='submit' value='<tag:language.SUBMIT />' /></td>
+        <td class='blocklist' align='center' colspan='2'><input type='submit' class='btn btn-md btn-primary' name='submit' value='<tag:language.SUBMIT />' /></td>
       </tr>
     </table>
   </form>
+</div>
+<div class="panel-footer">
+</div>
 </div>

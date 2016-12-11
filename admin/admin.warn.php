@@ -51,7 +51,7 @@ function warn_read()
          $cres[$i]["delete"]="<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=warn&amp;action=delete&amp;id=".$cres[$i]["id"]."\" onclick=\"return confirm('".AddSlashes($language["DELETE_CONFIRM"])."')\">".image_or_link("$STYLEPATH/images/delete.png","",$language["DELETE"])."</a>";
      }
      $admintpl->set("warn",$cres);
-     $admintpl->set("warn_add_new","<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=warn&amp;action=add\">".$language["WARN_ADD_REASON"]."</a>");
+     $admintpl->set("warn_add_new","<a href=\"index.php?page=admin&amp;user=".$CURUSER["uid"]."&amp;code=".$CURUSER["random"]."&amp;do=warn&amp;action=add\"><button class=\"btn btn-md btn-primary\">".$language["WARN_ADD_REASON"]."</button></a>");
      unset($cres);
 }
 

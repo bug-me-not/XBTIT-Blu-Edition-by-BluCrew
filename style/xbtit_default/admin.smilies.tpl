@@ -9,6 +9,12 @@ TAG(document).ready(function(){
 
 })
 </script>
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Smilies Settings</h4>
+</div>
+
 <if:import>
 <table class="header" width="100%" align="center">
 <tr>
@@ -18,7 +24,9 @@ TAG(document).ready(function(){
 </tr>
 </table>
 </if:import>
+
 <else:import>
+
 <if:in_edit>
 <table class="header" width="100%" align="center">
 <tr>
@@ -40,10 +48,11 @@ TAG(document).ready(function(){
 </form>
 </table>
 <else:in_edit>
+
 <table class="header" width="100%" align="center">
 <tr>
 <td class='header' colspan='2'>
-Add new
+<center><p class="text-danger">Add New</p></center>
 </td>
 </tr>
 <form method="POST" action="<tag:frm />" enctype="multipart/form-data"> 
@@ -54,57 +63,42 @@ Add new
 <td class='header'><tag:language.FILE />:</td><td class='lista'><input type='file' name='file'></td>
 </tr>
 <tr>
-<td class='header' style='text-align:center;' colspan='2'><input type='submit' value='<tag:language.SUBMIT />'></td>
+<td class='header' style='text-align:center;' colspan='2'><input type='submit' class='btn btn-md btn-primary' value='<tag:language.SUBMIT />'></td>
 </tr>
 </form>
 </table>
 
-<table class="header" width="100%" align="center">
-
+<table class="table table-bordered table-hover">
   <tr>
-
-    <td class="header" colspan="5"><tag:language.SMILE_CURR /></td>
-
+  <td class="header" colspan="5">
+    <center><p class="text-danger"><tag:language.SMILE_CURR /></p></center>
+  </td>
   </tr>
   <tr>
-
-    <td class="lista" colspan="5"><tag:pager_top /></td>
-
-  </tr>
-
-  <tr>
-
-    <td class="header"><b><tag:language.TAG /></b></td>
-
-    <td class="header"><b><tag:language.FILE /></b></td>
-    
-    <td class="header"><b><tag:language.RESULT /></b></td>
-    <td class="header"><b><tag:language.EDIT /></b></td>
-    <td class="header"><b><tag:language.DELETE /></b></td>
-
+    <td class="head"><b><tag:language.TAG /></b></td>
+    <td class="head"><b><tag:language.FILE /></b></td>   
+    <td class="head"><b><tag:language.RESULT /></b></td>
+    <td class="head"><b><tag:language.EDIT /></b></td>
+    <td class="head"><b><tag:language.DELETE /></b></td>
   </tr>
 
   <loop:smile>
 
   <tr>
-
     <td class="lista" style="text-align:center;"><tag:smile[].code /></td>
-
     <td class="lista" style="text-align:center;"><tag:smile[].url /></td>
     <td class="lista" style="text-align:center;"><img border='0' src='images/smilies/<tag:smile[].url />' alt='<tag:smile[].code />' title='<tag:smile[].code />'></td>
     <td class="lista" style="text-align:center;"><a href='<tag:edt />&amp;id=<tag:smile[].url />'><tag:language.EDIT /></a></td>
     <td class="lista" style="text-align:center;"><a href='<tag:del />&amp;id=<tag:smile[].url />'><tag:language.DELETE /></a></td>
-
   </tr>
-
   </loop:smile>
 
   <tr>
-
     <td class="lista" colspan="5"><tag:pager_bottom /></td>
-
   </tr>
-
 </table>
 </if:in_edit>
 </if:import>
+<div class="panel-footer">
+</div>
+</div>

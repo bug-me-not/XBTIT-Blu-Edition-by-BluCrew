@@ -974,7 +974,7 @@ $language["GIFT_CUSTOM"] = "Gift Reason Text (PM)";
 $language["GIFT_TEXT"] = "Text";
 
 // staff control
-$language['ACP_STAFF_CONTROL'] = "Staff Control";
+$language['ACP_STAFF_CONTROL'] = "Staff Logs";
 $language['MO']= 'Are you sure you want to set this user\'s old rank back?';
 $language['MA']= 'Undo';
 $language['AUSER']= 'User';
@@ -1042,9 +1042,9 @@ $language["CHEAP_COUNT_1"]="Found ";
 $language["CHEAP_COUNT_2"]=" Cheapmail Domains";
 $language["CHEAP_ADD"]="Add Cheapmail Domain:";
 
-$language["UP_CONTROL"]="Uploader Control";
-$language["UP_RANK_UPL"]="Rank - Uploader";
-$language["UP_RANK_OTH"]="Rank - Other";
+$language["UP_CONTROL"]="Uploaders List";
+$language["UP_RANK_UPL"]="Uploader Ranked Users";
+$language["UP_RANK_OTH"]="All Other Ranks With Upload Priviliges";
 $language["UP_LAST_ONLINE"]="Last Online";
 $language["UP_LAST_UPLOAD"]="Last Upload";
 $language["UP_DAYS_AGO"]="Days Ago";

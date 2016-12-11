@@ -1,6 +1,8 @@
-<div align="center"><b><tag:language.SC /></b></div>
-
-<table class="header" width="85%" align="center">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">Staff Log Of Rank Changes</h4>
+</div>
+<table class="table table-bordered table-hover">
 
 <if:pagertop_enabled>
 <tr>
@@ -9,12 +11,12 @@
 </if:pagertop_enabled>
 
 <tr>
-    <td class="header" align="center"><tag:language.AUSER /></td>
-    <td class="header" align="center"><tag:language.OL /></td>
-    <td class="header" align="center"><tag:language.NE /></td>
-    <td class="header" align="center"><tag:language.BY /></td>
-    <td class="header" align="center"><tag:language.DA /></td>
-    <td class="header" align="center"><tag:language.MA /></td>
+    <td class="head" align="center"><tag:language.AUSER /></td>
+    <td class="head" align="center"><tag:language.OL /></td>
+    <td class="head" align="center"><tag:language.NE /></td>
+    <td class="head" align="center"><tag:language.BY /></td>
+    <td class="head" align="center"><tag:language.DA /></td>
+    <td class="head" align="center"><tag:language.MA /></td>
 </tr>
 
 <loop:hit>
@@ -35,3 +37,6 @@
 </if:pagerbottom_enabled>
 
 </table>
+<div class="panel-footer">
+</div>
+</div>
