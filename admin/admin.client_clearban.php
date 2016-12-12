@@ -28,7 +28,7 @@ if (!defined("IN_ACP"))
 include(load_language("lang_peers.php"));
 $admintpl->set('language',$language);
 
-(isset($_GET["id"]) ? $id=0+$_GET["id"] : $id="");
+(isset($_GET["id"]) ? $id = 0+$_GET["id"] : $id="");
 (isset($_GET["returnto"]) ? $url=urldecode($_GET["returnto"]) : $url="");
 (isset($_POST["confirm"]) ? $confirm=$_POST["confirm"] : $confirm="");
 
@@ -38,7 +38,7 @@ if($_POST["confirm"])
     {
         if ($XBTT_USE)
            {
-           $dr=do_sqlquery("SELECT peer_id_ascii FROM `{$TABLE_PREFIX}bannedclient` WHERE `id`=".$id)->fetch_array();
+           $dr = do_sqlquery("SELECT peer_id_ascii FROM `{$TABLE_PREFIX}bannedclient` WHERE `id`=".$id)->fetch_array();
            @quickQuery("DELETE FROM xbt_deny_from_clients WHERE peer_id=".sqlesc($dr['peer_id_ascii']));
            unset($dr);
         }
@@ -50,19 +50,19 @@ if($_POST["confirm"])
     else
         redirect($url);
 }
-$res=do_sqlquery("SELECT * FROM `{$TABLE_PREFIX}bannedclient` WHERE `id`=$id",true);
+$res = do_sqlquery("SELECT * FROM `{$TABLE_PREFIX}bannedclient`",true);
 
-if(@sql_num_rows($res)>0)
+if(@sql_num_rows($res) > 0)
 {
-    $client=array();
-    $i=0;
+    $client = array();
+    $i = 0;
     while($row=$res->fetch_assoc())
     {
-        $client[$i]["client_name"]=$row["client_name"];
-        $client[$i]["user_agent"]=$row["user_agent"];
-        $client[$i]["peer_id"]=$row["peer_id"];
-        $client[$i]["peer_id_ascii"]=$row["peer_id_ascii"];
-        $client[$i]["reason"]=stripslashes($row["reason"]);
+        $client[$i]["client_name"] = $row["client_name"];
+        $client[$i]["user_agent"] = $row["user_agent"];
+        $client[$i]["peer_id"] = $row["peer_id"];
+        $client[$i]["peer_id_ascii"] = $row["peer_id_ascii"];
+        $client[$i]["reason"] = stripslashes($row["reason"]);
         $i++;
     }
     $admintpl->set('client',$client);
