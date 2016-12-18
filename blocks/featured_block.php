@@ -34,13 +34,17 @@ $tor = $torrent->fetch_assoc();
 $fname = $tor['filename'];
 ?>
 
+<link href="css/featured_torrent.css" rel="stylesheet" media="screen" />
+<link href="css/featured_torrent_metro.css" rel="stylesheet" media="screen" />
+
 <div id='container'>
-    <link href="css/featured_torrent.css" rel="stylesheet" media="screen" />
-    <link href="css/featured_torrent_metro.css" rel="stylesheet" media="screen" />
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h4 class="text-center">Featured Torrent</h4>
-        </div>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">Featured Torrent</a>
+</h4>
+</div>
+<div id="collapse9" class="panel-collapse collapse in">
         <div class="container-fluid" style="padding:0;">
             <div class="row-fluid">
 
@@ -132,6 +136,7 @@ $fname = $tor['filename'];
                 <!-- /STRAPSLIDE -->
 
             </div>
+        </div>
         </div>
         <div class="panel-footer">
         </div>

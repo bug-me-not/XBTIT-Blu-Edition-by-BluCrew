@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Latest Uploads</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse15">Latest Uploads</a>
+</h4>
 </div>
+<div id="collapse15" class="panel-collapse collapse in">
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 //  xbtit - Bittorrent tracker/frontend
@@ -168,4 +171,5 @@ else
 }
 }
 ?>
+</div>
 </div>

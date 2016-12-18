@@ -1,0 +1,58 @@
+[10-Dec-2016 01:36:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481315521')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 02:06:50 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/Blu-Edition/admin/admin.ads.php on line 72
+[10-Dec-2016 02:06:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481333805')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 03:11:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481335610')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 04:03:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481339470')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 04:33:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481342588')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 05:03:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481344402')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 16:07:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481346209')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 17:34:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481386048')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 18:08:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1859
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1481391284')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1859
+[10-Dec-2016 20:21:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Whois has a deprecated constructor in /home/Blu-Edition/whois/whois.main.php on line 31
+[10-Dec-2016 20:21:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WhoisClient has a deprecated constructor in /home/Blu-Edition/whois/whois.client.php on line 30
+[10-Dec-2016 20:21:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor in /home/Blu-Edition/whois/whois.idna.php on line 54

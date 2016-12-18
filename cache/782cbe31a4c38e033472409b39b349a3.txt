@@ -1,0 +1,1 @@
+a:7:{s:11:"kis_enabled";b:1;s:20:"kis_invExpireAmmount";s:1:"1";s:17:"kis_invExpireType";s:1:"W";s:8:"kis_logs";b:1;s:11:"kis_perPage";s:2:"25";s:14:"kis_regAmmount";s:2:"10";s:11:"kis_regType";s:2:"GB";}

@@ -1,0 +1,74 @@
+[02-Dec-2016 07:19:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480625519')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 07:22:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_row() on boolean in /home/Blu-Edition/subtitles.php:54
+Stack trace:
+#0 /home/Blu-Edition/index.switch.php(526): require()
+#1 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#2 {main}
+  thrown in /home/Blu-Edition/subtitles.php on line 54
+[02-Dec-2016 08:56:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480663176')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 10:31:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480668960')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 11:43:03 UTC] PHP Warning:  Division by zero in /home/Blu-Edition/modules/seedbonus/index.php on line 145
+[02-Dec-2016 11:43:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480674671')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 12:18:32 UTC] PHP Warning:  Division by zero in /home/Blu-Edition/modules/seedbonus/index.php on line 145
+[02-Dec-2016 12:18:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480678983')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 13:44:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480681112')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 15:17:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480686297')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 16:54:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480691830')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 17:46:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480697669')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 19:43:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480700817')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[02-Dec-2016 20:31:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480707827')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832

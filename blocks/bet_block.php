@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Betting</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Betting</a>
+</h4>
 </div>
+<div id="collapse3" class="panel-collapse collapse in">
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -60,6 +63,7 @@ foreach($bet as $fetch)
 print("</table>");
 
 ?>
+</div>
 <div class="panel-footer">
 </div>
 </div>

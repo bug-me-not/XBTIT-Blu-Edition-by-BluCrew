@@ -20,12 +20,12 @@
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 <!-- Font Awesome -->
-<link rel="stylesheet" href="font-awesome-4.5-2.0/css/font-awesome.min.css" type='text/css'>
+<link rel="stylesheet" href="style/fonts/font-awesome.min.css" type='text/css'>
 <!-- Bootstrap Icheck -->
-<link href="assets/plugins/iCheck-master/skins/all.css" rel="stylesheet">
+<link href="plugins/iCheck-master/skins/all.css" rel="stylesheet">
 <!-- bootstrap-datetimepicker -->
-<link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker-master/css/daterangepicker-bs3.css">
+<link rel="stylesheet" href="plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="plugins/bootstrap-daterangepicker-master/css/daterangepicker-bs3.css">
 <!-- Custom CSS -->
 <link rel='stylesheet' href='css/global.css' type='text/css' />
 <link rel='stylesheet' href='css/hover.css' type='text/css' />
@@ -35,13 +35,13 @@
 
 <!-- JavaScript -->
 <tag:main_jscript />
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jscript/bootstrap.min.js"></script>
 <script type="text/javascript" src="jscript/pace.js"></script>
 
 <!-- #DATE Range Picker -->
-      <script type="text/javascript" src="assets/plugins/Nestable-master/js/jquery.nestable.js"></script>
-      <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/moment.min.js"></script>
-      <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker-master/js/daterangepicker.js"></script>
+      <script type="text/javascript" src="plugins/Nestable-master/js/jquery.nestable.js"></script>
+      <script type="text/javascript" src="plugins/bootstrap-daterangepicker-master/js/moment.min.js"></script>
+      <script type="text/javascript" src="plugins/bootstrap-daterangepicker-master/js/daterangepicker.js"></script>
       <script type="text/javascript">
           jQuery(function($) {
             $('#reservation').daterangepicker(null, function(start, end, label) {
@@ -106,7 +106,7 @@
 </script>
 
 <!-- Bootstrap iCheck JS -->
-<script src="assets/plugins/iCheck-master/js/icheck.js"></script>
+<script src="plugins/iCheck-master/js/icheck.js"></script>
 <script type="text/javascript">
    jQuery(function($) {
    $(document).ready(function(){

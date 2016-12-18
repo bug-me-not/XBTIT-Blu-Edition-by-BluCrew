@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Blu Chat</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Blu Chat</a>
+</h4>
 </div>
+<div id="collapse2" class="panel-collapse collapse in">
 <?php
 
 global $btit_settings;
@@ -15,6 +18,7 @@ if($btit_settings['fmhack_ajax_chat']=='enabled'){
    echo "<div align='center' style='color:red;'><b><span>Error</span><br /><br />This chat has been disbaled</b>";
 }
 ?>
+</div>
 <div class="panel-footer">
 </div>
 </div>

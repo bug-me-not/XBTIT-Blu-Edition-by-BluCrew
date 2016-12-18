@@ -1,0 +1,87 @@
+[29-Nov-2016 21:40:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480451081')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[29-Nov-2016 22:28:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480455602')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[29-Nov-2016 23:16:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480458527')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[29-Nov-2016 23:16:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt2285752', Array)
+#2 /home/Blu-Edition/details.php(1174): getOMDBData('2285752')
+#3 /home/Blu-Edition/index.switch.php(259): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:16:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt2285752', Array)
+#2 /home/Blu-Edition/details.php(1174): getOMDBData('2285752')
+#3 /home/Blu-Edition/index.switch.php(259): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:16:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt0083658', Array)
+#2 /home/Blu-Edition/torrents.php(733): getOMDBData('0083658')
+#3 /home/Blu-Edition/index.switch.php(134): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:17:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt0083658', Array)
+#2 /home/Blu-Edition/torrents.php(733): getOMDBData('0083658')
+#3 /home/Blu-Edition/index.switch.php(134): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:22:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt0083658', Array)
+#2 /home/Blu-Edition/torrents.php(733): getOMDBData('0083658')
+#3 /home/Blu-Edition/index.switch.php(134): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:22:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt0083658', Array)
+#2 /home/Blu-Edition/torrents.php(733): getOMDBData('0083658')
+#3 /home/Blu-Edition/index.switch.php(134): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:24:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SparksCoding\MovieInformation\curl_init() in /home/Blu-Edition/include/class.omdb.php:318
+Stack trace:
+#0 /home/Blu-Edition/include/class.omdb.php(263): SparksCoding\MovieInformation\MovieInformation->makeRequest()
+#1 /home/Blu-Edition/include/common.php(993): SparksCoding\MovieInformation\MovieInformation->__construct('tt0083658', Array)
+#2 /home/Blu-Edition/torrents.php(733): getOMDBData('0083658')
+#3 /home/Blu-Edition/index.switch.php(134): require('/home/Blu-Editi...')
+#4 /home/Blu-Edition/index.php(310): include('/home/Blu-Editi...')
+#5 {main}
+  thrown in /home/Blu-Edition/include/class.omdb.php on line 318
+[29-Nov-2016 23:47:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480461393')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832

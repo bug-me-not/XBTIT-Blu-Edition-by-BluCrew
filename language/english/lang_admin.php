@@ -670,7 +670,6 @@ $language['NEED_A_REASON']='You must enter a reason!';
 $language['BAN_MAIN']='By visiting this page you are indicating that you want to ban the following client:';
 $language['BAN_ALL_VERSIONS']='Ban all versions?';
 $language['REASON']='Reason';
-$language['UNBAN']='Click Here To Unban Clients';
 
 // Ban Button
 $language["ACP_BB"]="Ban Button - IP Range";

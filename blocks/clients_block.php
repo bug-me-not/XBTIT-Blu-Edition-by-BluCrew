@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Recommended BitTorrent Clients</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">Recommended BitTorrent Clients</a>
+</h4>
 </div>
+<div id="collapse6" class="panel-collapse collapse in">
 <table class='table table-bordered' align='center' cellspacing='0' cellpadding='10' width='100%' border='1'><tbody>
 <tr align="center">
 <td align="center">
@@ -55,6 +58,7 @@ This list will be updated on a regular basis.</div>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="panel-footer">
 </div>
 </div>

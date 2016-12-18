@@ -1,0 +1,1 @@
+a:3:{s:12:"php_log_path";s:30:"/home/Blu-Edition/include/logs";s:12:"php_log_name";s:12:"xbtit-errors";s:13:"php_log_lines";s:3:"100";}

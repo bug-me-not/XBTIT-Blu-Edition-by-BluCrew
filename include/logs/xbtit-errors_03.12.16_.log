@@ -1,0 +1,60 @@
+[03-Dec-2016 05:50:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480710698')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 08:06:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480744238')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 15:58:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480752364')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 17:16:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480780725')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 17:46:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480785407')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 18:52:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480787212')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 22:00:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480791163')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 22:47:25 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 22:47:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480802453')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832
+[03-Dec-2016 22:47:46 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 22:47:50 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 22:47:56 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 22:47:58 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 22:48:01 UTC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting ')' in /home/Blu-Edition/admin/admin.menu.php on line 117
+[03-Dec-2016 23:24:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/Blu-Edition/include/sanity.php:1832
+Stack trace:
+#0 /home/Blu-Edition/include/functions.php(1001): do_sanity('1480805245')
+#1 [internal function]: cleandata()
+#2 {main}
+  thrown in /home/Blu-Edition/include/sanity.php on line 1832

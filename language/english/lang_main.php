@@ -1296,6 +1296,8 @@ $language["UIMG_MSG_3"]="Your User Images";
 $language["UIMG_USR_ICONS"]="User Icons";
 $language["UIMG_USR_IMGS"]="User Images";
 
+//shoutbox clean
+$language["SHOUT_CLEANED"]="[b]Shoutbox Just got cleaned![/b][IMG]".$BASEURL."/images/sweep.gif[/IMG]";
 
 $language["ERR_PASS_TOO_WEAK_1"]="Your password is too weak.<br />For security reasons it must contain at least";
 $language["ERR_PASS_TOO_WEAK_1A"]="The password is too weak.<br />For security reasons it must contain at least";

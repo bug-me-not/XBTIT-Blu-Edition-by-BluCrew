@@ -33,10 +33,13 @@
 ////////////////////////////////////////////////////////////////////////////////////
 ?>
 
-<div class="panel panel-primary">
+  <div class="panel panel-primary">
     <div class="panel-heading">
-        <h4 class="text-center">SeedBox</h4>
+      <h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse23">High Speeds</a>
+</h4>
     </div>
+    <div id="collapse23" class="panel-collapse collapse in">
     <?php
     global $CURUSER,$TABLE_PREFIX,$btit_settings;
 
@@ -79,45 +82,59 @@
 
         ?>
 
-        <table class="lista" width="100%">
-            <tr><td align="center"><i class="fa fa-server fa-3x"></i></tr>
-                <tr><td align="center"><b>Seedbox Torrents</td></tr>
-                    <tr><td align="center"><b><font color="red"><?php echo $num; ?></font></b></td></tr>
-                    <tr><td align="center"><b>Seedbox Current Max UP Speed</td></tr>
-                        <tr><td align="center"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td></tr>
-                    </table>
+      <table class="lista" width="100%">
+        <tr>
+          <td align="center"><i class="fa fa-server fa-3x"></i></tr>
+        <tr>
+          <td align="center"><b>Seedbox Torrents</td></tr>
+                    <tr><td align="center"><b><font color="red"><?php echo $num; ?></font></b></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Seedbox Current Max UP Speed</td></tr>
+                        <tr><td align="center"><b><font color="red"><?php echo $transferrateUP; ?></font></b></td>
+        </tr>
+      </table>
 
-                    <table align = "center" cellpadding="1" cellspacing="1" width="100%">
-                        <tr>
-                        <style>
-                        .thisclass{background-color:#41383C}
-                        </style>
-                        <script language="javascript">
-                        function change(color)
-                        {
-                            var el=event.srcElement
-                            if (el.tagName=="INPUT"&&el.type=="button")
-                            event.srcElement.style.backgroundColor=color
-                        }
-                        function jumpto2(url)
-                        {
-                            window.location=url
-                        }
-                        </script>
-                            <td  class = "header" align="center"><input type="button" name="Button" class="btn btn-danger" value="SB Torrents" onClick="jumpto2('index.php?page=seedbox')"></td>
-                    </tr>
-                </table>
-                <?php
+      <table align="center" cellpadding="1" cellspacing="1" width="100%">
+        <tr>
+          <style>
+            .thisclass {
+              background-color: #41383C
+            }
+
+          </style>
+          <script language="javascript">
+            function change(color) {
+              var el = event.srcElement
+              if (el.tagName == "INPUT" && el.type == "button")
+                event.srcElement.style.backgroundColor = color
+            }
+
+            function jumpto2(url) {
+              window.location = url
+            }
+
+          </script>
+          <td class="header" align="center">
+            <input type="button" name="Button" class="btn btn-danger" value="SB Torrents" onClick="jumpto2('index.php?page=seedbox')">
+          </td>
+        </tr>
+      </table>
+      <?php
             }
             else
             {
                 ?>
-                <table class="lista" width="100%">
-                    <tr><td>Access Restricted</td></tr>
-                </table>
-                <?php
+        <table class="lista" width="100%">
+          <tr>
+            <td>Access Restricted</td>
+          </tr>
+        </table>
+        <?php
             }
             ?>
-            <div class="panel-footer">
             </div>
-        </div>
+          <div class="panel-footer">
+          </div>
+  </div>
+

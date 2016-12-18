@@ -41,7 +41,8 @@ $res = get_result("SELECT `cat`.`id` as `catid`, `cat`.`image` as `catimg`, `cat
 if(count($res)>0)
 {
 
-  print("<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'>{$language['TRAV_BOU_REQ']}</h4></div>\n");
+  print("<div class='panel panel-primary'><div class='panel-heading'><h4 class='text-center'><a class='accordion-toggle' data-toggle='collapse' data-parent='#accordion' href='#collapse22'>{$language['TRAV_BOU_REQ']}</a></h4></div>\n");
+  print("<div id='collapse22' class='panel-collapse collapse in'>");
   print("<table class='table table-bordered'>\n");
   print("<tr><td>{$language['CATEGORY_FULL']}</td><td>{$language['TRAV_REQ_NAME']}</td><td>{$language['TRAV_REQ_BY']}</td><td>{$language['TRAV_DATE_REQ']}</td><td>{$language['TRAV_BON']}</td><td>{$language['TRAV_FILL']}</td></tr>\n");
 
@@ -67,7 +68,7 @@ if(count($res)>0)
     print("<tr><td><a href='{$catlink}'>{$catimg}</a></td><td>{$reqname}</td><td>{$requser}</td><td>{$reqdate}</td><td>".number_format($data['bounty'])."</td><td>{$reqfill}</td></tr>\n");
   }
 
-  print("</table><div class='panel-footer'></div></div>\n");
+  print("</table></div><div class='panel-footer'></div></div>\n");
 
   if($CURUSER['view_torrents'] == 'no')
   {

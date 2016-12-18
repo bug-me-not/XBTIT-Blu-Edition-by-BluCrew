@@ -1,0 +1,7 @@
+[17-Dec-2016 03:06:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Whois has a deprecated constructor in /home/Blu-Edition/whois/whois.main.php on line 31
+[17-Dec-2016 03:06:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WhoisClient has a deprecated constructor in /home/Blu-Edition/whois/whois.client.php on line 30
+[17-Dec-2016 03:06:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor in /home/Blu-Edition/whois/whois.idna.php on line 54
+[17-Dec-2016 03:18:36 UTC] PHP Warning:  Division by zero in /home/Blu-Edition/modules/seedbonus/index.php on line 145
+[17-Dec-2016 04:00:52 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/Blu-Edition/include/sanity.php on line 1185
+[17-Dec-2016 04:49:54 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/Blu-Edition/include/sanity.php on line 1185
+[17-Dec-2016 11:04:52 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/Blu-Edition/include/sanity.php on line 1185

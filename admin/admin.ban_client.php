@@ -74,7 +74,7 @@ if($_POST["confirm"])
             $sqlquery.="VALUES ('', ".sqlesc(substr($peer_id, 0, 8)).", ";
             $sqlquery.=sqlesc(substr($peer_id_ascii, 0, 3)).", ";
             $sqlquery.="'".$language["NA"]."', ".sqlesc(substr($client, 0, stripos($client, " "))." (".$language["ALL_VERSIONS"].")").", ";
-            $sqlquery.=" '".$reason."')";
+            $sqlquery.=" ".$reason.")";
 
             if($XBTT_USE)
                 $sqlquery2 ="INSERT INTO `xbt_deny_from_clients` (`peer_id`) VALUES (".sqlesc(substr($peer_id_ascii, 0, 3)).")";
@@ -84,12 +84,12 @@ if($_POST["confirm"])
             $sqlquery ="INSERT INTO {$TABLE_PREFIX}bannedclient ";
             $sqlquery.="VALUES ('', ".sqlesc($peer_id).", ";
             $sqlquery.=sqlesc($peer_id_ascii).", ";
-            $sqlquery.=sqlesc($agent).", ".sqlesc($client).", '".$reason."')";
+            $sqlquery.=sqlesc($agent).", ".sqlesc($client).", ".$reason.")";
 
             if($XBTT_USE)
                 $sqlquery2 ="INSERT INTO `xbt_deny_from_clients` (`peer_id`) VALUES (".sqlesc(substr($peer_id_ascii, 0, 8)).")";
         }
-          
+
         @do_sqlquery($sqlquery,true);
         if($XBTT_USE)
             @do_sqlquery($sqlquery2,true);

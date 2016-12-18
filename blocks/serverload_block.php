@@ -1,8 +1,11 @@
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h4 class="text-center">Server Info</h4>
-</div>
-<?php
+  <div class="panel-heading">
+    <h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse24">Server Info</a>
+</h4>
+  </div>
+  <div id="collapse24" class="panel-collapse collapse in">
+  <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
 //
@@ -82,6 +85,7 @@ echo "<div align=\"center\">".$language["GLOBAL_SERVER_LOAD"].": ($percent %)</d
         $width = $percent * 4;
 echo "<img height=\"15\" width=$width src=\"$pic\" alt=\"$percent%\" /></td></tr></table><br /><br />";
 ?>
+</div>
 <div class="panel-footer">
 </div>
 </div>

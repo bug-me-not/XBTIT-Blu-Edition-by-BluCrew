@@ -2,7 +2,8 @@
 <div class="clearfix visible-sm-block"></div>
 <div class="clearfix visible-md-block"></div>
 <div class='panel panel-default'>
-<div class='panel-heading'><h4><i class='fa fa-fw fa-user'></i>Welcome Back</h4></div>
+<div class='panel-heading'><h4><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse28"><i class='fa fa-fw fa-user'></i>Welcome Back</h4></a></div>
+<div id="collapse28" class="panel-collapse collapse in">
 <div class='panel-body' align='center'>
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
@@ -225,6 +226,7 @@ if (isset($CURUSER) && $CURUSER && $CURUSER["uid"]>1)
    print('</form>');
 }
 ?>
+</div>
 </div>
 </div>
 </div>

@@ -1,11 +1,11 @@
 <?php
 
 $dbhost = "localhost";
-$dbuser = "";
-$dbpass = "";
-$database = "";
-$TABLE_PREFIX = "";
-$mySecret = "636feafe53";
+$dbuser = "Bluedition";
+$dbpass = "6CCVAFrNlMmqeS3";
+$database = "Demo_DB";
+$TABLE_PREFIX = "demo_";
+$mySecret = "87kljKLJ98HJ";
 $db_prefix = 'smf_';
 
 ?>

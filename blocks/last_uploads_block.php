@@ -1,5 +1,14 @@
-<?php
+<!-- Non Animated Block -->
 
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13">Latest Uploads</a>
+</h4>
+</div>
+<div id="collapse13" class="panel-collapse collapse in">
+
+<?php
 global $TABLE_PREFIX, $btit_settings, $res_seo, $CURUSER, $THIS_BASEPATH;
 if ($btit_settings["fmhack_last_download_block"] == "enabled" && $btit_settings["fmhack_IP_to_country"] ==
     "enabled")
@@ -82,3 +91,7 @@ else
 }
 
 ?>
+</div>
+<div class="panel-footer">
+</div>
+</div>

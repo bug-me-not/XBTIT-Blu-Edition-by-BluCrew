@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Latest Comments</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">Torrent Comments</a>
+</h4>
 </div>
+<div id="collapse7" class="panel-collapse collapse in">
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 //
@@ -73,6 +76,7 @@
 
 }
 ?>
+</div>
 <div class="panel-footer">
 </div>
 </div>

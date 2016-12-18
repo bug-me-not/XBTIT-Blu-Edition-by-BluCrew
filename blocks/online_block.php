@@ -1,7 +1,10 @@
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h4 class="text-center">Online</h4>
+<h4 class="text-center">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse19">Online</a>
+</h4>
 </div>
+<div id="collapse19" class="panel-collapse collapse in">
 <?php
 /////////////////////////////////////////////////////////////////////////////////////
 // xbtit - Bittorrent tracker/frontend
@@ -130,6 +133,7 @@ print("<td align=\"center\">&nbsp;<i class=\"fa fa-user\" aria-hidden=\"true\"><
 } // end if user can view
 
 ?>
+</div>
 <div class="panel-footer">
 </div>
 </div>
