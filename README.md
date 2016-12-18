@@ -50,12 +50,6 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
 
 #
-
-### CONTRIBUTERS
-
-- There are no developer guidelines in place.
-- We do however ask that all code changes be submitted via a pull request. This allows for peer reviews. Ensures that code changes are effective and that merges are conflict free.
-
 ### UPDATES
 
 ```
@@ -101,3 +95,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+### Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at Mr.Robot@stealth.tg. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
