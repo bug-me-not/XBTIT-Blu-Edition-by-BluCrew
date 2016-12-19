@@ -266,6 +266,14 @@ else
 */
     fclose($fd);
 
+// client comment    
+global $btit_settings;
+if ($btit_settings["cl_on"] == 'true')
+{
+$array["comment"]=$btit_settings["cl_te"];
+}
+// client comment 
+
     $BASEURLn = str_replace("/announce.php","",$TRACKER_ANNOUNCEURLS[0]);   
     if(substr($BASEURLn,0,5) == "https")
     {

@@ -80,6 +80,11 @@ switch ($action)
       $btit_settings["mostpoplimit"]=$_POST["mostpoplimit"];
       $btit_settings["html_entities"]=isset($_POST["parsetype"]) && $_POST["parsetype"]=="false"?"enabled":"disabled";
 
+      // client comment
+      $btit_settings["cl_on"]=$_POST["cl_on"];
+      $btit_settings["cl_te"]=$_POST["cl_te"];
+      // client comment
+
       // dt last upload jquery block
       $btit_settings["scrolw"]=$_POST["scrolw"];
       $btit_settings["nav"]=$_POST["nav"];
@@ -332,6 +337,11 @@ switch ($action)
    $btit_settings["xbtt_use"]=($btit_settings["xbtt_use"]=="true"?"checked=\"checked\"":"");
    $btit_settings["HTML_ENT"]=($btit_settings["html_entities"]=="enabled"?"checked=\"checked\"":"");
    $btit_settings["HTML_SPECIAL"]=($btit_settings["html_entities"]!="enabled"?"checked=\"checked\"":"");
+
+   // client comment
+   $btit_settings["cl_onyes"]=($btit_settings["cl_on"]?"checked=\"checked\"":"");
+   $btit_settings["cl_onno"]=(!$btit_settings["cl_on"]?"checked=\"checked\"":"");  
+   // client comment
 
    // dt last upload jquery block
    $btit_settings["navyes"]=($btit_settings["nav"]?"checked=\"checked\"":"");

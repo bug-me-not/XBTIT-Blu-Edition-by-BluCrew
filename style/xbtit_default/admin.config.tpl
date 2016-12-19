@@ -232,6 +232,14 @@
 <td class="lista"><tag:config.multie_combo /></td>
 </tr>
 <tr>
+<td class="head" align="center" colspan="4">Client Comment</td>
+</tr>
+<tr>
+<td class="header">Enable Client Comment</td>
+<td class="lista">&nbsp;&nbsp;Enable&nbsp;<input type="radio" name="cl_on" value="true"<tag:config.cl_onyes /> />&nbsp;&nbsp;Disabled&nbsp;<input type="radio" name="cl_on" value="false"<tag:config.cl_onno /> /></td>
+<td class="lista"><input type="text" name="cl_te" value="<tag:config.cl_te />" size="35" /></td>
+</tr>
+<tr>
 <td align="center" class="header" colspan="2"><input type="submit" name="write" class="btn btn-md btn-primary" value="<tag:language.FRM_CONFIRM />" /></td>
 <td align="center" class="header" colspan="2"><input type="submit" name="cancel" class="btn btn-md btn-warning" value="<tag:language.FRM_CANCEL />" /></td>
 </tr>
