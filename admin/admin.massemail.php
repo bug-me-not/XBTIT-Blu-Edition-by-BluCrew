@@ -1,4 +1,4 @@
-<?
+<?php
 require_once ("include/functions.php");
 require_once ("include/config.php");
 
@@ -11,7 +11,7 @@ if (!defined("IN_ACP"))
       die("non direct access!");
 
 
-/*if (isset($_GET["action"]))
+if (isset($_GET["action"]))
 $action = $_GET["action"];
 else
 $action = "";
@@ -21,7 +21,7 @@ $action = "";
      $content_1 = $HTTP_POST_VARS["content_1"];
      $content_1 = htmlentities($content_1, ENT_QUOTES);
      $content_1 = stripslashes($content_1);
-     $content_1 = "<font face=\"arial\"> ". $content_1 ." </font>";*/
+     $content_1 = "<font face=\"arial\"> ". $content_1 ." </font>";
 
 // get all email addresses from db from id 1
      $SQL = do_sqlquery("SELECT email FROM {$TABLE_PREFIX}users WHERE id>1");
