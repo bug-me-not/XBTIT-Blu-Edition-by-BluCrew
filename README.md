@@ -13,6 +13,8 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 <br>
 <br>
 ## NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
+You can use the demo db dump if you want to play around until installer is complete!
+https://www.dropbox.com/s/lt6fitfuysxcaav/Demo_DB.sql?dl=0
 
 
 <b>:REQUIREMENTS:</b>
