@@ -49,13 +49,12 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - BluCrew (HDVinie and MrG01)<br>
 - Our Collaborators (flier56, Chocolatkey, nilimahona)<br>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
-- YOU ARE NOT TO REMOVE OUR COPYRIGHT NOTICE FROM THE FOOTER!
-Made with  by BluCrew
-Copyright © 2016 XBTIT Blu Edition v1.1.04 by BluCrew (or current version)
+- YOU ARE NOT TO REMOVE OUR COPYRIGHT NOTICE FROM THE FOOTER!<br>
+Made with  by BluCrew<br>
+Copyright © 2016 XBTIT Blu Edition v1.1.04 by BluCrew (or current version)<br>
 Copyright © 2016 Styled By BluCrew
 <br>
 
-#
 ### UPDATES
 
 ```
