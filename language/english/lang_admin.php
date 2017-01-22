@@ -7,9 +7,9 @@ $language["ACP_CACHE"] = 'Cache Settings';
 $language["WHERE_HEARD"] = 'Signup Referrals';
 
 //KIS
-$language['ACP_KHEZ']='Khez Settings';
+$language['ACP_KHEZ']='Khez Hacks';
 $language['ACP_KOCS']='KOCS Tools';
-$language['ACP_KIS']='KIS Tools';
+$language['ACP_KIS']='Invite System';
 //KIS
 
 //Featured Torrent
@@ -104,7 +104,7 @@ $language['SETTING_SEEDS_PID']='Max Number Of Seeds With Same PID';
 $language['SETTING_LEECHERS_PID']='Max Number Of Leechers With Same PID';
 $language['SETTING_VALIDATION']='Validation Mode';
 $language['SETTING_CAPTCHA']='Secure Registration (use ImageCode, GD+Freetype libraries needed)';
-$language['SETTING_FORUM']='Forum link, can be:<br /><li><font color="#FF0000">internal</font> or empty (no value) for internal forum</li><li><font color="#FF0000">smf</font> for integrated <a target="_new" href="http://www.simplemachines.org">Simple Machines Forum</a> (1.x.x)</li><li><font color="#FF0000">smf2</font> for integrated <a target="_new" href="http://www.simplemachines.org">Simple Machines Forum</a> (2.x)</li><li><font color="#FF0000">ipb</font> for integrated <a target="_new" href="http://www.invisionpower.com">Invision Power Board</a> (3.x.x)</li><li>Your own forum solution (Specify url in the box)</li>';
+$language['SETTING_FORUM']='Forum link, can be:<br /><li><font color="#FF0000">internal</font> or empty (no value) for internal forum</li><li>Your own forum solution (Specify url in the box)</li>';
 $language['BLOCKS_SETTING']='Index/Blocks Page Settings';
 $language['SETTING_CLOCK']='Clock Type';
 $language['SETTING_FORUMBLOCK']='Forum Block Type';
