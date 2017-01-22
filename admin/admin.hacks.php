@@ -176,10 +176,6 @@ if(isset($_POST) && !empty($_POST))
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='request'");
         if($k=="fmhack_lottery" && $v!=$btit_settings["fmhack_lottery"])
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='lottery'");
-        if($k=="fmhack_LED_ticker" && $v!=$btit_settings["fmhack_LED_ticker"])
-            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='led'");
-        if($k=="fmhack_shoutcast_stats_and_DJ_application" && $v!=$btit_settings["fmhack_shoutcast_stats_and_DJ_application"])
-            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='radio'");
         if($k=="fmhack_sport_betting" && $v!=$btit_settings["fmhack_sport_betting"])
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='bet'");
         if($k=="fmhack_uploader_medals" && $v!=$btit_settings["fmhack_uploader_medals"])
@@ -188,10 +184,6 @@ if(isset($_POST) && !empty($_POST))
             do_sqlquery("ALTER TABLE `{$TABLE_PREFIX}files` CHANGE `moder` `moder` ENUM( 'um', 'bad', 'ok' ) NOT NULL DEFAULT '".(($v=="enabled")?"um":"ok")."'");
         if($k=="fmhack_report_users_and_torrents" && $btit_settings["fmhack_report_users_and_torrents"]=="disabled" &&  $v=="enabled")
             quickQuery("UPDATE `{$TABLE_PREFIX}files` SET `shout_announced`=1",true);
-        if($k=="fmhack_circling_last_torrents" && $v!=$btit_settings["fmhack_circling_last_torrents"])
-            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='circleimages'");
-        if($k=="fmhack_private_shouts" && $btit_settings["fmhack_private_shouts"]=="enabled" && $v=="disabled")
-            quickQuery("DELETE FROM `{$TABLE_PREFIX}chat` WHERE `private`='yes'");
         if($k=="fmhack_booted" && $btit_settings["fmhack_booted"]=="enabled" && $v=="disabled")
         {
             if($btit_settings["warn_bantype"]=="boot_at_max")
@@ -205,8 +197,6 @@ if(isset($_POST) && !empty($_POST))
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='birthday'");
         if($k=="fmhack_partners_page" && $v!=$btit_settings["fmhack_partners_page"])
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='links'");
-        if($k=="fmhack_last_download_block" && $v!=$btit_settings["fmhack_last_download_block"])
-            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='last'");
         if($k=="fmhack_bump_torrents" && $btit_settings["fmhack_bump_torrents"]=="disabled" && $v=="enabled")
             quickQuery("UPDATE `{$TABLE_PREFIX}files` SET `bumpdate`=UNIX_TIMESTAMP(`data`)");
         if($k=="fmhack_logical_rank_ordering" && $btit_settings["fmhack_logical_rank_ordering"]=="enabled" && $v=="disabled")
@@ -221,8 +211,6 @@ if(isset($_POST) && !empty($_POST))
             }
             quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `use_lro`='no', `lro_minclassview`=0, `lro_maxclassview`=0", true);
         }
-        if($k=="fmhack_torrent_of_the_week" && $v!=$btit_settings["fmhack_torrent_of_the_week"])
-            quickQuery("UPDATE `{$TABLE_PREFIX}blocks` SET `status`=".(($v=="enabled")?1:0)." WHERE `content`='torrentoftheweek'");
     }
 
     foreach (glob($THIS_BASEPATH."/cache/*.txt") as $filename)

@@ -190,8 +190,6 @@ if($btit_settings["fmhack_multi_tracker_scrape"]=="enabled")
    $query1_select.=" `f`.`announces`,";
 if($btit_settings["fmhack_language_in_torrent_list_and_details"]=="enabled")
    $query1_select.=" `f`.`language`,";
-if($btit_settings["fmhack_torrent_details_media_player"]=="enabled")
-   $query1_select.=" `f`.`mplayer`,";
 if($btit_settings["fmhack_torrent_view_count"]=="enabled")
    $query1_select.=" `f`.`viewcount`,";
 if($btit_settings["fmhack_archive_torrents"]=="enabled")
@@ -1041,6 +1039,16 @@ $sres->free();
 }
    // subtitles end
 
+$row["alt_image_imgup"]=$GLOBALS["uploaddir"]."nocover.jpg";
+   $row["alt_image_imdb"]=$GLOBALS["uploaddir"]."nocover.jpg";
+   if($btit_settings["fmhack_getIMDB_in_torrent_details"]=="enabled" && $btit_settings["fmhack_torrent_image_upload"]=="enabled")
+   {
+      $imgup_img=((isset($row["image"]) && !empty($row["image"]) && file_exists(dirname(__FILE__)."/".$GLOBALS["uploaddir"].$row["image"]))?true:false);
+      $imdb_img=((isset($row["imdb"]) && !empty($row["imdb"]) && file_exists(dirname(__FILE__)."/imdb/images/".$row["imdb"].".jpg"))?true:false);
+      $row["alt_image_imgup"]=(($imgup_img===true)?$GLOBALS["uploaddir"].$row["image"]:(($imdb_img===true)?"imdb/images/".$row["imdb"].".jpg":$GLOBALS["uploaddir"]."nocover.jpg"));
+      $row["alt_image_imdb"]=(($imdb_img===true)?"imdb/images/".$row["imdb"].".jpg":(($imgup_img===true)?$GLOBALS["uploaddir"].$row["image"]:$GLOBALS["uploaddir"]."nocover.jpg"));
+   }
+
    //Rate This Upload
    require('ajaxstarrater/_drawrating.php'); # ajax rating
 
@@ -1055,7 +1063,6 @@ $sres->free();
    $row['uploaddir'] = $GLOBALS['uploaddir'];
 
    $torrenttpl->set("torrent",$row);
-   $torrenttpl->set("media_enabled", (($btit_settings["fmhack_torrent_details_media_player"]=="enabled")?true:false), true);
    $torrenttpl->set("torlang", (($btit_settings["fmhack_language_in_torrent_list_and_details"]=="enabled")?true:false), true);
    if($btit_settings["fmhack_language_in_torrent_list_and_details"]=="enabled")
    {
@@ -1171,6 +1178,8 @@ $sres->free();
    $torrenttpl->set("omdb_rating", getOMDBData($row['imdb'])->imdbRating);
    $torrenttpl->set("omdb_website", getOMDBData($row['imdb'])->website);
    $torrenttpl->set("omdb_movie_name", getOMDBData($row['imdb'])->title);
+   $torrenttpl->set("omdb_plot", getOMDBData($row['imdb'])->plot);
+   $torrenttpl->set("omdb_poster", getOMDBData($row['imdb'])->poster);
 
    $torrenttpl->set("banner","");
 

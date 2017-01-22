@@ -289,7 +289,7 @@ function dt_show_waitb()
      <li class=""><a href="#details" data-toggle="tab">Details</a></li>
      <li class=""><a href="#screens" data-toggle="tab">Screen Shots</a></li>
      <li class=""><a href="#gift" data-toggle="tab">Gift</a></li>
-     <li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>
+     <!--<li class=""><a href="#DiscArt" data-toggle="tab">Disk Art</a></li>-->
      <li class=""><a href="#trailer" data-toggle="tab">Trailer</a></li>
      <li class=""><a href="#comment" data-toggle="tab">Comments</a></li>
   </ul>
@@ -301,9 +301,7 @@ function dt_show_waitb()
    <table class="table table-bordered">
 
    <div class="details-header">
-   <div class="background" style="background-image: url(http://image.tmdb.org/t/p/original/7ijuhX2eplVUZa6J6gWgq3gerPf.jpg);"></div>
-   <div class="backdrop-controls"><i class="ion-ios7-arrow-back" click="prevBackdrop()"></i><i class="ion-ios7-arrow-forward" click="nextBackdrop()"></i></div>
-
+   <div class="background"></div>
 <div class="tags">
  <h2><tag:tags /></h2>
   </div>
@@ -313,7 +311,9 @@ function dt_show_waitb()
       <span class="stars">
          <h3>Genre:&nbsp;<tag:omdb_genre /></h3>
          <h3>Rating:&nbsp;<tag:omdb_rating /></h3>
+         Plot:&nbsp;<tag:omdb_plot />
       </span>
+      <br>
       <button class="btn btn-sm btn-default" type="button"><a href="http://www.imdb.com/title/tt<tag:torrent.imdb />">IMDB</a></button>
       <button class="btn btn-sm btn-default" type="button"><a href="<tag:omdb_website />">Website</a></button>
     </div>
@@ -321,10 +321,8 @@ function dt_show_waitb()
 </div>
 
 <div class="page-holder">
-<div class="details-poster" style="background-image: url(http://image.tmdb.org/t/p/w185/89kRwTwKxbaCwv4mU09GwS4YNB3.jpg);">
-<div class="poster-controls" style=""><i class="ion-ios7-arrow-back" click="prevPoster()"></i><i class="ion-ios7-arrow-forward" click="nextPoster()"></i></div>
-  </div>
-  </div>
+<img class="details-poster" src="<tag:omdb_poster />" >
+</div>
 
       <if:fls_enabled>
       <tr>
@@ -666,7 +664,7 @@ function dt_show_waitb()
 </div>
 </div> <!-- Tab End -->
 
-<!-- Tab Start -->
+<!-- Tab Start 
 <div role="tabpanel" class="tab-pane fade" id="DiscArt">
 <div class="container-fluid">
   <div class="row">
@@ -684,7 +682,7 @@ function dt_show_waitb()
    <br>
    <br>
    <p class="text-warning">Powered By FanArt API</p>
-</div><!-- Tab End -->
+</div>Tab End -->
 
 <div role="tabpanel" class="tab-pane fade" id="trailer"><!-- Tab Start -->
 <div class="container-fluid">

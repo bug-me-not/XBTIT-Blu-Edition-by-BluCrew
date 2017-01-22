@@ -207,7 +207,7 @@ $w(document).ready(function() {
         <tag:tracker_url />
     </center>
 </div>
-<div style="background: #E54C4D;border: none;width:auto;height:25px;border:solid 1px #E54C4D;border-radius:3px;color: #fff;text-align: center;line-height:20px;font-size: 15px;margin-bottom: 3px;">Before Uploading Please Make Sure You Have Read Our Uploading Rules</div>
+<div style="background: #E54C4D;border: none;width:auto;height:25px;border:solid 1px #E54C4D;border-radius:3px;color: #fff;text-align: center;line-height:20px;font-size: 15px;margin-bottom: 3px;">IMDB and or TVDB Number Is Mandatory For API That Handels Posters, Genre, Ratings, Plot and More!</div>
 <form name="upload" method="post" onsubmit="return CheckForm();" action="index.php?page=upload" enctype="multipart/form-data">
     <input type="hidden" name="user_id" size="50" value="" />
     <div class="panel panel-default">
@@ -251,8 +251,7 @@ $w(document).ready(function() {
             </td>
             <td class="lista" align="left">
             <div class="input-group">
-            <input type="text" class="form-control" name="validate-text" id="validate-text" size="50" maxlength="200" required="">
-            <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
+            <input type="text" class="form-control" name="filename" id="filename" size="50" maxlength="200" required="">
             </div>
             </td>
             <if:arc_enabled>
@@ -304,34 +303,6 @@ $w(document).ready(function() {
 </tr>
 <!-- CATEGORY END -->
 
-<!-- RG START -->
-<tr>
-    <td class="header">
-        <tag:language.RG />
-    </td>
-    <td class="lista" align="left">
-            <div class="input-group">
-            <select class="form-control" name="release_group" id="validate-optional">
-            <option value="">----</option>
-            <option value="1">
-                <tag:language.BluRG />
-            </option>
-            <option value="2">
-                <tag:language.SiMPLE />
-            </option>
-            <option value="3">
-                <tag:language.Legion />
-            </option>
-            <option value="4">
-                <tag:language.Unit3d />
-            </option>
-        </select>
-        <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
-        </div>
-    </td>
-</tr>
-<!-- RG END -->
-
 <!-- LANGUAGE START -->
 <if:torlang>
 <tr>
@@ -340,7 +311,7 @@ $w(document).ready(function() {
     </td>
     <td class="lista" align="left">
         <div class="input-group">
-        <select class="form-control" name="validate-select" id="validate-select" placeholder="Validate Select" required>
+        <select class="form-control">
             <option value="">----</option>
             <option value="1">
                 <tag:language.LANG_ENG />
@@ -424,7 +395,6 @@ $w(document).ready(function() {
                 <tag:language.LANG_VIE />
             </option>
         </select>
-        <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
         </div>
     </td>
 </tr>
@@ -446,8 +416,7 @@ $w(document).ready(function() {
     </td>
     <td class="lista" align="left">
          <div class="input-group">
-            <select class="form-control" name="gold" id="validate-optional" <tag:upload_gold_combo /></select>
-            <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
+            <select class="form-control" name="gold" <tag:upload_gold_combo /></select>
         </div>
     </td>
 </tr>
@@ -463,10 +432,9 @@ $w(document).ready(function() {
     </td>
     <td align='left' class='lista' colspan='2'>
          <div class="input-group">
-            <select class="form-control" name="multiplier" id="validate-optional">
+            <select class="form-control" name="multiplier">
             <tag:multie3 />
         </select>
-        <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
         </div>
     </td>
 </tr>
@@ -518,7 +486,7 @@ $w(document).ready(function() {
     <td class="lista" align="left">
         <tag:language.TVDB_UL_1 />
         <div class="input-group" data-validate="number">
-        <input type="text" class="form-control" name="tvdb_number" size="10" maxlength="10" id="validate-number" required>
+        <input type="number" class="form-control" name="tvdb_number" value="0" size="10" maxlength="10" id="validate-number" required>
         <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
         </div>
         <tag:language.TVDB_UL_2 />
@@ -532,23 +500,12 @@ $w(document).ready(function() {
 <tr>
     <td class="header">IMDB</td>
     <td class="lista" align="left"><div class="input-group" data-validate="number">
-        <input type="text" class="form-control" name="imdb" size="10" maxlength="10" id="validate-number" required>
+        <input type="number" class="form-control" name="imdb" size="10" maxlength="10" value="0" id="validate-number" required>
         <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
         </div>&nbsp;The numbers after the <font color="red">tt</font> ,for EXAMPLE Tron Legacy http://www.imdb.com/title/tt<font color="red">1104001</font><tag:language.IMDB__EDIT_FORM /></td>
     </tr>
 </if:imdb_enabled>
 <!-- IMDB END -->
-
-<!-- IMAGE UPLOAD START -->
-<if:imageup_enabled>
-<if:imageon>
-<tr>
-    <td class="header" ><tag:language.IMAGE />:</td>
-    <td class="lista" align="left"><input type="file" name="userfile" size="2000" class="btn btn-primary btn-anchor" /></td>
-</tr>
-</if:imageon>
-</if:imageup_enabled>
-<!-- IMAGE UPLOAD END -->
 
 <!-- UPLOAD DESCRIPTION START -->
 <tr>

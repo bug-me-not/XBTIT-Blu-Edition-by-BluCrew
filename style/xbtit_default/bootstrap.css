@@ -7797,14 +7797,14 @@ select.icon-right i {
   display: block;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 320px;
   overflow: hidden;
   white-space: nowrap;
   background-color: #2e2e2e
 }
 
 .details-header:hover .background {
-  background-color: rgba(26, 35, 126, 0)
+  background-color: rgba(0, 0, 0, 0.43);
 }
 
 .details-header.details-header-small {
@@ -7819,7 +7819,7 @@ select.icon-right i {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(34, 37, 61, .6);
+  background-color: rgba(0, 0, 0, 0.43);
   background-size: cover;
   background-position: top center;
   background-blend-mode: darken;
@@ -7991,10 +7991,9 @@ select.icon-right i {
 
 .main-info-holder .main-info .stars {
   display: block;
-  font-size: 30px;
-  line-height: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .36);
-  text-align: left
+  text-align: left;
+  white-space: normal
 }
 
 .main-info-holder .main-info p {
@@ -8372,5 +8371,14 @@ select.icon-right i {
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.Logo { 
+  height: 200px;
+width: 100%;
+margin-top: 0px;
+background-image: url(images/logo.png);
+background-repeat: no-repeat;
+background-position: top center;
 }
 

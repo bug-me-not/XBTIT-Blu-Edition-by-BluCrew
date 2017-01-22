@@ -347,17 +347,17 @@
 
           <p>
             <b>Uploader:</b> &nbsp;
-            <tag:torrents[].uploader /> | <b>Release Group:</b> &nbsp;&nbsp;&nbsp;
-            <tag:torrents[].RG />
+            <tag:torrents[].uploader /> <!-- | <b>Release Group:</b> &nbsp;&nbsp;&nbsp;
+            <tag:torrents[].RG /> -->
           </p>
           <p>
             <b>Size:</b> &nbsp;
             <tag:torrents[].size />
           </p>
-          <p>
+          <!--<p>
             <b>Files:</b> &nbsp;
             <tag:torrents[].files />
-          </p>
+          </p>-->
           <p>
             <b>Language:</b> &nbsp;
             <tag:torrents[].language />
@@ -390,7 +390,7 @@
             <tag:torrents[].download />
           </p>
         </td>
-        <td align="center" width="3" class="lista" style="text-align: center;"><a href="<tag:torrents[].poster />" title="view image" class="lightbox"><img src="<tag:torrents[].poster />" width="125" height="170"></td>
+        <td align="center" width="3" class="lista" style="text-align: center;"><img src="<tag:torrents[].blu_poster />" width="125" height="170"></td>
 <if:show_recommended_2>
 <td align="center" width="3" class="lista" style="text-align: center;"><tag:torrents[].recommended /></td>
 </if:show_recommended_2>
