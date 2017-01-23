@@ -68,7 +68,7 @@ Copyright © 2016 Styled By BluCrew<br>
   v1.1.03   - Fixes cache issue relating to OMDB
   v1.1.04   - Minor fixes to bugs relating to list and details pages
   v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added 
-  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID.
+  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID. database.sql updated. 
 ```
 
 
