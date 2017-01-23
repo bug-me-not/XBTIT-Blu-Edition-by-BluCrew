@@ -134,10 +134,10 @@ CREATE TABLE `casino_bets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}addedexpected`
+-- Table structure for table `blu_addedexpected`
 --
 
-CREATE TABLE `{$db_prefix}addedexpected` (
+CREATE TABLE `blu_addedexpected` (
   `id` int(10) UNSIGNED NOT NULL,
   `expectid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0'
@@ -146,10 +146,10 @@ CREATE TABLE `{$db_prefix}addedexpected` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}addedexpectedmin`
+-- Table structure for table `blu_addedexpectedmin`
 --
 
-CREATE TABLE `{$db_prefix}addedexpectedmin` (
+CREATE TABLE `blu_addedexpectedmin` (
   `id` int(10) UNSIGNED NOT NULL,
   `expectid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0'
@@ -158,10 +158,10 @@ CREATE TABLE `{$db_prefix}addedexpectedmin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}adminpanel`
+-- Table structure for table `blu_adminpanel`
 --
 
-CREATE TABLE `{$db_prefix}adminpanel` (
+CREATE TABLE `blu_adminpanel` (
   `id` int(11) NOT NULL,
   `section` varchar(50) NOT NULL,
   `description` varchar(250) NOT NULL,
@@ -171,10 +171,10 @@ CREATE TABLE `{$db_prefix}adminpanel` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}adminpanel`
+-- Dumping data for table `blu_adminpanel`
 --
 
-INSERT INTO `{$db_prefix}adminpanel` (`id`, `section`, `description`, `link`, `id_level`, `access`) VALUES
+INSERT INTO `blu_adminpanel` (`id`, `section`, `description`, `link`, `id_level`, `access`) VALUES
 (1, 'config', 'ACP_TRACKER_SETTINGS', 'index.php?page=admin&user={uid}&code={ucode}&do=config&action=read', 7, 0),
 (2, 'banip', 'ACP_BAN_IP', 'index.php?page=admin&user={uid}&code={ucode}&do=banip&action=read', 7, 1),
 (3, 'language', 'ACP_LANGUAGES', 'index.php?page=admin&user={uid}&code={ucode}&do=language&action=read', 7, 0),
@@ -239,19 +239,19 @@ INSERT INTO `{$db_prefix}adminpanel` (`id`, `section`, `description`, `link`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}ads`
+-- Table structure for table `blu_ads`
 --
 
-CREATE TABLE `{$db_prefix}ads` (
+CREATE TABLE `blu_ads` (
   `key` varchar(200) NOT NULL,
   `value` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}ads`
+-- Dumping data for table `blu_ads`
 --
 
-INSERT INTO `{$db_prefix}ads` (`key`, `value`) VALUES
+INSERT INTO `blu_ads` (`key`, `value`) VALUES
 ('above_comments', ''),
 ('above_comments_enabled', 'disabled'),
 ('footer', ''),
@@ -270,10 +270,10 @@ INSERT INTO `{$db_prefix}ads` (`key`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}ajax_ratings`
+-- Table structure for table `blu_ajax_ratings`
 --
 
-CREATE TABLE `{$db_prefix}ajax_ratings` (
+CREATE TABLE `blu_ajax_ratings` (
   `id` varchar(40) NOT NULL,
   `total_votes` int(11) NOT NULL,
   `total_value` int(11) NOT NULL,
@@ -283,10 +283,10 @@ CREATE TABLE `{$db_prefix}ajax_ratings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}allowedclient`
+-- Table structure for table `blu_allowedclient`
 --
 
-CREATE TABLE `{$db_prefix}allowedclient` (
+CREATE TABLE `blu_allowedclient` (
   `id` int(10) NOT NULL,
   `peer_id` varchar(16) NOT NULL,
   `peer_id_ascii` varchar(8) NOT NULL,
@@ -297,10 +297,10 @@ CREATE TABLE `{$db_prefix}allowedclient` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}announcement`
+-- Table structure for table `blu_announcement`
 --
 
-CREATE TABLE `{$db_prefix}announcement` (
+CREATE TABLE `blu_announcement` (
   `id` int(10) UNSIGNED NOT NULL,
   `userid` int(11) NOT NULL DEFAULT '0',
   `added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -311,10 +311,10 @@ CREATE TABLE `{$db_prefix}announcement` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}announcements`
+-- Table structure for table `blu_announcements`
 --
 
-CREATE TABLE `{$db_prefix}announcements` (
+CREATE TABLE `blu_announcements` (
   `id` int(10) UNSIGNED NOT NULL,
   `subject` varchar(64) NOT NULL,
   `message` text NOT NULL,
@@ -326,10 +326,10 @@ CREATE TABLE `{$db_prefix}announcements` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}anti_hit_run`
+-- Table structure for table `blu_anti_hit_run`
 --
 
-CREATE TABLE `{$db_prefix}anti_hit_run` (
+CREATE TABLE `blu_anti_hit_run` (
   `id_level` int(11) NOT NULL DEFAULT '0',
   `min_download_size` bigint(20) NOT NULL DEFAULT '0',
   `min_ratio` float NOT NULL DEFAULT '0',
@@ -348,10 +348,10 @@ CREATE TABLE `{$db_prefix}anti_hit_run` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}anti_hit_run_tasks`
+-- Table structure for table `blu_anti_hit_run_tasks`
 --
 
-CREATE TABLE `{$db_prefix}anti_hit_run_tasks` (
+CREATE TABLE `blu_anti_hit_run_tasks` (
   `task` varchar(20) NOT NULL DEFAULT '',
   `last_time` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -359,10 +359,10 @@ CREATE TABLE `{$db_prefix}anti_hit_run_tasks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}avps`
+-- Table structure for table `blu_avps`
 --
 
-CREATE TABLE `{$db_prefix}avps` (
+CREATE TABLE `blu_avps` (
   `arg` varchar(32) NOT NULL,
   `value_s` varchar(32) NOT NULL,
   `value_i` varchar(32) NOT NULL,
@@ -372,10 +372,10 @@ CREATE TABLE `{$db_prefix}avps` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bannedclient`
+-- Table structure for table `blu_bannedclient`
 --
 
-CREATE TABLE `{$db_prefix}bannedclient` (
+CREATE TABLE `blu_bannedclient` (
   `id` int(10) NOT NULL,
   `peer_id` varchar(16) NOT NULL,
   `peer_id_ascii` varchar(8) NOT NULL,
@@ -387,10 +387,10 @@ CREATE TABLE `{$db_prefix}bannedclient` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bannedip`
+-- Table structure for table `blu_bannedip`
 --
 
-CREATE TABLE `{$db_prefix}bannedip` (
+CREATE TABLE `blu_bannedip` (
   `id` int(10) UNSIGNED NOT NULL,
   `added` int(11) NOT NULL DEFAULT '0',
   `addedby` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -402,10 +402,10 @@ CREATE TABLE `{$db_prefix}bannedip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}baseline`
+-- Table structure for table `blu_baseline`
 --
 
-CREATE TABLE `{$db_prefix}baseline` (
+CREATE TABLE `blu_baseline` (
   `file_path` varchar(200) NOT NULL,
   `file_hash` char(40) NOT NULL,
   `acct` varchar(40) NOT NULL
@@ -415,10 +415,10 @@ CREATE TABLE `{$db_prefix}baseline` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}betgames`
+-- Table structure for table `blu_betgames`
 --
 
-CREATE TABLE `{$db_prefix}betgames` (
+CREATE TABLE `blu_betgames` (
   `id` int(11) NOT NULL,
   `heading` varchar(50) NOT NULL DEFAULT '',
   `undertext` varchar(150) NOT NULL DEFAULT '',
@@ -432,10 +432,10 @@ CREATE TABLE `{$db_prefix}betgames` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}betlog`
+-- Table structure for table `blu_betlog`
 --
 
-CREATE TABLE `{$db_prefix}betlog` (
+CREATE TABLE `blu_betlog` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL DEFAULT '0',
   `date` int(11) NOT NULL,
@@ -446,10 +446,10 @@ CREATE TABLE `{$db_prefix}betlog` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}betoptions`
+-- Table structure for table `blu_betoptions`
 --
 
-CREATE TABLE `{$db_prefix}betoptions` (
+CREATE TABLE `blu_betoptions` (
   `id` int(11) NOT NULL,
   `gameid` int(11) NOT NULL DEFAULT '0',
   `text` varchar(100) NOT NULL DEFAULT '',
@@ -459,10 +459,10 @@ CREATE TABLE `{$db_prefix}betoptions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bets`
+-- Table structure for table `blu_bets`
 --
 
-CREATE TABLE `{$db_prefix}bets` (
+CREATE TABLE `blu_bets` (
   `id` int(11) NOT NULL,
   `gameid` int(11) NOT NULL DEFAULT '0',
   `bonus` int(11) NOT NULL DEFAULT '0',
@@ -474,10 +474,10 @@ CREATE TABLE `{$db_prefix}bets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bettop`
+-- Table structure for table `blu_bettop`
 --
 
-CREATE TABLE `{$db_prefix}bettop` (
+CREATE TABLE `blu_bettop` (
   `userid` int(11) NOT NULL DEFAULT '0',
   `bonus` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -485,10 +485,10 @@ CREATE TABLE `{$db_prefix}bettop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bitcoin_invoices`
+-- Table structure for table `blu_bitcoin_invoices`
 --
 
-CREATE TABLE `{$db_prefix}bitcoin_invoices` (
+CREATE TABLE `blu_bitcoin_invoices` (
   `invoice_id` int(10) UNSIGNED NOT NULL,
   `tracker_id` int(10) NOT NULL DEFAULT '0',
   `secret` varchar(12) NOT NULL,
@@ -510,10 +510,10 @@ CREATE TABLE `{$db_prefix}bitcoin_invoices` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}blackjack`
+-- Table structure for table `blu_blackjack`
 --
 
-CREATE TABLE `{$db_prefix}blackjack` (
+CREATE TABLE `blu_blackjack` (
   `gameid` int(10) UNSIGNED NOT NULL,
   `userid` int(10) NOT NULL,
   `dealerhand` varchar(100) NOT NULL,
@@ -525,10 +525,10 @@ CREATE TABLE `{$db_prefix}blackjack` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}blacklist`
+-- Table structure for table `blu_blacklist`
 --
 
-CREATE TABLE `{$db_prefix}blacklist` (
+CREATE TABLE `blu_blacklist` (
   `id` int(11) UNSIGNED NOT NULL,
   `tip` int(11) UNSIGNED DEFAULT NULL,
   `added` bigint(20) NOT NULL DEFAULT '0'
@@ -537,10 +537,10 @@ CREATE TABLE `{$db_prefix}blacklist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}blocks`
+-- Table structure for table `blu_blocks`
 --
 
-CREATE TABLE `{$db_prefix}blocks` (
+CREATE TABLE `blu_blocks` (
   `blockid` int(11) UNSIGNED NOT NULL,
   `content` varchar(255) NOT NULL DEFAULT '',
   `position` char(1) NOT NULL DEFAULT '',
@@ -556,10 +556,10 @@ CREATE TABLE `{$db_prefix}blocks` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}blocks`
+-- Dumping data for table `blu_blocks`
 --
 
-INSERT INTO `{$db_prefix}blocks` (`blockid`, `content`, `position`, `sortid`, `status`, `title`, `cache`, `minclassview`, `maxclassview`, `use_lro`, `lro_minclassview`, `lro_maxclassview`) VALUES
+INSERT INTO `blu_blocks` (`blockid`, `content`, `position`, `sortid`, `status`, `title`, `cache`, `minclassview`, `maxclassview`, `use_lro`, `lro_minclassview`, `lro_maxclassview`) VALUES
 (1, 'admin', 'l', 2, 1, '', 'no', 6, 8, 'yes', 91, 100),
 (2, 'clock', 'l', 0, 0, 'BLOCK_CLOCK', 'no', 1, 8, 'yes', 1, 100),
 (3, 'forum', 'l', 4, 1, '', 'no', 3, 8, 'yes', 25, 100),
@@ -604,10 +604,10 @@ INSERT INTO `{$db_prefix}blocks` (`blockid`, `content`, `position`, `sortid`, `s
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bonus`
+-- Table structure for table `blu_bonus`
 --
 
-CREATE TABLE `{$db_prefix}bonus` (
+CREATE TABLE `blu_bonus` (
   `id` int(5) NOT NULL,
   `name` varchar(50) NOT NULL DEFAULT '',
   `points` decimal(10,1) NOT NULL DEFAULT '0.0',
@@ -618,10 +618,10 @@ CREATE TABLE `{$db_prefix}bonus` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bots`
+-- Table structure for table `blu_bots`
 --
 
-CREATE TABLE `{$db_prefix}bots` (
+CREATE TABLE `blu_bots` (
   `name` varchar(20) NOT NULL,
   `visit` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -629,10 +629,10 @@ CREATE TABLE `{$db_prefix}bots` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bt_clients`
+-- Table structure for table `blu_bt_clients`
 --
 
-CREATE TABLE `{$db_prefix}bt_clients` (
+CREATE TABLE `blu_bt_clients` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL DEFAULT '',
   `link` text NOT NULL,
@@ -643,10 +643,10 @@ CREATE TABLE `{$db_prefix}bt_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}bugs`
+-- Table structure for table `blu_bugs`
 --
 
-CREATE TABLE `{$db_prefix}bugs` (
+CREATE TABLE `blu_bugs` (
   `id` int(10) NOT NULL,
   `sender` int(10) NOT NULL DEFAULT '0',
   `added` int(12) NOT NULL DEFAULT '0',
@@ -660,10 +660,10 @@ CREATE TABLE `{$db_prefix}bugs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}categories`
+-- Table structure for table `blu_categories`
 --
 
-CREATE TABLE `{$db_prefix}categories` (
+CREATE TABLE `blu_categories` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(30) NOT NULL DEFAULT '',
   `sub` int(10) NOT NULL DEFAULT '0',
@@ -674,10 +674,10 @@ CREATE TABLE `{$db_prefix}categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}categories`
+-- Dumping data for table `blu_categories`
 --
 
-INSERT INTO `{$db_prefix}categories` (`id`, `name`, `sub`, `sort_index`, `image`, `forumid`, `reencode`) VALUES
+INSERT INTO `blu_categories` (`id`, `name`, `sub`, `sort_index`, `image`, `forumid`, `reencode`) VALUES
 (17, 'HDTV 1080p', 14, 5, 'HDTV 1080p.png', 0, 0),
 (5, 'Anime', 15, 3, 'Anime.png', 0, 0),
 (16, 'HDTV 720p', 14, 6, 'HDTV 720p.png', 0, 0),
@@ -689,10 +689,10 @@ INSERT INTO `{$db_prefix}categories` (`id`, `name`, `sub`, `sort_index`, `image`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}categories_perm`
+-- Table structure for table `blu_categories_perm`
 --
 
-CREATE TABLE `{$db_prefix}categories_perm` (
+CREATE TABLE `blu_categories_perm` (
   `catid` int(10) NOT NULL,
   `levelid` int(11) NOT NULL,
   `viewcat` enum('yes','no') NOT NULL DEFAULT 'yes',
@@ -705,10 +705,10 @@ CREATE TABLE `{$db_prefix}categories_perm` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}chat`
+-- Table structure for table `blu_chat`
 --
 
-CREATE TABLE `{$db_prefix}chat` (
+CREATE TABLE `blu_chat` (
   `id` mediumint(9) NOT NULL,
   `uid` mediumint(9) NOT NULL,
   `time` int(10) NOT NULL DEFAULT '0',
@@ -725,10 +725,10 @@ CREATE TABLE `{$db_prefix}chat` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}cheapmail`
+-- Table structure for table `blu_cheapmail`
 --
 
-CREATE TABLE `{$db_prefix}cheapmail` (
+CREATE TABLE `blu_cheapmail` (
   `domain` varchar(100) NOT NULL DEFAULT '',
   `added` int(10) NOT NULL DEFAULT '0',
   `added_by` varchar(40) NOT NULL DEFAULT 'Unknown'
@@ -737,10 +737,10 @@ CREATE TABLE `{$db_prefix}cheapmail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}coins`
+-- Table structure for table `blu_coins`
 --
 
-CREATE TABLE `{$db_prefix}coins` (
+CREATE TABLE `blu_coins` (
   `id` int(10) UNSIGNED NOT NULL,
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `info_hash` varchar(40) NOT NULL DEFAULT '',
@@ -751,10 +751,10 @@ CREATE TABLE `{$db_prefix}coins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}comments`
+-- Table structure for table `blu_comments`
 --
 
-CREATE TABLE `{$db_prefix}comments` (
+CREATE TABLE `blu_comments` (
   `id` int(10) UNSIGNED NOT NULL,
   `added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `text` text NOT NULL,
@@ -769,10 +769,10 @@ CREATE TABLE `{$db_prefix}comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}contact_system`
+-- Table structure for table `blu_contact_system`
 --
 
-CREATE TABLE `{$db_prefix}contact_system` (
+CREATE TABLE `blu_contact_system` (
   `id` int(9) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
@@ -788,10 +788,10 @@ CREATE TABLE `{$db_prefix}contact_system` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}countries`
+-- Table structure for table `blu_countries`
 --
 
-CREATE TABLE `{$db_prefix}countries` (
+CREATE TABLE `blu_countries` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `flagpic` varchar(50) DEFAULT NULL,
@@ -800,10 +800,10 @@ CREATE TABLE `{$db_prefix}countries` (
 
 
 --
--- Table structure for table `{$db_prefix}covers`
+-- Table structure for table `blu_covers`
 --
 
-CREATE TABLE `{$db_prefix}covers` (
+CREATE TABLE `blu_covers` (
   `id` int(11) NOT NULL,
   `imdb` varchar(10) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -821,10 +821,10 @@ CREATE TABLE `{$db_prefix}covers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}donors`
+-- Table structure for table `blu_donors`
 --
 
-CREATE TABLE `{$db_prefix}donors` (
+CREATE TABLE `blu_donors` (
   `id` int(6) UNSIGNED NOT NULL,
   `userid` varchar(20) NOT NULL,
   `first_name` varchar(255) NOT NULL DEFAULT '',
@@ -841,10 +841,10 @@ CREATE TABLE `{$db_prefix}donors` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}don_historie`
+-- Table structure for table `blu_don_historie`
 --
 
-CREATE TABLE `{$db_prefix}don_historie` (
+CREATE TABLE `blu_don_historie` (
   `don_id` int(11) NOT NULL DEFAULT '0',
   `donate_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `don_ation` int(11) NOT NULL,
@@ -873,10 +873,10 @@ CREATE TABLE `{$db_prefix}don_historie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}downloads`
+-- Table structure for table `blu_downloads`
 --
 
-CREATE TABLE `{$db_prefix}downloads` (
+CREATE TABLE `blu_downloads` (
   `id` int(5) NOT NULL,
   `uid` int(10) NOT NULL,
   `info_hash` varchar(40) NOT NULL,
@@ -887,10 +887,10 @@ CREATE TABLE `{$db_prefix}downloads` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}down_load`
+-- Table structure for table `blu_down_load`
 --
 
-CREATE TABLE `{$db_prefix}down_load` (
+CREATE TABLE `blu_down_load` (
   `id` int(10) NOT NULL,
   `pid` varchar(32) NOT NULL,
   `hash` varchar(40) NOT NULL,
@@ -900,10 +900,10 @@ CREATE TABLE `{$db_prefix}down_load` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}dox`
+-- Table structure for table `blu_dox`
 --
 
-CREATE TABLE `{$db_prefix}dox` (
+CREATE TABLE `blu_dox` (
   `id` int(10) UNSIGNED NOT NULL,
   `added` datetime DEFAULT '0000-00-00 00:00:00',
   `title` varchar(255) NOT NULL DEFAULT '',
@@ -917,10 +917,10 @@ CREATE TABLE `{$db_prefix}dox` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}expected`
+-- Table structure for table `blu_expected`
 --
 
-CREATE TABLE `{$db_prefix}expected` (
+CREATE TABLE `blu_expected` (
   `id` int(10) UNSIGNED NOT NULL,
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `expect` varchar(225) DEFAULT NULL,
@@ -938,10 +938,10 @@ CREATE TABLE `{$db_prefix}expected` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}featured`
+-- Table structure for table `blu_featured`
 --
 
-CREATE TABLE `{$db_prefix}featured` (
+CREATE TABLE `blu_featured` (
   `fid` int(5) NOT NULL,
   `torrent_id` varchar(40) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -949,10 +949,10 @@ CREATE TABLE `{$db_prefix}featured` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}files`
+-- Table structure for table `blu_files`
 --
 
-CREATE TABLE `{$db_prefix}files` (
+CREATE TABLE `blu_files` (
   `id` int(10) UNSIGNED NOT NULL,
   `info_hash` varchar(40) NOT NULL DEFAULT '',
   `filename` varchar(250) NOT NULL DEFAULT '',
@@ -1026,10 +1026,10 @@ CREATE TABLE `{$db_prefix}files` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}files_reencode`
+-- Table structure for table `blu_files_reencode`
 --
 
-CREATE TABLE `{$db_prefix}files_reencode` (
+CREATE TABLE `blu_files_reencode` (
   `infohash` char(40) NOT NULL DEFAULT '0',
   `userid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -1037,10 +1037,10 @@ CREATE TABLE `{$db_prefix}files_reencode` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}files_reencodeb`
+-- Table structure for table `blu_files_reencodeb`
 --
 
-CREATE TABLE `{$db_prefix}files_reencodeb` (
+CREATE TABLE `blu_files_reencodeb` (
   `infohash` char(40) NOT NULL DEFAULT '0',
   `userid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -1048,10 +1048,10 @@ CREATE TABLE `{$db_prefix}files_reencodeb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}files_thanks`
+-- Table structure for table `blu_files_thanks`
 --
 
-CREATE TABLE `{$db_prefix}files_thanks` (
+CREATE TABLE `blu_files_thanks` (
   `infohash` char(40) NOT NULL DEFAULT '0',
   `userid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -1059,10 +1059,10 @@ CREATE TABLE `{$db_prefix}files_thanks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}forums`
+-- Table structure for table `blu_forums`
 --
 
-CREATE TABLE `{$db_prefix}forums` (
+CREATE TABLE `blu_forums` (
   `sort` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(60) NOT NULL DEFAULT '',
@@ -1077,20 +1077,20 @@ CREATE TABLE `{$db_prefix}forums` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}forums`
+-- Dumping data for table `blu_forums`
 --
 
-INSERT INTO `{$db_prefix}forums` (`sort`, `id`, `name`, `description`, `minclassread`, `minclasswrite`, `postcount`, `topiccount`, `minclasscreate`, `id_parent`, `category`) VALUES
+INSERT INTO `blu_forums` (`sort`, `id`, `name`, `description`, `minclassread`, `minclasswrite`, `postcount`, `topiccount`, `minclasscreate`, `id_parent`, `category`) VALUES
 (0, 1, 'XBTIT Blu-Edition', '', 3, 3, 0, 0, 3, 0, 'yes'),
 (2, 3, 'Welcome ', '', 1, 1, 2, 1, 1, 0, 'no');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}free_leech_req`
+-- Table structure for table `blu_free_leech_req`
 --
 
-CREATE TABLE `{$db_prefix}free_leech_req` (
+CREATE TABLE `blu_free_leech_req` (
   `info_hash` varchar(40) NOT NULL,
   `count` int(10) NOT NULL DEFAULT '1',
   `approved` enum('yes','no','undecided') NOT NULL DEFAULT 'undecided',
@@ -1100,10 +1100,10 @@ CREATE TABLE `{$db_prefix}free_leech_req` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}friendlist`
+-- Table structure for table `blu_friendlist`
 --
 
-CREATE TABLE `{$db_prefix}friendlist` (
+CREATE TABLE `blu_friendlist` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `friend_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -1117,10 +1117,10 @@ CREATE TABLE `{$db_prefix}friendlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}gold`
+-- Table structure for table `blu_gold`
 --
 
-CREATE TABLE `{$db_prefix}gold` (
+CREATE TABLE `blu_gold` (
   `id` int(11) NOT NULL,
   `level` int(11) NOT NULL DEFAULT '4',
   `gold_picture` varchar(255) NOT NULL DEFAULT 'gold.gif',
@@ -1138,19 +1138,19 @@ CREATE TABLE `{$db_prefix}gold` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}gold`
+-- Dumping data for table `blu_gold`
 --
 
-INSERT INTO `{$db_prefix}gold` (`id`, `level`, `gold_picture`, `silver_picture`, `bronze_picture`, `active`, `date`, `gold_description`, `silver_description`, `bronze_description`, `classic_description`, `gold_percentage`, `silver_percentage`, `bronze_percentage`) VALUES
+INSERT INTO `blu_gold` (`id`, `level`, `gold_picture`, `silver_picture`, `bronze_picture`, `active`, `date`, `gold_description`, `silver_description`, `bronze_description`, `classic_description`, `gold_percentage`, `silver_percentage`, `bronze_percentage`) VALUES
 (1, 5, 'gold.gif', 'silver.gif', 'bronze.gif', '1', '0000-00-00', '100% free', '50% free', '25% free', '0% free', 0, 50, 75);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}hacks`
+-- Table structure for table `blu_hacks`
 --
 
-CREATE TABLE `{$db_prefix}hacks` (
+CREATE TABLE `blu_hacks` (
   `id` int(11) NOT NULL,
   `title` varchar(200) NOT NULL,
   `version` varchar(10) NOT NULL,
@@ -1161,10 +1161,10 @@ CREATE TABLE `{$db_prefix}hacks` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}hacks`
+-- Dumping data for table `blu_hacks`
 --
 
-INSERT INTO `{$db_prefix}hacks` (`id`, `title`, `version`, `author`, `added`, `folder`, `prerequisite`) VALUES
+INSERT INTO `blu_hacks` (`id`, `title`, `version`, `author`, `added`, `folder`, `prerequisite`) VALUES
 (2, 'fmhack_custom_title', '1.0 (FM)', 'Real_ptr', 1434749313, '', 'fmhack_bonus_system'),
 (3, 'fmhack_bonus_system', '1.3 (FM)', 'Real_ptr & Petr1fied', 1434749313, '', 'no'),
 (4, 'fmhack_donation_history', '1.0 (FM)', 'DiemThuy', 1434749313, '', 'fmhack_advanced_auto_donation_system'),
@@ -1217,7 +1217,7 @@ INSERT INTO `{$db_prefix}hacks` (`id`, `title`, `version`, `author`, `added`, `f
 (58, 'fmhack_NFO_uploader_-_viewer', '1.1 (FM)', 'miskotes', 1434749313, '', 'no'),
 (60, 'fmhack_balloons_on_mouseover', '1.1 (FM)', 'DiemThuy & Petr1fied', 1434749313, '', 'no'),
 (61, 'fmhack_teams', '1.1 (FM)', 'cooly & Petr1fied', 1434749313, '', 'no'),
-(63, 'fmhack_{$db_prefix}->_SMF_style_bridge', '1.0 (FM)', 'cooly', 1434749313, '', 'no'),
+(63, 'fmhack_blu_->_SMF_style_bridge', '1.0 (FM)', 'cooly', 1434749313, '', 'no'),
 (65, 'fmhack_lock_comments', '1.0 (FM)', 'DiemThuy', 1434749313, '', 'no'),
 (66, 'fmhack_account_parked', '1.0 (FM)', 'Petr1fied', 1434749313, '', 'no'),
 (67, 'fmhack_low_ratio_ban_system', '1.0 (FM)', 'DiemThuy', 1434749313, '', 'no'),
@@ -1311,10 +1311,10 @@ INSERT INTO `{$db_prefix}hacks` (`id`, `title`, `version`, `author`, `added`, `f
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}helpdesk`
+-- Table structure for table `blu_helpdesk`
 --
 
-CREATE TABLE `{$db_prefix}helpdesk` (
+CREATE TABLE `blu_helpdesk` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(60) NOT NULL DEFAULT '',
   `msg_problem` text,
@@ -1329,10 +1329,10 @@ CREATE TABLE `{$db_prefix}helpdesk` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}history`
+-- Table structure for table `blu_history`
 --
 
-CREATE TABLE `{$db_prefix}history` (
+CREATE TABLE `blu_history` (
   `uid` int(10) DEFAULT NULL,
   `infohash` varchar(40) NOT NULL DEFAULT '',
   `date` int(10) DEFAULT NULL,
@@ -1352,10 +1352,10 @@ CREATE TABLE `{$db_prefix}history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}hnr`
+-- Table structure for table `blu_hnr`
 --
 
-CREATE TABLE `{$db_prefix}hnr` (
+CREATE TABLE `blu_hnr` (
   `id_level` int(11) NOT NULL DEFAULT '0',
   `method` enum('seed_only','ratio_only','seed_or_ratio','seed_and_ratio') NOT NULL DEFAULT 'seed_only',
   `min_seed_hours` int(11) NOT NULL DEFAULT '0',
@@ -1367,19 +1367,19 @@ CREATE TABLE `{$db_prefix}hnr` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}hnr`
+-- Dumping data for table `blu_hnr`
 --
 
-INSERT INTO `{$db_prefix}hnr` (`id_level`, `method`, `min_seed_hours`, `min_ratio`, `tolerance_hours`, `dl_trig_bytes`, `block_leech`, `forum_post`) VALUES
+INSERT INTO `blu_hnr` (`id_level`, `method`, `min_seed_hours`, `min_ratio`, `tolerance_hours`, `dl_trig_bytes`, `block_leech`, `forum_post`) VALUES
 (3, 'seed_only', 168, 0, 72, 1073741824, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}ignore`
+-- Table structure for table `blu_ignore`
 --
 
-CREATE TABLE `{$db_prefix}ignore` (
+CREATE TABLE `blu_ignore` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `ignore_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -1390,10 +1390,10 @@ CREATE TABLE `{$db_prefix}ignore` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}imdb`
+-- Table structure for table `blu_imdb`
 --
 
-CREATE TABLE `{$db_prefix}imdb` (
+CREATE TABLE `blu_imdb` (
   `id` int(10) UNSIGNED NOT NULL,
   `imdb` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `title` varchar(180) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -1413,10 +1413,10 @@ CREATE TABLE `{$db_prefix}imdb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}invalid_logins`
+-- Table structure for table `blu_invalid_logins`
 --
 
-CREATE TABLE `{$db_prefix}invalid_logins` (
+CREATE TABLE `blu_invalid_logins` (
   `id` int(10) UNSIGNED NOT NULL,
   `ip` bigint(11) DEFAULT '0',
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -1428,10 +1428,10 @@ CREATE TABLE `{$db_prefix}invalid_logins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}invitations`
+-- Table structure for table `blu_invitations`
 --
 
-CREATE TABLE `{$db_prefix}invitations` (
+CREATE TABLE `blu_invitations` (
   `id` int(10) UNSIGNED NOT NULL,
   `inviter` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `invitee` varchar(80) NOT NULL DEFAULT '',
@@ -1443,10 +1443,10 @@ CREATE TABLE `{$db_prefix}invitations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}ip2country`
+-- Table structure for table `blu_ip2country`
 --
 
-CREATE TABLE `{$db_prefix}ip2country` (
+CREATE TABLE `blu_ip2country` (
   `ip_from` double NOT NULL DEFAULT '0',
   `ip_to` double NOT NULL DEFAULT '0',
   `country_code2` char(2) NOT NULL DEFAULT '',
@@ -1457,10 +1457,10 @@ CREATE TABLE `{$db_prefix}ip2country` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}iplog`
+-- Table structure for table `blu_iplog`
 --
 
-CREATE TABLE `{$db_prefix}iplog` (
+CREATE TABLE `blu_iplog` (
   `ipid` int(11) NOT NULL,
   `ip` varchar(15) NOT NULL DEFAULT '',
   `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -1471,19 +1471,19 @@ CREATE TABLE `{$db_prefix}iplog` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}khez_configs`
+-- Table structure for table `blu_khez_configs`
 --
 
-CREATE TABLE `{$db_prefix}khez_configs` (
+CREATE TABLE `blu_khez_configs` (
   `key` varchar(30) NOT NULL,
   `value` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}khez_configs`
+-- Dumping data for table `blu_khez_configs`
 --
 
-INSERT INTO `{$db_prefix}khez_configs` (`key`, `value`) VALUES
+INSERT INTO `blu_khez_configs` (`key`, `value`) VALUES
 ('kis_enabled', 'true'),
 ('kis_invExpireAmmount', '1'),
 ('kis_perPage', '25'),
@@ -1510,10 +1510,10 @@ INSERT INTO `{$db_prefix}khez_configs` (`key`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}kis_sent`
+-- Table structure for table `blu_kis_sent`
 --
 
-CREATE TABLE `{$db_prefix}kis_sent` (
+CREATE TABLE `blu_kis_sent` (
   `token` varchar(190) NOT NULL,
   `time` int(20) NOT NULL,
   `uid` int(10) UNSIGNED NOT NULL,
@@ -1524,40 +1524,40 @@ CREATE TABLE `{$db_prefix}kis_sent` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}kis_users`
+-- Table structure for table `blu_kis_users`
 --
 
-CREATE TABLE `{$db_prefix}kis_users` (
+CREATE TABLE `blu_kis_users` (
   `uid` int(10) UNSIGNED NOT NULL,
   `invites` int(5) UNSIGNED NOT NULL,
   `joined` int(5) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `{$db_prefix}kis_users`
+-- Dumping data for table `blu_kis_users`
 --
 
-INSERT INTO `{$db_prefix}kis_users` (`uid`, `invites`, `joined`) VALUES
+INSERT INTO `blu_kis_users` (`uid`, `invites`, `joined`) VALUES
 (12922, 1, 0),
 (23027, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}language`
+-- Table structure for table `blu_language`
 --
 
-CREATE TABLE `{$db_prefix}language` (
+CREATE TABLE `blu_language` (
   `id` int(10) NOT NULL,
   `language` varchar(20) NOT NULL DEFAULT '',
   `language_url` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}language`
+-- Dumping data for table `blu_language`
 --
 
-INSERT INTO `{$db_prefix}language` (`id`, `language`, `language_url`) VALUES
+INSERT INTO `blu_language` (`id`, `language`, `language_url`) VALUES
 (1, 'English', 'language/english'),
 (2, 'Romanian', 'language/romanian'),
 (3, 'Polish', 'language/polish'),
@@ -1584,10 +1584,10 @@ INSERT INTO `{$db_prefix}language` (`id`, `language`, `language_url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}logs`
+-- Table structure for table `blu_logs`
 --
 
-CREATE TABLE `{$db_prefix}logs` (
+CREATE TABLE `blu_logs` (
   `id` int(10) UNSIGNED NOT NULL,
   `added` int(10) DEFAULT NULL,
   `txt` text,
@@ -1598,10 +1598,10 @@ CREATE TABLE `{$db_prefix}logs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}lottery_config`
+-- Table structure for table `blu_lottery_config`
 --
 
-CREATE TABLE `{$db_prefix}lottery_config` (
+CREATE TABLE `blu_lottery_config` (
   `id` int(11) NOT NULL DEFAULT '0',
   `lot_expire_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `lot_number_winners` varchar(20) NOT NULL DEFAULT '',
@@ -1615,10 +1615,10 @@ CREATE TABLE `{$db_prefix}lottery_config` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}lottery_tickets`
+-- Table structure for table `blu_lottery_tickets`
 --
 
-CREATE TABLE `{$db_prefix}lottery_tickets` (
+CREATE TABLE `blu_lottery_tickets` (
   `id` int(4) NOT NULL,
   `user` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -1626,10 +1626,10 @@ CREATE TABLE `{$db_prefix}lottery_tickets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}lottery_winners`
+-- Table structure for table `blu_lottery_winners`
 --
 
-CREATE TABLE `{$db_prefix}lottery_winners` (
+CREATE TABLE `blu_lottery_winners` (
   `id` int(4) NOT NULL,
   `win_user` varchar(20) NOT NULL DEFAULT '',
   `windate` varchar(20) NOT NULL DEFAULT '',
@@ -1639,10 +1639,10 @@ CREATE TABLE `{$db_prefix}lottery_winners` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}low_ratio_ban`
+-- Table structure for table `blu_low_ratio_ban`
 --
 
-CREATE TABLE `{$db_prefix}low_ratio_ban` (
+CREATE TABLE `blu_low_ratio_ban` (
   `wb_down` varchar(10) NOT NULL,
   `wb_rank` varchar(10) NOT NULL,
   `wb_warn` enum('true','false') NOT NULL,
@@ -1658,10 +1658,10 @@ CREATE TABLE `{$db_prefix}low_ratio_ban` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}low_ratio_ban_settings`
+-- Table structure for table `blu_low_ratio_ban_settings`
 --
 
-CREATE TABLE `{$db_prefix}low_ratio_ban_settings` (
+CREATE TABLE `blu_low_ratio_ban_settings` (
   `id` varchar(4) NOT NULL DEFAULT '1',
   `wb_sys` enum('true','false') NOT NULL DEFAULT 'false',
   `wb_text_one` varchar(255) NOT NULL,
@@ -1670,19 +1670,19 @@ CREATE TABLE `{$db_prefix}low_ratio_ban_settings` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}low_ratio_ban_settings`
+-- Dumping data for table `blu_low_ratio_ban_settings`
 --
 
-INSERT INTO `{$db_prefix}low_ratio_ban_settings` (`id`, `wb_sys`, `wb_text_one`, `wb_text_two`, `wb_text_fin`) VALUES
+INSERT INTO `blu_low_ratio_ban_settings` (`id`, `wb_sys`, `wb_text_one`, `wb_text_two`, `wb_text_fin`) VALUES
 ('1', 'false', 'Message for first warning here', 'Message for second warning here', 'Message for final warning here');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}messages`
+-- Table structure for table `blu_messages`
 --
 
-CREATE TABLE `{$db_prefix}messages` (
+CREATE TABLE `blu_messages` (
   `id` int(10) UNSIGNED NOT NULL,
   `sender` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `receiver` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -1696,10 +1696,10 @@ CREATE TABLE `{$db_prefix}messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}moderate_reasons`
+-- Table structure for table `blu_moderate_reasons`
 --
 
-CREATE TABLE `{$db_prefix}moderate_reasons` (
+CREATE TABLE `blu_moderate_reasons` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL DEFAULT '',
   `description` text NOT NULL,
@@ -1710,10 +1710,10 @@ CREATE TABLE `{$db_prefix}moderate_reasons` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}modules`
+-- Table structure for table `blu_modules`
 --
 
-CREATE TABLE `{$db_prefix}modules` (
+CREATE TABLE `blu_modules` (
   `id` mediumint(3) NOT NULL,
   `name` varchar(40) NOT NULL DEFAULT '',
   `activated` enum('yes','no') NOT NULL DEFAULT 'yes',
@@ -1723,10 +1723,10 @@ CREATE TABLE `{$db_prefix}modules` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}modules`
+-- Dumping data for table `blu_modules`
 --
 
-INSERT INTO `{$db_prefix}modules` (`id`, `name`, `activated`, `type`, `changed`, `created`) VALUES
+INSERT INTO `blu_modules` (`id`, `name`, `activated`, `type`, `changed`, `created`) VALUES
 (1, 'seedbonus', 'yes', 'misc', '2015-06-19 17:28:33', '2015-06-19 17:28:33'),
 (2, 'helpdesk', 'yes', 'misc', '2015-06-19 17:28:33', '2015-06-19 17:28:33'),
 (5, 'pool', 'yes', 'misc', '2015-07-07 17:56:37', '2015-07-07 17:56:37'),
@@ -1743,10 +1743,10 @@ INSERT INTO `{$db_prefix}modules` (`id`, `name`, `activated`, `type`, `changed`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}mostonline`
+-- Table structure for table `blu_mostonline`
 --
 
-CREATE TABLE `{$db_prefix}mostonline` (
+CREATE TABLE `blu_mostonline` (
   `amount` int(4) NOT NULL DEFAULT '1',
   `date` datetime NOT NULL DEFAULT '2008-11-24 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -1754,10 +1754,10 @@ CREATE TABLE `{$db_prefix}mostonline` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}news`
+-- Table structure for table `blu_news`
 --
 
-CREATE TABLE `{$db_prefix}news` (
+CREATE TABLE `blu_news` (
   `id` int(11) NOT NULL,
   `news` blob NOT NULL,
   `user_id` int(10) NOT NULL DEFAULT '0',
@@ -1766,19 +1766,19 @@ CREATE TABLE `{$db_prefix}news` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}news`
+-- Dumping data for table `blu_news`
 --
 
-INSERT INTO `{$db_prefix}news` (`id`, `news`, `user_id`, `date`, `title`) VALUES
+INSERT INTO `blu_news` (`id`, `news`, `user_id`, `date`, `title`) VALUES
 (1, 0x57656c636f6d6520546f20584254495420426c752d45646974696f6e20627920426c7543726577, 12922, '2016-10-14 19:19:05', 'Welcome');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}notes`
+-- Table structure for table `blu_notes`
 --
 
-CREATE TABLE `{$db_prefix}notes` (
+CREATE TABLE `blu_notes` (
   `id` int(10) NOT NULL,
   `userid` int(10) NOT NULL DEFAULT '0',
   `note` varchar(255) NOT NULL DEFAULT '',
@@ -1788,10 +1788,10 @@ CREATE TABLE `{$db_prefix}notes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}offer_comments`
+-- Table structure for table `blu_offer_comments`
 --
 
-CREATE TABLE `{$db_prefix}offer_comments` (
+CREATE TABLE `blu_offer_comments` (
   `id` int(10) UNSIGNED NOT NULL,
   `added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `text` text NOT NULL,
@@ -1803,10 +1803,10 @@ CREATE TABLE `{$db_prefix}offer_comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}online`
+-- Table structure for table `blu_online`
 --
 
-CREATE TABLE `{$db_prefix}online` (
+CREATE TABLE `blu_online` (
   `session_id` varchar(40) NOT NULL,
   `user_id` int(10) NOT NULL,
   `user_ip` varchar(15) NOT NULL,
@@ -1826,10 +1826,10 @@ CREATE TABLE `{$db_prefix}online` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}partner`
+-- Table structure for table `blu_partner`
 --
 
-CREATE TABLE `{$db_prefix}partner` (
+CREATE TABLE `blu_partner` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) DEFAULT NULL,
   `banner` varchar(255) DEFAULT NULL,
@@ -1840,10 +1840,10 @@ CREATE TABLE `{$db_prefix}partner` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}paypal_settings`
+-- Table structure for table `blu_paypal_settings`
 --
 
-CREATE TABLE `{$db_prefix}paypal_settings` (
+CREATE TABLE `blu_paypal_settings` (
   `id` varchar(60) NOT NULL DEFAULT '',
   `test` enum('true','false') NOT NULL DEFAULT 'true',
   `paypal_email` varchar(60) NOT NULL DEFAULT '',
@@ -1888,10 +1888,10 @@ CREATE TABLE `{$db_prefix}paypal_settings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}peers`
+-- Table structure for table `blu_peers`
 --
 
-CREATE TABLE `{$db_prefix}peers` (
+CREATE TABLE `blu_peers` (
   `infohash` varchar(40) NOT NULL DEFAULT '',
   `peer_id` varchar(40) NOT NULL DEFAULT '',
   `bytes` bigint(20) NOT NULL DEFAULT '0',
@@ -1919,10 +1919,10 @@ CREATE TABLE `{$db_prefix}peers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}poller`
+-- Table structure for table `blu_poller`
 --
 
-CREATE TABLE `{$db_prefix}poller` (
+CREATE TABLE `blu_poller` (
   `ID` int(11) NOT NULL,
   `startDate` int(10) NOT NULL DEFAULT '0',
   `endDate` int(10) NOT NULL DEFAULT '0',
@@ -1932,19 +1932,19 @@ CREATE TABLE `{$db_prefix}poller` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}poller`
+-- Dumping data for table `blu_poller`
 --
 
-INSERT INTO `{$db_prefix}poller` (`ID`, `startDate`, `endDate`, `pollerTitle`, `starterID`, `active`) VALUES
+INSERT INTO `blu_poller` (`ID`, `startDate`, `endDate`, `pollerTitle`, `starterID`, `active`) VALUES
 (2, 1479757060, 0, 'Do you like Blu-Edition?', 12922, 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}poller_option`
+-- Table structure for table `blu_poller_option`
 --
 
-CREATE TABLE `{$db_prefix}poller_option` (
+CREATE TABLE `blu_poller_option` (
   `ID` int(11) NOT NULL,
   `pollerID` int(11) DEFAULT NULL,
   `optionText` varchar(255) DEFAULT NULL,
@@ -1953,10 +1953,10 @@ CREATE TABLE `{$db_prefix}poller_option` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}poller_option`
+-- Dumping data for table `blu_poller_option`
 --
 
-INSERT INTO `{$db_prefix}poller_option` (`ID`, `pollerID`, `optionText`, `pollerOrder`, `defaultChecked`) VALUES
+INSERT INTO `blu_poller_option` (`ID`, `pollerID`, `optionText`, `pollerOrder`, `defaultChecked`) VALUES
 (1, 1, 'Excellent', 1, '1'),
 (2, 1, 'Very good', 2, '0'),
 (3, 1, 'Good', 3, '0'),
@@ -1969,10 +1969,10 @@ INSERT INTO `{$db_prefix}poller_option` (`ID`, `pollerID`, `optionText`, `poller
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}poller_vote`
+-- Table structure for table `blu_poller_vote`
 --
 
-CREATE TABLE `{$db_prefix}poller_vote` (
+CREATE TABLE `blu_poller_vote` (
   `ID` int(11) NOT NULL,
   `pollerID` int(11) NOT NULL DEFAULT '0',
   `optionID` int(11) DEFAULT NULL,
@@ -1984,10 +1984,10 @@ CREATE TABLE `{$db_prefix}poller_vote` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}polls`
+-- Table structure for table `blu_polls`
 --
 
-CREATE TABLE `{$db_prefix}polls` (
+CREATE TABLE `blu_polls` (
   `pid` mediumint(8) NOT NULL,
   `startdate` int(10) DEFAULT NULL,
   `choices` text,
@@ -2000,10 +2000,10 @@ CREATE TABLE `{$db_prefix}polls` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}poll_voters`
+-- Table structure for table `blu_poll_voters`
 --
 
-CREATE TABLE `{$db_prefix}poll_voters` (
+CREATE TABLE `blu_poll_voters` (
   `vid` int(10) NOT NULL,
   `ip` varchar(16) NOT NULL DEFAULT '',
   `votedate` int(10) NOT NULL DEFAULT '0',
@@ -2014,10 +2014,10 @@ CREATE TABLE `{$db_prefix}poll_voters` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}pool`
+-- Table structure for table `blu_pool`
 --
 
-CREATE TABLE `{$db_prefix}pool` (
+CREATE TABLE `blu_pool` (
   `id` int(10) UNSIGNED NOT NULL,
   `uid` int(10) UNSIGNED NOT NULL,
   `date` datetime NOT NULL,
@@ -2028,10 +2028,10 @@ CREATE TABLE `{$db_prefix}pool` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}pool_settings`
+-- Table structure for table `blu_pool_settings`
 --
 
-CREATE TABLE `{$db_prefix}pool_settings` (
+CREATE TABLE `blu_pool_settings` (
   `id` int(10) NOT NULL,
   `start` datetime NOT NULL,
   `end` datetime DEFAULT NULL,
@@ -2042,10 +2042,10 @@ CREATE TABLE `{$db_prefix}pool_settings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}posts`
+-- Table structure for table `blu_posts`
 --
 
-CREATE TABLE `{$db_prefix}posts` (
+CREATE TABLE `blu_posts` (
   `id` int(10) UNSIGNED NOT NULL,
   `topicid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -2057,19 +2057,19 @@ CREATE TABLE `{$db_prefix}posts` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}posts`
+-- Dumping data for table `blu_posts`
 --
 
-INSERT INTO `{$db_prefix}posts` (`id`, `topicid`, `userid`, `added`, `body`, `editedby`, `editedat`, `sbonus`) VALUES
+INSERT INTO `blu_posts` (`id`, `topicid`, `userid`, `added`, `body`, `editedby`, `editedat`, `sbonus`) VALUES
 (22, 3, 12922, 1481142259, 'Introduce Yourself Here :)', 0, 0, '0.000000'),
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}profile_status`
+-- Table structure for table `blu_profile_status`
 --
 
-CREATE TABLE `{$db_prefix}profile_status` (
+CREATE TABLE `blu_profile_status` (
   `id` int(10) NOT NULL,
   `userid` int(10) NOT NULL DEFAULT '0',
   `last_status` varchar(140) NOT NULL,
@@ -2079,10 +2079,10 @@ CREATE TABLE `{$db_prefix}profile_status` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}quiz`
+-- Table structure for table `blu_quiz`
 --
 
-CREATE TABLE `{$db_prefix}quiz` (
+CREATE TABLE `blu_quiz` (
   `qid` int(5) UNSIGNED NOT NULL,
   `Question` text,
   `opt1` text,
@@ -2095,10 +2095,10 @@ CREATE TABLE `{$db_prefix}quiz` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}rank`
+-- Table structure for table `blu_rank`
 --
 
-CREATE TABLE `{$db_prefix}rank` (
+CREATE TABLE `blu_rank` (
   `userid` int(11) NOT NULL,
   `old_rank` int(11) NOT NULL,
   `new_rank` int(11) NOT NULL,
@@ -2110,10 +2110,10 @@ CREATE TABLE `{$db_prefix}rank` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}ratings`
+-- Table structure for table `blu_ratings`
 --
 
-CREATE TABLE `{$db_prefix}ratings` (
+CREATE TABLE `blu_ratings` (
   `infohash` char(40) NOT NULL DEFAULT '',
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '1',
   `rating` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
@@ -2123,10 +2123,10 @@ CREATE TABLE `{$db_prefix}ratings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}readposts`
+-- Table structure for table `blu_readposts`
 --
 
-CREATE TABLE `{$db_prefix}readposts` (
+CREATE TABLE `blu_readposts` (
   `id` int(10) UNSIGNED NOT NULL,
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `topicid` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -2136,10 +2136,10 @@ CREATE TABLE `{$db_prefix}readposts` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}recommended`
+-- Table structure for table `blu_recommended`
 --
 
-CREATE TABLE `{$db_prefix}recommended` (
+CREATE TABLE `blu_recommended` (
   `id` int(11) NOT NULL,
   `info_hash` varchar(40) NOT NULL DEFAULT '',
   `user_name` varchar(40) NOT NULL DEFAULT 'anonymous'
@@ -2148,10 +2148,10 @@ CREATE TABLE `{$db_prefix}recommended` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}reports`
+-- Table structure for table `blu_reports`
 --
 
-CREATE TABLE `{$db_prefix}reports` (
+CREATE TABLE `blu_reports` (
   `id` int(10) UNSIGNED NOT NULL,
   `addedby` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `votedfor` varchar(50) DEFAULT NULL,
@@ -2164,10 +2164,10 @@ CREATE TABLE `{$db_prefix}reports` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}reputation`
+-- Table structure for table `blu_reputation`
 --
 
-CREATE TABLE `{$db_prefix}reputation` (
+CREATE TABLE `blu_reputation` (
   `reputationid` int(11) UNSIGNED NOT NULL,
   `whoadded` int(10) NOT NULL DEFAULT '0',
   `dateadd` int(10) NOT NULL DEFAULT '0',
@@ -2178,10 +2178,10 @@ CREATE TABLE `{$db_prefix}reputation` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}reputation_settings`
+-- Table structure for table `blu_reputation_settings`
 --
 
-CREATE TABLE `{$db_prefix}reputation_settings` (
+CREATE TABLE `blu_reputation_settings` (
   `id` varchar(10) NOT NULL DEFAULT '1',
   `rep_is_online` varchar(10) NOT NULL DEFAULT '1',
   `rep_adminpower` varchar(10) NOT NULL,
@@ -2212,20 +2212,20 @@ CREATE TABLE `{$db_prefix}reputation_settings` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `{$db_prefix}reputation_settings`
+-- Dumping data for table `blu_reputation_settings`
 --
 
-INSERT INTO `{$db_prefix}reputation_settings` (`id`, `rep_is_online`, `rep_adminpower`, `rep_minpost`, `rep_default`, `rep_userrates`, `rep_rdpower`, `rep_pcpower`, `rep_kppower`, `rep_minrep`, `rep_hit`, `rep_maxperday`, `rep_repeat`, `rep_undefined`, `best_level`, `good_level`, `no_level`, `bad_level`, `worse_level`, `rep_upload`, `rep_en_sys`, `rep_pr_id`, `rep_dm_id`, `rep_pr`, `rep_dm`, `rep_pm_text`, `rep_dm_text`) VALUES
+INSERT INTO `blu_reputation_settings` (`id`, `rep_is_online`, `rep_adminpower`, `rep_minpost`, `rep_default`, `rep_userrates`, `rep_rdpower`, `rep_pcpower`, `rep_kppower`, `rep_minrep`, `rep_hit`, `rep_maxperday`, `rep_repeat`, `rep_undefined`, `best_level`, `good_level`, `no_level`, `bad_level`, `worse_level`, `rep_upload`, `rep_en_sys`, `rep_pr_id`, `rep_dm_id`, `rep_pr`, `rep_dm`, `rep_pm_text`, `rep_dm_text`) VALUES
 ('1', 'false', '5', '10', '0', '1', '1', '1', '0', '5', '5', '24', '', '1', 'Outstanding Reputation', 'Good Reputation', 'No Reputation', 'Bad Reputation', 'Terrable Reputation', '3', 'false', '5', '3', '1000', '-1000', 'promote text', 'demote text'),
 ('1', 'false', '5', '10', '0', '1', '1', '1', '0', '5', '5', '24', '', '1', 'Outstanding Reputation', 'Good Reputation', 'No Reputation', 'Bad Reputation', 'Terrable Reputation', '3', 'false', '5', '3', '1000', '-1000', 'promote text', 'demote text');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}requests`
+-- Table structure for table `blu_requests`
 --
 
-CREATE TABLE `{$db_prefix}requests` (
+CREATE TABLE `blu_requests` (
   `id` smallint(5) UNSIGNED NOT NULL,
   `reqname` varchar(120) NOT NULL,
   `category` tinyint(3) UNSIGNED NOT NULL,
@@ -2243,19 +2243,19 @@ CREATE TABLE `{$db_prefix}requests` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}requests`
+-- Dumping data for table `blu_requests`
 --
 
-INSERT INTO `{$db_prefix}requests` (`id`, `reqname`, `category`, `requester`, `dateadded`, `description`, `views`, `imdb`, `tvdb`, `jobtakenby`, `jobtakenwhen`, `uploadedby`, `uploadedwhen`, `infohash`) VALUES
+INSERT INTO `blu_requests` (`id`, `reqname`, `category`, `requester`, `dateadded`, `description`, `views`, `imdb`, `tvdb`, `jobtakenby`, `jobtakenwhen`, `uploadedby`, `uploadedwhen`, `infohash`) VALUES
 (3, 'The Matrix 1999 1080p AAC 5.1 MP4', 13, 12922, '2016-10-28 12:02:32', 'The Matrix 1999 1080p AAC 5.1 MP4', 41, 133093, 0, 0, NULL, 0, NULL, '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}requests_bounty`
+-- Table structure for table `blu_requests_bounty`
 --
 
-CREATE TABLE `{$db_prefix}requests_bounty` (
+CREATE TABLE `blu_requests_bounty` (
   `id` smallint(5) UNSIGNED NOT NULL,
   `addedby` smallint(5) UNSIGNED NOT NULL,
   `seedbonus` decimal(12,6) NOT NULL DEFAULT '0.000000',
@@ -2265,10 +2265,10 @@ CREATE TABLE `{$db_prefix}requests_bounty` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}requests_comments`
+-- Table structure for table `blu_requests_comments`
 --
 
-CREATE TABLE `{$db_prefix}requests_comments` (
+CREATE TABLE `blu_requests_comments` (
   `id` smallint(5) UNSIGNED NOT NULL,
   `req_id` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `addedby` smallint(5) UNSIGNED NOT NULL,
@@ -2279,10 +2279,10 @@ CREATE TABLE `{$db_prefix}requests_comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}rules`
+-- Table structure for table `blu_rules`
 --
 
-CREATE TABLE `{$db_prefix}rules` (
+CREATE TABLE `blu_rules` (
   `id` int(11) NOT NULL,
   `text` text NOT NULL,
   `active` enum('-1','0','1') NOT NULL DEFAULT '1',
@@ -2293,10 +2293,10 @@ CREATE TABLE `{$db_prefix}rules` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}rules_group`
+-- Table structure for table `blu_rules_group`
 --
 
-CREATE TABLE `{$db_prefix}rules_group` (
+CREATE TABLE `blu_rules_group` (
   `id` int(11) NOT NULL,
   `active` enum('-1','0','1') NOT NULL DEFAULT '1',
   `title` varchar(255) NOT NULL,
@@ -2306,10 +2306,10 @@ CREATE TABLE `{$db_prefix}rules_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}sb`
+-- Table structure for table `blu_sb`
 --
 
-CREATE TABLE `{$db_prefix}sb` (
+CREATE TABLE `blu_sb` (
   `id` int(5) NOT NULL,
   `what` varchar(20) NOT NULL,
   `gb` varchar(20) NOT NULL,
@@ -2320,10 +2320,10 @@ CREATE TABLE `{$db_prefix}sb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}searchcloud`
+-- Table structure for table `blu_searchcloud`
 --
 
-CREATE TABLE `{$db_prefix}searchcloud` (
+CREATE TABLE `blu_searchcloud` (
   `id` int(10) UNSIGNED NOT NULL,
   `searchedfor` varchar(50) NOT NULL,
   `howmuch` int(10) NOT NULL
@@ -2332,10 +2332,10 @@ CREATE TABLE `{$db_prefix}searchcloud` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}seedboxip`
+-- Table structure for table `blu_seedboxip`
 --
 
-CREATE TABLE `{$db_prefix}seedboxip` (
+CREATE TABLE `blu_seedboxip` (
   `id` int(10) NOT NULL,
   `ip` varchar(15) NOT NULL,
   `host` varchar(200) NOT NULL,
@@ -2345,10 +2345,10 @@ CREATE TABLE `{$db_prefix}seedboxip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}seo`
+-- Table structure for table `blu_seo`
 --
 
-CREATE TABLE `{$db_prefix}seo` (
+CREATE TABLE `blu_seo` (
   `id` varchar(60) NOT NULL DEFAULT '',
   `activated` enum('true','false') NOT NULL DEFAULT 'false',
   `activated_user` enum('true','false') NOT NULL,
@@ -2373,28 +2373,28 @@ CREATE TABLE `{$db_prefix}seo` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}seo`
+-- Dumping data for table `blu_seo`
 --
 
-INSERT INTO `{$db_prefix}seo` (`id`, `activated`, `activated_user`, `str`, `strto`, `cano`, `use_meta`, `metakeyword`, `metadesc`, `copyright`, `author`, `robots`, `revisitafter`, `analytic_active`, `ggwebmaster_active`, `analytic`, `ggwebmaster`, `maxurl`, `namemap`, `active_map`, `abs_path`) VALUES
+INSERT INTO `blu_seo` (`id`, `activated`, `activated_user`, `str`, `strto`, `cano`, `use_meta`, `metakeyword`, `metadesc`, `copyright`, `author`, `robots`, `revisitafter`, `analytic_active`, `ggwebmaster_active`, `analytic`, `ggwebmaster`, `maxurl`, `namemap`, `active_map`, `abs_path`) VALUES
 ('1', 'true', 'true', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ {}[]', 'abcdefghijklmnopqrstuvwxyz-----', 'true', 'true', 'Meta Keyword for xbtit team', 'Meta description for xbtit team', 'your Meta Copyright', 'your Meta Author', 'index, follow', '12 days', 'true', 'true', 'analytict', 'testee', '3', 'sitemap.xml', 'true', '/var/www/');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}settings`
+-- Table structure for table `blu_settings`
 --
 
-CREATE TABLE `{$db_prefix}settings` (
+CREATE TABLE `blu_settings` (
   `key` varchar(200) NOT NULL,
   `value` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}settings`
+-- Dumping data for table `blu_settings`
 --
 
-INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
+INSERT INTO `blu_settings` (`key`, `value`) VALUES
 ('add_new_user_language', 'enabled'),
 ('add_new_user_style', 'disabled'),
 ('advprunet_del_torrents', '30'),
@@ -2514,7 +2514,7 @@ INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
 ('fmhack_birthdays', 'enabled'),
 ('fmhack_block_signup_from_certain_countries', 'enabled'),
 ('fmhack_bluflix', 'enabled'),
-('fmhack_{$db_prefix}->_SMF_style_bridge', 'disabled'),
+('fmhack_blu_->_SMF_style_bridge', 'disabled'),
 ('fmhack_bonus_system', 'enabled'),
 ('fmhack_bon_pool', 'enabled'),
 ('fmhack_booted', 'enabled'),
@@ -2795,7 +2795,7 @@ INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
 ('smtp_username', 'Mr.Robot@stealth.tg'),
 ('snatched_prefixcolor', '<span style=\'color:#0096B8;\'>'),
 ('snatched_suffixcolor', '</span>');
-INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
+INSERT INTO `blu_settings` (`key`, `value`) VALUES
 ('staff_comment', 'lro-1-91'),
 ('staff_comment_view', 'lro-1-91'),
 ('team_state', 'private'),
@@ -2888,10 +2888,10 @@ INSERT INTO `{$db_prefix}settings` (`key`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}shitlist`
+-- Table structure for table `blu_shitlist`
 --
 
-CREATE TABLE `{$db_prefix}shitlist` (
+CREATE TABLE `blu_shitlist` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `shit_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -2901,10 +2901,10 @@ CREATE TABLE `{$db_prefix}shitlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}shoutcastdj`
+-- Table structure for table `blu_shoutcastdj`
 --
 
-CREATE TABLE `{$db_prefix}shoutcastdj` (
+CREATE TABLE `blu_shoutcastdj` (
   `id` int(10) UNSIGNED NOT NULL,
   `uid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `active` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
@@ -2916,10 +2916,10 @@ CREATE TABLE `{$db_prefix}shoutcastdj` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}signup_ip_block`
+-- Table structure for table `blu_signup_ip_block`
 --
 
-CREATE TABLE `{$db_prefix}signup_ip_block` (
+CREATE TABLE `blu_signup_ip_block` (
   `id` int(10) NOT NULL,
   `first_ip` double NOT NULL DEFAULT '0',
   `last_ip` double NOT NULL DEFAULT '0',
@@ -2931,10 +2931,10 @@ CREATE TABLE `{$db_prefix}signup_ip_block` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}sitemap`
+-- Table structure for table `blu_sitemap`
 --
 
-CREATE TABLE `{$db_prefix}sitemap` (
+CREATE TABLE `blu_sitemap` (
   `id` int(10) UNSIGNED NOT NULL,
   `url` varchar(100) NOT NULL DEFAULT '',
   `date` date NOT NULL DEFAULT '0000-00-00',
@@ -2944,19 +2944,19 @@ CREATE TABLE `{$db_prefix}sitemap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}smilies`
+-- Table structure for table `blu_smilies`
 --
 
-CREATE TABLE `{$db_prefix}smilies` (
+CREATE TABLE `blu_smilies` (
   `key` varchar(200) NOT NULL,
   `value` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}smilies`
+-- Dumping data for table `blu_smilies`
 --
 
-INSERT INTO `{$db_prefix}smilies` (`key`, `value`) VALUES
+INSERT INTO `blu_smilies` (`key`, `value`) VALUES
 (':)', 'smile1.gif'),
 (';)', 'wink.gif'),
 (':D', 'grin.gif'),
@@ -3092,29 +3092,29 @@ INSERT INTO `{$db_prefix}smilies` (`key`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}sticky`
+-- Table structure for table `blu_sticky`
 --
 
-CREATE TABLE `{$db_prefix}sticky` (
+CREATE TABLE `blu_sticky` (
   `id` int(11) NOT NULL,
   `color` varchar(255) NOT NULL DEFAULT '#bce1ac;',
   `level` int(11) NOT NULL DEFAULT '3'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}sticky`
+-- Dumping data for table `blu_sticky`
 --
 
-INSERT INTO `{$db_prefix}sticky` (`id`, `color`, `level`) VALUES
+INSERT INTO `blu_sticky` (`id`, `color`, `level`) VALUES
 (1, '#1E1E1E;', 6);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}stream`
+-- Table structure for table `blu_stream`
 --
 
-CREATE TABLE `{$db_prefix}stream` (
+CREATE TABLE `blu_stream` (
   `id` int(15) NOT NULL,
   `title` varchar(200) NOT NULL,
   `year` int(4) NOT NULL,
@@ -3136,10 +3136,10 @@ CREATE TABLE `{$db_prefix}stream` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}stream_porn`
+-- Table structure for table `blu_stream_porn`
 --
 
-CREATE TABLE `{$db_prefix}stream_porn` (
+CREATE TABLE `blu_stream_porn` (
   `id` int(15) NOT NULL,
   `title` varchar(200) NOT NULL,
   `year` int(4) NOT NULL,
@@ -3157,10 +3157,10 @@ CREATE TABLE `{$db_prefix}stream_porn` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}stream_servers`
+-- Table structure for table `blu_stream_servers`
 --
 
-CREATE TABLE `{$db_prefix}stream_servers` (
+CREATE TABLE `blu_stream_servers` (
   `sid` int(5) NOT NULL,
   `server_url` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -3168,10 +3168,10 @@ CREATE TABLE `{$db_prefix}stream_servers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}stream_users`
+-- Table structure for table `blu_stream_users`
 --
 
-CREATE TABLE `{$db_prefix}stream_users` (
+CREATE TABLE `blu_stream_users` (
   `id` int(10) NOT NULL,
   `userid` int(10) NOT NULL,
   `streamid` int(10) NOT NULL,
@@ -3181,10 +3181,10 @@ CREATE TABLE `{$db_prefix}stream_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}style`
+-- Table structure for table `blu_style`
 --
 
-CREATE TABLE `{$db_prefix}style` (
+CREATE TABLE `blu_style` (
   `id` int(10) NOT NULL,
   `style` varchar(20) NOT NULL DEFAULT '',
   `style_url` varchar(100) NOT NULL DEFAULT '',
@@ -3192,32 +3192,32 @@ CREATE TABLE `{$db_prefix}style` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}style`
+-- Dumping data for table `blu_style`
 --
 
-INSERT INTO `{$db_prefix}style` (`id`, `style`, `style_url`, `style_type`) VALUES
+INSERT INTO `blu_style` (`id`, `style`, `style_url`, `style_type`) VALUES
 (11, 'Dark', 'style/xbtit_default', 3),
 (31, 'Light (Beta)', 'style/light', 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}style_bridge`
+-- Table structure for table `blu_style_bridge`
 --
 
-CREATE TABLE `{$db_prefix}style_bridge` (
+CREATE TABLE `blu_style_bridge` (
   `id` int(10) NOT NULL,
-  `{$db_prefix}style` int(10) NOT NULL DEFAULT '0',
+  `blu_style` int(10) NOT NULL DEFAULT '0',
   `smf_style` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}subtitles`
+-- Table structure for table `blu_subtitles`
 --
 
-CREATE TABLE `{$db_prefix}subtitles` (
+CREATE TABLE `blu_subtitles` (
   `id` int(9) NOT NULL,
   `name` varchar(99) NOT NULL DEFAULT '',
   `file` varchar(99) NOT NULL DEFAULT '',
@@ -3233,29 +3233,29 @@ CREATE TABLE `{$db_prefix}subtitles` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}subtitles`
+-- Dumping data for table `blu_subtitles`
 --
 
-INSERT INTO `{$db_prefix}subtitles` (`id`, `name`, `file`, `imdb`, `pic`, `Framerate`, `cds`, `uploader`, `downloaded`, `author`, `hash`, `flag`) VALUES
+INSERT INTO `blu_subtitles` (`id`, `name`, `file`, `imdb`, `pic`, `Framerate`, `cds`, `uploader`, `downloaded`, `author`, `hash`, `flag`) VALUES
 (2, 'Tears of Steel 2012', 'Tears of Steel  (2012).OfficialRelease.English.orig.Addic7ed.com.srt', 'http://www.imdb.com/title/tt2285752/', 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTczMzQzNDE5NV5BMl5BanBnXkFtZTcwNzYwMzQ1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg', '24FPS', 1, 12922, 2, 'ahmtie', '389dad4e38536a92acb4b97b6fe93bad80e39e85', 2),
 (3, 'Tears Of Steel', '[fmovies.to] Sausage Party (16+) - Full.srt', '0', 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTczMzQzNDE5NV5BMl5BanBnXkFtZTcwNzYwMzQ1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg', '25fps', 1, 12922, 1, 'test', '389dad4e38536a92acb4b97b6fe93bad80e39e85', 29);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}tasks`
+-- Table structure for table `blu_tasks`
 --
 
-CREATE TABLE `{$db_prefix}tasks` (
+CREATE TABLE `blu_tasks` (
   `task` varchar(20) NOT NULL DEFAULT '',
   `last_time` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}tasks`
+-- Dumping data for table `blu_tasks`
 --
 
-INSERT INTO `{$db_prefix}tasks` (`task`, `last_time`) VALUES
+INSERT INTO `blu_tasks` (`task`, `last_time`) VALUES
 ('radio', 1434749313),
 ('rreg', 1436279225),
 ('sanity', 1485107346),
@@ -3264,10 +3264,10 @@ INSERT INTO `{$db_prefix}tasks` (`task`, `last_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}teams`
+-- Table structure for table `blu_teams`
 --
 
-CREATE TABLE `{$db_prefix}teams` (
+CREATE TABLE `blu_teams` (
   `id` int(10) NOT NULL,
   `added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `owner` int(10) NOT NULL DEFAULT '0',
@@ -3279,10 +3279,10 @@ CREATE TABLE `{$db_prefix}teams` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}tested`
+-- Table structure for table `blu_tested`
 --
 
-CREATE TABLE `{$db_prefix}tested` (
+CREATE TABLE `blu_tested` (
   `tested` datetime NOT NULL,
   `acct` varchar(40) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -3290,10 +3290,10 @@ CREATE TABLE `{$db_prefix}tested` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}timestamps`
+-- Table structure for table `blu_timestamps`
 --
 
-CREATE TABLE `{$db_prefix}timestamps` (
+CREATE TABLE `blu_timestamps` (
   `info_hash` char(40) NOT NULL DEFAULT '',
   `sequence` int(10) UNSIGNED NOT NULL,
   `bytes` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -3303,19 +3303,19 @@ CREATE TABLE `{$db_prefix}timestamps` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}timezone`
+-- Table structure for table `blu_timezone`
 --
 
-CREATE TABLE `{$db_prefix}timezone` (
+CREATE TABLE `blu_timezone` (
   `difference` varchar(4) NOT NULL DEFAULT '0',
   `timezone` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}timezone`
+-- Dumping data for table `blu_timezone`
 --
 
-INSERT INTO `{$db_prefix}timezone` (`difference`, `timezone`) VALUES
+INSERT INTO `blu_timezone` (`difference`, `timezone`) VALUES
 ('-1', '(GMT - 1:00 hours) Azores, Cape Verde Islands'),
 ('-10', '(GMT - 10:00 hours) Hawaii'),
 ('-11', '(GMT - 11:00 hours) Midway Island, Samoa'),
@@ -3350,10 +3350,10 @@ INSERT INTO `{$db_prefix}timezone` (`difference`, `timezone`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}topics`
+-- Table structure for table `blu_topics`
 --
 
-CREATE TABLE `{$db_prefix}topics` (
+CREATE TABLE `blu_topics` (
   `id` int(10) UNSIGNED NOT NULL,
   `userid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `subject` varchar(75) DEFAULT NULL,
@@ -3365,19 +3365,19 @@ CREATE TABLE `{$db_prefix}topics` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}topics`
+-- Dumping data for table `blu_topics`
 --
 
-INSERT INTO `{$db_prefix}topics` (`id`, `userid`, `subject`, `locked`, `forumid`, `lastpost`, `sticky`, `views`) VALUES
+INSERT INTO `blu_topics` (`id`, `userid`, `subject`, `locked`, `forumid`, `lastpost`, `sticky`, `views`) VALUES
 (3, 12922, ' Introduce Yourself', 'no', 3, 25, 'no', 11);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}t_rank`
+-- Table structure for table `blu_t_rank`
 --
 
-CREATE TABLE `{$db_prefix}t_rank` (
+CREATE TABLE `blu_t_rank` (
   `userid` int(11) NOT NULL,
   `old_rank` int(11) NOT NULL,
   `new_rank` int(11) NOT NULL,
@@ -3390,10 +3390,10 @@ CREATE TABLE `{$db_prefix}t_rank` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}userbars`
+-- Table structure for table `blu_userbars`
 --
 
-CREATE TABLE `{$db_prefix}userbars` (
+CREATE TABLE `blu_userbars` (
   `id` int(11) NOT NULL,
   `description` varchar(50) NOT NULL,
   `img` varchar(64) NOT NULL
@@ -3402,10 +3402,10 @@ CREATE TABLE `{$db_prefix}userbars` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}username`
+-- Table structure for table `blu_username`
 --
 
-CREATE TABLE `{$db_prefix}username` (
+CREATE TABLE `blu_username` (
   `uid` int(10) NOT NULL,
   `username` varchar(30) NOT NULL,
   `org` varchar(30) NOT NULL,
@@ -3415,10 +3415,10 @@ CREATE TABLE `{$db_prefix}username` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}users`
+-- Table structure for table `blu_users`
 --
 
-CREATE TABLE `{$db_prefix}users` (
+CREATE TABLE `blu_users` (
   `id` int(10) UNSIGNED NOT NULL,
   `username` varchar(40) NOT NULL DEFAULT '',
   `password` varchar(40) NOT NULL DEFAULT '',
@@ -3533,10 +3533,10 @@ CREATE TABLE `{$db_prefix}users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}users`
+-- Dumping data for table `blu_users`
 --
 
-INSERT INTO `{$db_prefix}users` (`id`, `username`, `password`, `salt`, `pass_type`, `dupe_hash`, `id_level`, `random`, `email`, `language`, `style`, `joined`, `lastconnect`, `lip`, `downloaded`, `uploaded`, `avatar`, `pid`, `flag`, `topicsperpage`, `postsperpage`, `torrentsperpage`, `cip`, `time_offset`, `temp_email`, `smf_fid`, `invitations`, `invited_by`, `invitedate`, `custom_title`, `seedbonus`, `smf_postcount`, `donor`, `rank_switch`, `old_rank`, `timed_rank`, `warn`, `warnreason`, `warnadded`, `warns`, `warnaddedby`, `booted`, `whybooted`, `addbooted`, `whobooted`, `sbox`, `dlrandom`, `custom_torr_limit`, `php_cust_torr_limit`, `custom_wait_time`, `php_cust_wait_time`, `ban`, `ban_added`, `ban_added_by`, `ban_comment`, `up_med`, `team`, `pchat`, `block_comment`, `is_parked`, `warn_lev`, `warn_last`, `hnr_count`, `rat_warn_level`, `rat_warn_time`, `bandt`, `invisible`, `allowdownload`, `allowupload`, `proxy`, `ipb_fid`, `ipb_postcount`, `dob`, `birthday_bonus`, `pmbanned`, `user_notes`, `sig`, `syncsig`, `syncav`, `country_name`, `country_flag`, `avatar_upload`, `avatar_upload_name`, `viewed_faq`, `user_images`, `about_me`, `IS_WATCHED`, `force_ssl`, `showporn`, `profileview`, `signature`, `tot_on`, `custom_rss`, `vipfl_down`, `vipfl_date`, `catins`, `freeleech_slots`, `freeleech_slot_hashes`, `commentpm`, `prune_last_warn`, `prune_level`, `previous_names`, `made_intro`, `announce_read`, `trophy`, `reputation`, `connectable`, `clientinfo`, `gotgift`, `browser`, `torrent_style`) VALUES
+INSERT INTO `blu_users` (`id`, `username`, `password`, `salt`, `pass_type`, `dupe_hash`, `id_level`, `random`, `email`, `language`, `style`, `joined`, `lastconnect`, `lip`, `downloaded`, `uploaded`, `avatar`, `pid`, `flag`, `topicsperpage`, `postsperpage`, `torrentsperpage`, `cip`, `time_offset`, `temp_email`, `smf_fid`, `invitations`, `invited_by`, `invitedate`, `custom_title`, `seedbonus`, `smf_postcount`, `donor`, `rank_switch`, `old_rank`, `timed_rank`, `warn`, `warnreason`, `warnadded`, `warns`, `warnaddedby`, `booted`, `whybooted`, `addbooted`, `whobooted`, `sbox`, `dlrandom`, `custom_torr_limit`, `php_cust_torr_limit`, `custom_wait_time`, `php_cust_wait_time`, `ban`, `ban_added`, `ban_added_by`, `ban_comment`, `up_med`, `team`, `pchat`, `block_comment`, `is_parked`, `warn_lev`, `warn_last`, `hnr_count`, `rat_warn_level`, `rat_warn_time`, `bandt`, `invisible`, `allowdownload`, `allowupload`, `proxy`, `ipb_fid`, `ipb_postcount`, `dob`, `birthday_bonus`, `pmbanned`, `user_notes`, `sig`, `syncsig`, `syncav`, `country_name`, `country_flag`, `avatar_upload`, `avatar_upload_name`, `viewed_faq`, `user_images`, `about_me`, `IS_WATCHED`, `force_ssl`, `showporn`, `profileview`, `signature`, `tot_on`, `custom_rss`, `vipfl_down`, `vipfl_date`, `catins`, `freeleech_slots`, `freeleech_slot_hashes`, `commentpm`, `prune_last_warn`, `prune_level`, `previous_names`, `made_intro`, `announce_read`, `trophy`, `reputation`, `connectable`, `clientinfo`, `gotgift`, `browser`, `torrent_style`) VALUES
 (1, 'Guest', '', '', '1', '', 1, 0, 'none', 1, 11, '2014-02-19 05:44:31', '2014-02-19 05:44:31', 0, 0, 67645734912, NULL, '00000000000000000000000000000000', 0, 10, 10, 15, '127.0.0.2', '0', '', 0, 0, 0, '0000-00-00 00:00:00', NULL, '0.000000', 0, 'no', 'no', '3', '0000-00-00 00:00:00', 'no', '', '0000-00-00 00:00:00', 0, '', '', '', '0000-00-00 00:00:00', '', 'no', '0', 'no', 0, 'no', 0, 'no', '', '', '', 0, 0, '', 'no', 'no', 0, 0, 0, '0', '0000-00-00 00:00:00', 'no', 'no', 'no', 'no', 'no', 0, 0, '0000-00-00', 0, 'no', '', '', 'false', 'false', 'unknown', 'unknown', 'no', '', 0, '', '', 'no', 'yes', 'no', 0, '', 0, '', 0, 0, '', 0, '', 'false', 0, 0, '', 1, 'yes', '0', '0', 'unknown', '', 'yes', 'unknown', 'new'),
 (2, 'AutoSystem', '5b13ef42a3bda83300f90991fc7b5ca1', '', '1', '2f8aff4bd03618914e5d', 7, 575005, 'none@none', 1, 11, '2012-06-23 13:10:18', '2014-05-31 01:46:16', 3567209673, 0, 19877674080967, '', 'e5cac7bd480617dc6fda9a412ca6a82b', 12, 15, 15, 55, '127.0.0.2', '0', '', 0, 0, 0, '0000-00-00 00:00:00', 'AutoSeed', '0.000000', 0, 'no', 'no', '3', '0000-00-00 00:00:00', 'no', '', '0000-00-00 00:00:00', 0, '', 'no', '', '0000-00-00 00:00:00', '0', 'no', '0', 'no', 0, 'no', 0, 'no', '0', '0', '', 0, 0, '', 'no', 'no', 0, 0, 0, '0', '0000-00-00 00:00:00', 'no', 'no', 'yes', 'yes', 'no', 0, 0, '1990-01-01', 0, 'no', '', '', 'false', 'false', 'United Kingdom', 'gb.png', 'no', '', 0, '', '', 'no', 'yes', 'no', 0, '', 0, '', 0, 0, '', 5, '', 'true', 0, 0, '', 1, 'no', '0', '0', 'unknown', '', 'no', 'unknown', 'new'),
 (12922, 'Test1', '4896923fc30f6685a114c4508ad2c9d3', '', '1', '829eae15c6754dab9f34', 8, 545360, 'non@none', 1, 11, '2010-08-14 06:20:43', '2017-01-22 18:03:07', 1232081835, -1990116046275, 28991029248, '', '72cd5740c0c683b4bb8121f253039c15', 2, 15, 15, 55, '73.112.19.171', '-5', 'none@none', 0, 129, 0, '0000-00-00 00:00:00', 'Test1', '333074.686342', 0, 'yes', 'no', '3', '0000-00-00 00:00:00', 'no', '', '0000-00-00 00:00:00', 0, '', 'no', '', '0000-00-00 00:00:00', '', 'no', '1d066ec0', 'no', 0, 'no', 0, 'no', '', '', '', 0, 0, '91586', 'no', 'no', 0, 0, 0, '0', '0000-00-00 00:00:00', 'no', 'yes', 'yes', 'yes', 'no', 0, 0, '1990-01-01', 0, 'no', 'a:5:{i:0;s:148:"W2JdVGVzdDFbL2JdIGhhcyBzcGVudCBbYl01MDAwWy9iXSBib251cyBwb2ludHMgb24gdGhlIGN1c3RvbSB0aXRsZSBvZiBbYl0nVGVzdDEnWy9iXTwrPjA8Kz5TeXN0ZW08Kz4xNDc3MDg3NzUz";i:1;s:148:"W2JdVGVzdDFbL2JdIGhhcyBzcGVudCBbYl01MDAwWy9iXSBib251cyBwb2ludHMgb24gdGhlIGN1c3RvbSB0aXRsZSBvZiBbYl0nZG9vbSdbL2JdPCs+MDwrPlN5c3RlbTwrPjE0NzcwODc3NTg=";i:2;s:144:"W2JdVGVzdDFbL2JdIGhhcyBzcGVudCBbYl0xMDBbL2JdIGJvbnVzIHBvaW50cyBvbiBbYl01LjAwIEdCWy9iXSBvZiB1cGxvYWQgY3JlZGl0LjwrPjA8Kz5TeXN0ZW08Kz4xNDc4OTUyNTg0";i:3;s:144:"W2JdVGVzdDFbL2JdIGhhcyBzcGVudCBbYl0xMDBbL2JdIGJvbnVzIHBvaW50cyBvbiBbYl01LjAwIEdCWy9iXSBvZiB1cGxvYWQgY3JlZGl0LjwrPjA8Kz5TeXN0ZW08Kz4xNDc4OTUyNTg1";i:4;s:144:"W2JdVGVzdDFbL2JdIGhhcyBzcGVudCBbYl0xMDBbL2JdIGJvbnVzIHBvaW50cyBvbiBbYl01LjAwIEdCWy9iXSBvZiB1cGxvYWQgY3JlZGl0LjwrPjA8Kz5TeXN0ZW08Kz4xNDc4OTUyNTg2";}', '', 'false', 'false', 'United States of America', 'us.png', 'yes', '', 1, '', 'test', 'no', 'yes', 'yes', 1, '', 1258160, '', 0, 1484367799, '', 58, '', 'true', 0, 0, '', 1, 'yes', '0', '768', 'unknown', '', 'yes', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14', 'new'),
@@ -3545,10 +3545,10 @@ INSERT INTO `{$db_prefix}users` (`id`, `username`, `password`, `salt`, `pass_typ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}users_level`
+-- Table structure for table `blu_users_level`
 --
 
-CREATE TABLE `{$db_prefix}users_level` (
+CREATE TABLE `blu_users_level` (
   `id` int(10) NOT NULL,
   `id_level` int(11) NOT NULL DEFAULT '0',
   `level` varchar(50) NOT NULL DEFAULT '',
@@ -3619,10 +3619,10 @@ CREATE TABLE `{$db_prefix}users_level` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}users_level`
+-- Dumping data for table `blu_users_level`
 --
 
-INSERT INTO `{$db_prefix}users_level` (`id`, `id_level`, `level`, `view_torrents`, `edit_torrents`, `delete_torrents`, `view_users`, `edit_users`, `delete_users`, `view_news`, `edit_news`, `delete_news`, `can_upload`, `can_download`, `view_forum`, `edit_forum`, `delete_forum`, `predef_level`, `can_be_deleted`, `admin_access`, `prefixcolor`, `suffixcolor`, `WT`, `autorank_state`, `autorank_position`, `autorank_min_upload`, `autorank_minratio`, `smf_group_mirror`, `ipb_group_mirror`, `bypass_dlcheck`, `torrents_limit`, `trusted`, `moderate_trusted`, `sel_team`, `all_teams`, `delete_comments`, `edit_comments`, `view_comments`, `delete_shout`, `edit_shout`, `view_shout`, `view_peers`, `view_history`, `view_userdetails_torrents`, `view_nfo`, `view_reencode`, `add_request`, `add_ddl`, `view_ddl`, `freeleech`, `can_hide`, `see_hidden`, `bump_torrents`, `set_multi`, `view_multi`, `view_new`, `up_new`, `down_new`, `view_arc`, `up_arc`, `down_arc`, `logical_rank_order`, `can_boot`, `down_req_intro`, `external_upload`, `external_refresh`, `can_stream`) VALUES
+INSERT INTO `blu_users_level` (`id`, `id_level`, `level`, `view_torrents`, `edit_torrents`, `delete_torrents`, `view_users`, `edit_users`, `delete_users`, `view_news`, `edit_news`, `delete_news`, `can_upload`, `can_download`, `view_forum`, `edit_forum`, `delete_forum`, `predef_level`, `can_be_deleted`, `admin_access`, `prefixcolor`, `suffixcolor`, `WT`, `autorank_state`, `autorank_position`, `autorank_min_upload`, `autorank_minratio`, `smf_group_mirror`, `ipb_group_mirror`, `bypass_dlcheck`, `torrents_limit`, `trusted`, `moderate_trusted`, `sel_team`, `all_teams`, `delete_comments`, `edit_comments`, `view_comments`, `delete_shout`, `edit_shout`, `view_shout`, `view_peers`, `view_history`, `view_userdetails_torrents`, `view_nfo`, `view_reencode`, `add_request`, `add_ddl`, `view_ddl`, `freeleech`, `can_hide`, `see_hidden`, `bump_torrents`, `set_multi`, `view_multi`, `view_new`, `up_new`, `down_new`, `view_arc`, `up_arc`, `down_arc`, `logical_rank_order`, `can_boot`, `down_req_intro`, `external_upload`, `external_refresh`, `can_stream`) VALUES
 (1, 1, 'guest', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'guest', 'no', 'no', '', '', 0, 'Disabled', 0, 0, '0.00', 0, 0, 0, 0, 'no', 'no', 0, 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 1, 'no', 'no', 'no', 'no', 'no'),
 (2, 2, 'validating', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'validating', 'no', 'no', '', '', 0, 'Disabled', 0, 0, '0.00', 12, 0, 0, 0, 'no', 'no', 0, 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 2, 'no', 'no', 'no', 'no', 'no'),
 (3, 3, 'Recruit', 'yes', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'yes', 'no', 'no', 'member', 'no', 'no', '<span style="color:#1947A3; text-shadow: 0px 0px 5px #1947A3;">', '</span>', 0, 'Enabled', 0, 0, '0.00', 13, 0, 0, 2, 'no', 'no', 0, 'no', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 25, 'no', 'no', 'no', 'no', 'no'),
@@ -3635,10 +3635,10 @@ INSERT INTO `{$db_prefix}users_level` (`id`, `id_level`, `level`, `view_torrents
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}videos`
+-- Table structure for table `blu_videos`
 --
 
-CREATE TABLE `{$db_prefix}videos` (
+CREATE TABLE `blu_videos` (
   `title` text,
   `category` text,
   `id` varchar(11) DEFAULT NULL,
@@ -3648,10 +3648,10 @@ CREATE TABLE `{$db_prefix}videos` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}warn_logs`
+-- Table structure for table `blu_warn_logs`
 --
 
-CREATE TABLE `{$db_prefix}warn_logs` (
+CREATE TABLE `blu_warn_logs` (
   `id` int(10) NOT NULL,
   `uid` int(10) NOT NULL DEFAULT '0',
   `notes` text NOT NULL,
@@ -3662,10 +3662,10 @@ CREATE TABLE `{$db_prefix}warn_logs` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}warn_logs`
+-- Dumping data for table `blu_warn_logs`
 --
 
-INSERT INTO `{$db_prefix}warn_logs` (`id`, `uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES
+INSERT INTO `blu_warn_logs` (`id`, `uid`, `notes`, `contact`, `date_added`, `type`, `added_by`) VALUES
 (1, 23027, 'TEST PURPOSES ', 'pm', 1479994795, 'inc', 12922),
 (2, 23027, 'test', 'pm', 1480029352, 'dec', 12922),
 (3, 23027, 'test', 'pm', 1480029817, 'inc', 12922),
@@ -3674,10 +3674,10 @@ INSERT INTO `{$db_prefix}warn_logs` (`id`, `uid`, `notes`, `contact`, `date_adde
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}warn_reasons`
+-- Table structure for table `blu_warn_reasons`
 --
 
-CREATE TABLE `{$db_prefix}warn_reasons` (
+CREATE TABLE `blu_warn_reasons` (
   `id` int(11) NOT NULL,
   `active` enum('-1','0','1') NOT NULL DEFAULT '1',
   `title` varchar(255) NOT NULL DEFAULT '',
@@ -3686,19 +3686,19 @@ CREATE TABLE `{$db_prefix}warn_reasons` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}warn_reasons`
+-- Dumping data for table `blu_warn_reasons`
 --
 
-INSERT INTO `{$db_prefix}warn_reasons` (`id`, `active`, `title`, `text`, `level`) VALUES
+INSERT INTO `blu_warn_reasons` (`id`, `active`, `title`, `text`, `level`) VALUES
 (1, '1', 'Corrupt File', 'It has been reported that this upload contains one or more corrupted files. Please reupload a proper version.', 12);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}watched_users`
+-- Table structure for table `blu_watched_users`
 --
 
-CREATE TABLE `{$db_prefix}watched_users` (
+CREATE TABLE `blu_watched_users` (
   `id` int(10) UNSIGNED NOT NULL,
   `uid` int(10) UNSIGNED DEFAULT NULL,
   `username` varchar(40) NOT NULL DEFAULT '',
@@ -3710,29 +3710,29 @@ CREATE TABLE `{$db_prefix}watched_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}welcome_msg`
+-- Table structure for table `blu_welcome_msg`
 --
 
-CREATE TABLE `{$db_prefix}welcome_msg` (
+CREATE TABLE `blu_welcome_msg` (
   `key` varchar(200) NOT NULL,
   `value` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}welcome_msg`
+-- Dumping data for table `blu_welcome_msg`
 --
 
-INSERT INTO `{$db_prefix}welcome_msg` (`key`, `value`) VALUES
+INSERT INTO `blu_welcome_msg` (`key`, `value`) VALUES
 ('fm_welcome_msg', '[left][color=silver]Welcome to SITNAME[/color]\r\n\r\nSITENAME has a strong community, and is a feature rich site. We hope you enjoy it, and join in the fun!\r\n\r\nBe sure to read the rules and FAQ before you start using the site.\r\n\r\nWe\'ve started you off with 50GB upload credit, and hope to see you on the forums and chat!\r\n\r\nWe are a strong friendly community and we hope you agree with us that SITNAME is so much more then just torrents!\r\n\r\ncheers[/left]'),
 ('fm_welcome_sub', 'Welcome To SITENAME');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `{$db_prefix}wishlist`
+-- Table structure for table `blu_wishlist`
 --
 
-CREATE TABLE `{$db_prefix}wishlist` (
+CREATE TABLE `blu_wishlist` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `torrent_id` varchar(40) NOT NULL DEFAULT '',
@@ -3740,10 +3740,10 @@ CREATE TABLE `{$db_prefix}wishlist` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `{$db_prefix}wishlist`
+-- Dumping data for table `blu_wishlist`
 --
 
-INSERT INTO `{$db_prefix}wishlist` (`id`, `user_id`, `torrent_id`, `added`) VALUES
+INSERT INTO `blu_wishlist` (`id`, `user_id`, `torrent_id`, `added`) VALUES
 (3, 12922, '3f0dba6366c87b385fd896842091577afe3df3d0', '2016-11-24 03:46:53'),
 (2, 12922, '389dad4e38536a92acb4b97b6fe93bad80e39e85', '2016-10-28 12:03:10');
 
@@ -3947,296 +3947,296 @@ ALTER TABLE `casino_bets`
   ADD KEY `userid` (`userid`,`proposed`,`challenged`,`amount`);
 
 --
--- Indexes for table `{$db_prefix}addedexpected`
+-- Indexes for table `blu_addedexpected`
 --
-ALTER TABLE `{$db_prefix}addedexpected`
+ALTER TABLE `blu_addedexpected`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pollid` (`id`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}addedexpectedmin`
+-- Indexes for table `blu_addedexpectedmin`
 --
-ALTER TABLE `{$db_prefix}addedexpectedmin`
+ALTER TABLE `blu_addedexpectedmin`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pollid` (`id`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}adminpanel`
+-- Indexes for table `blu_adminpanel`
 --
-ALTER TABLE `{$db_prefix}adminpanel`
+ALTER TABLE `blu_adminpanel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}ads`
+-- Indexes for table `blu_ads`
 --
-ALTER TABLE `{$db_prefix}ads`
+ALTER TABLE `blu_ads`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `{$db_prefix}allowedclient`
+-- Indexes for table `blu_allowedclient`
 --
-ALTER TABLE `{$db_prefix}allowedclient`
+ALTER TABLE `blu_allowedclient`
   ADD PRIMARY KEY (`id`),
   ADD KEY `peer_id` (`peer_id`),
   ADD KEY `peer_id_ascii` (`peer_id_ascii`),
   ADD KEY `user_agent` (`user_agent`);
 
 --
--- Indexes for table `{$db_prefix}announcement`
+-- Indexes for table `blu_announcement`
 --
-ALTER TABLE `{$db_prefix}announcement`
+ALTER TABLE `blu_announcement`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `{$db_prefix}announcements`
+-- Indexes for table `blu_announcements`
 --
-ALTER TABLE `{$db_prefix}announcements`
+ALTER TABLE `blu_announcements`
   ADD PRIMARY KEY (`id`),
   ADD KEY `subject` (`subject`);
 
 --
--- Indexes for table `{$db_prefix}anti_hit_run`
+-- Indexes for table `blu_anti_hit_run`
 --
-ALTER TABLE `{$db_prefix}anti_hit_run`
+ALTER TABLE `blu_anti_hit_run`
   ADD PRIMARY KEY (`id_level`);
 
 --
--- Indexes for table `{$db_prefix}anti_hit_run_tasks`
+-- Indexes for table `blu_anti_hit_run_tasks`
 --
-ALTER TABLE `{$db_prefix}anti_hit_run_tasks`
+ALTER TABLE `blu_anti_hit_run_tasks`
   ADD PRIMARY KEY (`last_time`);
 
 --
--- Indexes for table `{$db_prefix}bannedclient`
+-- Indexes for table `blu_bannedclient`
 --
-ALTER TABLE `{$db_prefix}bannedclient`
+ALTER TABLE `blu_bannedclient`
   ADD PRIMARY KEY (`id`),
   ADD KEY `peer_id` (`peer_id`),
   ADD KEY `peer_id_ascii` (`peer_id_ascii`),
   ADD KEY `user_agent` (`user_agent`);
 
 --
--- Indexes for table `{$db_prefix}bannedip`
+-- Indexes for table `blu_bannedip`
 --
-ALTER TABLE `{$db_prefix}bannedip`
+ALTER TABLE `blu_bannedip`
   ADD PRIMARY KEY (`id`),
   ADD KEY `first_last` (`first`,`last`);
 
 --
--- Indexes for table `{$db_prefix}baseline`
+-- Indexes for table `blu_baseline`
 --
-ALTER TABLE `{$db_prefix}baseline`
+ALTER TABLE `blu_baseline`
   ADD PRIMARY KEY (`file_path`);
 
 --
--- Indexes for table `{$db_prefix}betgames`
+-- Indexes for table `blu_betgames`
 --
-ALTER TABLE `{$db_prefix}betgames`
+ALTER TABLE `blu_betgames`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}betlog`
+-- Indexes for table `blu_betlog`
 --
-ALTER TABLE `{$db_prefix}betlog`
+ALTER TABLE `blu_betlog`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`),
   ADD KEY `userid_2` (`userid`,`bonus`);
 
 --
--- Indexes for table `{$db_prefix}betoptions`
+-- Indexes for table `blu_betoptions`
 --
-ALTER TABLE `{$db_prefix}betoptions`
+ALTER TABLE `blu_betoptions`
   ADD PRIMARY KEY (`id`),
   ADD KEY `gameid` (`gameid`);
 
 --
--- Indexes for table `{$db_prefix}bets`
+-- Indexes for table `blu_bets`
 --
-ALTER TABLE `{$db_prefix}bets`
+ALTER TABLE `blu_bets`
   ADD PRIMARY KEY (`id`),
   ADD KEY `gameid` (`gameid`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}bettop`
+-- Indexes for table `blu_bettop`
 --
-ALTER TABLE `{$db_prefix}bettop`
+ALTER TABLE `blu_bettop`
   ADD PRIMARY KEY (`userid`);
 
 --
--- Indexes for table `{$db_prefix}bitcoin_invoices`
+-- Indexes for table `blu_bitcoin_invoices`
 --
-ALTER TABLE `{$db_prefix}bitcoin_invoices`
+ALTER TABLE `blu_bitcoin_invoices`
   ADD PRIMARY KEY (`invoice_id`),
   ADD KEY `tracker_id` (`tracker_id`),
   ADD KEY `secret` (`secret`);
 
 --
--- Indexes for table `{$db_prefix}blackjack`
+-- Indexes for table `blu_blackjack`
 --
-ALTER TABLE `{$db_prefix}blackjack`
+ALTER TABLE `blu_blackjack`
   ADD PRIMARY KEY (`gameid`);
 
 --
--- Indexes for table `{$db_prefix}blacklist`
+-- Indexes for table `blu_blacklist`
 --
-ALTER TABLE `{$db_prefix}blacklist`
+ALTER TABLE `blu_blacklist`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tip` (`tip`);
 
 --
--- Indexes for table `{$db_prefix}blocks`
+-- Indexes for table `blu_blocks`
 --
-ALTER TABLE `{$db_prefix}blocks`
+ALTER TABLE `blu_blocks`
   ADD PRIMARY KEY (`blockid`);
 
 --
--- Indexes for table `{$db_prefix}bonus`
+-- Indexes for table `blu_bonus`
 --
-ALTER TABLE `{$db_prefix}bonus`
+ALTER TABLE `blu_bonus`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}bt_clients`
+-- Indexes for table `blu_bt_clients`
 --
-ALTER TABLE `{$db_prefix}bt_clients`
+ALTER TABLE `blu_bt_clients`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}bugs`
+-- Indexes for table `blu_bugs`
 --
-ALTER TABLE `{$db_prefix}bugs`
+ALTER TABLE `blu_bugs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}categories`
+-- Indexes for table `blu_categories`
 --
-ALTER TABLE `{$db_prefix}categories`
+ALTER TABLE `blu_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}chat`
+-- Indexes for table `blu_chat`
 --
-ALTER TABLE `{$db_prefix}chat`
+ALTER TABLE `blu_chat`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}chatfun`
+-- Indexes for table `blu_chatfun`
 --
-ALTER TABLE `{$db_prefix}chatfun`
+ALTER TABLE `blu_chatfun`
   ADD PRIMARY KEY (`msgid`),
   ADD KEY `msgid` (`msgid`);
 
 --
--- Indexes for table `{$db_prefix}cheapmail`
+-- Indexes for table `blu_cheapmail`
 --
-ALTER TABLE `{$db_prefix}cheapmail`
+ALTER TABLE `blu_cheapmail`
   ADD KEY `domain` (`domain`);
 
 --
--- Indexes for table `{$db_prefix}coins`
+-- Indexes for table `blu_coins`
 --
-ALTER TABLE `{$db_prefix}coins`
+ALTER TABLE `blu_coins`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}comments`
+-- Indexes for table `blu_comments`
 --
-ALTER TABLE `{$db_prefix}comments`
+ALTER TABLE `blu_comments`
   ADD PRIMARY KEY (`id`),
   ADD KEY `info_hash` (`info_hash`);
 
 --
--- Indexes for table `{$db_prefix}contact_system`
+-- Indexes for table `blu_contact_system`
 --
-ALTER TABLE `{$db_prefix}contact_system`
+ALTER TABLE `blu_contact_system`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}countries`
+-- Indexes for table `blu_countries`
 --
-ALTER TABLE `{$db_prefix}countries`
+ALTER TABLE `blu_countries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}covers`
+-- Indexes for table `blu_covers`
 --
-ALTER TABLE `{$db_prefix}covers`
+ALTER TABLE `blu_covers`
   ADD PRIMARY KEY (`id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `{$db_prefix}donors`
+-- Indexes for table `blu_donors`
 --
-ALTER TABLE `{$db_prefix}donors`
+ALTER TABLE `blu_donors`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}don_historie`
+-- Indexes for table `blu_don_historie`
 --
-ALTER TABLE `{$db_prefix}don_historie`
+ALTER TABLE `blu_don_historie`
   ADD PRIMARY KEY (`don_id`);
 
 --
--- Indexes for table `{$db_prefix}downloads`
+-- Indexes for table `blu_downloads`
 --
-ALTER TABLE `{$db_prefix}downloads`
+ALTER TABLE `blu_downloads`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`,`uid`);
 
 --
--- Indexes for table `{$db_prefix}down_load`
+-- Indexes for table `blu_down_load`
 --
-ALTER TABLE `{$db_prefix}down_load`
+ALTER TABLE `blu_down_load`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pid` (`pid`),
   ADD KEY `hash` (`hash`);
 
 --
--- Indexes for table `{$db_prefix}dox`
+-- Indexes for table `blu_dox`
 --
-ALTER TABLE `{$db_prefix}dox`
+ALTER TABLE `blu_dox`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}expected`
+-- Indexes for table `blu_expected`
 --
-ALTER TABLE `{$db_prefix}expected`
+ALTER TABLE `blu_expected`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}faq`
+-- Indexes for table `blu_faq`
 --
-ALTER TABLE `{$db_prefix}faq`
+ALTER TABLE `blu_faq`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}faq_group`
+-- Indexes for table `blu_faq_group`
 --
-ALTER TABLE `{$db_prefix}faq_group`
+ALTER TABLE `blu_faq_group`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}fav_uploader`
+-- Indexes for table `blu_fav_uploader`
 --
-ALTER TABLE `{$db_prefix}fav_uploader`
+ALTER TABLE `blu_fav_uploader`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `{$db_prefix}featured`
+-- Indexes for table `blu_featured`
 --
-ALTER TABLE `{$db_prefix}featured`
+ALTER TABLE `blu_featured`
   ADD PRIMARY KEY (`fid`);
 
 --
--- Indexes for table `{$db_prefix}files`
+-- Indexes for table `blu_files`
 --
-ALTER TABLE `{$db_prefix}files`
+ALTER TABLE `blu_files`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `info_hash` (`info_hash`),
   ADD KEY `filename` (`filename`),
@@ -4247,350 +4247,350 @@ ALTER TABLE `{$db_prefix}files`
   ADD KEY `dead_time` (`dead_time`);
 
 --
--- Indexes for table `{$db_prefix}files_reencode`
+-- Indexes for table `blu_files_reencode`
 --
-ALTER TABLE `{$db_prefix}files_reencode`
+ALTER TABLE `blu_files_reencode`
   ADD KEY `infohash` (`infohash`);
 
 --
--- Indexes for table `{$db_prefix}files_reencodeb`
+-- Indexes for table `blu_files_reencodeb`
 --
-ALTER TABLE `{$db_prefix}files_reencodeb`
+ALTER TABLE `blu_files_reencodeb`
   ADD KEY `infohash` (`infohash`);
 
 --
--- Indexes for table `{$db_prefix}files_thanks`
+-- Indexes for table `blu_files_thanks`
 --
-ALTER TABLE `{$db_prefix}files_thanks`
+ALTER TABLE `blu_files_thanks`
   ADD KEY `infohash` (`infohash`);
 
 --
--- Indexes for table `{$db_prefix}flashscores`
+-- Indexes for table `blu_flashscores`
 --
-ALTER TABLE `{$db_prefix}flashscores`
+ALTER TABLE `blu_flashscores`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `{$db_prefix}forums`
+-- Indexes for table `blu_forums`
 --
-ALTER TABLE `{$db_prefix}forums`
+ALTER TABLE `blu_forums`
   ADD PRIMARY KEY (`id`),
   ADD KEY `sort` (`sort`),
   ADD KEY `id_parent` (`id_parent`);
 
 --
--- Indexes for table `{$db_prefix}free_leech_req`
+-- Indexes for table `blu_free_leech_req`
 --
-ALTER TABLE `{$db_prefix}free_leech_req`
+ALTER TABLE `blu_free_leech_req`
   ADD UNIQUE KEY `info_hash` (`info_hash`);
 
 --
--- Indexes for table `{$db_prefix}friendlist`
+-- Indexes for table `blu_friendlist`
 --
-ALTER TABLE `{$db_prefix}friendlist`
+ALTER TABLE `blu_friendlist`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`),
   ADD KEY `friend_id` (`friend_id`);
 
 --
--- Indexes for table `{$db_prefix}gold`
+-- Indexes for table `blu_gold`
 --
-ALTER TABLE `{$db_prefix}gold`
+ALTER TABLE `blu_gold`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}hacks`
+-- Indexes for table `blu_hacks`
 --
-ALTER TABLE `{$db_prefix}hacks`
+ALTER TABLE `blu_hacks`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}helpdesk`
+-- Indexes for table `blu_helpdesk`
 --
-ALTER TABLE `{$db_prefix}helpdesk`
+ALTER TABLE `blu_helpdesk`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}history`
+-- Indexes for table `blu_history`
 --
-ALTER TABLE `{$db_prefix}history`
+ALTER TABLE `blu_history`
   ADD UNIQUE KEY `uid` (`uid`,`infohash`);
 
 --
--- Indexes for table `{$db_prefix}hnr`
+-- Indexes for table `blu_hnr`
 --
-ALTER TABLE `{$db_prefix}hnr`
+ALTER TABLE `blu_hnr`
   ADD UNIQUE KEY `id_level` (`id_level`);
 
 --
--- Indexes for table `{$db_prefix}ignore`
+-- Indexes for table `blu_ignore`
 --
-ALTER TABLE `{$db_prefix}ignore`
+ALTER TABLE `blu_ignore`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `{$db_prefix}imdb`
+-- Indexes for table `blu_imdb`
 --
-ALTER TABLE `{$db_prefix}imdb`
+ALTER TABLE `blu_imdb`
   ADD PRIMARY KEY (`id`),
   ADD KEY `imdb` (`imdb`),
   ADD KEY `genre1` (`genre1`);
 
 --
--- Indexes for table `{$db_prefix}invalid_logins`
+-- Indexes for table `blu_invalid_logins`
 --
-ALTER TABLE `{$db_prefix}invalid_logins`
+ALTER TABLE `blu_invalid_logins`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}invitations`
+-- Indexes for table `blu_invitations`
 --
-ALTER TABLE `{$db_prefix}invitations`
+ALTER TABLE `blu_invitations`
   ADD PRIMARY KEY (`id`),
   ADD KEY `inviter` (`id`);
 
 --
--- Indexes for table `{$db_prefix}ip2country`
+-- Indexes for table `blu_ip2country`
 --
-ALTER TABLE `{$db_prefix}ip2country`
+ALTER TABLE `blu_ip2country`
   ADD KEY `country_code2` (`country_code2`);
 
 --
--- Indexes for table `{$db_prefix}iplog`
+-- Indexes for table `blu_iplog`
 --
-ALTER TABLE `{$db_prefix}iplog`
+ALTER TABLE `blu_iplog`
   ADD PRIMARY KEY (`ipid`),
   ADD UNIQUE KEY `date` (`date`);
 
 --
--- Indexes for table `{$db_prefix}khez_configs`
+-- Indexes for table `blu_khez_configs`
 --
-ALTER TABLE `{$db_prefix}khez_configs`
+ALTER TABLE `blu_khez_configs`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `{$db_prefix}kis_sent`
+-- Indexes for table `blu_kis_sent`
 --
-ALTER TABLE `{$db_prefix}kis_sent`
+ALTER TABLE `blu_kis_sent`
   ADD UNIQUE KEY `token` (`token`);
 
 --
--- Indexes for table `{$db_prefix}kis_users`
+-- Indexes for table `blu_kis_users`
 --
-ALTER TABLE `{$db_prefix}kis_users`
+ALTER TABLE `blu_kis_users`
   ADD UNIQUE KEY `uid` (`uid`);
 
 --
--- Indexes for table `{$db_prefix}language`
+-- Indexes for table `blu_language`
 --
-ALTER TABLE `{$db_prefix}language`
+ALTER TABLE `blu_language`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}logs`
+-- Indexes for table `blu_logs`
 --
-ALTER TABLE `{$db_prefix}logs`
+ALTER TABLE `blu_logs`
   ADD PRIMARY KEY (`id`),
   ADD KEY `added` (`added`);
 
 --
--- Indexes for table `{$db_prefix}lottery_config`
+-- Indexes for table `blu_lottery_config`
 --
-ALTER TABLE `{$db_prefix}lottery_config`
+ALTER TABLE `blu_lottery_config`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}lottery_tickets`
+-- Indexes for table `blu_lottery_tickets`
 --
-ALTER TABLE `{$db_prefix}lottery_tickets`
+ALTER TABLE `blu_lottery_tickets`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}lottery_winners`
+-- Indexes for table `blu_lottery_winners`
 --
-ALTER TABLE `{$db_prefix}lottery_winners`
+ALTER TABLE `blu_lottery_winners`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}low_ratio_ban`
+-- Indexes for table `blu_low_ratio_ban`
 --
-ALTER TABLE `{$db_prefix}low_ratio_ban`
+ALTER TABLE `blu_low_ratio_ban`
   ADD UNIQUE KEY `wb_rank` (`wb_rank`);
 
 --
--- Indexes for table `{$db_prefix}messages`
+-- Indexes for table `blu_messages`
 --
-ALTER TABLE `{$db_prefix}messages`
+ALTER TABLE `blu_messages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `receiver` (`receiver`),
   ADD KEY `sender` (`sender`);
 
 --
--- Indexes for table `{$db_prefix}moderate_reasons`
+-- Indexes for table `blu_moderate_reasons`
 --
-ALTER TABLE `{$db_prefix}moderate_reasons`
+ALTER TABLE `blu_moderate_reasons`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}modules`
+-- Indexes for table `blu_modules`
 --
-ALTER TABLE `{$db_prefix}modules`
+ALTER TABLE `blu_modules`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `{$db_prefix}news`
+-- Indexes for table `blu_news`
 --
-ALTER TABLE `{$db_prefix}news`
+ALTER TABLE `blu_news`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}notes`
+-- Indexes for table `blu_notes`
 --
-ALTER TABLE `{$db_prefix}notes`
+ALTER TABLE `blu_notes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}offer_comments`
+-- Indexes for table `blu_offer_comments`
 --
-ALTER TABLE `{$db_prefix}offer_comments`
+ALTER TABLE `blu_offer_comments`
   ADD PRIMARY KEY (`id`),
   ADD KEY `offer_id` (`offer_id`);
 
 --
--- Indexes for table `{$db_prefix}online`
+-- Indexes for table `blu_online`
 --
-ALTER TABLE `{$db_prefix}online`
+ALTER TABLE `blu_online`
   ADD PRIMARY KEY (`session_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `{$db_prefix}partner`
+-- Indexes for table `blu_partner`
 --
-ALTER TABLE `{$db_prefix}partner`
+ALTER TABLE `blu_partner`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}paypal_settings`
+-- Indexes for table `blu_paypal_settings`
 --
-ALTER TABLE `{$db_prefix}paypal_settings`
+ALTER TABLE `blu_paypal_settings`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}peers`
+-- Indexes for table `blu_peers`
 --
-ALTER TABLE `{$db_prefix}peers`
+ALTER TABLE `blu_peers`
   ADD PRIMARY KEY (`infohash`,`peer_id`),
   ADD UNIQUE KEY `sequence` (`sequence`),
   ADD KEY `pid` (`pid`),
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `{$db_prefix}poller`
+-- Indexes for table `blu_poller`
 --
-ALTER TABLE `{$db_prefix}poller`
+ALTER TABLE `blu_poller`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `{$db_prefix}poller_option`
+-- Indexes for table `blu_poller_option`
 --
-ALTER TABLE `{$db_prefix}poller_option`
+ALTER TABLE `blu_poller_option`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `{$db_prefix}poller_vote`
+-- Indexes for table `blu_poller_vote`
 --
-ALTER TABLE `{$db_prefix}poller_vote`
+ALTER TABLE `blu_poller_vote`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `{$db_prefix}polls`
+-- Indexes for table `blu_polls`
 --
-ALTER TABLE `{$db_prefix}polls`
+ALTER TABLE `blu_polls`
   ADD PRIMARY KEY (`pid`);
 
 --
--- Indexes for table `{$db_prefix}poll_voters`
+-- Indexes for table `blu_poll_voters`
 --
-ALTER TABLE `{$db_prefix}poll_voters`
+ALTER TABLE `blu_poll_voters`
   ADD PRIMARY KEY (`vid`),
   ADD KEY `pid` (`pid`);
 
 --
--- Indexes for table `{$db_prefix}pool`
+-- Indexes for table `blu_pool`
 --
-ALTER TABLE `{$db_prefix}pool`
+ALTER TABLE `blu_pool`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}pool_settings`
+-- Indexes for table `blu_pool_settings`
 --
-ALTER TABLE `{$db_prefix}pool_settings`
+ALTER TABLE `blu_pool_settings`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}posts`
+-- Indexes for table `blu_posts`
 --
-ALTER TABLE `{$db_prefix}posts`
+ALTER TABLE `blu_posts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `topicid` (`topicid`),
   ADD KEY `userid` (`userid`);
-ALTER TABLE `{$db_prefix}posts` ADD FULLTEXT KEY `body` (`body`);
+ALTER TABLE `blu_posts` ADD FULLTEXT KEY `body` (`body`);
 
 --
--- Indexes for table `{$db_prefix}profile_status`
+-- Indexes for table `blu_profile_status`
 --
-ALTER TABLE `{$db_prefix}profile_status`
+ALTER TABLE `blu_profile_status`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}quiz`
+-- Indexes for table `blu_quiz`
 --
-ALTER TABLE `{$db_prefix}quiz`
+ALTER TABLE `blu_quiz`
   ADD PRIMARY KEY (`qid`);
 
 --
--- Indexes for table `{$db_prefix}rank`
+-- Indexes for table `blu_rank`
 --
-ALTER TABLE `{$db_prefix}rank`
+ALTER TABLE `blu_rank`
   ADD KEY `old_rank` (`old_rank`),
   ADD KEY `byt` (`byt`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}ratings`
+-- Indexes for table `blu_ratings`
 --
-ALTER TABLE `{$db_prefix}ratings`
+ALTER TABLE `blu_ratings`
   ADD KEY `infohash` (`infohash`);
 
 --
--- Indexes for table `{$db_prefix}readposts`
+-- Indexes for table `blu_readposts`
 --
-ALTER TABLE `{$db_prefix}readposts`
+ALTER TABLE `blu_readposts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `topicid` (`topicid`),
   ADD KEY `userid` (`userid`);
 
 --
--- Indexes for table `{$db_prefix}recommended`
+-- Indexes for table `blu_recommended`
 --
-ALTER TABLE `{$db_prefix}recommended`
+ALTER TABLE `blu_recommended`
   ADD PRIMARY KEY (`id`),
   ADD KEY `info_hash` (`info_hash`),
   ADD KEY `user_name` (`user_name`);
 
 --
--- Indexes for table `{$db_prefix}reports`
+-- Indexes for table `blu_reports`
 --
-ALTER TABLE `{$db_prefix}reports`
+ALTER TABLE `blu_reports`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}reputation`
+-- Indexes for table `blu_reputation`
 --
-ALTER TABLE `{$db_prefix}reputation`
+ALTER TABLE `blu_reputation`
   ADD PRIMARY KEY (`reputationid`),
   ADD KEY `dateadd` (`dateadd`),
   ADD KEY `multi` (`userid`),
@@ -4598,9 +4598,9 @@ ALTER TABLE `{$db_prefix}reputation`
   ADD KEY `whoadded` (`whoadded`);
 
 --
--- Indexes for table `{$db_prefix}requests`
+-- Indexes for table `blu_requests`
 --
-ALTER TABLE `{$db_prefix}requests`
+ALTER TABLE `blu_requests`
   ADD PRIMARY KEY (`id`),
   ADD KEY `requester` (`requester`),
   ADD KEY `category` (`category`),
@@ -4609,190 +4609,190 @@ ALTER TABLE `{$db_prefix}requests`
   ADD KEY `infohash` (`infohash`);
 
 --
--- Indexes for table `{$db_prefix}requests_bounty`
+-- Indexes for table `blu_requests_bounty`
 --
-ALTER TABLE `{$db_prefix}requests_bounty`
+ALTER TABLE `blu_requests_bounty`
   ADD PRIMARY KEY (`id`),
   ADD KEY `addedby` (`addedby`),
   ADD KEY `id` (`req_id`);
 
 --
--- Indexes for table `{$db_prefix}requests_comments`
+-- Indexes for table `blu_requests_comments`
 --
-ALTER TABLE `{$db_prefix}requests_comments`
+ALTER TABLE `blu_requests_comments`
   ADD PRIMARY KEY (`id`),
   ADD KEY `req_id` (`req_id`),
   ADD KEY `addedby` (`addedby`);
 
 --
--- Indexes for table `{$db_prefix}rules`
+-- Indexes for table `blu_rules`
 --
-ALTER TABLE `{$db_prefix}rules`
+ALTER TABLE `blu_rules`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}rules_group`
+-- Indexes for table `blu_rules_group`
 --
-ALTER TABLE `{$db_prefix}rules_group`
+ALTER TABLE `blu_rules_group`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}searchcloud`
+-- Indexes for table `blu_searchcloud`
 --
-ALTER TABLE `{$db_prefix}searchcloud`
+ALTER TABLE `blu_searchcloud`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}seedboxip`
+-- Indexes for table `blu_seedboxip`
 --
-ALTER TABLE `{$db_prefix}seedboxip`
+ALTER TABLE `blu_seedboxip`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}seo`
+-- Indexes for table `blu_seo`
 --
-ALTER TABLE `{$db_prefix}seo`
+ALTER TABLE `blu_seo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}settings`
+-- Indexes for table `blu_settings`
 --
-ALTER TABLE `{$db_prefix}settings`
+ALTER TABLE `blu_settings`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `{$db_prefix}shitlist`
+-- Indexes for table `blu_shitlist`
 --
-ALTER TABLE `{$db_prefix}shitlist`
+ALTER TABLE `blu_shitlist`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `{$db_prefix}shoutcastdj`
+-- Indexes for table `blu_shoutcastdj`
 --
-ALTER TABLE `{$db_prefix}shoutcastdj`
+ALTER TABLE `blu_shoutcastdj`
   ADD KEY `id` (`id`),
   ADD KEY `active` (`active`);
 
 --
--- Indexes for table `{$db_prefix}signup_ip_block`
+-- Indexes for table `blu_signup_ip_block`
 --
-ALTER TABLE `{$db_prefix}signup_ip_block`
+ALTER TABLE `blu_signup_ip_block`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}sitemap`
+-- Indexes for table `blu_sitemap`
 --
-ALTER TABLE `{$db_prefix}sitemap`
+ALTER TABLE `blu_sitemap`
   ADD UNIQUE KEY `id` (`id`),
   ADD KEY `url` (`url`);
 
 --
--- Indexes for table `{$db_prefix}smilies`
+-- Indexes for table `blu_smilies`
 --
-ALTER TABLE `{$db_prefix}smilies`
+ALTER TABLE `blu_smilies`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `{$db_prefix}sticky`
+-- Indexes for table `blu_sticky`
 --
-ALTER TABLE `{$db_prefix}sticky`
+ALTER TABLE `blu_sticky`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}stream`
+-- Indexes for table `blu_stream`
 --
-ALTER TABLE `{$db_prefix}stream`
+ALTER TABLE `blu_stream`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}stream_porn`
+-- Indexes for table `blu_stream_porn`
 --
-ALTER TABLE `{$db_prefix}stream_porn`
+ALTER TABLE `blu_stream_porn`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}stream_servers`
+-- Indexes for table `blu_stream_servers`
 --
-ALTER TABLE `{$db_prefix}stream_servers`
+ALTER TABLE `blu_stream_servers`
   ADD PRIMARY KEY (`sid`);
 
 --
--- Indexes for table `{$db_prefix}stream_users`
+-- Indexes for table `blu_stream_users`
 --
-ALTER TABLE `{$db_prefix}stream_users`
+ALTER TABLE `blu_stream_users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}style`
+-- Indexes for table `blu_style`
 --
-ALTER TABLE `{$db_prefix}style`
+ALTER TABLE `blu_style`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}style_bridge`
+-- Indexes for table `blu_style_bridge`
 --
-ALTER TABLE `{$db_prefix}style_bridge`
+ALTER TABLE `blu_style_bridge`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `{$db_prefix}style` (`{$db_prefix}style`);
+  ADD KEY `blu_style` (`blu_style`);
 
 --
--- Indexes for table `{$db_prefix}subtitles`
+-- Indexes for table `blu_subtitles`
 --
-ALTER TABLE `{$db_prefix}subtitles`
+ALTER TABLE `blu_subtitles`
   ADD PRIMARY KEY (`id`),
   ADD KEY `hash` (`hash`);
 
 --
--- Indexes for table `{$db_prefix}tasks`
+-- Indexes for table `blu_tasks`
 --
-ALTER TABLE `{$db_prefix}tasks`
+ALTER TABLE `blu_tasks`
   ADD PRIMARY KEY (`task`);
 
 --
--- Indexes for table `{$db_prefix}teams`
+-- Indexes for table `blu_teams`
 --
-ALTER TABLE `{$db_prefix}teams`
+ALTER TABLE `blu_teams`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `{$db_prefix}tested`
+-- Indexes for table `blu_tested`
 --
-ALTER TABLE `{$db_prefix}tested`
+ALTER TABLE `blu_tested`
   ADD PRIMARY KEY (`tested`);
 
 --
--- Indexes for table `{$db_prefix}timestamps`
+-- Indexes for table `blu_timestamps`
 --
-ALTER TABLE `{$db_prefix}timestamps`
+ALTER TABLE `blu_timestamps`
   ADD PRIMARY KEY (`sequence`),
   ADD KEY `sorting` (`info_hash`);
 
 --
--- Indexes for table `{$db_prefix}timezone`
+-- Indexes for table `blu_timezone`
 --
-ALTER TABLE `{$db_prefix}timezone`
+ALTER TABLE `blu_timezone`
   ADD PRIMARY KEY (`difference`);
 
 --
--- Indexes for table `{$db_prefix}topics`
+-- Indexes for table `blu_topics`
 --
-ALTER TABLE `{$db_prefix}topics`
+ALTER TABLE `blu_topics`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`),
   ADD KEY `subject` (`subject`),
   ADD KEY `lastpost` (`lastpost`);
 
 --
--- Indexes for table `{$db_prefix}userbars`
+-- Indexes for table `blu_userbars`
 --
-ALTER TABLE `{$db_prefix}userbars`
+ALTER TABLE `blu_userbars`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}users`
+-- Indexes for table `blu_users`
 --
-ALTER TABLE `{$db_prefix}users`
+ALTER TABLE `blu_users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`),
   ADD KEY `id_level` (`id_level`),
@@ -4803,49 +4803,49 @@ ALTER TABLE `{$db_prefix}users`
   ADD KEY `avatar_upload` (`avatar_upload`);
 
 --
--- Indexes for table `{$db_prefix}users_level`
+-- Indexes for table `blu_users_level`
 --
-ALTER TABLE `{$db_prefix}users_level`
+ALTER TABLE `blu_users_level`
   ADD UNIQUE KEY `base` (`id`),
   ADD KEY `id_level` (`id_level`),
   ADD KEY `smf_group_mirror` (`smf_group_mirror`),
   ADD KEY `ipb_group_mirror` (`ipb_group_mirror`);
 
 --
--- Indexes for table `{$db_prefix}videos`
+-- Indexes for table `blu_videos`
 --
-ALTER TABLE `{$db_prefix}videos`
+ALTER TABLE `blu_videos`
   ADD PRIMARY KEY (`number`);
 
 --
--- Indexes for table `{$db_prefix}warn_logs`
+-- Indexes for table `blu_warn_logs`
 --
-ALTER TABLE `{$db_prefix}warn_logs`
+ALTER TABLE `blu_warn_logs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}warn_reasons`
+-- Indexes for table `blu_warn_reasons`
 --
-ALTER TABLE `{$db_prefix}warn_reasons`
+ALTER TABLE `blu_warn_reasons`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `{$db_prefix}watched_users`
+-- Indexes for table `blu_watched_users`
 --
-ALTER TABLE `{$db_prefix}watched_users`
+ALTER TABLE `blu_watched_users`
   ADD PRIMARY KEY (`id`),
   ADD KEY `cip` (`cip`);
 
 --
--- Indexes for table `{$db_prefix}welcome_msg`
+-- Indexes for table `blu_welcome_msg`
 --
-ALTER TABLE `{$db_prefix}welcome_msg`
+ALTER TABLE `blu_welcome_msg`
   ADD PRIMARY KEY (`key`);
 
 --
--- Indexes for table `{$db_prefix}wishlist`
+-- Indexes for table `blu_wishlist`
 --
-ALTER TABLE `{$db_prefix}wishlist`
+ALTER TABLE `blu_wishlist`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
@@ -4911,519 +4911,519 @@ ALTER TABLE `ajax_chat_usercustom`
 ALTER TABLE `casino_bets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}addedexpected`
+-- AUTO_INCREMENT for table `blu_addedexpected`
 --
-ALTER TABLE `{$db_prefix}addedexpected`
+ALTER TABLE `blu_addedexpected`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}addedexpectedmin`
+-- AUTO_INCREMENT for table `blu_addedexpectedmin`
 --
-ALTER TABLE `{$db_prefix}addedexpectedmin`
+ALTER TABLE `blu_addedexpectedmin`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}adminpanel`
+-- AUTO_INCREMENT for table `blu_adminpanel`
 --
-ALTER TABLE `{$db_prefix}adminpanel`
+ALTER TABLE `blu_adminpanel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 --
--- AUTO_INCREMENT for table `{$db_prefix}allowedclient`
+-- AUTO_INCREMENT for table `blu_allowedclient`
 --
-ALTER TABLE `{$db_prefix}allowedclient`
+ALTER TABLE `blu_allowedclient`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}announcement`
+-- AUTO_INCREMENT for table `blu_announcement`
 --
-ALTER TABLE `{$db_prefix}announcement`
+ALTER TABLE `blu_announcement`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}announcements`
+-- AUTO_INCREMENT for table `blu_announcements`
 --
-ALTER TABLE `{$db_prefix}announcements`
+ALTER TABLE `blu_announcements`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bannedclient`
+-- AUTO_INCREMENT for table `blu_bannedclient`
 --
-ALTER TABLE `{$db_prefix}bannedclient`
+ALTER TABLE `blu_bannedclient`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bannedip`
+-- AUTO_INCREMENT for table `blu_bannedip`
 --
-ALTER TABLE `{$db_prefix}bannedip`
+ALTER TABLE `blu_bannedip`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}betgames`
+-- AUTO_INCREMENT for table `blu_betgames`
 --
-ALTER TABLE `{$db_prefix}betgames`
+ALTER TABLE `blu_betgames`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}betlog`
+-- AUTO_INCREMENT for table `blu_betlog`
 --
-ALTER TABLE `{$db_prefix}betlog`
+ALTER TABLE `blu_betlog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}betoptions`
+-- AUTO_INCREMENT for table `blu_betoptions`
 --
-ALTER TABLE `{$db_prefix}betoptions`
+ALTER TABLE `blu_betoptions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bets`
+-- AUTO_INCREMENT for table `blu_bets`
 --
-ALTER TABLE `{$db_prefix}bets`
+ALTER TABLE `blu_bets`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bitcoin_invoices`
+-- AUTO_INCREMENT for table `blu_bitcoin_invoices`
 --
-ALTER TABLE `{$db_prefix}bitcoin_invoices`
+ALTER TABLE `blu_bitcoin_invoices`
   MODIFY `invoice_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}blackjack`
+-- AUTO_INCREMENT for table `blu_blackjack`
 --
-ALTER TABLE `{$db_prefix}blackjack`
+ALTER TABLE `blu_blackjack`
   MODIFY `gameid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}blacklist`
+-- AUTO_INCREMENT for table `blu_blacklist`
 --
-ALTER TABLE `{$db_prefix}blacklist`
+ALTER TABLE `blu_blacklist`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}blocks`
+-- AUTO_INCREMENT for table `blu_blocks`
 --
-ALTER TABLE `{$db_prefix}blocks`
+ALTER TABLE `blu_blocks`
   MODIFY `blockid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bonus`
+-- AUTO_INCREMENT for table `blu_bonus`
 --
-ALTER TABLE `{$db_prefix}bonus`
+ALTER TABLE `blu_bonus`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bt_clients`
+-- AUTO_INCREMENT for table `blu_bt_clients`
 --
-ALTER TABLE `{$db_prefix}bt_clients`
+ALTER TABLE `blu_bt_clients`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}bugs`
+-- AUTO_INCREMENT for table `blu_bugs`
 --
-ALTER TABLE `{$db_prefix}bugs`
+ALTER TABLE `blu_bugs`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}categories`
+-- AUTO_INCREMENT for table `blu_categories`
 --
-ALTER TABLE `{$db_prefix}categories`
+ALTER TABLE `blu_categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
--- AUTO_INCREMENT for table `{$db_prefix}chat`
+-- AUTO_INCREMENT for table `blu_chat`
 --
-ALTER TABLE `{$db_prefix}chat`
+ALTER TABLE `blu_chat`
   MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}chatfun`
+-- AUTO_INCREMENT for table `blu_chatfun`
 --
-ALTER TABLE `{$db_prefix}chatfun`
+ALTER TABLE `blu_chatfun`
   MODIFY `msgid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}coins`
+-- AUTO_INCREMENT for table `blu_coins`
 --
-ALTER TABLE `{$db_prefix}coins`
+ALTER TABLE `blu_coins`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `{$db_prefix}comments`
+-- AUTO_INCREMENT for table `blu_comments`
 --
-ALTER TABLE `{$db_prefix}comments`
+ALTER TABLE `blu_comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `{$db_prefix}contact_system`
+-- AUTO_INCREMENT for table `blu_contact_system`
 --
-ALTER TABLE `{$db_prefix}contact_system`
+ALTER TABLE `blu_contact_system`
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `{$db_prefix}countries`
+-- AUTO_INCREMENT for table `blu_countries`
 --
-ALTER TABLE `{$db_prefix}countries`
+ALTER TABLE `blu_countries`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
 --
--- AUTO_INCREMENT for table `{$db_prefix}covers`
+-- AUTO_INCREMENT for table `blu_covers`
 --
-ALTER TABLE `{$db_prefix}covers`
+ALTER TABLE `blu_covers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}donors`
+-- AUTO_INCREMENT for table `blu_donors`
 --
-ALTER TABLE `{$db_prefix}donors`
+ALTER TABLE `blu_donors`
   MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}downloads`
+-- AUTO_INCREMENT for table `blu_downloads`
 --
-ALTER TABLE `{$db_prefix}downloads`
+ALTER TABLE `blu_downloads`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}down_load`
+-- AUTO_INCREMENT for table `blu_down_load`
 --
-ALTER TABLE `{$db_prefix}down_load`
+ALTER TABLE `blu_down_load`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}dox`
+-- AUTO_INCREMENT for table `blu_dox`
 --
-ALTER TABLE `{$db_prefix}dox`
+ALTER TABLE `blu_dox`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}expected`
+-- AUTO_INCREMENT for table `blu_expected`
 --
-ALTER TABLE `{$db_prefix}expected`
+ALTER TABLE `blu_expected`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}faq`
+-- AUTO_INCREMENT for table `blu_faq`
 --
-ALTER TABLE `{$db_prefix}faq`
+ALTER TABLE `blu_faq`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}faq_group`
+-- AUTO_INCREMENT for table `blu_faq_group`
 --
-ALTER TABLE `{$db_prefix}faq_group`
+ALTER TABLE `blu_faq_group`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}fav_uploader`
+-- AUTO_INCREMENT for table `blu_fav_uploader`
 --
-ALTER TABLE `{$db_prefix}fav_uploader`
+ALTER TABLE `blu_fav_uploader`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}featured`
+-- AUTO_INCREMENT for table `blu_featured`
 --
-ALTER TABLE `{$db_prefix}featured`
+ALTER TABLE `blu_featured`
   MODIFY `fid` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT for table `{$db_prefix}files`
+-- AUTO_INCREMENT for table `blu_files`
 --
-ALTER TABLE `{$db_prefix}files`
+ALTER TABLE `blu_files`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `{$db_prefix}flashscores`
+-- AUTO_INCREMENT for table `blu_flashscores`
 --
-ALTER TABLE `{$db_prefix}flashscores`
+ALTER TABLE `blu_flashscores`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}forums`
+-- AUTO_INCREMENT for table `blu_forums`
 --
-ALTER TABLE `{$db_prefix}forums`
+ALTER TABLE `blu_forums`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `{$db_prefix}friendlist`
+-- AUTO_INCREMENT for table `blu_friendlist`
 --
-ALTER TABLE `{$db_prefix}friendlist`
+ALTER TABLE `blu_friendlist`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}gold`
+-- AUTO_INCREMENT for table `blu_gold`
 --
-ALTER TABLE `{$db_prefix}gold`
+ALTER TABLE `blu_gold`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}hacks`
+-- AUTO_INCREMENT for table `blu_hacks`
 --
-ALTER TABLE `{$db_prefix}hacks`
+ALTER TABLE `blu_hacks`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
 --
--- AUTO_INCREMENT for table `{$db_prefix}helpdesk`
+-- AUTO_INCREMENT for table `blu_helpdesk`
 --
-ALTER TABLE `{$db_prefix}helpdesk`
+ALTER TABLE `blu_helpdesk`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}ignore`
+-- AUTO_INCREMENT for table `blu_ignore`
 --
-ALTER TABLE `{$db_prefix}ignore`
+ALTER TABLE `blu_ignore`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}imdb`
+-- AUTO_INCREMENT for table `blu_imdb`
 --
-ALTER TABLE `{$db_prefix}imdb`
+ALTER TABLE `blu_imdb`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}invalid_logins`
+-- AUTO_INCREMENT for table `blu_invalid_logins`
 --
-ALTER TABLE `{$db_prefix}invalid_logins`
+ALTER TABLE `blu_invalid_logins`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}invitations`
+-- AUTO_INCREMENT for table `blu_invitations`
 --
-ALTER TABLE `{$db_prefix}invitations`
+ALTER TABLE `blu_invitations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=672;
 --
--- AUTO_INCREMENT for table `{$db_prefix}iplog`
+-- AUTO_INCREMENT for table `blu_iplog`
 --
-ALTER TABLE `{$db_prefix}iplog`
+ALTER TABLE `blu_iplog`
   MODIFY `ipid` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}language`
+-- AUTO_INCREMENT for table `blu_language`
 --
-ALTER TABLE `{$db_prefix}language`
+ALTER TABLE `blu_language`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
--- AUTO_INCREMENT for table `{$db_prefix}logs`
+-- AUTO_INCREMENT for table `blu_logs`
 --
-ALTER TABLE `{$db_prefix}logs`
+ALTER TABLE `blu_logs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 --
--- AUTO_INCREMENT for table `{$db_prefix}lottery_tickets`
+-- AUTO_INCREMENT for table `blu_lottery_tickets`
 --
-ALTER TABLE `{$db_prefix}lottery_tickets`
+ALTER TABLE `blu_lottery_tickets`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}lottery_winners`
+-- AUTO_INCREMENT for table `blu_lottery_winners`
 --
-ALTER TABLE `{$db_prefix}lottery_winners`
+ALTER TABLE `blu_lottery_winners`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}messages`
+-- AUTO_INCREMENT for table `blu_messages`
 --
-ALTER TABLE `{$db_prefix}messages`
+ALTER TABLE `blu_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
--- AUTO_INCREMENT for table `{$db_prefix}moderate_reasons`
+-- AUTO_INCREMENT for table `blu_moderate_reasons`
 --
-ALTER TABLE `{$db_prefix}moderate_reasons`
+ALTER TABLE `blu_moderate_reasons`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}modules`
+-- AUTO_INCREMENT for table `blu_modules`
 --
-ALTER TABLE `{$db_prefix}modules`
+ALTER TABLE `blu_modules`
   MODIFY `id` mediumint(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
--- AUTO_INCREMENT for table `{$db_prefix}news`
+-- AUTO_INCREMENT for table `blu_news`
 --
-ALTER TABLE `{$db_prefix}news`
+ALTER TABLE `blu_news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}notes`
+-- AUTO_INCREMENT for table `blu_notes`
 --
-ALTER TABLE `{$db_prefix}notes`
+ALTER TABLE `blu_notes`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}offer_comments`
+-- AUTO_INCREMENT for table `blu_offer_comments`
 --
-ALTER TABLE `{$db_prefix}offer_comments`
+ALTER TABLE `blu_offer_comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}partner`
+-- AUTO_INCREMENT for table `blu_partner`
 --
-ALTER TABLE `{$db_prefix}partner`
+ALTER TABLE `blu_partner`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}peers`
+-- AUTO_INCREMENT for table `blu_peers`
 --
-ALTER TABLE `{$db_prefix}peers`
+ALTER TABLE `blu_peers`
   MODIFY `sequence` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=280;
 --
--- AUTO_INCREMENT for table `{$db_prefix}poller`
+-- AUTO_INCREMENT for table `blu_poller`
 --
-ALTER TABLE `{$db_prefix}poller`
+ALTER TABLE `blu_poller`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `{$db_prefix}poller_option`
+-- AUTO_INCREMENT for table `blu_poller_option`
 --
-ALTER TABLE `{$db_prefix}poller_option`
+ALTER TABLE `blu_poller_option`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `{$db_prefix}poller_vote`
+-- AUTO_INCREMENT for table `blu_poller_vote`
 --
-ALTER TABLE `{$db_prefix}poller_vote`
+ALTER TABLE `blu_poller_vote`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `{$db_prefix}polls`
+-- AUTO_INCREMENT for table `blu_polls`
 --
-ALTER TABLE `{$db_prefix}polls`
+ALTER TABLE `blu_polls`
   MODIFY `pid` mediumint(8) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}poll_voters`
+-- AUTO_INCREMENT for table `blu_poll_voters`
 --
-ALTER TABLE `{$db_prefix}poll_voters`
+ALTER TABLE `blu_poll_voters`
   MODIFY `vid` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}pool`
+-- AUTO_INCREMENT for table `blu_pool`
 --
-ALTER TABLE `{$db_prefix}pool`
+ALTER TABLE `blu_pool`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}pool_settings`
+-- AUTO_INCREMENT for table `blu_pool_settings`
 --
-ALTER TABLE `{$db_prefix}pool_settings`
+ALTER TABLE `blu_pool_settings`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}posts`
+-- AUTO_INCREMENT for table `blu_posts`
 --
-ALTER TABLE `{$db_prefix}posts`
+ALTER TABLE `blu_posts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
--- AUTO_INCREMENT for table `{$db_prefix}profile_status`
+-- AUTO_INCREMENT for table `blu_profile_status`
 --
-ALTER TABLE `{$db_prefix}profile_status`
+ALTER TABLE `blu_profile_status`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}quiz`
+-- AUTO_INCREMENT for table `blu_quiz`
 --
-ALTER TABLE `{$db_prefix}quiz`
+ALTER TABLE `blu_quiz`
   MODIFY `qid` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}readposts`
+-- AUTO_INCREMENT for table `blu_readposts`
 --
-ALTER TABLE `{$db_prefix}readposts`
+ALTER TABLE `blu_readposts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `{$db_prefix}recommended`
+-- AUTO_INCREMENT for table `blu_recommended`
 --
-ALTER TABLE `{$db_prefix}recommended`
+ALTER TABLE `blu_recommended`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}reports`
+-- AUTO_INCREMENT for table `blu_reports`
 --
-ALTER TABLE `{$db_prefix}reports`
+ALTER TABLE `blu_reports`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}reputation`
+-- AUTO_INCREMENT for table `blu_reputation`
 --
-ALTER TABLE `{$db_prefix}reputation`
+ALTER TABLE `blu_reputation`
   MODIFY `reputationid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}requests`
+-- AUTO_INCREMENT for table `blu_requests`
 --
-ALTER TABLE `{$db_prefix}requests`
+ALTER TABLE `blu_requests`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `{$db_prefix}requests_bounty`
+-- AUTO_INCREMENT for table `blu_requests_bounty`
 --
-ALTER TABLE `{$db_prefix}requests_bounty`
+ALTER TABLE `blu_requests_bounty`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `{$db_prefix}requests_comments`
+-- AUTO_INCREMENT for table `blu_requests_comments`
 --
-ALTER TABLE `{$db_prefix}requests_comments`
+ALTER TABLE `blu_requests_comments`
   MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `{$db_prefix}rules`
+-- AUTO_INCREMENT for table `blu_rules`
 --
-ALTER TABLE `{$db_prefix}rules`
+ALTER TABLE `blu_rules`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}rules_group`
+-- AUTO_INCREMENT for table `blu_rules_group`
 --
-ALTER TABLE `{$db_prefix}rules_group`
+ALTER TABLE `blu_rules_group`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}searchcloud`
+-- AUTO_INCREMENT for table `blu_searchcloud`
 --
-ALTER TABLE `{$db_prefix}searchcloud`
+ALTER TABLE `blu_searchcloud`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}seedboxip`
+-- AUTO_INCREMENT for table `blu_seedboxip`
 --
-ALTER TABLE `{$db_prefix}seedboxip`
+ALTER TABLE `blu_seedboxip`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}shitlist`
+-- AUTO_INCREMENT for table `blu_shitlist`
 --
-ALTER TABLE `{$db_prefix}shitlist`
+ALTER TABLE `blu_shitlist`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}shoutcastdj`
+-- AUTO_INCREMENT for table `blu_shoutcastdj`
 --
-ALTER TABLE `{$db_prefix}shoutcastdj`
+ALTER TABLE `blu_shoutcastdj`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}signup_ip_block`
+-- AUTO_INCREMENT for table `blu_signup_ip_block`
 --
-ALTER TABLE `{$db_prefix}signup_ip_block`
+ALTER TABLE `blu_signup_ip_block`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `{$db_prefix}sitemap`
+-- AUTO_INCREMENT for table `blu_sitemap`
 --
-ALTER TABLE `{$db_prefix}sitemap`
+ALTER TABLE `blu_sitemap`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}stream`
+-- AUTO_INCREMENT for table `blu_stream`
 --
-ALTER TABLE `{$db_prefix}stream`
+ALTER TABLE `blu_stream`
   MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}stream_porn`
+-- AUTO_INCREMENT for table `blu_stream_porn`
 --
-ALTER TABLE `{$db_prefix}stream_porn`
+ALTER TABLE `blu_stream_porn`
   MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}stream_servers`
+-- AUTO_INCREMENT for table `blu_stream_servers`
 --
-ALTER TABLE `{$db_prefix}stream_servers`
+ALTER TABLE `blu_stream_servers`
   MODIFY `sid` int(5) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}stream_users`
+-- AUTO_INCREMENT for table `blu_stream_users`
 --
-ALTER TABLE `{$db_prefix}stream_users`
+ALTER TABLE `blu_stream_users`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}style`
+-- AUTO_INCREMENT for table `blu_style`
 --
-ALTER TABLE `{$db_prefix}style`
+ALTER TABLE `blu_style`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
--- AUTO_INCREMENT for table `{$db_prefix}style_bridge`
+-- AUTO_INCREMENT for table `blu_style_bridge`
 --
-ALTER TABLE `{$db_prefix}style_bridge`
+ALTER TABLE `blu_style_bridge`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}subtitles`
+-- AUTO_INCREMENT for table `blu_subtitles`
 --
-ALTER TABLE `{$db_prefix}subtitles`
+ALTER TABLE `blu_subtitles`
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `{$db_prefix}teams`
+-- AUTO_INCREMENT for table `blu_teams`
 --
-ALTER TABLE `{$db_prefix}teams`
+ALTER TABLE `blu_teams`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}timestamps`
+-- AUTO_INCREMENT for table `blu_timestamps`
 --
-ALTER TABLE `{$db_prefix}timestamps`
+ALTER TABLE `blu_timestamps`
   MODIFY `sequence` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8756;
 --
--- AUTO_INCREMENT for table `{$db_prefix}topics`
+-- AUTO_INCREMENT for table `blu_topics`
 --
-ALTER TABLE `{$db_prefix}topics`
+ALTER TABLE `blu_topics`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `{$db_prefix}userbars`
+-- AUTO_INCREMENT for table `blu_userbars`
 --
-ALTER TABLE `{$db_prefix}userbars`
+ALTER TABLE `blu_userbars`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}users`
+-- AUTO_INCREMENT for table `blu_users`
 --
-ALTER TABLE `{$db_prefix}users`
+ALTER TABLE `blu_users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58876;
 --
--- AUTO_INCREMENT for table `{$db_prefix}users_level`
+-- AUTO_INCREMENT for table `blu_users_level`
 --
-ALTER TABLE `{$db_prefix}users_level`
+ALTER TABLE `blu_users_level`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `{$db_prefix}videos`
+-- AUTO_INCREMENT for table `blu_videos`
 --
-ALTER TABLE `{$db_prefix}videos`
+ALTER TABLE `blu_videos`
   MODIFY `number` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `{$db_prefix}warn_logs`
+-- AUTO_INCREMENT for table `blu_warn_logs`
 --
-ALTER TABLE `{$db_prefix}warn_logs`
+ALTER TABLE `blu_warn_logs`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `{$db_prefix}warn_reasons`
+-- AUTO_INCREMENT for table `blu_warn_reasons`
 --
-ALTER TABLE `{$db_prefix}warn_reasons`
+ALTER TABLE `blu_warn_reasons`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `{$db_prefix}watched_users`
+-- AUTO_INCREMENT for table `blu_watched_users`
 --
-ALTER TABLE `{$db_prefix}watched_users`
+ALTER TABLE `blu_watched_users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=509;
 --
--- AUTO_INCREMENT for table `{$db_prefix}wishlist`
+-- AUTO_INCREMENT for table `blu_wishlist`
 --
-ALTER TABLE `{$db_prefix}wishlist`
+ALTER TABLE `blu_wishlist`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `xbt_announce_log`
