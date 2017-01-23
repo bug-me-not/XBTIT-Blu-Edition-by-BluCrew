@@ -1229,10 +1229,9 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                                  if($results["requested"] != "false")
                                  $selected1 = "selected='selected'";
                                  $torrent["req"] = "<div class='input-group'>
-                                 <select class='form-control' name='req' id='validate-optional'>
+                                 <select class='form-control' name='req'>
                                  <option value='false' selected='selected'>".$language["NO"]."</option>
                                  <option value='true' ".$selected1.">".$language["YES"]."</option></select>
-                                 <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
                                  </div>";
                                  if($results["nuked"] != "false")
                                  {
@@ -1242,10 +1241,9 @@ if((isset($_POST["comment"])) && (isset($_POST["name"])))
                                  else
                                  $value = "";
                                  $torrent["nuk"] = "<div class='input-group'>
-                                 <select class='form-control' name='nuk' id='validate-optional'>
+                                 <select class='form-control' name='nuk'>
                                  <option value='false' selected='selected'>".$language["NO"]."</option>
                                  <option value='true' ".$selected2.">".$language["YES"]."</option></select>
-                                 <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
                                  </div>
                                  <input type='text' name='nuk_rea' value='".$value."' size='43' maxlength='100'>";
                                  //Torrent Nuke/Req Hack Stop

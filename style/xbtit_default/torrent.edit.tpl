@@ -75,16 +75,6 @@
         <td class="lista"><p class="text-danger"><tag:torrent.info_hash /></p></td>
       </tr>
 
-
-      <if:imageup_enabled>
-      <if:imageon>
-      <tr>
-      <td class="header" ><tag:language.IMAGE /> (<tag:language.FACOLTATIVE />):<input type="hidden" name="userfileold" value="<tag:torrent.image />" /></td>
-      <td class="lista" align="left"><input type="file" class="btn btn-primary btn-anchor" name="userfile" size="15" /></td>
-      </tr>
-      </if:imageon>
-      </if:imageup_enabled>
-
       <tr>
         <td align="right" class="header"><tag:language.DESCRIPTION /></td>
         <td class="lista"><tag:torrent.description /></td>
@@ -117,7 +107,7 @@
         <td class="lista"><tag:torrent.cat_combo /></td>
       </tr>
 
-<tr>
+    <!--<tr>
       <td class="header" ><tag:language.RG /></td>
       <td class="lista" align="left">
       <div class="input-group">
@@ -131,13 +121,13 @@
         <span class="input-group-addon info"><span class="fa fa-asterisk"></span></span>
         </div>
       </td>
-    </tr>
+    </tr>-->
 
     <if:torlang>
     <tr>
       <td class="header" ><tag:language.LANGUAGE /></td>
       <td class="lista" align="left"><div class="input-group">
-        <select class="form-control" name="language" id="validate-select" placeholder="Validate Select" required>
+        <select class="form-control" name="language">
 										<option value="0" <tag:torrent.nolang />---</option>
 										<option value="1" <tag:torrent.english /><tag:language.LANG_ENG /></option>
 										<option value="2" <tag:torrent.french /><tag:language.LANG_FRE /></option>
@@ -167,7 +157,6 @@
 										<option value="26" <tag:language.Arabic /><tag:language.LANG_ARA /></option>
                     <option value="27" <tag:language.Vietnamese /><tag:language.LANG_VIE /></option>
            </select>
-          <span class="input-group-addon danger"><span class="fa fa-times"></span></span>
         </div>
       </td>
     </tr>
@@ -228,8 +217,7 @@
         <td align='right' class='header'><tag:language.UPM_UPL_MULT /></td>
         <td align='left' class='lista' colspan='2'>
         <div class='input-group'>
-        <select class='form-control' name='multiplier' id='validate-optional'><tag:multie3 /></select>
-        <span class='input-group-addon info'><span class='fa fa-asterisk'></span></span>
+        <select class='form-control' name='multiplier'><tag:multie3 /></select>
         </div>
         </td>
       </tr>
