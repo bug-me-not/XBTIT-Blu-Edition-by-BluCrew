@@ -1,7 +1,5 @@
-# XBTIT Blu-Edition by BluCrew v1.1.05 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+# XBTIT Blu-Edition by BluCrew v2.0 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
 > A modern front and backend bittorrent tracker!
-
-Currently In A Beta Stage!
 
 Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
 Username: Demo <br>
@@ -12,10 +10,6 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 
 <br>
 <br>
-## NOTE: INSTALLER IS NOT YET COMPLETE!!!!!
-You can use the demo db dump if you want to play around until installer is complete!
-https://www.dropbox.com/s/lt6fitfuysxcaav/Demo_DB.sql?dl=0
-
 
 <b>:REQUIREMENTS:</b>
 - Web server with NGINX (Apache can be used but not recommended)<br>
@@ -26,7 +20,20 @@ https://www.dropbox.com/s/lt6fitfuysxcaav/Demo_DB.sql?dl=0
   -   php-curl    -> This is specifically needed for the Various API's we have running.
 - MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
-<b>:DOCUMENTATION:</b><br>
+<b>:Manual Install:</b><br>
+<i>PHP TRACKER AND INTERNAL FORUM <br>
+- It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
+- Place the xbtitFM Blu-Edition code in your webroot<br>
+- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. You can use any database name you like but set the table prefix to blu_ .Grant your database user full permissions.<br>
+- Inport the SQL file located in your web directory of the script. /sql/database.sql
+- Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
+- Goto your domain or IP in your web browser and login with Username: Admin Pass: Admin123.<br>
+- Be sure to change your owner default accounts username and password.<br>
+- Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
+- Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
+- Enjoy!<br>
+
+<b>:Point And Click Installer (NOT COMPLETE!):</b><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
@@ -43,7 +50,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 <b>:GENERAL NOTES:</b><br>
 - Look to your Users Group Settings, do they match what you want?<br>
 - You need to create the boards for your internal forum.<br>
-- It is a lot of new stuff to take in, any bugs please open a issue on git.<br>
+- It is a lot of new stuff to take in, any bugs please open a issue.<br>
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
@@ -51,8 +58,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
 - YOU ARE NOT TO REMOVE OUR COPYRIGHT NOTICE FROM THE FOOTER!<br>
 Copyright © 2016 XBTIT Blu Edition v1.1.04 by BluCrew (or current version)<br>
-Copyright © 2016 Styled By BluCrew
-<br>
+Copyright © 2016 Styled By BluCrew<br>
 
 ### UPDATES
 
@@ -61,7 +67,8 @@ Copyright © 2016 Styled By BluCrew
   v1.1      - API class to handle Posters, Banners, CD Art and Background images from TVDB and FanArt
   v1.1.03   - Fixes cache issue relating to OMDB
   v1.1.04   - Minor fixes to bugs relating to list and details pages
-  v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added  
+  v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added 
+  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID.
 ```
 
 
