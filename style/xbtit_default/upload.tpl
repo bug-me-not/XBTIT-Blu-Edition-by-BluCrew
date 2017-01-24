@@ -558,6 +558,14 @@ $w(document).ready(function() {
     <td class="header"><tag:language.TNR_REQUESTED /></td>
     <td class="lista">&nbsp;&nbsp;<tag:language.YES /><input type="radio" name="req" value="true" />&nbsp;&nbsp;<tag:language.NO /><input type="radio" name="req" value="false" checked="checked" /></td>
 </tr>
+   <tr>
+      <td class="header"><tag:language.TNR_NUKED /></td>
+      <td class="lista">
+         &nbsp;&nbsp;<tag:language.YES /><input type="radio" value="false">
+         &nbsp;&nbsp;<tag:language.NO /><input type="radio" value="true" checked="checked" \>
+         <input type="hidden" name="nuk_rea" size="43" maxlength="100"></td>
+      </tr>
+</if:nar_enabled>
 <!-- REQUESTED END -->
 </br>
 </table>

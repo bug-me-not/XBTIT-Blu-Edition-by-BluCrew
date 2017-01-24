@@ -7552,7 +7552,7 @@ INSERT INTO `blu_settings` (`key`, `value`) VALUES
 ('multie', '3'),
 ('cl_on', 'false'),
 ('cl_te', 'Powered By Blu-Edition'),
-('cache_duration', '90');
+('cache_duration', '0');
 
 -- --------------------------------------------------------
 

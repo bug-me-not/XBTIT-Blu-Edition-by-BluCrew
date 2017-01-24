@@ -1043,7 +1043,7 @@ if(isset($_FILES["torrent"]))
                 if($XBTT_USE)
                 quickQuery("INSERT INTO xbt_files SET info_hash=0x$hash, ctime=UNIX_TIMESTAMP()".$xbt_insert." ON DUPLICATE KEY UPDATE flags=0", true);
 
-                $query = "INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment, uploader,anonymous, bin_hash".$query1_insert_key.",release_group,youtube_video) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group,'{$youtube_video}')";
+                $query = "INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment, uploader,anonymous, bin_hash".$query1_insert_key.",release_group) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group)";
             }
             else
             {
@@ -1066,13 +1066,13 @@ if(isset($_FILES["torrent"]))
                     // ok, we found our announce, so it's internal and we will set our announce as main
                     $array["announce"]=$TRACKER_ANNOUNCEURLS[0];
 
-                    $query="INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment, uploader,anonymous, bin_hash".$query1_insert_key.", release_group,youtube_video) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group,'{$youtube_video}')";
+                    $query="INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment, uploader,anonymous, bin_hash".$query1_insert_key.", release_group) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group)";
 
                     if($XBTT_USE)
                     quickQuery("INSERT INTO xbt_files SET info_hash=0x$hash, ctime=UNIX_TIMESTAMP() ON DUPLICATE KEY UPDATE flags=0", true);
                 }
                 else
-                $query = "INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment,external,announce_url, uploader,anonymous, bin_hash".$query1_insert_key.",release_group,youtube_video) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",\"yes\",\"$announce\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group,'{$youtube_video}')";
+                $query = "INSERT INTO {$TABLE_PREFIX}files (info_hash, filename, url, info, category, data, size, comment,external,announce_url, uploader,anonymous, bin_hash".$query1_insert_key.",release_group) VALUES (\"$hash\", \"$filename\", \"$url\", \"$info\",0 + $categoria,NOW(), \"$size\", \"$comment\",\"yes\",\"$announce\",$curuid,$anonyme,0x$hash". $query1_insert_value.",$release_group)";
             }
 
             //Database is updated with new torrent.
