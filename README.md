@@ -24,7 +24,7 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 - It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
 - Place the xbtitFM Blu-Edition code in your webroot<br>
-- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. You can use any database name you like but set the table prefix to blu_ .Grant your database user full permissions.<br>
+- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. Grant your database user full permissions.<br>
 - In your web directory of the script.OPEN   /sql/database.sql and goto line 2842 ('url', 'http://example.com'),  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
 - Inport the SQL file located in your web directory of the script. /sql/database.sql
 - Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
