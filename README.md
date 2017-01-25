@@ -1,4 +1,4 @@
-# XBTIT Blu-Edition by BluCrew v2.0 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+# XBTIT Blu-Edition by BluCrew v2.0.5  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
 > A modern front and backend bittorrent tracker!
 
 Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
@@ -20,7 +20,7 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
   -   php-curl    -> This is specifically needed for the Various API's we have running.
 - MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
-<b>:Point And Click Installer (NOT COMPLETE!):</b><br>
+<b>:Point And Click Installer:</b><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
@@ -56,7 +56,8 @@ Copyright © 2016 Styled By BluCrew<br>
   v1.1.03   - Fixes cache issue relating to OMDB
   v1.1.04   - Minor fixes to bugs relating to list and details pages
   v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added 
-  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID. database.sql updated. 
+  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID. 
+  v2.0.5      - Point and Click Installer Functional for east install process.
 ```
 
 

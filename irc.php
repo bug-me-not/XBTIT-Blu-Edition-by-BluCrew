@@ -31,7 +31,7 @@ $text =
          <div class=\"panel panel-primary\">
          <div class=\"panel-heading\">
          <h2 class=\"text-center\"></h2></div>
-         <center><iframe src=\"https://kiwiirc.com/client/URL/?nick=BluRG|?&theme=cli#CHANNEL\" style=\"border:0; width:100%; height:450px;\"></iframe></center>
+         <center><iframe src=\"https://kiwiirc.com/client/URL/?nick=BluCrew|?&theme=cli#CHANNEL\" style=\"border:0; width:100%; height:450px;\"></iframe></center>
          <div class=\"panel-footer\">
         </div>
         </div>
