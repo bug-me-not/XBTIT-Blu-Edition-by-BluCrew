@@ -12,11 +12,11 @@ $text =
                   <h2 class=\"text-center\">BluRG IRC</h2>
                </div>
                <center>
-                  <h3>To connect to our IRC with your client our official IRC network is irc.blurg.xyz</h3>
+                  <h3>To connect to our IRC with your client our official IRC network is (YOUR IRC URL)</h3>
                   <h3>You will have to register with following command /msg NickServ REGISTER password  <---replace 'password' with your password of choice.</h3>
                   <br>
-                  <h4>BluRG Channel List</h4>
-                  <p class=\"text-danger\">( #blurg | #blurg_announce | #blurg_support )</p>
+                  <h4>(YOUR IRC NAME) Channel List</h4>
+                  <p class=\"text-danger\">( # | # | # )</p>
                   <p class=\"text-success\">Ports: 6667 standard, 6697 ssl</p>
               </center>
            </p>
@@ -31,7 +31,7 @@ $text =
          <div class=\"panel panel-primary\">
          <div class=\"panel-heading\">
          <h2 class=\"text-center\"></h2></div>
-         <center><iframe src=\"https://kiwiirc.com/client/irc.blurg.xyz/?nick=BluRG|?&theme=cli#blurg\" style=\"border:0; width:100%; height:450px;\"></iframe></center>
+         <center><iframe src=\"https://kiwiirc.com/client/URL/?nick=BluRG|?&theme=cli#CHANNEL\" style=\"border:0; width:100%; height:450px;\"></iframe></center>
          <div class=\"panel-footer\">
         </div>
         </div>

@@ -20,20 +20,6 @@ Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
   -   php-curl    -> This is specifically needed for the Various API's we have running.
 - MySQL 5.7+ or MariaDB 10+ (At this time you must disable Strict-Mode. MySQL and MariaDB are enabled by default in MySQL 5.7 and MariaDB 10)<br>
 
-<b>:Manual Install:</b><br>
-<i>PHP TRACKER AND INTERNAL FORUM <br>
-- It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
-- Place the xbtitFM Blu-Edition code in your webroot<br>
-- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. Grant your database user full permissions.<br>
-- In your web directory of the script.OPEN   /sql/database.sql and goto line 7511 ('url', 'http://blu-edition.hdinnovations.xyz'),,  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
-- Inport the SQL file located in your web directory of the script. /sql/database.sql
-- Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
-- Goto your domain or IP in your web browser and login with Username: Admin Pass: Admin123.<br>
-- Be sure to change your owner default accounts username and password.<br>
-- Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
-- Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
-- Enjoy!<br>
-
 <b>:Point And Click Installer (NOT COMPLETE!):</b><br>
 <i>PHP TRACKER AND INTERNAL FORUM <br>
 This is the easiest and fastest way to get your tracker up and running!</i>
@@ -52,6 +38,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - Look to your Users Group Settings, do they match what you want?<br>
 - You need to create the boards for your internal forum.<br>
 - It is a lot of new stuff to take in, any bugs please open a issue.<br>
+- https://kiwiirc.com/embedding for setting up your IRC widget in the irc.php
 
 <b>:CREDITS:</b><br>
 - BluCrew (HDVinie and MrG01)<br>
