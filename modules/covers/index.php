@@ -71,14 +71,14 @@ print "<div align=\"center\"><table class='table table-bordered'>
 <form action=\"index.php?page=modules&module=covers&opt=takeupload\" method=\"post\" enctype=\"multipart/form-data\">
 <input type=\"file\" name=\"coverfile\" id=\"coverfile\"><br /><br />
 Title: <input type=\"text\" name=\"title\" class='form-control' id=\"title\" size=\"100\"><br />
-IMDB Number: <input type=\"text\" name=\"imdbnum\" id=\"imdbnum\"> e.g 0787474<br />
+IMDB Number: <input type=\"text\" class=\"form-control\" name=\"imdbnum\" id=\"imdbnum\"> e.g 0787474<br />
 <br />
 Type:
 <input type=\"radio\" name=\"type\" value=\"unknown\" checked>Unknown
 <input type=\"radio\" name=\"type\" value=\"scan\">Scan
 <input type=\"radio\" name=\"type\" value=\"custom\">Custom
 <br />
-Type:
+Region:
 <input type=\"radio\" name=\"region\" value=\"unknown\" checked>Unknown
 <input type=\"radio\" name=\"region\" value=\"a\">A
 <input type=\"radio\" name=\"region\" value=\"b\">B
