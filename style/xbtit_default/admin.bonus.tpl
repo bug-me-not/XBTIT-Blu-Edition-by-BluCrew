@@ -3,10 +3,9 @@
 <h4 class="text-center">SeedBonus (BON) Settings</h4>
 </div>
 <if:firstview>
+<form method="post" action="index.php?page=admin&amp;user=<tag:uid />&amp;code=<tag:random />&amp;do=seedbonus">
 <table class="table table-bordered table-hover">
   <tr>
-    <form method="post" action="index.php?page=admin&amp;user=<tag:uid />&amp;code=<tag:random />&amp;do=seedbonus">
-
     <td class="header"><tag:language.AWARD_FOR />:</td>
     <td class="lista" colspan="3"><input type="radio" name="sb_type" value="all"<if:all> checked</if:all>><tag:language.ALL_TORR /><input type="radio" name="sb_type" value="one"<if:one> checked</if:one>><tag:language.ONE_TORR /></td>
   </tr>
@@ -109,7 +108,6 @@
     <td class="lista" colspan="2" style="text-align:center;"><input type="text" size="4" name="price_name" maxlength="6" value="<tag:price_name />"/></td>
   </tr>
 
-
   <if:show_inv>
   <tr>
   <td class="header" rowspan="4"><tag:language.PRICE_FOR_INVITES />:</td>
@@ -143,6 +141,7 @@
     <td class="header" colspan="4" align="center"><input type="submit" class="btn btn-md btn-primary" value="<tag:language.UPDATE />" name="action"></td>
   </tr>
 </table>
+</form>
 <else:firstview>
 <tag:language.SEEDBONUS_UPDATED />
 </if:firstview>
