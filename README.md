@@ -26,6 +26,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 <br>
 - Place the xbtitFM Blu-Edition code in your webroot<br>
 - Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin. Grant your database user usage privileges (data+structure, not grant/administration)<br>
+- Place PHPMailer into the includes folder.
 - Use a web browser to open the site<br>
 - Follow the instructions displayed by the installer<br>
 - Once install is complete delete the install.php from your server<br>
@@ -59,8 +60,9 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - Our Collaborators (flier56, Chocolatkey, nilimahona)<br>
 - This script takes the best of XBTIT, XBTITFM, XBTIT DT FM and XBTIT DT DC so credit to all the developers and participents in those named scripts. (That being said XBTIT Blu-Edition is still very much different but without XBTIT CORE this script would not be availble so giving credit where credit is due!)<br>
 - YOU ARE NOT TO REMOVE OUR COPYRIGHT NOTICE FROM THE FOOTER!<br>
-Copyright © 2016 XBTIT Blu Edition v1.1.04 by BluCrew (or current version)<br>
 Copyright © 2016 Styled By BluCrew<br>
+Copyright © 2016-2017 XBTIT Blu Edition by BluCrew<br>
+
 
 ### UPDATES
 
@@ -69,9 +71,12 @@ Copyright © 2016 Styled By BluCrew<br>
   v1.1      - API class to handle Posters, Banners, CD Art and Background images from TVDB and FanArt
   v1.1.03   - Fixes cache issue relating to OMDB
   v1.1.04   - Minor fixes to bugs relating to list and details pages
-  v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added 
-  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID. 
+  v1.1.05   - Fixes to language, Multiple Style Updates, Global Seedbonus Multiplier Hack Added
+  v2.0      - OMDB API complete, Style Updates, Lang Updates, Auto Poster, Rating, Genre and Plot handling via IMDB or TVDB ID.
   v2.0.5      - Point and Click Installer Functional for east install process.
+  v2.0.6      - Fixes the issue with Admin Seedbonus page
+  v2.0.7      - Fixes issue where an empty Seedbox table fills up PHP logs
+  v2.0.8      - Removes the PHPMailer code. The latest should be pulled from Github on intsall.
 ```
 
 
@@ -84,6 +89,12 @@ Copyright © 2016 Styled By BluCrew<br>
 * [FanArt API](https://fanart.tv)
 * [TMDB API](https://www.themoviedb.org)
 * [OMDB API](http://omdbapi.com)
+* [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+
+
+### NOTES
+- PHPMailer is not included with this codebase. Please add it on your own accord.
+
 
 ### LICENSE
 ```
@@ -111,8 +122,8 @@ SOFTWARE.
 
 YOU ARE NOT TO REMOVE OUR COPYRIGHT NOTICE FROM THE FOOTER!
 Made with  by BluCrew
-Copyright © 2016 XBTIT Blu Edition v1.1.04 by BluCrew (or current version)
 Copyright © 2016 Styled By BluCrew
+Copyright © 2016-2017 XBTIT Blu Edition by BluCrew
 ```
 
 ### Enforcement
