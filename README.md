@@ -1,4 +1,4 @@
-# XBTIT Blu-Edition by BluCrew v2.0.5  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+# XBTIT Blu-Edition by BluCrew v2.0.8  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
 > A modern front and backend bittorrent tracker!
 
 Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
@@ -100,7 +100,7 @@ Copyright © 2016-2017 XBTIT Blu Edition by BluCrew<br>
 ```
 The MIT License (MIT)
 
-Copyright (c) 2016 BluCrew
+Copyright (c) 2017 BluCrew
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
