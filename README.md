@@ -36,18 +36,18 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - Enjoy!<br>
 
 <b>:Manual Install:</b><br>
-24	<i>PHP TRACKER AND INTERNAL FORUM <br>
-25	- It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
-26	- Place the xbtitFM Blu-Edition code in your webroot<br>
-27	- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. Grant your database user full permissions.<br>
-28	- In your web directory of the script.OPEN   /sql/database.sql and goto line 7511 ('url', 'http://blu-edition.hdinnovations.xyz'),,  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
-29	- Inport the SQL file located in your web directory of the script. /sql/database.sql
-30	- Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
-31	- Goto your domain or IP in your web browser and login with Username: Admin Pass: Admin123.<br>
-32	- Be sure to change your owner default accounts username and password.<br>
-33	- Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
-34	- Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
-35	- Enjoy!<br>
+- <i>PHP TRACKER AND INTERNAL FORUM <br>
+- It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
+- Place the xbtitFM Blu-Edition code in your webroot<br>
+- Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. Grant your database user full permissions.<br>
+- In your web directory of the script.OPEN   /sql/database.sql and goto line 7511 ('url', 'http://blu-edition.hdinnovations.xyz'),  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
+- Inport the SQL file located in your web directory of the script. /sql/database.sql
+- Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
+- Goto your domain or IP in your web browser and login with Username: Admin Pass: Admin123.<br>
+- Be sure to change your owner default accounts username and password.<br>
+- Enter the admin control panel and set your tracker's URL and announce URL's (delete the example announce with the :2710) and set your preferences and then save the settings.<br>
+- Take some time to go through the admin panel and get used to everything from settings, hacks, modules and more.<br>
+- Enjoy!<br>
 
 <b>:GENERAL NOTES:</b><br>
 - Look to your Users Group Settings, do they match what you want?<br>
