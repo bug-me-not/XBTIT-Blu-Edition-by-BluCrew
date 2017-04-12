@@ -1,7 +1,7 @@
 # XBTIT Blu-Edition by BluCrew v2.0.8  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
 > A modern front and backend bittorrent tracker!
 
-<b>This codebase is no longer being maintained</b>
+<br><b>This codebase is no longer being maintained</b><br>
 
 Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
 Username: Demo <br>
