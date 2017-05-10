@@ -3,12 +3,7 @@
 
 <br><b>This codebase is no longer being maintained</b><br>
 
-Demo Site: http://blu-edition.hdinnovations.xyz/index.php<br>
-Username: Demo <br>
-Pass: Demo123.
 
-Gitter Page: https://gitter.im/XBTIT-Blu-Edition/Lobby#
-<i>Come chat with us!</i>
 
 <br>
 <br>
@@ -42,7 +37,7 @@ This is the easiest and fastest way to get your tracker up and running!</i>
 - It is assumed you already have the reqirments installed. (If so continue to next step, if not do it or ask for help in gitter chat room)<br>
 - Place the xbtitFM Blu-Edition code in your webroot<br>
 - Create your database (utf8_unicode_ci) and a database user using your application of choice like phpMyAdmin or via terminal. Grant your database user full permissions.<br>
-- In your web directory of the script.OPEN   /sql/database.sql and goto line 7511 ('url', 'http://blu-edition.hdinnovations.xyz'),  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
+- In your web directory of the script.OPEN   /sql/database.sql and goto line 7511 ('url', 'http://example.com'),  REPLACE WITH YOUR DOMAIN NAME! AND SAVE THE CHANGES.
 - Inport the SQL file located in your web directory of the script. /sql/database.sql
 - Navigate to your web directory of the script. Open /include/settings.php via a text editor or nano in terminal and enter your DB info you just created. Save it.<br>
 - Goto your domain or IP in your web browser and login with Username: Admin Pass: Admin123.<br>
@@ -131,7 +126,7 @@ Copyright © 2016-2017 XBTIT Blu Edition by BluCrew
 ### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at Mr.Robot@stealth.tg. All
+reported by contacting the project team. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
