@@ -1,9 +1,11 @@
-# XBTIT Blu-Edition by BluCrew v2.0.8  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+# XBTIT Blu-Edition by BluCrew v2.0.8  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/bug-me-not/XBTIT-Blu-Edition-by-BluCrew)
 > A modern front and backend bittorrent tracker!
 
 <br><b>This codebase is no longer being maintained</b><br>
 
 
+Gitter Page: https://gitter.im/bug-me-not/XBTIT-Blu-Edition-by-BluCrew
+<i>Come chat with us!</i>
 
 <br>
 <br>
