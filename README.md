@@ -1,4 +1,6 @@
 # XBTIT Blu-Edition by BluCrew v2.0.8  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://gitter.im/XBTIT-Blu-Edition/Lobby)
+
+[![Join the chat at https://gitter.im/bug-me-not/Lobby](https://badges.gitter.im/bug-me-not/Lobby.svg)](https://gitter.im/bug-me-not/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > A modern front and backend bittorrent tracker!
 
 <br><b>This codebase is no longer being maintained</b><br>
