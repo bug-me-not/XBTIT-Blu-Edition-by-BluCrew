@@ -24,8 +24,8 @@ if ($CURUSER["uid"] > 1)
             $custom = "";
 
         $p=$GLOBALS["price_ct"];
-
-        if ("$custom"=="")
+//var_dump($custom);
+        if ($custom == "")
         {
             quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `custom_title`='', `seedbonus`=`seedbonus`-".$p." WHERE `id`=".$uid, true);
             if(substr($FORUMLINK,0,3)=="smf")
@@ -35,11 +35,13 @@ if ($CURUSER["uid"] > 1)
         }
         else
         {
-            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `custom_title`='".htmlspecialchars($custom)."', `seedbonus`=`seedbonus`-".$p." WHERE `id`=".$uid, true);
+//$sql = "UPDATE `{$TABLE_PREFIX}users` SET `custom_title`='".htmlspecialchars($custom)."', `seedbonus`=`seedbonus`-".$p." WHERE `id`=".$uid;
+//var_dump($sql);
+            quickQuery("UPDATE `{$TABLE_PREFIX}users` SET `custom_title`=".htmlspecialchars($custom).", `seedbonus`=`seedbonus`-".$p." WHERE `id`=".$uid, true);
             if(substr($FORUMLINK,0,3)=="smf")
-                quickQuery("UPDATE `{$db_prefix}members` SET `usertitle`='".htmlspecialchars($custom)."' WHERE ".(($FORUMLINK=="smf")?"`ID_MEMBER`":"`id_member`")."=".$CURUSER["smf_fid"], true);
+                quickQuery("UPDATE `{$db_prefix}members` SET `usertitle`=".htmlspecialchars($custom)." WHERE ".(($FORUMLINK=="smf")?"`ID_MEMBER`":"`id_member`")."=".$CURUSER["smf_fid"], true);
             elseif($FORUMLINK=="ipb")
-                quickQuery("UPDATE `{$ipb_prefix}members` SET `title`='".htmlspecialchars($custom)."' WHERE `member_id`=".$CURUSER["ipb_fid"], true);
+                quickQuery("UPDATE `{$ipb_prefix}members` SET `title`=".htmlspecialchars($custom)." WHERE `member_id`=".$CURUSER["ipb_fid"], true);
         }
         $_SESSION["CURUSER"]["seedbonus"]-=$p;
 
